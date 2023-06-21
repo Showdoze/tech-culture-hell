@@ -208,8 +208,7 @@ change_government_theocracy_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { has_government = theocracy_government }
+		NOT = { government_has_flag = government_is_theocracy }
 	}
 
 	is_valid = {
@@ -239,7 +238,9 @@ change_government_theocracy_decision = {
 	}
 
 	ai_potential = {
-		always = yes
+		trigger_if = {
+            government_has_flag = government_is_feudal
+	    }
 	}
 
 	ai_will_do = {
@@ -266,7 +267,7 @@ change_government_republic_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { has_government = republic_government }
+		NOT = { government_has_flag = government_is_republic }
 	}
 
 	is_valid = {
@@ -283,7 +284,7 @@ change_government_republic_decision = {
 
 	ai_potential = {
 		trigger_if = {
-            flag = government_is_feudal
+            government_has_flag = government_is_feudal
 	    }
 	}
 
@@ -311,8 +312,7 @@ change_government_clan_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { has_government = clan_government }
+		NOT = { government_has_flag = government_is_clan }
 	}
 
 	is_valid = {
@@ -355,8 +355,7 @@ convert_whole_realm_to_feudalism_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { has_government = feudal_government }
+		NOT = { government_has_flag = government_is_feudal }
 	}
 
 	is_valid = {
@@ -399,16 +398,16 @@ change_government_caliphate_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { has_government = caliphate_government }
-		religion = { islam_religion }
+		AND = {
+		    NOT = { government_has_flag = government_is_caliphate }
+		    religion = { islam_religion }
+		}
 	}
 
 	is_valid = {
-		AND = { 
-			has_realm_law = crown_authority_3
-			has_government = clan_government
-		}
+		has_realm_law = crown_authority_3
+		government_has_flag = government_is_clan
+		prestige_level >= 2
 	}
 
 	effect = {
@@ -443,8 +442,7 @@ change_government_autocracy_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { has_government = autocracy_government }
+		NOT = { government_has_flag = government_is_autocracy }
 	}
 
 	is_valid = { has_realm_law = crown_authority_3 }
@@ -479,11 +477,10 @@ convert_to_tribalism_decision = {
 	}
 
 	is_shown = {
-		is_landed = yes
-		NOT = { 
-			has_government = tribal_government
-			primary_title.tier >= tier_empire
-			}
+		NOR = { 
+			government_has_flag = government_is_tribal
+			primary_title.tier <= tier_empire
+		}
 	}
 
 	is_valid = {
