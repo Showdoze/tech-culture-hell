@@ -1,0 +1,130 @@
+mesopotamian = {
+	color = { 21 162 91 }
+
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_gardening
+		tradition_xenophilic
+	}
+	name_list = name_list_mesopotamian	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+}
+
+akkadian = {
+	color = { 200 200 10 }
+	created = 1.1.1
+	parents = { mesopotamian }
+
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_gardening
+		tradition_fp1_northern_stories
+		tradition_city_keepers
+	}
+	name_list = name_list_akkadian
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+}
+
+sumer = {
+	color = { 245 205 10 }
+	created = 1.1.1
+	parents = { akkadian }
+
+	ethos = ethos_bellicose
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_frugal_armorsmiths
+	}
+	name_list = name_list_sumer	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+}
+
+babylonian = {
+	color = { 10 245 172 }
+	created = 1.1.1
+	parents = { sumer }
+
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_eye_for_an_eye
+		tradition_legalistic
+		tradition_parochialism
+	}
+	name_list = name_list_babylonian
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+	mercenary_names = {
+		{ name = "mercenary_company_babylon_trench" }
+		{ name = "mercenary_company_babylon_guardians" }
+	}
+}
+
+elamite = {
+	color = { 165 118 22 }
+	created = 1.1.1
+	parents = { sumer }
+	
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_elamite
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_philosopher_culture
+		tradition_language_scholars
+	}
+	name_list = name_list_elamite	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+
+	mercenary_names = {
+		{ name = "mercenary_company_donkey_chariot" }
+		{ name = "mercenary_company_militia_legion" }
+	}
+}

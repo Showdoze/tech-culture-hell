@@ -1,0 +1,1823 @@
+﻿tradition_eugenics = {
+	category = societal
+	
+	layers = {
+		0 = learning
+		1 = western
+		4 = eugenics.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_free_love }
+	}
+	parameters = {
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		can_duel_rivals = yes
+		poorly_educated_leaders_distrusted = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		physical_disfigurement_blocks_inheritance = yes #Actually only blocks claimants and reduce score in elective. Also includes infertility for tooltip reasons.
+	}
+	character_modifier = {
+		cultural_head_fascination_mult = -0.1
+		ai_boldness = 25
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = 2000
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+						has_culture_tradition = { tradition_live_hard }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = bellicose_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 3
+								culture = prev
+								primary_title.tier >= tier_county
+								OR = {	
+									has_trait = strong
+									has_trait = physique_good
+								}
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = strong_rulers_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				NOT = {
+					any_in_list = { list = traits this = flag:ethos_bellicose }
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_free_love = {
+	category = societal
+	
+	layers = {
+		0 = learning
+		1 = western
+		4 = speech.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_eugenics }
+	}
+	parameters = {
+		safer_childbirths_active = yes
+		healthier_children_active = yes
+		piety_from_childbirth_active = yes
+		adulterer_trait_gives_bonuses = yes
+		romance_scheme_bonuses = yes
+		romance_scheme_penalty = yes
+		ai_romance_scheme_increase = yes
+	}
+	character_modifier = {
+		fertility = 0.3
+		stress_loss_mult = 0.2
+		owned_scheme_secrecy_add  = -15
+		close_relative_opinion = 10
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = 200
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 3
+								culture = prev
+								primary_title.tier >= tier_county
+								OR = {	
+									has_trait = strong
+									has_trait = physique_good
+								}
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = strong_rulers_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				NOT = {
+					any_in_list = { list = traits this = flag:ethos_bellicose }
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_totalitarian = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = totalitarian.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_pacifist }
+	}
+	parameters = {
+		cheaper_to_change_laws = yes
+		vassals_more_likely_accept_punishments = yes
+		warmonger = yes
+		more_likely_to_leave_court = yes
+		reduced_stress_from_torture = yes
+		war_stress_loss = yes
+		harder_to_hybridize = yes
+		gain_gold_from_battles = yes
+		stubborn_trait_more_common = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		title_creation_cost_mult = -0.3
+		vassal_limit = 30
+		domain_limit = 10
+		opinion_of_liege = 30
+		men_at_arms_limit = -3
+		levy_size = 20
+		monthly_prestige_gain_per_dread_mult = -0.01
+		tyranny_gain_mult = -0.25
+		revolting_siege_morale_loss_mult = 0.25
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = 1500
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_courtly}
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_innovation = innovation_baliffs
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_baliffs_innovation_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_innovation = innovation_development_02
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_development_02_innovation_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_pacifist = {
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = diplomacy.dds
+	}
+	can_pick = {
+		custom_description = {
+			text = culture_not_bellicose
+			NOT = {
+				any_in_list = { list = traits this = flag:ethos_bellicose }
+			}
+			NOT = { has_cultural_tradition = tradition_totalitarian }
+		}
+		culture_not_warlike_trigger = yes
+	}	
+	parameters = {
+		reduced_cost_for_conversion_to_pacifist_faith = yes
+		reincarnation_resistance_to_conversion = yes
+		generous_trait_more_common = yes
+		compassionate_trait_more_common = yes
+		holy_wars_forbidden = yes
+		pacifist_opinion_active = yes
+		can_end_defensive_wars_earlier = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+		temperate_trait_more_common = yes
+		opinion_of_pacifist_opinion_active = 10
+		piety_from_long_peace = 1
+		patient_trait_more_common = yes
+		just_trait_more_common = yes
+		honest_trait_more_common = yes
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		county_opinion_add = 10
+	}
+	character_modifier = {
+		martial = -2
+		monthly_martial_lifestyle_xp_gain_mult = -0.4	
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		ignore_negative_opinion_of_culture = yes
+		random_skills_per_child = 1	
+		ai_war_chance = -0.75
+		ai_war_cooldown = 10
+		ai_boldness = -25
+		ai_compassion = 25
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = 690
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_spiritual_or_egalitarian_desc
+				}
+			}
+			if = {
+				limit = {
+					scope:character = {
+						is_at_war = yes
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = is_at_war_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				scope:character = { religion = { is_in_family = rf_eastern } }
+				is_divergent_culture = yes
+			}
+			add = 25
+		}
+	}
+}
+
+tradition_bushido = {
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = bushido.dds
+	}	
+	can_pick = {
+		has_cultural_pillar = heritage_japanese
+	}	
+	parameters = {
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		vassals_more_likely_accept_punishments = yes
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.5
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_courtly }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_knight = {
+								count >= 6
+								prowess >= 12
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = knights_with_prowess_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_live_hard = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = forest.dds
+	}	
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_live_safe }
+	}
+	parameters = {
+		martial_education_more_valued = yes
+		better_ward_education = yes
+		diplomacy_education_better_outcomes = yes
+		added_character_boldness = yes
+	}
+	character_modifier = {
+		positive_inactive_inheritance_chance = 0.7
+		genetic_trait_strengthen_chance = 0.7
+		fertility = 0.5
+		inbreeding_chance = -0.7
+		monthly_learning_lifestyle_xp_gain_mult = 1
+		life_expectancy = -30
+		stress_gain_mult = -0.1
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = cynical
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_cynical_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { value = 0 } # The AI never pick this
+}
+
+tradition_live_safe = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = elephant.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_live_hard }
+	}	
+	parameters = {
+		content_trait_more_common = yes
+		martial_education_worse_outcomes = yes
+	}
+	character_modifier = {
+		monthly_lifestyle_xp_gain_mult = -0.1
+		life_expectancy = 50
+		stress_gain_mult = -0.1
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = cynical
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_cynical_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { value = 0 } # The AI never pick this
+}
+
+tradition_dwarf = {
+    category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = mountain.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_giant }
+	}
+	parameters = {
+		better_armory_buildings = yes
+		quarries_building_bonuses = yes
+		rough_terrain_expert_trait_more_common = yes
+		mountain_trait_bonuses = yes
+		better_blacksmith_buildings = yes
+		prestige_gain_on_building_complete_in_mountains = yes
+	}
+	character_modifier = {
+		life_expectancy = 30
+		different_culture_opinion = -10
+	}	
+	county_modifier = {
+		mountains_development_growth_factor = 0.4
+		desert_mountains_development_growth_factor = 0.1
+		hills_development_growth_factor = 0.2
+		plains_development_growth_factor = -0.2
+		oasis_development_growth_factor = -0.5
+		jungle_development_growth_factor = -0.35
+	}
+	province_modifier = {
+		mountains_levy_size = 0.1
+		desert_mountains_levy_size = 0.1
+		mountains_supply_limit_mult = 0.25
+		desert_mountains_supply_limit_mult = 0.25
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { value = 0 }
+}
+
+tradition_giant = {
+    category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = forest.dds
+	}
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_dwarf }
+	}
+	parameters = {
+		knights_slightly_more_prone_to_injury = yes
+		logging_camps_building_bonuses = yes
+	}
+	character_modifier = {
+		prowess = 5
+		learning = 3
+		advantage = 5
+		supply_duration = -1
+		wetlands_advantage = 10
+		levy_size = -0.2
+		knight_limit = 5
+		knight_effectiveness_mult = 0.5
+		movement_speed = 0.25
+		supply_capacity_mult = 1
+		hostile_county_attrition = -1
+		dread_baseline_add = 10
+		different_culture_opinion = -10
+	}
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 0.5
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { value = 0 }
+}
+
+tradition_city_state = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = mediterranean
+		4 = city.dds
+	}
+	can_pick = { 
+		NOR = {
+			has_cultural_tradition = tradition_castle_keepers
+			has_cultural_tradition = tradition_city_keepers
+		}
+	}
+	parameters = {
+		next_level_guild_halls = yes
+		city_buildings_more_county_opinion = yes
+		architect_trait_prestige = yes
+		coastal_holdings_give_defensive_bonus = y
+		coastal_agriculture_building_bonuses = yes
+		coastal_holding_bonuses = yeses
+		development_gain_on_building_complete = yes
+		maritime_mercantilism_coastal_holdings = yes
+		innovation_from_learning_traits = yes
+	}
+	character_modifier = {
+		city_holding_build_speed = 0.25
+		domain_limit = -5
+		coastal_advantage = 5
+		supply_capacity_mult = 0.5
+		defender_advantage = 5
+		embarkation_cost_mult = -0.25
+		monthly_court_grandeur_change_mult = 0.5
+		max_loot_mult = 0.1
+		steppe_cancel_negative_supply = yes
+		supply_duration = 1
+		movement_speed = 0.1
+		owned_personal_scheme_success_chance_add = 10
+		enemy_hostile_scheme_success_chance_add = 10
+		diplomatic_range_mult = 1
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			# Ethos requirements.
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bureaucratic }
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_courtly_or_egalitarian_desc
+				}
+			}
+			# Requires communal government innovation.
+			if = {
+				limit = {
+					NOT = { has_innovation = innovation_development_02 }
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_development_02_innovation_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { 
+		value = 0
+	}
+}
+
+tradition_altruistic = {
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	parameters = {
+        generous_trait_more_common = yes
+        compassionate_trait_more_common = yes
+        honest_trait_more_common = yes
+		extra_language_cap = yes
+		pardoning_gives_loyalty = yes
+		can_recruit_prisoners_easily = yes
+		gregarious_trait_gives_bonuses = yes
+		wants_to_learn_liege_language = yes
+        extra_learn_language_success_chance_vs_liege = yes
+		more_gift_opinion = yes
+		gives_more_gifts = yes
+	}
+	character_modifier = {
+		diplomacy = 4
+		intrigue = -4
+		holding_build_speed = -0.2
+		supply_capacity_mult = 0.5
+		tolerance_advantage_mod = 0.5
+		ai_compassion = 50
+		ai_war_chance = -1
+		ai_greed = -25
+		diplomatic_range_mult = 1
+		ignore_negative_opinion_of_culture = yes
+		health = 0.05
+		monthly_income_per_stress_level_mult = 0.5
+		stress_loss_mult = -0.5
+		stress_gain_mult = 1
+		general_opinion = 10
+		opinion_of_different_culture = 40
+		different_culture_opinion = 20
+		revolting_siege_morale_loss_mult = 10
+		enemy_hostile_scheme_success_chance_add = 10
+		hostile_scheme_power_mult = -2
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 2
+	}
+	county_modifier = {
+		county_opinion_add = 5
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = 50
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 3
+								culture = prev
+								primary_title.tier >= tier_county
+								is_independent_ruler = no
+								NOT = {
+									culture = liege.culture
+								}
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_under_another_culture_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				is_divergent_culture = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_atheism = {
+	category = ritual
+
+	layers = {
+		0 = learning
+		1 = western
+		4 = diplomat.dds
+	}
+	can_pick = { 
+		NOR = {
+			has_cultural_tradition = tradition_zealous_people
+			has_cultural_tradition = tradition_religion_blending
+			has_cultural_tradition = tradition_hammerite
+			has_cultural_tradition = tradition_religious_patronage
+			has_government = theocracy_government
+			any_in_list = { list = traits this = flag:ethos_spiritual }
+		}
+	}
+	parameters = {
+        romance_scheme_bonus_vs_spouse = yes
+		less_likely_to_force_conversion = yes
+		holy_wars_forbidden = yes
+	}
+	character_modifier = {
+        learning = 5
+		piety_level_impact_mult = -100
+		fertility = 1
+		monthly_piety = -10
+		monthly_piety_gain_mult = -100
+		monthly_piety_gain_per_knight_mult = -100
+		monthly_piety_gain_per_dread_mult = -100
+		monthly_piety_from_buildings_mult = -100
+		monthly_dynasty_prestige = 2
+		different_culture_opinion = -30
+		monthly_lifestyle_xp_gain_mult = 0.5
+		scheme_power = 1
+		build_piety_cost = 10
+		holding_build_piety_cost = 10
+		different_faith_county_opinion_mult = -20
+		faith_conversion_piety_cost_mult = 10
+		faith_creation_piety_cost_mult = 10
+		ai_zeal = -100
+		theocracy_government_opinion = -50
+		holy_order_government_opinion = -50
+		convert_to_witchcraft_scheme_resistance_mult = 5
+		holy_order_hire_cost_mult = 10
+	}
+	doctrine_character_modifier = {
+		doctrine = special_doctrine_atheism
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = 600
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					OR = {
+					    has_cultural_tradition = tradition_faith_bound
+					    has_cultural_tradition = tradition_sacred_hunts
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = faith_desc
+				}
+			}
+		}
+		multiply = tradition_replacement_cost_if_relevant
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				scope:ruler = { has_trait = cynical }
+			}
+			add = 80
+		}
+		if = {
+			limit = {
+				scope:ruler = { has_trait = zealous }
+			}
+			subtract = 1000
+		}
+	}
+}
+
+tradition_egypt = {
+	category = realm
+
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = egypt.dds
+	}
+	can_pick = {
+		any_culture_county = {
+			title_province = {
+				geographical_region = ghw_region_egypt
+			}
+		}
+	}
+	parameters = {
+		architect_trait_prestige = yes
+		pardoning_gives_loyalty = yes
+		renown_from_temple_construction = yes
+		development_gain_on_building_complete = yes
+	}
+	character_modifier = {
+		tyranny_gain_mult = -0.50
+		diplomatic_range_mult = 0.25
+		court_grandeur_baseline_add = 5
+	}
+	county_modifier = {
+		floodplains_development_growth_factor = 0.3
+		floodplains_construction_gold_cost = -0.2
+		floodplains_levy_size = 0.1
+	}
+	province_modifier = {
+		desert_tax_mult = 0.1
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = 250
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					any_in_list = { list = traits this = flag:ethos_spiritual }
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = spiritual_desc
+				}
+			}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = forest_percentage_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_raid = {
+	category = combat
+
+	layers = {
+		0 = learning
+		1 = western
+		4 = fight.dds
+	}	
+	can_pick = {
+		custom_description = {
+			text = percentage_of_culture_on_coast_desc
+			any_culture_county = {
+				percent >= 0.5
+				any_county_province = {
+					is_coastal = yes
+				}
+			}
+		}
+	}
+	parameters = {
+		culture_can_raid_at_sea_even_if_feudal = yes
+		gain_gold_from_battles = yes
+	}
+	character_modifier = {
+		max_loot_mult = 1
+		embarkation_cost_mult = -0.25
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_merryment = {
+	category = ritual
+
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = food.dds
+	}
+	parameters = {
+		more_frequent_feasts = yes
+		reveler_traits_more_common = yes
+		diplomacy_education_better_outcomes = yes
+		charming_trait_more_common = yes
+		reveler_traits_more_valued = yes
+		more_expensive_feasts = yes
+		piety_from_feasts_active = yes
+		mandatory_feast_attendance = yes
+		refined_feasts = yes
+		renown_from_feasts = yes
+		characters_are_better_food_tasters = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_stoic_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = lifestyle_reveler
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_reveler_lifestyle_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						has_trait = lifestyle_reveler
+					}
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+tradition_hunter_gatherer = {
+	category = realm
+
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = hunter.dds
+	}
+	can_pick = {
+		culture_not_pacifistic_trigger = yes
+		custom_tooltip = {
+			text = cannot_have_tradition_vegetarianism
+			NOT = { any_in_list = { list = traits this = flag:tradition_vegetarianism } }
+		}
+	}	
+	parameters = {
+		sacred_hunts = yes
+		hunting_traits_more_pious = yes
+		more_frequent_hunts = yes
+		hunting_traits_more_valued = yes
+		hunting_traits_more_common = yes
+		hunting_archery_building_bonuses = yes
+	}
+	county_modifier = {
+		build_gold_cost = 0.5
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_spiritual_or_stoic_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = lifestyle_hunter
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_hunter_lifestyle_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_amazon = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = mena
+		4 = shieldmaiden.dds
+	}
+	
+	parameters = {
+		craven_trait_costs_prestige = yes
+		brave_trait_gives_bonuses = yes
+		female_only_inheritance = yes
+		prowess_from_martial_education = yes
+		martial_education_more_valued = yes
+		female_preference_inheritance = yes
+		female_dominated_law = yes
+		male_claims_are_weak = yes
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		opinion_of_female_rulers = 10
+		opinion_of_male_rulers = -10
+		same_culture_opinion = 10
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					any_in_list = { list = traits this = flag:ethos_bellicose }
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = culture_not_bellicose
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = { value = 0 }
+}
+
+tradition_true_isolationist = {
+	category = realm
+
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = noble.dds
+	}
+	parameters = {
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		can_end_defensive_wars_earlier = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -2
+	}
+	character_modifier = {
+		diplomatic_range_mult = -10
+		same_culture_opinion = 5
+		owned_scheme_secrecy_add  = 15
+		ai_war_chance = -1
+		ai_war_cooldown = 5
+	}
+	county_modifier = {
+		monthly_county_control_change_add = 1
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_spiritual_or_stoic_desc
+				}
+			}
+			if = {
+				limit = {
+					scope:character = {
+						any_sub_realm_county = {
+							culture = scope:character.culture
+							any_neighboring_county = {
+								NOT = {
+									culture = scope:character.culture
+								}
+								culture = {
+									cultural_acceptance = { target = scope:character.culture value >= 40 }
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = non_tolerated_cultures_desc
+				}
+			}			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_blood_thirst = {
+	category = combat
+
+	layers = {
+		0 = learning
+		1 = western
+		4 = fight.dds
+	}
+	parameters = {
+		piety_gain_from_successful_intrigue_schemes = yes
+		adherents_more_likely_to_join_schemes = yes
+		torturing_prisoners_grants_piety = yes
+		reduced_stress_from_torture = yes
+		human_sacrifice_active = yes
+		gruesome_festivals_active = yes
+		warmonger = yes
+		self_mutilation_active = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.3
+							any_county_province = {
+								OR = {
+									geographical_region = world_europe_north
+									geographical_region = world_europe_west
+									geographical_region = world_europe_east
+									geographical_region = world_steppe
+									geographical_region = world_tibet
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = winter_percentage_desc
+				}
+			}
+
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_hammerite = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = hammerite.dds
+	}	
+	can_pick = {
+		custom_tooltip = {
+			scope:character = {
+				OR = {
+					has_government = theocracy_government
+				}
+			}
+			text = must_be_theocratic
+		}
+		NOR = { 
+			has_cultural_tradition = tradition_pagan
+			has_cultural_tradition = tradition_atheism 
+		}
+	}	
+	parameters = {
+		castle_fortifications_increase = yes
+		castle_grant_prestige = yes
+		architect_trait_prestige = yes
+		prowess_traits_more_valued = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		can_castrate_prisoners = yes
+		temperate_trait_more_common = yes # Synergy with Monastic Doctrines
+		temperate_trait_bonuses = yes
+		devoted_trait_bonuses = yes
+		hard_working_traits_more_valued = yes
+		more_fervor_on_church_construction = yes
+		better_armory_buildings = yes
+		better_blacksmith_buildings = yes
+		can_blind_prisoners = yes
+		build_bonuses_on_religious_traits = yes
+		extra_piety_from_temple_construction = yes
+		renown_from_temple_construction = yes
+		merciful_blinding = yes
+		monastic_expectations = yes
+		zealous_trait_more_common = yes
+		humble_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+	}
+	character_modifier = {
+		development_growth_factor = 0.2
+		monthly_county_control_change_factor = -0.1
+		build_speed = 0.2
+		fertility = -0.75
+		build_gold_cost = 0.1
+		ai_zeal = 25
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			# Ethos requirements.
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_bureaucratic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_bureaucratic_desc
+				}
+			}
+			# Requires battlements innovation.
+			if = {
+				limit = {
+					NOT = { has_innovation = innovation_battlements }
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_battlements_innovation_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = { 
+		value = 0 
+	}
+}
+
+tradition_pagan = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = pagan.dds
+	}	
+	can_pick = {
+		NOR = { 
+			has_cultural_tradition = tradition_hammerite 
+			has_government = theocracy_government
+		}
+	}	
+	parameters = {
+		enable_garden_duchy_building = yes
+		can_appoint_court_gardener = yes
+		can_recruit_gardeners = yes
+		peasant_and_populist_factions_less_common = yes
+		herbalist_traits_more_common = yes
+		hunting_traits_more_valued = yes
+		hunting_traits_more_common = yes
+		herbalist_trait_gives_bonuses = yes
+		forest_fighter_trait_more_common = yes
+		wounds_and_scars_give_bonuses = yes
+	}
+	character_modifier = {
+		development_growth_factor = 0.2
+		fertility = 1
+		monthly_county_control_change_factor = -0.1
+	}	
+	county_modifier = {
+		forest_development_growth_factor = 0.15
+	}
+	province_modifier = {
+		forest_construction_gold_cost = -0.15
+		forest_holding_construction_gold_cost = -0.15
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			# Ethos requirements.
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_bureaucratic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_bureaucratic_desc
+				}
+			}
+			# Requires battlements innovation.
+			if = {
+				limit = {
+					NOT = { has_innovation = innovation_battlements }
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_battlements_innovation_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = { 
+		value = 0 
+	}
+}
+
+tradition_germanic = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = mediterranean
+		4 = runestone.dds
+	}
+	can_pick = {
+		OR ={
+			has_cultural_pillar = heritage_central_germanic
+			has_cultural_pillar = heritage_frankish
+			has_cultural_pillar = heritage_north_germanic
+			has_cultural_pillar = heritage_west_germanic
+			has_cultural_pillar = heritage_east_germanic
+		}
+	}
+	parameters = {
+		number_of_spouses = 3
+		number_of_consorts = 1
+		martial_education_more_valued = yes
+		cheaper_to_hybridize = yes
+		learns_more_languages = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.25
+	}
+	character_modifier = {
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_sub_realm_county = {
+								percent >= 0.9
+								culture = scope:character.culture
+								any_county_province = {
+									has_holding_type = city_holding
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = 90_percent_cities_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_horse_special = {
+	category = combat
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = horses.dds
+	}	
+	can_pick = {
+		custom_tooltip = {
+			text = culture_in_plains_or_steppe_terrain_desc
+			any_culture_county = {
+				percent >= 0.4
+				any_county_province = {
+					OR = {
+						terrain = steppe
+						geographical_region = world_steppe
+					}
+				}
+			}
+		}
+	}	
+	parameters = {
+		pastures_building_bonuses = yes
+		unlock_maa_horse_archers = yes
+		can_recruit_open_specialist = yes
+	}
+	character_modifier = {
+		negate_health_penalty_add = 0.15
+		prowess = 1
+		light_cavalry_damage_mult = 0.1
+		light_cavalry_screen_mult = 0.1
+		steppe_cancel_negative_supply = yes
+		supply_duration = 1
+		movement_speed = 0.1
+		light_cavalry_maintenance_mult = -0.15
+		light_cavalry_recruitment_cost_mult = -0.25
+		heavy_cavalry_maintenance_mult = -0.15
+		heavy_cavalry_recruitment_cost_mult = -0.25
+		archer_cavalry_maintenance_mult = -0.15
+		archer_cavalry_recruitment_cost_mult = -0.25
+		pikemen_damage_mult = -0.1
+		pikemen_toughness_mult = -0.1
+		archers_damage_mult = -0.1
+		archers_toughness_mult = -0.1
+		counter_efficiency = 0.15
+		pursue_efficiency = 0.15
+		skirmishers_damage_mult = -0.2
+		skirmishers_toughness_mult = -0.1
+		light_cavalry_damage_mult = -0.15
+		light_cavalry_toughness_mult = -0.1
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.6
+							any_county_province = {
+								OR = {
+									terrain = plains
+									terrain = steppe
+									geographical_region = world_steppe
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = culture_in_plains_or_steppe_terrain_percentage_desc
+				}
+			}			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}	
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							percent >= 0.6
+							culture = scope:character.culture
+							any_county_province = {
+								OR = {
+									terrain = plains
+									terrain = steppe
+								}
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = { # Reduce chance slightly if the culture has access to other "cavalry" types
+				OR = {
+					has_innovation = innovation_war_camels
+					has_innovation = innovation_elephantry
+				}
+			}
+			multiply = 0.8
+		}
+	}
+}

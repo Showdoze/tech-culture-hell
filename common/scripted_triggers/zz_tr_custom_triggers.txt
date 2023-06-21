@@ -1,0 +1,87 @@
+
+unlock_tanistry_elective_trigger = {
+	culture = {
+		has_innovation = innovation_tanistry_elective
+	}
+	custom_description = {
+		OR = {
+			has_government = tribal_government
+			has_government = clan_government
+		}
+	}
+}
+
+unlock_scandinavian_elective_trigger = {
+	culture = {
+		has_innovation = innovation_scandinavian_elective
+	}
+	custom_description = {
+		OR = {
+			has_government = feudal_government
+			has_government = tribal_government
+		}
+	}
+}
+
+unlock_saxon_elective_trigger = {
+	culture = {
+		has_innovation = innovation_saxon_elective
+	}
+	custom_description = {
+		OR = {
+			has_government = feudal_government
+			has_government = tribal_government
+		}
+	}
+}
+
+tr_access_single_heir_succession_law_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_chinese }
+		culture = { has_cultural_pillar = heritage_japanese }
+    }
+}
+
+can_raid_trigger = {
+	OR = {
+	is_ai = no
+	    AND = {
+		    is_ai = yes
+			has_government = tribal_government
+	    }
+		AND = {
+		    is_ai = yes
+			faith = iconoclast
+	    }
+		AND = {
+		    is_ai = yes
+			faith = qarmatian
+	    }
+		AND = {
+		    is_ai = yes
+			has_trait = reaver
+	    }
+		AND = {
+		    is_ai = yes
+			has_trait = greedy
+			has_trait = sadistic
+			in_debt = yes
+	    }
+		AND = {
+		    is_ai = yes
+			has_trait = viking
+	    }
+	}
+}
+
+over_domain_limit_trigger = {
+	always = no
+}
+
+vastly_over_domain_limit_trigger = {
+	always = no
+}
+
+has_unelectable_government_trigger = {
+    always = no
+}

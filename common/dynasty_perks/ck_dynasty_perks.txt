@@ -1,0 +1,148 @@
+﻿# ROMAN LEGACIES
+
+ser_roman_legacy_1 = { # Legacy
+	legacy = ser_roman_legacy_track
+
+	character_modifier = {
+		diplomatic_range_mult = 0.3
+		positive_random_genetic_chance = 0.30
+		positive_inactive_inheritance_chance = 0.30
+		ai_boldness = medium_positive_ai_value
+		ai_energy = medium_positive_ai_value
+	}
+
+	effect = {
+		# More likely to accept Demand Conversion requests.
+		custom_description_no_bullet = { text = fp1_adventure_legacy_3_effect }
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				has_culture = culture:roman
+			}
+			multiply = 10
+		}
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+ser_roman_legacy_2 = { # Reinvigirated
+	legacy = ser_roman_legacy_track
+
+	effect = {
+		custom_description_no_bullet = {
+			text = erudition_legacy_4_effect
+		}
+	}
+	
+	character_modifier = {
+		faith_creation_piety_cost_mult = -0.2
+	}
+
+	doctrine_character_modifier = {
+		name = erudition_legacy_4_modifier_name
+		doctrine = doctrine_no_head
+		domain_tax_same_faith_mult = 0.05
+	}
+	doctrine_character_modifier = {
+		name = erudition_legacy_4_modifier_name
+		doctrine = doctrine_spiritual_head
+		religious_head_opinion = 15
+	}
+	doctrine_character_modifier = {
+		name = erudition_legacy_4_modifier_name
+		doctrine = doctrine_temporal_head
+		tolerance_advantage_mod = 5
+	}
+}
+
+ser_roman_legacy_3 = { # Revised-Reform's
+	legacy = ser_roman_legacy_track
+
+	character_modifier = {
+		development_growth_factor = 0.2
+		powerful_vassal_opinion = 5
+		counter_efficiency = 0.15
+		advantage = 5
+	}
+}
+
+ser_roman_legacy_4 = { # Ruler's
+	legacy = ser_roman_legacy_track
+
+	character_modifier = {
+		name = blood_legacy_3_modifier
+		negative_random_genetic_chance = -0.30
+		negative_inactive_inheritance_chance = -0.30
+		life_expectancy = 5
+	}
+}
+
+ser_roman_legacy_5 = { # Centralized Rule
+	legacy = ser_roman_legacy_track
+
+	character_modifier = {
+		monthly_county_control_change_add = 0.2
+	    build_gold_cost = -0.1
+		holding_build_gold_cost = -0.1
+		domain_limit = 4
+	}
+}
+
+# Ocean legacy
+
+ocean_legacy_1 = {#BloodOfWarriors
+	legacy = ocean_legacy_track
+	character_modifier = {
+		coastal_advantage = 1
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+ocean_legacy_2 = {#BloodOfWarriors
+	legacy = ocean_legacy_track
+	character_modifier = {
+		coastal_advantage = 2
+		no_water_crossing_penalty = yes
+	}
+}
+
+ocean_legacy_3 = {#BloodOfWarriors
+	legacy = ocean_legacy_track
+	character_modifier = {
+		coastal_advantage = 3
+		embarkation_cost_mult = -0.2
+	}
+}
+
+ocean_legacy_4 = {#BloodOfWarriors
+	legacy = ocean_legacy_track
+	character_modifier = {
+		coastal_advantage = 4
+		naval_movement_speed_mult = 0.5
+	}
+}
+
+ocean_legacy_5 = {#BloodOfWarriors
+	legacy = ocean_legacy_track
+	character_modifier = {
+		coastal_advantage = 10
+		naval_movement_speed_mult = 1.5
+		no_disembark_penalty = yes
+	}
+}

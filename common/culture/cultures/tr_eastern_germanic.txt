@@ -1,0 +1,82 @@
+ostrogothic = {
+	color = { 0 51 51 }
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+	created = 399.5.1
+	parents = { gothic }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_east_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_battlefield_looters
+		tradition_mountaineers
+		tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+	}
+	name_list = name_list_ostrogothic
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+		10 = mediterranean
+	}
+}
+
+gothic = {
+	color = { 0 51 51 }
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+	
+	ethos = ethos_stoic
+	heritage = heritage_east_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_tribe_unity
+		tradition_diasporic
+		tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+	}	
+	name_list = name_list_ostrogothic
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		3 = caucasian_ginger
+		3 = caucasian_brown_hair
+	}
+}
+
+vandal = {
+	color = { 252 216 24 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_east_germanic
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_battlefield_looters
+		tradition_practiced_pirates
+		tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+	}	
+	name_list = name_list_vandal	
+	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		50 = slavic_blond
+		50 = slavic_ginger
+	}
+}

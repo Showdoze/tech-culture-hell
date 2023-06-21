@@ -1,0 +1,76 @@
+#### Local Types ####
+@music = "gfx/interface/icons/culture_innovations/innovation_music.dds"
+
+innovation_flute = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @music
+
+	modifier = {
+		stress_loss_mult = 0.1
+		different_culture_opinion = 5
+	}
+}
+innovation_drum = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @music
+
+	modifier = {
+		stress_loss_mult = 0.1
+		men_at_arms_maintenance = -0.01
+		different_culture_opinion = 2
+	}
+}
+innovation_piano = {
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @music
+
+	modifier = {
+		general_opinion = 5
+		diplomacy = 2
+	}
+}
+innovation_song = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @music
+
+	modifier = {
+		stress_loss_mult = 0.2
+		different_culture_opinion = 10
+	}
+}
+innovation_bagpipes = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @music
+	region = custom_scotland
+
+	modifier = {
+		stress_loss_mult = 0.1
+		men_at_arms_maintenance = -0.01
+		different_culture_opinion = 2
+	}
+}
+innovation_guitar = {
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @music
+
+	modifier = {
+		stress_loss_mult = 0.15
+		general_opinion = 10
+	}
+}
+innovation_stringed_instruments = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @music
+
+	modifier = {
+		stress_loss_mult = 0.1
+		general_opinion = 5
+	}
+}

@@ -1,0 +1,149 @@
+murderer = {
+	general_opinion = -25
+	fame = yes	
+    triggered_opinion = {
+		parameter = kinslaying_close_kin_crime
+		opinion_modifier = kinslayer_crime_dynasty
+		same_dynasty = yes
+	}
+	ruler_designer_cost = -10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_murderer_desc
+			}
+			desc = trait_murderer_character_desc
+		}
+	}
+}
+dwarf = {
+	prowess = -4
+	opposites = {
+		giant
+	}	
+	inherit_chance = 25
+	both_parent_has_trait_inherit_chance = 75
+	genetic = yes
+	physical = yes
+	enables_inbred = yes
+	birth = 0.5
+	random_creation = 0.5	
+	attraction_opinion = -20
+	same_opinion = 20	
+	ruler_designer_cost = -10
+    if = {
+        limit = {
+            culture = { has_culture_tradition = tradition_dwarf }
+			birth = 1
+			inherit_chance = 100
+			both_parent_has_trait_inherit_chance = 100
+        }
+    }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dwarf_desc
+			}
+			desc = trait_dwarf_character_desc
+		}
+	}
+}
+giant = {
+	opposites = {
+		dwarf
+	}
+	prowess = 6
+	health = -0.25
+	inherit_chance = 25
+	both_parent_has_trait_inherit_chance = 75
+	genetic = yes
+	physical = yes
+	enables_inbred = yes
+	birth = 0.5
+	random_creation = 0.5	
+	attraction_opinion = -5
+	tribal_government_opinion = 10
+	vassal_opinion = 5
+	same_opinion = 20
+    if = {
+        limit = {
+            culture = { has_culture_tradition = tradition_giant }
+            health = 0.25
+			birth = 1
+			inherit_chance = 100
+			both_parent_has_trait_inherit_chance = 100
+        }
+    }
+	ruler_designer_cost = 20
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_giant_desc
+			}
+			desc = trait_giant_character_desc
+		}
+	}
+}
+scaly = {
+	fertility = -0.2	
+	#inherit_chance = 100 # dominant
+	inherit_chance = 25
+	both_parent_has_trait_inherit_chance = 75
+	genetic = yes
+	physical = yes
+	enables_inbred = yes
+	birth = 0.5
+	random_creation = 0.5	
+	attraction_opinion = -30
+	vassal_opinion = -10
+	same_opinion = 10	
+	dread_baseline_add = 10	
+	ruler_designer_cost = -25
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_scaly_desc
+			}
+			desc = trait_scaly_character_desc
+		}
+	}
+}
+
+albino = {	
+	#inherit_chance = 100 # recessive
+	inherit_chance = 25
+	both_parent_has_trait_inherit_chance = 75
+	genetic = yes
+	physical = yes
+	birth = 0.5
+	random_creation = 0.5	
+	general_opinion = -10
+	same_opinion = 10	
+	dread_baseline_add = 15	
+	ruler_designer_cost = -25
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_albino_desc
+			}
+			desc = trait_albino_character_desc
+		}
+	}
+}

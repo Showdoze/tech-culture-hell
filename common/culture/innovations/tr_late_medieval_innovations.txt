@@ -1,0 +1,182 @@
+
+#### Local Types ####
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+@administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
+@administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
+@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
+@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
+@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+@leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
+@raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
+@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
+@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
+@levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
+@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
+@maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
+@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
+@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
+@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
+@hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
+@longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
+@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
+@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
+@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
+@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
+@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
+@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
+@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
+@misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+
+@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
+@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
+@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
+@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+@metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
+
+innovation_universe_rotation = {
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @misc_inventions
+
+	can_progress = {
+		has_innovation = innovation_earth_chart
+	}
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+		development_growth = 0.1
+		learning = 2
+    }
+}
+innovation_primogeniture = {
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @majesty_01
+	
+	modifier = {
+		monthly_prestige_gain_mult = 0.4
+		development_growth = 0.1
+		diplomacy = 1
+		intrigue = 1
+		dynasty_opinion = 5
+    }
+	custom = more_zealot
+	flag = global_regular
+	flag = late_medieval_era_regular
+}
+innovation_rectilinear_schiltron = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_01
+	region = ghw_region_celtic
+
+	unlock_maa = schiltron
+	flag = global_maa
+}
+innovation_zweihanders = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_01
+	region = ghw_region_germany
+
+	unlock_maa = landsknecht
+	flag = global_maa
+}
+innovation_longbows = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_02
+	region = custom_england
+	
+	unlock_maa = longbowmen
+	flag = global_maa
+}
+innovation_adaptive_militia = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_02
+	region = custom_netherlands
+
+    modifier = {
+		martial = 1
+		advantage = 5
+	}
+	unlock_maa = goedendag
+	flag = global_maa
+}
+innovation_valets = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_01
+	region = dlc_fp1_region_western_adventure_targets_northern_france_brittany
+
+	unlock_maa = gendarme
+	flag = global_maa
+}
+innovation_magna_carta = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_europe_west_britannia
+	icon = @administration_1
+
+	modifier = {
+		vassal_tax_contribution_mult = -0.05
+		direct_vassal_opinion = 15
+	}
+}
+innovation_yassa = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_steppe_east
+	icon = @leadership_2
+
+	modifier = {
+		monthly_county_control_change_factor = 0.05
+		different_faith_opinion = 10
+		diplomacy = 1
+	}
+}
+innovation_mali_trade = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_africa_west
+	icon = @nobility_03
+
+	modifier = {
+		domain_tax_mult = 0.05
+		vassal_tax_contribution_mult = 0.05
+		stewardship = 1
+	}
+}
+innovation_mudejar_art = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_europe_west_iberia
+	icon = @administration_3
+
+	modifier = {
+	   monthly_prestige_gain_mult = 0.05
+	   different_culture_opinion = 10
+   }
+	flag = global_regional
+	flag = late_medieval_era_regional
+}
+innovation_shahna_i_mandi = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_india
+	icon = @leadership_1
+
+	modifier = {
+		army_maintenance_mult = -0.10
+	}
+}
+innovation_russkaya_pravda = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	region = world_europe_east
+	icon = @administration_2
+
+	modifier = {
+		monthly_county_control_change_factor = 0.1
+	}
+}

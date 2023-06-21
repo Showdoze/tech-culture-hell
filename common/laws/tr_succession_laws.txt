@@ -1,0 +1,528 @@
+﻿succession_order_laws = {
+	flag = succession_order_laws
+
+	confederate_partition_succession_law = {
+		can_keep = {
+			always = yes
+		}
+		can_pass = {
+            always = yes
+		}
+		can_have = {
+			OR = {
+				has_realm_law = crown_authority_0
+				has_realm_law = crown_authority_1
+				has_realm_law = crown_authority_2
+				has_realm_law = crown_authority_3
+				has_realm_law = tribal_authority_0
+				has_realm_law = tribal_authority_1
+				has_realm_law = tribal_authority_2
+				has_realm_law = tribal_authority_3
+			}
+		}
+		should_start_with = {
+			OR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+			}
+			culture = {
+				NOR = {
+					has_innovation = innovation_hereditary_rule
+					has_innovation = innovation_heraldry
+				}
+			}
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			create_primary_tier_titles = yes
+		}
+		flag = partition_succession_law
+		modifier = {
+			direct_vassal_opinion = 5
+			dynasty_house_opinion = 5
+			eligible_child_opinion = 10
+		}
+		pass_cost = {
+			prestige = 250
+		}
+	}
+	
+	partition_succession_law = {
+		can_keep = {
+			always = yes
+		}
+		can_pass = {
+            always = yes
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_1"
+				    OR = {
+				    has_realm_law = crown_authority_1
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_1
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			OR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+			}
+			culture = {
+				NOT = {
+					has_innovation = innovation_heraldry
+				}
+			}
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+		}
+		flag = partition_succession_law
+		modifier = {
+			direct_vassal_opinion = 5
+			player_heir_opinion = 10
+			eligible_child_except_player_heir_opinion = 5
+		}
+		pass_cost = {
+			prestige = 250
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = confederate_partition_succession_law }
+				value = 1
+			}
+		}
+	}
+
+	high_partition_succession_law = {
+		can_keep = {
+			always = yes
+		}
+		can_pass = {
+			always = yes
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_1"
+				    OR = {
+				    has_realm_law = crown_authority_1
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_1
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			OR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+
+			}
+			culture = {
+				has_innovation = innovation_heraldry
+				NOT = {
+					has_innovation = innovation_hereditary_rule
+				}
+			}
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			primary_heir_minimum_share = 0.5
+		}
+		flag = partition_succession_law
+		modifier = {
+			direct_vassal_opinion = 5
+			player_heir_opinion = 15
+		}
+		pass_cost = {
+			prestige = 250
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+					}
+				}
+				value = 2
+			}
+		}
+	}
+	
+	single_heir_succession_law = {
+		can_keep = {
+			always = yes
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		can_pass = {
+			always = yes
+		}
+		should_start_with = {
+			OR = {
+			    historical_succession_access_single_heir_succession_law_trigger = yes
+			    tr_access_single_heir_succession_law_trigger = yes
+		    }
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+		}
+		flag = advanced_succession_law
+		modifier = {
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = 500
+		}
+		revoke_cost = {
+			prestige = 500
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+	}
+	
+	single_heir_succession_law_youngest = {
+		can_keep = {
+			can_keep_single_heir_youngest_succession_law_trigger = yes
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		can_pass = {
+            always = yes
+		}
+		should_start_with = {
+			OR = {
+			    historical_succession_access_single_heir_succession_law_trigger = yes
+			    tr_access_single_heir_succession_law_trigger = yes
+		    }
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = youngest
+			title_division = single_heir
+		}
+		
+		flag = advanced_succession_law
+		modifier = {
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = 500
+		}
+		revoke_cost = {
+			prestige = 500
+		}
+	}
+	
+	single_heir_dynasty_house = {
+		can_keep = {
+			always = yes
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		can_pass = {
+			always = yes
+		}
+		should_start_with = {
+			OR = {
+			    historical_succession_access_single_heir_succession_law_trigger = yes
+			    tr_access_single_heir_succession_law_trigger = yes
+		    }
+			NOT = {
+				has_government = republic_government
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = dynasty_house
+			rank = oldest
+			title_division = single_heir
+		}
+		
+		flag = advanced_succession_law
+		modifier = {
+			eligible_child_except_player_heir_opinion = -15
+			direct_vassal_opinion = -5
+			dynasty_house_opinion = 5
+		}
+		pass_cost = {
+			prestige = 500
+		}
+		revoke_cost = {
+			prestige = 500
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					primary_title.tier > tier_county
+					OR = {
+						#West Slavic
+						has_culture = culture:czech
+						has_culture = culture:slovien
+					}
+				}
+				value = 2
+			}
+		}
+	}
+
+	bishop_theocratic_succession_law = {
+		can_keep = {
+			always = yes # same as can_have
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			has_government = theocracy_government
+		}
+		can_pass = {
+			always = yes
+		}
+		succession = {
+            order_of_succession = election
+            election_type = feudal_elective
+		}
+		pass_cost = {
+			piety = 500
+		}
+		revoke_cost = {
+			piety = 500
+		}
+		on_pass = {
+			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 15
+	}
+
+	holy_order_succession_law = {
+		can_keep = {
+			always = yes # same as can_have
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			has_government = holy_order_government
+		}
+		can_pass = {
+			always = yes
+		}
+		succession = {
+            order_of_succession = election
+            election_type = feudal_elective
+		}
+		pass_cost = {
+			piety = 500
+		}
+		revoke_cost = {
+			piety = 500
+		}
+		on_pass = {
+			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 10
+	}
+	
+	mercenary_company_succession_law = {
+		can_keep = {
+			always = yes
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			has_government = mercenary_government
+		}
+		can_pass = {
+			always = yes
+		}
+		succession = {
+            order_of_succession = election
+            election_type = feudal_elective
+		}
+		on_pass = {
+			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 5
+	}
+
+	city_succession_law = {
+		can_keep = {
+			always = yes
+		}
+		can_have = {
+			custom_tooltip = {
+				subject = root
+				text = "DESC_REQ_CROWN_2"
+				    OR = {
+				    has_realm_law = crown_authority_2
+				    has_realm_law = crown_authority_3
+				    has_realm_law = tribal_authority_2
+				    has_realm_law = tribal_authority_3
+			    }
+			}
+		}
+		should_start_with = {
+			has_government = republic_government
+		}
+		succession = {
+            order_of_succession = election
+            election_type = feudal_elective
+		}
+		can_pass = {
+			always = yes
+		}
+		pass_cost = {
+			prestige = 500
+		}
+		revoke_cost = {
+			prestige = 500
+		}
+		on_pass = {
+			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 5
+	}
+}

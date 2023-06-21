@@ -1,0 +1,629 @@
+﻿
+namespace = convert_resources_events
+
+convert_resources_events.01 = {
+	type = character_event
+	title = convert_resources_events.01.t
+	desc = convert_resources_events.01.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events.01.a
+		trigger = {
+			prestige >= 300
+		}
+		custom_tooltip = convert_resources_events.01.a.tt
+		trigger_event = {
+			id = convert_resources_events.02
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.b
+		trigger = {
+			piety >= 300
+		}
+		custom_tooltip = convert_resources_events.01.b.tt
+		trigger_event = {
+			id = convert_resources_events.03
+		}
+	}
+	
+	option = {
+		trigger = {
+			age < 50
+			health >= 3
+		}
+		name = convert_resources_events.01.c
+		custom_tooltip = convert_resources_events.01.c.tt
+		trigger_event = {
+			id = convert_resources_events.04
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				AND = {
+					age >= 50
+					health >= 3
+				}
+				AND = {
+					age < 50
+					health < 3
+				}
+			}
+		}
+		name = convert_resources_events.01.d
+		custom_tooltip = convert_resources_events.01.d.tt
+		trigger_event = {
+			id = convert_resources_events.05
+		}
+	}
+	
+	option = {
+		trigger = {
+			age >= 50
+			health < 3
+		}
+		name = convert_resources_events.01.e
+		custom_tooltip = convert_resources_events.01.e.tt
+		trigger_event = {
+			id = convert_resources_events.08
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.f
+		custom_tooltip = convert_resources_events.01.f.tt
+		trigger_event = {
+			id = convert_resources_events.06
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.g
+		trigger = {
+			gold >= 150
+		}
+		custom_tooltip = convert_resources_events.01.g.tt
+		trigger_event = {
+			id = convert_resources_events.07
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.01.h
+		custom_tooltip = convert_resources_events.01.h.tt
+	}
+}
+
+convert_resources_events.02 = {
+	type = character_event
+	title = convert_resources_events.02.t
+	desc = convert_resources_events.02.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events.02.a
+		add_gold = 150
+		add_prestige = -300
+	}
+	
+	option = {
+		trigger = {
+			prestige >= 500
+		}
+		name = convert_resources_events.02.b
+		add_gold = 300
+		add_prestige = -500
+	}
+	
+	option = {
+		trigger = {
+			prestige >= 1000
+		}
+		name = convert_resources_events.02.c
+		add_gold = 650
+		add_prestige = -1000
+	}
+	
+	option = {
+		trigger = {
+			prestige >= 1500
+		}
+		name = convert_resources_events.02.d
+		add_gold = 1000
+		add_prestige = -1500
+	}
+	
+	option = {
+		name = convert_resources_events.02.e
+		custom_tooltip = convert_resources_events.02.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.03 = {
+	type = character_event
+	title = convert_resources_events.03.t
+	desc = convert_resources_events.03.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events.03.a
+		add_gold = 150
+		add_piety = -300
+	}
+	
+	option = {
+		trigger = {
+			piety >= 500
+		}
+		name = convert_resources_events.03.b
+		add_gold = 300
+		add_piety = -500
+	}
+	
+	option = {
+		trigger = {
+			piety >= 1000
+		}
+		name = convert_resources_events.03.c
+		add_gold = 650
+		add_piety = -1000
+	}
+	
+	option = {
+		trigger = {
+			piety >= 1500
+		}
+		name = convert_resources_events.03.d
+		add_gold = 1000
+		add_piety = -1500
+	}
+	
+	option = {
+		name = convert_resources_events.03.e
+		custom_tooltip = convert_resources_events.03.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.04 = {
+	type = character_event
+	title = convert_resources_events.04.t
+	desc = convert_resources_events.04.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan
+			}
+		}
+		name = convert_resources_events.04.a
+		custom_tooltip = convert_resources_events.04.a.tt
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan
+			years = 5
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan
+			}
+		}
+		name = convert_resources_events.04.b
+		custom_tooltip = convert_resources_events.04.b.tt
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan
+			years = 6
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan
+			}
+		}
+		name = convert_resources_events.04.c
+		custom_tooltip = convert_resources_events.04.c.tt
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan
+			years = 10
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan
+			}
+		}
+		name = convert_resources_events.04.d
+		custom_tooltip = convert_resources_events.04.d.tt
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan
+			years = 15
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.04.e
+		custom_tooltip = convert_resources_events.04.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.05 = {
+	type = character_event
+	title = convert_resources_events.05.t
+	desc = convert_resources_events.05.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan_expensive
+			}
+		}
+		name = convert_resources_events.05.a
+		custom_tooltip = convert_resources_events.05.a.tt
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan_expensive
+			years = 3
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan_expensive
+			}
+		}
+		name = convert_resources_events.05.b
+		custom_tooltip = convert_resources_events.05.b.tt
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan_expensive
+			years = 4
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan_expensive
+			}
+		}
+		name = convert_resources_events.05.c
+		custom_tooltip = convert_resources_events.05.c.tt
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan_expensive
+			years = 8
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan_expensive
+			}
+		}
+		name = convert_resources_events.05.d
+		custom_tooltip = convert_resources_events.05.d.tt
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan_expensive
+			years = 10
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.05.e
+		custom_tooltip = convert_resources_events.05.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.06 = {
+	type = character_event
+	title = convert_resources_events.06.t
+	desc = convert_resources_events.06.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events.06.a
+		add_gold = 150
+		add_dread = 10
+		add_tyranny = 10
+	}
+
+	option = {
+		name = convert_resources_events.06.b
+		add_gold = 300
+		add_dread = 20
+		add_tyranny = 20
+	}
+	
+	option = {
+		name = convert_resources_events.06.c
+		add_gold = 500
+		add_dread = 30
+		add_tyranny = 35
+	}
+	
+	option = {
+		name = convert_resources_events.06.d
+		add_gold = 1000
+		add_dread = 40
+		add_tyranny = 45
+	}
+	
+	option = {
+		name = convert_resources_events.06.e
+		custom_tooltip = convert_resources_events.05.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.07 = {
+	type = character_event
+	title = convert_resources_events.07.t
+	desc = convert_resources_events.07.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = gain_from_small_loan
+			}
+		}
+		name = convert_resources_events.07.a
+		custom_tooltip = convert_resources_events.07.a.tt
+		remove_short_term_gold = 150
+		add_character_modifier = {
+			modifier = gain_from_small_loan
+			years = 5
+		}
+	}
+
+	option = {
+		name = convert_resources_events.07.b
+		trigger = {
+			gold >= 300
+			NOT = {
+				has_character_modifier = gain_from_reasonable_loan
+			}
+		}
+		custom_tooltip = convert_resources_events.07.b.tt
+		remove_short_term_gold = 300
+		add_character_modifier = {
+			modifier = gain_from_reasonable_loan
+			years = 6
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.c
+		trigger = {
+			gold >= 500
+			NOT = {
+				has_character_modifier = gain_from_considerable_loan
+			}
+		}
+		custom_tooltip = convert_resources_events.07.c.tt
+		remove_short_term_gold = 500
+		add_character_modifier = {
+			modifier = gain_from_considerable_loan
+			years = 8
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.d
+		trigger = {
+			gold >= 1000
+			NOT = {
+				has_character_modifier = gain_from_large_loan
+			}
+		}
+		custom_tooltip = convert_resources_events.07.d.tt
+		remove_short_term_gold = 1000
+		add_character_modifier = {
+			modifier = gain_from_large_loan
+			years = 14
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.07.e
+		custom_tooltip = convert_resources_events.07.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}
+
+convert_resources_events.08 = {
+	type = character_event
+	title = convert_resources_events.08.t
+	desc = convert_resources_events.08.desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan_very_expensive
+			}
+		}
+		name = convert_resources_events.08.a
+		custom_tooltip = convert_resources_events.08.a.tt
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan_very_expensive
+			years = 2
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan_very_expensive
+			}
+		}
+		name = convert_resources_events.08.b
+		custom_tooltip = convert_resources_events.08.b.tt
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan_very_expensive
+			years = 3
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan_very_expensive
+			}
+		}
+		name = convert_resources_events.08.c
+		custom_tooltip = convert_resources_events.08.c.tt
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan_very_expensive
+			years = 4
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan_very_expensive
+			}
+		}
+		name = convert_resources_events.08.d
+		custom_tooltip = convert_resources_events.08.d.tt
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan_very_expensive
+			years = 6
+		}
+	}
+	
+	option = {
+		name = convert_resources_events.08.e
+		custom_tooltip = convert_resources_events.08.e.tt
+		trigger_event = {
+			id = convert_resources_events.01
+		}
+	}
+}

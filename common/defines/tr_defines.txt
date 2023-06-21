@@ -1,0 +1,77 @@
+﻿NPathFinding = {
+	EMBARK_COST = 10
+	DISEMBARK_COST = 10
+}
+
+NCulture = {
+	MINIMUM_INNOVATIONS_TO_NEXT_ERA = 0.3									# Percentage of innovations to be able to go to the next era
+	FIRST_ERA_START_YEAR = 1												# When did the first era start?
+
+	INNOVATION_PROGRESS_CHANCE_FROM_FASCINATION_PER_LEARNING_LEVEL = 5
+
+	INNOVATION_REGIONAL_PERCENTAGE = 0.01									# Minimum percentage of region for regional innovations to get regional exposure
+	INNOVATION_CULTURE_PERCENTAGE_IN_REGION = 0.1							# Minimum percentage for a culture in a region to be exposed to get regional exposure
+	REFORMATION_PROGRESS_GAIN_BASE = 5                                      # The base monthly progress gain when reforming. Finished at 100. Base speed at 1.66 results in minimum 5 years.
+	REFORMATION_MAX_YEARS = 10                                              # The slowdown per county will be capped at a value that limits the max years a reformation can take to this value. Replacing traditions will go over this limit.
+}
+
+NTitle = {
+	CREATE_TITLE_COUNTIES_PERCENTAGE = { 0 0 0 0.4 0.5 0.5 }
+	CREATE_TITLE_GOLD_COST = { 0 0 0 100 200 300 }                          # remember to update values in create_duchy_title_value etc. in 01_dynamic_values.txt!
+}
+
+NDynasty = {
+	MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY = 0.5
+	MONTHLY_PRESTIGE_GAIN_MULT_FOR_VASSALS_OF_SAME_DYNASTY_SPOUSE 0.5
+
+	PERK_COST_MULTIPLIER = 250	                                            # Halved the increase of cost of perks
+}
+
+NDomain = {
+	ABOVE_LIMIT_LEVY_PENALTY = 0.1				      # How much levies are reduced per holding over the limit
+	ABOVE_LIMIT_MAX_LEVY_PENALTY = 0.4			      # How much levies can be reduced at most
+	ABOVE_LIMIT_TAX_INCOME_PENALTY = 0.1		      # How much tax income from domain is reduced per holding over the limit
+	ABOVE_LIMIT_MAX_TAX_INCOME_PENALTY = 0.4	      # How much tax income from domain can be reduced at most
+	STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE = 5	  # domain limit += floor( <stewardship skill> / STEWARDSHIP_SKILL_FOR_DOMAIN_LIMIT_INCREASE )
+	LEVIES_AT_ZERO_COUNTY_CONTROL = 0.1			      # How many % levies do you get at 0 county control? Interpolated between this value and 100% when between 0 and 100
+	LEVIES_AT_MAX_COUNTY_DEVELOPMENT = 0.6		      # How many % levies bonus do you get at 100 county development? Interpolated between this value and 0% when between 0 and 100
+	TAX_AT_MAX_COUNTY_DEVELOPMENT = 0.6			      # How much % tax bonus do you get at 100 county development? Interpolated between this value and 0% when between 0 and 100
+}
+
+NCharacterOpinion = {
+	IS_ON_THE_COUNCIL = 15
+
+	MAX_OPINION = 100
+	MIN_OPINION = -100
+
+	SAME_CULTURE = 0
+	DIFFERENT_CULTURE_SAME_GROUP = 0
+	DIFFERENT_CULTURE = 0
+	SAME_REALM_DIFFERENT_CULTURE_SAME_GROUP = -5
+	SAME_REALM_DIFFERENT_CULTURE = -15
+
+	SAME_TRAIT = 20
+	OPPOSITE_TRAIT = -20
+	
+	SKILL_DIPLOMACY_MULT = 5	# opinion = round( ( <diplo skill> - SKILL_MODIFIER_OFFSET ) * SKILL_DIPLOMACY_MULT )
+
+	TYRANNY_MULTIPLIER = -1.5
+
+	POWERFUL_VASSAL_WITHOUT_COUNCIL_POSITION = -10
+
+	DOMAIN_OVERRUN = 0
+
+	VIRTUOUS_TRAIT = 10
+
+	SINFUL_TRAIT = -10
+
+	MAX_DUCHIES_BEFORE_PENALTY = 0						# How many duchies are vassals fine with you having? If you're a duke, they don't care; only if you're king or above
+	
+	TOO_MANY_DUCHIES_OPINION = 0
+	
+	VASSAL_SIZE_ANGER_THRESHOLD = 0.5
+}
+
+NWar = {
+	OCCUPIED_CAPITAL_WAR_SCORE = 50 				    # Bonus war score from occupying the enemy capital
+}

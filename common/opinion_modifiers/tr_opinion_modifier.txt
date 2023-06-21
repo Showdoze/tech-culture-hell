@@ -1,0 +1,61 @@
+murder_crime = {
+	opinion = -20
+	imprisonment_reason = yes
+	execute_reason = yes
+	banish_reason = yes
+}
+
+too_many_duchies_opinion_value = {
+	opinion = -5
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = ambitious }
+		} 
+		opinion = -20
+	}
+}
+sinful_trait_value = {
+	opinion = -10
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = zealous }
+		} 
+		opinion = -40
+	}
+}
+virtuous_trait_value = {
+	opinion = 10
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = zealous }
+		} 
+		opinion = 40
+	}
+}
+powerful_vassal_without_council_position_value = {
+	opinion = -20
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = ambitious }
+		} 
+		opinion = -40
+	}			
+}
+domain_overrun_value = {
+	opinion = -1
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = ambitious }
+		} 
+		opinion = -7
+	}			
+}
+vassal_size_anger_threshold_value = {
+	opinion = 0.9
+	trigger_if = {
+		limit = {
+		    scope:actor = { has_trait = ambitious }
+		} 
+		opinion = 0.3
+	}							
+}

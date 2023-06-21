@@ -1,0 +1,59 @@
+﻿# Set one of your family members as heir
+#This interaction is referenced in code! If it's renamed you have to ping a coder
+
+designate_heir_interaction = {
+
+	category = interaction_category_diplomacy
+
+	desc = designate_heir_interaction_desc
+
+	is_shown = {
+		scope:recipient = {
+			is_close_or_extended_family_of = scope:actor
+		}
+		NOR = {
+			scope:recipient = scope:actor.player_heir
+			scope:recipient = scope:actor.designated_heir
+			scope:recipient = scope:actor
+		}
+		scope:actor = {
+			OR = {
+			    has_realm_law = crown_authority_3
+			    has_realm_law = tribal_authority_3
+		    }
+		}
+	}
+
+	on_auto_accept = {
+		scope:recipient = {
+			trigger_event = char_interaction.0120
+		}
+	}
+    
+	auto_accept = yes
+	
+	cost = {
+	    prestige = {
+		    value = 1000
+		    if = {
+			    limit = { 
+				    scope:recipient = { has_trait = bastard } 
+				}
+			    value = 4000
+		    }
+	    }
+    }
+	
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				title = designate_heir_interaction_notification
+
+				left_icon = scope:actor					
+				right_icon = scope:recipient
+
+				set_designated_heir = scope:recipient
+	        }
+        }
+	}
+}

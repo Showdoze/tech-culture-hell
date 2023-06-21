@@ -1,0 +1,26 @@
+tradition_base_cost = 100
+tradition_double_base_cost = {
+	value = tradition_base_cost
+	multiply = 2
+}
+tradition_incompatible_ethos_penalty = 200
+tradition_unfulfilled_criteria_penalty = 200
+tradition_replacement_cost_factor = 1.5
+tradition_replacement_cost_factor_tooltip = {
+	value = tradition_replacement_cost_factor
+	subtract = 1
+	multiply = 100
+}
+
+tradition_replacement_cost_if_relevant = {
+	value = 1
+	if = {
+		limit = {
+			scope:replacing = yes
+		}
+		multiply = {
+			value = tradition_replacement_cost_factor
+			desc = replacing_tradition_cost_penalty_desc
+		}
+	}
+}

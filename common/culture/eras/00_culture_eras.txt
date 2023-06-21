@@ -1,0 +1,50 @@
+﻿culture_era_antiquity = {
+	year = 0
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+}
+
+culture_era_tribal = {
+	year = 1
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+}
+
+culture_era_early_medieval = {	
+	year = 2		#	900
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+}
+
+culture_era_high_medieval = {
+	year = 3	#	1050
+	invalid_for_government = tribal_government
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+	modifier = {
+		mercenary_hire_cost_mult = 0.15
+	}
+}
+
+culture_era_late_medieval = {
+	year = 4	#	1200
+	invalid_for_government = tribal_government
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+	modifier = {
+		mercenary_hire_cost_mult = 0.15
+	}
+}
+
+culture_era_renaissance = {
+	year = 5
+	invalid_for_government = tribal_government
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+}

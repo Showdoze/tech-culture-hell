@@ -1,0 +1,390 @@
+#### Local Types ####
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+@administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
+@administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
+@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
+@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
+@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+@leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
+@raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
+@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
+@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
+@levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
+@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
+@maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
+@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
+@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
+@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
+@hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
+@longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
+@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
+@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
+@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
+@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
+@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
+@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
+@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
+@misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
+@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
+@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+@metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
+@samurai = "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
+
+innovation_high_carbon = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @metal_work
+	modifier = {
+		prowess = 1
+		martial = 1
+		men_at_arms_maintenance = -0.1
+		domain_tax_mult = 0.01
+	}
+	can_progress = {
+		has_innovation = innovation_steel_work
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+}
+#civic
+innovation_gavelkind = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @administration_3
+
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+		dynasty_opinion = 10
+	}
+	character_modifier = {
+		domain_limit = 1
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+innovation_tanistry_elective = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	region = ghw_region_celtic
+	icon = @majesty_02
+
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+	}
+
+	custom = unlock_tanistry_elective
+	flag = global_regular
+	flag = tribal_era_regular
+}
+innovation_scandinavian_elective = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	region = world_europe_north
+	icon = @majesty_02
+
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+	}
+	custom = unlock_scandinavian_elective
+	flag = global_regular
+	flag = tribal_era_regular
+}
+innovation_saxon_elective = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	region = ghw_region_saxony
+	icon = @majesty_02
+
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+	}
+	custom = unlock_saxon_elective
+	flag = global_regular
+	flag = tribal_era_regular
+}
+innovation_earth_size = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+
+	can_progress = {
+		has_innovation = innovation_world_is_round
+	}
+	modifier = {
+		monthly_prestige_gain_mult = 0.2
+		movement_speed 0.1
+		learning = 1
+    }
+}
+
+#Regional
+innovation_table_of_princes = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @nobility_01
+	region = ghw_region_poland_bohemia_bavaria
+	
+	modifier = {
+		monthly_prestige_gain_mult = 0.2
+		diplomacy = 1
+		dynasty_opinion = 10
+	}	
+	flag = global_regional
+	flag = tribal_era_regional
+}
+#innovation_visigothic_codes = {
+#	group = culture_group_regional
+#	culture_era = culture_era_tribal
+#	icon = @nobility_01
+#	region = world_europe_west_iberia
+#	
+#	unlock_law = high_partition_succession_law
+#	unlock_law = equal_law
+#	custom = unlock_equal_succession_changing
+#	
+#	flag = global_regional
+#	flag = tribal_era_regional
+#}
+innovation_varangian_adventurers = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @hird
+	
+	potential = {
+		has_fp1_dlc_trigger = yes
+		OR = {
+			has_innovation = innovation_varangian_adventurers
+			has_cultural_pillar = heritage_north_germanic
+			
+			# Frankish
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norse #Norman
+			}
+			this = culture:estonian
+			any_parent_culture_or_above = {
+				this = culture:estonian #Estonian
+			}
+		}
+		NOT = { has_cultural_era_or_later = culture_era_early_medieval }
+	}
+	
+	modifier = {
+		martial = 2
+	}
+
+	custom = unlock_varangian_adventurer_cb	
+	flag = global_regional
+	flag = tribal_era_regional
+}
+innovation_longboats = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_europe_north
+	icon = @longboats
+
+	modifier = {
+		embarkation_cost_mult = -1
+		naval_movement_speed_mult = 0.75
+	}
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
+	flag = global_regional
+	flag = tribal_era_regional
+}
+innovation_african_canoes = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_africa_west
+	icon = @majesty_01
+
+	modifier = {
+		embarkation_cost_mult = -0.50
+		raid_speed = 0.2
+	}	
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
+	flag = global_regional
+	flag = tribal_era_regional
+}
+innovation_hindu_arabic_numberal = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_india
+	icon = @administration_1
+
+	modifier = {
+		development_growth_factor = 0.1
+        domain_tax_mult = 0.05
+	}
+}
+innovation_ghazal = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_middle_east
+	icon = @administration_2
+
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+	}
+}
+innovation_stirrups = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @weapons_and_armor_02
+
+	modifier = {
+		light_cavalry_damage_mult = 0.1
+		light_cavalry_toughness_mult = 0.1
+		heavy_cavalry_damage_mult = 0.1
+		heavy_cavalry_toughness_mult = 0.1
+	}
+}
+innovation_corpus_juris_civilis = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = hoc_nova_roma
+	icon = @administration_3
+
+	modifier = {
+		monthly_county_control_change_factor = 0.1
+		vassal_tax_contribution_mult = 0.1
+	}
+}
+innovation_viking_tradition = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @hird
+	region = world_europe_north
+
+	potential = {
+		has_fp1_dlc_trigger = yes
+	}
+	unlock_maa = bondi
+	unlock_maa = vigmen
+	unlock_maa = varangian_veterans
+	flag = global_maa
+}
+innovation_hird = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @weapons_and_armor_02
+	region = world_europe_west
+	unlock_maa = huscarl
+	flag = global_maa
+}
+innovation_forest_wardens = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @special_maa_02
+	region = custom_eastern_baltic
+
+	unlock_maa = metsanvartija
+	flag = global_maa
+}
+innovation_futuwaa = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @maa_02
+	region = world_persian_empire
+
+	unlock_maa = ayyar
+	flag = global_maa
+}
+innovation_mubarizuns = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @maa_02
+	region = world_africa_east
+
+	unlock_maa = mubarizun
+	flag = global_maa
+}
+innovation_hussar_raids = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @special_maa_01
+	region = world_europe_east
+
+	unlock_maa = hussar
+	flag = global_maa
+}
+innovation_mountain_skirmishing = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @maa_02
+	region = world_africa_east
+
+	unlock_maa = horn_warrior
+	flag = global_maa
+}
+innovation_bush_hunting = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @special_maa_02
+	region = ghw_region_subsahelian_africa
+
+	unlock_maa = bush_hunter
+	flag = global_maa
+}
+innovation_sahel_horsemen = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @special_maa_01
+	region = custom_sahel_proper
+
+	unlock_maa = sahel_horsemen
+	flag = global_maa
+}
+innovation_zbrojnosh = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @maa_01
+	region = ghw_region_poland_bohemia_bavaria
+	
+	unlock_maa = zbrojnosh
+	flag = global_maa
+}
+innovation_upland_skirmishing = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @maa_02
+	region = world_africa_west
+	
+	unlock_maa = guinea_warrior	
+	flag = global_maa
+}
+innovation_samurai = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @samurai
+	
+	potential = {
+		this= culture:japanese
+	}
+	modifier = {
+		monthly_prestige_gain_mult = 0.1
+		movement_speed 0.01
+    }	
+	unlock_maa = samurai
+	flag = global_maa
+}
+innovation_pole_vault = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @weapons_and_armor_01
+
+	potential = {
+		OR = {
+			this = culture:guanches
+			any_parent_culture_or_above = {
+				this = culture:guanches
+			}
+		}
+	}
+
+	unlock_maa = guanch_vaulter
+
+	flag = global_maa
+}

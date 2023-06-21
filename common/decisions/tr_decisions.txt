@@ -1,0 +1,485 @@
+pet_dog_decision = { #by Linnéa Thimrén
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	desc = pet_dog_decision_desc
+	selection_tooltip = pet_dog_decision_tooltip
+	ai_check_interval = 120
+	cooldown = { days = 1 }
+	is_shown = {
+		any_owned_story = {
+			story_type = story_cycle_pet_dog
+			exists = story_owner.var:story_cycle_dog_name
+		}
+	}
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+	effect = {
+		custom_tooltip = pet_decision_effect_tooltip
+
+		trigger_event = {
+			on_action = story_cycle_dog_pet_decision_on_actions
+		}
+	}	
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 25
+			stress > low_medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > high_stress
+		}
+	}
+}
+
+pet_cat_decision = { #by Linnéa Thimrén
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	desc = pet_cat_decision_desc
+	selection_tooltip = pet_cat_decision_tooltip
+	ai_check_interval = 120
+	cooldown = { days = 1 }
+	is_shown = {
+		any_owned_story = {
+			story_type = story_cycle_pet_cat
+			exists = story_owner.var:story_cycle_cat_name
+		}
+	}
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+	effect = {
+		custom_tooltip = pet_decision_effect_tooltip
+
+		trigger_event = {
+			on_action = story_cycle_cat_pet_decision_on_actions
+		}
+	}	
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 25
+			stress > low_medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > high_stress
+		}
+	}
+}
+
+found_kingdom_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+	ai_check_interval = 60
+	desc = found_kingdom_decision_desc
+	is_shown = {
+		highest_held_title_tier = tier_duchy
+		NOT = { has_game_rule = off_custom_kingdoms }
+	}
+	is_valid = {
+		prestige_level >= 2
+		is_independent_ruler = yes
+		OR = {
+			custom_description = {
+				text = found_kingdom_decision_three_duchies_held
+				any_held_title = {
+					count > 1
+					tier = tier_duchy
+				}
+			}
+			sub_realm_size >= 1
+		}
+	}
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_at_war = no
+	}
+	cost = {
+		gold = 500
+		prestige = 600
+	}
+	effect = {
+		create_custom_kingdom_effect = yes
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { exists = global_var:found_kingdom_decision  }
+			}
+			set_global_variable = {
+				name = found_kingdom_decision
+				value = root
+			}
+			set_global_variable = {
+				name = found_kingdom_decision_kingdom
+				value = root.primary_title
+			}
+		}
+	}
+	ai_potential = {
+		always = no
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
+
+embrace_english_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 36
+	desc = embrace_english_culture_decision_desc
+	is_shown = {
+		is_landed = yes
+		culture = { has_cultural_pillar = heritage_frankish }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:embrace_english_culture_decision
+			}
+		}
+	}
+	is_valid = {
+		custom_description = {
+			text = capital_in_england_region_tooltip
+			capital_province = {
+				geographical_region = world_europe_west_britannia
+			}
+		}
+	}
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:embrace_english_culture_decision
+		}
+		show_as_tooltip = {
+			embrace_english_culture_effect = yes
+		}
+		trigger_event = british_isles.2001
+	}	
+	ai_potential = {
+		is_landed = yes
+		culture = { has_cultural_pillar = heritage_frankish }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:embrace_english_culture_decision
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
+
+change_government_theocracy_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	major = yes
+	desc = change_government_theocracy_decision_desc
+	selection_tooltip = change_government_theocracy_decision_tooltip
+
+    ai_check_interval = 185
+
+	cost = {
+		piety = 1000
+		gold = 100
+	}
+
+	cooldown = {
+		days = 365
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { flag = government_is_theocracy }
+	}
+
+	is_valid = {
+		AND = {
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			culture = { NOT = { has_cultural_tradition = tradition_atheism } }
+		    faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
+	}
+
+	effect = {
+        change_government = theocracy_government
+		every_vassal = {
+			if = {
+				limit = {
+				    has_trait = trait_cynical
+				}
+			}
+			opnion_of_liege = {
+				subtract = 50
+			}
+		}
+		add_realm_law = bishop_theocratic_succession_law
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+change_government_republic_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	major = yes
+	desc = change_government_republic_decision_desc
+	selection_tooltip = change_government_republic_decision_tooltip
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 365
+	}
+
+	cost = {
+		prestige = 100
+		gold = 1000
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { flag = government_is_republic }
+	}
+
+	is_valid = {
+		OR = { 
+			has_realm_law = crown_authority_3
+		    has_realm_law = tribal_authority_3
+		}
+	}
+
+	effect = {
+        change_government = republic_government
+		add_realm_law = city_succesion_law
+	}
+
+	ai_potential = {
+		trigger_if = {
+            flag = government_is_feudal
+	    }
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+}
+
+change_government_clan_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+	desc = change_government_clan_decision_desc
+	selection_tooltip = change_government_clan_decision_tooltip
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 365
+	}
+
+	cost = {
+		prestige = 200
+		gold = 200
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { flag = government_is_clan }
+	}
+
+	is_valid = {
+		OR = { 
+			has_realm_law = crown_authority_3
+		    has_realm_law = tribal_authority_3
+		}
+	}
+
+	effect = {
+        change_government = clan_government
+	}
+
+	ai_potential = {
+		trigger_if = {
+			religion = { islam_religion }
+		}
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+}
+
+convert_whole_realm_to_feudalism_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = convert_whole_realm_to_feudalism_decision_desc
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 365
+	}
+
+	cost = {
+		prestige = 200
+		gold = 200
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { flag = government_is_feudal }
+	}
+
+	is_valid = {
+		OR = { 
+			has_realm_law = crown_authority_3
+		    has_realm_law = tribal_authority_3
+		}
+	}
+
+	effect = {
+        change_government = feudal_government
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+
+}
+
+change_government_autocracy_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+	desc = change_government_autocracy_decision_desc
+	selection_tooltip = change_government_autocracy_decision_tooltip
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 365
+	}
+
+	cost = {
+		prestige = 2000
+		gold = 2000
+		piety = 200
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { 
+			flag = government_is_autocracy
+		    flag = government_is_tribal
+		}
+	}
+
+	is_valid = { has_realm_law = crown_authority_3 }
+
+	effect = {
+        change_government = autocracy_government
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+convert_to_tribalism_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	desc = convert_to_tribalism_decision_desc
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 50
+	}
+
+	cost = {
+		prestige = 200
+		piety = 100
+	}
+
+	is_shown = {
+		is_landed = yes
+		NOT = { 
+			flag = government_is_tribal
+			primary_title.tier >= tier_empire
+			}
+	}
+
+	is_valid = {
+		OR = { 
+			has_realm_law = crown_authority_3
+		}
+	}
+
+	effect = {
+        change_government = tribal_government
+		development = {
+			subtract = 100
+		}
+
+		every_vassal = {
+			opnion_of_liege = {
+				subtract = 50
+			}
+		}
+
+		add_prestige = {
+			add = -50
+		}
+
+		hidden_effect = {
+			add_character_flag = {
+				flag = just_converted_to_tribalism
+				years = 5
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

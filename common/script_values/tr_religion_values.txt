@@ -1,0 +1,141 @@
+﻿holy_sites_to_create_temporal_head_of_faith = 1
+holy_sites_to_create_spiritual_head_of_faith = 1
+
+#Religious war CB levels
+faith_fully_accepted_level = 0
+faith_astray_level = 1
+faith_hostile_level = 2
+faith_evil_level = 3
+
+faith_hostility_prevents_marriage_level = faith_evil_level
+
+religious_cb_enabled_hostility_level = faith_hostile_level
+religious_cb_evil_hostility_level = faith_evil_level
+
+religious_cb_ally_prestige_kingdom = 500
+religious_cb_ally_prestige_duchy = 200
+religious_cb_ally_prestige_county = 100
+
+religious_cb_piety_gain_evil_foe = 200
+religious_cb_piety_gain_empire = 200
+religious_cb_piety_loss_empire = -200
+religious_cb_piety_gain_kingdom = 150
+religious_cb_piety_loss_kingdom = -150
+religious_cb_piety_gain_duchy = 100
+religious_cb_piety_loss_duchy = -100
+religious_cb_piety_gain_county = 50
+religious_cb_piety_loss_county = -50
+religious_cb_piety_white_peace = -50
+
+excommunication_cb_piety_change_multiplier = 4
+excommunication_cb_piety_white_peace = -50
+
+faith_doctrine_cost_none = 0
+faith_doctrine_cost_low = 10
+faith_doctrine_cost_mid = 25
+faith_doctrine_cost_high = 50
+faith_doctrine_cost_massive = 100
+
+faith_tenet_cost_none = 0
+faith_tenet_cost_low = 20
+faith_tenet_cost_mid = 100
+faith_tenet_cost_high = 250
+faith_tenet_cost_massive = 500
+
+faith_unchanged_doctrine_cost_none = 0
+faith_unchanged_doctrine_cost_mult = 0.5
+faith_changed_doctrine_cost_mult_two_step = 1.50
+faith_changed_doctrine_cost_mult_three_step = 2.25
+faith_changed_doctrine_cost_mult_four_step = 3.50
+
+hostility_multiplier_pluralism = 0.5
+hostility_multiplier_righteous = 1
+hostility_multiplier_fundamentalist = 2
+hostility_multiplier_reduction_adaptive = -0.25
+
+regional_heresy_factor = {
+	if = {
+		limit = { has_game_rule = default_regional_heresy }
+		value = 5
+	}
+	else_if = {
+		limit = { has_game_rule = strict_regional_heresy }
+		value = 200
+	}
+	else = {
+		value = 1
+	}
+}
+
+meditation_duration = 185 # In days
+
+faction_county_opinion_astray = {
+	value = county_opinion
+	multiply = -1.0
+}
+faction_county_opinion_hostile = {
+	value = county_opinion
+	multiply = -2.5
+}
+faction_county_opinion_evil = {
+	value = county_opinion
+	multiply = -5.0
+}
+
+head_of_faith_selection_weight = {
+	value = 1
+
+	# Strong weight for preferred gender
+	if = {
+		limit = {
+			faith = { has_doctrine = doctrine_gender_male_dominated }
+			is_male = yes
+		}
+		add = 50
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = doctrine_gender_female_dominated }
+			is_female = yes
+		}
+		add = 50
+	}
+
+	# Bonus for holding land, especially if it is a holy site.
+	if = {
+		limit = {
+			any_sub_realm_barony = {
+				is_holy_site_of = root.faith
+			}
+		}
+		add = 40
+	}
+	add = {
+		value = highest_held_title_tier
+		multiply = 20
+	}
+
+	# Bonus for piousness/learnedness
+	add = {
+		value = num_virtuous_traits
+		multiply = 30
+	}
+	add = {
+		value = num_sinful_traits
+		multiply = -30
+	}
+	add = {
+		value = piety_level
+		multiply = 10
+	}
+	add = {
+		value = learning
+		multiply = 2
+	}
+	add = {
+		value = diplomacy
+		multiply = 1
+	}	
+}
+
+syncretic_mutual_opinion_bonus_value = 30
