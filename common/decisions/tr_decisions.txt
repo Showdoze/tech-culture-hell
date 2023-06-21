@@ -209,7 +209,7 @@ change_government_theocracy_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_theocracy }
+		NOT = { has_government = theocracy_government }
 	}
 
 	is_valid = {
@@ -266,7 +266,7 @@ change_government_republic_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_republic }
+		NOT = { has_government = republic_government }
 	}
 
 	is_valid = {
@@ -312,7 +312,7 @@ change_government_clan_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_clan }
+		NOT = { has_government = clan_government }
 	}
 
 	is_valid = {
@@ -356,7 +356,7 @@ convert_whole_realm_to_feudalism_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_feudal }
+		NOT = { has_government = feudal_government }
 	}
 
 	is_valid = {
@@ -400,14 +400,14 @@ change_government_caliphate_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_caliphate }
+		NOT = { has_government = caliphate_government }
 		religion = { islam_religion }
 	}
 
 	is_valid = {
 		AND = { 
 			has_realm_law = crown_authority_3
-			flag = government_is_clan
+			has_government = clan_government
 		}
 	}
 
@@ -444,7 +444,7 @@ change_government_autocracy_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { flag = government_is_autocracy }
+		NOT = { has_government = autocracy_government }
 	}
 
 	is_valid = { has_realm_law = crown_authority_3 }
@@ -481,7 +481,7 @@ convert_to_tribalism_decision = {
 	is_shown = {
 		is_landed = yes
 		NOT = { 
-			flag = government_is_tribal
+			has_government = tribal_government
 			primary_title.tier >= tier_empire
 			}
 	}
