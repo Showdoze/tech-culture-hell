@@ -797,10 +797,14 @@ tradition_altruistic = {
         extra_learn_language_success_chance_vs_liege = yes
 		more_gift_opinion = yes
 		gives_more_gifts = yes
+		automatic_befriend_access = yes
+		may_propose_best_friendship = yes
+		strong_hooks_and_stress_effects_best_friends = yes
+		may_select_friendship_synergy_bonus = yes
 	}
 	character_modifier = {
 		diplomacy = 4
-		intrigue = -4
+		intrigue = -5
 		holding_build_speed = -0.2
 		supply_capacity_mult = 0.5
 		tolerance_advantage_mod = 0.5
@@ -819,6 +823,8 @@ tradition_altruistic = {
 		revolting_siege_morale_loss_mult = 10
 		enemy_hostile_scheme_success_chance_add = 10
 		hostile_scheme_power_mult = -2
+		scheme_power_against_friend_add = 20
+		scheme_power_against_best_friend_add = 40
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = 2
@@ -1188,6 +1194,7 @@ tradition_hunter_gatherer = {
 		hunting_traits_more_valued = yes
 		hunting_traits_more_common = yes
 		hunting_archery_building_bonuses = yes
+		falconer_traits_more_common = yes
 	}
 	county_modifier = {
 		build_gold_cost = 0.5
