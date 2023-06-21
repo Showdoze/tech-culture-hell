@@ -76,7 +76,7 @@ pet_cat_decision = { #by Linnéa Thimrén
 			stress > medium_stress
 		}
 		modifier = {
-			add = 50
+			add = 75
 			stress > high_stress
 		}
 	}
@@ -400,10 +400,7 @@ change_government_autocracy_decision = {
 
 	is_shown = {
 		is_landed = yes
-		NOT = { 
-			flag = government_is_autocracy
-		    flag = government_is_tribal
-		}
+		NOT = { flag = government_is_autocracy }
 	}
 
 	is_valid = { has_realm_law = crown_authority_3 }
