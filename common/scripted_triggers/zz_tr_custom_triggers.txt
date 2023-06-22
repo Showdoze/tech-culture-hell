@@ -5,8 +5,8 @@ unlock_tanistry_elective_trigger = {
 	}
 	custom_description = {
 		OR = {
-			has_government = tribal_government
-			has_government = clan_government
+			goverment_has_flag = government_is_clan
+			goverment_has_flag = government_is_tribal
 		}
 	}
 }
@@ -17,8 +17,8 @@ unlock_scandinavian_elective_trigger = {
 	}
 	custom_description = {
 		OR = {
-			has_government = feudal_government
-			has_government = tribal_government
+			goverment_has_flag = government_is_feudal
+			goverment_has_flag = government_is_tribal
 		}
 	}
 }
@@ -29,8 +29,8 @@ unlock_saxon_elective_trigger = {
 	}
 	custom_description = {
 		OR = {
-			has_government = feudal_government
-			has_government = tribal_government
+			goverment_has_flag = government_is_feudal
+			goverment_has_flag = government_is_tribal
 		}
 	}
 }
@@ -47,7 +47,7 @@ can_raid_trigger = {
 	is_ai = no
 	    AND = {
 		    is_ai = yes
-			has_government = tribal_government
+			goverment_has_flag = government_is_tribal
 	    }
 		AND = {
 		    is_ai = yes
