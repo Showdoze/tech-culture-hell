@@ -1,0 +1,37 @@
+change_government_republic_decision = {
+    major = yes
+	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	desc = change_government_republic_decision_desc
+	selection_tooltip = change_government_republic_decision_tooltip
+    sort_order = 1
+    ai_check_interval = 185
+	cost = {
+		prestige = 100
+		gold = 1000
+	}
+	cooldown = {
+		days = 365
+	}
+	is_shown = {
+		NOT = { government_has_flag = government_is_republic }
+	}
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+		}
+	}
+	effect = {
+        change_government = republic_government
+		add_realm_law = city_succesion_law
+	}
+	ai_potential = {
+        always = yes
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

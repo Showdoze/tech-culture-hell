@@ -1,0 +1,37 @@
+change_government_clan_decision = {
+    major = yes
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	desc = change_government_clan_decision_desc
+	selection_tooltip = change_government_clan_decision_tooltip
+    sort_order = 1
+    ai_check_interval = 185
+	cooldown = {
+		days = 365
+	}
+	cost = {
+		prestige = 200
+		gold = 200
+	}
+	is_shown = {
+		NOT = { government_has_flag = government_is_clan }
+	}
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			faith = { group = { islamic }}
+		}
+	}
+	effect = {
+        change_government = clan_government
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
