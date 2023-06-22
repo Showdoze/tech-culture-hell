@@ -450,7 +450,7 @@ tradition_live_hard = {
 		genetic_trait_strengthen_chance = 0.7
 		fertility = 0.5
 		inbreeding_chance = -0.7
-		monthly_learning_lifestyle_xp_gain_mult = 1
+		monthly_learning_lifestyle_xp_gain_mult = 0.5
 		life_expectancy = -30
 		stress_gain_mult = -0.1
 	}	
@@ -1067,6 +1067,7 @@ tradition_raid = {
 	parameters = {
 		culture_can_raid_at_sea_even_if_feudal = yes
 		gain_gold_from_battles = yes
+		characters_more_likely_to_be_captured_in_sieges = yes
 	}
 	character_modifier = {
 		max_loot_mult = 1
@@ -1266,11 +1267,13 @@ tradition_amazon = {
 	parameters = {
 		craven_trait_costs_prestige = yes
 		brave_trait_gives_bonuses = yes
+		commanders_likelier_to_gain_commander_traits = yes
 		female_only_inheritance = yes
 		prowess_from_martial_education = yes
 		martial_education_more_valued = yes
 		female_preference_inheritance = yes
 		female_dominated_law = yes
+		powerful_foreign_knights_find_you_attractive = yes
 		male_claims_are_weak = yes
 	}
 	character_modifier = {
@@ -1314,6 +1317,7 @@ tradition_true_isolationist = {
 		courtiers_less_likely_to_leave_same_culture_court = yes
 		dislikes_marrying_outside_of_culture = yes
 		ai_doesnt_marry_outside_culture = yes
+		harder_to_convert_county_culture_without_heritage = yes
 		can_end_defensive_wars_earlier = yes
 		more_fame_for_successful_defensive_wars = yes
 		more_gold_for_successful_defensive_wars = yes
@@ -1646,6 +1650,7 @@ tradition_germanic = {
 		number_of_spouses = 3
 		number_of_consorts = 1
 		martial_education_more_valued = yes
+		wants_to_learn_liege_language = yes
 		cheaper_to_hybridize = yes
 		learns_more_languages = yes
 	}
