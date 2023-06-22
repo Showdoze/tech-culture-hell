@@ -1109,55 +1109,7 @@ tradition_merryment = {
 		renown_from_feasts = yes
 		characters_are_better_food_tasters = yes
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_courtly_communal_or_stoic_desc
-				}
-			}
-			if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							scope:character = {
-								is_ai = no
-							}
-						}
-						NOT = {
-							any_ruler = {
-								count >= 5
-								culture = prev
-								primary_title.tier >= tier_county
-								has_trait = lifestyle_reveler
-							}
-						}
-					}
-					trigger_else = {
-						always = no
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = rulers_with_reveler_lifestyle_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
+	cost = { prestige = 1000 }
 	ai_will_do = {
 		value = 0
 		if = {
@@ -1200,56 +1152,7 @@ tradition_hunter_gatherer = {
 	county_modifier = {
 		build_gold_cost = 0.5
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_spiritual_or_stoic_desc
-				}
-			}
-			if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							scope:character = {
-								is_ai = no
-							}
-						}
-						NOT = {
-							any_ruler = {
-								count >= 5
-								culture = prev
-								primary_title.tier >= tier_county
-								has_trait = lifestyle_hunter
-							}
-						}
-					}
-					trigger_else = {
-						always = no
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = rulers_with_hunter_lifestyle_desc
-				}
-			}
-			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 255 }
 	ai_will_do = {
 		value = 0
 	}
@@ -1282,26 +1185,7 @@ tradition_amazon = {
 		opinion_of_male_rulers = -10
 		same_culture_opinion = 10
 	}	
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					any_in_list = { list = traits this = flag:ethos_bellicose }
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = culture_not_bellicose
-				}
-			}
-			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 500 }
 	ai_will_do = { value = 0 }
 }
 
@@ -1335,50 +1219,7 @@ tradition_true_isolationist = {
 	county_modifier = {
 		monthly_county_control_change_add = 1
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_communal_spiritual_or_stoic_desc
-				}
-			}
-			if = {
-				limit = {
-					scope:character = {
-						any_sub_realm_county = {
-							culture = scope:character.culture
-							any_neighboring_county = {
-								NOT = {
-									culture = scope:character.culture
-								}
-								culture = {
-									cultural_acceptance = { target = scope:character.culture value >= 40 }
-								}
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = non_tolerated_cultures_desc
-				}
-			}			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 2000 }
 	ai_will_do = {
 		value = 0
 	}
@@ -1404,52 +1245,7 @@ tradition_blood_thirst = {
 		gain_gold_from_battles = yes
 		clergy_can_fight = yes
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_communal }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_stoic_or_communal_desc
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_culture_county = {
-							percent >= 0.3
-							any_county_province = {
-								OR = {
-									geographical_region = world_europe_north
-									geographical_region = world_europe_west
-									geographical_region = world_europe_east
-									geographical_region = world_steppe
-									geographical_region = world_tibet
-								}
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = winter_percentage_desc
-				}
-			}
-
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
+	cost = { prestige = 2000 }
 	ai_will_do = {
 		value = 0
 	}
@@ -1511,41 +1307,7 @@ tradition_hammerite = {
 		build_gold_cost = 0.1
 		ai_zeal = 25
 	}	
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			# Ethos requirements.
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_bureaucratic }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_stoic_or_bureaucratic_desc
-				}
-			}
-			# Requires battlements innovation.
-			if = {
-				limit = {
-					NOT = { has_innovation = innovation_battlements }
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = lacks_battlements_innovation_desc
-				}
-			}
-			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 5000 }
 	ai_will_do = { 
 		value = 0 
 	}
@@ -1589,41 +1351,7 @@ tradition_pagan = {
 		forest_construction_gold_cost = -0.15
 		forest_holding_construction_gold_cost = -0.15
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			# Ethos requirements.
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_bureaucratic }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_stoic_or_bureaucratic_desc
-				}
-			}
-			# Requires battlements innovation.
-			if = {
-				limit = {
-					NOT = { has_innovation = innovation_battlements }
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = lacks_battlements_innovation_desc
-				}
-			}
-			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 5000 }
 	ai_will_do = { 
 		value = 0 
 	}
@@ -1659,48 +1387,7 @@ tradition_germanic = {
 	}
 	character_modifier = {
 	}	
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_courtly_communal_or_spiritual_desc
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						scope:character = {
-							any_sub_realm_county = {
-								percent >= 0.9
-								culture = scope:character.culture
-								any_county_province = {
-									has_holding_type = city_holding
-								}
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = 90_percent_cities_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 500 }
 	ai_will_do = {
 		value = 0
 	}
@@ -1727,11 +1414,16 @@ tradition_horse_special = {
 				}
 			}
 		}
+		NOR = { 
+			has_cultural_tradition = tradition_transport_sea 
+			has_cultural_tradition = tradition_transport_walk
+		}
 	}	
 	parameters = {
 		pastures_building_bonuses = yes
 		unlock_maa_horse_archers = yes
 		can_recruit_open_specialist = yes
+		steppe_hunt_success_chance = yes
 	}
 	character_modifier = {
 		negate_health_penalty_add = 0.15
@@ -1747,6 +1439,7 @@ tradition_horse_special = {
 		heavy_cavalry_recruitment_cost_mult = -0.25
 		archer_cavalry_maintenance_mult = -0.15
 		archer_cavalry_recruitment_cost_mult = -0.25
+		steppe_travel_danger = steppe_high_danger_reduction
 		pikemen_damage_mult = -0.1
 		pikemen_toughness_mult = -0.1
 		archers_damage_mult = -0.1
@@ -1758,49 +1451,7 @@ tradition_horse_special = {
 		light_cavalry_damage_mult = -0.15
 		light_cavalry_toughness_mult = -0.1
 	}	
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_communal }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_stoic_or_communal_desc
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_culture_county = {
-							percent >= 0.6
-							any_county_province = {
-								OR = {
-									terrain = plains
-									terrain = steppe
-									geographical_region = world_steppe
-								}
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = culture_in_plains_or_steppe_terrain_percentage_desc
-				}
-			}			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 5000 }
 	ai_will_do = {
 		value = 10
 		if = {
@@ -1831,5 +1482,63 @@ tradition_horse_special = {
 			}
 			multiply = 0.8
 		}
+	}
+}
+tradition_transport_sea = {
+	category = combat
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = ship.dds
+	}	
+	can_pick = {
+		custom_description = {
+			text = percentage_of_culture_on_coast_desc
+			any_culture_county = {
+				percent >= 0.5
+				any_county_province = {
+					is_coastal = yes
+				}
+			}
+		}
+		NOR = { 
+			has_cultural_tradition = tradition_horse_special 
+			has_cultural_tradition = tradition_transport_walk
+		}
+	}
+	parameters = {
+		coastal_holdings_give_defensive_bonus = yes
+	}
+	character_modifier = {
+		negate_health_penalty_add = 0.15
+		light_cavalry_damage_mult = -0.1
+		light_cavalry_screen_mult = -0.1
+		movement_speed = -0.1
+		naval_movement_speed_mult = 0.1
+		light_cavalry_maintenance_mult = 0.15
+		light_cavalry_recruitment_cost_mult = 0.25
+		heavy_cavalry_maintenance_mult =-0.15
+		heavy_cavalry_recruitment_cost_mult = 0.25
+		archer_cavalry_maintenance_mult =-0.15
+		archer_cavalry_recruitment_cost_mult = 0.25
+		pikemen_damage_mult = -0.1
+		pikemen_toughness_mult = -0.1
+		archers_damage_mult = -0.1
+		archers_toughness_mult = -0.1
+		counter_efficiency = -0.15
+		pursue_efficiency = -0.15
+		skirmishers_damage_mult = -0.2
+		skirmishers_toughness_mult = -0.1
+		light_cavalry_damage_mult = -0.15
+		light_cavalry_toughness_mult = -0.1
+		embarkation_cost_mult = -0.3
+		coastal_advantage = 7
+		supply_capacity_mult = 0.5
+		coastal_sea_travel_danger = low_sea_danger_reduction
+	}	
+	cost = { prestige = 5000 }
+	ai_will_do = {
+		value = 0
 	}
 }
