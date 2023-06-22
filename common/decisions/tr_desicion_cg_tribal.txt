@@ -1,0 +1,50 @@
+convert_to_tribalism_decision = {
+    major = yes
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	desc = convert_to_tribalism_decision_desc
+    ai_check_interval = 185
+    sort_order = 1
+	cooldown = {
+		days = 50
+	}
+	cost = {
+		prestige = 200
+		piety = 100
+	}
+	is_shown = {
+		NOT = { government_has_flag = government_is_tribal }
+	}
+	is_valid = {
+		AND = {
+		    is_landed = yes
+			has_realm_law = crown_authority_3
+			prestige_title.tier <= empire
+		}
+	}
+	effect = {
+        change_government = tribal_government
+		development = {
+			subtract = 100
+		}
+		every_vassal = {
+			opnion_of_liege = {
+				subtract = 50
+			}
+		}
+		add_prestige = {
+			add = -50
+		}
+		hidden_effect = {
+			add_character_flag = {
+				flag = just_converted_to_tribalism
+				years = 5
+			}
+		}
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
