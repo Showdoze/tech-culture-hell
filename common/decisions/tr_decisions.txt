@@ -1,4 +1,4 @@
-pet_dog_decision = { #by Linnéa Thimrén
+pet_dog_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	desc = pet_dog_decision_desc
 	selection_tooltip = pet_dog_decision_tooltip
@@ -40,7 +40,7 @@ pet_dog_decision = { #by Linnéa Thimrén
 	}
 }
 
-pet_cat_decision = { #by Linnéa Thimrén
+pet_cat_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 	desc = pet_cat_decision_desc
 	selection_tooltip = pet_cat_decision_tooltip
@@ -188,162 +188,6 @@ embrace_english_culture_decision = {
 	ai_will_do = {
 		base = 0
 	}
-}
-
-change_government_theocracy_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-	major = yes
-	desc = change_government_theocracy_decision_desc
-	selection_tooltip = change_government_theocracy_decision_tooltip
-
-    sort_order = 1
-
-    ai_check_interval = 185
-
-	cost = {
-		piety = 1000
-		gold = 100
-	}
-
-	cooldown = {
-		days = 365
-	}
-
-	is_shown = {
-		NOT = { government_has_flag = government_is_theocracy }
-	}
-
-	is_valid = {
-		AND = {
-		    OR = {
-			    has_realm_law = crown_authority_3
-		        has_realm_law = tribal_authority_3
-		    }
-			culture = { NOT = { has_cultural_tradition = tradition_atheism } }
-		    faith = { NOT = { has_doctrine_parameter = unreformed } }
-		}
-	}
-
-	effect = {
-        change_government = theocracy_government
-		every_vassal = {
-			if = {
-				limit = {
-				    has_trait = trait_cynical
-				}
-			}
-			opnion_of_liege = {
-				subtract = 50
-			}
-		}
-		add_realm_law = bishop_theocratic_succession_law
-	}
-
-	ai_potential = {
-		trigger_if = {
-            government_has_flag = government_is_feudal
-	    }
-	}
-
-	ai_will_do = {
-		base = 0
-	}
-}
-
-change_government_republic_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
-	major = yes
-	desc = change_government_republic_decision_desc
-	selection_tooltip = change_government_republic_decision_tooltip
-
-    sort_order = 1
-
-    ai_check_interval = 185
-
-	cost = {
-		prestige = 100
-		gold = 1000
-	}
-
-	cooldown = {
-		days = 365
-	}
-
-	is_shown = {
-		NOT = { government_has_flag = government_is_republic }
-	}
-
-	is_valid = {
-		AND = {
-		    is_landed = yes
-		    OR = {
-			    has_realm_law = crown_authority_3
-		        has_realm_law = tribal_authority_3
-		    }
-		}
-	}
-
-	effect = {
-        change_government = republic_government
-		add_realm_law = city_succesion_law
-	}
-
-	ai_potential = {
-        always = yes
-	}
-
-	ai_will_do = {
-		base = 0
-	}
-
-}
-
-change_government_clan_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-	major = yes
-	desc = change_government_clan_decision_desc
-	selection_tooltip = change_government_clan_decision_tooltip
-
-    sort_order = 1
-
-    ai_check_interval = 185
-
-	cooldown = {
-		days = 365
-	}
-
-	cost = {
-		prestige = 200
-		gold = 200
-	}
-
-	is_shown = {
-		NOT = { government_has_flag = government_is_clan }
-	}
-
-	is_valid = {
-		AND = {
-		    is_landed = yes
-		    OR = {
-			    has_realm_law = crown_authority_3
-		        has_realm_law = tribal_authority_3
-		    }
-			scope:ruler.religion = { islam_relligion }
-		}
-	}
-
-	effect = {
-        change_government = clan_government
-	}
-
-	ai_potential = {
-		always = yes
-	}
-
-	ai_will_do = {
-		base = 0
-	}
-
 }
 
 change_government_feudal_decision = {
@@ -515,7 +359,7 @@ change_government_tribal_decision = {
 		AND = {
 		    is_landed = yes
 			has_realm_law = crown_authority_3
-			prestige_title.tier <= Empire
+			prestige_title.tier <= empire
 		}
 	}
 
@@ -545,6 +389,160 @@ change_government_tribal_decision = {
 
 	ai_potential = {
 		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+change_government_theocracy_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	major = yes
+	desc = change_government_theocracy_decision_desc
+	selection_tooltip = change_government_theocracy_decision_tooltip
+
+    sort_order = 1
+
+    ai_check_interval = 185
+
+	cost = {
+		piety = 1000
+		gold = 100
+	}
+
+	cooldown = {
+		days = 365
+	}
+
+	is_shown = {
+		NOT = { government_has_flag = government_is_theocracy }
+	}
+
+	is_valid = {
+		AND = {
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			culture = { NOT = { has_cultural_tradition = tradition_atheism } }
+		    faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
+	}
+
+	effect = {
+        change_government = theocracy_government
+		every_vassal = {
+			if = {
+				limit = {
+				    has_trait = trait_cynical
+				}
+			}
+			opnion_of_liege = {
+				subtract = 50
+			}
+		}
+		add_realm_law = bishop_theocratic_succession_law
+	}
+
+	ai_potential = {
+		trigger_if = {
+            government_has_flag = government_is_feudal
+	    }
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+change_government_republic_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	major = yes
+	desc = change_government_republic_decision_desc
+	selection_tooltip = change_government_republic_decision_tooltip
+
+    sort_order = 1
+
+    ai_check_interval = 185
+
+	cost = {
+		prestige = 100
+		gold = 1000
+	}
+
+	cooldown = {
+		days = 365
+	}
+
+	is_shown = {
+		NOT = { government_has_flag = government_is_republic }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+		}
+	}
+
+	effect = {
+        change_government = republic_government
+		add_realm_law = city_succesion_law
+	}
+
+	ai_potential = {
+        always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+change_government_clan_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	major = yes
+	desc = change_government_clan_decision_desc
+	selection_tooltip = change_government_clan_decision_tooltip
+
+    sort_order = 1
+
+    ai_check_interval = 185
+
+	cooldown = {
+		days = 365
+	}
+
+	cost = {
+		prestige = 200
+		gold = 200
+	}
+
+	is_shown = {
+		NOT = { government_has_flag = government_is_clan }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			scope:ruler.religion = { islam_religion }
+		}
+	}
+
+	effect = {
+        change_government = clan_government
+	}
+
+	ai_potential = {
+		always = yes
 	}
 
 	ai_will_do = {
