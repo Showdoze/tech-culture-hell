@@ -256,20 +256,27 @@ change_government_republic_decision = {
 
     ai_check_interval = 185
 
-	cooldown = {
-		days = 365
-	}
-
 	cost = {
 		prestige = 100
 		gold = 1000
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
-		has_realm_law = tribal_authority_3
+	cooldown = {
+		days = 365
+	}
+
+	is_shown = {
 		NOT = { government_has_flag = government_is_republic }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+		}
 	}
 
 	effect = {
@@ -278,9 +285,7 @@ change_government_republic_decision = {
 	}
 
 	ai_potential = {
-		trigger_if = {
-            government_has_flag = government_is_feudal
-	    }
+        always = yes
 	}
 
 	ai_will_do = {
@@ -306,12 +311,19 @@ change_government_clan_decision = {
 		gold = 200
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
-		has_realm_law = tribal_authority_3
+	is_shown = {
 		NOT = { government_has_flag = government_is_clan }
-		religion = { islam_religion }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			faith = { islam_faith }
+		}
 	}
 
 	effect = {
@@ -344,11 +356,18 @@ convert_whole_realm_to_feudalism_decision = {
 		gold = 200
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
-		has_realm_law = tribal_authority_3
+	is_shown = {
 		NOT = { government_has_flag = government_is_feudal }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+		}
 	}
 
 	effect = {
@@ -362,7 +381,6 @@ convert_whole_realm_to_feudalism_decision = {
 	ai_will_do = {
 		base = 50
 	}
-
 }
 
 change_government_caliphate_decision = {
@@ -383,13 +401,21 @@ change_government_caliphate_decision = {
 		piety = 100
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
-		government_has_flag = government_is_clan
-		prestige_level >= 2
-		religion = { islam_religion }
+	is_shown = {
 		NOT = { government_has_flag = government_is_caliphate }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+		    government_has_flag = government_is_clan
+			faith = { islam_faith }
+			prestige_level >= 2
+		}
 	}
 
 	effect = {
@@ -418,15 +444,24 @@ change_government_autocracy_decision = {
 	}
 
 	cost = {
-		prestige = 2000
-		gold = 2000
+		prestige = 1000
+		gold = 1000
 		piety = 200
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
+	is_shown = {
 		NOT = { government_has_flag = government_is_autocracy }
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+		    OR = {
+			    has_realm_law = crown_authority_3
+		        has_realm_law = tribal_authority_3
+		    }
+			prestige_level >= 2
+		}
 	}
 
 	effect = {
@@ -458,11 +493,16 @@ convert_to_tribalism_decision = {
 		piety = 100
 	}
 
-	is_valid = {
-		is_landed = yes
-		has_realm_law = crown_authority_3
+	is_shown = {
 		NOT = { government_has_flag = government_is_tribal }
-		primary_title.tier <= tier_empire
+	}
+
+	is_valid = {
+		AND = {
+		    is_landed = yes
+			has_realm_law = crown_authority_3
+			prestige_title.tier <= Empire
+		}
 	}
 
 	effect = {
