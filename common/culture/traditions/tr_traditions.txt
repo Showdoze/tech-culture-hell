@@ -1518,9 +1518,9 @@ tradition_transport_sea = {
 		naval_movement_speed_mult = 0.1
 		light_cavalry_maintenance_mult = 0.15
 		light_cavalry_recruitment_cost_mult = 0.25
-		heavy_cavalry_maintenance_mult =-0.15
+		heavy_cavalry_maintenance_mult = 0.15
 		heavy_cavalry_recruitment_cost_mult = 0.25
-		archer_cavalry_maintenance_mult =-0.15
+		archer_cavalry_maintenance_mult = 0.15
 		archer_cavalry_recruitment_cost_mult = 0.25
 		pikemen_damage_mult = -0.1
 		pikemen_toughness_mult = -0.1
@@ -1536,6 +1536,52 @@ tradition_transport_sea = {
 		coastal_advantage = 7
 		supply_capacity_mult = 0.5
 		coastal_sea_travel_danger = low_sea_danger_reduction
+	}	
+	cost = { prestige = 5000 }
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_transport_walk  = {
+	category = combat
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = ship.dds
+	}	
+	can_pick = {
+		NOR = { 
+			has_cultural_tradition = tradition_horse_special 
+			has_cultural_tradition = tradition_transport_sea
+		}
+	}
+	parameters = {
+		
+	}
+	character_modifier = {
+		negate_health_penalty_add = 0.15
+		light_cavalry_damage_mult = -0.4
+		light_cavalry_screen_mult = -0.4
+		movement_speed = 0.1
+		naval_movement_speed_mult = -0.1
+		light_cavalry_maintenance_mult = 0.15
+		light_cavalry_recruitment_cost_mult = 0.25
+		heavy_cavalry_maintenance_mult = 0.2
+		heavy_cavalry_recruitment_cost_mult = 0.25
+		archer_cavalry_maintenance_mult = 0.2
+		archer_cavalry_recruitment_cost_mult = 0.25
+		pikemen_damage_mult = 0.1
+		pikemen_toughness_mult = 0.1
+		archers_damage_mult = 0.1
+		archers_toughness_mult = 0.1
+		counter_efficiency = 0.15
+		skirmishers_damage_mult = 0.2
+		skirmishers_toughness_mult = 0.1
+		light_cavalry_damage_mult = -0.15
+		light_cavalry_toughness_mult = -0.1
+		embarkation_cost_mult = 0.3
+		supply_capacity_mult = 0.5
 	}	
 	cost = { prestige = 5000 }
 	ai_will_do = {
