@@ -49,22 +49,27 @@ revoke_title_interaction_effect = {
 				add_joined_faction_discontent = 25
 			}
 		}
-		
 		if = {
-			limit = { scope:landed_title.tier = tier_county }
+			limit = {
+				scope:landed_title.tier = tier_county
+			}
 			scope:landed_title = {
 				change_county_control = {
 					value = -30
 					if = {
 						limit = {
-							NOT = { scope:recipient.culture = scope:actor.culture }
+							NOT = {
+								scope:recipient.culture = scope:actor.culture
+							}
 							scope:recipient.culture = this.culture
 						}
 						multiply = 1.5
 					}
 					if = {
 						limit = {
-							NOT = { scope:recipient.faith = scope:actor.faith }
+							NOT = {
+								scope:recipient.faith = scope:actor.faith
+							}
 							scope:recipient.faith = this.faith
 						}
 						multiply = 1.5
@@ -72,10 +77,11 @@ revoke_title_interaction_effect = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
-				scope:actor.culture = { has_cultural_parameter = penalty_for_revoking_titles_from_house_members }
+				scope:actor.culture = {
+					has_cultural_parameter = penalty_for_revoking_titles_from_house_members
+				}
 				exists = scope:actor.house
 				exists = scope:recipient.house
 				scope:actor.house = scope:recipient.house
@@ -96,7 +102,8 @@ revoke_title_interaction_effect = {
 					add_prestige = major_prestige_loss
 				}
 			}
-			else = { #Empire
+			else = {
+				#Empire
 				limit = {
 					scope:landed_title.tier = tier_kingdom
 				}
@@ -105,10 +112,11 @@ revoke_title_interaction_effect = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
-				scope:actor.culture = { has_cultural_parameter = penalty_for_revoking_titles_from_close_family }
+				scope:actor.culture = {
+					has_cultural_parameter = penalty_for_revoking_titles_from_close_family
+				}
 				exists = scope:actor
 				exists = scope:recipient
 				scope:actor = {
@@ -131,7 +139,8 @@ revoke_title_interaction_effect = {
 					add_prestige = major_prestige_loss
 				}
 			}
-			else = { #Empire
+			else = {
+				#Empire
 				limit = {
 					scope:landed_title.tier = tier_kingdom
 				}
@@ -140,10 +149,11 @@ revoke_title_interaction_effect = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
-				scope:actor.culture = { has_cultural_parameter = piety_penalty_for_revoking_titles_from_house_members }
+				scope:actor.culture = {
+					has_cultural_parameter = piety_penalty_for_revoking_titles_from_house_members
+				}
 				exists = scope:actor.house
 				exists = scope:recipient.house
 				scope:actor.house = scope:recipient.house
@@ -164,7 +174,8 @@ revoke_title_interaction_effect = {
 					add_prestige = major_piety_loss
 				}
 			}
-			else = { #Can't revoke empire titles anyway
+			else = {
+				#Can't revoke empire titles anyway
 				limit = {
 					scope:landed_title.tier = tier_kingdom
 				}
@@ -177,16 +188,18 @@ revoke_title_interaction_effect = {
 	else = {
 		if = {
 			limit = {
-				NOT = { exists = scope:revoke_title_interaction }
+				NOT = {
+					exists = scope:revoke_title_interaction
+				}
 			}
 			custom_tooltip = IS_ALLOWED_TO_REVOKE_TITLE_BARONY_DESC
 		}
 	}
-
-
 	scope:actor = {
 		if = {
-			limit = { scope:hook = yes }
+			limit = {
+				scope:hook = yes
+			}
 			use_hook = scope:recipient
 		}
 	}
@@ -195,7 +208,8 @@ revoke_title_interaction_effect = {
 			target = scope:actor
 			modifier = revoked_title
 		}
-		if = { #If they recently imprisoned you, or asked for your excommunication, they become your rival
+		if = {
+			#If they recently imprisoned you, or asked for your excommunication, they become your rival
 			limit = {
 				OR = {
 					has_opinion_modifier = {
@@ -226,7 +240,6 @@ revoke_title_interaction_effect = {
 			}
 		}
 	}
-
 	# Penalty for taking the Party Baron's last title. I mean, come on...
 	if = {
 		limit = {
@@ -234,7 +247,9 @@ revoke_title_interaction_effect = {
 				has_character_flag = is_party_baron
 				NOT = {
 					any_held_title = {
-						NOT = { this = scope:landed_title }
+						NOT = {
+							this = scope:landed_title
+						}
 					}
 				}
 			}

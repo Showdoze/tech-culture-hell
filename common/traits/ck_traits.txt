@@ -4,19 +4,21 @@ adopted = {
 		legitimized_bastard
 		child_of_concubine
 		wild_oat
-        bastard
+		bastard
 		disputed_heritage
 	}
-    random_creation = 0
+	random_creation = 0
 	same_opinion = 5
-    monthly_character_prestige = 0.02
+	monthly_character_prestige = 0.02
 	dynasty_opinion = -5
 	fame = yes
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = trait_adopted_desc
 			}
@@ -30,22 +32,24 @@ peasant_born = {
 	opposites = {
 		legitimized_bastard
 		child_of_concubine
-        patrician_born
+		patrician_born
 		wild_oat
-        bastard
+		bastard
 		disputed_heritage
 	}
-    random_creation = 0
+	random_creation = 0
 	same_opinion = 5
-    monthly_character_prestige = -0.2
+	monthly_character_prestige = -0.2
 	diplomacy = -2
-    town_opinion = 5
+	town_opinion = 5
 	fame = yes
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = trait_peasant_born_desc
 			}
@@ -59,22 +63,24 @@ patrician_born = {
 	opposites = {
 		legitimized_bastard
 		child_of_concubine
-        peasant_born_trait
+		peasant_born_trait
 		wild_oat
-        bastard
+		bastard
 		disputed_heritage
 	}
-    random_creation = 0
+	random_creation = 0
 	same_opinion = 5
-    monthly_character_prestige = 0.2
+	monthly_character_prestige = 0.2
 	diplomacy = 1
-    vassal_opinion = 5
+	vassal_opinion = 5
 	fame = yes
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = patrician_born_desc
 			}
@@ -85,17 +91,19 @@ patrician_born = {
 
 german_descent = {
 	index = 4002
-    random_creation = 0
+	random_creation = 0
 	same_opinion = 5
-    monthly_character_prestige = 0.02
+	monthly_character_prestige = 0.02
 	diplomacy = 1
-    vassal_opinion = 5
+	vassal_opinion = 5
 	fame = yes
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = german_descent_desc
 			}
@@ -111,25 +119,23 @@ fleeting = {
 		enduring
 		venerable
 	}
-	
 	ruler_designer_cost = -100
-
 	physical = yes
 	genetic = yes
 	good = no
-
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = trait_fleeting_desc
 			}
 			desc = trait_fleeting_desc
 		}
 	}
-	
 	enables_inbred = yes
 	birth = 0.5
 	random_creation = 0.5
@@ -141,20 +147,18 @@ enduring = {
 		fleeting
 		venerable
 	}
-	
 	life_expectancy = 15
-	
 	physical = yes
 	genetic = yes
 	good = yes
-	
 	ruler_designer_cost = 100
-
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = trait_enduring_desc
 			}
@@ -171,20 +175,18 @@ venerable = {
 		fleeting
 		enduring
 	}
-	
 	life_expectancy = 25
-	
 	physical = yes
 	genetic = yes
 	good = yes
-	
 	ruler_designer_cost = 180
-
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					NOT = { exists = this }
+					NOT = {
+						exists = this
+					}
 				}
 				desc = trait_venerable_desc
 			}

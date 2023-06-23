@@ -7,7 +7,9 @@
 		# Set it up if it doesn't exist.
 		if = {
 			limit = {
-				NOT = { has_variable = authority_cooldown_break_tally }
+				NOT = {
+					has_variable = authority_cooldown_break_tally
+				}
 			}
 			set_variable = {
 				name = authority_cooldown_break_tally
@@ -21,7 +23,9 @@
 		}
 		# Otherwise, increment it.
 		else_if = {
-			limit = { has_variable = authority_cooldown_break_tally }
+			limit = {
+				has_variable = authority_cooldown_break_tally
+			}
 			change_variable = {
 				name = authority_cooldown_break_tally
 				add = authority_cooldown_breaker_value
@@ -36,7 +40,9 @@
 		# Set it up if it doesn't exist.
 		if = {
 			limit = {
-				NOT = { has_variable = authority_cooldown_break_tally }
+				NOT = {
+					has_variable = authority_cooldown_break_tally
+				}
 			}
 			set_variable = {
 				name = authority_cooldown_break_tally
@@ -50,7 +56,9 @@
 		}
 		# Otherwise, increment it.
 		else_if = {
-			limit = { has_variable = authority_cooldown_break_tally }
+			limit = {
+				has_variable = authority_cooldown_break_tally
+			}
 			change_variable = {
 				name = authority_cooldown_break_tally
 				add = authority_cooldown_breaker_value

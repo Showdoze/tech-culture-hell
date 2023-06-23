@@ -3,7 +3,9 @@ pet_dog_decision = {
 	desc = pet_dog_decision_desc
 	selection_tooltip = pet_dog_decision_tooltip
 	ai_check_interval = 120
-	cooldown = { days = 1 }
+	cooldown = {
+		days = 1
+	}
 	is_shown = {
 		any_owned_story = {
 			story_type = story_cycle_pet_dog
@@ -15,11 +17,10 @@ pet_dog_decision = {
 	}
 	effect = {
 		custom_tooltip = pet_decision_effect_tooltip
-
 		trigger_event = {
 			on_action = story_cycle_dog_pet_decision_on_actions
 		}
-	}	
+	}
 	ai_potential = {
 		always = yes
 	}
@@ -45,7 +46,9 @@ pet_cat_decision = {
 	desc = pet_cat_decision_desc
 	selection_tooltip = pet_cat_decision_tooltip
 	ai_check_interval = 120
-	cooldown = { days = 1 }
+	cooldown = {
+		days = 1
+	}
 	is_shown = {
 		any_owned_story = {
 			story_type = story_cycle_pet_cat
@@ -57,11 +60,10 @@ pet_cat_decision = {
 	}
 	effect = {
 		custom_tooltip = pet_decision_effect_tooltip
-
 		trigger_event = {
 			on_action = story_cycle_cat_pet_decision_on_actions
 		}
-	}	
+	}
 	ai_potential = {
 		always = yes
 	}
@@ -88,7 +90,9 @@ found_kingdom_decision = {
 	desc = found_kingdom_decision_desc
 	is_shown = {
 		highest_held_title_tier = tier_duchy
-		NOT = { has_game_rule = off_custom_kingdoms }
+		NOT = {
+			has_game_rule = off_custom_kingdoms
+		}
 	}
 	is_valid = {
 		prestige_level >= 2
@@ -117,7 +121,9 @@ found_kingdom_decision = {
 		if = {
 			limit = {
 				is_ai = no
-				NOT = { exists = global_var:found_kingdom_decision  }
+				NOT = {
+					exists = global_var:found_kingdom_decision
+				}
 			}
 			set_global_variable = {
 				name = found_kingdom_decision
@@ -143,7 +149,9 @@ embrace_english_culture_decision = {
 	desc = embrace_english_culture_decision_desc
 	is_shown = {
 		is_landed = yes
-		culture = { has_cultural_pillar = heritage_frankish }
+		culture = {
+			has_cultural_pillar = heritage_frankish
+		}
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -171,11 +179,15 @@ embrace_english_culture_decision = {
 		show_as_tooltip = {
 			embrace_english_culture_effect = yes
 		}
-		trigger_event = british_isles.2001
-	}	
+		trigger_event = {
+			id = british_isles.2001
+		}
+	}
 	ai_potential = {
 		is_landed = yes
-		culture = { has_cultural_pillar = heritage_frankish }
+		culture = {
+			has_cultural_pillar = heritage_frankish
+		}
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions

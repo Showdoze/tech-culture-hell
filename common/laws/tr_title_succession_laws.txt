@@ -9,8 +9,9 @@
 				goverment_has_flag = government_is_theocracy
 			}
 			highest_held_title_tier >= tier_duchy
-			NOR = { #Cultures have their special flavor.
-				culture = culture:anglo_saxon
+			NOR = {
+				#Cultures have their special flavor.
+				has_culture = culture:anglo_saxon
 				has_culture_group = culture_group:north_germanic_group
 			}
 		}
@@ -33,7 +34,6 @@
 			prestige = change_title_succession_law_prestige_cost
 		}
 	}
-
 	#HRE Succession
 	princely_elective_succession_law = {
 		can_have = {
@@ -67,7 +67,6 @@
 			prestige = change_title_succession_law_prestige_cost
 		}
 	}
-
 	#Witenagemot
 	saxon_elective_succession_law = {
 		can_have = {
@@ -161,13 +160,13 @@
 			prestige = change_title_succession_law_prestige_cost
 		}
 	}
-	
 	#Player Heir
 	temporal_head_of_faith_succession_law = {
 		can_title_have = {
 			is_temporal_head_of_faith_trigger = yes
 		}
-		should_show_for_title = { # Never show this in the UI, just apply it through script
+		should_show_for_title = {
+			# Never show this in the UI, just apply it through script
 			always = no
 		}
 		can_remove_from_title = {
