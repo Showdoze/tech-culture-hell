@@ -1,6 +1,8 @@
 ﻿free_company_decision = {
 	picture = gfx/interface/illustrations/decisions/decision_invite_knights.dds
 
+    ai_check_interval = 100
+
 	title = free_company_decision_title
 	desc = free_company_decision_desc
 	selection_tooltip = free_company_decision_tooltip
@@ -42,5 +44,22 @@
 			name = free_company
 		}
 	}
-	ai_will_do = 0
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 25
+			stress > low_medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > high_stress
+		}
+	}
 }
