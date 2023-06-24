@@ -726,7 +726,7 @@ tradition_city_state = {
 		innovation_from_learning_traits = yes
 	}
 	character_modifier = {
-		city_holding_build_speed = 0.25
+		city_holding_build_speed = -0.25
 		domain_limit = -5
 		coastal_advantage = 5
 		supply_capacity_mult = 0.5
@@ -1188,6 +1188,7 @@ tradition_amazon = {
 		opinion_of_female_rulers = 10
 		opinion_of_male_rulers = -10
 		same_culture_opinion = 10
+		lifestyle_hunter_xp_gain_mult = 0.5
 	}	
 	cost = { prestige = 500 }
 	ai_will_do = { value = 0 }
@@ -1586,6 +1587,8 @@ tradition_transport_walk  = {
 		light_cavalry_toughness_mult = -0.1
 		embarkation_cost_mult = 0.3
 		supply_capacity_mult = 0.5
+		pilgrim_xp_gain_mult = 0.5
+		lifestyle_traveler_xp_gain_mult = 0.5
 	}	
 	cost = { prestige = 5000 }
 	ai_will_do = {
