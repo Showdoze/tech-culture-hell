@@ -47,9 +47,7 @@ tr_access_single_heir_succession_law_trigger = {
 
 can_raid_trigger = {
 	OR = {
-		any_player = {
-			always = yes
-		}
+        is_ai = no
 		goverment_has_flag = government_can_raid_rule
 		root.faith.religion = religion.iconoclast_religion
 		root.faith.religion = religion.qarmatian_religion
