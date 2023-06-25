@@ -1,0 +1,29 @@
+﻿@high_maint_mult = 3
+
+@heavy_infantry_recruitment_cost = 125
+@heavy_infantry_low_maint_cost = 0.4
+@heavy_infantry_high_maint_cost = @[heavy_infantry_low_maint_cost * high_maint_mult]
+
+@light_cavalry_recruitment_cost = 115
+@light_cavalry_low_maint_cost = 0.35
+@light_cavalry_high_maint_cost = @[light_cavalry_low_maint_cost * high_maint_mult]
+
+@heavy_cavalry_recruitment_cost = 225
+@heavy_cavalry_low_maint_cost = 0.7
+@heavy_cavalry_high_maint_cost = @[heavy_cavalry_low_maint_cost * high_maint_mult]
+
+medjay_recruitment_cost = @[light_cavalry_recruitment_cost * 2]
+medjay_low_maint_cost = @[light_cavalry_low_maint_cost * 1.5]
+medjay_high_maint_cost = @[light_cavalry_high_maint_cost * 1.8]
+
+chariots_recruitment_cost = @[heavy_cavalry_recruitment_cost * 2.5]
+chariots_low_maint_cost = @[heavy_cavalry_low_maint_cost * 1.25]
+chariots_high_maint_cost = @[heavy_cavalry_high_maint_cost * 1.8]
+
+maryannu_recruitment_cost = @[heavy_cavalry_recruitment_cost * 3]
+maryannu_low_maint_cost = @[heavy_cavalry_low_maint_cost * 0.8]
+maryannu_high_maint_cost = @[heavy_cavalry_high_maint_cost * 2]
+
+ambaxtoi_recruitment_cost = @[heavy_infantry_recruitment_cost * 1.2]
+ambaxtoi_low_maint_cost = @[heavy_infantry_low_maint_cost * 1.8]
+ambaxtoi_high_maint_cost = @[heavy_infantry_high_maint_cost * 2.2]

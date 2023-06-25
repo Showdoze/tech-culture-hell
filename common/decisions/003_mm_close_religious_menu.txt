@@ -1,0 +1,21 @@
+close_conversion_menu = {
+	title = close_religious_conversion_menu
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	
+	major = yes
+	ai_check_interval = 0
+	
+	selection_tooltip = close_religious_conversion_menu_desc
+    desc = close_religious_conversion_menu
+	confirm_text = close_religious_conversion_menu
+
+	is_shown = {
+		has_character_flag = conversion_menu_open
+	 }
+    
+    effect = {
+		remove_character_flag = conversion_menu_open
+    }
+
+    ai_will_do = 0
+}

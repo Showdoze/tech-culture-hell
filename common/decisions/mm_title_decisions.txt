@@ -1,0 +1,2906 @@
+﻿restore_kemet_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_kemet_decision_desc
+
+	is_shown = {
+		religion = faith:kemetic_pagan.religion
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_kemet.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_cyrenaica
+				completely_controls = title:d_alexandria
+                completely_controls = title:d_delta
+                completely_controls = title:d_cairo
+                completely_controls = title:d_sinai
+                completely_controls = title:d_palestine
+                completely_controls = title:d_urdunn
+                completely_controls = title:d_al-said
+                completely_controls = title:d_al-wahat
+                completely_controls = title:d_eastern_desert
+                completely_controls = title:d_nobatia
+                completely_controls = title:d_shamir
+                completely_controls = title:d_naqis
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_kemet = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+
+			hidden_effect = {
+				set_title_name = k_kemet
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+		
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Kemet"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_kemet
+				set_coa = title:k_kemet
+				set_color_from_title = title:k_kemet
+				set_capital_county = title:k_kemet.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_cyrenaica = { set_de_jure_liege_title = title:k_kemet }
+			title:d_alexandria = { set_de_jure_liege_title = title:k_kemet }
+			title:d_delta = { set_de_jure_liege_title = title:k_kemet }
+			title:d_cairo = { set_de_jure_liege_title = title:k_kemet }
+			title:d_sinai = { set_de_jure_liege_title = title:k_kemet }
+			title:d_palestine = { set_de_jure_liege_title = title:k_kemet }
+			title:d_urdunn = { set_de_jure_liege_title = title:k_kemet }
+			title:d_al-said = { set_de_jure_liege_title = title:k_kemet }
+			title:d_al-wahat = { set_de_jure_liege_title = title:k_kemet }
+			title:d_eastern_desert = { set_de_jure_liege_title = title:k_kemet }
+			title:d_nobatia = { set_de_jure_liege_title = title:k_kemet }
+			title:d_shamir = { set_de_jure_liege_title = title:k_kemet }
+			title:d_naqis = { set_de_jure_liege_title = title:k_kemet }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_kemet
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_sumer_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_sumer_decision_desc
+
+	is_shown = {
+		faith = faith:sumerian_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_sumer.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_basra
+				completely_controls = title:d_kufa
+				completely_controls = title:d_wasit
+				completely_controls = title:d_baghdad
+				completely_controls = title:d_samarra
+				completely_controls = title:d_khuzestan
+				completely_controls = title:d_kermanshah
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_sumer = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Sumer"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_sumer
+				set_coa = title:k_sumer
+				set_color_from_title = title:k_sumer
+				set_capital_county = title:k_sumer.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_basra = { set_de_jure_liege_title = title:k_sumer }
+			title:d_kufa = { set_de_jure_liege_title = title:k_sumer }
+			title:d_wasit = { set_de_jure_liege_title = title:k_sumer }
+			title:d_baghdad = { set_de_jure_liege_title = title:k_sumer }
+			title:d_samarra = { set_de_jure_liege_title = title:k_sumer }
+			title:d_khuzestan = { set_de_jure_liege_title = title:k_sumer }
+			title:d_kermanshah = { set_de_jure_liege_title = title:k_sumer }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_sumer
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_akkadia_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_akkadia_decision_desc
+
+	is_shown = {
+		faith = faith:akkadian_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_akkadia.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_basra
+				completely_controls = title:d_kufa
+				completely_controls = title:d_wasit
+				completely_controls = title:d_baghdad
+				completely_controls = title:d_samarra
+				completely_controls = title:d_khuzestan
+				completely_controls = title:d_kermanshah
+				completely_controls = title:d_euphrates
+				completely_controls = title:d_diyarrabia
+				completely_controls = title:d_kurdistan
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_akkadia = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Akkadia"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_akkadia
+				set_coa = title:k_akkadia
+				set_color_from_title = title:k_akkadia
+				set_capital_county = title:k_akkadia.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_basra = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_kufa = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_wasit = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_baghdad = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_samarra = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_khuzestan = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_kermanshah = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_euphrates = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_diyarrabia = { set_de_jure_liege_title = title:k_akkadia }
+			title:d_kurdistan = { set_de_jure_liege_title = title:k_akkadia }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_akkadia
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_babylonia_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_babylonia_decision_desc
+
+	is_shown = {
+		faith = faith:babylonian_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_babylonia.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_basra
+				completely_controls = title:d_kufa
+				completely_controls = title:d_wasit
+				completely_controls = title:d_baghdad
+				completely_controls = title:d_samarra
+				completely_controls = title:d_khuzestan
+				completely_controls = title:d_kermanshah
+				completely_controls = title:d_euphrates
+				completely_controls = title:d_diyarrabia
+				completely_controls = title:d_kurdistan
+				completely_controls = title:d_diyarmudar
+				completely_controls = title:d_aleppo
+				completely_controls = title:d_palmyra
+				completely_controls = title:d_homs
+				completely_controls = title:d_lebanon
+				completely_controls = title:d_damascus
+				completely_controls = title:d_urdunn
+				completely_controls = title:d_amman
+				completely_controls = title:d_palestine
+				completely_controls = title:d_oultrejourdain
+				completely_controls = title:d_shammar
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_babylonia = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Babylonia"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_babylonia
+				set_coa = title:k_babylonia
+				set_color_from_title = title:k_babylonia
+				set_capital_county = title:k_babylonia.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_basra = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_kufa = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_wasit = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_baghdad = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_samarra = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_khuzestan = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_kermanshah = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_euphrates = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_diyarrabia = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_kurdistan = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_diyarmudar = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_aleppo = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_palmyra = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_homs = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_lebanon = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_damascus = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_urdunn = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_amman = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_palestine = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_oultrejourdain = { set_de_jure_liege_title = title:k_babylonia }
+			title:d_shammar = { set_de_jure_liege_title = title:k_babylonia }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_babylonia
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_assyria_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_assyria_decision_desc
+
+	is_shown = {
+		faith = faith:assyrian_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_assyria.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_basra
+				completely_controls = title:d_kufa
+				completely_controls = title:d_wasit
+				completely_controls = title:d_baghdad
+				completely_controls = title:d_samarra
+				completely_controls = title:d_khuzestan
+				completely_controls = title:d_kermanshah
+				completely_controls = title:d_euphrates
+				completely_controls = title:d_diyarrabia
+				completely_controls = title:d_kurdistan
+				completely_controls = title:d_diyarmudar
+				completely_controls = title:d_aleppo
+				completely_controls = title:d_palmyra
+				completely_controls = title:d_homs
+				completely_controls = title:d_lebanon
+				completely_controls = title:d_damascus
+				completely_controls = title:d_urdunn
+				completely_controls = title:d_jawf
+				completely_controls = title:d_bahrain
+				completely_controls = title:d_amman
+				completely_controls = title:d_palestine
+				completely_controls = title:d_oultrejourdain
+				completely_controls = title:d_sinai
+				completely_controls = title:d_delta
+				completely_controls = title:d_cairo
+				completely_controls = title:d_al-said
+				completely_controls = title:d_eastern_desert
+                completely_controls = title:d_nobatia
+                completely_controls = title:d_shamir
+                completely_controls = title:d_naqis
+                completely_controls = title:d_cyprus
+                completely_controls = title:d_antioch
+                completely_controls = title:d_cilicia
+                completely_controls = title:d_edessa
+                completely_controls = title:d_diyarbakr
+                completely_controls = title:d_cappadocia
+                completely_controls = title:d_charsianon
+                completely_controls = title:d_sebasteia
+                completely_controls = title:d_mesopotamia
+                completely_controls = title:d_vaspurakan
+                completely_controls = title:d_hamadan
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_assyria = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Assyria"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_assyria
+				set_coa = title:k_assyria
+				set_color_from_title = title:k_assyria
+				set_capital_county = title:k_assyria.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_basra = { set_de_jure_liege_title = title:k_assyria }
+			title:d_kufa = { set_de_jure_liege_title = title:k_assyria }
+			title:d_wasit = { set_de_jure_liege_title = title:k_assyria }
+			title:d_baghdad = { set_de_jure_liege_title = title:k_assyria }
+			title:d_samarra = { set_de_jure_liege_title = title:k_assyria }
+			title:d_khuzestan = { set_de_jure_liege_title = title:k_assyria }
+			title:d_kermanshah = { set_de_jure_liege_title = title:k_assyria }
+			title:d_euphrates = { set_de_jure_liege_title = title:k_assyria }
+			title:d_diyarrabia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_kurdistan = { set_de_jure_liege_title = title:k_assyria }
+			title:d_diyarmudar = { set_de_jure_liege_title = title:k_assyria }
+			title:d_aleppo = { set_de_jure_liege_title = title:k_assyria }
+			title:d_palmyra = { set_de_jure_liege_title = title:k_assyria }
+			title:d_homs = { set_de_jure_liege_title = title:k_assyria }
+			title:d_lebanon = { set_de_jure_liege_title = title:k_assyria }
+			title:d_damascus = { set_de_jure_liege_title = title:k_assyria }
+			title:d_urdunn = { set_de_jure_liege_title = title:k_assyria }
+			title:d_jawf = { set_de_jure_liege_title = title:k_assyria }
+			title:d_bahrain = { set_de_jure_liege_title = title:k_assyria }
+			title:d_amman = { set_de_jure_liege_title = title:k_assyria }
+			title:d_palestine = { set_de_jure_liege_title = title:k_assyria }
+			title:d_oultrejourdain = { set_de_jure_liege_title = title:k_assyria }
+			title:d_sinai = { set_de_jure_liege_title = title:k_assyria }
+			title:d_delta = { set_de_jure_liege_title = title:k_assyria }
+			title:d_cairo = { set_de_jure_liege_title = title:k_assyria }
+			title:d_al-said = { set_de_jure_liege_title = title:k_assyria }
+			title:d_eastern_desert = { set_de_jure_liege_title = title:k_assyria }
+			title:d_nobatia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_shamir = { set_de_jure_liege_title = title:k_assyria }
+			title:d_naqis = { set_de_jure_liege_title = title:k_assyria }
+			title:d_cyprus = { set_de_jure_liege_title = title:k_assyria }
+			title:d_antioch = { set_de_jure_liege_title = title:k_assyria }
+			title:d_cilicia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_edessa = { set_de_jure_liege_title = title:k_assyria }
+			title:d_diyarbakr = { set_de_jure_liege_title = title:k_assyria }
+			title:d_cappadocia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_charsianon = { set_de_jure_liege_title = title:k_assyria }
+			title:d_sebasteia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_mesopotamia = { set_de_jure_liege_title = title:k_assyria }
+			title:d_vaspurakan = { set_de_jure_liege_title = title:k_assyria }
+			title:d_hamadan = { set_de_jure_liege_title = title:k_assyria }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_assyria
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_canaan_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_canaan_decision_desc
+
+	is_shown = {
+		faith = faith:canaanite_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_canaan.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_sinai
+				completely_controls = title:d_oultrejourdain
+				completely_controls = title:d_palestine
+				completely_controls = title:d_amman
+				completely_controls = title:d_urdunn
+				completely_controls = title:d_damascus
+				completely_controls = title:d_lebanon
+				completely_controls = title:d_homs
+				completely_controls = title:d_antioch
+				completely_controls = title:d_palmyra
+				completely_controls = title:d_aleppo
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_canaan = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Canaan"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_canaan
+				set_coa = title:k_canaan
+				set_color_from_title = title:k_canaan
+				set_capital_county = title:k_canaan.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_sinai = { set_de_jure_liege_title = title:k_canaan }
+			title:d_oultrejourdain = { set_de_jure_liege_title = title:k_canaan }
+			title:d_palestine = { set_de_jure_liege_title = title:k_canaan }
+			title:d_amman = { set_de_jure_liege_title = title:k_canaan }
+			title:d_urdunn = { set_de_jure_liege_title = title:k_canaan }
+			title:d_damascus = { set_de_jure_liege_title = title:k_canaan }
+			title:d_lebanon = { set_de_jure_liege_title = title:k_canaan }
+			title:d_homs = { set_de_jure_liege_title = title:k_canaan }
+			title:d_antioch = { set_de_jure_liege_title = title:k_canaan }
+			title:d_palmyra = { set_de_jure_liege_title = title:k_canaan }
+			title:d_aleppo = { set_de_jure_liege_title = title:k_canaan }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_canaan
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_phoenicia_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_phoenicia_decision_desc
+
+	is_shown = {
+		faith = faith:phoenician_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_phoenicia.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_lebanon
+				completely_controls = title:d_homs
+				completely_controls = title:d_antioch
+				completely_controls = title:d_palmyra
+				completely_controls = title:d_aleppo
+				completely_controls = title:d_cyprus
+				completely_controls = title:d_syrte
+				completely_controls = title:d_tunis
+				completely_controls = title:d_mallorca
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_phoenicia = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Phoenicia"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_phoenicia
+				set_coa = title:k_phoenicia
+				set_color_from_title = title:k_phoenicia
+				set_capital_county = title:k_phoenicia.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_lebanon = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_homs = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_antioch = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_palmyra = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_aleppo = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_cyprus = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_syrte = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_tunis = { set_de_jure_liege_title = title:k_phoenicia }
+			title:d_mallorca = { set_de_jure_liege_title = title:k_phoenicia }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_phoenicia
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_carthage_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_carthage_decision_desc
+
+	is_shown = {
+		faith = faith:punic_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_carthage.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_tunis
+				completely_controls = title:d_gabes
+				completely_controls = title:d_tripolitania
+				completely_controls = title:d_syrte
+				completely_controls = title:d_jerid
+				completely_controls = title:d_mzab
+				completely_controls = title:d_kairouan
+				completely_controls = title:d_zab
+				completely_controls = title:d_kroumerie
+				completely_controls = title:d_bejaia
+				completely_controls = title:d_alger
+				completely_controls = title:d_tahert
+				completely_controls = title:d_tlemcen
+				completely_controls = title:d_marrakesh
+				completely_controls = title:d_fes
+				completely_controls = title:d_rif
+				completely_controls = title:d_sevilla
+				completely_controls = title:d_cordoba
+				completely_controls = title:d_granada
+				completely_controls = title:d_murcia
+				completely_controls = title:d_toledo
+				completely_controls = title:d_valencia
+				completely_controls = title:d_mallorca
+				completely_controls = title:d_sardinia
+				completely_controls = title:d_corsica
+				completely_controls = title:d_sicily
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_carthage = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Carthage"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_carthage
+				set_coa = title:k_carthage
+				set_color_from_title = title:k_carthage
+				set_capital_county = title:k_carthage.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_tunis = { set_de_jure_liege_title = title:k_carthage }
+			title:d_gabes = { set_de_jure_liege_title = title:k_carthage }
+			title:d_tripolitania = { set_de_jure_liege_title = title:k_carthage }
+			title:d_syrte = { set_de_jure_liege_title = title:k_carthage }
+			title:d_jerid = { set_de_jure_liege_title = title:k_carthage }
+			title:d_mzab = { set_de_jure_liege_title = title:k_carthage }
+			title:d_kairouan = { set_de_jure_liege_title = title:k_carthage }
+			title:d_zab = { set_de_jure_liege_title = title:k_carthage }
+			title:d_kroumerie = { set_de_jure_liege_title = title:k_carthage }
+			title:d_bejaia = { set_de_jure_liege_title = title:k_carthage }
+			title:d_alger = { set_de_jure_liege_title = title:k_carthage }
+			title:d_tahert = { set_de_jure_liege_title = title:k_carthage }
+			title:d_tlemcen = { set_de_jure_liege_title = title:k_carthage }
+			title:d_marrakesh = { set_de_jure_liege_title = title:k_carthage }
+			title:d_fes = { set_de_jure_liege_title = title:k_carthage }
+			title:d_rif = { set_de_jure_liege_title = title:k_carthage }
+			title:d_sevilla = { set_de_jure_liege_title = title:k_carthage }
+			title:d_cordoba = { set_de_jure_liege_title = title:k_carthage }
+			title:d_granada = { set_de_jure_liege_title = title:k_carthage }
+			title:d_murcia = { set_de_jure_liege_title = title:k_carthage }
+			title:d_toledo = { set_de_jure_liege_title = title:k_carthage }
+			title:d_valencia = { set_de_jure_liege_title = title:k_carthage }
+			title:d_mallorca = { set_de_jure_liege_title = title:k_carthage }
+			title:d_sardinia = { set_de_jure_liege_title = title:k_carthage }
+			title:d_corsica = { set_de_jure_liege_title = title:k_carthage }
+			title:d_sicily = { set_de_jure_liege_title = title:k_carthage }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_carthage
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_brython_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_brython_decision_desc
+
+	is_shown = {
+		faith = faith:brythonic_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_brython.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_cornwall
+				completely_controls = title:d_somerset
+				completely_controls = title:d_canterbury
+				completely_controls = title:d_bedford
+				completely_controls = title:d_gloucester
+				completely_controls = title:d_norfolk
+				completely_controls = title:d_hereford
+				completely_controls = title:d_york
+				completely_controls = title:d_lancaster
+				completely_controls = title:d_northumberland
+				completely_controls = title:d_brittany
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_brython = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Brython"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_brython
+				set_coa = title:k_brython
+				set_color_from_title = title:k_brython
+				set_capital_county = title:k_brython.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_cornwall = { set_de_jure_liege_title = title:k_brython }
+			title:d_somerset = { set_de_jure_liege_title = title:k_brython }
+			title:d_canterbury = { set_de_jure_liege_title = title:k_brython }
+			title:d_bedford = { set_de_jure_liege_title = title:k_brython }
+			title:d_gloucester = { set_de_jure_liege_title = title:k_brython }
+			title:d_norfolk = { set_de_jure_liege_title = title:k_brython }
+			title:d_hereford = { set_de_jure_liege_title = title:k_brython }
+			title:d_york = { set_de_jure_liege_title = title:k_brython }
+			title:d_lancaster = { set_de_jure_liege_title = title:k_brython }
+			title:d_northumberland = { set_de_jure_liege_title = title:k_brython }
+			title:d_brittany = { set_de_jure_liege_title = title:k_brython }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_brython
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_na_gaeil_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_na_gaeil_decision_desc
+
+	is_shown = {
+		faith = faith:gaelic_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_na_gaeil.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_munster
+				completely_controls = title:d_leinster
+				completely_controls = title:d_connacht
+				completely_controls = title:d_meath
+				completely_controls = title:d_ulster
+				completely_controls = title:d_western_isles
+				completely_controls = title:d_the_isles
+				completely_controls = title:d_galloway
+				completely_controls = title:d_moray
+				completely_controls = title:d_albany
+				completely_controls = title:d_lothian
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_na_gaeil = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Na Gaeil"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_na_gaeil
+				set_coa = title:k_na_gaeil
+				set_color_from_title = title:k_na_gaeil
+				set_capital_county = title:k_na_gaeil.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_munster = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_leinster = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_connacht = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_meath = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_ulster = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_western_isles = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_the_isles = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_galloway = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_moray = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_albany = { set_de_jure_liege_title = title:k_na_gaeil }
+			title:d_lothian = { set_de_jure_liege_title = title:k_na_gaeil }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_na_gaeil
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+restore_gaul_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = restore_gaul_decision_desc
+
+	is_shown = {
+		faith = faith:gaulish_pagan
+
+        is_independent_ruler = yes
+
+        NOT = {
+            exists = title:k_gaul.holder
+        }
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		OR = {
+			AND = {
+				completely_controls = title:d_normandy
+				completely_controls = title:d_anjou
+				completely_controls = title:d_poitou
+				completely_controls = title:d_aquitaine
+				completely_controls = title:d_gascogne
+				completely_controls = title:d_armagnac
+				completely_controls = title:d_languedoc
+				completely_controls = title:d_toulouse
+				completely_controls = title:d_auvergne
+				completely_controls = title:d_bourbon
+				completely_controls = title:d_berry
+				completely_controls = title:d_orleans
+				completely_controls = title:d_valois
+				completely_controls = title:d_flanders
+				completely_controls = title:d_brabant
+				completely_controls = title:d_julich
+				completely_controls = title:d_lower_lorraine
+				completely_controls = title:d_champagne
+				completely_controls = title:d_bar
+				completely_controls = title:d_burgundy
+				completely_controls = title:d_upper_burgundy
+				completely_controls = title:d_dauphine
+				completely_controls = title:d_provence
+				completely_controls = title:d_savoie
+				completely_controls = title:d_transjurania
+				completely_controls = title:d_alsace
+				completely_controls = title:d_upper_lorraine
+				completely_controls = title:d_luxembourg
+				completely_controls = title:d_currezia
+				completely_controls = title:d_swabia
+				completely_controls = title:d_bavaria
+				completely_controls = title:d_salzburg
+				completely_controls = title:d_tyrol
+				completely_controls = title:d_augsburg
+				completely_controls = title:d_carinthia
+				completely_controls = title:d_steyermark
+				completely_controls = title:d_krain
+				completely_controls = title:d_friuli
+				completely_controls = title:d_verona
+				completely_controls = title:d_lombardia
+				completely_controls = title:d_piedmonte
+				completely_controls = title:d_genoa
+				completely_controls = title:d_emilia
+				completely_controls = title:d_osterreich
+			}
+		}
+	}
+
+	cost = {
+		gold = 1200
+		prestige = 2000
+		piety = 600
+	}
+
+	effect = {
+		create_title_and_vassal_change = change
+
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
+
+		title:k_gaul = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		hidden_effect = {
+			save_scope_as = founder
+			primary_title = {
+				save_scope_as = old_title
+			}
+
+			create_dynamic_title = {
+				tier = empire
+				name = "Gaul"
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = created
+			}
+
+			scope:new_title = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				
+				set_de_jure_liege_title = scope:new_title
+			}
+
+			every_sub_realm_county = {
+				limit = {
+					exists = kingdom
+					NOT = { exists = kingdom.holder }
+					holder.top_liege = root
+					kingdom = {
+						save_temporary_scope_as = test_kingdom
+					}
+					holder.top_liege = {
+						completely_controls = scope:test_kingdom
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							kingdom = {
+								is_in_list = additional_de_jure_kingdoms
+							}
+						}
+					}
+					kingdom = {
+						set_de_jure_liege_title = scope:new_title
+						add_to_list = additional_de_jure_kingdoms
+					}
+				}
+			}
+
+			scope:new_title = {
+				set_title_name = title:k_gaul
+				set_coa = title:k_gaul
+				set_color_from_title = title:k_gaul
+				set_capital_county = title:k_gaul.title_capital_county
+			}
+
+			set_primary_title_to = scope:new_title
+
+			title:d_normandy = { set_de_jure_liege_title = title:k_gaul }
+			title:d_anjou = { set_de_jure_liege_title = title:k_gaul }
+			title:d_poitou = { set_de_jure_liege_title = title:k_gaul }
+			title:d_aquitaine = { set_de_jure_liege_title = title:k_gaul }
+			title:d_gascogne = { set_de_jure_liege_title = title:k_gaul }
+			title:d_armagnac = { set_de_jure_liege_title = title:k_gaul }
+			title:d_languedoc = { set_de_jure_liege_title = title:k_gaul }
+			title:d_toulouse = { set_de_jure_liege_title = title:k_gaul }
+			title:d_auvergne = { set_de_jure_liege_title = title:k_gaul }
+			title:d_bourbon = { set_de_jure_liege_title = title:k_gaul }
+			title:d_berry = { set_de_jure_liege_title = title:k_gaul }
+			title:d_orleans = { set_de_jure_liege_title = title:k_gaul }
+			title:d_valois = { set_de_jure_liege_title = title:k_gaul }
+			title:d_flanders = { set_de_jure_liege_title = title:k_gaul }
+			title:d_brabant = { set_de_jure_liege_title = title:k_gaul }
+			title:d_julich = { set_de_jure_liege_title = title:k_gaul }
+			title:d_lower_lorraine = { set_de_jure_liege_title = title:k_gaul }
+			title:d_champagne = { set_de_jure_liege_title = title:k_gaul }
+			title:d_bar = { set_de_jure_liege_title = title:k_gaul }
+			title:d_burgundy = { set_de_jure_liege_title = title:k_gaul }
+			title:d_upper_burgundy = { set_de_jure_liege_title = title:k_gaul }
+			title:d_dauphine = { set_de_jure_liege_title = title:k_gaul }
+			title:d_provence = { set_de_jure_liege_title = title:k_gaul }
+			title:d_savoie = { set_de_jure_liege_title = title:k_gaul }
+			title:d_transjurania = { set_de_jure_liege_title = title:k_gaul }
+			title:d_alsace = { set_de_jure_liege_title = title:k_gaul }
+			title:d_upper_lorraine = { set_de_jure_liege_title = title:k_gaul }
+			title:d_luxembourg = { set_de_jure_liege_title = title:k_gaul }
+			title:d_currezia = { set_de_jure_liege_title = title:k_gaul }
+			title:d_swabia = { set_de_jure_liege_title = title:k_gaul }
+			title:d_bavaria = { set_de_jure_liege_title = title:k_gaul }
+			title:d_salzburg = { set_de_jure_liege_title = title:k_gaul }
+			title:d_tyrol = { set_de_jure_liege_title = title:k_gaul }
+			title:d_augsburg = { set_de_jure_liege_title = title:k_gaul }
+			title:d_carinthia = { set_de_jure_liege_title = title:k_gaul }
+			title:d_steyermark = { set_de_jure_liege_title = title:k_gaul }
+			title:d_krain = { set_de_jure_liege_title = title:k_gaul }
+			title:d_friuli = { set_de_jure_liege_title = title:k_gaul }
+			title:d_verona = { set_de_jure_liege_title = title:k_gaul }
+			title:d_lombardia = { set_de_jure_liege_title = title:k_gaul }
+			title:d_piedmonte = { set_de_jure_liege_title = title:k_gaul }
+			title:d_genoa = { set_de_jure_liege_title = title:k_gaul }
+			title:d_emilia = { set_de_jure_liege_title = title:k_gaul }
+			title:d_osterreich = { set_de_jure_liege_title = title:k_gaul }
+		}
+
+		every_held_title = {
+			limit = {
+				NOR = {
+					this = root.primary_title
+					this = title:k_gaul
+				}
+				
+                OR = {
+                    tier = tier_kingdom
+                    tier = tier_empire
+                }
+            }
+
+            root = {
+                destroy_title = prev
+            }
+        }
+	}
+}
+
+set_capital_giza_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_giza_decision_desc
+
+	is_shown = {
+		has_title = title:k_kemet
+		faith = faith:kemetic_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_giza
+            }
+        }
+
+        OR = {
+			title:c_giza.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_giza.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_giza.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_giza = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_giza = {
+			hidden_effect = {
+				set_title_name = c_memphis
+			}
+		}
+
+		set_realm_capital = title:c_giza
+	}
+}
+
+set_capital_amarna_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_amarna_decision_desc
+
+	is_shown = {
+		has_title = title:k_kemet
+		faith = faith:atenist_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_bahnasa
+            }
+        }
+
+        OR = {
+			title:c_bahnasa.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_bahnasa.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_bahnasa.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_bahnasa = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_bahnasa = {
+			hidden_effect = {
+				set_title_name = c_amarna
+			}
+		}
+
+		set_realm_capital = title:c_bahnasa
+	}
+}
+
+set_capital_uruk_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_uruk_decision_desc
+
+	is_shown = {
+		has_title = title:k_sumer
+		faith = faith:sumerian_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_qadisiya
+            }
+        }
+
+        OR = {
+			title:c_qadisiya.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_qadisiya.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_qadisiya.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_qadisiya = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_qadisiya = {
+			hidden_effect = {
+				set_title_name = c_uruk
+			}
+		}
+
+		set_realm_capital = title:c_qadisiya
+	}
+}
+
+set_capital_akkad_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_akkad_decision_desc
+
+	is_shown = {
+		has_title = title:k_akkadia
+		faith = faith:akkadian_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_baghdad
+            }
+        }
+
+        OR = {
+			title:c_baghdad.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_baghdad.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_baghdad.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_baghdad = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_baghdad = {
+			hidden_effect = {
+				set_title_name = c_akkad
+			}
+		}
+
+		set_realm_capital = title:c_baghdad
+	}
+}
+
+set_capital_babylon_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_babylon_decision_desc
+
+	is_shown = {
+		has_title = title:k_babylonia
+		faith = faith:babylonian_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_baghdad
+            }
+        }
+
+        OR = {
+			title:c_baghdad.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_baghdad.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_baghdad.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_baghdad = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_baghdad = {
+			hidden_effect = {
+				set_title_name = c_babylon
+			}
+		}
+
+		set_realm_capital = title:c_baghdad
+	}
+}
+
+set_capital_assur_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_assur_decision_desc
+
+	is_shown = {
+		has_title = title:k_assyria
+		faith = faith:assyrian_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_mosul
+            }
+        }
+
+        OR = {
+			title:c_mosul.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_mosul.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_mosul.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_mosul = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_mosul = {
+			hidden_effect = {
+				set_title_name = c_assur
+			}
+		}
+
+		set_realm_capital = title:c_mosul
+	}
+}
+
+set_capital_hatzor_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_hatzor_decision_desc
+
+	is_shown = {
+		has_title = title:k_canaan
+		faith = faith:canaanite_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_tiberias
+            }
+        }
+
+        OR = {
+			title:c_tiberias.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_tiberias.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_tiberias.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_tiberias = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_tiberias = {
+			hidden_effect = {
+				set_title_name = c_hatzor
+			}
+		}
+
+		set_realm_capital = title:c_tiberias
+	}
+}
+
+set_capital_tyre_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_tyre_decision_desc
+
+	is_shown = {
+		has_title = title:k_phoenicia
+		faith = faith:phoenician_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_acre
+            }
+        }
+
+        OR = {
+			title:c_acre.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_acre.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_acre.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_acre = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_acre = {
+			hidden_effect = {
+				set_title_name = c_tyre
+			}
+		}
+
+		set_realm_capital = title:c_acre
+	}
+}
+
+set_capital_carthage_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 0
+
+	desc = set_capital_carthage_decision_desc
+
+	is_shown = {
+		has_title = title:k_carthage
+		faith = faith:punic_pagan
+
+        NOT = {
+            capital_county = {
+                this = title:c_tunis
+            }
+        }
+
+        OR = {
+			title:c_tunis.holder = { 	
+				any_liege_or_above = {
+                    this = root
+                }
+			}
+
+			title:c_tunis.holder = {
+                this = root
+            }
+		}
+	}
+
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = 75
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+                    title:c_tunis.holder = {
+                        this = root 
+                    } 
+                }
+			}
+
+			create_title_and_vassal_change = change
+
+			scope:change = {
+				set_title_and_vassal_change_type = returned
+			}
+
+			title:c_tunis = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:c_tunis = {
+			hidden_effect = {
+				set_title_name = c_carthage
+			}
+		}
+
+		set_realm_capital = title:c_tunis
+	}
+}
+
+
+create_israel_kingdom_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = create_israel_kingdom_decision_desc
+	selection_tooltip = create_israel_kingdom_decision_tooltip
+	major = yes
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith.religion = faith:rabbinism.religion
+		NOR = {  #Can be redone if the Kingdom is destroyed again.
+			exists = title:k_israel.holder
+			faith = faith:samaritan
+		}
+	}
+
+	is_valid = {
+		prestige >= 1000
+		piety >= 1000
+		completely_controls = title:d_palestine
+		completely_controls = title:d_urdunn
+		completely_controls = title:d_oultrejourdain
+		custom_description = {
+			text = "jerusalem_is_same_faith"
+			title:c_jerusalem.faith = root.faith
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = create_israel_kingdom_decision_effect_tooltip
+		show_as_tooltip = {
+			create_israel_scripted_effect = yes
+		}
+		trigger_event = {
+			id = middle_east_decisions.0005
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_samaria_kingdom_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = create_samaria_kingdom_decision_desc
+	selection_tooltip = create_samaria_kingdom_decision_tooltip
+	major = yes
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith = faith:samaritan
+		NOT = {  #Can be redone if the Kingdom is destroyed again.
+			exists = title:k_samaria.holder
+		}
+	}
+
+	is_valid = {
+		prestige >= 1000
+		piety >= 1000
+		completely_controls = title:d_palestine
+		completely_controls = title:d_urdunn
+		completely_controls = title:d_oultrejourdain
+		custom_description = {
+			text = "jerusalem_is_same_faith"
+			title:c_tiberias.faith = root.faith
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = create_samaria_kingdom_decision_effect_tooltip
+		show_as_tooltip = {
+			create_samaria_scripted_effect = yes
+		}
+		trigger_event = {
+			id = ar_title_events.0001
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_judah_kingdom_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = create_judah_kingdom_decision_desc
+	selection_tooltip = create_judah_kingdom_decision_tooltip
+	major = yes
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith = faith:yahwism_pagan
+		NOT = {  #Can be redone if the Kingdom is destroyed again.
+			exists = title:k_judah.holder
+		}
+	}
+
+	is_valid = {
+		prestige >= 1000
+		piety >= 1000
+		completely_controls = title:d_palestine
+		completely_controls = title:d_urdunn
+		completely_controls = title:d_oultrejourdain
+		custom_description = {
+			text = "jerusalem_is_same_faith"
+			title:c_jerusalem.faith = root.faith
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = create_judah_kingdom_decision_effect_tooltip
+		show_as_tooltip = {
+			create_judah_scripted_effect = yes
+		}
+		trigger_event = {
+			id = ar_title_events.1001
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_philistine_kingdom_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = create_philistine_kingdom_decision_desc
+	selection_tooltip = create_philistine_kingdom_decision_tooltip
+	major = yes
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith = faith:philistinian_pagan
+		NOT = {  #Can be redone if the Kingdom is destroyed again.
+			exists = title:k_philistine.holder
+		}
+	}
+
+	is_valid = {
+		prestige >= 1000
+		piety >= 1000
+		completely_controls = title:d_palestine
+		completely_controls = title:d_urdunn
+		completely_controls = title:d_oultrejourdain
+		custom_description = {
+			text = "jerusalem_is_same_faith"
+			title:c_jerusalem.faith = root.faith
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = create_philistine_kingdom_decision_effect_tooltip
+		show_as_tooltip = {
+			create_philistine_scripted_effect = yes
+		}
+		trigger_event = {
+			id = ar_title_events.2001
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

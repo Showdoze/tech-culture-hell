@@ -1,0 +1,216 @@
+﻿create_samaria_scripted_effect = {
+	save_scope_as = scoped_ruler
+	create_title_and_vassal_change = change
+	scope:change = {
+		set_title_and_vassal_change_type = created
+	}
+	title:k_samaria = {
+		change_title_holder = {
+			holder = scope:scoped_ruler
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = {
+		set_primary_title_to = title:k_samaria
+		title:d_palestine = {
+			set_de_jure_liege_title = title:k_samaria
+		}
+		title:d_urdunn = {
+			set_de_jure_liege_title = title:k_samaria
+		}
+		title:d_oultrejourdain = {
+			set_de_jure_liege_title = title:k_samaria
+		}
+		title:k_samaria = {
+			set_de_jure_liege_title = title:k_jerusalem.de_jure_liege
+		}
+	}
+
+	if = {
+		limit = {
+			exists = title:k_israel.holder
+		}
+
+		destroy_title = title:k_israel
+	}
+
+	if = {
+		limit = {
+			exists = title:k_judah.holder
+		}
+
+		destroy_title = title:k_judah
+	}
+
+	if = {
+		limit = {
+			exists = title:k_philistine.holder
+		}
+
+		destroy_title = title:k_philistine
+	}
+}
+
+create_israel_scripted_effect = {
+	save_scope_as = scoped_ruler
+	create_title_and_vassal_change = change
+	scope:change = {
+		set_title_and_vassal_change_type = created
+	}
+	title:k_israel = {
+		change_title_holder = {
+			holder = scope:scoped_ruler
+			change = scope:change
+		}
+	}
+	
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = {
+		set_primary_title_to = title:k_israel
+		title:d_palestine = {
+			set_de_jure_liege_title = title:k_israel
+		}
+		title:d_urdunn = {
+			set_de_jure_liege_title = title:k_israel
+		}
+		title:d_oultrejourdain = {
+			set_de_jure_liege_title = title:k_israel
+		}
+		title:k_israel = {
+			set_de_jure_liege_title = title:k_jerusalem.de_jure_liege
+		}
+	}
+
+	if = {
+		limit = {
+			exists = title:k_samaria.holder
+		}
+
+		destroy_title = title:k_samaria
+	}
+
+	if = {
+		limit = {
+			exists = title:k_judah.holder
+		}
+
+		destroy_title = title:k_judah
+	}
+
+	if = {
+		limit = {
+			exists = title:k_philistine.holder
+		}
+
+		destroy_title = title:k_philistine
+	}
+}
+
+create_judah_scripted_effect = {
+	save_scope_as = scoped_ruler
+	create_title_and_vassal_change = change
+	scope:change = {
+		set_title_and_vassal_change_type = created
+	}
+	title:k_judah = {
+		change_title_holder = {
+			holder = scope:scoped_ruler
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = {
+		set_primary_title_to = title:k_judah
+		title:d_palestine = {
+			set_de_jure_liege_title = title:k_judah
+		}
+		title:d_urdunn = {
+			set_de_jure_liege_title = title:k_judah
+		}
+		title:d_oultrejourdain = {
+			set_de_jure_liege_title = title:k_judah
+		}
+		title:k_judah = {
+			set_de_jure_liege_title = title:k_jerusalem.de_jure_liege
+		}
+	}
+
+	if = {
+		limit = {
+			exists = title:k_israel.holder
+		}
+
+		destroy_title = title:k_israel
+	}
+
+	if = {
+		limit = {
+			exists = title:k_samaria.holder
+		}
+
+		destroy_title = title:k_samaria
+	}
+
+	if = {
+		limit = {
+			exists = title:k_philistine.holder
+		}
+
+		destroy_title = title:k_philistine
+	}
+}
+
+create_philistine_scripted_effect = {
+	save_scope_as = scoped_ruler
+	create_title_and_vassal_change = change
+	scope:change = {
+		set_title_and_vassal_change_type = created
+	}
+	title:k_philistine = {
+		change_title_holder = {
+			holder = scope:scoped_ruler
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = {
+		set_primary_title_to = title:k_philistine
+		title:d_palestine = {
+			set_de_jure_liege_title = title:k_philistine
+		}
+		title:d_urdunn = {
+			set_de_jure_liege_title = title:k_philistine
+		}
+		title:d_oultrejourdain = {
+			set_de_jure_liege_title = title:k_philistine
+		}
+		title:k_philistine = {
+			set_de_jure_liege_title = title:k_jerusalem.de_jure_liege
+		}
+	}
+
+	if = {
+		limit = {
+			exists = title:k_israel.holder
+		}
+
+		destroy_title = title:k_israel
+	}
+
+	if = {
+		limit = {
+			exists = title:k_samaria.holder
+		}
+
+		destroy_title = title:k_samaria
+	}
+
+	if = {
+		limit = {
+			exists = title:k_judah.holder
+		}
+
+		destroy_title = title:k_judah
+	}
+}
