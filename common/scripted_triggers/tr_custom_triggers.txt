@@ -50,25 +50,15 @@ can_raid_trigger = {
 		any_player = {
 			always = yes
 		}
-		trigger_if = {
-			AND = { 
-			    is_ai = yes
-				OR = {
-					goverment_has_flag = government_can_raid_rule
-					root.faith.religion = religion.iconoclast_religion
-					root.faith.religion = religion.qarmatian_religion
-					has_trait = reaver
-					has_trait = greedy
-					has_trait = sadistic
-					in_debt = yes
-					has_trait = viking
-					faith = { has_doctrine_parameter = faith_can_raid }
-				}
-			}
-		}
-		trigger_else = {
-			always = no
-		}
+		goverment_has_flag = government_can_raid_rule
+		root.faith.religion = religion.iconoclast_religion
+		root.faith.religion = religion.qarmatian_religion
+		has_trait = reaver
+		has_trait = greedy
+		has_trait = sadistic
+		in_debt = yes
+		has_trait = viking
+		faith = { has_doctrine_parameter = faith_can_raid }
 	}
 }
 
