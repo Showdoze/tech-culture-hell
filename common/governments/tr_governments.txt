@@ -27,12 +27,11 @@ feudal_government = {
 		title_revocation_rights
 	}
 
-	ai = {
-        can_raid = no
+    ai = {
+	    can_raid_trigger = no
     }
 
     flag = government_is_feudal
-	flag = government_can_raid_rule
 	color = hsv{ 0.67 1.00 0.78 }
 }
 
@@ -75,12 +74,11 @@ theocracy_government = {
 		succession_rights
 	}
 
-	ai = {
-        can_raid = no
+    ai = {
+	    can_raid_trigger = no
     }
 
     flag = government_is_theocracy
-	flag = government_can_raid_rule
 	color = hsv{ 0.00 0.00 0.78 }
 }
 
@@ -104,18 +102,16 @@ republic_government = {
 		men_at_arms_limit = 1
     }
 
-	ai = {
-		arrange_marriage = no
-		can_raid = no
-	}
-
 	vassal_contract = { 
 		republic_government_obligations
 		succession_rights
 	}
 
+    ai = {
+	    can_raid_trigger = no
+    }
+
     flag = government_is_republic
-	flag = government_can_raid_rule
 	color = hsv{ 0.00 1.00 0.98 }
 }
 
@@ -159,12 +155,11 @@ autocracy_government = {
 		title_revocation_rights
 	}
 
-	ai = {
-        can_raid = no
+    ai = {
+	    can_raid_trigger = no
     }
 
 	flag = government_is_autocracy
-    flag = government_can_raid_rule
     color = hsv { 0.00 0.01 0.01 }
 }
 
@@ -267,11 +262,10 @@ caliphate_government = {
 		}
 	}
 
-	ai = {
-        can_raid = no
+    ai = {
+	    can_raid_trigger = no
     }
 
-	flag = government_can_raid_rule
 	flag = government_is_caliphate
 
 	color = hsv { 0.39 0.93 0.54 }
