@@ -40,7 +40,7 @@ innovation_heraldry = {
 	culture_era = culture_era_high_medieval
 	icon = @raised_banner
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		intrigue = 1
 		dynasty_opinion = 5
@@ -56,7 +56,7 @@ innovation_earth_chart = {
 	can_progress = {
 		has_innovation = innovation_number_of_days
 	}
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		naval_movement_speed_mult = 0.2
 		learning = 1
@@ -69,7 +69,7 @@ innovation_wheelbarrow = {
 	region = world_europe_west_britannia
 	icon = @maa_02
 
-	modifier = {
+	character_modifier = {
 		development_growth_factor = 0.1
 		build_speed = -0.05
 	}
@@ -80,7 +80,7 @@ innovation_exechequer = {
 	region = world_europe_west_britannia
 	icon = @administration_2
 
-	modifier = {
+	character_modifier = {
 		vassal_tax_contribution_mult = 0.15
 		domain_tax_mult = 0.05
 		stewardship = 1
@@ -92,7 +92,7 @@ innovation_eyres = {
 	region = world_europe_west_britannia
 	icon = @nobility_01
 
-	modifier = {
+	character_modifier = {
 		monthly_county_control_change_factor = 0.05
 		vassal_tax_contribution_mult = 0.1
 	}
@@ -103,7 +103,7 @@ innovation_cannon_of_medicine = {
 	region = world_middle_east
 	icon = @administration_3
 
-	modifier = {
+	character_modifier = {
 		health = 0.5
 	}
 }
@@ -113,7 +113,7 @@ innovation_madrasa = {
 	region = world_middle_east
 	icon = @nobility_04
 
-	modifier = {
+	character_modifier = {
 		learning = 2
 	}
 }
@@ -143,7 +143,7 @@ innovation_desert_tactics = {
 	icon = @special_maa_02
 	region = ghw_region_holy_land
 
-    modifier = {
+    character_modifier = {
 		martial = 1
 	}
 	unlock_maa = chasseur

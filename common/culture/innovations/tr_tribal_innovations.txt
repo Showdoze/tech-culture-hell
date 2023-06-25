@@ -35,7 +35,7 @@ innovation_high_carbon = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @metal_work
-	modifier = {
+	character_modifier = {
 		prowess = 1
 		martial = 1
 		men_at_arms_maintenance = -0.1
@@ -53,7 +53,7 @@ innovation_gavelkind = {
 	culture_era = culture_era_tribal
 	icon = @administration_3
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		dynasty_opinion = 10
 	}
@@ -69,7 +69,7 @@ innovation_tanistry_elective = {
 	region = ghw_region_celtic
 	icon = @majesty_02
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
 
@@ -83,7 +83,7 @@ innovation_scandinavian_elective = {
 	region = world_europe_north
 	icon = @majesty_02
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
 	custom = unlock_scandinavian_elective
@@ -96,7 +96,7 @@ innovation_saxon_elective = {
 	region = ghw_region_saxony
 	icon = @majesty_02
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
 	custom = unlock_saxon_elective
@@ -111,7 +111,7 @@ innovation_earth_size = {
 	can_progress = {
 		has_innovation = innovation_world_is_round
 	}
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		movement_speed 0.1
 		learning = 1
@@ -125,7 +125,7 @@ innovation_table_of_princes = {
 	icon = @nobility_01
 	region = ghw_region_poland_bohemia_bavaria
 	
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		diplomacy = 1
 		dynasty_opinion = 10
@@ -170,7 +170,7 @@ innovation_varangian_adventurers = {
 		NOT = { has_cultural_era_or_later = culture_era_early_medieval }
 	}
 	
-	modifier = {
+	character_modifier = {
 		martial = 2
 	}
 
@@ -184,7 +184,7 @@ innovation_longboats = {
 	region = world_europe_north
 	icon = @longboats
 
-	modifier = {
+	character_modifier = {
 		embarkation_cost_mult = -1
 		naval_movement_speed_mult = 0.75
 	}
@@ -199,7 +199,7 @@ innovation_african_canoes = {
 	region = world_africa_west
 	icon = @majesty_01
 
-	modifier = {
+	character_modifier = {
 		embarkation_cost_mult = -0.50
 		raid_speed = 0.2
 	}	
@@ -214,7 +214,7 @@ innovation_hindu_arabic_numberal = {
 	region = world_india
 	icon = @administration_1
 
-	modifier = {
+	character_modifier = {
 		development_growth_factor = 0.1
         domain_tax_mult = 0.05
 	}
@@ -225,7 +225,7 @@ innovation_ghazal = {
 	region = world_middle_east
 	icon = @administration_2
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
 }
@@ -234,7 +234,7 @@ innovation_stirrups = {
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
 
-	modifier = {
+	character_modifier = {
 		light_cavalry_damage_mult = 0.1
 		light_cavalry_toughness_mult = 0.1
 		heavy_cavalry_damage_mult = 0.1
@@ -247,7 +247,7 @@ innovation_corpus_juris_civilis = {
 	region = hoc_nova_roma
 	icon = @administration_3
 
-	modifier = {
+	character_modifier = {
 		monthly_county_control_change_factor = 0.1
 		vassal_tax_contribution_mult = 0.1
 	}
@@ -363,7 +363,7 @@ innovation_samurai = {
 	potential = {
 		this= culture:japanese
 	}
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		movement_speed 0.01
     }	

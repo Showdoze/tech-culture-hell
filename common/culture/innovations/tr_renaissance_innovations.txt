@@ -26,7 +26,7 @@ innovation_spring_steel = {
 	group = culture_group_regional
 	culture_era = culture_era_renaissance
 	icon = @metal_work
-	modifier = {
+	character_character_modifier = {
 		prowess = 1
 		martial = 1		
 		men_at_arms_maintenance = -0.1
@@ -59,7 +59,7 @@ innovation_free_companies = {
 	culture_era = culture_era_renaissance
 	icon = @leadership_2
 	
-	modifier = {
+	character_modifier = {
 		mercenary_hire_cost_mult  = -0.33
 	}
 	flag = global_regular
@@ -70,7 +70,7 @@ innovation_career_soldiers = {
 	culture_era = culture_era_renaissance
 	icon = @maa_01
 	
-	modifier = {
+	character_modifier = {
 		men_at_arms_cap = 1
 		men_at_arms_limit = 5
 	}
@@ -82,7 +82,7 @@ innovation_periodic_musters = {
 	culture_era = culture_era_renaissance
 	icon = @levy_building
 	
-	modifier = {
+	character_modifier = {
 		levy_reinforcement_rate = 0.15
 	}
 	flag = global_regular
@@ -93,7 +93,7 @@ innovation_plate_armor = {
 	culture_era = culture_era_renaissance
 	icon =  @weapons_and_armor_02
 	
-    modifier = {
+    character_modifier = {
 		advantage = 10
 	}
 	maa_upgrade = {
@@ -116,7 +116,7 @@ innovation_earth_around_sun = {
 	can_progress = {
 		has_innovation = innovation_universe_rotation
 	}
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		development_growth = 0.1
 		movement_speed 0.5
@@ -129,7 +129,7 @@ innovation_humanism = {
 	culture_era = culture_era_renaissance
 	icon = @misc_inventions
 	
-	modifier = {
+	character_modifier = {
 		different_culture_opinion = 5
 		different_faith_opinion = 5
 		diplomacy = 2
@@ -142,7 +142,7 @@ innovation_sovereignty = {
 	culture_era = culture_era_renaissance
 	icon = @majesty_01
 	
-	modifier = {
+	character_modifier = {
 		vassal_tax_mult = 0.1
 		short_reign_duration_mult = -0.25
 		stewardship = 2
@@ -156,7 +156,7 @@ innovation_renaissance_architecture = {
 	culture_era = culture_era_renaissance
 	icon = @civil_construction_2
 	
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.10
 		martial = 1
 		general_opinion = 10
@@ -169,7 +169,7 @@ innovation_estate_assembly = {
 	culture_era = culture_era_renaissance
 	icon = @nobility_03
 	
-	modifier = {
+	character_modifier = {
 		direct_vassal_opinion = 10
 	}
 	flag = global_regular
@@ -180,7 +180,7 @@ innovation_polyphony = {
 	culture_era = culture_era_renaissance
 	icon = @misc_inventions
 	
-	modifier = {
+	character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	flag = global_regular
@@ -191,7 +191,7 @@ innovation_princely_administration = {
 	culture_era = culture_era_renaissance
 	icon = @administration_1
 	
-	modifier = {
+	character_modifier = {
 		domain_limit = 10
 	}
 	flag = global_regular
@@ -202,7 +202,7 @@ innovation_accounting = {
 	culture_era = culture_era_renaissance
 	icon = @administration_3
 
-	modifier = {
+	character_modifier = {
 		domain_tax_mult = 0.2
 		stewardship = 2
 	}
@@ -214,7 +214,7 @@ innovation_libraries = {
 	culture_era = culture_era_renaissance
 	icon = @administration_2
 
-	modifier = {
+	character_modifier = {
 		learning = 4
 		stress_gain_mult = -0.2
 	}
@@ -228,7 +228,7 @@ innovation_wierdijks = {
 	region = custom_netherlands
 	icon = @civil_construction_2
 	
-	modifier = {
+	character_modifier = {
 		levy_size = 0.01 #Not that kind of levee!
 		city_holding_build_speed = -0.1
 		city_holding_holding_build_speed = -0.1
@@ -243,7 +243,7 @@ innovation_condottieri = {
 	region = world_europe_south_italy
 	icon = @maa_01
 	
-	modifier = {
+	character_modifier = {
 		mercenary_count_mult = 1
 		same_culture_mercenary_hire_cost_mult = -0.25
 	}
@@ -256,7 +256,7 @@ innovation_deccan_unity = {
 	region = world_india_deccan
 	icon = @nobility_04
 	
-	modifier = {
+	character_modifier = {
 		same_faith_opinion = 5
 	}
 	flag = global_regional

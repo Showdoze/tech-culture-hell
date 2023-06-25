@@ -41,7 +41,7 @@ innovation_battlements = {
 	custom = unlock_early_medieval_fortification_buildings	
 	custom = unlock_fortification_rights_contract
 	
-	modifier = {
+	character_modifier = {
 		men_at_arms_maintenance = -0.1
 	}
 	flag = global_regular
@@ -56,7 +56,7 @@ innovation_burhs = {
 
 	custom = unlock_march_contract
 	
-	modifier = {
+	character_modifier = {
 		levy_size = 0.1
 	}
 	flag = global_regular
@@ -67,7 +67,7 @@ innovation_horseshoes = {
 	culture_era = culture_era_early_medieval
 	icon = @weapons_and_armor_01
 
-	modifier = {
+	character_modifier = {
 		movement_speed = 0.25
 	}
 	flag = global_regular
@@ -82,7 +82,7 @@ innovation_number_of_days = {
 	can_progress = {
 		has_innovation = innovation_earth_size
 	}
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		supply_limit_mult = 0.2
 		learning = 1
@@ -95,7 +95,7 @@ innovation_manorialism = {
 
 	custom = unlock_early_medieval_economic_buildings
 	custom = more_parochial
-	modifier = {
+	character_modifier = {
 		build_speed = -0.15
 		stewardship = 1
 	}
@@ -107,7 +107,7 @@ innovation_all_things = {
 	culture_era = culture_era_early_medieval
 	icon = @fortifications
 
-	modifier = {
+	character_modifier = {
 		levy_size = 0.1
 		build_speed = -0.2
 		martial = 1
@@ -121,7 +121,7 @@ innovation_hereditary_rule = {
 	culture_era = culture_era_early_medieval
 	icon = @majesty_02
 
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		diplomacy = 1
 		dynasty_opinion = 10
@@ -134,7 +134,7 @@ innovation_royal_prerogative = {
 	culture_era = culture_era_early_medieval
 	icon = @majesty_01
 	custom = more_courtly
-	modifier = {
+	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		stewardship = 1
 		dynasty_opinion = 5
@@ -164,7 +164,7 @@ innovation_heavy_plough = {
 	region = world_europe_north
 	icon = @civil_construction_1
 
-	modifier = {
+	character_modifier = {
 		development_growth_factor = 0.1
 		supply_duration = 0.30
 	}
@@ -175,7 +175,7 @@ innovation_bimaristan = {
 	region = world_middle_east
 	icon = @nobility_01
 
-	modifier = {
+	character_modifier = {
 		health = 0.2
 		hard_casualty_modifier = -0.1
 	}
@@ -186,7 +186,7 @@ innovation_ordu = {
 	region = world_steppe
 	icon = @maa_02
 
-	modifier = {
+	character_modifier = {
 		men_at_arms_cap = 1
 		men_at_arms_limit = 1
 	}
@@ -201,7 +201,7 @@ innovation_fatimid_meritocracy = {
 	region = world_africa_north
 	icon = @nobility_03
 
-	modifier = {
+	character_modifier = {
 		different_faith_opinion = 5
 		different_culture_opinion = 5
 		development_growth_factor = 0.05
@@ -214,7 +214,7 @@ innovation_iqta = {
 	region = world_persia
 	icon = @administration_2
 
-	modifier = {
+	character_modifier = {
 		domain_tax_mult = 0.1
 	}
 }
@@ -224,7 +224,7 @@ innovation_resovoir_pens = {
 	region = ghw_region_egypt
 	icon = @administration_1
 
-	modifier = {
+	character_modifier = {
 		development_growth_factor = 0.05
 		monthly_prestige_gain_mult = 0.05
 		learning = 1
@@ -292,7 +292,7 @@ innovation_royal_army_tradition = {
 	region = world_burma
 	
 	unlock_maa = palace_guards	
-	modifier = {
+	character_modifier = {
 		heavy_cavalry_damage_mult = 0.1
 		prowess = 1
 	}	
