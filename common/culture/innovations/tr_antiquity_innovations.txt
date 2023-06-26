@@ -29,7 +29,8 @@
 @trireme = "gfx/interface/icons/culture_innovations/innovation_trireme.dds"
 @hoplite = "gfx/interface/icons/culture_innovations/hoplite.dds"
 @ships = "gfx/interface/icons/culture_innovations/innovation_ships.dds"
- 
+@innovation_nile_agriculture = "gfx/interface/icons/culture_innovations/innovation_nile_agriculture.dds"
+
 innovation_trireme = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -164,7 +165,7 @@ innovation_nile_agriculture = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = ghw_region_egypt
-	icon = @civil_construction_1
+	icon = @innovation_nile_agriculture
 
 	character_modifier = {
 		domain_tax_mult = 0.05
