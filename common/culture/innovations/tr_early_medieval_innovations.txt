@@ -32,6 +32,7 @@
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
 @samurai= "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
+@innovation_horseshoes = "gfx/interface/icons/culture_innovations/innovation_horseshoes.dds"
 
 innovation_battlements = {
 	group = culture_group_military
@@ -65,7 +66,7 @@ innovation_burhs = {
 innovation_horseshoes = {
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
-	icon = @weapons_and_armor_01
+	icon = @innovation_horseshoes
 
 	character_modifier = {
 		movement_speed = 0.25
