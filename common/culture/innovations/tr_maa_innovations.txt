@@ -42,11 +42,14 @@ innovation_viking_tradition = {
 	region = world_europe_north
 
 	potential = {
-		has_fp1_dlc_trigger = yes
+		has_cultural_parameter = innovation_viking_tradition
 	}
+
 	unlock_maa = bondi
 	unlock_maa = vigmen
 	unlock_maa = varangian_veterans
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_hird = {
@@ -54,7 +57,10 @@ innovation_hird = {
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
 	region = world_europe_west
+
 	unlock_maa = huscarl
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_forest_wardens = {
@@ -64,6 +70,8 @@ innovation_forest_wardens = {
 	region = custom_eastern_baltic
 
 	unlock_maa = metsanvartija
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_futuwaa = {
@@ -73,6 +81,8 @@ innovation_futuwaa = {
 	region = world_persian_empire
 
 	unlock_maa = ayyar
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_mubarizuns = {
@@ -82,6 +92,8 @@ innovation_mubarizuns = {
 	region = world_africa_east
 
 	unlock_maa = mubarizun
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_hussar_raids = {
@@ -91,6 +103,8 @@ innovation_hussar_raids = {
 	region = world_europe_east
 
 	unlock_maa = hussar
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_mountain_skirmishing = {
@@ -100,6 +114,8 @@ innovation_mountain_skirmishing = {
 	region = world_africa_east
 
 	unlock_maa = horn_warrior
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_bush_hunting = {
@@ -109,6 +125,8 @@ innovation_bush_hunting = {
 	region = ghw_region_subsahelian_africa
 
 	unlock_maa = bush_hunter
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_sahel_horsemen = {
@@ -118,6 +136,8 @@ innovation_sahel_horsemen = {
 	region = custom_sahel_proper
 
 	unlock_maa = sahel_horsemen
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_zbrojnosh = {
@@ -127,6 +147,8 @@ innovation_zbrojnosh = {
 	region = ghw_region_poland_bohemia_bavaria
 	
 	unlock_maa = zbrojnosh
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_upland_skirmishing = {
@@ -136,6 +158,8 @@ innovation_upland_skirmishing = {
 	region = world_africa_west
 	
 	unlock_maa = guinea_warrior
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_samurai = {
@@ -144,7 +168,7 @@ innovation_samurai = {
 	icon = @samurai
 	
 	potential = {
-		has_cultural_pillar = heritage_japanese
+		has_cultural_parameter = unlock_maa_samurai
 	}
 
 	character_modifier = {
@@ -153,6 +177,7 @@ innovation_samurai = {
     }
 
 	unlock_maa = samurai
+
 	flag = global_maa
 }
 innovation_pole_vault = {
@@ -183,6 +208,8 @@ innovation_legionnaires = {
 		this = culture:roman
 	}
 	unlock_maa = praetorian
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_compound_bows = {
@@ -199,7 +226,10 @@ innovation_compound_bows = {
         type = archer_cavalry
         damage = 1
     }
+	
 	unlock_maa = horse_archers
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_mobile_guards = {
@@ -210,6 +240,7 @@ innovation_mobile_guards = {
 
 	unlock_maa = shomer
 
+	flag = global_regional
 	flag = global_maa
 }
 innovation_repeating_crossbow = {
@@ -220,6 +251,7 @@ innovation_repeating_crossbow = {
 	
 	unlock_maa = chu_ko_nu
 	
+	flag = global_regional
 	flag = global_maa
 }
 innovation_tiger_riders = {
@@ -231,7 +263,10 @@ innovation_tiger_riders = {
 	character_modifier = {
 		movement_speed = 0.25
 	}
+
 	unlock_maa = tiger_riders
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_hoplites = {
@@ -239,8 +274,14 @@ innovation_hoplites = {
 	culture_era = culture_era_antiquity
 	region = ghw_region_greece
 	icon = @hoplite
+
+	potential = {
+		has_cultural_parameter = unlock_maa_hoplite
+	}
+
 	unlock_maa = hoplite
 
+	flag = global_regional
 	flag = global_maa
 }
 innovation_elephantry = {
@@ -253,7 +294,7 @@ innovation_elephantry = {
 	custom = eligible_accolade_elephantry_attribute
 
 	flag = global_regional
-	flag = tribal_era_regional
+	flag = global_maa
 }
 innovation_royal_army_tradition = {
 	group = culture_group_regional
@@ -261,11 +302,14 @@ innovation_royal_army_tradition = {
 	icon = @special_maa_01
 	region = world_burma
 	
-	unlock_maa = palace_guards	
+	unlock_maa = palace_guards
+
 	character_modifier = {
 		heavy_cavalry_damage_mult = 0.1
 		prowess = 1
-	}	
+	}
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_caballeros = {
@@ -275,6 +319,8 @@ innovation_caballeros = {
 	region = world_europe_west_iberia
 
 	unlock_maa = caballero
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_cataphracts = {
@@ -282,8 +328,10 @@ innovation_cataphracts = {
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = world_asia_minor
+
 	unlock_maa = cataphract
 
+	flag = global_regional
 	flag = global_maa
 }
 innovation_khandayats = {
@@ -293,6 +341,8 @@ innovation_khandayats = {
 	region = world_india
 
 	unlock_maa = khandayat
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_druzhina = {
@@ -302,6 +352,8 @@ innovation_druzhina = {
 	region = ghw_region_poland_bohemia_bavaria
 
 	unlock_maa = druzhina
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_alpine_supremacy = {
@@ -311,6 +363,8 @@ innovation_alpine_supremacy = {
 	region = world_tibet
 
 	unlock_maa = mountaineer
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_desert_mountain_herding = {
@@ -320,6 +374,8 @@ innovation_desert_mountain_herding = {
 	region = ghw_region_arabia
 	
 	unlock_maa = abudrar	
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_pike_columns = {
@@ -327,8 +383,10 @@ innovation_pike_columns = {
 	culture_era = culture_era_high_medieval
 	icon = @special_maa_01
 	region = world_europe_south_italy
+
 	unlock_maa = picchieri
 
+	flag = global_regional
 	flag = global_maa
 }
 innovation_desert_tactics = {
@@ -340,7 +398,10 @@ innovation_desert_tactics = {
     character_modifier = {
 		martial = 1
 	}
+	
 	unlock_maa = chasseur
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_hobbies = {
@@ -350,6 +411,8 @@ innovation_hobbies = {
 	region = ghw_region_celtic
 	
 	unlock_maa = hobelar
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_sarawit = {
@@ -359,6 +422,8 @@ innovation_sarawit = {
 	region = ghw_region_ethiopia
 	
 	unlock_maa = sarawit
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_rectilinear_schiltron = {
@@ -368,6 +433,8 @@ innovation_rectilinear_schiltron = {
 	region = ghw_region_celtic
 
 	unlock_maa = schiltron
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_zweihanders = {
@@ -377,6 +444,8 @@ innovation_zweihanders = {
 	region = ghw_region_germany
 
 	unlock_maa = landsknecht
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_longbows = {
@@ -386,6 +455,8 @@ innovation_longbows = {
 	region = custom_england
 	
 	unlock_maa = longbowmen
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_adaptive_militia = {
@@ -399,6 +470,8 @@ innovation_adaptive_militia = {
 		advantage = 5
 	}
 	unlock_maa = goedendag
+
+	flag = global_regional
 	flag = global_maa
 }
 innovation_valets = {
@@ -408,5 +481,7 @@ innovation_valets = {
 	region = dlc_fp1_region_western_adventure_targets_northern_france_brittany
 
 	unlock_maa = gendarme
+
+	flag = global_regional
 	flag = global_maa
 }
