@@ -32,7 +32,6 @@
 @samurai = "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
 @africa-boat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
 
-
 innovation_high_carbon = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -115,7 +114,7 @@ innovation_earth_size = {
 	}
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
-		movement_speed 0.1
+		movement_speed = 0.1
 		learning = 1
     }
 }
@@ -253,140 +252,4 @@ innovation_corpus_juris_civilis = {
 		monthly_county_control_change_factor = 0.1
 		vassal_tax_contribution_mult = 0.1
 	}
-}
-innovation_viking_tradition = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @hird
-	region = world_europe_north
-
-	potential = {
-		has_fp1_dlc_trigger = yes
-	}
-	unlock_maa = bondi
-	unlock_maa = vigmen
-	unlock_maa = varangian_veterans
-	flag = global_maa
-}
-innovation_hird = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @weapons_and_armor_02
-	region = world_europe_west
-	unlock_maa = huscarl
-	flag = global_maa
-}
-innovation_forest_wardens = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @special_maa_02
-	region = custom_eastern_baltic
-
-	unlock_maa = metsanvartija
-	flag = global_maa
-}
-innovation_futuwaa = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @maa_02
-	region = world_persian_empire
-
-	unlock_maa = ayyar
-	flag = global_maa
-}
-innovation_mubarizuns = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @maa_02
-	region = world_africa_east
-
-	unlock_maa = mubarizun
-	flag = global_maa
-}
-innovation_hussar_raids = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @special_maa_01
-	region = world_europe_east
-
-	unlock_maa = hussar
-	flag = global_maa
-}
-innovation_mountain_skirmishing = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @maa_02
-	region = world_africa_east
-
-	unlock_maa = horn_warrior
-	flag = global_maa
-}
-innovation_bush_hunting = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @special_maa_02
-	region = ghw_region_subsahelian_africa
-
-	unlock_maa = bush_hunter
-	flag = global_maa
-}
-innovation_sahel_horsemen = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @special_maa_01
-	region = custom_sahel_proper
-
-	unlock_maa = sahel_horsemen
-	flag = global_maa
-}
-innovation_zbrojnosh = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @maa_01
-	region = ghw_region_poland_bohemia_bavaria
-	
-	unlock_maa = zbrojnosh
-	flag = global_maa
-}
-innovation_upland_skirmishing = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @maa_02
-	region = world_africa_west
-	
-	unlock_maa = guinea_warrior	
-	flag = global_maa
-}
-innovation_samurai = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @samurai
-	
-	potential = {
-		this= culture:japanese
-	}
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.1
-		movement_speed 0.01
-    }	
-	unlock_maa = samurai
-	flag = global_maa
-}
-innovation_pole_vault = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @weapons_and_armor_01
-
-	potential = {
-		OR = {
-			this = culture:guanches
-			any_parent_culture_or_above = {
-				this = culture:guanches
-			}
-		}
-	}
-
-	unlock_maa = guanch_vaulter
-
-	flag = global_maa
 }

@@ -25,7 +25,6 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
@@ -34,7 +33,6 @@
 @samurai = "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
 @innovation_horseshoes = "gfx/interface/icons/culture_innovations/innovation_horseshoes.dds"
 @med_farm = "gfx/interface/icons/culture_innovations/med_farm.dds"
-
 
 innovation_battlements = {
 	group = culture_group_military
@@ -233,73 +231,6 @@ innovation_resovoir_pens = {
 		learning = 1
 		intrigue = 1
 	}
-}
-innovation_caballeros = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = world_europe_west_iberia
-
-	unlock_maa = caballero
-	flag = global_maa
-}
-innovation_cataphracts = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = world_asia_minor
-	unlock_maa = cataphract
-
-	flag = global_maa
-}
-innovation_khandayats = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = world_india
-
-	unlock_maa = khandayat
-	flag = global_maa
-}
-innovation_druzhina = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = ghw_region_poland_bohemia_bavaria
-
-	unlock_maa = druzhina
-	flag = global_maa
-}
-innovation_alpine_supremacy = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @raised_banner
-	region = world_tibet
-
-	unlock_maa = mountaineer
-	flag = global_maa
-}
-innovation_desert_mountain_herding = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @maa_02
-	region = ghw_region_arabia
-	
-	unlock_maa = abudrar	
-	flag = global_maa
-}
-innovation_royal_army_tradition = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = world_burma
-	
-	unlock_maa = palace_guards	
-	character_modifier = {
-		heavy_cavalry_damage_mult = 0.1
-		prowess = 1
-	}	
-	flag = global_maa
 }
 innovation_development_02 = {
 	group = culture_group_civic

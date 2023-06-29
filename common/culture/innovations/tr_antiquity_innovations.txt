@@ -21,13 +21,10 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
-@tiger_riders = "gfx/interface/icons/culture_innovations/innovation_tiger_riders.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
 @trireme = "gfx/interface/icons/culture_innovations/innovation_trireme.dds"
-@hoplite = "gfx/interface/icons/culture_innovations/hoplite.dds"
 @ships = "gfx/interface/icons/culture_innovations/innovation_ships.dds"
 @innovation_nile_agriculture = "gfx/interface/icons/culture_innovations/innovation_nile_agriculture.dds"
 
@@ -149,18 +146,6 @@ innovation_makeup = {
 	}	
 }
 #Regional
-innovation_elephantry = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	region = world_innovation_elephants
-	icon = @elephant
-
-	unlock_maa = war_elephant
-	custom = eligible_accolade_elephantry_attribute
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
 innovation_nile_agriculture = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -195,74 +180,4 @@ innovation_wootz_steel = {
 	unlock_building = wind_furnace_01
 	flag = global_regional
 	flag = tribal_era_regional
-}
-innovation_legionnaires = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_02
-	region = c_roma
-
-	potential = {
-		this = culture:roman
-	}
-	unlock_maa = praetorian
-	flag = global_maa
-}
-innovation_compound_bows = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_02
-	region = world_steppe
-	
-    maa_upgrade = {
-        type = archers
-        damage = 1
-    }
-    maa_upgrade = {
-        type = archer_cavalry
-        damage = 1
-    }
-	unlock_maa = horse_archers
-	flag = global_maa
-}
-innovation_mobile_guards = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_01
-	region = ghw_region_holy_land
-
-	unlock_maa = shomer
-
-	flag = global_maa
-}
-innovation_repeating_crossbow = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_02
-	region = world_tibet
-	
-	unlock_maa = chu_ko_nu
-	
-	flag = global_maa
-}
-innovation_tiger_riders = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	region = world_mesopotamia
-	icon = @tiger_riders
-
-	character_modifier = {
-		movement_speed = 0.25
-	}
-	unlock_maa = tiger_riders
-	flag = global_maa
-}
-innovation_hoplites = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	region = ghw_region_greece
-	icon = @hoplite
-	unlock_maa = hoplite
-
-	flag = global_maa
 }
