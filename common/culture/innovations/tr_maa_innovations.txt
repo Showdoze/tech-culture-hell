@@ -167,8 +167,8 @@ innovation_samurai = {
 	culture_era = culture_era_tribal
 	icon = @samurai
 	
-	potential = {
-		has_cultural_parameter = unlock_maa_samurai
+	can_progress = {
+		has_cultural_pillar = heritage_japanese
 	}
 
 	character_modifier = {
@@ -185,7 +185,7 @@ innovation_pole_vault = {
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_01
 
-	potential = {
+	can_progress = {
 		OR = {
 			this = culture:guanches
 			any_parent_culture_or_above = {
@@ -275,8 +275,8 @@ innovation_hoplites = {
 	region = ghw_region_greece
 	icon = @hoplite
 
-	potential = {
-		has_cultural_parameter = unlock_maa_hoplite
+	can_progress = {
+		has_cultural_pillar = heritage_greek
 	}
 
 	unlock_maa = hoplite
