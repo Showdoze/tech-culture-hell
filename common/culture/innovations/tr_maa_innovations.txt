@@ -162,6 +162,20 @@ innovation_samurai = {
 	unlock_maa = samurai
 }
 
+innovation_samurai_bow = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @samurai
+	can_progress = {
+		has_cultural_pillar = heritage_japanese
+	}
+	maa_upgrade = {
+        type = archers
+        damage = 1
+    }
+	unlock_maa = samurai_bow
+}
+
 innovation_pole_vault = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal

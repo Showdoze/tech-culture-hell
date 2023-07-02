@@ -38,48 +38,44 @@ innovation_battlements = {
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon = @fortifications
-
 	custom = unlock_early_medieval_fortification_buildings	
 	custom = unlock_fortification_rights_contract
-	
 	character_modifier = {
 		men_at_arms_maintenance = -0.1
 	}
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 innovation_burhs = {
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon = @civil_construction_2
-
 	custom = unlock_early_medieval_military_buildings
-
 	custom = unlock_march_contract
-	
 	character_modifier = {
 		levy_size = 0.1
 	}
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 innovation_horseshoes = {
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon = @innovation_horseshoes
-
 	character_modifier = {
 		movement_speed = 0.25
 	}
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 #civic
 innovation_number_of_days = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @misc_inventions
-
 	can_progress = {
 		has_innovation = innovation_earth_size
 	}
@@ -89,11 +85,11 @@ innovation_number_of_days = {
 		learning = 1
     }
 }
+
 innovation_manorialism = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @fortifications
-
 	custom = unlock_early_medieval_economic_buildings
 	custom = more_parochial
 	character_modifier = {
@@ -103,11 +99,11 @@ innovation_manorialism = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 innovation_all_things = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @fortifications
-
 	character_modifier = {
 		levy_size = 0.1
 		build_speed = -0.2
@@ -117,11 +113,11 @@ innovation_all_things = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 innovation_hereditary_rule = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @majesty_02
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		diplomacy = 1
@@ -130,6 +126,7 @@ innovation_hereditary_rule = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
+
 innovation_royal_prerogative = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
@@ -143,50 +140,35 @@ innovation_royal_prerogative = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
-#Regional
-innovation_samurai_bow = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @samurai
 
-	potential = {
-		this= culture:japanese
-	}
-	maa_upgrade = {
-        type = archers
-        damage = 1
-    }
-	unlock_maa = samurai_bow
-	flag = global_maa
-}
+#Regional
 innovation_heavy_plough = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_europe_north
 	icon = @med_farm
-
 	character_modifier = {
 		development_growth_factor = 0.1
 		supply_duration = 0.30
 	}
 }
+
 innovation_bimaristan = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_middle_east
 	icon = @nobility_01
-
 	character_modifier = {
 		health = 0.2
 		hard_casualty_modifier = -0.1
 	}
 }
+
 innovation_ordu = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_steppe
 	icon = @maa_02
-
 	character_modifier = {
 		men_at_arms_cap = 1
 		men_at_arms_limit = 1
@@ -196,12 +178,12 @@ innovation_ordu = {
 		damage = 2
 	}
 }
+
 innovation_fatimid_meritocracy = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_africa_north
 	icon = @nobility_03
-
 	character_modifier = {
 		different_faith_opinion = 5
 		different_culture_opinion = 5
@@ -209,22 +191,22 @@ innovation_fatimid_meritocracy = {
 		diplomacy = 1
 	}
 }
+
 innovation_iqta = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_persia
 	icon = @administration_2
-
 	character_modifier = {
 		domain_tax_mult = 0.1
 	}
 }
+
 innovation_resovoir_pens = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = ghw_region_egypt
 	icon = @administration_1
-
 	character_modifier = {
 		development_growth_factor = 0.05
 		monthly_prestige_gain_mult = 0.05
@@ -232,13 +214,12 @@ innovation_resovoir_pens = {
 		intrigue = 1
 	}
 }
+
 innovation_development_02 = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @nobility_03
-
 	custom = reduce_develop_county_penalty_02
-
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
@@ -247,13 +228,10 @@ innovation_currency_02 = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @nobility_01
-	
 	custom = unlock_coinage_rights_contract
-
 	character_modifier = {
 		development_growth_factor = 0.1
 	}
-
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
@@ -262,11 +240,9 @@ innovation_chronicle_writing = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @administration_3
-
 	unlock_casus_belli = individual_duchy_de_jure_cb
 	custom = cb_discount_prestige_10
 	custom = more_zealot
-
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
@@ -275,11 +251,9 @@ innovation_armilary_sphere = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @misc_inventions
-
 	character_modifier = {
 		naval_movement_speed_mult = 0.25
 	}
-
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
@@ -288,12 +262,10 @@ innovation_baliffs = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @leadership_1
-
 	county_modifier = {
 		building_slot_add = 1
 	}
 	custom = more_glory_hounds
-
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
@@ -304,13 +276,11 @@ innovation_reconquista = {
 	culture_era = culture_era_early_medieval
 	region = world_europe_west_iberia
 	icon = @leadership_2
-
 	custom = cb_discount_piety_10
 	custom = more_zealot
 	character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
-
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
@@ -320,12 +290,10 @@ innovation_stem_duchies = {
 	culture_era = culture_era_early_medieval
 	region = custom_europe_western_germany
 	icon = @majesty_03
-
 	custom = same_culture_group_reduced_factionalism
 	character_modifier = {
 		courtly_opinion = 5
 	}
-
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
@@ -335,11 +303,9 @@ innovation_ghilman = {
 	culture_era = culture_era_early_medieval
 	region = world_middle_east_arabia
 	icon = @maa_02
-
 	character_modifier = {
 		men_at_arms_maintenance = -0.15
 	}
-
 	flag = global_regional
 	flag = early_medieval_era_regional
 }

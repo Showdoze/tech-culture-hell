@@ -37,40 +37,40 @@ innovation_spring_steel = {
 	flag = global_regional
 	flag = renaissance_era_regular
 }
+
 innovation_machicolations = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @fortifications
 	custom = unlock_late_medieval_fortification_buildings
-
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_halberdiers = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @weapons_and_armor_01
-
 	unlock_maa = halberdiers_unit
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_free_companies = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @leadership_2
-	
 	character_modifier = {
 		mercenary_hire_cost_mult  = -0.33
 	}
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_career_soldiers = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @maa_01
-	
 	character_modifier = {
 		men_at_arms_cap = 1
 		men_at_arms_limit = 5
@@ -78,22 +78,22 @@ innovation_career_soldiers = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_periodic_musters = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @levy_building
-	
 	character_modifier = {
 		levy_reinforcement_rate = 0.15
 	}
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_plate_armor = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon =  @weapons_and_armor_02
-	
     character_modifier = {
 		advantage = 10
 	}
@@ -108,12 +108,12 @@ innovation_plate_armor = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 #civic
 innovation_earth_around_sun = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @misc_inventions
-
 	can_progress = {
 		has_innovation = innovation_universe_rotation
 	}
@@ -125,11 +125,11 @@ innovation_earth_around_sun = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_humanism = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @misc_inventions
-	
 	character_modifier = {
 		different_culture_opinion = 5
 		different_faith_opinion = 5
@@ -138,11 +138,11 @@ innovation_humanism = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_sovereignty = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @majesty_01
-	
 	character_modifier = {
 		vassal_tax_mult = 0.1
 		short_reign_duration_mult = -0.25
@@ -152,11 +152,11 @@ innovation_sovereignty = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_renaissance_architecture = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @civil_construction_2
-	
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.10
 		martial = 1
@@ -165,44 +165,44 @@ innovation_renaissance_architecture = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_estate_assembly = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @nobility_03
-	
 	character_modifier = {
 		direct_vassal_opinion = 10
 	}
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_polyphony = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @misc_inventions
-	
 	character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_princely_administration = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @administration_1
-	
 	character_modifier = {
 		domain_limit = 10
 	}
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_accounting = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @administration_3
-
 	character_modifier = {
 		domain_tax_mult = 0.2
 		stewardship = 2
@@ -210,11 +210,11 @@ innovation_accounting = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 innovation_libraries = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
 	icon = @administration_2
-
 	character_modifier = {
 		learning = 4
 		stress_gain_mult = -0.2
@@ -222,13 +222,13 @@ innovation_libraries = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+
 #Regional
 innovation_wierdijks = {
 	group = culture_group_regional
 	culture_era = culture_era_renaissance
 	region = custom_netherlands
 	icon = @civil_construction_2
-	
 	character_modifier = {
 		levy_size = 0.01 #Not that kind of levee!
 		city_holding_build_speed = -0.1
@@ -238,12 +238,12 @@ innovation_wierdijks = {
 	flag = global_regional
 	flag = renaissance_era_regional
 }
+
 innovation_condottieri = {
 	group = culture_group_regional
 	culture_era = culture_era_renaissance
 	region = world_europe_south_italy
 	icon = @maa_01
-	
 	character_modifier = {
 		mercenary_count_mult = 1
 		same_culture_mercenary_hire_cost_mult = -0.25
@@ -251,12 +251,12 @@ innovation_condottieri = {
 	flag = global_regional
 	flag = renaissance_era_regional
 }
+
 innovation_deccan_unity = {
 	group = culture_group_regional
 	culture_era = culture_era_renaissance
 	region = world_india_deccan
 	icon = @nobility_04
-	
 	character_modifier = {
 		same_faith_opinion = 5
 	}

@@ -36,7 +36,6 @@ innovation_universe_rotation = {
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @misc_inventions
-
 	can_progress = {
 		has_innovation = innovation_earth_chart
 	}
@@ -46,11 +45,11 @@ innovation_universe_rotation = {
 		learning = 2
     }
 }
+
 innovation_primogeniture = {
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @majesty_01
-	
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.4
 		development_growth = 0.1
@@ -62,47 +61,47 @@ innovation_primogeniture = {
 	flag = global_regular
 	flag = late_medieval_era_regular
 }
+
 innovation_magna_carta = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_europe_west_britannia
 	icon = @administration_1
-
 	character_modifier = {
 		vassal_tax_contribution_mult = -0.05
 		direct_vassal_opinion = 15
 	}
 }
+
 innovation_yassa = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_steppe_east
 	icon = @leadership_2
-
 	character_modifier = {
 		monthly_county_control_change_factor = 0.05
 		different_faith_opinion = 10
 		diplomacy = 1
 	}
 }
+
 innovation_mali_trade = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_africa_west
 	icon = @nobility_03
-
 	character_modifier = {
 		domain_tax_mult = 0.05
 		vassal_tax_contribution_mult = 0.05
 		stewardship = 1
 	}
 }
+
 innovation_mudejar_art = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_europe_west_iberia
 	icon = @administration_3
-
 	character_modifier = {
 	   monthly_prestige_gain_mult = 0.05
 	   different_culture_opinion = 10
@@ -110,22 +109,22 @@ innovation_mudejar_art = {
 	flag = global_regional
 	flag = late_medieval_era_regional
 }
+
 innovation_shahna_i_mandi = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_india
 	icon = @leadership_1
-
 	character_modifier = {
 		army_maintenance_mult = -0.10
 	}
 }
+
 innovation_russkaya_pravda = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_europe_east
 	icon = @administration_2
-
 	character_modifier = {
 		monthly_county_control_change_factor = 0.1
 	}

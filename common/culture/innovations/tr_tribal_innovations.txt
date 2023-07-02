@@ -48,12 +48,12 @@ innovation_high_carbon = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 #civic
 innovation_gavelkind = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @administration_3
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		dynasty_opinion = 10
@@ -64,26 +64,25 @@ innovation_gavelkind = {
 	flag = global_regular
 	flag = tribal_era_regular
 }
+
 innovation_tanistry_elective = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	region = ghw_region_celtic
 	icon = @majesty_02
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
-
 	custom = unlock_tanistry_elective
 	flag = global_regular
 	flag = tribal_era_regular
 }
+
 innovation_scandinavian_elective = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	region = world_europe_north
 	icon = @majesty_02
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
@@ -91,12 +90,12 @@ innovation_scandinavian_elective = {
 	flag = global_regular
 	flag = tribal_era_regular
 }
+
 innovation_saxon_elective = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	region = ghw_region_saxony
 	icon = @majesty_02
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
@@ -104,11 +103,11 @@ innovation_saxon_elective = {
 	flag = global_regular
 	flag = tribal_era_regular
 }
+
 innovation_earth_size = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
-
 	can_progress = {
 		has_innovation = innovation_world_is_round
 	}
@@ -124,7 +123,6 @@ innovation_table_of_princes = {
 	culture_era = culture_era_tribal
 	icon = @nobility_01
 	region = ghw_region_poland_bohemia_bavaria
-	
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		diplomacy = 1
@@ -133,13 +131,12 @@ innovation_table_of_princes = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_varangian_adventurers = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @hird
-	
 	potential = {
-		has_fp1_dlc_trigger = yes
 		OR = {
 			has_innovation = innovation_varangian_adventurers
 			has_cultural_pillar = heritage_north_germanic
@@ -156,21 +153,19 @@ innovation_varangian_adventurers = {
 		}
 		NOT = { has_cultural_era_or_later = culture_era_early_medieval }
 	}
-	
 	character_modifier = {
 		martial = 2
 	}
-
 	custom = unlock_varangian_adventurer_cb	
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_longboats = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = world_europe_north
 	icon = @longboats
-
 	character_modifier = {
 		embarkation_cost_mult = -1
 		naval_movement_speed_mult = 0.75
@@ -180,12 +175,12 @@ innovation_longboats = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_african_canoes = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = world_africa_west
 	icon = @africaboat
-
 	character_modifier = {
 		embarkation_cost_mult = -0.50
 		raid_speed = 0.2
@@ -195,32 +190,32 @@ innovation_african_canoes = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_hindu_arabic_numberal = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = world_india
 	icon = @administration_1
-
 	character_modifier = {
 		development_growth_factor = 0.1
         domain_tax_mult = 0.05
 	}
 }
+
 innovation_ghazal = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = world_middle_east
 	icon = @administration_2
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 	}
 }
+
 innovation_stirrups = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
-
 	character_modifier = {
 		light_cavalry_damage_mult = 0.1
 		light_cavalry_toughness_mult = 0.1
@@ -228,12 +223,12 @@ innovation_stirrups = {
 		heavy_cavalry_toughness_mult = 0.1
 	}
 }
+
 innovation_corpus_juris_civilis = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = hoc_nova_roma
 	icon = @administration_3
-
 	character_modifier = {
 		monthly_county_control_change_factor = 0.1
 		vassal_tax_contribution_mult = 0.1

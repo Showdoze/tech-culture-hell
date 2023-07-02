@@ -38,7 +38,6 @@ innovation_heraldry = {
 	group = culture_group_civic
 	culture_era = culture_era_high_medieval
 	icon = @raised_banner
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.2
 		intrigue = 1
@@ -47,11 +46,11 @@ innovation_heraldry = {
 	flag = global_regular
 	flag = high_medieval_era_regular
 }
+
 innovation_earth_chart = {
 	group = culture_group_civic
 	culture_era = culture_era_high_medieval
 	icon = @misc_inventions
-
 	can_progress = {
 		has_innovation = innovation_number_of_days
 	}
@@ -67,61 +66,60 @@ innovation_wheelbarrow = {
 	culture_era = culture_era_high_medieval
 	region = world_europe_west_britannia
 	icon = @maa_02
-
 	character_modifier = {
 		development_growth_factor = 0.1
 		build_speed = -0.05
 	}
 }
+
 innovation_exechequer = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	region = world_europe_west_britannia
 	icon = @administration_2
-
 	character_modifier = {
 		vassal_tax_contribution_mult = 0.15
 		domain_tax_mult = 0.05
 		stewardship = 1
 	}
 }
+
 innovation_eyres = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	region = world_europe_west_britannia
 	icon = @nobility_01
-
 	character_modifier = {
 		monthly_county_control_change_factor = 0.05
 		vassal_tax_contribution_mult = 0.1
 	}
 }
+
 innovation_cannon_of_medicine = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	region = world_middle_east
 	icon = @administration_3
-
 	character_modifier = {
 		health = 0.5
 	}
 }
+
 innovation_madrasa = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	region = world_middle_east
 	icon = @nobility_04
-
 	character_modifier = {
 		learning = 2
 	}
 }
+
 innovation_pernach  = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	region = world_europe_east
 	icon = @weapons_and_armor_01
-
 	maa_upgrade = {
 		type = skirmishers
 		damage = 2
