@@ -30,7 +30,7 @@
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
 @samurai = "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
-@africa-boat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
+@africaboat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
 
 innovation_high_carbon = {
 	group = culture_group_regional
@@ -118,7 +118,6 @@ innovation_earth_size = {
 		learning = 1
     }
 }
-
 #Regional
 innovation_table_of_princes = {
 	group = culture_group_regional
@@ -134,19 +133,6 @@ innovation_table_of_princes = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-#innovation_visigothic_codes = {
-#	group = culture_group_regional
-#	culture_era = culture_era_tribal
-#	icon = @nobility_01
-#	region = world_europe_west_iberia
-#	
-#	unlock_law = high_partition_succession_law
-#	unlock_law = equal_law
-#	custom = unlock_equal_succession_changing
-#	
-#	flag = global_regional
-#	flag = tribal_era_regional
-#}
 innovation_varangian_adventurers = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -198,7 +184,7 @@ innovation_african_canoes = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	region = world_africa_west
-	icon = @africa-boat
+	icon = @africaboat
 
 	character_modifier = {
 		embarkation_cost_mult = -0.50

@@ -30,161 +30,142 @@
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
 @samurai = "gfx/interface/icons/culture_innovations/inn_Samurai.dds"
-@africa-boat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
 @hoplite = "gfx/interface/icons/culture_innovations/hoplite.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 @tiger_riders = "gfx/interface/icons/culture_innovations/innovation_tiger_riders.dds"
-
 innovation_viking_tradition = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @hird
 	region = world_europe_north
-
 	potential = {
 		has_cultural_parameter = innovation_viking_tradition
 	}
-
 	unlock_maa = bondi
 	unlock_maa = vigmen
 	unlock_maa = varangian_veterans
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_hird = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
 	region = world_europe_west
-
 	unlock_maa = huscarl
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_forest_wardens = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @special_maa_02
 	region = custom_eastern_baltic
-
 	unlock_maa = metsanvartija
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_futuwaa = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @maa_02
 	region = world_persian_empire
-
 	unlock_maa = ayyar
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_mubarizuns = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @maa_02
 	region = world_africa_east
-
 	unlock_maa = mubarizun
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_hussar_raids = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @special_maa_01
 	region = world_europe_east
-
 	unlock_maa = hussar
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_mountain_skirmishing = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @maa_02
 	region = world_africa_east
-
 	unlock_maa = horn_warrior
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_bush_hunting = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @special_maa_02
 	region = ghw_region_subsahelian_africa
-
 	unlock_maa = bush_hunter
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_sahel_horsemen = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @special_maa_01
 	region = custom_sahel_proper
-
 	unlock_maa = sahel_horsemen
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_zbrojnosh = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @maa_01
 	region = ghw_region_poland_bohemia_bavaria
-	
 	unlock_maa = zbrojnosh
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_upland_skirmishing = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @maa_02
 	region = world_africa_west
-	
 	unlock_maa = guinea_warrior
-
 	flag = global_regional
-	flag = global_maa
+	flag = tribal_era_regional
 }
+
 innovation_samurai = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @samurai
-	
 	can_progress = {
 		has_cultural_pillar = heritage_japanese
 	}
-
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		movement_speed = 0.01
-    }
-
+	}
 	unlock_maa = samurai
-
-	flag = global_maa
 }
+
 innovation_pole_vault = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_01
-
 	can_progress = {
 		OR = {
 			this = culture:guanches
@@ -193,295 +174,263 @@ innovation_pole_vault = {
 			}
 		}
 	}
-
 	unlock_maa = guanch_vaulter
-
-	flag = global_maa
+	flag = tribal_era_regional
+	flag = global_regional
 }
+
 innovation_legionnaires = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_02
 	region = c_roma
-
 	potential = {
 		this = culture:roman
 	}
 	unlock_maa = praetorian
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_compound_bows = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_02
 	region = world_steppe
-	
-    maa_upgrade = {
-        type = archers
-        damage = 1
-    }
-    maa_upgrade = {
-        type = archer_cavalry
-        damage = 1
-    }
-	
+	maa_upgrade = {
+		type = archers
+		damage = 1
+	}
+	maa_upgrade = {
+		type = archer_cavalry
+		damage = 1
+	}
 	unlock_maa = horse_archers
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_mobile_guards = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_01
 	region = ghw_region_holy_land
-
 	unlock_maa = shomer
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_repeating_crossbow = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_02
 	region = world_tibet
-	
 	unlock_maa = chu_ko_nu
-	
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_tiger_riders = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = world_mesopotamia
 	icon = @tiger_riders
-
 	character_modifier = {
 		movement_speed = 0.25
 	}
-
 	unlock_maa = tiger_riders
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_hoplites = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = ghw_region_greece
 	icon = @hoplite
-
-	can_progress = {
-		has_cultural_pillar = heritage_greek
-	}
-
 	unlock_maa = hoplite
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_elephantry = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = world_innovation_elephants
 	icon = @elephant
-
 	unlock_maa = war_elephant
 	custom = eligible_accolade_elephantry_attribute
-
 	flag = global_regional
-	flag = global_maa
+	flag = antiquity_era_regional
 }
+
 innovation_royal_army_tradition = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = world_burma
-	
 	unlock_maa = palace_guards
-
 	character_modifier = {
 		heavy_cavalry_damage_mult = 0.1
 		prowess = 1
 	}
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_caballeros = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = world_europe_west_iberia
-
 	unlock_maa = caballero
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_cataphracts = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = world_asia_minor
-
 	unlock_maa = cataphract
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_khandayats = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = world_india
-
 	unlock_maa = khandayat
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_druzhina = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @special_maa_01
 	region = ghw_region_poland_bohemia_bavaria
-
 	unlock_maa = druzhina
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_alpine_supremacy = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @raised_banner
 	region = world_tibet
-
 	unlock_maa = mountaineer
-
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_desert_mountain_herding = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @maa_02
 	region = ghw_region_arabia
-	
-	unlock_maa = abudrar	
-
+	unlock_maa = abudrar
 	flag = global_regional
-	flag = global_maa
+	flag = early_medieval_era_regional
 }
+
 innovation_pike_columns = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @special_maa_01
 	region = world_europe_south_italy
-
 	unlock_maa = picchieri
-
 	flag = global_regional
-	flag = global_maa
+	flag = high_medieval_era_regional
 }
+
 innovation_desert_tactics = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @special_maa_02
 	region = ghw_region_holy_land
-
-    character_modifier = {
+	character_modifier = {
 		martial = 1
 	}
-	
 	unlock_maa = chasseur
-
 	flag = global_regional
-	flag = global_maa
+	flag = high_medieval_era_regional
 }
+
 innovation_hobbies = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @special_maa_02
 	region = ghw_region_celtic
-	
 	unlock_maa = hobelar
-
 	flag = global_regional
-	flag = global_maa
+	flag = high_medieval_era_regional
 }
+
 innovation_sarawit = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @maa_02
 	region = ghw_region_ethiopia
-	
 	unlock_maa = sarawit
-
 	flag = global_regional
-	flag = global_maa
+	flag = high_medieval_era_regional
 }
+
 innovation_rectilinear_schiltron = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @special_maa_01
 	region = ghw_region_celtic
-
 	unlock_maa = schiltron
-
 	flag = global_regional
-	flag = global_maa
+	flag = late_medieval_era_regional
 }
+
 innovation_zweihanders = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @special_maa_01
 	region = ghw_region_germany
-
 	unlock_maa = landsknecht
-
 	flag = global_regional
-	flag = global_maa
+	flag = late_medieval_era_regional
 }
+
 innovation_longbows = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @special_maa_02
 	region = custom_england
-	
 	unlock_maa = longbowmen
-
 	flag = global_regional
-	flag = global_maa
+	flag = late_medieval_era_regional
 }
+
 innovation_adaptive_militia = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @special_maa_02
 	region = custom_netherlands
-
-    character_modifier = {
+	character_modifier = {
 		martial = 1
 		advantage = 5
 	}
 	unlock_maa = goedendag
-
 	flag = global_regional
-	flag = global_maa
+	flag = late_medieval_era_regional
 }
+
 innovation_valets = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @special_maa_01
 	region = dlc_fp1_region_western_adventure_targets_northern_france_brittany
-
 	unlock_maa = gendarme
-
 	flag = global_regional
-	flag = global_maa
+	flag = late_medieval_era_regional
 }
