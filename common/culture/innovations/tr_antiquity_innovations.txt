@@ -27,6 +27,8 @@
 @trireme = "gfx/interface/icons/culture_innovations/innovation_trireme.dds"
 @ships = "gfx/interface/icons/culture_innovations/innovation_ships.dds"
 @innovation_nile_agriculture = "gfx/interface/icons/culture_innovations/innovation_nile_agriculture.dds"
+@eq_celtic = "gfx/interface/icons/culture_innovations/innovation_equipment_celtic.dds"
+
 
 innovation_trireme = {
 	group = culture_group_military
@@ -101,6 +103,29 @@ innovation_caravenserai = {
 		stewardship = 1
 	}
 }
+
+innovation_equipment_celtic = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	region = ghw_region_celtic
+	icon = @eq_celtic
+
+	character_modifier = {
+		prowess = 1
+		men_at_arms_maintenance = -0.1
+	}	
+	maa_upgrade = {
+		type = light_infantry
+		damage = 1
+	}
+	maa_upgrade = {
+		type = skirmishers
+		damage = 1
+		toughness = 1
+	    pursuit = 1
+	}
+}
+
 #CIVIC
 innovation_world_is_round = {
 	group = culture_group_civic
