@@ -1595,3 +1595,89 @@ tradition_transport_walk  = {
 		value = 0
 	}
 }
+
+tradition_imperial_idea = {
+	category = regional
+
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = imperial_idea.dds
+	}
+	
+	is_shown = {
+		OR = {
+			OR = {
+				has_cultural_pillar = heritage_frankish
+				has_cultural_pillar = heritage_central_germanic
+			}	
+			OR = {
+				scope:character = {
+					has_title = title:e_france
+				}
+				scope:character = {
+					has_title = title:e_hre
+				}				
+			}	
+		}
+	}
+	can_pick = {
+		OR = {
+			OR = {
+				has_cultural_pillar = heritage_frankish
+				has_cultural_pillar = heritage_central_germanic
+			}	
+			OR = {
+				scope:character = {
+					has_title = title:e_france
+				}
+				scope:character = {
+					has_title = title:e_hre
+				}				
+			}	
+		}
+	}
+	
+	parameters = {
+		doesnt_care_about_culture_faith_in_factions = yes	
+		unlock_territorial_state_innovation = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.10
+	}	
+	character_modifier = {
+		same_faith_opinion = 10	
+		vassal_limit = 10
+		short_reign_duration_mult = -0.1
+		different_faith_opinion = -10		
+		different_faith_county_opinion_mult = 0.1		
+		ai_amenity_target_baseline = 0.75
+		ai_amenity_spending = 1
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_or_communal_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = { value = 0 }
+}
