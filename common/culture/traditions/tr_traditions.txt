@@ -1,13 +1,14 @@
 ﻿tradition_eugenics = {
 	category = societal
-	
 	layers = {
 		0 = learning
 		1 = western
 		4 = eugenics.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_free_love }
+		NOT = {
+			has_cultural_tradition = tradition_free_love
+		}
 	}
 	parameters = {
 		strong_traits_more_valued = yes
@@ -19,7 +20,7 @@
 		poorly_educated_leaders_distrusted = yes
 		can_blind_prisoners = yes
 		can_castrate_prisoners = yes
-		physical_disfigurement_blocks_inheritance = yes #Actually only blocks claimants and reduce score in elective. Also includes infertility for tooltip reasons.
+		physical_disfigurement_blocks_inheritance = yes		#Actually only blocks claimants and reduce score in elective. Also includes infertility for tooltip reasons.
 	}
 	character_modifier = {
 		cultural_head_fascination_mult = -0.1
@@ -35,9 +36,17 @@
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
-						has_culture_tradition = { tradition_live_hard }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_bellicose
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_spiritual
+						}
+						has_culture_tradition = {
+							tradition_live_hard
+						}
 					}
 				}
 				add = {
@@ -58,7 +67,7 @@
 								count >= 3
 								culture = prev
 								primary_title.tier >= tier_county
-								OR = {	
+								OR = {
 									has_trait = strong
 									has_trait = physique_good
 								}
@@ -82,7 +91,10 @@
 		if = {
 			limit = {
 				NOT = {
-					any_in_list = { list = traits this = flag:ethos_bellicose }
+					any_in_list = {
+						list = flags
+						this = flag:ethos_bellicose
+					}
 				}
 			}
 			multiply = 0
@@ -92,14 +104,15 @@
 
 tradition_free_love = {
 	category = societal
-	
 	layers = {
 		0 = learning
 		1 = western
 		4 = speech.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_eugenics }
+		NOT = {
+			has_cultural_tradition = tradition_eugenics
+		}
 	}
 	parameters = {
 		safer_childbirths_active = yes
@@ -113,7 +126,7 @@ tradition_free_love = {
 	character_modifier = {
 		fertility = 0.3
 		stress_loss_mult = 0.2
-		owned_scheme_secrecy_add  = -15
+		owned_scheme_secrecy_add = -15
 		close_relative_opinion = 10
 	}
 	cost = {
@@ -126,8 +139,14 @@ tradition_free_love = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_bellicose
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_spiritual
+						}
 					}
 				}
 				add = {
@@ -148,7 +167,7 @@ tradition_free_love = {
 								count >= 3
 								culture = prev
 								primary_title.tier >= tier_county
-								OR = {	
+								OR = {
 									has_trait = strong
 									has_trait = physique_good
 								}
@@ -172,7 +191,10 @@ tradition_free_love = {
 		if = {
 			limit = {
 				NOT = {
-					any_in_list = { list = traits this = flag:ethos_bellicose }
+					any_in_list = {
+						list = flags
+						this = flag:ethos_bellicose
+					}
 				}
 			}
 			multiply = 0
@@ -182,14 +204,15 @@ tradition_free_love = {
 
 tradition_totalitarian = {
 	category = realm
-
 	layers = {
 		0 = martial
 		1 = mediterranean
 		4 = totalitarian.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_pacifist }
+		NOT = {
+			has_cultural_tradition = tradition_pacifist
+		}
 	}
 	parameters = {
 		cheaper_to_change_laws = yes
@@ -215,7 +238,7 @@ tradition_totalitarian = {
 		monthly_prestige_gain_per_dread_mult = -0.01
 		tyranny_gain_mult = -0.25
 		revolting_siege_morale_loss_mult = 0.25
-	}	
+	}
 	cost = {
 		prestige = {
 			add = {
@@ -226,9 +249,18 @@ tradition_totalitarian = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
-						any_in_list = { list = traits this = flag:ethos_courtly}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_egalitarian
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
 					}
 				}
 				add = {
@@ -260,7 +292,7 @@ tradition_totalitarian = {
 			}
 			multiply = tradition_replacement_cost_if_relevant
 		}
-	}	
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -268,7 +300,6 @@ tradition_totalitarian = {
 
 tradition_pacifist = {
 	category = societal
-
 	layers = {
 		0 = diplo
 		1 = indian
@@ -278,12 +309,17 @@ tradition_pacifist = {
 		custom_description = {
 			text = culture_not_bellicose
 			NOT = {
-				any_in_list = { list = traits this = flag:ethos_bellicose }
+				any_in_list = {
+					list = flags
+					this = flag:ethos_bellicose
+				}
 			}
-			NOT = { has_cultural_tradition = tradition_totalitarian }
+			NOT = {
+				has_cultural_tradition = tradition_totalitarian
+			}
 		}
 		culture_not_warlike_trigger = yes
-	}	
+	}
 	parameters = {
 		reduced_cost_for_conversion_to_pacifist_faith = yes
 		reincarnation_resistance_to_conversion = yes
@@ -307,10 +343,10 @@ tradition_pacifist = {
 	}
 	character_modifier = {
 		martial = -2
-		monthly_martial_lifestyle_xp_gain_mult = -0.4	
+		monthly_martial_lifestyle_xp_gain_mult = -0.4
 		monthly_learning_lifestyle_xp_gain_mult = 0.2
 		ignore_negative_opinion_of_culture = yes
-		random_skills_per_child = 1	
+		random_skills_per_child = 1
 		ai_war_chance = -0.75
 		ai_war_cooldown = 10
 		ai_boldness = -25
@@ -326,8 +362,14 @@ tradition_pacifist = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_egalitarian
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_spiritual
+						}
 					}
 				}
 				add = {
@@ -348,12 +390,16 @@ tradition_pacifist = {
 			}
 			multiply = tradition_replacement_cost_if_relevant
 		}
-	}	
+	}
 	ai_will_do = {
 		value = 0
 		if = {
 			limit = {
-				scope:character = { religion = { is_in_family = rf_eastern } }
+				scope:character = {
+					religion = {
+						is_in_family = rf_eastern
+					}
+				}
 				is_divergent_culture = yes
 			}
 			add = 25
@@ -363,15 +409,14 @@ tradition_pacifist = {
 
 tradition_bushido = {
 	category = societal
-
 	layers = {
 		0 = diplo
 		1 = western
 		4 = bushido.dds
-	}	
+	}
 	can_pick = {
 		has_cultural_pillar = heritage_japanese
-	}	
+	}
 	parameters = {
 		can_use_sparring_duel = yes
 		martial_education_more_valued = yes
@@ -395,9 +440,18 @@ tradition_bushido = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
-						any_in_list = { list = traits this = flag:ethos_courtly }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_bellicose
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_egalitarian
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
 					}
 				}
 				add = {
@@ -435,9 +489,11 @@ tradition_live_hard = {
 		0 = diplo
 		1 = indian
 		4 = forest.dds
-	}	
+	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_live_safe }
+		NOT = {
+			has_cultural_tradition = tradition_live_safe
+		}
 	}
 	parameters = {
 		martial_education_more_valued = yes
@@ -453,7 +509,7 @@ tradition_live_hard = {
 		monthly_learning_lifestyle_xp_gain_mult = 0.5
 		life_expectancy = -30
 		stress_gain_mult = -0.1
-	}	
+	}
 	cost = {
 		prestige = {
 			add = {
@@ -464,8 +520,14 @@ tradition_live_hard = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_stoic
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
 					}
 				}
 				add = {
@@ -502,7 +564,9 @@ tradition_live_hard = {
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	ai_will_do = { value = 0 } # The AI never pick this
+	ai_will_do = {
+		value = 0
+	}	# The AI never pick this
 }
 
 tradition_live_safe = {
@@ -513,8 +577,10 @@ tradition_live_safe = {
 		4 = elephant.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_live_hard }
-	}	
+		NOT = {
+			has_cultural_tradition = tradition_live_hard
+		}
+	}
 	parameters = {
 		content_trait_more_common = yes
 		martial_education_worse_outcomes = yes
@@ -523,7 +589,7 @@ tradition_live_safe = {
 		monthly_lifestyle_xp_gain_mult = -0.1
 		life_expectancy = 50
 		stress_gain_mult = -0.1
-	}	
+	}
 	cost = {
 		prestige = {
 			add = {
@@ -534,8 +600,14 @@ tradition_live_safe = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_stoic }
-						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_stoic
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
 					}
 				}
 				add = {
@@ -572,18 +644,22 @@ tradition_live_safe = {
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	ai_will_do = { value = 0 } # The AI never pick this
+	ai_will_do = {
+		value = 0
+	}	# The AI never pick this
 }
 
 tradition_dwarf = {
-    category = regional
+	category = regional
 	layers = {
 		0 = diplo
 		1 = indian
 		4 = mountain.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_giant }
+		NOT = {
+			has_cultural_tradition = tradition_giant
+		}
 	}
 	parameters = {
 		better_armory_buildings = yes
@@ -597,10 +673,10 @@ tradition_dwarf = {
 		life_expectancy = 30
 		different_culture_opinion = -10
 		dwarf = 100
-	}	
+	}
 	traits = {
 		dwarf = 100
-	}	
+	}
 	county_modifier = {
 		mountains_development_growth_factor = 0.4
 		desert_mountains_development_growth_factor = 0.1
@@ -625,9 +701,18 @@ tradition_dwarf = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_spiritual
+						}
 					}
 				}
 				add = {
@@ -638,18 +723,22 @@ tradition_dwarf = {
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	ai_will_do = { value = 0 }
+	ai_will_do = {
+		value = 0
+	}
 }
 
 tradition_giant = {
-    category = regional
+	category = regional
 	layers = {
 		0 = diplo
 		1 = indian
 		4 = forest.dds
 	}
 	can_pick = {
-		NOT = { has_cultural_tradition = tradition_dwarf }
+		NOT = {
+			has_cultural_tradition = tradition_dwarf
+		}
 	}
 	parameters = {
 		knights_slightly_more_prone_to_injury = yes
@@ -684,9 +773,18 @@ tradition_giant = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_spiritual }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_spiritual
+						}
 					}
 				}
 				add = {
@@ -697,18 +795,19 @@ tradition_giant = {
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	ai_will_do = { value = 0 }
+	ai_will_do = {
+		value = 0
+	}
 }
 
 tradition_city_state = {
 	category = realm
-
 	layers = {
 		0 = steward
 		1 = mediterranean
 		4 = city.dds
 	}
-	can_pick = { 
+	can_pick = {
 		NOR = {
 			has_cultural_tradition = tradition_castle_keepers
 			has_cultural_tradition = tradition_city_keepers
@@ -752,9 +851,18 @@ tradition_city_state = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bureaucratic }
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_bureaucratic
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_egalitarian
+						}
 					}
 				}
 				add = {
@@ -765,7 +873,9 @@ tradition_city_state = {
 			# Requires communal government innovation.
 			if = {
 				limit = {
-					NOT = { has_innovation = innovation_development_02 }
+					NOT = {
+						has_innovation = innovation_development_02
+					}
 				}
 				add = {
 					value = tradition_unfulfilled_criteria_penalty
@@ -775,30 +885,28 @@ tradition_city_state = {
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	ai_will_do = { 
+	ai_will_do = {
 		value = 0
 	}
 }
 
 tradition_altruistic = {
 	category = societal
-
 	layers = {
 		0 = diplo
 		1 = mena
 		4 = greeting.dds
 	}
-	
 	parameters = {
-        generous_trait_more_common = yes
-        compassionate_trait_more_common = yes
-        honest_trait_more_common = yes
+		generous_trait_more_common = yes
+		compassionate_trait_more_common = yes
+		honest_trait_more_common = yes
 		extra_language_cap = yes
 		pardoning_gives_loyalty = yes
 		can_recruit_prisoners_easily = yes
 		gregarious_trait_gives_bonuses = yes
 		wants_to_learn_liege_language = yes
-        extra_learn_language_success_chance_vs_liege = yes
+		extra_learn_language_success_chance_vs_liege = yes
 		more_gift_opinion = yes
 		gives_more_gifts = yes
 		automatic_befriend_access = yes
@@ -835,7 +943,7 @@ tradition_altruistic = {
 	}
 	county_modifier = {
 		county_opinion_add = 5
-	}	
+	}
 	cost = {
 		prestige = {
 			add = {
@@ -846,8 +954,14 @@ tradition_altruistic = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_stoic }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_bellicose
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_stoic
+						}
 					}
 				}
 				add = {
@@ -900,29 +1014,31 @@ tradition_altruistic = {
 
 tradition_atheism = {
 	category = ritual
-
 	layers = {
 		0 = learning
 		1 = western
 		4 = diplomat.dds
 	}
-	can_pick = { 
+	can_pick = {
 		NOR = {
 			has_cultural_tradition = tradition_zealous_people
 			has_cultural_tradition = tradition_religion_blending
 			has_cultural_tradition = tradition_hammerite
 			has_cultural_tradition = tradition_religious_patronage
 			has_government = theocracy_government
-			any_in_list = { list = traits this = flag:ethos_spiritual }
+			any_in_list = {
+				list = flags
+				this = flag:ethos_spiritual
+			}
 		}
 	}
 	parameters = {
-        romance_scheme_bonus_vs_spouse = yes
+		romance_scheme_bonus_vs_spouse = yes
 		less_likely_to_force_conversion = yes
 		holy_wars_forbidden = yes
 	}
 	character_modifier = {
-        learning = 5
+		learning = 5
 		piety_level_impact_mult = -100
 		fertility = 1
 		monthly_piety = -10
@@ -958,8 +1074,8 @@ tradition_atheism = {
 			if = {
 				limit = {
 					OR = {
-					    has_cultural_tradition = tradition_faith_bound
-					    has_cultural_tradition = tradition_sacred_hunts
+						has_cultural_tradition = tradition_faith_bound
+						has_cultural_tradition = tradition_sacred_hunts
 					}
 				}
 				add = {
@@ -974,13 +1090,13 @@ tradition_atheism = {
 		value = 0
 		if = {
 			limit = {
-				scope:ruler = { has_trait = cynical }
+				has_trait = cynical
 			}
 			add = 80
 		}
 		if = {
 			limit = {
-				scope:ruler = { has_trait = zealous }
+				has_trait = zealous
 			}
 			subtract = 1000
 		}
@@ -989,7 +1105,6 @@ tradition_atheism = {
 
 tradition_egypt = {
 	category = realm
-
 	layers = {
 		0 = intrigue
 		1 = western
@@ -1009,7 +1124,7 @@ tradition_egypt = {
 		development_gain_on_building_complete = yes
 	}
 	character_modifier = {
-		tyranny_gain_mult = -0.50
+		tyranny_gain_mult = -0.5
 		diplomatic_range_mult = 0.25
 		court_grandeur_baseline_add = 5
 	}
@@ -1030,20 +1145,23 @@ tradition_egypt = {
 			}
 			if = {
 				limit = {
-					any_in_list = { list = traits this = flag:ethos_spiritual }
+					any_in_list = {
+						list = flags
+						this = flag:ethos_spiritual
+					}
 				}
 				add = {
 					value = tradition_incompatible_ethos_penalty
 					desc = spiritual_desc
 				}
 			}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = forest_percentage_desc
-				}
+			add = {
+				value = tradition_unfulfilled_criteria_penalty
+				desc = forest_percentage_desc
 			}
-			multiply = tradition_replacement_cost_if_relevant
 		}
+		multiply = tradition_replacement_cost_if_relevant
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1051,12 +1169,11 @@ tradition_egypt = {
 
 tradition_raid = {
 	category = combat
-
 	layers = {
 		0 = learning
 		1 = western
 		4 = fight.dds
-	}	
+	}
 	can_pick = {
 		custom_description = {
 			text = percentage_of_culture_on_coast_desc
@@ -1094,7 +1211,6 @@ tradition_raid = {
 
 tradition_merryment = {
 	category = ritual
-
 	layers = {
 		0 = diplo
 		1 = indian
@@ -1113,7 +1229,9 @@ tradition_merryment = {
 		renown_from_feasts = yes
 		characters_are_better_food_tasters = yes
 	}
-	cost = { prestige = 1000 }
+	cost = {
+		prestige = 1000
+	}
 	ai_will_do = {
 		value = 0
 		if = {
@@ -1131,7 +1249,6 @@ tradition_merryment = {
 
 tradition_hunter_gatherer = {
 	category = realm
-
 	layers = {
 		0 = intrigue
 		1 = mediterranean
@@ -1141,9 +1258,14 @@ tradition_hunter_gatherer = {
 		culture_not_pacifistic_trigger = yes
 		custom_tooltip = {
 			text = cannot_have_tradition_vegetarianism
-			NOT = { any_in_list = { list = traits this = flag:tradition_vegetarianism } }
+			NOT = {
+				any_in_list = {
+					list = flags
+					this = flag:tradition_vegetarianism
+				}
+			}
 		}
-	}	
+	}
 	parameters = {
 		sacred_hunts = yes
 		hunting_traits_more_pious = yes
@@ -1156,7 +1278,9 @@ tradition_hunter_gatherer = {
 	county_modifier = {
 		build_gold_cost = 0.5
 	}
-	cost = { prestige = 255 }
+	cost = {
+		prestige = 255
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1164,13 +1288,11 @@ tradition_hunter_gatherer = {
 
 tradition_amazon = {
 	category = regional
-
 	layers = {
 		0 = martial
 		1 = mena
 		4 = shieldmaiden.dds
 	}
-	
 	parameters = {
 		craven_trait_costs_prestige = yes
 		brave_trait_gives_bonuses = yes
@@ -1189,14 +1311,17 @@ tradition_amazon = {
 		opinion_of_male_rulers = -10
 		same_culture_opinion = 10
 		lifestyle_hunter_xp_gain_mult = 0.5
-	}	
-	cost = { prestige = 500 }
-	ai_will_do = { value = 0 }
+	}
+	cost = {
+		prestige = 500
+	}
+	ai_will_do = {
+		value = 0
+	}
 }
 
 tradition_true_isolationist = {
 	category = realm
-
 	layers = {
 		0 = intrigue
 		1 = mediterranean
@@ -1217,14 +1342,16 @@ tradition_true_isolationist = {
 	character_modifier = {
 		diplomatic_range_mult = -10
 		same_culture_opinion = 5
-		owned_scheme_secrecy_add  = 15
+		owned_scheme_secrecy_add = 15
 		ai_war_chance = -1
 		ai_war_cooldown = 5
 	}
 	county_modifier = {
 		monthly_county_control_change_add = 1
 	}
-	cost = { prestige = 2000 }
+	cost = {
+		prestige = 2000
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1232,7 +1359,6 @@ tradition_true_isolationist = {
 
 tradition_blood_thirst = {
 	category = combat
-
 	layers = {
 		0 = learning
 		1 = western
@@ -1250,7 +1376,9 @@ tradition_blood_thirst = {
 		gain_gold_from_battles = yes
 		clergy_can_fight = yes
 	}
-	cost = { prestige = 2000 }
+	cost = {
+		prestige = 2000
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1258,12 +1386,11 @@ tradition_blood_thirst = {
 
 tradition_hammerite = {
 	category = realm
-
 	layers = {
 		0 = martial
 		1 = western
 		4 = hammerite.dds
-	}	
+	}
 	can_pick = {
 		custom_tooltip = {
 			scope:character = {
@@ -1273,11 +1400,11 @@ tradition_hammerite = {
 			}
 			text = must_be_theocratic
 		}
-		NOR = { 
+		NOR = {
 			has_cultural_tradition = tradition_pagan
-			has_cultural_tradition = tradition_atheism 
+			has_cultural_tradition = tradition_atheism
 		}
-	}	
+	}
 	parameters = {
 		castle_fortifications_increase = yes
 		castle_grant_prestige = yes
@@ -1286,7 +1413,7 @@ tradition_hammerite = {
 		just_trait_more_common = yes
 		just_trait_gives_bonuses = yes
 		can_castrate_prisoners = yes
-		temperate_trait_more_common = yes # Synergy with Monastic Doctrines
+		temperate_trait_more_common = yes		# Synergy with Monastic Doctrines
 		temperate_trait_bonuses = yes
 		devoted_trait_bonuses = yes
 		hard_working_traits_more_valued = yes
@@ -1311,27 +1438,28 @@ tradition_hammerite = {
 		fertility = -0.75
 		build_gold_cost = 0.1
 		ai_zeal = 25
-	}	
-	cost = { prestige = 5000 }
-	ai_will_do = { 
-		value = 0 
+	}
+	cost = {
+		prestige = 5000
+	}
+	ai_will_do = {
+		value = 0
 	}
 }
 
 tradition_pagan = {
 	category = realm
-
 	layers = {
 		0 = martial
 		1 = western
 		4 = pagan.dds
-	}	
+	}
 	can_pick = {
-		NOR = { 
-			has_cultural_tradition = tradition_hammerite 
+		NOR = {
+			has_cultural_tradition = tradition_hammerite
 			has_government = theocracy_government
 		}
-	}	
+	}
 	parameters = {
 		enable_garden_duchy_building = yes
 		can_appoint_court_gardener = yes
@@ -1348,7 +1476,7 @@ tradition_pagan = {
 		development_growth_factor = 0.2
 		fertility = 1
 		monthly_county_control_change_factor = -0.1
-	}	
+	}
 	county_modifier = {
 		forest_development_growth_factor = 0.15
 	}
@@ -1356,22 +1484,23 @@ tradition_pagan = {
 		forest_construction_gold_cost = -0.15
 		forest_holding_construction_gold_cost = -0.15
 	}
-	cost = { prestige = 5000 }
-	ai_will_do = { 
-		value = 0 
+	cost = {
+		prestige = 5000
+	}
+	ai_will_do = {
+		value = 0
 	}
 }
 
 tradition_germanic = {
 	category = realm
-
 	layers = {
 		0 = steward
 		1 = mediterranean
 		4 = runestone.dds
 	}
 	can_pick = {
-		OR ={
+		OR = {
 			has_cultural_pillar = heritage_central_germanic
 			has_cultural_pillar = heritage_frankish
 			has_cultural_pillar = heritage_north_germanic
@@ -1391,8 +1520,10 @@ tradition_germanic = {
 		cultural_acceptance_gain_mult = 0.25
 	}
 	character_modifier = {
-	}	
-	cost = { prestige = 1500 }
+	}
+	cost = {
+		prestige = 1500
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1400,12 +1531,11 @@ tradition_germanic = {
 
 tradition_horse_special = {
 	category = combat
-
 	layers = {
 		0 = steward
 		1 = mena
 		4 = horses.dds
-	}	
+	}
 	can_pick = {
 		custom_tooltip = {
 			text = culture_in_plains_or_steppe_terrain_desc
@@ -1419,11 +1549,11 @@ tradition_horse_special = {
 				}
 			}
 		}
-		NOR = { 
-			has_cultural_tradition = tradition_transport_sea 
+		NOR = {
+			has_cultural_tradition = tradition_transport_sea
 			has_cultural_tradition = tradition_transport_walk
 		}
-	}	
+	}
 	parameters = {
 		pastures_building_bonuses = yes
 		unlock_maa_horse_archers = yes
@@ -1455,8 +1585,10 @@ tradition_horse_special = {
 		skirmishers_toughness_mult = -0.1
 		light_cavalry_damage_mult = -0.15
 		light_cavalry_toughness_mult = -0.1
-	}	
-	cost = { prestige = 5000 }
+	}
+	cost = {
+		prestige = 5000
+	}
 	ai_will_do = {
 		value = 10
 		if = {
@@ -1479,7 +1611,8 @@ tradition_horse_special = {
 			multiply = 0
 		}
 		if = {
-			limit = { # Reduce chance slightly if the culture has access to other "cavalry" types
+			limit = {
+				# Reduce chance slightly if the culture has access to other "cavalry" types
 				OR = {
 					has_innovation = innovation_war_camels
 					has_innovation = innovation_elephantry
@@ -1489,14 +1622,14 @@ tradition_horse_special = {
 		}
 	}
 }
+
 tradition_transport_sea = {
 	category = combat
-
 	layers = {
 		0 = steward
 		1 = mena
 		4 = ship.dds
-	}	
+	}
 	can_pick = {
 		custom_description = {
 			text = percentage_of_culture_on_coast_desc
@@ -1507,8 +1640,8 @@ tradition_transport_sea = {
 				}
 			}
 		}
-		NOR = { 
-			has_cultural_tradition = tradition_horse_special 
+		NOR = {
+			has_cultural_tradition = tradition_horse_special
 			has_cultural_tradition = tradition_transport_walk
 		}
 	}
@@ -1541,28 +1674,29 @@ tradition_transport_sea = {
 		coastal_advantage = 7
 		supply_capacity_mult = 0.5
 		coastal_sea_travel_danger = low_sea_danger_reduction
-	}	
-	cost = { prestige = 5000 }
+	}
+	cost = {
+		prestige = 5000
+	}
 	ai_will_do = {
 		value = 0
 	}
 }
-tradition_transport_walk  = {
-	category = combat
 
+tradition_transport_walk = {
+	category = combat
 	layers = {
 		0 = steward
 		1 = mena
 		4 = ship.dds
-	}	
+	}
 	can_pick = {
-		NOR = { 
-			has_cultural_tradition = tradition_horse_special 
+		NOR = {
+			has_cultural_tradition = tradition_horse_special
 			has_cultural_tradition = tradition_transport_sea
 		}
 	}
 	parameters = {
-		
 	}
 	character_modifier = {
 		negate_health_penalty_add = 0.15
@@ -1589,8 +1723,10 @@ tradition_transport_walk  = {
 		supply_capacity_mult = 0.5
 		pilgrim_xp_gain_mult = 0.5
 		lifestyle_traveler_xp_gain_mult = 0.5
-	}	
-	cost = { prestige = 5000 }
+	}
+	cost = {
+		prestige = 5000
+	}
 	ai_will_do = {
 		value = 0
 	}
@@ -1598,27 +1734,25 @@ tradition_transport_walk  = {
 
 tradition_imperial_idea = {
 	category = regional
-
 	layers = {
 		0 = intrigue
 		1 = mediterranean
 		4 = imperial_idea.dds
 	}
-	
 	is_shown = {
 		OR = {
 			OR = {
 				has_cultural_pillar = heritage_frankish
 				has_cultural_pillar = heritage_central_germanic
-			}	
+			}
 			OR = {
 				scope:character = {
 					has_title = title:e_france
 				}
 				scope:character = {
 					has_title = title:e_hre
-				}				
-			}	
+				}
+			}
 		}
 	}
 	can_pick = {
@@ -1626,35 +1760,33 @@ tradition_imperial_idea = {
 			OR = {
 				has_cultural_pillar = heritage_frankish
 				has_cultural_pillar = heritage_central_germanic
-			}	
+			}
 			OR = {
 				scope:character = {
 					has_title = title:e_france
 				}
 				scope:character = {
 					has_title = title:e_hre
-				}				
-			}	
+				}
+			}
 		}
 	}
-	
 	parameters = {
-		doesnt_care_about_culture_faith_in_factions = yes	
+		doesnt_care_about_culture_faith_in_factions = yes
 		unlock_territorial_state_innovation = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = 0.10
-	}	
+		cultural_acceptance_gain_mult = 0.1
+	}
 	character_modifier = {
-		same_faith_opinion = 10	
+		same_faith_opinion = 10
 		vassal_limit = 10
 		short_reign_duration_mult = -0.1
-		different_faith_opinion = -10		
-		different_faith_county_opinion_mult = 0.1		
+		different_faith_opinion = -10
+		different_faith_county_opinion_mult = 0.1
 		ai_amenity_target_baseline = 0.75
 		ai_amenity_spending = 1
 	}
-	
 	cost = {
 		prestige = {
 			add = {
@@ -1665,8 +1797,14 @@ tradition_imperial_idea = {
 			if = {
 				limit = {
 					NOR = {
-						any_in_list = { list = traits this = flag:ethos_courtly }
-						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = {
+							list = flags
+							this = flag:ethos_courtly
+						}
+						any_in_list = {
+							list = flags
+							this = flag:ethos_communal
+						}
 					}
 				}
 				add = {
@@ -1674,10 +1812,10 @@ tradition_imperial_idea = {
 					desc = not_courtly_or_communal_desc
 				}
 			}
-			
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-
-	ai_will_do = { value = 0 }
+	ai_will_do = {
+		value = 0
+	}
 }

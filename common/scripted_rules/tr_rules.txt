@@ -25,11 +25,15 @@ can_raid_across_water = {
 }
 
 can_raid = {
-    can_raid_trigger = yes
+	trigger_if = {
+        can_raid_trigger = yes
+	}
 }
 
 can_start_raid = {
-    can_raid_trigger = yes
+	trigger_if = {
+        can_raid_trigger = yes
+	}
 }
 
 buildings_enabled = {

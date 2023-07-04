@@ -4,9 +4,6 @@ unlock_tanistry_elective:0 "Allows to enact tanistry elective law system in your
 unlock_scandinavian_elective:0 "Allows to enact scandinavian elective law system in your realm."
 unlock_saxon_elective:0 "Allows to enact saxon elective law system in your realm."
 
-I_LACK_LAW_ALLOWING_DESIGNATE_HEIR:0 "You do not have Absolute [crown_authority|E] or [tribal_authority|E]"
-confederate_partition_succession_law_effects:0 "\n#V Under $confederate_partition_succession_law$, your [titles] will be divided equally between your children. New [titles] may be created for younger [realm_heirs].#!\n\n#weak $partition_base_desc$\nYounger children will have Titles created for them, if enough land is held.\n#!"
-
 DESC_REQ_CROWN_1:0 "You do #bold NOT#! have [limited_crown_authority|E]/[limited_tribal_authority|E] or higher"
 DESC_REQ_CROWN_2:0 "You do #bold NOT#! have [high_crown_authority|E]/[high_tribal_authority|E] or higher"
 DESC_REQ_CROWN_3:0 "You do #bold NOT#! have [absolute_crown_authority|E]/[absolute_tribal_authority|E]"
@@ -85,11 +82,9 @@ light_infantry:0 "Light Infantry"
  nick_verus:0 "Verus"
  nick_aurelius:0 "Aurelius"
  nick_elagabalus:0 "Elagabalus"
- nick_the_elder:0 "The Elder"
  nick_the_arab:0 "The Arab"
  nick_apsimar:0 "Apsimar"
  nick_constantine:0 "Constantine"
- nick_the_bearded:0 "The Bearded"
  nick_the_slit-nosed:0 "The Slit-Nosed"
  nick_the_isaurian:0 "The Isaurian"
  nick_the_khazar:0 "The Khazar"
@@ -99,7 +94,6 @@ light_infantry:0 "Light Infantry"
  nick_the_bardanes:0 "The Bardanes"
  nick_demolay:0 "De Molay"
  nick_the_venetian:0 "The Venetian"
- nick_the_champion:0 "The Champion"
  nick_golden_tongued:0 "Golden Tongued"
  nick_the_thracian:0 "The Thracian"
  nick_komnenos:0 "Komnenos"
@@ -111,7 +105,7 @@ light_infantry:0 "Light Infantry"
  nick_thrax:0 "Thrax"
  nick_cerdicing:0 "Cerdicing"
  nick_the_do_nothing:0 "The Do Nothing"
- nick_the_tall :0 "The Tall"
+ nick_the_tall:0 "The Tall"
  nick_the_tall_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] Tall of stature, which everyone is soon to point out."
  nick_the_peaceable:0 "The Peaceable"
  nick_the_exile:0 "The Exile"
@@ -143,12 +137,10 @@ light_infantry:0 "Light Infantry"
  nick_the_suspicious:0 " The Suspicious"
 
 #Region Names Fix
- world_tibet:0 "Tibet"
  ghw_region_poland_bohemia_bavaria:0 "West Slavia"
  ghw_region_egypt:0 "Egypt"
  ghw_region_mainland_greece:0 "Mainland Greece"
  ghw_region_ethiopia:0 "Ethiopia"
- ghw_region_germany:0 "Germany"
  ghw_region_poland:0 "Poland"
  ghw_region_persia:0 "Persia"
  ghw_region_holy_land:0 "Jerusalem"
@@ -370,34 +362,33 @@ culture_era_renaissance_desc:0 "The Renaissance Era marks the rediscovery of the
  tradition_germanic_name:0 "Germanic"
  tradition_germanic_desc:0 "This culture is proud of there germanic heritige and there traditions "
  tradition_horse_special_name:0 "Horse Specialist"
- tradition_horse_special_desc:0
+ tradition_horse_special_desc:0 ""
  tradition_transport_horse_name:0 ""
- tradition_transport_horse_desc:0
+ tradition_transport_horse_desc:0 ""
  tradition_transport_sea_name:0 "Sea-Farer"
  tradition_transport_sea_desc:0 "This culture preferce to rely on the waves of the ocean to travel around"
  tradition_transport_walk_name:0 "Walking"
  tradition_transport_walk_desc:0 "This culture preferce to rely on walking to travel around"
- tradition_weapon_
  tradition_weapon_spear_name:0 "Spear Preference"
- tradition_weapon_spear_desc:0
+ tradition_weapon_spear_desc:0 ""
  tradition_weapon_fist_name:0 "Hand to Hand Preference"
- tradition_weapon_fist_desc:0
+ tradition_weapon_fist_desc:0 ""
  tradition_weapon_katana_name:0 "Katana Preference"
- tradition_weapon_katana_desc:0
+ tradition_weapon_katana_desc:0 ""
  tradition_weapon_khopesh_name:0 "Khopesh Preference"
- tradition_weapon_khopesh_desc:0
+ tradition_weapon_khopesh_desc:0 ""
  tradition_weapon_longsword_name:0 "Longsword Preference"
- tradition_weapon_longsword_desc:0
+ tradition_weapon_longsword_desc:0 ""
  tradition_weapon_gladius_name:0 "Gladius Preference"
- tradition_weapon_gladius_desc:0
+ tradition_weapon_gladius_desc:0 ""
  tradition_weapon_sabre_name:0 "Sabre Preference"
- tradition_weapon_sabre_desc:0
+ tradition_weapon_sabre_desc:0 ""
  tradition_weapon_rapier_name:0 "Rapier Preference"
- tradition_weapon_rapier_desc:0
+ tradition_weapon_rapier_desc:0 ""
  tradition_weapon_halberd_name:0 "Halberd Preference"
- tradition_weapon_halberd_desc:0
+ tradition_weapon_halberd_desc:0 ""
  tradition_weapon_hammer_name:0 "Hammer Preference"
- tradition_weapon_hamer_desc:0
+ tradition_weapon_hamer_desc:0 ""
  tradition_weapon_group_roman_wep_name:0 "Roman Weaponry"
  tradition_weapon_group_roman_wep_desc:0 "This culture's Armoury is full of weapons used by the Roman people such as the Gladius, the Spatha and the Pilum."
  tradition_weapon_group_stone_age_wep_name:0 "Stone Age Weaponry"
@@ -408,13 +399,3 @@ culture_era_renaissance_desc:0 "The Renaissance Era marks the rediscovery of the
  tradition_weapon_group_viking_wep_desc:0 "This culture's Armoury is full of weapons used by the Norse people such as the Viking sword, the Dane axe and the Seax."
  tradition_weapon_group_egyptian_wep_name:0 "Egyptian Weaponry"
  tradition_weapon_group_egyptian_wep_desc:0 "This culture's Armoury is full of weapons used by the Egyptian people such as the Khopesh and the Mace-Ax."
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
- tradition_weapon_group_
