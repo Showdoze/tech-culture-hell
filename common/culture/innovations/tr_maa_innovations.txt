@@ -177,6 +177,19 @@ innovation_samurai_bow = {
 	unlock_maa = samurai_bow
 }
 
+innovation_legionnaires = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @special_maa_02
+	region = c_roma
+	potential = {
+		this = culture:roman
+	}
+	unlock_maa = praetorian
+	flag = global_regional
+	flag = antiquity_era_regional
+}
+
 innovation_pole_vault = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -190,21 +203,6 @@ innovation_pole_vault = {
 		}
 	}
 	unlock_maa = guanch_vaulter
-	flag = tribal_era_regional
-	flag = global_regional
-}
-
-innovation_legionnaires = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_02
-	region = c_roma
-	potential = {
-		this = culture:roman
-	}
-	unlock_maa = praetorian
-	flag = global_regional
-	flag = antiquity_era_regional
 }
 
 innovation_compound_bows = {
