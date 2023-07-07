@@ -105,19 +105,6 @@ innovation_saxon_elective = {
 	flag = tribal_era_regular
 }
 
-innovation_earth_size = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	can_progress = {
-		has_innovation = innovation_world_is_round
-	}
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.2
-		movement_speed = 0.1
-		learning = 1
-    }
-}
 #Regional
 innovation_table_of_princes = {
 	group = culture_group_regional

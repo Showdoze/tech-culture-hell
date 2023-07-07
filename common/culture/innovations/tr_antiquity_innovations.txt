@@ -138,6 +138,19 @@ innovation_world_is_round = {
 		movement_speed = 0.2
 	}
 }
+innovation_earth_size = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @misc_inventions
+	can_progress = {
+		has_innovation = innovation_world_is_round
+	}
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.2
+		movement_speed = 0.1
+		learning = 1
+    }
+}
 innovation_ships = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
