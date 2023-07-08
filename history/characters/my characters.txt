@@ -12,14 +12,14 @@ ck_650094 = {
 	trait = intellect_good_3
 	trait = schemer
 	trait = arrogant
-	trait = sociopath
+	#trait = sociopath
 	trait = patient
 	trait = diligent
 	trait = ambitious
 	trait = cynical
 	disallow_random_traits= yes
-    1.1.1={
-		birth="1.1.1"
+    2.1.1={
+		birth="2.1.1"
 	}
 	10.1.1={
 	add_spouse=145290
@@ -37,8 +37,8 @@ ck_650109 = {
 		birth="420.11.1"
 	}
 	461.8.7={
-		death = { death_reason= death_murder_beheading
-		killer=ck_650002
+		death = { death_reason= death_murder
+		killer = ck_650002
 	}}
 }
 ck_650000 = {
@@ -68,7 +68,7 @@ ck_650001 = {
 	}
     472.7.11={
 	    death={death_reason= death_drowned
-		killer=ck_650002
+		killer = ck_650002
 	}
 }}	
 ck_650002 = {
@@ -88,7 +88,7 @@ ck_650002 = {
 	    birth="405.1.1"
 	}
 	477.8.18={
-	    death={death_reason= death_trait
+	    death={death_reason= death_cancer
 	}
 }}
 ck_650003 = {
@@ -189,7 +189,7 @@ ck_650006 = {
 ck_650043 = {
 	name="Sophia" 
 	female= yes
-	religion="miaphysite"
+	religion="nestorian"
 	culture="greek"
 	510.1.1={
 	    birth= yes
@@ -202,7 +202,7 @@ ck_650011 = {
     name="Theodora"
 	female = yes
 	dynasty=1022186
-	religion="miaphysite"
+	religion="nestorian"
 	culture="greek"
 	trait = beauty_good_3
 	trait = shrewd
@@ -223,7 +223,7 @@ ck_650011 = {
 	    trait = cancer
 	}
 	548.6.28={
-	    death={death_reason= death_trait
+	    death={death_reason= death_cancer
 	    }
 	}
 }
@@ -265,7 +265,7 @@ ck_650106 = {
 		birth="2.1.14"
 	}
 	19.11.16={
-		death={death_reason= death_trait
+		death={death_reason = death_wounded_3
 		}
 	}
 }
@@ -380,7 +380,7 @@ ck_650025 = {
 		give_nickname= nick_octavia
 	}
 	62.1.24={
-		death={ death_reason= death_kick
+		death={ death_reason= death_beaten
 		killer = 145287
 		}
 	}
@@ -414,7 +414,7 @@ ck_650030 = {
 	    birth="60.1.1"
 	}
 	63.1.1={
-	    death={death_reason= death_poor_health
+	    death={death_reason= death_ill
 	}}
 }
 ck_650045 = {
@@ -444,7 +444,7 @@ ck_650045 = {
 	#		type = belisarius_byz}
 	#}
 	565.3.1={
-		death={death_reason= death_poor_health
+		death={death_reason= death_natural_causes
 	}}
 }
 ck_650055 = {
@@ -468,7 +468,7 @@ ck_650055 = {
 		add_trait = blind
 	}
 	775.9.14={
-		death={death_reason= death_trait
+		death = { death_reason = death_natural_causes
 	}}
 }
 ck_650056 = {
@@ -526,7 +526,7 @@ ck_650058 = {
 		birth="578.1.1"
 	}
 	641.2.11={
-		death={death_reason= death_trait}
+		death = { death_reason = death_old_age }
 	}
 }
 
@@ -561,8 +561,8 @@ ck_650060 = {
 	trait ="born_in_the_purple"
 	trait = shrewd
 	#trait = immortal
-	father=70506
-	mother=146185
+	father = 70506
+	mother = 146185
 	705.1.1={
 		birth="705.1.1"
 	}
@@ -574,11 +574,11 @@ ck_650060 = {
 	#remove_trait = in_hiding
 	}
 	800.11.24={
-		death={death_reason= death_crucifixion
-		killer=70498
+		death = { death_reason = death_crucified
+		killer = 70498
 	}}
 }
-ck_650072={
+ck_650072 = {
 	name="Hypathia"
 	female= yes
 	dynasty=1022188
@@ -594,6 +594,7 @@ ck_650072={
 	trait = beauty_good_2
 	#trait = benevolent
 	#trait = peaceful
+	trait = poet
 	disallow_random_traits= yes
 	father = ck_650090
 	370.2.2={
@@ -616,7 +617,7 @@ ck_650088 = {
 		birth="626.1.1"
 	}
 	639.10.1={
-		death={death_reason= death_trait
+		death = { death_reason = death_inbred
 	}}
 }
 ck_650104 = {
@@ -631,7 +632,7 @@ ck_650104 = {
 		birth="720.1.1"
 	}
 	743.11.2={
-	trait ="blind"
+	trait = blind
 	trait = devoted
 	}
 	777.1.1={
@@ -642,7 +643,7 @@ ck_650104 = {
 ck_650110 = {
 	name="Valentinus"
 	dynasty=100685
-    religion="miaphysite"
+    religion="nestorian"
 	culture="armenian"
 	mother=159616
 	trait = scarred
@@ -673,7 +674,7 @@ ck_650105 = {
 	name="Fausta"
 	female= yes
 	dynasty=100685
-    religion="miaphysite"
+    religion="nestorian"
 	culture="armenian"
 	father = ck_650110
 	630.11.1={
@@ -688,7 +689,7 @@ ck_650105 = {
 }	
 ck_650091 = {
 	name="Mizizios"
-    religion="miaphysite"
+    religion="nestorian"
 	culture="armenian"
 	dynasty=101185
 	trait = beauty_good_2
@@ -709,7 +710,7 @@ ck_650091 = {
 }
 ck_650092 = {
 	name="John"
-    religion="miaphysite"
+    religion="nestorian"
 	culture="armenian"
 	dynasty=101185
 	father = ck_650091
@@ -729,7 +730,7 @@ ck_650095 = {
 	name="Verina"
 	female= yes
     dynasty=1022189
-	religion="miaphysite"
+	religion="nestorian"
 	culture="greek"
 	trait = education_intrigue_2
 	trait = deceitful
@@ -748,7 +749,7 @@ ck_650095 = {
 ck_650097 = {	
 	name="Basiliskos"
 	dynasty=1022189
-	religion="miaphysite"
+	religion="nestorian"
 	culture="greek"
 	#trait ="uncouth"
 	trait ="content"
@@ -773,7 +774,7 @@ ck_650098 = {
 		birth="420.1.1"
 	}
 	527.1.1={
-		death={death_reason= death_poor_health
+		death={death_reason=  death_ill
 	}}
 }
 ck_650099 = {
@@ -803,7 +804,7 @@ ck_650099 = {
     }	
 	477.1.1={
 		death={death_reason= death_execution
-		killer=70515
+		killer = 70515
 	}}
 }
 ck_650100 = {
@@ -816,7 +817,7 @@ ck_650100 = {
 		birth="420.1.1"
 	}
 	450.1.1={
-		death={death_reason= death_poor_health
+		death = { death_reason = death_ill
 	}}
 }
 ck_650101 = {
@@ -830,7 +831,7 @@ ck_650101 = {
 		birth="420.1.1"
 	}
 	496.1.1={
-		death={death_reason= death_suicide
+		death = { death_reason = death_suicide
 	}}
 }
 ck_650102 = {
@@ -844,14 +845,14 @@ ck_650102 = {
 	sexuality = homosexual
 	trait = dull
 	trait = education_diplomacy_1
-	father=650101
+	father = ck_650101
 	470.1.1={
 		birth="420.1.1"
 	}
 	532.1.1={
 	#add_trait = crown_like_iberian1
-		death={death_reason= death_execution
-		killer=70512
+		death = { death_reason= death_execution
+		killer = 70512
 	}}
 }
 ck_650103 = {
@@ -870,8 +871,8 @@ ck_650103 = {
 	add_spouse=70510
 	}
 	605.1.1={
-		death={death_reason= death_execution
-		killer=145072
+		death = { death_reason = death_execution
+		killer = 145072
 	}}
 }
 
@@ -920,7 +921,7 @@ ck_650008 = {
 ck_650107 = {
 	name="Odoacer"
 	religion="cathar"
-	culture="german"
+	culture="german" #germanic
 	trait = ambitious
 	trait = education_martial_3
 	trait = winter_soldier
@@ -930,8 +931,9 @@ ck_650107 = {
 		birth="433.1.1"
 	}
 	493.3.15={
-		death={death_reason= death_murder_beheading
-		killer=168775
+		death = { death_reason = death_execution
+		#death_murder_beheading
+		killer = 168775
 	}}
 }
 ########################
@@ -994,7 +996,7 @@ ck_650036 = {
 	}
 	531.1.1={
 	    death={death_reason= death_battle
-		killer=650045
+		killer = ck_650045
 	}}
 }   
 
@@ -1015,28 +1017,46 @@ ck_650044 = {
 	}
 	528.9.1={
 		death={death_reason= death_execution
-		killer=180628
+		killer = 180628
 	}}
 }
 ck_650042 = {
 	name="Anoshazad"
 	dynasty=1029100
-	religion="miaphysite"
+	religion="nestorian"
 	culture="persian"
 	#trait = azadan
 	trait = lustful
 	trait = ambitious
-	father=180628
+	father = 180628
 	mother = ck_650043
 	531.1.1={
 		birth= yes
 	}
 	569.1.1={
 		death={death_reason= death_battle
-		killer=180628
+		killer = 180628
 	}}
 }
 
+ck42069 = {
+	name = "Grzegorz Brzęczyszczykiewicz"
+	religion = "catholic"
+	culture = "polish"
+	martial = 4
+	diplomacy = 15
+	intrigue = 15
+	stewardship = 5
+	trait = immortal
+	trait = intellect_good_3
+	trait = education_intrigue_2
+	100.1.11 = {
+		birth = "100.1.11"
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
 
 ########################
 #
