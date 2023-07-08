@@ -1,0 +1,1219 @@
+########################
+#Roman_Empire
+########################
+ck650094 = {
+	name = "Livia"
+	# Tiberius Iulius Caesar Augustus
+	religion = hellenic_pagan
+	female = yes
+	culture = roman
+	trait = deceitful
+	trait = education_intrigue_4
+	trait = intellect_good_3
+	trait = schemer
+	trait = arrogant
+	#trait = sociopath
+	trait = patient
+	trait = diligent
+	trait = ambitious
+	trait = cynical
+	disallow_random_traits = yes
+	2.1.1 = {
+		birth = "2.1.1"
+	}
+	10.1.1 = {
+		add_spouse = 145290
+	}
+	28.9.28 = {
+		death = "28.9.28"
+	}
+}
+
+ck650109 = {
+	name = "Majorian"
+	religion = catholic
+	culture = roman
+	trait = ambitious
+	420.11.1 = {
+		birth = "420.11.1"
+	}
+	461.8.7 = {
+		death = {
+			death_reason = death_murder
+			killer = ck650002
+		}
+	}
+}
+
+ck650000 = {
+	name = "Libius Severus"
+	religion = catholic
+	culture = roman
+	trait = dull
+	trait = chaste
+	trait = humble
+	trait = content
+	trait = craven
+	trait = education_learning_2
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	465.7.15 = {
+		death = {
+			death_reason = death_poison
+			killer = ck650002
+		}
+	}
+}
+
+ck650001 = {
+	name = "Anthemius"
+	religion = catholic
+	culture = roman
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	472.7.11 = {
+		death = {
+			death_reason = death_drowned
+			killer = ck650002
+		}
+	}
+}
+
+ck650002 = {
+	name = "Ricimer"
+	religion = "cathar"
+	culture = german
+	trait = deceitful
+	trait = sadistic
+	trait = paranoid
+	trait = ambitious
+	trait = arbitrary
+	trait = shrewd
+	trait = cancer
+	trait = education_martial_3
+	disallow_random_traits = yes
+	405.1.1 = {
+		birth = "405.1.1"
+	}
+	477.8.18 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+ck650003 = {
+	name = "Olybrius"
+	religion = catholic
+	culture = roman
+	trait = patrician_born
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	472.11.2 = {
+		death = "472.11.2"
+	}
+}
+
+ck650004 = {
+	name = "Glycerius"
+	religion = catholic
+	culture = roman
+	trait = education_martial_2
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	474.6.1 = {
+		death = {
+			death_reason = death_poison
+			killer = ck650005
+		}
+	}
+}
+
+ck650090 = {
+	name = "Leon"
+	# AKA: Leon 'the elder
+	dynasty = 1022188
+	religion = orthodox
+	culture = greek
+	trait = "honest"
+	trait = "brave"
+	trait = education_martial_2
+	trait = patrician_born
+	give_nickname = nickthe_elder
+	360.1.1 = {
+		birth = "360.1.1"
+	}
+	444.1.18 = {
+		death = "444.1.18"
+	}
+}
+
+ck650089 = {
+	name = "Nepotianus"
+	# AKA: father of Julius Nepos
+	dynasty = 1022188
+	religion = orthodox
+	culture = roman
+	trait = "trusting"
+	trait = "content"
+	trait = "education_diplomacy_1"
+	father = ck650090
+	403.1.1 = {
+		birth = "403.1.1"
+	}
+	460.1.18 = {
+		death = {
+			death_reason = death_exile
+			killer = ck650069
+		}
+	}
+}
+
+ck650005 = {
+	name = "Julius Nepos"
+	dynasty = 1022188
+	religion = catholic
+	culture = roman
+	trait = adventurer
+	trait = patrician_born
+	father = ck650089
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	475.6.22 = {
+		death = {
+			death_reason = death_murder_poison
+			killer = ck650107
+		}
+	}
+}
+
+ck650006 = {
+	name = "Romulus Augustulus"
+	religion = catholic
+	culture = roman
+	trait = content
+	trait = patrician_born
+	trait = education_diplomacy_1
+	trait = craven
+	460.9.4 = {
+		birth = "460.9.4"
+	}
+	480.9.4 = {
+		death = {
+			death_reason = death_exile
+			killer = ck650107
+		}
+	}
+}
+
+ck650043 = {
+	name = "Sophia"
+	female = yes
+	religion = nestorian
+	culture = greek
+	510.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+ck650011 = {
+	name = "Theodora"
+	female = yes
+	dynasty = 1022186
+	religion = nestorian
+	culture = greek
+	trait = beauty_good_3
+	trait = shrewd
+	trait = diligent
+	trait = brave
+	trait = peasant_born
+	trait = ambitious
+	trait = education_intrigue_3
+	disallow_random_traits = yes
+	father = 168790
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	525.1.1 = {
+		add_spouse = 70512
+	}
+	547.1.1 = {
+		trait = cancer
+	}
+	548.6.28 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+ck650013 = {
+	name = "Agrippina"
+	female = yes
+	dynasty = 1022232	#lowbirth
+	religion = hellenic_pagan
+	culture = roman
+	give_nickname = nickthe_elder
+	trait = impatient
+	trait = loyal
+	trait = brave
+	trait = honest
+	father = 145290
+	2.11.6 = {
+		birth = "2.11.6"
+	}
+	15.11.6 = {
+		add_spouse = ck650014
+	}
+	33.10.17 = {
+		death = {
+			death_reason = death_exile
+			killer = 145075
+		}
+	}
+}
+
+ck650106 = {
+	name = "Drusus"
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	trait = humble
+	trait = content
+	trait = wounded_3
+	mother = ck650094
+	2.1.14 = {
+		birth = "2.1.14"
+	}
+	19.11.16 = {
+		death = {
+			death_reason = death_wounded_3
+		}
+	}
+}
+
+ck650014 = {
+	name = "Germanicus"
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	trait = ill
+	trait = loyal
+	trait = trusting
+	trait = content
+	trait = education_martial_3
+	father = ck650106
+	2.11.16 = {
+		birth = "2.11.16"
+	}
+	15.11.6 = {
+		add_spouse = ck650013
+	}
+	19.11.16 = {
+		death = {
+			death_reason = death_poison
+			killer = 145075
+		}
+	}
+}
+
+ck650015 = {
+	name = "Agrippina"
+	female = yes
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	give_nickname = nickthe_younger
+	trait = schemer
+	trait = ambitious
+	trait = deceitful
+	trait = kinslayer_3
+	father = ck650014
+	mother = ck650013
+	15.11.6 = {
+		birth = "15.11.6"
+	}
+	50.1.1 = {
+		add_spouse = 145288
+	}
+	59.3.23 = {
+		death = {
+			death_reason = death_stab
+			killer = 145287
+		}
+	}
+}
+
+ck650023 = {
+	name = "Messalina"
+	female = yes
+	religion = hellenic_pagan
+	culture = roman
+	#trait = groomed
+	trait = beauty_good_2
+	trait = education_intrigue_1
+	trait = seducer
+	trait = lustful
+	trait = arbitrary
+	trait = craven
+	trait = deceitful
+	trait = lovers_pox
+	trait = impatient
+	trait = disloyal
+	disallow_random_traits = yes
+	give_nickname = nickthe_whore
+	20.1.25 = {
+		birth = "20.1.25"
+	}
+	35.1.1 = {
+		add_spouse = 145288
+	}
+	48.1.20 = {
+		death = {
+			death_reason = death_execution
+			killer = 145288
+		}
+	}
+}
+
+ck650024 = {
+	name = "Julia Drusilla"
+	female = yes
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	father = 145289
+	39.5.6 = {
+		birth = "39.5.6"
+	}
+	41.1.24 = {
+		death = {
+			death_reason = killed_praetorian
+		}
+	}
+}
+
+ck650025 = {
+	name = "Claudia"
+	female = yes
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	trait = infertile
+	father = 145288
+	mother = ck650023
+	40.5.6 = {
+		birth = "40.5.6"
+	}
+	54.1.1 = {
+		add_spouse = 145287		#Nero
+		give_nickname = nickoctavia
+	}
+	62.1.24 = {
+		death = {
+			death_reason = death_beaten
+			killer = 145287
+		}
+	}
+}
+
+ck650026 = {
+	name = "Britannicus"
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	trait = impatient
+	father = 145288
+	mother = ck650023
+	41.2.12 = {
+		birth = "41.2.12"
+	}
+	55.2.11 = {
+		death = {
+			death_reason = death_poison
+			killer = ck650015
+		}
+	}
+}
+
+ck650030 = {
+	name = "Claudia"
+	female = yes
+	dynasty = 1022232
+	religion = hellenic_pagan
+	culture = roman
+	trait = ill
+	father = 145287
+	mother = ck650025
+	60.1.1 = {
+		birth = "60.1.1"
+	}
+	63.1.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+ck650045 = {
+	name = "Belisarius"
+	dynasty = 1022314
+	religion = orthodox
+	culture = roman
+	trait = education_martial_4
+	trait = brave
+	trait = scarred
+	trait = physique_good_2
+	trait = strategist
+	trait = honest
+	trait = humble
+	trait = content
+	trait = peasant_born
+	trait = loyal
+	trait = logistician
+	trait = organizer
+	disallow_random_traits = yes
+	505.1.1 = {
+		birth = yes
+	}
+	#520.1.1={
+	#add_spouse = 168715
+	#create_bloodline = {
+	#		type = belisarius_byz}
+	#}
+	565.3.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+ck650055 = {
+	name = "Anna"
+	female = yes
+	dynasty = 8646
+	religion = iconoclast
+	culture = greek
+	trait = born_in_the_purple
+	trait = humble
+	trait = compassionate
+	trait = education_diplomacy_1
+	father = 70502
+	718.9.1 = {
+		birth = "718.9.1"
+	}
+	720.1.1 = {
+		add_matrilineal_spouse = 145225
+	}
+	743.11.2 = {
+		add_trait = blind
+	}
+	775.9.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+ck650056 = {
+	name = "Theodosius"	# Maurice
+	dynasty = 1022186
+	religion = orthodox
+	culture = greek
+	trait = education_martial_2
+	trait = ambitious
+	father = 70510
+	583.1.1 = {
+		birth = "583.1.1"
+	}
+	602.11.27 = {
+		death = {
+			death_reason = death_uprising
+			killer = 145072
+		}
+	}
+}
+
+ck650057 = {
+	name = "Martina"
+	female = yes
+	dynasty = 1022137
+	religion = orthodox
+	culture = greek
+	trait = diligent
+	trait = shrewd
+	trait = arrogant
+	trait = ambitious
+	trait = lustful
+	trait = patient
+	trait = loyal
+	trait = education_intrigue_2
+	father = ck650058
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	613.8.13 = {
+		add_spouse = 145071
+	}
+	641.12.11 = {
+		#add_trait = muted
+		death = {
+			death_reason = death_exile
+			killer = 70508
+		}
+	}
+}
+
+ck650058 = {
+	name = "Martinus"
+	dynasty = 1022137
+	religion = orthodox
+	culture = greek
+	#trait = chest_pain
+	father = ck650059
+	578.1.1 = {
+		birth = "578.1.1"
+	}
+	641.2.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ck650059 = {
+	name = "Herakleios"
+	dynasty = 1022137
+	religion = orthodox
+	culture = greek
+	trait = diligent
+	trait = brave
+	trait = arrogant
+	trait = just
+	trait = patient
+	trait = desert_warrior
+	trait = logistician
+	trait = ambitious
+	disallow_random_traits = yes
+	give_nickname = nickthe_elder
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	610.2.11 = {
+		death = "610.2.11"
+	}
+}
+
+ck650060 = {
+	name = "Tiberios"
+	dynasty = 1022137
+	religion = orthodox
+	culture = greek
+	trait = ambitious
+	trait = born_in_the_purple
+	trait = shrewd
+	#trait = immortal
+	father = 70506
+	mother = 146185
+	705.1.1 = {
+		birth = "705.1.1"
+	}
+	711.11.24 = {
+		#add_trait = in_hiding
+		add_trait = adventurer
+	}
+	713.6.3 = {
+		#remove_trait = in_hiding
+	}
+	800.11.24 = {
+		death = {
+			death_reason = death_crucified
+			killer = 70498
+		}
+	}
+}
+
+ck650072 = {
+	name = "Hypathia"
+	female = yes
+	dynasty = 1022188
+	religion = hellenic_pagan
+	culture = greek
+	trait = intellect_good_3
+	#trait = math
+	#trait = tolerant
+	trait = education_learning_4
+	#trait = map_expert
+	#trait = chemist
+	#trait = legend
+	trait = beauty_good_2
+	#trait = benevolent
+	#trait = peaceful
+	trait = poet
+	disallow_random_traits = yes
+	father = ck650090
+	370.2.2 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = {
+			death_reason = death_torture
+			killer = 70533
+		}
+	}
+}
+
+ck650088 = {
+	name = "Theodosios"
+	dynasty = 1022137
+	religion = orthodox
+	culture = greek
+	trait = inbred
+	father = 145071
+	mother = ck650057
+	630.1.1 = {
+		birth = "626.1.1"
+	}
+	639.10.1 = {
+		death = {
+			death_reason = death_inbred
+		}
+	}
+}
+
+ck650104 = {
+	name = "Niketas"
+	dynasty = 101199
+	religion = orthodox
+	culture = armenian
+	trait = education_martial_2
+	father = 145225
+	mother = ck650055
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	743.11.2 = {
+		trait = blind
+		trait = devoted
+	}
+	777.1.1 = {
+		death = "777.1.1"
+	}
+	#death_sleep
+}
+
+ck650110 = {
+	name = "Valentinus"
+	dynasty = 100685
+	religion = nestorian
+	culture = armenian
+	mother = 159616
+	trait = scarred
+	trait = ambitious
+	trait = reaver
+	600.11.1 = {
+		birth = "600.11.1"
+	}
+	641.2.11 = {
+		culture = greek
+		employer = 70509
+	}
+	641.4.20 = {
+		employer = 145070
+	}
+	641.10.1 = {
+		employer = 70508
+		effect = {
+			give_job_title = job_marshal
+		}
+	}
+	644.1.1 = {
+		#add_trait = byz_usurper
+		death = {
+			death_reason = death_beaten_by_mob
+		}
+	}
+}
+
+ck650105 = {
+	name = "Fausta"
+	female = yes
+	dynasty = 100685
+	religion = nestorian
+	culture = armenian
+	father = ck650110
+	630.11.1 = {
+		birth = "630.11.1"
+	}
+	642.1.1 = {
+		add_spouse = 70508
+	}
+	681.1.1 = {
+		death = "681.1.1"
+	}
+}
+
+ck650091 = {
+	name = "Mizizios"
+	religion = nestorian
+	culture = armenian
+	dynasty = 101185
+	trait = beauty_good_2
+	trait = education_martial_2
+	trait = ambitious
+	trait = envious
+	622.1.1 = {
+		birth = "622.1.1"
+	}
+	668.9.17 = {
+		#add_trait = byz_usurper
+		#add_trait = crown_like_late_basilius
+	}
+	669.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 70507
+		}
+	}
+}
+
+ck650092 = {
+	name = "John"
+	religion = nestorian
+	culture = armenian
+	dynasty = 101185
+	father = ck650091
+	trait = education_martial_1
+	trait = lazy
+	trait = ambitious
+	trait = arbitrary
+	645.11.1 = {
+		birth = "645.11.1"
+	}
+	669.1.2 = {
+		death = {
+			death_reason = death_battle
+			killer = 70507
+		}
+	}
+}
+
+ck650095 = {
+	name = "Verina"
+	female = yes
+	dynasty = 1022189
+	religion = nestorian
+	culture = greek
+	trait = education_intrigue_2
+	trait = deceitful
+	#trait = groomed
+	father = ck650097
+	434.1.1 = {
+		birth = "434.1.1"
+	}
+	449.1.1 = {
+		add_spouse = 70517
+	}
+	484.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+ck650097 = {
+	name = "Basiliskos"
+	dynasty = 1022189
+	religion = nestorian
+	culture = greek
+	#trait ="uncouth"
+	trait = content
+	trait = education_martial_2
+	give_nickname = nickthe_elder
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+
+ck650098 = {
+	name = "Basiliscus"
+	dynasty = 1022189
+	religion = orthodox
+	culture = greek
+	trait = compassionate
+	father = ck650097
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	527.1.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+ck650099 = {
+	name = "Armatus"
+	dynasty = 1022189
+	religion = orthodox
+	culture = greek
+	#trait ="vain"
+	trait = sadistic
+	trait = education_martial_2
+	trait = deceitful
+	trait = beauty_good_2
+	#trait = groomed
+	trait = arrogant
+	trait = wrathful
+	trait = lunatic_genetic
+	disallow_random_traits = yes
+	father = ck650098
+	455.1.1 = {
+		birth = "455.1.1"
+	}
+	475.1.9 = {
+		employer = 145226
+		effect = {
+			give_job_title = job_marshal
+		}
+	}
+	477.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70515
+		}
+	}
+}
+
+ck650100 = {
+	name = "Pompeius"
+	dynasty = 1022231
+	religion = orthodox
+	culture = greek
+	trait = compassionate
+	400.1.1 = {
+		birth = "420.1.1"
+	}
+	450.1.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+ck650101 = {
+	name = "Paulus"
+	dynasty = 1022231
+	religion = orthodox
+	culture = greek
+	trait = compassionate
+	father = ck650100
+	440.1.1 = {
+		birth = "420.1.1"
+	}
+	496.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+ck650102 = {
+	name = "Hypatius"
+	dynasty = 1022231
+	religion = orthodox
+	culture = greek
+	trait = humble
+	trait = content
+	trait = craven
+	sexuality = homosexual
+	trait = dull
+	trait = education_diplomacy_1
+	father = ck650101
+	470.1.1 = {
+		birth = "420.1.1"
+	}
+	532.1.1 = {
+		#add_trait = crown_like_iberian1
+		death = {
+			death_reason = death_execution
+			killer = 70512
+		}
+	}
+}
+
+ck650103 = {
+	name = "Constantina"
+	dynasty = 1022186
+	female = yes
+	religion = orthodox
+	culture = greek
+	trait = ambitious
+	trait = education_intrigue_2
+	father = 145073
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	582.8.14 = {
+		add_spouse = 70510
+	}
+	605.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145072
+		}
+	}
+}
+
+########################
+#Venice #italy
+########################	
+ck650007 = {
+	name = "Paolo Lucio"
+	dynasty = 13027
+	religion = catholic
+	culture = italian
+	trait = shrewd
+	#trait = stressed
+	#trait = rep_gov_trait
+	trait = peasant_leader
+	trait = peasant_born
+	666.1.1 = {
+		birth = "666.1.1"
+		give_nickname = nickanafesto
+		#create_bloodline = {
+		#type = venice_found }
+	}
+	717.1.1 = {
+		death = "717.1.1"
+	}
+}
+
+ck650008 = {
+	name = "Marcello"
+	dynasty = 13027
+	religion = catholic
+	culture = italian
+	#trait = merch_gov_trait
+	father = ck650007
+	686.1.1 = {
+		birth = "686.1.1"
+		give_nickname = nicktegalliano
+		add_trait = peasant_born
+	}
+	726.1.1 = {
+		death = {
+			death_reason = death_drowned
+			killer = 190196
+		}
+	}
+}
+
+ck650107 = {
+	name = "Odoacer"
+	religion = "cathar"
+	culture = german	#germanic
+	trait = ambitious
+	trait = education_martial_3
+	trait = winter_soldier
+	#trait = land_reform_trait
+	#trait = sen_gov_trait
+	433.1.1 = {
+		birth = "433.1.1"
+	}
+	493.3.15 = {
+		death = {
+			death_reason = death_execution
+			#death_murder_beheading
+			killer = 168775
+		}
+	}
+}
+
+########################
+#Frisia
+########################
+ck650009 = {
+	name = "Finn"
+	dynasty = 724
+	religion = norse_pagan
+	culture = frisian
+	#trait = legend
+	#trait = crown_like_aegon_III
+	#trait = tribal_gov_trait
+	give_nickname = nickfolcawalding
+	380.1.1 = {
+		birth = "400.1.1"
+		#create_bloodline = {
+		#	type = frisian_blood
+		#	has_dlc = "Holy Fury"
+		#}
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+
+ck650010 = {
+	name = "Audulf"
+	dynasty = 724
+	religion = norse_pagan
+	culture = frisian
+	father = ck650009
+	trait = education_martial_2
+	trait = wrathful
+	#trait = tribal_gov_trait
+	#trait = uncouth
+	trait = arrogant
+	489.1.1 = {
+		birth = "489.1.1"
+	}
+	646.1.1 = {
+		death = "646.1.1"
+	}
+}
+
+########################
+#Persia
+########################
+ck650036 = {
+	name = "Zamasp"
+	dynasty = 1029100
+	culture = persian
+	religion = mazdayasna
+	trait = one_eyed
+	#trait = azadan
+	trait = lovers_pox
+	trait = education_martial_1
+	father = 180627
+	504.3.3 = {
+		birth = "504.3.3"
+	}
+	531.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = ck650045
+		}
+	}
+}
+
+ck650044 = {
+	name = "Mazdak"
+	religion = mazdakism
+	culture = persian
+	trait = zealous
+	#trait = vegetarian
+	trait = education_learning_4
+	trait = generous
+	trait = peaceful
+	trait = compassionate
+	#trait = charismatic
+	trait = honest
+	488.1.1 = {
+		birth = "488.1.1"
+	}
+	528.9.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 180628
+		}
+	}
+}
+
+ck650042 = {
+	name = "Anoshazad"
+	dynasty = 1029100
+	religion = nestorian
+	culture = persian
+	#trait = azadan
+	trait = lustful
+	trait = ambitious
+	father = 180628
+	mother = ck650043
+	531.1.1 = {
+		birth = "531.1.1"
+	}
+	569.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 180628
+		}
+	}
+}
+
+ck42069 = {
+	name = "Grzegorz Brzęczyszczykiewicz"
+	religion = catholic
+	culture = polish
+	martial = 4
+	diplomacy = 15
+	intrigue = 15
+	stewardship = 5
+	trait = immortal
+	trait = intellect_good_3
+	trait = education_intrigue_2
+	100.1.11 = {
+		birth = "100.1.11"
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
+ck42044 = {
+	name = "Grzegorz Brzęczyszczykiewicz"
+	religion = catholic
+	culture = polish
+	martial = 4
+	diplomacy = 15
+	intrigue = 15
+	stewardship = 5
+	trait = immortal
+	trait = intellect_good_3
+	trait = education_intrigue_2
+	100.1.11 = {
+		birth = "100.1.11"
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
+ck001230 = {
+	name = "Chance Wilkins"
+	religion = catholic
+	culture = english
+	dna = ck001230_cyraxx
+	martial = 0
+	diplomacy = 1
+	intrigue = 2
+	stewardship = 1
+	learning = 0
+	trait = craven
+	trait = intellect_bad_3
+	trait = education_intrigue_1
+	trait = disloyal
+	trait = deceitful
+	trait = deviant
+	trait = sodomite
+	trait = irritable
+	100.1.11 = {
+		birth = "100.1.11"
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
