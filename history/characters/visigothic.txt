@@ -23,7 +23,9 @@
 		add_spouse = 70001
 	}
 	737.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -36,7 +38,9 @@
 		birth = yes
 	}
 	743.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -52,7 +56,9 @@
 		birth = yes
 	}
 	760.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -77,7 +83,9 @@
 		add_spouse = 70002
 	}
 	757.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -140,7 +148,9 @@
 		give_nickname = nick_the_chaste
 	}
 	842.3.20 = {
-		death = yes
+		death = {
+			death_reason = death_old_age
+		}
 	}
 }
 
@@ -155,8 +165,10 @@
 	670.1.1 = {
 		birth = yes
 	}
-	720.1.1 = {
-		death = yes
+	730.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -194,7 +206,9 @@
 		birth = yes
 	}
 	773.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -218,7 +232,9 @@
 		add_spouse = 70014
 	}
 	797.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 		give_nickname = nick_the_monk
 	}
 }
@@ -549,7 +565,7 @@
 	}
 	739.6.15 = {
 		death = {
-			death_reason = death_accident
+			death_reason = death_bear
 		}
 	}
 }
@@ -575,7 +591,9 @@
 		add_spouse = 200059
 	}
 	788.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -591,7 +609,9 @@
 		birth = yes
 	}
 	794.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -1848,18 +1868,22 @@
 }
 
 73873 = {
-	name = "Wimarano"
-	dynasty_house = house_asturias
-	father = 70003
-	mother = 70002
+	name = "Wimarano" # Vimarano Adefónsiz
+	dynasty_house = house_asturias # House of Asturias
 	religion = catholic
 	culture = visigothic
-	725.1.1 = {
+	trait = trusting # He gained support from the nobility
+	trait = education_martial_2
+
+	father = 70003 # King Alfonso I of Asturias
+	mother = 70002 # Queen Ermesinda Peláez
+
+	742.1.1 = {
 		birth = yes
 	}
-	767.1.1 = {
+	765.1.1 = {
 		death = {
-			death_reason = death_murder
+			death_reason = death_murder_known # Killed by his brother King Fruela, as he believed he'll try to depose him
 			killer = 70004
 		}
 	}
@@ -1871,6 +1895,7 @@
 	father = 73873
 	religion = catholic
 	culture = visigothic
+	trait = education_intrigue_1
 	760.1.1 = {
 		birth = yes
 	}
@@ -2027,11 +2052,13 @@
 }
 
 73901 = {
-	name = "Theodemiro"
-	dynasty = 12295
-
-	religion = catholic
+	name = "Theodemiro" # Conde Teodomiro, Duke of Murcia (695-743) & Count of Alcaraz, Almeria, Alicante & Murcia (695-743)
+	dynasty_house = house_tudmir # House of Teodomiro
+	religion = mozarabic_church
 	culture = visigothic
+	trait = education_diplomacy_4
+
+	father = visigothic0009 # Gunderico
 
 	670.1.1 = {
 		birth = yes
@@ -2042,16 +2069,16 @@
 }
 
 73902 = {
-	name = "Adelgundis"
+	name = "Adelgundis" # Adelgundis de Tudmir, wife of Sheik Jattab ibn Abd al-Yabbar of Alicante (levantine0093)
 	female = yes
-	dynasty = 12295
-
-	father = 73901
-
-	religion = catholic
+	dynasty_house = house_tudmir # House of Teodomiro
+	religion = mozarabic_church
 	culture = visigothic
+	trait = education_diplomacy_1
 
-	700.1.1 = {
+	father = 73901 # Duke Teodomiro of Murcia
+
+	725.1.1 = {
 		birth = yes
 	}
 	782.1.1 = {
@@ -2555,7 +2582,7 @@
 
 	religion = muwalladi
 	culture = visigothic
-
+	trait = education_intrigue_1
 	780.1.1 = {
 		birth = yes
 	}
