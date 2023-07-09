@@ -1,0 +1,232 @@
+mmpolish = {
+	name = "Grzegorz Brzęczyszczykiewicz"
+	religion = pagan
+	culture = polish
+	martial = 4
+	diplomacy = 15
+	intrigue = 15
+	stewardship = 5
+	trait = beauty_good_3
+	trait = intellect_good_3
+	trait = education_intrigue_2
+	600.1.11 = {
+		birth = "600.1.11"
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
+mmdsp = {
+	name = "DarkSyde Phil"
+	religion = pagan
+	culture = american
+	martial = 4
+	diplomacy = 1
+	intrigue = 2
+	stewardship = 1
+	learning = 0
+	trait = beauty_bad_1
+	trait = dull
+	trait = cynical
+	trait = gluttonous
+	trait = deceitful
+	trait = callous
+	trait = arrogant
+	trait = greedy
+	trait = stubborn
+	trait = gout_ridden
+	800.1.11 = {
+		birth = "800.1.11"
+	}
+	866.4.17 = {
+		death_reason = death_gout_ridden
+	}
+}
+
+mmmarty = {
+	name = "MusicBiz Marty"
+	religion = samaritan
+	culture = american
+	martial = 5
+	diplomacy = 5
+	intrigue = 20
+	stewardship = 10
+	learning = 10
+	trait = gluttonous
+	trait = arbitrary
+	trait = intellect_good_1
+	trait = education_intrigue_3
+	trait = deceitful
+	trait = callous
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	821.1.1 = {
+		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
+
+mmcyraxx = {
+	name = "Chance Cyraxx Wilkins"
+	religion = norse_pagan
+	culture = american
+	dna = cyraxx
+	martial = 0
+	diplomacy = 1
+	intrigue = 2
+	stewardship = 1
+	learning = 0
+	give_nickname = nick_goblin
+	trait = craven
+	trait = intellect_bad_3
+	trait = education_intrigue_1
+	trait = disloyal
+	trait = leper
+	trait = deceitful
+	trait = deviant
+	trait = sodomite
+	trait = irritable
+	trait = hunchback
+	trait = beauty_bad_3
+	trait = weak
+	trait = dwarf
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	821.1.1 = {
+		set_relation_rival = { target = character:mmmarty reason = rival_historical }
+	}
+	841.1.1 = {
+		set_relation_friend = { target = character:mmchrischan }
+	}
+	861.1.1 = {
+		set_relation_lover = { target = character:mmproxykid }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
+
+mmproxykid = {
+	name = "Heather"
+	religion = catholic
+	culture = american
+	female = yes
+	855.1.11 = {
+		birth = "855.1.11"
+	}
+	861.1.1 = {
+		set_relation_lover = { target = character:mmcyraxx }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
+
+mmchrischan = {
+	name = "Ian Brandon Anderson"
+	religion = catholic
+	culture = american
+	martial = 1
+	diplomacy = 1
+	intrigue = 0
+	stewardship = 1
+	learning = 0
+	mother = mmbarb
+	trait = craven
+	trait = zealous
+	trait = gluttonous
+	trait = stuttering
+	trait = reclusive
+	trait = dull
+	trait = poet
+	trait = stubborn
+	trait = deviant
+	trait = sodomite
+	trait = incestuous
+	trait = witch
+	trait = heresiah
+	give_nickname = nick_chrischan
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	821.1.1 = {
+		set_relation_rival = { target = character:mmliquid reason = rival_historical }
+	}
+	841.1.1 = {
+		set_relation_lover = { target = character:mmbarb }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
+
+mmbarb = {
+	name = "Barbara Chandler"
+	religion = catholic
+	culture = american
+	female = yes
+	martial = 1
+	diplomacy = 1
+	intrigue = 0
+	stewardship = 1
+	learning = 0
+	trait = irritable
+	trait = education_intrigue_1
+	trait = gluttonous
+	trait = callous
+	trait = reclusive
+	trait = incapable
+	trait = stubborn
+	trait = deviant
+	trait = incestuous
+	trait = witch
+	trait = melancholic
+	820.1.11 = {
+		birth = "800.1.11"
+	}
+	841.1.1 = {
+		set_relation_lover = { target = character:mmchrischan }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
+
+mmliquid = {
+	name = "The True And Honest Christian Weston Chandler"
+	religion = zun_pagan
+	culture = american
+	martial = 5
+	diplomacy = 25
+	intrigue = 10
+	stewardship = 10
+	learning = 18
+	trait = education_learning_3
+	trait = brave
+	trait = honest
+	trait = galant
+	trait = cynical
+	trait = humble
+	trait = stuttering
+	trait = beauty_good_3
+	trait = poet
+	trait = lifestyle_physician
+	give_nickname = nick_liquid
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	821.1.1 = {
+		set_relation_rival = { target = character:mmchrischan reason = rival_historical }
+	}
+	821.1.1 = {
+		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+	}
+	2026.4.17 = {
+		death = "2026.4.17"
+	}
+}
