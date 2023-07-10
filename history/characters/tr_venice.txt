@@ -1,0 +1,862 @@
+# Start of Orseolo
+145910 = {
+	name = "Orso"
+	dynasty = 101562
+	religion = "catholic"
+	culture = cisalpine
+	trait = organizer
+	trait = strategist
+	trait = education_martial_2
+	690.1.1 = {
+		birth = "690.1.1"
+		give_nickname = nick_ipato
+	}
+	737.1.1 = {
+		death = { death_reason = death_uprising
+		killer=145915
+		}
+	}
+}
+145911 = {
+	name = "Teodato"
+	dynasty = 101562
+	religion = "catholic"
+	culture = cisalpine
+	father = 145910
+	715.1.1 = {
+		birth = "715.1.1"
+		give_nickname = nick_ipato
+	}
+	755.1.1 = {
+		trait = blind
+		death = { death_reason = death_exile
+		killer=145915
+		}
+	}
+}
+# Start of Gaulo
+145915 = {
+	name = "Galla"
+	dynasty = 1022325
+	religion = "catholic"
+	culture = cisalpine
+	trait = ambitious
+	722.1.1 = {
+		birth = "722.1.1"
+	}
+	756.1.1 = {
+		trait = blind
+	}
+	756.1.1 = {
+		death = { death_reason = death_exile
+		killer=145916
+		}
+	}
+}
+# End of Gaulo
+# Start of Monegario
+145916 = {
+	name = "Domenico"
+	dynasty = 1022326
+	religion = "catholic"
+	culture = cisalpine
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	764.1.1 = {
+		trait = blind
+		death = { death_reason = death_exile
+		killer=145919
+		}
+    }
+}
+# Start of Galbaio
+145919 = {
+	name = "Maurizio"
+	dynasty = 1022327
+	religion = "catholic"
+	culture = cisalpine
+	trait = gregarious
+	trait = diligent
+	trait = education_diplomacy_4
+
+	726.1.1 = {
+		birth = "726.1.1"
+	}
+	787.1.1 = {
+		death = "787.1.1"
+	}
+}
+145920 = {
+	name = "Giovanni"
+	dynasty = 1022327
+	religion = "catholic"
+	culture = cisalpine
+	father = 145919
+	trait = ambitious
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	804.1.1 = {
+		death = { death_reason = death_uprising
+		killer=145923
+		}
+	}
+}
+145923 = {
+	name = "Obelerio"
+	dynasty = 1022328
+	religion = "catholic"
+	culture = cisalpine
+	father = 145922
+	764.1.1 = {
+		birth = "764.1.1"
+	}
+	811.1.1 = {
+		death = { death_reason = death_execution
+		killer=184023
+		}
+	}
+}
+184020 = {
+	name = "Agnello"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 145926
+	761.1.1 = {
+		birth = yes
+	}
+	777.1.1 = {
+		add_spouse = 184021
+	}
+	827.1.1 = {
+		death = yes
+	}
+}
+184022 = {
+	name = "Giustiniano"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184020
+	mother = 184021
+	trait = wrathful
+	781.1.1 = {
+		birth = yes
+	}
+	829.1.1 = {
+		death = 829.1.1
+	}
+}
+184023 = {
+	name = "Giovanni"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184020
+	mother = 184021
+	trait = education_learning_2
+	780.1.1 = {
+		birth = 780.1.1
+	}
+	#840.1.1 = {}
+	837.1.1 = {	
+		death = 837.1.1
+	}
+}
+184052 = {
+	name = "Pietro"
+	dynasty = 1042809
+	religion = catholic
+	culture = cisalpine #istrian
+	father = 184074
+	mother = 184075
+	800.1.1 = {
+		birth = 800.1.1
+	}
+	864.7.13 = { #assassinated by someone
+	death = { death_reason = death_poison
+		killer = 184026
+		}
+	}
+}
+184026 = {
+	name = "Orso"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184024
+	mother = 184025
+	800.1.1 = {
+		birth = 800.1.1
+	}
+	820.1.1 = {
+		add_spouse = 184027
+	}
+	865.1.1 = {
+		effect = {
+			add_gold = 200
+		}
+	}
+	881.1.1 = {
+		death = 881.1.1
+	}
+}
+184028 = {
+	name = "Giovanni"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184026
+	mother = 184027
+	trait = ambitious
+	trait = gregarious
+	trait = weak
+	822.1.1 = {
+		birth = 822.1.1
+	}
+	887.1.1 = {
+		death = { death_reason = death_weak
+		}
+	}
+}
+184036 = {
+	name = "Pietro" #1
+	dynasty = 1042813
+	religion = catholic
+	culture = cisalpine
+	father = 184034
+	mother = 184035
+	815.1.1 = {
+		birth = 815.1.1
+	}
+	840.1.1 = {
+		add_spouse = 184037
+	}
+	888.1.1 = { #died in battle with pirates
+		death = { death_reason = death_battle
+		killer = 167857
+	    }
+	}
+}
+184054 = {
+	name = "Pietro"
+	dynasty = 1042810
+	religion = catholic
+	culture = cisalpine
+	father = 184053
+	mother = 184038
+	841.1.1 = {
+		birth = 841.1.1
+	}
+	860.1.1 = {
+		add_spouse = 184055
+	}
+	912.1.1 = {
+		death = 912.1.1
+	}
+}
+184081 = {
+	name = "Orso"
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184031
+	mother = 184032
+	trait = lazy
+	845.1.1 = {
+		birth = 845.1.1
+	}
+	870.1.1 = {
+		add_spouse = 184082
+	}
+	932.1.1 = {
+		death = 932.1.1
+	}
+}
+184042 = {
+	name = "Pietro" #2
+	dynasty = 1042813
+	religion = catholic
+	culture = cisalpine
+	father = 184039
+	mother = 184040
+	872.1.1 = {
+		birth = 872.1.1
+	}
+	919.1.1 = {
+		add_spouse = 184043
+	}
+	939.1.1 = {
+		death = 939.1.1
+	}
+}
+184059 = {
+	name = "Pietro" #Badoer
+	dynasty = 1042812
+	religion = catholic
+	culture = cisalpine
+	father = 184081
+	mother = 184082
+	871.1.1 = {
+		birth = 871.1.1
+	}
+	942.1.1 = {
+		death = 942.1.1
+	}
+}
+184044 = {
+	name = "Pietro" #3
+	dynasty = 1042813
+	religion = catholic
+	culture = cisalpine
+	father = 184042
+	mother = 184043
+	920.1.1 = {
+		birth = 920.1.1
+	}
+	939.1.1 = {
+		add_spouse = 184045
+	}
+	959.1.1 = {
+		death = 959.1.1
+	}
+}
+184048 = {
+	name = "Pietro" #4
+	dynasty = 1042813
+	religion = catholic
+	culture = cisalpine
+	father = 184044
+	mother = 184045
+	940.1.1 = {
+		birth = 940.1.1
+	}
+	956.1.1 = {
+		add_spouse = 184049
+	}
+	960.1.1 = {
+		remove_spouse = 184049
+	}
+	960.1.1 = {
+		add_spouse = 190536
+	}
+	976.1.1 = {
+		death = { death_reason = death_burned
+		killer = 539
+	    }
+	}
+}
+539 = {
+	name = "Pietro"
+	dynasty = 101562
+	martial = 7
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 7
+	religion = "catholic"
+	culture = cisalpine
+	trait = just
+	trait = zealous
+	trait = education_diplomacy_3
+	father = 184066
+	mother = 184067
+	927.1.2 = {
+		birth = "927.1.2"
+	}
+	#981.1.2 = {}
+	978.1.1 = {	
+		death = "978.1.1"
+	}
+}
+184050 = {
+	name = "Vitale"
+	dynasty = 1042813
+	religion = catholic
+	culture = cisalpine
+	father = 184048
+	mother = 184049
+	957.1.1 = {
+		birth = 957.1.1
+	}
+	979.1.1 = {
+		death = { death_reason = death_physique_bad_2 
+		}
+	}
+}
+184068 = {
+	name = "Tribuno"
+	dynasty = 1042811
+	religion = catholic
+	culture = cisalpine
+	957.1.1 = {
+		birth = 957.1.1
+	}
+	980.1.1 = {
+		add_spouse = 184051
+	}
+	991.1.1 = {
+		death = 991.1.1
+	}
+}
+537 = {
+	name = "Pietro"
+	dynasty = 101562
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	religion = "catholic"
+	culture = cisalpine
+	trait = wrathful
+	trait = greedy
+	trait = education_martial_3
+	father = 539
+	mother = 540
+	961.1.2 = {
+		birth = "961.1.2"
+	}
+	982.1.1 = {
+		add_spouse = 541
+	}
+	1008.1.2 = {
+		death = "1008.1.2"
+	}
+}
+496 = {
+	name = "Oddone"
+	dynasty = 101562
+	martial = 4
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 5
+	religion = "catholic"
+	culture = cisalpine
+	trait = gluttonous
+	trait = lisping
+	trait = education_stewardship_3
+	father = 537
+	mother = 541
+	989.1.1 = {
+		birth = "989.1.1"
+	}
+	1004.1.1 = {
+		add_spouse = 495
+	}
+	1026.1.1 = {
+		death = { death_reason = death_exile
+		killer = 184070
+		}
+	}
+}
+184070 = {
+	name = "Pietro" #Barbolano
+	religion = catholic
+	culture = cisalpine
+	980.1.1 = {
+		birth = 980.1.1
+	}
+	1032.1.1 = {
+		death = 1032.1.1
+	}
+}
+7800 = {
+	name = "Domenico"
+	dynasty = 516
+	martial = 4
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 5
+	religion = catholic
+	culture = cisalpine
+	trait = education_diplomacy_3
+	father = 167594
+	
+	1008.1.1 = {
+		birth = yes
+	}
+	1071.1.1 = {
+		death = yes
+	}
+}
+7802 = {
+	name = "Domenico"
+	dynasty = 515
+	martial = 8
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	religion = "catholic"
+	culture = cisalpine
+	trait = humble
+	trait = education_martial_2
+	1028.1.2 = {
+		birth = "1028.1.2"
+	}
+	1074.1.1 = {
+		add_spouse = 9812
+	}
+	1084.1.2 = {
+		death = "1084.1.2"
+	}
+}
+7804 = {
+	name = "Vitale"
+	dynasty = 514
+	martial = 5
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "catholic"
+	culture = cisalpine
+	trait = humble
+	trait = education_stewardship_2
+	father = 167583
+	1038.1.1 = {
+		birth = "1038.1.1"
+	}
+	1095.1.2 = {
+		death = "1095.1.2"
+	}
+}
+32133 = {
+	name = "Vitale"
+	dynasty = 7235
+	religion = "catholic"
+	culture = cisalpine
+	1040.1.2 = {
+		birth = "1040.1.2"
+	}
+	1102.1.2 = {
+		death = "1102.1.2"
+	}
+}
+7808 = {
+	name = "Ordelaffo"
+	dynasty = 514
+	martial = 5
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 5
+	religion = "catholic"
+	culture = cisalpine
+	father = 7804
+	1060.1.1 = {
+		birth = "1060.1.1"
+	}
+	1117.1.1 = {
+		death = "1117.1.1"
+	}
+}
+32115 = {
+	name = "Domenico"
+	dynasty = 7235
+	religion = "catholic"
+	culture = cisalpine
+	father = 32133
+	1088.1.1 = {
+		birth = "1088.1.1"
+	}
+	1122.8.1 = {
+		trait = faith_warrior
+	}
+	1130.1.2 = {
+		death = "1130.1.2"
+	}
+}
+32116 = {
+	name = "Pietro"
+	dynasty = 7236
+	religion = "catholic"
+	culture = cisalpine
+	father = 170060
+	1093.1.2 = {
+		birth = "1093.1.2"
+	}
+	1122.8.1 = {
+		trait = faith_warrior
+	}
+	1125.1.2 = {
+		add_spouse = 170084
+	}
+	1147.1.2 = {
+		death = "1147.1.2"
+	}
+}
+32117 = {
+	name = "Domenico"
+	dynasty = 13070
+	religion = "catholic"
+	culture = cisalpine
+	father = 182012
+	trait = education_diplomacy_3
+	1090.1.2 = {
+		birth = "1090.1.2"
+	}
+	1156.1.2 = {
+		death = "1156.1.2"
+	}
+}
+32118 = {
+	name = "Vitale"
+	dynasty = 7235
+	religion = "catholic"
+	culture = cisalpine
+	father = 32115
+	1105.1.2 = {
+		birth = "1105.1.2"
+	}
+	1172.3.28 = {
+		death = "1172.3.28"
+	}
+}
+32119 = {
+	name = "Sebastiano"
+	dynasty = 13075
+	religion = "catholic"
+	culture = cisalpine
+	father = 182001
+	mother = 167660
+	1102.1.1 = {
+		birth = "1102.1.1"
+	}
+	1130.1.1 = {
+		add_spouse = 167661
+	}
+	1178.4.13 = {
+		death = "1178.4.13"
+	}
+}
+213600 = {
+	name = "Orio"
+	dynasty = 13076
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 8
+	religion = "catholic"
+	culture = cisalpine
+	trait = just
+	trait = education_diplomacy_2
+	1120.1.1 = {
+		birth = "1120.1.1"
+	}
+	1178.1.1 = {
+		capital = c_venezia
+	}
+	1192.1.1 = {
+		death = "1192.1.1"
+	}
+}
+213601 = {
+	name = "Enrico"
+	dynasty = 13027
+	martial = 6
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 7
+	religion = "catholic"
+	culture = cisalpine
+	trait = cynical
+	trait = wrathful
+	trait = education_diplomacy_4
+	father = 170044
+	1107.1.2 = {
+		birth = "1107.1.2"
+	}
+	1150.1.2 = {
+		add_spouse = 170047 #Contessa Minotto
+	}
+	1176.10.1 = {
+		trait = blind
+	}
+	1202.6.1 = {
+		trait = faith_warrior
+	}
+	1205.6.21 = {
+		death = "1205.6.21"
+	}
+}
+32120 = {
+	name = "Pietro"
+	dynasty = 13075
+	religion = "catholic"
+	culture = cisalpine
+	father = 32119
+	mother = 167661
+	1142.1.1 = {
+		birth = "1142.1.1"
+	}
+	1175.1.1 = {
+		add_spouse = 167662
+	}
+	1202.1.1 = {
+		trait = faith_warrior
+	}
+	1213.1.1 = { 
+		#second wife
+		add_spouse = 211515 #constance of sicily, daughter of TANCRED di Lecce King of Sicily. 
+	}
+	1229.3.13 = {
+		death = "1229.3.13"
+	}
+}
+32124 = {
+	name = "Iacopo"
+	dynasty = 13006
+	religion = "catholic"
+	culture = cisalpine
+	1170.1.2 = {
+		birth = "1170.1.2"
+	}
+	1249.7.19 = {
+		death = "1249.7.19"
+	}
+}
+32125 = {
+	name = "Marino"
+	dynasty = 13070
+	religion = "catholic"
+	culture = cisalpine
+	father = 182016
+	1181.1.2 = {
+		birth = "1181.1.2"
+	}
+	1253.1.1 = {
+		death = "1253.1.1"
+	}
+}
+32126 = {
+	name = "Reniero"
+	dynasty = 7237
+	religion = "catholic"
+	culture = cisalpine
+	1200.1.2 = {
+		birth = "1200.1.2"
+	}
+	1268.7.7 = {
+		death = "1268.7.7"
+	}
+}
+32127 = {
+	name = "Lorenzo"
+	dynasty = 13006
+	religion = "catholic"
+	culture = cisalpine
+	father = 32124
+	1198.1.2 = {
+		birth = "1198.1.2"
+	}
+	1230.1.1 = {
+		add_spouse = cisalpine0298
+	}
+	1275.8.15 = {
+		death = "1275.8.15"
+	}
+}
+32128 = {
+	name = "Iacopo"
+	dynasty = 516
+	religion = catholic
+	culture = cisalpine
+	father = 167602
+	
+	1194.1.1 = {
+		birth = yes
+	}
+	1280.3.6 = {
+		death = yes
+	}
+}
+32129 = {
+	name = "Giovanni"
+	dynasty = 13027
+	religion = "catholic"
+	culture = cisalpine
+	father = 170068
+	1205.1.2 = {
+		birth = "1205.1.2"
+	}
+	1289.11.2 = {
+		death = "1289.11.2"
+	}
+}
+32130 = {
+	name = "Pietro"
+	dynasty = 13007
+	religion = "catholic"
+	culture = cisalpine
+	1252.1.2 = {
+		birth = "1252.1.2"
+	}
+	1270.1.1 = {
+		add_spouse = 182022 #Tomasina Morosini
+	}
+	1311.8.13 = {
+		death = "1311.8.13"
+	}
+}
+32131 = {
+	name = "Marino"
+	dynasty = 8734
+	religion = "catholic"
+	culture = cisalpine
+	1231.1.2 = {
+		birth = "1231.1.2"
+	}
+	1312.7.3 = {
+		death = "1312.7.3"
+	}
+}
+32132 = {
+	name = "Giovanni"
+	dynasty = 7238
+	religion = "catholic"
+	culture = cisalpine
+	1240.1.2 = {
+		birth = "1240.1.2"
+	}
+	1328.12.31 = {
+		death = "1328.12.31"
+	}
+}
+463600 = {
+	name = "Francesco"
+	dynasty = 13027
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 6
+	religion = "catholic"
+	culture = cisalpine
+	trait = education_learning_2
+	father = 170078
+	1278.1.2 = {
+		birth = "1278.1.2"
+	}
+	1339.10.31 = {
+		death = "1339.10.31"
+	}
+}
+
+##################################
+#Other venice
+##################################
+145921 = {
+	name = "Maurizio"
+	dynasty = 1022327
+	religion = "catholic"
+	culture = cisalpine
+	father = 145920
+	767.1.1 = {
+		birth = "767.1.1"
+	}
+	831.1.1 = {
+		death = { death_reason = death_uprising
+		killer=145923
+		}
+	}
+}
+
+

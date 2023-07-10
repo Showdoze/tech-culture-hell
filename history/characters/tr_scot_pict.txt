@@ -1,0 +1,154 @@
+982 = {  	
+	name = "Donnchad"
+	# AKA: Duncan
+	dynasty = 1687
+	martial = 6
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 8
+	religion = "catholic"
+	culture = "gaelic"
+	trait = deceitful
+	trait = arbitrary
+	trait = wrathful
+	trait = arrogant
+	trait = education_stewardship_2
+	father = 962
+	mother = 981
+	1001.1.2 = {
+		birth = "1001.1.2"
+	}
+	1030.1.2 = {
+		add_spouse = 193
+	}
+	1040.1.1 = {
+		death = { 
+			death_reason = death_assassination
+		    killer = 5996
+		}
+	}
+}
+5996 = {  	
+	name = "Macbethad"
+	# AKA: Macbeth
+	dynasty_house = house_british_isles_loairn
+	martial = 8
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = "catholic"
+	culture = "gaelic"
+	trait = ambitious
+	trait = education_martial_2
+	trait = vengeful
+	trait = schemer
+	trait = pilgrim
+	trait = blademaster_1
+	trait = rough_terrain_expert
+	disallow_random_traits = yes
+	father = 5998
+	mother = 5997
+	1006.1.2 = {
+		birth = "1006.1.2"
+	}
+	1057.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 984 # Malcolm III 
+		}
+	}
+}
+5998 = {  	
+	name = "FindlaI_ch" # Findlay
+	dynasty_house = house_british_isles_loairn
+	martial = 8
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 4
+	religion = "catholic"
+	culture = "gaelic"
+	father = 5999
+	970.1.1 = {
+		birth = "970.1.1"
+	}
+	1020.7.1 = {
+		death = {
+			death_reason = death_murder
+		    killer=83587
+		}
+	}
+}
+83587 = {
+	name = "MA_el-Coluim"
+	dynasty_house = house_british_isles_loairn
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	religion = "catholic"
+	culture = "gaelic"
+	father = 6000
+	1001.1.1 = {
+		birth = "1001.1.1"
+	}
+	1029.7.1 = {
+		death = { death_reason = death_burned
+		killer=5996
+		}
+	}
+}
+453501 = {  	
+	name = "Robert"
+	dynasty = 3123
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 5
+	religion = "catholic"
+	culture = "scottish"
+	trait = lustful
+	trait = brave
+	trait = ambitious
+	trait = deceitful
+	trait = education_martial_3
+	father = 453512
+	mother = 203543
+	1274.1.2 = {
+		birth = "1274.1.2"
+		give_nickname = nick_the_bruce
+	}
+	1295.1.2 = {
+		add_spouse = 453024
+	}
+	1302.1.2 = {
+		add_spouse = 453502
+	}
+	1329.6.7 = {
+		death = "1329.6.7"
+	}
+}
+188958 = {  	
+	name = "William"
+	dynasty = 3133 # Wallace
+	religion = "catholic"
+	culture = "scottish"
+	father = 188957
+	mother = 188956
+	trait = education_martial_4
+	trait = intellect_good_1
+	trait = ambitious
+	trait = sadistic
+	trait = reaver
+	trait = aggressive_attacker
+	trait = diligent
+	disallow_random_traits = yes
+	1271.1.1 = {
+		birth = yes
+	}
+	1305.8.23 = {
+		death = { death_reason = death_execution #death_execution_hdq
+		killer=454520 
+		}
+	}
+}
+

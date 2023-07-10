@@ -1,0 +1,29 @@
+82233 = {
+	name = "Piast"	#the Wheelwright
+	#Piast dynasty founder
+	dynasty = 699
+	martial = 5
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 8
+	trait = honest
+	trait = just
+	trait = gregarious
+	trait = peasant_born
+	trait = diligent
+	trait = education_stewardship_2
+	disallow_random_traits = yes
+	religion = "slavic_pagan"
+	culture = "polish"
+	#father = 171010
+	give_nickname = nick_the_wheelwright
+	740.1.1 = {		#semi-legendary, so his 740-861 (=120 years) lifespan is debatable but hey, no better dates
+		birth = "740.1.1"
+	}
+	811.1.2 = {
+		add_spouse = 82234
+	}
+	861.1.1 = {
+		death = "861.1.1"
+	}
+}

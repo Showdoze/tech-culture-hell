@@ -13,6 +13,10 @@
 	trait = deceitful
 	trait = ambitious
 	trait = peasant_born
+	trait = murderer
+	trait = beauty_good_1
+	trait = lifestyle_hunter
+	sexuality = bisexual
 	father = 145129
 	give_nickname = nick_the_macedonian
 	836.5.25 = {
@@ -28,7 +32,9 @@
 		add_spouse = 1761
 	}
 	886.8.29 = {
-		death = "886.8.29"
+		death = {
+			death_reason = death_deer
+		}
 	}
 }
 
@@ -2016,6 +2022,9 @@
 	994.1.1 = {
 		add_spouse = 42002
 	}
+	1028.1.1 = {
+		trait = blind
+	}
 	1033.1.1 = {
 		death = "1033.1.1"
 	}
@@ -2068,6 +2077,9 @@
 	trait = education_stewardship_1
 	1030.1.1 = {
 		birth = "1030.1.1"
+	}
+	1066.1.1 = {
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1066.9.8 = {
 		death = "1066.9.8"
@@ -2348,6 +2360,9 @@
 	mother = 1739
 	1011.1.1 = {
 		birth = "1011.1.1"
+	}
+	1066.1.1 = {
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1068.1.1 = {
 		death = "1068.1.1"
@@ -2928,6 +2943,9 @@
 	1050.1.1 = {
 		add_spouse = 159288
 	}
+	1066.1.1 = {
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
+	}
 	1067.1.1 = {
 		death = "1067.1.1"
 	}
@@ -3162,7 +3180,7 @@
 
 303451 = {
 	name = "Alexandros"	#placeholder brother of Konstantinos IX Monomachos
-	dynasty = 636 #Monomachos
+	dynasty = 636	#Monomachos
 	religion = "orthodox"
 	culture = "greek"
 	father = 20560
@@ -3177,7 +3195,7 @@
 303452 = {
 	name = "Theodosios"
 	#AKA "Monomachos the moron", who failed to seize the throne in 1056 and became a "figure of fun"
-	dynasty = 636 #Monomachos
+	dynasty = 636	#Monomachos
 	religion = "orthodox"
 	culture = "greek"
 	martial = 2
@@ -4620,7 +4638,7 @@
 	stewardship = 3
 	religion = "orthodox"
 	culture = "greek"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = greedy
 	trait = ambitious
 	trait = lustful
@@ -4691,13 +4709,14 @@
 
 215532 = {
 	name = "Anna"
-	# AKA: Anna Porphyrogenita
+	# AKA: Anna Porphyrogenita # AKA: Anna Komnene
 	female = yes
 	dynasty = 634
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_learning_3
+	trait = education_learning_4
 	trait = scholar
+	trait = intellect_good_3
 	trait = born_in_the_purple
 	father = 1742
 	mother = 1743
@@ -4816,7 +4835,7 @@
 215571 = {
 	name = "Maria"
 	# AKA: Maria Taronitissa
-	dynasty = 101510
+	dynasty_house = house_taronites
 	female = yes
 	martial = 5
 	diplomacy = 7
@@ -5287,7 +5306,8 @@
 }
 
 232501 = {
-	name = "Theophylaktos" # AKA: Theophylaktos Acominatos
+	name = "Theophylaktos"
+	# AKA: Theophylaktos Acominatos	
 	dynasty = 101081
 	martial = 4
 	diplomacy = 4
@@ -6572,7 +6592,7 @@
 
 41536 = {
 	name = "Gregorios"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	martial = 6
 	diplomacy = 6
 	intrigue = 6
@@ -6591,7 +6611,7 @@
 
 41537 = {
 	name = "Michael"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	martial = 6
 	diplomacy = 6
 	intrigue = 5
@@ -6726,6 +6746,8 @@
 	trait = generous
 	trait = zealous
 	trait = education_martial_2
+	trait = rowdy
+	disallow_random_traits = yes
 	father = 1764
 	mother = 1765
 	1054.1.1 = {
@@ -8405,7 +8427,7 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_intrigue_2
 	father = 70400
 	
@@ -8669,7 +8691,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = temperate
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 	father = 70431
 	
@@ -8814,6 +8836,7 @@
 	trait = education_stewardship_4
 	trait = born_in_the_purple
 	father = 70491
+	sexuality = bisexual
 	
 	840.1.19 = {
 		birth = "840.1.19"
@@ -8933,8 +8956,17 @@
 	793.1.1 = {
 		add_spouse = 70495
 	}
-	813.7.11 = {
-		death = "813.7.11"
+	813.1.1 = {
+		trait = devoted
+	}
+	815.1.1 = {
+		religion = "iconoclast"
+	}
+	842.2.19 = {
+		religion = "orthodox"
+	}
+	844.1.11 = {
+		death = "844.1.11"
 	}	
 }
 
@@ -8969,7 +9001,7 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_martial_2
 	father = 70497	
 	773.1.1 = {
@@ -9096,7 +9128,7 @@
 	mother = 145787
 	750.1.25 = {
 		birth = "750.1.25"
-		give_nickname = nick_the_khazar
+		give_nickname = nick_the_mother_culture
 	}
 	768.12.17 = {
 		add_spouse = 70498
@@ -9231,10 +9263,10 @@
 	655.1.1 = {
 		birth = "655.1.1"
 	}
-	698.11.1 = {
+	706.2.1 = {
 		death = {
 			death_reason = death_execution
-		    killer = 70506
+		    killer = 70506 # Justinian II
 		}
 	}
 }
@@ -9300,7 +9332,7 @@
 		death = {
 			death_reason = death_cancer
 		}
-		add_trait = saint
+		#add_trait = saint
 	}
 }
 
@@ -9340,7 +9372,7 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = consumption
+	trait = ill
 	trait = content
 	trait = lazy
 	trait = education_diplomacy_1
@@ -9350,7 +9382,7 @@
 	}
 	641.4.20 = {
 		death = {
-			death_reason = death_consumption
+			death_reason = death_ill
 		}
 	}
 }
@@ -9784,7 +9816,8 @@
 }
 
 70551 = {
-	name = "Nikolaos" # AKA: Nikolaos 'Mystikos'
+	name = "Nikolaos"
+	# AKA: Nikolaos 'Mystikos'	
 	dynasty = 8649
 	martial = 5
 	diplomacy = 6
@@ -10871,6 +10904,9 @@
 	culture = "greek"
 	120.1.1 = {
 		birth = "120.1.1"
+	}
+	167.4.20 = {
+		name = "Soterius"
 	}
 	174.1.1 = {
 		death = { death_reason = death_crucified
@@ -14537,7 +14573,7 @@
 34465 = {
 	name = "Anna"
 	female = yes
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 41537
@@ -14552,7 +14588,7 @@
 
 34466 = {
 	name = "Ioannes"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 41537
@@ -14567,7 +14603,7 @@
 
 34467 = {
 	name = "Michael"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 34466
@@ -14581,7 +14617,7 @@
 
 34468 = {
 	name = "Gregorios"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 41537
@@ -14596,7 +14632,7 @@
 
 34469 = {
 	name = "Isaakios" #real name unknown
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 41537
@@ -14611,7 +14647,7 @@
 
 34470 = {
 	name = "Ioannes"
-	dynasty = 101510
+	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
 	father = 34469
@@ -15247,8 +15283,9 @@
 		birth = "665.1.1"
 	}
 	705.8.21 = {
-		death= { death_reason = death_execution
-		killer=70506	
+		death = { 
+			death_reason = death_execution
+		killer = 70506 # Justinian II
 		}
 	}
 }
@@ -20556,7 +20593,6 @@
 		death = yes
 	}
 }
-
 200121 = {
 	name = "Eudokia"
 	female = yes
@@ -20574,7 +20610,6 @@
 		death = yes
 	}
 }
-
 168790 = {
 	name = "Germanos" #real name unknown
 	dynasty = 1022186
@@ -20620,7 +20655,6 @@
 		death = yes
 	}
 }
-
 180997 = {
 	name = "Konstantinos"
 	dynasty = 188
@@ -20746,7 +20780,6 @@
 		death = yes
 	}
 }
-
 302342 = {
 	name = "Alexios"
 	dynasty = 2001065	#Maleios
@@ -20763,7 +20796,6 @@
 		death = yes
 	}
 }
-
 302343 = {
 	name = "Eirene"
 	female = yes
@@ -20776,7 +20808,6 @@
 		death = yes
 	}
 }
-
 302344 = {
 	name = "Matthaios"
 	dynasty = 2001065	#Maleios
@@ -20791,7 +20822,6 @@
 		death = yes
 	}
 }
-
 302345 = {
 	name = "Athanasia"
 	female = yes
@@ -20807,7 +20837,6 @@
 		death = yes
 	}
 }
-
 302346 = {
 	name = "Kale"
 	female = yes
@@ -20823,7 +20852,6 @@
 		death = yes
 	}
 }
-
 302347 = {
 	name = "Tiberios"
 	dynasty = 2001065	#Maleios
@@ -20856,7 +20884,6 @@
 		death = yes
 	}
 }
-
 302349 = {
 	name = "Dorothea"
 	female = yes
@@ -20869,7 +20896,6 @@
 		death = yes
 	}
 }
-
 302350 = {
 	name = "Gregorios"
 	dynasty = 2001065	#Maleios
@@ -20884,7 +20910,6 @@
 		death = yes
 	}
 }
-
 302351 = {
 	name = "Maximos"
 	dynasty = 2001065	#Maleios
@@ -20899,7 +20924,6 @@
 		death = yes
 	}
 }
-
 302352 = {
 	name = "Niphon"
 	dynasty = 2001065	#Maleios
@@ -20914,7 +20938,6 @@
 		death = yes
 	}
 }
-
 #Sebasteia
 ##867
 302353 = {
@@ -20932,7 +20955,6 @@
 		death = yes
 	}
 }
-
 302354 = {
 	name = "Demetra"
 	female = yes
@@ -20945,7 +20967,6 @@
 		death = yes
 	}
 }
-
 302355 = {
 	name = "Leontios"
 	dynasty = 2001066	#Kardias
@@ -20963,7 +20984,6 @@
 		death = yes
 	}
 }
-
 302356 = {
 	name = "Elaidora"
 	female = yes
@@ -20976,7 +20996,6 @@
 		death = yes
 	}
 }
-
 302357 = {
 	name = "Methodios"
 	dynasty = 2001066	#Kardias
@@ -20994,7 +21013,6 @@
 		death = yes
 	}
 }
-
 302358 = {
 	name = "Kyra"
 	female = yes
@@ -21007,7 +21025,6 @@
 		death = yes
 	}
 }
-
 302359 = {
 	name = "Sophia"
 	female = yes
@@ -21023,7 +21040,6 @@
 		death = yes
 	}
 }
-
 302360 = {
 	name = "Valeria"
 	female = yes

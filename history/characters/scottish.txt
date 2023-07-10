@@ -5430,8 +5430,8 @@
 	1058.1.1 = {
 		give_nickname = nick_canmore
 		effect = {
-			set_relation_rival = character:6008	#Took Malsnectan's kingdom from him.
-			set_relation_friend = character:124 #Tostig, King Harold's brother in exile
+			set_relation_rival = { target = character:6008 reason = rival_historical }	#Took Malsnectan's kingdom from him.
+			set_relation_friend = { reason = friend_generic_history target = character:124 } #Tostig, King Harold's brother in exile
 		}
 	}
 	1060.1.2 = {
@@ -6819,7 +6819,7 @@
 	}
 	1061.1.1 = {
 		effect = {
-			set_relation_rival = character:124	#Taken by Tostig as a hostage on a trip to Rome some time in this year.
+			set_relation_rival = { target = character:124 reason = rival_historical }	#Taken by Tostig as a hostage on a trip to Rome some time in this year.
 		}
 	}
 	1073.1.1 = {
@@ -7821,7 +7821,7 @@
 		birth = yes
 	}
 	1305.8.23 = {
-		death = { death_reason = death_execution_hdq
+		death = { death_reason = death_execution #death_execution_hdq
 		killer=454520 
 		}
 	}

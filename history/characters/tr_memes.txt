@@ -101,7 +101,7 @@ mmcyraxx = {
 		set_relation_rival = { target = character:mmmarty reason = rival_historical }
 	}
 	841.1.1 = {
-		set_relation_friend = { target = character:mmchrischan }
+		set_relation_friend = { reason = friend_generic_history target = character:mmchrischan }
 	}
 	861.1.1 = {
 		set_relation_lover = { target = character:mmproxykid }
@@ -156,6 +156,9 @@ mmchrischan = {
 	}
 	821.1.1 = {
 		set_relation_rival = { target = character:mmliquid reason = rival_historical }
+	}
+	841.1.1 = {
+		set_relation_friend = { reason = friend_generic_history target = character:mmcyraxx }
 	}
 	841.1.1 = {
 		set_relation_lover = { target = character:mmbarb }
