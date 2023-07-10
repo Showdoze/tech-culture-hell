@@ -40,7 +40,9 @@ mmdsp = {
 		birth = "820.1.11"
 	}
 	866.4.17 = {
-		death = yes death_reason = death_gout_ridden
+		death = {
+			death_reason = death_gout_ridden
+		} 
 	}
 }
 
@@ -70,6 +72,95 @@ mmmarty = {
 	}
 }
 
+mmcyraxxdad = {
+	name = "Ruple"
+	religion = catholic
+	culture = american
+	martial = 0
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 2
+	learning = 1
+	trait = intellect_bad_2
+	trait = education_intrigue_1
+	trait = arrogant
+	trait = deviant
+	trait = callous
+	trait = lustful
+	track = weak
+	mother = mmcyraxxsally
+	disallow_random_traits = yes
+	825.1.11 = {
+		birth = "825.1.11"
+	}
+	850.1.1 = {
+		add_spouse = mmcyraxxdad
+	}
+	2026.4.17 = {
+		death = {
+			death_reason = death_beaten
+			killer = mmmarty
+		}
+	}	
+}
+mmcyraxxsally = {
+	name = "Sally"
+	religion = catholic
+	culture = american
+	female = yes
+	martial = 0
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 2
+	learning = 3
+	trait = compassionate
+	trait = paranoid
+	trait = education_diplomacy_2
+	trait = contrite
+	trait = comfort_eater
+	trait = ill
+	track = weak
+	disallow_random_traits = yes
+	805.1.11 = {
+		birth = "805.1.11"
+	}
+	2025.4.17 = {
+		death = {
+			death_reason = death_stress
+		}
+	}	
+}
+mmcyraxxmom = {
+	name = "Connie"
+	religion = catholic
+	culture = american
+	female = yes
+	martial = 0
+	diplomacy = 0
+	intrigue = 0
+	stewardship = 0
+	learning = 0
+	trait = intellect_bad_3
+	trait = shy
+	trait = dull
+	trait = contrite
+	trait = inappetetic
+	trait = drunkard
+	track = hashishiyah
+	disallow_random_traits = yes
+	835.1.11 = {
+		birth = "835.1.11"
+	}
+	850.1.1 = {
+		add_spouse = mmcyraxxdad
+	}
+	865.4.17 = {
+		death = {
+			death_reason = death_burned
+			killer = mmcyraxxmom
+		}
+	}	
+}
 mmcyraxx = {
 	name = "Chance Cyraxx Wilkins"
 	religion = norse_pagan
@@ -94,6 +185,8 @@ mmcyraxx = {
 	trait = beauty_bad_3
 	trait = weak
 	trait = dwarf
+	father = mmcyraxxdad
+	mother = mmcyraxxmom
 	830.1.11 = {
 		birth = "820.1.11"
 	}
@@ -120,7 +213,6 @@ mmproxykid = {
 		birth = "850.1.11"
 	}
 	861.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmcyraxx }
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
@@ -193,7 +285,6 @@ mmbarb = {
 		birth = "790.1.11"
 	}
 	861.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmchrischan }
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
