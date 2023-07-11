@@ -23,7 +23,7 @@ k_france = {
 		holder = 168681 #Clotaire Ier
 	}
 	561.11.29 = {
-		holder = 168689 #Chilp�ric Ier
+		holder = 168689 #Chilpéric Ier
 	}
 	584.11.1 = {
 		holder = 168695 #Clotaire II
@@ -32,7 +32,7 @@ k_france = {
 		holder = 168696 #Dagobert Ier
 	}
 	639.1.19 = {
-		holder = 168699 #Clovis II, le Fain�ant
+		holder = 168699 #Clovis II, le Fainéant
 	}
 	657.10.31 = {
 		holder = 168701 #Clotaire III
@@ -41,7 +41,7 @@ k_france = {
 		holder = 168703 #Thierry III
 	}
 	673.12.1 = {
-		holder = 168702 #Child�ric II
+		holder = 168702 ##Childéric II
 	}
 	675.1.1 = {
 		holder = 168703 #Thierry III
@@ -56,24 +56,27 @@ k_france = {
 		holder = 168712 #Dagobert III
 	}
 	715.12.31 = {
-		holder = 168706 #Chilp�ric II
+		holder = 168706 #Chilpéric II
 	}
 	717.1.1 = {
 		holder = 168710 #Clotaire IV
 	}
 	719.1.1 = {
-		holder = 168706 #Chilp�ric II
+		holder = 168706 #Chilpéric II
 	}
 	721.2.13 = {
 		holder = 168713 #Thierry IV
 	}
 	743.2.15 = {
-		holder = 168707 #Child�ric III
+		holder = 168707 #Childéric III
 	}
 	
 	#Carolingians
 	751.11.1 = {
 		holder = 131722		#Pepin le bref
+	}
+	768.9.24 = {
+		holder = 144999 #Carloman I
 	}
 	768.9.24 = {
 		holder = 6392 #Charlemagne
@@ -86,7 +89,7 @@ k_france = {
 		holder = 90104 #Charles II le Chauve
 	}
 	877.10.6 = {
-		holder = 90123 #Louis II le B�gue
+		holder = 90123 #Louis II le Bègue
 	}
 	879.4.10 = {
 		holder = 90154 #Louis III
@@ -131,7 +134,7 @@ k_france = {
 		holder = 90125 #Lothaire
 	}
 	986.6.8 = {
-		holder = 90126 #Louis V le Fain�ant
+		holder = 90126 #Louis V le Fainéant
 	}
 	
 	
@@ -139,6 +142,12 @@ k_france = {
 	987.7.3 = {
 		holder = 200 #Hugues Capet
 		reset_name = yes
+		effect = {
+			set_global_variable = {
+				name = west_francia_renamed
+				value = yes
+			}
+		}
 	}
 	996.10.24 = {
 		holder = 206 #Robert II le Pieux
@@ -199,6 +208,31 @@ c_ile_de_france = {
 	1066.1.1 = { change_development_level = 22 }
 	
 	#county of Paris
+	448.11.27 = {
+		holder=168671 #Merovech
+	}
+	457.11.27 = {
+		holder=168672 #Childeric
+	}
+	#Merovingians
+	481.1.1 = {
+		holder=168673 #Clovis Ier
+	}
+	511.11.27 = {
+		holder=168681 #Clotaire Ier
+	}
+	561.11.29 = {
+		holder=168689 #Chilpéric Ier
+	}
+	584.11.1 = {
+		holder=168695 #Clotaire II
+	}
+	629.10.19 = {
+		holder=168696 #Dagobert Ier
+	}
+	639.1.19 = {
+		holder=168699 #Clovis II, le Fainéant
+	}
 	#Karling
 	687.1.1 = {
 		holder = 131720
@@ -403,7 +437,7 @@ c_vermandois = {
 	}
 	834.1.1 = {
 		liege = "k_france"
-		holder = 6398 #P�pin
+		holder = 6398 #Pépin
 	}
 	892.1.1 = {
 		holder = 6400 #Herbert I
@@ -424,7 +458,7 @@ c_vermandois = {
 		holder = 418 #Herbert IV
 	}
 	1080.1.1 = {
-		holder = 419 #Ad�le de Vermandois
+		holder = 419 #Adèle de Vermandois
 	}
 	
 	#Capetian house of Vermandois
@@ -435,13 +469,13 @@ c_vermandois = {
 		holder = 550 #Raoul de Vermandois
 	}
 	1152.10.13 = {
-		holder = 91079 #�lisabeth de Vermandois
+		holder = 91079 #Élisabeth de Vermandois
 	}
 	1183.1.1 = {
 		holder = 212591 #Philippe I d'Alsace
 	}
 	1191.1.1 = {
-		holder = 91081 # �l�onore de Vermandois
+		holder = 91081 # Éléonore de Vermandois
 	}
 	
 	#de Coucy
@@ -468,7 +502,7 @@ c_valois = {
 		liege = k_france
 	}
 	867.1.1 = {
-		holder = 90104	#Charles the Bad, no historical data so we give it to him to default
+		holder = 90104	#Charles the Bald, no historical data so we give it to him to default
 	}
 	
 	915.1.1 = {	
@@ -534,11 +568,11 @@ c_valois = {
 
 c_amiens = {
 	840.1.1 = {
-		holder = 303408	#B�ranger I of Amiens
+		holder = 303408	#Béranger I of Amiens
 		liege = k_france
 	}
 	859.1.1 = {
-		holder = 303409	#B�ranger II of Amiens
+		holder = 303409	#Béranger II of Amiens
 	}
 	
 	915.1.1 = {	
@@ -691,11 +725,11 @@ c_beaumont = {
 c_clermont = {
 	#No data, placeholder
 	840.1.1 = {
-		holder = 303408	#B�ranger I of Amiens
+		holder = 303408	#Béranger I of Amiens
 		liege = k_france
 	}
 	859.1.1 = {
-		holder = 303409	#B�ranger II of Amiens
+		holder = 303409	#Béranger II of Amiens
 	}
 	
 	#Start of History
@@ -725,7 +759,7 @@ c_berry = {
 		holder = 90104	#No data, default to king of France
 	}
 	
-	#Barons of Ch�teauroux
+	#Barons of Châteauroux
 	915.1.1 = {
 		holder = 303424	#Ebbes "the Noble" of Deols
 	}
@@ -795,7 +829,7 @@ c_tourraine = {
 	1037.11.15 = {
 		holder = 394 	#Thibaut III
 	}
-	#Ingelgeriens & Plantagen�ts
+	#Ingelgeriens & Plantagenêts
 	1041.1.1 = {
 		holder = 376 #Geoffroy II Martel
 	}
@@ -803,7 +837,7 @@ c_tourraine = {
 		holder = 378 #Geoffroy III le Barbu
 	}
 	1066.1.1 = {
-		holder = 380 #Foulque IV le R�chin
+		holder = 380 #Foulque IV le Réchin
 	}
 	1109.4.14 = {
 		holder = 223525 #Foulque V le Jeune
@@ -815,7 +849,7 @@ c_tourraine = {
 		holder = 204500 #Henri I Courtmanteau
 	}
 	1183.1.1 = {
-		holder = 204510 #Richard I C�ur-de-Lion
+		holder = 204510 #Richard I Cœur-de-Lion
 	}
 	1199.4.6 = {
 		holder = 204514 #Jean I Sans Terre
@@ -868,7 +902,7 @@ c_blois = {
 		holder = 394 #Thibaut I de Blois
 	}
 	1089.9.30 = {
-		holder = 205897 #�tienne-Henri I de Blois
+		holder = 205897 #Étienne-Henri I de Blois
 	}
 	1102.5.19 = {
 		holder = 91331 #Guillaume de Blois
@@ -892,16 +926,16 @@ c_blois = {
 		holder = 91061 #Marie d'Avesnes
 	}
 	1241.1.1 = {
-		holder = 91119 #Jean I de Blois-Ch�tillon
+		holder = 91119 #Jean I de Blois-Châtillon
 	}
 	1279.12.28 = {
-		holder = 91136 #Jeanne de Blois-Ch�tillon
+		holder = 91136 #Jeanne de Blois-Châtillon
 	}
 	1292.1.1 = {
-		holder = 455782 #Hugues II de Blois-Ch�tillon
+		holder = 455782 #Hugues II de Blois-Châtillon
 	}
 	1307.1.1 = {
-		holder = 455781 #Guy I de Blois-Ch�tillon
+		holder = 455781 #Guy I de Blois-Châtillon
 	}
 }
 
@@ -911,7 +945,7 @@ c_issoudun = {
 		holder = 90104	#No data, default to king of France
 	}
 	
-	#Barons of Ch�teauroux
+	#Barons of Châteauroux
 	915.1.1 = {
 		holder = 303424	#Ebbes "the Noble" of Deols
 	}
@@ -1006,13 +1040,13 @@ c_anjou = {
 		holder = 378 #Geoffroy III le Barbu
 	}
 	1068.1.1 = {
-		holder = 380 #Foulque IV le R�chin
+		holder = 380 #Foulque IV le Réchin
 	}
 	1103.1.1 = {
 		holder = 183345 #Geoffroy IV Martel
 	}
 	1106.5.19 = {
-		holder = 380 #Foulque IV le R�chin (restored)
+		holder = 380 #Foulque IV le Réchin (restored)
 	}
 	1109.4.14 = {
 		holder = 223525 #Foulque V le Jeune
@@ -1024,7 +1058,7 @@ c_anjou = {
 		holder = 204500 #Henri I Courtmanteau
 	}
 	1183.1.1 = {
-		holder = 204510 #Richard I C�ur-de-Lion
+		holder = 204510 #Richard I Cœur-de-Lion
 	}
 	1199.4.6 = {
 		holder = 204505 #Arthur I de Bretagne
@@ -1085,13 +1119,13 @@ c_saumur = {
 		holder = 378 #Geoffroy III le Barbu
 	}
 	1068.1.1 = {
-		holder = 380 #Foulque IV le R�chin
+		holder = 380 #Foulque IV le Réchin
 	}
 	1103.1.1 = {
 		holder = 183345 #Geoffroy IV Martel
 	}
 	1106.5.19 = {
-		holder = 380 #Foulque IV le R�chin (restored)
+		holder = 380 #Foulque IV le Réchin (restored)
 	}
 	1109.4.14 = {
 		holder = 223525 #Foulque V le Jeune
@@ -1103,7 +1137,7 @@ c_saumur = {
 		holder = 204500 #Henri I Courtmanteau
 	}
 	1183.1.1 = {
-		holder = 204510 #Richard I C�ur-de-Lion
+		holder = 204510 #Richard I Cœur-de-Lion
 	}
 	1199.4.6 = {
 		holder = 204505 #Arthur I de Bretagne
@@ -1190,7 +1224,7 @@ c_maine = {
 	}
 	1093.1.1 = {
 		liege = "k_france"
-		holder = 232008 #�lie I de Beaugency
+		holder = 232008 #Élie I de Beaugency
 	}
 	1110.1.1 = {
 		holder = 232009 #Erembourg
@@ -1199,7 +1233,7 @@ c_maine = {
 		holder = 204506 #Geoffroy V le Bel
 	}
 	1151.1.15 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1154.9.7 = {
 		liege = k_england
@@ -1208,13 +1242,13 @@ c_maine = {
 		holder = 103000 #Geoffroy VI
 	}
 	1158.7.27 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1169.1.1 = {
 		holder = 204508 #Henri le Jeune
 	}
 	1183.1.1 = {
-		holder = 204510 #Richard C�ur de Lion
+		holder = 204510 #Richard Cœur de Lion
 	}
 	1199.4.6 = {
 		holder = 204514 #Jean I Sans Terre
@@ -1304,7 +1338,7 @@ c_sable = {
 	}
 	1093.1.1 = {
 		liege = "k_france"
-		holder = 232008 #�lie I de Beaugency
+		holder = 232008 #Élie I de Beaugency
 	}
 	1110.1.1 = {
 		holder = 232009 #Erembourg
@@ -1313,7 +1347,7 @@ c_sable = {
 		holder = 204506 #Geoffroy V le Bel
 	}
 	1151.1.15 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1154.9.7 = {
 		liege = k_england
@@ -1322,13 +1356,13 @@ c_sable = {
 		holder = 103000 #Geoffroy VI
 	}
 	1158.7.27 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1169.1.1 = {
 		holder = 204508 #Henri le Jeune
 	}
 	1183.1.1 = {
-		holder = 204510 #Richard C�ur de Lion
+		holder = 204510 #Richard Cœur de Lion
 	}
 	1199.4.6 = {
 		holder = 204514 #Jean I Sans Terre
@@ -1402,7 +1436,7 @@ d_normandy = {
 		}
 	}
 	927.1.1 = {
-		holder = 244 #Guillaume I Longue �p�e
+		holder = 244 #Guillaume I Longue Épée
 	}
 	942.12.17 = {
 		holder = 246 #Richard I
@@ -1417,7 +1451,7 @@ d_normandy = {
 		holder = 252 #Robert le Magnifique
 	}
 	1035.7.3 = {
-		holder = 140 #Guillaume II le Conqu�rant
+		holder = 140 #Guillaume II le Conquérant
 	}
 	1066.10.14 = {
 		liege = "k_england"
@@ -1431,18 +1465,18 @@ d_normandy = {
 	
 	#House of Anjou
 	1135.12.2 = {
-		holder = 205851 #�tienne de Blois
+		holder = 205851 #Étienne de Blois
 	}
 	
-	#Plantagen�ts
+	#Plantagenêts
 	1144.1.1 = {
-		holder = 204506 #Geoffroy Plantagen�t
+		holder = 204506 #Geoffroy Plantagenêt
 	}
 	1151.9.7 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1189.7.6 = {
-		holder = 204510 #Richard I C�ur-de-Lion
+		holder = 204510 #Richard I Cœur-de-Lion
 	}
 	1199.4.6 = {
 		holder = 204514 #Jean I Sans Terre
@@ -1509,10 +1543,10 @@ c_rouen = {
 		holder = 260 #Robert le Danois
 	}
 	1037.1.1 = {
-		holder = 20112 #Richard d'�vreux
+		holder = 20112 #Richard d'Évreux
 	}
 	1067.1.1 = {
-		holder = 10016 #Guillaume d'�vreux
+		holder = 10016 #Guillaume d'Évreux
 	}
 	1118.1.1 = {
 		holder = 41222 #Amaury III de Montfort
@@ -1559,7 +1593,7 @@ c_rouen = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -1581,10 +1615,10 @@ c_evreux = {
 		holder = 260 #Robert le Danois
 	}
 	1037.1.1 = {
-		holder = 20112 #Richard d'�vreux
+		holder = 20112 #Richard d'Évreux
 	}
 	1067.1.1 = {
-		holder = 10016 #Guillaume d'�vreux
+		holder = 10016 #Guillaume d'Évreux
 	}
 	1118.1.1 = {
 		holder = 41222 #Amaury III de Montfort
@@ -1631,7 +1665,7 @@ c_evreux = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -1650,9 +1684,9 @@ c_bayeux = {
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	
-	1056.1.1 = {
+	1049.1.1 = {
 		liege = "d_normandy"
-		holder = 150 #Robert de Conteville
+		holder = 148 #Odo de Bayeux
 	}
 	
 	1090.12.9 = {
@@ -1663,18 +1697,18 @@ c_bayeux = {
 	}
 	
 	1112.1.1 = {
-		holder = 205851 #�tienne de Blois
+		holder = 205851 #Étienne de Blois
 	}
 	
 	1142.1.1 = {
-		holder = 204506 #Geoffroy Plantagen�t
+		holder = 204506 #Geoffroy Plantagenêt
 	}
 	
 	1151.9.7 = {
 		 holder = 7474 #Guillaume de Boulogne
 	}
 	1159.11.1 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1189.1.1 = {
 		holder = 204514 #Jean I Sans Terre
@@ -1715,7 +1749,7 @@ c_bayeux = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -1733,7 +1767,7 @@ c_avranches = {
 		holder = 168041
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
-	867.8.1 = {	#Treaty of Compi�gne
+	867.8.1 = {	#Treaty of Compiègne
 		liege = "d_brittany"
 		holder = 163105 # Solomon of Brittany takes it
 	}
@@ -1751,18 +1785,18 @@ c_avranches = {
 	}
 	
 	1112.1.1 = {
-		holder = 205851 #�tienne de Blois
+		holder = 205851 #Étienne de Blois
 	}
 	
 	1142.1.1 = {
-		holder = 204506 #Geoffroy Plantagen�t
+		holder = 204506 #Geoffroy Plantagenêt
 	}
 	
 	1151.9.7 = {
 		 holder = 7474 #Guillaume de Boulogne
 	}
 	1159.11.1 = {
-		holder = 204500 #Henri II Plantagen�t
+		holder = 204500 #Henri II Plantagenêt
 	}
 	1189.1.1 = {
 		holder = 204514 #Jean I Sans Terre
@@ -1803,7 +1837,7 @@ c_avranches = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -1825,10 +1859,10 @@ c_alencon = {
 		holder = 260 #Robert le Danois
 	}
 	1037.1.1 = {
-		holder = 140 #Guillaume II le Conqu�rant
+		holder = 140 #Guillaume II le Conquérant
 	}
 	1067.1.1 = {
-		holder = 10016 #Guillaume d'�vreux
+		holder = 10016 #Guillaume d'Évreux
 	}
 	1118.1.1 = {
 		holder = 41222 #Amaury III de Montfort
@@ -1875,7 +1909,7 @@ c_alencon = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -1897,10 +1931,10 @@ c_lisieux = {
 		holder = 260 #Robert le Danois
 	}
 	1037.1.1 = {
-		holder = 20112 #Richard d'�vreux
+		holder = 20112 #Richard d'Évreux
 	}
 	1067.1.1 = {
-		holder = 10016 #Guillaume d'�vreux
+		holder = 10016 #Guillaume d'Évreux
 	}
 	1118.1.1 = {
 		holder = 41222 #Amaury III de Montfort
@@ -1947,7 +1981,7 @@ c_lisieux = {
 	}
 	1319.5.19 = {
 		liege = "k_navarra"
-		holder = 455810 #Philippe d'�vreux
+		holder = 455810 #Philippe d'Évreux
 	}
 }
 
@@ -2032,7 +2066,7 @@ c_orleans = {
 	867.1.1 = { change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
 	
-	#county of Orl�ans
+	#county of Orléans
 	790.1.1 = {
 		holder = 303421	#Adrien of Orleans
 		liege = "k_france"
@@ -2195,19 +2229,19 @@ c_vendome = {
 	
 	#House of Montoire
 	1217.1.1 = {
-		holder = 205976 #Jean IV de Vend�me
+		holder = 205976 #Jean IV de Vendôme
 	}
 	1230.1.1 = {
-		holder = 91322 #Pierre de Vend�me
+		holder = 91322 #Pierre de Vendôme
 	}
 	1249.1.1 = {
-		holder = 91323 #Bouchard V de Vend�me
+		holder = 91323 #Bouchard V de Vendôme
 	}
 	1271.1.1 = {
-		holder = 455009 #Jean V de Vend�me
+		holder = 455009 #Jean V de Vendôme
 	}
 	1315.1.1 = {
-		holder = 455006 #Bouchard VI de Vend�me
+		holder = 455006 #Bouchard VI de Vendôme
 	}
 }
 
@@ -2235,7 +2269,7 @@ c_chartres = {
 		holder = 394 #Thibaut III de Blois
 	}
 	1089.9.30 = {
-		holder = 205897 #�tienne-Henri I de Blois
+		holder = 205897 #Étienne-Henri I de Blois
 	}
 	1102.5.19 = {
 		holder = 91331 #Guillaume de Blois
@@ -2257,12 +2291,12 @@ c_chartres = {
 	1218.1.1 = {
 		holder = 205889 #Isabelle I
 	}
-	#Blois-Ch�tillon
+	#Blois-Châtillon
 	1248.1.1 = {
-		holder = 91119 #Jean I de Blois-Ch�tillon
+		holder = 91119 #Jean I de Blois-Châtillon
 	}
 	1280.1.1 = {
-		holder = 91136 #Jeanne de Blois-Ch�tillon
+		holder = 91136 #Jeanne de Blois-Châtillon
 	}
 	1286.1.1 = {
 		holder = 455526 # Philippe I le Bel
@@ -2472,7 +2506,7 @@ c_briey = {
 
 c_langres = {
 	#830 - Balactier
-	#? - Am�d�e d'Oscheret
+	#? - Amédée d'Oscheret
 	#? - Richard ?
 	853.1.1 = {
 		holder = 303414	#Milon I Milonid
@@ -3192,7 +3226,7 @@ c_dijon = {
 
 c_chalon = {
 	863.1.1 = {
-		holder = 163066	#Ecchard of M�con
+		holder = 163066	#Ecchard of Mâcon
 		liege = k_france
 	}
 	
@@ -3219,7 +3253,7 @@ c_auxerre = {
 		holder = 7989
 	}
 	866.1.1 = {
-		holder = 168246	#Hugo / Hugh the Abbot / Hughes l'Abb�
+		holder = 168246	#Hugo / Hugh the Abbot / Hughes l'Abbé
 	}
 	
 	#Bosonid & Robertians
@@ -3259,15 +3293,15 @@ c_auxerre = {
 	}
 	1181.10.17 = {
 		liege = "k_france"
-		holder = 205710 #Agn�s I
+		holder = 205710 #Agnès I
 	}
 }
 
 
 c_tonnerrois = {
 	#814-954 : bishops of Langres
-	867.1.1 = {	
-		holder = 910912	
+	867.1.1 = {	#Placeholder-ish to the king of France
+		holder = 90104	#king Charles the Bald
 		liege = k_france
 	}
 	
@@ -3319,7 +3353,7 @@ c_avalois = {
 
 c_macon = {
 	863.1.1 = {
-		holder = 163066	#Ecchard of M�con
+		holder = 163066	#Ecchard of Mâcon
 		#Technically should only be from 876-876, but can't find info on his predecessor, Eudes I, son of Arduin I
 		liege = k_france
 	}
@@ -3329,7 +3363,7 @@ c_macon = {
 		holder = 272 #Otte-Guillaume de Bourgogne
 	}
 	1002.1.1 = {
-		holder = 274 #Guy I de M�con
+		holder = 274 #Guy I de Mâcon
 	}
 	1004.1.1 = {
 		holder = 282 #Otton II de Macon
@@ -3338,7 +3372,7 @@ c_macon = {
 		holder = 284 #Geoffroy de Macon
 	}
 	1065.1.1 = {
-		holder = 288 #Guy II de M�con
+		holder = 288 #Guy II de Mâcon
 	}
 	1078.1.1 = {
 		holder = 280 #Guillaume I de Bourgogne
@@ -3353,19 +3387,19 @@ c_macon = {
 		holder = 91145 #Guillaume III de Bourgogne
 	}
 	1127.3.1 = {
-		holder = 205704 #Guillaume III de M�con
+		holder = 205704 #Guillaume III de Mâcon
 	}
 	1157.1.1 = {
-		holder = 205701 #G�raud I de M�con
+		holder = 205701 #Géraud I de Mâcon
 	}
 	1184.1.1 = {
-		holder = 205700 #Guillaume IV de M�con
+		holder = 205700 #Guillaume IV de Mâcon
 	}
 	1224.1.1 = {
-		holder = 205703 #G�rard II de M�con
+		holder = 205703 #Gérard II de Mâcon
 	}
 	1224.6.1 = {
-		holder = 91140 #Alix de M�con
+		holder = 91140 #Alix de Mâcon
 	}
 	
 	1239.1.1 = {
@@ -3401,7 +3435,7 @@ c_macon = {
 c_nevers = {
 	#No data before house of Nevers
 	866.1.1 = {
-		holder = 168246	#Hugo / Hugh the Abbot / Hughes l'Abb�
+		holder = 168246	#Hugo / Hugh the Abbot / Hughes l'Abbé
 		liege = k_france
 	}
 	886.5.12 = {
@@ -3441,7 +3475,7 @@ c_nevers = {
 	}
 	1181.10.17 = {
 		liege = "k_france"
-		holder = 205710 #Agn�s I
+		holder = 205710 #Agnès I
 	}
 	
 	#House of Courtenay
@@ -3487,7 +3521,7 @@ d_champagne = {
 		holder = 390 #Eudes II de Blois
 	}
 	1037.11.15 = {
-		holder = 392 #�tienne II de Blois
+		holder = 392 #Étienne II de Blois
 	}
 	1047.1.1 = {
 		holder = 391 #Eudes III de Troyes
@@ -3508,7 +3542,7 @@ d_champagne = {
 		holder = 205891 #Thibaut II
 	}
 	1152.1.10 = {
-		holder = 205966 #Henri I le Lib�ral
+		holder = 205966 #Henri I le Libéral
 	}
 	1181.3.16 = {
 		holder = 205960 #Henri II
@@ -3572,10 +3606,10 @@ c_reims = {
 		holder = 163049		#Hincmar of Reims
 	}
 	882.1.1 = {
-		holder = 167927		#Foulques le v�n�rable
+		holder = 167927		#Foulques le vénérable
 	}
 	#900.1.1 = {
-	#	holder = Herv� (or Heriv�) de Reims
+	#	holder = Hervé (or Herivé) de Reims
 	#}
 	#922.1.1 = {
 	#	holder = Seulfe de Reims
@@ -3593,7 +3627,7 @@ c_reims = {
 		holder = 144976		#Artaud
 	}
 	#962 - Olderic
-	#969 - Adalb�ron
+	#969 - Adalbéron
 	988.1.1 = {
 		holder = 144978		#Arnoul de France
 	}
@@ -3606,17 +3640,17 @@ c_reims = {
 	#1021 - Ebles Ie de Roucy
 	#1033 - Guy Ie de Soissons
 	1055.1.1 = {
-		holder = 91173 #Gervais de Bell�me
+		holder = 91173 #Gervais de Bellème
 	}
 	#1067-1070 - vacant ?
 	1070.7.4 = {
-		holder = 20132 #Manass�s I de Gournay
+		holder = 20132 #Manassès I de Gournay
 	}
 	1081.12.27 = {
 		holder = 91174 #Renauld I du Bellay
 	}
 	1096.1.1 = {
-		holder = 91175 #Manass�s II de Ch�tillon
+		holder = 91175 #Manassès II de Châtillon
 	}
 	1102.1.1 = {
 		liege = "d_champagne"
@@ -3628,7 +3662,7 @@ c_reims = {
 		holder = 91176 #Raoul le Verd
 	}
 	1124.1.1 = {
-		holder = 91177 #Raymond de Martingn�
+		holder = 91177 #Raymond de Martingné
 	}
 	1138.1.1 = {
 		holder = 91178 #Samson de Mauvoisin
@@ -3640,10 +3674,10 @@ c_reims = {
 		holder = 91160 #Guillaume aux Blanches Mains
 	}
 	1202.1.1 = {
-		holder = 91179 #Guy Par�
+		holder = 91179 #Guy Paré
 	}
 	1207.1.1 = {
-		holder = 91180 #Alb�ric de Humbert
+		holder = 91180 #Albéric de Humbert
 	}
 	1219.1.1 = {
 		holder = 91181 #Guillaume de Joinville
@@ -3771,7 +3805,7 @@ c_troyes = {
 		holder = 91210 #Herbert IV de Vermandois
 	}
 	996.1.28 = {
-		holder = 91211 #�tienne I de Troyes
+		holder = 91211 #Étienne I de Troyes
 	}
 	
 	#House of Blois
@@ -3779,7 +3813,7 @@ c_troyes = {
 		holder = 390 #Eudes II de Blois
 	}
 	1037.1.1 = {
-		holder = 392 #�tienne II de Blois
+		holder = 392 #Étienne II de Blois
 	}
 	1047.1.1 = {
 		holder = 391 #Eudes II de Troyes
@@ -3797,7 +3831,7 @@ c_troyes = {
 		holder = 205891 #Thibaut II
 	}
 	1152.1.10 = {
-		holder = 205966 #Henri I le Lib�ral
+		holder = 205966 #Henri I le Libéral
 	}
 	1181.3.16 = {
 		holder = 205960 #Henri II
@@ -3899,7 +3933,7 @@ c_coulommiers = {
 		holder = 91210 #Herbert IV de Vermandois
 	}
 	996.1.28 = {
-		holder = 91211 #�tienne I de Troyes
+		holder = 91211 #Étienne I de Troyes
 	}
 	
 	#House of Blois
@@ -3907,7 +3941,7 @@ c_coulommiers = {
 		holder = 390 #Eudes II de Blois
 	}
 	1037.1.1 = {
-		holder = 392 #�tienne II de Blois
+		holder = 392 #Étienne II de Blois
 	}
 	1047.1.1 = {
 		holder = 391 #Eudes II de Troyes
@@ -3925,7 +3959,7 @@ c_coulommiers = {
 		holder = 205891 #Thibaut II
 	}
 	1152.1.10 = {
-		holder = 205966 #Henri I le Lib�ral
+		holder = 205966 #Henri I le Libéral
 	}
 	1181.3.16 = {
 		holder = 205960 #Henri II
@@ -3973,7 +4007,7 @@ c_coulommiers = {
 c_meaux = {
 	#Should be Louis II, but he is currently holding an independant k_aquitaine in 867 (Aquitaine should be a part of West Francia at this time)
 	#862.1.1 = {
-	#	holder = 90123 #Louis II le B�gue
+	#	holder = 90123 #Louis II le Bègue
 	#	liege = k_france
 	#}
 	
@@ -3981,7 +4015,7 @@ c_meaux = {
 		holder = 163065	#Eudes Ie of Troyes
 		liege = k_france
 	}
-	#877 - Thibert / Teutbert / Th�odebert Nibelungen ?
+	#877 - Thibert / Teutbert / Théodebert Nibelungen ?
 	
 	943.1.1 = {
 		holder = 6404 #Robert de Vermandois
@@ -3993,13 +4027,13 @@ c_meaux = {
 		holder = 91210 #Herbert IV de Vermandois
 	}
 	996.1.28 = {
-		holder = 91211 #�tienne I de Troyes
+		holder = 91211 #Étienne I de Troyes
 	}
 	1021.6.9 = {
 		holder = 390 #Eudes II de Blois
 	}
 	1037.1.1 = {
-		holder = 392 #�tienne II de Blois
+		holder = 392 #Étienne II de Blois
 	}
 	1047.1.1 = {
 		holder = 391 #Eudes II de Troyes
@@ -4086,7 +4120,7 @@ c_sens = {
 		holder = 91202 #Guerin I de Sens
 	}
 	1074.1.1 = {
-		holder = 91203 #Manass�s de Sens
+		holder = 91203 #Manassès de Sens
 	}
 	1115.1.1 = {
 		holder = 91205 #Salon I de Sens
