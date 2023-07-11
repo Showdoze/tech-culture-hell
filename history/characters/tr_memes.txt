@@ -67,8 +67,10 @@ mmmarty = {
 	841.1.1 = {
 		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 	}
-	2026.4.17 = {
-		death = "2026.4.17"
+	2027.4.17 = {
+		death = {
+			death_reason = death_obesity
+		}
 	}
 }
 
@@ -87,7 +89,7 @@ mmcyraxxdad = {
 	trait = deviant
 	trait = callous
 	trait = lustful
-	track = weak
+	trait = weak
 	mother = mmcyraxxsally
 	disallow_random_traits = yes
 	825.1.11 = {
@@ -119,7 +121,7 @@ mmcyraxxsally = {
 	trait = contrite
 	trait = comfort_eater
 	trait = ill
-	track = weak
+	trait = weak
 	disallow_random_traits = yes
 	805.1.11 = {
 		birth = "805.1.11"
@@ -146,7 +148,7 @@ mmcyraxxmom = {
 	trait = contrite
 	trait = inappetetic
 	trait = drunkard
-	track = hashishiyah
+	trait = hashishiyah
 	disallow_random_traits = yes
 	835.1.11 = {
 		birth = "835.1.11"
@@ -200,7 +202,10 @@ mmcyraxx = {
 		set_relation_lover = { reason = lover_history target = character:mmheather }
 	}
 	2026.4.17 = {
-		death = "2026.4.17"
+		death = {
+		    death_reason = death_contest_duel_accident
+			killer = mmmarty
+		}
 	}
 }
 
@@ -213,6 +218,7 @@ mmheather = {
 		birth = "850.1.11"
 	}
 	861.1.1 = {
+		set_relation_lover = { reason = lover_history target = character:mmcyraxx }
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
@@ -284,15 +290,13 @@ mmbarb = {
 	790.1.11 = {
 		birth = "790.1.11"
 	}
-<<<<<<< HEAD
 	861.1.1 = {
-=======
-	841.1.1 = {
 		set_relation_lover = { reason = lover_history target = character:mmchrischan }
->>>>>>> d93af8af7bf2099fa041753e680b5901a4ca08b2
 	}
 	2026.4.17 = {
-		death = "2026.4.17"
+		death = {
+			death_reason = death_incapable
+		}
 	}
 }
 
@@ -325,7 +329,21 @@ mmliquid = {
 	841.1.1 = {
 		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 	}
-	2026.4.17 = {
-		death = "2026.4.17"
+	850.1.1 = {
+		effect = {
+			add_trait = lifestyle_physician
+			add_trait_xp = {
+                trait = lifestyle_physician
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+	}
+	2056.4.17 = {
+		death = yes
 	}
 }

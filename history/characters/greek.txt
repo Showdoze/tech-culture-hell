@@ -4709,7 +4709,7 @@
 
 215532 = {
 	name = "Anna"
-	# AKA: Anna Porphyrogenita # AKA: Anna Komnene
+	# AKA: Anna Komnene
 	female = yes
 	dynasty = 634
 	religion = "orthodox"
@@ -8902,32 +8902,6 @@
 	}
 }
 
-70493 = {
-	name = "Leon"
-	# AKA: Leo 'the Armenian'
-	dynasty = 8643
-	martial = 6
-	diplomacy = 3
-	intrigue = 5
-	stewardship = 7
-	religion = "iconoclast"
-	culture = "greek"
-	trait = ambitious
-	trait = deceitful
-	trait = cynical
-	trait = stubborn
-	trait = shrewd
-	trait = education_stewardship_3
-	give_nickname = nick_the_armenian
-	780.1.1 = {
-		birth = "780.1.1"
-	}
-	820.12.27 = {
-		death = { death_reason = death_murder
-		killer=70492
-		}
-	}
-}
 
 70494 = {
 	name = "Michael"
@@ -9004,6 +8978,7 @@
 	trait = lifestyle_reveler
 	trait = education_martial_2
 	father = 70497	
+
 	773.1.1 = {
 		birth = "773.1.1"
 	}
@@ -9377,6 +9352,7 @@
 	trait = lazy
 	trait = education_diplomacy_1
 	father = 145071
+
 	612.5.3 = {
 		birth = "612.5.3"
 	}
@@ -9434,6 +9410,7 @@
 	trait = incapable
 	trait = education_intrigue_1
 	mother = 70527
+
 	520.1.1 = {
 		birth = "520.1.1"
 	}
@@ -9468,6 +9445,7 @@
 	trait = cynical
 	trait = theologian
 	trait = education_stewardship_3
+
 	disallow_random_traits = yes
 	431.1.1 = {
 		birth = "431.1.1"
@@ -9497,6 +9475,7 @@
 	trait = honest
 	trait = calm
 	trait = education_diplomacy_3
+
 	give_nickname = nick_the_isaurian
 	425.1.1 = {
 		birth = "425.1.1"
@@ -9523,6 +9502,7 @@
 	trait = education_diplomacy_1
 	father = 70515
 	mother = 70530
+
 	give_nickname = nick_the_younger
 	467.1.1 = {
 		birth = "467.1.1"
@@ -9548,6 +9528,7 @@
 	trait = content
 	trait = physique_good_2
 	trait = education_diplomacy_1
+
 	father = ck650090
 	give_nickname = "nick_the_thracian"
 	401.1.1 = {
@@ -9572,6 +9553,7 @@
 	trait = lustful
 	trait = education_intrigue_2
 	father = 70517
+
 	450.1.1 = {
 		birth = "450.1.1"
 	}
@@ -9615,6 +9597,7 @@
 	trait = just
 	trait = honest
 	trait = education_learning_3
+
 	1000.1.1 = {
 		birth = "1000.1.1"
 	}
@@ -9635,6 +9618,7 @@
 	trait = ambitious
 	trait = deceitful
 	trait = education_learning_4
+
 	995.1.1 = {
 		birth = "995.1.1"
 	}
@@ -9655,6 +9639,7 @@
 	trait = celibate
 	trait = trusting
 	trait = education_learning_3
+
 	980.1.1 = {
 		birth = "980.1.1"
 	}
@@ -9675,6 +9660,7 @@
 	trait = content
 	trait = humble
 	trait = education_learning_1
+
 	965.1.1 = {
 		birth = "965.1.1"
 	}
@@ -9695,6 +9681,7 @@
 	trait = deceitful
 	trait = zealous
 	trait = education_learning_1
+
 	953.1.1 = {
 		birth = "953.1.1"
 	}
@@ -9715,6 +9702,7 @@
 	trait = celibate
 	trait = chaste
 	trait = education_learning_1
+
 	928.1.1 = {
 		birth = "928.1.1"
 	}
@@ -9734,6 +9722,7 @@
 	culture = "greek"
 	trait = trusting
 	trait = education_learning_1
+
 	921.1.1 = {
 		birth = "921.1.1"
 	}
@@ -9753,6 +9742,7 @@
 	culture = "greek"
 	trait = ambitious
 	trait = education_diplomacy_3
+
 	921.1.1 = {
 		birth = "921.1.1"
 	}
@@ -9828,6 +9818,7 @@
 	trait = deceitful
 	trait = ambitious
 	trait = education_learning_3
+
 	853.1.1 = {
 		birth = "853.1.1"
 	}
@@ -9848,6 +9839,7 @@
 	trait = scholar
 	trait = trusting
 	trait = education_learning_3
+
 	851.1.1 = {
 		birth = "851.1.1"
 	}
@@ -9892,6 +9884,7 @@
 	trait = ambitious
 	trait = scholar
 	trait = education_learning_4
+
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -9913,8 +9906,13 @@
 	trait = just
 	trait = education_learning_3
 	father = 70494
+
 	797.1.1 = {
 		birth = "797.1.1"
+	}
+	813.1.1 = {
+		trait = eunuch
+		trait = devoted
 	}
 	877.10.23 = {
 		death = "877.10.23"
@@ -9934,6 +9932,7 @@
 	trait = scholar
 	trait = deceitful
 	trait = education_learning_3
+
 	800.1.1 = {
 		birth = "800.1.1"
 	}
@@ -9954,6 +9953,7 @@
 	trait = deceitful
 	trait = ambitious
 	trait = education_learning_1
+
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -9974,6 +9974,7 @@
 	trait = celibate
 	trait = paranoid
 	trait = education_learning_3
+
 	758.1.1 = {
 		birth = "758.1.1"
 	}
@@ -9995,6 +9996,7 @@
 	trait = just
 	trait = ill
 	trait = education_learning_1
+
 	725.1.1 = {
 		birth = "725.1.1"
 	}
@@ -10013,6 +10015,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_learning_1
+
 	720.1.1 = {
 		birth = "720.1.1"
 	}
@@ -10032,6 +10035,7 @@
 	culture = "greek"
 	trait = deceitful
 	trait = education_learning_1
+
 	710.1.1 = {
 		birth = "710.1.1"
 	}
@@ -10052,6 +10056,7 @@
 	trait = disfigured
 	trait = deceitful
 	trait = education_learning_3
+
 	695.1.1 = {
 		birth = "695.1.1"
 	}
@@ -10072,6 +10077,7 @@
 	trait = gregarious
 	trait = zealous
 	trait = education_learning_1
+
 	678.1.1 = {
 		birth = "678.1.1"
 	}
@@ -10091,6 +10097,7 @@
 	culture = "greek"
 	trait = content
 	trait = education_learning_1
+
 	673.1.1 = {
 		birth = "673.1.1"
 	}
@@ -10110,6 +10117,7 @@
 	culture = "greek"
 	trait = celibate
 	trait = education_learning_1
+
 	666.1.1 = {
 		birth = "666.1.1"
 	}
@@ -10130,6 +10138,7 @@
 	trait = ambitious
 	trait = disfigured
 	trait = education_learning_1
+
 	655.1.1 = {
 		birth = "655.1.1"
 	}
@@ -10149,6 +10158,7 @@
 	culture = "greek"
 	trait = diligent
 	trait = education_learning_1
+
 	642.1.1 = {
 		birth = "642.1.1"
 	}
@@ -10209,6 +10219,7 @@
 	trait = scholar
 	trait = just
 	trait = education_learning_1
+
 	630.1.1 = {
 		birth = "630.1.1"
 	}
@@ -10229,6 +10240,7 @@
 	trait = chaste
 	trait = diligent
 	trait = education_learning_1
+
 	623.1.1 = {
 		birth = "623.1.1"
 	}
@@ -10249,6 +10261,7 @@
 	trait = arrogant
 	trait = just
 	trait = education_learning_1
+
 	619.1.1 = {
 		birth = "619.1.1"
 	}
@@ -10269,6 +10282,7 @@
 	trait = scholar
 	trait = ambitious
 	trait = education_learning_1
+
 	610.1.1 = {
 		birth = "610.1.1"
 	}
@@ -10289,6 +10303,7 @@
 	trait = trusting
 	trait = honest
 	trait = education_learning_3
+
 	598.1.1 = {
 		birth = "598.1.1"
 	}
@@ -10308,6 +10323,7 @@
 	culture = "greek"
 	trait = diligent
 	trait = education_learning_2
+
 	575.1.1 = {
 		birth = "575.1.1"
 	}
@@ -10327,6 +10343,7 @@
 	culture = "greek"
 	trait = just
 	trait = education_learning_3
+
 	551.1.1 = {
 		birth = "551.1.1"
 	}
@@ -10347,6 +10364,7 @@
 	trait = cynical
 	trait = ambitious
 	trait = education_learning_3
+
 	552.1.1 = {
 		birth = "552.1.1"
 	}
@@ -10367,6 +10385,7 @@
 	trait = lazy
 	trait = generous
 	trait = education_learning_1
+
 	538.1.1 = {
 		birth = "538.1.1"
 	}
@@ -10387,6 +10406,7 @@
 	trait = just
 	trait = trusting
 	trait = education_learning_1
+
 	514.1.1 = {
 		birth = "514.1.1"
 	}
@@ -10407,6 +10427,7 @@
 	trait = zealous
 	trait = diligent
 	trait = education_learning_3
+
 	512.1.1 = {
 		birth = "512.1.1"
 	}
@@ -10427,6 +10448,7 @@
 	trait = scholar
 	trait = deceitful
 	trait = education_learning_1
+
 	496.1.1 = {
 		birth = "496.1.1"
 	}
@@ -10447,6 +10469,7 @@
 	trait = trusting
 	trait = gregarious
 	trait = education_learning_1
+
 	473.1.1 = {
 		birth = "473.1.1"
 	}
@@ -10467,6 +10490,7 @@
 	trait = deceitful
 	trait = arbitrary
 	trait = education_learning_3
+
 	470.1.1 = {
 		birth = "470.1.1"
 	}
@@ -10487,6 +10511,7 @@
 	trait = arbitrary
 	trait = paranoid
 	trait = education_learning_3
+
 	427.1.1 = {
 		birth = "427.1.1"
 	}
@@ -10506,6 +10531,7 @@
 	culture = "greek"
 	trait = just
 	trait = education_learning_4
+
 	411.1.1 = {
 		birth = "411.1.1"
 	}
@@ -10525,6 +10551,7 @@
 	culture = "greek"
 	trait = scholar
 	trait = education_learning_1
+
 	405.1.1 = {
 		birth = "405.1.1"
 	}
@@ -10546,6 +10573,7 @@
 	trait = zealous
 	trait = education_learning_4
 	give_nickname = nick_golden_tongued
+
 	349.1.1 = {
 		birth = "349.1.1"
 	}
@@ -10569,6 +10597,7 @@
 	trait = scholar
 	trait = just
 	trait = education_learning_1
+
 	335.1.1 = {
 		birth = "335.1.1"
 	}
@@ -10588,6 +10617,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_learning_4
+
 	329.1.1 = {
 		birth = "329.1.1"
 	}
@@ -10609,6 +10639,7 @@
 	trait = ambitious
 	trait = cynical
 	trait = education_learning_1
+
 	330.1.1 = {
 		birth = "330.1.1"
 	}
@@ -10628,6 +10659,7 @@
 	culture = "greek"
 	trait = ambitious
 	trait = education_learning_1
+
 	285.1.1 = {
 		birth = "285.1.1"
 	}
@@ -10648,6 +10680,7 @@
 	trait = trusting
 	trait = ambitious
 	trait = education_learning_1
+
 	290.1.1 = {
 		birth = "290.1.1"
 	}
@@ -10668,6 +10701,7 @@
 	trait = gregarious
 	trait = content
 	trait = education_learning_1
+
 	237.1.1 = {
 		birth = "237.1.1"
 	}
@@ -10687,6 +10721,7 @@
 	culture = "greek"
 	trait = honest
 	trait = education_learning_1
+
 	187.1.1 = {
 		birth = "187.1.1"
 	}
@@ -16276,6 +16311,7 @@
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
+
 	trait = content
 	trait = peasant_leader
 	trait = peasant_born
@@ -16419,6 +16455,7 @@
 	dynasty = 101132
 	religion = "orthodox"
 	culture = "greek"
+
 	836.1.1 = {
 		birth = "836.1.1"
 	}
@@ -16432,6 +16469,7 @@
 	dynasty = 1022150
 	religion = "orthodox"
 	culture = "greek"
+
 	834.1.1 = {
 		birth = "834.1.1"
 	}
@@ -16445,6 +16483,7 @@
 	dynasty = 1022151
 	religion = "orthodox"
 	culture = "greek"
+
 	826.1.1 = {
 		birth = "826.1.1"
 	}
@@ -16458,6 +16497,7 @@
 	dynasty = 1022152
 	religion = "orthodox"
 	culture = "greek"
+
 	824.1.1 = {
 		birth = "824.1.1"
 	}
@@ -16471,6 +16511,7 @@
 	dynasty = 1022153
 	religion = "orthodox"
 	culture = "greek"
+
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -16484,6 +16525,7 @@
 	dynasty = 1022154
 	religion = "iconoclast"
 	culture = "greek"
+
 	739.1.1 = {
 		birth = "739.1.1"
 	}
@@ -16500,6 +16542,7 @@
 	dynasty = 1022155
 	religion = "orthodox"
 	culture = "greek"
+
 	839.1.1 = {
 		birth = "839.1.1"
 	}
@@ -16513,6 +16556,7 @@
 	dynasty = 1022156
 	religion = "orthodox"
 	culture = "greek"
+
 	832.1.1 = {
 		birth = "832.1.1"
 	}
@@ -16526,6 +16570,7 @@
 	dynasty = 1022157
 	religion = "orthodox"
 	culture = "greek"
+
 	829.1.1 = {
 		birth = "829.1.1"
 	}
@@ -17761,11 +17806,17 @@
 	religion = orthodox
 	culture = greek
 	785.1.1 = {
+
 		birth = yes
+
 	}
+
 	835.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168373 = {
@@ -17775,14 +17826,20 @@
 	culture = greek
 	father = 168372
 	815.1.1 = {
+
 		birth = yes
+
 	}
+
 	834.1.1 = {
 		add_spouse = 168389
 	}	
 	862.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168374 = {
@@ -17793,11 +17850,17 @@
 	father = 168373
 	mother = 168389
 	836.1.1 = {
+
 		birth = yes
+
 	}
+
 	885.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168375 = {
@@ -17807,11 +17870,17 @@
 	culture = greek
 	father = 168374
 	855.1.1 = {
+
 		birth = yes
+
 	}
+
 	905.1.1 = {
+
 		death = yes
+		
 	}
+		
 }
 
 168376 = {
@@ -17821,11 +17890,17 @@
 	culture = greek
 	father = 168375
 	875.1.1 = {
+
 		birth = yes
+
 	}
+
 	935.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 
@@ -17836,11 +17911,17 @@
 	culture = greek
 	father = 168376
 	900.1.1 = {
+
 		birth = yes
+
 	}
+
 	955.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168378 = {
@@ -17850,11 +17931,17 @@
 	culture = greek
 	father = 168377
 	925.1.1 = {
+
 		birth = yes
+
 	}
+
 	980.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168379 = {
@@ -17864,12 +17951,20 @@
 	culture = greek
 	father = 168378
 	950.1.1 = {
+
 		birth = yes
+
 	}
+
 	1010.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168380 = {
 	name = Sergios
@@ -17878,12 +17973,19 @@
 	culture = greek
 	father = 168379
 	975.1.1 = {
+
 		birth = yes
+
 	}
+
 	1025.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168381 = {
 	name = Konstantios
@@ -17892,12 +17994,19 @@
 	culture = greek
 	father = 168380
 	1000.1.1 = {
+
 		birth = yes
+
 	}
+
 	1055.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168382 = {
 	name = Ioannes
@@ -17906,14 +18015,19 @@
 	culture = greek
 	father = 168381
 	1025.1.1 = {
+
 		birth = yes
+
 	}
 	1048.1.1 = {
 		add_spouse = 168390
 	}	
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168383 = {
@@ -17924,12 +18038,20 @@
 	father = 168382
 	mother = 168390
 	1050.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168384 = {
 	name = Anastasios
@@ -17939,11 +18061,17 @@
 	father = 168373
 	mother = 168389
 	838.1.1 = {
+
 		birth = yes
+
 	}
+
 	888.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168385 = {
@@ -17954,11 +18082,17 @@
 	father = 168373
 	mother = 168389
 	841.1.1 = {
+
 		birth = yes
+
 	}
+
 	891.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168386 = {
@@ -17968,12 +18102,20 @@
 	culture = greek
 	father = 168384
 	858.1.1 = {
+
 		birth = yes
+
 	}
+
 	908.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168387 = {
 	name = Stephania
@@ -17983,12 +18125,20 @@
 	culture = greek
 	father = 168384
 	859.1.1 = {
+
 		birth = yes
+
 	}
+
 	910.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168388 = {
 	name = Anna
@@ -17999,12 +18149,20 @@
 	father = 168373
 	mother = 168389
 	843.1.1 = {
+
 		birth = yes
+
 	}
+
 	895.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168389 = {
 	name = Martha
@@ -18012,12 +18170,21 @@
 	religion = orthodox
 	culture = greek
 	818.1.1 = {
+
 		birth = yes
+
 	}
+
 	870.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168390 = {
 	name = Theodora
@@ -18025,12 +18192,19 @@
 	religion = orthodox
 	culture = greek
 	1025.1.1 = {
+
 		birth = yes
+
 	}
+
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168391 = {
 	name = Georgios
@@ -18040,12 +18214,20 @@
 	father = 168382
 	mother = 168390
 	1052.1.1 = {
+
 		birth = yes
+
 	}
+
 	1090.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168392 = {
 	name = Euphemia
@@ -18056,12 +18238,20 @@
 	father = 168382
 	mother = 168390
 	1049.1.1 = {
+
 		birth = yes
+
 	}
+
 	1089.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168393 = {
 	name = Hippolytos
@@ -18070,12 +18260,20 @@
 	culture = greek
 	father = 168381
 	1028.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168394 = {
 	name = Pavlos
@@ -18084,11 +18282,17 @@
 	culture = greek
 	father = 168393
 	1048.1.1 = {
+
 		birth = yes
+
 	}
+
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168395 = {
@@ -18097,11 +18301,17 @@
 	religion = orthodox
 	culture = greek
 	770.1.1 = {
+
 		birth = yes
+
 	}
+
 	820.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168396 = {
@@ -18111,12 +18321,20 @@
 	culture = greek
 	father = 168395
 	790.1.1 = {
+
 		birth = yes
+
 	}
+
 	838.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168397 = {
 	name = Ioanna
@@ -18124,11 +18342,17 @@
 	religion = orthodox
 	culture = greek
 	815.1.1 = {
+
 		birth = yes
+
 	}
+
 	870.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168398 = {
@@ -18139,11 +18363,18 @@
 	father = 6881
 	mother = 168397
 	836.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	860.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168399 = {
@@ -18155,11 +18386,18 @@
 	father = 6881
 	mother = 168397
 	837.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	879.9.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168400 = {
@@ -18171,11 +18409,18 @@
 	father = 6881
 	mother = 168397
 	838.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	888.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168401 = {
@@ -18187,12 +18432,20 @@
 	father = 6881
 	mother = 168397
 	840.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	890.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168402 = {
 	name = Marinos
@@ -18201,12 +18454,22 @@
 	culture = greek
 	father = 168399
 	859.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	915.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168403 = {
 	name = Sergios
@@ -18215,11 +18478,18 @@
 	culture = greek
 	father = 168402
 	885.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	945.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168404 = {
@@ -18229,12 +18499,21 @@
 	culture = greek
 	father = 168403
 	910.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	970.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168405 = {
 	name = Polkarios
@@ -18243,12 +18522,21 @@
 	culture = greek
 	father = 168404
 	935.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	990.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168406 = {
 	name = Eugenios
@@ -18257,12 +18545,21 @@
 	culture = greek
 	father = 168405
 	970.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	1025.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168407 = {
 	name = Belisarios
@@ -18271,12 +18568,21 @@
 	culture = greek
 	father = 168406
 	1000.1.1 = {
+
 		birth = yes
+
 	}
-	1060.1.1 = {	
+
+
+	1060.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168408 = {
 	name = Konstas
@@ -18285,15 +18591,24 @@
 	culture = greek
 	father = 168407
 	1030.1.1 = {
+
 		birth = yes
+
 	}
+
 	1048.1.1 = {
 		add_spouse = 168409
 	}
 	1080.1.1 = {	
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168409 = {
 	name = Melissa
@@ -18303,12 +18618,20 @@
 	culture = greek
 	father = 168381
 	1032.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168410 = {
 	name = Polkarios
@@ -18320,6 +18643,7 @@
 	1049.1.1 = {
 		birth = yes
 	}
+
 	1100.1.1 = {
 		death = yes
 	}
@@ -18341,6 +18665,8 @@
 	}
 }
 
+
+
 168412 = {
 	name = Belisarios
 	dynasty = 9591
@@ -18351,6 +18677,7 @@
 	1052.1.1 = {
 		birth = yes
 	}
+
 	1100.1.1 = {
 		death = yes
 	}
@@ -18365,6 +18692,7 @@
 	1033.1.1 = {
 		birth = yes
 	}
+
 	1080.1.1 = {
 		death = yes
 	}
@@ -18380,10 +18708,12 @@
 	1035.1.1 = {
 		birth = yes
 	}
+
 	1080.1.1 = {
 		death = yes
 	}
 }
+
 
 168415 = {
 	name = Stefanos #Stefanos I
@@ -18410,6 +18740,7 @@
 	810.1.1 = {
 		birth = yes
 	}
+
 	835.1.1 = {
 		add_spouse = 168397
 	}
@@ -18574,7 +18905,6 @@
 		death = "630.1.1"
 	}
 }
-
 180666 = {
 	name = "Theodore"
 	# Archbishop of Canterbury
@@ -18588,7 +18918,6 @@
 		death = yes
 	}
 }
-
 145788 = {
 	name = "Eudokia"
 	dynasty = 1022264
@@ -20451,6 +20780,7 @@
 	dynasty = 1022295
 	religion = "catholic"
 	culture = "greek"
+
 	728.1.1 = {
 		birth = "728.1.1"
 	}
@@ -20551,6 +20881,7 @@
 	trait = diligent
 	trait = scholar
 	trait = education_stewardship_3
+
 	804.1.1 = {
 		birth = "804.1.1"
 	}
@@ -20597,9 +20928,12 @@
 	name = "Eudokia"
 	female = yes
 	dynasty = 101074
+
 	father = 125742
+
 	religion = orthodox
 	culture = greek
+
 	1254.1.1 = {
 		birth = yes
 	}
@@ -20616,6 +20950,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 70529
+
 	470.1.1 = {
 		birth = yes
 	}
@@ -20630,6 +20965,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 168790
+
 	500.1.1 = {
 		birth = yes
 	}
@@ -20651,6 +20987,7 @@
 	551.1.1 = {
 		birth = yes
 	}
+
 	605.1.1 = {
 		death = yes
 	}
@@ -20704,33 +21041,19 @@
 	}
 }
 
-200238 = {
-	name = "Ardabastos"
-	dynasty = 1046033
-	father = 168718
-	mother = 168715
-	religion = catholic
-	culture = greek
-	600.1.1 = {
-		birth = yes
-	}
-	650.1.1 = {
-		add_spouse = 200239
-	}
-	655.1.1 = {
-		death = yes
-	}
-}
-
 168714 = {
 	name = "Petros"
 	dynasty = 1022184
+
 	father = 168719
+
 	religion = "orthodox"
 	culture = "greek"
+
 	541.1.1 = {
 		birth = yes
 	}
+
 	593.1.1 = {
 		death = yes
 	}
@@ -20740,9 +21063,12 @@
 	name = "Iouliana"
 	female = yes
 	dynasty = 1022184
+
 	father = 168714
+
 	religion = "orthodox"
 	culture = "greek"
+
 	582.1.1 = {
 		birth = yes
 	}
@@ -21062,7 +21388,9 @@
 	female = yes
 	religion = catholic
 	culture = greek
+
 	father = 163088
+
 	883.1.1 = {
 		birth = yes
 	}
@@ -21084,6 +21412,7 @@
 	trait = trusting
 	trait = brave
 	trait = education_learning_4
+
 	8.1.1 = {
 		birth = yes
 		give_nickname = nick_the_apostle

@@ -26,7 +26,9 @@ ck650094 = {
 		add_spouse = 145290
 	}
 	28.9.28 = {
-		death = "28.9.28"
+		death = {
+			death_reason = death_old_age
+		}
 	}
 }
 
@@ -35,6 +37,10 @@ ck650109 = {
 	religion = catholic
 	culture = roman
 	trait = ambitious
+	trait = education_martial_3
+	trait = organizer
+	trait = brave
+	trait = diligent
 	420.11.1 = {
 		birth = "420.11.1"
 	}
@@ -1335,5 +1341,106 @@ ck650087={
 	}
 	180.1.1={
 		death="180.1.1"
+	}
+}
+
+########################
+#Suebi
+########################
+ck650062={
+	name="Hermeric"
+	dynasty=1046017
+	religion = norse_pagan
+	culture = suebi
+	trait = ambitious
+	trait = rough_terrain_expert
+	trait = adventurer
+	#trait=tribal_gov_trait
+	#trait=roman_enemy
+	#trait=sympathy_christendom
+	trait = disloyal
+	trait = ill
+	350.1.1={
+		birth=yes
+		#create_bloodline = {
+		#type = suebi_blood }
+	}
+	441.1.1={
+		death={death_reason=death_ill
+	    }
+    }
+}
+ck650063={
+	name="Rechila"
+	dynasty = 1046017
+	religion = norse_pagan
+	culture = suebi
+	father = ck650062
+	#trait=warmonger
+	#trait=seasoned_commander
+	trait = education_martial_2
+	390.1.1={
+		birth=yes
+	}
+	488.1.1={
+		death=yes
+	}
+}
+ck650064={
+	name="Rechiar"
+	dynasty = 1046017
+	religion = cathar
+	culture = suebi
+	father = ck650063
+	trait = wounded_1
+	420.1.1={
+		birth=yes
+	}
+	510.1.1={
+		death={death_reason=death_execution
+		killer = 200274
+	}}
+}
+ck650065={
+	name="Aioulf"
+	dynasty = 1046017
+	religion = cathar
+	culture = suebi
+	father = ck650064
+
+	499.1.1={
+		birth=yes
+	}
+	580.1.1={
+		death={death_reason=death_battle
+		killer = 200273
+	}}
+}
+ck650066={
+	name="Framta"
+	dynasty = 1046017
+	religion = mozarabic_church
+	culture = suebi
+	father = ck650065
+
+	580.1.1={
+		birth=yes
+	}
+	666.1.1={
+		death=yes
+	}
+}
+ck650067={
+	name="Frumar"
+	dynasty = 1046017
+	religion = mozarabic_church
+	culture = suebi
+	father = ck650066
+
+	640.1.1={
+		birth=yes
+	}
+	745.1.1={
+		death=yes
 	}
 }
