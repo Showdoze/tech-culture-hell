@@ -57,9 +57,9 @@ mmhorrvalmir = {
 	learning = 5
 	prowess = 35
 	trait = brave
-	trait = blademaster
 	trait = education_martial_4
 	trait = viking
+	trait = scarred
 	trait = berserker
 	trait = dilligent
 	trait = wraithful
@@ -67,9 +67,25 @@ mmhorrvalmir = {
 	820.1.11 = {
 		birth = "820.1.11"
 	}
-	1027.4.17 = {
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+	}
+	}
+	1047.4.17 = {
 		death = {
-			death_reason = death_battle
+			death_reason = death_contest_duel_accident
+			killer = 102531
 		}
 	}
 }
@@ -291,6 +307,7 @@ mmchrischan = {
 		set_relation_friend = { reason = friend_generic_history target = character:mmcyraxx }
 	}
 	841.1.1 = {
+		set_relation_lover = { reason = lover_history target = character:mmbarb }
 		set_relation_lover = { reason = lover_history target = character:mmbarb }
 	}
 	2026.4.17 = {
