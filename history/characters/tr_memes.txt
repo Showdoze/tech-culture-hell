@@ -36,7 +36,7 @@ mmdsp = {
 	trait = greedy
 	trait = stubborn
 	trait = gout_ridden
-	father=mmlolcowfounder
+	father = mmlolcowfounder
 	disallow_random_traits = yes
 	820.1.11 = {
 		birth = "820.1.11"
@@ -44,7 +44,7 @@ mmdsp = {
 	866.4.17 = {
 		death = {
 			death_reason = death_gout_ridden
-		} 
+		}
 	}
 }
 
@@ -74,15 +74,15 @@ mmhorrvalmir = {
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_high
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	1047.4.17 = {
 		death = {
@@ -112,8 +112,17 @@ mmmarty = {
 	820.1.11 = {
 		birth = "820.1.11"
 	}
-	841.1.1 = {
-		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+	861.1.1 = {
+		set_relation_rival = {
+			target = character:mmcyraxx
+			reason = rival_historical
+		}
+	}
+	861.1.1 = {
+		set_relation_rival = {
+			target = character:mmcyraxxdad
+			reason = rival_historical
+		}
 	}
 	2027.4.17 = {
 		death = {
@@ -152,8 +161,9 @@ mmcyraxxdad = {
 			death_reason = death_beaten
 			killer = mmmarty
 		}
-	}	
+	}
 }
+
 mmcyraxxsally = {
 	name = "Sally"
 	religion = catholic
@@ -174,7 +184,6 @@ mmcyraxxsally = {
 	trait = ill
 	trait = weak
 	disallow_random_traits = yes
-	father=mmlolcowfounder
 	805.1.11 = {
 		birth = "805.1.11"
 	}
@@ -182,13 +191,15 @@ mmcyraxxsally = {
 		death = {
 			death_reason = death_stress
 		}
-	}	
+	}
 }
+
 mmcyraxxmom = {
 	name = "Connie"
 	religion = catholic
 	culture = american
 	female = yes
+	dynasty = mmlolcow
 	martial = 0
 	diplomacy = 0
 	intrigue = 0
@@ -201,6 +212,7 @@ mmcyraxxmom = {
 	trait = inappetetic
 	trait = drunkard
 	trait = hashishiyah
+	father = mmlolcowfounder
 	disallow_random_traits = yes
 	835.1.11 = {
 		birth = "835.1.11"
@@ -213,8 +225,9 @@ mmcyraxxmom = {
 			death_reason = death_burned
 			killer = mmcyraxxmom
 		}
-	}	
+	}
 }
+
 mmcyraxx = {
 	name = "Chance Cyraxx Wilkins"
 	religion = norse_pagan
@@ -248,17 +261,26 @@ mmcyraxx = {
 		birth = "820.1.11"
 	}
 	841.1.1 = {
-		set_relation_rival = { target = character:mmmarty reason = rival_historical }
+		set_relation_rival = {
+			target = character:mmmarty
+			reason = rival_historical
+		}
 	}
 	841.1.1 = {
-		set_relation_friend = { reason = friend_generic_history target = character:mmchrischan }
+		set_relation_friend = {
+			reason = friend_generic_history
+			target = character:mmchrischan
+		}
 	}
 	861.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmheather }
+		set_relation_lover = {
+			reason = lover_history
+			target = character:mmheather
+		}
 	}
 	2026.4.17 = {
 		death = {
-		    death_reason = death_contest_duel_accident
+			death_reason = death_contest_duel_accident
 			killer = mmmarty
 		}
 	}
@@ -273,7 +295,10 @@ mmheather = {
 		birth = "850.1.11"
 	}
 	861.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmcyraxx }
+		set_relation_lover = {
+			reason = lover_history
+			target = character:mmcyraxx
+		}
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
@@ -310,14 +335,26 @@ mmchrischan = {
 		birth = "820.1.11"
 	}
 	821.1.1 = {
-		set_relation_rival = { target = character:mmliquid reason = rival_historical }
+		set_relation_rival = {
+			target = character:mmliquid
+			reason = rival_historical
+		}
 	}
 	841.1.1 = {
-		set_relation_friend = { reason = friend_generic_history target = character:mmcyraxx }
+		set_relation_friend = {
+			reason = friend_generic_history
+			target = character:mmcyraxx
+		}
 	}
 	841.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmbarb }
-		set_relation_lover = { reason = lover_history target = character:mmbarb }
+		set_relation_lover = {
+			reason = lover_history
+			target = character:mmbarb
+		}
+		set_relation_lover = {
+			reason = lover_history
+			target = character:mmbarb
+		}
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
@@ -346,13 +383,15 @@ mmbarb = {
 	trait = incestuous
 	trait = witch
 	trait = melancholic
-	father=mmlolcowfounder
 	disallow_random_traits = yes
 	790.1.11 = {
 		birth = "790.1.11"
 	}
 	861.1.1 = {
-		set_relation_lover = { reason = lover_history target = character:mmchrischan }
+		set_relation_lover = {
+			reason = lover_history
+			target = character:mmchrischan
+		}
 	}
 	2026.4.17 = {
 		death = {
@@ -387,31 +426,38 @@ mmliquid = {
 		birth = "820.1.11"
 	}
 	841.1.1 = {
-		set_relation_rival = { target = character:mmchrischan reason = rival_historical }
+		set_relation_rival = {
+			target = character:mmchrischan
+			reason = rival_historical
+		}
 	}
 	841.1.1 = {
-		set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+		set_relation_rival = {
+			target = character:mmcyraxx
+			reason = rival_historical
+		}
 	}
 	850.1.1 = {
 		effect = {
 			add_trait = lifestyle_physician
 			add_trait_xp = {
-                trait = lifestyle_physician
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_high
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_physician
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	2056.4.17 = {
 		death = yes
 	}
 }
+
 mmlolcowfounder = {
-	name = "Lol"
+	name = "Oxhorn"
 	religion = pagan
 	culture = american
 	dynasty = mmlolcow
@@ -420,12 +466,8 @@ mmlolcowfounder = {
 	trait = dull
 	trait = poet
 	trait = stubborn
-	trait = deviant
-	trait = sodomite
-	trait = incestuous
-	trait = witch
 	trait = heresiah
-	disallow_random_traits = yes
+	give_nickname = nick_bearded
 	300.1.11 = {
 		birth = yes
 	}
@@ -435,4 +477,4 @@ mmlolcowfounder = {
 			killer = 102531
 		}
 	}
-}	
+}
