@@ -45,6 +45,7 @@
 		death = yes
 	}
 }
+
 194366 = {
 	name = "Ibolya"
 	female = yes
@@ -335,8 +336,9 @@
 		add_spouse = 499
 	}
 	1044.7.1 = {
-		death = { death_reason = death_battle
-		killer=497
+		death = {
+			death_reason = death_battle
+			killer = 497
 		}
 	}
 }
@@ -1000,7 +1002,7 @@
 	1163.6.19 = {
 		add_pressed_claim = title:k_hungary
 		add_pressed_claim = title:k_croatia
-	}	
+	}
 	1169.1.2 = {
 		remove_spouse = 213528
 	}
@@ -1361,7 +1363,8 @@
 		give_nickname = nick_the_blind
 	}
 	1141.2.13 = {
-		death = { death_reason = death_drinking_passive
+		death = {
+			death_reason = death_drinking_passive
 		}
 	}
 }
@@ -2764,8 +2767,9 @@
 		give_nickname = nick_the_white
 	}
 	1060.10.1 = {
-		death = { death_reason = death_execution
-		killer = 470
+		death = {
+			death_reason = death_execution
+			killer = 470
 		}
 	}
 }
@@ -2818,7 +2822,8 @@
 		add_trait = maimed
 	}
 	1063.12.1 = {
-		death = { death_reason = death_maimed
+		death = {
+			death_reason = death_maimed
 		}
 	}
 }
@@ -4691,7 +4696,7 @@
 470152 = {
 	name = "Anna"
 	female = yes
-	dynasty = 19007 #Blagai
+	dynasty = 19007	#Blagai
 	martial = 5
 	diplomacy = 5
 	intrigue = 4
@@ -5506,17 +5511,18 @@
 		birth = "1047.1.1"
 	}
 	1066.1.1 = {
-		effect = { #Táltos king
+		effect = {
+			#Táltos king
 			add_trait = lifestyle_mystic
 			add_trait_xp = {
-                trait = lifestyle_mystic
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
 		}
 	}
 	1077.1.1 = {
@@ -5652,7 +5658,8 @@
 		remove_spouse = 98018
 	}
 	1116.2.3 = {
-		death = { death_reason = death_drinking_passive
+		death = {
+			death_reason = death_drinking_passive
 		}
 	}
 }
@@ -5794,7 +5801,7 @@
 }
 
 489 = {
-	name = "Imre" # Saint Emeric
+	name = "Imre"	# Saint Emeric
 	dynasty = 708
 	martial = 7
 	diplomacy = 8
@@ -5934,8 +5941,9 @@
 		add_spouse = 1437
 	}
 	1060.8.30 = {
-		death = { death_reason = death_torture
-		killer = 468
+		death = {
+			death_reason = death_torture
+			killer = 468
 		}
 	}
 }
@@ -6053,7 +6061,8 @@
 	#add_spouse = 222573
 	#}
 	1205.5.7 = {
-		death = { death_reason = death_ill
+		death = {
+			death_reason = death_ill
 		}
 	}
 }
@@ -6127,7 +6136,7 @@
 		birth = "1262.8.5"
 	}
 	1278.1.1 = {
-		add_spouse = 32789 #Elizabeth d'Anjou
+		add_spouse = 32789		#Elizabeth d'Anjou
 	}
 	1290.7.10 = {
 		death = "1290.7.10"
@@ -6153,7 +6162,7 @@
 		birth = "1236.1.1"
 	}
 	1264.1.2 = {
-		add_spouse = 182018 #Tomasini Morosini
+		add_spouse = 182018		#Tomasini Morosini
 	}
 	1271.1.1 = {
 		death = "1271.1.1"
@@ -6174,7 +6183,7 @@
 	trait = craven
 	trait = education_diplomacy_2
 	father = 98006
-	mother = 182018 #Tomasini Morosini
+	mother = 182018	#Tomasini Morosini
 	1265.1.2 = {
 		birth = "1265.1.2"
 	}
@@ -6771,7 +6780,7 @@
 }
 
 32639 = {
-	name = "IstvA_n" #ban of Slavonia 1310-1316
+	name = "IstvA_n"	#ban of Slavonia 1310-1316
 	dynasty = 19007
 	religion = "catholic"
 	culture = "hungarian"
@@ -6799,7 +6808,7 @@
 }
 
 32641 = {
-	name = "IstvA_n" #Ban of Slavonia 1278-1300
+	name = "IstvA_n"	#Ban of Slavonia 1278-1300
 	dynasty = 19007
 	religion = "catholic"
 	culture = "hungarian"
@@ -6855,7 +6864,7 @@
 }
 
 32645 = {
-	name = "JA_nos" #ban of Slavonia
+	name = "JA_nos"	#ban of Slavonia
 	dynasty = 19007
 	religion = "catholic"
 	culture = "hungarian"
@@ -6983,7 +6992,7 @@
 32654 = {
 	name = "Katalin"
 	female = yes
-	dynasty = 19007 #Blagai
+	dynasty = 19007	#Blagai
 	religion = "catholic"
 	culture = "hungarian"
 	father = 32639
@@ -7097,7 +7106,6 @@
 		death = "1140.1.1"
 	}
 }
-
 
 93629 = {
 	name = "TamA_s"
@@ -7474,7 +7482,7 @@
 }
 
 93655 = {
-	name = "Elek" #real name unknown
+	name = "Elek"	#real name unknown
 	dynasty = 101566
 	religion = "catholic"
 	culture = "hungarian"
@@ -7488,7 +7496,7 @@
 }
 
 93656 = {
-	name = "Imre" #real name unknown
+	name = "Imre"	#real name unknown
 	dynasty = 101566
 	religion = "catholic"
 	culture = "hungarian"
@@ -7796,7 +7804,7 @@
 }
 
 93678 = {
-	name = "Szabolcs" #real name unknown
+	name = "Szabolcs"	#real name unknown
 	dynasty = 19010
 	religion = "catholic"
 	culture = "hungarian"
@@ -7810,7 +7818,7 @@
 }
 
 93679 = {
-	name = "IstvA_n" #real name unknown
+	name = "IstvA_n"	#real name unknown
 	dynasty = 19010
 	religion = "catholic"
 	culture = "hungarian"
@@ -7824,7 +7832,7 @@
 }
 
 93680 = {
-	name = "MA_tE_" #real name unknown
+	name = "MA_tE_"	#real name unknown
 	dynasty = 19010
 	religion = "catholic"
 	culture = "hungarian"
@@ -8507,7 +8515,6 @@
 		death = "1385.1.1"
 	}
 }
-
 
 93729 = {
 	name = "Anics"
@@ -9229,7 +9236,7 @@
 }
 
 93789 = {
-	name = "TamA_s" #real name unknown
+	name = "TamA_s"	#real name unknown
 	dynasty = 19009
 	religion = "catholic"
 	culture = "hungarian"
@@ -9470,7 +9477,7 @@
 	dynasty = 708
 	religion = "magyar_pagan"
 	culture = "mogyer"
-	father = 159136 #Arpad Arpad
+	father = 159136	#Arpad Arpad
 	mother = 306004
 	880.1.2 = {
 		birth = "880.1.2"
@@ -9486,8 +9493,8 @@
 	dynasty = 708
 	religion = "magyar_pagan"
 	culture = "mogyer"
-	father = 159137 #(#Álmos Arpad of Magyar)
-	mother = 306003 #Fictional
+	father = 159137	#(#Álmos Arpad of Magyar)
+	mother = 306003	#Fictional
 	martial = 14
 	trait = ambitious
 	trait = strong
@@ -9498,14 +9505,15 @@
 		birth = yes
 	}
 	861.1.1 = {
-		add_spouse = 306004 #Fictional
+		add_spouse = 306004		#Fictional
 	}
 	907.1.1 = {
 		death = yes
 	}
 }
 
-306004 = { #Fictional wife of Arpad
+306004 = {
+	#Fictional wife of Arpad
 	name = "Hajnal"
 	dna = 306004_hajnal
 	religion = "magyar_pagan"
@@ -9525,7 +9533,7 @@
 
 #Álmos Arpad of Magyar
 159137 = {
-	name = "A_lmos" # Ruler of the Magyars in 845
+	name = "A_lmos"	# Ruler of the Magyars in 845
 	dna = 159137_almos_arpad
 	dynasty = 708
 	religion = "magyar_pagan"
@@ -9540,29 +9548,26 @@
 	trait = calm
 	trait = education_martial_4
 	sexuality = heterosexual
-	
 	820.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
-		}	
+		}
 	}
-
 	844.1.1 = {
-		add_spouse = 306003 #Fictional, her name is lost but she was supposed to be highborn
+		add_spouse = 306003		#Fictional, her name is lost but she was supposed to be highborn
 	}
-	
 	# Boost the strength of the magyars for the hungarian invasion.
 	867.1.1 = {
 		add_prestige = 1000
 	}
-	
 	895.1.1 = {
 		death = yes
 	}
 }
 
-306006 = { #Fictional vassal of Almos Arpad
+306006 = {
+	#Fictional vassal of Almos Arpad
 	name = "Vilmos"
 	religion = "magyar_pagan"
 	culture = "mogyer"
@@ -9580,7 +9585,8 @@
 	}
 }
 
-306007 = { #Fictional vassal of Almos Arpad
+306007 = {
+	#Fictional vassal of Almos Arpad
 	name = "Ambrus"
 	religion = "magyar_pagan"
 	culture = "mogyer"
@@ -9600,22 +9606,23 @@
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	907.1.1 = {
 		death = yes
 	}
 }
 
-306008 = { #Fictional vassal wife
+306008 = {
+	#Fictional vassal wife
 	name = "Dorottya"
 	female = yes
 	religion = "magyar_pagan"
@@ -9634,13 +9641,12 @@
 	}
 }
 
-
 163168 = {
 	name = "LinU_tika"
 	dynasty = 708
 	religion = "magyar_pagan"
 	culture = "mogyer"
-	father = 159136 #Arpad Arpad
+	father = 159136	#Arpad Arpad
 	mother = 306004
 	862.1.1 = {
 		birth = "862.1.1"
@@ -9650,13 +9656,14 @@
 	}
 }
 
-306005 = { #Fictional daughter of Arpad
+306005 = {
+	#Fictional daughter of Arpad
 	name = "Ibolya"
 	female = yes
 	dynasty = 708
 	religion = "magyar_pagan"
 	culture = "mogyer"
-	father = 159136 #Arpad Arpad
+	father = 159136	#Arpad Arpad
 	mother = 306004
 	866.1.1 = {
 		birth = "864.1.1"
@@ -9671,7 +9678,7 @@
 	dynasty = 708
 	religion = "magyar_pagan"
 	culture = "mogyer"
-	father = 159136 #Arpad Arpad
+	father = 159136	#Arpad Arpad
 	mother = 306004
 	864.1.1 = {
 		birth = "864.1.1"
@@ -9680,12 +9687,12 @@
 		death = "920.1.1"
 	}
 }
+
 146214 = {
 	name = "JenOE"
 	dynasty = 1022386
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	741.1.1 = {
 		birth = yes
 	}
@@ -9727,7 +9734,6 @@
 	dynasty = 1022387
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	742.1.1 = {
 		birth = yes
 	}
@@ -9755,7 +9761,6 @@
 	dynasty = 1022388
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	743.1.1 = {
 		birth = yes
 	}
@@ -9783,7 +9788,6 @@
 	dynasty = 1022389
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	744.1.1 = {
 		birth = yes
 	}
@@ -9811,7 +9815,6 @@
 	dynasty = 1022390
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	745.1.1 = {
 		birth = yes
 	}
@@ -9839,7 +9842,6 @@
 	dynasty = 1022391
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	746.1.1 = {
 		birth = yes
 	}
@@ -9867,7 +9869,6 @@
 	dynasty = 1022392
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	747.1.1 = {
 		birth = yes
 	}
@@ -9895,7 +9896,6 @@
 	dynasty = 1022393
 	culture = "mogyer"
 	religion = "magyar_pagan"
-
 	748.1.1 = {
 		birth = yes
 	}
@@ -9945,6 +9945,7 @@
 		death = yes
 	}
 }
+
 194367 = {
 	name = "Csaba"
 	dynasty = 1022386
@@ -9958,6 +9959,7 @@
 		death = yes
 	}
 }
+
 194368 = {
 	name = "Hajnal"
 	female = yes

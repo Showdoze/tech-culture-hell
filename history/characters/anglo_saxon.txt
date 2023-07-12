@@ -57,8 +57,8 @@
 	culture = anglo_saxon
 	trait = honest
 	trait = education_martial_2
-	father = 7627 #Alfred the Great
-	mother = 306020 #Eahlswith Mucel
+	father = 7627	#Alfred the Great
+	mother = 306020	#Eahlswith Mucel
 	874.1.1 = {
 		birth = "874.1.1"
 	}
@@ -156,7 +156,7 @@
 		add_spouse = 105
 	}
 	1002.3.1 = {
-		add_spouse = 259 #Emma de Normandie
+		add_spouse = 259		#Emma de Normandie
 	}
 	1016.1.1 = {
 		give_nickname = nick_the_unready_anglo_saxon
@@ -259,7 +259,7 @@
 }
 
 112 = {
-	name = "Eadgar" # the Aetheling
+	name = "Eadgar"	# the Aetheling
 	dynasty_house = house_british_isles_wessex
 	martial = 6
 	diplomacy = 7
@@ -290,7 +290,7 @@
 		employer = 984
 	}
 	1098.1.1 = {
-		employer = 1742 #Alexios Komnenos
+		employer = 1742		#Alexios Komnenos
 	}
 	1126.1.1 = {
 		death = "1126.1.1"
@@ -317,7 +317,6 @@
 	1057.8.30 = {
 		add_pressed_claim = title:k_england
 	}
-
 	1093.11.16 = {
 		death = "1093.11.16"
 	}
@@ -353,7 +352,7 @@
 	1066.1.5 = {
 		death = {
 			death_reason = death_ill
-	    }
+		}
 	}
 }
 
@@ -435,7 +434,6 @@
 	1068.1.1 = {
 		employer = 984
 	}
-
 	1099.11.19 = {
 		death = "1099.11.19"
 	}
@@ -485,7 +483,7 @@
 }
 
 122 = {
-	name = Harold # Godwineson, king of England
+	name = Harold	# Godwineson, king of England
 	dna = 122_king_harold
 	dynasty = 756
 	martial = 4
@@ -516,9 +514,12 @@
 		}
 	}
 	1045.1.1 = {
-		add_spouse = 131 #Ealdgyth 'Swanneck'
+		add_spouse = 131		#Ealdgyth 'Swanneck'
 		effect = {
-			set_relation_lover = { reason = lover_history target = character:131 } 
+			set_relation_lover = {
+				reason = lover_history
+				target = character:131
+			}
 			add_hook = {
 				target = character:131
 				type = loyalty_hook
@@ -534,7 +535,7 @@
 		remove_spouse = 131
 	}
 	1066.1.1 = {
-		add_spouse = 123 #Ealdgyth of Mercia
+		add_spouse = 123		#Ealdgyth of Mercia
 		effect = {
 			reverse_add_opinion = {
 				modifier = divorced_me_opinion
@@ -571,7 +572,7 @@
 }
 
 123 = {
-	name = "E_ldgyth" # of Mercia
+	name = "E_ldgyth"	# of Mercia
 	# AKA: Ealdgyth
 	dna = 123_queen_ealdgyth
 	female = yes
@@ -591,7 +592,7 @@
 		birth = "1036.1.1"
 		effect = {
 			add_character_flag = has_scripted_appearance
-		}	
+		}
 	}
 	1066.12.14 = {
 		death = "1066.12.14"
@@ -621,14 +622,12 @@
 	1050.1.1 = {
 		add_spouse = 363
 	}
-	
 	1066.1.1 = {
 		employer = 102531
 		give_council_position = councillor_marshal
-		
 		effect = {
 			set_relation_nemesis = {
-				target = character:122	#King Harold siezed his titles!
+				target = character:122				#King Harold siezed his titles!
 				reason = nemesis_tostig_harold
 			}
 		}
@@ -777,7 +776,7 @@
 }
 
 131 = {
-	name = "Eadgifu" # 'the Fair', 'Swanneck', 'the Rich'
+	name = "Eadgifu"	# 'the Fair', 'Swanneck', 'the Rich'
 	# AKA: Ealdgyth 'Swanneck'
 	dna = 131_eadgifu_the_fair
 	female = yes
@@ -796,7 +795,7 @@
 		birth = "1025.6.6"
 		effect = {
 			add_character_flag = has_scripted_appearance
-		}	
+		}
 	}
 	1045.1.1 = {
 		give_nickname = nick_the_fair
@@ -1122,7 +1121,6 @@
 	1094.6.6 = {
 		employer = 202511
 	}
-
 	1112.4.16 = {
 		death = "1112.4.16"
 	}
@@ -1147,7 +1145,6 @@
 	1087.9.9 = {
 		employer = 142
 	}
-
 	1103.6.3 = {
 		death = "1103.6.3"
 	}
@@ -1230,7 +1227,6 @@
 	1018.1.1 = {
 		add_spouse = 161279
 	}
-	
 	1057.10.30 = {
 		death = "1057.10.30"
 	}
@@ -1259,7 +1255,6 @@
 		death = "1062.1.1"
 	}
 }
-
 
 5644 = {
 	name = "Eadwin"
@@ -1308,7 +1303,6 @@
 #		death = "1100.1.1"
 #	}
 #}
-
 5660 = {
 	name = "Morcar"
 	dynasty = 560
@@ -1316,7 +1310,6 @@
 	culture = anglo_saxon
 	father = 5642
 	mother = 161280
-
 	#Skills
 	diplomacy = 8
 	martial = 7
@@ -1324,24 +1317,24 @@
 	intrigue = 2
 	learning = 6
 	prowess = 7
-	
 	#Education
 	trait = education_martial_3
-
 	#Personality Traits
 	trait = brave
 	trait = ambitious
 	trait = arbitrary
-	
 	sexuality = heterosexual
 	disallow_random_traits = yes
 	1046.1.1 = {
 		birth = "1046.1.1"
-		set_relation_friend = { reason = friend_generic_history target = character:5644 }	#Fast-friends with his elder brother for their entire lives.
+		set_relation_friend = {
+			reason = friend_generic_history
+			target = character:5644
+		}		#Fast-friends with his elder brother for their entire lives.
 	}
 	1065.1.1 = {
 		effect = {
-			add_perk = popular_figurehead_perk	#Popularly elected to rule York.
+			add_perk = popular_figurehead_perk			#Popularly elected to rule York.
 		}
 	}
 	1066.1.1 = {
@@ -1373,7 +1366,7 @@
 }
 
 6890 = {
-	name = Ecgwyn # Fantasy
+	name = Ecgwyn	# Fantasy
 	female = yes
 	religion = "catholic"
 	culture = anglo_saxon
@@ -1386,7 +1379,7 @@
 }
 
 6891 = {
-	name = BurgflE_d # Fantasy
+	name = BurgflE_d	# Fantasy
 	female = yes
 	religion = "catholic"
 	culture = anglo_saxon
@@ -1433,7 +1426,7 @@
 }
 
 7627 = {
-	name = Alfred #the Great
+	name = Alfred	#the Great
 	dna = 7627_earl_alfred
 	dynasty_house = house_british_isles_wessex
 	martial = 11
@@ -1451,17 +1444,20 @@
 	trait = intellect_good_2
 	trait = education_martial_4
 	sexuality = heterosexual
-	father = 33355 #(?helwulf, King of Wessex)
-	mother = 306023 #Osburh
+	father = 33355	#(?helwulf, King of Wessex)
+	mother = 306023	#Osburh
 	849.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
-		}	
+		}
 	}
 	859.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:33358 } # ?helred, brother and king of Wessex
+			set_relation_friend = {
+				reason = friend_generic_history
+				target = character:33358
+			}			# ?helred, brother and king of Wessex
 		}
 	}
 	867.1.1 = {
@@ -1475,7 +1471,6 @@
 	}
 }
 
-
 7629 = {
 	name = "Elfthryth"
 	female = yes
@@ -1487,8 +1482,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	trait = education_learning_3
-	father = 7627 #Alfred the Great
-	mother = 306020 #Eahlswith Mucel
+	father = 7627	#Alfred the Great
+	mother = 306020	#Eahlswith Mucel
 	877.1.1 = {
 		birth = "870.1.1"
 	}
@@ -1643,39 +1638,39 @@
 	}
 }
 
-90028 = { # Hereward the Wake
+90028 = {
+	# Hereward the Wake
 	name = "Hereward"
-	dynasty = 2004006 #Descendant of Oslac
-	martial = 11 #A gifted military commander
-	diplomacy = 2 #...but not exactly a diplomat
-	prowess = 10 #Capable duelist
+	dynasty = 2004006	#Descendant of Oslac
+	martial = 11	#A gifted military commander
+	diplomacy = 2	#...but not exactly a diplomat
+	prowess = 10	#Capable duelist
 	religion = "catholic"
 	culture = anglo_saxon
 	trait = education_martial_3
 	trait = ambitious
-	trait = vengeful #killed a bunch of Normans who killed his brother
-	trait = wrathful #see above
-	trait = forder #defended the fenlands
+	trait = vengeful	#killed a bunch of Normans who killed his brother
+	trait = wrathful	#see above
+	trait = forder	#defended the fenlands
 	trait = adventurer
-
 	1044.1.2 = {
 		birth = "1044.1.2"
 	}
 	1060.1.2 = {
-		add_spouse = 90160 #Turdifa
-		employer = 364 #Baldwin of Flanders
+		add_spouse = 90160		#Turdifa
+		employer = 364		#Baldwin of Flanders
 		add_pressed_claim = title:c_cambridgeshire
 		give_nickname = nick_the_wake
 		effect = {
-			add_trait = lifestyle_blademaster # noted duelist
+			add_trait = lifestyle_blademaster			# noted duelist
 			add_trait_xp = {
 				trait = lifestyle_blademaster
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
 			}
 		}
 	}
@@ -1764,21 +1759,26 @@
 	}
 	839.1.1 = {
 		death = "839.1.1"
-		dynasty_house = house_british_isles_wessex	}
+		dynasty_house = house_british_isles_wessex
+	}
 }
 
 306022 = {
 	name = Oslac
-	dynasty = 2004006 #af Oslac
+	dynasty = 2004006	#af Oslac
 	religion = "catholic"
 	culture = anglo_saxon
-	780.1.1 = { birth = yes }
-	840.1.1 = { death = yes }
+	780.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		death = yes
+	}
 }
 
 306023 = {
 	name = Osburh
-	dynasty = 2004006  #af Oslac
+	dynasty = 2004006	#af Oslac
 	female = yes
 	trait = zealous
 	religion = "catholic"
@@ -1787,11 +1787,10 @@
 	809.1.1 = {
 		birth = yes
 	}
-	855.6.1  = {
+	855.6.1 = {
 		death = yes
 	}
 }
-
 
 #?helwulf, King of Wessex
 33355 = {
@@ -1804,31 +1803,28 @@
 		birth = "795.1.1"
 	}
 	832.1.1 = {
-		add_spouse = 306023 #Osburh, mother of his children
+		add_spouse = 306023		#Osburh, mother of his children
 	}
 	856.10.1 = {
-		add_spouse = 90110 #(Judith of Flanders)
+		add_spouse = 90110		#(Judith of Flanders)
 	}
-
 	858.1.13 = {
 		death = "858.1.13"
 	}
 }
-
-
 
 33356 = {
 	name = "E_thelbald"
 	dynasty_house = house_british_isles_wessex
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 33355 #(?helwulf, King of Wessex)
-	mother = 306023 #Osburh
+	father = 33355	#(?helwulf, King of Wessex)
+	mother = 306023	#Osburh
 	834.1.1 = {
 		birth = "834.1.1"
 	}
 	858.2.1 = {
-		add_spouse = 90110 #(Judith of Flanders)
+		add_spouse = 90110		#(Judith of Flanders)
 	}
 	860.12.20 = {
 		death = "860.12.20"
@@ -1840,8 +1836,8 @@
 	dynasty_house = house_british_isles_wessex
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 33355 #(?helwulf, King of Wessex)
-	mother = 306023 #Osburh
+	father = 33355	#(?helwulf, King of Wessex)
+	mother = 306023	#Osburh
 	836.1.1 = {
 		birth = "836.1.1"
 	}
@@ -1856,19 +1852,19 @@
 	dynasty_house = house_british_isles_wessex
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 33355 #(?helwulf, King of Wessex)
-	mother = 306023 #Osburh
+	father = 33355	#(?helwulf, King of Wessex)
+	mother = 306023	#Osburh
 	stewardship = 8
 	trait = education_stewardship_3
 	trait = diligent
 	trait = shy
 	trait = just
-	fertility = 0.3 #Reduce chance of children before death so Alfred is more likely to inherit
+	fertility = 0.3	#Reduce chance of children before death so Alfred is more likely to inherit
 	840.1.1 = {
 		birth = "840.1.1"
 	}
 	866.1.1 = {
-		add_spouse = 306015 #Wulfthryth
+		add_spouse = 306015		#Wulfthryth
 	}
 	871.1.1 = {
 		death = "871.1.1"
@@ -1884,9 +1880,9 @@
 	trait = arrogant
 	trait = just
 	trait = education_stewardship_3
-	mother = 306017 #Fictional
-	father = 306016 #Fictional
-	fertility = 0.3 #Reduce chance of children before death so Alfred is more likely to inherit
+	mother = 306017	#Fictional
+	father = 306016	#Fictional
+	fertility = 0.3	#Reduce chance of children before death so Alfred is more likely to inherit
 	831.1.1 = {
 		birth = yes
 	}
@@ -1895,7 +1891,8 @@
 	}
 }
 
-306016 = { #Fictional vassal of ?helred and fictional father of Wulfthryth
+306016 = {
+	#Fictional vassal of ?helred and fictional father of Wulfthryth
 	name = Uhtred
 	religion = catholic
 	culture = anglo_saxon
@@ -1907,7 +1904,8 @@
 	}
 }
 
-306017 = { #Fictional wife of fictional Uhtred
+306017 = {
+	#Fictional wife of fictional Uhtred
 	name = E_lfgifu
 	female = yes
 	religion = catholic
@@ -1919,7 +1917,6 @@
 		death = yes
 	}
 }
-
 
 129058 = {
 	name = "Samson"
@@ -1966,7 +1963,7 @@
 	}
 }
 
-32703  = {
+32703 = {
 	name = "Edmund"
 	religion = "catholic"
 	culture = anglo_saxon
@@ -1975,7 +1972,6 @@
 		birth = "1060.1.1"
 	}
 	1100.1.1 = {
-
 		effect = {
 			set_culture = culture:english
 		}
@@ -2025,7 +2021,7 @@
 }
 
 161262 = {
-	name = "Godgifu" # aka Goda
+	name = "Godgifu"	# aka Goda
 	female = yes
 	dynasty_house = house_british_isles_wessex
 	religion = "catholic"
@@ -2054,7 +2050,7 @@
 }
 
 161264 = {
-	name = "E_lfgifu" #real name unknown
+	name = "E_lfgifu"	#real name unknown
 	female = yes
 	dynasty = 744
 	religion = "catholic"
@@ -2261,7 +2257,6 @@
 	992.1.1 = {
 		birth = "992.1.1"
 	}
-	
 	1021.11.11 = {
 		death = "1021.11.11"
 	}
@@ -2338,7 +2333,6 @@
 	1076.1.1 = {
 		birth = "1076.1.1"
 	}
-	
 	1128.1.1 = {
 		death = "1128.1.1"
 	}
@@ -2375,7 +2369,7 @@
 		birth = "1035.1.1"
 	}
 	1066.1.5 = {
-		employer = 91173 # Bishop of Rheims
+		employer = 91173		# Bishop of Rheims
 	}
 	1078.1.1 = {
 		death = "1078.1.1"
@@ -2399,7 +2393,7 @@
 }
 
 163064 = {
-	name = "Eadmund" # of East Anglia
+	name = "Eadmund"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -2407,14 +2401,14 @@
 	840.1.1 = {
 		birth = "840.1.1"
 	}
-	
 	869.11.20 = {
 		death = "869.11.20"
 	}
 }
+
 163102 = {
 	name = "Burghred"
-	dynasty = 813 #Mercia
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205100
@@ -2430,9 +2424,9 @@
 }
 
 306019 = {
-	name = "Eadburh" #A member of the Mercian royal family, but not technically Burghred's sister
+	name = "Eadburh"	#A member of the Mercian royal family, but not technically Burghred's sister
 	female = yes
-	dynasty = 813 #Mercia
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205100
@@ -2446,7 +2440,7 @@
 
 306018 = {
 	name = E_thelred
-	dynasty = 2004005 #Mucel
+	dynasty = 2004005	#Mucel
 	religion = "catholic"
 	culture = anglo_saxon
 	819.1.1 = {
@@ -2455,7 +2449,6 @@
 	842.1.1 = {
 		add_spouse = 306019
 	}
-
 	879.1.1 = {
 		death = yes
 	}
@@ -2465,11 +2458,11 @@
 	name = "Ealhswith"
 	dna = 306020_ealswith
 	female = yes
-	dynasty = 2004005 #Mucel
+	dynasty = 2004005	#Mucel
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 306018 #Aethelred Mucel
-	mother = 306019 #Eadburh Mercia
+	father = 306018	#Aethelred Mucel
+	mother = 306019	#Eadburh Mercia
 	trait = compassionate
 	trait = generous
 	trait = diligent
@@ -2483,11 +2476,11 @@
 
 306021 = {
 	name = "E_thelwulf"
-	dynasty = 2004005 #Mucel
+	dynasty = 2004005	#Mucel
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 306018 #Aethelred Mucel
-	mother = 306019 #Eadburh Mercia
+	father = 306018	#Aethelred Mucel
+	mother = 306019	#Eadburh Mercia
 	843.1.1 = {
 		birth = yes
 	}
@@ -2511,22 +2504,19 @@
 	trait = callous
 	trait = arbitrary
 	trait = education_intrigue_3
-	
 	824.1.1 = {
 		birth = yes
 	}
-	
 	840.1.1 = {
 		add_spouse = 6890
 	}
-	
 	867.3.21 = {
 		death = yes
 	}
 }
 
 6861 = {
-	name = "BlE_ja" #Daughter of Aella, wife of Sigurdr Snake-in-the-eye
+	name = "BlE_ja"	#Daughter of Aella, wife of Sigurdr Snake-in-the-eye
 	dna = 6861_blaeja
 	female = yes
 	dynasty = 814
@@ -2564,12 +2554,11 @@
 }
 
 163120 = {
-	name = "Eardulf" # Bishop of Durham/Lindisfarne
+	name = "Eardulf"	# Bishop of Durham/Lindisfarne
 	religion = "catholic"
 	culture = anglo_saxon
 	learning = 5
 	trait = education_learning_3
-	
 	829.1.1 = {
 		birth = "829.1.1"
 	}
@@ -2579,10 +2568,9 @@
 }
 
 163121 = {
-	name = "Oswine" # Earl of Lancaster (made up)
+	name = "Oswine"	# Earl of Lancaster (made up)
 	religion = "catholic"
 	culture = anglo_saxon
-	
 	830.1.1 = {
 		birth = "830.1.1"
 	}
@@ -2592,10 +2580,9 @@
 }
 
 163122 = {
-	name = "E_lfwald" # Earl of Westmorland (made up)
+	name = "E_lfwald"	# Earl of Westmorland (made up)
 	religion = "catholic"
 	culture = anglo_saxon
-	
 	833.1.1 = {
 		birth = "833.1.1"
 	}
@@ -2605,10 +2592,9 @@
 }
 
 163123 = {
-	name = "SE_xrE_d" # Earl of Cumberland (made up)
+	name = "SE_xrE_d"	# Earl of Cumberland (made up)
 	religion = "catholic"
 	culture = anglo_saxon
-	
 	835.1.1 = {
 		birth = "835.1.1"
 	}
@@ -2616,11 +2602,12 @@
 		death = "885.1.1"
 	}
 }
+
 159465 = {
-	name = "E_lfrE_d" #Alured
+	name = "E_lfrE_d"	#Alured
 	religion = "catholic"
 	culture = anglo_saxon
-	dynasty_house = house_british_isles_cornwall #of Cornwall
+	dynasty_house = house_british_isles_cornwall	#of Cornwall
 	father = 159464
 	970.1.1 = {
 		birth = "970.1.1"
@@ -2629,11 +2616,12 @@
 		death = "1020.1.1"
 	}
 }
+
 159470 = {
-	name = "Godwine"  #Godwyn
+	name = "Godwine"	#Godwyn
 	religion = "catholic"
 	culture = anglo_saxon
-	dynasty_house = house_british_isles_cornwall #of Cornwall
+	dynasty_house = house_british_isles_cornwall	#of Cornwall
 	father = 159465
 	1014.1.1 = {
 		birth = "1014.1.1"
@@ -2645,6 +2633,7 @@
 		death = "1070.1.1"
 	}
 }
+
 159471 = {
 	name = "Hereberht"
 	religion = "catholic"
@@ -2665,8 +2654,8 @@
 	dynasty_house = house_british_isles_wessex
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 33355 #(?helwulf, King of Wessex)
-	mother = 306023 #Osburh
+	father = 33355	#(?helwulf, King of Wessex)
+	mother = 306023	#Osburh
 	838.1.1 = {
 		birth = yes
 	}
@@ -2674,6 +2663,7 @@
 		death = yes
 	}
 }
+
 180665 = {
 	name = "Deusdedit"
 	# Archbishop of Canterbury
@@ -2687,6 +2677,7 @@
 		death = yes
 	}
 }
+
 180667 = {
 	name = "Berhtwald"
 	# Archbishop of Canterbury
@@ -2700,6 +2691,7 @@
 		death = yes
 	}
 }
+
 180668 = {
 	name = "Tatwine"
 	# Archbishop of Canterbury
@@ -2713,6 +2705,7 @@
 		death = yes
 	}
 }
+
 180669 = {
 	name = "Nothhelm"
 	# Archbishop of Canterbury
@@ -2726,6 +2719,7 @@
 		death = yes
 	}
 }
+
 180670 = {
 	name = "Cuthbert"
 	# Archbishop of Canterbury
@@ -2739,6 +2733,7 @@
 		death = yes
 	}
 }
+
 180671 = {
 	name = "Bregowine"
 	# Archbishop of Canterbury
@@ -2752,6 +2747,7 @@
 		death = yes
 	}
 }
+
 180672 = {
 	name = "Jaenbert"
 	# Archbishop of Canterbury
@@ -2765,6 +2761,7 @@
 		death = yes
 	}
 }
+
 180673 = {
 	name = "E_thelhard"
 	# Archbishop of Canterbury
@@ -2778,6 +2775,7 @@
 		death = yes
 	}
 }
+
 180674 = {
 	name = "Wulfred"
 	# Archbishop of Canterbury
@@ -2791,6 +2789,7 @@
 		death = yes
 	}
 }
+
 180675 = {
 	name = "Ceolnoth"
 	# Archbishop of Canterbury
@@ -2804,6 +2803,7 @@
 		death = yes
 	}
 }
+
 180676 = {
 	name = "Aethelred"
 	# Archbishop of Canterbury
@@ -2817,6 +2817,7 @@
 		death = yes
 	}
 }
+
 180677 = {
 	name = "Plegmund"
 	# Archbishop of Canterbury
@@ -2830,6 +2831,7 @@
 		death = yes
 	}
 }
+
 180678 = {
 	name = "E_thelm"
 	# Archbishop of Canterbury, Bishop of Wells
@@ -2843,6 +2845,7 @@
 		death = yes
 	}
 }
+
 180679 = {
 	name = "Wulfhelm"
 	# Archbishop of Canterbury
@@ -2856,6 +2859,7 @@
 		death = yes
 	}
 }
+
 180681 = {
 	name = "E_lfsige"
 	# Archbishop of Canterbury
@@ -2869,6 +2873,7 @@
 		death = yes
 	}
 }
+
 180682 = {
 	name = "Byrhthelm"
 	# Archbishop of Canterbury, Bishop of Wells
@@ -2882,6 +2887,7 @@
 		death = yes
 	}
 }
+
 180683 = {
 	name = "Dunstan"
 	# Archbishop of Canterbury, Bishop of London
@@ -2895,6 +2901,7 @@
 		death = yes
 	}
 }
+
 180684 = {
 	name = "E_thelgar"
 	# Archbishop of Canterbury, Bishop of Selsey
@@ -2908,6 +2915,7 @@
 		death = yes
 	}
 }
+
 180685 = {
 	name = "Sigeric"
 	# Archbishop of Canterbury, Bishop of Ramsbury
@@ -2921,6 +2929,7 @@
 		death = yes
 	}
 }
+
 180686 = {
 	name = "E_lfric"
 	# Archbishop of Canterbury, Bishop of Winchester
@@ -2934,6 +2943,7 @@
 		death = yes
 	}
 }
+
 180687 = {
 	name = "Aelfheath"
 	# Archbishop of Canterbury, Bishop of Winchester
@@ -2947,6 +2957,7 @@
 		death = yes
 	}
 }
+
 180688 = {
 	name = "Lyfing"
 	# Archbishop of Canterbury, Bishop of Wells
@@ -2960,6 +2971,7 @@
 		death = yes
 	}
 }
+
 168608 = {
 	name = "Aethelnoth"
 	# Archbishop of Canterbury
@@ -2973,6 +2985,7 @@
 		death = yes
 	}
 }
+
 180690 = {
 	name = "Eadsige"
 	# Archbishop of Canterbury
@@ -2986,6 +2999,7 @@
 		death = yes
 	}
 }
+
 205025 = {
 	name = "Wihtgils"
 	dynasty = 1047001
@@ -2998,6 +3012,7 @@
 		death = "440.1.1"
 	}
 }
+
 205026 = {
 	name = "Hengest"
 	dynasty = 1047001
@@ -3011,6 +3026,7 @@
 		death = "500.1.1"
 	}
 }
+
 205027 = {
 	name = "Horsa"
 	dynasty = 1047001
@@ -3024,6 +3040,7 @@
 		death = "500.1.1"
 	}
 }
+
 205028 = {
 	name = "Oisc"
 	dynasty = 1047001
@@ -3037,6 +3054,7 @@
 		death = "516.1.1"
 	}
 }
+
 205029 = {
 	name = "Octa"
 	dynasty = 1047001
@@ -3050,6 +3068,7 @@
 		death = "540.1.1"
 	}
 }
+
 205030 = {
 	name = "Eormenric"
 	dynasty = 1047001
@@ -3063,6 +3082,7 @@
 		death = "590.1.1"
 	}
 }
+
 205031 = {
 	name = "E_thelberht"
 	dynasty = 1047001
@@ -3079,6 +3099,7 @@
 		death = "616.2.24"
 	}
 }
+
 205032 = {
 	name = "Eadbald"
 	dynasty = 1047001
@@ -3097,6 +3118,7 @@
 		death = "640.1.1"
 	}
 }
+
 205033 = {
 	name = "E_thelwald"
 	dynasty = 1047001
@@ -3111,6 +3133,7 @@
 		death = yes
 	}
 }
+
 205034 = {
 	name = "E_thelburh"
 	female = yes
@@ -3129,6 +3152,7 @@
 		death = "640.1.1"
 	}
 }
+
 205035 = {
 	name = "Eormenred"
 	dynasty = 1047001
@@ -3143,6 +3167,7 @@
 		death = "665.1.1"
 	}
 }
+
 205036 = {
 	name = "Eorcenberht"
 	dynasty = 1047001
@@ -3157,6 +3182,7 @@
 		death = "664.6.14"
 	}
 }
+
 205037 = {
 	name = "E_thelberht"
 	dynasty = 1047001
@@ -3170,6 +3196,7 @@
 		death = "669.1.1"
 	}
 }
+
 205038 = {
 	name = "E_thelred"
 	dynasty = 1047001
@@ -3183,6 +3210,7 @@
 		death = "669.1.1"
 	}
 }
+
 205039 = {
 	name = "Ecgberht"
 	dynasty = 1047001
@@ -3196,6 +3224,7 @@
 		death = "673.1.1"
 	}
 }
+
 205040 = {
 	name = "Hlothere"
 	dynasty = 1047001
@@ -3209,6 +3238,7 @@
 		death = "685.1.1"
 	}
 }
+
 205041 = {
 	name = "Eadric"
 	dynasty = 1047001
@@ -3222,6 +3252,7 @@
 		death = "686.8.1"
 	}
 }
+
 205042 = {
 	name = "Oswine"
 	dynasty = 1047001
@@ -3235,6 +3266,7 @@
 		death = "690.1.1"
 	}
 }
+
 205043 = {
 	name = "WihtrE_d"
 	dynasty = 1047001
@@ -3248,6 +3280,7 @@
 		death = "725.4.23"
 	}
 }
+
 205044 = {
 	name = "E_thelberht"
 	dynasty = 1047001
@@ -3261,6 +3294,7 @@
 		death = "762.1.1"
 	}
 }
+
 205045 = {
 	name = "Eadberht"
 	dynasty = 1047001
@@ -3274,6 +3308,7 @@
 		death = "748.1.1"
 	}
 }
+
 205046 = {
 	name = "E_lfric"
 	dynasty = 1047001
@@ -3287,6 +3322,7 @@
 		death = "725.1.1"
 	}
 }
+
 205047 = {
 	name = "Eardwulf"
 	dynasty = 1047001
@@ -3300,6 +3336,7 @@
 		death = "762.1.1"
 	}
 }
+
 205048 = {
 	name = "Eadberht"
 	dynasty = 1047001
@@ -3313,6 +3350,7 @@
 		death = "765.1.1"
 	}
 }
+
 205049 = {
 	name = "Ecgberht"
 	dynasty = 1047001
@@ -3326,8 +3364,9 @@
 		death = "779.1.1"
 	}
 }
+
 205050 = {
-	name = "Eadberht" # III
+	name = "Eadberht"	# III
 	dynasty = 1047001
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3339,6 +3378,7 @@
 		death = "798.1.1"
 	}
 }
+
 205000 = {
 	name = "Wehha"
 	dynasty = 1047000
@@ -3351,6 +3391,7 @@
 		death = "571.1.1"
 	}
 }
+
 205001 = {
 	name = "Wuffa"
 	dynasty = 1047000
@@ -3364,6 +3405,7 @@
 		death = "578.1.1"
 	}
 }
+
 205002 = {
 	name = "Tytila"
 	dynasty = 1047000
@@ -3377,6 +3419,7 @@
 		death = "616.1.1"
 	}
 }
+
 205003 = {
 	name = "RE_dwald"
 	dynasty = 1047000
@@ -3390,6 +3433,7 @@
 		death = "627.1.1"
 	}
 }
+
 205004 = {
 	name = "Eorpwald"
 	dynasty = 1047000
@@ -3404,6 +3448,7 @@
 		religion = "catholic"
 	}
 }
+
 205005 = {
 	name = "Sigeberht"
 	dynasty = 1047000
@@ -3417,6 +3462,7 @@
 		death = "634.1.1"
 	}
 }
+
 205006 = {
 	name = "Eni"
 	dynasty = 1047000
@@ -3430,6 +3476,7 @@
 		death = "627.1.1"
 	}
 }
+
 205007 = {
 	name = "Anna"
 	dynasty = 1047000
@@ -3440,11 +3487,13 @@
 		birth = "590.1.1"
 	}
 	654.1.1 = {
-		death = { death_reason = death_battle
-		killer = 205057 
-		} 
+		death = {
+			death_reason = death_battle
+			killer = 205057
+		}
 	}
 }
+
 205008 = {
 	name = "E_thelhere"
 	dynasty = 1047000
@@ -3455,10 +3504,12 @@
 		birth = "592.1.1"
 	}
 	655.11.15 = {
-		death = { death_reason = death_battle
+		death = {
+			death_reason = death_battle
 		}
 	}
 }
+
 205009 = {
 	name = "E_thelwold"
 	dynasty = 1047000
@@ -3472,8 +3523,9 @@
 		death = "664.1.1"
 	}
 }
+
 205010 = {
-	name = "E_thelric" #Ecgric
+	name = "E_thelric"	#Ecgric
 	dynasty = 1047000
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3485,6 +3537,7 @@
 		death = "636.1.1"
 	}
 }
+
 205011 = {
 	name = "Ealdwulf"
 	dynasty = 1047000
@@ -3498,6 +3551,7 @@
 		death = "713.1.1"
 	}
 }
+
 205012 = {
 	name = "Ealdwald"
 	dynasty = 1047000
@@ -3511,6 +3565,7 @@
 		death = "749.1.1"
 	}
 }
+
 205013 = {
 	name = "Beonna"
 	dynasty = 1047000
@@ -3524,6 +3579,7 @@
 		death = "760.1.1"
 	}
 }
+
 205014 = {
 	name = "E_thelberht"
 	dynasty = 1047000
@@ -3537,6 +3593,7 @@
 		death = "761.1.1"
 	}
 }
+
 205015 = {
 	name = "E_thelred"
 	dynasty = 1047000
@@ -3550,6 +3607,7 @@
 		death = "779.1.1"
 	}
 }
+
 205016 = {
 	name = "E_thelberht"
 	dynasty = 1047000
@@ -3563,6 +3621,7 @@
 		death = "794.1.1"
 	}
 }
+
 205017 = {
 	name = "E_thelric"
 	dynasty = 1047000
@@ -3576,6 +3635,7 @@
 		death = "780.1.1"
 	}
 }
+
 205018 = {
 	name = "Ealdwald"
 	dynasty = 1047000
@@ -3589,6 +3649,7 @@
 		death = "800.1.1"
 	}
 }
+
 205019 = {
 	name = "E_thelred"
 	dynasty = 1047000
@@ -3602,8 +3663,9 @@
 		death = "820.1.1"
 	}
 }
+
 205020 = {
-	name = "E_thelstan" # of East Anglia
+	name = "E_thelstan"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3615,8 +3677,9 @@
 		death = "845.1.1"
 	}
 }
+
 205021 = {
-	name = "E_thelweard" # of East Anglia
+	name = "E_thelweard"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3628,8 +3691,9 @@
 		death = "854.1.1"
 	}
 }
+
 205022 = {
-	name = "Beorhtric" # of East Anglia
+	name = "Beorhtric"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3641,8 +3705,9 @@
 		death = "870.1.1"
 	}
 }
+
 205023 = {
-	name = "Oswald" # of East Anglia
+	name = "Oswald"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3654,8 +3719,9 @@
 		death = "875.1.1"
 	}
 }
+
 205024 = {
-	name = "E_thelred" # of East Anglia
+	name = "E_thelred"	# of East Anglia
 	dynasty = 626
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3667,8 +3733,9 @@
 		death = "879.1.1"
 	}
 }
+
 205051 = {
-	name = "Eomer" #
+	name = "Eomer"	#
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	455.1.1 = {
@@ -3678,8 +3745,9 @@
 		death = "527.1.1"
 	}
 }
+
 205052 = {
-	name = "Icel" #
+	name = "Icel"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3691,8 +3759,9 @@
 		death = "536.1.1"
 	}
 }
+
 205053 = {
-	name = "Cnebba" #
+	name = "Cnebba"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3704,8 +3773,9 @@
 		death = "554.1.1"
 	}
 }
+
 205054 = {
-	name = "Cynewald" #
+	name = "Cynewald"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3717,8 +3787,9 @@
 		death = "584.1.1"
 	}
 }
+
 205055 = {
-	name = "Creoda" #
+	name = "Creoda"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3730,8 +3801,9 @@
 		death = "593.1.1"
 	}
 }
+
 205056 = {
-	name = "Pybba" #
+	name = "Pybba"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3740,13 +3812,15 @@
 		birth = "560.1.1"
 	}
 	626.1.1 = {
-		death = { death_reason = death_battle
-		killer = 205147 
+		death = {
+			death_reason = death_battle
+			killer = 205147
 		}
 	}
 }
+
 205057 = {
-	name = "Penda" #
+	name = "Penda"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3759,8 +3833,9 @@
 		death = "655.11.15"
 	}
 }
+
 205058 = {
-	name = "Eowa" #
+	name = "Eowa"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3772,8 +3847,9 @@
 		death = "642.8.5"
 	}
 }
+
 205059 = {
-	name = "Coenwalh" #
+	name = "Coenwalh"	#
 	dynasty = 1047003
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3785,8 +3861,9 @@
 		death = "644.1.1"
 	}
 }
+
 205060 = {
-	name = "Peada" #
+	name = "Peada"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3801,8 +3878,9 @@
 		death = "656.4.17"
 	}
 }
+
 205061 = {
-	name = "Wulfhere" #
+	name = "Wulfhere"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3817,8 +3895,9 @@
 		death = "675.1.1"
 	}
 }
+
 205062 = {
-	name = "E_thelred" #
+	name = "E_thelred"	#
 	dynasty = 1047002
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -3833,8 +3912,9 @@
 		death = "704.1.1"
 	}
 }
+
 205063 = {
-	name = "Coenred" #
+	name = "Coenred"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3846,8 +3926,9 @@
 		death = "716.1.1"
 	}
 }
+
 205064 = {
-	name = "Ceolred" #
+	name = "Ceolred"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3859,8 +3940,9 @@
 		death = "716.6.1"
 	}
 }
+
 205065 = {
-	name = "Ceolwald" #
+	name = "Ceolwald"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3872,8 +3954,9 @@
 		death = "716.12.1"
 	}
 }
+
 205066 = {
-	name = "Alweo" #
+	name = "Alweo"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3885,8 +3968,9 @@
 		death = "700.1.1"
 	}
 }
+
 205067 = {
-	name = "E_thelbald" #
+	name = "E_thelbald"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3898,8 +3982,9 @@
 		death = "757.1.1"
 	}
 }
+
 205068 = {
-	name = "Heardberht" #
+	name = "Heardberht"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3911,8 +3996,9 @@
 		death = "760.1.1"
 	}
 }
+
 205069 = {
-	name = "Osmod" #
+	name = "Osmod"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3924,8 +4010,9 @@
 		death = "700.1.1"
 	}
 }
+
 205070 = {
-	name = "Eanwulf" #
+	name = "Eanwulf"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3937,8 +4024,9 @@
 		death = "735.1.1"
 	}
 }
+
 205071 = {
-	name = "Thingfrith" #
+	name = "Thingfrith"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3950,8 +4038,9 @@
 		death = "761.1.1"
 	}
 }
+
 205072 = {
-	name = "Offa" #
+	name = "Offa"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3967,8 +4056,9 @@
 		death = "796.7.29"
 	}
 }
+
 205073 = {
-	name = "Ecgfrith" #
+	name = "Ecgfrith"	#
 	dynasty = 1047002
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3981,9 +4071,10 @@
 		death = "796.12.17"
 	}
 }
+
 205074 = {
-	name = "Cynethryth" #
-	dynasty = 1047003 #
+	name = "Cynethryth"	#
+	dynasty = 1047003	#
 	female = yes
 	religion = "catholic"
 	culture = anglo_saxon
@@ -3998,8 +4089,9 @@
 		death = "799.1.1"
 	}
 }
+
 205075 = {
-	name = "Eadburh" #
+	name = "Eadburh"	#
 	female = yes
 	dynasty = 1047002
 	religion = "catholic"
@@ -4013,8 +4105,9 @@
 		death = "802.1.1"
 	}
 }
+
 205076 = {
-	name = "E_lfflE_d" #
+	name = "E_lfflE_d"	#
 	female = yes
 	dynasty = 1047002
 	religion = "catholic"
@@ -4028,8 +4121,9 @@
 		death = "805.1.1"
 	}
 }
+
 205077 = {
-	name = "E_thelburh" #
+	name = "E_thelburh"	#
 	female = yes
 	dynasty = 1047002
 	religion = "catholic"
@@ -4043,8 +4137,9 @@
 		death = "805.1.1"
 	}
 }
+
 205078 = {
-	name = "E_thelswith" #
+	name = "E_thelswith"	#
 	female = yes
 	dynasty = 1047002
 	religion = "catholic"
@@ -4058,8 +4153,9 @@
 		death = "805.1.1"
 	}
 }
+
 205079 = {
-	name = "Wiglaf" #
+	name = "Wiglaf"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4071,8 +4167,9 @@
 		death = "755.1.1"
 	}
 }
+
 205081 = {
-	name = "Wigheard" #
+	name = "Wigheard"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4084,8 +4181,9 @@
 		death = "790.1.1"
 	}
 }
+
 205082 = {
-	name = "Wigferth" #
+	name = "Wigferth"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4097,8 +4195,9 @@
 		death = "795.1.1"
 	}
 }
+
 205083 = {
-	name = "Wigberht" #
+	name = "Wigberht"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4110,8 +4209,9 @@
 		death = "820.1.1"
 	}
 }
+
 205084 = {
-	name = "Wiglaf" # I of Mercia
+	name = "Wiglaf"	# I of Mercia
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4123,8 +4223,9 @@
 		death = "839.1.1"
 	}
 }
+
 205085 = {
-	name = "Wigmund" # I of Mercia
+	name = "Wigmund"	# I of Mercia
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4136,8 +4237,9 @@
 		death = "840.1.1"
 	}
 }
+
 205086 = {
-	name = "Coelwulf" #
+	name = "Coelwulf"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4150,8 +4252,9 @@
 		death = "840.1.1"
 	}
 }
+
 194041 = {
-	name = "Wigstan" #
+	name = "Wigstan"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4164,8 +4267,9 @@
 		death = "840.6.1"
 	}
 }
+
 205087 = {
-	name = "Leofric" #
+	name = "Leofric"	#
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4178,8 +4282,9 @@
 		death = "870.1.1"
 	}
 }
+
 205088 = {
-	name = "E_thelred" # II of Mercia
+	name = "E_thelred"	# II of Mercia
 	dynasty = 1047004
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4191,8 +4296,9 @@
 		death = "911.1.1"
 	}
 }
+
 205080 = {
-	name = "Beornwine" #
+	name = "Beornwine"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4204,8 +4310,9 @@
 		death = "760.1.1"
 	}
 }
+
 205089 = {
-	name = "Beornred" # I of Mercia
+	name = "Beornred"	# I of Mercia
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4217,8 +4324,9 @@
 		death = "769.1.1"
 	}
 }
+
 205090 = {
-	name = "Beornnoth" #
+	name = "Beornnoth"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4230,8 +4338,9 @@
 		death = "787.1.1"
 	}
 }
+
 205091 = {
-	name = "Beorhtweald" #
+	name = "Beorhtweald"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4243,8 +4352,9 @@
 		death = "799.1.1"
 	}
 }
+
 205092 = {
-	name = "Beornwulf" #
+	name = "Beornwulf"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4256,8 +4366,9 @@
 		death = "826.1.1"
 	}
 }
+
 205093 = {
-	name = "Beorhtwine" #
+	name = "Beorhtwine"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4269,8 +4380,9 @@
 		death = "840.1.1"
 	}
 }
+
 205094 = {
-	name = "Beorhtwulf" #
+	name = "Beorhtwulf"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4282,8 +4394,9 @@
 		death = "852.1.1"
 	}
 }
+
 205095 = {
-	name = "Beorhtfrith" #
+	name = "Beorhtfrith"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4296,8 +4409,9 @@
 		death = "901.1.1"
 	}
 }
+
 205096 = {
-	name = "Beorhtric" #
+	name = "Beorhtric"	#
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4310,9 +4424,10 @@
 		death = "905.1.1"
 	}
 }
+
 205097 = {
-	name = "Beornmund" #
-	dynasty = 813 #Mercia
+	name = "Beornmund"	#
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205090
@@ -4323,9 +4438,10 @@
 		death = "805.1.1"
 	}
 }
+
 205098 = {
-	name = "Beorhtwulf" #
-	dynasty = 813 #Mercia
+	name = "Beorhtwulf"	#
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205097
@@ -4336,9 +4452,10 @@
 		death = "825.1.1"
 	}
 }
+
 205099 = {
-	name = "Beornwine" #
-	dynasty = 813 #Mercia
+	name = "Beornwine"	#
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205098
@@ -4349,9 +4466,10 @@
 		death = "845.1.1"
 	}
 }
+
 205100 = {
-	name = "Beornred" #
-	dynasty = 813 #Mercia
+	name = "Beornred"	#
+	dynasty = 813	#Mercia
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205099
@@ -4362,8 +4480,9 @@
 		death = "860.1.1"
 	}
 }
+
 205101 = {
-	name = "Cundwalh" #
+	name = "Cundwalh"	#
 	dynasty = 1047003
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4375,8 +4494,9 @@
 		death = "687.1.1"
 	}
 }
+
 205102 = {
-	name = "Centwine" #
+	name = "Centwine"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4388,8 +4508,9 @@
 		death = "693.1.1"
 	}
 }
+
 205103 = {
-	name = "Cynreow" #
+	name = "Cynreow"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4401,8 +4522,9 @@
 		death = "745.1.1"
 	}
 }
+
 205104 = {
-	name = "Bassa" #
+	name = "Bassa"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4414,8 +4536,9 @@
 		death = "767.1.1"
 	}
 }
+
 205105 = {
-	name = "Cuthberht" #
+	name = "Cuthberht"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4427,8 +4550,9 @@
 		death = "790.1.1"
 	}
 }
+
 205106 = {
-	name = "Cuthred" #
+	name = "Cuthred"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4440,8 +4564,9 @@
 		death = "795.1.1"
 	}
 }
+
 205107 = {
-	name = "Coenwulf" #
+	name = "Coenwulf"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4453,8 +4578,9 @@
 		death = "821.1.1"
 	}
 }
+
 205108 = {
-	name = "Coelwulf" #
+	name = "Coelwulf"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4466,8 +4592,9 @@
 		death = "823.1.1"
 	}
 }
+
 205109 = {
-	name = "Cynehelm" #
+	name = "Cynehelm"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4479,8 +4606,9 @@
 		death = "812.1.1"
 	}
 }
+
 205110 = {
-	name = "Centwine" #
+	name = "Centwine"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4492,8 +4620,9 @@
 		death = "869.1.1"
 	}
 }
+
 205111 = {
-	name = "Cuthberht" #
+	name = "Cuthberht"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4505,8 +4634,9 @@
 		death = "852.1.1"
 	}
 }
+
 205112 = {
-	name = "Ceolwulf" #
+	name = "Ceolwulf"	#
 	dynasty = 1047003
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4518,8 +4648,9 @@
 		death = "879.1.1"
 	}
 }
+
 190565 = {
-	name = "Lullus" #archbishop of Mainz
+	name = "Lullus"	#archbishop of Mainz
 	religion = "catholic"
 	culture = anglo_saxon
 	710.1.1 = {
@@ -4529,8 +4660,9 @@
 		death = yes
 	}
 }
+
 205141 = {
-	name = "Cerdic" #
+	name = "Cerdic"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4546,8 +4678,9 @@
 		death = "534.1.1"
 	}
 }
+
 205142 = {
-	name = "Cynric" #
+	name = "Cynric"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4559,8 +4692,9 @@
 		death = "560.1.1"
 	}
 }
+
 205143 = {
-	name = "Ceawlin" #
+	name = "Ceawlin"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4572,8 +4706,9 @@
 		death = "591.1.1"
 	}
 }
+
 205144 = {
-	name = "Cutha" #
+	name = "Cutha"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4585,8 +4720,9 @@
 		death = "590.1.1"
 	}
 }
+
 205145 = {
-	name = "Ceol" #
+	name = "Ceol"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4598,8 +4734,9 @@
 		death = "597.1.1"
 	}
 }
+
 205146 = {
-	name = "Ceolwulf" #
+	name = "Ceolwulf"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4611,8 +4748,9 @@
 		death = "611.1.1"
 	}
 }
+
 205147 = {
-	name = "Cynegils" #
+	name = "Cynegils"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4624,8 +4762,9 @@
 		death = "643.1.1"
 	}
 }
+
 205148 = {
-	name = "Coenwalh" #
+	name = "Coenwalh"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4637,8 +4776,9 @@
 		death = "648.1.1"
 	}
 }
+
 205149 = {
-	name = "Cwichelm" #
+	name = "Cwichelm"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4650,8 +4790,9 @@
 		death = "636.1.1"
 	}
 }
+
 205150 = {
-	name = "Cuthred" #
+	name = "Cuthred"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4663,8 +4804,9 @@
 		death = "680.1.1"
 	}
 }
+
 205151 = {
-	name = "Centwine" #
+	name = "Centwine"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4676,8 +4818,9 @@
 		death = "686.1.1"
 	}
 }
+
 205152 = {
-	name = "Cuthgils" #
+	name = "Cuthgils"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4689,8 +4832,9 @@
 		death = "645.1.1"
 	}
 }
+
 205153 = {
-	name = "Coenferth" #
+	name = "Coenferth"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4702,8 +4846,9 @@
 		death = "656.1.1"
 	}
 }
+
 205154 = {
-	name = "Cenfus" #
+	name = "Cenfus"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4715,8 +4860,9 @@
 		death = "666.1.1"
 	}
 }
+
 205155 = {
-	name = "E_scwine" #
+	name = "E_scwine"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4728,8 +4874,9 @@
 		death = "685.1.1"
 	}
 }
+
 205156 = {
-	name = "Cuthwine" #
+	name = "Cuthwine"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4741,8 +4888,9 @@
 		death = "592.1.1"
 	}
 }
+
 205157 = {
-	name = "Cedda" #
+	name = "Cedda"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4754,8 +4902,9 @@
 		death = "652.1.1"
 	}
 }
+
 205158 = {
-	name = "Cutha" # Cathwulf
+	name = "Cutha"	# Cathwulf
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4767,8 +4916,9 @@
 		death = "655.1.1"
 	}
 }
+
 205159 = {
-	name = "Coenberht" #
+	name = "Coenberht"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4780,8 +4930,9 @@
 		death = "661.1.1"
 	}
 }
+
 205160 = {
-	name = "Mul" #
+	name = "Mul"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4793,8 +4944,9 @@
 		death = "687.1.1"
 	}
 }
+
 205161 = {
-	name = "CE_dwalla" #
+	name = "CE_dwalla"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4806,8 +4958,9 @@
 		death = "688.1.1"
 	}
 }
+
 205162 = {
-	name = "Ceolwald" #
+	name = "Ceolwald"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4819,8 +4972,9 @@
 		death = "675.1.1"
 	}
 }
+
 205163 = {
-	name = "Coenred" #
+	name = "Coenred"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4832,8 +4986,9 @@
 		death = "685.1.1"
 	}
 }
+
 205164 = {
-	name = "Ine" #
+	name = "Ine"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4845,8 +5000,9 @@
 		death = "726.1.1"
 	}
 }
+
 205165 = {
-	name = "Ingild" #
+	name = "Ingild"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4858,8 +5014,9 @@
 		death = "718.1.1"
 	}
 }
+
 205166 = {
-	name = "Creoda" #
+	name = "Creoda"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4871,8 +5028,9 @@
 		death = "532.1.1"
 	}
 }
+
 205167 = {
-	name = "Cynric" #
+	name = "Cynric"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4884,8 +5042,9 @@
 		death = "566.1.1"
 	}
 }
+
 205168 = {
-	name = "Cuthred" #
+	name = "Cuthred"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4897,8 +5056,9 @@
 		death = "585.1.1"
 	}
 }
+
 205169 = {
-	name = "Cynewulf" #
+	name = "Cynewulf"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4910,8 +5070,9 @@
 		death = "600.1.1"
 	}
 }
+
 205170 = {
-	name = "Cyneheard" #
+	name = "Cyneheard"	#
 	dynasty = 1047006
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4923,8 +5084,9 @@
 		death = "620.1.1"
 	}
 }
+
 205171 = {
-	name = "E_thelheard" #
+	name = "E_thelheard"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4936,8 +5098,9 @@
 		death = "650.1.1"
 	}
 }
+
 205172 = {
-	name = "Sigeberht" #
+	name = "Sigeberht"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4949,8 +5112,9 @@
 		death = "655.1.1"
 	}
 }
+
 205173 = {
-	name = "Beorhtric" #
+	name = "Beorhtric"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4962,8 +5126,9 @@
 		death = "700.1.1"
 	}
 }
+
 205174 = {
-	name = "Cynewald" #
+	name = "Cynewald"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4975,8 +5140,9 @@
 		death = "655.1.1"
 	}
 }
+
 205175 = {
-	name = "Coenheard" #
+	name = "Coenheard"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -4988,8 +5154,9 @@
 		death = "685.1.1"
 	}
 }
+
 205176 = {
-	name = "Sigeheard" #
+	name = "Sigeheard"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5001,8 +5168,9 @@
 		death = "715.1.1"
 	}
 }
+
 205177 = {
-	name = "Sigeberht" #
+	name = "Sigeberht"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5014,8 +5182,9 @@
 		death = "757.1.1"
 	}
 }
+
 205178 = {
-	name = "Cyneheard" #
+	name = "Cyneheard"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5027,8 +5196,9 @@
 		death = "786.1.1"
 	}
 }
+
 205179 = {
-	name = "Beorhtwulf" #
+	name = "Beorhtwulf"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5040,8 +5210,9 @@
 		death = "730.1.1"
 	}
 }
+
 205180 = {
-	name = "Cynewulf" #
+	name = "Cynewulf"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5053,8 +5224,9 @@
 		death = "796.1.1"
 	}
 }
+
 205181 = {
-	name = "Beorhtric" #
+	name = "Beorhtric"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5066,8 +5238,9 @@
 		death = "802.1.1"
 	}
 }
+
 205182 = {
-	name = "Cynric" #
+	name = "Cynric"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5079,8 +5252,9 @@
 		death = "685.1.1"
 	}
 }
+
 205183 = {
-	name = "E_thelred" #
+	name = "E_thelred"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5092,8 +5266,9 @@
 		death = "725.1.1"
 	}
 }
+
 205184 = {
-	name = "E_thelheard" #
+	name = "E_thelheard"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5105,8 +5280,9 @@
 		death = "740.1.1"
 	}
 }
+
 205185 = {
-	name = "Cuthred" #
+	name = "Cuthred"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5118,8 +5294,9 @@
 		death = "740.1.1"
 	}
 }
+
 205186 = {
-	name = "Cynric" #
+	name = "Cynric"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5131,8 +5308,9 @@
 		death = "748.1.1"
 	}
 }
+
 205187 = {
-	name = "Eoppa" #
+	name = "Eoppa"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5144,8 +5322,9 @@
 		death = "758.1.1"
 	}
 }
+
 205188 = {
-	name = "Eafa" #
+	name = "Eafa"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5158,8 +5337,9 @@
 		death = "760.1.1"
 	}
 }
+
 205189 = {
-	name = "Ealhmund" #
+	name = "Ealhmund"	#
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5201,8 +5381,9 @@
 		death = "762.1.1"
 	}
 }
+
 205113 = {
-	name = "Oshere" #
+	name = "Oshere"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5215,8 +5396,9 @@
 		death = "650.1.1"
 	}
 }
+
 205114 = {
-	name = "Eanhere" #
+	name = "Eanhere"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5229,8 +5411,9 @@
 		death = "675.1.1"
 	}
 }
+
 205115 = {
-	name = "Eanfrith" #
+	name = "Eanfrith"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5243,8 +5426,9 @@
 		death = "674.1.1"
 	}
 }
+
 205116 = {
-	name = "Eafe" #
+	name = "Eafe"	#
 	female = yes
 	dynasty = 1047011
 	religion = "catholic"
@@ -5257,8 +5441,9 @@
 		death = "700.1.1"
 	}
 }
+
 205117 = {
-	name = "Osric" #
+	name = "Osric"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5271,8 +5456,9 @@
 		death = "679.1.1"
 	}
 }
+
 205118 = {
-	name = "Oshere" #
+	name = "Oshere"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5285,8 +5471,9 @@
 		death = "704.1.1"
 	}
 }
+
 205119 = {
-	name = "Oswald" #
+	name = "Oswald"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5299,8 +5486,9 @@
 		death = "690.1.1"
 	}
 }
+
 205120 = {
-	name = "E_thelheard" #
+	name = "E_thelheard"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5313,8 +5501,9 @@
 		death = "710.1.1"
 	}
 }
+
 205121 = {
-	name = "E_thelweard" #
+	name = "E_thelweard"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5327,8 +5516,9 @@
 		death = "710.1.1"
 	}
 }
+
 205122 = {
-	name = "E_thelric" #
+	name = "E_thelric"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5341,8 +5531,9 @@
 		death = "730.1.1"
 	}
 }
+
 205123 = {
-	name = "Osred" #
+	name = "Osred"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5355,8 +5546,9 @@
 		death = "740.1.1"
 	}
 }
+
 205124 = {
-	name = "Ingeld" #
+	name = "Ingeld"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5369,8 +5561,9 @@
 		death = "756.1.1"
 	}
 }
+
 205125 = {
-	name = "E_thelmund" #
+	name = "E_thelmund"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5383,8 +5576,9 @@
 		death = "802.1.1"
 	}
 }
+
 205126 = {
-	name = "E_thelric" #
+	name = "E_thelric"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5396,8 +5590,9 @@
 		death = "804.1.1"
 	}
 }
+
 205127 = {
-	name = "Eanberht" #
+	name = "Eanberht"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5410,8 +5605,9 @@
 		death = "759.1.1"
 	}
 }
+
 205128 = {
-	name = "Uhtred" #
+	name = "Uhtred"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5424,8 +5620,9 @@
 		death = "777.1.1"
 	}
 }
+
 205129 = {
-	name = "Ealdred" #
+	name = "Ealdred"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5438,8 +5635,9 @@
 		death = "780.1.1"
 	}
 }
+
 205130 = {
-	name = "Osmod" #
+	name = "Osmod"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5452,8 +5650,9 @@
 		death = "630.1.1"
 	}
 }
+
 205131 = {
-	name = "Cynetryth" #
+	name = "Cynetryth"	#
 	female = yes
 	dynasty = 1047003
 	religion = "catholic"
@@ -5466,8 +5665,9 @@
 		death = "767.1.1"
 	}
 }
+
 205132 = {
-	name = "Wulfthryth" #
+	name = "Wulfthryth"	#
 	female = yes
 	dynasty = 1047003
 	religion = "catholic"
@@ -5480,8 +5680,9 @@
 		death = "754.1.1"
 	}
 }
+
 205133 = {
-	name = "SE_thryth" #
+	name = "SE_thryth"	#
 	female = yes
 	dynasty = 1047003
 	religion = "catholic"
@@ -5494,8 +5695,9 @@
 		death = "715.1.1"
 	}
 }
+
 205134 = {
-	name = "SE_burh" #
+	name = "SE_burh"	#
 	female = yes
 	dynasty = 1047003
 	religion = "catholic"
@@ -5508,8 +5710,9 @@
 		death = "745.1.1"
 	}
 }
+
 205135 = {
-	name = "E_thelmod" #
+	name = "E_thelmod"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5522,8 +5725,9 @@
 		death = "733.1.1"
 	}
 }
+
 205136 = {
-	name = "Cyneburh" #
+	name = "Cyneburh"	#
 	female = yes
 	dynasty = 1047003
 	religion = "catholic"
@@ -5536,8 +5740,9 @@
 		death = "715.1.1"
 	}
 }
+
 205139 = {
-	name = "Oswald" #
+	name = "Oswald"	#
 	dynasty = 1047011
 	religion = "catholic"
 	culture = anglo_saxon
@@ -5548,6 +5753,7 @@
 		death = "570.1.1"
 	}
 }
+
 194094 = {
 	name = "Offa"
 	dynasty = 1047012
@@ -5560,6 +5766,7 @@
 		death = "527.1.1"
 	}
 }
+
 194095 = {
 	name = "E_scwine"
 	dynasty = 1047012
@@ -5573,6 +5780,7 @@
 		death = "587.1.1"
 	}
 }
+
 194096 = {
 	name = "Sledda"
 	dynasty = 1047012
@@ -5586,6 +5794,7 @@
 		death = "604.1.1"
 	}
 }
+
 194097 = {
 	name = "SE_berht"
 	dynasty = 1047012
@@ -5599,6 +5808,7 @@
 		death = "615.1.1"
 	}
 }
+
 194098 = {
 	name = "SE_xred"
 	dynasty = 1047012
@@ -5612,6 +5822,7 @@
 		death = "616.1.1"
 	}
 }
+
 194099 = {
 	name = "SE_ward"
 	dynasty = 1047012
@@ -5625,6 +5836,7 @@
 		death = "616.1.1"
 	}
 }
+
 194100 = {
 	name = "Sigeberht"
 	dynasty = 1047012
@@ -5638,6 +5850,7 @@
 		death = "653.1.1"
 	}
 }
+
 194101 = {
 	name = "Sigeberht"
 	dynasty = 1047012
@@ -5652,6 +5865,7 @@
 		death = "660.1.1"
 	}
 }
+
 194102 = {
 	name = "Swithhelm"
 	dynasty = 1047012
@@ -5665,6 +5879,7 @@
 		death = "664.1.1"
 	}
 }
+
 194103 = {
 	name = "Sighere"
 	dynasty = 1047012
@@ -5678,6 +5893,7 @@
 		death = "683.1.1"
 	}
 }
+
 205256 = {
 	name = "Sebbi"
 	dynasty = 1047012
@@ -5691,6 +5907,7 @@
 		death = "694.1.1"
 	}
 }
+
 205257 = {
 	name = "Sigeheard"
 	dynasty = 1047012
@@ -5704,6 +5921,7 @@
 		death = "708.1.1"
 	}
 }
+
 205258 = {
 	name = "SwE_fred"
 	dynasty = 1047012
@@ -5717,6 +5935,7 @@
 		death = "708.1.1"
 	}
 }
+
 205259 = {
 	name = "Offa"
 	dynasty = 1047012
@@ -5730,6 +5949,7 @@
 		death = "709.1.1"
 	}
 }
+
 205260 = {
 	name = "Sebbi"
 	dynasty = 1047012
@@ -5743,6 +5963,7 @@
 		death = "708.1.1"
 	}
 }
+
 205261 = {
 	name = "Sigered"
 	dynasty = 1047012
@@ -5756,6 +5977,7 @@
 		death = "708.1.1"
 	}
 }
+
 205262 = {
 	name = "SE_lred"
 	dynasty = 1047012
@@ -5769,6 +5991,7 @@
 		death = "746.1.1"
 	}
 }
+
 205263 = {
 	name = "Swithred"
 	dynasty = 1047012
@@ -5782,6 +6005,7 @@
 		death = "758.1.1"
 	}
 }
+
 205264 = {
 	name = "SE_lred"
 	dynasty = 1047012
@@ -5795,6 +6019,7 @@
 		death = "800.1.1"
 	}
 }
+
 205265 = {
 	name = "Sigeric"
 	dynasty = 1047012
@@ -5808,6 +6033,7 @@
 		death = "830.1.1"
 	}
 }
+
 205266 = {
 	name = "Sigered"
 	dynasty = 1047012
@@ -5821,6 +6047,7 @@
 		death = "835.1.1"
 	}
 }
+
 205192 = {
 	name = "Yffe"
 	dynasty = 1047009
@@ -5833,6 +6060,7 @@
 		death = "559.1.1"
 	}
 }
+
 205193 = {
 	name = "E_lla"
 	dynasty = 1047009
@@ -5846,6 +6074,7 @@
 		death = "588.1.1"
 	}
 }
+
 205194 = {
 	name = "E_lfric"
 	dynasty = 1047009
@@ -5859,6 +6088,7 @@
 		death = "589.1.1"
 	}
 }
+
 205195 = {
 	name = "Osric"
 	dynasty = 1047009
@@ -5872,6 +6102,7 @@
 		death = "634.1.1"
 	}
 }
+
 205196 = {
 	name = "Oswine"
 	dynasty = 1047009
@@ -5885,6 +6116,7 @@
 		death = "651.1.1"
 	}
 }
+
 205197 = {
 	name = "E_thelric"
 	dynasty = 1047009
@@ -5898,6 +6130,7 @@
 		death = "604.1.1"
 	}
 }
+
 205198 = {
 	name = "Eadwine"
 	dynasty = 1047009
@@ -5914,6 +6147,7 @@
 		death = "633.10.12"
 	}
 }
+
 205199 = {
 	name = "Ingvi"
 	dynasty = 1047008
@@ -5926,6 +6160,7 @@
 		death = "490.1.1"
 	}
 }
+
 205200 = {
 	name = "Esa"
 	dynasty = 1047008
@@ -5939,6 +6174,7 @@
 		death = "510.1.1"
 	}
 }
+
 205201 = {
 	name = "Eoppa"
 	dynasty = 1047008
@@ -5952,6 +6188,7 @@
 		death = "547.1.1"
 	}
 }
+
 205202 = {
 	name = "Ida"
 	dynasty = 1047008
@@ -5965,6 +6202,7 @@
 		death = "559.1.1"
 	}
 }
+
 205203 = {
 	name = "Glappa"
 	dynasty = 1047008
@@ -5978,6 +6216,7 @@
 		death = "560.1.1"
 	}
 }
+
 205204 = {
 	name = "Adda"
 	dynasty = 1047008
@@ -5991,6 +6230,7 @@
 		death = "568.1.1"
 	}
 }
+
 205205 = {
 	name = "E_thelric"
 	dynasty = 1047008
@@ -6004,6 +6244,7 @@
 		death = "572.1.1"
 	}
 }
+
 205206 = {
 	name = "Theodric"
 	dynasty = 1047008
@@ -6017,6 +6258,7 @@
 		death = "579.1.1"
 	}
 }
+
 205207 = {
 	name = "Frithuwald"
 	dynasty = 1047008
@@ -6030,6 +6272,7 @@
 		death = "585.1.1"
 	}
 }
+
 205208 = {
 	name = "Hussa"
 	dynasty = 1047008
@@ -6043,6 +6286,7 @@
 		death = "592.1.1"
 	}
 }
+
 205209 = {
 	name = "E_thelfrith"
 	dynasty = 1047010
@@ -6059,6 +6303,7 @@
 		death = "616.1.1"
 	}
 }
+
 205210 = {
 	name = "Acha"
 	female = yes
@@ -6076,6 +6321,7 @@
 		death = "634.1.1"
 	}
 }
+
 205211 = {
 	name = "Eanfrith"
 	dynasty = 1047010
@@ -6093,6 +6339,7 @@
 		death = "634.1.1"
 	}
 }
+
 205212 = {
 	name = "Oswald"
 	dynasty = 1047010
@@ -6107,6 +6354,7 @@
 		death = "642.8.5"
 	}
 }
+
 205213 = {
 	name = "Oswiu"
 	dynasty = 1047010
@@ -6124,6 +6372,7 @@
 		death = "670.2.15"
 	}
 }
+
 205214 = {
 	name = "EanflE_d"
 	female = yes
@@ -6142,6 +6391,7 @@
 		death = "686.1.1"
 	}
 }
+
 205215 = {
 	name = "Ocg"
 	dynasty = 1047008
@@ -6155,6 +6405,7 @@
 		death = "600.1.1"
 	}
 }
+
 205216 = {
 	name = "Aldhelm"
 	dynasty = 1047008
@@ -6168,6 +6419,7 @@
 		death = "630.1.1"
 	}
 }
+
 205217 = {
 	name = "Ecgwulf"
 	dynasty = 1047008
@@ -6181,6 +6433,7 @@
 		death = "660.1.1"
 	}
 }
+
 205218 = {
 	name = "Leodwald"
 	dynasty = 1047021
@@ -6194,6 +6447,7 @@
 		death = "690.1.1"
 	}
 }
+
 205219 = {
 	name = "Cuthwine"
 	dynasty = 1047021
@@ -6207,6 +6461,7 @@
 		death = "715.1.1"
 	}
 }
+
 205220 = {
 	name = "Eata"
 	dynasty = 1047021
@@ -6220,6 +6475,7 @@
 		death = "713.1.1"
 	}
 }
+
 205221 = {
 	name = "Coenred"
 	dynasty = 1047021
@@ -6233,6 +6489,7 @@
 		death = "718.1.1"
 	}
 }
+
 205222 = {
 	name = "Ceolwulf"
 	dynasty = 1047021
@@ -6246,6 +6503,7 @@
 		death = "765.1.1"
 	}
 }
+
 205223 = {
 	name = "Ecgberht"
 	dynasty = 1047021
@@ -6259,6 +6517,7 @@
 		death = "766.11.19"
 	}
 }
+
 205224 = {
 	name = "Eadberht"
 	dynasty = 1047021
@@ -6272,6 +6531,7 @@
 		death = "768.8.20"
 	}
 }
+
 205225 = {
 	name = "Oswulf"
 	dynasty = 1047021
@@ -6285,6 +6545,7 @@
 		death = "759.7.24"
 	}
 }
+
 205226 = {
 	name = "Oswulf"
 	dynasty = 1047021
@@ -6298,6 +6559,7 @@
 		death = "761.8.1"
 	}
 }
+
 205227 = {
 	name = "Osgifu"
 	female = yes
@@ -6315,6 +6577,7 @@
 		death = "790.1.1"
 	}
 }
+
 194104 = {
 	name = "E_lfwald"
 	dynasty = 1047021
@@ -6328,6 +6591,7 @@
 		death = "788.9.23"
 	}
 }
+
 205228 = {
 	name = "Osbald"
 	dynasty = 1047021
@@ -6341,6 +6605,7 @@
 		death = "799.1.1"
 	}
 }
+
 205229 = {
 	name = "E_lf"
 	dynasty = 1047021
@@ -6354,6 +6619,7 @@
 		death = "791.1.1"
 	}
 }
+
 205230 = {
 	name = "E_lfwine"
 	dynasty = 1047021
@@ -6367,6 +6633,7 @@
 		death = "791.1.1"
 	}
 }
+
 205231 = {
 	name = "Bearn"
 	dynasty = 1047021
@@ -6380,6 +6647,7 @@
 		death = "780.1.1"
 	}
 }
+
 205232 = {
 	name = "Eadric"
 	dynasty = 1047023
@@ -6393,6 +6661,7 @@
 		death = "600.1.1"
 	}
 }
+
 205233 = {
 	name = "BlE_cman"
 	dynasty = 1047023
@@ -6406,6 +6675,7 @@
 		death = "640.1.1"
 	}
 }
+
 205234 = {
 	name = "Bofa"
 	dynasty = 1047023
@@ -6419,6 +6689,7 @@
 		death = "690.1.1"
 	}
 }
+
 205235 = {
 	name = "Beornholm"
 	dynasty = 1047023
@@ -6432,6 +6703,7 @@
 		death = "733.1.1"
 	}
 }
+
 205236 = {
 	name = "Eanwine"
 	dynasty = 1047023
@@ -6445,6 +6717,7 @@
 		death = "767.1.1"
 	}
 }
+
 205237 = {
 	name = "Ealhred"
 	dynasty = 1047023
@@ -6461,6 +6734,7 @@
 		death = "774.1.1"
 	}
 }
+
 205238 = {
 	name = "Osred"
 	dynasty = 1047023
@@ -6475,6 +6749,7 @@
 		death = "792.1.1"
 	}
 }
+
 205239 = {
 	name = "Ealhmund"
 	dynasty = 1047023
@@ -6489,6 +6764,7 @@
 		death = "800.1.1"
 	}
 }
+
 205240 = {
 	name = "Eadwulf"
 	dynasty = 1047022
@@ -6501,6 +6777,7 @@
 		death = "705.3.1"
 	}
 }
+
 205241 = {
 	name = "Eanwine"
 	dynasty = 1047022
@@ -6514,6 +6791,7 @@
 		death = "740.1.1"
 	}
 }
+
 205242 = {
 	name = "Moll"
 	dynasty = 1047022
@@ -6527,6 +6805,7 @@
 		death = "743.1.1"
 	}
 }
+
 205243 = {
 	name = "E_thelwald"
 	dynasty = 1047022
@@ -6540,6 +6819,7 @@
 		death = "765.10.30"
 	}
 }
+
 205244 = {
 	name = "E_thelred"
 	dynasty = 1047022
@@ -6553,6 +6833,7 @@
 		death = "796.4.18"
 	}
 }
+
 205245 = {
 	name = "Eardwulf"
 	dynasty = 1047022
@@ -6566,6 +6847,7 @@
 		death = "741.1.1"
 	}
 }
+
 205246 = {
 	name = "Eardwulf"
 	dynasty = 1047022
@@ -6579,6 +6861,7 @@
 		death = "806.1.1"
 	}
 }
+
 205247 = {
 	name = "Eanred"
 	dynasty = 1047022
@@ -6592,6 +6875,7 @@
 		death = "850.1.1"
 	}
 }
+
 205248 = {
 	name = "Oswulf"
 	dynasty = 1047022
@@ -6605,6 +6889,7 @@
 		death = "840.1.1"
 	}
 }
+
 205249 = {
 	name = "Eanwine"
 	dynasty = 1047022
@@ -6618,6 +6903,7 @@
 		death = "805.1.1"
 	}
 }
+
 205250 = {
 	name = "Oswald"
 	dynasty = 1047022
@@ -6631,6 +6917,7 @@
 		death = "805.1.1"
 	}
 }
+
 205251 = {
 	name = "Eardwulf"
 	dynasty = 1047022
@@ -6644,6 +6931,7 @@
 		death = "835.1.1"
 	}
 }
+
 205252 = {
 	name = "Oswulf"
 	dynasty = 814
@@ -6657,6 +6945,7 @@
 		death = "836.1.1"
 	}
 }
+
 205253 = {
 	name = "Osberht"
 	dynasty = 814
@@ -6670,6 +6959,7 @@
 		death = "866.1.1"
 	}
 }
+
 205254 = {
 	name = "RE_dwulf"
 	dynasty = 1047022
@@ -6683,6 +6973,7 @@
 		death = "844.1.1"
 	}
 }
+
 205255 = {
 	name = "E_thelred"
 	dynasty = 1047022
@@ -6696,6 +6987,7 @@
 		death = "860.1.1"
 	}
 }
+
 205267 = {
 	name = "Brorda"
 	dynasty = 1047013
@@ -6708,6 +7000,7 @@
 		death = "835.1.1"
 	}
 }
+
 205268 = {
 	name = "Osmund"
 	dynasty = 1047017
@@ -6720,6 +7013,7 @@
 		death = "835.1.1"
 	}
 }
+
 205269 = {
 	name = "Copsige"
 	dynasty = 746
@@ -6739,7 +7033,7 @@
 }
 
 252377 = {
-	name = "E_thelflE_d" #Lady of the Mercians
+	name = "E_thelflE_d"	#Lady of the Mercians
 	female = yes
 	dynasty = 100072
 	martial = 5
@@ -6757,8 +7051,9 @@
 		death = yes
 	}
 }
+
 252378 = {
-	name = "E_thelgifu" #Abbess of Shaftesbury
+	name = "E_thelgifu"	#Abbess of Shaftesbury
 	female = yes
 	dynasty = 100072
 	religion = "catholic"
@@ -6772,8 +7067,9 @@
 		death = yes
 	}
 }
+
 252379 = {
-	name = "E_thelweard" #son of Alfred the Great
+	name = "E_thelweard"	#son of Alfred the Great
 	dynasty = 100072
 	religion = "catholic"
 	culture = "saxon"
@@ -6787,7 +7083,8 @@
 	}
 }
 
-anglo_saxon.1001 = {	#Fictional holder to allow barony placement.
+anglo_saxon.1001 = {
+	#Fictional holder to allow barony placement.
 	name = "Sigeberht"
 	religion = catholic
 	culture = anglo_saxon
