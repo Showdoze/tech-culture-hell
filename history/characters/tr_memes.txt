@@ -40,7 +40,7 @@ mmdsp = {
 	820.4.6 = {
 		birth = "820.1.11"
 	}
-	866.4.17 = {
+	876.4.17 = {
 		death = {
 			death_reason = death_gout_ridden
 		}
@@ -51,7 +51,7 @@ mmhorrvalmir = {
 	name = "Horr"
 	religion = norse_pagan
 	culture = norse
-	dynasty = valmir
+	dynasty = mmvalmir
 	martial = 20
 	diplomacy = 5
 	intrigue = 2
@@ -97,7 +97,7 @@ mmhofvarpnir = {
 	name = "Hofvarpnir"
 	religion = norse_pagan
 	culture = norse
-	dynasty = valmir
+	dynasty = mmvalmir
 	martial = 18
 	diplomacy = 6
 	intrigue = 3
@@ -362,6 +362,7 @@ mmchrischan = {
 	learning = 0
 	prowess = -2
 	mother = mmbarb
+	father = mmbobchandler
 	trait = craven
 	trait = zealous
 	trait = gluttonous
@@ -404,6 +405,36 @@ mmchrischan = {
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
+	}
+}
+
+mmbobchandler = {
+	name = "Robert Chandler"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	martial = 1
+	diplomacy = 3
+	intrigue = 0
+	stewardship = 5
+	learning = 0
+	trait = calm
+	trait = education_diplomacy_1
+	trait = lazy
+	trait = reclusive
+	trait = content
+	give_nickname = nick_lumberjack
+	disallow_random_traits = yes
+	760.10.1 = {
+		birth = yes
+	}
+	790.10.1 = {
+		add_spouse = mmbarb
+	}
+	826.4.17 = {
+		death = {
+			death_reason = death_incapable
+		}
 	}
 }
 
