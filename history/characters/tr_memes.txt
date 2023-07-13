@@ -417,7 +417,26 @@ mmchrischan = {
 		death = "2026.4.17"
 	}
 }
-
+mmchrisdaughter = {
+	name = "Crystal"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_chris
+	mother = mmbarb
+	father = mmchrischan
+	female = yes
+	trait = stuttering
+	trait = inbred
+	disallow_random_traits = yes
+	861.1.1 = {
+		birth = yes
+	}
+	1001.4.17 = {
+		death = {
+			death_reason = death_inbred
+		}
+	}
+}
 mmbobchandler = {
 	name = "Robert Bob"
 	religion = catholic
