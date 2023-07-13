@@ -36,7 +36,6 @@ mmdsp = {
 	trait = greedy
 	trait = stubborn
 	trait = gout_ridden
-	father = mmlolcowfounder
 	disallow_random_traits = yes
 	820.4.6 = {
 		birth = "820.1.11"
@@ -49,9 +48,10 @@ mmdsp = {
 }
 
 mmhorrvalmir = {
-	name = "Horrvalmir"
+	name = "Horr"
 	religion = norse_pagan
 	culture = norse
+	dynasty = valmir
 	martial = 20
 	diplomacy = 5
 	intrigue = 2
@@ -66,6 +66,7 @@ mmhorrvalmir = {
 	trait = dilligent
 	trait = wraithful
 	trait = adventurer
+	sibling = mmhofvarpnir
 	disallow_random_traits = yes
 	820.1.11 = {
 		birth = "820.1.11"
@@ -75,6 +76,52 @@ mmhorrvalmir = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
 				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	1047.4.17 = {
+		death = {
+			death_reason = death_duel
+			killer = 102531
+		}
+	}
+}
+
+mmhofvarpnir = {
+	name = "Hofvarpnir"
+	religion = norse_pagan
+	culture = norse
+	dynasty = valmir
+	martial = 18
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 10
+	learning = 8
+	prowess = 31
+	trait = brave
+	trait = education_martial_3
+	trait = viking
+	trait = reaver
+	trait = berserker
+	trait = content
+	trait = wraithful
+	trait = adventurer
+	sibling = mmhorrvalmir
+	disallow_random_traits = yes
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_hunter
+			add_trait_xp = {
+				trait = lifestyle_hunter
 				value = {
 					integer_range = {
 						min = medium_lifestyle_random_xp_high
@@ -183,7 +230,6 @@ mmcyraxxsally = {
 	trait = comfort_eater
 	trait = ill
 	trait = weak
-	father=mmlolcowfounder
 	disallow_random_traits = yes
 	805.1.11 = {
 		birth = "805.1.11"
@@ -246,7 +292,6 @@ mmcyraxx = {
 	trait = intellect_bad_3
 	trait = education_intrigue_1
 	trait = disloyal
-	trait = leper
 	trait = deceitful
 	trait = deviant
 	trait = sodomite
@@ -384,7 +429,6 @@ mmbarb = {
 	trait = incestuous
 	trait = witch
 	trait = melancholic
-	father=mmlolcowfounder
 	disallow_random_traits = yes
 	790.10.1 = {
 		birth = yes
