@@ -21,7 +21,8 @@ mmdsp = {
 	name = "DarkSyde Phil"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_dsp
+	#dynasty = mmlolcow
 	martial = 4
 	diplomacy = 1
 	intrigue = 2
@@ -36,9 +37,16 @@ mmdsp = {
 	trait = greedy
 	trait = stubborn
 	trait = gout_ridden
+	father=mmlolcowfounder
 	disallow_random_traits = yes
 	820.4.6 = {
 		birth = "820.1.11"
+	}
+	830.12.20 = {
+		set_relation_rival = {
+			target = character:mmlolcowfounder
+			reason = rival_historical
+		}
 	}
 	876.4.17 = {
 		death = {
@@ -182,7 +190,7 @@ mmcyraxxdad = {
 	name = "Ruple Smith"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_cyraxx
 	martial = 0
 	diplomacy = 2
 	intrigue = 2
@@ -215,7 +223,7 @@ mmcyraxxsally = {
 	name = "Sally"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_cyraxx
 	female = yes
 	martial = 0
 	diplomacy = 1
@@ -231,6 +239,7 @@ mmcyraxxsally = {
 	trait = ill
 	trait = weak
 	disallow_random_traits = yes
+	father=mmlolcowfounder
 	805.1.11 = {
 		birth = "805.1.11"
 	}
@@ -276,10 +285,10 @@ mmcyraxxmom = {
 }
 
 mmcyraxx = {
-	name = "Chance Cyraxx Wilkins"
+	name = "Chance Cyraxx"
 	religion = norse_pagan
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_cyraxx
 	dna = cyraxx
 	martial = 0
 	diplomacy = 1
@@ -355,6 +364,7 @@ mmchrischan = {
 	name = "Ian Brandon Anderson"
 	religion = catholic
 	culture = american
+	dynasty_house = house_lolcow_chris
 	martial = 1
 	diplomacy = 1
 	intrigue = 0
@@ -409,10 +419,10 @@ mmchrischan = {
 }
 
 mmbobchandler = {
-	name = "Robert Chandler"
+	name = "Robert Bob"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_chris
 	martial = 1
 	diplomacy = 3
 	intrigue = 0
@@ -425,6 +435,7 @@ mmbobchandler = {
 	trait = content
 	give_nickname = nick_lumberjack
 	disallow_random_traits = yes
+	father=mmlolcowfounder
 	760.10.1 = {
 		birth = yes
 	}
@@ -439,10 +450,10 @@ mmbobchandler = {
 }
 
 mmbarb = {
-	name = "Barbara Chandler"
+	name = "Barbara Ann"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_chris
 	female = yes
 	martial = 1
 	diplomacy = 1
@@ -457,12 +468,16 @@ mmbarb = {
 	trait = incapable
 	trait = stubborn
 	trait = deviant
+	trait = lazy
 	trait = incestuous
 	trait = witch
 	trait = melancholic
 	disallow_random_traits = yes
 	790.10.1 = {
 		birth = yes
+	}
+	790.10.1 = {
+		add_spouse = mmbobchandler
 	}
 	861.1.1 = {
 		set_relation_lover = {
@@ -546,6 +561,12 @@ mmlolcowfounder = {
 	trait = callous
 	300.9.8 = {
 		birth = yes
+	}
+	830.12.20 = {
+		set_relation_rival = {
+			target = character:mmdsp
+			reason = rival_historical
+		}
 	}
 	1054.6.30 = {
 		death = {

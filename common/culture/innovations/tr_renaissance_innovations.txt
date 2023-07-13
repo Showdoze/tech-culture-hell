@@ -55,7 +55,22 @@ innovation_halberdiers = {
 	flag = global_regular
 	flag = renaissance_era_regular
 }
+innovation_overseas_exploration = {
+	group = culture_group_military
+	culture_era = culture_era_renaissance
+	icon = @misc_inventions
+	character_modifier = {
+		naval_movement_speed_mult = 0.5
+		embarkation_cost_mult = -0.1
+		diplomatic_range_mult = 0.5
+		supply_capacity_mult = 1.0
+		supply_duration = 1.0
+	}
+	#custom = unlocks_colonization_interaction
 
+	flag = global_regular
+	flag = renaissance_era_regular
+}
 innovation_free_companies = {
 	group = culture_group_military
 	culture_era = culture_era_renaissance
