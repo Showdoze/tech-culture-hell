@@ -55,98 +55,6 @@ mmdsp = {
 	}
 }
 
-mmhorrvalmir = {
-	name = "Horr"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 20
-	diplomacy = 5
-	intrigue = 2
-	stewardship = 8
-	learning = 5
-	prowess = 35
-	trait = brave
-	trait = education_martial_4
-	trait = viking
-	trait = scarred
-	trait = berserker
-	trait = dilligent
-	trait = wrathful
-	trait = adventurer
-	sibling = mmhofvarpnir
-	disallow_random_traits = yes
-	820.1.11 = {
-		birth = "820.1.11"
-	}
-	830.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	1047.4.17 = {
-		death = {
-			death_reason = death_duel
-			killer = 102531
-		}
-	}
-}
-
-mmhofvarpnir = {
-	name = "Hofvarpnir"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 18
-	diplomacy = 6
-	intrigue = 3
-	stewardship = 10
-	learning = 8
-	prowess = 31
-	trait = brave
-	trait = education_martial_3
-	trait = viking
-	trait = reaver
-	trait = berserker
-	trait = content
-	trait = wrathful
-	trait = adventurer
-	sibling = mmhorrvalmir
-	disallow_random_traits = yes
-	820.1.11 = {
-		birth = "820.1.11"
-	}
-	830.1.1 = {
-		effect = {
-			add_trait = lifestyle_hunter
-			add_trait_xp = {
-				trait = lifestyle_hunter
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	1047.4.17 = {
-		death = {
-			death_reason = death_duel
-			killer = 102531
-		}
-	}
-}
-
 mmmarty = {
 	name = "MusicBiz Marty"
 	religion = samaritan
@@ -387,7 +295,7 @@ mmchrischan = {
 	trait = sodomite
 	trait = incestuous
 	trait = witch
-	trait = heresiah
+	trait = heresiarch
 	give_nickname = nick_chrischan
 	disallow_random_traits = yes
 	820.11.5 = {
@@ -599,6 +507,34 @@ mmlolcowfounder = {
 		}
 	}
 }
+mmgenesis = {
+	name = "Jared Genesis"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	trait = lazy
+	trait = lunatic_genetic
+	trait = wrathful
+	trait = education_martial_1
+	trait = irritable
+	trait = heresiarch
+	trait = arrogant
+	trait = deviant
+	trait = stubborn
+	trait = dull
+	disallow_random_traits = yes
+	father=mmlolcowfounder
+	844.9.8 = {
+		birth = yes
+	}
+	1034.6.30 = {
+		death = {
+			death_reason = death_duel
+			killed = mmhorrvalmir
+		}
+	}
+}	
+
 mmlolcowdaniellarson = {
 	name = "Daniel Larson"
 	religion = catholic
@@ -620,6 +556,145 @@ mmlolcowdaniellarson = {
 	1054.6.30 = {
 		death = {
 			death_reason = death_physician_mistreatment
+		}
+	}
+}
+
+############################################################
+# valmir
+ ############################################################
+ mmhorrvalmir = {
+	name = "Horr"
+	religion = norse_pagan
+	culture = norse
+	dynasty = mmvalmir
+	martial = 20
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 8
+	learning = 5
+	prowess = 35
+	trait = brave
+	trait = education_martial_4
+	trait = viking
+	trait = scarred
+	trait = berserker
+	trait = dilligent
+	trait = wrathful
+	trait = adventurer
+	father = mmvalmirfounder
+	disallow_random_traits = yes
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	1047.4.17 = {
+		death = {
+			death_reason = death_duel
+			killer = 102531
+		}
+	}
+}
+
+ mmhofvarpnir = {
+	name = "Hofvarpnir"
+	religion = norse_pagan
+	culture = norse
+	dynasty = mmvalmir
+	martial = 18
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 10
+	learning = 8
+	prowess = 31
+	trait = brave
+	trait = education_martial_3
+	trait = viking
+	trait = reaver
+	trait = berserker
+	trait = content
+	trait = wrathful
+	trait = adventurer
+	father = mmvalmirfounder
+	disallow_random_traits = yes
+	820.1.11 = {
+		birth = "820.1.11"
+	}
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_hunter
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	1047.4.17 = {
+		death = {
+			death_reason = death_duel
+			killer = 102531
+		}
+	}
+}
+mmvalmirfounder = {
+	name = "Alex Rename"
+	religion = norse_pagan
+	culture = norse
+	dynasty = mmvalmir
+	martial = 18
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 10
+	learning = 8
+	prowess = 31
+	trait = brave
+	trait = education_martial_3
+	trait = viking
+	trait = reaver
+	trait = berserker
+	trait = content
+	trait = wrathful
+	trait = adventurer
+	disallow_random_traits = yes
+	500.1.11 = {
+		birth = yes
+	}
+	530.1.1 = {
+		effect = {
+			add_trait = lifestyle_hunter
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	1047.4.17 = {
+		death = {
+			death_reason = death_duel
+			killer = 102531
 		}
 	}
 }
