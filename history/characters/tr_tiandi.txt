@@ -1,0 +1,39 @@
+trtiandi1 = {
+	name = "Uia"
+	religion = zhengyi
+	culture = han
+	dynasty = trtiandi
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = brave
+	trait = education_martial_3
+	trait = dilligent
+	trait = wrathful
+	trait = adventurer
+	820.1.11 = {
+		birth = yes
+	}
+	840.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	907.4.17 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
