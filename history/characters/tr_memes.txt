@@ -18,11 +18,10 @@ mmpolish = {
 }
 
 mmdsp = {
-	name = "DarkSyde Phil"
+	name = "Phillip DSP"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_dsp
-	#dynasty = mmlolcow
+	dynasty_house = house_lolcow_burnell
 	martial = 4
 	diplomacy = 1
 	intrigue = 2
@@ -37,7 +36,7 @@ mmdsp = {
 	trait = greedy
 	trait = stubborn
 	trait = gout_ridden
-	father=mmlolcowfounder
+	father = mmlolcowfounder
 	disallow_random_traits = yes
 	820.4.6 = {
 		birth = "820.1.11"
@@ -98,7 +97,7 @@ mmcyraxxdad = {
 	name = "Ruple Smith"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_cyraxx
+	dynasty_house = house_lolcow_wilkins
 	martial = 0
 	diplomacy = 2
 	intrigue = 2
@@ -131,7 +130,7 @@ mmcyraxxsally = {
 	name = "Sally"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_cyraxx
+	dynasty_house = house_lolcow_wilkins
 	female = yes
 	martial = 0
 	diplomacy = 1
@@ -148,7 +147,6 @@ mmcyraxxsally = {
 	trait = ill
 	trait = weak
 	disallow_random_traits = yes
-	father=mmlolcowfounder
 	805.1.11 = {
 		birth = "805.1.11"
 	}
@@ -164,7 +162,7 @@ mmcyraxxmom = {
 	religion = catholic
 	culture = american
 	female = yes
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_wilkins
 	martial = 0
 	diplomacy = 0
 	intrigue = 0
@@ -198,8 +196,7 @@ mmcyraxx = {
 	name = "Chance Cyraxx"
 	religion = norse_pagan
 	culture = american
-	dynasty_house = house_lolcow_cyraxx
-	dna = cyraxx
+	dynasty_house = house_lolcow_wilkins
 	martial = 0
 	diplomacy = 1
 	intrigue = 2
@@ -263,6 +260,7 @@ mmheather = {
 		set_relation_lover = {
 			reason = lover_history
 			target = character:mmcyraxx
+			known = yes
 		}
 	}
 	2026.4.17 = {
@@ -274,7 +272,7 @@ mmchrischan = {
 	name = "Ian Brandon Anderson"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_chris
+	dynasty_house = house_lolcow_chandler
 	martial = 1
 	diplomacy = 1
 	intrigue = 0
@@ -282,7 +280,7 @@ mmchrischan = {
 	learning = 0
 	prowess = -2
 	mother = mmbarb
-	father = mmbobchandler
+	father = mmbobchan
 	trait = craven
 	trait = zealous
 	trait = gluttonous
@@ -318,20 +316,17 @@ mmchrischan = {
 			reason = lover_history
 			target = character:mmbarb
 		}
-		set_relation_lover = {
-			reason = lover_history
-			target = character:mmbarb
-		}
 	}
 	2026.4.17 = {
 		death = "2026.4.17"
 	}
 }
-mmchrisdaughter = {
+
+mmcrystalchan = {
 	name = "Crystal"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_chris
+	dynasty_house = house_lolcow_chandler
 	mother = mmbarb
 	father = mmchrischan
 	female = yes
@@ -347,11 +342,11 @@ mmchrisdaughter = {
 		}
 	}
 }
-mmbobchandler = {
+mmbobchan = {
 	name = "Robert Bob"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_chris
+	dynasty_house = house_lolcow_chandler
 	martial = 1
 	diplomacy = 3
 	intrigue = 0
@@ -365,7 +360,6 @@ mmbobchandler = {
 	trait = content
 	give_nickname = nick_lumberjack
 	disallow_random_traits = yes
-	father=mmlolcowfounder
 	760.10.1 = {
 		birth = yes
 	}
@@ -383,7 +377,7 @@ mmbarb = {
 	name = "Barbara Ann"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_chris
+	dynasty_house = house_lolcow_chandler
 	female = yes
 	martial = 1
 	diplomacy = 1
@@ -402,13 +396,12 @@ mmbarb = {
 	trait = incestuous
 	trait = witch
 	trait = melancholic
-	father=mmlolcowfounder
 	disallow_random_traits = yes
 	790.10.1 = {
 		birth = yes
 	}
 	790.10.1 = {
-		add_spouse = mmbobchandler
+		add_spouse = mmbobchan
 	}
 	861.1.1 = {
 		set_relation_lover = {
@@ -507,6 +500,7 @@ mmlolcowfounder = {
 		}
 	}
 }
+
 mmgenesis = {
 	name = "Jared Genesis"
 	religion = catholic
@@ -523,9 +517,14 @@ mmgenesis = {
 	trait = stubborn
 	trait = dull
 	disallow_random_traits = yes
-	father=mmlolcowfounder
 	844.9.8 = {
 		birth = yes
+	}
+	870.12.20 = {
+		set_relation_rival = {
+			target = character:mmcyraxx
+			reason = rival_historical
+		}
 	}
 	1034.6.30 = {
 		death = {
@@ -549,7 +548,7 @@ mmlolcowdaniellarson = {
 	trait = stubborn
 	trait = spindly
 	disallow_random_traits = yes
-	father=mmlolcowfounder
+	father = mmlolcowfounder
 	844.9.8 = {
 		birth = yes
 	}
@@ -563,6 +562,7 @@ mmlolcowdaniellarson = {
 ############################################################
 # valmir
  ############################################################
+
  mmhorrvalmir = {
 	name = "Horr"
 	religion = norse_pagan
@@ -584,10 +584,10 @@ mmlolcowdaniellarson = {
 	trait = adventurer
 	father = mmvalmirfounder
 	disallow_random_traits = yes
-	820.1.11 = {
-		birth = "820.1.11"
+	790.1.11 = {
+		birth = "790.1.11"
 	}
-	830.1.1 = {
+	820.1.1 = {
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
@@ -630,8 +630,8 @@ mmlolcowdaniellarson = {
 	trait = adventurer
 	father = mmvalmirfounder
 	disallow_random_traits = yes
-	820.1.11 = {
-		birth = "820.1.11"
+	800.1.11 = {
+		birth = "800.1.11"
 	}
 	830.1.1 = {
 		effect = {
@@ -654,47 +654,32 @@ mmlolcowdaniellarson = {
 		}
 	}
 }
+
 mmvalmirfounder = {
-	name = "Alex Rename"
+	name = "Freidrr"
 	religion = norse_pagan
 	culture = norse
 	dynasty = mmvalmir
-	martial = 18
+	martial = 34
 	diplomacy = 6
 	intrigue = 3
 	stewardship = 10
 	learning = 8
-	prowess = 31
+	prowess = 20
 	trait = brave
 	trait = education_martial_3
 	trait = viking
-	trait = reaver
-	trait = berserker
-	trait = content
-	trait = wrathful
 	trait = adventurer
+	trait = berserker
+	trait = dilligent
+	trait = wrathful
 	disallow_random_traits = yes
-	500.1.11 = {
+	720.1.11 = {
 		birth = yes
 	}
-	530.1.1 = {
-		effect = {
-			add_trait = lifestyle_hunter
-			add_trait_xp = {
-				trait = lifestyle_hunter
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	1047.4.17 = {
+	847.4.17 = {
 		death = {
-			death_reason = death_duel
-			killer = 102531
+			death_reason = death_age
 		}
 	}
 }
