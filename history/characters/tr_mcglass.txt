@@ -17,7 +17,10 @@ trgeirmcglass = {
 	trait = wrathful
 	trait = adventurer
 	520.1.11 = {
-		birth = "520.1.11"
+		birth = yes
+	}
+	560.1.11 = {
+		add_spouse = trgeirwife
 	}
 	540.1.1 = {
 		effect = {
@@ -34,6 +37,34 @@ trgeirmcglass = {
 		}
 	}
 	607.4.17 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
+
+trgeirwife = {
+	name = "Olivia"
+	religion = gaelic_pagan
+	culture = pictish
+	dynasty = 1040011
+	father = 166535
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = brave
+	trait = education_diplomacy_4
+	trait = dilligent
+	530.1.11 = {
+		birth = yes
+	}
+	560.1.11 = {
+		add_spouse = trgeirmcglass
+	}
+	600.4.17 = {
 		death = {
 			death_reason = death_age
 		}
