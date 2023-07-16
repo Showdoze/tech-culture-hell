@@ -77,3 +77,85 @@ trtiandi2 = {
 		}
 	}
 }
+trtiandiZhanhu = {
+	name = "Zhanhu"
+	religion = zhengyi
+	culture = han
+	dynasty = trtiandi
+	martial = 8
+	diplomacy = 6
+	intrigue = 13
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = dilligent
+	trait = education_martial_3
+	trait = impatient
+	trait = scarred
+	trait = galant
+	831.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	917.4.17 = {
+		death = {
+			death_reason = death_contest_melee_accident
+			killer = mmliquid
+		}
+	}
+}
+trtiandiJJ = {
+	name = "Jiang Jun"
+	religion = zhengyi
+	culture = han
+	dynasty = trtiandi
+	martial = 20
+	diplomacy = 15
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 10
+	trait = dilligent
+	trait = adventurer
+	trait = flexible_leader
+	trait = education_martial_3
+	trait = calm
+	trait = military_engineer
+	trait = overseer
+	trait = strategist
+	795.1.11 = {
+		birth = yes
+	}
+	810.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	890.4.1 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
