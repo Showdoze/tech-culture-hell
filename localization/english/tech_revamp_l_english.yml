@@ -1,16 +1,29 @@
 ﻿l_english:
 
-unlock_tanistry_elective:0 "Allows to enact tanistry elective law system in your realm."
-unlock_scandinavian_elective:0 "Allows to enact scandinavian elective law system in your realm."
-unlock_saxon_elective:0 "Allows to enact saxon elective law system in your realm."
 
-DESC_REQ_CROWN_1:0 "You do #bold NOT#! have [limited_crown_authority|E]/[limited_tribal_authority|E] or higher"
-DESC_REQ_CROWN_2:0 "You do #bold NOT#! have [high_crown_authority|E]/[high_tribal_authority|E] or higher"
-DESC_REQ_CROWN_3:0 "You do #bold NOT#! have [absolute_crown_authority|E]/[absolute_tribal_authority|E]"
+###LAWS#################################
+ unlock_tanistry_elective:0 "Allows to enact tanistry elective law system in your realm."
+ unlock_scandinavian_elective:0 "Allows to enact scandinavian elective law system in your realm."
+ unlock_saxon_elective:0 "Allows to enact saxon elective law system in your realm."
 
-murder_crime:0 "Murderer"
-IMPRISON_PROWESS_ACTOR:0 "[actor.GetShortUINamePossessive|U] [prowess|E]: $VALUE|=+0$"
-IMPRISON_PROWESS_RECIPIENT:0 "[recipient.GetShortUINamePossessive|U] [prowess|E]: $VALUE|=+0$"
+ DESC_REQ_CROWN_1:0 "You do #bold NOT#! have [limited_crown_authority|E]/[limited_tribal_authority|E] or higher"
+ DESC_REQ_CROWN_2:0 "You do #bold NOT#! have [high_crown_authority|E]/[high_tribal_authority|E] or higher"
+ DESC_REQ_CROWN_3:0 "You do #bold NOT#! have [absolute_crown_authority|E]/[absolute_tribal_authority|E]"
+
+ murder_crime:0 "Murderer"
+ IMPRISON_PROWESS_ACTOR:0 "[actor.GetShortUINamePossessive|U] [prowess|E]: $VALUE|=+0$"
+ IMPRISON_PROWESS_RECIPIENT:0 "[recipient.GetShortUINamePossessive|U] [prowess|E]: $VALUE|=+0$"
+
+ free_company:0 "Free Company"
+ free_company_decision_title:0 "Hire Free Company"
+ free_company_decision_desc:0 "So cute and beauty mercenary group... Guess I like them!"
+ free_company_decision_tooltip:0 "Hire mercenaries"
+ free_company_decision_confirm:0 "Welcome welcome!"
+
+ doctrine_bastardry_low_name:0 "No Bastards"
+ doctrine_parameter_bastards_low:0 "No Bastards"
+ doctrine_bastardry_low_desc:0 "All children born is polygamous relationships are considered legitimate"
+ heretic_opinion:0 "Ignorant Heretic"
 
 ######Building#########################################################################################
  building_type_theodosian_walls_02:0 "The Great Theodosian Walls"
@@ -18,28 +31,19 @@ IMPRISON_PROWESS_RECIPIENT:0 "[recipient.GetShortUINamePossessive|U] [prowess|E]
  building_theodosian_walls_02:0 "The Great Theodosian Walls"
  building_theodosian_walls_02_desc:0 "$building_type_theodosian_walls_01_desc$"
 
-free_company:0 "Free Company"
-free_company_decision_title:0 "Hire Free Company"
-free_company_decision_desc:0 "So cute and beauty mercenary group... Guess I like them!"
-free_company_decision_tooltip:0 "Hire mercenaries"
-free_company_decision_confirm:0 "Welcome welcome!"
-
-doctrine_bastardry_low_name:0 "No Bastards"
-doctrine_parameter_bastards_low:0 "No Bastards"
-doctrine_bastardry_low_desc:0 "All children born is polygamous relationships are considered legitimate"
-death_uprising:0 "Killed in an uprising"
-death_uprising_killer:0 "Was killed by [TARGET_CHARACTER.GetUIName] in an uprising"
-killed_praetorian:0 "Killed by Pratorian guard"
-killed_praetorian_killer:0 "Killed by Pratorian guard in support of [TARGET_CHARACTER.GetUIName]"
-death_troop:0 "Killed by Troops"
-death_troop_killer:0 "Killed by Troops of [TARGET_CHARACTER.GetUIName]"
-death_shock:0 "Stroke by Lightning"
-death_exile:0 "Died in Exile"
-death_exile_killer:0 "Died in Exile ordered by [TARGET_CHARACTER.GetUIName]"
-death_bath:0 "Strangled in the Bath"
-death_bath_killer:0 "Strangled in the Bath ordered by [TARGET_CHARACTER.GetUIName]"
-death_drowned_killer:0 "Was drowned by order of [TARGET_CHARACTER.GetUIName]"
-must_be_theocratic:0 "Your government type has to be theocratic"
+##DEATH################################################
+ death_uprising:0 "Killed in an uprising"
+ death_uprising_killer:0 "Was killed by [TARGET_CHARACTER.GetUIName] in an uprising"
+ killed_praetorian:0 "Killed by Pratorian guard"
+ killed_praetorian_killer:0 "Killed by Pratorian guard in support of [TARGET_CHARACTER.GetUIName]"
+ death_troop:0 "Killed by Troops"
+ death_troop_killer:0 "Killed by Troops of [TARGET_CHARACTER.GetUIName]"
+ death_shock:0 "Stroke by Lightning"
+ death_exile:0 "Died in Exile"
+ death_exile_killer:0 "Died in Exile ordered by [TARGET_CHARACTER.GetUIName]"
+ death_bath:0 "Strangled in the Bath"
+ death_bath_killer:0 "Strangled in the Bath ordered by [TARGET_CHARACTER.GetUIName]"
+ death_drowned_killer:0 "Was drowned by order of [TARGET_CHARACTER.GetUIName]"
 
 #government change decisions
 
@@ -47,6 +51,8 @@ must_be_theocratic:0 "Your government type has to be theocratic"
  change_government_theocracy_decision_confirm:0 "The God will guide us!"
  change_government_theocracy_decision_desc:0 "Only the god will tell my people the right way, and i will deliver the message"
  change_government_theocracy_decision_tooltip:0 "Change your government type to theocratic, adopting religious ways as your main ruling force"
+
+ must_be_theocratic:0 "Your government type has to be theocratic"
 
  change_government_clan_decision:0 "Become a Clan"
  change_government_clan_decision_confirm:0 "All hail our mighty Clan"
@@ -73,6 +79,29 @@ must_be_theocratic:0 "Your government type has to be theocratic"
  change_government_autocracy_decision_confirm:0 "Glory to our leader"
  change_government_autocracy_decision_desc:0 "Become Autocracy"
  change_government_autocracy_decision_tooltip:0 "Adopt Autocratic government type"
+
+###TRAITS#########################################################
+ trait_adopted:0 "Adopted"
+ trait_adopted_desc:0 "A acknowledgement and wishing that one was of there blood"
+ trait_adopted_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has been Adopted and is treated like a member of the family"
+ trait_peasant_born:0 "Peasant Born"
+ trait_peasant_born_desc:0 "A peasant only has a few purpose so there seed is not very prestigious"
+ trait_peasant_born_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was born of low birth"
+ trait_patrician_born:0 "Patrician Born"
+ trait_patrician_born_desc:0 "A patrician born is one of the elies of any city's"
+ trait_patrician_born_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was born to a noble family"
+ trait_german_descent:0 "German Descent"
+ trait_german_descent_desc:0 "A heritage being of german ancestry"
+ trait_german_descent_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was born with german ancestry"
+
+ trait_fleeting:0 "Fleeting"
+ trait_fleeting_desc:0 "Life is fleeting for this character.  What they lack in longevity, they have to make up in other ways."
+
+ trait_enduring:0 "Enduring"
+ trait_enduring_desc:0 "This character's lifespan is unusually long."
+
+ trait_venerable:0 "Venerable"
+ trait_venerable_desc:0 "This character can grow to an age that commands dignity and respect."
 
 amyr:0 "Amyr"
 old_pagan:0 "Old Pagan"
@@ -427,7 +456,7 @@ light_infantry:0 "Light Infantry"
  tradition_pagan_name:0 "Pagan"
  tradition_pagan_desc:0 "This culture is more nature based but what should I expect from a strange cult of unpredictable primitives who worship the ancient Trickster god"
  tradition_germanic_name:0 "Germanic"
- tradition_germanic_desc:0 "This culture is proud of there germanic heritage and there traditions "
+ tradition_germanic_desc:0 "This culture is proud of there germanic heritage and there traditions and follow the old germanic custom's."
  tradition_horse_special_name:0 "Horse Specialist"
  tradition_horse_special_desc:0 ""
  tradition_transport_horse_name:0 ""
