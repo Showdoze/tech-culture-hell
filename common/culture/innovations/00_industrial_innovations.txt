@@ -1,14 +1,5 @@
 ﻿#### Local Types ####
-@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
-@administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
-@administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
-@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
-@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
-@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
-@leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
 @raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
-@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
-@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
 @levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
 @maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
 @maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
@@ -28,8 +19,8 @@
 
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
-@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
-@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+@mechanical_production = "gfx/interface/icons/culture_innovations/mechanical_production.dds"
+@cannery = "gfx/interface/icons/culture_innovations/cannery.dds"
 
 #culture_group_military
 innovation_strategic_mobility = {
@@ -60,10 +51,10 @@ innovation_nationalism_n_imperialism = {
 innovation_mechanical_production = {
 	group = culture_group_civic
 	culture_era = culture_era_industrial
-	icon = @civil_construction_2
+	icon = @mechanical_production
 	
 	character_modifier = {
-		build_speed = -0.05
+		build_speed = -0.15
 	}
 	county_modifier = {
 		building_slot_add = 1
@@ -72,5 +63,18 @@ innovation_mechanical_production = {
 	#custom = unlocks_sailable_major_rivers
 }
 
-
+innovation_cannery = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @cannery
+	
+	character_modifier = {
+		steppe_cancel_negative_supply = yes
+		supply_duration = 1
+		supply_capacity_mult = 2
+	}
+	county_modifier = {
+		building_slot_add = 1
+	}
+}
 #culture_group_regional
