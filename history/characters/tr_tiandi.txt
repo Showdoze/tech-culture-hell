@@ -159,3 +159,44 @@ trtiandiJJ = {
 		}
 	}
 }
+trtiandiZhanhu = {
+	name = "Nuxia"
+	religion = zhengyi
+	culture = han
+	dynasty = trtiandi
+	is_female = yes
+	martial = 8
+	diplomacy = 12
+	intrigue = 13
+	stewardship = 6
+	learning = 8
+	prowess = 10
+	trait = dilligent
+	trait = education_martial_3
+	trait = seducer
+	trait = beauty_good_2
+	trait = whole_of_body
+	father = trtiandiJJ
+	847.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	999.4.17 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
