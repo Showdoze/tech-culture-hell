@@ -47,6 +47,12 @@ mmdsp = {
 			reason = rival_historical
 		}
 	}
+	850.1.1 = {
+		set_relation_rival = {
+			target = character:mmwings
+			reason = rival_historical
+		}
+	}
 	876.4.17 = {
 		death = {
 			death_reason = death_gout_ridden
@@ -558,6 +564,37 @@ mmlolcowdaniellarson = {
 	1054.6.30 = {
 		death = {
 			death_reason = death_physician_mistreatment
+		}
+	}
+}
+mmwings = {
+	name = "Jordie Jordan"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	trait = melancholic
+	trait = dull
+	trait = wrathful
+	trait = poet
+	trait = comfort_eater
+	trait = cannibal
+	trait = stubborn
+	trait = weak
+	disallow_random_traits = yes
+	father = mmlolcowfounder
+	give_nickname = nick_wor
+	824.4.21 = {
+		birth = yes
+	}
+	850.1.1 = {
+		set_relation_rival = {
+			target = character:mmdsp
+			reason = rival_historical
+		}
+	}
+	890.6.30 = {
+		death = {
+			death_reason = death_obesity
 		}
 	}
 }

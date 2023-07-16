@@ -1845,8 +1845,8 @@ tradition_imperial_idea = {
 tradition_wilsonian_interventionism = {
 	category = regional
 	layers = {
-		0 = intrigue
-		1 = mediterranean
+		#0 = intrigue
+		#1 = mediterranean
 		4 = manifest_destiny.dds
 	}
 	is_shown = {
@@ -1864,7 +1864,7 @@ tradition_wilsonian_interventionism = {
 		cb_lower_piety_level_requirement = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = 0.1
+		cultural_acceptance_gain_mult = -0.1
 	}
 	character_modifier = {
 		monthly_war_income_mult = 0.05
