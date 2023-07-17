@@ -17,8 +17,8 @@
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 
-@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
-@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
+@steam_engine = "gfx/interface/icons/culture_innovations/steam_engine.dds"
+@gramophone = "gfx/interface/icons/culture_innovations/gramophone.dds"
 @mechanical_production = "gfx/interface/icons/culture_innovations/mechanical_production.dds"
 @cannery = "gfx/interface/icons/culture_innovations/cannery.dds"
 
@@ -42,10 +42,17 @@ innovation_nationalism_n_imperialism = {
 	group = culture_group_civic
 	culture_era = culture_era_industrial
 	icon = @raised_banner
-
+	character_modifier = {
+		title_creation_cost_mult = -0.2
+		short_reign_duration_mult = -0.25
+		different_culture_opinion = -5
+	}
+	custom = more_zealot
 	#custom = same_culture_none_factionalism_double_different
 	#custom = unlocks_protectorate_interaction
 	#custom = unlocks_colonization_in_africa
+	flag = global_regular
+	flag = industrial_era_regular
 }
 
 innovation_mechanical_production = {
@@ -54,13 +61,12 @@ innovation_mechanical_production = {
 	icon = @mechanical_production
 	
 	character_modifier = {
-		build_speed = -0.15
-	}
-	county_modifier = {
-		building_slot_add = 1
+		build_speed = -0.2
 	}
 
 	#custom = unlocks_sailable_major_rivers
+	flag = global_regular
+	flag = industrial_era_regular
 }
 
 innovation_cannery = {
@@ -76,5 +82,30 @@ innovation_cannery = {
 	county_modifier = {
 		building_slot_add = 1
 	}
+}
+
+innovation_gramophone = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @gramophone
+	
+	character_modifier = {
+		stress_loss_mult = 0.1
+		development_growth = 0.1
+	}
+	flag = global_regular
+	flag = industrial_era_regular
+}
+
+innovation_steam_engine = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @steam_engine
+	character_modifier = {
+		naval_movement_speed_mult = 1
+		embarkation_cost_mult = 0.1
+	}
+	flag = global_regular
+	flag = industrial_era_regular
 }
 #culture_group_regional

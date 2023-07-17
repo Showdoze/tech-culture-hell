@@ -21,6 +21,7 @@
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
+@innovation_earth_around_sun = "gfx/interface/icons/culture_innovations/innovation_earth_around_sun.dds"
 
 innovation_spring_steel = {
 	group = culture_group_regional
@@ -128,7 +129,7 @@ innovation_plate_armor = {
 innovation_earth_around_sun = {
 	group = culture_group_civic
 	culture_era = culture_era_renaissance
-	icon = @misc_inventions
+	icon = @innovation_earth_around_sun
 	can_progress = {
 		has_innovation = innovation_universe_rotation
 	}
