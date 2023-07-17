@@ -6091,7 +6091,59 @@ e_byzantium = {
 				add = @correct_culture_primary_score
 			}
 		}
+		d_siracusa = {
+			color = { 71 116 173 }
 
+			capital = c_siracusa
+			
+			cultural_names = {
+				name_list_bedouin = cn_sarqusa
+				name_list_levantine = cn_sarqusa
+				name_list_egyptian = cn_sarqusa
+				name_list_maghrebi = cn_sarqusa
+				name_list_andalusian = cn_sarqusa
+				name_list_yemeni = cn_sarqusa
+			}
+
+			c_siracusa = {
+				color = { 115 195 85 }
+
+				cultural_names = {
+					name_list_bedouin = cn_sarqusa
+					name_list_levantine = cn_sarqusa
+					name_list_egyptian = cn_sarqusa
+					name_list_maghrebi = cn_sarqusa
+					name_list_andalusian = cn_sarqusa
+					name_list_yemeni = cn_sarqusa
+				}
+
+				b_syracusa = {
+					province = 2638
+
+					color = { 115 195 85 }
+
+					cultural_names = {
+						name_list_bedouin = cn_sarqusa
+						name_list_levantine = cn_sarqusa
+						name_list_egyptian = cn_sarqusa
+						name_list_maghrebi = cn_sarqusa
+						name_list_andalusian = cn_sarqusa
+						name_list_yemeni = cn_sarqusa
+					}
+				}
+				b_lentini = {
+					province = 2643
+
+					color = { 115 195 85 }
+				}
+				b_caltagirone = {
+					province = 2642
+
+					color = { 115 195 85 }
+				}
+			}
+
+		}
 		d_sicily = {
 			color = { 155 254 86 }
 
@@ -6167,43 +6219,6 @@ e_byzantium = {
 					color = { 160 210 100 }
 				}
 			}
-			c_siracusa = {
-				color = { 115 195 85 }
-
-				cultural_names = {
-					name_list_bedouin = cn_sarqusa
-					name_list_levantine = cn_sarqusa
-					name_list_egyptian = cn_sarqusa
-					name_list_maghrebi = cn_sarqusa
-					name_list_andalusian = cn_sarqusa
-					name_list_yemeni = cn_sarqusa
-				}
-
-				b_syracusa = {
-					province = 2638
-
-					color = { 115 195 85 }
-
-					cultural_names = {
-						name_list_bedouin = cn_sarqusa
-						name_list_levantine = cn_sarqusa
-						name_list_egyptian = cn_sarqusa
-						name_list_maghrebi = cn_sarqusa
-						name_list_andalusian = cn_sarqusa
-						name_list_yemeni = cn_sarqusa
-					}
-				}
-				b_lentini = {
-					province = 2643
-
-					color = { 115 195 85 }
-				}
-				b_caltagirone = {
-					province = 2642
-
-					color = { 115 195 85 }
-				}
-			}
 			c_agrigento = {
 				color = { 125 230 110 }
 
@@ -6243,6 +6258,13 @@ e_byzantium = {
 					color = { 125 230 110 }
 				}
 			}
+		}	
+		d_malta = {
+				color = { 120 255 60 }
+				color2 = { 255 255 255 }
+			
+			capital = c_malta # Benevento
+			
 			c_malta = {
 				color = { 120 255 60 }
 
