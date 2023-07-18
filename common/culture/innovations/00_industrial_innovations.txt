@@ -1,10 +1,10 @@
 ﻿#### Local Types ####
 @raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
 @levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
-@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
-@maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
-@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
-@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
+@industrial_steel = "gfx/interface/icons/culture_innovations/industrial_steel.dds"
+@photograph = "gfx/interface/icons/culture_innovations/photograph.dds"
+@typewriter = "gfx/interface/icons/culture_innovations/typewriter.dds"
+@gas_light = "gfx/interface/icons/culture_innovations/gas_light.dds"
 @knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
 @hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
 @longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
@@ -31,6 +31,9 @@ innovation_strategic_mobility = {
 	character_modifier = {
 		movement_speed = 0.25
 		supply_capacity_mult = 1.0
+		siege_phase_time = -0.1
+		knight_effectiveness_mult = 0.1
+		men_at_arms_maintenance = -0.05
 	}
 
 	flag = global_regular
@@ -46,6 +49,7 @@ innovation_nationalism_n_imperialism = {
 		title_creation_cost_mult = -0.2
 		short_reign_duration_mult = -0.25
 		different_culture_opinion = -5
+		glory_hound_opinion = 5
 	}
 	custom = more_zealot
 	#custom = same_culture_none_factionalism_double_different
@@ -63,7 +67,9 @@ innovation_mechanical_production = {
 	character_modifier = {
 		build_speed = -0.2
 	}
-
+	county_modifier = {
+		building_slot_add = 2
+	}
 	#custom = unlocks_sailable_major_rivers
 	flag = global_regular
 	flag = industrial_era_regular
@@ -78,9 +84,6 @@ innovation_cannery = {
 		steppe_cancel_negative_supply = yes
 		supply_duration = 1
 		supply_capacity_mult = 2
-	}
-	county_modifier = {
-		building_slot_add = 1
 	}
 }
 
@@ -108,4 +111,59 @@ innovation_steam_engine = {
 	flag = global_regular
 	flag = industrial_era_regular
 }
+
+innovation_photograph = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @photograph
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		development_growth_factor = 0.1
+		courtly_opinion = 5
+	}
+	flag = global_regular
+	flag = industrial_era_regular
+}
+
+innovation_typewriter = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @typewriter
+	character_modifier = {
+		development_growth_factor = 0.1
+		embarkation_cost_mult = 0.1
+		active_accolades = 1
+		accolade_glory_gain_mult = 0.01
+	}
+	flag = global_regular
+	flag = industrial_era_regular
+}
+
+innovation_gas_light = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @gas_light
+	character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_change_factor = 0.01
+	}
+	flag = global_regular
+	flag = industrial_era_regular
+}
+
+innovation_steam_hammer = {
+	group = culture_group_civic
+	culture_era = culture_era_industrial
+	icon = @industrial_steel
+	character_modifier = {
+		men_at_arms_maintenance = -0.2
+		domain_tax_mult = 0.1
+	}
+	can_progress = {
+		has_innovation = innovation_steel_work
+	}
+	flag = global_regular
+	flag = industrial_era_regular
+}
+
 #culture_group_regional
