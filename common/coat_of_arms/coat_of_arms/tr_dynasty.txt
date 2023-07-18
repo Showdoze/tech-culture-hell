@@ -1,0 +1,74 @@
+japan_oda = { #Oda
+	pattern = "pattern_solid.dds"	
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_suhame_cc_1.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+	}
+}
+japan_hojo = { #Hojo
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 206 49 35 }
+	colored_emblem = {
+		texture = "ce_uroko_cc_1.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }		
+	}
+}
+japan_tokugawa = { #Tokugawa
+	pattern = "pattern_solid.dds"
+	color1 = "white"	
+	colored_emblem = {
+		texture = "ce_h_tokugawa.dds"
+		color1 = "yellow"		
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }		
+	}
+}
+julio_claudian = {
+	pattern = "pattern_solid.dds"
+	color1 = {212 024 024} #From d_senate.tga
+	colored_emblem = {
+		texture = "ce_she_wolf.dds"
+		color1 = {241 218 016} #From d_senate.tga
+		instance = { position = { 0.50 0.30 } scale = { 0.70 0.70 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_s.dds"
+		color1 = {255 215 000} #Gold
+		color2 = "yellow"
+		instance = { position = { 0.300 0.65 } scale = { 0.25 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_p.dds"
+		color1 = {255 215 000} #Gold
+		color2 = "yellow"
+		instance = { position = { 0.425 0.65 } scale = { 0.25 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_q.dds"
+		color1 = {255 215 000} #Gold
+		color2 = "yellow"
+		instance = { position = { 0.575 0.65 } scale = { 0.25 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_r.dds"
+		color1 = {255 215 000} #Gold
+		color2 = "yellow"
+		instance = { position = { 0.725 0.65 } scale = { 0.25 0.25 } }
+	}
+}
+sassanids = { #Sassanids
+	pattern = "pattern_solid.dds"
+	color1 = {255 0 0} #Red
+	colored_emblem = {
+		texture = "ce_square_kaaba.dds"
+		color1 = purple
+		instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_Derafsh_Kaviani.dds"
+		color1 = {255 255 000} #Yellow
+		instance = { position = { 0.50 0.50 } scale = { 0.90 0.90 } rotation = 0 }
+	}
+}
