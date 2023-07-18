@@ -665,7 +665,7 @@ tradition_dwarf = {
 	layers = {
 		0 = diplo
 		1 = indian
-		4 = mountain.dds
+		4 = dwarf_lotr.dds
 	}
 	can_pick = {
 		NOT = {
@@ -1030,7 +1030,7 @@ tradition_atheism = {
 	layers = {
 		0 = learning
 		1 = western
-		4 = diplomat.dds
+		4 = atheism.dds
 	}
 	can_pick = {
 		NOR = {
@@ -1048,6 +1048,7 @@ tradition_atheism = {
 	parameters = {
 		romance_scheme_bonus_vs_spouse = yes
 		less_likely_to_force_conversion = yes
+		better_ward_education = yes
 		holy_wars_forbidden = yes
 	}
 	character_modifier = {
@@ -1911,7 +1912,7 @@ tradition_persian = {
 	can_pick = {
 		any_culture_county = {
 			title_province = {
-				geographical_region = ghw_region_egypt
+				geographical_region = world_middle_east_persia
 			}
 		}
 	}
