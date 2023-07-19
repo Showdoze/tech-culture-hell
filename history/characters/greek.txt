@@ -8905,6 +8905,7 @@
 	trait = just
 	trait = trusting
 	trait = content
+	trait = patrician_born
 	trait = temperate
 	trait = dull
 	trait = education_diplomacy_1
@@ -8922,15 +8923,20 @@
 	813.1.1 = {
 		trait = devoted
 	}
-	815.1.1 = {
-		religion = "iconoclast"
+	813.7.11 = {
+		death = {
+			death_reason = death_exile
+		}
 	}
-	842.2.19 = {
-		religion = "orthodox"
-	}
-	844.1.11 = {
-		death = "844.1.11"
-	}
+	#815.1.1 = {
+	#	religion = "iconoclast"
+	#}
+	#842.2.19 = {
+	#	religion = "orthodox"
+	#}
+	#844.1.11 = {
+	#	death = "844.1.11"
+	#}
 }
 
 70495 = {
@@ -9015,6 +9021,7 @@
 70498 = {
 	name = "Eirene"
 	dynasty = 101134
+	dna = Irene_of_Athens
 	female = yes
 	martial = 4
 	diplomacy = 4
@@ -19325,6 +19332,7 @@
 	dynasty = 8644
 	religion = "iconoclast"
 	culture = "greek"
+	trait = patrician_born
 	731.1.1 = {
 		birth = "731.1.1"
 	}
