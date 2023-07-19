@@ -404,7 +404,7 @@
 		birth=yes
 	}	
 	406.1.1 = {
-		death=death_reason = death_troop
+		death={death_reason = death_troop
 		killer=70519
 		}
 	}
@@ -490,10 +490,10 @@
 	480.1.1 = {
 		birth=yes
 	}	
-	534.1.1 = {
-		death={death_reason=death_uprising
+	530.1.1 = {
+		death = { death_reason=death_uprising
 		killer=168805
-	}
+	    }
 	}
 }
 168800 = {
@@ -570,10 +570,9 @@
 	492.1.1 = {
 		birth=yes
 	}	
-	#535.1.1 = {
 	530.5.1 = {	
-		death={death_reason=death_battle
-		killer=ck650045
+		death = { death_reason=death_battle
+		killer = ck650045
 	    }
 	}
 }
@@ -587,8 +586,8 @@
 		birth=yes
 	}	
 	530.1.1 = {
-		death={death_reason=death_battle
-		killer=ck650045
+		death = { death_reason=death_battle
+		killer = ck650045
 	    }
 	}
 }
