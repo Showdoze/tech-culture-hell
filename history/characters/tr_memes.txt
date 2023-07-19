@@ -1,5 +1,6 @@
 mmpolish = {
 	name = "Grzegorz Brzęczyszczykiewicz"
+	dynasty = mmtrolls
 	religion = pagan
 	culture = polish
 	martial = 4
@@ -58,6 +59,7 @@ mmmarty = {
 	religion = samaritan
 	culture = american
 	dna = musicbizmarty
+	dynasty = mmtrolls
 	martial = 5
 	diplomacy = 5
 	intrigue = 20
@@ -429,6 +431,7 @@ mmliquid = {
 	religion = zun_pagan
 	culture = american
 	dna = liquid
+	dynasty = mmtrolls
 	martial = 5
 	diplomacy = 25
 	intrigue = 10
@@ -596,6 +599,36 @@ mmwings = {
 	890.6.30 = {
 		death = {
 			death_reason = death_obesity
+		}
+	}
+}
+
+mmbella = {
+	name = "Isabelle Jenkis"
+	religion = catholic
+	culture = american
+	dynasty = mmtrolls
+	female = yes
+	trait = sadistic
+	trait = dull
+	trait = wrathful
+	trait = education_intrigue_1
+	trait = disloyal
+	trait = beauty_good_1
+	trait = lunatic_genetic
+	trait = deviant
+	trait = sodomite
+	trait = murderer
+	trait = irritable
+	trait = schemer
+	disallow_random_traits = yes
+	844.4.21 = {
+		birth = yes
+	}
+	865.6.30 = {
+		death = {
+			death_reason = death_murder
+			killer = mmliquid
 		}
 	}
 }
