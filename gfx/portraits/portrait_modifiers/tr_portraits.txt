@@ -4,6 +4,32 @@ tr_portraits = {
     selection_behavior = max
     priority = 3
 
+	mmcyraxx = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_steppe_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmcyraxx
+				this = character:mmcyraxx
+			}
+        }
+    }
+
 	mmchrischan = {
         dna_modifiers = {
             accessory = {
@@ -12,6 +38,18 @@ tr_portraits = {
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_northern_01
+           }
+           accessory = {
+            mode = add
+            gene = headgear
+            template = no_headgear
+            value = 0.1 # For the randomness to work correctly
+        }
         }   
         weight = {
             base = 0
@@ -31,6 +69,12 @@ tr_portraits = {
                 gene = beards
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }   
         weight = {
@@ -52,6 +96,12 @@ tr_portraits = {
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
         }   
         weight = {
             base = 0
@@ -71,6 +121,18 @@ tr_portraits = {
                 gene = beards
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = haristyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }   
         weight = {
@@ -92,6 +154,12 @@ tr_portraits = {
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
         }   
         weight = {
             base = 0
@@ -104,6 +172,32 @@ tr_portraits = {
         }
     }
 
+	mmpolish = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmpolish
+				this = character:mmpolish
+			}
+        }
+    }
+
 	mmlarson = {
         dna_modifiers = {
             accessory = {
@@ -111,6 +205,12 @@ tr_portraits = {
                 gene = beards
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }   
         weight = {
@@ -120,6 +220,72 @@ tr_portraits = {
 				exists = this
 				exists = character:mmlolcowdaniellarson
 				this = character:mmlolcowdaniellarson
+			}
+        }
+    }
+
+    mmdsp = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmdsp
+				this = character:mmdsp
+			}
+        }
+    }
+
+    mmcyraxxdad = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmcyraxxdad
+				this = character:mmcyraxxdad
+			}
+        }
+    }
+
+    mmjaredgenesis = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmjaredgenesis
+				this = character:mmjaredgenesis
 			}
         }
     }
