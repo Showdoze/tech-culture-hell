@@ -47,3 +47,20 @@ language_ancient_egyptian = {
 	
 	color = somali
 }
+language_gerudo = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_gerudo
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_gerudo }
+			multiply = 10
+		}
+	}
+	
+	color = { 243 146 0 }
+}
