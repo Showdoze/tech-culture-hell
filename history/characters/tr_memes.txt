@@ -1,5 +1,6 @@
 mmpolish = {
 	name = "Grzegorz Brzęczyszczykiewicz"
+	dynasty = mmtrolls
 	religion = pagan
 	culture = polish
 	martial = 4
@@ -28,7 +29,6 @@ mmdsp = {
 	intrigue = 2
 	stewardship = 1
 	learning = 0
-	trait = beauty_bad_1
 	trait = dull
 	trait = gluttonous
 	trait = deceitful
@@ -37,16 +37,9 @@ mmdsp = {
 	trait = greedy
 	trait = stubborn
 	trait = gout_ridden
-	father = mmlolcowfounder
 	disallow_random_traits = yes
 	820.4.6 = {
 		birth = yes
-	}
-	830.12.20 = {
-		set_relation_rival = {
-			target = character:mmlolcowfounder
-			reason = rival_historical
-		}
 	}
 	850.1.1 = {
 		set_relation_rival = {
@@ -66,6 +59,7 @@ mmmarty = {
 	religion = samaritan
 	culture = american
 	dna = musicbizmarty
+	dynasty = mmtrolls
 	martial = 5
 	diplomacy = 5
 	intrigue = 20
@@ -437,6 +431,7 @@ mmliquid = {
 	religion = zun_pagan
 	culture = american
 	dna = liquid
+	dynasty = mmtrolls
 	martial = 5
 	diplomacy = 25
 	intrigue = 10
@@ -450,7 +445,6 @@ mmliquid = {
 	trait = cynical
 	trait = humble
 	trait = stuttering
-	trait = beauty_good_3
 	trait = poet
 	trait = lifestyle_physician
 	give_nickname = nick_liquid
@@ -566,7 +560,6 @@ mmlolcowdaniellarson = {
 	trait = stubborn
 	trait = spindly
 	disallow_random_traits = yes
-	father = mmlolcowfounder
 	844.9.8 = {
 		birth = yes
 	}
@@ -582,7 +575,7 @@ mmwings = {
 	religion = catholic
 	culture = american
 	dynasty = mmlolcow
-	dna = wingofredemption
+	dna = wingsofredemption
 	trait = melancholic
 	trait = dull
 	trait = wrathful
@@ -591,8 +584,8 @@ mmwings = {
 	trait = cannibal
 	trait = stubborn
 	trait = weak
+	trait = gluttonous
 	disallow_random_traits = yes
-	father = mmlolcowfounder
 	give_nickname = nick_wor
 	824.4.21 = {
 		birth = yes
@@ -606,6 +599,36 @@ mmwings = {
 	890.6.30 = {
 		death = {
 			death_reason = death_obesity
+		}
+	}
+}
+
+mmbella = {
+	name = "Isabelle Jenkis"
+	religion = catholic
+	culture = american
+	dynasty = mmtrolls
+	female = yes
+	trait = sadistic
+	trait = dull
+	trait = wrathful
+	trait = education_intrigue_1
+	trait = disloyal
+	trait = beauty_good_1
+	trait = lunatic_genetic
+	trait = deviant
+	trait = sodomite
+	trait = murderer
+	trait = irritable
+	trait = schemer
+	disallow_random_traits = yes
+	844.4.21 = {
+		birth = yes
+	}
+	865.6.30 = {
+		death = {
+			death_reason = death_murder
+			killer = mmliquid
 		}
 	}
 }
