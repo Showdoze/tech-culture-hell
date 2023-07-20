@@ -64,3 +64,20 @@ language_gerudo = {
 	
 	color = { 243 146 0 }
 }
+language_gnomish = { #Gnomish dialects
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_gnomish
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_gnomish }
+			multiply = 10
+		}
+	}
+	
+	color = french ### Need to be changed
+}
