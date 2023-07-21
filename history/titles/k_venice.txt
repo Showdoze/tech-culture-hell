@@ -18,10 +18,15 @@ k_venice = {
 	#b_ziani
 	540.1.1 = {
 		liege = e_byzantium
+		government = republic_government
 	}
 	697.1.1={
 		holder = ck650007
 		liege = e_byzantium
+		succession_laws = { 
+			feudal_elective_succession_law 
+			male_only_law
+	}
 		#law = my_gov_type_1
 	}
 	717.1.1={
@@ -198,6 +203,10 @@ d_venice = {
 		holder = ck650007
 		liege = e_byzantium
 		government = republic_government
+		succession_laws = { 
+			feudal_elective_succession_law 
+			male_only_law
+	}
 		#law = my_gov_type_1
 	}
 	717.1.1={
