@@ -25,3 +25,30 @@ syracuse = {
 		10 = mediterranean_byzantine
 	}
 }
+
+venetian_ce = {
+	color = { 0.26 0.52 0.52 }
+	parents = { roman italian }
+	created = 500.1.1
+		ethos = ethos_egalitarian
+	heritage = heritage_venetian
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_republican_legacy
+		tradition_city_state
+		tradition_seafaring
+		tradition_maritime_mercantilism
+	}
+	
+	name_list = name_list_venetian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		10 = mediterranean
+	}
+}
