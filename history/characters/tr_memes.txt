@@ -94,7 +94,31 @@ mmmarty = {
 		}
 	}
 }
-
+mmcyraxxgrandda = {
+	name = "William D Smith"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_wilkins
+	martial = 0
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 2
+	learning = 1
+	trait = deviant
+	trait = lustful
+	mother = mmcyraxxsally
+	785.1.11 = {
+		birth = yes
+	}
+	819.1.11 = {
+		add_spouse = mmcyraxxgrandda
+	}
+	860.1.1 = {
+		death = {
+			death_reason = death_dungeon_passive
+		}
+	}
+}
 mmcyraxxdad = {
 	name = "Ruple Smith"
 	religion = catholic
@@ -113,6 +137,7 @@ mmcyraxxdad = {
 	trait = lustful
 	trait = weak
 	mother = mmcyraxxsally
+	father = mmcyraxxgrandda
 	disallow_random_traits = yes
 	825.1.11 = {
 		birth = yes
@@ -128,6 +153,33 @@ mmcyraxxdad = {
 	}
 }
 
+mmed = {
+	name = "Ed"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	martial = 2
+	diplomacy = 1
+	intrigue = 2
+	stewardship = 2
+	learning = 1
+	trait = intellect_bad_2
+	trait = hashishiyah
+	trait = stubborn
+	trait = drunkard
+	805.1.11 = {
+		birth = yes
+	}
+	860.1.2 = {
+		add_spouse = mmcyraxxsally
+	}
+	2026.4.17 = {
+		death = {
+			death_reason = death_beaten
+			killer = mmmarty
+		}
+	}
+}
 mmcyraxxsally = {
 	name = "Sally"
 	religion = catholic
@@ -152,6 +204,12 @@ mmcyraxxsally = {
 	disallow_random_traits = yes
 	805.1.11 = {
 		birth = yes
+	}
+	819.1.11 = {
+		add_spouse = mmcyraxxgrandda
+	}
+	860.1.2 = {
+		add_spouse = mmed
 	}
 	2025.4.17 = {
 		death = {
@@ -647,7 +705,7 @@ mmbella = {
 	}
 	865.6.30 = {
 		death = {
-			death_reason = death_murder
+			death_reason = death_duel
 			killer = mmliquid
 		}
 	}
