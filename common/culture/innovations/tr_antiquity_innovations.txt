@@ -23,6 +23,10 @@
 @ships = "gfx/interface/icons/culture_innovations/innovation_ships.dds"
 @innovation_nile_agriculture = "gfx/interface/icons/culture_innovations/innovation_nile_agriculture.dds"
 @eq_celtic = "gfx/interface/icons/culture_innovations/innovation_equipment_celtic.dds"
+@nobility_greek = "gfx/interface/icons/culture_innovations/innovation_nobility_greek.dds"
+@diadem = "gfx/interface/icons/culture_innovations/innovation_diadem.dds"
+@leadership_alexander = "gfx/interface/icons/culture_innovations/innovation_leadership_alexander.dds"
+@wealth = "gfx/interface/icons/culture_innovations/innovation_wealth.dds"
 
 
 innovation_trireme = {
@@ -98,7 +102,32 @@ innovation_caravenserai = {
 		stewardship = 1
 	}
 }
+innovation_imperial_distinguished_service = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @diadem
 
+	character_modifier = {
+		knight_effectiveness_mult = 0.2
+		accolade_glory_gain_mult = 0.1
+	}
+
+	custom = increase_war_rewards
+
+}
+innovation_classical_picked_troops = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @leadership_alexander
+
+	custom = more_glory_hounds
+	
+	character_modifier = {
+		men_at_arms_cap = 1
+		men_at_arms_limit = 3
+		knight_effectiveness_mult = 0.2
+	}
+}
 innovation_equipment_celtic = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -118,6 +147,16 @@ innovation_equipment_celtic = {
 		damage = 1
 		toughness = 1
 	    pursuit = 1
+	}
+}
+innovation_hellenistic_baggage_train = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @leadership_alexander
+
+	character_modifier = {
+		movement_speed = 0.1
+		supply_duration	= 0.25
 	}
 }
 
@@ -145,6 +184,27 @@ innovation_earth_size = {
 		movement_speed = 0.1
 		learning = 1
     }
+}
+innovation_archaic_measurement = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @wealth
+
+	character_modifier = {
+		development_growth_factor = 0.1
+	}
+	county_modifier = {
+		building_slot_add = 1
+	}
+}
+innovation_hellenistic_private_banking = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @wealth
+
+	character_modifier = {
+		development_growth_factor = 0.1
+	}
 }
 innovation_ships = {
 	group = culture_group_civic
@@ -177,6 +237,29 @@ innovation_makeup = {
 		attraction_opinion = 5
 		diplomacy = 1
 	}	
+}
+innovation_earth_quake = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @misc_inventions
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.01
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+    }
+}
+innovation_archaic_popular_assemblies = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @nobility_greek
+
+	unlock_law = crown_authority_1
+
+	character_modifier = {
+		county_opinion_add = 5
+	}
+	county_modifier = {
+		building_slot_add = 1
+	}
 }
 #Regional
 innovation_nile_agriculture = {
