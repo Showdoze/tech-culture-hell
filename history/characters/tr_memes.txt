@@ -18,6 +18,61 @@ mmpolish = {
 	}
 }
 
+mmtonychase = {
+	name = "Tony Chase"
+	religion = pagan
+	culture = american
+	martial = 4
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 10
+	trait = beauty_good_1
+	trait = education_intrigue_1
+	trait = paranoid
+	trait = lunatic_genetic
+	trait = possessed_genetic
+	trait = royal_descent
+	800.1.11 = {
+		birth = yes
+	}
+	850.1.1 = {
+		set_relation_rival = {
+			target = character:mmsateliteman
+			reason = rival_historical
+		}
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
+mmsateliteman = {
+	name = "Satelite Man"
+	religion = pagan
+	culture = american
+	martial = 4
+	diplomacy = 10
+	intrigue = 50
+	stewardship = 10
+	trait = beauty_good_1
+	trait = education_intrigue_4
+	trait = dilligent
+	trait = intellect_good_4
+	trait = schemer
+	100.1.11 = {
+		birth = yes
+	}
+	850.1.1 = {
+		set_relation_rival = {
+			target = character:mmtonychase
+			reason = rival_historical
+		}
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
 mmdsp = {
 	name = "Phillip DSP"
 	religion = catholic
