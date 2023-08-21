@@ -2036,3 +2036,36 @@ tradition_migration = {
 		value = 0
 	}
 }
+tradition_depression = {
+	category = ritual
+	
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = ussr.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		war_stress_loss = yes
+		patient_trait_more_common = yes
+		calm_trait_more_common = yes
+		may_challenge_to_board_games = yes
+		may_wager_land_on_board_games = yes
+		craven_and_content_traits_looked_down_upon = yes
+		content_trait_more_common = yes
+		hard_working_traits_more_valued = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+	}
+	character_modifier = {
+		stress_gain_mult = 0.1
+		men_at_arms_recruitment_cost = 0.25
+	}
+	cost = { prestige = 300000 }
+	ai_will_do = { value = 0 }
+}
