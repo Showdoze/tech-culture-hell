@@ -16,3 +16,17 @@ ocean_legacy_track = {
 scale_legacy_track = {
 	
 }
+
+usa_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_culture = culture:american
+				}
+				has_dynasty_perk = usa_legacy_1
+			}
+		}
+	}
+}
+
