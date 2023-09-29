@@ -442,53 +442,8 @@ tradition_bushido = {
 		revolting_siege_morale_loss_mult = 0.25
 	}
 	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = {
-							list = flags
-							this = flag:ethos_bellicose
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_egalitarian
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_courtly
-						}
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_egalitarian_or_courtly_desc
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						scope:character = {
-							any_knight = {
-								count >= 6
-								prowess >= 12
-							}
-						}
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = knights_with_prowess_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
+		prestige = 2000
+    }
 	ai_will_do = {
 		value = 100
 	}
@@ -2070,3 +2025,93 @@ tradition_depression = {
 	cost = { prestige = 300000 }
 	ai_will_do = { value = 0 }
 }
+tradition_saiyan = {
+	category = combat
+	layers = {
+		0 = martial
+		1 = western
+		4 = saiyan.dds
+	}
+	can_pick = {
+		has_cultural_pillar = heritage_saiyan
+	}
+	parameters = {
+		warmonger = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+		has_access_to_trials_by_combat = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		craven_trait_costs_prestige = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		winter_trait_bonuses = yes
+		mountain_trait_bonuses = yes
+		dry_trait_bonuses = yes
+		hill_trait_bonuses = yes
+		jungle_trait_bonuses = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		more_expensive_feasts = yes
+		hunting_traits_more_valued = yes
+		doesnt_care_about_culture_faith_in_factions = yes
+		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.1
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 5
+		knight_limit = -2
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		prowess_per_prestige_level = 1
+		heavy_cavalry_damage_mult = 0.1
+		heavy_cavalry_toughness_mult = 0.1
+		forest_travel_danger = forest_low_danger_reduction
+		taiga_travel_danger = taiga_low_danger_reduction
+		desert_travel_danger = desert_low_danger_reduction
+		drylands_travel_danger = drylands_low_danger_reduction
+		mountains_travel_danger = mountains_high_danger_reduction
+		desert_mountains_travel_danger = desert_mountains_high_danger_reduction
+		hills_travel_danger = hills_low_danger_reduction
+		jungle_travel_danger = jungle_low_danger_reduction
+		dread_per_tyranny_add = 0.3
+		dread_decay_mult = -0.3
+		revolting_siege_morale_loss_mult = 0.25
+		character_travel_safety_mult = 0.1
+		retreat_losses = -0.1
+		hard_casualty_modifier = -0.1
+		prowess = 20
+		levy_size = -0.5
+		men_at_arms_recruitment_cost = -0.15
+		men_at_arms_maintenance = -0.15
+		army_toughness_mult = 0.05
+		negate_health_penalty_add = 0.15
+		stewardship = -1
+		learning = -3
+		ai_boldness = 40
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}	
