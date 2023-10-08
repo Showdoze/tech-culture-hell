@@ -88,17 +88,6 @@
 	}
 	ai_will_do = {
 		value = 0
-		if = {
-			limit = {
-				NOT = {
-					any_in_list = {
-						list = flags
-						this = flag:ethos_bellicose
-					}
-				}
-			}
-			multiply = 0
-		}
 	}
 }
 
@@ -188,17 +177,6 @@ tradition_free_love = {
 	}
 	ai_will_do = {
 		value = 0
-		if = {
-			limit = {
-				NOT = {
-					any_in_list = {
-						list = flags
-						this = flag:ethos_bellicose
-					}
-				}
-			}
-			multiply = 0
-		}
 	}
 }
 
@@ -1098,6 +1076,7 @@ tradition_egypt = {
 		court_grandeur_baseline_add = 5
 		desert_travel_danger = desert_high_danger_reduction
 		desert_mountains_travel_danger = desert_mountains_high_danger_reduction
+		floodplains_travel_danger = floodplains_high_danger_reduction
 	}
 	county_modifier = {
 		floodplains_development_growth_factor = 0.3
@@ -1108,30 +1087,7 @@ tradition_egypt = {
 		desert_tax_mult = 0.1
 	}
 	cost = {
-		prestige = {
-			add = {
-				value = 250
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					any_in_list = {
-						list = flags
-						this = flag:ethos_spiritual
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = spiritual_desc
-				}
-			}
-			add = {
-				value = tradition_unfulfilled_criteria_penalty
-				desc = forest_percentage_desc
-			}
-		}
-		multiply = tradition_replacement_cost_if_relevant
+		prestige = 20000
 	}
 	ai_will_do = {
 		value = 0
@@ -2017,9 +1973,11 @@ tradition_depression = {
 		expensive_convert_to_local_culture = yes
 		harder_to_hybridize = yes
 		reveler_traits_more_common = yes
+		grants_to_lowborns_bonuses = yes
 	}
 	character_modifier = {
 		stress_gain_mult = 0.1
+		revolting_siege_morale_loss_mult = 0.25
 		men_at_arms_recruitment_cost = 0.25
 	}
 	cost = { prestige = 300000 }
@@ -2073,12 +2031,15 @@ tradition_saiyan = {
 		culture_can_raid_at_sea_even_if_feudal = yes
 		not_tribal_raiding_malus = yes
 		war_stress_loss = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		more_frequent_feasts = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.1
+		cultural_acceptance_gain_mult = -0.25
 	}
 	character_modifier = {
-		knight_effectiveness_mult = 5
+		knight_effectiveness_mult = 25
 		knight_limit = -2
 		negate_prowess_penalty_add = 5 # Wounded knights fight better!
 		prowess_per_prestige_level = 1
@@ -2100,8 +2061,6 @@ tradition_saiyan = {
 		hard_casualty_modifier = -0.1
 		prowess = 20
 		levy_size = -0.5
-		men_at_arms_recruitment_cost = -0.15
-		men_at_arms_maintenance = -0.15
 		army_toughness_mult = 0.05
 		negate_health_penalty_add = 0.15
 		stewardship = -1
@@ -2115,3 +2074,110 @@ tradition_saiyan = {
 		value = 0
 	}
 }	
+tradition_romance_roman = {
+	category = realm
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = roman.dds
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+		}
+		OR = {
+			
+			scope:character = {
+				has_title = title:e_byzantium
+			}
+			scope:character = {
+				has_title = title:c_roma
+			}
+			scope:character = {
+				has_title = title:e_wre
+			}
+		}
+	}
+	parameters = {
+		architect_trait_prestige = yes
+		pardoning_gives_loyalty = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		can_make_republican_vassals = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		republican_vassals_pay_more = yes
+		renown_from_temple_construction = yes
+		development_gain_on_building_complete = yes
+		physical_disfigurement_blocks_inheritance = yes
+		city_buildings_more_county_opinion = yes
+	}
+	character_modifier = {
+		tyranny_gain_mult = -0.5
+		diplomatic_range_mult = 0.25
+		court_grandeur_baseline_add = 5
+		republic_government_vassal_opinion = 10
+		eligible_child_opinion = 20
+	}
+	county_modifier = {
+	}
+	province_modifier = {
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_romance_byz= {
+	category = realm
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = byz.dds
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+		}
+		OR = {
+			scope:character = {
+				has_title = title:e_byzantium
+			}
+			scope:character = {
+				has_title = title:c_byzantion
+			}
+		}
+	}
+	parameters = {
+		architect_trait_prestige = yes
+		pardoning_gives_loyalty = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		can_make_republican_vassals = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		renown_from_temple_construction = yes
+		development_gain_on_building_complete = yes
+		physical_disfigurement_blocks_inheritance = yes
+		city_buildings_more_county_opinion = yes
+	}
+	character_modifier = {
+		tyranny_gain_mult = -0.5
+		court_grandeur_baseline_add = 5
+		eligible_child_opinion = 20
+	}
+	county_modifier = {
+	}
+	province_modifier = {
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
