@@ -19,7 +19,7 @@ mmpolish = {
 }
 
 mmtonychase = {
-	name = "Tony Chase"
+	name = "Mark Ray"
 	religion = pagan
 	culture = american
 	martial = 4
@@ -67,6 +67,30 @@ mmsateliteman = {
 	850.1.1 = {
 		set_relation_rival = {
 			target = character:mmtonychase
+			reason = rival_historical
+		}
+	}
+	2016.4.17 = {
+		death = "2016.4.17"
+	}
+}
+
+mmgordonwiklins = {
+	name = "Gordon Wilkins"
+	religion = pagan
+	culture = american
+	martial = 20
+	diplomacy = 15
+	intrigue = 5
+	stewardship = 10
+	trait = beauty_good_1
+	trait = education_martial_4
+	800.1.11 = {
+		birth = yes
+	}
+	850.1.1 = {
+		set_relation_rival = {
+			target = character:mmcyraxx
 			reason = rival_historical
 		}
 	}
@@ -155,7 +179,7 @@ mmcyraxxgrandda = {
 	name = "William D Smith"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_wilkins
+	dynasty_house = house_lolcow_smith
 	martial = 0
 	diplomacy = 2
 	intrigue = 2
@@ -180,7 +204,7 @@ mmcyraxxdad = {
 	name = "Ruple Smith"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_wilkins
+	dynasty_house = house_lolcow_smith
 	martial = 0
 	diplomacy = 2
 	intrigue = 2
@@ -241,7 +265,7 @@ mmcyraxxsally = {
 	name = "Sally"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_wilkins
+	dynasty_house = house_lolcow_smith
 	female = yes
 	dna = sally
 	martial = 0
@@ -280,7 +304,7 @@ mmcyraxxmom = {
 	religion = catholic
 	culture = american
 	female = yes
-	dynasty_house = house_lolcow_wilkins
+	dynasty_house = house_lolcow_smith
 	martial = 0
 	diplomacy = 0
 	intrigue = 0
@@ -311,10 +335,10 @@ mmcyraxxmom = {
 }
 
 mmcyraxx = {
-	name = "Chance Cyraxx"
+	name = "Partick Cyraxx"
 	religion = norse_pagan
 	culture = american
-	dynasty_house = house_lolcow_wilkins
+	dynasty_house = house_lolcow_smith
 	dna = cyraxx
 	martial = 0
 	diplomacy = 1
