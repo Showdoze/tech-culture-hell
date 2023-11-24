@@ -26,6 +26,7 @@ mmtonychase = {
 	diplomacy = 1
 	intrigue = 1
 	stewardship = 10
+	give_nickname = nick_tonychase
 	trait = beauty_good_1
 	trait = education_intrigue_1
 	trait = paranoid
@@ -84,11 +85,21 @@ mmgordonwiklins = {
 	intrigue = 5
 	stewardship = 10
 	trait = beauty_good_1
-	trait = education_martial_4
+	trait = education_martial_3
 	800.1.11 = {
 		birth = yes
 	}
-	850.1.1 = {
+	840.1.1 = {
+		set_spouse = {
+			target = character:mmcyraxxsally
+		}
+	}
+	841.1.1 = {
+		remove_spouse = {
+			target = character:mmcyraxxsally
+		}
+	}
+	842.1.1 = {
 		set_relation_rival = {
 			target = character:mmcyraxx
 			reason = rival_historical
@@ -176,7 +187,7 @@ mmmarty = {
 	}
 }
 mmcyraxxgrandda = {
-	name = "William D Smith"
+	name = "William D"
 	religion = catholic
 	culture = american
 	dynasty_house = house_lolcow_smith
@@ -187,12 +198,14 @@ mmcyraxxgrandda = {
 	learning = 1
 	trait = deviant
 	trait = lustful
-	mother = mmcyraxxsally
 	785.1.11 = {
 		birth = yes
 	}
-	819.1.11 = {
-		add_spouse = mmcyraxxgrandda
+	810.1.11 = {
+		add_spouse = mmcyraxxsally
+	}
+	830.1.11 = {
+		remove_spouse = mmcyraxxsally
 	}
 	860.1.1 = {
 		death = {
@@ -201,7 +214,7 @@ mmcyraxxgrandda = {
 	}
 }
 mmcyraxxdad = {
-	name = "Ruple Smith"
+	name = "Ruple"
 	religion = catholic
 	culture = american
 	dynasty_house = house_lolcow_smith
@@ -286,8 +299,17 @@ mmcyraxxsally = {
 	805.1.11 = {
 		birth = yes
 	}
-	819.1.11 = {
+	810.1.11 = {
 		add_spouse = mmcyraxxgrandda
+	}
+	840.1.11 = {
+		remove_spouse = mmcyraxxgrandda
+	}
+	850.1.11 = {
+		add_spouse = mmgordonwilkins
+	}
+	851.1.11 = {
+		remove_spouse = mmgordonwilkins
 	}
 	860.1.2 = {
 		add_spouse = mmed
@@ -656,7 +678,7 @@ mmbilly = {
 	837.9.8 = {
 		birth = yes
 	}
-	850.12.20 = {
+	845.12.20 = {
 		set_relation_rival = {
 			target = character:mmcyraxx
 			reason = rival_historical
@@ -764,7 +786,7 @@ mmwings = {
 }
 mmputin = {
 	name = "Vladimir Putin"
-	religion = catholic
+	religion = orthodox
 	culture = russian
 	dynasty = mmlolcow
 	trait = ambitious
