@@ -14,7 +14,7 @@ mmpolish = {
 		birth = yes
 	}
 	2016.4.17 = {
-		death = "2016.4.17"
+		death = yes
 	}
 }
 
@@ -38,13 +38,12 @@ mmtonychase = {
 		birth = yes
 	}
 	850.1.1 = {
-		set_relation_rival = {
-			target = character:mmsateliteman
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmsateliteman reason = rival_historical }
 		}
 	}
 	2016.4.17 = {
-		death = "2016.4.17"
+		death = yes
 	}
 }
 
@@ -59,20 +58,19 @@ mmsateliteman = {
 	stewardship = 10
 	trait = beauty_good_1
 	trait = education_intrigue_4
-	trait = dilligent
+	trait = diligent
 	trait = intellect_good_4
 	trait = schemer
 	100.1.11 = {
 		birth = yes
 	}
 	850.1.1 = {
-		set_relation_rival = {
-			target = character:mmtonychase
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmtonychase reason = rival_historical }
 		}
 	}
 	2016.4.17 = {
-		death = "2016.4.17"
+		death = yes
 	}
 }
 
@@ -90,23 +88,18 @@ mmgordonwilkins = {
 		birth = yes
 	}
 	840.1.1 = {
-		set_spouse = {
-			target = character:mmcyraxxsally
-		}
+		add_spouse = mmcyraxxsally
 	}
 	841.1.1 = {
-		remove_spouse = {
-			target = character:mmcyraxxsally
-		}
+		remove_spouse = mmcyraxxsally
 	}
 	842.1.1 = {
-		set_relation_rival = {
-			target = character:mmcyraxx
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
 	2016.4.17 = {
-		death = "2016.4.17"
+		death = yes
 	}
 }
 
@@ -134,9 +127,8 @@ mmdsp = {
 		birth = yes
 	}
 	850.1.1 = {
-		set_relation_rival = {
-			target = character:mmwings
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmwings reason = rival_historical }
 		}
 	}
 	876.4.17 = {
@@ -169,15 +161,13 @@ mmmarty = {
 		birth = yes
 	}
 	861.1.1 = {
-		set_relation_rival = {
-			target = character:mmcyraxx
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	861.1.1 = {
-		set_relation_rival = {
-			target = character:mmcyraxxdad
-			reason = rival_historical
+	862.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmcyraxxdad reason = rival_historical }
 		}
 	}
 	2027.4.17 = {
@@ -233,7 +223,7 @@ mmcyraxxdad = {
 	trait = lustful
 	trait = weak
 	mother = mmcyraxxsally
-	father = mmcyraxxgrandda
+	father = mmcyraxxgranddad
 	disallow_random_traits = yes
 	825.1.11 = {
 		birth = yes
@@ -392,22 +382,18 @@ mmcyraxx = {
 		birth = yes
 	}
 	851.1.1 = {
-		set_relation_rival = {
-			target = character:mmmarty
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmmarty reason = rival_historical }
 		}
 	}
 	851.1.1 = {
-		set_relation_friend = {
-			reason = friend_generic_history
-			target = character:mmchrischan
+		effect = {
+			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
 		}
 	}
 	861.1.1 = {
-		set_relation_lover = {
-			reason = lover_history
-			target = character:mmheather
-			exposed = yes
+		effect = {
+			set_relation_lover = { target = character:mmheather exposed = yes }
 		}
 	}
 	2026.4.17 = {
@@ -427,14 +413,12 @@ mmheather = {
 		birth = yes
 	}
 	861.1.1 = {
-		set_relation_lover = {
-			reason = lover_history
-			target = character:mmcyraxx
-			exposed = yes
+		effect = {
+			set_relation_lover = { target = character:mmcyraxx exposed = yes }
 		}
 	}
 	2026.4.17 = {
-		death = "2026.4.17"
+		death = yes
 	}
 }
 
@@ -470,26 +454,17 @@ mmchrischan = {
 		birth = yes
 	}
 	821.1.1 = {
-		set_relation_rival = {
-			target = character:mmliquid
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmliquid reason = rival_historical }
 		}
 	}
 	841.1.1 = {
-		set_relation_friend = {
-			reason = friend_generic_history
-			target = character:mmcyraxx
-		}
-	}
-	841.1.1 = {
-		set_relation_lover = {
-			reason = lover_history
-			target = character:mmbarb
-			exposed = yes
+		effect = {
+			set_relation_lover = { target = character:mmbarb exposed = yes }
 		}
 	}
 	2026.4.17 = {
-		death = "2026.4.17"
+		death = yes
 	}
 }
 
@@ -578,10 +553,8 @@ mmbarb = {
 		add_spouse = mmbobchan
 	}
 	861.1.1 = {
-		set_relation_lover = {
-			reason = lover_history
-			target = character:mmchrischan
-			exposed = yes
+		effect = {
+			set_relation_lover = { target = character:mmchrischan exposed = yes }
 		}
 	}
 	2026.4.17 = {
@@ -590,7 +563,6 @@ mmbarb = {
 		}
 	}
 }
-
 mmliquid = {
 	name = "The True And Honest Christian Weston Chandler"
 	religion = zun_pagan
@@ -618,15 +590,13 @@ mmliquid = {
 		birth = yes
 	}
 	841.1.1 = {
-		set_relation_rival = {
-			target = character:mmchrischan
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
 		}
 	}
 	841.1.1 = {
-		set_relation_rival = {
-			target = character:mmcyraxx
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
 	850.1.1 = {
@@ -647,7 +617,6 @@ mmliquid = {
 		death = yes
 	}
 }
-
 mmlolcowfounder = {
 	name = "Charles J. Guiteau"
 	religion = catholic
@@ -670,21 +639,19 @@ mmlolcowfounder = {
 		}
 	}
 }
-
 mmbilly = {
 	name = "Billy Seiler"
 	religion = catholic
 	culture = american
-	trait = dilligent
+	trait = diligent
 	trait = honest
 	trait = blind
 	837.9.8 = {
 		birth = yes
 	}
 	845.12.20 = {
-		set_relation_rival = {
-			target = character:mmcyraxx
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
 	900.6.30 = {
@@ -693,7 +660,6 @@ mmbilly = {
 		}
 	}
 }	
-
 mmjaredgenesis = {
 	name = "Jared Genesis"
 	religion = catholic
@@ -715,9 +681,8 @@ mmjaredgenesis = {
 		birth = yes
 	}
 	870.12.20 = {
-		set_relation_rival = {
-			target = character:mmcyraxx
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
 	1034.6.30 = {
@@ -776,9 +741,8 @@ mmwings = {
 		birth = yes
 	}
 	850.1.1 = {
-		set_relation_rival = {
-			target = character:mmdsp
-			reason = rival_historical
+		effect = {
+			set_relation_rival = { target = character:mmdsp reason = rival_historical }
 		}
 	}
 	890.6.30 = {
