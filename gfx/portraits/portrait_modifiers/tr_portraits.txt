@@ -62,6 +62,38 @@ tr_portraits = {
         }
     }
 
+    mmputin = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = no_hair
+           }
+           accessory = {
+            mode = add
+            gene = headgear
+            template = no_headgear
+            value = 0.1 # For the randomness to work correctly
+        }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmputin
+				this = character:mmputin
+			}
+        }
+    }
+
 	mmgordonwilkins = {
         dna_modifiers = {
             accessory = {
@@ -88,8 +120,8 @@ tr_portraits = {
 			modifier = {
 				add = 1000
 				exists = this
-				exists = character:mmbobchan
-				this = character:mmbobchan
+				exists = character:mmgordonwilkins
+				this = character:mmgordonwilkins
 			}
         }
     }
@@ -114,8 +146,8 @@ tr_portraits = {
 			modifier = {
 				add = 1000
 				exists = this
-				exists = character:mmbobchan
-				this = character:mmbobchan
+				exists = character:mmtonychase
+				this = character:mmtonychase
 			}
         }
     }
@@ -146,8 +178,8 @@ tr_portraits = {
 			modifier = {
 				add = 1000
 				exists = this
-				exists = character:mmbobchan
-				this = character:mmbobchan
+				exists = character:mmed
+				this = character:mmbed
 			}
         }
     }
@@ -178,8 +210,8 @@ tr_portraits = {
 			modifier = {
 				add = 1000
 				exists = this
-				exists = character:mmbobchan
-				this = character:mmbobchan
+				exists = character:mmsateliteman
+				this = character:mmsateliteman
 			}
         }
     }
