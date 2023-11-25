@@ -83,7 +83,7 @@
 }
 
 217500 = {
-	name = "Ivan"	#Ivan I
+	name = "Ivan" #Ivan I
 	dynasty = 185
 	martial = 7
 	diplomacy = 5
@@ -99,13 +99,15 @@
 	1160.1.1 = {
 		birth = "1160.1.1"
 	}
+
+
 	1196.1.1 = {
 		death = "1196.1.1"
 	}
 }
 
 217501 = {
-	name = "Petar"	#Petar IV
+	name = "Petar" #Petar IV
 	dynasty = 185
 	martial = 5
 	diplomacy = 4
@@ -126,8 +128,9 @@
 	}
 }
 
+
 217502 = {
-	name = "Kaloyan"	#Kaloyan I
+	name = "Kaloyan" #Kaloyan I
 	dynasty = 185
 	martial = 7
 	diplomacy = 5
@@ -147,6 +150,7 @@
 		add_pressed_claim = title:c_philippopolis
 		add_pressed_claim = title:c_adrianopolis
 	}
+
 	1207.10.1 = {
 		death = "1207.10.1"
 	}
@@ -278,7 +282,7 @@
 }
 
 31160 = {
-	name = "Ivan"	#Ivan II
+	name = "Ivan" #Ivan II
 	dynasty = 185
 	religion = "orthodox"
 	culture = "bulgarian"
@@ -290,7 +294,7 @@
 		add_spouse = 98026
 	}
 	1237.1.1 = {
-		add_spouse = 125713		# Eirene Komnene Doukaina
+		add_spouse = 125713 # Eirene Komnene Doukaina
 	}
 	1242.6.24 = {
 		death = "1242.6.24"
@@ -321,6 +325,7 @@
 	culture = "bulgarian"
 	trait = bastard
 	father = 31160
+
 	1220.1.1 = {
 		birth = "1220.1.1"
 	}
@@ -362,7 +367,7 @@
 }
 
 31165 = {
-	name = "Koloman"	#Koloman I
+	name = "Koloman" #Koloman I
 	dynasty = 185
 	religion = "orthodox"
 	culture = "bulgarian"
@@ -377,7 +382,7 @@
 }
 
 31166 = {
-	name = "Mihail"	#Mihail I
+	name = "Mihail" #Mihail I
 	dynasty = 185
 	religion = "orthodox"
 	culture = "bulgarian"
@@ -439,7 +444,7 @@
 }
 
 31170 = {
-	name = "Koloman"	#Koloman I
+	name = "Koloman" #Koloman I
 	dynasty = 185
 	religion = "orthodox"
 	culture = "bulgarian"
@@ -539,16 +544,13 @@
 		birth = "1230.1.1"
 	}
 	1256.1.1 = {
-		add_spouse = 125744		#Eirene Laskaris dau of Theodoros II Laskaris
+		add_spouse = 125744 #Eirene Laskaris dau of Theodoros II Laskaris
 	}
 	1270.1.1 = {
-		add_spouse = 34419		#Maria Kantakouzenos
+		add_spouse = 34419 #Maria Kantakouzenos
 	}
 	1277.9.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 31192
-		}
+		death = {	death_reason = death_battle	killer = 31192	}
 	}
 }
 
@@ -568,7 +570,7 @@
 }
 
 31189 = {
-	name = "Marija"	#real name unknown
+	name = "Marija" #real name unknown
 	female = yes
 	dynasty = 7203
 	religion = "orthodox"
@@ -833,6 +835,7 @@
 	1275.1.1 = {
 		add_spouse = 465526
 	}
+
 	1303.1.1 = {
 		death = "1303.1.1"
 	}
@@ -1527,25 +1530,19 @@
 	}
 	855.1.1 = {
 		effect = {
-			set_relation_lover = {
-				reason = lover_history
-				target = character:168076
-			}			#Meets Vasilka's mother.
+						set_relation_lover = { reason = lover_history target = character:168076 } 	#Meets Vasilka's mother.
 		}
 	}
 	864.1.1 = {
 		religion = "orthodox"
 		capital = "c_dorostorum"
 		effect = {
-			set_relation_rival = {
-				target = character:70383
-				reason = rival_historical
-			}			#Vladimir does not take kindly to Christianity.
-			set_relation_potential_friend = character:712			#Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
+			set_relation_rival = { target = character:70383 reason = rival_historical }	#Vladimir does not take kindly to Christianity.
+			set_relation_potential_friend = character:712	#Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
 		}
 	}
 	889 = {
-		trait = devoted		#Abdicated to become a monk.
+		trait = devoted	#Abdicated to become a monk.
 	}
 	907.5.2 = {
 		death = "907.5.2"
@@ -1615,6 +1612,7 @@
 	trait = bastard
 	trait = education_diplomacy_2
 	father = 70382
+	
 	912.1.1 = {
 		birth = yes
 	}
@@ -1796,10 +1794,7 @@
 	}
 	1066.1.1 = {
 		employer = 724
-		contract_disease_effect = {
-			DISEASE = ill
-			TREATMENT_EVENT = yes
-		}
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1069.1.1 = {
 		death = "1069.1.1"
@@ -1936,7 +1931,7 @@
 	1015.10.1 = {
 		death = {
 			death_reason = death_hunting_accident
-			killer = 722			# Ivan Vladislav
+			killer = 722 # Ivan Vladislav
 		}
 	}
 }
@@ -2001,7 +1996,7 @@
 }
 
 159126 = {
-	name = "Zvinica"	#father of Presian I
+	name = "Zvinica" #father of Presian I
 	dynasty = 591
 	religion = "tengri_pagan"
 	culture = "bulgarian"
@@ -2026,7 +2021,7 @@
 	}
 	864.1.1 = {
 		religion = "orthodox"
-		trait = disinherited		#His father preferred his newborn brother, Simeon.
+		trait = disinherited	#His father preferred his newborn brother, Simeon.
 	}
 	896.1.1 = {
 		death = "896.1.1"
@@ -2052,6 +2047,7 @@
 	}
 }
 
+
 168069 = {
 	name = "Dox"
 	dynasty = 8636
@@ -2068,6 +2064,8 @@
 		death = "877.1.1"
 	}
 }
+
+
 
 168070 = {
 	name = "Gavril"
@@ -2099,6 +2097,8 @@
 	}
 }
 
+
+
 168076 = {
 	name = "Praxi"
 	female = yes
@@ -2115,8 +2115,9 @@
 	}
 }
 
+
 168077 = {
-	name = "Vasilka"	#real name unknown
+	name = "Vasilka" #real name unknown
 	female = yes
 	religion = "tengri_pagan"
 	culture = "bulgarian"
@@ -2133,6 +2134,7 @@
 		death = "899.1.1"
 	}
 }
+
 
 168078 = {
 	name = "Iakov"
@@ -2182,6 +2184,7 @@
 		death = "924.1.1"
 	}
 }
+
 
 168289 = {
 	name = "Mostich"

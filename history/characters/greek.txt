@@ -262,6 +262,7 @@
 	}
 }
 
+
 125713 = {
 	name = "Eirene"
 	female = yes
@@ -681,7 +682,7 @@
 }
 
 125739 = {
-	name = "Ioannes"	#Doux of Thrakesion
+	name = "Ioannes" #Doux of Thrakesion
 	dynasty = 101074
 	religion = "orthodox"
 	culture = "greek"
@@ -913,6 +914,7 @@
 	}
 }
 
+
 144076 = {
 	name = "Konstantinos"
 	dynasty = 101091
@@ -957,7 +959,7 @@
 		birth = "866.9.29"
 	}
 	882.9.29 = {
-		add_trait = scholar		#Add adult trait
+		add_trait = scholar	#Add adult trait
 	}
 	906.1.9 = {
 		add_spouse = 1703
@@ -1321,6 +1323,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = bastard
+	trait = disinherited
 	father = 1726
 	mother = 41313
 	1035.1.1 = {
@@ -1339,6 +1342,9 @@
 	father = 1750
 	1007.1.1 = {
 		birth = "1007.1.1"
+	}
+	1030.1.1 = {
+		trait = lifestyle_hunter
 	}
 	1056.1.1 = {
 		add_spouse = 729
@@ -1529,7 +1535,7 @@
 }
 
 1742 = {
-	name = "Alexios"	#Alexios I Komnenos
+	name = "Alexios" #Alexios I Komnenos
 	dynasty = 634
 	martial = 9
 	diplomacy = 9
@@ -1606,6 +1612,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 1744
+
 	#Skills
 	diplomacy = 15
 	martial = 4
@@ -1613,15 +1620,19 @@
 	intrigue = 5
 	learning = 10
 	prowess = 1
+
 	#Education
 	trait = education_intrigue_3
+
 	#Personality Traits
 	trait = deceitful
 	trait = ambitious
 	trait = vengeful
+
 	#Other Traits
 	trait = schemer
 	trait = family_first
+
 	disallow_random_traits = yes
 	1010.1.2 = {
 		birth = "1010.1.2"
@@ -1631,10 +1642,7 @@
 	}
 	1066.1.1 = {
 		effect = {
-			set_relation_rival = {
-				target = character:1734
-				reason = rival_historical
-			}			#A bit early, as the events that would cause this wouldn't start till 1067, but better to have the rivalry ready to go straight off the bat.
+			set_relation_rival = { target = character:1734 reason = rival_historical }	#A bit early, as the events that would cause this wouldn't start till 1067, but better to have the rivalry ready to go straight off the bat.
 		}
 	}
 	1088.5.12 = {
@@ -1843,7 +1851,7 @@
 }
 
 1768 = {
-	name = "Andronikos"	# C.Paphlagonia
+	name = "Andronikos" # C.Paphlagonia
 	dynasty = 633
 	martial = 8
 	diplomacy = 5
@@ -2081,10 +2089,7 @@
 		birth = "1030.1.1"
 	}
 	1066.1.1 = {
-		contract_disease_effect = {
-			DISEASE = ill
-			TREATMENT_EVENT = yes
-		}
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1066.9.8 = {
 		death = "1066.9.8"
@@ -2367,10 +2372,7 @@
 		birth = "1011.1.1"
 	}
 	1066.1.1 = {
-		contract_disease_effect = {
-			DISEASE = ill
-			TREATMENT_EVENT = yes
-		}
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1068.1.1 = {
 		death = "1068.1.1"
@@ -2378,7 +2380,7 @@
 }
 
 20498 = {
-	name = "Sergios"	#Sergios V count of Naples
+	name = "Sergios" #Sergios V count of Naples
 	dynasty = 1022314
 	martial = 8
 	diplomacy = 5
@@ -2819,7 +2821,6 @@
 		death = "1060.10.5"
 	}
 }
-
 20527 = {
 	name = "Theodoros"
 	dynasty = 101102
@@ -2834,7 +2835,6 @@
 		death = "1100.2.18"
 	}
 }
-
 2052701 = {
 	name = "Alexandros"
 	dynasty = 101102
@@ -2891,7 +2891,7 @@
 }
 
 20531 = {
-	name = "Sergios"	#Sergios VI count of Naples
+	name = "Sergios" #Sergios VI count of Naples
 	dynasty = 1022314
 	martial = 6
 	diplomacy = 7
@@ -2954,10 +2954,7 @@
 		add_spouse = 159288
 	}
 	1066.1.1 = {
-		contract_disease_effect = {
-			DISEASE = ill
-			TREATMENT_EVENT = yes
-		}
+		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	1067.1.1 = {
 		death = "1067.1.1"
@@ -3340,6 +3337,7 @@
 		death = "1182.1.1"
 	}
 }
+
 
 215000 = {
 	name = "Isaakios"
@@ -4719,6 +4717,7 @@
 	}
 }
 
+
 215532 = {
 	name = "Anna"
 	# AKA: Anna Komnene
@@ -6033,7 +6032,7 @@
 }
 
 30821 = {
-	name = "Ioannes"	#I
+	name = "Ioannes" #I
 	dynasty = 1022314
 	religion = "orthodox"
 	culture = "greek"
@@ -6047,7 +6046,7 @@
 }
 
 30822 = {
-	name = "Ioannes"	#Ioannes count of Naples
+	name = "Ioannes" #Ioannes count of Naples
 	dynasty = 1022314
 	religion = "orthodox"
 	culture = "greek"
@@ -6061,7 +6060,7 @@
 }
 
 30824 = {
-	name = "Sergios"	#Sergios VII count of Naples
+	name = "Sergios" #Sergios VII count of Naples
 	dynasty = 1022314
 	religion = "orthodox"
 	culture = "greek"
@@ -6109,6 +6108,7 @@
 	dynasty = 185
 	religion = "orthodox"
 	culture = "greek"
+
 	father = 465553
 	1320.1.1 = {
 		birth = "1320.1.1"
@@ -6123,6 +6123,7 @@
 	dynasty = 185
 	religion = "orthodox"
 	culture = "greek"
+
 	father = 465553
 	1322.1.1 = {
 		birth = "1322.1.1"
@@ -6215,6 +6216,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 31177
+
 	1301.1.1 = {
 		birth = "1301.1.1"
 	}
@@ -7286,13 +7288,15 @@
 }
 
 465520 = {
-	name = "Theodoros"	# Teodoro Paleologo di Montferrato, Count of Montferrato (1305-1338)
+	name = "Theodoros" # Teodoro Paleologo di Montferrato, Count of Montferrato (1305-1338)
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_2
+
 	father = 465521
 	mother = 465522
+
 	1291.1.1 = {
 		birth = yes
 	}
@@ -7330,7 +7334,7 @@
 		birth = yes
 	}
 	1273.11.8 = {
-		add_spouse = 98047		#Anna of Hungary
+		add_spouse = 98047 #Anna of Hungary
 	}
 	1289.1.1 = {
 		add_spouse = 465522
@@ -8360,6 +8364,7 @@
 #		death = yes
 #	}
 #}
+
 #70358 = { #Appears to be fictional. Outcommented for now.
 #	name = "Theodoros"
 #	dynasty = 191
@@ -8382,6 +8387,7 @@
 #		death = yes
 #	}
 #}
+
 70363 = {
 	name = "Ioannes"
 	dynasty = 8634
@@ -8394,6 +8400,7 @@
 	trait = celibate
 	trait = temperate
 	trait = education_learning_3
+
 	1020.1.1 = {
 		birth = "1020.1.1"
 	}
@@ -8434,6 +8441,7 @@
 	trait = lifestyle_hunter
 	trait = education_intrigue_2
 	father = 70400
+
 	995.1.1 = {
 		birth = "995.1.1"
 	}
@@ -8455,6 +8463,7 @@
 	trait = diligent
 	trait = education_diplomacy_2
 	father = 20514
+
 	1050.1.1 = {
 		birth = "1050.1.1"
 	}
@@ -8476,6 +8485,7 @@
 	trait = beauty_bad_2
 	trait = education_martial_2
 	father = 20514
+
 	1053.1.1 = {
 		birth = "1053.1.1"
 	}
@@ -8497,6 +8507,7 @@
 	trait = trusting
 	trait = education_stewardship_3
 	father = 20524
+
 	1061.1.1 = {
 		birth = "1061.1.1"
 	}
@@ -8574,6 +8585,7 @@
 	trait = ambitious
 	trait = education_diplomacy_2
 	father = 20463
+
 	1055.1.1 = {
 		birth = "1055.1.1"
 	}
@@ -8594,6 +8606,7 @@
 	trait = honest
 	trait = education_diplomacy_3
 	father = 20463
+
 	1057.1.1 = {
 		birth = "1057.1.1"
 	}
@@ -8615,6 +8628,7 @@
 	trait = humble
 	trait = education_martial_2
 	father = 1766
+
 	1060.1.1 = {
 		birth = "1060.1.1"
 	}
@@ -8691,6 +8705,7 @@
 	trait = lifestyle_hunter
 	trait = education_martial_2
 	father = 70431
+
 	1012.1.1 = {
 		birth = "1012.1.1"
 	}
@@ -8710,6 +8725,7 @@
 	culture = "greek"
 	trait = brave
 	trait = education_martial_3
+
 	985.1.1 = {
 		birth = "985.1.1"
 	}
@@ -8787,6 +8803,7 @@
 	trait = just
 	trait = humble
 	trait = education_diplomacy_1
+
 	968.1.1 = {
 		birth = "968.1.1"
 	}
@@ -8807,6 +8824,7 @@
 	culture = "greek"
 	trait = education_diplomacy_2
 	father = 70480
+
 	990.1.1 = {
 		birth = "990.1.1"
 	}
@@ -8831,6 +8849,7 @@
 	trait = born_in_the_purple
 	father = 70491
 	sexuality = bisexual
+
 	840.1.19 = {
 		birth = "840.1.19"
 	}
@@ -8838,7 +8857,7 @@
 		give_nickname = nick_the_drunkard
 		death = {
 			death_reason = death_murder
-			killer = 1700			# Basil "the_Macedonian"
+			killer = 1700 # Basil "the_Macedonian"
 		}
 	}
 	# The historical date, but since the bookmark starts on January 1, moved back.
@@ -8860,6 +8879,7 @@
 	trait = just
 	trait = education_martial_1
 	father = 70492
+
 	813.1.1 = {
 		birth = "813.1.1"
 	}
@@ -8912,6 +8932,7 @@
 	trait = education_diplomacy_1
 	disallow_random_traits = yes
 	father = 145834
+
 	768.1.1 = {
 		birth = "768.1.1"
 	}
@@ -8974,6 +8995,7 @@
 	trait = lifestyle_reveler
 	trait = education_martial_2
 	father = 70497
+
 	773.1.1 = {
 		birth = "773.1.1"
 	}
@@ -8995,7 +9017,8 @@
 }
 
 70497 = {
-	name = "Nikephoros"	# AKA: Nikephoros 'Logothetes'
+	name = "Nikephoros" 
+	# AKA: Nikephoros 'Logothetes'
 	dynasty = 8645
 	martial = 3
 	diplomacy = 5
@@ -9038,6 +9061,7 @@
 	trait = beauty_good_2
 	trait = education_intrigue_4
 	father = 145803
+
 	750.1.1 = {
 		birth = "750.1.1"
 	}
@@ -9064,6 +9088,7 @@
 	trait = education_intrigue_1
 	father = 70500
 	mother = 70498
+
 	771.1.14 = {
 		birth = "771.1.14"
 	}
@@ -9159,6 +9184,7 @@
 	trait = administrator
 	trait = unyielding_defender
 	trait = education_stewardship_4
+
 	disallow_random_traits = yes
 	give_nickname = nick_the_isaurian
 	685.1.1 = {
@@ -9183,6 +9209,7 @@
 	trait = shy
 	trait = education_stewardship_1
 	father = 70499
+
 	790.1.1 = {
 		birth = "790.1.1"
 	}
@@ -9203,6 +9230,7 @@
 	trait = deceitful
 	trait = sadistic
 	trait = education_diplomacy_2
+
 	685.1.1 = {
 		birth = "685.1.1"
 	}
@@ -9277,6 +9305,7 @@
 	}
 }
 
+
 70507 = {
 	name = "Konstantinos"
 	dynasty = 1022137
@@ -9344,6 +9373,7 @@
 	trait = lazy
 	trait = education_diplomacy_1
 	father = 145071
+
 	612.5.3 = {
 		birth = "612.5.3"
 	}
@@ -9401,6 +9431,7 @@
 	trait = incapable
 	trait = education_intrigue_1
 	mother = 70527
+
 	520.1.1 = {
 		birth = "520.1.1"
 	}
@@ -9436,6 +9467,7 @@
 	trait = theologian
 	trait = education_stewardship_3
 	disallow_random_traits = yes
+
 	431.1.1 = {
 		birth = "431.1.1"
 	}
@@ -9465,6 +9497,7 @@
 	trait = calm
 	trait = education_diplomacy_3
 	give_nickname = nick_the_isaurian
+
 	425.1.1 = {
 		birth = "425.1.1"
 	}
@@ -9491,6 +9524,7 @@
 	father = 70515
 	mother = 70530
 	give_nickname = nick_the_younger
+
 	467.1.1 = {
 		birth = "467.1.1"
 	}
@@ -9539,6 +9573,7 @@
 	trait = lustful
 	trait = education_intrigue_2
 	father = 70517
+
 	450.1.1 = {
 		birth = "450.1.1"
 	}
@@ -9582,6 +9617,7 @@
 	trait = just
 	trait = honest
 	trait = education_learning_3
+
 	1000.1.1 = {
 		birth = "1000.1.1"
 	}
@@ -9602,6 +9638,7 @@
 	trait = ambitious
 	trait = deceitful
 	trait = education_learning_4
+
 	995.1.1 = {
 		birth = "995.1.1"
 	}
@@ -9622,6 +9659,7 @@
 	trait = celibate
 	trait = trusting
 	trait = education_learning_3
+
 	980.1.1 = {
 		birth = "980.1.1"
 	}
@@ -9642,6 +9680,7 @@
 	trait = content
 	trait = humble
 	trait = education_learning_1
+
 	965.1.1 = {
 		birth = "965.1.1"
 	}
@@ -9662,6 +9701,7 @@
 	trait = deceitful
 	trait = zealous
 	trait = education_learning_1
+
 	953.1.1 = {
 		birth = "953.1.1"
 	}
@@ -9682,6 +9722,7 @@
 	trait = celibate
 	trait = chaste
 	trait = education_learning_1
+
 	928.1.1 = {
 		birth = "928.1.1"
 	}
@@ -9701,6 +9742,7 @@
 	culture = "greek"
 	trait = trusting
 	trait = education_learning_1
+
 	921.1.1 = {
 		birth = "921.1.1"
 	}
@@ -9720,6 +9762,7 @@
 	culture = "greek"
 	trait = ambitious
 	trait = education_diplomacy_3
+
 	921.1.1 = {
 		birth = "921.1.1"
 	}
@@ -9795,6 +9838,7 @@
 	trait = deceitful
 	trait = ambitious
 	trait = education_learning_3
+
 	853.1.1 = {
 		birth = "853.1.1"
 	}
@@ -9815,6 +9859,7 @@
 	trait = scholar
 	trait = trusting
 	trait = education_learning_3
+
 	851.1.1 = {
 		birth = "851.1.1"
 	}
@@ -9859,6 +9904,7 @@
 	trait = ambitious
 	trait = scholar
 	trait = education_learning_4
+
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -9880,6 +9926,7 @@
 	trait = just
 	trait = education_learning_3
 	father = 70494
+
 	797.1.1 = {
 		birth = "797.1.1"
 	}
@@ -9905,6 +9952,7 @@
 	trait = scholar
 	trait = deceitful
 	trait = education_learning_3
+
 	800.1.1 = {
 		birth = "800.1.1"
 	}
@@ -9925,6 +9973,7 @@
 	trait = deceitful
 	trait = ambitious
 	trait = education_learning_1
+
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -9945,6 +9994,7 @@
 	trait = celibate
 	trait = paranoid
 	trait = education_learning_3
+
 	758.1.1 = {
 		birth = "758.1.1"
 	}
@@ -9966,6 +10016,7 @@
 	trait = just
 	trait = ill
 	trait = education_learning_1
+
 	725.1.1 = {
 		birth = "725.1.1"
 	}
@@ -9984,6 +10035,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_learning_1
+
 	720.1.1 = {
 		birth = "720.1.1"
 	}
@@ -10003,6 +10055,7 @@
 	culture = "greek"
 	trait = deceitful
 	trait = education_learning_1
+
 	710.1.1 = {
 		birth = "710.1.1"
 	}
@@ -10023,6 +10076,7 @@
 	trait = disfigured
 	trait = deceitful
 	trait = education_learning_3
+
 	695.1.1 = {
 		birth = "695.1.1"
 	}
@@ -10043,6 +10097,7 @@
 	trait = gregarious
 	trait = zealous
 	trait = education_learning_1
+
 	678.1.1 = {
 		birth = "678.1.1"
 	}
@@ -10062,6 +10117,7 @@
 	culture = "greek"
 	trait = content
 	trait = education_learning_1
+
 	673.1.1 = {
 		birth = "673.1.1"
 	}
@@ -10081,6 +10137,7 @@
 	culture = "greek"
 	trait = celibate
 	trait = education_learning_1
+
 	666.1.1 = {
 		birth = "666.1.1"
 	}
@@ -10101,6 +10158,7 @@
 	trait = ambitious
 	trait = disfigured
 	trait = education_learning_1
+
 	655.1.1 = {
 		birth = "655.1.1"
 	}
@@ -10120,6 +10178,7 @@
 	culture = "greek"
 	trait = diligent
 	trait = education_learning_1
+
 	642.1.1 = {
 		birth = "642.1.1"
 	}
@@ -10180,6 +10239,7 @@
 	trait = scholar
 	trait = just
 	trait = education_learning_1
+
 	630.1.1 = {
 		birth = "630.1.1"
 	}
@@ -10200,6 +10260,7 @@
 	trait = chaste
 	trait = diligent
 	trait = education_learning_1
+
 	623.1.1 = {
 		birth = "623.1.1"
 	}
@@ -10220,6 +10281,7 @@
 	trait = arrogant
 	trait = just
 	trait = education_learning_1
+
 	619.1.1 = {
 		birth = "619.1.1"
 	}
@@ -10240,6 +10302,7 @@
 	trait = scholar
 	trait = ambitious
 	trait = education_learning_1
+
 	610.1.1 = {
 		birth = "610.1.1"
 	}
@@ -10260,6 +10323,7 @@
 	trait = trusting
 	trait = honest
 	trait = education_learning_3
+
 	598.1.1 = {
 		birth = "598.1.1"
 	}
@@ -10279,6 +10343,7 @@
 	culture = "greek"
 	trait = diligent
 	trait = education_learning_2
+
 	575.1.1 = {
 		birth = "575.1.1"
 	}
@@ -10298,6 +10363,7 @@
 	culture = "greek"
 	trait = just
 	trait = education_learning_3
+
 	551.1.1 = {
 		birth = "551.1.1"
 	}
@@ -10318,6 +10384,7 @@
 	trait = cynical
 	trait = ambitious
 	trait = education_learning_3
+
 	552.1.1 = {
 		birth = "552.1.1"
 	}
@@ -10338,6 +10405,7 @@
 	trait = lazy
 	trait = generous
 	trait = education_learning_1
+
 	538.1.1 = {
 		birth = "538.1.1"
 	}
@@ -10358,6 +10426,7 @@
 	trait = just
 	trait = trusting
 	trait = education_learning_1
+
 	514.1.1 = {
 		birth = "514.1.1"
 	}
@@ -10378,6 +10447,7 @@
 	trait = zealous
 	trait = diligent
 	trait = education_learning_3
+
 	512.1.1 = {
 		birth = "512.1.1"
 	}
@@ -10398,6 +10468,7 @@
 	trait = scholar
 	trait = deceitful
 	trait = education_learning_1
+
 	496.1.1 = {
 		birth = "496.1.1"
 	}
@@ -10418,6 +10489,7 @@
 	trait = trusting
 	trait = gregarious
 	trait = education_learning_1
+
 	473.1.1 = {
 		birth = "473.1.1"
 	}
@@ -10438,6 +10510,7 @@
 	trait = deceitful
 	trait = arbitrary
 	trait = education_learning_3
+
 	470.1.1 = {
 		birth = "470.1.1"
 	}
@@ -10458,6 +10531,7 @@
 	trait = arbitrary
 	trait = paranoid
 	trait = education_learning_3
+
 	427.1.1 = {
 		birth = "427.1.1"
 	}
@@ -10477,6 +10551,7 @@
 	culture = "greek"
 	trait = just
 	trait = education_learning_4
+
 	411.1.1 = {
 		birth = "411.1.1"
 	}
@@ -10496,6 +10571,7 @@
 	culture = "greek"
 	trait = scholar
 	trait = education_learning_1
+
 	405.1.1 = {
 		birth = "405.1.1"
 	}
@@ -10540,6 +10616,7 @@
 	trait = scholar
 	trait = just
 	trait = education_learning_1
+
 	335.1.1 = {
 		birth = "335.1.1"
 	}
@@ -10559,6 +10636,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_learning_4
+
 	329.1.1 = {
 		birth = "329.1.1"
 	}
@@ -10580,6 +10658,7 @@
 	trait = ambitious
 	trait = cynical
 	trait = education_learning_1
+
 	330.1.1 = {
 		birth = "330.1.1"
 	}
@@ -10599,6 +10678,7 @@
 	culture = "greek"
 	trait = ambitious
 	trait = education_learning_1
+
 	285.1.1 = {
 		birth = "285.1.1"
 	}
@@ -10619,6 +10699,7 @@
 	trait = trusting
 	trait = ambitious
 	trait = education_learning_1
+
 	290.1.1 = {
 		birth = "290.1.1"
 	}
@@ -10639,6 +10720,7 @@
 	trait = gregarious
 	trait = content
 	trait = education_learning_1
+
 	237.1.1 = {
 		birth = "237.1.1"
 	}
@@ -10658,6 +10740,7 @@
 	culture = "greek"
 	trait = honest
 	trait = education_learning_1
+
 	187.1.1 = {
 		birth = "187.1.1"
 	}
@@ -10697,6 +10780,7 @@
 	trait = generous
 	trait = scholar
 	trait = education_learning_1
+
 	145.1.1 = {
 		birth = "145.1.1"
 	}
@@ -10718,6 +10802,7 @@
 	trait = scholar
 	trait = diligent
 	trait = education_learning_1
+
 	89.1.1 = {
 		birth = "89.1.1"
 	}
@@ -10738,6 +10823,7 @@
 	trait = temperate
 	trait = celibate
 	trait = education_learning_1
+
 	75.1.1 = {
 		birth = "75.1.1"
 	}
@@ -11763,8 +11849,8 @@
 }
 
 31443 = {
-	name = "Nikephoros"	#duke of Epirus
-	dynasty = 7215	#Orsini
+	name = "Nikephoros" #duke of Epirus
+	dynasty = 7215 #Orsini
 	religion = "catholic"
 	culture = "greek"
 	father = 31441
@@ -11776,11 +11862,10 @@
 		death = "1359.7.1"
 	}
 }
-
 31444 = {
 	name = "Tomaida"
 	female = yes
-	dynasty = 7215	#Orsini
+	dynasty = 7215 #Orsini
 	religion = "catholic"
 	culture = "greek"
 	father = 31441
@@ -12877,7 +12962,7 @@
 }
 
 34273 = {
-	name = "Konstantinos"	#Thrace
+	name = "Konstantinos" #Thrace
 	dynasty = 101551
 	religion = "orthodox"
 	culture = "greek"
@@ -12910,7 +12995,7 @@
 }
 
 34275 = {
-	name = "Andronikos"	#Cyprus 1165-1167, Durazzo 1172
+	name = "Andronikos" #Cyprus 1165-1167, Durazzo 1172
 	dynasty = 101141
 	religion = "orthodox"
 	culture = "greek"
@@ -12956,7 +13041,7 @@
 }
 
 34278 = {
-	name = "Ioannes"	#Thrakesia 1235
+	name = "Ioannes" #Thrakesia 1235
 	dynasty = 195
 	religion = "orthodox"
 	culture = "greek"
@@ -13045,7 +13130,7 @@
 }
 
 34284 = {
-	name = "Ioannes"	#Thessaloniki
+	name = "Ioannes" #Thessaloniki
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
@@ -13105,7 +13190,7 @@
 }
 
 34288 = {
-	name = "Eirene"	#real name unknown
+	name = "Eirene" #real name unknown
 	female = yes
 	dynasty = 48
 	religion = "orthodox"
@@ -13830,6 +13915,7 @@
 		birth = "1151.1.1"
 	}
 	1175.1.1 = {
+
 		trait = blind
 	}
 	1180.1.1 = {
@@ -14068,7 +14154,7 @@
 }
 
 34423 = {
-	name = "Michael"	#real name unknown
+	name = "Michael" #real name unknown
 	dynasty = 46
 	religion = "orthodox"
 	culture = "greek"
@@ -14082,7 +14168,7 @@
 }
 
 34424 = {
-	name = "Theodoros"	#real name unknown
+	name = "Theodoros" #real name unknown
 	dynasty = 46
 	religion = "orthodox"
 	culture = "greek"
@@ -14096,7 +14182,7 @@
 }
 
 34425 = {
-	name = "Ioannes"	#real name unknown
+	name = "Ioannes" #real name unknown
 	dynasty = 46
 	religion = "orthodox"
 	culture = "greek"
@@ -14147,6 +14233,7 @@
 	1070.1.1 = {
 		birth = "1070.1.1"
 	}
+
 	1089.1.1 = {
 		death = "1089.1.1"
 	}
@@ -14162,6 +14249,7 @@
 	1071.1.1 = {
 		birth = "1071.1.1"
 	}
+
 	1094.1.1 = {
 		trait = blind
 	}
@@ -14253,7 +14341,7 @@
 }
 
 34439 = {
-	name = "Nikephoros"	#Thessaloniki
+	name = "Nikephoros" #Thessaloniki
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
@@ -14425,7 +14513,7 @@
 }
 
 34454 = {
-	name = "Konstantinos"	#Thessaloniki 1320-1322
+	name = "Konstantinos" #Thessaloniki 1320-1322
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
@@ -14471,12 +14559,13 @@
 }
 
 34457 = {
-	name = "Ioannes"	#Thessaloniki 1304-1307
+	name = "Ioannes" #Thessaloniki 1304-1307
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
 	father = 465521
 	mother = 465522
+
 	1290.1.1 = {
 		birth = yes
 	}
@@ -14486,7 +14575,7 @@
 }
 
 34458 = {
-	name = "Demetrios"	#Thessaloniki 1307-1320
+	name = "Demetrios" #Thessaloniki 1307-1320
 	dynasty = 48
 	religion = "orthodox"
 	culture = "greek"
@@ -14602,7 +14691,7 @@
 }
 
 34469 = {
-	name = "Isaakios"	#real name unknown
+	name = "Isaakios" #real name unknown
 	dynasty_house = house_taronites
 	religion = "orthodox"
 	culture = "greek"
@@ -14794,7 +14883,7 @@
 }
 
 34583 = {
-	name = "Anna"	#real name unknown
+	name = "Anna" #real name unknown
 	female = yes
 	dynasty = 101078
 	religion = "orthodox"
@@ -14810,7 +14899,7 @@
 }
 
 34585 = {
-	name = "Eirene"	#real name unknown
+	name = "Eirene" #real name unknown
 	female = yes
 	dynasty = 101551
 	religion = "orthodox"
@@ -14867,7 +14956,7 @@
 }
 
 34589 = {
-	name = "Konstantinos"	#real name unknown
+	name = "Konstantinos" #real name unknown
 	dynasty = 101551
 	religion = "orthodox"
 	culture = "greek"
@@ -14965,7 +15054,7 @@
 }
 
 34611 = {
-	name = "Alexios"	#Thessaloniki 1253-1256
+	name = "Alexios" #Thessaloniki 1253-1256
 	dynasty = 20066
 	religion = "orthodox"
 	culture = "greek"
@@ -14982,7 +15071,7 @@
 }
 
 34612 = {
-	name = "Manuel"	#real name unknown
+	name = "Manuel" #real name unknown
 	dynasty = 101074
 	religion = "orthodox"
 	culture = "greek"
@@ -14997,7 +15086,7 @@
 }
 
 34613 = {
-	name = "Anna"	#real name unknown
+	name = "Anna" #real name unknown
 	female = yes
 	dynasty = 101074
 	religion = "orthodox"
@@ -15022,6 +15111,7 @@
 	1221.1.1 = {
 		birth = "1221.1.1"
 	}
+
 	1271.1.1 = {
 		death = "1271.1.1"
 	}
@@ -15040,6 +15130,7 @@
 	1266.1.1 = {
 		add_spouse = 34418
 	}
+
 	1274.1.1 = {
 		death = "1274.1.1"
 	}
@@ -15055,6 +15146,7 @@
 	1230.1.1 = {
 		birth = "1230.1.1"
 	}
+
 	1303.1.1 = {
 		death = "1303.1.1"
 	}
@@ -15070,6 +15162,7 @@
 	1231.1.1 = {
 		birth = "1231.1.1"
 	}
+
 	1280.1.1 = {
 		death = "1280.1.1"
 	}
@@ -15085,6 +15178,7 @@
 	1267.1.1 = {
 		birth = "1267.1.1"
 	}
+
 	1303.1.1 = {
 		death = "1303.1.1"
 	}
@@ -15101,6 +15195,7 @@
 	1268.1.1 = {
 		birth = "1268.1.1"
 	}
+
 	1302.1.1 = {
 		death = "1302.1.1"
 	}
@@ -15115,6 +15210,7 @@
 	1288.1.1 = {
 		birth = "1288.1.1"
 	}
+	
 	1345.1.1 = {
 		death = "1345.1.1"
 	}
@@ -15129,6 +15225,7 @@
 	1290.1.1 = {
 		birth = "1290.1.1"
 	}
+
 	1328.1.1 = {
 		death = "1328.1.1"
 	}
@@ -15143,6 +15240,7 @@
 	1296.1.1 = {
 		birth = "1296.1.1"
 	}
+
 	1345.1.1 = {
 		death = "1345.1.1"
 	}
@@ -15157,6 +15255,7 @@
 	1316.1.1 = {
 		birth = "1316.1.1"
 	}
+
 	1366.1.1 = {
 		death = "1366.1.1"
 	}
@@ -15246,7 +15345,7 @@
 	705.8.21 = {
 		death = {
 			death_reason = death_execution
-			killer = 70506			# Justinian II
+			killer = 70506 # Justinian II
 		}
 	}
 }
@@ -15779,7 +15878,6 @@
 		death = "1051.1.1"
 	}
 }
-
 159277 = {
 	name = "Michael"
 	dynasty = 101086
@@ -15794,7 +15892,6 @@
 		death = "1061.1.1"
 	}
 }
-
 159278 = {
 	name = "Sophia"
 	female = yes
@@ -15812,7 +15909,6 @@
 		death = "1040.1.1"
 	}
 }
-
 159279 = {
 	name = "Sophia"
 	female = yes
@@ -15958,6 +16054,7 @@
 	}
 }
 
+
 163088 = {
 	name = "Athanasios"
 	dynasty = 1022314
@@ -16006,14 +16103,14 @@
 }
 
 159535 = {
-	name = "Sophia"	#
+	name = "Sophia" #
 	female = yes
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159534
 	970.1.1 = {
-		birth = "970.1.1"		#Unknown
+		birth = "970.1.1" #Unknown
 	}
 	1010.1.1 = {
 		add_spouse = 41320
@@ -16022,141 +16119,131 @@
 		death = "1020.1.1"
 	}
 }
-
 159536 = {
-	name = "Michael"	#
+	name = "Michael" #
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159534
 	965.1.1 = {
-		birth = "965.1.1"		#Unknown
+		birth = "965.1.1" #Unknown
 	}
 	1025.1.1 = {
 		death = "1025.1.1"
 	}
 }
-
 159537 = {
-	name = "Nikephoros"	#
+	name = "Nikephoros" #
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159536
 	1000.1.1 = {
-		birth = "1000.1.1"		#Unknown
+		birth = "1000.1.1" #Unknown
 	}
 	1060.1.1 = {
 		death = "1060.1.1"
 	}
 }
-
 159538 = {
-	name = "Georgios"	#
+	name = "Georgios" #
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159537
 	1030.1.1 = {
-		birth = "1030.1.1"		#Unknown
+		birth = "1030.1.1" #Unknown
 	}
 	1090.1.1 = {
 		death = "1090.1.1"
 	}
 }
-
 159539 = {
-	name = "Michael"	#
+	name = "Michael" #
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159538
 	1050.1.1 = {
-		birth = "1050.1.1"		#Unknown
+		birth = "1050.1.1" #Unknown
 	}
 	1110.1.1 = {
 		death = "1110.1.1"
 	}
 }
-
 159540 = {
-	name = "Georgios"	#
+	name = "Georgios" #
 	dynasty = 101183
 	religion = "orthodox"
 	culture = "greek"
 	father = 159539
 	1080.1.1 = {
-		birth = "1080.1.1"		#Unknown
+		birth = "1080.1.1" #Unknown
 	}
 	1150.1.1 = {
 		death = "1150.1.1"
 	}
 }
-
 159541 = {
-	name = "Alexios"	#
+	name = "Alexios" #
 	dynasty = 1029094
 	religion = "orthodox"
 	culture = "greek"
 	father = 85000
 	1080.1.1 = {
-		birth = "1080.1.1"		#Unknown
+		birth = "1080.1.1" #Unknown
 	}
 	1150.1.1 = {
 		death = "1150.1.1"
 	}
 }
-
 159542 = {
-	name = "Ioannes"	#
+	name = "Ioannes" #
 	dynasty = 1029094
 	religion = "orthodox"
 	culture = "greek"
 	father = 159541
 	1100.1.1 = {
-		birth = "1100.1.1"		#Unknown
+		birth = "1100.1.1" #Unknown
 	}
 	1170.1.1 = {
 		death = "1170.1.1"
 	}
 }
-
 159543 = {
-	name = "Isaakios"	#
+	name = "Isaakios" #
 	dynasty = 1029094
 	religion = "orthodox"
 	culture = "greek"
 	father = 159542
 	1130.1.1 = {
-		birth = "1130.1.1"		#Unknown
+		birth = "1130.1.1" #Unknown
 	}
 	1180.1.1 = {
 		death = "1180.1.1"
 	}
 }
-
 159544 = {
-	name = "Konstantinos"	#
+	name = "Konstantinos" #
 	dynasty = 1029094
 	religion = "orthodox"
 	culture = "greek"
 	father = 159542
 	1150.1.1 = {
-		birth = "1150.1.1"		#Unknown
+		birth = "1150.1.1" #Unknown
 	}
 	1200.1.1 = {
 		death = "1200.1.1"
 	}
 }
-
 159545 = {
-	name = "Tatikios"	#
+	name = "Tatikios" #
 	dynasty = 1029095
 	religion = "orthodox"
 	culture = "greek"
 	father = 159542
 	1135.1.1 = {
-		birth = "1135.1.1"		#Unknown
+		birth = "1135.1.1" #Unknown
 	}
 	1190.1.1 = {
 		death = "1190.1.1"
@@ -16164,7 +16251,7 @@
 }
 
 159728 = {
-	name = "Damyanah"	#Damianos of Tarsus
+	name = "Damyanah" #Damianos of Tarsus
 	religion = "ashari"
 	culture = "greek"
 	dynasty = 1029121
@@ -16178,7 +16265,7 @@
 }
 
 145105 = {
-	name = "Stephanos"	# C.Arta
+	name = "Stephanos" # C.Arta
 	dynasty = 1022140
 	religion = "orthodox"
 	culture = "greek"
@@ -16191,10 +16278,11 @@
 }
 
 145106 = {
-	name = "Sisinnios"	# C.Demetrias
+	name = "Sisinnios" # C.Demetrias
 	dynasty = 1022141
 	religion = "orthodox"
 	culture = "greek"
+
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -16204,10 +16292,11 @@
 }
 
 145107 = {
-	name = "Christophoros"	# C.Monemvasia
+	name = "Christophoros" # C.Monemvasia
 	dynasty = 1022142
 	religion = "orthodox"
 	culture = "greek"
+
 	840.1.1 = {
 		birth = "840.1.1"
 	}
@@ -16217,10 +16306,11 @@
 }
 
 145108 = {
-	name = "Sabbatios"	# C.Chalkidike
+	name = "Sabbatios" # C.Chalkidike
 	dynasty = 101436
 	religion = "orthodox"
 	culture = "greek"
+
 	835.1.1 = {
 		birth = "835.1.1"
 	}
@@ -16230,10 +16320,11 @@
 }
 
 145109 = {
-	name = "Theoktistos"	# C.Lesbos
+	name = "Theoktistos" # C.Lesbos
 	dynasty = 1022144
 	religion = "orthodox"
 	culture = "greek"
+
 	830.1.1 = {
 		birth = "830.1.1"
 	}
@@ -16243,7 +16334,7 @@
 }
 
 145110 = {
-	name = "Theophylaktos"	# C.Tyana
+	name = "Theophylaktos" # C.Tyana
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
@@ -16260,10 +16351,11 @@
 }
 
 145111 = {
-	name = "Symvatios"	# C.Nikaea
+	name = "Symvatios" # C.Nikaea
 	dynasty = 1022145
 	religion = "orthodox"
 	culture = "greek"
+
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -16273,10 +16365,11 @@
 }
 
 145112 = {
-	name = "Gregorios"	# C.Chios
+	name = "Gregorios" # C.Chios
 	dynasty = 101398
 	religion = "orthodox"
 	culture = "greek"
+
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -16286,10 +16379,11 @@
 }
 
 145113 = {
-	name = "Demetrios"	# C.Rhodos
+	name = "Demetrios" # C.Rhodos
 	dynasty = 1022146
 	religion = "orthodox"
 	culture = "greek"
+
 	843.1.1 = {
 		birth = "843.1.1"
 	}
@@ -16299,10 +16393,11 @@
 }
 
 145114 = {
-	name = "Anatolios"	# C.Ikonion
+	name = "Anatolios" # C.Ikonion
 	dynasty = 1022147
 	religion = "orthodox"
 	culture = "greek"
+
 	838.1.1 = {
 		birth = "838.1.1"
 	}
@@ -16312,10 +16407,11 @@
 }
 
 145115 = {
-	name = "Theocharistos"	# C.Ankyra
+	name = "Theocharistos" # C.Ankyra
 	dynasty = 1022174
 	religion = "orthodox"
 	culture = "greek"
+
 	833.1.1 = {
 		birth = "833.1.1"
 	}
@@ -16325,11 +16421,12 @@
 }
 
 145116 = {
-	name = "Alexandros"	# D.Thrakesia/C.Laodikeia
+	name = "Alexandros" # D.Thrakesia/C.Laodikeia
 	dynasty = 1022148
 	religion = "orthodox"
 	culture = "greek"
 	father = 145842
+
 	828.1.1 = {
 		birth = "828.1.1"
 	}
@@ -16339,10 +16436,11 @@
 }
 
 145117 = {
-	name = "Konstantinos"	# C.Chaldea
+	name = "Konstantinos" # C.Chaldea
 	dynasty = 101541
 	religion = "orthodox"
 	culture = "greek"
+
 	833.1.1 = {
 		birth = "833.1.1"
 	}
@@ -16352,10 +16450,11 @@
 }
 
 145118 = {
-	name = "Theophilos"	# C.Sinope
+	name = "Theophilos" # C.Sinope
 	dynasty = 1022149
 	religion = "orthodox"
 	culture = "greek"
+
 	846.1.1 = {
 		birth = "846.1.1"
 	}
@@ -16365,10 +16464,11 @@
 }
 
 145119 = {
-	name = "Tiberios"	# D.Dioclea/C.Ragusa
+	name = "Tiberios" # D.Dioclea/C.Ragusa
 	dynasty = 101177
 	religion = "orthodox"
 	culture = "greek"
+
 	844.1.1 = {
 		birth = "844.1.1"
 	}
@@ -16378,10 +16478,11 @@
 }
 
 145120 = {
-	name = "Amphilochios"	# D.Dalmatia/C.Zadar
+	name = "Amphilochios" # D.Dalmatia/C.Zadar
 	dynasty = 101132
 	religion = "orthodox"
 	culture = "greek"
+
 	836.1.1 = {
 		birth = "836.1.1"
 	}
@@ -16391,10 +16492,11 @@
 }
 
 145121 = {
-	name = "Romanos"	# C.Consenza
+	name = "Romanos" # C.Consenza
 	dynasty = 1022150
 	religion = "orthodox"
 	culture = "greek"
+
 	834.1.1 = {
 		birth = "834.1.1"
 	}
@@ -16404,10 +16506,11 @@
 }
 
 145122 = {
-	name = "Yakinthos"	# C.Lykia
+	name = "Yakinthos" # C.Lykia
 	dynasty = 1022151
 	religion = "orthodox"
 	culture = "greek"
+
 	826.1.1 = {
 		birth = "826.1.1"
 	}
@@ -16417,10 +16520,11 @@
 }
 
 145123 = {
-	name = "Theodosios"	# C.Cherson
+	name = "Theodosios" # C.Cherson
 	dynasty = 1022152
 	religion = "orthodox"
 	culture = "greek"
+
 	824.1.1 = {
 		birth = "824.1.1"
 	}
@@ -16430,10 +16534,11 @@
 }
 
 145124 = {
-	name = "Thomas"	# C.Dyrrachion
+	name = "Thomas" # C.Dyrrachion
 	dynasty = 1022153
 	religion = "orthodox"
 	culture = "greek"
+
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -16447,6 +16552,7 @@
 	dynasty = 1022154
 	religion = "iconoclast"
 	culture = "greek"
+
 	739.1.1 = {
 		birth = "739.1.1"
 	}
@@ -16459,10 +16565,11 @@
 }
 
 145126 = {
-	name = "Leon"	# C.Malta
+	name = "Leon" # C.Malta
 	dynasty = 1022155
 	religion = "orthodox"
 	culture = "greek"
+
 	839.1.1 = {
 		birth = "839.1.1"
 	}
@@ -16472,10 +16579,11 @@
 }
 
 145127 = {
-	name = "Staurakios"	# C.Limisol
+	name = "Staurakios" # C.Limisol
 	dynasty = 1022156
 	religion = "orthodox"
 	culture = "greek"
+
 	832.1.1 = {
 		birth = "832.1.1"
 	}
@@ -16485,10 +16593,11 @@
 }
 
 145128 = {
-	name = "Isidoros"	# C.Lecce
+	name = "Isidoros" # C.Lecce
 	dynasty = 1022157
 	religion = "orthodox"
 	culture = "greek"
+
 	829.1.1 = {
 		birth = "829.1.1"
 	}
@@ -16621,7 +16730,7 @@
 }
 
 145137 = {
-	name = "Kallistos"	# D.Anatolia/c.Dorylaion
+	name = "Kallistos" # D.Anatolia/c.Dorylaion
 	dynasty = 101399
 	religion = "orthodox"
 	culture = "greek"
@@ -16721,7 +16830,7 @@
 }
 
 145144 = {
-	name = "Nikephoros"	# D.Charsianon/C.Kaisareia
+	name = "Nikephoros" # D.Charsianon/C.Kaisareia
 	dynasty = 100753
 	religion = "orthodox"
 	culture = "greek"
@@ -16735,7 +16844,7 @@
 }
 
 145145 = {
-	name = "Eustathios"	# C.Galatia
+	name = "Eustathios" # C.Galatia
 	dynasty = 100753
 	religion = "orthodox"
 	culture = "greek"
@@ -16765,7 +16874,7 @@
 }
 
 145147 = {
-	name = "Leon"	# C.Seleukeia
+	name = "Leon" # C.Seleukeia
 	dynasty = 641
 	religion = "orthodox"
 	culture = "greek"
@@ -16815,7 +16924,7 @@
 }
 
 145150 = {
-	name = "Pantherios"	# D.Athens/C.Atheniai
+	name = "Pantherios" # D.Athens/C.Atheniai
 	dynasty = 627
 	religion = "orthodox"
 	culture = "greek"
@@ -16830,7 +16939,7 @@
 }
 
 145151 = {
-	name = "Theodoros"	# C.Hellas
+	name = "Theodoros" # C.Hellas
 	dynasty = 627
 	religion = "orthodox"
 	culture = "greek"
@@ -16908,7 +17017,7 @@
 }
 
 145156 = {
-	name = "Leon"	# D.Trebizond/C.Trapezous
+	name = "Leon" # D.Trebizond/C.Trapezous
 	dynasty = 639
 	religion = "orthodox"
 	culture = "greek"
@@ -17030,7 +17139,7 @@
 }
 
 145164 = {
-	name = "Konstantinos"	# D.Paphlagonia/C.Herakleia
+	name = "Konstantinos" # D.Paphlagonia/C.Herakleia
 	dynasty = 633
 	religion = "orthodox"
 	culture = "greek"
@@ -17137,7 +17246,7 @@
 }
 
 145171 = {
-	name = "Ioannes"	# D.Armeniakon/C.Amisos
+	name = "Ioannes" # D.Armeniakon/C.Amisos
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
@@ -17274,7 +17383,7 @@
 }
 
 145180 = {
-	name = "Ioannes"	# D.Epirus/C.Epeiros
+	name = "Ioannes" # D.Epirus/C.Epeiros
 	dynasty = 1022159
 	religion = "orthodox"
 	culture = "greek"
@@ -17287,7 +17396,7 @@
 }
 
 145181 = {
-	name = "Konstantios"	# C.Cephalonia
+	name = "Konstantios" # C.Cephalonia
 	dynasty = 1022160
 	religion = "orthodox"
 	culture = "greek"
@@ -17300,7 +17409,7 @@
 }
 
 145182 = {
-	name = "Chrysaphios"	# D.Achaia/C.Korinthos
+	name = "Chrysaphios" # D.Achaia/C.Korinthos
 	dynasty = 1022161
 	religion = "orthodox"
 	culture = "greek"
@@ -17313,7 +17422,7 @@
 }
 
 145183 = {
-	name = "Leon"	# C.Achaia
+	name = "Leon" # C.Achaia
 	dynasty = 1022162
 	religion = "orthodox"
 	culture = "greek"
@@ -17326,7 +17435,7 @@
 }
 
 145184 = {
-	name = "Konstantinos"	# C.Methone
+	name = "Konstantinos" # C.Methone
 	dynasty = 1022163
 	religion = "orthodox"
 	culture = "greek"
@@ -17339,7 +17448,7 @@
 }
 
 145185 = {
-	name = "Ioannes"	# D.Thessalonika/C.Thessalonike
+	name = "Ioannes" # D.Thessalonika/C.Thessalonike
 	dynasty = 1022164
 	religion = "orthodox"
 	culture = "greek"
@@ -17352,7 +17461,7 @@
 }
 
 145186 = {
-	name = "Leon"	# C.Thessalia
+	name = "Leon" # C.Thessalia
 	dynasty = 1022165
 	religion = "orthodox"
 	culture = "greek"
@@ -17365,7 +17474,7 @@
 }
 
 145187 = {
-	name = "Theodoros"	# D.Aegean/C.Abydos
+	name = "Theodoros" # D.Aegean/C.Abydos
 	dynasty = 1022166
 	religion = "orthodox"
 	culture = "greek"
@@ -17378,7 +17487,7 @@
 }
 
 145188 = {
-	name = "Anastasios"	# C.Euboia
+	name = "Anastasios" # C.Euboia
 	dynasty = 1022167
 	religion = "orthodox"
 	culture = "greek"
@@ -17391,7 +17500,7 @@
 }
 
 145189 = {
-	name = "Drakontios"	# C.Naxos
+	name = "Drakontios" # C.Naxos
 	dynasty = 101536
 	religion = "orthodox"
 	culture = "greek"
@@ -17404,7 +17513,7 @@
 }
 
 145190 = {
-	name = "Konstantinos"	# C.Siracusa
+	name = "Konstantinos" # C.Siracusa
 	dynasty = 1022168
 	religion = "orthodox"
 	culture = "greek"
@@ -17417,7 +17526,7 @@
 }
 
 145191 = {
-	name = "Theodotos"	# D.Nikaia/C.Nikomedeia
+	name = "Theodotos" # D.Nikaia/C.Nikomedeia
 	dynasty = 1022170
 	religion = "orthodox"
 	culture = "greek"
@@ -17430,7 +17539,7 @@
 }
 
 145192 = {
-	name = "Chariton"	# C.Prusa
+	name = "Chariton" # C.Prusa
 	dynasty = 1022169
 	religion = "orthodox"
 	culture = "greek"
@@ -17443,7 +17552,7 @@
 }
 
 145193 = {
-	name = "Gregorios"	# C.Kyzikos
+	name = "Gregorios" # C.Kyzikos
 	dynasty = 1022171
 	religion = "orthodox"
 	culture = "greek"
@@ -17456,7 +17565,7 @@
 }
 
 145194 = {
-	name = "Theodoros"	# D.Samos/C.Ephesos
+	name = "Theodoros" # D.Samos/C.Ephesos
 	dynasty = 101348
 	religion = "iconoclast"
 	culture = "greek"
@@ -17473,7 +17582,7 @@
 }
 
 145195 = {
-	name = "Bardanios"	# C.Smyrna
+	name = "Bardanios" # C.Smyrna
 	dynasty = 1022172
 	religion = "orthodox"
 	culture = "greek"
@@ -17486,7 +17595,7 @@
 }
 
 145196 = {
-	name = "Sisinnios"	# D.Cibyrrhaeot/C.Attaleia
+	name = "Sisinnios" # D.Cibyrrhaeot/C.Attaleia
 	dynasty = 1022173
 	religion = "orthodox"
 	culture = "greek"
@@ -17499,7 +17608,7 @@
 }
 
 145197 = {
-	name = "Herakleianos"	# C.Sozopolis
+	name = "Herakleianos" # C.Sozopolis
 	dynasty = 1022175
 	religion = "orthodox"
 	culture = "greek"
@@ -17512,7 +17621,7 @@
 }
 
 145198 = {
-	name = "Leon"	# C.Zeta
+	name = "Leon" # C.Zeta
 	dynasty = 101234
 	religion = "orthodox"
 	culture = "greek"
@@ -17525,7 +17634,7 @@
 }
 
 145199 = {
-	name = "Himerios"	# C.Split
+	name = "Himerios" # C.Split
 	dynasty = 1022176
 	religion = "orthodox"
 	culture = "greek"
@@ -17538,7 +17647,7 @@
 }
 
 145200 = {
-	name = "Elias"	# D.Calabria/C.Reggio
+	name = "Elias" # D.Calabria/C.Reggio
 	dynasty = 1022177
 	religion = "orthodox"
 	culture = "greek"
@@ -17628,9 +17737,12 @@
 
 163134 = {
 	name = "Mu_nis"
+
 	culture = "greek"
 	religion = "ashari"
+
 	trait = "eunuch"
+
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -17721,28 +17833,40 @@
 	religion = orthodox
 	culture = greek
 	785.1.1 = {
+
 		birth = yes
+
 	}
+
 	835.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168373 = {
-	name = Sergios	#Sergios I
+	name = Sergios #Sergios I
 	dynasty = 9590
 	religion = orthodox
 	culture = greek
 	father = 168372
 	815.1.1 = {
+
 		birth = yes
+
 	}
+
 	834.1.1 = {
 		add_spouse = 168389
 	}
 	862.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168374 = {
@@ -17753,11 +17877,17 @@
 	father = 168373
 	mother = 168389
 	836.1.1 = {
+
 		birth = yes
+
 	}
+
 	885.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168375 = {
@@ -17767,11 +17897,17 @@
 	culture = greek
 	father = 168374
 	855.1.1 = {
+
 		birth = yes
+
 	}
+
 	905.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168376 = {
@@ -17781,12 +17917,19 @@
 	culture = greek
 	father = 168375
 	875.1.1 = {
+
 		birth = yes
+
 	}
+
 	935.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168377 = {
 	name = Konstantios
@@ -17795,11 +17938,17 @@
 	culture = greek
 	father = 168376
 	900.1.1 = {
+
 		birth = yes
+
 	}
+
 	955.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168378 = {
@@ -17809,11 +17958,17 @@
 	culture = greek
 	father = 168377
 	925.1.1 = {
+
 		birth = yes
+
 	}
+
 	980.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168379 = {
@@ -17823,12 +17978,20 @@
 	culture = greek
 	father = 168378
 	950.1.1 = {
+
 		birth = yes
+
 	}
+
 	1010.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168380 = {
 	name = Sergios
@@ -17837,12 +18000,19 @@
 	culture = greek
 	father = 168379
 	975.1.1 = {
+
 		birth = yes
+
 	}
+
 	1025.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168381 = {
 	name = Konstantios
@@ -17851,12 +18021,19 @@
 	culture = greek
 	father = 168380
 	1000.1.1 = {
+
 		birth = yes
+
 	}
+
 	1055.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168382 = {
 	name = Ioannes
@@ -17865,14 +18042,19 @@
 	culture = greek
 	father = 168381
 	1025.1.1 = {
+
 		birth = yes
+
 	}
 	1048.1.1 = {
 		add_spouse = 168390
 	}
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168383 = {
@@ -17883,12 +18065,20 @@
 	father = 168382
 	mother = 168390
 	1050.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168384 = {
 	name = Anastasios
@@ -17898,11 +18088,17 @@
 	father = 168373
 	mother = 168389
 	838.1.1 = {
+
 		birth = yes
+
 	}
+
 	888.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168385 = {
@@ -17913,11 +18109,17 @@
 	father = 168373
 	mother = 168389
 	841.1.1 = {
+
 		birth = yes
+
 	}
+
 	891.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168386 = {
@@ -17927,12 +18129,20 @@
 	culture = greek
 	father = 168384
 	858.1.1 = {
+
 		birth = yes
+
 	}
+
 	908.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168387 = {
 	name = Stephania
@@ -17942,12 +18152,20 @@
 	culture = greek
 	father = 168384
 	859.1.1 = {
+
 		birth = yes
+
 	}
+
 	910.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168388 = {
 	name = Anna
@@ -17958,12 +18176,20 @@
 	father = 168373
 	mother = 168389
 	843.1.1 = {
+
 		birth = yes
+
 	}
+
 	895.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168389 = {
 	name = Martha
@@ -17971,12 +18197,21 @@
 	religion = orthodox
 	culture = greek
 	818.1.1 = {
+
 		birth = yes
+
 	}
+
 	870.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168390 = {
 	name = Theodora
@@ -17984,12 +18219,19 @@
 	religion = orthodox
 	culture = greek
 	1025.1.1 = {
+
 		birth = yes
+
 	}
+
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168391 = {
 	name = Georgios
@@ -17999,12 +18241,20 @@
 	father = 168382
 	mother = 168390
 	1052.1.1 = {
+
 		birth = yes
+
 	}
+
 	1090.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168392 = {
 	name = Euphemia
@@ -18015,12 +18265,20 @@
 	father = 168382
 	mother = 168390
 	1049.1.1 = {
+
 		birth = yes
+
 	}
+
 	1089.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168393 = {
 	name = Hippolytos
@@ -18029,12 +18287,20 @@
 	culture = greek
 	father = 168381
 	1028.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168394 = {
 	name = Pavlos
@@ -18043,11 +18309,17 @@
 	culture = greek
 	father = 168393
 	1048.1.1 = {
+
 		birth = yes
+
 	}
+
 	1075.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168395 = {
@@ -18056,11 +18328,17 @@
 	religion = orthodox
 	culture = greek
 	770.1.1 = {
+
 		birth = yes
+
 	}
+
 	820.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168396 = {
@@ -18070,12 +18348,20 @@
 	culture = greek
 	father = 168395
 	790.1.1 = {
+
 		birth = yes
+
 	}
+
 	838.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168397 = {
 	name = Ioanna
@@ -18083,11 +18369,17 @@
 	religion = orthodox
 	culture = greek
 	815.1.1 = {
+
 		birth = yes
+
 	}
+
 	870.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168398 = {
@@ -18098,15 +18390,22 @@
 	father = 6881
 	mother = 168397
 	836.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	860.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168399 = {
-	name = Polkarios	#Polkarios I
+	name = Polkarios #Polkarios I
 	dynasty = 9591
 	religion = orthodox
 	trait = hunchbacked
@@ -18114,11 +18413,18 @@
 	father = 6881
 	mother = 168397
 	837.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	879.9.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168400 = {
@@ -18130,11 +18436,18 @@
 	father = 6881
 	mother = 168397
 	838.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	888.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168401 = {
@@ -18146,12 +18459,20 @@
 	father = 6881
 	mother = 168397
 	840.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	890.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
 
 168402 = {
 	name = Marinos
@@ -18160,12 +18481,22 @@
 	culture = greek
 	father = 168399
 	859.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	915.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168403 = {
 	name = Sergios
@@ -18174,11 +18505,18 @@
 	culture = greek
 	father = 168402
 	885.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	945.1.1 = {
+
 		death = yes
+
 	}
+
 }
 
 168404 = {
@@ -18188,12 +18526,21 @@
 	culture = greek
 	father = 168403
 	910.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	970.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168405 = {
 	name = Polkarios
@@ -18202,12 +18549,21 @@
 	culture = greek
 	father = 168404
 	935.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	990.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168406 = {
 	name = Eugenios
@@ -18216,12 +18572,21 @@
 	culture = greek
 	father = 168405
 	970.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	1025.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168407 = {
 	name = Belisarios
@@ -18230,12 +18595,21 @@
 	culture = greek
 	father = 168406
 	1000.1.1 = {
+
 		birth = yes
+
 	}
+
+
 	1060.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168408 = {
 	name = Konstas
@@ -18244,15 +18618,24 @@
 	culture = greek
 	father = 168407
 	1030.1.1 = {
+
 		birth = yes
+
 	}
+
 	1048.1.1 = {
 		add_spouse = 168409
 	}
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
+
 
 168409 = {
 	name = Melissa
@@ -18262,12 +18645,20 @@
 	culture = greek
 	father = 168381
 	1032.1.1 = {
+
 		birth = yes
+
 	}
+
 	1080.1.1 = {
+
 		death = yes
+
 	}
+
 }
+
+
 
 168410 = {
 	name = Polkarios
@@ -18279,6 +18670,7 @@
 	1049.1.1 = {
 		birth = yes
 	}
+
 	1100.1.1 = {
 		death = yes
 	}
@@ -18300,6 +18692,8 @@
 	}
 }
 
+
+
 168412 = {
 	name = Belisarios
 	dynasty = 9591
@@ -18310,6 +18704,7 @@
 	1052.1.1 = {
 		birth = yes
 	}
+
 	1100.1.1 = {
 		death = yes
 	}
@@ -18324,6 +18719,7 @@
 	1033.1.1 = {
 		birth = yes
 	}
+
 	1080.1.1 = {
 		death = yes
 	}
@@ -18339,13 +18735,15 @@
 	1035.1.1 = {
 		birth = yes
 	}
+
 	1080.1.1 = {
 		death = yes
 	}
 }
 
+
 168415 = {
-	name = Stefanos	#Stefanos I
+	name = Stefanos #Stefanos I
 	dynasty = 1060
 	religion = orthodox
 	culture = greek
@@ -18361,7 +18759,7 @@
 }
 
 6881 = {
-	name = Marinos	#Marinos I
+	name = Marinos #Marinos I
 	dynasty = 9591
 	religion = catholic
 	culture = greek
@@ -18369,6 +18767,7 @@
 	810.1.1 = {
 		birth = yes
 	}
+
 	835.1.1 = {
 		add_spouse = 168397
 	}
@@ -18533,7 +18932,6 @@
 		death = "630.1.1"
 	}
 }
-
 180666 = {
 	name = "Theodore"
 	# Archbishop of Canterbury
@@ -18547,7 +18945,6 @@
 		death = yes
 	}
 }
-
 145788 = {
 	name = "Eudokia"
 	dynasty = 1022264
@@ -18556,6 +18953,7 @@
 	culture = "greek"
 	trait = honest
 	father = 145807
+
 	735.1.1 = {
 		birth = "735.1.1"
 	}
@@ -18693,6 +19091,7 @@
 	dynasty = 1022319
 	religion = "orthodox"
 	culture = "greek"
+
 	710.1.1 = {
 		birth = "710.1.1"
 	}
@@ -18713,6 +19112,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145795
+
 	740.1.1 = {
 		birth = "740.1.1"
 	}
@@ -18729,6 +19129,7 @@
 	dynasty = 1022317
 	religion = "iconoclast"
 	culture = "greek"
+
 	730.1.1 = {
 		birth = "730.1.1"
 	}
@@ -18745,6 +19146,7 @@
 	dynasty = 1022318
 	religion = "iconoclast"
 	culture = "greek"
+
 	735.1.1 = {
 		birth = "735.1.1"
 	}
@@ -18761,6 +19163,7 @@
 	dynasty = 1022261
 	religion = "iconoclast"
 	culture = "greek"
+
 	740.1.1 = {
 		birth = "740.1.1"
 	}
@@ -18777,6 +19180,7 @@
 	dynasty = 1022262
 	religion = "iconoclast"
 	culture = "greek"
+
 	745.1.1 = {
 		birth = "745.1.1"
 	}
@@ -18793,6 +19197,7 @@
 	dynasty = 1022263
 	religion = "iconoclast"
 	culture = "greek"
+
 	750.1.1 = {
 		birth = "750.1.1"
 	}
@@ -18809,6 +19214,7 @@
 	dynasty = 101134
 	religion = "orthodox"
 	culture = "greek"
+
 	710.1.1 = {
 		birth = "710.1.1"
 	}
@@ -18826,6 +19232,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 145802
+
 	729.1.1 = {
 		birth = "729.1.1"
 	}
@@ -18843,6 +19250,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145802
+
 	731.1.1 = {
 		birth = "731.1.1"
 	}
@@ -18860,6 +19268,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145804
+
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -18876,6 +19285,7 @@
 	dynasty = 627
 	religion = "iconoclast"
 	culture = "greek"
+
 	732.1.1 = {
 		birth = "732.1.1"
 	}
@@ -18892,6 +19302,7 @@
 	dynasty = 1022264
 	religion = "orthodox"
 	culture = "greek"
+
 	715.1.1 = {
 		birth = "715.1.1"
 	}
@@ -18909,6 +19320,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145807
+
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -18925,6 +19337,7 @@
 	dynasty = 1022265
 	religion = "iconoclast"
 	culture = "greek"
+
 	742.1.1 = {
 		birth = "742.1.1"
 	}
@@ -18941,6 +19354,7 @@
 	dynasty = 1022266
 	religion = "iconoclast"
 	culture = "greek"
+
 	746.1.1 = {
 		birth = "746.1.1"
 	}
@@ -18957,6 +19371,7 @@
 	dynasty = 1022267
 	religion = "iconoclast"
 	culture = "greek"
+
 	744.1.1 = {
 		birth = "744.1.1"
 	}
@@ -18973,6 +19388,7 @@
 	dynasty = 1022268
 	religion = "iconoclast"
 	culture = "greek"
+
 	732.1.1 = {
 		birth = "732.1.1"
 	}
@@ -18989,6 +19405,7 @@
 	dynasty = 1022269
 	religion = "iconoclast"
 	culture = "greek"
+
 	738.1.1 = {
 		birth = "738.1.1"
 	}
@@ -19005,6 +19422,7 @@
 	dynasty = 1022270
 	religion = "iconoclast"
 	culture = "greek"
+
 	734.1.1 = {
 		birth = "734.1.1"
 	}
@@ -19021,6 +19439,7 @@
 	dynasty = 1022271
 	religion = "iconoclast"
 	culture = "greek"
+
 	736.1.1 = {
 		birth = "736.1.1"
 	}
@@ -19037,6 +19456,7 @@
 	dynasty = 1022272
 	religion = "iconoclast"
 	culture = "greek"
+
 	731.1.1 = {
 		birth = "731.1.1"
 	}
@@ -19053,6 +19473,7 @@
 	dynasty = 1022273
 	religion = "iconoclast"
 	culture = "greek"
+
 	739.1.1 = {
 		birth = "739.1.1"
 	}
@@ -19066,6 +19487,7 @@
 	dynasty = 1022274
 	religion = "iconoclast"
 	culture = "greek"
+
 	733.1.1 = {
 		birth = "733.1.1"
 	}
@@ -19082,6 +19504,7 @@
 	dynasty = 1022275
 	religion = "iconoclast"
 	culture = "greek"
+
 	737.1.1 = {
 		birth = "737.1.1"
 	}
@@ -19098,6 +19521,7 @@
 	dynasty = 1022276
 	religion = "iconoclast"
 	culture = "greek"
+
 	735.1.1 = {
 		birth = "735.1.1"
 	}
@@ -19111,6 +19535,7 @@
 	dynasty = 1022277
 	religion = "iconoclast"
 	culture = "greek"
+
 	749.1.1 = {
 		birth = "749.1.1"
 	}
@@ -19130,6 +19555,7 @@
 	dynasty = 1022278
 	religion = "iconoclast"
 	culture = "greek"
+
 	741.1.1 = {
 		birth = "741.1.1"
 	}
@@ -19146,6 +19572,7 @@
 	dynasty = 1022279
 	religion = "iconoclast"
 	culture = "greek"
+
 	747.1.1 = {
 		birth = "747.1.1"
 	}
@@ -19162,6 +19589,7 @@
 	dynasty = 1022280
 	religion = "iconoclast"
 	culture = "greek"
+
 	743.1.1 = {
 		birth = "743.1.1"
 	}
@@ -19178,6 +19606,7 @@
 	dynasty = 1022281
 	religion = "iconoclast"
 	culture = "greek"
+
 	745.1.1 = {
 		birth = "745.1.1"
 	}
@@ -19194,6 +19623,7 @@
 	dynasty = 1022282
 	religion = "iconoclast"
 	culture = "greek"
+
 	738.1.1 = {
 		birth = "738.1.1"
 	}
@@ -19212,6 +19642,7 @@
 	dynasty = 1022283
 	religion = "iconoclast"
 	culture = "greek"
+
 	732.1.1 = {
 		birth = "732.1.1"
 	}
@@ -19228,6 +19659,7 @@
 	dynasty = 1022284
 	religion = "iconoclast"
 	culture = "greek"
+
 	734.1.1 = {
 		birth = "734.1.1"
 	}
@@ -19244,6 +19676,7 @@
 	dynasty = 1022285
 	religion = "iconoclast"
 	culture = "greek"
+
 	736.1.1 = {
 		birth = "736.1.1"
 	}
@@ -19260,6 +19693,7 @@
 	dynasty = 101348
 	religion = "iconoclast"
 	culture = "greek"
+
 	730.1.1 = {
 		birth = "730.1.1"
 	}
@@ -19277,6 +19711,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145830
+
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -19299,6 +19734,7 @@
 	dynasty = 1022286
 	religion = "iconoclast"
 	culture = "greek"
+
 	742.1.1 = {
 		birth = "742.1.1"
 	}
@@ -19315,6 +19751,7 @@
 	dynasty = 1022287
 	religion = "iconoclast"
 	culture = "greek"
+
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -19348,6 +19785,7 @@
 	dynasty = 1022288
 	religion = "iconoclast"
 	culture = "greek"
+
 	744.1.1 = {
 		birth = "744.1.1"
 	}
@@ -19364,6 +19802,7 @@
 	dynasty = 1022289
 	religion = "iconoclast"
 	culture = "greek"
+
 	746.1.1 = {
 		birth = "746.1.1"
 	}
@@ -19380,6 +19819,7 @@
 	dynasty = 1022290
 	religion = "iconoclast"
 	culture = "greek"
+
 	731.1.1 = {
 		birth = "731.1.1"
 	}
@@ -19397,6 +19837,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_martial_3
+
 	739.1.1 = {
 		birth = "739.1.1"
 	}
@@ -19413,6 +19854,7 @@
 	dynasty = 1022292
 	religion = "iconoclast"
 	culture = "greek"
+
 	733.1.1 = {
 		birth = "733.1.1"
 	}
@@ -19429,6 +19871,7 @@
 	dynasty = 1022293
 	religion = "iconoclast"
 	culture = "greek"
+
 	737.1.1 = {
 		birth = "737.1.1"
 	}
@@ -19449,6 +19892,7 @@
 	trait = sadistic
 	trait = diligent
 	trait = education_martial_3
+
 	735.1.1 = {
 		birth = "735.1.1"
 	}
@@ -19466,6 +19910,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145841
+
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -19503,6 +19948,7 @@
 	dynasty = 1022294
 	religion = "iconoclast"
 	culture = "greek"
+
 	741.1.1 = {
 		birth = "741.1.1"
 	}
@@ -19519,6 +19965,7 @@
 	dynasty = 101349
 	religion = "iconoclast"
 	culture = "greek"
+
 	749.1.1 = {
 		birth = "749.1.1"
 	}
@@ -19535,6 +19982,7 @@
 	dynasty = 1022296
 	religion = "iconoclast"
 	culture = "greek"
+
 	747.1.1 = {
 		birth = "747.1.1"
 	}
@@ -19552,6 +20000,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_martial_3
+
 	743.1.1 = {
 		birth = "743.1.1"
 	}
@@ -19568,6 +20017,7 @@
 	dynasty = 1022298
 	religion = "iconoclast"
 	culture = "greek"
+
 	745.1.1 = {
 		birth = "745.1.1"
 	}
@@ -19584,6 +20034,7 @@
 	dynasty = 1022299
 	religion = "iconoclast"
 	culture = "greek"
+
 	730.1.1 = {
 		birth = "730.1.1"
 	}
@@ -19600,6 +20051,7 @@
 	dynasty = 1022300
 	religion = "iconoclast"
 	culture = "greek"
+
 	740.1.1 = {
 		birth = "740.1.1"
 	}
@@ -19616,6 +20068,7 @@
 	dynasty = 1022301
 	religion = "iconoclast"
 	culture = "greek"
+
 	732.1.1 = {
 		birth = "732.1.1"
 	}
@@ -19632,6 +20085,7 @@
 	dynasty = 1022302
 	religion = "iconoclast"
 	culture = "greek"
+
 	738.1.1 = {
 		birth = "738.1.1"
 	}
@@ -19648,6 +20102,7 @@
 	dynasty = 1022303
 	religion = "iconoclast"
 	culture = "greek"
+
 	734.1.1 = {
 		birth = "734.1.1"
 	}
@@ -19664,6 +20119,7 @@
 	dynasty = 1022304
 	religion = "iconoclast"
 	culture = "greek"
+
 	736.1.1 = {
 		birth = "736.1.1"
 	}
@@ -19680,6 +20136,7 @@
 	dynasty = 1022305
 	religion = "iconoclast"
 	culture = "greek"
+
 	742.1.1 = {
 		birth = "742.1.1"
 	}
@@ -19696,6 +20153,7 @@
 	dynasty = 1022306
 	religion = "iconoclast"
 	culture = "greek"
+
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -19712,6 +20170,7 @@
 	dynasty = 1022307
 	religion = "iconoclast"
 	culture = "greek"
+
 	744.1.1 = {
 		birth = "744.1.1"
 	}
@@ -19728,6 +20187,7 @@
 	dynasty = 1022308
 	religion = "iconoclast"
 	culture = "greek"
+
 	746.1.1 = {
 		birth = "746.1.1"
 	}
@@ -19744,6 +20204,7 @@
 	dynasty = 1022309
 	religion = "iconoclast"
 	culture = "greek"
+
 	731.1.1 = {
 		birth = "731.1.1"
 	}
@@ -19761,6 +20222,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_martial_3
+
 	740.1.1 = {
 		birth = "740.1.1"
 	}
@@ -19797,6 +20259,7 @@
 	dynasty = 1022311
 	religion = "iconoclast"
 	culture = "greek"
+
 	733.1.1 = {
 		birth = "733.1.1"
 	}
@@ -19813,6 +20276,7 @@
 	dynasty = 1022312
 	religion = "iconoclast"
 	culture = "greek"
+
 	737.1.1 = {
 		birth = "737.1.1"
 	}
@@ -19829,6 +20293,7 @@
 	dynasty = 1022313
 	religion = "iconoclast"
 	culture = "greek"
+
 	735.1.1 = {
 		birth = "735.1.1"
 	}
@@ -20018,6 +20483,7 @@
 	father = 145876
 	religion = "orthodox"
 	culture = "greek"
+
 	700.1.1 = {
 		birth = "700.1.1"
 	}
@@ -20092,6 +20558,7 @@
 	father = 145880
 	religion = "iconoclast"
 	culture = "greek"
+
 	771.1.1 = {
 		birth = "771.1.1"
 	}
@@ -20113,6 +20580,7 @@
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_martial_2
+
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -20136,6 +20604,7 @@
 	father = 145880
 	religion = "orthodox"
 	culture = "greek"
+
 	791.1.1 = {
 		birth = "791.1.1"
 	}
@@ -20176,6 +20645,7 @@
 	father = 145884
 	religion = "orthodox"
 	culture = "greek"
+
 	786.1.1 = {
 		birth = "786.1.1"
 	}
@@ -20193,6 +20663,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 145885
+
 	805.1.1 = {
 		birth = "805.1.1"
 	}
@@ -20240,6 +20711,7 @@
 	dynasty = 1022315
 	religion = "catholic"
 	culture = "greek"
+
 	731.1.1 = {
 		birth = "731.1.1"
 	}
@@ -20296,6 +20768,7 @@
 	dynasty = 1022324
 	religion = "catholic"
 	culture = "greek"
+
 	725.1.1 = {
 		birth = "725.1.1"
 	}
@@ -20352,6 +20825,7 @@
 	dynasty = 1022295
 	religion = "catholic"
 	culture = "greek"
+
 	728.1.1 = {
 		birth = "728.1.1"
 	}
@@ -20452,6 +20926,7 @@
 	trait = diligent
 	trait = scholar
 	trait = education_stewardship_3
+
 	804.1.1 = {
 		birth = "804.1.1"
 	}
@@ -20494,14 +20969,16 @@
 		death = yes
 	}
 }
-
 200121 = {
 	name = "Eudokia"
 	female = yes
 	dynasty = 101074
+
 	father = 125742
+
 	religion = orthodox
 	culture = greek
+
 	1254.1.1 = {
 		birth = yes
 	}
@@ -20512,13 +20989,13 @@
 		death = yes
 	}
 }
-
 168790 = {
-	name = "Germanos"	#real name unknown
+	name = "Germanos" #real name unknown
 	dynasty = 1022186
 	religion = "orthodox"
 	culture = "greek"
 	father = 70529
+
 	470.1.1 = {
 		birth = yes
 	}
@@ -20533,6 +21010,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 168790
+
 	500.1.1 = {
 		birth = yes
 	}
@@ -20554,11 +21032,11 @@
 	551.1.1 = {
 		birth = yes
 	}
+
 	605.1.1 = {
 		death = yes
 	}
 }
-
 180997 = {
 	name = "Konstantinos"
 	dynasty = 188
@@ -20611,12 +21089,16 @@
 168714 = {
 	name = "Petros"
 	dynasty = 1022314
+
 	father = 168719
+
 	religion = "orthodox"
 	culture = "greek"
+
 	541.1.1 = {
 		birth = yes
 	}
+
 	593.1.1 = {
 		death = yes
 	}
@@ -20626,9 +21108,12 @@
 	name = "Iouliana"
 	female = yes
 	dynasty = 1022314
+
 	father = 168714
+
 	religion = "orthodox"
 	culture = "greek"
+
 	582.1.1 = {
 		birth = yes
 	}
@@ -20640,6 +21125,7 @@
 168719 = {
 	name = "Pavlos"
 	dynasty = 1022314
+
 	religion = "orthodox"
 	culture = "greek"
 	father = ck650045
@@ -20666,7 +21152,6 @@
 		death = yes
 	}
 }
-
 302342 = {
 	name = "Alexios"
 	dynasty = 2001065	#Maleios
@@ -20683,7 +21168,6 @@
 		death = yes
 	}
 }
-
 302343 = {
 	name = "Eirene"
 	female = yes
@@ -20696,7 +21180,6 @@
 		death = yes
 	}
 }
-
 302344 = {
 	name = "Matthaios"
 	dynasty = 2001065	#Maleios
@@ -20711,7 +21194,6 @@
 		death = yes
 	}
 }
-
 302345 = {
 	name = "Athanasia"
 	female = yes
@@ -20727,7 +21209,6 @@
 		death = yes
 	}
 }
-
 302346 = {
 	name = "Kale"
 	female = yes
@@ -20743,7 +21224,6 @@
 		death = yes
 	}
 }
-
 302347 = {
 	name = "Tiberios"
 	dynasty = 2001065	#Maleios
@@ -20776,7 +21256,6 @@
 		death = yes
 	}
 }
-
 302349 = {
 	name = "Dorothea"
 	female = yes
@@ -20789,7 +21268,6 @@
 		death = yes
 	}
 }
-
 302350 = {
 	name = "Gregorios"
 	dynasty = 2001065	#Maleios
@@ -20804,7 +21282,6 @@
 		death = yes
 	}
 }
-
 302351 = {
 	name = "Maximos"
 	dynasty = 2001065	#Maleios
@@ -20819,7 +21296,6 @@
 		death = yes
 	}
 }
-
 302352 = {
 	name = "Niphon"
 	dynasty = 2001065	#Maleios
@@ -20834,7 +21310,6 @@
 		death = yes
 	}
 }
-
 #Sebasteia
 ##867
 302353 = {
@@ -20852,7 +21327,6 @@
 		death = yes
 	}
 }
-
 302354 = {
 	name = "Demetra"
 	female = yes
@@ -20865,7 +21339,6 @@
 		death = yes
 	}
 }
-
 302355 = {
 	name = "Leontios"
 	dynasty = 2001066	#Kardias
@@ -20883,7 +21356,6 @@
 		death = yes
 	}
 }
-
 302356 = {
 	name = "Elaidora"
 	female = yes
@@ -20896,7 +21368,6 @@
 		death = yes
 	}
 }
-
 302357 = {
 	name = "Methodios"
 	dynasty = 2001066	#Kardias
@@ -20914,7 +21385,6 @@
 		death = yes
 	}
 }
-
 302358 = {
 	name = "Kyra"
 	female = yes
@@ -20927,7 +21397,6 @@
 		death = yes
 	}
 }
-
 302359 = {
 	name = "Sophia"
 	female = yes
@@ -20943,7 +21412,6 @@
 		death = yes
 	}
 }
-
 302360 = {
 	name = "Valeria"
 	female = yes
@@ -20961,12 +21429,14 @@
 }
 
 262249 = {
-	name = "Gemma"	# Gemma Spartenos, wife of Landolf III of Capua
+	name = "Gemma" # Gemma Spartenos, wife of Landolf III of Capua
 	dynasty = 1022314
 	female = yes
 	religion = catholic
 	culture = greek
+
 	father = 163088
+
 	883.1.1 = {
 		birth = yes
 	}
@@ -20988,6 +21458,7 @@
 	trait = trusting
 	trait = brave
 	trait = education_learning_4
+
 	8.1.1 = {
 		birth = yes
 		give_nickname = nick_the_apostle
@@ -20998,12 +21469,14 @@
 }
 
 # Byzantine Governors of Malta
+
 greek0001 = {
-	name = "Himerios"	# Fictional
+	name = "Himerios" # Fictional
 	dynasty = 1022309
 	religion = "orthodox"
 	culture = "greek"
 	father = "145859"
+
 	782.1.1 = {
 		birth = yes
 	}
@@ -21018,6 +21491,7 @@ greek0002 = {
 	religion = "orthodox"
 	culture = "greek"
 	father = "greek0001"
+	
 	825.1.1 = {
 		birth = yes
 	}
