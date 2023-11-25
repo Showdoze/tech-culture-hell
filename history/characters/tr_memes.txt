@@ -48,11 +48,36 @@ mmtonychase = {
 	}
 }
 
+gman = {
+	name = "Unknown"
+	religion = pagan
+	culture = american
+	dna = gman
+	martial = 4
+	diplomacy = 10
+	intrigue = 100
+	stewardship = 10
+	health = 999
+	trait = calm
+	trait = education_intrigue_5
+	trait = arrogant
+	trait = intellect_good_4
+	trait = immortal
+	trait = schemer
+	1.1.11 = {
+		birth = yes
+	}
+	9999.9.99 = {
+		death = yes
+	}
+}
+
 mmsateliteman = {
 	name = "Satelite Man"
 	dynasty = mmtrolls
 	religion = pagan
 	culture = american
+	dna = gman
 	martial = 4
 	diplomacy = 10
 	intrigue = 50
@@ -95,7 +120,37 @@ mmgordonwilkins = {
 	841.1.1 = {
 		remove_spouse = mmcyraxxsally
 	}
-	842.1.1 = {
+	845.1.1 = {
+		add_spouse = mmjenniewilkins
+	}
+	847.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+		}
+	}
+	2016.4.17 = {
+		death = yes
+	}
+}
+
+mmjenniewilkins = {
+	name = "Jennie Wilkins"
+	religion = catholic
+	culture = american
+	female = yes
+	martial = 5
+	diplomacy = 15
+	intrigue = 5
+	stewardship = 10
+	trait = beauty_good_1
+	trait = education_diplomacy_2
+	810.1.11 = {
+		birth = yes
+	}
+	845.1.1 = {
+		add_spouse = mmgordonwilkins
+	}
+	847.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
