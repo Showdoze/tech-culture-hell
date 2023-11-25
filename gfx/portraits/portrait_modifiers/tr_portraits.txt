@@ -73,15 +73,15 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = no_hair
-           }
-           accessory = {
+                template = no_hair
+                range = { 0 1 }
+            }
+            accessory = {
             mode = add
             gene = headgear
             template = no_headgear
             value = 0.1 # For the randomness to work correctly
-        }
+            }
         }   
         weight = {
             base = 0
@@ -99,7 +99,8 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = beards
-                template = male_beard_sub_saharan_02
+                template = all_beards
+                accessory = male_beard_sub_saharan_02
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
@@ -157,13 +158,15 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = beards
-                template = male_beard_fp2_iberian_christian_04
+                template = all_beards
+                accessory = male_beard_fp2_iberian_christian_04
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = male_hair_steppe_01
+                template = all_hairstyles
+                accessory = male_hair_steppe_01
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
@@ -179,7 +182,7 @@ tr_portraits = {
 				add = 1000
 				exists = this
 				exists = character:mmed
-				this = character:mmbed
+				this = character:mmed
 			}
         }
     }
@@ -273,7 +276,8 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = beards
-                template = male_beard_sub_saharan_02
+                template = all_beards
+                accessory = male_beard_sub_saharan_02
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
@@ -305,7 +309,8 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = beards
-                template = male_beard_mena_02
+                template = all_beards
+                accessory = male_beard_mena_02
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
@@ -317,8 +322,8 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = no_hair
+                template = no_hair
+                range = { 0 1 }
             }
         }   
         weight = {
@@ -407,7 +412,8 @@ tr_portraits = {
             accessory = {
                 mode = add
                 gene = beards
-                template = male_beard_sub_saharan_02
+                template = all_beards
+                accessory = male_beard_sub_saharan_02
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
@@ -415,6 +421,7 @@ tr_portraits = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_western_03
+                range = { 0 1 }
             }
         }   
         weight = {
