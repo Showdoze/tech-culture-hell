@@ -813,6 +813,9 @@ mmwings = {
 		effect = {
 			set_relation_rival = { target = character:mmdsp reason = rival_historical }
 		}
+		effect = {
+			set_relation_rival = { target = character:mmboogie2988 reason = rival_historical }
+		}
 	}
 	890.6.30 = {
 		death = {
@@ -855,6 +858,7 @@ mmdragonlord = {
 	trait = wrathful
 	trait = comfort_eater
 	trait = reaver
+	trait = education_martial_1
 	disallow_random_traits = yes
 	820.4.21 = {
 		birth = yes
@@ -866,7 +870,34 @@ mmdragonlord = {
 		}
 	}
 }
-
+mmboogie2988 = {
+	name = "Boogie2988"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	trait = wrathful
+	trait = greedy
+	trait = melancholic
+	trait = depressed_genetic
+	trait = gluttonous
+	trait = lazy
+	trait = education_diplomacy_1
+	disallow_random_traits = yes
+	820.4.21 = {
+		birth = yes
+	}
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmwings reason = rival_historical }
+		}
+	}
+	890.1.10 = {
+		death = {
+			death_reason = death_contest_duel_accident
+			killer = mmwings
+		}
+	}
+}
 mmbella = {
 	name = "Isabelle Jenkis"
 	religion = catholic
