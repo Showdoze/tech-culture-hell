@@ -1,0 +1,51 @@
+@saiyan_endure = "gfx/interface/icons/culture_innovations/saiyan_endure.dds"
+@saiyan_pod = "gfx/interface/icons/culture_innovations/saiyan_pod.dds"
+@saiyan_tribe = "gfx/interface/icons/culture_innovations/saiyan_tribe.dds"
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+
+
+
+innovation_saiyan_training_1 = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @saiyan_tribe
+	can_progress = {
+		has_cultural_pillar = heritage_saiyan
+	}
+
+	character_modifier = {
+		prowess = 5
+		men_at_arms_maintenance = -0.01
+	}	
+	maa_upgrade = {
+		type = light_infantry
+		damage = 1
+	}
+}
+innovation_saiyan_training_2 = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @saiyan_pod
+	can_progress = {
+		has_cultural_pillar = heritage_saiyan
+	}
+
+	character_modifier = {
+		prowess = 10
+		men_at_arms_maintenance = 0.01
+	}	
+}
+innovation_saiyan_training_3 = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @saiyan_endure
+	can_progress = {
+		has_cultural_pillar = heritage_saiyan
+	}
+
+	character_modifier = {
+		prowess = 5
+		negate_health_penalty_add = 0.5
+		health = 0.5
+	}	
+}
