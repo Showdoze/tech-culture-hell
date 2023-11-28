@@ -25,7 +25,10 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
+@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
+
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
@@ -154,12 +157,15 @@ innovation_longboats = {
 	culture_era = culture_era_tribal
 	region = world_europe_north
 	icon = @longboats
+
 	character_modifier = {
 		embarkation_cost_mult = -1
 		naval_movement_speed_mult = 0.75
 	}
+
 	custom = unlocks_naval_raiding
 	custom = unlocks_sailable_major_rivers
+
 	flag = global_regional
 	flag = tribal_era_regional
 }
