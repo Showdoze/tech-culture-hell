@@ -487,7 +487,42 @@ mmheather = {
 		death = yes
 	}
 }
-
+mmchrischan_past = {
+	name = "Chris-Chan"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_chandler
+	dna = chrischan
+	martial = 1
+	diplomacy = 1
+	intrigue = 0
+	stewardship = 1
+	learning = 0
+	prowess = 0
+	mother = mmbarb
+	father = mmbobchan
+	trait = craven
+	trait = zealous
+	trait = gluttonous
+	trait = stuttering
+	trait = reclusive
+	trait = dull
+	trait = poet
+	trait = stubborn
+	trait = witch
+	disallow_random_traits = yes
+	840.11.5 = {
+		birth = yes
+	}
+	841.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmliquid reason = rival_historical }
+		}
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
 mmchrischan = {
 	name = "Ian Brandon Anderson"
 	religion = catholic
@@ -585,12 +620,30 @@ mmbobchan = {
 		}
 	}
 }
-
+mm_bobs_son = {
+	name = "Dr.David Alan"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_chandler
+	trait = calm
+	trait = education_learning_4
+	trait = compassionate
+	trait = content
+	#disallow_random_traits = yes
+	790.10.1 = {
+		birth = yes
+	}
+	2040.4.17 = {
+		death = {
+			death_reason = death_incapable
+		}
+	}
+}	
 mmbarb = {
 	name = "Barbara Ann"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_chandler
+	dynasty_house = house_lolcow_weston
 	dna = barb
 	female = yes
 	martial = 1
@@ -628,6 +681,27 @@ mmbarb = {
 		}
 	}
 }
+mmbarb_son = {
+	name = "Cole Smithy"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_weston
+	trait = poet
+	trait = education_learning_3
+	trait = Honest
+	trait = callous
+	trait = stubborn
+	disallow_random_traits = yes
+	808.10.1 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = {
+			death_reason = death_incapable
+		}
+	}
+}
+
 mmliquid = {
 	name = "The True And Honest Christian Weston Chandler"
 	religion = zun_pagan
@@ -666,8 +740,9 @@ mmliquid = {
 		effect = {
 			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
 		}
-	}
-	841.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmchrischan_past reason = rival_historical }
+		}
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
