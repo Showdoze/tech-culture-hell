@@ -2034,7 +2034,7 @@ tradition_saiyan = {
 		cultural_acceptance_gain_mult = -0.25
 	}
 	character_modifier = {
-		knight_effectiveness_mult = 25
+		knight_effectiveness_mult = 50
 		knight_limit = -2
 		supply_duration = -1
 		supply_capacity_mult = 0.5
@@ -2057,8 +2057,8 @@ tradition_saiyan = {
 		retreat_losses = -0.1
 		hard_casualty_modifier = -0.1
 		prowess = 20
-		levy_size = -0.5
-		army_toughness_mult = 0.05
+		levy_size = -1
+		army_toughness_mult = 0.25
 		negate_health_penalty_add = 0.15
 		stewardship = -1
 		diplomacy = -3
@@ -2174,6 +2174,60 @@ tradition_romance_byz= {
 	}
 	cost = {
 		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_islamic = {
+	category = societal
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = islamic.dds
+	}
+	is_shown = {
+		religion = religion:islam_religion
+	}
+	parameters = {
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+	}
+	character_modifier = {
+		opinion_of_different_faith = -15
+		ai_zeal = 25
+		same_faith_opinion = 10
+	}
+	cost = {
+		prestige = { 900 }
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_christian= {
+	category = societal
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = christian.dds
+	}
+	is_shown = {
+		religion = religion:christianity_religion
+	}
+	parameters = {
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+	}
+	character_modifier = {
+		opinion_of_different_faith = -15
+		ai_zeal = 25
+		same_faith_opinion = 10
+	}
+	cost = {
+		prestige = { 900 }
 	}
 	ai_will_do = {
 		value = 0
