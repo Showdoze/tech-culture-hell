@@ -23,9 +23,9 @@ mesopotamian = {
 
 akkadian = {
 	color = { 200 200 10 }
-	created = 2.1.1
-	parents = { mesopotamian }
-
+	created = 10.1.1
+	parents = { sumer }
+	history_loc_override = akkadian_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_sumerian
 	language = language_aramaic
@@ -48,9 +48,9 @@ akkadian = {
 
 sumer = {
 	color = { 245 205 10 }
-	created = 3.1.1
-	parents = { akkadian }
-
+	created = 5.1.1
+	parents = { mesopotamian }
+	history_loc_override = sumer_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_sumerian
 	language = language_aramaic
@@ -72,9 +72,9 @@ sumer = {
 
 babylonian = {
 	color = { 10 245 172 }
-	created = 4.1.1
+	created = 8.1.1
 	parents = { sumer }
-
+	history_loc_override = babylonian_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_sumerian
 	language = language_aramaic
@@ -101,9 +101,9 @@ babylonian = {
 
 elamite = {
 	color = { 165 118 22 }
-	created = 4.1.1
+	created = 8.1.1
 	parents = { sumer }
-	
+	history_loc_override = elamite_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_sumerian
 	language = language_elamite
