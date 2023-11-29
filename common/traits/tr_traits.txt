@@ -149,3 +149,165 @@ albino = {
 		}
 	}
 }
+
+hygene_bad_1 = {	
+
+	inherit_chance = 0
+	genetic = no
+	physical = yes
+	category = health
+
+	opposites = {
+		hygene_good_1
+		hygene_good_2
+		hygene_bad_2
+	}
+
+	group = hygene_bad
+	level = 1
+
+	random_creation = 0.2
+
+	general_opinion = -10
+	attraction_opinion = -10
+	diplomacy = -5
+	health = -1
+	life_expectancy = -10
+
+	good = no
+	dread_baseline_add = 5
+	ruler_designer_cost = -20
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hygene_bad_1_desc
+			}
+			desc = trait_hygene_bad_1_character_desc
+		}
+	}
+}
+
+hygene_bad_2 = {	
+
+	inherit_chance = 0
+	genetic = no
+	physical = yes
+	category = health
+
+	opposites = {
+		hygene_good_1
+		hygene_good_2
+		hygene_bad_1
+	}
+
+	group = hygene_bad
+	level = 2
+
+	random_creation = 0.2
+
+	general_opinion = -20
+	attraction_opinion = -20
+	diplomacy = -10
+	health = -2
+	life_expectancy = -15
+
+	good = no
+	dread_baseline_add = 5
+	ruler_designer_cost = -30
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hygene_bad_2_desc
+			}
+			desc = trait_hygene_bad_2_character_desc
+		}
+	}
+}
+
+hygene_good_1 = {	
+
+	inherit_chance = 0
+	genetic = no
+	physical = yes
+	category = health
+
+	opposites = {
+		hygene_good_2
+		hygene_bad_2
+		hygene_bad_1
+	}
+
+	group = hygene_good
+	level = 1
+
+	random_creation = 0.2
+
+	general_opinion = 5
+	attraction_opinion = 10
+	diplomacy = 5
+	health = 5
+	life_expectancy = 5
+
+	good = yes
+	ruler_designer_cost = 20
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hygene_good_1_desc
+			}
+			desc = trait_hygene_good_1_character_desc
+		}
+	}
+}
+
+hygene_good_2 = {	
+
+	inherit_chance = 0
+	genetic = no
+	physical = yes
+	category = health
+
+	opposites = {
+		hygene_good_1
+		hygene_bad_2
+		hygene_bad_1
+	}
+
+	group = hygene_good
+	level = 2
+
+	random_creation = 0.2
+
+	general_opinion = 10
+	attraction_opinion = 20
+	diplomacy = 10
+	health = 10
+	life_expectancy = 10
+
+	good = yes
+	ruler_designer_cost = 30
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hygene_good_2_desc
+			}
+			desc = trait_hygene_good_2_character_desc
+		}
+	}
+}
