@@ -1,4 +1,4 @@
-tr_modifiers_group = {
+bloodshot_eyes = {
 	bloodshot_eyes = {
 		traits = {
             hashishiyah
@@ -12,4 +12,52 @@ tr_modifiers_group = {
 			}
 		}
 	}
+}
+hygene = {
+	hygene_bad_1 = {
+			trigger = {
+				should_show_disturbing_portrait_modifiers = yes
+			}
+			traits = {
+				hygene_bad_1
+			}
+			dna_modifiers = {
+				morph = {
+					mode = add
+					gene = gene_lovers_pox
+					value = 0.5
+					template = lovers_pox
+				}
+				color = {
+					gene = skin_color
+					mode = modify
+	
+					x = -0.1
+					y = 0.0
+				}
+		}
+	}
+	hygene_bad_2 = {
+		trigger = {
+			should_show_disturbing_portrait_modifiers = yes
+		}
+		traits = {
+			hygene_bad_2
+		}
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_lovers_pox
+				value = 1.0
+				template = lovers_pox
+			}
+			color = {
+				gene = skin_color
+				mode = modify
+
+				x = -0.2
+				y = 0.0
+			}
+	}
+}
 }
