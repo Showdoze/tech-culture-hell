@@ -229,21 +229,7 @@ usa_legacy_1 = { # Crossing the Delaware
 		embarkation_cost_mult = -0.01
 	}
 
-	ai_chance = {
-		value = 11
-		if = {
-			limit = {
-				has_culture = culture:american
-			}
-			multiply = 10
-		}
-		if = {
-			limit = {
-				can_start_new_legacy_track_trigger = no
-			}
-			multiply = 0
-		}
-	}
+	ai_chance = { value = 0 }
 }
 
 usa_legacy_2 = { # Declaration 
@@ -290,5 +276,8 @@ usa_legacy_5 = { # Freedom
 	    build_gold_cost = -0.1
 		holding_build_gold_cost = -0.1
 		minority_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = { text = fp3_khvarenah_legacy_court_positions_effect	}
 	}
 }
