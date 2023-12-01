@@ -1,4 +1,4 @@
-unlock_tanistry_elective_trigger = {
+﻿unlock_tanistry_elective_trigger = {
 	culture = {
 		has_innovation = innovation_tanistry_elective
 	}
@@ -47,7 +47,7 @@ tr_access_single_heir_succession_law_trigger = {
 
 can_raid_trigger = {
 	OR = {
-        is_ai = no
+		is_ai = no
 		goverment_has_flag = government_can_raid_rule
 		root.faith.religion = religion.iconoclast_religion
 		root.faith.religion = religion.qarmatian_religion
@@ -56,7 +56,9 @@ can_raid_trigger = {
 		has_trait = sadistic
 		in_debt = yes
 		has_trait = viking
-		faith = { has_doctrine_parameter = faith_can_raid }
+		faith = {
+			has_doctrine_parameter = faith_can_raid
+		}
 	}
 }
 

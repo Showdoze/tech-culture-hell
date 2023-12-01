@@ -1,27 +1,24 @@
-open_conversion_menu = {
+﻿open_conversion_menu = {
 	title = open_religious_conversion_menu
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-	
 	selection_tooltip = open_religious_conversion_menu_desc
-    desc = open_religious_conversion_menu
+	desc = open_religious_conversion_menu
 	confirm_text = open_religious_conversion_menu
-
 	is_shown = {
 		NOR = {
 			this = faith.religious_head
 		}
-		NOT = { has_character_flag = conversion_menu_open }
-	 }
-    
-    effect = {
+		NOT = {
+			has_character_flag = conversion_menu_open
+		}
+	}
+	effect = {
 		custom_tooltip = open_religious_conversion_menu_effect
-        add_character_flag = {
-            flag = conversion_menu_open
-        }
-    }
-
-    ai_will_do = 0
+		add_character_flag = {
+			flag = conversion_menu_open
+		}
+	}
+	ai_will_do = 0
 }

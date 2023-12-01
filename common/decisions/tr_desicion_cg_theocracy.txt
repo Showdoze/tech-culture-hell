@@ -1,10 +1,10 @@
-change_government_theocracy_decision = {
-    major = yes
+﻿change_government_theocracy_decision = {
+	major = yes
 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	desc = change_government_theocracy_decision_desc
 	selection_tooltip = change_government_theocracy_decision_tooltip
-    sort_order = 1
-    ai_check_interval = 185
+	sort_order = 1
+	ai_check_interval = 185
 	cost = {
 		piety = 1000
 		gold = 100
@@ -13,24 +13,34 @@ change_government_theocracy_decision = {
 		days = 365
 	}
 	is_shown = {
-		NOT = { government_has_flag = government_is_theocracy }
+		NOT = {
+			government_has_flag = government_is_theocracy
+		}
 	}
 	is_valid = {
 		AND = {
-		    OR = {
-			    has_realm_law = crown_authority_3
-		        has_realm_law = tribal_authority_3
-		    }
-			culture = { NOT = { has_cultural_tradition = tradition_atheism } }
-		    faith = { NOT = { has_doctrine_parameter = unreformed } }
+			OR = {
+				has_realm_law = crown_authority_3
+				has_realm_law = tribal_authority_3
+			}
+			culture = {
+				NOT = {
+					has_cultural_tradition = tradition_atheism
+				}
+			}
+			faith = {
+				NOT = {
+					has_doctrine_parameter = unreformed
+				}
+			}
 		}
 	}
 	effect = {
-        change_government = theocracy_government
+		change_government = theocracy_government
 		every_vassal = {
 			if = {
 				limit = {
-				    has_trait = cynical
+					has_trait = cynical
 				}
 			}
 			opnion_of_liege = {
@@ -40,7 +50,7 @@ change_government_theocracy_decision = {
 		add_realm_law = bishop_theocratic_succession_law
 	}
 	ai_potential = {
-        always = yes
+		always = yes
 	}
 	ai_will_do = {
 		base = 5

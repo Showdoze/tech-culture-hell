@@ -1,8 +1,10 @@
-e_russia = {
+﻿e_russia = {
 	item = {
 		trigger = {
 			exists = holder
-			holder = { has_government = autocracy_government }
+			holder = {
+				has_government = autocracy_government
+			}
 		}
 		coat_of_arms = e_russia_tsar
 	}
@@ -12,7 +14,9 @@ e_france = {
 	item = {
 		trigger = {
 			exists = holder
-			holder = { has_government = autocracy_government }
+			holder = {
+				has_government = autocracy_government
+			}
 		}
 		coat_of_arms = e_france_nap
 	}

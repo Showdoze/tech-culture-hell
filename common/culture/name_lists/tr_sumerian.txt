@@ -1,765 +1,2079 @@
-name_list_akkadian = {
-
-		dynasty_names = {
-			"dynn_SumAigidu"
-			"dynn_SumAkalama"
-			"dynn_SumAmu"
-			"dynn_SumAzida"
-			"dynn_SumAdlal"
-			"dynn_SumAlmah"
-			"dynn_SumAmamu"
-			"dynn_SumAnkiag"
-			"dynn_SumAzaga"
-			"dynn_SumBani"
-			"dynn_SumBad"
-			"dynn_SumBadkalama"
-			"dynn_SumBara"
-			"dynn_SumDa"
-			"dynn_SumDala"
-			"dynn_SumDamea"
-			"dynn_SumDameene"
-			"dynn_SumDanirgal"
-			"dynn_SumDigirkalama"
-			"dynn_SumDigirmu"
-			"dynn_SumDug"
-			"dynn_SumEbazi"
-			"dynn_SumEgir"
-			"dynn_SumEgirsu"
-			"dynn_SumEndug"
-			"dynn_SumEzem"
-			"dynn_SumGalka"
-			"dynn_SumGalzu"
-			"dynn_SumGalama"
-			"dynn_SumGimu"
-			"dynn_SumGirgal"
-			"dynn_SumGugal"
-			"dynn_SumHarug"
-			"dynn_SumHazal"
-			"dynn_SumHegal"
-			"dynn_SumHegul"
-			"dynn_SumIsag"
-			"dynn_SumIbtae"
-			"dynn_SumImkala"
-			"dynn_SumInimsilima"
-			"dynn_SumInimzi"
-			"dynn_SumLugal"
-			"dynn_SumLugalana"
-			"dynn_SumLugalgigi"
-			"dynn_SumKala"
-			"dynn_SumKalamahilibi"
-			"dynn_SumKalame"
-			"dynn_SumKiagme"
-			"dynn_SumKiharsag"
-			"dynn_SumKiursag"
-			"dynn_SumMahkala"
-			"dynn_SumMasib"
-			"dynn_SumMelam"
-			"dynn_SumMene"
-			"dynn_SumMisar"
-			"dynn_SumMusana"
-			"dynn_SumNae"
-			"dynn_SumNamtara"
-			"dynn_SumNamzitara"
-			"dynn_SumNinanki"
-			"dynn_SumNisag"
-			"dynn_SumNinseg"
-			"dynn_SumPada"
-			"dynn_SumRakalama"
-			"dynn_SumRakam"
-			"dynn_SumSaga"
-			"dynn_SumSidi"
-			"dynn_SumSisa"
-			"dynn_SumSisakalama"
-			"dynn_SumSipaddari"
-			"dynn_SumTesmu"
-			"dynn_SumUnamte"
-			"dynn_SumUsudra"
-			"dynn_SumUr"
-			"dynn_SumUrmah"
-			"dynn_SumUrmahana"
-			"dynn_SumUrmu"
-			"dynn_SumUrra"
-			"dynn_SumUrsag"
-			"dynn_SumUruna"
-			"dynn_SumUsumana"
-			"dynn_SumUsumgal"
-			"dynn_SumUsumka"
-			"dynn_SumZaemen"
-			"dynn_SumZami"
-			"dynn_SumZi"
-			"dynn_SumZimu"
-			"dynn_SumZizi"
-		}
-
-		male_names = {
-			An Akkad Anshar Ashur Ashshur Anu Aqrabuamelu Akitu Adapa Apkallu Angim Amanus Armanum Adalberto Ado Aga Ahmad Ahobal Ajwad Ala Amarud Ashurbanipal Asnappar
-			Birdu Bors Babylas Baghdasar Baldassare Baldo Baltasar Baltazar Balthasar Belshatzzar Boldizsar Ea Esagila Ebla Elam Dumuzid Ea Engurru Enzuna Enheduanna Gilgamesh Gunura Gerra
-			Humbaba Huwawa Hasadu Ilawela Izdubar Lakhmu Lache Lumasi Lammasu Lotan Lullubi Marduk Manishtushu
-			Nergal Nirgali Nirgal Ninurta Ningishzida Nippur Nagar Nineveh Nabopolassar Nabouchodonosor Nebuchadnezzar Nevukhadnetztzar Ninos Puabi Qirtablilu Rimush
-			Sisig Sancheriv Sargon Sennacherib Simurrum Tammuz Tashlultum Taurus Tadelesh Utu Ugarit Ushumgallu Ugallu Zababa Zaqiqu Zagros
-
-			#CustomLocalizationNames
-			sum_ADADNIRARI sum_ABZUAK sum_EABZU sum_LAHMU sum_ANSAR sum_ASUR sum_ASSUR sum_DUMUZID sum_ANENLILDA sum_ZAQIQU sum_ERSETU sum_BASHMU sum_USUMGALLU sum_MUSMAHHU sum_UMURABU sum_NARAMSIN sum_NARAMSINTWO sum_NARAMSINTHREE
-		}
-
-		female_names = {
-			Aya Allalu Aja Adjanys Agnes Arekah Aase Abayomi Abiola Abigail Adan Adina Agurtzane Aine Aldana Alexia Bau Baba Dinah Enzu Edith Geshtinanna Ishtar Inanna Jowannah
-			Kishar Ki Kallatu Kailah Kaleigh Lahamu Lakhamu Lachos Lumasi Mullissu Manzat Ninsun Naamah Naavah Nina
-			Onatah Rosalind Sen Sirtur Dittur Duttur Sirtir Siria Tiamat Tehom Tashmetum Tashmetu Tashmit
-
-			#CustomLocalizationNames
-			sum_SUEN sum_SIN sum_HEAVEN sum_LAHAMU sum_TIAMAT  sum_TAMTUL sum_TAMTU  sum_TAMTUE sum_UMMUHUBUR sum_GESHTINANNA  sum_NGESHTINANNA sum_NINHURSAGAKK sum_QASTU sum_AYA sum_TASHMETUM sum_NINIMMA sum_ENHEDUANA
-		}
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 25
-		mat_grf_name_chance = 5
-		father_name_chance = 55
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 70
-		mother_name_chance = 5
-
-		dynasty_of_location_prefix = "prefix"
-
-		always_use_patronym = yes
-		dynasty_name_first = yes
-
-		#patronym_prefix_male = "dynnpat_pre_dumunitah"
-		#patronym_prefix_female = "dynnpat_pre_dumumi"
-
-		patronym_suffix_male = "dynnpat_suf_harug"
-		patronym_suffix_female = "dynnpat_suf_hegul"
+﻿name_list_akkadian = {
+	dynasty_names = {
+		"dynn_SumAigidu"
+		"dynn_SumAkalama"
+		"dynn_SumAmu"
+		"dynn_SumAzida"
+		"dynn_SumAdlal"
+		"dynn_SumAlmah"
+		"dynn_SumAmamu"
+		"dynn_SumAnkiag"
+		"dynn_SumAzaga"
+		"dynn_SumBani"
+		"dynn_SumBad"
+		"dynn_SumBadkalama"
+		"dynn_SumBara"
+		"dynn_SumDa"
+		"dynn_SumDala"
+		"dynn_SumDamea"
+		"dynn_SumDameene"
+		"dynn_SumDanirgal"
+		"dynn_SumDigirkalama"
+		"dynn_SumDigirmu"
+		"dynn_SumDug"
+		"dynn_SumEbazi"
+		"dynn_SumEgir"
+		"dynn_SumEgirsu"
+		"dynn_SumEndug"
+		"dynn_SumEzem"
+		"dynn_SumGalka"
+		"dynn_SumGalzu"
+		"dynn_SumGalama"
+		"dynn_SumGimu"
+		"dynn_SumGirgal"
+		"dynn_SumGugal"
+		"dynn_SumHarug"
+		"dynn_SumHazal"
+		"dynn_SumHegal"
+		"dynn_SumHegul"
+		"dynn_SumIsag"
+		"dynn_SumIbtae"
+		"dynn_SumImkala"
+		"dynn_SumInimsilima"
+		"dynn_SumInimzi"
+		"dynn_SumLugal"
+		"dynn_SumLugalana"
+		"dynn_SumLugalgigi"
+		"dynn_SumKala"
+		"dynn_SumKalamahilibi"
+		"dynn_SumKalame"
+		"dynn_SumKiagme"
+		"dynn_SumKiharsag"
+		"dynn_SumKiursag"
+		"dynn_SumMahkala"
+		"dynn_SumMasib"
+		"dynn_SumMelam"
+		"dynn_SumMene"
+		"dynn_SumMisar"
+		"dynn_SumMusana"
+		"dynn_SumNae"
+		"dynn_SumNamtara"
+		"dynn_SumNamzitara"
+		"dynn_SumNinanki"
+		"dynn_SumNisag"
+		"dynn_SumNinseg"
+		"dynn_SumPada"
+		"dynn_SumRakalama"
+		"dynn_SumRakam"
+		"dynn_SumSaga"
+		"dynn_SumSidi"
+		"dynn_SumSisa"
+		"dynn_SumSisakalama"
+		"dynn_SumSipaddari"
+		"dynn_SumTesmu"
+		"dynn_SumUnamte"
+		"dynn_SumUsudra"
+		"dynn_SumUr"
+		"dynn_SumUrmah"
+		"dynn_SumUrmahana"
+		"dynn_SumUrmu"
+		"dynn_SumUrra"
+		"dynn_SumUrsag"
+		"dynn_SumUruna"
+		"dynn_SumUsumana"
+		"dynn_SumUsumgal"
+		"dynn_SumUsumka"
+		"dynn_SumZaemen"
+		"dynn_SumZami"
+		"dynn_SumZi"
+		"dynn_SumZimu"
+		"dynn_SumZizi"
+	}
+	male_names = {
+		An
+		Akkad
+		Anshar
+		Ashur
+		Ashshur
+		Anu
+		Aqrabuamelu
+		Akitu
+		Adapa
+		Apkallu
+		Angim
+		Amanus
+		Armanum
+		Adalberto
+		Ado
+		Aga
+		Ahmad
+		Ahobal
+		Ajwad
+		Ala
+		Amarud
+		Ashurbanipal
+		Asnappar
+		Birdu
+		Bors
+		Babylas
+		Baghdasar
+		Baldassare
+		Baldo
+		Baltasar
+		Baltazar
+		Balthasar
+		Belshatzzar
+		Boldizsar
+		Ea
+		Esagila
+		Ebla
+		Elam
+		Dumuzid
+		Ea
+		Engurru
+		Enzuna
+		Enheduanna
+		Gilgamesh
+		Gunura
+		Gerra
+		Humbaba
+		Huwawa
+		Hasadu
+		Ilawela
+		Izdubar
+		Lakhmu
+		Lache
+		Lumasi
+		Lammasu
+		Lotan
+		Lullubi
+		Marduk
+		Manishtushu
+		Nergal
+		Nirgali
+		Nirgal
+		Ninurta
+		Ningishzida
+		Nippur
+		Nagar
+		Nineveh
+		Nabopolassar
+		Nabouchodonosor
+		Nebuchadnezzar
+		Nevukhadnetztzar
+		Ninos
+		Puabi
+		Qirtablilu
+		Rimush
+		Sisig
+		Sancheriv
+		Sargon
+		Sennacherib
+		Simurrum
+		Tammuz
+		Tashlultum
+		Taurus
+		Tadelesh
+		Utu
+		Ugarit
+		Ushumgallu
+		Ugallu
+		Zababa
+		Zaqiqu
+		Zagros
+		#CustomLocalizationNames
+		sum_ADADNIRARI
+		sum_ABZUAK
+		sum_EABZU
+		sum_LAHMU
+		sum_ANSAR
+		sum_ASUR
+		sum_ASSUR
+		sum_DUMUZID
+		sum_ANENLILDA
+		sum_ZAQIQU
+		sum_ERSETU
+		sum_BASHMU
+		sum_USUMGALLU
+		sum_MUSMAHHU
+		sum_UMURABU
+		sum_NARAMSIN
+		sum_NARAMSINTWO
+		sum_NARAMSINTHREE
+	}
+	female_names = {
+		Aya
+		Allalu
+		Aja
+		Adjanys
+		Agnes
+		Arekah
+		Aase
+		Abayomi
+		Abiola
+		Abigail
+		Adan
+		Adina
+		Agurtzane
+		Aine
+		Aldana
+		Alexia
+		Bau
+		Baba
+		Dinah
+		Enzu
+		Edith
+		Geshtinanna
+		Ishtar
+		Inanna
+		Jowannah
+		Kishar
+		Ki
+		Kallatu
+		Kailah
+		Kaleigh
+		Lahamu
+		Lakhamu
+		Lachos
+		Lumasi
+		Mullissu
+		Manzat
+		Ninsun
+		Naamah
+		Naavah
+		Nina
+		Onatah
+		Rosalind
+		Sen
+		Sirtur
+		Dittur
+		Duttur
+		Sirtir
+		Siria
+		Tiamat
+		Tehom
+		Tashmetum
+		Tashmetu
+		Tashmit
+		#CustomLocalizationNames
+		sum_SUEN
+		sum_SIN
+		sum_HEAVEN
+		sum_LAHAMU
+		sum_TIAMAT
+		sum_TAMTUL
+		sum_TAMTU
+		sum_TAMTUE
+		sum_UMMUHUBUR
+		sum_GESHTINANNA
+		sum_NGESHTINANNA
+		sum_NINHURSAGAKK
+		sum_QASTU
+		sum_AYA
+		sum_TASHMETUM
+		sum_NINIMMA
+		sum_ENHEDUANA
+	}
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 25
+	mat_grf_name_chance = 5
+	father_name_chance = 55
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 70
+	mother_name_chance = 5
+	dynasty_of_location_prefix = "prefix"
+	always_use_patronym = yes
+	dynasty_name_first = yes
+	#patronym_prefix_male = "dynnpat_pre_dumunitah"
+	#patronym_prefix_female = "dynnpat_pre_dumumi"
+	patronym_suffix_male = "dynnpat_suf_harug"
+	patronym_suffix_female = "dynnpat_suf_hegul"
 	mercenary_names = {
-		{ name = "mercenary_company_sargons_five_thousand" }
-		{ name = "mercenary_company_akkadian_lancer" }
+		{
+			name = "mercenary_company_sargons_five_thousand"
+		}
+		{
+			name = "mercenary_company_akkadian_lancer"
+		}
 	}
 }
 
 name_list_assyrian = {
-
-		cadet_dynasty_names = {
-			"dynn_Bukhtishu"
-			"dynn_Qatwa"
-			"dynn_Nimreh"
-			"dynn_Gazarta"
-			"dynn_Salamas"
-			"dynn_Zakho"
-			"dynn_Arbilaya"
-		}
-
-		dynasty_names = {
-			"dynn_Bukhtishu"
-			"dynn_Qatwa"
-			"dynn_Nimreh"
-			"dynn_Gazarta"
-			"dynn_Salamas"
-			"dynn_Zakho"
-			"dynn_Arbilaya"
-		}
-
-		male_names = {
-			Aba Abahu Abaya Abaye Abayi Abba Abdima Abdisho Abgar Abimalek Abraham Abris Abrisius Acacius Achan Achina Addai Adlai Aggai Ahai Ahadabui Ahha Akha_d_abuh Akh_es_Samain Aqib_Alaha Asa Ashur Avahu Avda Avdima Avdimi Avina Avira Azai
-			Babaeus Babai Babowai Babwahi Bar Bar_Abba Barba_shimin Bar_Nabha Bar_Talmai Bar_Timai Bar_Tolmai Bustan Caiaphas Cephas Cephus Chadlai Chama Chanin Chanina Chaninai Chinena Chozai Chuma Chunya Clopas
-			Dadisho Denha Dikla Diklah Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma Giwargis Grwgari Hanina Hnanisho Hozai Idan Idra Ila Isaac Isho Isho_yahb Israel Kaiapha Karna Katsiu Kelaya
-			Laszio Lazar Lazare Lazaro Lazaros Lazarus Lazarz Lazer Lebbaeus Maadai Macabee Maccabee Magna Makkikha Maluch Ma_na Marabokht Maremmeh Mari Mikha_il Moqli Muna Nahir Nahor Nahur Narsai Nazuk Nechunya Nehor Nehorai Niv Nun Nur Oran Pappa Paul Pethion Petros Petuel Qaligh Qayyoma Raca Rachim Rahim Raka Raz Raziel Rubil
-			Saad Saba Sabah Sabba_e Sabrisho Sabr_Ishu Salu Samal Sami Samiy Sagi Sargis Sava Sawma Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shem_on Sheraga Shila Shovai Shraga Sima Sliba-zkha Surin
-			Tabbai Taddai Talia Taliah Talmai Talya Tam Tam_as Ta_mhas Targhal Tauma Tavi Tavish Tevis Th_amhais Thoma Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay Ukba Yahballaha Yanai Ya_qob Yeshua Yohannan Yosip Yousef Yunanis Zerika
-		}
-		
-		female_names = {
-			Adva Alya Anena Anina Bustan Chanina Chasina Chayuta China Chiyuta Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti
-			Martita Mehalia Meiriona Meirona Morta Nahara Nura Raz Reuma Saba Sabah Samantha Sameah Samee Sameea Samiya Samiyah Samiyya Samya Sava Shapira Sima Tabatha Tabby Tabetha Tabitha Tadea Talia Taliah Talya Talitha
-			Tam Tamasin Tami Tammy Tamsin Tamsyn Tamzin Thaddea Thomasa Zeita Zeta
-		}
+	cadet_dynasty_names = {
+		"dynn_Bukhtishu"
+		"dynn_Qatwa"
+		"dynn_Nimreh"
+		"dynn_Gazarta"
+		"dynn_Salamas"
+		"dynn_Zakho"
+		"dynn_Arbilaya"
+	}
+	dynasty_names = {
+		"dynn_Bukhtishu"
+		"dynn_Qatwa"
+		"dynn_Nimreh"
+		"dynn_Gazarta"
+		"dynn_Salamas"
+		"dynn_Zakho"
+		"dynn_Arbilaya"
+	}
+	male_names = {
+		Aba
+		Abahu
+		Abaya
+		Abaye
+		Abayi
+		Abba
+		Abdima
+		Abdisho
+		Abgar
+		Abimalek
+		Abraham
+		Abris
+		Abrisius
+		Acacius
+		Achan
+		Achina
+		Addai
+		Adlai
+		Aggai
+		Ahai
+		Ahadabui
+		Ahha
+		Akha_d_abuh
+		Akh_es_Samain
+		Aqib_Alaha
+		Asa
+		Ashur
+		Avahu
+		Avda
+		Avdima
+		Avdimi
+		Avina
+		Avira
+		Azai
+		Babaeus
+		Babai
+		Babowai
+		Babwahi
+		Bar
+		Bar_Abba
+		Barba_shimin
+		Bar_Nabha
+		Bar_Talmai
+		Bar_Timai
+		Bar_Tolmai
+		Bustan
+		Caiaphas
+		Cephas
+		Cephus
+		Chadlai
+		Chama
+		Chanin
+		Chanina
+		Chaninai
+		Chinena
+		Chozai
+		Chuma
+		Chunya
+		Clopas
+		Dadisho
+		Denha
+		Dikla
+		Diklah
+		Dimi
+		Dinkha
+		Dunanu
+		Elisha
+		Eliya
+		Emmanuel
+		Enosh
+		Ezekiel
+		Farbokht
+		Foma
+		Giwargis
+		Grwgari
+		Hanina
+		Hnanisho
+		Hozai
+		Idan
+		Idra
+		Ila
+		Isaac
+		Isho
+		Isho_yahb
+		Israel
+		Kaiapha
+		Karna
+		Katsiu
+		Kelaya
+		Laszio
+		Lazar
+		Lazare
+		Lazaro
+		Lazaros
+		Lazarus
+		Lazarz
+		Lazer
+		Lebbaeus
+		Maadai
+		Macabee
+		Maccabee
+		Magna
+		Makkikha
+		Maluch
+		Ma_na
+		Marabokht
+		Maremmeh
+		Mari
+		Mikha_il
+		Moqli
+		Muna
+		Nahir
+		Nahor
+		Nahur
+		Narsai
+		Nazuk
+		Nechunya
+		Nehor
+		Nehorai
+		Niv
+		Nun
+		Nur
+		Oran
+		Pappa
+		Paul
+		Pethion
+		Petros
+		Petuel
+		Qaligh
+		Qayyoma
+		Raca
+		Rachim
+		Rahim
+		Raka
+		Raz
+		Raziel
+		Rubil
+		Saad
+		Saba
+		Sabah
+		Sabba_e
+		Sabrisho
+		Sabr_Ishu
+		Salu
+		Samal
+		Sami
+		Samiy
+		Sagi
+		Sargis
+		Sava
+		Sawma
+		Shafer
+		Shahdost
+		Shahlufa
+		Shai
+		Shalmai
+		Shama
+		Shamir
+		Shammai
+		Shemaiah
+		Shem_on
+		Sheraga
+		Shila
+		Shovai
+		Shraga
+		Sima
+		Sliba-zkha
+		Surin
+		Tabbai
+		Taddai
+		Talia
+		Taliah
+		Talmai
+		Talya
+		Tam
+		Tam_as
+		Ta_mhas
+		Targhal
+		Tauma
+		Tavi
+		Tavish
+		Tevis
+		Th_amhais
+		Thoma
+		Timai
+		Tiv
+		Toba
+		Todos
+		Tolmai
+		Tomarsa
+		Tamuza
+		Tulmay
+		Ukba
+		Yahballaha
+		Yanai
+		Ya_qob
+		Yeshua
+		Yohannan
+		Yosip
+		Yousef
+		Yunanis
+		Zerika
+	}
+	female_names = {
+		Adva
+		Alya
+		Anena
+		Anina
+		Bustan
+		Chanina
+		Chasina
+		Chayuta
+		China
+		Chiyuta
+		Dikla
+		Diklah
+		Diklit
+		Duvsha
+		Hanina
+		Hasna
+		Hayuta
+		Hina
+		Ketina
+		Kitra
+		Magdala
+		Mahalia
+		Mahalie
+		Marfa
+		Mariam
+		Marta
+		Marte
+		Martha
+		Marthe
+		Marti
+		Martita
+		Mehalia
+		Meiriona
+		Meirona
+		Morta
+		Nahara
+		Nura
+		Raz
+		Reuma
+		Saba
+		Sabah
+		Samantha
+		Sameah
+		Samee
+		Sameea
+		Samiya
+		Samiyah
+		Samiyya
+		Samya
+		Sava
+		Shapira
+		Sima
+		Tabatha
+		Tabby
+		Tabetha
+		Tabitha
+		Tadea
+		Talia
+		Taliah
+		Talya
+		Talitha
+		Tam
+		Tamasin
+		Tami
+		Tammy
+		Tamsin
+		Tamsyn
+		Tamzin
+		Thaddea
+		Thomasa
+		Zeita
+		Zeta
+	}
 	dynasty_of_location_prefix = "prefix"
 	always_use_patronym = yes
 	dynasty_name_first = yes
-    dynasty_of_location_prefix = "dynnp_of"
+	dynasty_of_location_prefix = "dynnp_of"
 	patronym_prefix_male = "dynnpat_pre_Bar"
 	patronym_prefix_female = "dynnpat_pre_Barta"
 }
 
 name_list_babylonian = {
-
-		dynasty_names = {
-			"dynn_SumAigidu"
-			"dynn_SumAkalama"
-			"dynn_SumAmu"
-			"dynn_SumAzida"
-			"dynn_SumAdlal"
-			"dynn_SumAlmah"
-			"dynn_SumAmamu"
-			"dynn_SumAnkiag"
-			"dynn_SumAzaga"
-			"dynn_SumBani"
-			"dynn_SumBad"
-			"dynn_SumBadkalama"
-			"dynn_SumBara"
-			"dynn_SumDa"
-			"dynn_SumDala"
-			"dynn_SumDamea"
-			"dynn_SumDameene"
-			"dynn_SumDanirgal"
-			"dynn_SumDigirkalama"
-			"dynn_SumDigirmu"
-			"dynn_SumDug"
-			"dynn_SumEbazi"
-			"dynn_SumEgir"
-			"dynn_SumEgirsu"
-			"dynn_SumEndug"
-			"dynn_SumEzem"
-			"dynn_SumGalka"
-			"dynn_SumGalzu"
-			"dynn_SumGalama"
-			"dynn_SumGimu"
-			"dynn_SumGirgal"
-			"dynn_SumGugal"
-			"dynn_SumHarug"
-			"dynn_SumHazal"
-			"dynn_SumHegal"
-			"dynn_SumHegul"
-			"dynn_SumIsag"
-			"dynn_SumIbtae"
-			"dynn_SumImkala"
-			"dynn_SumInimsilima"
-			"dynn_SumInimzi"
-			"dynn_SumLugal"
-			"dynn_SumLugalana"
-			"dynn_SumLugalgigi"
-			"dynn_SumKala"
-			"dynn_SumKalamahilibi"
-			"dynn_SumKalame"
-			"dynn_SumKiagme"
-			"dynn_SumKiharsag"
-			"dynn_SumKiursag"
-			"dynn_SumMahkala"
-			"dynn_SumMasib"
-			"dynn_SumMelam"
-			"dynn_SumMene"
-			"dynn_SumMisar"
-			"dynn_SumMusana"
-			"dynn_SumNae"
-			"dynn_SumNamtara"
-			"dynn_SumNamzitara"
-			"dynn_SumNinanki"
-			"dynn_SumNisag"
-			"dynn_SumNinseg"
-			"dynn_SumPada"
-			"dynn_SumRakalama"
-			"dynn_SumRakam"
-			"dynn_SumSaga"
-			"dynn_SumSidi"
-			"dynn_SumSisa"
-			"dynn_SumSisakalama"
-			"dynn_SumSipaddari"
-			"dynn_SumTesmu"
-			"dynn_SumUnamte"
-			"dynn_SumUsudra"
-			"dynn_SumUr"
-			"dynn_SumUrmah"
-			"dynn_SumUrmahana"
-			"dynn_SumUrmu"
-			"dynn_SumUrra"
-			"dynn_SumUrsag"
-			"dynn_SumUruna"
-			"dynn_SumUsumana"
-			"dynn_SumUsumgal"
-			"dynn_SumUsumka"
-			"dynn_SumZaemen"
-			"dynn_SumZami"
-			"dynn_SumZi"
-			"dynn_SumZimu"
-			"dynn_SumZizi"
-		}
-
-		male_names = {
-			Aqrabuamelu An Assur Akitu Apkallu Adrahasis
-			Bunene Borsippa Birdu Belteshazzar
-			Damu
-			Ea Enlil Elil Elam
-			Geshtu Gestu Gerra Gibil Gungunu
-			Humbaba Huwawa Hammurabi
-			Kudurrus Kudurru Kishar Kingu
-			Marduk
-			Nabu Nanna Nannar Ninsun Ninurta Ninib Nippur
-			Qirtablilu
-			Shamash Sippar Sisig Sumulael Sargon
-			Uruk Urhammu Urhamsi Utultar
-			Ziusudra Zu
-
-			#CustomLocalizationNames
-			sum_GESTU sum_GESHTU  sum_WEILA sum_ABZUAK  sum_ANSAR sum_THALATTE sum_SAPAS sum_SEMES sum_ANENLILDA sum_EZIDA sum_SAMSUILUNA sum_NABUSHUMAISHKUN sum_ZUSUDRA
-		}
-
-		female_names = {
-			Azugallatu An Anatu
-			Belatsunat
-			Davcina
-			Etana Esagila
-			Gula Gangir
-			Inanna Ishtar
-			Kalumtum
-			Lil
-			Mot Mmu Mylitta
-			Ningal Ninsun Nintinugga Nanaya
-			Suen Sherida Sirtur Dittur Duttur Sirtir Shirgulla Sarpanit Sarpanitu Sabitum
-			Tauthe Tiamat
-			Zarpanit Zarpandit Zirratbanit Zerpanitum Zerbanitu Zirbanit
-
-			#CustomLocalizationNames
-			sum_ERUABAB sum_ZERBANIUT sum_NINIMMA sum_ENZU sum_LAHAMU sum_TIAMAT  sum_TAMTUL sum_TAMTU  sum_TAMTUE sum_UMMUHUBUR sum_NADITU sum_BELET sum_BALATI sum_NINKARRAK sum_NINEZEN sum_GATUMDUG sum_NMDINDUG sum_HEGIRNUNA sum_BAUGULA sum_SARPANIUTE
-		}
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 5
-		mat_grf_name_chance = 5
-		father_name_chance = 25
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 3
-		mat_grm_name_chance = 5
-		mother_name_chance = 10
-
-		dynasty_of_location_prefix = "prefix"
-
-		always_use_patronym = yes
-		dynasty_name_first = yes
-
-		#patronym_prefix_male = "dynnpat_pre_dumunitah"
-		#patronym_prefix_female = "dynnpat_pre_dumumi"
-
-		patronym_suffix_male = "dynnpat_suf_harug"
-		patronym_suffix_female = "dynnpat_suf_hegul"
+	dynasty_names = {
+		"dynn_SumAigidu"
+		"dynn_SumAkalama"
+		"dynn_SumAmu"
+		"dynn_SumAzida"
+		"dynn_SumAdlal"
+		"dynn_SumAlmah"
+		"dynn_SumAmamu"
+		"dynn_SumAnkiag"
+		"dynn_SumAzaga"
+		"dynn_SumBani"
+		"dynn_SumBad"
+		"dynn_SumBadkalama"
+		"dynn_SumBara"
+		"dynn_SumDa"
+		"dynn_SumDala"
+		"dynn_SumDamea"
+		"dynn_SumDameene"
+		"dynn_SumDanirgal"
+		"dynn_SumDigirkalama"
+		"dynn_SumDigirmu"
+		"dynn_SumDug"
+		"dynn_SumEbazi"
+		"dynn_SumEgir"
+		"dynn_SumEgirsu"
+		"dynn_SumEndug"
+		"dynn_SumEzem"
+		"dynn_SumGalka"
+		"dynn_SumGalzu"
+		"dynn_SumGalama"
+		"dynn_SumGimu"
+		"dynn_SumGirgal"
+		"dynn_SumGugal"
+		"dynn_SumHarug"
+		"dynn_SumHazal"
+		"dynn_SumHegal"
+		"dynn_SumHegul"
+		"dynn_SumIsag"
+		"dynn_SumIbtae"
+		"dynn_SumImkala"
+		"dynn_SumInimsilima"
+		"dynn_SumInimzi"
+		"dynn_SumLugal"
+		"dynn_SumLugalana"
+		"dynn_SumLugalgigi"
+		"dynn_SumKala"
+		"dynn_SumKalamahilibi"
+		"dynn_SumKalame"
+		"dynn_SumKiagme"
+		"dynn_SumKiharsag"
+		"dynn_SumKiursag"
+		"dynn_SumMahkala"
+		"dynn_SumMasib"
+		"dynn_SumMelam"
+		"dynn_SumMene"
+		"dynn_SumMisar"
+		"dynn_SumMusana"
+		"dynn_SumNae"
+		"dynn_SumNamtara"
+		"dynn_SumNamzitara"
+		"dynn_SumNinanki"
+		"dynn_SumNisag"
+		"dynn_SumNinseg"
+		"dynn_SumPada"
+		"dynn_SumRakalama"
+		"dynn_SumRakam"
+		"dynn_SumSaga"
+		"dynn_SumSidi"
+		"dynn_SumSisa"
+		"dynn_SumSisakalama"
+		"dynn_SumSipaddari"
+		"dynn_SumTesmu"
+		"dynn_SumUnamte"
+		"dynn_SumUsudra"
+		"dynn_SumUr"
+		"dynn_SumUrmah"
+		"dynn_SumUrmahana"
+		"dynn_SumUrmu"
+		"dynn_SumUrra"
+		"dynn_SumUrsag"
+		"dynn_SumUruna"
+		"dynn_SumUsumana"
+		"dynn_SumUsumgal"
+		"dynn_SumUsumka"
+		"dynn_SumZaemen"
+		"dynn_SumZami"
+		"dynn_SumZi"
+		"dynn_SumZimu"
+		"dynn_SumZizi"
+	}
+	male_names = {
+		Aqrabuamelu
+		An
+		Assur
+		Akitu
+		Apkallu
+		Adrahasis
+		Bunene
+		Borsippa
+		Birdu
+		Belteshazzar
+		Damu
+		Ea
+		Enlil
+		Elil
+		Elam
+		Geshtu
+		Gestu
+		Gerra
+		Gibil
+		Gungunu
+		Humbaba
+		Huwawa
+		Hammurabi
+		Kudurrus
+		Kudurru
+		Kishar
+		Kingu
+		Marduk
+		Nabu
+		Nanna
+		Nannar
+		Ninsun
+		Ninurta
+		Ninib
+		Nippur
+		Qirtablilu
+		Shamash
+		Sippar
+		Sisig
+		Sumulael
+		Sargon
+		Uruk
+		Urhammu
+		Urhamsi
+		Utultar
+		Ziusudra
+		Zu
+		#CustomLocalizationNames
+		sum_GESTU
+		sum_GESHTU
+		sum_WEILA
+		sum_ABZUAK
+		sum_ANSAR
+		sum_THALATTE
+		sum_SAPAS
+		sum_SEMES
+		sum_ANENLILDA
+		sum_EZIDA
+		sum_SAMSUILUNA
+		sum_NABUSHUMAISHKUN
+		sum_ZUSUDRA
+	}
+	female_names = {
+		Azugallatu
+		An
+		Anatu
+		Belatsunat
+		Davcina
+		Etana
+		Esagila
+		Gula
+		Gangir
+		Inanna
+		Ishtar
+		Kalumtum
+		Lil
+		Mot
+		Mmu
+		Mylitta
+		Ningal
+		Ninsun
+		Nintinugga
+		Nanaya
+		Suen
+		Sherida
+		Sirtur
+		Dittur
+		Duttur
+		Sirtir
+		Shirgulla
+		Sarpanit
+		Sarpanitu
+		Sabitum
+		Tauthe
+		Tiamat
+		Zarpanit
+		Zarpandit
+		Zirratbanit
+		Zerpanitum
+		Zerbanitu
+		Zirbanit
+		#CustomLocalizationNames
+		sum_ERUABAB
+		sum_ZERBANIUT
+		sum_NINIMMA
+		sum_ENZU
+		sum_LAHAMU
+		sum_TIAMAT
+		sum_TAMTUL
+		sum_TAMTU
+		sum_TAMTUE
+		sum_UMMUHUBUR
+		sum_NADITU
+		sum_BELET
+		sum_BALATI
+		sum_NINKARRAK
+		sum_NINEZEN
+		sum_GATUMDUG
+		sum_NMDINDUG
+		sum_HEGIRNUNA
+		sum_BAUGULA
+		sum_SARPANIUTE
+	}
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 5
+	mat_grf_name_chance = 5
+	father_name_chance = 25
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 3
+	mat_grm_name_chance = 5
+	mother_name_chance = 10
+	dynasty_of_location_prefix = "prefix"
+	always_use_patronym = yes
+	dynasty_name_first = yes
+	#patronym_prefix_male = "dynnpat_pre_dumunitah"
+	#patronym_prefix_female = "dynnpat_pre_dumumi"
+	patronym_suffix_male = "dynnpat_suf_harug"
+	patronym_suffix_female = "dynnpat_suf_hegul"
 	mercenary_names = {
-		{ name = "mercenary_company_babylon_trench" }
-		{ name = "mercenary_company_babylon_guardians" }
+		{
+			name = "mercenary_company_babylon_trench"
+		}
+		{
+			name = "mercenary_company_babylon_guardians"
+		}
 	}
 }
 
 name_list_elamite = {
-
-		dynasty_names = {
-			"dynn_SumAigidu"
-			"dynn_SumAkalama"
-			"dynn_SumAmu"
-			"dynn_SumAzida"
-			"dynn_SumAdlal"
-			"dynn_SumAlmah"
-			"dynn_SumAmamu"
-			"dynn_SumAnkiag"
-			"dynn_SumAzaga"
-			"dynn_SumBani"
-			"dynn_SumBad"
-			"dynn_SumBadkalama"
-			"dynn_SumBara"
-			"dynn_SumDa"
-			"dynn_SumDala"
-			"dynn_SumDamea"
-			"dynn_SumDameene"
-			"dynn_SumDanirgal"
-			"dynn_SumDigirkalama"
-			"dynn_SumDigirmu"
-			"dynn_SumDug"
-			"dynn_SumEbazi"
-			"dynn_SumEgir"
-			"dynn_SumEgirsu"
-			"dynn_SumEndug"
-			"dynn_SumEzem"
-			"dynn_SumGalka"
-			"dynn_SumGalzu"
-			"dynn_SumGalama"
-			"dynn_SumGimu"
-			"dynn_SumGirgal"
-			"dynn_SumGugal"
-			"dynn_SumHarug"
-			"dynn_SumHazal"
-			"dynn_SumHegal"
-			"dynn_SumHegul"
-			"dynn_SumIsag"
-			"dynn_SumIbtae"
-			"dynn_SumImkala"
-			"dynn_SumInimsilima"
-			"dynn_SumInimzi"
-			"dynn_SumLugal"
-			"dynn_SumLugalana"
-			"dynn_SumLugalgigi"
-			"dynn_SumKala"
-			"dynn_SumKalamahilibi"
-			"dynn_SumKalame"
-			"dynn_SumKiagme"
-			"dynn_SumKiharsag"
-			"dynn_SumKiursag"
-			"dynn_SumMahkala"
-			"dynn_SumMasib"
-			"dynn_SumMelam"
-			"dynn_SumMene"
-			"dynn_SumMisar"
-			"dynn_SumMusana"
-			"dynn_SumNae"
-			"dynn_SumNamtara"
-			"dynn_SumNamzitara"
-			"dynn_SumNinanki"
-			"dynn_SumNisag"
-			"dynn_SumNinseg"
-			"dynn_SumPada"
-			"dynn_SumRakalama"
-			"dynn_SumRakam"
-			"dynn_SumSaga"
-			"dynn_SumSidi"
-			"dynn_SumSisa"
-			"dynn_SumSisakalama"
-			"dynn_SumSipaddari"
-			"dynn_SumTesmu"
-			"dynn_SumUnamte"
-			"dynn_SumUsudra"
-			"dynn_SumUr"
-			"dynn_SumUrmah"
-			"dynn_SumUrmahana"
-			"dynn_SumUrmu"
-			"dynn_SumUrra"
-			"dynn_SumUrsag"
-			"dynn_SumUruna"
-			"dynn_SumUsumana"
-			"dynn_SumUsumgal"
-			"dynn_SumUsumka"
-			"dynn_SumZaemen"
-			"dynn_SumZami"
-			"dynn_SumZi"
-			"dynn_SumZimu"
-			"dynn_SumZizi"
-		}
-
-		male_names = {
-			Ayapir Anshan Asina Atamaita Elume Geshtu Gestu Hanni Humban Huban Hutran
-			Inshushinak Jabru Kittin Khumban Martiya Nergal Nirgal Napir Nahundi
-			Simut Sukkal Sililitum Shamash Simut Tirutir Umban Upadarma Umamaita
-
-			#CustomLocalizationNames
-			sum_GESTU sum_GESHTU sum_NERGAL  sum_SUTRUKNAKHUNTE sum_ANSHAN sum_UNTASHNAPIRISHA
-		}
-
-		female_names = {
-			Ishtaran Inshushinak Kiririsha Lagamar Manzat Mazziat Manziat Mazzet
-			Napirisha Niarzina Pinkir Pinigir Pirengir PIninkir Suen Susa Sippar Shiashum Tepti
-
-			#CustomLocalizationNames
-			sum_ENZU sum_SIYANKUK sum_CHOGHAZANBIL sum_SIYANHUSAME sum_SIMUT sum_SIMUTBERIR sum_SIMUTSILHAK sum_KIKKIGLIRIA
-		}
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 10
-		mat_grf_name_chance = 5
-		father_name_chance = 15
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 5
-		mat_grm_name_chance = 15
-		mother_name_chance = 25
-
-		dynasty_of_location_prefix = "prefix"
-
-		always_use_patronym = yes
-		dynasty_name_first = yes
-
-		#patronym_prefix_male = "dynnpat_pre_dumunitah"
-		#patronym_prefix_female = "dynnpat_pre_dumumi"
-
-		patronym_suffix_male = "dynnpat_suf_harug"
-		patronym_suffix_female = "dynnpat_suf_hegul"
+	dynasty_names = {
+		"dynn_SumAigidu"
+		"dynn_SumAkalama"
+		"dynn_SumAmu"
+		"dynn_SumAzida"
+		"dynn_SumAdlal"
+		"dynn_SumAlmah"
+		"dynn_SumAmamu"
+		"dynn_SumAnkiag"
+		"dynn_SumAzaga"
+		"dynn_SumBani"
+		"dynn_SumBad"
+		"dynn_SumBadkalama"
+		"dynn_SumBara"
+		"dynn_SumDa"
+		"dynn_SumDala"
+		"dynn_SumDamea"
+		"dynn_SumDameene"
+		"dynn_SumDanirgal"
+		"dynn_SumDigirkalama"
+		"dynn_SumDigirmu"
+		"dynn_SumDug"
+		"dynn_SumEbazi"
+		"dynn_SumEgir"
+		"dynn_SumEgirsu"
+		"dynn_SumEndug"
+		"dynn_SumEzem"
+		"dynn_SumGalka"
+		"dynn_SumGalzu"
+		"dynn_SumGalama"
+		"dynn_SumGimu"
+		"dynn_SumGirgal"
+		"dynn_SumGugal"
+		"dynn_SumHarug"
+		"dynn_SumHazal"
+		"dynn_SumHegal"
+		"dynn_SumHegul"
+		"dynn_SumIsag"
+		"dynn_SumIbtae"
+		"dynn_SumImkala"
+		"dynn_SumInimsilima"
+		"dynn_SumInimzi"
+		"dynn_SumLugal"
+		"dynn_SumLugalana"
+		"dynn_SumLugalgigi"
+		"dynn_SumKala"
+		"dynn_SumKalamahilibi"
+		"dynn_SumKalame"
+		"dynn_SumKiagme"
+		"dynn_SumKiharsag"
+		"dynn_SumKiursag"
+		"dynn_SumMahkala"
+		"dynn_SumMasib"
+		"dynn_SumMelam"
+		"dynn_SumMene"
+		"dynn_SumMisar"
+		"dynn_SumMusana"
+		"dynn_SumNae"
+		"dynn_SumNamtara"
+		"dynn_SumNamzitara"
+		"dynn_SumNinanki"
+		"dynn_SumNisag"
+		"dynn_SumNinseg"
+		"dynn_SumPada"
+		"dynn_SumRakalama"
+		"dynn_SumRakam"
+		"dynn_SumSaga"
+		"dynn_SumSidi"
+		"dynn_SumSisa"
+		"dynn_SumSisakalama"
+		"dynn_SumSipaddari"
+		"dynn_SumTesmu"
+		"dynn_SumUnamte"
+		"dynn_SumUsudra"
+		"dynn_SumUr"
+		"dynn_SumUrmah"
+		"dynn_SumUrmahana"
+		"dynn_SumUrmu"
+		"dynn_SumUrra"
+		"dynn_SumUrsag"
+		"dynn_SumUruna"
+		"dynn_SumUsumana"
+		"dynn_SumUsumgal"
+		"dynn_SumUsumka"
+		"dynn_SumZaemen"
+		"dynn_SumZami"
+		"dynn_SumZi"
+		"dynn_SumZimu"
+		"dynn_SumZizi"
+	}
+	male_names = {
+		Ayapir
+		Anshan
+		Asina
+		Atamaita
+		Elume
+		Geshtu
+		Gestu
+		Hanni
+		Humban
+		Huban
+		Hutran
+		Inshushinak
+		Jabru
+		Kittin
+		Khumban
+		Martiya
+		Nergal
+		Nirgal
+		Napir
+		Nahundi
+		Simut
+		Sukkal
+		Sililitum
+		Shamash
+		Simut
+		Tirutir
+		Umban
+		Upadarma
+		Umamaita
+		#CustomLocalizationNames
+		sum_GESTU
+		sum_GESHTU
+		sum_NERGAL
+		sum_SUTRUKNAKHUNTE
+		sum_ANSHAN
+		sum_UNTASHNAPIRISHA
+	}
+	female_names = {
+		Ishtaran
+		Inshushinak
+		Kiririsha
+		Lagamar
+		Manzat
+		Mazziat
+		Manziat
+		Mazzet
+		Napirisha
+		Niarzina
+		Pinkir
+		Pinigir
+		Pirengir
+		PIninkir
+		Suen
+		Susa
+		Sippar
+		Shiashum
+		Tepti
+		#CustomLocalizationNames
+		sum_ENZU
+		sum_SIYANKUK
+		sum_CHOGHAZANBIL
+		sum_SIYANHUSAME
+		sum_SIMUT
+		sum_SIMUTBERIR
+		sum_SIMUTSILHAK
+		sum_KIKKIGLIRIA
+	}
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 10
+	mat_grf_name_chance = 5
+	father_name_chance = 15
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 5
+	mat_grm_name_chance = 15
+	mother_name_chance = 25
+	dynasty_of_location_prefix = "prefix"
+	always_use_patronym = yes
+	dynasty_name_first = yes
+	#patronym_prefix_male = "dynnpat_pre_dumunitah"
+	#patronym_prefix_female = "dynnpat_pre_dumumi"
+	patronym_suffix_male = "dynnpat_suf_harug"
+	patronym_suffix_female = "dynnpat_suf_hegul"
 	mercenary_names = {
-		{ name = "mercenary_company_donkey_chariot" }
-		{ name = "mercenary_company_militia_legion" }
+		{
+			name = "mercenary_company_donkey_chariot"
+		}
+		{
+			name = "mercenary_company_militia_legion"
+		}
 	}
 }
 
 name_list_mesopotamian = {
-
-		dynasty_names = {
-			"dynn_SumAigidu"
-			"dynn_SumAkalama"
-			"dynn_SumAmu"
-			"dynn_SumAzida"
-			"dynn_SumAdlal"
-			"dynn_SumAlmah"
-			"dynn_SumAmamu"
-			"dynn_SumAnkiag"
-			"dynn_SumAzaga"
-			"dynn_SumBani"
-			"dynn_SumBad"
-			"dynn_SumBadkalama"
-			"dynn_SumBara"
-			"dynn_SumDa"
-			"dynn_SumDala"
-			"dynn_SumDamea"
-			"dynn_SumDameene"
-			"dynn_SumDanirgal"
-			"dynn_SumDigirkalama"
-			"dynn_SumDigirmu"
-			"dynn_SumDug"
-			"dynn_SumEbazi"
-			"dynn_SumEgir"
-			"dynn_SumEgirsu"
-			"dynn_SumEndug"
-			"dynn_SumEzem"
-			"dynn_SumGalka"
-			"dynn_SumGalzu"
-			"dynn_SumGalama"
-			"dynn_SumGimu"
-			"dynn_SumGirgal"
-			"dynn_SumGugal"
-			"dynn_SumHarug"
-			"dynn_SumHazal"
-			"dynn_SumHegal"
-			"dynn_SumHegul"
-			"dynn_SumIsag"
-			"dynn_SumIbtae"
-			"dynn_SumImkala"
-			"dynn_SumInimsilima"
-			"dynn_SumInimzi"
-			"dynn_SumLugal"
-			"dynn_SumLugalana"
-			"dynn_SumLugalgigi"
-			"dynn_SumKala"
-			"dynn_SumKalamahilibi"
-			"dynn_SumKalame"
-			"dynn_SumKiagme"
-			"dynn_SumKiharsag"
-			"dynn_SumKiursag"
-			"dynn_SumMahkala"
-			"dynn_SumMasib"
-			"dynn_SumMelam"
-			"dynn_SumMene"
-			"dynn_SumMisar"
-			"dynn_SumMusana"
-			"dynn_SumNae"
-			"dynn_SumNamtara"
-			"dynn_SumNamzitara"
-			"dynn_SumNinanki"
-			"dynn_SumNisag"
-			"dynn_SumNinseg"
-			"dynn_SumPada"
-			"dynn_SumRakalama"
-			"dynn_SumRakam"
-			"dynn_SumSaga"
-			"dynn_SumSidi"
-			"dynn_SumSisa"
-			"dynn_SumSisakalama"
-			"dynn_SumSipaddari"
-			"dynn_SumTesmu"
-			"dynn_SumUnamte"
-			"dynn_SumUsudra"
-			"dynn_SumUr"
-			"dynn_SumUrmah"
-			"dynn_SumUrmahana"
-			"dynn_SumUrmu"
-			"dynn_SumUrra"
-			"dynn_SumUrsag"
-			"dynn_SumUruna"
-			"dynn_SumUsumana"
-			"dynn_SumUsumgal"
-			"dynn_SumUsumka"
-			"dynn_SumZaemen"
-			"dynn_SumZami"
-			"dynn_SumZi"
-			"dynn_SumZimu"
-			"dynn_SumZizi"
-		}
-
-		male_names = {
-			Abisare Apkallu An Abiditan Abiyamuta Abuwaqar Ahum Ahuratum Akiya Allala Amnanu Apilsha Apiyatum Appanili Arammadara Ashmadu Awiliya
-			Bunene Bashmu Baba Babati Bakshishum Baqqanum Belanum Bleshunu Buhazum Burrukam Buttatum Dagan Dumuzi Dumuzid Dada Dadanum Dazuzum DItanu Dudu Duququm
-			Esagila Enki Enli Eluti Etirum Etum Geshtu Gestu Gudea Gallas Gallus Gungunum Gilgamesh Gazualum Har Hubshan Hanbi Hanpa Heana Hunhalbida Huttupum
-			Igigi Ikhur Ibi Iblinum Ibnatum Igmilum Ilanum Illuratum Ilshubani Ilulu Imgua Inbusha Ipqatum Iptiyamuta Irra Irrara Kusarikku Kikuid Kubburum Kudiya Kurumtum Kuwari
-			Larsa Lugalbanda Laliya Lamusa Luga Lugalkam Lugatum Mashu Mushkhushshu Mattaki Mezizi Minninum Mukannishum Munawirtum
-			Nergal Nirgal Nirgali Ningishzida Nabopolassar Nebuchadnezzar Namtar Namtaru Namtara Ninurta Nabu Nimrud Namhu Nammahani Namzu Narubtum Nasha Nidnatum
-			Palusum Pirhum Puzu Simut Sippar Sumuel Sabium Sabum Samum Shalanum Shallurum Shatamurrim Shubnalu Shuqallilum Sidu Sinnashi Sumalika
-			Taribatum Taribum Tubityamuta Uruk Utnapishtim Utanapishtim Ugalla Urukagina Uri Utu Ubarum Udama Udish Ugazum Uselli Warassuni Wardum Watrum
-			Yahurum Yamquzzuhalamma Yayatum Zaidu Zamama Zamaranum Zaninum Ziyatum Zummabu Zuzu
-
-			#CustomLocalizationNames
-			sum_GESTU sum_GESHTU sum_NINGISHZIDA sum_PABILSAG sum_EKURRA sum_YAHDUNLIM sum_SUMUEL sum_BASHMU sum_MUSHUSSU sum_UMUDABRUTU sum_UMIDABRUTU sum_KULULLU sum_KULULLUTWO sum_URUKAGINA sum_URUKAGINATWO sum_URUKAGINATHREE
-		}
-
-		female_names = {
-			Ahassunu Ahatiwaqrat Ahunatum Alittum Amurritum Belessunu Beletum Bittatum Daqqartum Ereshkigal Ealamassi Enheduana Eshargamelat
-			Habannatum Humusi Hunabatum Irkalla Iltani Ishtar Kur Ki Kammani Lamashtu Lilla Manzat Mazziat Manziat Mazzet Madala Manatum Munawirtum
-			Ninsun Nanaya Nanna Ninlil Ninsumun Ninsun Nintud Nintur Nissa Nakurtum Nuratum Suen Sirtur Dittur Duttur Sirtir Siduri Sal Santana Sin Sapurtum Shiptu Takurtum Yadidatatum
-
-			#CustomLocalizationNames
-			sum_ENZU sum_GALLUS sum_HUSBISAG
-		}
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 50
-		father_name_chance = 0
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 10
-		mother_name_chance = 10
-
-		dynasty_of_location_prefix = "prefix"
-
-		always_use_patronym = yes
-		dynasty_name_first = yes
-
-		#patronym_prefix_male = "dynnpat_pre_dumunitah"
-		#patronym_prefix_female = "dynnpat_pre_dumumi"
-
-		patronym_suffix_male = "dynnpat_suf_harug"
-		patronym_suffix_female = "dynnpat_suf_hegul"
+	dynasty_names = {
+		"dynn_SumAigidu"
+		"dynn_SumAkalama"
+		"dynn_SumAmu"
+		"dynn_SumAzida"
+		"dynn_SumAdlal"
+		"dynn_SumAlmah"
+		"dynn_SumAmamu"
+		"dynn_SumAnkiag"
+		"dynn_SumAzaga"
+		"dynn_SumBani"
+		"dynn_SumBad"
+		"dynn_SumBadkalama"
+		"dynn_SumBara"
+		"dynn_SumDa"
+		"dynn_SumDala"
+		"dynn_SumDamea"
+		"dynn_SumDameene"
+		"dynn_SumDanirgal"
+		"dynn_SumDigirkalama"
+		"dynn_SumDigirmu"
+		"dynn_SumDug"
+		"dynn_SumEbazi"
+		"dynn_SumEgir"
+		"dynn_SumEgirsu"
+		"dynn_SumEndug"
+		"dynn_SumEzem"
+		"dynn_SumGalka"
+		"dynn_SumGalzu"
+		"dynn_SumGalama"
+		"dynn_SumGimu"
+		"dynn_SumGirgal"
+		"dynn_SumGugal"
+		"dynn_SumHarug"
+		"dynn_SumHazal"
+		"dynn_SumHegal"
+		"dynn_SumHegul"
+		"dynn_SumIsag"
+		"dynn_SumIbtae"
+		"dynn_SumImkala"
+		"dynn_SumInimsilima"
+		"dynn_SumInimzi"
+		"dynn_SumLugal"
+		"dynn_SumLugalana"
+		"dynn_SumLugalgigi"
+		"dynn_SumKala"
+		"dynn_SumKalamahilibi"
+		"dynn_SumKalame"
+		"dynn_SumKiagme"
+		"dynn_SumKiharsag"
+		"dynn_SumKiursag"
+		"dynn_SumMahkala"
+		"dynn_SumMasib"
+		"dynn_SumMelam"
+		"dynn_SumMene"
+		"dynn_SumMisar"
+		"dynn_SumMusana"
+		"dynn_SumNae"
+		"dynn_SumNamtara"
+		"dynn_SumNamzitara"
+		"dynn_SumNinanki"
+		"dynn_SumNisag"
+		"dynn_SumNinseg"
+		"dynn_SumPada"
+		"dynn_SumRakalama"
+		"dynn_SumRakam"
+		"dynn_SumSaga"
+		"dynn_SumSidi"
+		"dynn_SumSisa"
+		"dynn_SumSisakalama"
+		"dynn_SumSipaddari"
+		"dynn_SumTesmu"
+		"dynn_SumUnamte"
+		"dynn_SumUsudra"
+		"dynn_SumUr"
+		"dynn_SumUrmah"
+		"dynn_SumUrmahana"
+		"dynn_SumUrmu"
+		"dynn_SumUrra"
+		"dynn_SumUrsag"
+		"dynn_SumUruna"
+		"dynn_SumUsumana"
+		"dynn_SumUsumgal"
+		"dynn_SumUsumka"
+		"dynn_SumZaemen"
+		"dynn_SumZami"
+		"dynn_SumZi"
+		"dynn_SumZimu"
+		"dynn_SumZizi"
+	}
+	male_names = {
+		Abisare
+		Apkallu
+		An
+		Abiditan
+		Abiyamuta
+		Abuwaqar
+		Ahum
+		Ahuratum
+		Akiya
+		Allala
+		Amnanu
+		Apilsha
+		Apiyatum
+		Appanili
+		Arammadara
+		Ashmadu
+		Awiliya
+		Bunene
+		Bashmu
+		Baba
+		Babati
+		Bakshishum
+		Baqqanum
+		Belanum
+		Bleshunu
+		Buhazum
+		Burrukam
+		Buttatum
+		Dagan
+		Dumuzi
+		Dumuzid
+		Dada
+		Dadanum
+		Dazuzum
+		DItanu
+		Dudu
+		Duququm
+		Esagila
+		Enki
+		Enli
+		Eluti
+		Etirum
+		Etum
+		Geshtu
+		Gestu
+		Gudea
+		Gallas
+		Gallus
+		Gungunum
+		Gilgamesh
+		Gazualum
+		Har
+		Hubshan
+		Hanbi
+		Hanpa
+		Heana
+		Hunhalbida
+		Huttupum
+		Igigi
+		Ikhur
+		Ibi
+		Iblinum
+		Ibnatum
+		Igmilum
+		Ilanum
+		Illuratum
+		Ilshubani
+		Ilulu
+		Imgua
+		Inbusha
+		Ipqatum
+		Iptiyamuta
+		Irra
+		Irrara
+		Kusarikku
+		Kikuid
+		Kubburum
+		Kudiya
+		Kurumtum
+		Kuwari
+		Larsa
+		Lugalbanda
+		Laliya
+		Lamusa
+		Luga
+		Lugalkam
+		Lugatum
+		Mashu
+		Mushkhushshu
+		Mattaki
+		Mezizi
+		Minninum
+		Mukannishum
+		Munawirtum
+		Nergal
+		Nirgal
+		Nirgali
+		Ningishzida
+		Nabopolassar
+		Nebuchadnezzar
+		Namtar
+		Namtaru
+		Namtara
+		Ninurta
+		Nabu
+		Nimrud
+		Namhu
+		Nammahani
+		Namzu
+		Narubtum
+		Nasha
+		Nidnatum
+		Palusum
+		Pirhum
+		Puzu
+		Simut
+		Sippar
+		Sumuel
+		Sabium
+		Sabum
+		Samum
+		Shalanum
+		Shallurum
+		Shatamurrim
+		Shubnalu
+		Shuqallilum
+		Sidu
+		Sinnashi
+		Sumalika
+		Taribatum
+		Taribum
+		Tubityamuta
+		Uruk
+		Utnapishtim
+		Utanapishtim
+		Ugalla
+		Urukagina
+		Uri
+		Utu
+		Ubarum
+		Udama
+		Udish
+		Ugazum
+		Uselli
+		Warassuni
+		Wardum
+		Watrum
+		Yahurum
+		Yamquzzuhalamma
+		Yayatum
+		Zaidu
+		Zamama
+		Zamaranum
+		Zaninum
+		Ziyatum
+		Zummabu
+		Zuzu
+		#CustomLocalizationNames
+		sum_GESTU
+		sum_GESHTU
+		sum_NINGISHZIDA
+		sum_PABILSAG
+		sum_EKURRA
+		sum_YAHDUNLIM
+		sum_SUMUEL
+		sum_BASHMU
+		sum_MUSHUSSU
+		sum_UMUDABRUTU
+		sum_UMIDABRUTU
+		sum_KULULLU
+		sum_KULULLUTWO
+		sum_URUKAGINA
+		sum_URUKAGINATWO
+		sum_URUKAGINATHREE
+	}
+	female_names = {
+		Ahassunu
+		Ahatiwaqrat
+		Ahunatum
+		Alittum
+		Amurritum
+		Belessunu
+		Beletum
+		Bittatum
+		Daqqartum
+		Ereshkigal
+		Ealamassi
+		Enheduana
+		Eshargamelat
+		Habannatum
+		Humusi
+		Hunabatum
+		Irkalla
+		Iltani
+		Ishtar
+		Kur
+		Ki
+		Kammani
+		Lamashtu
+		Lilla
+		Manzat
+		Mazziat
+		Manziat
+		Mazzet
+		Madala
+		Manatum
+		Munawirtum
+		Ninsun
+		Nanaya
+		Nanna
+		Ninlil
+		Ninsumun
+		Ninsun
+		Nintud
+		Nintur
+		Nissa
+		Nakurtum
+		Nuratum
+		Suen
+		Sirtur
+		Dittur
+		Duttur
+		Sirtir
+		Siduri
+		Sal
+		Santana
+		Sin
+		Sapurtum
+		Shiptu
+		Takurtum
+		Yadidatatum
+		#CustomLocalizationNames
+		sum_ENZU
+		sum_GALLUS
+		sum_HUSBISAG
+	}
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 50
+	father_name_chance = 0
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 10
+	mother_name_chance = 10
+	dynasty_of_location_prefix = "prefix"
+	always_use_patronym = yes
+	dynasty_name_first = yes
+	#patronym_prefix_male = "dynnpat_pre_dumunitah"
+	#patronym_prefix_female = "dynnpat_pre_dumumi"
+	patronym_suffix_male = "dynnpat_suf_harug"
+	patronym_suffix_female = "dynnpat_suf_hegul"
 	mercenary_names = {
-		{ name = "mercenary_company_marduk_chosen" }
-		{ name = "mercenary_company_ishtar_chosen" }
+		{
+			name = "mercenary_company_marduk_chosen"
+		}
+		{
+			name = "mercenary_company_ishtar_chosen"
+		}
 	}
 }
 
 name_list_sumer = {
-
-		dynasty_names = {
-			"dynn_SumAigidu"
-			"dynn_SumAkalama"
-			"dynn_SumAmu"
-			"dynn_SumAzida"
-			"dynn_SumAdlal"
-			"dynn_SumAlmah"
-			"dynn_SumAmamu"
-			"dynn_SumAnkiag"
-			"dynn_SumAzaga"
-			"dynn_SumBani"
-			"dynn_SumBad"
-			"dynn_SumBadkalama"
-			"dynn_SumBara"
-			"dynn_SumDa"
-			"dynn_SumDala"
-			"dynn_SumDamea"
-			"dynn_SumDameene"
-			"dynn_SumDanirgal"
-			"dynn_SumDigirkalama"
-			"dynn_SumDigirmu"
-			"dynn_SumDug"
-			"dynn_SumEbazi"
-			"dynn_SumEgir"
-			"dynn_SumEgirsu"
-			"dynn_SumEndug"
-			"dynn_SumEzem"
-			"dynn_SumGalka"
-			"dynn_SumGalzu"
-			"dynn_SumGalama"
-			"dynn_SumGimu"
-			"dynn_SumGirgal"
-			"dynn_SumGugal"
-			"dynn_SumHarug"
-			"dynn_SumHazal"
-			"dynn_SumHegal"
-			"dynn_SumHegul"
-			"dynn_SumIsag"
-			"dynn_SumIbtae"
-			"dynn_SumImkala"
-			"dynn_SumInimsilima"
-			"dynn_SumInimzi"
-			"dynn_SumLugal"
-			"dynn_SumLugalana"
-			"dynn_SumLugalgigi"
-			"dynn_SumKala"
-			"dynn_SumKalamahilibi"
-			"dynn_SumKalame"
-			"dynn_SumKiagme"
-			"dynn_SumKiharsag"
-			"dynn_SumKiursag"
-			"dynn_SumMahkala"
-			"dynn_SumMasib"
-			"dynn_SumMelam"
-			"dynn_SumMene"
-			"dynn_SumMisar"
-			"dynn_SumMusana"
-			"dynn_SumNae"
-			"dynn_SumNamtara"
-			"dynn_SumNamzitara"
-			"dynn_SumNinanki"
-			"dynn_SumNisag"
-			"dynn_SumNinseg"
-			"dynn_SumPada"
-			"dynn_SumRakalama"
-			"dynn_SumRakam"
-			"dynn_SumSaga"
-			"dynn_SumSidi"
-			"dynn_SumSisa"
-			"dynn_SumSisakalama"
-			"dynn_SumSipaddari"
-			"dynn_SumTesmu"
-			"dynn_SumUnamte"
-			"dynn_SumUsudra"
-			"dynn_SumUr"
-			"dynn_SumUrmah"
-			"dynn_SumUrmahana"
-			"dynn_SumUrmu"
-			"dynn_SumUrra"
-			"dynn_SumUrsag"
-			"dynn_SumUruna"
-			"dynn_SumUsumana"
-			"dynn_SumUsumgal"
-			"dynn_SumUsumka"
-			"dynn_SumZaemen"
-			"dynn_SumZami"
-			"dynn_SumZi"
-			"dynn_SumZimu"
-			"dynn_SumZizi"
-		}
-
-		male_names = {
-			An Amah Anki Abgal Ada Adda Agar Al Alan Allan Ash Aga Alad Abzu Abu Ashur Abgallu Adapa Atrahasis Anunnaki Akitu Anshan Ashurnasirpal Asag Azag Abisare Arali Barzil Bilulu Birs Dagrim Dumuzi Dumuzid Dilmun Dumuzi Damu Dagan
-			Eshkar Enki Enlil Erin Eren Ensi Ezen Eridu Engur Enshag Enshagag Enmerkar Engur Enkimdu Ekur Ensi Enegi Enkimdu Ezida Ekur Garash Gazimbi Gishimmar Gitlam Gizzal Gilgamesh Garadin Gidri Girin Gaz Genna Gansis Ganzer Gugalana Gunura Girsu Gungunum Ganzir Geshtu Gestu
-			Harran Henbur Hirin Hurin Hazi Hedu Hala Halba Hamazi Hubshen Ikhur Igigi Isin Irkalla Isimud Isinu Lugalbanda Lagar Lama Liliz Lu Lusilim Larsa Lagash Lagas Khamazi Karadin Kishar Kal Kala Kash Kashbar Kingu Kur Kusu Kudurrus Kudurru Kalhu Kukku Kigal
-			Magan Malah Mushen Maur Munzur Mana Musa Me Malku Minas Namkuzu Nirgal Ninurta Nurma Nuesh Nita Nergal Nirgali Nintul Nippur Ningishzida Ninazu Ninurta Nirah Nibru Ninurta Nimrod Nisroch Nabu Neti Patesi
-			Qingu Sisig Subur Subartu Sagar Saghaza Sagma Shemush Simush Shenbar Shirpurla Sharur Shesa Shezilzilla Shandan Sumuel Sharan Sharin Shem Shesa Sheriga Shenshen Shimim Sam Shakir Sim Sumur Sun Sura Suzi Shagina Shar Shembi Shen Shennur Sherda Sherzi Shuba Shul Sul Sisig Shalmaneser
-			Temen Tilhar Tibira Tilmun Tammuz Tispak Urmah Urtur Uten Utu Uli Ulushin Urash Urbarra Usun Utena Utur Uturra Uri Urin Uma Una Uria Ursa Uruk Umma Uras Uridimmu Usumu Zigan Zidmilla Zibin Ziz Ziza Ziusudra
-
-			#CustomLocalizationNames
-			sum_ZUSUDRA sum_USMU sum_ZARPANITU sum_KALBUSEGU sum_HARRAHUBULLU sum_URIDIMMU sum_URIDIMMUTWO sum_URIDIMMUTHREE sum_MUSHUSSU sum_NINURTA sum_USUM sum_RIMSIN sum_SUMUEL sum_ISINLARSA sum_GESTU sum_GESHTU sum_ASIKU sum_GURA sum_EABZU sum_EBABBAR sum_DUMUZID sum_BADTIBIRA sum_ISTARAN sum_AMAUSUMGALANA sum_URNINGIRSU sum_LAGAS  sum_HUBSHEN sum_KUTIRNAHUNTE sum_URAS sum_NINGIRSU sum_ASHURNASIRPAL sum_LUGALE sum_NINGIRSU sum_TUKULTININURTA sum_NINURTATUKULTIASHUR sum_ADADNIRARI
-		}
-
-		female_names = {
-			Aruru Agarin Anki Amah Aria Ama Ambar Anna Ara Asa Asha Ashera Adea Amagi Amar Anur Anurash Anusan Arala Arali Ashme Ashte Asila Asilal Azimua Allalu Amashilama Aruru Biluda Babbar Barbarra Bau Baba
-			Didila Dagrim Dana Dara Daria Didi Dari Darishe Dazimua Damgalnuna Damkina Der Erish Ereshkigal Edin Ebla Eden Emma Eanna Esha Eshda Esina Enkidu Eshnunna Esagila Elam
-			Gashan Gishkim Garadin Garash Gishimmar Gilninda Gianna Gil Gili Gilim Gina Gena Ginna Garanda Gazi Gizila Gula Galaturra Galla Geshtinanna Gula Gangir Gunurra Gallus Gallu
-			Hashur Hulla Henbur Hirin Hurin Hili Hilimaz Hada Humbaba Huwawa Hegir Inanna Imma Ida Inda Izi Izzi Isina Izila Ishtar Jowannah Kishar Kisher Ki Karadin Kara Kim Kushla Keshda Kiri Kirizal Kizah Kuliana Kurgarra Kuara Kish Kukunnu
-			Lil Lilla Lillan Lal Lala Lilla Lusua Lamma Lama Manzat Mendalla Minussa Minesh Maur Munzur Mushen Madala Miu Mashdaria Mashdara Meli Mia Mea Mina Maz Maraz Mamma Mami Miri Mul Mumu Mari Mazziat Manziat Mazzet
-			Ningal Ninkasi Ninsutu Nintulla Nintul Ninsikila Ninshubur Ninsun Ninhursag Namluh Nintinugga Namshita Namtilla Narua Nigba Ninsar Ninkurra Nintul Ninkarrak Nidaba Nissaba Nanibgal Nisaba Nuna Nintulla Nininsina Ninsutu Ninkasi Nashe Ninti Niggina Nanaya Nanna Ningal Ninmah Ninmenna Ninkharsag Ninmah Nintu Ningiridda Ninhursag NinlilNinsumun Nin Nurma Nissa Ninazimua Nisi Namtar Ninshubar Nurma Nia Nila Nura Nigkalla Ninna Ninninna Ninurisa Nammu Namma Ninsar Ninkurra Nanshe Ninsutu Ninkasi Ninti
-			Sirtur Susa Sukkal Suen Sagmi Shabra Shapra Shanesha Shimsusa Shuhalla Shusi Shemush Shenbar Shara Shesa Shezilzilla Sal Samana Santana Shandana Shandan Sharra Shara Sheba Sheli Shem Sali Shada Shakira Shena Sher Shula Shuna Sisi Sirtur Dittur Duttur Sirtir
-			Tabira Tilhar Tukumbi Tam Tin Tina Tutu Uanna Urash Urbarra Urda Ushar Utena Uli Ulushin Urmah Urtur Usun Uten Utur Uturra Uttu Zidmilla Zimah Zana Zua Zara Zena Zizi
-
-			#CustomLocalizationNames
-			sum_URAS sum_NINIMMA sum_NADITU sum_ENZU sum_GESHTINANNA sum_NGESHTINANNA sum_NINHURSAG sum_NINHURSAGSPLIT sum_NINHURSAGS sum_SARRATDERI sum_TIRANNA sum_QISTU sum_IGIHALKI sum_MANZATISHTAR sum_HEGIRNUNA sum_NISABA sum_ASU sum_ASIPU sum_GALLUS sum_HUSBISAG
-		}
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 3
-		mat_grf_name_chance = 5
-		father_name_chance = 10
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 5
-		mat_grm_name_chance = 10
-		mother_name_chance = 35
-
-		dynasty_of_location_prefix = "prefix"
-
-		always_use_patronym = yes
-		dynasty_name_first = yes
-
-		#patronym_prefix_male = "dynnpat_pre_dumunitah"
-		#patronym_prefix_female = "dynnpat_pre_dumumi"
-
-		patronym_suffix_male = "dynnpat_suf_harug"
-		patronym_suffix_female = "dynnpat_suf_hegul"
+	dynasty_names = {
+		"dynn_SumAigidu"
+		"dynn_SumAkalama"
+		"dynn_SumAmu"
+		"dynn_SumAzida"
+		"dynn_SumAdlal"
+		"dynn_SumAlmah"
+		"dynn_SumAmamu"
+		"dynn_SumAnkiag"
+		"dynn_SumAzaga"
+		"dynn_SumBani"
+		"dynn_SumBad"
+		"dynn_SumBadkalama"
+		"dynn_SumBara"
+		"dynn_SumDa"
+		"dynn_SumDala"
+		"dynn_SumDamea"
+		"dynn_SumDameene"
+		"dynn_SumDanirgal"
+		"dynn_SumDigirkalama"
+		"dynn_SumDigirmu"
+		"dynn_SumDug"
+		"dynn_SumEbazi"
+		"dynn_SumEgir"
+		"dynn_SumEgirsu"
+		"dynn_SumEndug"
+		"dynn_SumEzem"
+		"dynn_SumGalka"
+		"dynn_SumGalzu"
+		"dynn_SumGalama"
+		"dynn_SumGimu"
+		"dynn_SumGirgal"
+		"dynn_SumGugal"
+		"dynn_SumHarug"
+		"dynn_SumHazal"
+		"dynn_SumHegal"
+		"dynn_SumHegul"
+		"dynn_SumIsag"
+		"dynn_SumIbtae"
+		"dynn_SumImkala"
+		"dynn_SumInimsilima"
+		"dynn_SumInimzi"
+		"dynn_SumLugal"
+		"dynn_SumLugalana"
+		"dynn_SumLugalgigi"
+		"dynn_SumKala"
+		"dynn_SumKalamahilibi"
+		"dynn_SumKalame"
+		"dynn_SumKiagme"
+		"dynn_SumKiharsag"
+		"dynn_SumKiursag"
+		"dynn_SumMahkala"
+		"dynn_SumMasib"
+		"dynn_SumMelam"
+		"dynn_SumMene"
+		"dynn_SumMisar"
+		"dynn_SumMusana"
+		"dynn_SumNae"
+		"dynn_SumNamtara"
+		"dynn_SumNamzitara"
+		"dynn_SumNinanki"
+		"dynn_SumNisag"
+		"dynn_SumNinseg"
+		"dynn_SumPada"
+		"dynn_SumRakalama"
+		"dynn_SumRakam"
+		"dynn_SumSaga"
+		"dynn_SumSidi"
+		"dynn_SumSisa"
+		"dynn_SumSisakalama"
+		"dynn_SumSipaddari"
+		"dynn_SumTesmu"
+		"dynn_SumUnamte"
+		"dynn_SumUsudra"
+		"dynn_SumUr"
+		"dynn_SumUrmah"
+		"dynn_SumUrmahana"
+		"dynn_SumUrmu"
+		"dynn_SumUrra"
+		"dynn_SumUrsag"
+		"dynn_SumUruna"
+		"dynn_SumUsumana"
+		"dynn_SumUsumgal"
+		"dynn_SumUsumka"
+		"dynn_SumZaemen"
+		"dynn_SumZami"
+		"dynn_SumZi"
+		"dynn_SumZimu"
+		"dynn_SumZizi"
+	}
+	male_names = {
+		An
+		Amah
+		Anki
+		Abgal
+		Ada
+		Adda
+		Agar
+		Al
+		Alan
+		Allan
+		Ash
+		Aga
+		Alad
+		Abzu
+		Abu
+		Ashur
+		Abgallu
+		Adapa
+		Atrahasis
+		Anunnaki
+		Akitu
+		Anshan
+		Ashurnasirpal
+		Asag
+		Azag
+		Abisare
+		Arali
+		Barzil
+		Bilulu
+		Birs
+		Dagrim
+		Dumuzi
+		Dumuzid
+		Dilmun
+		Dumuzi
+		Damu
+		Dagan
+		Eshkar
+		Enki
+		Enlil
+		Erin
+		Eren
+		Ensi
+		Ezen
+		Eridu
+		Engur
+		Enshag
+		Enshagag
+		Enmerkar
+		Engur
+		Enkimdu
+		Ekur
+		Ensi
+		Enegi
+		Enkimdu
+		Ezida
+		Ekur
+		Garash
+		Gazimbi
+		Gishimmar
+		Gitlam
+		Gizzal
+		Gilgamesh
+		Garadin
+		Gidri
+		Girin
+		Gaz
+		Genna
+		Gansis
+		Ganzer
+		Gugalana
+		Gunura
+		Girsu
+		Gungunum
+		Ganzir
+		Geshtu
+		Gestu
+		Harran
+		Henbur
+		Hirin
+		Hurin
+		Hazi
+		Hedu
+		Hala
+		Halba
+		Hamazi
+		Hubshen
+		Ikhur
+		Igigi
+		Isin
+		Irkalla
+		Isimud
+		Isinu
+		Lugalbanda
+		Lagar
+		Lama
+		Liliz
+		Lu
+		Lusilim
+		Larsa
+		Lagash
+		Lagas
+		Khamazi
+		Karadin
+		Kishar
+		Kal
+		Kala
+		Kash
+		Kashbar
+		Kingu
+		Kur
+		Kusu
+		Kudurrus
+		Kudurru
+		Kalhu
+		Kukku
+		Kigal
+		Magan
+		Malah
+		Mushen
+		Maur
+		Munzur
+		Mana
+		Musa
+		Me
+		Malku
+		Minas
+		Namkuzu
+		Nirgal
+		Ninurta
+		Nurma
+		Nuesh
+		Nita
+		Nergal
+		Nirgali
+		Nintul
+		Nippur
+		Ningishzida
+		Ninazu
+		Ninurta
+		Nirah
+		Nibru
+		Ninurta
+		Nimrod
+		Nisroch
+		Nabu
+		Neti
+		Patesi
+		Qingu
+		Sisig
+		Subur
+		Subartu
+		Sagar
+		Saghaza
+		Sagma
+		Shemush
+		Simush
+		Shenbar
+		Shirpurla
+		Sharur
+		Shesa
+		Shezilzilla
+		Shandan
+		Sumuel
+		Sharan
+		Sharin
+		Shem
+		Shesa
+		Sheriga
+		Shenshen
+		Shimim
+		Sam
+		Shakir
+		Sim
+		Sumur
+		Sun
+		Sura
+		Suzi
+		Shagina
+		Shar
+		Shembi
+		Shen
+		Shennur
+		Sherda
+		Sherzi
+		Shuba
+		Shul
+		Sul
+		Sisig
+		Shalmaneser
+		Temen
+		Tilhar
+		Tibira
+		Tilmun
+		Tammuz
+		Tispak
+		Urmah
+		Urtur
+		Uten
+		Utu
+		Uli
+		Ulushin
+		Urash
+		Urbarra
+		Usun
+		Utena
+		Utur
+		Uturra
+		Uri
+		Urin
+		Uma
+		Una
+		Uria
+		Ursa
+		Uruk
+		Umma
+		Uras
+		Uridimmu
+		Usumu
+		Zigan
+		Zidmilla
+		Zibin
+		Ziz
+		Ziza
+		Ziusudra
+		#CustomLocalizationNames
+		sum_ZUSUDRA
+		sum_USMU
+		sum_ZARPANITU
+		sum_KALBUSEGU
+		sum_HARRAHUBULLU
+		sum_URIDIMMU
+		sum_URIDIMMUTWO
+		sum_URIDIMMUTHREE
+		sum_MUSHUSSU
+		sum_NINURTA
+		sum_USUM
+		sum_RIMSIN
+		sum_SUMUEL
+		sum_ISINLARSA
+		sum_GESTU
+		sum_GESHTU
+		sum_ASIKU
+		sum_GURA
+		sum_EABZU
+		sum_EBABBAR
+		sum_DUMUZID
+		sum_BADTIBIRA
+		sum_ISTARAN
+		sum_AMAUSUMGALANA
+		sum_URNINGIRSU
+		sum_LAGAS
+		sum_HUBSHEN
+		sum_KUTIRNAHUNTE
+		sum_URAS
+		sum_NINGIRSU
+		sum_ASHURNASIRPAL
+		sum_LUGALE
+		sum_NINGIRSU
+		sum_TUKULTININURTA
+		sum_NINURTATUKULTIASHUR
+		sum_ADADNIRARI
+	}
+	female_names = {
+		Aruru
+		Agarin
+		Anki
+		Amah
+		Aria
+		Ama
+		Ambar
+		Anna
+		Ara
+		Asa
+		Asha
+		Ashera
+		Adea
+		Amagi
+		Amar
+		Anur
+		Anurash
+		Anusan
+		Arala
+		Arali
+		Ashme
+		Ashte
+		Asila
+		Asilal
+		Azimua
+		Allalu
+		Amashilama
+		Aruru
+		Biluda
+		Babbar
+		Barbarra
+		Bau
+		Baba
+		Didila
+		Dagrim
+		Dana
+		Dara
+		Daria
+		Didi
+		Dari
+		Darishe
+		Dazimua
+		Damgalnuna
+		Damkina
+		Der
+		Erish
+		Ereshkigal
+		Edin
+		Ebla
+		Eden
+		Emma
+		Eanna
+		Esha
+		Eshda
+		Esina
+		Enkidu
+		Eshnunna
+		Esagila
+		Elam
+		Gashan
+		Gishkim
+		Garadin
+		Garash
+		Gishimmar
+		Gilninda
+		Gianna
+		Gil
+		Gili
+		Gilim
+		Gina
+		Gena
+		Ginna
+		Garanda
+		Gazi
+		Gizila
+		Gula
+		Galaturra
+		Galla
+		Geshtinanna
+		Gula
+		Gangir
+		Gunurra
+		Gallus
+		Gallu
+		Hashur
+		Hulla
+		Henbur
+		Hirin
+		Hurin
+		Hili
+		Hilimaz
+		Hada
+		Humbaba
+		Huwawa
+		Hegir
+		Inanna
+		Imma
+		Ida
+		Inda
+		Izi
+		Izzi
+		Isina
+		Izila
+		Ishtar
+		Jowannah
+		Kishar
+		Kisher
+		Ki
+		Karadin
+		Kara
+		Kim
+		Kushla
+		Keshda
+		Kiri
+		Kirizal
+		Kizah
+		Kuliana
+		Kurgarra
+		Kuara
+		Kish
+		Kukunnu
+		Lil
+		Lilla
+		Lillan
+		Lal
+		Lala
+		Lilla
+		Lusua
+		Lamma
+		Lama
+		Manzat
+		Mendalla
+		Minussa
+		Minesh
+		Maur
+		Munzur
+		Mushen
+		Madala
+		Miu
+		Mashdaria
+		Mashdara
+		Meli
+		Mia
+		Mea
+		Mina
+		Maz
+		Maraz
+		Mamma
+		Mami
+		Miri
+		Mul
+		Mumu
+		Mari
+		Mazziat
+		Manziat
+		Mazzet
+		Ningal
+		Ninkasi
+		Ninsutu
+		Nintulla
+		Nintul
+		Ninsikila
+		Ninshubur
+		Ninsun
+		Ninhursag
+		Namluh
+		Nintinugga
+		Namshita
+		Namtilla
+		Narua
+		Nigba
+		Ninsar
+		Ninkurra
+		Nintul
+		Ninkarrak
+		Nidaba
+		Nissaba
+		Nanibgal
+		Nisaba
+		Nuna
+		Nintulla
+		Nininsina
+		Ninsutu
+		Ninkasi
+		Nashe
+		Ninti
+		Niggina
+		Nanaya
+		Nanna
+		Ningal
+		Ninmah
+		Ninmenna
+		Ninkharsag
+		Ninmah
+		Nintu
+		Ningiridda
+		Ninhursag
+		NinlilNinsumun
+		Nin
+		Nurma
+		Nissa
+		Ninazimua
+		Nisi
+		Namtar
+		Ninshubar
+		Nurma
+		Nia
+		Nila
+		Nura
+		Nigkalla
+		Ninna
+		Ninninna
+		Ninurisa
+		Nammu
+		Namma
+		Ninsar
+		Ninkurra
+		Nanshe
+		Ninsutu
+		Ninkasi
+		Ninti
+		Sirtur
+		Susa
+		Sukkal
+		Suen
+		Sagmi
+		Shabra
+		Shapra
+		Shanesha
+		Shimsusa
+		Shuhalla
+		Shusi
+		Shemush
+		Shenbar
+		Shara
+		Shesa
+		Shezilzilla
+		Sal
+		Samana
+		Santana
+		Shandana
+		Shandan
+		Sharra
+		Shara
+		Sheba
+		Sheli
+		Shem
+		Sali
+		Shada
+		Shakira
+		Shena
+		Sher
+		Shula
+		Shuna
+		Sisi
+		Sirtur
+		Dittur
+		Duttur
+		Sirtir
+		Tabira
+		Tilhar
+		Tukumbi
+		Tam
+		Tin
+		Tina
+		Tutu
+		Uanna
+		Urash
+		Urbarra
+		Urda
+		Ushar
+		Utena
+		Uli
+		Ulushin
+		Urmah
+		Urtur
+		Usun
+		Uten
+		Utur
+		Uturra
+		Uttu
+		Zidmilla
+		Zimah
+		Zana
+		Zua
+		Zara
+		Zena
+		Zizi
+		#CustomLocalizationNames
+		sum_URAS
+		sum_NINIMMA
+		sum_NADITU
+		sum_ENZU
+		sum_GESHTINANNA
+		sum_NGESHTINANNA
+		sum_NINHURSAG
+		sum_NINHURSAGSPLIT
+		sum_NINHURSAGS
+		sum_SARRATDERI
+		sum_TIRANNA
+		sum_QISTU
+		sum_IGIHALKI
+		sum_MANZATISHTAR
+		sum_HEGIRNUNA
+		sum_NISABA
+		sum_ASU
+		sum_ASIPU
+		sum_GALLUS
+		sum_HUSBISAG
+	}
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 3
+	mat_grf_name_chance = 5
+	father_name_chance = 10
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 5
+	mat_grm_name_chance = 10
+	mother_name_chance = 35
+	dynasty_of_location_prefix = "prefix"
+	always_use_patronym = yes
+	dynasty_name_first = yes
+	#patronym_prefix_male = "dynnpat_pre_dumunitah"
+	#patronym_prefix_female = "dynnpat_pre_dumumi"
+	patronym_suffix_male = "dynnpat_suf_harug"
+	patronym_suffix_female = "dynnpat_suf_hegul"
 	mercenary_names = {
-		{ name = "mercenary_company_tiger_riders" }
-		{ name = "mercenary_company_elephant_riders" }
-		{ name = "mercenary_company_sumer_fishmen" }
-		{ name = "mercenary_company_sumer_royals" }
+		{
+			name = "mercenary_company_tiger_riders"
+		}
+		{
+			name = "mercenary_company_elephant_riders"
+		}
+		{
+			name = "mercenary_company_sumer_fishmen"
+		}
+		{
+			name = "mercenary_company_sumer_royals"
+		}
 	}
 }

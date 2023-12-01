@@ -1,5 +1,4 @@
-bastard_legitimization_prestige_cost = 1500
-
+﻿bastard_legitimization_prestige_cost = 1500
 task_accept_culture_base_progress = {
 	value = 0.1
 	multiply = scope:councillor_liege.primary_title.tier
@@ -10,19 +9,16 @@ medium_stress_gain = 15
 major_stress_gain = 50
 massive_stress_gain = 100
 monumental_stress_gain = 150
-
 minor_stress_loss = -5
 medium_stress_loss = -15
 major_stress_loss = -25
 massive_stress_loss = -100
 monumental_stress_loss = -200
-
 #Thresholds
 minor_stress_gain_threshold = 100
 medium_stress_gain_threshold = 200
 major_stress_gain_threshold = 300
 max_stress_gain_threshold = 400
-
 #Values to be used in "stress_impact"
 miniscule_stress_impact_gain = 5
 minor_stress_impact_gain = 10
@@ -34,13 +30,10 @@ minor_stress_impact_loss = -10
 medium_stress_impact_loss = -20
 major_stress_impact_loss = -50
 massive_stress_impact_loss = -100
-
 # For certain traits 'nullifying' most of a medium stress gain, but some left for flavor. 
 sub_medium_stress_impact_loss = -20
 sub_medium_stress_impact_gain = 20
-
 refund_perks_stress_impact = 100
-
 mental_break_opt_out_stress_gain = 25
 hunt_stress_loss_value = -20
 meager_feast_stress_loss_value = -10
@@ -50,16 +43,11 @@ lavish_feast_stress_loss_value = -50
 exotic_feast_stress_loss_value = -100
 activity_stress_loss_impact = -15
 activity_stress_gain_impact = 15
-
 #Duration of stress-induced opinion penalties in days
 default_stress_opinion_duration = 3650
-
-
 #Cost of changing a child's traits
 child_trait_change_stress_penalty = 20
 depart_from_own_trait_stress_cost = 10
-
-
 #Stress trigger values
 very_low_stress = 10
 low_stress = 20
@@ -72,19 +60,18 @@ high_medium_stress = 175
 high_stress = 200
 very_high_stress = 250
 extremely_high_stress = 300
-
-
 # Mental Break values
 stress_threshold_cooldown_duration = {
-	value = 730 # 1 day less than 2 years
+	value = 730	# 1 day less than 2 years
 	if = {
 		limit = {
 			has_perk = mental_resilience_perk
 		}
-		add = 1095 # 3 years extra
+		add = 1095		# 3 years extra
 	}
-	floor = yes # Should be unneccessary, but ensures it's an int
+	floor = yes	# Should be unneccessary, but ensures it's an int
 }
+
 stress_threshold_cooldown_duration_in_years = {
 	value = 2
 	if = {
@@ -94,34 +81,41 @@ stress_threshold_cooldown_duration_in_years = {
 		add = 3
 	}
 }
+
 stress_threshold_second_check_timing = {
-	value = 730 # 2 years
+	value = 730	# 2 years
 	if = {
 		limit = {
 			has_perk = mental_resilience_perk
 		}
-		add = 1095 # 3 years extra
+		add = 1095		# 3 years extra
 	}
-	floor = yes # Should be unneccessary, but ensures it's an int
+	floor = yes	# Should be unneccessary, but ensures it's an int
 }
 
 tr_ai_raiding_chance = {
 	value = 0
-    if = {
+	if = {
 		limit = {
-			scope:ruler = { has_government = tribal_government }
+			scope:ruler = {
+				has_government = tribal_government
+			}
 		}
 		value = 60
 	}
 	if = {
 		limit = {
-			scope:ruler = { has_government = clan_government }
+			scope:ruler = {
+				has_government = clan_government
+			}
 		}
 		value = 40
 	}
 	if = {
 		limit = {
-			scope:ruler = { has_government = mercenary_government }
+			scope:ruler = {
+				has_government = mercenary_government
+			}
 		}
 		value = 25
 	}
@@ -134,20 +128,28 @@ tr_ai_raiding_chance = {
 	if = {
 		limit = {
 			OR = {
-				scope:ruler = { has_trait = reaver }
-				scope:ruler = { has_trait = greedy }
-				scope:ruler = { has_trait = viking }
-				scope:ruler = { has_trait = sadistic }
+				scope:ruler = {
+					has_trait = reaver
+				}
+				scope:ruler = {
+					has_trait = greedy
+				}
+				scope:ruler = {
+					has_trait = viking
+				}
+				scope:ruler = {
+					has_trait = sadistic
+				}
 			}
 		}
-	value = 20
+		value = 20
 	}
 }
 
 battle_winner_gold_gain = {
 	value = 0
-	
-	if = { # Cultural tradition
+	if = {
+		# Cultural tradition
 		limit = {
 			culture = {
 				has_cultural_parameter = gain_gold_from_battles
@@ -155,8 +157,8 @@ battle_winner_gold_gain = {
 		}
 		add = 10
 	}
-	
-	if = { # Bonus for legacy
+	if = {
+		# Bonus for legacy
 		limit = {
 			exists = dynasty
 			dynasty = {
@@ -165,8 +167,7 @@ battle_winner_gold_gain = {
 		}
 		add = 50
 	}
-
-	if = { 
+	if = {
 		limit = {
 			has_government = tribal_government
 		}
@@ -176,15 +177,15 @@ battle_winner_gold_gain = {
 
 battle_winner_prestige_gain = {
 	value = 100
-	
-	if = { # Bonus for tribals
+	if = {
+		# Bonus for tribals
 		limit = {
 			has_government = tribal_government
 		}
 		add = 500
 	}
-	
-	if = { # Leading the troops yourself adds a bit
+	if = {
+		# Leading the troops yourself adds a bit
 		limit = {
 			OR = {
 				scope:combat = {
@@ -207,8 +208,8 @@ battle_winner_prestige_gain = {
 		}
 		add = 50
 	}
-	
-	if = { # Bonus for legacy
+	if = {
+		# Bonus for legacy
 		limit = {
 			exists = dynasty
 			dynasty = {
@@ -217,8 +218,8 @@ battle_winner_prestige_gain = {
 		}
 		multiply = 2
 	}
-	
-	if = { # Cultural tradition
+	if = {
+		# Cultural tradition
 		limit = {
 			culture = {
 				has_cultural_parameter = less_prestige_from_battles
@@ -226,13 +227,14 @@ battle_winner_prestige_gain = {
 		}
 		multiply = 0.25
 	}
-
 	# Fighting Peasants Rebellion
 	if = {
 		limit = {
-			scope:enemy_battle_owner = { has_variable = rebel_leader_peasants }
+			scope:enemy_battle_owner = {
+				has_variable = rebel_leader_peasants
+			}
 		}
-		multiply = 0.25 # to test
+		multiply = 0.25		# to test
 	}
 }
 
@@ -248,29 +250,29 @@ battle_winner_piety_gain = {
 			}
 		}
 		value = 50
-		
-		if = { # Bonus for tribals
+		if = {
+			# Bonus for tribals
 			limit = {
 				has_government = tribal_government
 			}
 			add = 70
 		}
-		
-		if = { # Bonus for theocracies
+		if = {
+			# Bonus for theocracies
 			limit = {
 				has_government = theocracy_government
 			}
 			add = 200
 		}
-
-		if = { # Bonus for holy orders
+		if = {
+			# Bonus for holy orders
 			limit = {
 				has_government = holy_order_government
 			}
 			add = 500
 		}
-
-		if = { # Leading the troops yourself adds a bit
+		if = {
+			# Leading the troops yourself adds a bit
 			limit = {
 				OR = {
 					scope:combat = {
@@ -294,13 +296,13 @@ battle_winner_piety_gain = {
 			add = 25
 		}
 	}
-
-	
 	# Fighting Peasants Rebellion
 	if = {
 		limit = {
-			scope:enemy_battle_owner = { has_variable = rebel_leader_peasants }
+			scope:enemy_battle_owner = {
+				has_variable = rebel_leader_peasants
+			}
 		}
-		multiply = 0.25 # to test
+		multiply = 0.25		# to test
 	}
 }

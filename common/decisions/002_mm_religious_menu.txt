@@ -1,24 +1,21 @@
-convert_kemetism_decision = {
+﻿convert_kemetism_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_kemetism_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:kemetic_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:kemetic_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -26,104 +23,84 @@ convert_kemetism_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:kemetic_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:kemetic_pagan
 		}
-
 		every_held_title = {
 			limit = {
 				tier = tier_county
 				culture = holder.culture
 			}
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:kemetic_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:kemetic_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:kemetic_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_atenist_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_atenist_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:kemetic_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:atenist_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -131,97 +108,78 @@ convert_atenist_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:atenist_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:atenist_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:atenist_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:atenist_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:atenist_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_sumerian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_sumerian_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:sumerian_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:sumerian_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -229,97 +187,78 @@ convert_sumerian_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:sumerian_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:sumerian_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:sumerian_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:sumerian_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:sumerian_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_akkadian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_akkadian_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:akkadian_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:akkadian_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -327,97 +266,78 @@ convert_akkadian_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:akkadian_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:akkadian_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:akkadian_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:akkadian_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:akkadian_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_babylonian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_babylonian_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:babylonian_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:babylonian_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -425,97 +345,78 @@ convert_babylonian_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:babylonian_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:babylonian_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:babylonian_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:babylonian_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:babylonian_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_assyrian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_assyrian_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:assyrian_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:assyrian_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -523,97 +424,78 @@ convert_assyrian_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:assyrian_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:assyrian_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:assyrian_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:assyrian_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:assyrian_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_canaanite_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_canaanite_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:canaanite_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:canaanite_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -621,97 +503,78 @@ convert_canaanite_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:canaanite_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:canaanite_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:canaanite_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:canaanite_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:canaanite_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_yahwism_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_yahwism_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:yahwism_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:yahwism_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -719,97 +582,78 @@ convert_yahwism_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:yahwism_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:yahwism_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:yahwism_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:yahwism_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:yahwism_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_philistinian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_philistinian_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:philistinian_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:philistinian_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -817,97 +661,78 @@ convert_philistinian_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:philistinian_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:philistinian_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:philistinian_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:philistinian_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:philistinian_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_phoenician_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_phoenician_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:phoenician_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:phoenician_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -915,97 +740,78 @@ convert_phoenician_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:phoenician_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:phoenician_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:phoenician_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:phoenician_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:phoenician_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_punic_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_punic_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:punic_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:punic_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -1013,97 +819,78 @@ convert_punic_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:punic_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:punic_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:punic_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:punic_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:punic_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_brythonic_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_brythonic_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:brythonic_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:brythonic_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -1111,97 +898,78 @@ convert_brythonic_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:brythonic_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:brythonic_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:brythonic_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:brythonic_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:brythonic_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_gaelic_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_gaelic_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:gaelic_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:gaelic_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -1209,97 +977,78 @@ convert_gaelic_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:gaelic_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:gaelic_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:gaelic_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:gaelic_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:gaelic_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_gaulish_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_gaulish_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:gaulish_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:gaulish_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
@@ -1307,373 +1056,293 @@ convert_gaulish_decision = {
 	}
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:gaulish_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:gaulish_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:gaulish_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:gaulish_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:gaulish_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_welsh_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_welsh_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:welsh_pagan.religion
 			this = faith.religious_head
 		}
-
 		faith:welsh_pagan = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
-
 		has_character_flag = conversion_menu_open
 	}
-
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:welsh_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:welsh_pagan
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:welsh_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:welsh_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:welsh_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
-
 convert_religio_romana_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_religio_romana_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:religio_romana.religion
 			this = faith.religious_head
 		}
-
 		faith:religio_romana = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
-
 		has_character_flag = conversion_menu_open
 	}
-
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:religio_romana
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:religio_romana
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:religio_romana
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:religio_romana
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:religio_romana
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }
 
 convert_dodekatheism_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-	
 	major = yes
 	ai_check_interval = 0
-
 	desc = convert_dodekatheism_decision_desc
-
 	is_shown = {
 		NOR = {
 			faith.religion = faith:religio_romana.religion
 			this = faith.religious_head
 		}
-
 		faith:religio_romana = {
 			any_holy_site = {
 				OR = {
 					county.holder = root
-					county.holder.top_liege = { this = root }
+					county.holder.top_liege = {
+						this = root
+					}
 				}
-				
 				count >= 1
 			}
 		}
-
 		has_character_flag = conversion_menu_open
 	}
-
 	is_valid = {
 		is_independent_ruler = yes
-
 		piety >= major_piety_value
 	}
-
 	cost = {
 		prestige = 300
 	}
-
 	effect = {
 		set_character_faith = faith:hellenic_pagan
-		
 		primary_title.title_capital_county = {
 			set_county_faith = faith:religio_romana
 		}
-
 		add_piety = medium_piety_value
-
 		stress_impact = {
 			zealous = medium_stress_impact_gain
 		}
-
 		every_close_family_member = {
 			limit = {
 				NOT = {
 					has_trait = zealous
 				}
 			}
-
 			set_character_faith = faith:hellenic_pagan
 		}
-
 		every_vassal = {
 			limit = {
 				NOT = {
-					has_trait = zealous 
+					has_trait = zealous
 				}
-
 				opinion = {
 					target = root
 					value > 0
 				}
 			}
-
 			set_character_faith = faith:hellenic_pagan
-
 			every_held_title = {
-				limit = { 
+				limit = {
 					tier = tier_county
 					culture = holder.culture
 				}
-				
 				set_county_faith = faith:hellenic_pagan
 			}
 		}
-
 		every_vassal = {
 			limit = {
 				has_trait = zealous
 			}
-
 			add_opinion = {
 				target = root
 				modifier = heretic_opinion
 			}
 		}
-
 		trigger_event = ar_revival_events.0001
 	}
 }

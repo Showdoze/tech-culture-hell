@@ -1,43 +1,43 @@
-can_traverse_water = {
+﻿can_traverse_water = {
 	trigger_if = {
-	    culture = {
-		    OR = {
-			    has_innovation = innovation_longboats
-			    has_innovation = innovation_african_canoes
-                has_innovation = innovation_ships
-			    has_innovation = innovation_triremes
-		    }
-	    }
-    }
+		culture = {
+			OR = {
+				has_innovation = innovation_longboats
+				has_innovation = innovation_african_canoes
+				has_innovation = innovation_ships
+				has_innovation = innovation_triremes
+			}
+		}
+	}
 }
 
 can_raid_across_water = {
 	trigger_if = {
-	    culture = {
-		    OR = {
-			    has_innovation = innovation_longboats
-			    has_innovation = innovation_african_canoes
-                has_innovation = innovation_ships
-			    has_innovation = innovation_triremes
-		    }
-	    }
-    }
+		culture = {
+			OR = {
+				has_innovation = innovation_longboats
+				has_innovation = innovation_african_canoes
+				has_innovation = innovation_ships
+				has_innovation = innovation_triremes
+			}
+		}
+	}
 }
 
 can_raid = {
 	trigger_if = {
-        can_raid_trigger = yes
+		can_raid_trigger = yes
 	}
 }
 
 can_start_raid = {
 	trigger_if = {
-        can_raid_trigger = yes
+		can_raid_trigger = yes
 	}
 }
 
 buildings_enabled = {
-    always = yes
+	always = yes
 }
 
 is_character_allowed_to_be_player = {
