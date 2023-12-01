@@ -1,4 +1,4 @@
-bloodshot_eyes = {
+eyes = {
 	bloodshot_eyes = {
 		traits = {
             hashishiyah
@@ -13,11 +13,9 @@ bloodshot_eyes = {
 		}
 	}
 }
+
 hygene = {
 	hygene_bad_1 = {
-			trigger = {
-				should_show_disturbing_portrait_modifiers = yes
-			}
 			traits = {
 				hygene_bad_1
 			}
@@ -32,15 +30,13 @@ hygene = {
 					gene = skin_color
 					mode = modify
 	
-					x = -0.1
-					y = 0.0
+					x = 0.0
+					y = 0.1
 				}
 		}
 	}
+
 	hygene_bad_2 = {
-		trigger = {
-			should_show_disturbing_portrait_modifiers = yes
-		}
 		traits = {
 			hygene_bad_2
 		}
@@ -51,13 +47,19 @@ hygene = {
 				value = 1.0
 				template = lovers_pox
 			}
+			morph = {
+				mode = add
+				gene = gene_scaly
+				value = 1.0
+				template = scaly
+			}
 			color = {
 				gene = skin_color
 				mode = modify
 
-				x = -0.2
-				y = 0.0
+				x = 0.0
+				y = 0.1
 			}
-	}
-}
+	    }
+    }
 }
