@@ -32,6 +32,8 @@ mmtonychase = {
 	trait = beauty_good_1
 	trait = education_intrigue_1
 	trait = paranoid
+	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 	trait = lunatic_genetic
 	trait = possessed_genetic
 	trait = born_in_the_purple
@@ -855,6 +857,7 @@ mmlolcowdaniellarson = {
 	trait = possessed_genetic
 	trait = wrathful
 	trait = poet
+	trait = contrite
 	trait = deviant
 	trait = irritable
 	trait = flagellant
@@ -863,6 +866,11 @@ mmlolcowdaniellarson = {
 	disallow_random_traits = yes
 	844.9.8 = {
 		birth = yes
+	}
+	860.1.1. = {
+		effect = {
+			set_relation_rival = { target = character:mmwwotshirts reason = rival_historical }
+		}
 	}
 	1054.6.30 = {
 		death = {
@@ -1062,5 +1070,80 @@ mmshanyforchrist = {
 		}
 	}
 }
+mmtiktokpsychic = {
+	name = "Ashley Guilliard"
+	religion = catholic
+	culture = african_american
+	female = yes
+	dynasty_house = house_tiktok
+	trait = wrathful
+	trait = greedy
+	trait = zealous
+	trait = lunatic_genetic
+	trait = intellect_bad_2
+	trait = arbitrary
+	trait = callous
+	trait = stubborn
+	trait = education_learning_1
+	disallow_random_traits = yes
+	834.4.21 = {
+		birth = yes
+	}
+	1040.1.10 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
+mmwspidy = {
+	name = "Spidy"
+	religion = catholic
+	culture = brit #Austrilian
+	dynasty = mmlolcow
+	trait = impatient
+	trait = drunkard
+	trait = fleeting
+	trait = hashishiyah
+	trait = education_diplomacy_1
+	disallow_random_traits = yes
+	848.4.29 = {
+		birth = yes
+	}
+	870.1.10 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+mmwwotshirts = {
+	name = "World of T-shirts"
+	religion = catholic
+	culture = american 
+	dynasty_house = house_tiktok
+	trait = arrogant
+	trait = wrathful
+	trait = craven
+	trait = irritable
+	trait = greedy
+	trait = sadistic
+	trait = drunkard
+	trait = education_diplomacy_1
+	disallow_random_traits = yes
+	848.4.29 = {
+		birth = yes
+	}
+	860.1.1. = {
+		effect = {
+			set_relation_rival = { target = character:mmlolcowdaniellarson reason = rival_historical }
+		}
+	}
+	890.1.10 = {
+		death = {
+			death_reason = death_beaten
+			killed = mmlolcowdaniellarson
+		}
+	}
+}
+
 
 
