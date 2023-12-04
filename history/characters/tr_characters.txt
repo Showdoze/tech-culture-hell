@@ -99,6 +99,7 @@ ck650002 = {
 	trait = arbitrary
 	trait = shrewd
 	trait = cancer
+	trait = murderer
 	trait = education_martial_3
 	disallow_random_traits = yes
 	405.1.1 = {
@@ -210,13 +211,13 @@ ck650006 = {
 	460.9.4 = {
 		birth = "460.9.4"
 	}
-	#480.9.4 = {
 	476.9.4 = {
 		death = {
 			death_reason = death_exile
 			killer = ck650107
 		}
 	}
+	#480.9.4 = {
 }
 
 ck650043 = {
@@ -659,6 +660,7 @@ ck650072 = {
 	religion = hellenic_pagan
 	culture = greek
 	trait = intellect_good_3
+	trait = patient
 	#trait = math
 	#trait = tolerant
 	trait = education_learning_4
@@ -1065,7 +1067,7 @@ ck650009 = {
 	#trait = tribal_gov_trait
 	give_nickname = nick_folcawalding
 	380.1.1 = {
-		birth = "400.1.1"
+		birth = yes
 		#create_bloodline = {
 		#	type = frisian_blood
 		#	has_dlc = "Holy Fury"
@@ -1088,7 +1090,7 @@ ck650010 = {
 	#trait = uncouth
 	trait = arrogant
 	489.1.1 = {
-		birth = "489.1.1"
+		birth = yes
 	}
 	646.1.1 = {
 		death = "646.1.1"
@@ -1109,7 +1111,7 @@ ck650036 = {
 	trait = education_martial_1
 	father = 180627
 	504.3.3 = {
-		birth = "504.3.3"
+		birth = yes
 	}
 	531.1.1 = {
 		death = {
@@ -1132,7 +1134,7 @@ ck650044 = {
 	#trait = charismatic
 	trait = honest
 	488.1.1 = {
-		birth = "488.1.1"
+		birth = yes
 	}
 	528.9.1 = {
 		death = {
@@ -1153,7 +1155,7 @@ ck650042 = {
 	father = 180628
 	mother = ck650043
 	531.1.1 = {
-		birth = "531.1.1"
+		birth = yes
 	}
 	569.1.1 = {
 		death = {
@@ -1174,10 +1176,10 @@ ck650075 = {
 	#trait=math
 	father = ck650076
 	614.1.1 = {
-		birth = "614.1.1"
+		birth = yes
 	}
 	656.1.1 = {
-		death = "656.1.1"
+		death = yes
 	}
 }
 
@@ -1188,10 +1190,10 @@ ck650076 = {
 	culture = "ethiopian"
 	father = ck650077
 	590.1.1 = {
-		birth = "590.1.1"
+		birth = yes
 	}
 	616.1.1 = {
-		death = "616.1.1"
+		death = yes
 	}
 }
 
@@ -1202,10 +1204,10 @@ ck650077 = {
 	culture = "ethiopian"
 	father = ck650078
 	530.1.1 = {
-		birth = "530.1.1"
+		birth = yes
 	}
 	590.1.1 = {
-		death = "590.1.1"
+		death = yes
 	}
 }
 
@@ -1217,10 +1219,10 @@ ck650078 = {
 	#trait=sympathy_islam
 	father = ck650079
 	500.1.1 = {
-		birth = "500.1.1"
+		birth = yes
 	}
 	577.1.1 = {
-		death = "577.1.1"
+		death = yes
 	}
 }
 
@@ -1231,10 +1233,10 @@ ck650079 = {
 	culture = "ethiopian"
 	father = ck650080
 	470.1.1 = {
-		birth = "470.1.1"
+		birth = yes
 	}
 	517.1.1 = {
-		death = "517.1.1"
+		death = yes
 	}
 }
 
@@ -1245,10 +1247,10 @@ ck650080 = {
 	culture = "ethiopian"
 	father = ck650081
 	409.1.1 = {
-		birth = "409.1.1"
+		birth = yes
 	}
 	499.1.1 = {
-		death = "499.1.1"
+		death = yes
 	}
 }
 
@@ -1345,6 +1347,8 @@ ck650087 = {
 	#trait=portrait521
 	#trait=tribal_gov_trait
 	#trait=war_veteran
+	trait = education_martial_3
+	father=ckMenelik
 	89.1.1 = {
 		birth = "89.1.1"
 		#create_bloodline = {
@@ -1352,6 +1356,19 @@ ck650087 = {
 	}
 	180.1.1 = {
 		death = "180.1.1"
+	}
+}
+ckMenelik  = {
+	name = "Menelik"
+	dynasty = 7246
+	religion = "kushitism_pagan"
+	culture = "ethiopian"
+	trait = education_martial_3
+	1.1.1 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
 	}
 }
 
