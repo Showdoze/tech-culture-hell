@@ -1,0 +1,80 @@
+﻿
+##################################################
+# Cultural & Regional Triggers
+#################################################
+
+is_muslim = {
+        religion = religion:islam_religion
+}
+
+is_orthodox = {
+
+  OR = {
+        faith = faith:orthodox
+		faith = faith:iconoclast
+		faith = faith:bogomilist
+		faith = faith:paulician
+       }
+}
+
+
+is_european_pagan = {
+
+   OR = {
+         religion = religion:finno_ugric_religion
+         religion = religion:basque_paganism_religion
+         religion = religion:hellenism_religion
+         religion = religion:siberian_religion
+         religion = religion:paganism_religion
+         religion = religion:baltic_religion
+	}
+   
+}
+
+is_viking = {
+
+		 religion = religion:germanic_religion
+   
+}
+
+is_slavic = { 
+ OR = {
+        religion = religion:slavic_religion   
+		culture = { has_cultural_pillar = heritage_west_slavic}
+		culture = { has_cultural_pillar = heritage_east_slavic}
+		culture = { has_cultural_pillar = heritage_south_slavic}
+}
+}
+
+is_slavicpagan = { religion = religion:slavic_religion  }
+
+is_africa = {
+  OR = {
+    religion = religion:west_african
+    religion = religion:west_african_bori
+    religion = religion:west_african_orisha
+    religion = religion:west_african_roog
+    religion = religion:akom
+    culture = { has_cultural_pillar = heritage_west_african}
+    culture = { has_cultural_pillar = heritage_yoruba}
+    culture = { has_cultural_pillar = heritage_senegambian}
+    culture = { has_cultural_pillar = heritage_sahelian}
+    culture = { has_cultural_pillar = heritage_akan}
+    culture = { has_cultural_pillar = heritage_central_african}
+  }
+}
+
+is_celtic = {
+  OR = {
+    culture = { has_cultural_pillar = heritage_brythonic}
+    culture = { has_cultural_pillar = heritage_goidelic}
+
+  }
+}
+
+is_tengri = {
+  religion = religion:tengrism_religion   
+}
+is_saiyan = {
+  culture = { has_cultural_pillar = heritage_saiyan }
+}
