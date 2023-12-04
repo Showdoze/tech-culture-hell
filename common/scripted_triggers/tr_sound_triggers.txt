@@ -1,5 +1,4 @@
-﻿
-##################################################
+﻿##################################################
 # Cultural & Regional Triggers
 #################################################
 
@@ -8,33 +7,29 @@ is_muslim = {
 }
 
 is_orthodox = {
-
   OR = {
-        faith = faith:orthodox
+    faith = faith:orthodox
 		faith = faith:iconoclast
 		faith = faith:bogomilist
 		faith = faith:paulician
-       }
+    }
 }
 
 
 is_european_pagan = {
-
    OR = {
-         religion = religion:finno_ugric_religion
-         religion = religion:basque_paganism_religion
-         religion = religion:hellenism_religion
-         religion = religion:siberian_religion
-         religion = religion:paganism_religion
-         religion = religion:baltic_religion
+      religion = religion:finno_ugric_religion
+      religion = religion:basque_paganism_religion
+      religion = religion:hellenism_religion
+      religion = religion:siberian_religion
+      religion = religion:paganism_religion
+      religion = religion:baltic_religion
 	}
-   
 }
 
 is_viking = {
-
-		 religion = religion:germanic_religion
-   
+  
+	religion = religion:germanic_religion
 }
 
 is_slavic = { 
