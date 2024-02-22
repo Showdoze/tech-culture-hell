@@ -2071,6 +2071,12 @@ tradition_romance_roman = {
 		4 = roman.dds
 	}
 	can_pick = {
+		NOT = {
+			OR = {
+			has_cultural_tradition = tradition_romance_roman_republic
+			has_cultural_tradition = tradition_romance_byz
+			}
+		}
 		OR = {
 			has_cultural_pillar = heritage_byzantine
 			has_cultural_pillar = heritage_latin
@@ -2120,6 +2126,67 @@ tradition_romance_roman = {
 		value = 0
 	}
 }
+tradition_romance_roman_republic = {
+	category = realm
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = roman.dds
+	}
+	can_pick = {
+		NOT = {
+			OR = {
+			has_cultural_tradition = tradition_romance_roman
+			has_cultural_tradition = tradition_romance_byz
+			}
+		}
+		OR = {
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+		}
+		OR = {			
+			scope:character = {
+				has_title = title:e_byzantium
+			}
+			scope:character = {
+				has_title = title:c_roma
+			}
+			scope:character = {
+				has_title = title:e_wre
+			}
+		}
+	}
+	parameters = {
+		architect_trait_prestige = yes
+		pardoning_gives_loyalty = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		can_make_republican_vassals = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		republican_vassals_pay_more = yes
+		renown_from_temple_construction = yes
+		development_gain_on_building_complete = yes
+		physical_disfigurement_blocks_inheritance = yes
+		city_buildings_more_county_opinion = yes
+	}
+	character_modifier = {
+		tyranny_gain_mult = 0.5
+		diplomatic_range_mult = 0.25
+		court_grandeur_baseline_add = 5
+		republic_government_vassal_opinion = 20
+	}
+	county_modifier = {
+	}
+	province_modifier = {
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
 tradition_romance_byz= {
 	category = realm
 	layers = {
@@ -2128,6 +2195,12 @@ tradition_romance_byz= {
 		4 = byz.dds
 	}
 	can_pick = {
+		NOT = {
+			OR = {
+			has_cultural_tradition = tradition_romance_roman_republic
+			has_cultural_tradition = tradition_romance_roman
+			}
+		}
 		OR = {
 			has_cultural_pillar = heritage_byzantine
 			has_cultural_pillar = heritage_latin
@@ -2170,56 +2243,37 @@ tradition_romance_byz= {
 		value = 0
 	}
 }
-tradition_islamic = {
+tradition_taking_with_hands = {
 	category = societal
 	layers = {
-		0 = learning
-		1 = mediterranean
-		4 = islamic.dds
+		0 = diplo
+		1 = indian
+		4 = talking-with-hands.dds
 	}
 	is_shown = {
-		religion = religion:islam_religion
-	}
+		has_cultural_pillar = heritage_italian_american
+		NOT = { has_cultural_tradition = tradition_wilsonian_interventionism }		
+	}	
 	parameters = {
-		zealous_trait_more_common = yes
-		harder_to_convert_character_faith = yes
-		harder_to_convert_county_faith = yes
+		loyal_trait_more_valued = yes
+		cultural_house_personal_scheme_success_chance = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		republican_vassals_pay_more = yes
+		poorly_educated_leaders_distrusted = yes
 	}
 	character_modifier = {
-		opinion_of_different_faith = -15
-		ai_zeal = 25
-		same_faith_opinion = 10
+		tax_slot_add  = 1
+		close_relative_opinion = 5
+		owned_scheme_secrecy_add  = -20
+		hostile_scheme_power_mult = 0.5
+		ai_boldness = 25
+		ai_compassion = -25
+		ai_greed = 25
 	}
 	cost = {
-		prestige = { 900 }
-	}
-	ai_will_do = {
-		value = 0
-	}
-}
-tradition_christian= {
-	category = societal
-	layers = {
-		0 = learning
-		1 = mediterranean
-		4 = christian.dds
-	}
-	is_shown = {
-		religion = religion:christianity_religion
-	}
-	parameters = {
-		zealous_trait_more_common = yes
-		harder_to_convert_character_faith = yes
-		harder_to_convert_county_faith = yes
-	}
-	character_modifier = {
-		opinion_of_different_faith = -15
-		ai_zeal = 25
-		same_faith_opinion = 10
-	}
-	cost = {
-		prestige = { 900 }
-	}
+		prestige = { 900}
+	}	
 	ai_will_do = {
 		value = 0
 	}
