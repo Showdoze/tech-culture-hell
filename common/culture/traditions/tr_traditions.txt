@@ -397,7 +397,7 @@ tradition_bushido = {
 		1 = western
 		4 = bushido.dds
 	}
-	can_pick = {
+	is_shown = {
 		has_cultural_pillar = heritage_japanese
 	}
 	parameters = {
@@ -1754,7 +1754,43 @@ tradition_imperial_idea = {
 		value = 0
 	}
 }
-
+tradition_music = {
+	category = ritual
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = music.dds
+	}
+	parameters = {
+		reveler_traits_more_common = yes
+		diplomacy_education_better_outcomes = yes
+		charming_trait_more_common = yes
+		reveler_traits_more_valued = yes
+		mandatory_feast_attendance = yes
+		refined_feasts = yes
+		renown_from_feasts = yes
+		characters_are_better_food_tasters = yes
+	}
+	character_modifier = {
+		stress_gain_mult = -0.1
+	}
+	cost = {
+		prestige = 1000
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						has_trait = lifestyle_reveler
+					}
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}
 tradition_wilsonian_interventionism = {
 	category = regional
 	layers = {

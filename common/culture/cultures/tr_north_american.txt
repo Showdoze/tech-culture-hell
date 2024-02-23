@@ -38,7 +38,7 @@ african_american = {
 	language = language_anglic
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_hereditary_hierarchy
+		tradition_music
 		tradition_castle_keepers
 		tradition_longbow_competitions
 	}
@@ -77,5 +77,34 @@ italian_american = {
 	
 	ethnicities = {
 		10 = mediterranean
+	}
+}
+canadian = {
+	color = { 194 33 41 }
+	created = 1760.1.1
+	parents = { french brit }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_canadian
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_castle_keepers
+		tradition_longbow_competitions
+	}
+	
+	name_list = name_list_american
+	
+	coa_gfx = { english_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
 	}
 }
