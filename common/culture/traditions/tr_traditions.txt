@@ -1770,6 +1770,7 @@ tradition_music = {
 		refined_feasts = yes
 		renown_from_feasts = yes
 		characters_are_better_food_tasters = yes
+		characters_are_better_court_musicians = yes
 	}
 	character_modifier = {
 		stress_gain_mult = -0.1
@@ -2211,6 +2212,7 @@ tradition_romance_roman_republic = {
 		diplomatic_range_mult = 0.25
 		court_grandeur_baseline_add = 5
 		republic_government_vassal_opinion = 20
+		revolting_siege_morale_loss_mult = 0.25
 	}
 	county_modifier = {
 	}
@@ -2313,4 +2315,32 @@ tradition_taking_with_hands = {
 	ai_will_do = {
 		value = 0
 	}
+}
+tradition_banned = {
+	category = societal
+	
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = banned.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		content_trait_more_common = yes
+		hard_working_traits_more_valued = yes
+		disloyal_trait_more_common = yes
+		more_likely_to_leave_court = yes
+	}
+	character_modifier = {
+		stress_gain_mult = 0.1
+		revolting_siege_morale_loss_mult = 0.25
+		men_at_arms_recruitment_cost = 0.25
+		levy_size = 0.25
+	}
+	cost = { prestige = 3000 }
+	ai_will_do = { value = 0 }
 }
