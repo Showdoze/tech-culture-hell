@@ -46,6 +46,23 @@ innovation_trireme = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
+innovation_greek_fire = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @misc_inventions
+	region = ck_mediterranean
+
+	character_modifier = {
+		advantage = 2
+	}
+	maa_upgrade = {
+		type = light_infantry
+		damage = 2
+	}
+
+	flag = global_regional
+	flag = antiquity_era_regional
+}
 innovation_bronze_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
