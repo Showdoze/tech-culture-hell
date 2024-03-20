@@ -79,6 +79,34 @@ italian_american = {
 		10 = mediterranean
 	}
 }
+irish-american = {
+	color = hsv { 0.43 0.86 0.61 }
+	parents = { irish american }
+	created = 1880.1.1
+	ethos = ethos_courtly
+	heritage = heritage_goidelic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_luck_of_irish
+	}
+	
+	name_list = name_list_irish
+	
+	coa_gfx = { irish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
 canadian = {
 	color = { 194 33 41 }
 	created = 1760.1.1

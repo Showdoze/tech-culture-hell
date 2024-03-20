@@ -2344,3 +2344,31 @@ tradition_banned = {
 	cost = { prestige = 3000 }
 	ai_will_do = { value = 0 }
 }
+tradition_luck_of_irish = {
+	category = societal
+	layers = {
+		0 = steward
+		1 = western
+		4 = luck_of_irish.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		loyal_trait_more_valued = yes
+		reveler_traits_more_common = yes
+		reveler_traits_more_valued = yes
+		mandatory_feast_attendance = yes
+		refined_feasts = yes
+		renown_from_feasts = yes
+		knights_slightly_more_prone_to_injury = yes
+		more_fame_for_successful_defensive_wars = yes
+	}
+	character_modifier = {
+		close_relative_opinion = 5
+	}
+	cost = {
+		prestige = { 900}
+	}	
+	ai_will_do = {
+		value = 0
+	}	
+}
