@@ -240,3 +240,21 @@ innovation_all_things = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+innovation_greek_fire = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @innovation_greek_fire
+	region = hoc_nova_roma
+	potential = {	
+		OR = {	
+		#has_cultural_parameter = unlock_maa_greek_fire			
+		this = culture:greek
+		this = culture:roman		
+		}
+	}
+	modifier = {
+		siege_phase_time = -0.05	
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+}
