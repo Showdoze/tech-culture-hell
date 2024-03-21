@@ -31,3 +31,16 @@ usa_legacy_track = {
 }
 skaven_legacy_track = {
 }
+Chinese_bureaucracy_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+                        has_culture = culture:han
+					    religion = religion:taoism_religion
+				}
+				has_dynasty_perk = Chinese_bureaucracy_legacy
+			}
+		}
+	}
+} 

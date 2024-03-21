@@ -340,3 +340,57 @@ skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 		}
 	}
 }
+Chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
+	legacy = Chinese_bureaucracy_legacy_track
+
+	character_modifier = {
+		learning = 2
+        stewardship = 1
+        guest_opinion = 5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = Chinese_bureaucracy_legacy_1_effect
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+
+Chinese_bureaucracy_legacy_2 = { # Imperial law
+	legacy = Chinese_bureaucracy_legacy_track
+
+	character_modifier = {
+		monthly_county_control_change_add = 1 
+	}
+}
+
+Chinese_bureaucracy_legacy_3 = { # Just and Honest
+	legacy = Chinese_bureaucracy_legacy_track
+
+	character_modifier = {
+		direct_vassal_opinion = 5 
+		tyranny_gain_mult = -0.2 
+	}
+}
+
+
+Chinese_bureaucracy_legacy_4 = { # Structured Economics
+	legacy = Chinese_bureaucracy_legacy_track
+
+	character_modifier = {
+		domain_tax_mult = 0.2
+	}
+}
+
+Chinese_bureaucracy_legacy_5 = { # Heavenly rule
+	legacy = Chinese_bureaucracy_legacy_track
+
+	character_modifier = {
+		diplomacy_per_piety_level = 2 
+		learning_per_piety_level = 1
+        prowess_per_piety_level = 1
+        life_expectancy = 3
+	}
+}
