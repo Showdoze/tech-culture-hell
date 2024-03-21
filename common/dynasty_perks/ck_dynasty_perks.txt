@@ -282,55 +282,61 @@ usa_legacy_5 = { # Freedom
 	}
 }
 
-skaven_legacy_1 = { # 
+skaven_legacy_1 = { # Strength in Numbers
 	legacy = skaven_legacy_track
 
 	character_modifier = {
-		diplomatic_range_mult = 0.3
-		ai_boldness = medium_positive_ai_value
-		coastal_advantage = 1
-		embarkation_cost_mult = -0.01
+		fertility = 1
+		max_loot_mult = 0.5
+		negate_health_penalty_add = 0.5
 	}
-
+	effect = {
+		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
+	}
 	ai_chance = { value = 0 }
 }
-skaven_legacy_2 = { # 
+skaven_legacy_2 = { # Scurry Away
 	legacy = skaven_legacy_track
 
 	character_modifier = {
-		diplomatic_range_mult = 0.3
-		ai_boldness = medium_positive_ai_value
-		coastal_advantage = 1
-		embarkation_cost_mult = -0.01
+		retreat_losses = -0.15
+		movement_speed = 0.1
 	}
 }
-skaven_legacy_3 = { # 
+skaven_legacy_3 = { # Lead from the Back
 	legacy = skaven_legacy_track
 
 	character_modifier = {
-		diplomatic_range_mult = 0.3
-		ai_boldness = medium_positive_ai_value
-		coastal_advantage = 1
-		embarkation_cost_mult = -0.01
+		knight_effectiveness_mult = 0.15
+		pursue_efficiency = 0.15
+		defender_advantage = 5
 	}
 }
-skaven_legacy_4 = { # 
+skaven_legacy_4 = { # SKILLED MANIPULATORS
 	legacy = skaven_legacy_track
 
 	character_modifier = {
-		diplomatic_range_mult = 0.3
-		ai_boldness = medium_positive_ai_value
-		coastal_advantage = 1
-		embarkation_cost_mult = -0.01
+		personal_scheme_power_mult = 0.25
+		owned_personal_scheme_success_chance_add = 15
+		dynasty_house_opinion = 10
+		enemy_hostile_scheme_success_chance_add = -15
+	}
+	effect = {
+		custom_description_no_bullet = { text = fp2_coterie_legacy_1_effect }
 	}
 }
-skaven_legacy_5 = { # 
+skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 	legacy = skaven_legacy_track
 
 	character_modifier = {
-		diplomatic_range_mult = 0.3
-		ai_boldness = medium_positive_ai_value
-		coastal_advantage = 1
-		embarkation_cost_mult = -0.01
+		monthly_court_grandeur_change_mult = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = glory_legacy_4_perk_effect
+		}
+		custom_description_no_bullet = {
+			text = kin_legacy_4_legacy_effect
+		}
 	}
 }
