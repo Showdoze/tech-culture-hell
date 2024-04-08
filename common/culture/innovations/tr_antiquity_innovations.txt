@@ -30,7 +30,7 @@
 @wootz = "gfx/interface/icons/culture_innovations/wootz.dds"
 @silk = "gfx/interface/icons/culture_innovations/silk.dds"
 @acupuncture = "gfx/interface/icons/culture_innovations/acupuncture.dds"
-@martial-art1 = "gfx/interface/icons/culture_innovations/martial-art1.dds"
+@martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
 
 innovation_trireme = {
@@ -172,10 +172,10 @@ innovation_hellenistic_baggage_train = {
 	}
 }
 
-innovation_martial_art1 = {
+innovation_martial_artist = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
-	icon = @martial-art1
+	icon = @martial_artist
 	potential = {
 			this = culture:han
 			any_parent_culture_or_above = {
