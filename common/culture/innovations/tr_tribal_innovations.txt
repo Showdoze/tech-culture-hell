@@ -36,6 +36,7 @@
 @africaboat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
+@porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
 
 innovation_high_carbon = {
 	group = culture_group_regional
@@ -55,6 +56,24 @@ innovation_high_carbon = {
 }
 
 #civic
+innovation_porcelain = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @porcelain
+	character_modifier = {
+		domain_tax_mult = 0.01
+		courtly_opinion = 5
+		development_growth_factor = 0.01
+	}
+	potential = {
+		this = culture:han
+		any_parent_culture_or_above = {
+			this = culture:han #han
+		}
+    }
+	flag = global_regular
+	flag = tribal_era_regular
+}
 innovation_gavelkind = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
