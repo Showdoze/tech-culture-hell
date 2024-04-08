@@ -28,6 +28,9 @@
 @leadership_alexander = "gfx/interface/icons/culture_innovations/innovation_leadership_alexander.dds"
 @wealth = "gfx/interface/icons/culture_innovations/innovation_wealth.dds"
 @wootz = "gfx/interface/icons/culture_innovations/wootz.dds"
+@silk = "gfx/interface/icons/culture_innovations/silk.dds"
+@acupuncture = "gfx/interface/icons/culture_innovations/acupuncture.dds"
+@martial-art1 = "gfx/interface/icons/culture_innovations/martial-art1.dds"
 
 
 innovation_trireme = {
@@ -161,8 +164,35 @@ innovation_hellenistic_baggage_train = {
 		supply_duration	= 0.25
 	}
 }
+innovation_martial-art1 = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @martial-art1
+	potential = {
+			this = culture:han
+			any_parent_culture_or_above = {
+				this = culture:han #han
+			}
+	}
+	character_modifier = {
+		movement_speed = 0.1
+		supply_duration	= 0.25
+		prowess = 2
+	}
+}
 
 #CIVIC
+innovation_silk = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @silk
+
+	character_modifier = {
+		short_reign_duration_mult = -0.25
+		courtly_opinion = 5
+		travel_danger = -1
+	}
+}
 innovation_world_is_round = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
@@ -270,8 +300,8 @@ innovation_tea_production = {
 
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.01
-		stress_loss_mult = 0.05
-		health = 0.0.1
+		stress_loss_mult = -0.05
+		health = 0.01
 	}	
 }
 #Regional
@@ -311,4 +341,14 @@ innovation_wootz_steel = {
 	unlock_building = wind_furnace_01
 	flag = global_regional
 	flag = antiquity_era_regional
+}
+innovation_acupuncture = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @acupuncture
+
+	character_modifier = {
+		stress_loss_mult = -0.05
+		health = 0.01
+	}	
 }
