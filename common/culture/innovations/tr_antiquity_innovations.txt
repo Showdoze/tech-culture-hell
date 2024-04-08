@@ -263,6 +263,17 @@ innovation_archaic_popular_assemblies = {
 		building_slot_add = 1
 	}
 }
+innovation_tea_production = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @administration_3
+
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.01
+		stress_loss_mult = 0.05
+		health = 0.0.1
+	}	
+}
 #Regional
 innovation_nile_agriculture = {
 	group = culture_group_regional

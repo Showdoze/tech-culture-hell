@@ -246,15 +246,25 @@ innovation_greek_fire = {
 	culture_era = culture_era_tribal
 	icon = @greek_fire
 	region = hoc_nova_roma
-	potential = {	
-		OR = {	
-		#has_cultural_parameter = unlock_maa_greek_fire			
-		this = culture:greek
-		this = culture:roman		
+	potential = {
+		OR = {
+
+			this = culture:greek
+			any_parent_culture_or_above = {
+				this = culture:greek #greek
+			}
+			this = culture:roman
+			any_parent_culture_or_above = {
+				this = culture:roman #roman
+			}
 		}
 	}
-	modifier = {
-		siege_phase_time = -0.05	
+	character_modifier = {
+		development_growth_factor = 0.1
+	}
+	maa_upgrade = {
+		type = siege_weapon 			# The base MaA type to upgrade
+		siege_value = 0.2
 	}
 	flag = global_regional
 	flag = tribal_era_regional
