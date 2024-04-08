@@ -177,11 +177,12 @@ innovation_martial_artist = {
 	culture_era = culture_era_antiquity
 	icon = @martial_artist
 	potential = {
+		OR = {
 			this = culture:han
 			any_parent_culture_or_above = {
 				this = culture:han #han
 			}
-	}
+	}   }
 	character_modifier = {
 		movement_speed = 0.1
 		supply_duration	= 0.25

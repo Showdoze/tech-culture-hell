@@ -49,11 +49,12 @@ innovation_china_boat1 = {
 		naval_movement_speed_mult = 0.4
 	}
 	potential = {
+		OR = {
 		this = culture:han
 		any_parent_culture_or_above = {
 			this = culture:han #han
 		}
-    }
+    }}
 	custom = unlocks_naval_raiding
 	custom = unlocks_sailable_major_rivers
 
@@ -89,11 +90,12 @@ innovation_porcelain = {
 		development_growth_factor = 0.01
 	}
 	potential = {
+		OR = {
 		this = culture:han
 		any_parent_culture_or_above = {
 			this = culture:han #han
 		}
-    }
+    }}
 	flag = global_regular
 	flag = tribal_era_regular
 }
