@@ -37,6 +37,29 @@
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
 @porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
+@innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
+
+innovation_china_boat1 = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @innovation_china_boat1
+
+	character_modifier = {
+		embarkation_cost_mult = -1.1
+		naval_movement_speed_mult = 0.4
+	}
+	potential = {
+		this = culture:han
+		any_parent_culture_or_above = {
+			this = culture:han #han
+		}
+    }
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
+
+	flag = global_regional
+	flag = tribal_era_regional
+}	
 
 innovation_high_carbon = {
 	group = culture_group_regional
