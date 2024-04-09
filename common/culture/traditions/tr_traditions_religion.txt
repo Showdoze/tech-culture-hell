@@ -52,3 +52,145 @@ tradition_christian= {
 		value = 0
 	}
 }
+tradition_hospitaller = {
+	category = societal
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = hospitaller.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+		humble_trait_more_common = yes
+		allows_adoption = yes
+		free_adoption = yes
+		better_ward_education = yes
+		temperate_trait_more_common = yes # Synergy with Monastic Doctrines
+		temperate_trait_bonuses = yes
+		devoted_trait_bonuses = yes
+		monastic_expectations = yes
+		more_gift_opinion = yes
+		generous_trait_more_common = yes
+		compassionate_trait_more_common = yes
+		just_trait_more_common = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		coastal_holdings_give_defensive_bonus = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		loyal_trait_more_common = yes
+		can_host_joust_contests = yes
+		extra_language_cap = yes
+		piety_from_language_schemes = yes
+		language_success_chance_per_piety_level = yes
+		peasant_and_populist_factions_less_common = yes
+	}
+	character_modifier = {
+		ai_zeal = 25
+		same_faith_opinion = 10
+		health = 0.2
+		ignore_negative_opinion_of_culture = yes
+		character_travel_safety_mult = 0.1
+		negate_prowess_penalty_add = 5
+		supply_capacity_mult = 0.5
+		coastal_sea_travel_danger = low_sea_danger_reduction
+		learning_per_prestige_level = 1
+		prowess_per_piety_level = 1
+		monthly_piety_gain_mult = 0.1
+		learn_language_scheme_power_mult = 0.25
+		max_learn_language_schemes_add = 1
+	}
+	cost = {
+		prestige = { 900 }
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_templar = {
+	category = societal
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = templar.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+		allows_adoption = yes
+		free_adoption = yes
+		better_ward_education = yes
+		temperate_trait_more_common = yes
+		more_gift_opinion = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		loyal_trait_more_common = yes
+		can_host_joust_contests = yes
+	}
+	character_modifier = {
+		ai_zeal = 25
+		same_faith_opinion = 10
+		ignore_negative_opinion_of_culture = yes
+		character_travel_safety_mult = 0.1
+		negate_prowess_penalty_add = 5
+		supply_capacity_mult = 0.5
+		monthly_income_mult = 0.1
+		monthly_piety_gain_mult = 0.05
+		tax_slot_add  = 1
+	}
+	cost = {
+		prestige = { 900 }
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_teutonic = {
+	category = societal
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = teutonic.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+		allows_adoption = yes
+		free_adoption = yes
+		better_ward_education = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		loyal_trait_more_common = yes
+		weak_traits_looked_down_upon = yes
+		war_stress_loss = yes
+	}
+	character_modifier = {
+		ai_zeal = 25
+		knight_limit = 2
+		same_faith_opinion = 10
+		character_travel_safety_mult = 0.1
+		negate_prowess_penalty_add = 5
+		supply_capacity_mult = 0.5
+		heavy_cavalry_damage_mult = 0.1
+		heavy_cavalry_toughness_mult = 0.1
+		monthly_piety_gain_mult = 0.03
+	}
+	cost = {
+		prestige = { 900 }
+	}
+	ai_will_do = {
+		value = 0
+	}
+}

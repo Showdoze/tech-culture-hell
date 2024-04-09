@@ -32,6 +32,7 @@
 @acupuncture = "gfx/interface/icons/culture_innovations/acupuncture.dds"
 @martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
+@abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
 
 innovation_trireme = {
 	group = culture_group_military
@@ -371,5 +372,16 @@ innovation_acupuncture = {
 	character_modifier = {
 		stress_loss_mult = -0.05
 		health = 0.01
+	}	
+}
+
+innovation_abacus = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @abacus
+
+	character_modifier = {
+		domain_tax_mult = 0.01
+		development_growth_factor = 0.1
 	}	
 }
