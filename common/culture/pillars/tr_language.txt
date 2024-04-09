@@ -165,3 +165,55 @@ language_korean = {
 	
 	color = korean
 }
+language_goblin = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_goblin
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_goblin }
+			multiply = 10
+		}
+	}
+	
+	color = rgb { 145 207 79 }
+}
+language_orcish = { #Orcish dialects
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_orcish
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_orcish }
+			multiply = 10
+		}
+	}
+	
+	color = rgb { 172 22 22 }
+}
+
+language_ogre = { #Ogre dialects
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_ogre
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_ogre }
+			multiply = 10
+		}
+	}
+	
+	color = rgb { 209 189 87 }
+}

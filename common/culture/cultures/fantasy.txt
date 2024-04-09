@@ -101,3 +101,64 @@ saiyan = {
 		10 = asian
 	}
 }
+
+goblin = {
+	color = rgb { 145 207 79 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_goblin
+	language = language_goblin
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_ancient_miners
+		tradition_maritime_mercantilism
+		tradition_seafaring
+		tradition_festivities
+		tradition_hard_working
+		# WC tradition_time_is_money
+	}
+
+	name_list = name_list_goblin
+	
+	coa_gfx = { west_african_group_coa_gfx western_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx no_beard_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		1 = goblin_ethnicity
+	}
+}
+warsong = {
+	color = rgb { 89 19 19 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_orcish
+	language = language_orcish
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_horse_breeder
+		tradition_warrior_culture
+	}
+	
+	# TODO Unique WC Tradition
+	dlc_tradition = {
+		trait = tradition_fp1_performative_honour
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_martial_admiration
+	}
+	
+	name_list = name_list_warsong
+	
+	coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { northern_unit_gfx }
+	
+	ethnicities = {
+		90 = green_orcish
+		5 = brown_orcish
+		5 = gray_orcish
+	}
+}
