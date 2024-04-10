@@ -67,6 +67,85 @@ samurai_bow = {
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai_bow
 }
+samurai_tanegashima = {
+	type = archers
+	
+	damage = 60
+	toughness = 15
+	pursuit = 0
+	screen = 0
+	siege_value = 0.5
+	
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 4 }
+		mountains = { damage = 8 toughness = 2 }
+		desert_mountains = { damage = 8 toughness = 2 }
+		plains = { toughness = -8 }
+		drylands = { toughness = -8 }
+		desert = { toughness = -8 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 1
+		heavy_cavalry = 1
+		archer_cavalry = 0.5
+		pikemen = 0.5
+		light_cavalry = 2
+	}
+	
+	can_recruit = {
+		culture = { has_innovation = innovation_tanegashima }
+	}
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 1.2 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = samurai_tanegashima
+}
+
+usa_matchlock = {
+	type = archers
+	
+	damage = 70
+	toughness = 15
+	pursuit = 0
+	screen = 0
+	siege_value = 0.5
+	
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 4 }
+		mountains = { damage = 8 toughness = 2 }
+		desert_mountains = { damage = 8 toughness = 2 }
+		plains = { toughness = -8 }
+		drylands = { toughness = -8 }
+		desert = { toughness = -8 }
+	}
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		heavy_cavalry = 1
+		archer_cavalry = 0.5
+		pikemen = 0.5
+		light_cavalry = 2
+	}
+	
+	can_recruit = {
+		culture = { has_innovation = innovation_usa_matchlock }
+	}
+
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 1.2 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = usa_matchlock
+}
 
 hoplite = {
 	type = pikemen

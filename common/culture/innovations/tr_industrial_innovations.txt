@@ -5,24 +5,30 @@
 @photograph = "gfx/interface/icons/culture_innovations/photograph.dds"
 @typewriter = "gfx/interface/icons/culture_innovations/typewriter.dds"
 @gas_light = "gfx/interface/icons/culture_innovations/gas_light.dds"
-@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
 @hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
-@longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
-@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
-@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
-@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
-@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
-@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
-@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
-@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-
 @steam_engine = "gfx/interface/icons/culture_innovations/steam_engine.dds"
 @gramophone = "gfx/interface/icons/culture_innovations/gramophone.dds"
 @mechanical_production = "gfx/interface/icons/culture_innovations/mechanical_production.dds"
 @cannery = "gfx/interface/icons/culture_innovations/cannery.dds"
+@innovation_usa_craft = "gfx/interface/icons/culture_innovations/innovation_usa_craft.dds"
+
 
 #culture_group_military
+
+innovation_usa_matchlock= {
+	group = culture_group_military
+	culture_era = culture_era_industrial
+	icon = @innovation_usa_craft
+	potential = {	
+		this = culture:american		
+	}
+	can_progress = {
+		has_innovation = innovation_gunpowder
+		has_innovation = innovation_steel_work
+	}
+	unlock_maa = usa_matchlock
+}	
 innovation_strategic_mobility = {
 	group = culture_group_military
 	culture_era = culture_era_industrial

@@ -1,0 +1,46 @@
+#### Local Types ####
+@tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
+@samurai = "gfx/interface/icons/culture_innovations/inn_samurai.dds"
+
+
+
+innovation_samurai = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @samurai
+	potential = {	
+		this = culture:japanese		
+	}
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		movement_speed = 0.01
+	}
+	unlock_maa = samurai
+}
+
+innovation_samurai_bow = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @samurai
+	potential = {	
+		this = culture:japanese		
+	}
+	maa_upgrade = {
+        type = archers
+        damage = 1
+    }
+	unlock_maa = samurai_bow
+}
+innovation_tanegashima = {
+	group = culture_group_military
+	culture_era = culture_era_renaissance
+	icon = @tanegashima
+	potential = {	
+		this = culture:japanese		
+	}
+	can_progress = {
+		has_innovation = innovation_gunpowder
+		has_innovation = innovation_steel_work
+	}
+	unlock_maa = samurai_tanegashima
+}	
