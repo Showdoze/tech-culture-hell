@@ -340,3 +340,176 @@ stonehenge_02 = {
 	type = special
 	flag = travel_point_of_interest_religious
 }
+##########
+# Aurelian Walls
+##########
+
+aurelian_walls_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		barony = title:b_roma
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+	
+	max_garrison = 500
+	
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.15
+	}
+	county_modifier = {
+		development_growth = 0.3
+		development_growth_factor = 0.1
+		hostile_raid_time = 0.5
+	}
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.5
+		travel_danger = -20
+	}
+	next_building = aurelian_walls_02
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+}
+aurelian_walls_02 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		barony = title:b_roma
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_roman_concrete
+		}
+	}
+	cost_gold = 5000
+	
+	max_garrison = 500
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		prowess = 1
+		knight_effectiveness_mult = 0.1
+	}
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.15
+	}
+	county_modifier = {
+		development_growth = 0.3
+		development_growth_factor = 0.1
+		hostile_raid_time = 0.5
+	}
+	province_modifier = {
+		fort_level = 6
+		garrison_size = 1
+		travel_danger = -35
+	}
+	
+	ai_value = {
+		base = 0
+	}
+	
+	type = duchy_capital
+}
+##########
+# The Colosseum
+##########
+
+the_colosseum_01 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		army_maintenance_mult = -0.05 # 'Stealing' the metal from the colosseum building itself
+	}
+	
+	province_modifier = {
+		build_speed = -0.1 # 'Stealing' the metal from the colosseum building itself
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	next_building = the_colosseum_02
+	type = special
+
+	flag = travel_point_of_interest_martial
+}
+the_colosseum_02 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_roman_concrete
+		}
+	}
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
+		monthly_dynasty_prestige_mult = 0.05
+		knight_effectiveness_mult = 0.2
+		county_opinion_add = 5
+		diplomacy_per_prestige_level = 1
+		stress_loss_mult = 0.1
+		hostile_scheme_power_add = 5
+	}
+	county_modifier = {
+		defender_holding_advantage = 5
+		hostile_raid_time = 0.5
+		monthly_county_control_growth_add = 1
+	}
+	province_modifier = {
+		travel_danger = -5
+	}	
+	ai_value = {
+		base = 0
+	}
+	type = special
+	flag = travel_point_of_interest_martial
+}
