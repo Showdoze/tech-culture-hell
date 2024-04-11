@@ -45,6 +45,7 @@
 				culture = { has_cultural_pillar = language_tamil }
 				culture = { has_cultural_pillar = language_telugu }
 				culture = { has_cultural_pillar = language_kannada }
+								culture = { has_cultural_pillar = language_north_dravidian } #FP3 addition
 			}
 		}
 		localization_key = knight_shoorveer
@@ -70,7 +71,7 @@
 	text = {
 		trigger = {
 			OR = {
-				has_government = tribal_government
+				government_has_flag = government_is_tribal
 				NOR = {
 					faith = { religion_tag = christianity_religion }
 					culture = { has_cultural_pillar = language_frankish }
