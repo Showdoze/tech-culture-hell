@@ -1,0 +1,439 @@
+﻿#Byzantine
+count_feudal_male_greek = { #Komes
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+count_feudal_female_greek = { #Komitissa
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+duke_viceroyalty_male_byzantine_group = { #Strategos
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+duke_viceroyalty_female_byzantine_group = { #Strategitissa
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+duchy_viceroyalty_byzantine_group = { #Thema
+	type = title
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+king_viceroyalty_male_byzantine_group = { #Exarch
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+king_viceroyalty_female_byzantine_group = { #Exarchessa
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+king_viceroyalty_byzantine_group = { #Exarchate
+	type = title
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+RHOMAIOI_basileus = { #Basileus
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+RHOMAIOI_basilissa = { #Basilissa
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	culture_groups = { byzantine_group }
+}
+# Dictatura
+baron_dictatura_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+baron_dictatura_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+barony_dictatura_roman = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+count_dictatura_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+count_dictatura_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+county_dictatura_roman = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+duke_dictatura_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+duke_dictatura_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+duchy_dictatura_roman = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+king_dictatura_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+king_dictatura_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+kingdom_dictatura_roman = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+emperor_dictatura_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+emperor_dictatura_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+empire_dictatura_roman = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { autocracy_government }
+	cultures = { roman }
+}
+# Republic
+baron_republic_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+baron_republic_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+count_republic_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+count_republic_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+duke_republic_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+duke_republic_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+duchy_republic_roman = {
+	type = title
+	tier = duchy
+	top_liege = no
+	priority = 27
+	governments = { republic_government }
+	cultures = { roman }
+}
+king_republic_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+king_republic_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+kingdom_republic_roman = {
+	type = title
+	tier = kingdom
+	top_liege = no
+	priority = 47
+	governments = { republic_government }
+	cultures = { roman }
+}
+emperor_republic_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+emperor_republic_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = no
+	governments = { republic_government }
+	cultures = { roman }
+}
+empire_republic_roman = {
+	type = title
+	tier = empire
+	top_liege = no
+	priority = 102
+	governments = { republic_government }
+	cultures = { roman }
+}
+#Jobs
+chancellor_male_roman = {
+	type = character
+	gender = male
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_chancellor
+	name_lists = { name_list_roman }
+}
+chancellor_female_roman = {
+	type = character
+	gender = female
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_chancellor
+	name_lists = { name_list_roman }
+}
+steward_male_roman = {
+	type = character
+	gender = male
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_steward
+	name_lists = { name_list_roman }
+}
+steward_female_roman = {
+	type = character
+	gender = female
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_steward
+	name_lists = { name_list_roman }
+}
+marshal_male_roman = {
+	type = character
+	gender = male
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_marshal
+	name_lists = { name_list_roman }
+}
+marshal_female_roman = {
+	type = character
+	gender = female
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_marshal
+	name_lists = { name_list_roman }
+}
+spymaster_male_roman = {
+	type = character
+	gender = male
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_spymaster
+	name_lists = { name_list_roman }
+}
+spymaster_female_roman = {
+	type = character
+	gender = female
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_spymaster
+	name_lists = { name_list_roman }
+}
+court_chaplain_male_roman = {
+	type = character
+	gender = male
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_roman }
+}
+court_chaplain_female_roman = {
+	type = character
+	gender = female
+	special = councillor
+	priority = 299
+	top_liege = no
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_roman }
+}

@@ -5,6 +5,9 @@
  amazon_collective_noun:1 "Amazónes"
  makedon:0 "Makedon"
  makedon_collective_noun:1 "Makedons"
+ RHOMAIOI_basileus:0 "Basileus"
+ RHOMAIOI_basilissa:0 "Basilissa"
+ nick_RHOMAIOI_autokrator:0 "the Autokrator"
  thracian:0 "Thrāikes"
  thracian_collective_noun:1 "Thracians"
  hittite:0 "Isaurian"
@@ -83,6 +86,17 @@
 #Slavic
  zastova:0 "Zastova"
  zastova_prefix:0 "Zastovian"
+ count_feudal_male_zastova
+ count_feudal_female_zastova
+ duke_viceroyalty_male_zastova:0 "Troikas"
+ duke_viceroyalty_female_zastova:0 "Troikas"
+ duchy_viceroyalty_zastova:0 "Province"
+ king_viceroyalty_male_zastova:0 "General Secretary"
+ king_viceroyalty_female_zastova:0 "General Secretary"
+ king_viceroyalty_zastova:0 "Province"
+ zastova_basileus:0 "Chairman of the Council of Ministers"
+ zastova_basilissa:0 "Lady Chairman"
+ empire_viceroyalty_zastova:0 "Union"
 
 #Israelite group
 
@@ -102,6 +116,51 @@
  fiorentini:0 "Fiorentini"
  fiorentini_collective_noun:0 "Fiorentinis"
  dalmatian:0 "Dalmatian"
+ #Jobs
+  chancellor_male_roman: "Magister Officiorum"
+  chancellor_female_roman: "Magistra Officiorum"
+  steward_male_roman: "Quaestor"
+  steward_female_roman: "Quaestrix"
+  marshal_male_roman: "Magister Militum"
+  marshal_female_roman: "Magistra Militum"
+  spymaster_male_roman: "Frumentarius"
+  spymaster_female_roman: "Frumentaria"
+  court_chaplain_male_roman: "Censor"
+  court_chaplain_female_roman: "Censoria"
+ #Dictatura
+  baron_dictatura_male_roman:1 "Baro"
+  baron_dictatura_female_roman:1 "Baronissa"
+  barony_dictatura_roman:1 "Castrum"
+  count_dictatura_male_roman:0 "Comes"
+  count_dictatura_female_roman:1 "Comitissa"
+  county_dictatura_roman:0 "Comitatus"
+  duke_dictatura_male_roman:1 "Dux"
+  duke_dictatura_female_roman:1 "Ducissa"
+  duchy_dictatura_roman:0 "Ducatus "
+  king_dictatura_male_roman:0 "Rex"
+  king_dictatura_female_roman:0 "Regina"
+  kingdom_dictatura_roman:0 "Regnum"
+  emperor_dictatura_male_roman:1 "Dictator"
+  emperor_dictatura_female_roman:1 "Dictator"
+  empire_dictatura_roman:1 "Imperium"
+ #Republic angleichen an Publica
+  baron_republic_male_roman:0 "Magister"
+  baron_republic_female_roman:0 "Magistra"
+  barony_republic:1 "Castrum"
+  count_republic_male_roman:0 "Quaestor"
+  count_republic_female_roman:0 "Quaestora"
+  county_republic:0 "Comitatus"
+  duke_republic_male_roman:0 "Legatus"
+  duke_republic_female_roman:0 "Legatussa"
+  duchy_republic_roman:0 "Ducatus"
+  king_republic_male_roman:0 "Praetor"
+  king_republic_female_roman:0 "Praetora"
+  kingdom_republic_roman:0 "Liga"
+  emperor_republic_male_roman:0 "Consul"
+  emperor_republic_female_roman:0 "Consul"
+  empire_republic_roman:0 "Magna Republica"
+
+
 
 #Sumerian
  sumerian_group:0 "Mesopotamian"
@@ -125,14 +184,7 @@
  assyrian_heritage_loc:0 "Formed from [CULTURE.GetName] in the year 2600 BC"
  persian_history_loc:0 "Formed from [CULTURE.GetName] in the year 550 BC"
 
-#Japanese
- japanese_group:0 "Japanese"
- japanese_group_collective_noun:0 "Japanese"
- japanese:0 "Japanese"
- japanese_prefix:0 "Japano"
- japanese_collective_noun:0 "Japanese"
- language_japanese_name:0 "Japanese"
- heritage_japanese_name:0 "Japanese"
+
 
 #African 
  heritage_ancient_egyptian_name:0 "Ancient Egyptian"
@@ -395,6 +447,14 @@
  jap_king:0 "Daimyo"
  jap_king_lady:0 "Seishitsu"
  jap_kingy:0 "Clan"
+ #Japanese
+  japanese_group:0 "Japanese"
+  japanese_group_collective_noun:0 "Japanese"
+  japanese:0 "Japanese"
+  japanese_prefix:0 "Japano"
+  japanese_collective_noun:0 "Japanese"
+  language_japanese_name:0 "Japanese"
+  heritage_japanese_name:0 "Japanese"
 
 #############################
 #Mediterranean

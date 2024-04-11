@@ -38,7 +38,7 @@
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
 @porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
 @innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
-
+@innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
 innovation_china_boat1 = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -324,6 +324,18 @@ innovation_greek_fire = {
 		type = siege_weapon 			# The base MaA type to upgrade
 		siege_value = 0.2
 	}
+	flag = global_regional
+	flag = tribal_era_regional
+}
+innovation_shotel = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @innovation_shotel
+	potential = {
+		has_cultural_pillar = heritage_east_african
+    }
+	unlock_maa = shotel_warriors
+
 	flag = global_regional
 	flag = tribal_era_regional
 }
