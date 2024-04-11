@@ -41,38 +41,6 @@ tiger_riders = {
 	icon = tiger_riders
 }
 
-longbowmen = {
-	type = archers
-	can_recruit = {
-		OR = {
-		   culture = { has_cultural_parameter = unlock_maa_longbowmen }
-		   culture = { has_innovation = innovation_longbowmen }
-	    }
-    }
-	
-	damage = 20
-	toughness = 8
-	pursuit = 0
-	screen = 0
-	
-	terrain_bonus = {
-		hills = { damage = 12 toughness = 4 }
-	}
-
-	counters = {
-		skirmishers = 1
-		heavy_cavalry = 1
-	}
-
-	buy_cost = { gold = longbowmen_recruitment_cost }
-	low_maintenance_cost = { gold = longbowmen_low_maint_cost }
-	high_maintenance_cost = { gold = longbowmen_high_maint_cost }
-	
-	stack = 100
-	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = bowmen
-}
-
 chu_ko_nu = {
 	type = archers
 	
