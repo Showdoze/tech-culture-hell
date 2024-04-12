@@ -1,0 +1,225 @@
+﻿#Breton Group
+
+#Count -> Earl for Bjoule, and Iliac
+
+count_feudal_male_earl = { #Earl
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+count_feudal_female_earl = { #Earl
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+county_feudal_earldom = { #Earldom
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+
+#Count -> Baron for Northmen
+
+count_feudal_male_baron = { #Baron
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+count_feudal_female_baron = { #Baroness
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+county_feudal_barony = { #Barony
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+
+#Duke -> Marquis for Northmen
+
+duke_feudal_male_marchis = { #Marquis
+	type = character
+	special = holder
+	gender = male
+	tier = duchy
+	priority = 34
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+duke_feudal_female_marchis = { #Marchioness
+	type = character
+	special = holder
+	gender = female
+	tier = duchy
+	priority = 34
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+duchy_feudal_march = { #March
+	type = title
+	tier = duchy
+	priority = 34
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+
+#Count -> Count (from standard Baron) for Glenumbran
+
+count_feudal_male_count = { #Count
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+count_feudal_female_countess = { #Countess
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+county_feudal_county = { #County
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+}
+
+#Independent Count -> Prince
+
+count_feudal_independent_male = { #Prince
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 21
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	top_liege = no
+}
+count_feudal_independent_female = { #Princess
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 21
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	top_liege = no
+}
+county_feudal_independent = { #Principality
+	type = title
+	tier = county
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	only_independent = yes
+	priority = 21
+	top_liege = no
+}
+
+duke_feudal_independent_male = { #King
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 35
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	top_liege = no
+}
+duke_feudal_independent_female = { #Queen
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 35
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	top_liege = no
+}
+duchy_feudal_independent = { #Kingdom
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	only_independent = yes
+	priority = 35
+	top_liege = no
+}
+
+#Special Always Duke Overwrite for select Titles
+
+duke_feudal_overwrite_male = { #Duke
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	titles = { d_systres }
+	priority = 120
+	top_liege = no
+}
+duke_feudal_overwrite_female = { #Duchess
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	titles = { d_systres }
+	priority = 120
+	top_liege = no
+}
+duchy_feudal_overwrite = { #Duchy
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_breton }
+	titles = { d_systres }
+	priority = 120
+	top_liege = no
+}

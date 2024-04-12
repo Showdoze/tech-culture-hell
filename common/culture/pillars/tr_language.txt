@@ -217,3 +217,88 @@ language_ogre = { #Ogre dialects
 	
 	color = rgb { 209 189 87 }
 }
+language_bosmeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_bosmeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_bosmeris }
+			multiply = 10
+		}
+	}
+	
+	color = rgb { 209 189 87 }
+}
+language_altmeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_altmeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_altmeris }
+			multiply = 10
+		}
+	}
+	
+	color = altmeris
+}
+language_bretic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_bretic
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_bretic }
+			multiply = 10
+		}
+	}
+	
+	color = bretic
+}
+language_cyrodiilic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_cyrodiilic
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_cyrodiilic }
+			multiply = 10
+		}
+	}
+	
+	color = cyrodiilic
+}
+language_dunmeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_dunmeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_dunmeris }
+			multiply = 10
+		}
+	}
+	
+	color = dunmeris
+}

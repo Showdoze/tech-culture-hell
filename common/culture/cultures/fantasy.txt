@@ -126,7 +126,13 @@ goblin = {
 	unit_gfx = { western_unit_gfx }
 	
 	ethnicities = {
-		1 = goblin_ethnicity
+		5 = goblin_ethnicity
+		5 = gilblin_ethnicity
+		5 = race_goblinken_base
+		5 = race_goblin_green
+		5 = race_goblin_yellow
+		5 = race_goblin_riekr
+		5 = race_goblin_riekling
 	}
 }
 warsong = {
@@ -160,5 +166,87 @@ warsong = {
 		90 = green_orcish
 		5 = brown_orcish
 		5 = gray_orcish
+		5 = race_orsimer
+		5 = pale_orcish
+	}
+}
+bosmer = {
+	color = { 0.33 0.53 0.12 }
+	
+	ethos = ethos_spiritual
+	heritage = heritage_bosmeri
+	language = language_bosmeris
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_jungle_dwellers
+		tradition_forest_fighters
+		tradition_jungle_warriors
+		tradition_free_love
+		tradition_elf
+	}	
+	
+	name_list = name_list_bosmer
+	
+	coa_gfx = { iberian_group_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		10 = race_bosmer
+	}
+}
+alinor = {
+	color = { 1.0 0.85 0.0 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_aldmeri
+	language = language_altmeris
+	martial_custom = martial_custom_equal
+	
+	traditions = {
+		tradition_elf
+		tradition_philosopher_culture
+		tradition_poetry
+	}	
+
+	name_list = name_list_altmer
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		10 = race_altmer
+	}
+}
+glenumbran = { #Breton
+	color = { 0.78 0.58 0.52 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_breton
+	language = language_bretic
+	martial_custom = martial_custom_equal
+	
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_chanson_de_geste
+		tradition_castle_keepers
+		tradition_astute_diplomats
+		tradition_chivalry
+	}
+	
+	name_list = name_list_glenumbran
+	
+	coa_gfx = { french_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		12 = race_breton_glenumbran_1
+		5 = race_breton_glenumbran_elven_1
+		5 = race_breton_northman_1
 	}
 }

@@ -1,0 +1,253 @@
+﻿#Dunmeris Group
+
+baron_feudal_male_dunmeris_group = { #Sera
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+baron_feudal_female_dunmeris_group = { #Sera
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+count_feudal_male_dunmeris_group = { #Muthsera
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+count_feudal_female_dunmeris_group = { #Muthsera
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+
+#Republic
+
+
+baron_republic_male_dunmeris_group = { #Hetman
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+baron_republic_female_dunmeris_group = { #Hetwoman
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+count_republic_male_dunmeris_group = { #Hetman
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+count_republic_female_dunmeris_group = { #Hetwoman
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+
+duke_republic_male_dunmeris_group = { #Councillor
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+duke_republic_female_dunmeris_group = { #Councillor
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { republic_government }
+	heritages = { heritage_dunmeri }
+	top_liege = no
+}
+
+#Great Houses
+
+great_house_redoran_male = { #Archmaster
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_redoran }
+	top_liege = no
+}
+
+great_house_redoran_female = { #Archmistress
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_redoran }
+	top_liege = no
+}
+
+great_house_indoril_male = { #Grand Ascendant
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_indoril }
+	top_liege = no
+}
+
+great_house_indoril_female = { #Grand Ascendant
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_indoril }
+	top_liege = no
+}
+
+great_house_dres_male = { #Grand Magnate
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_dres }
+	top_liege = no
+}
+
+great_house_dres_female = { #Grand Magnate
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_dres }
+	top_liege = no
+}
+
+great_house_telvanni_male = { #Archmagister
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_telvanni }
+	top_liege = no
+}
+
+great_house_telvanni_female = { #Archmagister
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_telvanni }
+	top_liege = no
+}
+
+great_house_dagoth_male = { #Lord High Councillor
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_dagoth }
+	top_liege = no
+}
+
+great_house_dagoth_female = { #Lady High Councillor
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_dagoth }
+	top_liege = no
+}
+
+great_house_hlaalu_male = { #Grandmaster
+	type = character
+	gender = male	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_hlaalu k_sadras k_sul k_veloth }
+	top_liege = no
+}
+
+great_house_hlaalu_female = { #Grandmistress
+	type = character
+	gender = female	
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_hlaalu k_sadras k_sul k_veloth }
+	top_liege = no
+}
+
+#Great House Vassal
+
+great_house_vassal_male = { #Councilman / Master
+	type = character
+	gender = male	
+	special = holder
+	tier = duchy
+	priority = 38
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer }
+	top_liege = no
+}
+
+great_house_vassal_female = { #Councilwoman / Mistress
+	type = character
+	gender = female	
+	special = holder
+	tier = duchy
+	priority = 38
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer }
+	top_liege = no
+}

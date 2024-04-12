@@ -1,0 +1,147 @@
+﻿
+#Bosmeris Group
+baron_feudal_male_bosmeris_group = { #Clan-Keeper
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+baron_feudal_female_bosmeris_group = { #Clan-Keeper
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+barony_feudal_bosmeris_group = { #Clanhold
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 20
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+count_feudal_male_bosmeris_group = { #Warden
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+count_feudal_female_bosmeris_group = { #Warden
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+county_feudal_bosmeris_group = { #Ward
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+duke_feudal_male_bosmeris_group = { #Treethane
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+duke_feudal_female_bosmeris_group = { #Treethane
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+duchy_feudal_bosmeris_group = { #Treethanedom
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	heritages = { heritage_bosmeri }
+	priority = 28
+	top_liege = no
+}
+
+duke_feudal_male_bosmeris_etarani = { #Woodlord
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 35
+	governments = { feudal_government autocracy_government tribal_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+duke_feudal_female_bosmeris_etarani = { #Woodlady
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 35
+	governments = { feudal_government autocracy_government tribal_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+
+duchy_feudal_bosmeris_etarani = { #Principality
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	heritages = { heritage_bosmeri }
+	priority = 35
+	top_liege = no
+}
+
+emperor_feudal_male_bosmeris_group = { #Hart-King
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}
+emperor_feudal_female_bosmeris_group = { #Hart-King
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	heritages = { heritage_bosmeri }
+	top_liege = no
+}

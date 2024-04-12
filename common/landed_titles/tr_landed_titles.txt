@@ -114,7 +114,3199 @@ e_wre = {
 	capital = c_ravenna
 }
 
+############################################################################
+e_britannia = {
+	color = { 172 22 22 }
 
+	capital = c_middlesex
+
+	cultural_names = {
+		name_list_pictish = cn_pictavia
+		name_list_irish = cn_alba
+		name_list_gaelic = cn_alba
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = { has_cultural_pillar = heritage_west_germanic }
+					culture = { has_cultural_pillar = heritage_goidelic }
+					culture = { has_cultural_pillar = heritage_brythonic }
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	k_england = {
+		color = { 202 26 26 }
+
+		capital = c_middlesex
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						culture = culture:english
+						culture = culture:anglo_saxon
+					}
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_bedford = { # Essex
+			color = { 241 15 15 }
+
+			capital = c_middlesex
+
+			cultural_names = {
+				name_list_anglo_saxon = cn_east_seaxe
+				name_list_old_saxon = cn_east_seaxe
+			}
+
+			c_middlesex = {
+				color = { 230 5 5 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_middle_seaxe
+					name_list_old_saxon = cn_middle_seaxe
+				}
+
+				b_london = {
+					province = 1527
+
+					color = { 230 5 5 }
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_lunden
+						name_list_old_saxon = cn_lunden
+
+						name_list_roman = cn_londinium
+						name_list_ck_roman = cn_londinium
+						name_list_welsh = cn_llundein
+						name_list_cornish = cn_llundein
+						name_list_breton = cn_llundein
+						name_list_cumbrian = cn_llundein
+						name_list_pictish = cn_llundein
+
+						name_list_norman = cn_londres
+						name_list_scottish = cn_lunnon
+					}
+				}
+				b_southwark = {
+					province = 1526
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_suthweorc
+						name_list_old_saxon = cn_suthweorc
+					}
+
+					color = { 230 5 5 }
+				}
+				b_woxbrigge = {
+					province = 1528
+
+					color = { 230 5 5 }
+				}
+				b_gore = {
+					province = 1529
+
+					color = { 230 5 5 }
+				}
+				b_brentford = {
+					province = 1530
+
+					color = { 230 5 5 }
+				}
+			}
+			c_essex = {
+				color = { 220 20 30 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_east_seaxe
+					name_list_old_saxon = cn_east_seaxe
+				}
+
+				b_colchester = {
+					province = 1514
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_colenceaster
+						name_list_old_saxon = cn_colenceaster
+					}
+
+					color = { 220 20 30 }
+				}
+				b_maldon = {
+					province = 1515
+
+					color = { 220 20 30 }
+				}
+				b_chelmsford = {
+					province = 1516
+
+					color = { 220 20 30 }
+				}
+				b_dunmow = {
+					province = 1517
+
+					color = { 220 20 30 }
+				}
+			}
+			c_bedford = {
+				color = { 205 20 15 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_bedanford
+					name_list_old_saxon = cn_bedanford
+				}
+
+				b_bedford = {
+					province = 1538
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_bedanford
+						name_list_old_saxon = cn_bedanford
+					}
+
+					color = { 205 20 15 }
+				}
+				b_ampthill = {
+					province = 1539
+
+					color = { 205 20 15 }
+				}
+				b_luton = {
+					province = 1540
+
+					color = { 205 20 15 }
+				}
+			}
+
+			c_hertfordshire = {
+				color = { 250 35 35 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_herutford
+					name_list_old_saxon = cn_herutford
+				}
+
+				b_berkhamsted = {
+					province = 1531
+
+					color = { 250 35 35 }
+				}
+				b_saint_albans = {
+					province = 1532
+
+					color = { 250 35 35 }
+				}
+				b_hertford = {
+					province = 1533
+
+					color = { 250 35 35 }
+				}
+			}
+
+			c_buckinghamshire = {
+				color = { 200 25 25 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_buccingahamm
+					name_list_old_saxon = cn_buccingahamm
+				}
+
+				b_buckingham = {
+					province = 1551
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_buccingahamm
+						name_list_old_saxon = cn_buccingahamm
+					}
+
+					color = { 200 25 25 }
+				}
+				b_aylesbury = {
+					province = 1552
+
+					color = { 200 25 25 }
+				}
+				b_newport = {
+					province = 1553
+
+					color = { 200 25 25 }
+				}
+				b_wycombe = {
+					province = 1554
+
+					color = { 200 25 25 }
+				}
+			}
+		}
+
+		d_northumberland = {
+			color = hsv{ 0.98 0.9 0.9 }
+
+			cultural_names = {
+				name_list_breton = cn_bryneich
+				name_list_cornish = cn_bryneich
+				name_list_cumbrian = cn_bryneich
+				name_list_pictish = cn_bryneich
+				name_list_welsh = cn_bryneich
+
+				name_list_norman = cn_norroy
+				name_list_french = cn_norroy
+				name_list_outremer = cn_norroy
+				name_list_occitan = cn_norroy
+			}
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:anglo_saxon
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
+
+			capital = c_northumberland # Bamburgh, Bernicia
+
+			c_northumberland = {
+				color = { 245 0 0 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_bernicia
+					name_list_breton = cn_bryneich
+					name_list_cornish = cn_bryneich
+					name_list_cumbrian = cn_bryneich
+					name_list_pictish = cn_bryneich
+					name_list_welsh = cn_bryneich
+				}
+
+				b_bamburgh = {
+					province = 1609
+
+					color = { 245 0 0 }
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_bebbanburg
+						name_list_old_saxon = cn_bebbanburg
+
+						name_list_norwegian = cn_bamborg
+						name_list_danish = cn_bamborg
+						name_list_swedish = cn_bamborg
+						name_list_norse = cn_bamborg
+
+						name_list_welsh = cn_din_guarie
+						name_list_cumbrian = cn_din_guarie
+						name_list_pictish = cn_din_guarie
+						name_list_cornish = cn_din_guarie
+						name_list_breton = cn_din_guarie
+					}
+				}
+				b_rothbury = {
+					province = 1612
+
+					color = { 245 0 0 }
+				}
+				b_lindisfarne = {
+					province = 1610
+
+					color = { 245 0 0 }
+
+					cultural_names = {
+						name_list_welsh = cn_medcaut
+						name_list_cumbrian = cn_medcaut
+						name_list_pictish = cn_medcaut
+						name_list_cornish = cn_medcaut
+						name_list_breton = cn_medcaut
+					}
+				}
+				b_hexham = {
+					province = 1611
+
+					color = { 245 0 0 }
+				}
+			}
+			c_durham = {
+				color = { 255 15 15 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_dunholm
+					name_list_old_saxon = cn_dunholm
+					name_list_norman = cn_duresm
+					name_list_french = cn_duresm
+					name_list_outremer = cn_duresm
+					name_list_occitan = cn_duresm
+				}
+
+				b_durham = {
+					province = 1606
+
+					cultural_names = {
+						name_list_anglo_saxon = cn_dunholm
+						name_list_old_saxon = cn_dunholm
+						name_list_norman = cn_duresm
+						name_list_french = cn_duresm
+						name_list_outremer = cn_duresm
+						name_list_occitan = cn_duresm
+						name_list_norse = cn_ulfreksfjordr
+						name_list_norwegian = cn_ulfreksfjordr
+					}
+
+					color = { 255 15 15 }
+				}
+				b_hartlepool = {
+					province = 1607
+
+					color = { 255 15 15 }
+				}
+				b_darlington = {
+					province = 1608
+
+					color = { 255 15 15 }
+				}
+			}
+			c_cumberland = {
+				color = { 240 25 25 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_cumbraland
+					name_list_old_saxon = cn_cumbraland
+				}
+
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:cumbrian
+						}
+						add = @correct_culture_primary_score
+					}
+				}
+
+				b_carlisle = {
+					province = 1635
+
+					cultural_names = {
+						name_list_cumbrian = cn_caer_luel
+						name_list_welsh = cn_caer_luel
+						name_list_pictish = cn_caer_luel
+						name_list_breton = cn_caer_luel
+						name_list_cornish = cn_caer_luel
+						name_list_gaelic = cn_cathair_luail
+						name_list_irish = cn_cathair_luail
+						name_list_anglo_saxon = cn_carleol
+						name_list_old_saxon = cn_carleol
+					}
+
+					color = { 240 25 25 }
+				}
+				b_whitehaven = {
+					province = 1636
+
+					color = { 240 25 25 }
+				}
+				b_furness = {
+					province = 1642
+
+					color = { 240 25 25 }
+				}
+				b_wigton = {
+					province = 8780
+
+					color = { 240 25 25 }
+				}
+			}
+		}
+
+		d_lancaster = {
+			color = { 255 48 0 }
+
+			capital = c_lancashire # Lancaster
+
+			cultural_names = {
+				name_list_breton = cn_rheged
+				name_list_cornish = cn_rheged
+				name_list_cumbrian = cn_rheged
+				name_list_welsh = cn_rheged
+				name_list_pictish = cn_rheged
+			}
+
+			c_lancashire = {
+				color = { 250 55 5 }
+
+				b_lancaster = {
+					province = 1639
+
+					color = { 250 55 5 }
+				}
+				b_salford = {
+					province = 1640
+
+					color = { 250 55 5 }
+				}
+				b_west_derby = {
+					province = 1641
+
+					color = { 250 55 5 }
+				}
+			}
+			c_westmorland = {
+				color = { 210 35 10 }
+
+				b_kendal = {
+					province = 1637
+
+					color = { 210 35 10 }
+				}
+				b_appleby = {
+					province = 1638
+
+					color = { 210 35 10 }
+				}
+			}
+			c_cheshire = {
+				color = { 255 127 15 }
+
+				b_chester = {
+					province = 1643
+
+					color = { 255 152 50 }
+				}
+				b_northwich = {
+					province = 1644
+
+					color = { 255 127 15 }
+				}
+				b_macclesfield = {
+					province = 1645
+
+					color = { 255 127 15 }
+				}
+			}
+			c_derby = {
+				color = { 255 50 20 }
+
+				cultural_names = {
+					name_list_norwegian = cn_djuraby
+					name_list_danish = cn_djuraby
+					name_list_swedish = cn_djuraby
+					name_list_norse = cn_djuraby
+				}
+
+				b_derby = {
+					province = 1621
+
+					color = { 255 89 89 }
+
+					cultural_names = {
+						name_list_norwegian = cn_djuraby
+						name_list_danish = cn_djuraby
+						name_list_swedish = cn_djuraby
+						name_list_norse = cn_djuraby
+					}
+				}
+				b_chesterfield = {
+					province = 1622
+
+					color = { 255 50 20 }
+				}
+				b_castleton = {
+					province = 1623
+
+					color = { 255 50 20 }
+				}
+			}
+		}
+
+		d_york = {
+			color = { 255 90 15 }
+
+			capital = c_north_riding # York
+
+			cultural_names = {
+				name_list_norse = cn_jorvik
+				name_list_norwegian = cn_jorvik
+				name_list_swedish = cn_jorvik
+				name_list_danish = cn_jorvik
+
+				name_list_anglo_saxon = cn_deira
+
+				name_list_breton = cn_deifr
+				name_list_cornish = cn_deifr
+				name_list_cumbrian = cn_deifr
+				name_list_welsh = cn_deifr
+				name_list_pictish = cn_deifr
+			}
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:norse
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
+
+			c_north_riding = {
+				color = { 255 95 20 }
+
+				cultural_names = {
+					name_list_breton = cn_efrog
+					name_list_cornish = cn_efrog
+					name_list_cumbrian = cn_efrog
+					name_list_welsh = cn_efrog
+					name_list_pictish = cn_efrog
+				}
+
+				b_york = {
+					province = 1595
+
+					color = { 255 95 20 }
+
+					cultural_names = {
+						name_list_norse = cn_jorvik
+						name_list_norwegian = cn_jorvik
+						name_list_swedish = cn_jorvik
+						name_list_danish = cn_jorvik
+
+						name_list_anglo_saxon = cn_eoforwic
+
+						name_list_breton = cn_efrog
+						name_list_cornish = cn_efrog
+						name_list_cumbrian = cn_efrog
+						name_list_welsh = cn_efrog
+						name_list_pictish = cn_efrog
+					}
+				}
+				b_scarborough = {
+					province = 1596
+
+					color = { 255 95 20 }
+				}
+				b_whitby = {
+					province = 1597
+
+					color = { 255 95 20 }
+				}
+				b_richmond = {
+					province = 1598
+
+					color = { 255 95 20 }
+				}
+				b_yarlestre = {
+					province = 1500
+
+					color = { 255 95 20 }
+				}
+			}
+			c_east_riding = {
+				color = { 255 139 15 }
+
+				b_pockington = {
+					cultural_names = {
+						name_list_anglo_saxon = cn_poclintun
+					}
+					province = 1588
+
+					color = { 255 160 59 }
+				}
+				b_cottingham = {
+					province = 1589
+
+					color = { 255 139 15 }
+				}
+				b_bridlington = {
+					province = 1590
+
+					color = { 255 139 15 }
+				}
+			}
+			c_west_riding = {
+				color = { 255 120 35 }
+				cultural_names = {
+					name_list_welsh = cn_elmet
+					name_list_cumbrian = cn_elmet
+					name_list_cornish = cn_elmet
+					name_list_breton = cn_elmet
+					name_list_pictish = cn_elmet
+				}
+
+				b_leeds = {
+					cultural_names = {
+						name_list_welsh = cn_ladenses
+						name_list_cumbrian = cn_ladenses
+						name_list_cornish = cn_ladenses
+						name_list_breton = cn_ladenses
+						name_list_pictish = cn_ladenses
+
+						name_list_anglo_saxon = cn_leodis
+					}
+					province = 1591
+
+					color = { 255 120 35 }
+				}
+				b_doncaster = {
+					province = 1592
+
+					color = { 255 120 35 }
+				}
+				b_halifax = {
+					province = 1593
+
+					color = { 255 120 35 }
+				}
+				b_sheffield = {
+					province = 1594
+
+					color = { 255 120 35 }
+				}
+				b_bolton = {
+					province = 1499
+
+					color = { 255 120 35 }
+				}
+				b_ripon = {
+					province = 1599
+
+					color = { 255 120 35 }
+				}
+			}
+			c_lincolnshire = {
+				color = { 232 195 74 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_lindsey
+				}
+
+				b_lincoln = {
+					province = 1583
+
+					color = { 232 195 74 }
+				}
+				b_stamford = {
+					province = 1584
+
+					color = { 232 195 74 }
+				}
+				b_boston = {
+					province = 1585
+
+					color = { 232 195 74 }
+				}
+				b_bolingsbroke = {
+					province = 1586
+
+					color = { 232 195 74 }
+				}
+				b_grimsby = {
+					province = 1587
+
+					color = { 232 195 74 }
+				}
+			}
+		}
+
+		d_norfolk = { #East Anglia
+			color = { 200 90 0 }
+
+			capital = c_norfolk # Norwich
+
+			cultural_names = {
+				name_list_norse = cn_jarnamoda
+				name_list_norwegian = cn_jarnamoda
+			}
+
+			c_norfolk = {
+				color = { 210 100 0 }
+
+				cultural_names = {
+					name_list_norse = cn_jarnamoda
+					name_list_norwegian = cn_jarnamoda
+				}
+
+				b_norwich = {
+					province = 1522
+
+					color = { 210 100 0 }
+
+					cultural_names = {
+						name_list_norse = cn_jarnamoda
+						name_list_norwegian = cn_jarnamoda
+					}
+				}
+				b_thetford = {
+					province = 1523
+
+					color = { 210 100 0 }
+				}
+				b_walsingham = {
+					province = 1524
+
+					color = { 210 100 0 }
+				}
+				b_lynn = {
+					province = 1525
+
+					color = { 210 100 0 }
+				}
+			}
+			c_suffolk = {
+				color = { 215 125 10 }
+
+				b_ipswich = {
+					province = 1518
+
+					color = { 215 125 10 }
+				}
+				b_sudbury = {
+					province = 1519
+
+					color = { 215 125 10 }
+				}
+				b_blything = {
+					province = 1520
+
+					color = { 215 125 10 }
+				}
+				b_beodericsworth = {
+					province = 1521
+
+					color = { 215 125 10 }
+				}
+			}
+
+			c_cambridgeshire = {
+				color = { 205 145 5 }
+
+				b_cambridge = {
+					province = 1534
+
+					color = { 205 145 5 }
+				}
+				b_radfield = {
+					province = 1535
+
+					color = { 205 145 5 }
+				}
+				b_papworth = {
+					province = 1536
+
+					color = { 205 145 5 }
+				}
+				b_ely = {
+					province = 1537
+
+					color = { 205 145 5 }
+
+					cultural_names = {
+						name_list_norse = cn_linn
+						name_list_norwegian = cn_linn
+					}
+				}
+			}
+		}
+
+		d_hereford = { # Mercia
+			color = { 200 30 0 }
+
+			capital = c_warwickshire # Warwick
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:anglo_saxon
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
+
+			c_warwickshire = {
+				color = { 190 30 30 }
+
+				b_warwick = {
+					province = 1603
+
+					color = { 190 30 30 }
+				}
+				b_coventry = {
+					province = 1604
+
+					color = { 190 30 30 }
+				}
+				b_birmingham = {
+					province = 1605
+
+					color = { 190 30 30 }
+				}
+			}
+			c_leicestershire = {
+				color = { 130 5 25 }
+
+				b_leicester = {
+					province = 1615
+
+					color = { 130 5 25 }
+				}
+				b_melton = {
+					province = 1616
+
+					color = { 130 5 25 }
+				}
+				b_bosworth = {
+					province = 1617
+
+					color = { 130 5 25 }
+				}
+				b_rutland = {
+					province = 1613
+
+					color = { 130 5 25 }
+				}
+			}
+			c_nottinghamshire = {
+				color = { 175 0 30 }
+
+				b_nottingham = {
+					province = 1618
+
+					color = { 175 0 30 }
+				}
+				b_newark = {
+					province = 1619
+
+					color = { 175 0 30 }
+				}
+				b_retford = {
+					province = 1620
+
+					color = { 175 0 30 }
+				}
+			}
+			c_staffordshire = {
+				color = { 210 90 65 }
+
+				b_stafford = {
+					province = 1627
+
+					color = { 210 90 65 }
+				}
+				b_wolverhampton = {
+					province = 1628
+
+					color = { 210 90 65 }
+				}
+				b_stoke_on_trent = {
+					province = 1629
+
+					color = { 210 90 65 }
+				}
+			}
+			c_worcestershire = {
+				color = { 160 20 5 }
+
+				b_worcester = {
+					province = 1624
+
+					color = { 160 20 5 }
+				}
+				b_evesham = {
+					province = 1625
+
+					color = { 160 20 5 }
+				}
+				b_kidderminster = {
+					province = 1626
+
+					color = { 160 20 5 }
+				}
+			}
+			c_huntingdonshire = {
+				color = { 175 40 55 }
+
+				b_hurstingstone = {
+					province = 1541
+
+					color = { 175 40 55 }
+				}
+				b_norman_cross = {
+					province = 1542
+
+					color = { 175 40 55 }
+				}
+				b_leightonstone = {
+					province = 1543
+
+					color = { 175 40 55 }
+				}
+			}
+			c_northamptonshire = {
+				color = { 125 5 5 }
+
+				b_northampton = {
+					province = 1600
+
+					color = { 125 5 5 }
+				}
+				b_peterborough = {
+					province = 1601
+
+					color = { 125 5 5 }
+				}
+				b_kettering = {
+					province = 1602
+
+					color = { 125 5 5 }
+				}
+			}
+			c_shropshire = {
+				color = { 241 70 70 }
+
+				cultural_names = {
+					name_list_welsh = cn_amwythig
+				}
+
+				b_shrewsbury = {
+					province = 1646
+
+					color = { 241 55 25 }
+				}
+				b_ludlow = {
+					province = 1647
+
+					color = { 241 55 25 }
+				}
+				b_bishops_castle = { #Clun
+					province = 1648
+
+					color = { 241 55 25 }
+
+					cultural_names = {
+						name_list_welsh = cn_clun
+					}
+				}
+			}
+		}
+
+		d_gloucester = { # Hwicce
+			color = { 241 79 15 }
+
+			capital = c_gloucestershire # Gloucester
+
+			c_gloucestershire = {
+				color = { 245 85 20 }
+
+				b_gloucester = {
+					province = 1580
+
+					color = { 245 85 20 }
+				}
+				b_bristol = {
+					province = 1581
+
+					color = { 245 85 20 }
+				}
+				b_winchcombe = {
+					province = 1582
+
+					color = { 245 85 20 }
+				}
+			}
+			c_wiltshire = {
+				color = { 250 55 15 }
+
+				b_salisbury = {
+					province = 1561
+
+					color = { 250 55 15 }
+				}
+				b_wilton = {
+					province = 1562
+
+					color = { 250 55 15 }
+				}
+				b_ramsbury = {
+					province = 1563
+
+					color = { 250 55 15 }
+				}
+				b_malmesbury = {
+					province = 1564
+
+					color = { 250 55 15 }
+				}
+			}
+			c_oxfordshire = {
+				color = { 255 115 15 }
+
+				b_oxford = {
+					province = 1558
+
+					color = { 255 115 15 }
+				}
+				b_banbury = {
+					province = 1559
+
+					color = { 255 115 15 }
+				}
+				b_witney = {
+					province = 1560
+
+					color = { 255 115 15 }
+				}
+			}
+			c_berkshire = {
+				color = { 255 100 25 }
+
+				b_reading = {
+					province = 1555
+
+					color = { 255 100 25 }
+				}
+				b_newbury = {
+					province = 1556
+
+					color = { 255 100 25 }
+				}
+				b_abingdon = {
+					province = 1557
+
+					color = { 255 100 25 }
+				}
+			}
+		}
+
+		d_canterbury = { # Kent
+			color = { 241 100 15 }
+
+			capital = c_kent # Dover
+
+			c_kent = {
+				color = { 245 105 20 }
+
+				b_dover = {
+					province = 1502
+
+					color = { 245 105 20 }
+				}
+				b_canterbury = {
+					province = 1503
+
+					color = { 245 105 20 }
+				}
+				b_rochester = {
+					province = 1504
+
+					color = { 245 105 20 }
+				}
+				b_tonbridge = {
+					province = 1505
+
+					color = { 245 105 20 }
+				}
+			}
+			c_surrey = {
+				color = { 225 80 20 }
+
+				b_chertsey = {
+					province = 1510
+
+					color = { 225 80 20 }
+				}
+				b_guildford = {
+					province = 1511
+
+					color = { 225 80 20 }
+				}
+				b_kingston = {
+					province = 1512
+
+					color = { 225 80 20 }
+				}
+				b_tandbridge = {
+					province = 1513
+
+					color = { 225 80 20 }
+				}
+			}
+			c_sussex = {
+				color = { 225 105 10 }
+
+				cultural_names = {
+					name_list_anglo_saxon = cn_south_seaxe
+					name_list_old_saxon = cn_south_seaxe
+				}
+
+				b_lewes = {
+					province = 1506
+
+					color = { 225 105 10 }
+				}
+				b_chichester = {
+					province = 1507
+
+					color = { 225 105 10 }
+				}
+				b_arun = {
+					province = 1508
+
+					color = { 225 105 10 }
+				}
+				b_hastings = {
+					province = 1509
+
+					color = { 225 105 10 }
+				}
+			}
+		}
+
+		d_somerset = {
+			color = hsv{ 1 0.9 0.9 }
+
+			capital = c_hampton # Winchester
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:anglo_saxon
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
+
+			c_hampton = {
+				color = { 230 15 55 }
+
+				b_winchester = {
+					province = 1544
+
+					color = { 230 15 55 }
+				}
+				b_southampton = {
+					province = 1545
+
+					color = { 230 15 55 }
+				}
+				b_portsmouth = {
+					province = 1546
+
+					color = { 230 15 55 }
+				}
+				b_basingstoke = {
+					province = 1547
+
+					color = { 230 15 55 }
+				}
+				b_christchurch = {
+					province = 1548
+
+					color = { 230 15 55 }
+				}
+			}
+			c_isle_of_wight = {
+				color = { 250 10 90 }
+
+				b_carisbrooke = {
+					province = 1549
+
+					color = { 250 10 90 }
+				}
+			}
+			c_dorset = {
+				color = { 185 0 75 }
+
+				b_wareham = {
+					province = 1565
+
+					color = { 185 0 75 }
+				}
+				b_poole = {
+					province = 1566
+
+					color = { 185 0 75 }
+				}
+				b_shaftesbury = {
+					province = 1567
+
+					color = { 185 0 75 }
+				}
+				b_lyme = {
+					province = 1568
+
+					color = { 185 0 75 }
+				}
+			}
+			c_somerset = {
+				color = { 156 0 83 }
+
+				b_bath = {
+					province = 1576
+
+					color = { 241 30 75 }
+				}
+				b_winterstoke = {
+					province = 1577
+
+					color = { 241 30 75 }
+				}
+				b_ilchester = {
+					province = 1578
+
+					color = { 241 30 75 }
+				}
+				b_taunton = {
+					province = 1579
+
+					color = { 241 30 75 }
+				}
+			}
+		}
+
+		d_cornwall = {
+			color = { 181 60 10 }
+
+			capital = c_devon
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:cornish
+					}
+					add = @correct_culture_primary_score
+				}
+			}
+
+			c_devon = {
+				color = { 170 60 10 }
+
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:cornish
+						}
+						add = @better_than_the_alternatives_score
+					}
+				}
+
+				b_exeter = {
+					province = 1569
+
+					color = { 170 60 10 }
+				}
+				b_totnes = {
+					province = 1570
+
+					color = { 170 60 10 }
+				}
+				b_okehampton = {
+					province = 1571
+
+					color = { 170 60 10 }
+				}
+				b_barnstaple = {
+					province = 1572
+
+					color = { 170 60 10 }
+				}
+			}
+			c_cornwall = {
+				color = { 150 55 5 }
+
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:cornish
+						}
+						add = @correct_culture_primary_score
+					}
+				}
+
+
+				b_launceston = {
+					province = 1573
+
+					color = { 150 55 5 }
+				}
+				b_tintagel = {
+					province = 1574
+
+					color = { 150 55 5 }
+				}
+				b_helston = {
+					province = 1575
+
+					color = { 150 55 5 }
+				}
+			}
+		}
+	}
+
+	k_wales = {
+		color = { 135 25 3 }
+
+		capital = c_cardiganshire # Gwynedd
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:welsh
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					OR = {
+						culture = culture:cumbrian
+						culture = culture:cornish
+						culture = culture:breton
+					}
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_gwynedd = {
+			color = { 100 0 0 }
+
+			capital = c_cardiganshire # Cardigan
+
+			c_cardiganshire = {	#Ceredigion
+				color = { 110 10 0 }
+
+				cultural_names = {
+					name_list_norman = cn_cardiganshire
+					name_list_english = cn_cardiganshire
+				}
+
+				b_cardigan = {	#Aberteifi
+					province = 1657
+
+					color = { 110 10 0 }
+
+					cultural_names = {
+						name_list_norman = cn_cardigan
+						name_list_english = cn_cardigan
+					}
+				}
+
+				b_aberystwyth = {
+					province = 1658
+
+					color = { 110 10 0 }
+				}
+			}
+
+			c_merioneth = {	#Merionnydd
+				color = { 105 20 20 }
+
+				cultural_names = {
+					name_list_norman = cn_merionethshire
+					name_list_english = cn_merionethshire
+				}
+
+				b_dolgellau = {	#Harlech
+					province = 1665
+
+					color = { 105 20 20 }
+				}
+
+				b_corwen = {
+					province = 1666
+
+					color = { 105 20 20 }
+				}
+			}
+
+			c_caernarfonshire = {	#Eryri
+				color = { 90 25 0 }
+
+				cultural_names = {
+					name_list_norman = cn_caernarvonshire
+					name_list_english = cn_caernarvonshire
+				}
+
+				b_caernarfon = {
+					province = 1667
+
+					color = { 90 25 0 }
+				}
+
+				b_llyn = {
+					province = 1668
+
+					color = { 90 25 0 }
+				}
+
+				b_llandudno = {
+					province = 1669
+
+					color = { 90 25 0 }
+				}
+			}
+
+			c_anglesey = {	#Ynys Mon
+				color = { 85 0 0 }
+
+				cultural_names = {
+					name_list_norman = cn_anglesey
+					name_list_english = cn_anglesey
+				}
+
+				b_yns_mon = {
+					province = 1673
+
+					color = { 85 0 0 }
+				}
+
+				b_holyhead = {	#Caer Gybi
+					province = 1674
+
+					color = { 85 0 0 }
+
+					cultural_names = {
+						name_list_norman = cn_holyhead
+						name_list_english = cn_holyhead
+					}
+				}
+			}
+
+			c_denbighshire = {	#Perfeddwlad
+				color = { 125 0 10 }
+
+				cultural_names = {
+					name_list_norman = cn_denbighshire
+					name_list_english = cn_denbighshire
+				}
+
+				b_denbigh = {	#Dinbych
+					province = 1670
+
+					color = { 125 0 10 }
+
+					cultural_names = {
+						name_list_norman = cn_denbigh
+						name_list_english = cn_denbigh
+					}
+				}
+
+				b_wrexham = {	#Tegeingl
+					province = 1671
+
+					color = { 125 0 10 }
+
+					cultural_names = {
+						name_list_norman = cn_wrexham
+						name_list_english = cn_wrexham
+					}
+				}
+
+				b_ruthin = {	#Rhuthun
+					province = 1672
+
+					color = { 125 0 10 }
+
+					cultural_names = {
+						name_list_norman = cn_ruthin
+						name_list_english = cn_ruthin
+					}
+				}
+			}
+		}
+
+		d_powys = {
+			color = { 115 30 30 }
+
+			capital = c_maldwyn # Maldwyn / Mathrafal near Welshpool
+
+			c_maldwyn = {	#Penllyn (Cantrefi, not the peninsula)
+				color = { 110 25 25 }
+
+				cultural_names = {
+					name_list_norman = cn_montgomeryshire
+					name_list_english = cn_montgomeryshire
+				}
+
+				b_welshpool = {	#Mathrafal
+					province = 1663
+
+					color = { 110 25 25 }
+
+					cultural_names = {
+						#Technically a different town: Welshpool is Y Trallwng, whereas b_welshpool is currently Mathrafal, historic seat of the Princes of Powys.
+						name_list_norman = cn_welshpool
+						name_list_english = cn_welshpool
+					}
+				}
+
+				b_newtown = {	#Machynlleth
+					province = 1664
+
+					color = { 110 25 25 }
+
+					cultural_names = {
+						#Technically a different settlement, as Newtown wouldn't be founded till the 1300s, but b_newtown is currently Machynlleth, which was a more important Welsh site previously.
+						name_list_norman = cn_newtown
+						name_list_english = cn_newtown
+					}
+				}
+			}
+
+			c_sir_faesyfed = {	#Ferlix
+				color = { 95 30 30 }
+
+				cultural_names = {
+					name_list_norman = cn_radnorshire
+					name_list_english = cn_radnorshire
+				}
+
+				b_llandrindod = {
+					province = 1661
+
+					cultural_names = {
+						name_list_norman = cn_llandrindod_wells
+						name_list_english = cn_llandrindod_wells
+					}
+
+					color = { 95 30 30 }
+				}
+
+				b_rhayader = {	#Rhaeadr Gwy
+					province = 1662
+
+					 cultural_names = {
+						name_list_norman = cn_rhayader
+						name_list_english = cn_rhayader
+					}
+
+					color = { 95 30 30 }
+				}
+			}
+
+			c_hereford = {
+				color = { 110 45 35 }
+
+				cultural_names = {
+					#This name is actually Anglo-Saxon, but the original Welsh name, Ergyng, is long dead by 867. Arcenefelde is the archaic term for the area after the conquest, and the name used by/to refer to the Welsh-speaking portions of the county, with Herefordshire referring to the Anglo-Saxons/English.
+					name_list_welsh = cn_arcenefelde
+					name_list_cumbrian = cn_arcenefelde
+				}
+
+				b_hereford = {
+					province = 1632
+
+					cultural_names = {
+						name_list_welsh = cn_hennffordd
+						name_list_cumbrian = cn_hennffordd
+					}
+
+					color = { 110 45 35 }
+				}
+
+				b_wigmore = {
+					province = 1633
+
+					color = { 110 45 35 }
+				}
+
+				b_clifford = {
+					province = 1634
+
+					color = { 110 45 35 }
+				}
+			}
+		}
+
+		d_deheubarth = {
+			color = { 240 167 91 }
+
+			capital = c_carmarthenshire # Dyfed
+
+			c_carmarthenshire = {	#Sir Gaerfyrddin
+				color = { 245 170 100 }
+
+				cultural_names = {
+					name_list_norman = cn_carmarthenshire
+					name_list_english = cn_carmarthenshire
+				}
+
+				b_carmarthen = {	#Caerfyrddin
+					province = 1652
+
+					color = { 245 170 100 }
+
+					cultural_names = {
+						name_list_norman = cn_carmarthen
+						name_list_english = cn_carmarthen
+					}
+				}
+
+				b_llandovery = {	#Llanymddyfri
+					province = 1653
+
+					color = { 245 170 100 }
+
+					cultural_names = {
+						name_list_norman = cn_llandovery
+						name_list_english = cn_llandovery
+					}
+				}
+			}
+
+			c_pembrokeshire = {	#Dyfed
+				color = { 210 140 90 }
+
+				cultural_names = {
+					name_list_norman = cn_pembrokeshire
+					name_list_english = cn_pembrokeshire
+				}
+
+				b_pembroke = {	#Penfro
+					province = 1654
+
+					color = { 210 140 90 }
+
+					cultural_names = {
+						name_list_norman = cn_pembroke
+						name_list_english = cn_pembroke
+					}
+				}
+
+				b_st_davids = {	#Tyddewi
+					province = 1655
+
+					color = { 210 140 90 }
+
+					cultural_names = {
+						name_list_norman = cn_st_davids
+						name_list_english = cn_st_davids
+					}
+				}
+
+				b_fishguard = {	#Abergwaun
+					province = 1656
+
+					color = { 210 140 90 }
+
+					#Technically, not established till the mid-to-late 900s.
+
+					cultural_names = {
+						#Pre-Anglicisation name of Fishguard.
+						name_list_norman = cn_fiscard
+						name_list_english = cn_fiscard
+					}
+				}
+			}
+
+			c_glamorgan = {	#Morgannwg
+				color = { 220 190 145 }
+
+				cultural_names = {
+					name_list_norman = cn_glamorgan
+					name_list_english = cn_glamorgan
+				}
+
+				b_cardiff = {	#Caerdydd
+					province = 1649
+
+					color = { 220 190 145 }
+
+					cultural_names = {
+						name_list_norman = cn_cardiff
+						name_list_english = cn_cardiff
+					}
+				}
+
+				b_swansea = {	#Abertawe
+					province = 1650
+
+					color = { 220 190 145 }
+
+					cultural_names = {
+						name_list_norman = cn_swansea
+						name_list_english = cn_swansea
+					}
+				}
+
+				b_caerphilly = {	#Caerffili
+					province = 1651
+
+					color = { 220 190 145 }
+
+					cultural_names = {
+						name_list_norman = cn_caerphilly
+						name_list_english = cn_caerphilly
+					}
+				}
+			}
+
+			c_monmouthshire = {	#Gwent
+				color = { 210 165 60 }
+
+				cultural_names = {
+					name_list_norman = cn_monmouthshire
+					name_list_english = cn_monmouthshire
+				}
+
+				b_casnewydd = {	#Caerllion
+					province = 1630
+
+					color = { 210 165 60 }
+
+					cultural_names = {
+						name_list_norman = cn_caerleon
+						name_list_english = cn_caerleon
+					}
+				}
+
+				b_monmouth = {	#Trefynwy
+					province = 1631
+
+					color = { 210 165 60 }
+
+					cultural_names = {
+						name_list_norman = cn_monmouth
+						name_list_english = cn_monmouth
+					}
+				}
+			}
+
+			c_brecknockshire = {	#Brycheiniog"
+				color = { 215 150 115 }
+
+				cultural_names = {
+					name_list_norman = cn_brecknockshire
+					name_list_english = cn_brecknockshire
+				}
+
+				b_brecon = {	#Aberhonddu
+					province = 1659
+
+					color = { 215 150 115 }
+
+					cultural_names = {
+						#Brecon is the modern form.
+						name_list_norman = cn_brecknock
+						name_list_english = cn_brecknock
+					}
+				}
+
+				b_talgarth = {
+					province = 1660
+
+					color = { 215 150 115 }
+
+					#Talgarth is actually the modern & historic name in both English & Welsh, albeit accented in Old Welsh.
+				}
+			}
+		}
+	}
+
+	k_scotland = {
+		color = { 230 140 0 }
+
+		capital = c_gowrie #Gowrie
+
+		cultural_names = {
+			name_list_irish = cn_alba
+			name_list_gaelic = cn_alba
+			name_list_pictish = cn_pictland
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						culture = culture:scottish
+						culture = culture:gaelic
+						culture = culture:pictish
+					}
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = culture:irish
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_albany = {
+			color = { 220 130 0 }
+
+			cultural_names = {
+				name_list_irish = cn_circinn
+				name_list_gaelic = cn_circinn
+				name_list_pictish = cn_circinn
+				name_list_welsh = cn_circinn
+				name_list_cumbrian = cn_circinn
+				name_list_cornish = cn_circinn
+				name_list_breton = cn_circinn
+			}
+
+			capital = c_gowrie # Perth/St Johnston
+
+			c_gowrie = {
+				color = { 220 130 0 }
+
+				b_st_johnston = {
+					province = 1741
+
+					color = { 220 130 0 }
+				}
+
+				b_coupar_angus = {
+					province = 1742
+
+					color = { 220 130 0 }
+				}
+				b_crieff = {
+					province = 1745
+
+					color = { 220 130 0 }
+				}
+			}
+			c_fife = {
+				color = { 210 115 5 }
+
+				b_dunfermline = {
+					province = 1724
+
+					color = { 210 115 5 }
+				}
+
+				b_kircaldy = {
+					province = 1725
+
+					color = { 210 115 5 }
+				}
+				b_st_andrews = {
+					province = 1726
+
+					color = { 210 115 5 }
+				}
+			}
+			c_strathearn = {
+				color = { 245 130 0 }
+
+				b_stirling = {
+					province = 1734
+
+					color = { 245 130 0 }
+				}
+				b_callander = {
+					province = 1735
+
+					color = { 245 130 0 }
+				}
+				b_clackmannan = {
+					province = 1736
+
+					color = { 245 130 0 }
+				}
+			}
+			c_atholl = {
+				color = { 225 155 20 }
+
+				b_dunkeld = {
+					province = 1743
+
+					color = { 225 155 20 }
+				}
+				b_aberfeldy = {
+					province = 1744
+
+					color = { 225 155 20 }
+				}
+			}
+			c_angus = {
+				color = { 225 125 20 }
+
+				b_dundee = {
+					province = 1720
+
+					color = { 225 125 20 }
+				}
+				b_kirriemuir = {
+					province = 1721
+
+					color = { 225 125 20 }
+				}
+				b_mar = {
+					province = 1723
+
+					color = { 225 125 20 }
+				}
+			}
+
+			c_mearns = {
+				color = { 230 140 10 }
+
+				b_aberdeen = {
+					province = 1718
+
+					color = { 230 140 10 }
+				}
+				b_kincardine = {
+					province = 1719
+
+					color = { 230 140 10 }
+				}
+				b_ballater = {
+					province = 1722
+
+					color = { 230 140 10 }
+				}
+			}
+		}
+
+		d_the_isles = {
+			color = { 180 90 0 }
+
+			capital = c_isle_of_man # Isle of Man
+
+			cultural_names = {
+				name_list_norse = cn_mon
+				name_list_norwegian = cn_mon
+			}
+
+			c_isle_of_man = {
+				color = { 180 90 0 }
+
+				cultural_names = {
+					name_list_norse = cn_mon
+					name_list_norwegian = cn_mon
+				}
+
+				b_castletown = {
+					province = 1698
+
+					color = { 180 90 0 }
+
+					cultural_names = {
+						name_list_norse = cn_holmatun
+						name_list_norwegian = cn_holmatun
+					}
+				}
+				b_ramsey = {
+					province = 1699
+
+					color = { 180 90 0 }
+
+					cultural_names = {
+						name_list_norse = cn_hramsa
+						name_list_norwegian = cn_hramsa
+					}
+				}
+			}
+		}
+
+		d_galloway = {
+			color = { 230 120 65 }
+
+			capital = c_lennox # Lennox
+
+			cultural_names = {
+				name_list_gaelic = cn_galloway
+				name_list_irish = cn_galloway
+				name_list_norse = cn_galvei
+				name_list_norwegian = cn_galvei
+			}
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:cumbrian
+					}
+					add = @correct_culture_primary_score
+				}
+				if = {
+					limit = {
+						culture = culture:welsh
+						culture = culture:cornish
+						culture = culture:breton
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
+
+			c_lennox = {
+				color = { 230 150 50 }
+
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:cumbrian
+						}
+						add = @correct_culture_primary_score
+					}
+				}
+
+				cultural_names = {
+					name_list_pictish = cn_alt_clut
+					name_list_breton = cn_alt_clut
+					name_list_cornish = cn_alt_clut
+					name_list_cumbrian = cn_alt_clut
+					name_list_welsh = cn_alt_clut
+				}
+
+				b_dumbarton = {
+					province = 1695
+
+					color = { 230 150 50 }
+
+					cultural_names = {
+						name_list_pictish = cn_alclud
+						name_list_breton = cn_alclud
+						name_list_cornish = cn_alclud
+						name_list_cumbrian = cn_alclud
+						name_list_welsh = cn_alclud
+					}
+				}
+				b_glasgow = {
+					province = 1696
+
+					color = { 230 150 50 }
+				}
+				b_meneith = {
+					province = 1697
+
+					color = { 230 150 50 }
+				}
+			}
+			c_galloway = {
+				cultural_names = {
+					name_list_pictish = cn_galwyddel
+					name_list_cumbrian = cn_galwyddel
+					name_list_welsh = cn_galwyddel
+					name_list_breton = cn_galwyddel
+					name_list_cornish = cn_galwyddel
+					name_list_norse = cn_galvei
+					name_list_norwegian = cn_galvei
+				}
+				color = { 230 120 65 }
+
+				b_kilcudbrite = {
+					province = 1682
+
+					color = { 230 120 65 }
+				}
+				b_sanquhar = {
+					province = 1683
+
+					color = { 230 120 65 }
+				}
+				b_wigtown = {
+					province = 1684
+
+					color = { 230 120 65 }
+				}
+			}
+			c_carrick = {
+				color = { 250 105 70 }
+
+				b_maybole = {
+					province = 1680
+
+					color = { 250 105 70 }
+				}
+				b_girvan = {
+					province = 1685
+
+					color = { 250 105 70 }
+				}
+			}
+			c_ayrshire = {
+				color = { 230 145 50 }
+
+				cultural_names = {
+					name_list_pictish = cn_aeron
+					name_list_cumbrian = cn_aeron
+					name_list_welsh = cn_aeron
+					name_list_breton = cn_aeron
+					name_list_cornish = cn_aeron
+				}
+
+				b_kyle = {
+					province = 1686
+
+					color = { 230 145 50 }
+				}
+				b_strathgryte = {
+					province = 1687
+
+					color = { 230 145 50 }
+				}
+				b_cunningham = {
+					province = 1688
+
+					color = { 230 145 50 }
+				}
+			}
+			c_annandale = {
+				color = { 215 140 55 }
+
+				b_annan = {
+					province = 1679
+
+					color = { 215 140 55 }
+				}
+				b_dumfries = {
+					province = 1681
+
+					color = { 215 140 55 }
+				}
+			}
+		}
+
+		d_western_isles = {
+			color = { 225 120 30 }
+
+			capital = c_inner_hebrides #Islay
+
+			definite_form = yes
+
+			cultural_names = {
+				name_list_norse = cn_sudreyjar
+				name_list_norwegian = cn_sudreyjar
+			}
+
+			c_inner_hebrides = {
+				color = { 255 200 10 }
+
+				cultural_names = {
+					name_list_norse = cn_innri_sudreyjar
+					name_list_norwegian = cn_innri_sudreyjar
+				}
+
+				b_islay = {
+					province = 1689
+
+					color = { 255 200 10 }
+
+					cultural_names = {
+						name_list_norse = cn_il
+						name_list_norwegian = cn_il
+					}
+				}
+				b_arran = {
+					province = 1690
+
+					color = { 255 200 10 }
+
+					cultural_names = {
+						name_list_norse = cn_hereyjar
+						name_list_norwegian = cn_hereyjar
+					}
+				}
+				b_mull = {
+					province = 1691
+
+					color = { 255 200 10 }
+
+					cultural_names = {
+						name_list_norse = cn_myl
+						name_list_norwegian = cn_myl
+					}
+				}
+			}
+			c_outer_hebrides = {
+				color = { 255 225 55 }
+
+				cultural_names = {
+					name_list_norse = cn_ytri_sudreyjar
+					name_list_norwegian = cn_ytri_sudreyjar
+				}
+
+				b_skye = {
+					province = 1692
+
+					color = { 255 225 55 }
+
+					cultural_names = {
+						name_list_norse = cn_skid
+						name_list_norwegian = cn_skid
+					}
+				}
+				b_lewis = {
+					province = 1693
+
+					color = { 255 225 55 }
+
+					cultural_names = {
+						name_list_norse = cn_ljodhus
+						name_list_norwegian = cn_ljodhus
+					}
+				}
+				b_the_uists = {
+					province = 1694
+
+					color = { 255 225 55 }
+
+					cultural_names = {
+						name_list_norse = cn_vist
+						name_list_norwegian = cn_vist
+					}
+				}
+			}
+			c_argyll = {
+				color = { 215 200 15 }
+
+				cultural_names = {
+					name_list_norse = cn_argjall
+					name_list_norwegian = cn_argjall
+				}
+
+				b_kilmarten = {
+					province = 1700
+
+					color = { 215 200 15 }
+
+					cultural_names = {
+						name_list_norse = cn_kjarbarey
+						name_list_norwegian = cn_kjarbarey
+					}
+				}
+				b_glencoe = {
+					province = 1701
+
+					color = { 215 200 15 }
+
+					cultural_names = {
+						name_list_norse = cn_dysjarstadr
+						name_list_norwegian = cn_dysjarstadr
+					}
+				}
+				b_lomond = {
+					province = 1702
+
+					color = { 215 200 15 }
+
+					cultural_names = {
+						name_list_norse = cn_lokolofni
+						name_list_norwegian = cn_lokolofni
+					}
+				}
+				b_ardnamurchon = {
+					province = 35
+
+					color = { 215 200 15 }
+
+					cultural_names = {
+						name_list_norse = cn_mylarsund
+						name_list_norwegian = cn_mylarsund
+					}
+				}
+			}
+		}
+
+		d_lothian = {
+			color = { 195 130 25 }
+
+			capital = c_lothian # Edinburgh
+
+			cultural_names = {
+				name_list_breton = cn_gododdin
+				name_list_cornish = cn_gododdin
+				name_list_cumbrian = cn_gododdin
+				name_list_welsh = cn_gododdin
+			}
+
+			c_lothian = {
+				color = { 185 90 25 }
+
+				b_edinburgh = {
+					province = 1727
+
+					color = { 185 90 25 }
+				}
+				b_haddington = {
+					province = 1728
+
+					color = { 185 90 25 }
+				}
+				b_galashiels = {
+					province = 1729
+
+					color = { 185 90 25 }
+				}
+				b_penicuick = {
+					province = 1730
+
+					color = { 185 90 25 }
+				}
+			}
+			c_dunbar = {
+				color = { 190 75 30 }
+
+				b_dunbar = {
+					province = 1676
+
+					color = { 190 75 30 }
+				}
+				b_berwick = {
+					province = 1675
+
+					color = { 190 75 30 }
+				}
+			}
+			c_teviotdale = {
+				color = { 198 70 23 }
+
+				b_kelso = {
+					province = 1677
+
+					color = { 198 70 23 }
+				}
+				b_jedburgh = {
+					province = 1678
+
+					color = { 198 70 23 }
+				}
+				b_selkirk = {
+					province = 1740
+
+					color = { 198 70 23 }
+				}
+			}
+			c_linlithgowshire = {
+				color = { 185 115 25 }
+
+				b_linlithgow = {
+					province = 1731
+
+					color = { 185 115 25 }
+				}
+				b_queensferry = {
+					province = 1732
+
+					color = { 185 115 25 }
+				}
+				b_falkirk = {
+					province = 1733
+
+					color = { 185 115 25 }
+				}
+			}
+			c_lanarkshire = {
+				color = { 195 100 35 }
+
+				b_lanark = {
+					province = 1737
+
+					color = { 195 100 35 }
+				}
+				b_cadyou = {
+					province = 1738
+
+					color = { 195 100 35 }
+				}
+				b_biggar = {
+					province = 1739
+
+					color = { 195 100 35 }
+				}
+			}
+		}
+
+		d_moray = {
+			color = { 255 180 60 }
+
+			capital = c_moray # Elgin
+
+			cultural_names = {
+				name_list_norse = cn_katanes
+				name_list_norwegian = cn_katanes
+			}
+
+			c_moray = {
+				color = { 255 180 60 }
+
+				b_elgin = {
+					province = 1715
+
+					color = { 255 180 60 }
+				}
+				b_keith = {
+					province = 1716
+
+					color = { 255 180 60 }
+				}
+				b_garioch = {
+					province = 1717
+
+					color = { 255 180 60 }
+				}
+			}
+			c_ross = {
+				color = { 250 210 85 }
+
+				cultural_names = {
+					name_list_norse = cn_ros
+					name_list_norwegian = cn_ros
+				}
+
+				b_dingwall = {
+					province = 1703
+
+					color = { 250 210 85 }
+				}
+				b_gairloch = {
+					province = 1704
+
+					color = { 250 210 85 }
+				}
+				b_tain = {
+					province = 8777
+
+					color = { 250 210 85 }
+				}
+				b_applecross = {
+					province = 8778
+
+					color = { 250 210 85 }
+				}
+			}
+			c_buchan = {
+				color = { 255 175 75 }
+
+				b_banff = {
+					province = 1712
+
+					color = { 255 175 75 }
+				}
+				b_mortlach = {
+					province = 1713
+
+					color = { 255 175 75 }
+				}
+				b_peterhead = {
+					province = 1714
+
+					color = { 255 175 75 }
+				}
+			}
+
+			c_sutherland = {
+				color = { 255 205 115 }
+
+				cultural_names = {
+					name_list_norse = cn_sudrland
+					name_list_norwegian = cn_sudrland
+				}
+
+				b_dornoch = {
+					province = 1705
+
+					color = { 255 205 115 }
+
+					cultural_names = {
+						name_list_norse = cn_hjalmundalr
+						name_list_norwegian = cn_hjalmundalr
+					}
+				}
+				b_durness = {
+					province = 1706
+
+					color = { 255 205 115 }
+
+					cultural_names = {
+						name_list_norse = cn_dyrnes
+						name_list_norwegian = cn_dyrnes
+					}
+				}
+				b_assynt = {
+					province = 8779
+
+					color = { 255 205 115 }
+				}
+			}
+
+			c_caithness = {
+				color = { 240 220 145 }
+
+				cultural_names = {
+					name_list_norse = cn_c_katanes
+					name_list_norwegian = cn_c_katanes
+				}
+
+				b_thurso = {
+					province = 1707
+
+					color = { 240 220 145 }
+
+					cultural_names = {
+						name_list_norse = cn_thorsa
+						name_list_norwegian = cn_thorsa
+					}
+				}
+				b_wick = {
+					province = 1708
+
+					color = { 240 220 145 }
+
+					cultural_names = {
+						name_list_norse = cn_vik
+						name_list_norwegian = cn_vik
+					}
+				}
+			}
+
+			c_inverness = {
+				color = { 240 160 45 }
+
+				b_inverness = {
+					province = 1709
+
+					color = { 240 160 45 }
+				}
+				b_badenoch = {
+					province = 1710
+
+					color = { 240 160 45 }
+				}
+				b_glenfinnan = {
+					province = 1711
+
+					color = { 240 160 45 }
+				}
+				b_urquhart = {
+					province = 8775
+
+					color = { 240 160 45 }
+				}
+				b_glenelg = {
+					province = 8776
+
+					color = { 240 160 45 }
+				}
+			}
+		}
+	}
+
+	k_ireland = {
+		color = { 6 127 2 }
+
+		capital = c_dublin # Dublin
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:irish
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = culture:gaelic
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_meath = {
+			color = { 49 249 72 }
+
+			capital = c_dublin # Dublin
+
+			c_dublin = {
+				color = { 55 250 85 }
+
+				cultural_names = {
+					name_list_norse = cn_dyflinn
+					name_list_norwegian = cn_dyflinn
+					name_list_irish = cn_dubhlinn
+					name_list_welsh = cn_dulyn
+				}
+
+				b_dublin = {
+					province = 28
+
+					color = { 55 250 85 }
+
+					cultural_names = {
+						name_list_norse = cn_dyflinn
+						name_list_norwegian = cn_dyflinn
+						name_list_irish = cn_dubhlinn
+						name_list_welsh = cn_dulyn
+					}
+				}
+				b_wicklow = {
+					province = 29
+
+					color = { 55 250 85 }
+
+					cultural_names = {
+						name_list_irish = cn_cill_mhantain
+					}
+				}
+				b_kildare = { #Historical note: monastery
+					province = 30
+
+					color = { 55 250 85 }
+
+					cultural_names = {
+						name_list_irish = cn_cill_dara
+					}
+				}
+				b_trim = { #historical note: monastery/important church
+					province = 31
+
+					color = { 55 250 85 }
+
+					cultural_names = {
+						name_list_irish = cn_baile_atha_troim
+					}
+				}
+				b_drogheda = {
+					province = 32
+
+					color = { 55 250 85 }
+
+					cultural_names = {
+						name_list_irish = cn_droichead_atha
+					}
+				}
+			}
+
+
+			c_athlone = {
+				color = { 40 230 65 }
+
+				b_athlone = {
+					province = 34
+
+					color = { 40 230 65 }
+				}
+				b_birr = { #Historical note: monastery
+					province = 33
+
+					color = { 40 230 65 }
+				}
+				b_uisneach = {
+					province = 36
+
+					color = { 40 230 65 }
+				}
+			}
+		}
+
+		d_ulster = {
+			color = { 5 222 31 }
+
+			capital = c_ulster # Downpatrick
+
+			c_ulster = {
+				color = { 25 230 35 }
+
+				b_downpatrick = {
+					province = 15
+
+					color = { 25 230 35 }
+
+					cultural_names = {
+						name_list_norwegian = cn_strangfjordr
+						name_list_swedish = cn_strangfjord
+						name_list_danish = cn_strangfjord
+						name_list_norse = cn_strangfjordr
+						name_list_irish = cn_dun_padraig
+					}
+				}
+				b_slemish = {
+					province = 13
+
+					color = { 25 230 35 }
+				}
+				b_carrickfergus = {
+					province = 14
+
+					color = { 25 230 35 }
+
+					cultural_names = {
+						name_list_irish = cn_carraig_fhearghais
+					}
+				}
+				b_bangor = {
+					province = 8741
+
+					color = { 25 230 35 }
+				}
+			}
+			c_oriel = {
+				color = { 30 180 45 }
+
+				b_dundalk = {
+					province = 18
+
+					color = { 30 180 45 }
+
+					cultural_names = {
+						name_list_norwegian = cn_kerlingfrjordr
+						name_list_swedish = cn_kerlingfjord
+						name_list_danish = cn_kerlingfjord
+						name_list_norse = cn_kerlingfrjordr
+						name_list_irish = cn_dun_dealgan
+					}
+				}
+				b_armagh = {
+					province = 17
+
+					color = { 30 180 45 }
+
+					cultural_names = {
+						name_list_irish = cn_ard_mhacha
+					}
+				}
+				b_ardee = {
+					province = 19
+
+					color = { 30 180 45 }
+
+					cultural_names = {
+						name_list_irish = cn_baile_atha_fhirdhia
+					}
+				}
+				b_clogher = {
+					province = 8742
+
+					color = { 30 180 45 }
+				}
+				b_dungannon = {
+					province = 8743
+
+					color = { 30 180 45 }
+				}
+			}
+			c_ailech = {
+				color = { 66 157 22 }
+
+				cultural_names = {
+					name_list_norse = cn_ulfkelsfjordr
+					name_list_norwegian = cn_ulfkelsfjordr
+				}
+
+				b_donegal = {
+					province = 9
+
+					color = { 66 157 22 }
+
+					cultural_names = {
+						name_list_irish = cn_dun_na_ngall
+					}
+				}
+				b_raphoe = { #historical note: monastery
+					province = 10
+
+					color = { 66 157 22 }
+
+					cultural_names = {
+						name_list_irish = cn_rath_bhoth
+					}
+				}
+				b_fahan = {
+					province = 11
+
+					color = { 66 157 22 }
+
+					cultural_names = {
+						name_list_irish = cn_fathain
+					}
+				}
+				b_derry = {
+					province = 12
+
+					color = { 66 157 22 }
+
+					cultural_names = {
+						name_list_irish = cn_daire_coluimb_chille
+						name_list_norse = cn_ulfkelsfjordr
+						name_list_norwegian = cn_ulfkelsfjordr
+					}
+				}
+			}
+		}
+
+		d_connacht = {
+			color = { 43 229 108 }
+
+			capital = c_mayo # Cruachu
+
+			c_connacht = {	#Hy Many
+				color = { 45 230 70 }
+
+				cultural_names = {
+						name_list_irish = cn_ui_maine
+				}
+
+				b_galway = {
+					province = 20
+
+					color = { 45 230 70 }
+
+					cultural_names = {
+						name_list_irish = cn_dun_bhun_na_gaillimhe
+					}
+				}
+				b_athenry = {
+					province = 23
+
+					color = { 45 230 70 }
+				}
+				b_tuam = {
+					province = 8746
+
+					color = { 45 230 70 }
+				}
+				b_da_chainoc = {
+					province = 8747
+
+					color = { 45 230 70 }
+				}
+			}
+
+			c_mayo = {
+				color = { 15 190 70 }
+
+				b_cruachu = {
+					province = 8745
+
+					color = { 15 190 70 }
+				}
+				b_castlebar = {
+					province = 21
+
+					color = { 15 190 70 }
+				}
+				b_sligo = {
+					province = 22
+
+					color = { 15 190 70 }
+				}
+				b_killala = {
+					province = 8748
+
+					color = { 15 190 70 }
+				}
+			}
+
+			c_breifne = {
+				color = { 95 221 121 }
+
+				b_dromahair = {
+					province = 24
+
+					color = { 95 221 121 }
+
+					cultural_names = {
+						name_list_irish = cn_droim_ath_thiar
+					}
+				}
+				b_belcoo = {
+					province = 25
+
+					color = { 95 221 121 }
+				}
+				b_longford = {
+					province = 26
+
+					color = { 95 221 121 }
+
+					cultural_names = {
+						name_list_irish = cn_an_longphort
+					}
+				}
+				b_cavan = {
+					province = 27
+
+					color = { 95 221 121 }
+
+					cultural_names = {
+						name_list_irish = cn_an_cabhan
+					}
+				}
+				b_adragh = {
+					province = 8744
+
+					color = { 95 221 121 }
+				}
+			}
+		}
+
+		d_leinster = {
+			color = { 85 211 27 }
+
+			capital = c_leinster # Leinster
+
+			c_leinster = {
+				color = { 68 156 28 }
+
+				b_wexford = {
+					province = 37
+
+					color = { 68 156 28 }
+
+					cultural_names = {
+						name_list_norwegian = cn_veisafjordr
+						name_list_swedish = cn_veisafjord
+						name_list_danish = cn_veisafjord
+						name_list_norse = cn_veisafjordr
+						name_list_irish = cn_loch_garman
+					}
+				}
+				b_enniscorthy = {
+					province = 38
+
+					color = { 68 156 28 }
+
+					cultural_names = {
+						name_list_irish = cn_inis_corthaidh
+					}
+				}
+				b_ferns = {
+					province = 39
+
+					color = { 68 156 28 }
+
+					cultural_names = {
+						name_list_irish = cn_fearna_mor_maedhog
+					}
+				}
+				b_carlow = {
+					province = 40
+
+					color = { 68 156 28 }
+
+					cultural_names = {
+						name_list_irish = cn_ceatharlach
+					}
+				}
+			}
+			c_ossory = {
+				color = { 93 166 15 }
+
+				b_gowran = {
+					province = 43
+
+					color = { 93 166 15 }
+
+					cultural_names = {
+						name_list_irish = cn_gabhran
+					}
+				}
+				b_kilkenny = { #Historical note: major monastic centre
+					province = 41
+
+					color = { 93 166 15 }
+
+					cultural_names = {
+						name_list_irish = cn_cill_chainnigh
+					}
+				}
+				b_athy = {
+					province = 42
+
+					color = { 93 166 15 }
+				}
+				b_carrick = {
+					province = 44
+
+					color = { 93 166 15 }
+				}
+			}
+		}
+
+		d_munster = {
+			color = { 16 157 12 }
+
+			capital = c_thomond # Thomond
+
+			c_thomond = {
+				color = { 3 128 0 }
+
+				b_limerick = {
+					province = 45
+
+					color = { 3 128 0 }
+
+					cultural_names = {
+						name_list_norwegian = cn_hlymrek
+						name_list_danish = cn_lymrek
+						name_list_swedish = cn_lymrek
+						name_list_norse = cn_hlymrek
+						name_list_irish = cn_luimneach
+					}
+				}
+				b_nenagh = {
+					province = 47
+
+					color = { 3 128 0 }
+
+					cultural_names = {
+						name_list_irish = cn_aonach_urmhumhan
+					}
+				}
+				b_roscrea = { #Historical note: important trading town
+					province = 48
+
+					color = { 3 128 0 }
+
+					cultural_names = {
+						name_list_irish = cn_ros_cre
+					}
+				}
+				b_kilmallock = {
+					province = 8750
+
+					color = { 3 128 0 }
+				}
+			}
+
+			c_ennis = {
+				color = { 32 115 30 }
+
+				b_ennis = {
+					province = 46
+
+					color = { 32 115 30 }
+
+					cultural_names = {
+						name_list_irish = cn_inis
+					}
+				}
+				b_kincora = {
+					province = 8749
+
+					color = { 32 115 30 }
+				}
+			}
+
+			c_ormond = {
+				color = { 0 80 20 }
+
+
+				b_waterford = {
+					province = 49
+
+					color = { 0 80 20 }
+
+					cultural_names = {
+						name_list_norwegian = cn_vedrafjord
+						name_list_swedish = cn_vedrafjord
+						name_list_danish = cn_vedrafjord
+						name_list_norse = cn_vedrafjordr
+						name_list_irish = cn_port_lairge
+					}
+				}
+				b_emly = { #Historical note: monastery
+					province = 50
+
+					color = { 0 80 20 }
+
+					cultural_names = {
+						name_list_irish = cn_imleach_iubhair
+					}
+				}
+				b_clonmel = {
+					province = 51
+
+					color = { 0 80 20 }
+
+					cultural_names = {
+						name_list_irish = cn_cluain_meala
+					}
+				}
+			}
+			c_desmond = {
+				color = { 10 137 35 }
+
+				b_tralee = {
+					province = 52
+
+					color = { 10 137 35 }
+				}
+				b_cork = { #Historical note: important trading town
+					province = 53
+
+					color = { 10 137 35 }
+
+					cultural_names = {
+						name_list_irish = cn_corcaigh
+					}
+				}
+				b_kinsale = {
+					province = 54
+
+					color = { 10 137 35 }
+				}
+				b_baltimore = {
+					province = 16
+
+					color = { 10 137 35 }
+				}
+			}
+		}
+	}
+
+	k_cornwall = {
+		color = { 204 153 10 }
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:cornish
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					OR = {
+						culture = culture:welsh
+						culture = culture:cumbrian
+						culture = culture:breton
+					}
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		capital = c_cornwall
+	}
+
+	k_mann_the_isles = {
+		color = { 124 59 8 }
+
+		capital = c_isle_of_man	#Mann
+	}
+}
 e_byzantium = {
 	color =  hsv{ 0.9 1 0.3 } #hsv{ 0.73 0.8 0.4 }  #hsv{ 0.77 0.8 0.6 } #{ 143 12 125 }
 
@@ -1252,6 +4444,7 @@ e_byzantium = {
 
 		cultural_names = {
 			name_list_roman = cn_dalmatia
+			name_list_ck_roman = cn_dalmatia
 		}
 
 		ai_primary_priority = {
@@ -1279,6 +4472,7 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_diadora
+					name_list_ck_roman = cn_diadora
 					name_list_greek = cn_diadora
 					name_list_italian = cn_zara
 					name_list_cisalpine = cn_zara
@@ -1339,6 +4533,7 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_spalato
+					name_list_ck_roman = cn_spalato
 					name_list_italian = cn_spalato
 					name_list_cisalpine = cn_spalato
 					name_list_sicilian = cn_spalato
@@ -1468,6 +4663,7 @@ e_byzantium = {
 			cultural_names = {
 				name_list_roman = cn_pannonia
 				name_list_greek = cn_pannonia
+				name_list_ck_roman = cn_pannonia
 			}
 
 			c_zagreb = {
@@ -1478,6 +4674,7 @@ e_byzantium = {
 				cultural_names = {
 					name_list_roman = cn_andautonia
 					name_list_greek = cn_andautonia
+					name_list_ck_roman = cn_andautonia
 				}
 
 				b_zagreb = {
@@ -1707,6 +4904,7 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_salines
+					name_list_ck_roman = cn_salines
 					name_list_greek = cn_salines
 					name_list_hungarian = cn_so
 					name_list_turkish = cn_tuzla	#A bit out of period, but you never know!
@@ -1869,6 +5067,7 @@ e_byzantium = {
 				cultural_names = {
 					name_list_roman = cn_emotha
 					name_list_greek = cn_emotha
+					name_list_ck_roman = cn_emotha
 				}
 				#roman = "Emotha"
 				#greek = "Emotha"
@@ -6191,6 +9390,7 @@ e_byzantium = {
 				name_list_maghrebi = cn_siqilliya
 				name_list_andalusian = cn_siqilliya
 				name_list_yemeni = cn_siqilliya
+				name_list_ck_roman = cn_Sicilia
 			}
 
 			c_palermo = {
@@ -6663,6 +9863,3427 @@ e_byzantium = {
 		}
 	}
 }
+e_spain = {
+	color = { 233 200 20 }
+
+	capital = c_toledo # Toledo
+	can_be_named_after_dynasty = no
+
+	cultural_names = {
+		name_list_bedouin = cn_isbaniya
+		name_list_butr = cn_isbaniya
+		name_list_baranis = cn_isbaniya
+		name_list_zaghawa = cn_isbaniya
+		name_list_levantine = cn_isbaniya
+		name_list_egyptian = cn_isbaniya
+		name_list_maghrebi = cn_isbaniya
+		name_list_andalusian = cn_isbaniya
+		name_list_yemeni = cn_isbaniya
+	}
+
+	can_create = {
+		custom_description = {
+			text = form_hispania_must_end_struggle_trigger
+
+			NOT = { exists = struggle:iberian_struggle }
+		}
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_iberian }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	k_andalusia = {
+		color = { 31 138 40 }
+
+		capital = c_cordoba # Cordoba
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_al_andalus
+			name_list_baranis = cn_al_andalus
+			name_list_butr = cn_al_andalus
+			name_list_zaghawa = cn_al_andalus
+			name_list_levantine = cn_al_andalus
+	 		name_list_egyptian = cn_al_andalus
+	 		name_list_maghrebi = cn_al_andalus
+	 		name_list_andalusian = cn_al_andalus
+	 		name_list_yemeni = cn_al_andalus
+	 	}
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				culture = { has_cultural_pillar = heritage_arabic }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:andalusian
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_cordoba = {
+			color = { 60 180 12 }
+
+			capital = c_cordoba # Cordoba
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_qurtubah
+				name_list_baranis = cn_qurtubah
+				name_list_butr = cn_qurtubah
+				name_list_zaghawa = cn_qurtubah
+				name_list_levantine = cn_qurtubah
+				name_list_egyptian = cn_qurtubah
+				name_list_maghrebi = cn_qurtubah
+				name_list_andalusian = cn_qurtubah
+				name_list_yemeni = cn_qurtubah
+			}
+
+			c_cordoba = {
+				color = { 60 180 12 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qurtubah
+					name_list_baranis = cn_qurtubah
+					name_list_butr = cn_qurtubah
+					name_list_zaghawa = cn_qurtubah
+					name_list_levantine = cn_qurtubah
+					name_list_egyptian = cn_qurtubah
+					name_list_maghrebi = cn_qurtubah
+					name_list_andalusian = cn_qurtubah
+					name_list_yemeni = cn_qurtubah
+				}
+
+				b_cordoba = {
+					province = 1995
+
+					color = { 60 180 12 }
+
+					cultural_names = {
+						name_list_bedouin = cn_qurtubah
+						name_list_baranis = cn_qurtubah
+						name_list_butr = cn_qurtubah
+						name_list_zaghawa = cn_qurtubah
+						name_list_levantine = cn_qurtubah
+						name_list_egyptian = cn_qurtubah
+						name_list_maghrebi = cn_qurtubah
+						name_list_andalusian = cn_qurtubah
+						name_list_yemeni = cn_qurtubah
+					}
+				}
+				b_cantillana = {
+					province = 1994
+
+					color = { 60 180 12 }
+				}
+				b_guadiato = {
+					province = 1999
+
+					color = { 60 180 12 }
+				}
+				b_pedroche = {
+					province = 1988
+
+					color = { 60 180 12 }
+				}
+			}
+
+			c_calatrava = {
+				color = { 25 205 20 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qalat_rabah
+					name_list_baranis = cn_qalat_rabah
+					name_list_butr = cn_qalat_rabah
+					name_list_zaghawa = cn_qalat_rabah
+					name_list_levantine = cn_qalat_rabah
+					name_list_egyptian = cn_qalat_rabah
+					name_list_maghrebi = cn_qalat_rabah
+					name_list_andalusian = cn_qalat_rabah
+					name_list_yemeni = cn_qalat_rabah
+				}
+
+				b_calatrava = {
+					province = 1963
+
+					color = { 25 205 20 }
+				}
+				b_tomelloso = { #valdepenas
+					province = 1965
+
+					color = { 25 205 20 }
+				}
+				b_mentesa = {
+					province = 1966
+
+					color = { 25 205 20 }
+				}
+			}
+
+			c_almader = { #Alarcos
+				color = { 65 215 0 }
+				can_be_named_after_dynasty = no
+
+				b_alarcos = {
+					province = 1987
+
+					color = { 65 215 0 }
+				}
+				b_almader = { #Almaden
+					province = 1989
+
+					color = { 65 215 0 }
+				}
+			}
+
+			c_andujar = {
+				color = { 65 155 40 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_yaiyan
+					name_list_baranis = cn_yaiyan
+					name_list_butr = cn_yaiyan
+					name_list_zaghawa = cn_yaiyan
+					name_list_levantine = cn_yaiyan
+					name_list_egyptian = cn_yaiyan
+					name_list_maghrebi = cn_yaiyan
+					name_list_andalusian = cn_yaiyan
+					name_list_yemeni = cn_yaiyan
+				}
+
+				b_jaen = {
+					province = 1977
+
+					color = { 65 155 40 }
+				}
+				b_andujar = {
+					province = 1986
+
+					color = { 65 155 40 }
+				}
+				b_ubeda = {
+					province = 1985
+
+					color = { 65 155 40 }
+				}
+			}
+		}
+
+		d_granada = {
+			color = { 40 150 40 }
+
+			capital = c_granada # Granada
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_garnatah
+				name_list_baranis = cn_garnatah
+				name_list_butr = cn_garnatah
+				name_list_zaghawa = cn_garnatah
+				name_list_levantine = cn_garnatah
+				name_list_egyptian = cn_garnatah
+				name_list_maghrebi = cn_garnatah
+				name_list_andalusian = cn_garnatah
+				name_list_yemeni = cn_garnatah
+			}
+
+			c_granada = {
+				color = { 40 150 40 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_garnatah
+					name_list_baranis = cn_garnatah
+					name_list_butr = cn_garnatah
+					name_list_zaghawa = cn_garnatah
+					name_list_levantine = cn_garnatah
+					name_list_egyptian = cn_garnatah
+					name_list_maghrebi = cn_garnatah
+					name_list_andalusian = cn_garnatah
+					name_list_yemeni = cn_garnatah
+				}
+
+				b_granada = {
+					province = 1978
+
+					color = { 40 150 40 }
+				}
+				b_quesada = { #huescar
+					province = 1976
+
+					color = { 40 150 40 }
+				}
+				b_guadiz = { #guadix
+					province = 1975
+
+					color = { 40 150 40 }
+				}
+			}
+			c_almeria = {
+				color = { 65 110 40 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_mariyyah
+					name_list_baranis = cn_al_mariyyah
+					name_list_butr = cn_al_mariyyah
+					name_list_zaghawa = cn_al_mariyyah
+					name_list_levantine = cn_al_mariyyah
+					name_list_egyptian = cn_al_mariyyah
+					name_list_maghrebi = cn_al_mariyyah
+					name_list_andalusian = cn_al_mariyyah
+					name_list_yemeni = cn_al_mariyyah
+				}
+
+				b_almeria = {
+					province = 1849
+
+					color = { 65 110 40 }
+
+					cultural_names = {
+						name_list_bedouin = cn_al_mariyyat_bayyana
+						name_list_baranis = cn_al_mariyyat_bayyana
+						name_list_butr = cn_al_mariyyat_bayyana
+						name_list_zaghawa = cn_al_mariyyat_bayyana
+						name_list_levantine = cn_al_mariyyat_bayyana
+						name_list_egyptian = cn_al_mariyyat_bayyana
+						name_list_maghrebi = cn_al_mariyyat_bayyana
+						name_list_andalusian = cn_al_mariyyat_bayyana
+						name_list_yemeni = cn_al_mariyyat_bayyana
+					}
+				}
+				b_lorca = {
+					province = 1972
+
+					color = { 65 110 40 }
+				}
+				b_baza = {
+					province = 1974
+
+					color = { 65 110 40 }
+				}
+			}
+			c_cabra = {
+				color = { 50 150 20 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qabra
+					name_list_baranis = cn_qabra
+					name_list_butr = cn_qabra
+					name_list_zaghawa = cn_qabra
+					name_list_levantine = cn_qabra
+					name_list_egyptian = cn_qabra
+					name_list_maghrebi = cn_qabra
+					name_list_andalusian = cn_qabra
+					name_list_yemeni = cn_qabra
+				}
+
+				b_cabra = {
+					province = 1979
+
+					color = { 50 150 20 }
+				}
+				b_antequera = {
+					province = 1984
+
+					color = { 50 150 20 }
+				}
+			}
+			c_malaga = {
+				color = { 20 130 20 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_malaqah
+					name_list_baranis = cn_malaqah
+					name_list_butr = cn_malaqah
+					name_list_zaghawa = cn_malaqah
+					name_list_levantine = cn_malaqah
+					name_list_egyptian = cn_malaqah
+					name_list_maghrebi = cn_malaqah
+					name_list_andalusian = cn_malaqah
+					name_list_yemeni = cn_malaqah
+				}
+
+				b_malaga = {
+					province = 1846
+
+					color = { 20 130 20 }
+				}
+				b_nerja = {
+					province = 1847
+
+					color = { 20 130 20 }
+				}
+				b_motril = {
+					province = 1848
+
+					color = { 20 130 20 }
+				}
+			}
+		}
+
+		d_sevilla = {
+			color = { 150 218 21 }
+
+			capital = c_sevilla # Sevilla
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_isbiliyyah
+				name_list_baranis = cn_isbiliyyah
+				name_list_butr = cn_isbiliyyah
+				name_list_zaghawa = cn_isbiliyyah
+				name_list_levantine = cn_isbiliyyah
+				name_list_egyptian = cn_isbiliyyah
+				name_list_maghrebi = cn_isbiliyyah
+				name_list_andalusian = cn_isbiliyyah
+				name_list_yemeni = cn_isbiliyyah
+			}
+
+			c_sevilla = {
+				color = { 150 218 21 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_isbiliyyah
+					name_list_baranis = cn_isbiliyyah
+					name_list_butr = cn_isbiliyyah
+					name_list_zaghawa = cn_isbiliyyah
+					name_list_levantine = cn_isbiliyyah
+					name_list_egyptian = cn_isbiliyyah
+					name_list_maghrebi = cn_isbiliyyah
+					name_list_andalusian = cn_isbiliyyah
+					name_list_yemeni = cn_isbiliyyah
+				}
+
+				b_sevilla = {
+					province = 1981
+
+					color = { 150 218 21 }
+
+					cultural_names = {
+						name_list_bedouin = cn_isbiliyyah
+						name_list_baranis = cn_isbiliyyah
+						name_list_butr = cn_isbiliyyah
+						name_list_zaghawa = cn_isbiliyyah
+						name_list_levantine = cn_isbiliyyah
+						name_list_egyptian = cn_isbiliyyah
+						name_list_maghrebi = cn_isbiliyyah
+						name_list_andalusian = cn_isbiliyyah
+						name_list_yemeni = cn_isbiliyyah
+					}
+				}
+				b_carmona = {
+					province = 1980
+
+					color = { 150 218 21 }
+				}
+				b_almonte = {
+					province = 1841
+
+					color = { 150 218 21 }
+				}
+				b_triana = { #aznalcollar
+					province = 1993
+
+					color = { 150 218 21 }
+				}
+			}
+			c_cadiz = {
+				color = { 175 235 15 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qadis
+					name_list_baranis = cn_qadis
+					name_list_butr = cn_qadis
+					name_list_zaghawa = cn_qadis
+					name_list_levantine = cn_qadis
+					name_list_egyptian = cn_qadis
+					name_list_maghrebi = cn_qadis
+					name_list_andalusian = cn_qadis
+					name_list_yemeni = cn_qadis
+				}
+
+				b_cadiz = {
+					province = 1843
+
+					color = { 175 235 15 }
+
+					cultural_names = {
+						name_list_bedouin = cn_qadis
+						name_list_baranis = cn_qadis
+						name_list_butr = cn_qadis
+						name_list_zaghawa = cn_qadis
+						name_list_levantine = cn_qadis
+						name_list_egyptian = cn_qadis
+						name_list_maghrebi = cn_qadis
+						name_list_andalusian = cn_qadis
+						name_list_yemeni = cn_qadis
+					}
+				}
+				b_tarifa = {
+					province = 1844
+
+					color = { 175 235 15 }
+				}
+				b_jerez = {
+					province = 1842
+
+					color = { 175 235 15 }
+				}
+			}
+			c_algeciras = {
+				color = { 130 175 0 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_gazirah_al_hadra
+					name_list_baranis = cn_al_gazirah_al_hadra
+					name_list_butr = cn_al_gazirah_al_hadra
+					name_list_zaghawa = cn_al_gazirah_al_hadra
+					name_list_levantine = cn_al_gazirah_al_hadra
+					name_list_egyptian = cn_al_gazirah_al_hadra
+					name_list_maghrebi = cn_al_gazirah_al_hadra
+					name_list_andalusian = cn_al_gazirah_al_hadra
+					name_list_yemeni = cn_al_gazirah_al_hadra
+				}
+
+				b_algeciras = {
+					province = 1845
+
+					color = { 130 175 0 }
+				}
+				b_arcos = {
+					province = 1982
+
+					color = { 130 175 0 }
+				}
+				b_moron = {
+					province = 1983
+
+					color = { 130 175 0 }
+				}
+			}
+			c_niebla = {
+				color = { 180 200 0 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_labla
+					name_list_baranis = cn_labla
+					name_list_butr = cn_labla
+					name_list_zaghawa = cn_labla
+					name_list_levantine = cn_labla
+					name_list_egyptian = cn_labla
+					name_list_maghrebi = cn_labla
+					name_list_andalusian = cn_labla
+					name_list_yemeni = cn_labla
+				}
+
+				b_niebla = {
+					province = 1991
+
+					color = { 180 200 0 }
+				}
+				b_huelva = {
+					province = 1840
+
+					color = { 180 200 0 }
+				}
+				b_ayamonte = {
+					province = 1839
+
+					color = { 180 200 0 }
+				}
+				b_zafra = { #aracena
+					province = 1992
+
+					color = { 180 200 0 }
+				}
+			}
+			c_moura = {
+				color = { 130 180 25 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_manijah
+					name_list_baranis = cn_al_manijah
+					name_list_butr = cn_al_manijah
+					name_list_zaghawa = cn_al_manijah
+					name_list_levantine = cn_al_manijah
+					name_list_egyptian = cn_al_manijah
+					name_list_maghrebi = cn_al_manijah
+					name_list_andalusian = cn_al_manijah
+					name_list_yemeni = cn_al_manijah
+				}
+
+				b_moura = {
+					province = 1837
+
+					color = { 130 180 25 }
+				}
+				b_serpa = {
+					province = 1838
+
+					color = { 130 180 25 }
+				}
+			}
+		}
+
+		d_toledo = {
+			color = { 212 151 12 }
+
+			capital = c_toledo # Toledo
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_tulaytulah
+				name_list_baranis = cn_tulaytulah
+				name_list_butr = cn_tulaytulah
+				name_list_zaghawa = cn_tulaytulah
+				name_list_levantine = cn_tulaytulah
+				name_list_egyptian = cn_tulaytulah
+				name_list_maghrebi = cn_tulaytulah
+				name_list_andalusian = cn_tulaytulah
+				name_list_yemeni = cn_tulaytulah
+			}
+
+			c_toledo = {
+				color = { 212 151 12 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_tulaytulah
+					name_list_baranis = cn_tulaytulah
+					name_list_butr = cn_tulaytulah
+					name_list_zaghawa = cn_tulaytulah
+					name_list_levantine = cn_tulaytulah
+					name_list_egyptian = cn_tulaytulah
+					name_list_maghrebi = cn_tulaytulah
+					name_list_andalusian = cn_tulaytulah
+					name_list_yemeni = cn_tulaytulah
+				}
+
+				b_toledo = {
+					province = 1919
+
+					color = { 212 151 12 }
+
+					cultural_names = {
+						# Literally the "City of the Kings".
+						name_list_bedouin = cn_madinat_al_muluk
+						name_list_baranis = cn_madinat_al_muluk
+						name_list_butr = cn_madinat_al_muluk
+						name_list_zaghawa = cn_madinat_al_muluk
+						name_list_levantine = cn_madinat_al_muluk
+						name_list_egyptian = cn_madinat_al_muluk
+						name_list_maghrebi = cn_madinat_al_muluk
+						name_list_andalusian = cn_madinat_al_muluk
+						name_list_yemeni = cn_madinat_al_muluk
+					}
+				}
+				b_maqueda = {
+					province = 1920
+
+					color = { 212 151 12 }
+				}
+				b_talavera = {
+					province = 1918
+
+					color = { 212 151 12 }
+				}
+			}
+			c_madrid = {
+				color = { 230 185 15 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_magrit
+					name_list_baranis = cn_al_magrit
+					name_list_butr = cn_al_magrit
+					name_list_zaghawa = cn_al_magrit
+					name_list_levantine = cn_al_magrit
+					name_list_egyptian = cn_al_magrit
+					name_list_maghrebi = cn_al_magrit
+					name_list_andalusian = cn_al_magrit
+					name_list_yemeni = cn_al_magrit
+				}
+
+				b_madrid = {
+					province = 1923
+
+					color = { 230 185 15 }
+				}
+				b_gudalajara = {
+					province = 1927
+
+					color = { 230 185 15 }
+				}
+				b_villarejodesalvanes = {
+					province = 1929
+
+					color = { 230 185 15 }
+				}
+				b_arganda = {
+					province = 1928
+
+					color = { 230 185 15 }
+				}
+			}
+			c_molina = {
+				color = { 195 125 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_mulina
+					name_list_baranis = cn_mulina
+					name_list_butr = cn_mulina
+					name_list_zaghawa = cn_mulina
+					name_list_levantine = cn_mulina
+					name_list_egyptian = cn_mulina
+					name_list_maghrebi = cn_mulina
+					name_list_andalusian = cn_mulina
+					name_list_yemeni = cn_mulina
+				}
+
+				b_molina = {
+					province = 1935
+
+					color = { 195 125 10 }
+				}
+				b_ablanque = { #Atienza
+					province = 1933
+
+					color = { 195 125 10 }
+				}
+				b_medinaceli = {
+					province = 1931
+
+					color = { 195 125 10 }
+				}
+				b_siguenza = {
+					province = 1930
+
+					color = { 195 125 10 }
+				}
+			}
+			c_cuenca = {
+				color = { 210 165 40 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qunkah
+					name_list_baranis =  cn_qunkah
+					name_list_butr =  cn_qunkah
+					name_list_zaghawa =  cn_qunkah
+					name_list_levantine = cn_qunkah
+					name_list_egyptian = cn_qunkah
+					name_list_maghrebi = cn_qunkah
+					name_list_andalusian = cn_qunkah
+					name_list_yemeni = cn_qunkah
+				}
+
+				b_cuenca = {
+					province = 1947
+
+					color = { 210 165 40 }
+
+					cultural_names = {
+						name_list_bedouin = cn_madinat_qunka
+						name_list_baranis = cn_madinat_qunka
+						name_list_butr = cn_madinat_qunka
+						name_list_zaghawa = cn_madinat_qunka
+						name_list_levantine = cn_madinat_qunka
+						name_list_egyptian = cn_madinat_qunka
+						name_list_maghrebi = cn_madinat_qunka
+						name_list_andalusian = cn_madinat_qunka
+						name_list_yemeni = cn_madinat_qunka
+					}
+				}
+				b_altotajo = { #Huelamo
+					province = 1945
+
+					color = { 210 165 40 }
+				}
+				b_zurita = { #Zorita
+					province = 1944
+
+					color = { 210 165 40 }
+				}
+				b_huete = {
+					province = 1951
+
+					color = { 210 165 40 }
+				}
+			}
+			c_malagon = {
+				color = { 195 165 10 }
+				can_be_named_after_dynasty = no
+
+				b_malagon = {
+					province = 1960
+
+					color = { 195 165 10 }
+				}
+				b_cabaneros = {
+					province = 1961
+
+					color = { 195 165 10 }
+				}
+				b_lajara = {
+					province = 1957
+
+					color = { 195 165 10 }
+				}
+				b_lapueblademontalban = {
+					province = 1962
+
+					color = { 195 165 10 }
+				}
+			}
+			c_mora = {
+				color = { 190 130 20 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_uqlish
+					name_list_baranis = cn_uqlish
+					name_list_butr = cn_uqlish
+					name_list_zaghawa = cn_uqlish
+					name_list_levantine = cn_uqlish
+					name_list_egyptian = cn_uqlish
+					name_list_maghrebi = cn_uqlish
+					name_list_andalusian = cn_uqlish
+					name_list_yemeni = cn_uqlish
+				}
+
+				b_ucles = {
+					province = 1952
+
+					color = { 190 130 20 }
+				}
+				b_mora = {
+					province = 1953
+
+					color = { 190 130 20 }
+				}
+				b_ocana = {
+					province = 1958
+
+					color = { 190 130 20 }
+				}
+				b_quintanar = {
+					province = 1959
+
+					color = { 190 130 20 }
+				}
+			}
+		}
+	}
+
+	k_badajoz = {	#Badajoz/Lucitania
+		color = { 138 243 53 }
+
+		capital = c_badajoz # Badajoz
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_xenxir
+			name_list_baranis = cn_xenxir
+			name_list_butr = cn_xenxir
+			name_list_zaghawa = cn_xenxir
+			name_list_levantine = cn_xenxir
+			name_list_egyptian = cn_xenxir
+			name_list_maghrebi = cn_xenxir
+			name_list_andalusian = cn_xenxir
+			name_list_yemeni = cn_xenxir
+		}
+
+		#christian = "Lusitania"
+
+		d_beja = {
+			color = { 156 212 68 }
+
+			capital = c_lisboa #Lisboa
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_baya
+				name_list_baranis = cn_baya
+				name_list_butr = cn_baya
+				name_list_zaghawa = cn_baya
+				name_list_levantine = cn_baya
+				name_list_egyptian = cn_baya
+				name_list_maghrebi = cn_baya
+				name_list_andalusian = cn_baya
+				name_list_yemeni = cn_baya
+			}
+
+			c_lisboa = {
+				color = { 156 212 68 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_ishbuna
+					name_list_baranis = cn_al_ishbuna
+					name_list_butr = cn_al_ishbuna
+					name_list_zaghawa = cn_al_ishbuna
+					name_list_levantine = cn_al_ishbuna
+					name_list_egyptian = cn_al_ishbuna
+					name_list_maghrebi = cn_al_ishbuna
+					name_list_andalusian = cn_al_ishbuna
+					name_list_yemeni = cn_al_ishbuna
+				}
+
+				b_lisboa = {
+					province = 1754
+
+					color = { 156 212 68 }
+				}
+				b_santarem = {
+					province = 1755
+
+					color = { 156 212 68 }
+				}
+				b_setubal = {
+					province = 1753
+
+					color = { 156 212 68 }
+				}
+			}
+			c_beja = {
+				color = { 155 245 70 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_yaburah
+					name_list_baranis = cn_yaburah
+					name_list_butr = cn_yaburah
+					name_list_zaghawa = cn_yaburah
+					name_list_levantine = cn_yaburah
+					name_list_egyptian = cn_yaburah
+					name_list_maghrebi = cn_yaburah
+					name_list_andalusian = cn_yaburah
+					name_list_yemeni = cn_yaburah
+				}
+
+				b_evora = {
+					province = 1777
+
+					color = { 155 245 70 }
+				}
+				b_beja = {
+					province = 1751
+
+					color = { 155 245 70 }
+				}
+			}
+			c_alcacer_do_sal = {
+				color = { 170 230 130 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qasr_abi_danis
+					name_list_baranis = cn_qasr_abi_danis #the Banu Danis built this stronghold
+					name_list_butr = cn_qasr_abi_danis
+					name_list_zaghawa = cn_qasr_abi_danis
+					name_list_levantine = cn_qasr_abi_danis
+					name_list_egyptian = cn_qasr_abi_danis
+					name_list_maghrebi = cn_qasr_abi_danis
+					name_list_andalusian = cn_qasr_abi_danis
+					name_list_yemeni = cn_qasr_abi_danis
+				}
+
+				b_alcacerdosal = {
+					province = 1752
+
+					color = { 170 230 130 }
+				}
+				b_montemor = {
+					province = 1779
+
+					color = { 170 230 130 }
+				}
+				b_vianadoalento = { #Viana do Alentejo
+					province = 1780
+
+					color = { 170 230 130 }
+				}
+				b_avis = {
+					province = 1778
+
+					color = { 170 230 130 }
+				}
+			}
+			c_elvas = {
+				color = { 165 230 105 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_bash
+					name_list_baranis = cn_al_bash
+					name_list_butr = cn_al_bash
+					name_list_zaghawa = cn_al_bash
+					name_list_levantine = cn_al_bash
+					name_list_egyptian = cn_al_bash
+					name_list_maghrebi = cn_al_bash
+					name_list_andalusian = cn_al_bash
+					name_list_yemeni = cn_al_bash
+				}
+
+				b_elvas = {
+					province = 1776
+
+					color = { 165 230 105 }
+				}
+				b_nisa = {
+					province = 1774
+
+					color = { 165 230 105 }
+				}
+				b_crato = {
+					province = 1775
+
+					color = { 165 230 105 }
+				}
+			}
+		}
+
+		d_badajoz = {
+			color = { 118 223 36 }
+
+			capital = c_badajoz # Badajoz
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_batalyaws
+				name_list_baranis = cn_batalyaws
+				name_list_butr = cn_batalyaws
+				name_list_zaghawa = cn_batalyaws
+				name_list_levantine = cn_batalyaws
+				name_list_egyptian = cn_batalyaws
+				name_list_maghrebi = cn_batalyaws
+				name_list_andalusian = cn_batalyaws
+				name_list_yemeni = cn_batalyaws
+			}
+
+			c_badajoz = {
+				color = { 118 223 36 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_batalyaws
+					name_list_baranis = cn_batalyaws
+					name_list_butr = cn_batalyaws
+					name_list_zaghawa = cn_batalyaws
+					name_list_levantine = cn_batalyaws
+					name_list_egyptian = cn_batalyaws
+					name_list_maghrebi = cn_batalyaws
+					name_list_andalusian = cn_batalyaws
+					name_list_yemeni = cn_batalyaws
+				}
+
+				b_badajoz = {
+					province = 1835
+
+					color = { 118 223 36 }
+
+					cultural_names = {
+						name_list_bedouin = cn_muassassat_batalyaws
+						name_list_baranis = cn_muassassat_batalyaws
+						name_list_butr = cn_muassassat_batalyaws
+						name_list_zaghawa = cn_muassassat_batalyaws
+						name_list_levantine = cn_muassassat_batalyaws
+						name_list_egyptian = cn_muassassat_batalyaws
+						name_list_maghrebi = cn_muassassat_batalyaws
+						name_list_andalusian = cn_muassassat_batalyaws
+						name_list_yemeni = cn_muassassat_batalyaws
+					}
+				}
+				b_olivienza = {
+					province = 1836
+
+					color = { 118 223 36 }
+				}
+				b_ilerena = { #Llerena
+					province = 1990
+
+					color = { 118 223 36 }
+				}
+			}
+			c_plasencia = {
+				color = { 125 240 15 }
+				can_be_named_after_dynasty = no
+
+				b_hervas = {
+					province = 1831
+
+					color = { 125 240 15 }
+				}
+				b_coira = { #Coria
+					province = 1830
+
+					color = { 125 240 15 }
+				}
+				b_almaraz = {
+					province = 1917
+
+					color = { 125 240 15 }
+				}
+			}
+			c_caceres = {
+				color = { 130 250 65 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_hisn_qasras
+					name_list_baranis = cn_hisn_qasras
+					name_list_butr = cn_hisn_qasras
+					name_list_zaghawa = cn_hisn_qasras
+					name_list_levantine = cn_hisn_qasras
+					name_list_egyptian = cn_hisn_qasras
+					name_list_maghrebi = cn_hisn_qasras
+					name_list_andalusian = cn_hisn_qasras
+					name_list_yemeni = cn_hisn_qasras
+				}
+
+				b_caceres = {
+					province = 1954
+
+					color = { 130 250 65 }
+				}
+				b_alcantara = {
+					province = 1832
+
+					color = { 130 250 65 }
+				}
+				b_zalaca = {
+					province = 1833
+
+					color = { 130 250 65 }
+				}
+			}
+			c_merida = {
+				color = { 150 220 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_maridah
+					name_list_baranis = cn_maridah
+					name_list_butr = cn_maridah
+					name_list_zaghawa = cn_maridah
+					name_list_levantine = cn_maridah
+					name_list_egyptian = cn_maridah
+					name_list_maghrebi = cn_maridah
+					name_list_andalusian = cn_maridah
+					name_list_yemeni = cn_maridah
+				}
+
+				b_merida = {
+					province = 1834
+
+					color = { 150 220 10 }
+				}
+				b_trujillo = {
+					province = 1955
+
+					color = { 150 220 10 }
+				}
+				b_castilblanco = {
+					province = 1956
+
+					color = { 150 220 10 }
+				}
+			}
+			c_medellin = {
+				color = { 150 205 65 }
+				can_be_named_after_dynasty = no
+
+				b_medellin = {
+					province = 1996
+
+					color = { 150 205 65 }
+				}
+				b_donllorente = { #La Serena
+					province = 1998
+
+					color = { 150 205 65 }
+				}
+				b_hornachos = {
+					province = 1997
+
+					color = { 150 205 65 }
+				}
+			}
+		}
+
+		d_algarve = {
+			color = { 73 156 8 }
+
+			capital = c_faro # Faro
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_al_gharb
+				name_list_baranis = cn_al_gharb
+				name_list_butr = cn_al_gharb
+				name_list_zaghawa = cn_al_gharb
+				name_list_levantine = cn_al_gharb
+				name_list_egyptian = cn_al_gharb
+				name_list_maghrebi = cn_al_gharb
+				name_list_andalusian = cn_al_gharb
+				name_list_yemeni = cn_al_gharb
+			}
+
+			c_faro = {
+				color = { 73 156 8 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_santa_mariya_ibn_harun
+					name_list_baranis = cn_santa_mariya_ibn_harun
+					name_list_butr = cn_santa_mariya_ibn_harun
+					name_list_zaghawa = cn_santa_mariya_ibn_harun
+					name_list_levantine = cn_santa_mariya_ibn_harun
+					name_list_egyptian = cn_santa_mariya_ibn_harun
+					name_list_maghrebi = cn_santa_mariya_ibn_harun
+					name_list_andalusian = cn_santa_mariya_ibn_harun
+					name_list_yemeni = cn_santa_mariya_ibn_harun
+				}
+
+				b_faro = {
+					province = 1748
+
+					color = { 73 156 8 }
+				}
+				b_mertola = {
+					province = 1750
+
+					color = { 73 156 8 }
+				}
+			}
+			c_silves = {
+				color = { 45 145 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_silb
+					name_list_baranis = cn_silb
+					name_list_butr = cn_silb
+					name_list_zaghawa = cn_silb
+					name_list_levantine = cn_silb
+					name_list_egyptian = cn_silb
+					name_list_maghrebi = cn_silb
+					name_list_andalusian = cn_silb
+					name_list_yemeni = cn_silb
+				}
+
+				b_silves = {
+					province = 1747
+
+					color = { 45 145 10 }
+				}
+				b_ourique = {
+					province = 1749
+
+					color = { 45 145 10 }
+				}
+				b_lagos = {
+					province = 1746
+
+					color = { 45 145 10 }
+				}
+			}
+		}
+	}
+
+	k_valencia = {	#Valencia
+		color = { 85 201 122 }
+
+		capital = c_valencia # Valencia
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_roman = cn_carthaginensis
+			name_list_ck_roman = cn_carthaginensis
+			# Al Sarq means "the Levant", but was the contemporary name for eastern Iberia amongst Arabic speakers.
+			name_list_bedouin = cn_al_sarq
+			name_list_baranis = cn_al_sarq
+			name_list_butr = cn_al_sarq
+			name_list_zaghawa = cn_al_sarq
+			name_list_levantine = cn_al_sarq
+			name_list_egyptian = cn_al_sarq
+			name_list_maghrebi = cn_al_sarq
+			name_list_andalusian = cn_al_sarq
+			name_list_yemeni = cn_al_sarq
+		}
+
+		d_valencia = {
+			color = { 54 186 96 }
+
+			capital = c_valencia # Valencia
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_balansiyyah
+				name_list_baranis = cn_balansiyyah
+				name_list_butr = cn_balansiyyah
+				name_list_zaghawa = cn_balansiyyah
+				name_list_levantine = cn_balansiyyah
+				name_list_egyptian = cn_balansiyyah
+				name_list_maghrebi = cn_balansiyyah
+				name_list_andalusian = cn_balansiyyah
+				name_list_yemeni = cn_balansiyyah
+			}
+
+			c_valencia = {
+				color = { 54 186 96 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_balansiyyah
+					name_list_baranis = cn_balansiyyah
+					name_list_butr = cn_balansiyyah
+					name_list_zaghawa = cn_balansiyyah
+					name_list_levantine = cn_balansiyyah
+					name_list_egyptian = cn_balansiyyah
+					name_list_maghrebi = cn_balansiyyah
+					name_list_andalusian = cn_balansiyyah
+					name_list_yemeni = cn_balansiyyah
+				}
+
+				b_valencia = {
+					province = 1855
+
+					color = { 54 186 96 }
+
+					cultural_names = {
+						name_list_bedouin = cn_balansiyyah
+						name_list_baranis = cn_balansiyyah
+						name_list_butr = cn_balansiyyah
+						name_list_zaghawa = cn_balansiyyah
+						name_list_levantine = cn_balansiyyah
+						name_list_egyptian = cn_balansiyyah
+						name_list_maghrebi = cn_balansiyyah
+						name_list_andalusian = cn_balansiyyah
+						name_list_yemeni = cn_balansiyyah
+					}
+				}
+				b_murviedro = {
+					province = 1856
+
+					color = { 54 186 96 }
+				}
+				b_montanejos = {
+					province = 1938
+
+					color = { 54 186 96 }
+				}
+				b_requena = {
+					province = 1939
+
+					color = { 54 186 96 }
+				}
+			}
+			c_castellon = {
+				color = { 85 170 125 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					# Burriana was the major settlement till the North took the county, which let to the flourishing of Castellon.
+					name_list_bedouin = cn_burjanna
+					name_list_baranis = cn_burjanna
+					name_list_butr = cn_burjanna
+					name_list_zaghawa = cn_burjanna
+					name_list_levantine = cn_burjanna
+					name_list_egyptian = cn_burjanna
+					name_list_maghrebi = cn_burjanna
+					name_list_andalusian = cn_burjanna
+					name_list_yemeni = cn_burjanna
+				}
+
+				b_castellon = {
+					province = 1857
+
+					color = { 85 170 125 }
+				}
+				b_amposta = {
+					province = 1858
+
+					color = { 85 170 125 }
+				}
+				b_segorbe = {
+					province = 1941
+
+					color = { 85 170 125 }
+				}
+			}
+			c_teruel = {
+				color = { 110 160 115 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					# Arabicised version of Alpuente, a variant name.
+					name_list_bedouin = cn_al_bunt
+					name_list_baranis = cn_al_bunt
+					name_list_butr = cn_al_bunt
+					name_list_zaghawa = cn_al_bunt
+					name_list_levantine = cn_al_bunt
+					name_list_egyptian = cn_al_bunt
+					name_list_maghrebi = cn_al_bunt
+					name_list_andalusian = cn_al_bunt
+					name_list_yemeni = cn_al_bunt
+				}
+
+				b_teruel = {
+					province = 1937
+
+					color = { 110 160 115 }
+				}
+				b_maestrazgo = {
+					province = 1942
+
+					color = { 110 160 115 }
+				}
+				b_ademuz = { #Alpuente
+					province = 1946
+
+					color = { 110 160 115 }
+				}
+			}
+			c_denia = {
+				color = { 65 210 130 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_daniyyah
+					name_list_baranis = cn_daniyyah
+					name_list_butr = cn_daniyyah
+					name_list_zaghawa = cn_daniyyah
+					name_list_levantine = cn_daniyyah
+					name_list_egyptian = cn_daniyyah
+					name_list_maghrebi = cn_daniyyah
+					name_list_andalusian = cn_daniyyah
+					name_list_yemeni = cn_daniyyah
+				}
+
+				b_denia = {
+					province = 1854
+
+					color = { 65 210 130 }
+				}
+				b_almansa = { #Alcoy
+					province = 1969
+
+					color = { 65 210 130 }
+				}
+			}
+			c_alicante = {
+				color = { 75 155 85 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_laqant
+					name_list_baranis = cn_daniyyah
+					name_list_butr = cn_daniyyah
+					name_list_zaghawa = cn_daniyyah
+					name_list_levantine = cn_al_laqant
+					name_list_egyptian = cn_al_laqant
+					name_list_maghrebi = cn_al_laqant
+					name_list_andalusian = cn_al_laqant
+					name_list_yemeni = cn_al_laqant
+				}
+				b_alicante = {
+					province = 1853
+
+					color = { 75 155 85 }
+				}
+				b_albacete = {
+					province = 1940
+
+					color = { 75 155 85 }
+				}
+			}
+		}
+
+		d_mallorca = {
+			color = { 41 105 61 }
+
+			capital = c_mallorca # Mallorca
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_mayurqa
+				name_list_baranis = cn_mayurqa
+				name_list_butr = cn_mayurqa
+				name_list_zaghawa = cn_mayurqa
+				name_list_levantine = cn_mayurqa
+				name_list_egyptian = cn_mayurqa
+				name_list_maghrebi = cn_mayurqa
+				name_list_andalusian = cn_mayurqa
+				name_list_yemeni = cn_mayurqa
+			}
+
+			c_mallorca = {
+				color = { 41 105 61 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_mayurqa
+					name_list_baranis = cn_mayurqa
+					name_list_butr = cn_mayurqa
+					name_list_zaghawa = cn_mayurqa
+					name_list_levantine = cn_mayurqa
+					name_list_egyptian = cn_mayurqa
+					name_list_maghrebi = cn_mayurqa
+					name_list_andalusian = cn_mayurqa
+					name_list_yemeni = cn_mayurqa
+				}
+
+				b_palma = {
+					province = 8735
+
+					color = { 20 222 84 }
+
+					cultural_names = {
+						name_list_bedouin = cn_madinat_mayurqa
+						name_list_baranis = cn_madinat_mayurqa
+						name_list_butr = cn_madinat_mayurqa
+						name_list_zaghawa = cn_madinat_mayurqa
+						name_list_levantine = cn_madinat_mayurqa
+						name_list_egyptian = cn_madinat_mayurqa
+						name_list_maghrebi = cn_madinat_mayurqa
+						name_list_andalusian = cn_madinat_mayurqa
+						name_list_yemeni = cn_madinat_mayurqa
+					}
+				}
+				b_alcudia = {
+					province = 2001
+
+					color = { 20 222 84 }
+				}
+			}
+			c_menorca = {
+				color = { 40 250 80 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_manurqa
+					name_list_baranis = cn_manurqa
+					name_list_butr = cn_manurqa
+					name_list_zaghawa = cn_manurqa
+					name_list_levantine = cn_manurqa
+					name_list_egyptian = cn_manurqa
+					name_list_maghrebi = cn_manurqa
+					name_list_andalusian = cn_manurqa
+					name_list_yemeni = cn_manurqa
+				}
+
+				b_menorca = {
+					province = 2002
+
+					color = { 40 250 80 }
+				}
+			}
+			c_iviza = {
+				color = { 60 205 50 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_yabisa
+					name_list_baranis = cn_yabisa
+					name_list_butr = cn_yabisa
+					name_list_zaghawa = cn_yabisa
+					name_list_levantine = cn_yabisa
+					name_list_egyptian = cn_yabisa
+					name_list_maghrebi = cn_yabisa
+					name_list_andalusian = cn_yabisa
+					name_list_yemeni = cn_yabisa
+				}
+
+				b_iviza = {
+					province = 2000
+
+					color = { 60 205 50 }
+				}
+			}
+		}
+
+		d_murcia = {
+			color = { 27 130 60 }
+
+			capital = c_murcia # Murcia
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_mursiyyah
+				name_list_baranis = cn_mursiyyah
+				name_list_butr = cn_mursiyyah
+				name_list_zaghawa = cn_mursiyyah
+				name_list_levantine = cn_mursiyyah
+				name_list_egyptian = cn_mursiyyah
+				name_list_maghrebi = cn_mursiyyah
+				name_list_andalusian = cn_mursiyyah
+				name_list_yemeni = cn_mursiyyah
+			}
+
+			c_murcia = {
+				color = { 27 130 60 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_mursiyyah
+					name_list_baranis = cn_mursiyyah
+					name_list_butr = cn_mursiyyah
+					name_list_zaghawa = cn_mursiyyah
+					name_list_levantine = cn_mursiyyah
+					name_list_egyptian = cn_mursiyyah
+					name_list_maghrebi = cn_mursiyyah
+					name_list_andalusian = cn_mursiyyah
+					name_list_yemeni = cn_mursiyyah
+				}
+
+				b_murcia = {
+					province = 1852
+
+					color = { 27 130 60 }
+				}
+				b_cartagena = {
+					province = 1851
+
+					color = { 27 130 60 }
+				}
+				b_aguilas = {
+					province = 1850
+
+					color = { 27 130 60 }
+				}
+				b_caravacadelacruz = {
+					province = 1971
+
+					color = { 27 130 60 }
+				}
+				b_cieza = {
+					province = 1970
+
+					color = { 27 130 60 }
+				}
+			}
+			c_alcaraz = {
+				color = { 5 115 60 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_karas
+					name_list_baranis = cn_al_karas
+					name_list_butr = cn_al_karas
+					name_list_zaghawa = cn_al_karas
+					name_list_levantine = cn_al_karas
+					name_list_egyptian = cn_al_karas
+					name_list_maghrebi = cn_al_karas
+					name_list_andalusian = cn_al_karas
+					name_list_yemeni = cn_al_karas
+				}
+
+				b_alcaraz = {
+					province = 1967
+
+					color = { 5 115 60 }
+				}
+				b_huescar = { #Cotillas
+					province = 1973
+
+					color = { 5 115 60 }
+				}
+				b_segura = { #Albacete
+					province = 1968
+
+					color = { 5 115 60 }
+				}
+				b_reolid = { #montiel
+					province = 2004
+
+					color = { 5 115 60 }
+				}
+			}
+			c_alarcon = {
+				color = { 0 100 35 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_urqub
+					name_list_baranis = cn_al_urqub
+					name_list_butr = cn_al_urqub
+					name_list_zaghawa = cn_al_urqub
+					name_list_levantine = cn_al_urqub
+					name_list_egyptian = cn_al_urqub
+					name_list_maghrebi = cn_al_urqub
+					name_list_andalusian = cn_al_urqub
+					name_list_yemeni = cn_al_urqub
+				}
+
+				b_alarcon = {
+					province = 1949
+
+					color = { 0 100 35 }
+				}
+				b_ventadelmoro = { #Iniesta
+					province = 1950
+
+					color = { 0 100 35 }
+				}
+				b_valeria = {
+					province = 1948
+
+					color = { 0 100 35 }
+				}
+				b_alcazar = {
+					province = 1964
+
+					color = { 0 100 35 }
+				}
+			}
+		}
+	}
+
+	k_castille = { #Spain
+		color = { 243 209 23 }
+
+		capital = c_burgos # Burgos
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_castalla
+			name_list_baranis = cn_castalla
+			name_list_butr = cn_castalla
+			name_list_zaghawa = cn_castalla
+			name_list_levantine = cn_castalla
+			name_list_egyptian = cn_castalla
+			name_list_maghrebi = cn_castalla
+			name_list_andalusian = cn_castalla
+			name_list_yemeni = cn_castalla
+		}
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:castilian
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_castilla = {
+			color = { 242 196 12 }
+
+			capital = c_burgos # Burgos
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_al_quila
+				name_list_baranis = cn_al_quila
+				name_list_butr = cn_al_quila
+				name_list_zaghawa = cn_al_quila
+				name_list_levantine = cn_al_quila
+				name_list_egyptian = cn_al_quila
+				name_list_maghrebi = cn_al_quila
+				name_list_andalusian = cn_al_quila
+				name_list_yemeni = cn_al_quila
+			}
+
+			c_burgos = {
+				color = { 242 186 22 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_burgus
+					name_list_baranis = cn_burgus
+					name_list_butr = cn_burgus
+					name_list_zaghawa = cn_burgus
+					name_list_levantine = cn_burgus
+					name_list_egyptian = cn_burgus
+					name_list_maghrebi = cn_burgus
+					name_list_andalusian = cn_burgus
+					name_list_yemeni = cn_burgus
+				}
+
+				b_burgos = {
+					province = 1906
+
+					color = { 242 196 12 }
+				}
+				b_atapuerca = {
+					province = 1907
+
+					color = { 242 196 12 }
+				}
+				b_lerma = {
+					province = 1908
+
+					color = { 242 196 12 }
+				}
+				b_palencia = {
+					province = 1905
+
+					color = { 242 196 12 }
+				}
+			}
+			c_valladolid = {
+				color = { 210 160 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_balad_al_walid
+					name_list_baranis = cn_balad_al_walid
+					name_list_butr = cn_balad_al_walid
+					name_list_zaghawa = cn_balad_al_walid
+					name_list_levantine = cn_balad_al_walid
+					name_list_egyptian = cn_balad_al_walid
+					name_list_maghrebi = cn_balad_al_walid
+					name_list_andalusian = cn_balad_al_walid
+					name_list_yemeni = cn_balad_al_walid
+				}
+
+				b_valladolid = {
+					province = 1897
+
+					color = { 210 160 10 }
+				}
+				b_simancas = {
+					province = 1896
+
+					color = { 210 160 10 }
+				}
+				b_arandadeduero = {
+					province = 1898
+
+					color = { 210 160 10 }
+				}
+			}
+			c_soria = {
+				color = { 255 215 5 }
+				can_be_named_after_dynasty = no
+
+				b_soria = {
+					province = 1901
+
+					color = { 255 215 5 }
+				}
+				b_osma = {
+					province = 1900
+
+					color = { 255 215 5 }
+				}
+				b_sanesteban = {
+					province = 1899
+
+					color = { 255 215 5 }
+				}
+				b_sanleonardodeyague = { #San Leonardo
+					province = 1909
+
+					color = { 255 215 5 }
+				}
+			}
+			c_cuellar = {
+				color = { 255 245 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					# For Segovia.
+					name_list_bedouin = cn_siqubiyyah
+					name_list_baranis = cn_siqubiyyah
+					name_list_butr = cn_siqubiyyah
+					name_list_zaghawa = cn_siqubiyyah
+					name_list_levantine = cn_siqubiyyah
+					name_list_egyptian = cn_siqubiyyah
+					name_list_maghrebi = cn_siqubiyyah
+					name_list_andalusian = cn_siqubiyyah
+					name_list_yemeni = cn_siqubiyyah
+				}
+
+				b_segovia = {
+					province = 1924
+
+					color = { 255 245 10 }
+				}
+				b_cuellar = {
+					province = 1925
+
+					color = { 255 245 10 }
+				}
+				b_uceda = {
+					province = 1926
+
+					color = { 255 245 10 }
+				}
+			}
+			c_olmedo = {
+				color = { 255 225 65 }
+				can_be_named_after_dynasty = no
+
+				b_olmedo = {
+					province = 1915
+
+					color = { 255 225 65 }
+				}
+				b_coracera = {
+					province = 1922
+
+					color = { 255 225 65 }
+				}
+			}
+		}
+
+		d_cantabria = {
+			color = { 230 180 20 }
+
+			capital = c_asturias_de_santillana
+			can_be_named_after_dynasty = no
+
+			c_asturias_de_santillana = {
+				color = { 230 190 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_ubaydah
+					name_list_baranis = cn_ubaydah
+					name_list_butr = cn_ubaydah
+					name_list_zaghawa = cn_ubaydah
+					name_list_levantine = cn_ubaydah
+					name_list_egyptian = cn_ubaydah
+					name_list_maghrebi = cn_ubaydah
+					name_list_andalusian = cn_ubaydah
+					name_list_yemeni = cn_ubaydah
+				}
+
+				b_santiallana = {
+					province = 1801
+
+					color = { 230 180 20 }
+				}
+				b_santander = {
+					province = 1802
+
+					color = { 230 180 20 }
+				}
+				b_reinosa = {
+					province = 1815
+
+					color = { 230 180 20 }
+				}
+				b_medinadepomar = {
+					province = 1812
+
+					color = { 230 180 20 }
+				}
+			}
+			c_amaya = {
+				color = { 245 205 60 }
+				can_be_named_after_dynasty = no
+
+				b_amaya = {
+					province = 1814
+
+					color = { 245 205 60 }
+				}
+				b_mirandadeebro = {
+					province = 1813
+
+					color = { 245 205 60 }
+				}
+				b_sedano = {
+					province = 1904
+
+					color = { 245 205 60 }
+				}
+			}
+		}
+	}
+
+	k_aragon = {
+		color = { 166 98 22 }
+
+		capital = c_zaragoza # Zaragoza
+		can_be_named_after_dynasty = no
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		# Creation/usurpation trigger
+
+		d_aragon = {
+			color = { 160 90 20 }
+
+			capital = c_zaragoza # Zaragoza
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_saraqustah
+				name_list_baranis = cn_saraqustah
+				name_list_butr = cn_saraqustah
+				name_list_zaghawa = cn_saraqustah
+				name_list_levantine = cn_saraqustah
+				name_list_egyptian = cn_saraqustah
+				name_list_maghrebi = cn_saraqustah
+				name_list_andalusian = cn_saraqustah
+				name_list_yemeni = cn_saraqustah
+			}
+
+			c_zaragoza = {
+				color = { 138 74 10 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_saraqustah
+					name_list_baranis = cn_saraqustah
+					name_list_butr = cn_saraqustah
+					name_list_zaghawa = cn_saraqustah
+					name_list_levantine = cn_saraqustah
+					name_list_egyptian = cn_saraqustah
+					name_list_maghrebi = cn_saraqustah
+					name_list_andalusian = cn_saraqustah
+					name_list_yemeni = cn_saraqustah
+				}
+
+				b_zaragoza = {
+					province = 1887
+
+					color = { 138 74 10 }
+
+					cultural_names = {
+						name_list_bedouin = cn_saraqustah
+						name_list_baranis = cn_saraqustah
+						name_list_butr = cn_saraqustah
+						name_list_zaghawa = cn_saraqustah
+						name_list_levantine = cn_saraqustah
+						name_list_egyptian = cn_saraqustah
+						name_list_maghrebi = cn_saraqustah
+						name_list_andalusian = cn_saraqustah
+						name_list_yemeni = cn_saraqustah
+					}
+				}
+				b_ejea = {
+					province = 1888
+
+					color = { 138 74 10 }
+				}
+				b_zuera = {
+					province = 1886
+
+					color = { 138 74 10 }
+				}
+				b_sarinena = {
+					province = 1885
+
+					color = { 138 74 10 }
+				}
+			}
+			c_albarracin = {
+				color = { 135 70 20 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_banu_razin #this name might be anachronistic in the 867 start, since the Banu Razin only controlled the territory from the 11th century.
+					name_list_baranis = cn_al_banu_razin
+					name_list_butr = cn_al_banu_razin
+					name_list_zaghawa = cn_al_banu_razin
+					name_list_levantine = cn_al_banu_razin
+					name_list_egyptian = cn_al_banu_razin
+					name_list_maghrebi = cn_al_banu_razin
+					name_list_andalusian = cn_al_banu_razin
+					name_list_yemeni = cn_al_banu_razin
+				}
+
+				b_albarracin = {
+					province = 1936
+
+					color = { 135 70 20 }
+				}
+				b_sierradesanjust = { #Utrillas
+					province = 1943
+
+					color = { 135 70 20 }
+				}
+				b_belchite = {
+					province = 1891
+
+					color = { 135 70 20 }
+				}
+			}
+			c_alto_aragon = {
+				color = { 110 65 20 }
+				can_be_named_after_dynasty = no
+
+				b_jaca = {
+					province = 1807
+
+					color = { 110 65 20 }
+				}
+				b_alto_aragon = {
+					province = 3221
+
+					color = { 110 65 20 }
+				}
+				b_uncastillo = {
+					province = 8793
+
+					color = { 110 65 20 }
+				}
+			}
+			c_sobrarbe = {
+				color = { 133 82 30 }
+				can_be_named_after_dynasty = no
+
+				b_ainsa = { #Sobrarbe
+					province = 1872
+
+					color = { 133 82 30 }
+				}
+				b_ribagorza = {
+					province = 1871
+
+					color = { 133 82 30 }
+				}
+				b_biescas = {
+					province = 8794
+
+					color = { 133 82 30 }
+				}
+			}
+			c_huesca = {
+				color = { 120 84 38 }
+				can_be_named_after_dynasty = no
+
+				b_huesca = {
+					province = 1873
+
+					color = { 120 84 38 }
+				}
+				b_barbastro = {
+					province = 1874
+
+					color = { 120 84 38 }
+				}
+			}
+			c_calatayud = {
+				color = { 125 85 5 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qalat_ayyub
+					name_list_baranis = cn_qalat_ayyub
+					name_list_butr = cn_qalat_ayyub
+					name_list_zaghawa = cn_qalat_ayyub
+					name_list_levantine = cn_qalat_ayyub
+					name_list_egyptian = cn_qalat_ayyub
+					name_list_maghrebi = cn_qalat_ayyub
+					name_list_andalusian = cn_qalat_ayyub
+					name_list_yemeni = cn_qalat_ayyub
+				}
+
+				b_calatayud = {
+					province = 1932
+
+					color = { 125 85 5 }
+				}
+				b_daroca = {
+					province = 1934
+
+					color = { 125 85 5 }
+				}
+			}
+			c_fraga = {
+				color = { 175 75 15 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_afraga
+					name_list_baranis = cn_afraga
+					name_list_butr = cn_afraga
+					name_list_zaghawa = cn_afraga
+					name_list_levantine = cn_afraga
+					name_list_egyptian = cn_afraga
+					name_list_maghrebi = cn_afraga
+					name_list_andalusian = cn_afraga
+					name_list_yemeni = cn_afraga
+				}
+
+				b_monzon = { #Monzón
+					province = 8795
+
+					color = { 175 75 15 }
+				}
+				b_fraga = {
+					province = 1882
+
+					color = { 175 75 15 }
+
+					cultural_names = {
+						name_list_bedouin = cn_afraga
+						name_list_baranis = cn_afraga
+						name_list_butr = cn_afraga
+						name_list_zaghawa = cn_afraga
+						name_list_levantine = cn_afraga
+						name_list_egyptian = cn_afraga
+						name_list_maghrebi = cn_afraga
+						name_list_andalusian = cn_afraga
+						name_list_yemeni = cn_afraga
+					}
+				}
+			}
+			c_alcaniz = {
+				color = { 155 115 50 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_al_qannis
+					name_list_baranis = cn_al_qannis
+					name_list_butr = cn_al_qannis
+					name_list_zaghawa = cn_al_qannis
+					name_list_levantine = cn_al_qannis
+					name_list_egyptian = cn_al_qannis
+					name_list_maghrebi = cn_al_qannis
+					name_list_andalusian = cn_al_qannis
+					name_list_yemeni = cn_al_qannis
+				}
+
+				b_alcaniz = {
+					province = 1892
+
+					color = { 155 115 50 }
+				}
+				b_caspe = {
+					province = 1883
+
+					color = { 155 115 50 }
+				}
+				b_calaceite = {
+					province = 1893
+
+					color = { 155 115 50 }
+				}
+			}
+		}
+
+		d_barcelona = {
+			color = { 166 100 72 }
+
+			capital = c_barcelona # Barcelona
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_barshiluna
+				name_list_baranis = cn_barshiluna
+				name_list_butr = cn_barshiluna
+				name_list_zaghawa = cn_barshiluna
+				name_list_levantine = cn_barshiluna
+				name_list_egyptian = cn_barshiluna
+				name_list_maghrebi = cn_barshiluna
+				name_list_andalusian = cn_barshiluna
+				name_list_yemeni = cn_barshiluna
+				name_list_french = cn_gothia
+				name_list_occitan = cn_gothia
+			}
+
+			c_barcelona = {
+				color = { 156 110 72 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_barshiluna
+					name_list_baranis = cn_barshiluna
+					name_list_butr = cn_barshiluna
+					name_list_zaghawa = cn_barshiluna
+					name_list_levantine = cn_barshiluna
+					name_list_egyptian = cn_barshiluna
+					name_list_maghrebi = cn_barshiluna
+					name_list_andalusian = cn_barshiluna
+					name_list_yemeni = cn_barshiluna
+				}
+
+				b_barcelona = {
+					province = 1862
+
+					color = { 156 110 72 }
+
+					cultural_names = {
+						name_list_bedouin = cn_barshiluna
+						name_list_baranis = cn_barshiluna
+						name_list_butr = cn_barshiluna
+						name_list_zaghawa = cn_barshiluna
+						name_list_levantine = cn_barshiluna
+						name_list_egyptian = cn_barshiluna
+						name_list_maghrebi = cn_barshiluna
+						name_list_andalusian = cn_barshiluna
+						name_list_yemeni = cn_barshiluna
+					}
+				}
+				b_sitges = {
+					province = 1861
+
+					color = { 156 110 72 }
+				}
+				b_manresa = { #Cardona
+					province = 1877
+
+					color = { 156 110 72 }
+				}
+				b_vic = {
+					province = 1875
+
+					color = { 156 110 72 }
+				}
+				b_berga = {
+					province = 1876
+
+					color = { 156 110 72 }
+				}
+			}
+			c_urgell = {
+				color = { 170 97 92 }
+				can_be_named_after_dynasty = no
+
+				b_urgell = {
+					province = 1878
+
+					color = { 170 97 92 }
+				}
+				b_seu_d_urgell = { #Seu d'Urgell
+					province = 8801
+
+					color = { 170 97 92 }
+				}
+				b_andorra = {
+					province = 1869
+
+					color = { 170 97 92 }
+				}
+				b_balaguer = { #Organya
+					province = 1884
+
+					color = { 170 97 92 }
+				}
+			}
+			c_pallas = {
+				color = { 163 81 75 }
+				can_be_named_after_dynasty = no
+
+				b_pallars_jussa = {
+					province = 8799
+
+					color = { 163 81 75 }
+				}
+				b_pallars_sobira = {
+					province = 8800
+
+					color = { 163 81 75 }
+				}
+				b_vielha = {
+					province = 1870
+
+					color = { 163 81 75 }
+				}
+			}
+			c_puigcerda = { #Cerdana
+				color = { 145 105 90 }
+				can_be_named_after_dynasty = no
+
+				b_puigcerda = {
+					province = 1868
+
+					color = { 145 105 90 }
+				}
+				b_llivia = {
+					province = 8797
+
+					color = { 145 105 90 }
+				}
+			}
+			c_girona = {
+				color = { 170 115 110 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_harundah
+					name_list_baranis = cn_harundah
+					name_list_butr = cn_harundah
+					name_list_zaghawa = cn_harundah
+					name_list_levantine = cn_harundah
+					name_list_egyptian = cn_harundah
+					name_list_maghrebi = cn_harundah
+					name_list_andalusian = cn_harundah
+					name_list_yemeni = cn_harundah
+				}
+
+				b_girona = {
+					province = 1864
+
+					color = { 170 115 110 }
+				}
+				b_loredo = { #Ullastret
+					province = 1863
+
+					color = { 170 115 110 }
+				}
+				b_olot = {
+					province = 1867
+
+					color = { 170 115 110 }
+				}
+			}
+			c_rossello = {
+				color = { 176 95 88 }
+				can_be_named_after_dynasty = no
+
+				b_perpignan = { #Perpinya
+					province = 1866
+
+					color = { 176 95 88 }
+				}
+				b_prades_rossello = {
+					province = 8798
+
+					color = { 176 95 88 }
+				}
+				b_roses = {
+					province = 1865
+
+					color = { 176 95 88 }
+				}
+			}
+			c_lleida = {
+				color = { 160 80 65 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_laridah
+					name_list_baranis = cn_laridah
+					name_list_butr = cn_laridah
+					name_list_zaghawa = cn_laridah
+					name_list_levantine = cn_laridah
+					name_list_egyptian = cn_laridah
+					name_list_maghrebi = cn_laridah
+					name_list_andalusian = cn_laridah
+					name_list_yemeni = cn_laridah
+				}
+
+				b_lleida = {
+					province = 1881
+
+					color = { 160 80 65 }
+				}
+				b_agramunt = {
+					province = 8796
+
+					color = { 160 80 65 }
+				}
+				b_prades = {
+					province = 1879
+
+					color = { 160 80 65 }
+				}
+			}
+			c_tarragona = {
+				color = { 155 90 55 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_turtusah
+					name_list_baranis = cn_turtusah
+					name_list_butr = cn_turtusah
+					name_list_zaghawa = cn_turtusah
+					name_list_levantine = cn_turtusah
+					name_list_egyptian = cn_turtusah
+					name_list_maghrebi = cn_turtusah
+					name_list_andalusian = cn_turtusah
+					name_list_yemeni = cn_turtusah
+				}
+
+				b_tarragona = {
+					province = 1860
+
+					color = { 155 90 55 }
+				}
+				b_tortosa = {
+					province = 1859
+
+					color = { 155 90 55 }
+				}
+				b_maials = {
+					province = 1880
+
+					color = { 155 90 55 }
+				}
+			}
+		}
+	}
+
+	k_navarra = {
+		color = { 150 120 5 }
+
+		capital = c_navarra # Pamplona
+		can_be_named_after_dynasty = no
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:basque
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_navarra = {
+			color = { 140 130 0 }
+
+			capital = c_navarra # Pamplona
+			can_be_named_after_dynasty = no
+
+			c_navarra = {
+				color = { 140 130 0 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					# For Pamplona.
+					name_list_bedouin = cn_banbalunah
+					name_list_baranis = cn_banbalunah
+					name_list_butr = cn_banbalunah
+					name_list_zaghawa = cn_banbalunah
+					name_list_levantine = cn_banbalunah
+					name_list_egyptian = cn_banbalunah
+					name_list_maghrebi = cn_banbalunah
+					name_list_andalusian = cn_banbalunah
+					name_list_yemeni = cn_banbalunah
+				}
+
+				b_pamplona = {
+					province = 1806
+
+					color = { 140 130 0 }
+
+					cultural_names = {
+						name_list_bedouin = cn_banbalunah
+						name_list_baranis = cn_banbalunah
+						name_list_butr = cn_banbalunah
+						name_list_zaghawa = cn_banbalunah
+						name_list_levantine = cn_banbalunah
+						name_list_egyptian = cn_banbalunah
+						name_list_maghrebi = cn_banbalunah
+						name_list_andalusian = cn_banbalunah
+						name_list_yemeni = cn_banbalunah
+					}
+				}
+				b_tafalla = {
+					province = 1889
+
+					color = { 140 130 0 }
+				}
+				b_lizarra = {
+					province = 1809
+
+					color = { 140 130 0 }
+				}
+			}
+
+			c_najera = {
+				color = { 130 125 25 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_nagirah
+					name_list_baranis = cn_nagirah
+					name_list_butr = cn_nagirah
+					name_list_zaghawa = cn_nagirah
+					name_list_levantine = cn_nagirah
+					name_list_egyptian = cn_nagirah
+					name_list_maghrebi = cn_nagirah
+					name_list_andalusian = cn_nagirah
+					name_list_yemeni = cn_nagirah
+				}
+
+				b_najera = {
+					province = 1811
+
+					color = { 130 125 25 }
+				}
+				b_logrono = {
+					province = 1810
+
+					color = { 130 125 25 }
+				}
+				b_arnedo = {
+					province = 1903
+
+					color = { 130 125 25 }
+				}
+			}
+
+			c_tudela = {
+				color = { 155 145 15 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_tutilah
+					name_list_baranis = cn_tutilah
+					name_list_butr = cn_tutilah
+					name_list_zaghawa = cn_tutilah
+					name_list_levantine = cn_tutilah
+					name_list_egyptian = cn_tutilah
+					name_list_maghrebi = cn_tutilah
+					name_list_andalusian = cn_tutilah
+					name_list_yemeni = cn_tutilah
+				}
+
+				b_tudela = {
+					province = 1902
+
+					color = { 155 145 15 }
+				}
+				b_tarazona = { #Olite
+					province = 1890
+
+					color = { 155 145 15 }
+				}
+			}
+		}
+
+		d_viscaya = {
+			color = { 115 90 0 }
+
+			capital = c_viscaya
+			can_be_named_after_dynasty = no
+
+			c_viscaya = {
+				color = { 115 90 0 }
+				can_be_named_after_dynasty = no
+
+				b_bilibio = { #Vizcaya
+					province = 1803
+
+					color = { 115 90 0 }
+				}
+				b_alava = {
+					province = 1808
+
+					color = { 115 90 0 }
+				}
+			}
+			c_ipuskoa = {
+				color = { 105 100 20 }
+				can_be_named_after_dynasty = no
+
+				b_irun = {
+					province = 1805
+
+					color = { 105 100 20 }
+				}
+				b_izurum = {
+					province = 1804
+
+					color = { 105 100 20 }
+				}
+			}
+		}
+	}
+
+	k_asturias = {
+		color = { 207 104 0 }
+
+		capital = c_asturias_de_oviedo
+		can_be_named_after_dynasty = no
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+	}
+
+	k_leon = {
+		color = { 253 158 51 }
+
+		capital = c_leon # Leon
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_liyyun
+			name_list_baranis = cn_liyyun
+			name_list_butr = cn_liyyun
+			name_list_zaghawa = cn_liyyun
+			name_list_levantine = cn_liyyun
+			name_list_egyptian = cn_liyyun
+			name_list_maghrebi = cn_liyyun
+			name_list_andalusian = cn_liyyun
+			name_list_yemeni = cn_liyyun
+		}
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_leon = {
+			color = { 223 128 31 }
+
+			capital = c_leon # Leon
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_liyyun
+				name_list_baranis = cn_liyyun
+				name_list_butr = cn_liyyun
+				name_list_zaghawa = cn_liyyun
+				name_list_levantine = cn_liyyun
+				name_list_egyptian = cn_liyyun
+				name_list_maghrebi = cn_liyyun
+				name_list_andalusian = cn_liyyun
+				name_list_yemeni = cn_liyyun
+			}
+
+			c_leon = {
+				color = { 223 128 31 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_liyyun
+					name_list_baranis = cn_liyyun
+					name_list_butr = cn_liyyun
+					name_list_zaghawa = cn_liyyun
+					name_list_levantine = cn_liyyun
+					name_list_egyptian = cn_liyyun
+					name_list_maghrebi = cn_liyyun
+					name_list_andalusian = cn_liyyun
+					name_list_yemeni = cn_liyyun
+				}
+
+				b_leon = {
+					province = 1816
+
+					color = { 223 128 31 }
+				}
+				b_sarria = {
+					province = 1822
+
+					color = { 223 128 31 }
+				}
+				b_villablino = {
+					province = 1824
+
+					color = { 223 128 31 }
+				}
+				b_guardo = { #Cea
+					province = 1825
+
+					color = { 223 128 31 }
+				}
+				b_valenciadecampos = {
+					province = 1911
+
+					color = { 223 128 31 }
+				}
+			}
+			c_benavente = {
+				color = { 195 115 20 }
+				can_be_named_after_dynasty = no
+
+				b_benavente = {
+					province = 1826
+
+					color = { 195 115 20 }
+				}
+				b_alba = {
+					province = 1827
+
+					color = { 195 115 20 }
+				}
+			}
+			c_zamora = {
+				color = { 245 125 25 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_sammurah
+					name_list_baranis = cn_sammurah
+					name_list_butr = cn_sammurah
+					name_list_zaghawa = cn_sammurah
+					name_list_levantine = cn_sammurah
+					name_list_egyptian = cn_sammurah
+					name_list_maghrebi = cn_sammurah
+					name_list_andalusian = cn_sammurah
+					name_list_yemeni = cn_sammurah
+				}
+
+				b_zamora = {
+					province = 1894
+
+					color = { 245 125 25 }
+				}
+				b_toro = {
+					province = 1895
+
+					color = { 245 125 25 }
+				}
+				b_villafafila = {
+					province = 1910
+
+					color = { 245 125 25 }
+				}
+			}
+			c_salamanca = {
+				color = { 195 105 25 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_salamanqa
+					name_list_baranis = cn_salamanqa
+					name_list_butr = cn_salamanqa
+					name_list_zaghawa = cn_salamanqa
+					name_list_levantine = cn_salamanqa
+					name_list_egyptian = cn_salamanqa
+					name_list_maghrebi = cn_salamanqa
+					name_list_andalusian = cn_salamanqa
+					name_list_yemeni = cn_salamanqa
+				}
+
+				b_bejar = {
+					province = 1913
+
+					color = { 195 105 25 }
+				}
+				b_salamanca = {
+					province = 1828
+
+					color = { 195 105 25 }
+				}
+				b_ciduadrodrigo = { #Ciudad Rodrigo
+					province = 1829
+
+					color = { 195 105 25 }
+				}
+			}
+			c_avila = {
+				color = { 200 110 50 }
+				can_be_named_after_dynasty = no
+
+				b_avila = {
+					province = 1912
+
+					color = { 200 110 50 }
+				}
+				b_medinadelcampo = {
+					province = 1914
+
+					color = { 200 110 50 }
+				}
+				b_laadrada = {
+					province = 1921
+
+					color = { 200 110 50 }
+				}
+				b_sierradegredos = { #Gredos
+					province = 1916
+
+					color = { 200 110 50 }
+				}
+			}
+		}
+
+		d_asturias = {
+			color = { 207 104 0 }
+
+			capital = c_asturias_de_oviedo # Oviedo
+			can_be_named_after_dynasty = no
+
+			c_asturias_de_oviedo = {
+				color = { 207 104 0 }
+				can_be_named_after_dynasty = no
+
+				b_oviedo = {
+					province = 1797
+
+					color = { 207 104 0 }
+				}
+				b_riano = {
+					province = 1817
+
+					color = { 207 104 0 }
+				}
+				b_villaviciosa = {
+					province = 1798
+
+					color = { 207 104 0 }
+				}
+				b_gijon = {
+					province = 1796
+
+					color = { 207 104 0 }
+				}
+			}
+			c_pravia = {
+				color = { 215 85 0 }
+				can_be_named_after_dynasty = no
+
+				b_pravia = {
+					province = 1795
+
+					color = { 215 85 0 }
+				}
+				b_luarca = {
+					province = 1794
+
+					color = { 215 85 0 }
+				}
+				b_gangasdelnarcea = {
+					province = 1823
+
+					color = { 215 85 0 }
+				}
+				b_carballido = {
+					province = 1793
+
+					color = { 215 85 0 }
+				}
+			}
+		}
+	}
+
+	k_spanish_galicia = {
+		color = { 255 224 94 }
+
+		capital = c_coruna # La Coruña
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_yilliqiyya
+			name_list_baranis = cn_yilliqiyya
+			name_list_butr = cn_yilliqiyya
+			name_list_zaghawa = cn_yilliqiyya
+			name_list_levantine = cn_yilliqiyya
+			name_list_egyptian = cn_yilliqiyya
+			name_list_maghrebi = cn_yilliqiyya
+			name_list_andalusian = cn_yilliqiyya
+			name_list_yemeni = cn_yilliqiyya
+		}
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_galicia = {
+			color = { 235 204 74 }
+
+			capital = c_coruna # La Coruna
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_yilliqiyya
+				name_list_baranis = cn_yilliqiyya
+				name_list_butr = cn_yilliqiyya
+				name_list_zaghawa = cn_yilliqiyya
+				name_list_levantine = cn_yilliqiyya
+				name_list_egyptian = cn_yilliqiyya
+				name_list_maghrebi = cn_yilliqiyya
+				name_list_andalusian = cn_yilliqiyya
+				name_list_yemeni = cn_yilliqiyya
+			}
+
+			c_coruna = {
+				color = { 235 204 74 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_qaruniyah
+					name_list_baranis = cn_qaruniyah
+					name_list_butr = cn_qaruniyah
+					name_list_zaghawa = cn_qaruniyah
+					name_list_levantine = cn_qaruniyah
+					name_list_egyptian = cn_qaruniyah
+					name_list_maghrebi = cn_qaruniyah
+					name_list_andalusian = cn_qaruniyah
+					name_list_yemeni = cn_qaruniyah
+				}
+
+				b_corunna = {
+					province = 1787
+
+					color = { 235 204 74 }
+				}
+				b_ferrol = {
+					province =  1788
+
+					color = { 235 204 74 }
+				}
+				b_mondonedo = {
+					province =  1789
+
+					color = { 235 204 74 }
+				}
+				b_vilalba = {
+					province =  1790
+
+					color = { 235 204 74 }
+				}
+			}
+			c_santiago = {
+				color = { 240 180 75 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_yant_yaqub
+					name_list_baranis = cn_yant_yaqub
+					name_list_butr = cn_yant_yaqub
+					name_list_zaghawa = cn_yant_yaqub
+					name_list_levantine = cn_yant_yaqub
+					name_list_egyptian = cn_yant_yaqub
+					name_list_maghrebi = cn_yant_yaqub
+					name_list_andalusian = cn_yant_yaqub
+					name_list_yemeni = cn_yant_yaqub
+				}
+
+				b_santiago = {
+					province = 1785
+
+					color = { 240 180 75 }
+				}
+				b_betanzos = {
+					province = 1786
+
+					color = { 240 180 75 }
+				}
+				b_melide = {
+					province = 1791
+
+					color = { 240 180 75 }
+				}
+				b_padron = {
+					province = 1783
+
+					color = { 240 180 75 }
+				}
+			}
+			c_tui = {
+				color = { 215 200 100 }
+				can_be_named_after_dynasty = no
+
+				b_monte_faro = {
+					province = 1784
+
+					color = { 215 200 100 }
+				}
+				b_tui = {
+					province = 1781
+
+					color = { 215 200 100 }
+				}
+				b_vigo = {
+					province = 1782
+
+					color = { 215 200 100 }
+				}
+			}
+			c_astorga = {
+				color = { 255 225 70 }
+				can_be_named_after_dynasty = no
+
+				b_astorga = {
+					province = 1821
+
+					color = { 255 225 70 }
+				}
+
+				b_lugo = {
+					province = 1792
+
+					color = { 255 225 70 }
+				}
+
+				b_ourense = {
+					province = 1799
+
+					color = { 255 225 70 }
+				}
+
+				b_monfortedelemos = {
+					province = 1819
+
+					color = { 255 225 70 }
+				}
+
+				b_ponferrada = {
+					province = 1820
+
+					color = { 255 225 70 }
+				}
+			}
+
+			c_monterrei = {
+				color = { 235 230 120 }
+				can_be_named_after_dynasty = no
+
+				b_monterrei = {
+					province = 1818
+
+					color = { 235 230 120 }
+				}
+
+				b_limia = {
+					province = 1800
+
+					color = { 235 230 120 }
+				}
+			}
+		}
+	}
+
+	k_portugal = {
+		color = { 182 88 5 }
+
+		capital = c_lisboa # Lisboa
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_bedouin = cn_burtughal
+			name_list_baranis = cn_burtughal
+			name_list_butr = cn_burtughal
+			name_list_zaghawa = cn_burtughal
+			name_list_levantine = cn_burtughal
+			name_list_egyptian = cn_burtughal
+			name_list_maghrebi = cn_burtughal
+			name_list_andalusian = cn_burtughal
+			name_list_yemeni = cn_burtughal
+		}
+
+		can_create = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:portuguese
+				}
+				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_iberian }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+
+		d_porto = {
+			color = { 192 98 5 }
+
+			capital = c_porto # porto
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_burtughal
+				name_list_baranis = cn_burtughal
+				name_list_butr = cn_burtughal
+				name_list_zaghawa = cn_burtughal
+				name_list_levantine = cn_burtughal
+				name_list_egyptian = cn_burtughal
+				name_list_maghrebi = cn_burtughal
+				name_list_andalusian = cn_burtughal
+				name_list_yemeni = cn_burtughal
+			}
+
+			c_porto = {
+				color = { 182 78 15 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_burtughal
+					name_list_baranis = cn_burtughal
+					name_list_butr = cn_burtughal
+					name_list_zaghawa = cn_burtughal
+					name_list_levantine = cn_burtughal
+					name_list_egyptian = cn_burtughal
+					name_list_maghrebi = cn_burtughal
+					name_list_andalusian = cn_burtughal
+					name_list_yemeni = cn_burtughal
+				}
+
+				b_porto = {
+					province = 1760
+
+					color = { 182 88 5 }
+				}
+				b_braga = {
+					province = 1761
+
+					color = { 182 88 5 }
+				}
+				b_chavez = { #Chaves
+					province = 1762
+
+					color = { 182 88 5 }
+				}
+				b_guimaraes = {
+					province = 1766
+
+					color = { 182 88 5 }
+				}
+			}
+			c_braganza = {
+				color = { 175 75 15 }
+				can_be_named_after_dynasty = no
+
+				b_braganza = {
+					province = 1763
+
+					color = { 175 75 15 }
+				}
+				b_miranda_do_duoro = { #Miranda do Douro
+					province = 1764
+
+					color = { 175 75 15 }
+				}
+				b_villa_real = {
+					province = 1765
+
+					color = { 175 75 15 }
+				}
+				b_mogadouro = {
+					province = 1767
+
+					color = { 175 75 15 }
+				}
+			}
+		}
+
+		d_coimbra = {
+			color = { 182 108 45 }
+
+			capital = c_coimbra #Coimbra
+			can_be_named_after_dynasty = no
+
+			cultural_names = {
+				name_list_bedouin = cn_kulumriyya
+				name_list_baranis = cn_kulumriyya
+				name_list_butr = cn_kulumriyya
+				name_list_zaghawa = cn_kulumriyya
+				name_list_levantine = cn_kulumriyya
+				name_list_egyptian = cn_kulumriyya
+				name_list_maghrebi = cn_kulumriyya
+				name_list_andalusian = cn_kulumriyya
+				name_list_yemeni = cn_kulumriyya
+			}
+
+			c_coimbra = {
+				color = { 182 108 45 }
+				can_be_named_after_dynasty = no
+
+				cultural_names = {
+					name_list_bedouin = cn_kulumriyya
+					name_list_baranis = cn_kulumriyya
+					name_list_butr = cn_kulumriyya
+					name_list_zaghawa = cn_kulumriyya
+					name_list_levantine = cn_kulumriyya
+					name_list_egyptian = cn_kulumriyya
+					name_list_maghrebi = cn_kulumriyya
+					name_list_andalusian = cn_kulumriyya
+					name_list_yemeni = cn_kulumriyya
+				}
+
+				b_coimbra = {
+					province = 1758
+
+					color = { 182 108 45 }
+				}
+				b_leiria = {
+					province = 1757
+
+					color = { 182 108 45 }
+				}
+				b_obidos = {
+					province = 1756
+
+					color = { 182 108 45 }
+				}
+			}
+			c_viseu = {
+				color = { 165 95 55 }
+				can_be_named_after_dynasty = no
+
+				b_viseu = {
+					province = 1769
+
+					color = { 165 95 55 }
+				}
+				b_trancoso = {
+					province = 1770
+
+					color = { 165 95 55 }
+				}
+			}
+			c_aveiro = {
+				color = { 190 100 40 }
+				can_be_named_after_dynasty = no
+
+				b_aveiro = {
+					province = 1759
+
+					color = { 190 100 40 }
+				}
+				b_gralheira = { #Cinfaes
+					province = 2003
+
+					color = { 190 100 40 }
+				}
+				b_lamego = {
+					province = 1768
+
+					color = { 190 100 40 }
+				}
+			}
+			c_castelo_branco = {
+				color = { 160 105 70 }
+
+				cultural_names = {
+					name_list_bedouin = cn_itanyia
+					name_list_baranis = cn_itanyia
+					name_list_butr = cn_itanyia
+					name_list_zaghawa = cn_itanyia
+					name_list_levantine = cn_itanyia
+					name_list_egyptian = cn_itanyia
+					name_list_maghrebi = cn_itanyia
+					name_list_andalusian = cn_itanyia
+					name_list_yemeni = cn_itanyia
+				}
+				can_be_named_after_dynasty = no
+
+				b_castelo_branco = {
+					province = 1773
+
+					color = { 160 105 70 }
+				}
+				b_idanha = { #Beira
+					province = 1771
+
+					color = { 160 105 70 }
+				}
+				b_abrantes = {
+					province = 1772
+
+					color = { 160 105 70 }
+				}
+			}
+		}
+	}
+}
 
 e_italy = {
 	color = { 234 217 110 }
@@ -6997,7 +13618,10 @@ e_italy = {
 			color = { 180 115 200 }
 
 			capital = c_lombardia # Lombardia
-
+			cultural_names = {
+				name_list_roman = cn_CisalpineGaul
+				name_list_ck_roman = cn_CisalpineGaul
+			}
 			c_lombardia = {
 				color = { 185 120 205 }
 
@@ -8506,10 +15130,16 @@ e_persia = {
 			}
 			c_istakhr = {
 				color = { 20 60 160 }
-
+				names = {
+					name_list_persian = cn_Pasargadae
+					name_list_elamite = cn_Pasargadae
+				}
 				b_istakhr = {
 					province = 4118
-
+					cultural_names = {
+						name_list_persian = cn_Pasargadae
+						name_list_elamite = cn_Pasargadae
+					}
 					color = { 20 60 100 }
 				}
 				b_iqlid = {
@@ -10753,7 +17383,7 @@ e_persia = {
 			c_qadisiya = {
 				color = { 55 170 70 }
 				cultural_names = {
-					name_list_sumer = cn_ur
+					name_list_sumer = cn_Uruk
 				}			
 
 				b_al-qadisiya = {
@@ -10919,7 +17549,9 @@ e_persia = {
 				}
 				b_an-nahrawan = {
 					province = 4796
-
+					cultural_names = {
+						name_list_persian = cn_Ctesiphon
+					}
 					color = { 16 135 12 }
 				}
 				b_al-farasa = {
@@ -11477,6 +18109,2711 @@ e_persia = {
 					province = 4779
 
 					color = { 80 230 180 }
+				}
+			}
+		}
+	}
+}
+e_arabia = {
+	color = { 32 150 85 }
+
+	capital = c_damascus # Damascus
+
+	can_destroy = {
+		custom_tooltip = {
+			text = persian_struggle.tt.forbid_title_destruction
+			NOT = { exists = struggle:persian_struggle }
+		}
+	}
+
+	definite_form = yes
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_arabic }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	k_israel = {
+		color = { 20 138 255 }
+
+		capital = c_jerusalem
+	}
+
+	k_arabia = {
+		color = { 124 199 50 }
+
+		capital = c_medina
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					NOT = { culture = culture:egyptian }
+					culture = { has_cultural_pillar = heritage_arabic }
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_jawf = {
+			color = { 150 250 50 }
+
+			capital = c_al_jawf
+
+			c_al_jawf = {
+				color = { 154 253 47 }
+
+				b_al_jawf = {
+					province = 6178
+
+					color = { 154 253 47 }
+				}
+				b_sakaka = {
+					province = 6176
+
+					color = { 154 253 47 }
+				}
+				b_al-qara-jawf = {
+					province = 6177
+
+					color = { 154 253 47 }
+				}
+			}
+			c_thalabiya = {
+				color = { 148 248 49 }
+
+				b_ath-thalabiya = {
+					province = 6168
+
+					color = { 148 248 49 }
+				}
+				b_zubala = {
+					province = 6169
+
+					color = { 148 248 49 }
+				}
+				b_lina = {
+					province = 6170
+
+					color = { 148 248 49 }
+				}
+				b_bitan = {
+					province = 6175
+
+					color = { 148 248 49 }
+				}
+			}
+			c_sirhan = {
+				color = { 152 246 52 }
+
+				b_quraqir = {
+					province = 5989
+
+					color = { 125 255 18 }
+				}
+				b_sirhan = {
+					province = 6180
+
+					color = { 152 246 52 }
+				}
+			}
+		}
+
+		d_amman = {
+			color = { 130 255 10 }
+
+			capital = c_balqa
+
+			c_balqa = {
+				color = { 131 255 12 }
+
+				b_amman = {
+					province = 5984
+
+					color = { 131 255 12 }
+				}
+				b_az-zarqa = {
+					province = 5986
+
+					color = { 131 255 12 }
+				}
+				b_al-azraq = {
+					province = 5987
+
+					color = { 131 255 12 }
+				}
+			}
+			c_maab = {
+				color = { 135 250 15 }
+
+				b_maab = {
+					province = 5981
+
+					color = { 135 250 15 }
+				}
+				b_zaiza = {
+					province = 5982
+
+					color = { 135 250 15 }
+				}
+				b_mujib = {
+					province = 5983
+
+					color = { 135 250 15 }
+				}
+			}
+			c_jilat = {
+				color = { 125 255 18 }
+
+				b_al-jilat = {
+					province = 5988
+
+					color = { 125 255 18 }
+				}
+				b_qasr_at-tuba = {
+					province = 6179
+
+					color = { 125 255 18 }
+				}
+			}
+		}
+
+		d_shammar = {
+			color = { 121 196 2 }
+
+			capital = c_tabuk
+
+			c_tabuk = {
+				color = { 130 205 11 }
+
+				b_tabuk = {
+					province = 6188
+
+					color = { 130 205 11 }
+				}
+				b_sarj = {
+					province = 6186
+
+					color = { 130 205 11 }
+				}
+				b_fajr = {
+					province = 6189
+
+					color = { 130 205 11 }
+				}
+			}
+			c_al_aqabah = {
+				color = { 124 199 5 }
+
+				b_aqaba = {
+					province = 5974
+
+					color = { 124 199 5 }
+				}
+				b_maqna = {
+					province = 6183
+
+					color = { 124 199 5 }
+				}
+				b_ainun = {
+					province = 6184
+
+					color = { 124 199 5 }
+				}
+				b_sharaf_al-bal = {
+					province = 6185
+
+					color = { 124 199 5 }
+				}
+				b_madyan = {
+					province = 6187
+
+					color = { 124 199 5 }
+				}
+				b_ziba = {
+					province = 6193
+
+					color = { 124 199 5 }
+				}
+			}
+			c_maan = {
+				color = { 127 202 8 }
+
+				b_maan = {
+					province = 5976
+
+					color = { 127 202 8 }
+				}
+				b_al-humayma = {
+					province = 5975
+
+					color = { 127 202 8 }
+				}
+				b_adruh = {
+					province = 5977
+
+					color = { 127 202 8 }
+				}
+			}
+			c_tayma = {
+				color = { 97 208 137 }
+
+				b_tayma = {
+					province = 6192
+
+					color = { 97 208 137 }
+				}
+				b_al-aqra = {
+					province = 6190
+
+					color = { 97 208 137 }
+				}
+				b_al-muhdatha = {
+					province = 6191
+
+					color = { 97 208 137 }
+				}
+			}
+		}
+
+		d_medina = {
+			color = { 160 250 50 }
+
+			capital = c_medina
+
+			c_medina = {
+				color = { 162 253 55 }
+
+				b_al-madina = {
+					province = 6212
+
+					color = { 162 253 55 }
+				}
+				b_as-sayaa = {
+					province = 6211
+
+					color = { 162 253 55 }
+				}
+				b_batn_nakhl = {
+					province = 6213
+
+					color = { 162 253 55 }
+				}
+				b_as-safra = {
+					province = 6219
+
+					color = { 162 253 55 }
+				}
+			}
+			c_wajh = {
+				color = { 158 253 51 }
+
+				b_al-wajh = {
+					province = 6197
+
+					color = { 158 253 51 }
+				}
+				b_an-nabak = {
+					province = 6194
+
+					color = { 158 253 51 }
+				}
+				b_al-awnid = {
+					province = 6195
+
+					color = { 158 253 51 }
+				}
+				b_bada = {
+					province = 6196
+
+					color = { 158 253 51 }
+				}
+			}
+			c_khaybar = {
+				color = { 164 248 57 }
+
+				b_khaybar = {
+					province = 6207
+
+					color = { 164 248 57 }
+				}
+				b_as-suqya = {
+					province = 6199
+
+					color = { 164 248 57 }
+				}
+				b_al-ula = {
+					province = 6200
+
+					color = { 164 248 57 }
+				}
+				b_al-hijr = {
+					province = 6201
+
+					color = { 164 248 57 }
+				}
+				b_dhul-marwa = {
+					province = 6208
+
+					color = { 164 248 57 }
+				}
+			}
+			c_yanbu = {
+				color = { 156 248 48 }
+
+				b_yanbu = {
+					province = 6209
+
+					color = { 156 248 48 }
+				}
+				b_al-jar = {
+					province = 6210
+
+					color = { 156 248 48 }
+				}
+				b_al-hawra = {
+					province = 6198
+
+					color = { 156 248 48 }
+				}
+			}
+			c_harrat_rahat = {
+				color = { 162 246 46 }
+
+				b_as-sawariqiya = {
+					province = 6218
+
+					color = { 162 246 46 }
+				}
+				b_as-salila = {
+					province = 6216
+
+					color = { 162 246 46 }
+				}
+				b_madinat_sulaym = {
+					province = 6217
+
+					color = { 162 246 46 }
+				}
+				b_sufaina = {
+					province = 6227
+
+					color = { 162 246 46 }
+				}
+			}
+		}
+
+		d_mecca = {
+			color = { 120 200 5 }
+
+			capital = c_mecca
+
+			c_mecca = {
+				color = { 122 198 5 }
+
+				b_makka = {
+					province = 6223
+
+					color = { 122 198 5 }
+				}
+				b_rabigh = {
+					province = 6220
+
+					color = { 122 198 5 }
+				}
+				b_khulays = {
+					province = 6221
+
+					color = { 122 198 5 }
+				}
+				b_jidda = {
+					province = 6222
+
+					color = { 122 198 5 }
+				}
+				b_usfain = {
+					province = 6226
+
+					color = { 122 198 5 }
+				}
+			}
+			c_taif = {
+				color = { 121 196 2 }
+
+				b_at-taif = {
+					province = 6225
+
+					color = { 121 196 2 }
+				}
+				b_turaba = {
+					province = 6233
+
+					color = { 121 196 2 }
+				}
+				b_tabala-hijaz = {
+					province = 6234
+
+					color = { 121 196 2 }
+				}
+			}
+			c_tihama = {
+				color = { 124 202 7 }
+
+				b_as-sirayn = {
+					province = 6224
+
+					color = { 124 202 7 }
+				}
+				b_hali = {
+					province = 6238
+
+					color = { 124 202 7 }
+				}
+				b_ash-shuqayq = {
+					province = 6239
+
+					color = { 124 202 7 }
+				}
+			}
+			c_bisha = {
+				color = { 116 204 9 }
+
+				b_bisha = {
+					province = 6235
+
+					color = { 116 204 9 }
+				}
+				b_jurash = {
+					province = 6236
+
+					color = { 116 204 9 }
+				}
+				b_kuthba = {
+					province = 6237
+
+					color = { 116 204 9 }
+				}
+			}
+		}
+
+		d_asir = { #Note: Name is little anachronistic, but there's no better
+			color = { 150 210 20 }
+
+			capital = c_aqiq
+
+			c_aqiq = {
+				color = { 147 207 17 }
+
+				b_aqiq_tamra = {
+					province = 6246
+
+					color = { 147 207 17 }
+				}
+				b_dam = {
+					province = 6245
+
+					color = { 147 207 17 }
+				}
+				b_sarba = {
+					province = 6247
+
+					color = { 147 207 17 }
+				}
+			}
+			c_asir = {
+				color = { 152 212 22 }
+
+				b_wadi_tathlith = {
+					province = 6244
+
+					color = { 152 212 22 }
+				}
+				b_wadi_ghamid = {
+					province = 6232
+
+					color = { 152 212 22 }
+				}
+			}
+		}
+
+		d_najd = {
+			color = { 160 200 10 }
+
+			capital = c_sharaf
+
+			c_sharaf = {
+				color = { 157 197 7 }
+
+				b_dariya = {
+					province = 6265
+
+					color = { 157 197 7 }
+				}
+				b_hajir = {
+					province = 6206
+
+					color = { 157 197 7 }
+				}
+				b_rabadha = {
+					province = 6214
+
+					color = { 157 197 7 }
+				}
+				b_madin-an-naqira = {
+					province = 6215
+
+					color = { 157 197 7 }
+				}
+				b_jadila = {
+					province = 6266
+
+					color = { 157 197 7 }
+				}
+				b_fajla = {
+					province = 6267
+
+					color = { 157 197 7 }
+				}
+			}
+			c_subay = {
+				color = { 163 203 13 }
+
+				b_ad-dathina = {
+					province = 6229
+
+					color = { 163 203 13 }
+				}
+				b_marran = {
+					province = 6228
+
+					color = { 163 203 13 }
+				}
+				b_subay = {
+					province = 6230
+
+					color = { 163 203 13 }
+				}
+				b_ranya = {
+					province = 6231
+
+					color = { 163 203 13 }
+				}
+			}
+			c_hail = {
+				color = { 154 194 13 }
+
+				b_hail = {
+					province = 6172
+
+					color = { 154 194 13 }
+				}
+				b_jubba-hail = {
+					province = 6181
+
+					color = { 154 194 13 }
+				}
+				b_mawqaq = {
+					province = 6182
+
+					color = { 154 194 13 }
+				}
+				b_fadak = {
+					province = 6203
+
+					color = { 154 194 13 }
+				}
+				b_fayd = {
+					province = 6204
+
+					color = { 154 194 13 }
+				}
+				b_tuz = {
+					province = 6205
+
+					color = { 154 194 13 }
+				}
+			}
+			c_shaqiq = {
+				color = { 163 194 4 }
+
+				b_an-nibaj = {
+					province = 6260
+
+					color = { 163 194 4 }
+				}
+				b_al-khuzaimiya = {
+					province = 6171
+
+					color = { 163 194 4 }
+				}
+				b_as-sumaina = {
+					province = 6174
+
+					color = { 163 194 4 }
+				}
+			}
+			c_qasim = {
+				color = { 166 206 16 }
+
+				b_unayza = {
+					province = 6262
+
+					color = { 166 206 16 }
+				}
+				b_al-qaryatan-qasim = {
+					province = 6261
+
+					color = { 166 206 16 }
+				}
+				b_rama = {
+					province = 6263
+
+					color = { 166 206 16 }
+				}
+				b_tikhfa = {
+					province = 6264
+
+					color = { 166 206 16 }
+				}
+			}
+			c_surrah = {
+				color = { 166 194 18 }
+
+				b_nufud-as-surrah = {
+					province = 6257
+
+					color = { 166 194 18 }
+				}
+				b_jibal-al-urd = {
+					province = 6258
+
+					color = { 166 194 18 }
+				}
+				b_jibala = {
+					province = 6259
+
+					color = { 166 194 18 }
+				}
+			}
+		}
+
+		d_yamama = {
+			color = { 150 180 0 }
+
+			capital = c_yamama
+
+			c_yamama = {
+				color = { 153 183 2 }
+
+				b_yamama = {
+					province = 6253
+
+					color = { 153 183 2 }
+				}
+				b_al-khadarim = {
+					province = 6251
+
+					color = { 153 183 2 }
+				}
+				b_al-kharj = {
+					province = 6252
+
+					color = { 153 183 2 }
+				}
+			}
+			c_al-arid = {
+				color = { 147 177 3 }
+
+				b_al-arid = {
+					province = 6254
+
+					color = { 147 177 3 }
+				}
+				b_ubad = {
+					province = 6255
+
+					color = { 147 177 3 }
+				}
+			}
+			c_falaj = {
+				color = { 156 186 0 }
+
+				b_falaj = {
+					province = 6250
+
+					color = { 156 186 0 }
+				}
+				b_al-haddar = {
+					province = 6248
+
+					color = { 156 186 0 }
+				}
+				b_qasr-al-adi = {
+					province = 6249
+
+					color = { 156 186 0 }
+				}
+			}
+		}
+
+		d_al-hasa = {
+			color = { 32 127 30 }
+
+			capital = c_al-hasa
+
+			c_al-hasa = {
+				color = { 30 112 20 }
+
+				b_al-hasa = {
+					province = 6154
+
+					color = { 30 112 20 }
+				}
+				b_al-hajar = {
+					province = 6152
+
+					color = { 30 112 20 }
+				}
+				b_al-mushaqqar = {
+					province = 6153
+
+					color = { 30 112 20 }
+				}
+			}
+			c_dhafra = {
+				color = { 33 115 22 }
+
+				b_az-dhafra = {
+					province = 6148
+
+					color = { 33 115 22 }
+				}
+				b_al-jiwa = {
+					province = 6149
+
+					color = { 33 115 22 }
+				}
+			}
+			c_uqayr = {
+				color = { 30 125 30 }
+
+				b_al-uqayr = {
+					province = 6155
+
+					color = { 30 132 37 }
+				}
+				b_murwab = {
+					province = 6150
+
+					color = { 30 132 37 }
+				}
+				b_mashqar = {
+					province = 6151
+
+					color = { 30 132 37 }
+				}
+			}
+			c_yabrin = {
+				color = { 30 120 25 }
+
+				b_yabrin = {
+					province = 6163
+
+					color = { 30 120 25 }
+				}
+			}
+		}
+
+		d_bahrain = {
+			color = { 80 120 10 }
+
+			capital = c_qatif
+
+			c_qatif = {
+				color = { 18 104 28 }
+
+				b_al-qatif = {
+					province = 6158
+
+					color = { 18 104 28 }
+				}
+				b_al-khatt = {
+					province = 6157
+
+					color = { 18 104 28 }
+				}
+				b_al-jubayl = {
+					province = 6159
+
+					color = { 18 104 28 }
+				}
+				b_thaj = {
+					province = 6160
+
+					color = { 18 104 28 }
+				}
+			}
+			c_uwal = {
+				color = { 22 102 33 }
+
+				b_uwal = {
+					province = 6156
+
+					color = { 22 102 33 }
+				}
+			}
+			c_samman = {
+				color = { 20 99 30 }
+
+				b_kazima = {
+					province = 6161
+
+					color = { 20 99 30 }
+				}
+				b_ar-ruqaii = {
+					province = 6162
+
+					color = { 20 99 30 }
+				}
+				b_hafar = {
+					province = 6164
+
+					color = { 20 99 30 }
+				}
+				b_al-mawiya = {
+					province = 6165
+
+					color = { 20 99 30 }
+				}
+				b_as-samman = {
+					province = 6166
+
+					color = { 20 99 30 }
+				}
+			}
+		}
+
+		d_oman = {
+			color = { 235 160 30 }
+
+			capital = c_nizwa
+
+			c_nizwa = {
+				color = { 232 163 27 }
+
+				b_nizwa = {
+					province = 6140
+
+					color = { 232 163 27 }
+				}
+				b_bahla = {
+					province = 6139
+
+					color = { 232 163 27 }
+				}
+				b_samad = {
+					province = 6141
+
+					color = { 232 163 27 }
+				}
+			}
+			c_julfar = {
+				color = { 233 162 33 }
+
+				b_julfar = {
+					province = 6131
+
+					color = { 233 162 33 }
+				}
+				b_tawwam = {
+					province = 6129
+
+					color = { 233 162 33 }
+				}
+				b_tawwam_west = {
+					province = 6130
+
+					color = { 233 162 33 }
+				}
+				b_musandam = {
+					province = 6132
+
+					color = { 233 162 33 }
+				}
+				b_dabba = {
+					province = 6133
+
+					color = { 233 162 33 }
+				}
+			}
+			c_batina = {
+				color = { 233 157 27 }
+
+				b_sohar = {
+					province = 6134
+
+					color = { 233 157 27 }
+				}
+				b_batina-east = {
+					province = 6135
+
+					color = { 233 157 27 }
+				}
+				b_rustaq-oman = {
+					province = 6136
+
+					color = { 233 157 27 }
+				}
+			}
+			c_az-dhahira = {
+				color = { 238 157 36 }
+
+				b_hafit = {
+					province = 6137
+
+					color = { 238 157 36 }
+				}
+				b_dhank = {
+					province = 6138
+
+					color = { 238 157 36 }
+				}
+			}
+			c_muscat = {
+				color = { 230 154 24 }
+
+				b_muscat = {
+					province = 6144
+
+					color = { 230 154 24 }
+				}
+				b_matrah = {
+					province = 6143
+
+					color = { 230 154 24 }
+				}
+				b_qalhat = {
+					province = 6145
+
+					color = { 230 154 24 }
+				}
+				b_sur = {
+					province = 6146
+
+					color = { 230 154 24 }
+				}
+				b_jaalan = {
+					province = 6147
+
+					color = { 230 154 24 }
+				}
+			}
+			c_duqm = {
+				color = { 240 166 36 }
+
+				b_duqm = {
+					province = 6269
+
+					color = { 240 166 36 }
+				}
+				b_wahiba = {
+					province = 6268
+
+					color = { 240 166 36 }
+				}
+			}
+		}
+	}
+
+	k_yemen = {
+		color = { 218 234 33 }
+
+		capital	= c_sanaa
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_arabic }
+				}
+				add = @better_than_the_alternatives_score
+			}
+		}
+
+		d_sanaa = {
+			color = { 220 230 30 }
+
+			capital = c_sanaa
+
+			c_sanaa = {
+				color = { 225 235 36 }
+
+				b_sanaa = {
+					province = 6276
+
+					color = { 225 235 36 }
+				}
+				b_ash-sharaf = {
+					province = 6272
+
+					color = { 225 235 36 }
+				}
+				b_huth = {
+					province = 6273
+
+					color = { 225 235 36 }
+				}
+				b_ar-rayda = {
+					province = 6274
+
+					color = { 225 235 36 }
+				}
+				b_shibam-sanaa = {
+					province = 6275
+
+					color = { 225 235 36 }
+				}
+			}
+			c_tihamat-al-yamani = {
+				color = { 218 228 28 }
+
+				b_attar = {
+					province = 6240
+
+					color = { 218 228 28 }
+				}
+				b_harad = {
+					province = 6241
+
+					color = { 218 228 28 }
+				}
+				b_al-mahjam = {
+					province = 6270
+
+					color = { 218 228 28 }
+				}
+				b_kamaran = {
+					province = 6271
+
+					color = { 218 228 28 }
+				}
+			}
+			c_najran = {
+				color = { 223 231 34 }
+
+				b_najran = {
+					province = 6243
+
+					color = { 223 231 34 }
+				}
+				b_sada = {
+					province = 6242
+
+					color = { 223 231 34 }
+				}
+			}
+			c_zabid = {
+				color = { 216 225 25 }
+
+				b_zabid = {
+					province = 6280
+
+					color = { 216 225 25 }
+				}
+				b_fashal = {
+					province = 6278
+
+					color = { 216 225 25 }
+				}
+				b_ghalafiqa = {
+					province = 6279
+
+					color = { 216 225 25 }
+				}
+				b_mawza = {
+					province = 6281
+
+					color = { 216 225 25 }
+				}
+			}
+		}
+
+		d_jawf-al-yamani = {
+			color = { 230 240 40 }
+
+			capital = c_jawf-al-yamani
+
+			c_jawf-al-yamani = {
+				color = { 227 242 42 }
+
+				b_main = {
+					province = 6299
+
+					color = { 227 242 42 }
+				}
+				b_shabwa = {
+					province = 6296
+
+					color = { 227 242 42 }
+				}
+				b_bayhan = {
+					province = 6297
+
+					color = { 227 242 42 }
+				}
+				b_baraqish = {
+					province = 6298
+
+					color = { 227 242 42 }
+				}
+			}
+			c_wabar = {
+				color = { 233 244 44 }
+
+				b_wabar = {
+					province = 6300
+
+					color = { 233 244 44 }
+				}
+				b_hisn_al-abr = {
+					province = 6301
+
+					color = { 233 244 44 }
+				}
+			}
+		}
+
+		d_taizz = {
+			color = { 240 250 50 }
+
+			capital = c_taizz
+
+			c_taizz = {
+				color = { 242 252 52 }
+
+				b_taizz = {
+					province = 6284
+
+					color = { 242 252 52 }
+				}
+				b_al-janad = {
+					province = 6285
+
+					color = { 242 252 52 }
+				}
+				b_zafar = {
+					province = 6286
+
+					color = { 242 252 52 }
+				}
+				b_rada = {
+					province = 6287
+
+					color = { 242 252 52 }
+				}
+				b_lawdar = {
+					province = 6288
+
+					color = { 242 252 52 }
+				}
+			}
+			c_mandab = {
+				color = { 236 246 48 }
+
+				b_al-mandab = {
+					province = 6282
+
+					color = { 236 246 48 }
+				}
+				b_al-maafir = {
+					province = 6283
+
+					color = { 236 246 48 }
+				}
+				b_musaymir = {
+					province = 6289
+
+					color = { 236 246 48 }
+				}
+				b_aden = {
+					province = 6290
+
+					color = { 236 246 48 }
+				}
+			}
+			c_dathina = {
+				color = { 238 248 52 }
+
+				b_saqra = {
+					province = 6291
+
+					color = { 238 248 52 }
+				}
+				b_ahwan = {
+					province = 6292
+
+					color = { 238 248 52 }
+				}
+				b_azzan = {
+					province = 6294
+
+					color = { 238 248 52 }
+				}
+				b_nisab = {
+					province = 6295
+
+					color = { 238 248 52 }
+				}
+			}
+		}
+
+		d_hadramawt = {
+			color = { 210 240 20 }
+
+			capital = c_hadramawt
+
+			c_hadramawt = {
+				color = { 212 242 22 }
+
+				b_shibam = {
+					province = 6306
+
+					color = { 212 242 22 }
+				}
+				b_barhut = {
+					province = 6304
+
+					color = { 212 242 22 }
+				}
+				b_inat = {
+					province = 6305
+
+					color = { 212 242 22 }
+				}
+				b_qabr_salih = {
+					province = 6307
+
+					color = { 212 242 22 }
+				}
+				b_qutn = {
+					province = 6308
+
+					color = { 212 242 22 }
+				}
+			}
+			c_ahqaf = {
+				color = { 214 245 18 }
+
+				b_al-qhqaf = {
+					province = 6302
+
+					color = { 214 245 18 }
+				}
+				b_thamud = {
+					province = 6303
+
+					color = { 214 245 18 }
+				}
+			}
+			c_kinda_sakun = {
+				color = { 216 238 24 }
+
+				b_hurayda = {
+					province = 6309
+
+					color = { 216 238 24 }
+				}
+				b_khurayba = {
+					province = 6310
+
+					color = { 216 238 24 }
+				}
+			}
+		}
+
+		d_mahra = {
+			color = { 210 230 40 }
+
+			capital = c_mahra
+
+			c_mahra = {
+				color = { 212 233 43 }
+
+				b_ash-shihr = {
+					province = 6312
+
+					color = { 212 233 43 }
+				}
+				b_balhaf = {
+					province = 6293
+
+					color = { 212 233 43 }
+				}
+				b_mukalla = {
+					province = 6311
+
+					color = { 212 233 43 }
+				}
+			}
+			c_al-asa = {
+				color = { 215 227 46 }
+
+				b_al-asa = {
+					province = 6313
+
+					color = { 215 227 46 }
+				}
+			}
+			c_dhofar = {
+				color = { 204 235 34 }
+
+				b_raysut = {
+					province = 6314
+
+					color = { 204 235 34 }
+				}
+				b_dhufar = {
+					province = 6315
+
+					color = { 204 235 34 }
+				}
+				b_mirba = {
+					province = 6316
+
+					color = { 204 235 34 }
+				}
+				b_hasik = {
+					province = 6317
+
+					color = { 204 235 34 }
+				}
+			}
+		}
+
+		d_socotra = {
+			color = { 142 255 85 }
+
+			capital = c_socotra
+
+			c_socotra = {
+				color = { 207 227 37 }
+
+				b_suq-socotra = { #Tamrida
+					province = 1369
+
+					color = { 207 227 37 }
+				}
+				b_qualnsiyah = {
+					province = 1310
+
+					color = { 207 227 37 }
+				}
+			}
+		}
+	}
+
+
+	k_egypt = {
+		color = { 10 255 80 }
+
+		capital	= c_cairo
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					culture = culture:egyptian
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_cyrenaica = {
+			color = { 32 150 63 }
+
+			capital = c_barqa # Cyrenaica
+
+			c_barqa = {
+				color = { 34 152 65 }
+
+				b_barqa-al-marj = {
+					province = 6104
+
+					color = { 34 152 65 }
+				}
+				b_wadi_masus = {
+					province = 6102
+
+					color = { 34 152 65 }
+				}
+				b_jabal_al-gharbi = {
+					province = 6103
+
+					color = { 34 152 65 }
+				}
+				b_benghazi = {
+					province = 6105
+
+					color = { 34 152 65 }
+				}
+			}
+			c_awjila = {
+				color = { 36 154 67 }
+
+				b_awjila = {
+					province = 6106
+
+					color = { 36 154 67 }
+				}
+				b_jalu = {
+					province = 6107
+
+					color = { 36 154 67 }
+				}
+				b_jakharrad = {
+					province = 6108
+
+					color = { 36 154 67 }
+				}
+			}
+			c_derna = {
+				color = { 38 156 69 }
+
+				b_derna = {
+					province = 6099
+
+					color = { 38 156 69 }
+				}
+				b_wadi_makhil = {
+					province = 6100
+
+					color = { 38 156 69 }
+				}
+				b_marawa = {
+					province = 6101
+
+					color = { 38 156 69 }
+				}
+			}
+			c_tobruk = {
+				color = { 40 158 71 }
+
+				b_tobruk = {
+					province = 6098
+
+					color = { 40 158 71 }
+				}
+			}
+		}
+
+		d_alexandria = {
+			color = { 100 219 134 }
+
+			capital = c_alexandria
+
+			c_alexandria = {
+				color = { 102 221 136 }
+
+				#b_alexandria = {
+				#	pentarchy = yes
+				#}
+				b_alexandria = {
+					province = 6053
+
+					color = { 102 221 136 }
+				}
+				b_al-hamam = {
+					province = 6094
+
+					color = { 102 221 136 }
+				}
+				b_wadi_natrun = {
+					province = 6116
+
+					color = { 102 221 136 }
+				}
+			}
+			c_sullum = { #AKA Marmarica
+				color = { 104 223 138 }
+
+				b_sullum = {
+					province = 6097
+
+					color = { 104 223 138 }
+				}
+				b_qasr_ash-shams = {
+					province = 6095
+
+					color = { 104 223 138 }
+				}
+				b_kanais_al-hadid = {
+					province = 6096
+
+					color = { 104 223 138 }
+				}
+			}
+			c_siwa = {
+				color = { 106 225 140 }
+
+				b_siwa = {
+					province = 6093
+
+					color = { 106 225 140 }
+				}
+				b_ain_al-gharbi = {
+					province = 6092
+
+					color = { 106 225 140 }
+				}
+				b_qara = {
+					province = 6117
+
+					color = { 106 225 140 }
+				}
+			}
+		}
+
+		d_delta = {
+			color = { 3 255 74 }
+
+			capital = c_damietta
+
+			c_damietta = {
+				color = { 12 255 83 }
+
+				b_dumiyat = {
+					province = 6046
+
+					color = { 12 255 83 }
+				}
+				b_daqahla = {
+					province = 6043
+
+					color = { 12 255 83 }
+				}
+				b_tinnis = {
+					province = 6045
+
+					color = { 12 255 83 }
+				}
+			}
+			c_al-buhaira = {
+				color = { 61 245 114 }
+
+				b_rashid = {
+					province = 6052
+
+					color = { 61 245 114 }
+				}
+				b_damanhur = {
+					province = 6054
+
+					color = { 61 245 114 }
+				}
+				b_ramsis = {
+					province = 6055
+
+					color = { 61 245 114 }
+				}
+			}
+			c_al-gharbiya = {
+				color = { 9 255 80 }
+
+				b_minuf = {
+					province = 6051
+
+					color = { 9 255 80 }
+				}
+				b_samannud = {
+					province = 6047
+
+					color = { 9 255 80 }
+				}
+				b_burullus = {
+					province = 6048
+
+					color = { 9 255 80 }
+				}
+				b_nastarawa = {
+					province = 6049
+
+					color = { 9 255 80 }
+				}
+				b_ibyar = {
+					province = 6050
+
+					color = { 9 255 80 }
+				}
+			}
+			c_sharkiya = {
+				color = { 41 214 91 }
+
+				b_bilbays = {
+					province = 6040
+
+					color = { 41 214 91 }
+				}
+				b_qalyub = {
+					province = 6041
+
+					color = { 41 214 91 }
+				}
+				b_faqus = {
+					province = 6044
+
+					color = { 41 214 91 }
+				}
+			}
+		}
+
+		d_cairo = {
+			color = { 32 245 138 }
+
+			capital = c_cairo
+
+			c_cairo = {
+				color = { 26 214 120 }
+
+				b_cairo = {
+					province = 6042
+
+					color = { 26 214 120 }
+				}
+				b_quzlum = {
+					province = 6039
+
+					color = { 26 214 120 }
+				}
+				b_atfih = {
+					province = 6065
+
+					color = { 26 214 120 }
+				}
+				b_hulwan-cairo = {
+					province = 6066
+					cultural_names = {
+						name_list_ancient_egyptian = cn_Memphis
+						name_list_ptolemaic = cn_Memphis
+						name_list_nubian = cn_Memphis
+					}
+					color = { 26 214 120 }
+				}
+			}
+			c_giza = {
+				color = { 2 181 91 }
+
+				b_gizeh = {
+					province = 6057
+
+					color = { 2 181 91 }
+				}
+				b_abu_ghalib = {
+					province = 6056
+
+					color = { 2 181 91 }
+				}
+				b_busir = {
+					province = 6058
+
+					color = { 2 181 91 }
+				}
+			}
+			c_fayyum = {
+				color = { 36 156 95 }
+
+				b_al-fayyum = {
+					province = 6060
+
+					color = { 36 156 95 }
+				}
+				b_tirsa = {
+					province = 6059
+
+					color = { 36 156 95 }
+				}
+				b_iqna = {
+					province = 6061
+
+					color = { 36 156 95 }
+				}
+			}
+		}
+
+		d_al-wahat = {
+			color = { 40 160 140 }
+
+			capital = c_bahriya
+
+			c_bahriya = {
+				color = { 45 165 145 }
+
+				b_al-bahriya = {
+					province = 6089
+
+					color = { 45 165 145 }
+				}
+				b_bawiti = {
+					province = 6090
+
+					color = { 45 165 145 }
+				}
+				b_al-harra = {
+					province = 6091
+
+					color = { 45 165 145 }
+				}
+			}
+			c_farafra = {
+				color = { 34 148 129 }
+
+				b_al-farafra = {
+					province = 6088
+
+					color = { 34 148 129 }
+				}
+			}
+			c_dakhla = {
+				color = { 108 217 168 }
+
+				b_mut = {
+					province = 6085
+
+					color = { 108 217 168 }
+				}
+				b_tunayda = {
+					province = 6086
+
+					color = { 108 217 168 }
+				}
+				b_al-qasr-dakhla = {
+					province = 6087
+
+					color = { 108 217 168 }
+				}
+			}
+			c_kharga = {
+				color = { 39 219 126 }
+
+				b_kharga = {
+					province = 6083
+
+					color = { 39 219 126 }
+				}
+				b_baris = {
+					province = 6084
+
+					color = { 39 219 126 }
+				}
+			}
+		}
+
+		d_al-said = {
+			color = { 85 217 87 }
+
+			capital = c_qus
+
+			c_qus = {
+				color = { 76 194 77 }
+				cultural_names = {
+					name_list_ancient_egyptian = cn_Thebes
+					name_list_ptolemaic = cn_Thebes
+					name_list_nubian = cn_Thebes
+				}
+				b_qus = {
+					province = 6077
+					cultural_names = {
+						name_list_ancient_egyptian = cn_Thebes
+						name_list_ptolemaic = cn_Thebes
+						name_list_nubian = cn_Thebes
+					}
+					color = { 76 194 77 }
+				}
+				b_huw = {
+					province = 6074
+
+					color = { 76 194 77 }
+				}
+				b_faw = {
+					province = 6075
+
+					color = { 76 194 77 }
+				}
+				b_qina = {
+					province = 6076
+
+					color = { 76 194 77 }
+				}
+				b_armant = {
+					province = 6078
+
+					color = { 76 194 77 }
+				}
+			}
+			c_bahnasa = {
+				color = { 50 173 51 }
+
+				b_al-bahnasa = {
+					province = 6063
+
+					color = { 50 173 51 }
+				}
+				b_ahnas = {
+					province = 6062
+
+					color = { 50 173 51 }
+				}
+				b_ihrit = {
+					province = 6064
+
+					color = { 50 173 51 }
+				}
+			}
+			c_ushmun = {
+				color = { 72 176 73 }
+
+				b_al-ushmunain = {
+					province = 6067
+
+					color = { 72 176 73 }
+				}
+				b_ansina = {
+					province = 6068
+
+					color = { 72 176 73 }
+				}
+				b_manfalut = {
+					province = 6069
+
+					color = { 72 176 73 }
+				}
+			}
+			c_asyut = {
+				color = { 39 194 40 }
+
+				b_asyut = {
+					province = 6070
+
+					color = { 39 194 40 }
+				}
+				b_bawit = {
+					province = 6071
+
+					color = { 39 194 40 }
+				}
+				b_ikhmin = {
+					province = 6072
+
+					color = { 39 194 40 }
+				}
+				b_ibshaya = {
+					province = 6073
+
+					color = { 39 194 40 }
+				}
+			}
+			c_aswan = {
+				color = { 16 163 17 }
+
+				b_aswan = {
+					province = 6081
+
+					color = { 16 163 17 }
+				}
+				b_udfu = {
+					province = 6079
+
+					color = { 16 163 17 }
+				}
+				b_zarnikh = {
+					province = 6080
+
+					color = { 16 163 17 }
+				}
+				b_aswan-west = {
+					province = 6082
+
+					color = { 16 163 17 }
+				}
+			}
+		}
+
+		d_eastern_desert = {
+			color = { 40 200 140 }
+
+			capital = c_qusayr
+
+			c_qusayr = {
+				color = { 45 205 135 }
+
+				b_qusayr = {
+					province = 6109
+
+					color = { 45 205 135 }
+				}
+				b_safaga = {
+					province = 6122
+
+					color = { 45 205 135 }
+				}
+			}
+			c_jabal_quzlum = {
+				color = { 45 195 130 }
+
+				b_north_jbl_quzlum = {
+					province = 6118
+
+					color = { 45 195 130 }
+				}
+				b_central_jbl_quzlum = {
+					province = 6119
+
+					color = { 45 195 130 }
+				}
+				b_south_jbl_quzlum = {
+					province = 6120
+
+					color = { 45 195 130 }
+				}
+				b_um_shashoba = {
+					province = 6121
+
+					color = { 45 195 130 }
+				}
+			}
+		}
+
+		d_sinai = {
+			color = { 88 99 2 }
+
+			capital = c_farama
+
+			c_farama = {
+				color = { 141 198 5 }
+
+				b_farama = {
+					province = 6038
+
+					color = { 141 198 5 }
+				}
+				b_warrada = {
+					province = 6036
+
+					color = { 141 198 5 }
+				}
+				b_al-arish = {
+					province = 5970
+
+					color = { 141 198 5 }
+				}
+			}
+			c_sinai = {
+				color = { 143 201 8 }
+
+				b_at-tur = {
+					province = 6033
+
+					color = { 143 201 8 }
+				}
+				b_stcatherine = {
+					province = 6032
+
+					color = { 143 201 8 }
+				}
+				b_faran = {
+					province = 6034
+
+					color = { 143 201 8 }
+				}
+				b_qalat_jundi = {
+					province = 6035
+
+					color = { 143 201 8 }
+				}
+				b_tih = {
+					province = 6037
+
+					color = { 143 201 8 }
+				}
+			}
+			c_firaun = {
+				color = { 145 203 10 }
+
+				b_firaun = {
+					province = 6030
+
+					color = { 145 203 10 }
+				}
+				b_dahab = {
+					province = 6031
+
+					color = { 145 203 10 }
+				}
+			}
+		}
+	}
+
+	k_jerusalem = {
+		color = { 180 180 180 }
+
+		capital = c_jerusalem
+
+		can_create = {
+			faith = { religion_tag = christianity_religion }
+		}
+
+		can_create_on_partition = {
+			faith = { religion_tag = christianity_religion }
+		}
+
+		ai_primary_priority = {
+			if = {
+				limit = {
+					faith = faith:catholic
+				}
+				add = @always_primary_score
+			}
+		}
+
+		# Creation/Usurp Trigger
+
+		# Creation Effect
+
+		d_oultrejourdain = {
+			color = { 190 190 180 }
+
+			capital = c_kerak
+
+			c_kerak = { #Al-Karak
+				color = { 150 150 170 }
+
+				b_kerak = { #Al-Karak
+					province = 5980
+
+					color = { 150 150 170 }
+				}
+				b_shawbak = { #AKA Monreal
+					province = 5978
+
+					color = { 150 150 170 }
+				}
+				b_at-tafila = {
+					province = 5979
+
+					color = { 150 150 170 }
+				}
+			}
+			c_negev = {
+				color = { 190 180 165 }
+
+				b_zughar = {
+					province = 5969
+
+					color = { 190 180 165 }
+				}
+				b_baidha-petra = { #Yes, this is Petra
+					province = 5971
+
+					color = { 190 180 165 }
+				}
+				b_arandal = {
+					province = 5972
+
+					color = { 190 180 165 }
+				}
+				b_aila = { #AKA Eilat
+					province = 5973
+
+					color = { 190 180 165 }
+				}
+			}
+		}
+
+		d_palestine = {
+			color = { 160 160 200 }
+
+			capital = c_jerusalem
+
+			c_jerusalem = {
+				color = { 176 190 140 }
+
+				b_jerusalem = {
+					province = 5965
+
+					color = { 176 190 140 }
+				}
+				b_ar-ramla = {
+					province = 5963
+
+					color = { 176 190 140 }
+				}
+				b_nablus = {
+					province = 5964
+
+					color = { 176 190 140 }
+				}
+				b_hebron = {
+					province = 5966
+
+					color = { 176 190 140 }
+				}
+			}
+			c_ghazza = {
+				color = { 167 165 190 }
+				#cultural_names = {
+				#	name_list_ancient_egyptian = cn_Gaza
+				#	name_list_ptolemaic = cn_Gaza
+				#}
+				b_ghazza = {
+					province = 5968
+					color = { 167 165 190 }
+				}
+				b_ascalon = {
+					province = 5967
+
+					color = { 167 165 190 }
+				}
+			}
+			c_jaffa = {
+				color = { 167 190 150 }
+
+				b_yaffa = {
+					province = 5962
+
+					color = { 167 190 150 }
+				}
+				b_cesarea = {
+					province = 5961
+
+					color = { 167 190 150 }
+				}
+			}
+		}
+
+		d_urdunn = { #AKA Galilee
+			color = { 225 200 160 }
+
+			capital = c_tiberias
+
+			c_tiberias = {
+				color = { 225 220 160 }
+
+				b_tiberias = {
+					province = 5959
+
+					color = { 225 220 160 }
+				}
+				b_baniyas = {
+					province = 5922
+
+					color = { 225 220 160 }
+				}
+			}
+			c_acre = {
+				color = { 245 245 200 }
+
+				b_acre = {
+					province = 5960
+
+					color = { 245 245 200 }
+				}
+				b_tyre = {
+					province = 5921
+
+					color = { 245 245 200 }
+				}
+			}
+			c_irbid = {
+				color = { 230 250 190 }
+
+				b_irbid = {
+					province = 5958
+
+					color = { 230 250 190 }
+				}
+				b_jarash = {
+					province = 5985
+
+					color = { 230 250 190 }
+				}
+			}
+		}
+	}
+
+	k_syria = {
+		color = { 145 130 88 }
+
+		capital = c_damascus
+
+		d_aleppo = {
+			color = { 85 232 20 }
+
+			capital = c_aleppo
+
+			c_aleppo = {
+				color = { 91 238 26 }
+
+				b_halab = {
+					province = 5934
+
+					color = { 91 238 26 }
+				}
+				b_tall_afrin = {
+					province = 5906
+
+					color = { 91 238 26 }
+				}
+				b_azaz = {
+					province = 5907
+
+					color = { 91 238 26 }
+				}
+				b_manbij = {
+					province = 5908
+
+					color = { 91 238 26 }
+				}
+				b_buzaa = {
+					province = 5938
+
+					color = { 91 238 26 }
+				}
+			}
+			c_suriya = {
+				color = { 87 234 22 }
+
+				b_suriya = {
+					province = 5942
+
+					color = { 87 234 22 }
+				}
+				b_khunasira = {
+					province = 5941
+
+					color = { 87 234 22 }
+				}
+			}
+			c_syrrusafa = {
+				color = { 84 238 26 }
+
+				b_ar-rusafa = {
+					province = 5940
+
+					color = { 84 238 26 }
+				}
+				b_siffin = {
+					province = 5939
+
+					color = { 84 238 26 }
+				}
+			}
+			c_qinnasrin = {
+				color = { 84 220 20 }
+
+				b_qinnasrin = {
+					province = 5933
+
+					color = { 84 220 20 }
+				}
+				b_artah = {
+					province = 5935
+
+					color = { 84 220 20 }
+				}
+				b_ar-rikha = {
+					province = 5936
+
+					color = { 84 220 20 }
+				}
+			}
+		}
+
+		d_edessa = {
+			color = { 182 110 45 }
+
+			capital = c_edessa # Edessa
+
+			c_edessa = {
+				color = { 105 165 45 }
+
+				b_edessa = {
+					province = 4869
+
+					color = { 105 165 45 }
+				}
+				b_al-bira = {
+					province = 4872
+
+					color = { 105 165 45 }
+				}
+			}
+			c_samosata = {
+				color = { 175 105 45 }
+
+				b_samosata = {
+					province = 4894
+
+					color = { 175 105 45 }
+				}
+				b_bahasna = {
+					province = 4892
+
+					color = { 175 105 45 }
+				}
+			}
+			c_marash = {
+				color = { 175 125 35 }
+
+				b_marash = {
+					province = 4893
+
+					color = { 175 125 35 }
+				}
+				b_qalat_ar-rum = {
+					province = 4890
+
+					color = { 175 125 35 }
+				}
+				b_kaisum = {
+					province = 4891
+
+					color = { 175 125 35 }
+				}
+			}
+			c_aintab = {
+				color = { 195 125 55 }
+
+				b_aintab = {
+					province = 5900
+
+					color = { 195 125 55 }
+				}
+				b_tall_bashir = { #AKA Turbessel
+					province = 5901
+
+					color = { 195 125 55 }
+				}
+				b_jarabulus = {
+					province = 5902
+
+					color = { 195 125 55 }
+				}
+				b_duluk-teluch = {
+					province = 4899
+
+					color = { 195 125 55 }
+				}
+			}
+		}
+
+		d_homs = {
+			color = { 90 230 30 }
+
+			capital = c_homs
+
+			c_homs = {
+				color = { 93 240 28 }
+
+				b_hims = {
+					province = 5929
+
+					color = { 93 240 28 }
+				}
+				b_rafaniya-krak = {
+					province = 5917
+
+					color = { 93 240 28 }
+				}
+				b_jusiya = {
+					province = 5928
+
+					color = { 93 240 28 }
+				}
+			}
+			c_shayzar = {
+				color = { 93 252 34 }
+
+				cultural_names = {
+					name_list_greek = cn_sezer
+				}
+
+				b_shayzar = {
+					province = 5915
+
+					color = { 93 252 34 }
+
+					cultural_names = {
+						name_list_greek = cn_sezer
+					}
+				}
+				b_masyaf = {
+					province = 5914
+
+					color = { 93 252 34 }
+				}
+			}
+			c_hama = {
+				color = { 95 242 30 }
+
+				b_hama = {
+					province = 5930
+
+					color = { 95 242 30 }
+				}
+				b_salamiya = {
+					province = 5931
+
+					color = { 95 242 30 }
+				}
+				b_kafartab = {
+					province = 5932
+
+					color = { 95 242 30 }
+				}
+			}
+		}
+
+		d_antioch = {
+			color = { 142 63 129 }
+
+			capital = c_antiocheia
+
+			c_antiocheia = {
+				color = { 152 69 135 }
+
+				b_antiocheia = {
+					province = 5910
+
+					color = { 152 69 135 }
+				}
+				b_as-suwaydiya = {
+					province = 5909
+
+					color = { 152 69 135 }
+				}
+				b_latakia = {
+					province = 5912
+
+					color = { 152 69 135 }
+				}
+				b_jabala = {
+					province = 5911
+
+					color = { 152 69 135 }
+				}
+			}
+			c_alexandretta = {
+				color = { 112 197 50 }
+
+				cultural_names = {
+					name_list_bedouin = cn_iskandarun
+					name_list_maghrebi = cn_iskandarun
+					name_list_levantine = cn_iskandarun
+					name_list_egyptian = cn_iskandarun
+					name_list_andalusian = cn_iskandarun
+					name_list_turkish = cn_iskandarun
+				}
+
+				b_alexandretta = {
+					province = 5905
+
+					cultural_names = {
+						name_list_bedouin = cn_iskandarun
+						name_list_maghrebi = cn_iskandarun
+						name_list_levantine = cn_iskandarun
+						name_list_egyptian = cn_iskandarun
+						name_list_andalusian = cn_iskandarun
+						name_list_turkish = cn_iskandarun
+					}
+
+					color = { 112 197 50 }
+				}
+				b_qurus = {
+					province = 5903
+
+					color = { 112 197 50 }
+				}
+				b_baghras = {
+					province = 5904
+
+					color = { 112 197 50 }
+				}
+			}
+		}
+
+		d_lebanon = {
+			color = { 71 150 32 }
+
+			capital = c_beirut
+
+			c_beirut = {
+				color = { 77 156 38 }
+
+				b_beirut = {
+					province = 5919
+
+					color = { 77 156 38 }
+				}
+				b_saida = { #Sidon
+					province = 5920
+
+					color = { 77 156 38 }
+				}
+			}
+			c_tripoli = {
+				color = { 75 154 36 }
+
+				b_syrtripolis = {
+					province = 5918
+
+					color = { 75 154 36 }
+				}
+				b_antartus = {
+					province = 5916
+
+					color = { 75 154 36 }
+				}
+			}
+		}
+
+		d_damascus = {
+			color = { 122 255 3 }
+
+			capital = c_damascus
+
+			c_damascus = {
+				color = { 125 255 6 }
+
+				b_damascus = {
+					province = 5924
+
+					color = { 125 255 6 }
+				}
+				b_nawa = {
+					province = 5923
+
+					color = { 125 255 6 }
+				}
+				b_darayya = {
+					province = 5953
+
+					color = { 125 255 6 }
+				}
+				b_zurra = {
+					province = 5954
+
+					color = { 125 255 6 }
+				}
+			}
+			c_juwair = {
+				color = { 128 255 9 }
+
+				b_juwair = {
+					province = 5951
+
+					color = { 128 255 9 }
+				}
+				b_al-qastal = {
+					province = 5927
+
+					color = { 128 255 9 }
+				}
+				b_marj-rahit = {
+					province = 5952
+
+					color = { 128 255 9 }
+				}
+			}
+			c_baalbek = {
+				color = { 134 255 15 }
+
+				b_baalbak = {
+					province = 5926
+
+					color = { 134 255 15 }
+				}
+				b_az-zabadani = {
+					province = 5925
+
+					color = { 134 255 15 }
+				}
+				b_anjar = {
+					province = 5937
+
+					color = { 134 255 15 }
+				}
+			}
+			c_hauran = {
+				color = { 103 214 143 }
+
+				b_busra = {
+					province = 5955
+
+					color = { 103 214 143 }
+				}
+				b_sarkhad = {
+					province = 5956
+
+					color = { 103 214 143 }
+				}
+				b_as-suwaida-hauran = {
+					province = 5957
+
+					color = { 103 214 143 }
+				}
+			}
+		}
+
+		d_palmyra = {
+			color = { 35 232 20 }
+
+			capital = c_palmyra
+
+			c_palmyra = {
+				color = { 89 236 24 }
+
+				b_tadmur = { #AKA Palmyra
+					province = 5948
+
+					color = { 89 236 24 }
+				}
+				b_arak = {
+					province = 5947
+
+					color = { 89 236 24 }
+				}
+			}
+			c_sukhna = {
+				color = { 37 234 22 }
+
+				b_as-sukhna = {
+					province = 5945
+
+					color = { 37 234 22 }
+				}
+				b_dair_ar-ruman = {
+					province = 5944
+
+					color = { 37 234 22 }
+				}
+				b_urd = {
+					province = 5946
+
+					color = { 37 234 22 }
+				}
+			}
+			c_qaryatan = {
+				color = { 39 236 24 }
+
+				b_al-qaryatan = {
+					province = 5950
+
+					color = { 39 236 24 }
+				}
+				b_judr = {
+					province = 5949
+
+					color = { 39 236 24 }
 				}
 			}
 		}
