@@ -159,7 +159,6 @@ scale_legacy_1 = { # Oviparous
 		value = 0
 	}
 }
-
 scale_legacy_2 = { # Adaptation
 	legacy = scale_legacy_track
 
@@ -175,7 +174,6 @@ scale_legacy_2 = { # Adaptation
 		supply_duration = 1
 	}
 }
-
 scale_legacy_3 = { # Cold Blooded's
 	legacy = scale_legacy_track
 
@@ -188,7 +186,6 @@ scale_legacy_3 = { # Cold Blooded's
 		owned_scheme_secrecy_add = 15
 	}
 }
-
 scale_legacy_4 = { # Inhuman
 	legacy = scale_legacy_track
 
@@ -203,7 +200,6 @@ scale_legacy_4 = { # Inhuman
 		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
 	}
 }
-
 scale_legacy_5 = { # Heir's of the Dragon
 	legacy = scale_legacy_track
 
@@ -218,7 +214,6 @@ scale_legacy_5 = { # Heir's of the Dragon
 	}
 }
 
-
 usa_legacy_1 = { # Crossing the Delaware
 	legacy = usa_legacy_track
 
@@ -231,7 +226,6 @@ usa_legacy_1 = { # Crossing the Delaware
 
 	ai_chance = { value = 0 }
 }
-
 usa_legacy_2 = { # Declaration 
 	legacy = usa_legacy_track
 
@@ -243,7 +237,6 @@ usa_legacy_2 = { # Declaration
 		custom_description_no_bullet = { text = fp2_coterie_legacy_1_effect }
 	}
 }
-
 usa_legacy_3 = { # Era of the Common Man
 	legacy = usa_legacy_track
 
@@ -253,7 +246,6 @@ usa_legacy_3 = { # Era of the Common Man
 		max_sway_schemes_add = 1
 	}
 }
-
 usa_legacy_4 = { # military congress
 	legacy = usa_legacy_track
 
@@ -266,7 +258,6 @@ usa_legacy_4 = { # military congress
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
 }
-
 usa_legacy_5 = { # Freedom
 	legacy = usa_legacy_track
 
@@ -358,7 +349,6 @@ Chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
 		value = 0
 	}
 }
-
 Chinese_bureaucracy_legacy_2 = { # Imperial law
 	legacy = Chinese_bureaucracy_legacy_track
 
@@ -366,7 +356,6 @@ Chinese_bureaucracy_legacy_2 = { # Imperial law
 		monthly_county_control_change_add = 1 
 	}
 }
-
 Chinese_bureaucracy_legacy_3 = { # Just and Honest
 	legacy = Chinese_bureaucracy_legacy_track
 
@@ -375,7 +364,6 @@ Chinese_bureaucracy_legacy_3 = { # Just and Honest
 		tyranny_gain_mult = -0.2 
 	}
 }
-
 Chinese_bureaucracy_legacy_4 = { # Structured Economics
 	legacy = Chinese_bureaucracy_legacy_track
 
@@ -383,7 +371,6 @@ Chinese_bureaucracy_legacy_4 = { # Structured Economics
 		domain_tax_mult = 0.2
 	}
 }
-
 Chinese_bureaucracy_legacy_5 = { # Heavenly rule
 	legacy = Chinese_bureaucracy_legacy_track
 
@@ -395,41 +382,158 @@ Chinese_bureaucracy_legacy_5 = { # Heavenly rule
 	}
 }
 
-mafia_legacy_1 = { #
+mafia_legacy_1 = { #Associates
 	legacy = ocean_legacy_track
 	character_modifier = {
-		coastal_advantage = 1
+		county_opinion_add = 5
+		monthly_county_control_growth_add = 0.1
+		max_loot_mult = 0.5
 	}
 	ai_chance = {
 		value = 0
 	}
 }
-mafia_legacy_2 = { #
+mafia_legacy_2 = { #Soldiers
 	legacy = ocean_legacy_track
 	character_modifier = {
-		coastal_advantage = 2
-		no_water_crossing_penalty = yes
+		befriend_scheme_power_mult = 0.3
+		max_befriend_schemes_add = 1
+		lifestyle_reveler_xp_gain_mult = 0.5
 	}
 }
-mafia_legacy_3 = {#
+mafia_legacy_3 = {#Caporegimes
 	legacy = ocean_legacy_track
+	character_modifier = {
+		max_hostile_schemes_add = 1
+		embarkation_cost_mult = -0.2
+	}
+	effect = {
+		custom_description_no_bullet = { text = fp2_urbanism_legacy_4_effect }
+	}
+}
+mafia_legacy_4 = { #Underboss
+	legacy = ocean_legacy_track
+	character_modifier = {
+		domain_tax_same_faith_mult = 0.05
+		enemy_hostile_scheme_success_chance_add = -15
+	}
+	effect = {
+		# +X% extra chance to kidnap characters after sieges/raids.
+		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
+	}
+}
+mafia_legacy_5 = { #Boss
+	legacy = ocean_legacy_track
+	character_modifier = {
+		seduce_scheme_power_mult = 0.5
+		diplomacy_per_prestige_level = 1
+		cultural_head_fascination_mult = 0.35
+		diplomatic_range_mult = 2
+	}
+	effect = {
+		# +X extra enemy control loss on occupying a county.
+		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
+	}
+}
+##Japanese legacy
+ japan_legacy_1 = {#Japanese cavalry
+	legacy = japan_legacy_track
+	character_modifier = {
+		prowess = 2
+		knight_effectiveness_mult = 0.15
+		pursue_efficiency = 0.15
+		retreat_losses = -0.15
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ japan_legacy_2 = {#banzai charge
+	legacy = japan_legacy_track
+	character_modifier = {
+		glory_hound_opinion = 5
+		short_reign_duration_mult = -0.2
+		negate_health_penalty_add = 0.5
+	}
+ }
+ japan_legacy_3 = {#Dan-no-ura
+	legacy = japan_legacy_track
 	character_modifier = {
 		coastal_advantage = 3
 		embarkation_cost_mult = -0.2
-	}
-}
-mafia_legacy_4 = { #
-	legacy = ocean_legacy_track
-	character_modifier = {
-		coastal_advantage = 4
 		naval_movement_speed_mult = 0.5
 	}
-}
-mafia_legacy_5 = { #
-	legacy = ocean_legacy_track
+ }
+ japan_legacy_4 = {#Senkan
+	legacy = japan_legacy_track
 	character_modifier = {
-		coastal_advantage = 10
-		naval_movement_speed_mult = 1.5
-		no_disembark_penalty = yes
+		enemy_hard_casualty_modifier = 0.1
+		naval_movement_speed_mult = 0.5
 	}
-}
+	effect = {
+		custom_description_no_bullet = { text = fp1_pillage_legacy_1_effect }
+	}
+	effect = {
+		# +X% extra chance to kidnap characters after sieges/raids.
+		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
+	}
+	effect = {
+		# +X extra enemy control loss on occupying a county.
+		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
+	}
+	effect = {
+		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
+	}
+ }
+ japan_legacy_5 = {#Hōrudingu shiro
+	legacy = japan_legacy_track
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -15
+		supply_duration = 1
+		cultural_head_fascination_mult = 0.10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = fp1_adventure_legacy_5_effect
+		}
+		root = {
+			hidden_effect = {
+				every_relation = {
+					type = friend
+					add_to_temporary_list = decentralized_rule_friends
+				}
+				every_relation = {
+					type = best_friend
+					limit = { NOT = { is_in_list = decentralized_rule_friends } }
+					add_to_temporary_list = decentralized_rule_friends
+				}
+				every_in_list = {
+					list = decentralized_rule_friends
+					root = {
+						initial_decentralized_rule_friends_modifier_effect = yes
+					}
+				}
+				dynasty = {
+					every_dynasty_member = {
+						initial_decentralized_rule_friends_modifier_effect = yes
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		custom_description_no_bullet = { text = fp2_coterie_legacy_5_effect }
+	}
+	effect = {
+		# Can learn one extra language
+		custom_description_no_bullet = { text = legacy_additional_language_effect }
+		# Cultural Acceptance from successful Learn Language schemes
+		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
+	}
+ }

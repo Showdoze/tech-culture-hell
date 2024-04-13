@@ -56,3 +56,15 @@ mafia_legacy_track = {
 		}
 	}
 }
+japan_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_culture = culture:japanese
+				}
+				has_dynasty_perk = japan_legacy_1
+			}
+		}
+	}
+}
