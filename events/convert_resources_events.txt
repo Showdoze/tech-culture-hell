@@ -1,10 +1,10 @@
 ﻿
 namespace = convert_resources_events
 
-convert_resources_events.01 = {
+convert_resources_events_root = {
 	type = character_event
-	title = convert_resources_events.01.t
-	desc = convert_resources_events.01.desc
+	title = convert_resources_events_root
+	desc = convert_resources_events_root_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -19,24 +19,24 @@ convert_resources_events.01 = {
 	}
 
 	option = {
-		name = convert_resources_events.01.a
+		name = convert_resources_events_prestige
 		trigger = {
 			prestige >= 300
 		}
-		custom_tooltip = convert_resources_events.01.a.tt
+		custom_tooltip = convert_resources_events_prestige_tip
 		trigger_event = {
-			id = convert_resources_events.02
+			id = convert_resources_events_root_prestige
 		}
 	}
 	
 	option = {
-		name = convert_resources_events.01.b
+		name = convert_resources_events_piety
 		trigger = {
 			piety >= 300
 		}
-		custom_tooltip = convert_resources_events.01.b.tt
+		custom_tooltip = convert_resources_events_piety_tip
 		trigger_event = {
-			id = convert_resources_events.03
+			id = convert_resources_events_root_piety
 		}
 	}
 	
@@ -45,74 +45,53 @@ convert_resources_events.01 = {
 			age < 50
 			health >= 3
 		}
-		name = convert_resources_events.01.c
-		custom_tooltip = convert_resources_events.01.c.tt
+		name = convert_resources_events_loan
+		custom_tooltip = convert_resources_events_loan_tip
 		trigger_event = {
-			id = convert_resources_events.04
+			id = convert_resources_events_root_loan
 		}
 	}
 	
 	option = {
-		trigger = {
-			OR = {
-				AND = {
-					age >= 50
-					health >= 3
-				}
-				AND = {
-					age < 50
-					health < 3
-				}
-			}
-		}
-		name = convert_resources_events.01.d
-		custom_tooltip = convert_resources_events.01.d.tt
+		name = convert_resources_events_extortion
+		custom_tooltip = convert_resources_events_extortion_tip
 		trigger_event = {
-			id = convert_resources_events.05
+			id = convert_resources_events_root_extortion
 		}
 	}
 	
 	option = {
-		trigger = {
-			age >= 50
-			health < 3
-		}
-		name = convert_resources_events.01.e
-		custom_tooltip = convert_resources_events.01.e.tt
-		trigger_event = {
-			id = convert_resources_events.08
-		}
-	}
-	
-	option = {
-		name = convert_resources_events.01.f
-		custom_tooltip = convert_resources_events.01.f.tt
-		trigger_event = {
-			id = convert_resources_events.06
-		}
-	}
-	
-	option = {
-		name = convert_resources_events.01.g
+		name = convert_resources_events_giveloan
 		trigger = {
 			gold >= 150
 		}
-		custom_tooltip = convert_resources_events.01.g.tt
+		custom_tooltip = convert_resources_events_giveloan_tip
 		trigger_event = {
-			id = convert_resources_events.07
+			id = convert_resources_events_root_giveloan
+		}
+	}
+
+	option = {
+		name = convert_resources_events_charity
+		trigger = {
+			gold >= 100
+		}
+		custom_tooltip = convert_resources_events_charity_tip
+		trigger_event = {
+			id = convert_resources_events_root_charity
 		}
 	}
 	
 	option = {
-		name = convert_resources_events.01.h
-		custom_tooltip = convert_resources_events.01.h.tt
+		name = convert_resources_events_cancel
+		custom_tooltip = convert_resources_events_cancel_tip
 	}
 }
 
-convert_resources_events.02 = {
+convert_resources_events_root_prestige = {
 	type = character_event
-	title = convert_resources_events.02.t
-	desc = convert_resources_events.02.desc
+	title = convert_resources_events_prestige
+	desc = convert_resources_events_prestige_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -127,7 +106,7 @@ convert_resources_events.02 = {
 	}
 
 	option = {
-		name = convert_resources_events.02.a
+		name = convert_resources_events_prestige_s1
 		add_gold = 150
 		add_prestige = -300
 	}
@@ -136,7 +115,7 @@ convert_resources_events.02 = {
 		trigger = {
 			prestige >= 500
 		}
-		name = convert_resources_events.02.b
+		name = convert_resources_events_prestige_s2
 		add_gold = 300
 		add_prestige = -500
 	}
@@ -145,7 +124,7 @@ convert_resources_events.02 = {
 		trigger = {
 			prestige >= 1000
 		}
-		name = convert_resources_events.02.c
+		name = convert_resources_events_prestige_s3
 		add_gold = 650
 		add_prestige = -1000
 	}
@@ -154,24 +133,24 @@ convert_resources_events.02 = {
 		trigger = {
 			prestige >= 1500
 		}
-		name = convert_resources_events.02.d
+		name = convert_resources_events_prestige_s4
 		add_gold = 1000
 		add_prestige = -1500
 	}
 	
 	option = {
-		name = convert_resources_events.02.e
-		custom_tooltip = convert_resources_events.02.e.tt
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }
 
-convert_resources_events.03 = {
+convert_resources_events_root_piety = {
 	type = character_event
-	title = convert_resources_events.03.t
-	desc = convert_resources_events.03.desc
+	title = convert_resources_events_piety
+	desc = convert_resources_events_piety_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -186,7 +165,7 @@ convert_resources_events.03 = {
 	}
 
 	option = {
-		name = convert_resources_events.03.a
+		name = convert_resources_events_piety_s1
 		add_gold = 150
 		add_piety = -300
 	}
@@ -195,7 +174,7 @@ convert_resources_events.03 = {
 		trigger = {
 			piety >= 500
 		}
-		name = convert_resources_events.03.b
+		name = convert_resources_events_piety_s2
 		add_gold = 300
 		add_piety = -500
 	}
@@ -204,7 +183,7 @@ convert_resources_events.03 = {
 		trigger = {
 			piety >= 1000
 		}
-		name = convert_resources_events.03.c
+		name = convert_resources_events_piety_s3
 		add_gold = 650
 		add_piety = -1000
 	}
@@ -213,24 +192,24 @@ convert_resources_events.03 = {
 		trigger = {
 			piety >= 1500
 		}
-		name = convert_resources_events.03.d
+		name = convert_resources_events_piety_s4
 		add_gold = 1000
 		add_piety = -1500
 	}
 	
 	option = {
-		name = convert_resources_events.03.e
-		custom_tooltip = convert_resources_events.03.e.tt
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }
 
-convert_resources_events.04 = {
+convert_resources_events_root_loan = {
 	type = character_event
-	title = convert_resources_events.04.t
-	desc = convert_resources_events.04.desc
+	title = convert_resources_events_loan
+	desc = convert_resources_events_loan_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -250,8 +229,8 @@ convert_resources_events.04 = {
 				has_character_modifier = pay_back_small_loan
 			}
 		}
-		name = convert_resources_events.04.a
-		custom_tooltip = convert_resources_events.04.a.tt
+		name = convert_resources_events_loan_s1
+		custom_tooltip = convert_resources_events_loan_s1_tip
 		add_gold = 150
 		add_character_modifier = {
 			modifier = pay_back_small_loan
@@ -265,8 +244,8 @@ convert_resources_events.04 = {
 				has_character_modifier = pay_back_reasonable_loan
 			}
 		}
-		name = convert_resources_events.04.b
-		custom_tooltip = convert_resources_events.04.b.tt
+		name = convert_resources_events_loan_s2
+		custom_tooltip = convert_resources_events_loan_s2_tip
 		add_gold = 300
 		add_character_modifier = {
 			modifier = pay_back_reasonable_loan
@@ -280,8 +259,8 @@ convert_resources_events.04 = {
 				has_character_modifier = pay_back_considerable_loan
 			}
 		}
-		name = convert_resources_events.04.c
-		custom_tooltip = convert_resources_events.04.c.tt
+		name = convert_resources_events_loan_s3
+		custom_tooltip = convert_resources_events_loan_s3_tip
 		add_gold = 500
 		add_character_modifier = {
 			modifier = pay_back_considerable_loan
@@ -295,8 +274,8 @@ convert_resources_events.04 = {
 				has_character_modifier = pay_back_large_loan
 			}
 		}
-		name = convert_resources_events.04.d
-		custom_tooltip = convert_resources_events.04.d.tt
+		name = convert_resources_events_loan_s4
+		custom_tooltip = convert_resources_events_loan_s4_tip
 		add_gold = 1000
 		add_character_modifier = {
 			modifier = pay_back_large_loan
@@ -305,39 +284,13 @@ convert_resources_events.04 = {
 	}
 	
 	option = {
-		name = convert_resources_events.04.e
-		custom_tooltip = convert_resources_events.04.e.tt
-		trigger_event = {
-			id = convert_resources_events.01
-		}
-	}
-}
-
-convert_resources_events.05 = {
-	type = character_event
-	title = convert_resources_events.05.t
-	desc = convert_resources_events.05.desc
-	
-	theme = stewardship_wealth_focus
-	
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
-	
-	right_portrait = {
-		character = cp:councillor_steward
-		animation = personality_compassionate
-	}
-
-	option = {
 		trigger = {
 			NOT = {
 				has_character_modifier = pay_back_small_loan_expensive
 			}
 		}
-		name = convert_resources_events.05.a
-		custom_tooltip = convert_resources_events.05.a.tt
+		name = convert_resources_events_loan_s1_ex
+		custom_tooltip = convert_resources_events_loan_s1_ex_tip
 		add_gold = 150
 		add_character_modifier = {
 			modifier = pay_back_small_loan_expensive
@@ -351,8 +304,8 @@ convert_resources_events.05 = {
 				has_character_modifier = pay_back_reasonable_loan_expensive
 			}
 		}
-		name = convert_resources_events.05.b
-		custom_tooltip = convert_resources_events.05.b.tt
+		name = convert_resources_events_loan_s2_ex
+		custom_tooltip = convert_resources_events_loan_s2_ex_tip
 		add_gold = 300
 		add_character_modifier = {
 			modifier = pay_back_reasonable_loan_expensive
@@ -366,8 +319,8 @@ convert_resources_events.05 = {
 				has_character_modifier = pay_back_considerable_loan_expensive
 			}
 		}
-		name = convert_resources_events.05.c
-		custom_tooltip = convert_resources_events.05.c.tt
+		name = convert_resources_events_loan_s3_ex
+		custom_tooltip = convert_resources_events_loan_s3_ex_tip
 		add_gold = 500
 		add_character_modifier = {
 			modifier = pay_back_considerable_loan_expensive
@@ -381,28 +334,88 @@ convert_resources_events.05 = {
 				has_character_modifier = pay_back_large_loan_expensive
 			}
 		}
-		name = convert_resources_events.05.d
-		custom_tooltip = convert_resources_events.05.d.tt
+		name = convert_resources_events_loan_s4_ex
+		custom_tooltip = convert_resources_events_loan_s4_ex_tip
 		add_gold = 1000
 		add_character_modifier = {
 			modifier = pay_back_large_loan_expensive
 			years = 10
 		}
 	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_small_loan_very_expensive
+			}
+		}
+		name = convert_resources_events_loan_s1_vex
+		custom_tooltip = convert_resources_events_s1_vex_tip
+		add_gold = 150
+		add_character_modifier = {
+			modifier = pay_back_small_loan_very_expensive
+			years = 2
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_reasonable_loan_very_expensive
+			}
+		}
+		name = convert_resources_events_loan_s2_vex
+		custom_tooltip = convert_resources_events_loan_s2_vex_tip
+		add_gold = 300
+		add_character_modifier = {
+			modifier = pay_back_reasonable_loan_very_expensive
+			years = 3
+		}
+	}
 	
 	option = {
-		name = convert_resources_events.05.e
-		custom_tooltip = convert_resources_events.05.e.tt
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_considerable_loan_very_expensive
+			}
+		}
+		name = convert_resources_events_loan_s3_vex
+		custom_tooltip = convert_resources_events_loan_s3_vex_tip
+		add_gold = 500
+		add_character_modifier = {
+			modifier = pay_back_considerable_loan_very_expensive
+			years = 4
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_character_modifier = pay_back_large_loan_very_expensive
+			}
+		}
+		name = convert_resources_events_loan_s4_vex
+		custom_tooltip = convert_resources_events_loan_s4_vex_tip
+		add_gold = 1000
+		add_character_modifier = {
+			modifier = pay_back_large_loan_very_expensive
+			years = 6
+		}
+	}
+
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }
 
-convert_resources_events.06 = {
+convert_resources_events_root_extortion = {
 	type = character_event
-	title = convert_resources_events.06.t
-	desc = convert_resources_events.06.desc
+	title = convert_resources_events_extortion
+	desc = convert_resources_events_extortion_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -417,46 +430,46 @@ convert_resources_events.06 = {
 	}
 
 	option = {
-		name = convert_resources_events.06.a
+		name = convert_resources_events_extortion_s1
 		add_gold = 150
 		add_dread = 10
 		add_tyranny = 20
 	}
 
 	option = {
-		name = convert_resources_events.06.b
+		name = convert_resources_events_extortion_s2
 		add_gold = 300
 		add_dread = 20
 		add_tyranny = 40
 	}
 	
 	option = {
-		name = convert_resources_events.06.c
+		name = convert_resources_events_extortion_s3
 		add_gold = 500
 		add_dread = 30
 		add_tyranny = 60
 	}
 	
 	option = {
-		name = convert_resources_events.06.d
+		name = convert_resources_events_extortion_s4
 		add_gold = 1000
 		add_dread = 40
 		add_tyranny = 100
 	}
 	
 	option = {
-		name = convert_resources_events.06.e
-		custom_tooltip = convert_resources_events.05.e.tt
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }
 
-convert_resources_events.07 = {
+convert_resources_events_root_giveloan = {
 	type = character_event
-	title = convert_resources_events.07.t
-	desc = convert_resources_events.07.desc
+	title = convert_resources_events_giveloan
+	desc = convert_resources_events_giveloan_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -476,8 +489,8 @@ convert_resources_events.07 = {
 				has_character_modifier = gain_from_small_loan
 			}
 		}
-		name = convert_resources_events.07.a
-		custom_tooltip = convert_resources_events.07.a.tt
+		name = convert_resources_events_giveloan_s1
+		custom_tooltip = convert_resources_events_giveloan_s1_tip
 		remove_short_term_gold = 150
 		add_character_modifier = {
 			modifier = gain_from_small_loan
@@ -486,14 +499,14 @@ convert_resources_events.07 = {
 	}
 
 	option = {
-		name = convert_resources_events.07.b
 		trigger = {
 			gold >= 300
 			NOT = {
 				has_character_modifier = gain_from_reasonable_loan
 			}
 		}
-		custom_tooltip = convert_resources_events.07.b.tt
+		name = convert_resources_events_giveloan_s2
+		custom_tooltip = convert_resources_events_giveloan_s2_tip
 		remove_short_term_gold = 300
 		add_character_modifier = {
 			modifier = gain_from_reasonable_loan
@@ -502,14 +515,15 @@ convert_resources_events.07 = {
 	}
 	
 	option = {
-		name = convert_resources_events.07.c
+		
 		trigger = {
 			gold >= 500
 			NOT = {
 				has_character_modifier = gain_from_considerable_loan
 			}
 		}
-		custom_tooltip = convert_resources_events.07.c.tt
+		name = convert_resources_events_giveloan_s3
+		custom_tooltip = convert_resources_events_giveloan_s3_tip
 		remove_short_term_gold = 500
 		add_character_modifier = {
 			modifier = gain_from_considerable_loan
@@ -518,14 +532,15 @@ convert_resources_events.07 = {
 	}
 	
 	option = {
-		name = convert_resources_events.07.d
+		
 		trigger = {
 			gold >= 1000
 			NOT = {
 				has_character_modifier = gain_from_large_loan
 			}
 		}
-		custom_tooltip = convert_resources_events.07.d.tt
+		name = convert_resources_events_giveloan_s4
+		custom_tooltip = convert_resources_events_giveloan_s4_tip
 		remove_short_term_gold = 1000
 		add_character_modifier = {
 			modifier = gain_from_large_loan
@@ -534,18 +549,18 @@ convert_resources_events.07 = {
 	}
 	
 	option = {
-		name = convert_resources_events.07.e
-		custom_tooltip = convert_resources_events.07.e.tt
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }
 
-convert_resources_events.08 = {
+convert_resources_events_root_charity = {
 	type = character_event
-	title = convert_resources_events.08.t
-	desc = convert_resources_events.08.desc
+	title = convert_resources_events_charity
+	desc = convert_resources_events_charity_desc
 	
 	theme = stewardship_wealth_focus
 	
@@ -560,70 +575,43 @@ convert_resources_events.08 = {
 	}
 
 	option = {
-		trigger = {
-			NOT = {
-				has_character_modifier = pay_back_small_loan_very_expensive
-			}
-		}
-		name = convert_resources_events.08.a
-		custom_tooltip = convert_resources_events.08.a.tt
-		add_gold = 150
-		add_character_modifier = {
-			modifier = pay_back_small_loan_very_expensive
-			years = 2
-		}
-	}
-
-	option = {
-		trigger = {
-			NOT = {
-				has_character_modifier = pay_back_reasonable_loan_very_expensive
-			}
-		}
-		name = convert_resources_events.08.b
-		custom_tooltip = convert_resources_events.08.b.tt
-		add_gold = 300
-		add_character_modifier = {
-			modifier = pay_back_reasonable_loan_very_expensive
-			years = 3
-		}
+		name = convert_resources_events_charity_s1
+		add_gold = -100
+		add_prestige = 100
 	}
 	
 	option = {
 		trigger = {
-			NOT = {
-				has_character_modifier = pay_back_considerable_loan_very_expensive
-			}
+			gold >= 300
 		}
-		name = convert_resources_events.08.c
-		custom_tooltip = convert_resources_events.08.c.tt
-		add_gold = 500
-		add_character_modifier = {
-			modifier = pay_back_considerable_loan_very_expensive
-			years = 4
-		}
+		name = convert_resources_events_charity_s2
+		add_gold = -200
+		add_prestige = 200
 	}
 	
 	option = {
 		trigger = {
-			NOT = {
-				has_character_modifier = pay_back_large_loan_very_expensive
-			}
+			gold >= 1000
 		}
-		name = convert_resources_events.08.d
-		custom_tooltip = convert_resources_events.08.d.tt
-		add_gold = 1000
-		add_character_modifier = {
-			modifier = pay_back_large_loan_very_expensive
-			years = 6
-		}
+		name = convert_resources_events_charity_s3
+		add_gold = -1000
+		add_prestige = 1000
 	}
 	
 	option = {
-		name = convert_resources_events.08.e
-		custom_tooltip = convert_resources_events.08.e.tt
+		trigger = {
+			gold >= 2000
+		}
+		name = convert_resources_events_charity_s4
+		add_gold = -2000
+		add_prestige = 2000
+	}
+	
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
 }

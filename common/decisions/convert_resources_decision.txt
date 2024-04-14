@@ -1,17 +1,17 @@
 ﻿convert_resources_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	title = convert_resources_decision_t
+	title = convert_resources_decision
 	desc = convert_resources_decision_desc
-	selection_tooltip = convert_resources_decision_tt
+	selection_tooltip = convert_resources_decision_tip
 	confirm_text = convert_resources_decision_confirm
 	cooldown = {
 		days = 31
 	}
 	effect = {
-		custom_tooltip = convert_resources_decision_effect_tt
+		custom_tooltip = convert_resources_decision_effect_tip
 		trigger_event = {
-			id = convert_resources_events.01
+			id = convert_resources_events_root
 		}
 	}
-	ai_check_interval = 150
+	ai_check_interval = 31
 }
