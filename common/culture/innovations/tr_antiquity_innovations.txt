@@ -34,6 +34,8 @@
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
 @abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
 @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
+@mint = "gfx/interface/icons/culture_innovations/mint.dds"
+
 
 innovation_trireme = {
 	group = culture_group_military
@@ -201,6 +203,17 @@ innovation_martial_artist = {
 }
 
 #CIVIC
+innovation_mint = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @mint
+
+	character_modifier = {
+		domain_tax_mult = 0.1
+		courtly_opinion = 5
+		monthly_prestige_gain_mult = 0.1
+	}
+}
 innovation_silk = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity

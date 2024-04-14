@@ -1921,6 +1921,8 @@ e_britannia = {
 			name_list_irish = cn_alba
 			name_list_gaelic = cn_alba
 			name_list_pictish = cn_pictland
+			name_list_ck_roman = cn_Caledonia
+			name_list_roman = cn_Caledonia
 		}
 
 		ai_primary_priority = {
@@ -2699,7 +2701,11 @@ e_britannia = {
 		color = { 6 127 2 }
 
 		capital = c_dublin # Dublin
-
+		cultural_names = {
+			name_list_ck_roman = cn_Hibernia
+			name_list_roman = cn_Hibernia
+		}
+	
 		can_create = {
 			trigger_if = {
 				limit = {
@@ -9397,6 +9403,7 @@ e_byzantium = {
 				name_list_andalusian = cn_siqilliya
 				name_list_yemeni = cn_siqilliya
 				name_list_ck_roman = cn_Sicilia
+				name_list_roman = cn_Sicilia
 			}
 
 			c_palermo = {
@@ -10344,7 +10351,10 @@ e_italy = {
 				}
 				b_florentiola = {
 					province = 2490
-
+					cultural_names = {
+						name_list_ck_roman = cn_Florentia
+						name_list_roman = cn_Florentia
+					}	
 					color = { 255 160 195 }
 				}
 				b_piacenza = {
