@@ -39,6 +39,7 @@
 @porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
 @innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
 @innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
+
 innovation_china_boat1 = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -113,6 +114,43 @@ innovation_gavelkind = {
 	}
 	flag = global_regular
 	flag = tribal_era_regular
+}
+
+innovation_plenary_assemblies = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @leadership_1
+
+	character_modifier = {
+		domain_limit = 1
+	}
+
+	unlock_building = tribe_02
+
+	flag = global_regular
+	flag = tribal_era_regular
+}
+
+innovation_table_of_princes = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @nobility_01
+	
+	potential = {
+		OR = {
+			#West Slavic
+			this = culture:czech
+			this = culture:slovien
+		}
+	}
+	
+	character_modifier = {
+		dynasty_opinion = 10
+	}
+	custom = unlock_single_heir_dynasty_house_changing
+	
+	flag = global_regional
+	flag = tribal_era_regional
 }
 
 innovation_tanistry_elective = {
@@ -287,6 +325,7 @@ innovation_corpus_juris_civilis = {
 		vassal_tax_contribution_mult = 0.1
 	}
 }
+
 innovation_all_things = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -299,6 +338,7 @@ innovation_all_things = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_greek_fire = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
@@ -327,6 +367,7 @@ innovation_greek_fire = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
+
 innovation_shotel = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
