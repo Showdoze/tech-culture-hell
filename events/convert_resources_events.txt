@@ -1,5 +1,8 @@
-﻿#fuck namespace  system
-convert_resources_events_root = {
+﻿#fuck namespace system
+
+namespace = convert_resources_events_root
+
+convert_resources_events_root.0 = { #root
 	type = character_event
 	title = convert_resources_events_root
 	desc = convert_resources_events_root_desc
@@ -23,7 +26,7 @@ convert_resources_events_root = {
 		}
 		custom_tooltip = convert_resources_events_prestige_tip
 		trigger_event = {
-			id = convert_resources_events_root_prestige
+			id = convert_resources_events_root.1 #prestige
 		}
 	}
 	
@@ -34,7 +37,7 @@ convert_resources_events_root = {
 		}
 		custom_tooltip = convert_resources_events_piety_tip
 		trigger_event = {
-			id = convert_resources_events_root_piety
+			id = convert_resources_events_root.2 #piety
 		}
 	}
 	
@@ -46,7 +49,7 @@ convert_resources_events_root = {
 		name = convert_resources_events_loan
 		custom_tooltip = convert_resources_events_loan_tip
 		trigger_event = {
-			id = convert_resources_events_root_loan
+			id = convert_resources_events_root.3 #loan
 		}
 	}
 	
@@ -54,7 +57,7 @@ convert_resources_events_root = {
 		name = convert_resources_events_extortion
 		custom_tooltip = convert_resources_events_extortion_tip
 		trigger_event = {
-			id = convert_resources_events_root_extortion
+			id = convert_resources_events_root.4 #extortion
 		}
 	}
 	
@@ -65,7 +68,7 @@ convert_resources_events_root = {
 		}
 		custom_tooltip = convert_resources_events_giveloan_tip
 		trigger_event = {
-			id = convert_resources_events_root_giveloan
+			id = convert_resources_events_root.5 #give loan
 		}
 	}
 
@@ -76,7 +79,7 @@ convert_resources_events_root = {
 		}
 		custom_tooltip = convert_resources_events_charity_tip
 		trigger_event = {
-			id = convert_resources_events_root_charity
+			id = convert_resources_events_root.6 #charity
 		}
 	}
 	
@@ -86,7 +89,7 @@ convert_resources_events_root = {
 	}
 }
 
-convert_resources_events_root_prestige = {
+convert_resources_events_root.1 = { #prestige
 	type = character_event
 	title = convert_resources_events_prestige
 	desc = convert_resources_events_prestige_desc
@@ -140,12 +143,12 @@ convert_resources_events_root_prestige = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
 
-convert_resources_events_root_piety = {
+convert_resources_events_root.2 = { #piety
 	type = character_event
 	title = convert_resources_events_piety
 	desc = convert_resources_events_piety_desc
@@ -199,12 +202,12 @@ convert_resources_events_root_piety = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
 
-convert_resources_events_root_loan = {
+convert_resources_events_root.3 = { #loan
 	type = character_event
 	title = convert_resources_events_loan
 	desc = convert_resources_events_loan_desc
@@ -405,12 +408,12 @@ convert_resources_events_root_loan = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
 
-convert_resources_events_root_extortion = {
+convert_resources_events_root.4 = { #extortion
 	type = character_event
 	title = convert_resources_events_extortion
 	desc = convert_resources_events_extortion_desc
@@ -459,12 +462,12 @@ convert_resources_events_root_extortion = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
 
-convert_resources_events_root_giveloan = {
+convert_resources_events_root.5 = { #give loan
 	type = character_event
 	title = convert_resources_events_giveloan
 	desc = convert_resources_events_giveloan_desc
@@ -550,12 +553,12 @@ convert_resources_events_root_giveloan = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
 
-convert_resources_events_root_charity = {
+convert_resources_events_root.6 = { #charity
 	type = character_event
 	title = convert_resources_events_charity
 	desc = convert_resources_events_charity_desc
@@ -609,7 +612,7 @@ convert_resources_events_root_charity = {
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root
+			id = convert_resources_events_root.0 #root
 		}
 	}
 }
