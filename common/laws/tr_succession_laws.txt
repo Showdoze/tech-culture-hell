@@ -21,19 +21,19 @@
 			}
 		}
 		should_start_with = {
-			OR = {
+			NOR = {
 				historical_succession_access_single_heir_succession_law_trigger = yes
 				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
 				historical_succession_access_single_heir_dynasty_house_trigger = yes
-			}
-			culture = {
-				NOR = {
-					has_innovation = innovation_hereditary_rule
-					has_innovation = innovation_heraldry
-				}
-			}
-			NOT = {
 				goverment_has_flag = government_is_republic
+			}
+			OR = {
+				culture = {
+					NOR = {
+						has_innovation = innovation_hereditary_rule
+						has_innovation = innovation_heraldry
+					}
+				}
 			}
 		}
 		succession = {
@@ -45,7 +45,8 @@
 		}
 		flag = partition_succession_law
 		modifier = {
-			direct_vassal_opinion = 5
+			glory_hound_opinion = 10
+			parochial_opinion = 5
 			dynasty_house_opinion = 5
 			eligible_child_opinion = 10
 		}
@@ -76,18 +77,16 @@
 			}
 		}
 		should_start_with = {
-			OR = {
+			NOR = {
 				historical_succession_access_single_heir_succession_law_trigger = yes
 				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
 				historical_succession_access_single_heir_dynasty_house_trigger = yes
+				goverment_has_flag = government_is_republic
 			}
 			culture = {
 				NOT = {
 					has_innovation = innovation_heraldry
 				}
-			}
-			NOT = {
-				goverment_has_flag = government_is_republic
 			}
 		}
 		succession = {
@@ -98,7 +97,8 @@
 		}
 		flag = partition_succession_law
 		modifier = {
-			direct_vassal_opinion = 5
+			glory_hound_opinion = 10
+			parochial_opinion = 5
 			player_heir_opinion = 10
 			eligible_child_except_player_heir_opinion = 5
 		}
@@ -136,20 +136,17 @@
 			}
 		}
 		should_start_with = {
-			OR = {
+			NOR = {
 				historical_succession_access_single_heir_succession_law_trigger = yes
 				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
 				historical_succession_access_single_heir_dynasty_house_trigger = yes
-
+				goverment_has_flag = government_is_republic
 			}
 			culture = {
 				has_innovation = innovation_heraldry
 				NOT = {
 					has_innovation = innovation_hereditary_rule
 				}
-			}
-			NOT = {
-				goverment_has_flag = government_is_republic
 			}
 		}
 		succession = {
@@ -213,9 +210,6 @@
 			    historical_succession_access_single_heir_succession_law_trigger = yes
 			    tr_access_single_heir_succession_law_trigger = yes
 		    }
-			NOT = {
-				goverment_has_flag = government_is_republic
-			}
 		}
 		succession = {
 			order_of_succession = inheritance
@@ -225,6 +219,8 @@
 		}
 		flag = advanced_succession_law
 		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
 			player_heir_opinion = 20
 			eligible_child_except_player_heir_opinion = -5
 		}
@@ -281,9 +277,6 @@
 			    historical_succession_access_single_heir_succession_law_trigger = yes
 			    tr_access_single_heir_succession_law_trigger = yes
 		    }
-			NOT = {
-				goverment_has_flag = government_is_republic
-			}
 		}
 		succession = {
 			order_of_succession = inheritance
@@ -294,6 +287,8 @@
 		
 		flag = advanced_succession_law
 		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
 			player_heir_opinion = 20
 			eligible_child_except_player_heir_opinion = -5
 		}
@@ -337,9 +332,6 @@
 			    historical_succession_access_single_heir_succession_law_trigger = yes
 			    tr_access_single_heir_succession_law_trigger = yes
 		    }
-			NOT = {
-				goverment_has_flag = government_is_republic
-			}
 		}
 		succession = {
 			order_of_succession = inheritance
@@ -347,11 +339,10 @@
 			rank = oldest
 			title_division = single_heir
 		}
-		
 		flag = advanced_succession_law
 		modifier = {
+			glory_hound_opinion = -5
 			eligible_child_except_player_heir_opinion = -15
-			direct_vassal_opinion = -5
 			dynasty_house_opinion = 5
 		}
 		pass_cost = {

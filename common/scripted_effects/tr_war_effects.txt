@@ -1,0 +1,575 @@
+﻿
+#####################################################################
+# EFFECT LIST
+#####################################################################
+# !!! Remember to add all new effects with a short description here !!!
+
+# on_declared_war
+#
+# [...]
+#
+# send_captured_combatant_message: Sends the specified message to a character about a combatant being captured after a battle.
+# send_slain_combatant_message: Sends the specified message to a character about a combatant being slain after (or in) a battle.
+# add_truce_attacker_victory_effect: Used to set truces in a CB's on_victory
+# add_truce_white_peace_effect: Used to set truces in a CB's on_white_peace
+# add_truce_attacker_defeat_effect: Used to set truces in a CB's on_defeat
+
+
+#####################################################################
+# EFFECTS
+#####################################################################
+
+on_declared_war = {
+	###############################
+	##### Attacker music
+	###############################
+	if = {
+		limit = {
+			exists = scope:war # silence error when building description before war exists
+			scope:war = { using_holy_war_cb_trigger = yes } # going CB->war->is this war's CB a certain type->yes
+			#scope:attacker = { is_muslim = no }
+			#scope:attacker = { is_orthodox = no}
+			#scope:attacker = { is_slavicpagan = no}
+			#scope:attacker = { is_viking = no}
+			#scope:attacker = { is_celtic = no}
+			#scope:attacker = { is_africa = no}
+			scope:attacker = { is_saiyan = no}
+		}
+		scope:attacker = { play_music_cue = mx_cue_crusade_starts }
+	}
+	else_if = {
+		limit = {
+			exists = scope:war
+			OR = {
+				scope:attacker = { fp3_character_any_involvement_persian_struggle_trigger = yes }
+				scope:defender = { fp3_character_any_involvement_persian_struggle_trigger = yes }
+			}
+		}
+		scope:attacker = { play_music_cue = strugglewar_cue }
+	}
+	else_if = {
+		limit = {
+			exists = scope:war
+			OR = {
+				scope:attacker = { fp2_character_any_involvement_iberian_struggle_trigger = yes }
+				scope:defender = { fp2_character_any_involvement_iberian_struggle_trigger = yes }
+			}
+		}
+		scope:attacker = { play_music_cue = mx_IberiaWar }
+	}
+	else_if = {
+		limit = {
+			exists = scope:war
+			scope:attacker = { fp1_is_norse_tribal = yes }
+		}
+		scope:attacker = { play_music_cue = mx_raid }
+	}
+	else_if = {
+	    limit = {
+		    exists = scope:war
+			scope:attacker = { is_saiyan = yes }
+		}
+		scope:attacker = { play_music_cue = tr_saiyan }
+    }		
+	else = {
+		scope:attacker = { play_music_cue = mx_cue_war_declared }
+	}
+	
+	
+	###############################
+	##### Defender music
+	###############################
+	if = {
+		limit = {
+			exists = scope:war
+			OR = {
+				scope:attacker = { fp2_character_any_involvement_iberian_struggle_trigger = yes }
+				scope:defender = { fp2_character_any_involvement_iberian_struggle_trigger = yes }
+			}
+		}
+		scope:defender = { play_music_cue = mx_IberiaWar }
+	}
+	else_if = {
+		limit = {
+			exists = scope:war
+			OR = {
+				scope:attacker = { fp3_character_any_involvement_persian_struggle_trigger = yes }
+				scope:defender = { fp3_character_any_involvement_persian_struggle_trigger = yes }
+			}
+		}
+		scope:defender = { play_music_cue = strugglewar_cue }
+	}
+	else_if = {
+		limit = {
+			exists = scope:war
+			scope:attacker = { fp1_is_norse_tribal = yes }
+		}
+		scope:defender = { play_music_cue = mx_raid }
+	}
+
+	else = {
+		scope:defender = {
+			play_music_cue = mx_cue_war_declared
+		}
+	}
+
+	###############################
+	##### Effects
+	###############################
+
+	# Breaking Truce
+	if = {
+		limit = {
+			scope:attacker = {
+				has_truce = scope:defender
+			}
+		}
+		scope:attacker = {
+			custom_description_no_bullet = {
+				text = attack_breaking_truce_text
+			}
+
+			if = {
+				limit = {
+					NOT = { has_perk = flexible_truces_perk }
+				}
+				add_prestige = break_truce_prestige_loss
+				add_prestige_level = break_truce_prestige_level_loss
+			}
+			add_character_modifier = {
+				modifier = broke_truce
+				years = 3
+			}
+
+			# Struggle Catalysts.
+			if = {
+				limit = {
+					any_character_struggle = {
+						involvement = involved
+						activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+							CATALYST = catalyst_broke_truce_against_important_character
+							CHAR = scope:defender
+						}
+					}
+				}
+				every_character_struggle = {
+					involvement = involved
+					limit = {
+						activate_struggle_catalyst_secondary_character_involvement_involved_trigger = {
+							CATALYST = catalyst_broke_truce_against_important_character
+							CHAR = scope:defender
+						}
+					}
+					activate_struggle_catalyst = {
+						catalyst = catalyst_broke_truce_against_important_character
+						character = scope:attacker
+					}
+				}
+			}
+		}
+	}
+	# Breaking Alliance
+	if = {
+		limit = {
+			scope:attacker = {
+				is_allied_to = scope:defender
+			}
+		}
+		scope:attacker = {
+			break_alliance_due_to_attack_effect = { TARGET = scope:defender }
+		}
+	}
+	# BP2: Attacking Warden
+	if = {
+		limit = {
+			scope:attacker = {
+				any_home_court_hostage = { is_hostage_of = scope:defender }
+			}
+		}
+		scope:attacker = {
+			add_prestige = break_truce_prestige_loss
+			add_prestige_level = break_truce_prestige_level_loss
+			add_character_modifier = {
+				modifier = attacked_warden
+				years = 5
+			}
+			# Hostages they hold (yours)
+			every_home_court_hostage = {
+				save_scope_as = hostage
+				every_close_family_member = {
+					limit = {
+						NOT = { this = scope:attacker }
+					}
+					custom = attacked_warden_tt
+					add_opinion = {
+						modifier = attacked_warden
+						target = scope:attacker
+					}
+				}
+				if = {
+					limit = { is_hostage_of = scope:defender }
+					custom_description_no_bullet = {
+						text = attack_breaking_truce_hostage
+						subject = scope:defender
+						object = scope:hostage
+					}
+				}
+			}
+		}
+	}
+	# BP2: Attacking Home Court
+	if = {
+		limit = {
+			scope:attacker = {
+				any_warden_hostage = { is_hostage_from = scope:defender }
+			}
+		}
+		scope:attacker = {
+			# Hostages you hold (theirs)
+			every_warden_hostage = {
+				save_scope_as = hostage
+				if = {
+					limit = { is_hostage_from = scope:defender }
+					custom_description_no_bullet = {
+						text = attack_breaking_truce_hostage
+						subject = scope:attacker
+						object = scope:hostage
+					}
+				}
+			}
+			add_prestige = break_truce_prestige_loss
+			add_prestige_level = break_truce_prestige_level_loss
+			add_character_modifier = {
+				modifier = attacked_home_court
+				years = 5
+			}
+			# Hostages they hold (yours)
+			every_home_court_hostage = {
+				save_scope_as = hostage
+				every_close_family_member = {
+					limit = {
+						NOT = { this = scope:attacker }
+					}
+					custom = attacked_warden_tt
+					add_opinion = {
+						modifier = attacked_home_court
+						target = scope:attacker
+					}
+				}
+				if = {
+					limit = { is_hostage_of = scope:defender }
+					custom_description_no_bullet = {
+						text = attack_breaking_truce_hostage
+						subject = scope:defender
+						object = scope:hostage
+					}
+				}
+			}
+		}
+	}
+
+	# Opinion
+	scope:defender = {
+		add_opinion = {
+			target = scope:attacker
+			modifier = declared_war
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:attacker = {
+					is_parent_of = scope:defender
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:defender = {
+					has_father = yes
+				}
+			}
+			scope:defender = {
+				father = {
+					add_opinion = {
+						target = scope:attacker
+						modifier = declared_war_on_son_daughter
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:defender = {
+					has_mother = yes
+				}
+			}
+			scope:defender = {
+				mother = {
+					add_opinion = {
+						target = scope:attacker
+						modifier = declared_war_on_son_daughter
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { scope:attacker.culture = scope:defender.culture }
+		}
+		scope:defender.culture = {
+			change_cultural_acceptance = {
+				target = scope:attacker.culture
+				value = declare_war_culture_acceptance_impact
+				desc = cultural_acceptance_loss_declared_war
+			}
+		}
+	}
+	
+	scope:attacker = {
+		if = {
+			limit = {
+				any_vassal = {
+					has_vassal_stance = parochial
+				}
+				eighty_percent_of_current_military_strength <= scope:defender.current_military_strength
+			}
+			custom_tooltip = parochial_vassal_disapproves_war
+			hidden_effect = {
+				every_vassal = {
+					limit = {
+						has_vassal_stance = parochial
+					}
+					add_opinion = {
+						target = scope:attacker
+						modifier = parochial_disapproves_strong_war_enemy_opinion
+					}
+				}
+			}
+		}
+	}
+	
+	# If we're a clan this interaction affects unity
+	add_clan_unity_interaction_effect = {
+		CHARACTER = scope:attacker
+		TARGET = scope:defender
+		VALUE = massive_unity_loss
+		DESC = clan_unity_declared_war.desc
+		REVERSE_NON_HOUSE_TARGET = no
+	}
+}
+
+# Imprison all faction-members (rebelling vassals if there's no faction) if they lose a revolt-war and add a revoke reason
+on_lost_faction_revolt_war = {
+	if = {
+		limit = {
+			exists = scope:attacker.joined_faction
+		}
+		scope:attacker.joined_faction = {
+			set_variable = {
+				name = peasant_destroying
+				value = yes
+			}
+			every_faction_member = {
+				if = {
+					limit = {
+						exists = scope:attacker.joined_faction # Can get destroyed as we loop through
+					}
+					leave_faction_with_cooldown_effect = {
+						FACTION = scope:attacker.joined_faction
+						YEARS = faction_war_defeat_cooldown
+					}
+				}
+				else = {
+					add_faction_cooldown_effect = { YEARS = faction_war_defeat_cooldown }
+				}
+
+				if = { # Imprison them if they aren't imprisoned.
+					limit = {
+						is_imprisoned = no
+					}
+					hard_imprison_character_effect = {
+						TARGET = this
+						IMPRISONER = scope:defender
+					}
+				}
+				scope:defender = {
+					add_opinion = {
+						target = prev
+						modifier = vassal_lost_faction_revolt_war
+					}
+				}
+			}
+		}
+	}
+	else = {
+		war = {
+			every_war_attacker = {
+				limit = {
+					exists = liege
+					liege = scope:defender
+				}
+				if = {
+					limit = { is_imprisoned = no }
+					hard_imprison_character_effect = {
+						TARGET = this
+						IMPRISONER = scope:defender
+					}
+				}
+				add_faction_cooldown_effect = { YEARS = faction_war_defeat_cooldown }
+			}
+		}
+	}
+}
+
+# Imprison all revolters on lost request revolt.
+
+
+on_claimant_faction_war_win_common = {
+
+	# If the claimant is the prisoner of the defender, free the claimant (it doesn't make much sense to leave the new king in the old king's dungeon)
+	$CLAIMANT$ = {
+		if = {
+			limit = {
+				is_imprisoned_by = $DEFENDER$
+			}
+			release_from_prison = yes
+		}
+	}
+
+	# Add mutual opinion bonuses between claimant and faction members, as well as a hook on the claimant if possible.
+	$ATTACKER$.joined_faction = {
+		every_faction_member = {
+			custom = FACTION_CLAIMANT_EVERY_FACTION_MEMBER
+			limit = {
+				NOT = { this = $ATTACKER$.joined_faction.special_character }
+			}
+			hidden_effect = {
+				add_opinion = {
+					modifier = claimant_faction_member_opinion
+					target = $ATTACKER$.joined_faction.special_character
+				}
+				reverse_add_opinion = {
+					modifier = claimant_faction_claimant_opinion
+					target = $ATTACKER$.joined_faction.special_character
+				}
+			}
+			if = {
+				limit = {
+					can_add_hook = {
+						type = favor_hook
+						target = $ATTACKER$.joined_faction.special_character
+					}
+				}
+				add_hook = {
+					type = favor_hook
+					target = $ATTACKER$.joined_faction.special_character
+				}
+			}
+			# Struggle boost
+			if = {
+				limit = {
+					culture = $ATTACKER$.joined_faction.special_character.culture
+					any_character_struggle = {
+						involvement = involved
+						has_struggle_phase_parameter = struggle_prestige_install_same_culture_claimant
+					}
+				}
+				add_prestige = major_prestige_gain
+			}
+		}
+	}
+
+	# Give the claimant their new title.
+	create_title_and_vassal_change = {
+		type = faction_demand
+		save_scope_as = change
+		add_claim_on_loss = yes
+	}
+
+	every_in_list = {
+		list = $TARGET_TITLES$
+		add_to_list = faction_titles
+		holder = {
+			save_scope_as = target_holder
+		}
+	}
+	ordered_in_list = {
+		list = $TARGET_TITLES$
+		position = 0
+		order_by = tier
+		save_scope_as = target_title
+	}
+	$ATTACKER$.joined_faction = {
+		every_faction_county_member = {
+			limit = {
+				NOT = { is_in_list = faction_titles }
+			}
+			add_to_list = faction_titles
+		}
+	}
+
+	setup_claim_cb = {
+		titles = faction_titles
+		attacker = $ATTACKER$
+		defender = $DEFENDER$
+		claimant = $CLAIMANT$
+		change = scope:change
+		civil_war = yes
+	}
+
+	# Ensure that the liege structure is preserved
+	if = {
+		limit = {
+			scope:target_title.holder = { is_independent_ruler = no }
+			$CLAIMANT$.primary_title.tier < scope:target_title.tier
+		}
+		$CLAIMANT$ = {
+			change_liege = {
+				liege = scope:target_title.holder.liege
+				change = scope:change
+			}
+		}
+	}
+
+	# Preserve Grandeur
+	if = {
+		limit = {
+			scope:target_title.holder = {
+				has_royal_court = yes
+			}
+			$CLAIMANT$ = {
+				has_royal_court = no
+			}
+		}
+		$CLAIMANT$ = {
+			set_variable = {
+				name = previous_holder_grandeur_value
+				value = scope:target_title.holder.court_grandeur_current
+			}
+			save_scope_as = claimant_scope # The CLAIMANT scope is lost after the next step, so have to save the scope here
+		}
+	}
+
+	resolve_title_and_vassal_change = scope:change
+
+	# Add Appropriate Grandeur
+	if = {
+		limit = { exists = scope:claimant_scope }
+		scope:claimant_scope = {
+			if = {
+				limit = {
+					exists = var:previous_holder_grandeur_value
+					has_royal_court = yes
+				}
+				hidden_effect = {
+					change_current_court_grandeur = -100 # Reset to 0
+					change_current_court_grandeur = var:previous_holder_grandeur_value
+					remove_variable = previous_holder_grandeur_value
+				}
+				change_current_court_grandeur = massive_court_grandeur_gain # Gain a bonus to Grandeur for winning a claim faction
+			}
+		}
+	}
+}

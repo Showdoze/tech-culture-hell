@@ -66,3 +66,14 @@
 		}
 	}
 }
+
+set_republic_heir = {
+	if = {
+		limit = { this = root }
+		OR = {
+			has_government = republic_government
+			has_realm_law = city_succession_law
+		}
+		scope:ruler = { set_designated_heir = scope:candidate }
+	}
+}
