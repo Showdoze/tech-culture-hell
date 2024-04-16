@@ -75,7 +75,6 @@ republic_elective = {
 					target_is_de_jure_liege_or_above = scope:title
 				}
 			}
-			}
 		}
 	}
 
@@ -102,9 +101,29 @@ republic_elective = {
 	
 	#scope:candidate = Candidate, scope:title = Title, scope:holder_candidate = Candidate currently selected by ruler.
 	candidates = {
-		add = { type = title_claimants }
-		add = { type = title_dejure_vassals	}
-		add = { type = holder }
-		add = { type = holder_direct_vassals }
+		add = { 
+			type = title_claimants
+			limit = {
+				age >= 18
+			}
+		}
+		add = { 
+			type = title_dejure_vassals
+			limit = {
+				age >= 18
+			}
+		}
+		add = { 
+			type = holder
+			limit = {
+				age >= 18
+			}
+		}
+		add = { 
+			type = holder_direct_vassals
+			limit = {
+				age >= 18
+			}
+		}
 	}
 }
