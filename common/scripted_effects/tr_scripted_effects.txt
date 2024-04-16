@@ -69,22 +69,26 @@
 
 set_republic_heir = {
 	if = {
-		limit = { this = root }
-		OR = {
-			has_government = republic_government
-			has_realm_law = city_succession_law
+		limit = { 
+		    OR = {
+			    has_government = republic_government
+			    has_realm_law = city_succession_law
+		    }
 		}
 		scope:ruler = { set_designated_heir = scope:candidate }
 	}
 }
 
 feudal_government_modifier = {
-	limit = { this = root }
-	if = {
-		has_government = feudal_government
+	limit = { 
+		if = {
+			has_government = feudal_government
+		}
 	}
-	character_modifier = {
-		army_maintenance_mult = -0.3
-		domain_tax_mult = 0.5
+	scope:ruler = {
+		character_modifier = {
+			army_maintenance_mult = -0.3
+			domain_tax_mult = 0.5
+		}
 	}
 }

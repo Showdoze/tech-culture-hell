@@ -4,8 +4,8 @@
 	}
 	custom_description = {
 		OR = {
-			goverment_has_flag = government_is_clan
-			goverment_has_flag = government_is_tribal
+			government_has_flag = government_is_clan
+			government_has_flag = government_is_tribal
 		}
 	}
 }
@@ -16,8 +16,8 @@ unlock_scandinavian_elective_trigger = {
 	}
 	custom_description = {
 		OR = {
-			goverment_has_flag = government_is_feudal
-			goverment_has_flag = government_is_tribal
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_tribal
 		}
 	}
 }
@@ -28,8 +28,8 @@ unlock_saxon_elective_trigger = {
 	}
 	custom_description = {
 		OR = {
-			goverment_has_flag = government_is_feudal
-			goverment_has_flag = government_is_tribal
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_tribal
 		}
 	}
 }
@@ -48,7 +48,7 @@ tr_access_single_heir_succession_law_trigger = {
 can_raid_trigger = {
 	OR = {
 		is_ai = no
-		goverment_has_flag = government_can_raid_rule
+		government_has_flag = government_can_raid_rule
 		root.faith.religion = religion.iconoclast_religion
 		root.faith.religion = religion.qarmatian_religion
 		has_trait = reaver
