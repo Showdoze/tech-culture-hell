@@ -2162,6 +2162,10 @@ tradition_sword_centric = {
 		prowess_from_religious_traits = yes
 		wounds_and_scars_give_bonuses = yes
 		guardians_can_transfer_commander_traits = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		commanders_likelier_to_gain_commander_traits = yes
 	}
 	province_modifier = {
 		levy_size = -0.25
@@ -2175,6 +2179,8 @@ tradition_sword_centric = {
 		prowess_per_piety_level = 1
 		prowess_per_prestige_level = 1
 		max_loot_mult = 0.4
+		negate_prowess_penalty_add = 5
+		knight_effectiveness_mult = 0.25
 	}
 	
 	cost = { prestige = { 9000 } }	
