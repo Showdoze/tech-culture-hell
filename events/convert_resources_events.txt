@@ -79,7 +79,7 @@ convert_resources_events_root.0 = { #root
 		}
 		custom_tooltip = convert_resources_events_charity_tip
 		trigger_event = {
-			id = convert_resources_events_root.6 #charity
+			id = convert_resources_events_root.60 #charity
 		}
 	}
 	
@@ -438,7 +438,7 @@ convert_resources_events_root.5 = { #give loan
 	}
 }
 
-convert_resources_events_root.6 = { #charity
+convert_resources_events_root.60 = { #charity root
 	type = character_event
 	title = convert_resources_events_charity
 	desc = convert_resources_events_charity_desc
@@ -456,7 +456,49 @@ convert_resources_events_root.6 = { #charity
 	}
 
 	option = {
-		name = convert_resources_events_charity_s1
+		name = convert_resources_events_charity_prestige
+		custom_tooltip = convert_resources_events_prestige_tip
+		trigger_event = {
+			id = convert_resources_events_root.61 #charity prestige
+		}
+	}
+
+	option = {
+		name = convert_resources_events_charity_piety
+		custom_tooltip = convert_resources_events_piety_tip
+		trigger_event = {
+			id = convert_resources_events_root.62 #charity piety
+		}
+	}
+	
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
+		trigger_event = {
+			id = convert_resources_events_root.0 #root
+		}
+	}
+}
+
+convert_resources_events_root.61 = { #charity prestige
+	type = character_event
+	title = convert_resources_events_charity_prestige
+	desc = convert_resources_events_charity_prestige_desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events_charity_prestige_s1
 		remove_short_term_gold = 100
 		add_prestige = 50
 	}
@@ -465,7 +507,7 @@ convert_resources_events_root.6 = { #charity
 		trigger = {
 			gold >= 200
 		}
-		name = convert_resources_events_charity_s2
+		name = convert_resources_events_charity_prestige_s2
 		remove_short_term_gold = 200
 		add_prestige = 100
 	}
@@ -474,7 +516,7 @@ convert_resources_events_root.6 = { #charity
 		trigger = {
 			gold >= 1000
 		}
-		name = convert_resources_events_charity_s3
+		name = convert_resources_events_charity_prestige_s3
 		remove_short_term_gold = 1000
 		add_prestige = 500
 	}
@@ -483,7 +525,7 @@ convert_resources_events_root.6 = { #charity
 		trigger = {
 			gold >= 2000
 		}
-		name = convert_resources_events_charity_s4
+		name = convert_resources_events_charity_prestige_s4
 		remove_short_term_gold = 2000
 		add_prestige = 1000
 	}
@@ -492,7 +534,66 @@ convert_resources_events_root.6 = { #charity
 		name = convert_resources_events_return
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
-			id = convert_resources_events_root.0 #root
+			id = convert_resources_events_root.60 #charity root
+		}
+	}
+}
+
+convert_resources_events_root.62 = { #charity piety
+	type = character_event
+	title = convert_resources_events_charity_piety
+	desc = convert_resources_events_charity_piety_desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = personality_compassionate
+	}
+
+	option = {
+		name = convert_resources_events_charity_piety_s1
+		remove_short_term_gold = 100
+		add_piety = 25
+	}
+	
+	option = {
+		trigger = {
+			gold >= 200
+		}
+		name = convert_resources_events_charity_piety_s2
+		remove_short_term_gold = 200
+		add_piety = 50
+	}
+	
+	option = {
+		trigger = {
+			gold >= 1000
+		}
+		name = convert_resources_events_charity_piety_s3
+		remove_short_term_gold = 1000
+		add_piety = 250
+	}
+	
+	option = {
+		trigger = {
+			gold >= 2000
+		}
+		name = convert_resources_events_charity_piety_s4
+		remove_short_term_gold = 2000
+		add_piety = 500
+	}
+	
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
+		trigger_event = {
+			id = convert_resources_events_root.60 #charity root
 		}
 	}
 }
