@@ -77,3 +77,14 @@ set_republic_heir = {
 		scope:ruler = { set_designated_heir = scope:candidate }
 	}
 }
+
+feudal_government_modifier = {
+	limit = { this = root }
+	if = {
+		has_government = feudal_government
+	}
+	character_modifier = {
+		army_maintenance_mult = -0.3
+		domain_tax_mult = 0.5
+	}
+}
