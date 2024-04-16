@@ -499,7 +499,7 @@
 		}
 		succession = {
             order_of_succession = election
-            election_type = feudal_elective
+            election_type = republic_elective
 		}
 		can_pass = {
 			always = yes
@@ -511,7 +511,7 @@
 			prestige = 500
 		}
 		on_pass = {
-			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+			scope:primary_title = { add_title_law = republic_elective_succession_law }
 		}
 		flag = elective_succession_law
 		title_allegiance_opinion = 5
