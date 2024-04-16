@@ -57,7 +57,6 @@
  ptolemaic_history_loc:0 "Formed from [CULTURE.GetName] and $greek$ in the year 305 BC"
  european_med_greek_1:0 "Byzantium | Byzantine | Greek"  
 
-
 #Germanic 
  swiss:0 "Swiss"
  austrian:0 "Austrian"
@@ -93,13 +92,6 @@
  european_magyar_magyar_01:0 "Europe | Magyar | Magyar"  
  european_caucasian_english_1:0 "Europe | West Germanic | English"  
 
-
-
-
-
-
-
- 
 #Slavic
  zastova:0 "Zastova"
  zastova_prefix:0 "Zastovian"
@@ -122,7 +114,6 @@
  jewish_ashkenazi_01:0 "Europe | Hebrew | Ashkenazi"
  jewish_sephardi_01:0 "Europe | Hebrew | Sephardi"
 
- 
 #Arabic
  egyptian:0 "Arabic-Egyptian"
  egyptian_prefix:0 "Arab-Egypto"
@@ -195,7 +186,6 @@
  iranian_kurdish_1:0 "Middle East | Iranian | Kurdish"  
 
 
-
 #Sumerian
  sumerian_group:0 "Mesopotamian"
  sumerian_group_collective_noun:0 "Mesopotamia's"
@@ -243,7 +233,22 @@
  language_punic_name:0 "Punic"
  east_african_ethiopian_01:0 "Africa | East African | Ethiopian"
  east_african_nubian_01:0 "Africa | East African | Nubian"  
-
+ alikr:0 "Alik'r"
+    alikr_prefix:0 "Alik'r"
+    alikr_collective_noun:1 "Alik'r"
+    alikr_desc:0 "The Crown aligned nomads of the Alik'r Desert live a frugal lifestyle, eking out a living through trade and raiding. They have a particular reverence for the Yokudan god Satakal. \n\nLegends say a pariah tribe of Alik'r called the Ash'abah shoulder the great sin of striking down the honoured dead to safekeep other pious Redguards. This is but one way in which the Alik'r are an invaluable part of Redguard society."
+    alikr_opinion:0 "$alikr$ Opinion"
+    name_list_alikr:0 "Alik'r"
+    #Alik'r
+    king_feudal_male_alikr:0 "Sultan"
+    king_feudal_female_alikr:0 "Sultana"
+    kingdom_feudal_alikr:0 "Sultanate"
+    language_tamrielic_yoku_name:0 "Tamrielic Yoku"
+    language_tamrielic_yoku_desc:0 "The Yoku spoken in Hammerfell can be qualified as 'Tamrielic'. It has substantial influence from Cyrodilic as one can guess but also from Altmer and even Nedic sources but ultimately Yokudan in character. Forebears tend to fully embrace it whilst Crowns make a point of learning Classical Yoku #italic 'to keep the old ways alive'#!."
+    #heritage_yokudan_name:0 "Yokudan"
+    heritage_yokudan_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Yokudan', Localize('no') )]"
+    heritage_yokudan_collective_noun:0 "Yokudans"
+    heritage_yokudan_desc:0 "The Yokudans are dark-skinned, wiry-haired humans native to the western continent of Yokuda, across the Eltheric Ocean. A rogue group of Ansei used forbidden Sword-Singing techniques to sink Yokuda beneath the waves in the Early #LORE [compendium_first_era]#!. This event forced many of them into a bloody and ruthless migration to Tamriel, in the lands that are now called Hammerfell. Yokudans from Tamriel are known as Redguards, a term coined after the infamous Ra Gada or 'warrior waves'."
 
 
 #Fantasy
@@ -424,7 +429,8 @@
  king_feudal_male_aldmeris_group_independent:0 "Aran"
  king_feudal_female_aldmeris_group_independent:0 "Arana"
 
-
+  language_bosmeris_name:0 "Bosmeris"
+   language_bosmeris_desc:0 "The Bosmeri vernacular originated in Valenwood, amongst the followers of the Green Pact. Many warring tribes and cities are nestled within the jungles but along with Bosmeris, the religious guidance of the Silvenar and the enduring political legacy of the Camoran clan form the cornerstones of their shared identity."
   name_list_dunmer:0 "Dunmer"
       #heritage_dunmeri_name:0 "Dunmeri"
       heritage_dunmeri_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Dunmeri', Localize('no') )]"
@@ -442,6 +448,11 @@
   #Breton
     language_bretic_name:0 "Bretic"
     language_bretic_desc:0 "Bretic is spoken all across High Rock. It has Nedic roots but the long years of the Hegemony imprinted a noticeable Altmeris superstratum on it. It includes the speakers' very own name, Breton coming from beratu - “half” -, the mixed-blood lower bureaucrats that kept the Hegemony's day-to-day operations running."
+    #heritage_breton_name:0 "Breton"
+    heritage_breton_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Breton', Localize('no') )]"
+    heritage_breton_collective_noun:0 "Bretons"
+    heritage_breton_desc:0 "No Men have felt the imprint of Elves on their culture more than the Bretons. Their name may come from the beratu (“half blood”) of the Direnni Hegemony but most Bretons have little Mer blood now. After the Battle of Glenumbra Moors they threw off the Direnni yoke to pursue their own ambitions. \n\nWith “every hill, a castle. Every castle, a kingdom”, Breton princes are fiercely independent and competitive, making use of any means necessary in their bid for power. They take pride in arcane knowledge and adherence to chivalric virtues."
+
 #####################
 # Egypt #
 #####################

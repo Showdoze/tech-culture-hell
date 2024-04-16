@@ -1,0 +1,32 @@
+#Alik'r
+
+ #Feudal
+ king_feudal_male_alikr = { #Sultan
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 50
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_alikr }
+	top_liege = no
+ }
+ king_feudal_female_alikr = { #Sultana
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 50
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_alikr }
+	top_liege = no
+ }
+ kingdom_feudal_alikr = { #Sultanate
+	type = title
+	tier = kingdom
+	priority = 50
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_alikr }
+	top_liege = no
+ }
+ 

@@ -2141,3 +2141,42 @@ tradition_luck_of_irish = {
 		value = 0
 	}	
 }
+tradition_sword_centric = {
+	category = combat
+	layers = {
+		0 = martial
+		1 = indian
+		4 = swords.dds
+	}
+	can_pick = {		
+	}
+	
+	parameters = {
+		wanderers_gain_extra_combat_skills = yes
+		more_expensive_weapon_inspiration = yes
+		improved_weapon_inspiration = yes
+		blademaster_trait_bonuses = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		blademaster_traits_more_common = yes
+		prowess_from_religious_traits = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	culture_modifier = {
+	}
+	character_modifier = {
+		character_travel_speed_mult = 0.1
+		character_travel_safety_mult = 0.1
+		martial_per_piety_level = 1
+		prowess_per_piety_level = 1
+		prowess_per_prestige_level = 1
+		max_loot_mult = 0.4
+	}
+	
+	cost = { prestige = { 9000 } }	
+	ai_will_do = {value = 0	}
+}
