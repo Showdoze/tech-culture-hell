@@ -44,11 +44,6 @@
 				government_has_flag = government_is_theocracy
 			}
 			highest_held_title_tier >= tier_county
-			NOR = {
-				#Cultures have their special flavor.
-				has_culture = culture:anglo_saxon
-				has_culture_group = culture_group:north_germanic_group
-			}
 		}
 		can_pass = {
 			can_change_title_law_trigger = yes
@@ -63,10 +58,10 @@
 		flag = elective_succession_law
 		title_allegiance_opinion = 10
 		revoke_cost = {
-			prestige = change_title_succession_law_prestige_cost
+			prestige = 1000
 		}
 		pass_cost = {
-			prestige = change_title_succession_law_prestige_cost
+			prestige = 1500
 		}
 	}
 

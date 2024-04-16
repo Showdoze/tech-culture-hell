@@ -457,8 +457,8 @@ convert_resources_events_root.6 = { #charity
 
 	option = {
 		name = convert_resources_events_charity_s1
-		add_gold = -100
-		add_prestige = 100
+		remove_short_term_gold = 100
+		add_prestige = 50
 	}
 	
 	option = {
@@ -466,8 +466,8 @@ convert_resources_events_root.6 = { #charity
 			gold >= 200
 		}
 		name = convert_resources_events_charity_s2
-		add_gold = -200
-		add_prestige = 200
+		remove_short_term_gold = 200
+		add_prestige = 100
 	}
 	
 	option = {
@@ -475,8 +475,8 @@ convert_resources_events_root.6 = { #charity
 			gold >= 1000
 		}
 		name = convert_resources_events_charity_s3
-		add_gold = -1000
-		add_prestige = 1000
+		remove_short_term_gold = 1000
+		add_prestige = 500
 	}
 	
 	option = {
@@ -484,8 +484,8 @@ convert_resources_events_root.6 = { #charity
 			gold >= 2000
 		}
 		name = convert_resources_events_charity_s4
-		add_gold = -2000
-		add_prestige = 2000
+		remove_short_term_gold = 2000
+		add_prestige = 1000
 	}
 	
 	option = {
