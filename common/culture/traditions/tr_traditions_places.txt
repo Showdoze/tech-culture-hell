@@ -1,0 +1,95 @@
+tradition_area_desert = {
+	category = regional
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = area_desert.dds
+	}
+	
+	can_pick = {
+		any_culture_county = {
+		any_county_province = {
+			OR = {
+				terrain = drylands
+				terrain = desert
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		drylands_hunt_success_chance = yes
+		desert_hunt_success_chance = yes
+		desert_warrior_trait_is_better = yes
+		desert_warrior_trait_more_common = yes
+	}
+	character_modifier = {
+		desert_travel_danger = desert_high_danger_reduction
+		desert_mountains_travel_danger = desert_mountains_medium_danger_reduction
+		drylands_travel_danger = drylands_high_danger_reduction
+		oasis_development_growth_factor = 0.1
+	}
+	county_modifier = {
+		desert_development_growth_factor = 0.35
+		desert_mountains_development_growth_factor = 0.35
+	}
+	province_modifier = {
+		desert_construction_gold_cost = -0.1
+		desert_holding_construction_gold_cost = -0.1
+		desert_mountains_construction_gold_cost = -0.1
+		desert_mountains_holding_construction_gold_cost = -0.1
+		desert_tax_mult = 0.1
+		desert_supply_limit_mult = 0.3
+		oasis_construction_gold_cost = -0.15
+	}
+	cost = { prestige = { 3000 } }	
+	ai_will_do = { value = 0}
+}
+tradition_area_floodplains = {
+	category = regional
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = desert.dds
+	}
+	
+	can_pick = {
+		text = culture_in_dryland_desc
+			any_culture_county = {
+			any_county_province = {
+				OR = {
+					terrain = drylands
+					terrain = desert
+					terrain = floodplains
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		drylands_hunt_success_chance = yes
+		desert_hunt_success_chance = yes
+	}
+	character_modifier = {
+		floodplains_travel_danger = floodplains_high_danger_reduction
+		desert_travel_danger = desert_high_danger_reduction
+		drylands_travel_danger = drylands_high_danger_reduction
+		oasis_development_growth_factor = 0.1
+	}
+	county_modifier = {
+		desert_development_growth_factor = 0.35
+		floodplains_development_growth_factor = 0.3
+		floodplains_construction_gold_cost = -0.1
+	}
+	province_modifier = {
+		desert_construction_gold_cost = -0.1
+		desert_holding_construction_gold_cost = -0.1
+		desert_tax_mult = 0.1
+		desert_supply_limit_mult = 0.3
+		oasis_construction_gold_cost = -0.15
+	}
+	cost = { prestige = { 3000 } }	
+	ai_will_do = { value = 0}
+}

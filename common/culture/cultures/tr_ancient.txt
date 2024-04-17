@@ -1,10 +1,8 @@
 parthian = {
-	color = { 0.7 0.1 0.2 }
-	
+	color = { 0.7 0.1 0.2 }	
 	parents = { macedonian persian }
 	created = 15.1.1
-	history_loc_override = parthian_history_loc
-	
+	history_loc_override = parthian_history_loc	
 	ethos = ethos_egalitarian #Parthian "philhellenes"
 	heritage = heritage_iranian
 	language = language_parthian
@@ -14,24 +12,20 @@ parthian = {
 		tradition_ruling_caste
 		tradition_futuwaa
 		tradition_horse_lords #Parthian Cavalry
-	}
-	
-	name_list = name_list_parthian
-	
+	}	
+	name_list = name_list_parthian	
 	coa_gfx = { iranian_group_coa_gfx }
 	building_gfx = { iranian_building_gfx }
 	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
-	unit_gfx = { iranian_unit_gfx }
-	
+	unit_gfx = { iranian_unit_gfx }	
 	ethnicities = {
 		10 = iranian_kurdish_1
 	}
 }
 punic = {
-	color = { 0.7 0.2 0.7 }
-	
+	color = { 0.7 0.2 0.7 }	
 	ethos = ethos_egalitarian
-	heritage = heritage_punic #heritage_israelite #heritage_punic
+	heritage = heritage_punic
 	language = language_punic
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -40,19 +34,54 @@ punic = {
 		tradition_maritime_mercantilism
 		tradition_lords_of_the_elephant
 		tradition_equal_inheritance
-	}
-	
-	name_list = name_list_punic
-	
+	}	
+	name_list = name_list_punic	
 	coa_gfx = { israelite_group_coa_gfx }
 	building_gfx = { mena_building_gfx african_building_gfx }
 	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
-	
+	unit_gfx = { mena_unit_gfx }	
 	ethnicities = {
 		6 = mediterranean
 		3 = arab
 		5 = east_african
 		8 = african
+	}
+}
+hephthalite = {
+	color = { 0.35 0.03 0.19  }
+
+	parents = { saka turkish }
+
+	created = 350.1.1 # First mentioned in 361 CE, likely part of wave of major nomadic migrations in Central Asia c. 350 CE
+	history_loc_override = iranian_hun_history_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Warriors from the steppes
+		tradition_mountain_homes # May have originated from the Pamir region
+		tradition_sacred_mountains # Zun was a solar mountain god
+		tradition_city_keepers # Although they may (or may not) have started off as nomads, they often settled into cities, and according to recent scholarship the Kidarite/Hephthalite period was one of increased urban growth in the eastern Iranian worlds
+		#tradition_RICE_white_huns
+	}
+
+	dlc_tradition = { # Did a lot of culture blending later on
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_hephthalite
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		8 = arab
+		5 = mediterranean_byzantine # mediterranean
 	}
 }

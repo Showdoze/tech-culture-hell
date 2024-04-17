@@ -1479,3 +1479,313 @@ ck650067 = {
 		death = yes
 	}
 }
+########################
+#Hunnic #Hungary
+########################
+ck650012 = {
+    name="Balamber"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	trait = brave
+	#trait = horse_lord
+	#trait = horse_rider
+	#trait = conf_gov_trait
+	#trait = war_veteran
+	350.1.1={
+	    birth="380.1.1"
+		give_nickname= nick_the_hun
+	}	
+	400.1.1={
+	death={death_reason= death_battle
+	killer=168769
+	}}
+}
+ck650114 = {
+    name="Uldin"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	#trait = horse_lord
+	#trait = conf_gov_trait
+	#trait = horse_rider
+	father = ck650012
+	370.1.1={
+	    birth="370.1.1"
+		give_nickname= nick_the_hun
+	}	
+	412.1.1={
+	death={death_reason= death_poor_health
+	}}
+}	
+ck650111 = { 
+    name="Charaton"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	#trait = horse_lord
+	#trait = conf_gov_trait
+	#trait = horse_rider
+	father=ck650012
+	371.1.1={
+	    birth="371.1.1"
+		give_nickname= nick_the_hun
+	}	
+	413.1.1={
+	death={death_reason= death_poison
+	killer=ck650112
+	}}
+}	
+ck650112 = {
+    name="Octar"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	#trait = horse_lord
+    #trait = horse_rider
+	trait = strong
+	#trait = conf_gov_trait
+	trait = brave
+	trait = drunkard
+	father=ck650012
+	373.1.1={
+	    birth="373.1.1"
+		give_nickname= nick_the_hun
+	}	
+	430.1.1={
+	death={death_reason= death_drinking_passive
+	}}
+}	
+ck650113 = {
+    name="Rugila"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	#trait = horse_lord
+	#trait = horse_rider
+	#trait = conf_gov_trait
+	father=ck650012
+	371.1.1={
+	    birth="371.1.1"
+		give_nickname= nick_the_hun
+	}	
+	434.1.1={
+	death={death_reason= death_shock
+	}}
+}	
+ck650016 = {
+    name="Mundzuk"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	#trait = horse_rider
+	#trait = conf_gov_trait
+	trait = ill
+	father=ck650012
+	380.1.1={
+	    birth="380.1.1"
+		give_nickname= nick_the_hun
+	}	
+	425.1.1={
+	death={death_reason= death_ill
+	}}
+}	
+ck650017 = {
+    name="Bleda"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic 
+	trait = lifestyle_hunter
+	#trait = conf_gov_trait
+	#trait = horse_rider
+	father=ck650016
+	400.1.1={
+	    birth="400.1.1"
+		give_nickname= nick_the_hun
+	}	
+	445.1.1={
+	death={death_reason= death_hunting_mistakenly_shot
+	killer=ck650034
+	}}
+}	
+ck650034 = {
+    name="Attila"
+	dynasty=591
+	religion= tengri_pagan
+	culture= hunnic
+	trait = scarred
+	trait = shrewd
+	trait = lifestyle_hunter
+	trait = ambitious
+	trait = logistician
+	#trait = hedonist
+	#trait = cavalry_leader
+	#trait = horse_rider
+	#trait = warmonger
+	#trait = portrait535
+	#trait = horse_lord
+	#trait = conf_gov_trait
+	#trait = archer_trait
+	#trait = roman_enemy
+	#trait = byz_enemy
+	trait = education_martial_4
+	disallow_random_traits= yes
+	give_nickname= nick_the_hun
+	father=ck650016
+    406.1.1={
+	    birth="406.1.1"
+	}
+	453.3.1={
+	    death={death_reason= death_murder_known
+	}}
+}	
+ck650061 = {
+	name="Ernak"
+	dynasty=591
+	religion="tengri_pagan"
+	culture="hunnic"
+	trait ="arrogant"
+	#trait ="horse_rider"
+	trait ="patient"
+	trait ="loyal"
+	trait ="education_martial_3"
+	#trait = nomad_gov_trait
+	father=ck650034
+	452.1.1={
+	    birth="436.1.1"
+		give_nickname= nick_the_hun
+	}
+	520.2.11={
+		death="520.2.11"
+	}
+}
+ck650035 = {
+    name="Kreka"
+	female= yes
+	dynasty=591
+	culture= bolghar
+	religion= tengri_pagan
+	trait = lustful
+	#trait = lush
+	#trait = hedonist
+	trait = child_of_concubine_female
+	trait = drunkard
+	father=ck650061
+	510.1.1={
+	    birth="510.1.1"
+	}
+	631.1.1={
+	    death={death_reason= death_drank_to_death
+	}}
+}
+ck650108 = {
+	name="Bayan"
+	dynasty=9570
+	religion="tengri_pagan"
+	culture="avar"
+	#trait = horse_rider
+	#trait = warmonger
+	#trait = archer_trait
+	#trait = byz_enemy
+	trait = logistician
+	trait = wrathful
+	trait = ambitious
+	mother = ck650035
+	548.1.1={
+		birth= yes
+	}
+	640.1.1 = {
+		death= yes
+	}
+}
+########################
+#Hephthalite 
+########################
+ck650037 = {
+    name="Khushnavaz"
+	dynasty=dyn_Hephthalites
+	culture= hephthalite
+	religion= ari
+	#trait = horse_rider
+	trait = greedy
+	#trait = cavalry_leader
+	#trait = horse_lord
+	400.1.1={
+	    birth="400.1.1"
+	}
+	480.1.1={
+	    death={death_reason= death_battle
+		killer=160303
+	}}
+} 
+ck650038 = {
+    name="Khush"
+	dynasty=dyn_Hephthalites
+	culture= hephthalite
+	religion= ari
+	#trait = horse_rider
+	trait = loyal
+	#trait = horse_lord
+	father = ck650037
+	450.1.1={
+	    birth="450.1.1"
+	}
+	530.1.1={
+	    death= yes
+	}
+} 
+ck650039 = {
+    name="Knavaz"
+	dynasty=dyn_Hephthalites
+	culture= hephthalite
+	religion= ari
+	#trait = horse_rider
+	trait = greedy
+	#trait = horse_lord
+	father = ck650038
+	500.1.1={
+	    birth="500.1.1"
+	}
+	570.1.1={
+	    death={death_reason= death_battle
+		killer=180628
+	}}
+} 
+ck650040 = {
+    name="Khushnava"
+	dynasty=dyn_Hephthalites
+	culture= hephthalite
+	religion= ari
+	#trait = horse_rider
+	trait = greedy
+	#trait = rapist
+	#trait = horse_lord
+	trait = lustful
+	trait = lovers_pox
+	father=ck650039
+	545.1.1={
+	    birth="545.1.1"
+	}
+	600.1.1={
+	    death= yes
+	}
+} 
+ck650041 = {
+    name="Khushnavaz"
+	dynasty=dyn_Hephthalites
+	culture= hephthalite
+	religion= ari
+	#trait = rape_born
+	trait = greedy
+	trait = clubfooted
+	trait = education_martial_1
+	give_nickname= nick_the_lame
+	father=ck650040
+	570.1.1={
+	    birth="570.1.1"
+	}
+	670.1.1={
+	    death={death_reason= death_battle
+		killer=163029
+	}}
+} 
