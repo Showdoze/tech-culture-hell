@@ -178,17 +178,7 @@ hygene_bad_1 = {
 	dread_baseline_add = 5
 	ruler_designer_cost = -50
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hygene_bad_1_desc
-			}
-			desc = trait_hygene_bad_1_character_desc
-		}
-	}
+	desc = trait_hygene_bad_1_desc
 }
 
 hygene_bad_2 = {	
@@ -219,17 +209,7 @@ hygene_bad_2 = {
 	dread_baseline_add = 5
 	ruler_designer_cost = -100
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hygene_bad_2_desc
-			}
-			desc = trait_hygene_bad_2_character_desc
-		}
-	}
+	desc = trait_hygene_bad_2_desc
 }
 
 hygene_good_1 = {	
@@ -259,17 +239,7 @@ hygene_good_1 = {
 	good = yes
 	ruler_designer_cost = 100
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hygene_good_1_desc
-			}
-			desc = trait_hygene_good_1_character_desc
-		}
-	}
+	desc = trait_hygene_good_1_desc
 }
 
 hygene_good_2 = {	
@@ -299,15 +269,5 @@ hygene_good_2 = {
 	good = yes
 	ruler_designer_cost = 200
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hygene_good_2_desc
-			}
-			desc = trait_hygene_good_2_character_desc
-		}
-	}
+	desc = trait_hygene_good_2_desc
 }
