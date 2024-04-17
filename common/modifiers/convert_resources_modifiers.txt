@@ -24,48 +24,6 @@ pay_back_large_loan = {
 	monthly_income = -6.9
 }
 
-### Pay back expensive loan
-pay_back_small_loan_expensive = {
-	icon = stewardship_negative
-	monthly_income = -5.6
-}
-
-pay_back_reasonable_loan_expensive = {
-	icon = stewardship_negative
-	monthly_income = -7.8
-}
-
-pay_back_considerable_loan_expensive = {
-	icon = stewardship_negative
-	monthly_income = -6.8
-}
-
-pay_back_large_loan_expensive = {
-	icon = stewardship_negative
-	monthly_income = -10.8
-}
-
-### Pay back very expensive loan
-pay_back_small_loan_very_expensive = {
-	icon = stewardship_negative
-	monthly_income = -8.8
-}
-
-pay_back_reasonable_loan_very_expensive = {
-	icon = stewardship_negative
-	monthly_income = -10.7
-}
-
-pay_back_considerable_loan_very_expensive = {
-	icon = stewardship_negative
-	monthly_income = -13.9
-}
-
-pay_back_large_loan_very_expensive = {
-	icon = stewardship_negative
-	monthly_income = -18.1
-}
-
 ### Gain back from loan
 gain_from_small_loan = {
 	icon = stewardship_positive
@@ -85,4 +43,56 @@ gain_from_considerable_loan = {
 gain_from_large_loan = {
 	icon = stewardship_positive
 	monthly_income = 7.7
+}
+
+### Charity ###
+
+# Donate gold to prestige
+donated_to_charity_prestige_100 = {
+	icon = stewardship_positive
+	build_speed = -0.2
+	development_growth_factor = 0.1
+}
+
+donated_to_charity_prestige_500 = {
+	icon = stewardship_positive
+	build_speed = -0.5
+	development_growth_factor = 0.25
+}
+
+donated_to_charity_prestige_1000 = {
+	icon = stewardship_positive
+	build_speed = -1
+	development_growth_factor = 0.5
+}
+
+donated_to_charity_prestige_2000 = {
+	icon = stewardship_positive
+	build_speed = -2
+	development_growth_factor = 1
+}
+
+# Donate gold to piety
+donated_to_charity_piety_100 = {
+	icon = stewardship_positive
+	monthly_piety_gain_mult = 0.5
+	clergy_opinion = 5
+}
+
+donated_to_charity_piety_500 = {
+	icon = stewardship_positive
+	monthly_piety_gain_mult = 1
+	clergy_opinion = 10
+}
+
+donated_to_charity_piety_1000 = {
+	icon = stewardship_positive
+	monthly_piety_gain_mult = 2
+	clergy_opinion = 20
+}
+
+donated_to_charity_piety_2000 = {
+	icon = stewardship_positive
+	monthly_piety_gain_mult = 5
+	clergy_opinion = 40
 }

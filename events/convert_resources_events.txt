@@ -502,8 +502,7 @@ convert_resources_events_root.61 = { #charity prestige
 		remove_short_term_gold = 100
 		add_prestige = 50
 		add_character_modifier = {
-			build_speed = -0.2
-			development_growth_factor = 0.1
+			modifier = donated_to_charity_prestige_100
 			days = 30
 		}
 	}
@@ -516,8 +515,7 @@ convert_resources_events_root.61 = { #charity prestige
 		remove_short_term_gold = 500
 		add_prestige = 250
 		add_character_modifier = {
-			build_speed = -0.5
-			development_growth_factor = 0.25
+			modifier = donated_to_charity_prestige_500
 			days = 30
 		}
 	}
@@ -530,8 +528,7 @@ convert_resources_events_root.61 = { #charity prestige
 		remove_short_term_gold = 1000
 		add_prestige = 500
 		add_character_modifier = {
-			build_speed = -1
-			development_growth_factor = 0.5
+			modifier = donated_to_charity_prestige_1000
 			days = 60
 		}
 	}
@@ -544,8 +541,7 @@ convert_resources_events_root.61 = { #charity prestige
 		remove_short_term_gold = 2000
 		add_prestige = 1000
 		add_character_modifier = {
-			build_speed = -2
-			development_growth_factor = 1
+			modifier = donated_to_charity_prestige_2000
 			days = 60
 		}
 	}
@@ -581,8 +577,7 @@ convert_resources_events_root.62 = { #charity piety
 		remove_short_term_gold = 100
 		add_piety = 25
 		add_character_modifier = {
-			monthly_piety_gain_mult = 0.5
-			clergy_opinion = 5
+			modifier = donated_to_charity_piety_100
 			days = 30
 		}
 	}
@@ -595,8 +590,7 @@ convert_resources_events_root.62 = { #charity piety
 		remove_short_term_gold = 500
 		add_piety = 125
 		add_character_modifier = {
-			monthly_piety_gain_mult = 1
-			clergy_opinion = 10
+			modifier = donated_to_charity_piety_500
 			days = 30
 		}
 	}
@@ -609,8 +603,7 @@ convert_resources_events_root.62 = { #charity piety
 		remove_short_term_gold = 1000
 		add_piety = 250
 		add_character_modifier = {
-			monthly_piety_gain_mult = 2
-			clergy_opinion = 20
+			modifier = donated_to_charity_piety_1000
 			days = 60
 		}
 	}
@@ -623,8 +616,7 @@ convert_resources_events_root.62 = { #charity piety
 		remove_short_term_gold = 2000
 		add_piety = 500
 		add_character_modifier = {
-			monthly_piety_gain_mult = 5
-			clergy_opinion = 40
+			modifier = donated_to_charity_piety_2000
 			days = 60
 		}
 	}
