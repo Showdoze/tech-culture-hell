@@ -1,17 +1,39 @@
-﻿can_traverse_water = {
+﻿faith_creation = {
 	trigger_if = {
-		culture = {
-			OR = {
-				has_innovation = innovation_longboats
-				has_innovation = innovation_african_canoes
-				has_innovation = innovation_ships
-				has_innovation = innovation_triremes
-			}
+		is_ai = no
+		limit = {
+			highest_held_title_tier = tier_county
+			is_independent_ruler = no
+		}
+		custom_description = {
+			text = "faith_creation_duchy_or_higher"
+			highest_held_title_tier >= tier_duchy
 		}
 	}
+	is_adult = yes
+	custom_description = {
+		text = "character_is_not_real_head"
+		NOT = { faith.religious_head = root }
+	}
+	NOT = { exists = var:has_created_a_faith }
+
+	trigger_if = {
+		is_ai = no
+		limit = {
+			faith = { has_doctrine_parameter = unreformed }
+		}
+		
+		NOT = {
+			custom_description = {
+				text = faith_has_been_reformed
+				object = faith
+				exists = faith.var:has_been_reformed
+			}
+		}
+   }	
 }
 
-can_raid_across_water = {
+can_traverse_water = {
 	trigger_if = {
 		culture = {
 			OR = {
@@ -41,4 +63,38 @@ buildings_enabled = {
 }
 
 is_character_allowed_to_be_player = {
+}
+
+can_raid_across_water = {
+	OR = {
+		culture = {
+			OR = {
+				has_innovation = innovation_longboats
+				has_innovation = innovation_african_canoes
+				has_innovation = innovation_ships
+				has_innovation = innovation_triremes
+			}
+		}
+		AND = {
+				exists = dynasty
+				dynasty = { has_dynasty_modifier = fp1_legacy_of_piracy_modifier }
+		}
+	}
+}
+
+can_traverse_river = {
+	OR = {
+		culture = {
+			OR = {
+				has_innovation = innovation_longboats
+				has_innovation = innovation_african_canoes
+				has_innovation = innovation_ships
+				has_innovation = innovation_china_boat1
+			}
+		}
+		AND = {
+				exists = dynasty
+				dynasty = { has_dynasty_modifier = fp1_legacy_of_piracy_modifier }
+		}
+	}
 }
