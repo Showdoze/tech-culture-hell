@@ -3,89 +3,74 @@
 
 	capital = c_giza
 }
-
 k_sumer = {
 	color = { 209 49 48 }
 
 	capital = c_qadisiya
 }
-
 k_akkadia = {
 	color = { 207 84 8 }
 
 	capital = c_baghdad
 }
-
 k_babylonia = {
 	color = { 68 75 152 }
 
 	capital = c_baghdad
 }
-
 k_assyria = {
 	color = { 117 191 48 }
 
 	capital = c_mosul
 }
-
 k_canaan = {
 	color = { 250 118 6 }
 
 	capital = c_acre
 }
-
 k_phoenicia = {
 	color = { 176 123 199 }
 
 	capital = c_acre
 }
-
 k_samaria = {
 	color = { 230 218 9 }
 
 	capital = c_tiberias
 }
-
 k_judah = {
 	color = { 230 101 9 }
 
 	capital = c_jerusalem
 }
-
 k_philistine = {
 	color = { 176 26 43 }
 
 	capital = c_ghazza
 }
-
 k_carthage = {
 	color = { 78 128 79 }
 
 	capital = c_tunis
 }
-
 k_brython = {
 	color = { 58 158 117 }
 
 	capital = c_gloucestershire
 }
-
 k_na_gaeil = {
 	color = { 54 108 156 }
 
 	capital = c_dublin
 }
-
 k_gaul = {
 	color = { 4 135 74 }
 
 	capital = c_ile_de_france
 }
-
 k_franks = {
 	color = { 93 159 121 }
 }
-
 k_suebi = {
 	color = { 63 63 52 }
 }
@@ -93,11 +78,9 @@ k_suebi = {
 k_ostrogoths = {
 	color = { 71 104 112 }
 }
-
 k_lombard = {
 	color = { 71 96 107 }
 }
-
 k_saxon = {
 	color = { 90 113 52 }
 }
@@ -3419,6 +3402,7 @@ e_byzantium = {
 				#capital = 496 # Constantinople
 				cultural_names = {
 					name_list_ck_roman = cn_Nova_Roma
+					name_list_roman = cn_Nova_Roma
 					name_list_trojan = cn_Byzantion
 				}
 				b_constantinople = {
@@ -3429,6 +3413,7 @@ e_byzantium = {
 					cultural_names = {
 						name_list_turkish = cn_konstantiniyye
 						name_list_ck_roman = cn_Nova_Roma
+						name_list_roman = cn_Nova_Roma
 						name_list_trojan = cn_Byzantion
 					}
 				}
@@ -10225,10 +10210,14 @@ e_italy = {
 			}
 			c_lombardia = {
 				color = { 185 120 205 }
-
+				cultural_names = {
+					name_list_roman = cn_Mediolanum
+				}
 				b_milano = {
 					province = 2482
-
+					cultural_names = {
+						name_list_roman = cn_Mediolanum
+					}
 					color = { 185 120 205 }
 				}
 				b_monza = {
@@ -11099,10 +11088,14 @@ e_italy = {
 
 			c_tivoli = {
 				color = { 242 253 136 }
-
+				cultural_names = {
+					name_list_roman = cn_Tibur
+				}
 				b_tivoli = {
 					province = 2589
-
+					cultural_names = {
+						name_list_roman = cn_Tibur
+					}
 					color = { 242 253 136 }
 				}
 				b_velletri = {
