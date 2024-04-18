@@ -3,7 +3,7 @@
 #################################################
 
 is_muslim = {
-        religion = religion:islam_religion
+  religion = religion:islam_religion
 }
 
 is_orthodox = {
@@ -15,11 +15,11 @@ is_orthodox = {
     }
 }
 
-
 is_european_pagan = {
    OR = {
       religion = religion:finno_ugric_religion
       religion = religion:basque_paganism_religion
+      religion = religion:basque_religion
       religion = religion:hellenism_religion
       religion = religion:siberian_religion
       religion = religion:paganism_religion
@@ -28,17 +28,16 @@ is_european_pagan = {
 }
 
 is_viking = {
-  
 	religion = religion:germanic_religion
 }
 
 is_slavic = { 
- OR = {
-        religion = religion:slavic_religion   
+  OR = {
+    religion = religion:slavic_religion   
 		culture = { has_cultural_pillar = heritage_west_slavic}
 		culture = { has_cultural_pillar = heritage_east_slavic}
 		culture = { has_cultural_pillar = heritage_south_slavic}
-}
+  }
 }
 
 is_slavicpagan = { religion = religion:slavic_religion  }
@@ -72,4 +71,31 @@ is_tengri = {
 }
 is_saiyan = {
   culture = { has_cultural_pillar = heritage_saiyan }
+}
+is_roman = {
+  culture = culture:roman
+}
+is_redguard = {
+  culture = { has_cultural_pillar = heritage_yokudan }
+}
+is_high_elf = {
+  culture = { has_cultural_pillar = heritage_aldmeri }
+}
+is_wood_elf = {
+  culture = { has_cultural_pillar = heritage_bosmeri }
+}
+is_orc = {
+  culture = { has_cultural_pillar = heritage_orcish }
+}
+is_breton = {
+  culture = { has_cultural_pillar = heritage_breton }
+}
+is_carthage = {
+  culture = { has_cultural_pillar = heritage_punic }
+}
+is_chinese = {
+  culture = { has_cultural_pillar = heritage_chinese }
+}
+is_japanese = {
+  culture = { has_cultural_pillar = heritage_japanese }
 }
