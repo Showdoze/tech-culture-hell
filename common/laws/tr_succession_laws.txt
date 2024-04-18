@@ -400,10 +400,12 @@
 			piety = 500
 		}
 		on_pass = {
-			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+			scope:title = { add_title_law = feudal_elective_succession_law }
 		}
 		flag = elective_succession_law
+		flag = advanced_succession_law
 		title_allegiance_opinion = 15
+		primary_heir_minimum_share = 1
 	}
 
 	holy_order_succession_law = {
@@ -442,7 +444,9 @@
 			scope:primary_title = { add_title_law = feudal_elective_succession_law }
 		}
 		flag = elective_succession_law
+		flag = advanced_succession_law
 		title_allegiance_opinion = 10
+		primary_heir_minimum_share = 1
 	}
 	
 	mercenary_company_succession_law = {
@@ -475,7 +479,9 @@
 			scope:primary_title = { add_title_law = feudal_elective_succession_law }
 		}
 		flag = elective_succession_law
+		flag = advanced_succession_law
 		title_allegiance_opinion = 5
+		primary_heir_minimum_share = 1
 	}
 
 	city_succession_law = {
@@ -511,9 +517,11 @@
 			prestige = 500
 		}
 		on_pass = {
-			scope:primary_title = { add_title_law = republic_elective_succession_law }
+			scope:title = { add_realm_law = republic_elective_succession_law } 
 		}
 		flag = elective_succession_law
+		flag = advanced_succession_law
 		title_allegiance_opinion = 5
+		primary_heir_minimum_share = 1
 	}
 }
