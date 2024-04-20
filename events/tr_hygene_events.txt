@@ -8,7 +8,6 @@ tr_hygene.1 = { #Improve Hygene Root
 
 	left_portrait = {
 		character = root
-		animation = sick
 	}
 
     weight_multiplier = {
@@ -24,10 +23,6 @@ tr_hygene.1 = { #Improve Hygene Root
 		}
     }
 
-    ai_chance = {
-	    base = 5
-    }
-
 	option = { # improve hygene
 		name = tr_hygene_improve
 		custom_tooltip = tr_hygene_improve_tip
@@ -41,32 +36,42 @@ tr_hygene.1 = { #Improve Hygene Root
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_good_1
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_1
+				}
 			}
 			remove_trait = hygene_good_1
 			add_trait = hygene_good_2
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_bad_1
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_1
+				}
 			}
 			remove_trait = hygene_bad_1
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_bad_2
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_2
+				}
 			}
 			remove_trait = hygene_bad_2
 			add_trait = hygene_bad_1
 		}
 
+		ai_chance = {
+			base = 5
+		}
+
 		stress_impact = {
 			base = 5
 			lazy = 15
-			dilligent = -5
+			diligent = -5
 		}
 	}
 
@@ -74,9 +79,13 @@ tr_hygene.1 = { #Improve Hygene Root
 		name = tr_hygene_keep
 		custom_tooltip = tr_hygene_keep_tip
 
+		ai_chance = {
+			base = 5
+		}
+
 		stress_impact = {
 			lazy = 5
-			dilligent = -5
+			diligent = -5
 		}
 	}
 
@@ -93,31 +102,41 @@ tr_hygene.1 = { #Improve Hygene Root
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_good_2
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_2
+				}
 			}
 			remove_trait = hygene_good_2
 			add_trait = hygene_good_1
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_good_1
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_1
+				}
 			}
 			remove_trait = hygene_good_1
 		}
 
 		if = {
-			scope:character = {
-				has_trait = hygene_bad_1
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_1
+				}
 			}
 			remove_trait = hygene_bad_1
 			add_trait = hygene_bad_2
 		}
 
+		ai_chance = {
+			base = 5
+		}
+
 		stress_impact = {
 			base = -5
-			dilligent = 10
+			diligent = 10
 			lazy = -20
 		}
 	}
