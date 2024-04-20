@@ -271,3 +271,24 @@ hygene_good_2 = {
 
 	desc = trait_hygene_good_2_desc
 }
+
+emperor_child = {
+
+	inherit_chance = 0
+	category = fame
+	ruler_designer_cost = 100
+	good = yes
+	general_opinion = 5
+	attraction_opinion = 20
+	diplomacy = 2
+
+	flag = initial_legitimacy_boost
+
+	desc = trait_emperor_child_desc
+
+	opposites = {
+        peasant_born
+		born_in_the_purple
+	}
+
+}
