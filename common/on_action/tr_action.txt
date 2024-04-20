@@ -1,4 +1,6 @@
-﻿assign_trait_ai_on_action = {
+﻿# VANILLA HOOKS
+
+assign_trait_ai_on_action = {
 	on_actions = { tr_auto }
 }
 
@@ -6,14 +8,47 @@ yearly_health_pulse = {
 	on_actions = { tr_hygene }
 }
 
+on_birth_mother = {
+	on_actions = { tr_birth }
+}
+
+on_death = {
+	on_actions = { tr_republic_inheritance }
+}
+
+## MODDED HOOKED BELOW
+
 tr_auto = {
-	trigger_event = {
-		id = tr_auto.01
+	events = { 
+		tr_auto.01 
 	}
 }
 
 tr_hygene = {
-	trigger_event = {
-		id = tr_hygene.01
+	random_events = {
+		chance_to_happen = 50
+		100 = tr_hygene.01
+	}
+}
+
+tr_birth = {
+	events = {
+		tr_birth.01
+	}
+}
+
+tr_republic_inheritance = {
+	trigger = {
+		if = {
+			limit = {
+				scope:character = { has_government = republic_government }
+			}
+		}
+	}
+	effect = {
+		if = {
+			scope:title = { has_realm_law = city_succession_law }
+		}
+		player_heir = scope:title.candidate
 	}
 }

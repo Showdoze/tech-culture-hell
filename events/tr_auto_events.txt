@@ -13,37 +13,57 @@ tr_auto.01 = { #Hygene trait distribution
 
 	immediate = {
 		random_list = {
-			#Bad hygene
+			# Bad hygene
 			10 = {
 				trigger = { 
-					NOT = { has_trait = hygene_bad } 
+					NOR = { 
+						has_trait = hygene_bad_1
+						has_trait = hygene_bad_2
+						has_trait = hygene_good_1
+						has_trait = hygene_good_2
+					} 
 			    }
-			    add_trait = hygene_bad
-				random_list = {
-					2 = {
-						add_trait = hygene_bad_1
-					}
-					1 = {
-						add_trait = hygene_bad_2
-					}
-				}
+			    add_trait = hygene_bad_1
 			}
-
+			
+			# Very bad hygene
 			5 = {
 				trigger = { 
-					NOT = { has_trait = hygene_good } 
+					NOR = { 
+						has_trait = hygene_bad_1
+						has_trait = hygene_bad_2
+						has_trait = hygene_good_1
+						has_trait = hygene_good_2
+					} 
 			    }
-			    add_trait = hygene_good
-				random_list = {
-					2 = {
-						add_trait = hygene_good_1
-					}
-					1 = {
-						add_trait = hygene_good_2
-					}
-				}
+			    add_trait = hygene_bad_2
 			}
 
+			# Good hygene
+			7 = {
+				trigger = { 
+					NOR = { 
+						has_trait = hygene_bad_1
+						has_trait = hygene_bad_2
+						has_trait = hygene_good_1
+						has_trait = hygene_good_2
+					} 
+			    }
+			    add_trait = hygene_good_1
+			}
+
+			# Very good hygene
+			3 = {
+				trigger = { 
+					NOR = { 
+						has_trait = hygene_bad_1
+						has_trait = hygene_bad_2
+						has_trait = hygene_good_1
+						has_trait = hygene_good_2
+					} 
+			    }
+			    add_trait = hygene_good_2
+			}
 		}
 	}
 }
