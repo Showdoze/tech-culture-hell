@@ -1,3 +1,65 @@
+#Eastern
+zastova = {
+	color = russian
+	created = 1976.7.6
+	parents = { russian }
+	
+	ethos = ethos_stoic
+	heritage = heritage_east_slavic
+	language = language_east_slavic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_totalitarian
+		tradition_depression
+		tradition_banned
+	}
+	
+	name_list = name_list_zastova
+
+	coa_gfx = { east_slavic_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		60 = slavic_northern_blond
+		5 = slavic_northern_ginger
+		25 = slavic_northern_brown_hair
+		10 = slavic_northern_dark_hair
+	}
+}
+#Western
+brit = {
+	color = english
+	created = 1705.5.1
+	parents = { english scottish }
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_family_entrepreneurship #Family Business
+		tradition_gardening
+		tradition_ruling_caste
+		tradition_staunch_traditionalists
+	}
+	
+	name_list = name_list_english
+	
+	coa_gfx = { english_coa_gfx scottish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		#25 = caucasian_blond
+		#15 = caucasian_ginger
+		#35 = caucasian_brown_hair
+		#25 = caucasian_dark_hair
+		10 = european_caucasian_english_1
+	}
+}
+
 spanish = {
 	color = castilian
 	created = 1474.1.15
@@ -34,62 +96,153 @@ spanish = {
 		10 = mediterranean
 	}
 }
-zastova = {
-	color = russian
-	created = 1976.7.6
-	parents = { russian }
+
+#Center
+ostrogothic = {
+	color = { 0 51 51 }
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+	created = 399.5.1
+	parents = { gothic }
 	
+	ethos = ethos_bellicose
+	heritage = heritage_east_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_battlefield_looters
+		tradition_mountaineers
+		tradition_migration
+	}
+	name_list = name_list_ostrogothic
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+		10 = mediterranean
+	}
+}
+
+gothic = {
+	color = { 0 51 51 }
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+	created = 150.1.1
+	parents = { germanic }
 	ethos = ethos_stoic
-	heritage = heritage_east_slavic
-	language = language_east_slavic
+	heritage = heritage_east_germanic
+	language = language_norse
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_totalitarian
-		tradition_depression
-		tradition_banned
-	}
-	
-	name_list = name_list_zastova
-
-	coa_gfx = { east_slavic_group_coa_gfx western_coa_gfx }
-	building_gfx = { western_building_gfx }
-	clothing_gfx = { northern_clothing_gfx }
-	unit_gfx = { eastern_unit_gfx }
+		tradition_tribe_unity
+		tradition_migration
+		tradition_germanic
+	}	
+	name_list = name_list_ostrogothic
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
 
 	ethnicities = {
-		60 = slavic_northern_blond
-		5 = slavic_northern_ginger
-		25 = slavic_northern_brown_hair
-		10 = slavic_northern_dark_hair
+		10 = caucasian_blond
+		3 = caucasian_ginger
+		3 = caucasian_brown_hair
 	}
 }
-brit = {
-	color = english
-	created = 1705.5.1
-	parents = { english scottish }
-	ethos = ethos_bureaucratic
-	heritage = heritage_west_germanic
-	language = language_anglic
+
+vandal = {
+	color = { 252 216 24 }
+	created = 300.1.1
+	parents = { germanic }
+	ethos = ethos_bellicose
+	heritage = heritage_east_germanic
+	language = language_scythian
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_family_entrepreneurship #Family Business
-		tradition_gardening
-		tradition_ruling_caste
-		tradition_staunch_traditionalists
-	}
-	
-	name_list = name_list_english
-	
-	coa_gfx = { english_coa_gfx scottish_coa_gfx western_coa_gfx }
-	building_gfx = { western_building_gfx }
-	clothing_gfx = { western_clothing_gfx }
-	unit_gfx = { western_unit_gfx }
+		tradition_battlefield_looters
+		tradition_practiced_pirates
+		tradition_migration
+		tradition_zealous_people
+	}	
+	name_list = name_list_vandal	
+	coa_gfx = { norse_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
 	
 	ethnicities = {
-		#25 = caucasian_blond
-		#15 = caucasian_ginger
-		#35 = caucasian_brown_hair
-		#25 = caucasian_dark_hair
-		10 = european_caucasian_english_1
+		50 = slavic_blond
+		50 = slavic_ginger
 	}
 }
+
+germanic = {
+	color = norse
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+		
+	ethos = ethos_bellicose
+	heritage = heritage_germanic
+	language = language_high_german
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_germanic
+		tradition_migration
+	}
+		
+	name_list = name_list_norse
+		
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	nit_gfx = { norse_unit_gfx }
+		
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}	
+}
+
+#northern
+icelandic = {
+	color = { 43 60 117 }
+	created = 1100.1.1
+	parents = { norse }	
+	ethos = ethos_bellicose
+	heritage = heritage_north_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_storytellers
+		tradition_runestones
+		tradition_things
+		tradition_maritime_mercantilism
+	}
+	# FP1 Traditions
+	dlc_tradition = {
+		trait = tradition_fp1_coastal_warriors
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_hird
+	}
+
+	name_list = name_list_icelandic
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx northern_unit_gfx }
+
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
+
