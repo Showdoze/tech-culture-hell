@@ -25,10 +25,8 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
-
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
@@ -36,33 +34,23 @@
 @africaboat = "gfx/interface/icons/culture_innovations/innovation_african_canoes.dds"
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
-@porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
-@innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
 @innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
+@aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
 
-innovation_china_boat1 = {
+
+innovation_aztec_warriors_clothing = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @innovation_china_boat1
-
-	character_modifier = {
-		embarkation_cost_mult = -1.1
-		naval_movement_speed_mult = 0.4
+	icon = @aztec_warriors_clothing
+	potential = {	
+		this = culture:nahuatl		
 	}
-	potential = {
-		OR = {
-		this = culture:han
-		any_parent_culture_or_above = {
-			this = culture:han #han
-		}
-    }}
-	custom = unlocks_naval_raiding
-	custom = unlocks_sailable_major_rivers
-
-	flag = global_regional
-	flag = tribal_era_regional
-}	
-
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		movement_speed = 0.01
+	}
+	unlock_maa = jaguar_warrior
+}
 innovation_high_carbon = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -81,26 +69,6 @@ innovation_high_carbon = {
 }
 
 #civic
-innovation_porcelain = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @porcelain
-	character_modifier = {
-		domain_tax_mult = 0.01
-		courtly_opinion = 5
-		development_growth_factor = 0.01
-	}
-	potential = {
-		OR = {
-		this = culture:han
-		any_parent_culture_or_above = {
-			this = culture:han #han
-		}
-    }}
-	flag = global_regular
-	flag = tribal_era_regular
-}
-
 innovation_gavelkind = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal

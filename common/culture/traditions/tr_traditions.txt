@@ -905,11 +905,10 @@ tradition_egypt = {
 		1 = western
 		4 = egypt.dds
 	}
-	can_pick = {
-		any_culture_county = {
-			title_province = {
-				geographical_region = ghw_region_egypt
-			}
+	is_shown = {
+		OR = {
+		has_cultural_pillar = heritage_ancient_egyptian
+		has_cultural_pillar = heritage_east_african
 		}
 	}
 	parameters = {
@@ -1271,7 +1270,7 @@ tradition_germanic = {
 		1 = mediterranean
 		4 = runestone.dds
 	}
-	can_pick = {
+	is_shown = {
 		OR = {
 			has_cultural_pillar = heritage_central_germanic
 			has_cultural_pillar = heritage_frankish
@@ -1641,9 +1640,6 @@ tradition_wilsonian_interventionism = {
 	is_shown = {
 		has_cultural_pillar = heritage_american
 	}
-	can_pick = {
-		has_cultural_pillar = heritage_american
-	}
 	parameters = {
 		war_stress_loss = yes
 		can_use_conquest_cbs = yes
@@ -1698,7 +1694,7 @@ tradition_persian = {
 		1 = western
 		4 = persian.dds
 	}
-	can_pick = {
+	is_shown = {
 		any_culture_county = {
 			title_province = {
 				geographical_region = world_middle_east_persia
@@ -1769,12 +1765,8 @@ tradition_migration = {
 		1 = mena
 		4 = migration.dds
 	}
-	
 	is_shown = {
 	}
-	can_pick = {
-	}
-	
 	parameters = {
 		easier_to_hybridize = yes
 		cheaper_to_hybridize = yes
@@ -2185,4 +2177,91 @@ tradition_sword_centric = {
 	
 	cost = { prestige = { 9000 } }	
 	ai_will_do = {value = 0	}
+}
+si_tradition_colonial_seafaring = {
+	category = realm
+
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = ship.dds
+	}
+
+	is_shown = {
+		has_cultural_pillar = heritage_cemanahuac
+	}	
+	parameters = {
+		next_level_trade_ports = yes
+		maritime_mercantilism_coastal_holdings = yes
+		trade_ports_give_control_growth = yes
+		trade_ports_give_levies = yes
+		can_travel_along_rivers = yes
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.75
+	}	
+	cost = {
+		prestige = { 5000}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+si_tradition_dense_bureaucracy = {
+	category = realm
+	layers = {
+		0 = learning
+		1 = indian
+		4 = quill.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_cemanahuac
+	}	
+	parameters = {
+		vassals_more_likely_accept_punishments = yes
+		can_make_republican_vassals = yes
+		poorly_educated_leaders_distrusted = yes
+		peasant_and_populist_factions_less_common = yes
+	}
+	character_modifier = {
+		vassal_limit = 50
+	}	
+	cost = {
+		prestige = { 9000}
+	}	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+si_tradition_headhunting = {
+	category = realm
+	layers = {
+		0 = learning
+		1 = indian
+		4 = knight.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_cemanahuac
+	}
+	parameters = {
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		si_param_piety_for_war_prisoners = yes
+	}
+	character_modifier = {
+		martial_per_piety_level = 2
+		monthly_piety_gain_per_knight_add = 0.05
+		ai_war_chance = 1
+		ai_war_cooldown = -0.5
+	}
+	cost = {
+		prestige = { 900 }
+	}	
+	ai_will_do = {
+		value = 0
+	}
 }

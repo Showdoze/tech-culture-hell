@@ -1,0 +1,111 @@
+#### Local Types ####
+@tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
+@samurai = "gfx/interface/icons/culture_innovations/inn_samurai.dds"
+@innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
+@porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
+@martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
+
+
+#JAPAN
+ innovation_samurai = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @samurai
+	potential = {	
+		this = culture:japanese		
+	}
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		movement_speed = 0.01
+	}
+	unlock_maa = samurai
+ }
+ innovation_samurai_bow = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @samurai
+	potential = {	
+		this = culture:japanese		
+	}
+	maa_upgrade = {
+        type = archers
+        damage = 1
+    }
+	unlock_maa = samurai_bow
+ }
+ innovation_tanegashima = {
+	group = culture_group_military
+	culture_era = culture_era_renaissance
+	icon = @tanegashima
+	potential = {	
+		this = culture:japanese		
+	}
+	can_progress = {
+		has_innovation = innovation_gunpowder
+		has_innovation = innovation_steel_work
+	}
+	unlock_maa = samurai_tanegashima
+ }	
+
+
+#CHINA
+ innovation_china_boat1 = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @innovation_china_boat1
+
+	character_modifier = {
+		embarkation_cost_mult = -1.1
+		naval_movement_speed_mult = 0.4
+	}
+	potential = {
+		OR = {
+		this = culture:han
+		any_parent_culture_or_above = {
+			this = culture:han #han
+		}
+    }}
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
+
+	flag = global_regional
+	flag = tribal_era_regional
+ }
+ innovation_porcelain = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @porcelain
+	character_modifier = {
+		domain_tax_mult = 0.01
+		courtly_opinion = 5
+		development_growth_factor = 0.01
+	}
+	potential = {
+		OR = {
+		this = culture:han
+		any_parent_culture_or_above = {
+			this = culture:han #han
+		}
+    }}
+	flag = global_regular
+	flag = tribal_era_regular
+ }
+ innovation_martial_artist = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @martial_artist
+	potential = {
+		OR = {
+			this = culture:han
+			any_parent_culture_or_above = {
+				this = culture:han #han
+			}
+	}   }
+	character_modifier = {
+		movement_speed = 0.1
+		supply_duration	= 0.25
+		prowess = 2
+	}
+ }
+ 
+#

@@ -320,3 +320,20 @@ language_punic = {
 	
 	color = ashkenazi
 }
+language_nahuatl = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_nahuatl
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_nahuatl }
+			multiply = 10
+		}
+	}
+	
+	color =  { 235 64 52 }
+}

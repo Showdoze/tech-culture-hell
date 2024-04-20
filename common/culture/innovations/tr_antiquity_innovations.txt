@@ -30,12 +30,11 @@
 @wootz = "gfx/interface/icons/culture_innovations/wootz.dds"
 @silk = "gfx/interface/icons/culture_innovations/silk.dds"
 @acupuncture = "gfx/interface/icons/culture_innovations/acupuncture.dds"
-@martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
 @abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
 @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 @mint = "gfx/interface/icons/culture_innovations/mint.dds"
-
+@aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
 
 innovation_trireme = {
 	group = culture_group_military
@@ -53,7 +52,24 @@ innovation_trireme = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
-
+innovation_aztec_weapon = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @aztec_weapon
+	potential = {	
+		this = culture:nahuatl		
+	}
+	character_modifier = {
+		prowess = 1
+		men_at_arms_maintenance = -0.01
+		dread_decay_mult = -0.3
+		monthly_piety_gain_per_dread_mult = 0.1
+	}	
+	maa_upgrade = {
+		type = skirmishers
+		damage = 3
+	}
+}
 innovation_bronze_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -184,23 +200,6 @@ innovation_hellenistic_baggage_train = {
 	}
 }
 
-innovation_martial_artist = {
-	group = culture_group_military
-	culture_era = culture_era_antiquity
-	icon = @martial_artist
-	potential = {
-		OR = {
-			this = culture:han
-			any_parent_culture_or_above = {
-				this = culture:han #han
-			}
-	}   }
-	character_modifier = {
-		movement_speed = 0.1
-		supply_duration	= 0.25
-		prowess = 2
-	}
-}
 
 #CIVIC
 innovation_mint = {
