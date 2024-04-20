@@ -1,6 +1,6 @@
-namespace = tr_auto
+﻿namespace = tr_auto
 
-tr_auto.0 = { #Hygene trait distribution
+tr_auto.1 = { #Hygene trait distribution
     hidden = yes
 
 	weight_multiplier = {
@@ -14,9 +14,9 @@ tr_auto.0 = { #Hygene trait distribution
 	immediate = {
 		random_list = {
 			#Bad hygene
-			3 = {
+			7 = {
 				trigger = { 
-					NOR = { 
+					NOR = {
 					has_trait = hygene_bad_1
 					has_trait = hygene_bad_2
 					has_trait = hygene_good_1
@@ -27,7 +27,7 @@ tr_auto.0 = { #Hygene trait distribution
 			}
 
 			#Very bad hygene
-			2 = {
+			5 = {
 				trigger = { 
 					NOR = { 
 					has_trait = hygene_bad_1
@@ -40,7 +40,7 @@ tr_auto.0 = { #Hygene trait distribution
 			}
 
 			#Good hygene
-			2 = {
+			5 = {
 				trigger = { 
 					NOR = { 
 					has_trait = hygene_bad_1
@@ -53,7 +53,7 @@ tr_auto.0 = { #Hygene trait distribution
 			}
 
 			# Very good hygene
-			2 = {
+			5 = {
 				trigger = { 
 					NOR = { 
 					has_trait = hygene_bad_1

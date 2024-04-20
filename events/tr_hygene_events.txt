@@ -1,6 +1,6 @@
 namespace = tr_hygene
 
-tr_hygene.0 = { #Improve Hygene Root
+tr_hygene.1 = { #Improve Hygene Root
     type = character_event
     title = tr_hygene
     desc = tr_hygene_desc
@@ -30,7 +30,7 @@ tr_hygene.0 = { #Improve Hygene Root
 
 	option = { # improve hygene
 		name = tr_hygene_improve
-		desc = tr_hygene_improve_desc
+		custom_tooltip = tr_hygene_improve_tip
 
 		trigger = {
 			scope:character = {
@@ -68,29 +68,21 @@ tr_hygene.0 = { #Improve Hygene Root
 			lazy = 15
 			dilligent = -5
 		}
-
-		ai_chance = {
-			base = 5
-		}
 	}
 
 	option = { # keep hygene
 		name = tr_hygene_keep
-		desc = tr_hygene_keep_desc
+		custom_tooltip = tr_hygene_keep_tip
 
 		stress_impact = {
 			lazy = 5
 			dilligent = -5
 		}
-
-		ai_chance = {
-			base = 5
-		}
 	}
 
 	option = { # decrease hygene
 		name = tr_hygene_decrease
-		desc = tr_hygene_decrease_desc
+		custom_tooltip = tr_hygene_decrease_tip
 
 		trigger = {
 			scope:character = {
@@ -127,10 +119,6 @@ tr_hygene.0 = { #Improve Hygene Root
 			base = -5
 			dilligent = 10
 			lazy = -20
-		}
-
-		ai_chance = {
-			base = 5
 		}
 	}
 
