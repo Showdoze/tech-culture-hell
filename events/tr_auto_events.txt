@@ -1,6 +1,6 @@
 ﻿namespace = tr_auto
 
-tr_auto.1 = { #Hygene trait distribution
+tr_auto.01 = { #Hygene trait distribution
     hidden = yes
 
 	weight_multiplier = {
@@ -14,56 +14,36 @@ tr_auto.1 = { #Hygene trait distribution
 	immediate = {
 		random_list = {
 			#Bad hygene
-			7 = {
+			10 = {
 				trigger = { 
-					NOR = {
-					has_trait = hygene_bad_1
-					has_trait = hygene_bad_2
-					has_trait = hygene_good_1
-					has_trait = hygene_good_2
-				} 
-			}
-			add_trait = hygene_bad_1
-			}
-
-			#Very bad hygene
-			5 = {
-				trigger = { 
-					NOR = { 
-					has_trait = hygene_bad_1
-					has_trait = hygene_bad_2
-					has_trait = hygene_good_1
-					has_trait = hygene_good_2
-				} 
-			}
-			add_trait = hygene_bad_2
-			}
-
-			#Good hygene
-			5 = {
-				trigger = { 
-					NOR = { 
-					has_trait = hygene_bad_1
-					has_trait = hygene_bad_2
-					has_trait = hygene_good_1
-					has_trait = hygene_good_2
-				} 
-			}
-			add_trait = hygene_good_1
-			}
-
-			# Very good hygene
-			5 = {
-				trigger = { 
-					NOR = { 
-					has_trait = hygene_bad_1
-					has_trait = hygene_bad_2
-					has_trait = hygene_good_1
-					has_trait = hygene_good_2
+					NOT = { has_trait = hygene_bad } 
+			    }
+			    add_trait = hygene_bad
+				random_list = {
+					2 = {
+						add_trait = hygene_bad_1
+					}
+					1 = {
+						add_trait = hygene_bad_2
+					}
 				}
 			}
-			add_trait = hygene_good_2
+
+			5 = {
+				trigger = { 
+					NOT = { has_trait = hygene_good } 
+			    }
+			    add_trait = hygene_good
+				random_list = {
+					2 = {
+						add_trait = hygene_good_1
+					}
+					1 = {
+						add_trait = hygene_good_2
+					}
+				}
 			}
+
 		}
 	}
 }

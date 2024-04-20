@@ -1,0 +1,25 @@
+﻿namespace = tr_birth
+
+tr_birth.01 = {
+	hidden = yes
+
+	trigger = {
+		birth_will_happen_as_usual_trigger = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					scope:father.title.rank = { title_rank = empire }
+					NOT = {
+						scope:father.culture = { heritage = byzantine }
+						scope:child = { has_trait = born_in_the_purple }
+						scope:child = { has_trait = emperor_child }
+					}
+				}
+			}
+		}
+		scope:child = { add_trait = emperor_child }
+	}
+}
