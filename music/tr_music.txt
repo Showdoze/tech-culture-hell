@@ -1,5 +1,114 @@
-﻿tr_saiyan = {
+#tr_saiyan = {
+#	music = "file:/sound/music/bardock_theme.ogg"
+#	pause_factor = 50
+#	# play every time
+#}	
+tr_saiyan = {
 	music = "file:/sound/music/bardock_theme.ogg"
-	pause_factor = 50
-	# play every time
+	weight = 30
+	is_valid = {
+		AND = {
+			OR = {
+				this = culture:saiyan
+			}
+			is_at_war = yes
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}	
+aztec_human_sacrifice = {
+	music = "file:/sound/music/aztec_human_sacrifice.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			religion = religion:anahuac_religion
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+korea_yi_drum = {
+	music = "file:/sound/music/korea_yi_drum.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			this = culture:korean
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+british_grenadiers = {
+	music = "file:/sound/music/british_grenadiers.ogg"
+	weight = 30
+	is_valid = {
+		AND = {
+			OR = {
+				this = culture:brit
+			}
+			is_at_war = yes
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}	
+roman_Gracchi = {
+	music = "file:/sound/music/roman_Gracchi.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			this = culture:roman
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+mali_empire_ec = {
+	music = "file:/sound/music/mali_empire_ec.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			has_title = title:k_mali
+			has_title = title:e_mali
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+ethiopian_Abyssinia = {
+	music = "file:/sound/music/ethiopian_Abyssinia.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			this = culture:ethiopian
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+breton_daggerfall = {
+	music = "file:/sound/music/breton_daggerfall.ogg"
+	weight = 25
+	is_valid = {
+		OR = {
+			this = culture:glenumbran
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
+}
+mafia_1_fighting_1 = {
+	music = "file:/sound/music/mafia_1_fighting_1.ogg"
+	weight = 25
+	is_valid = {
+		AND = {
+			OR = {
+				this = culture:italian_american
+			}
+			is_at_war = yes
+		}
+	}
+	mood = yes
+	can_be_interrupted = yes
 }
