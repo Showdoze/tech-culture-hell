@@ -31,6 +31,7 @@ ser_roman_legacy_1 = { # Legacy
 		}
 	}
 }
+
 ser_roman_legacy_2 = { # Reinvigirated
 	legacy = ser_roman_legacy_track
 
@@ -60,6 +61,7 @@ ser_roman_legacy_2 = { # Reinvigirated
 		tolerance_advantage_mod = 5
 	}
 }
+
 ser_roman_legacy_3 = { # Revised-Reform's
 	legacy = ser_roman_legacy_track
 
@@ -70,6 +72,7 @@ ser_roman_legacy_3 = { # Revised-Reform's
 		advantage = 5
 	}
 }
+
 ser_roman_legacy_4 = { # Ruler's
 	legacy = ser_roman_legacy_track
 
@@ -80,6 +83,7 @@ ser_roman_legacy_4 = { # Ruler's
 		life_expectancy = 5
 	}
 }
+
 ser_roman_legacy_5 = { # Centralized Rule
 	legacy = ser_roman_legacy_track
 
@@ -92,7 +96,7 @@ ser_roman_legacy_5 = { # Centralized Rule
 }
 
 # Ocean legacy
-ocean_legacy_1 = {#BloodOfWarriors
+ocean_legacy_1 = { 
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 1
@@ -107,28 +111,32 @@ ocean_legacy_1 = {#BloodOfWarriors
 		}
 	}
 }
-ocean_legacy_2 = {#BloodOfWarriors
+
+ocean_legacy_2 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 2
 		no_water_crossing_penalty = yes
 	}
 }
-ocean_legacy_3 = {#BloodOfWarriors
+
+ocean_legacy_3 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 3
 		embarkation_cost_mult = -0.2
 	}
 }
-ocean_legacy_4 = {#BloodOfWarriors
+
+ocean_legacy_4 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 4
 		naval_movement_speed_mult = 0.5
 	}
 }
-ocean_legacy_5 = {#BloodOfWarriors
+
+ocean_legacy_5 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 10
@@ -153,12 +161,13 @@ scale_legacy_1 = { # Oviparous
 		}
 	}
 	traits = {
-		scaly = 100
+		scaly = 1
 	}
 	ai_chance = {
 		value = 0
 	}
 }
+
 scale_legacy_2 = { # Adaptation
 	legacy = scale_legacy_track
 
@@ -173,7 +182,11 @@ scale_legacy_2 = { # Adaptation
 		movement_speed = 0.1
 		supply_duration = 1
 	}
+	traits = {
+		scaly = 2
+	}
 }
+
 scale_legacy_3 = { # Cold Blooded's
 	legacy = scale_legacy_track
 
@@ -185,7 +198,11 @@ scale_legacy_3 = { # Cold Blooded's
 		prowess = 4
 		owned_scheme_secrecy_add = 15
 	}
+	traits = {
+		scaly = 3
+	}
 }
+
 scale_legacy_4 = { # Inhuman
 	legacy = scale_legacy_track
 
@@ -199,7 +216,11 @@ scale_legacy_4 = { # Inhuman
 		# +X extra enemy control loss on occupying a county.
 		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
 	}
+	traits = {
+		scaly = 4
+	}
 }
+
 scale_legacy_5 = { # Heir's of the Dragon
 	legacy = scale_legacy_track
 
@@ -211,6 +232,9 @@ scale_legacy_5 = { # Heir's of the Dragon
 		attraction_opinion = 30
 		monthly_martial_lifestyle_xp_gain_mult = 0.1
 		short_reign_duration_mult = -0.2
+	}
+	traits = {
+		scaly = 5
 	}
 }
 
@@ -226,6 +250,7 @@ usa_legacy_1 = { # Crossing the Delaware
 
 	ai_chance = { value = 0 }
 }
+
 usa_legacy_2 = { # Declaration 
 	legacy = usa_legacy_track
 
@@ -237,6 +262,7 @@ usa_legacy_2 = { # Declaration
 		custom_description_no_bullet = { text = fp2_coterie_legacy_1_effect }
 	}
 }
+
 usa_legacy_3 = { # Era of the Common Man
 	legacy = usa_legacy_track
 
@@ -246,6 +272,7 @@ usa_legacy_3 = { # Era of the Common Man
 		max_sway_schemes_add = 1
 	}
 }
+
 usa_legacy_4 = { # military congress
 	legacy = usa_legacy_track
 
@@ -258,6 +285,7 @@ usa_legacy_4 = { # military congress
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
 }
+
 usa_legacy_5 = { # Freedom
 	legacy = usa_legacy_track
 
@@ -285,7 +313,11 @@ skaven_legacy_1 = { # Strength in Numbers
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
 	ai_chance = { value = 0 }
+	traits = {
+		hygene_bad_1 = 1
+	}
 }
+
 skaven_legacy_2 = { # Scurry Away
 	legacy = skaven_legacy_track
 
@@ -293,7 +325,11 @@ skaven_legacy_2 = { # Scurry Away
 		retreat_losses = -0.15
 		movement_speed = 0.1
 	}
+	traits = {
+		hygene_bad_1 = 2
+	}
 }
+
 skaven_legacy_3 = { # Lead from the Back
 	legacy = skaven_legacy_track
 
@@ -302,7 +338,12 @@ skaven_legacy_3 = { # Lead from the Back
 		pursue_efficiency = 0.15
 		defender_advantage = 5
 	}
+	traits = {
+		hygene_bad_1 = 2
+		hygene_bad_2 = 1
+	}
 }
+
 skaven_legacy_4 = { # SKILLED MANIPULATORS
 	legacy = skaven_legacy_track
 
@@ -315,7 +356,12 @@ skaven_legacy_4 = { # SKILLED MANIPULATORS
 	effect = {
 		custom_description_no_bullet = { text = fp2_coterie_legacy_1_effect }
 	}
+	traits = {
+		hygene_bad_1 = 2
+		hygene_bad_2 = 2
+	}
 }
+
 skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 	legacy = skaven_legacy_track
 
@@ -330,8 +376,13 @@ skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 			text = kin_legacy_4_legacy_effect
 		}
 	}
+	traits = {
+		hygene_bad_1 = 3
+		hygene_bad_2 = 2
+	}
 }
-Chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
+
+chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
 	legacy = Chinese_bureaucracy_legacy_track
 
 	character_modifier = {
@@ -349,14 +400,16 @@ Chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
 		value = 0
 	}
 }
-Chinese_bureaucracy_legacy_2 = { # Imperial law
+
+chinese_bureaucracy_legacy_2 = { # Imperial law
 	legacy = Chinese_bureaucracy_legacy_track
 
 	character_modifier = {
 		monthly_county_control_change_add = 1 
 	}
 }
-Chinese_bureaucracy_legacy_3 = { # Just and Honest
+
+chinese_bureaucracy_legacy_3 = { # Just and Honest
 	legacy = Chinese_bureaucracy_legacy_track
 
 	character_modifier = {
@@ -364,14 +417,16 @@ Chinese_bureaucracy_legacy_3 = { # Just and Honest
 		tyranny_gain_mult = -0.2 
 	}
 }
-Chinese_bureaucracy_legacy_4 = { # Structured Economics
+
+chinese_bureaucracy_legacy_4 = { # Structured Economics
 	legacy = Chinese_bureaucracy_legacy_track
 
 	character_modifier = {
 		domain_tax_mult = 0.2
 	}
 }
-Chinese_bureaucracy_legacy_5 = { # Heavenly rule
+
+chinese_bureaucracy_legacy_5 = { # Heavenly rule
 	legacy = Chinese_bureaucracy_legacy_track
 
 	character_modifier = {
@@ -393,6 +448,7 @@ mafia_legacy_1 = { #Associates
 		value = 0
 	}
 }
+
 mafia_legacy_2 = { #Soldiers
 	legacy = mafia_legacy_track
 	character_modifier = {
@@ -401,6 +457,7 @@ mafia_legacy_2 = { #Soldiers
 		lifestyle_reveler_xp_gain_mult = 0.5
 	}
 }
+
 mafia_legacy_3 = {#Caporegimes
 	legacy = mafia_legacy_track
 	character_modifier = {
@@ -411,6 +468,7 @@ mafia_legacy_3 = {#Caporegimes
 		custom_description_no_bullet = { text = fp2_urbanism_legacy_4_effect }
 	}
 }
+
 mafia_legacy_4 = { #Underboss
 	legacy = mafia_legacy_track
 	character_modifier = {
@@ -422,6 +480,7 @@ mafia_legacy_4 = { #Underboss
 		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
 	}
 }
+
 mafia_legacy_5 = { #Boss
 	legacy = mafia_legacy_track
 	character_modifier = {
@@ -435,8 +494,9 @@ mafia_legacy_5 = { #Boss
 		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
 	}
 }
-##Japanese legacy
- japan_legacy_1 = {#Japanese cavalry
+
+#Japanese legacy
+japan_legacy_1 = { #Japanese cavalry
 	legacy = japan_legacy_track
 	character_modifier = {
 		prowess = 2
@@ -453,24 +513,27 @@ mafia_legacy_5 = { #Boss
 			multiply = 0
 		}
 	}
- }
- japan_legacy_2 = {#banzai charge
+}
+
+japan_legacy_2 = { #banzai charge
 	legacy = japan_legacy_track
 	character_modifier = {
 		glory_hound_opinion = 5
 		short_reign_duration_mult = -0.2
 		negate_health_penalty_add = 0.5
 	}
- }
- japan_legacy_3 = {#Dan-no-ura
+}
+
+japan_legacy_3 = { #Dan-no-ura
 	legacy = japan_legacy_track
 	character_modifier = {
 		coastal_advantage = 3
 		embarkation_cost_mult = -0.2
 		naval_movement_speed_mult = 0.5
 	}
- }
- japan_legacy_4 = {#Senkan
+}
+
+japan_legacy_4 = { #Senkan
 	legacy = japan_legacy_track
 	character_modifier = {
 		enemy_hard_casualty_modifier = 0.1
@@ -490,8 +553,9 @@ mafia_legacy_5 = { #Boss
 	effect = {
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
- }
- japan_legacy_5 = {#Hōrudingu shiro
+}
+
+japan_legacy_5 = { #Hōrudingu shiro
 	legacy = japan_legacy_track
 	character_modifier = {
 		enemy_hostile_scheme_success_chance_add = -15
@@ -536,4 +600,4 @@ mafia_legacy_5 = { #Boss
 		# Cultural Acceptance from successful Learn Language schemes
 		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
 	}
- }
+}

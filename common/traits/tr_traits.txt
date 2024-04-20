@@ -153,7 +153,6 @@ albino = {
 hygene_bad_1 = {	
 
 	inherit_chance = 0
-	genetic = no
 	physical = yes
 	category = health
 
@@ -172,7 +171,7 @@ hygene_bad_1 = {
 	attraction_opinion = -10
 	diplomacy = -5
 	health = -0.1
-	life_expectancy = -10
+	life_expectancy = -5
 	epidemic_resistance = -5
 	good = no
 	dread_baseline_add = 5
@@ -184,7 +183,6 @@ hygene_bad_1 = {
 hygene_bad_2 = {	
 
 	inherit_chance = 0
-	genetic = no
 	physical = yes
 	category = health
 
@@ -203,7 +201,7 @@ hygene_bad_2 = {
 	attraction_opinion = -20
 	diplomacy = -10
 	health = -0.2
-	life_expectancy = -15
+	life_expectancy = -10
 	epidemic_resistance = -10
 	good = no
 	dread_baseline_add = 5
@@ -215,7 +213,6 @@ hygene_bad_2 = {
 hygene_good_1 = {	
 
 	inherit_chance = 0
-	genetic = no
 	physical = yes
 	category = health
 
@@ -245,7 +242,6 @@ hygene_good_1 = {
 hygene_good_2 = {	
 
 	inherit_chance = 0
-	genetic = no
 	physical = yes
 	category = health
 
@@ -270,4 +266,26 @@ hygene_good_2 = {
 	ruler_designer_cost = 200
 
 	desc = trait_hygene_good_2_desc
+}
+
+emperor_child = {
+
+	inherit_chance = 0
+	category = fame
+	ruler_designer_cost = 100
+	good = yes
+	general_opinion = 5
+	attraction_opinion = 20
+	diplomacy = 2
+
+	flag = initial_legitimacy_boost
+
+	desc = trait_emperor_child_desc
+
+	opposites = {
+        peasant_born
+		born_in_the_purple
+		patrician_born
+	}
+
 }

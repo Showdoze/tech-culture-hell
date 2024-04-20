@@ -1,0 +1,144 @@
+﻿namespace = tr_hygene
+
+tr_hygene.1 = { #Improve Hygene Root
+    type = character_event
+    title = tr_hygene
+    desc = tr_hygene_desc
+	theme = mental_health
+
+	left_portrait = {
+		character = root
+	}
+
+    weight_multiplier = {
+	    base = 0.5
+		modifier = {
+			add = 0.2
+			OR = {
+				has_trait = hygene_good_1
+				has_trait = hygene_good_2
+				has_trait = hygene_bad_1
+				has_trait = hygene_bad_2
+			}
+		}
+    }
+
+	option = { # improve hygene
+		name = tr_hygene_improve
+		custom_tooltip = tr_hygene_improve_tip
+
+		trigger = {
+			scope:character = {
+			    NOT = {
+				    has_trait = hygene_good_2
+			    }
+		    }
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_1
+				}
+			}
+			remove_trait = hygene_good_1
+			add_trait = hygene_good_2
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_1
+				}
+			}
+			remove_trait = hygene_bad_1
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_2
+				}
+			}
+			remove_trait = hygene_bad_2
+			add_trait = hygene_bad_1
+		}
+
+		ai_chance = {
+			base = 5
+		}
+
+		stress_impact = {
+			base = 5
+			lazy = 15
+			diligent = -5
+		}
+	}
+
+	option = { # keep hygene
+		name = tr_hygene_keep
+		custom_tooltip = tr_hygene_keep_tip
+
+		ai_chance = {
+			base = 5
+		}
+
+		stress_impact = {
+			lazy = 5
+			diligent = -5
+		}
+	}
+
+	option = { # decrease hygene
+		name = tr_hygene_decrease
+		custom_tooltip = tr_hygene_decrease_tip
+
+		trigger = {
+			scope:character = {
+			    NOT = {
+				    has_trait = hygene_bad_2
+			    }
+		    }
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_2
+				}
+			}
+			remove_trait = hygene_good_2
+			add_trait = hygene_good_1
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_good_1
+				}
+			}
+			remove_trait = hygene_good_1
+		}
+
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = hygene_bad_1
+				}
+			}
+			remove_trait = hygene_bad_1
+			add_trait = hygene_bad_2
+		}
+
+		ai_chance = {
+			base = 5
+		}
+
+		stress_impact = {
+			base = -5
+			diligent = 10
+			lazy = -20
+		}
+	}
+
+}

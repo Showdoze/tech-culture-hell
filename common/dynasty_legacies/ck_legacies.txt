@@ -36,7 +36,7 @@ skaven_legacy_track = {
 	always = yes
 }
 
-Chinese_bureaucracy_legacy_track = {
+chinese_bureaucracy_legacy_track = {
 	is_shown = {
 		dynasty = {
 			OR = {
@@ -73,5 +73,11 @@ japan_legacy_track = {
 				has_dynasty_perk = japan_legacy_1
 			}
 		}
+	}
+}
+
+fp2_urbanism_legacy_track = {
+	is_shown = {
+		has_government = republic_government
 	}
 }
