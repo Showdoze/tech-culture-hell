@@ -2178,36 +2178,6 @@ tradition_sword_centric = {
 	cost = { prestige = { 9000 } }	
 	ai_will_do = {value = 0	}
 }
-si_tradition_colonial_seafaring = {
-	category = realm
-
-	layers = {
-		0 = diplo
-		1 = indian
-		4 = ship.dds
-	}
-
-	is_shown = {
-		has_cultural_pillar = heritage_cemanahuac
-	}	
-	parameters = {
-		next_level_trade_ports = yes
-		maritime_mercantilism_coastal_holdings = yes
-		trade_ports_give_control_growth = yes
-		trade_ports_give_levies = yes
-		can_travel_along_rivers = yes
-	}
-	character_modifier = {
-		embarkation_cost_mult = -0.75
-	}	
-	cost = {
-		prestige = { 5000}
-	}	
-	ai_will_do = {
-		value = 0
-	}
-}
-
 si_tradition_dense_bureaucracy = {
 	category = realm
 	layers = {
