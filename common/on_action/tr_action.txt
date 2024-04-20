@@ -1,0 +1,19 @@
+﻿assign_trait_ai_on_action = {
+	on_actions = { tr_auto }
+}
+
+yearly_health_pulse = {
+	on_actions = { tr_hygene }
+}
+
+tr_auto = {
+	trigger_event = {
+		id = tr_auto.01
+	}
+}
+
+tr_hygene = {
+	trigger_event = {
+		id = tr_hygene.01
+	}
+}
