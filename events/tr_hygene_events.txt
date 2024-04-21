@@ -37,6 +37,7 @@ tr_hygene.01 = { #Hygene Root
 			limit = { has_trait = hygene_good_1 }
 			remove_trait = hygene_good_1
 			add_trait = hygene_good_2
+			remove_character_modifier = stress_smelling_of_sweat
 		}
 		else_if = {
 			limit = { has_trait = hygene_bad_1 }
@@ -49,6 +50,7 @@ tr_hygene.01 = { #Hygene Root
 		}
 		else = {
 			add_trait = hygene_good_1
+			remove_character_modifier = stress_smelling_of_sweat
 		}
 
 		ai_chance = {
@@ -59,6 +61,9 @@ tr_hygene.01 = { #Hygene Root
 			base = 5
 			lazy = 15
 			diligent = -5
+			stubborn = 5
+			fickle = -5
+			melancholic = 10
 		}
 	}
 
@@ -73,6 +78,8 @@ tr_hygene.01 = { #Hygene Root
 		stress_impact = {
 			lazy = 5
 			diligent = -5
+			fickle = 5
+			melancholic = 5
 		}
 	}
 
@@ -112,6 +119,9 @@ tr_hygene.01 = { #Hygene Root
 			base = -5
 			diligent = 10
 			lazy = -20
+			stubborn = 5
+			fickle = -5
+			melancholic = -10
 		}
 	}
 }
