@@ -12,7 +12,7 @@ tr_birth.01 = {
 			limit = {
 				AND = {
 					scope:father.title.rank = { title_rank = empire }
-					NOT = {
+					NOR = {
 						scope:father.culture = { heritage = byzantine }
 						scope:child = { has_trait = born_in_the_purple }
 						scope:child = { has_trait = emperor_child }
