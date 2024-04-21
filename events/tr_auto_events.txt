@@ -9,6 +9,12 @@ tr_auto.01 = { #Hygene trait distribution
 			add = -0.75
 			has_special_content_trait = yes
 		}
+		modifier = {
+			add = -1
+			if = {
+				age =< 6
+			}
+		}
 	}
 
 	immediate = {
