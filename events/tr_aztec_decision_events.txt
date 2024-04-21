@@ -1,0 +1,91 @@
+﻿namespace = aztec_religion_decision
+
+#########################
+# Select Personal God	#
+#########################
+
+aztec_religion_decision.001 = {
+	type = character_event
+	title = aztec_religion_decision.001.t
+	desc = {
+		desc = aztec_religion_decision.001.desc
+	}
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	option = {# huitzilopochtli 
+		name = aztec_religion_decision.001.huitzilopochtli
+		trigger = { NOT = { has_character_modifier = kharis_aztec_huitzilopochtli } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_huitzilopochtli }
+	}
+	option = {# tlaloc 
+		name = aztec_religion_decision.001.tlaloc
+		trigger = { NOT = { has_character_modifier = kharis_aztec_tlaloc } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_tlaloc }
+	}
+	option = {# tonatiuh 
+		name = aztec_religion_decision.001.tonatiuh
+		trigger = { NOT = { has_character_modifier = kharis_aztec_tonatiuh } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_tonatiuh }
+	}
+	option = {# tezcatlipoca 
+		name = aztec_religion_decision.001.tezcatlipoca
+		trigger = { NOT = { has_character_modifier = kharis_aztec_tezcatlipoca } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_tezcatlipoca }
+	}
+	option = {# chalchiuhtlicue 
+		name = aztec_religion_decision.001.chalchiuhtlicue
+		trigger = { NOT = { has_character_modifier = kharis_aztec_chalchiuhtlicue } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_chalchiuhtlicue }
+	}
+	option = {# centeotl 
+		name = aztec_religion_decision.001.centeotl
+		trigger = { NOT = { has_character_modifier = kharis_aztec_centeotl } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_centeotl }
+	}
+	option = {# quetzalcoatl 
+		name = aztec_religion_decision.001.quetzalcoatl
+		trigger = { NOT = { has_character_modifier = kharis_aztec_quetzalcoatl } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_quetzalcoatl }
+	}
+	option = {# xipe_totec 
+		name = aztec_religion_decision.001.xipe_totec
+		trigger = { NOT = { has_character_modifier = kharis_aztec_xipe_totec } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_xipe_totec }
+	}
+	option = {# mayahuel 
+		name = aztec_religion_decision.001.mayahuel
+		trigger = { NOT = { has_character_modifier = kharis_aztec_mayahuel } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_mayahuel }
+	}
+	option = {# tlaltecuhtli 
+		name = aztec_religion_decision.001.tlaltecuhtli
+		trigger = { NOT = { has_character_modifier = kharis_aztec_tlaltecuhtli } }
+		set_bhakti_effect = { BHAKTI = kharis_aztec_tlaltecuhtli }
+	}
+	#option = {# artemis 
+	#	name = aztec_religion_decision.001.artemis
+	#	trigger = { NOT = { has_character_modifier = kharis_hellenism_artemis } }
+	#	set_bhakti_effect = { BHAKTI = kharis_hellenism_artemis }
+	#}
+	#option = {# herakles 
+	#	name = aztec_religion_decision.001.herakles
+	#	trigger = { NOT = { has_character_modifier = kharis_hellenism_herakles } }
+	#	set_bhakti_effect = { BHAKTI = kharis_hellenism_herakles }
+	#}
+	#option = {# asklepios 
+	#	name = aztec_religion_decision.001.asklepios
+	#	trigger = { NOT = { has_character_modifier = kharis_hellenism_asklepios } }
+	#	set_bhakti_effect = { BHAKTI = kharis_hellenism_asklepios }
+	#}
+	
+	# Opt-Out
+	option = {
+		name = aztec_religion_decision.001.optout
+		flavor = aztec_religion_decision.001.flavor
+		ai_chance = { base = 0 }
+	}
+}

@@ -14,8 +14,7 @@ qus = {
 	character_modifier = {
 		name = holy_site_qus_effect_name
 		learning_per_piety_level = 2
-	}
-	
+	}	
 	flag = cordoba_conversion_bonus # +20% county conversion speed
 }
 
@@ -25,8 +24,7 @@ bahnasa = {
 	character_modifier = {
 		name = holy_site_bahnasa_effect_name
 		monthly_lifestyle_xp_gain_mult = 0.1
-	}
-	
+	}	
 	flag = visoki_conversion_resistance_bonus # 50% County Conversion Resistance
 }
 
@@ -458,4 +456,26 @@ firenze = {
 		different_culture_opinion = 5
 		learn_language_scheme_power_mult = 0.2 
 	}
+}
+delphi = {
+	county = c_aetolia
+	barony = b_lidoriki
+	
+	character_modifier = {
+		name = holy_site_delphi_effect_name
+		knight_effectiveness_mult = 0.25
+		learn_language_scheme_power_mult = 0.2 
+	}
+}
+athens = {
+	county = c_attica
+
+	character_modifier = {
+		name = holy_site_athens_effect_name
+		diplomacy = 1
+		stewardship = 1
+		naval_movement_speed_mult = 0.2
+		coastal_advantage = 5
+	}
+	flag = cordoba_conversion_bonus # +20% county conversion speed
 }
