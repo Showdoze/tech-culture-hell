@@ -1,0 +1,15 @@
+namespace = tr_gov_change
+
+tr_gov_change.01 = { ## Event on change government type
+    type = character_event
+    title = tr_gov_change_event
+    desc = tr_gov_change_event_desc
+
+	left_portrait = {
+		character = root
+	}
+
+	option = {
+		name = tr_gov_change_event_option
+	}
+}
