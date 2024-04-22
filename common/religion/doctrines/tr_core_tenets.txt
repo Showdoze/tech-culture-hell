@@ -159,4 +159,54 @@ doctrine_core_tenets = {
 			}
 		}
 	}
+	tenet_albino = {
+		icon = core_tenet_meditation
+		piety_cost = {
+			if = {
+				limit = {
+					religion_tag = hinduism_religion
+				}
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion_tag = christianity_religion
+						religion_tag = judaism_religion
+						religion_tag = islam_religion
+						religion_tag = buddhism_religion
+						religion_tag = jainism_religion
+					}
+				}
+				value = faith_tenet_cost_high
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_albino }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			always = yes
+		}
+		can_pick = {
+			always = yes
+		}	
+		traits = {
+			virtues = {
+				albino = 3
+			}
+		}
+		parameters = {
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			select_personal_god_active = yes
+		}
+		character_modifier = {
+			dread_baseline_add = 5
+		}
+	}
 }	
