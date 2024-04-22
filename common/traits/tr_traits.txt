@@ -19,6 +19,7 @@
 		}
 	}
 }
+
 dwarf = {
 	prowess = -4
 	opposites = {
@@ -56,6 +57,7 @@ dwarf = {
 		}
 	}
 }
+
 giant = {
 	opposites = {
 		dwarf
@@ -95,6 +97,7 @@ giant = {
 		}
 	}
 }
+
 scaly = {
 	fertility = -0.2	
 	#inherit_chance = 100 # dominant
@@ -152,7 +155,7 @@ albino = {
 
 hygene_bad_1 = {	
 
-	inherit_chance = 0
+	minimum_age = 10
 	physical = yes
 	category = health
 
@@ -180,7 +183,7 @@ hygene_bad_1 = {
 
 hygene_bad_2 = {	
 
-	inherit_chance = 0
+	minimum_age = 10
 	physical = yes
 	category = health
 
@@ -208,7 +211,7 @@ hygene_bad_2 = {
 
 hygene_good_1 = {	
 
-	inherit_chance = 0
+	minimum_age = 10
 	physical = yes
 	category = health
 
@@ -235,7 +238,7 @@ hygene_good_1 = {
 
 hygene_good_2 = {	
 
-	inherit_chance = 0
+	minimum_age = 10
 	physical = yes
 	category = health
 
@@ -262,7 +265,6 @@ hygene_good_2 = {
 
 emperor_child = {
 
-	inherit_chance = 0
 	category = fame
 	ruler_designer_cost = 100
 	good = yes
