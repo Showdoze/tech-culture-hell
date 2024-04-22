@@ -1,0 +1,30 @@
+﻿pdxmesh = {
+	name = "ruins_rome_mesh"
+	file = "ruins_rome.mesh"
+	scale = 1
+	meshsettings = {
+		name = "ruins_rome"
+		index = 0
+		texture_diffuse = "ruins_diffuse.dds"
+		texture_normal = "ruins_normal.dds"
+		texture_specular = "ruins_properties.dds"
+		texture = { file = "ruins_rome_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "ruins_rome_decal"
+		index = 0
+		texture_diffuse = "ruins_rome_decal_diffuse.dds"
+		texture_normal = "ruins_rome_decal_normal.dds"
+		texture_specular = "nospec.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+
+entity = {
+	name = "ruins_rome_entity"
+	pdxmesh = "ruins_rome_mesh"
+}

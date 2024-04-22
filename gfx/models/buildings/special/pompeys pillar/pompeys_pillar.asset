@@ -1,0 +1,30 @@
+﻿pdxmesh = {
+	name = "pompeys_pillar_mesh"
+	file = "pompeys_pillar.mesh"
+	scale = 1
+	meshsettings = {
+		name = "pompeys_pillar"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "pompeys_pillar_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "pompeys_pillar_decal"
+		index = 0
+		texture_diffuse = "pharos_decal_diffuse.dds"
+		texture_normal = "pharos_decal_normal.dds"
+		texture_specular = "nospec.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+
+entity = {
+	name = "pompeys_pillar_entity"
+	pdxmesh = "pompeys_pillar_mesh"
+}
