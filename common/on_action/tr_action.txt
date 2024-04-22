@@ -49,7 +49,7 @@ tr_republic_inheritance = {
 		if = {
 			OR = {
 				scope:title = { has_realm_law = republic_elective_succession_law }
-				scope:title = { has_realm_law = city_succession_law }
+				scope:ruler = { has_realm_law = city_succession_law }
 			}
 			
 		}
