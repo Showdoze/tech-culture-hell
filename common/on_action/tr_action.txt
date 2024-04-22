@@ -6,14 +6,11 @@ assign_trait_ai_on_action = {
 
 yearly_health_pulse = {
 	on_actions = { tr_hygene }
+	on_actions = { tr_republic_inheritance }
 }
 
 on_birth_mother = {
 	on_actions = { tr_birth }
-}
-
-realm_maintenance_quarterly_pulse = {
-	on_actions = { tr_republic_inheritance }
 }
 
 ## MODDED HOOKED BELOW
@@ -48,6 +45,7 @@ tr_republic_inheritance = {
 	effect = {
 		if = {
 			OR = {
+				scope:primary_title = { has_realm_law = republic_elective_succession_law }
 				scope:title = { has_realm_law = republic_elective_succession_law }
 				scope:ruler = { has_realm_law = city_succession_law }
 			}
