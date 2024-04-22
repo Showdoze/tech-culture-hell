@@ -539,13 +539,19 @@
         }
     }
 #Hitrory
-    145289 = {
+    145289 = { #caligula
         dna_modifiers = {
             accessory = {
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = m_hair_ep2_western_01
             }
         }   
         weight = {
@@ -565,7 +571,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
             accessory = {
                 mode = add
@@ -591,7 +597,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
         }   
         weight = {
@@ -611,7 +617,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
         }   
         weight = {
@@ -631,7 +637,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
         }   
         weight = {
@@ -651,7 +657,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
             accessory = {
                 mode = add
@@ -677,7 +683,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
             accessory = {
                 mode = add
@@ -703,7 +709,7 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
         }   
         weight = {
@@ -717,14 +723,16 @@
         }
     }
 
-	70533 = {
+	70533 = { #Theodosius
         dna_modifiers = {
+            dna_modifiers = {
             accessory = {
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
+        }
         }   
         weight = {
             base = 0
@@ -736,7 +744,7 @@
 			}
         }
     }
-
+     
 	ck650106 = {
         dna_modifiers = {
             accessory = {
@@ -762,13 +770,19 @@
                 mode = add
                 gene = beards
                 template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                value = 0
             }
             accessory = {
                 mode = add
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_byzantine_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep1_byzantine_imperial
+                accessory = male_headgear_secular_ep1_crown_of_justinian
             }
         }   
         weight = {
@@ -831,7 +845,7 @@
 			}
         }
     }
-    145250 = { #
+    145250 = { #Aurelian 
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -856,7 +870,7 @@
 			}
         }
     }
-    ck650094 = {
+    ck650094 = { #Livia
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -917,8 +931,8 @@
             accessory = {
                 mode = add
                 gene = beards
-                template = all_beards
-                accessory = male_empty
+                template = no_beard
+                value = 0
             }
             accessory = {
                 mode = add
@@ -937,4 +951,307 @@
 			}
         }
     }
+    145270 = { # Caracalla
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_fp2_iberian_christian_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_byzantine_02
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145270
+				this = character:145270
+			}
+        }
+    }
+    145286_Galba = { #Galba
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145286
+				this = character:145286
+			}
+        }
+    }
+    145285_Otho = { #Otho
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145285
+				this = character:145285
+			}
+        }
+    }
+    145284_Vitellius = { #Vitellius
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145284
+				this = character:145284
+			}
+        }
+    }
+    145282_Titus= { #Titus
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145282
+				this = character:145282
+			}
+        }
+    }
+    145283_Domitian = { #Domitian
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145283
+				this = character:145283
+			}
+        }
+    }
+    145280_Nerva= { #Nerva
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145280
+				this = character:145280
+			}
+        }
+    }
+    145271_Geta = { #Geta
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = scripted_character_hairstyles_01
+                accessory = male_hair_sub_saharan_01
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145271
+				this = character:145271
+			}
+        }
+    }
+    145269_Septimius = { #Septimius
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_sub_saharan_03
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = scripted_character_hairstyles_01
+                accessory = male_hair_sub_saharan_01
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145269
+				this = character:145269
+			}
+        }
+    }
+    70517_Leo_Thracian= { #Leo_Thracian=
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:70517
+				this = character:70517
+			}
+        }
+    }
+    70516 = { #Leo 'the Younger
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_byzantine_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_royalty
+                accessory = male_headgear_secular_byzantine_royalty_01
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:70516
+				this = character:70516
+			}
+        }
+    }
+    70506= { #Justinian II slit-nosed
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:70506
+				this = character:70506
+			}
+        }
+    }
+    70507 = { #Constantine IV
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:70507
+				this = character:70507
+			}
+        }
+    }
+    70508 = { #Constans II "the Bearded"
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = rtt_beards
+                accessory = male_beard_rtt_01
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = hairstyles
+            #    template = scripted_character_hairstyles_01
+            #    accessory = male_hair_sub_saharan_01
+            #}
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:70508
+				this = character:70508
+			}
+        }
+    }
+
 }
