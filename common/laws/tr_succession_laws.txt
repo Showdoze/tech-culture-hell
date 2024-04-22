@@ -390,8 +390,14 @@
 			always = yes
 		}
 		succession = {
-            order_of_succession = election
-            election_type = feudal_elective
+            # order_of_succession = election
+            # election_type = feudal_elective
+
+			# thx paradox for yet another stick in our wheels...
+
+			order_of_succession = inheritance
+			title_division = single_heir
+			traversal_order = dynasty_house
 		}
 		pass_cost = {
 			piety = 500
@@ -431,8 +437,14 @@
 			always = yes
 		}
 		succession = {
-            order_of_succession = election
-            election_type = feudal_elective
+            # order_of_succession = election
+            # election_type = feudal_elective
+
+			# thx paradox for yet another stick in our wheels...
+
+			order_of_succession = inheritance
+			title_division = single_heir
+			traversal_order = dynasty_house
 		}
 		pass_cost = {
 			piety = 500
@@ -472,8 +484,14 @@
 			always = yes
 		}
 		succession = {
-            order_of_succession = election
-            election_type = feudal_elective
+            # order_of_succession = election
+            # election_type = feudal_elective
+
+			# thx paradox for yet another stick in our wheels...
+
+			order_of_succession = inheritance
+			title_division = single_heir
+			traversal_order = dynasty_house
 		}
 		on_pass = {
 			scope:primary_title = { add_title_law = feudal_elective_succession_law }
@@ -504,8 +522,14 @@
 			government_has_flag = government_is_republic
 		}
 		succession = {
-            order_of_succession = election
-            election_type = republic_elective
+            # order_of_succession = election
+            # election_type = republic_elective
+
+			# thx paradox for yet another stick in our wheels...
+
+			order_of_succession = inheritance
+			title_division = single_heir
+			traversal_order = dynasty_house
 		}
 		can_pass = {
 			always = yes
@@ -517,7 +541,7 @@
 			prestige = 500
 		}
 		on_pass = {
-			scope:title = { add_realm_law = republic_elective_succession_law } 
+			scope:primary_title = { add_realm_law = republic_elective_succession_law } 
 		}
 		flag = elective_succession_law
 		flag = advanced_succession_law
