@@ -8,12 +8,16 @@ yearly_health_pulse = {
 	on_actions = { tr_hygene }
 }
 
-on_birth_mother = {
-	on_actions = { tr_birth }
+quarterly_playable_pulse = {
+	on_actions = { tr_elective_inheritance }
 }
 
-realm_maintenance_quarterly_pulse = {
-	on_actions = { tr_republic_inheritance }
+on_death = {
+	on_actions = { tr_elective_inheritance }
+}
+
+on_birth_mother = {
+	on_actions = { tr_birth }
 }
 
 ## MODDED HOOKED BELOW
@@ -37,22 +41,18 @@ tr_birth = {
 	}
 }
 
-tr_republic_inheritance = {
-	trigger = {
-		if = {
-			limit = {
-				scope:character = { has_government = republic_government }
-			}
-		}
-	}
+tr_elective_inheritance = {
 	effect = {
 		if = {
-			OR = {
-				scope:title = { has_realm_law = republic_elective_succession_law }
-				scope:ruler = { has_realm_law = city_succession_law }
+			limit = {
+				OR = {
+					has_realm_law = bishop_theocratic_succession_law
+					has_realm_law = holy_order_succession_law
+					has_realm_law = city_succession_law
+					has_realm_law = mercenary_company_succession_law
+				}
 			}
-			
+			player_heir = scope:candidate
 		}
-		player_heir = scope:title.candidate
 	}
 }
