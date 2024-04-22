@@ -6,6 +6,13 @@ assign_trait_ai_on_action = {
 
 yearly_health_pulse = {
 	on_actions = { tr_hygene }
+}
+
+quarterly_playable_pulse = {
+	on_actions = { tr_elective_inheritance }
+}
+
+on_death = {
 	on_actions = { tr_elective_inheritance }
 }
 
@@ -45,7 +52,7 @@ tr_elective_inheritance = {
 					has_realm_law = mercenary_company_succession_law
 				}
 			}
-			player_heir = scope:title.candidate
+			player_heir = scope:candidate
 		}
 	}
 }
