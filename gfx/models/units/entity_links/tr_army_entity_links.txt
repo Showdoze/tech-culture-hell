@@ -1,0 +1,23 @@
+﻿@tier2_quality = 2
+@tier3_quality = 4
+
+# Japanese (provided from Asia Expansion Project)
+japanese_army_01 = {
+	type = army
+	graphical_cultures = { japanese_unit_gfx }
+	entity = unit_japanese_infantry_01_entity
+}
+
+japanese_army_02 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { japanese_unit_gfx }
+	entity = unit_japanese_infantry_02_entity
+}
+
+japanese_army_03 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { japanese_unit_gfx }
+	entity = unit_japanese_infantry_03_entity
+}

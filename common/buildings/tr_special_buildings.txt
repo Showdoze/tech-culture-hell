@@ -514,7 +514,167 @@ the_colosseum_02 = {
 	flag = travel_point_of_interest_martial
 }
 
-
+#Meroe Pyramids
+MA_meroe_pyramids = {
+	type_icon = "MA_meroe_pyramids.dds"
+	cost_gold = main_building_tier_1_cost
+	construction_time = slow_construction_time
+	asset = {
+		type = pdxmesh
+		name = "meroe_pyramids_mesh"
+	}
+	can_construct_potential = {
+		barony = title:b_grnetti
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nile_agriculture
+		}
+	}
+	is_enabled = {
+		custom_description = {
+			text = holy_site_muslim_christian_or_holy_site_trigger
+			OR = {
+				scope:holder = {
+					religion = religion:kushitism_religion
+				}
+				scope:holder = {
+					religion = religion:egyptian_religion
+				}
+				custom_description = {
+					text = holy_site_building_trigger
+					barony = {
+						is_holy_site_of = scope:holder.faith
+					}
+				}
+			}
+		}
+	}
+	character_modifier = {
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	county_modifier = {
+		monthly_county_control_change_factor = medium_development_growth_gain
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+}
+#Pharos of Alexandria
+MA_pharos_alexandria = {
+	type_icon = "MA_pharos_alexandria.dds"
+	next_building = MA_pharos_alexandria_02
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	asset = {
+		type = entity
+		name = "pharos_entity"
+	}
+	can_construct_potential = {
+		barony = title:b_alexandria
+		building_requirement_tribal = no
+	}
+	character_culture_modifier = {
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	county_modifier = {
+		development_growth_factor = medium_development_growth_gain
+	}
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_2
+	}
+	ai_value = {
+		base = 50
+	}
+	type = special
+}
+MA_pharos_alexandria_02 = {
+	type_icon = "MA_pharos_alexandria.dds"
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	asset = { #the "Christian" one
+		type = entity
+		name = "pharos_entity"
+	}
+	asset = {
+		type = entity
+		name = "pharos_entity"
+		graphical_cultures = { mena_building_gfx }
+	}
+	can_construct_potential = {
+		barony = title:b_alexandria
+		building_requirement_tribal = no
+	}
+	character_culture_modifier = {
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	character_modifier = {
+		naval_movement_speed_mult = large_development_growth_gain
+	}
+	county_modifier = {
+		development_growth_factor = large_development_growth_gain
+	}
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_3
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+}
+#Akropolis
+MA_akropolis = {
+	type_icon = "MA_parthenon.dds"
+	next_building = MA_akropolis_02
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		barony = title:b_athens
+		building_requirement_tribal = no
+	}
+	asset = {
+		type = pdxmesh
+		name = "akropolis_mesh"
+	}
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_1
+		hostile_raid_time = 0.5
+	}
+	ai_value = {
+		base = 50
+	}
+	type = special
+}
+MA_akropolis_02 = {
+	type_icon = "MA_parthenon.dds"
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		barony = title:b_athens
+		building_requirement_tribal = no
+	}
+	asset = {
+		type = pdxmesh
+		name = "akropolis_mesh"
+	}
+	character_modifier = {
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
+	}
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_1
+		hostile_raid_time = 0.5
+	}
+	ai_value = {
+		base = 50
+	}
+	type = special
+}
 
 
 aztec_pyramids_01 = {
