@@ -6,7 +6,7 @@ assign_trait_ai_on_action = {
 
 yearly_health_pulse = {
 	on_actions = { tr_hygene }
-	on_actions = { tr_republic_inheritance }
+	on_actions = { tr_elective_inheritance }
 }
 
 on_birth_mother = {
@@ -34,23 +34,17 @@ tr_birth = {
 	}
 }
 
-tr_republic_inheritance = {
-	trigger = {
-		if = {
-			limit = {
-				scope:character = { has_government = republic_government }
-			}
-		}
-	}
+tr_elective_inheritance = {
 	effect = {
 		if = {
-			OR = {
-				scope:primary_title = { has_realm_law = republic_elective_succession_law }
-				scope:title = { has_realm_law = republic_elective_succession_law }
-				scope:ruler = { has_realm_law = city_succession_law }
+			limit = {
+				OR = {
+					FLAG = elective_succession_law
+					has_realm_law = elective_succession_law
+					has_realm_law = city_succession_law
+				}
 			}
-			
+			player_heir = scope:title.candidate
 		}
-		player_heir = scope:title.candidate
 	}
 }

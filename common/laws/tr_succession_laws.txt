@@ -453,7 +453,7 @@
 			piety = 500
 		}
 		on_pass = {
-			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+			scope:title = { add_title_law = feudal_elective_succession_law }
 		}
 		flag = elective_succession_law
 		flag = advanced_succession_law
@@ -494,7 +494,7 @@
 			traversal_order = dynasty
 		}
 		on_pass = {
-			scope:primary_title = { add_title_law = feudal_elective_succession_law }
+			scope:title = { add_title_law = feudal_elective_succession_law }
 		}
 		flag = elective_succession_law
 		flag = advanced_succession_law
@@ -541,7 +541,7 @@
 			prestige = 500
 		}
 		on_pass = {
-			scope:primary_title = { add_realm_law = republic_elective_succession_law } 
+			scope:title = { add_realm_law = republic_elective_succession_law } 
 		}
 		flag = elective_succession_law
 		flag = advanced_succession_law
