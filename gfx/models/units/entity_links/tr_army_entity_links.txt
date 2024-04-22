@@ -2,22 +2,122 @@
 @tier3_quality = 4
 
 # Japanese (provided from Asia Expansion Project)
-japanese_army_01 = {
+ japanese_army_01 = {
 	type = army
 	graphical_cultures = { japanese_unit_gfx }
 	entity = unit_japanese_infantry_01_entity
-}
+ }
 
-japanese_army_02 = {
+ japanese_army_02 = {
 	type = army
 	quality = @tier2_quality
 	graphical_cultures = { japanese_unit_gfx }
 	entity = unit_japanese_infantry_02_entity
-}
+ }
 
-japanese_army_03 = {
+ japanese_army_03 = {
 	type = army
 	quality = @tier3_quality
 	graphical_cultures = { japanese_unit_gfx }
 	entity = unit_japanese_infantry_03_entity
-}
+ }
+
+# Dunmer
+ dunmer_army_01 = {
+	type = army
+	graphical_cultures = { dunmer_unit_gfx }
+	entity = unit_dunmer_infantry_01_entity
+ }
+
+ dunmer_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { dunmer_unit_gfx }
+	entity = unit_dunmer_infantry_02_entity
+ }
+
+ dunmer_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { dunmer_unit_gfx }
+	entity = unit_dunmer_infantry_03_entity
+ }
+#  Altmer
+ altmer_army_01 = {
+	type = army
+	graphical_cultures = { altmer_unit_gfx }
+	entity = unit_altmer_infantry_01_entity
+ }
+
+ altmer_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { altmer_unit_gfx }
+	entity = unit_altmer_infantry_02_entity
+ }
+
+ altmer_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { altmer_unit_gfx }
+	entity = unit_altmer_infantry_03_entity
+ }
+#  Argonian
+ argonian_army_01 = {
+	type = army
+	graphical_cultures = { argonian_unit_gfx }
+	entity = unit_argonian_infantry_01_entity
+ }
+
+ argonian_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { argonian_unit_gfx }
+	entity = unit_argonian_infantry_02_entity
+ }
+
+ argonian_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { argonian_unit_gfx }
+	entity = unit_argonian_infantry_03_entity
+ }
+#  Khajiit
+ khajiit_army_01 = {
+	type = army
+	graphical_cultures = { khajiit_unit_gfx }
+	entity = unit_khajiit_infantry_01_entity
+ }
+
+ khajiit_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { khajiit_unit_gfx }
+	entity = unit_khajiit_infantry_02_entity
+ }
+
+ khajiit_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { khajiit_unit_gfx }
+	entity = unit_khajiit_infantry_03_entity
+ }
+## SunsetInvader units
+ sunset_army_01 = {
+	type = army
+	graphical_cultures = { cemanahuac_unit_gfx }
+	entity = unit_sunset_infantry_01_entity
+ }
+ sunset_army_03 = {
+	type = army
+	quality = 3
+	graphical_cultures = { cemanahuac_unit_gfx }
+	entity = unit_sunset_infantry_02_entity
+ }
+ sunset_army_05 = {
+	type = army
+	quality = 5
+	graphical_cultures = { cemanahuac_unit_gfx }
+	entity = unit_sunset_infantry_03_entity
+ }
+#
