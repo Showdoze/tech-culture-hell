@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "helmet_female_ocelotl_mesh"
+	file = "helmet_female_ocelotl.mesh"
+	
+	meshsettings = {
+		name = "helmet_female_ocelotlShape"
+		index = 0
+		texture_diffuse = "helmet_ocelotl_diffuse.dds"
+		texture_normal = "helmet_ocelotl_normal.dds"
+		texture_specular = "helmet_ocelotl_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "helmet_female_ocelotl_entity"
+	pdxmesh = "helmet_female_ocelotl_mesh"
+}
