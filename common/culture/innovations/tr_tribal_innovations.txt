@@ -35,22 +35,9 @@
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
 @innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
-@aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
 
 
-innovation_aztec_warriors_clothing = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @aztec_warriors_clothing
-	potential = {	
-		this = culture:nahuatl		
-	}
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.1
-		movement_speed = 0.01
-	}
-	unlock_maa = jaguar_warrior
-}
+
 innovation_high_carbon = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
