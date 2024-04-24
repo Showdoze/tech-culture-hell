@@ -32,7 +32,6 @@
 @acupuncture = "gfx/interface/icons/culture_innovations/acupuncture.dds"
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
 @abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
-@roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 @mint = "gfx/interface/icons/culture_innovations/mint.dds"
 
 
@@ -170,6 +169,9 @@ innovation_equipment_celtic = {
 		toughness = 1
 	    pursuit = 1
 	}
+	can_progress = {
+		has_innovation = innovation_bronze_work
+	}	
 }
 
 innovation_hellenistic_baggage_train = {
@@ -275,7 +277,7 @@ innovation_hyroglifics = {
 	icon = @administration_3
 
 	character_modifier = {
-		learning = 2
+		learning = 1
 		title_creation_cost_mult = -0.2
 		short_reign_duration_mult = -0.25
 	}
@@ -388,20 +390,7 @@ innovation_acupuncture = {
 		epidemic_resistance = 1
 	}
 }
-innovation_roman_concrete = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @roman_concrete
-	
-	potential = {	
-		this = culture:roman		
-	}
-	character_modifier = {
-		build_speed = -0.1
-	}
-	flag = global_regional
-	flag = antiquity_era_regional
-}
+
 innovation_abacus = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity

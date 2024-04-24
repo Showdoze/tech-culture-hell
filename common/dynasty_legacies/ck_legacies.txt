@@ -3,7 +3,7 @@
 		dynasty = {
 			OR = {
 				dynast = {
-					has_culture = culture:roman
+					this = culture:roman
 				}
 				has_dynasty_perk = ser_roman_legacy_1
 			}
@@ -24,7 +24,7 @@ usa_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					has_culture = culture:american
+					this = culture:american
 				}
 				has_dynasty_perk = usa_legacy_1
 			}
@@ -41,8 +41,8 @@ chinese_bureaucracy_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-                        has_culture = culture:han
-					    religion = religion:taoism_religion
+                        this = culture:han
+					    #religion = religion:taoism_religion
 				}
 				has_dynasty_perk = Chinese_bureaucracy_legacy
 			}
@@ -55,7 +55,7 @@ mafia_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					has_culture = culture:italian_american
+					this = culture:italian_american
 				}
 				has_dynasty_perk = mafia_legacy_1
 			}
@@ -68,7 +68,7 @@ japan_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					has_culture = culture:japanese
+					this = culture:japanese
 				}
 				has_dynasty_perk = japan_legacy_1
 			}

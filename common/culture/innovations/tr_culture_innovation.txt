@@ -6,6 +6,7 @@
 @martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
 @aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
 @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
+@roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 
 
 #JAPAN
@@ -142,4 +143,35 @@
 	}
 	unlock_maa = jaguar_warrior
  }
-# 
+#Roman
+innovation_roman_concrete = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @roman_concrete
+	region = ck_rome
+	#potential = {	
+	#	this = culture:roman		
+	#}
+	character_modifier = {
+		build_speed = -0.1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+}
+innovation_marian_reform  = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @roman_concrete
+	potential = {	
+		this = culture:roman		
+	}
+	character_modifier = {
+		movement_speed = 0.04
+		men_at_arms_cap = 2
+		men_at_arms_maintenance = -0.01
+	}
+	unlock_maa = Legionarius
+	flag = antiquity_era_regional
+}
+
+
