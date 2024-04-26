@@ -571,8 +571,8 @@ MA_pharos_alexandria = {
 	cost_gold = main_building_tier_2_cost
 	construction_time = slow_construction_time
 	asset = {
-		type = entity
-		name = "pharos_entity"
+		type = pdxmesh
+		name = "fp2_building_special_tower_of_hercules_mesh"
 	}
 	can_construct_potential = {
 		barony = title:b_alexandria
@@ -597,13 +597,13 @@ MA_pharos_alexandria_02 = {
 	type_icon = "MA_pharos_alexandria.dds"
 	cost_gold = main_building_tier_2_cost
 	construction_time = slow_construction_time
-	asset = { #the "Christian" one
-		type = entity
-		name = "pharos_entity"
+	asset = {
+		type = pdxmesh
+		name = "fp2_building_special_tower_of_hercules_mesh"
 	}
 	asset = {
-		type = entity
-		name = "pharos_entity"
+		type = pdxmesh
+		name = "fp2_building_special_tower_of_hercules_mesh"
 		graphical_cultures = { mena_building_gfx }
 	}
 	can_construct_potential = {
@@ -729,3 +729,178 @@ aztec_pyramids_01 = {
 	type = special
 	flag = travel_point_of_interest_wonder
 }
+##########
+# Kyoto Palace
+##########
+ kyoto_palace_01 = {
+	asset = {
+		type = pdxmesh
+		name = "building_kyoto_palace_mesh"
+	}
+	construction_time = very_slow_construction_time
+	type_icon = "becp_icon_jingfugong.dds"
+	can_construct = {
+		scope:holder.culture = {
+			has_cultural_pillar = heritage_japanese
+		}
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	character_modifier = {
+		powerful_vassal_opinion = 5
+		clergy_opinion = 5
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
+		tyranny_gain_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		development_growth = 0.2
+	}
+	ai_value = {
+		base = 0
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+
+	type = special
+ }
+# 
+MA_rock_cashel = {
+	type_icon = "MA_rock_cashel.dds"
+	asset = {
+		type = pdxmesh
+		name = "rock_cashel_mesh"
+	}
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	can_construct = {
+		scope:holder.culture = { MA_aesthetic_tradition = { TRADITION = latin } }
+		required_innovation = { INNOVATION = hoardings }
+	}
+	is_enabled = {
+		scope:holder.capital_province = this
+	}
+	character_modifier = {
+		same_culture_opinion = 5
+	}
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_2
+		monthly_income = copper_mine_building_tax_tier_1
+	}
+	ai_value = {
+		base = 50
+	}
+	type = special
+	flag = travel_point_of_interest_martial
+}
+MA_karnak = {
+	type_icon = "MA_karnak.dds"
+	asset = {
+		type = pdxmesh
+		name = "karnak_mesh"
+	}
+	can_construct_potential = {
+		barony = title:b_qus
+		building_requirement_tribal = no
+	}
+	cost_gold = main_building_tier_1_cost
+	construction_time = slow_construction_time
+	character_culture_modifier = {
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	county_holder_character_modifier = {
+		learning_per_piety_level = 1
+	}
+	character_modifier = {
+		learning_per_piety_level = 1
+	}
+	county_modifier = {
+		development_growth_factor = medium_development_growth_gain
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+	flag = travel_point_of_interest_religious
+}
+#Abu Simbel
+ MA_abu_simbel = {
+	type_icon = "MA_abu_simbel.dds"
+	cost_gold = main_building_tier_2_cost
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		barony = title:b_aswan
+		building_requirement_tribal = no
+	}
+	character_culture_modifier = {
+		parameter = MA_egyptian_ruins_grant_prestige_piety
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+ }
+ MA_pompeys_pillar = {
+	type_icon = "MA_pompeys_pillar.dds"
+	cost_gold = main_building_tier_1_cost
+	construction_time = slow_construction_time
+	asset = {
+		type = pdxmesh
+		name = "pompeys_pillar_mesh"
+	}
+	can_construct_potential = {
+		barony = title:b_aswan
+		building_requirement_tribal = no
+	}
+	character_culture_modifier = {
+		monthly_prestige = 1
+		monthly_piety = 1
+	}
+	province_modifier = {
+		build_speed = -0.05
+		stationed_maa_damage_add = normal_maa_damage_tier_2
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+	flag = travel_point_of_interest_martial
+ }
+#Aula Palatina
+ MA_aula_palatina = {
+	type_icon = "MA_aula_palatina.dds"
+	asset = {
+		type = pdxmesh
+		name = "aula_palatina_mesh"
+	}
+	can_construct_potential = {
+		barony = title:b_trier
+		building_requirement_tribal = no
+	}
+	cost_gold = main_building_tier_1_cost
+	construction_time = slow_construction_time
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_2
+	}
+	county_modifier = {
+		build_speed = great_building_build_speed_tier_1
+		monthly_county_control_change_factor = medium_development_growth_gain
+	}
+	ai_value = {
+		base = 0
+	}
+	type = special
+	flag = travel_point_of_interest_diplomatic
+ }
+# 

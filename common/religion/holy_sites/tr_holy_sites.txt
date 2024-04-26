@@ -479,3 +479,21 @@ athens = {
 	}
 	flag = cordoba_conversion_bonus # +20% county conversion speed
 }
+meroe = {
+	county = c_meroe
+	character_modifier = {
+		name = holy_site_meroe_effect_name
+		artifact_decay_reduction_mult = -0.5
+		learn_language_scheme_power_mult = 0.2 
+	}
+} 
+cairo = {
+	county = c_cairo
+	character_modifier = {
+		name = holy_site_cairo_effect_name
+		artifact_decay_reduction_mult = -0.5
+		county_opinion_add = 5 
+	}
+} 
+
+
