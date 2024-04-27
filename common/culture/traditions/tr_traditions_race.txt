@@ -239,3 +239,55 @@ tradition_elf = {
 		value = 0
 	}	
 }
+tradition_agoge = { # Laconian Unique Tradition, replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = swords.dds
+	}
+	
+	is_shown = {
+		OR = {
+			this = culture:laconian
+			any_parent_culture_or_above = {
+				this = culture:laconian
+			}
+		}
+	}
+	can_pick = {
+		scope:character = {
+			OR = { 
+				government_has_flag = government_is_spartan_city_state
+				AND = { 
+					government_has_flag = government_is_hegemonic_league
+					OR = {
+						dynasty = dynasty:spartandyn001
+						dynasty = dynasty:spartandyn002
+					}
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		minimum_prowess_for_knights = yes
+		blademaster_trait_bonuses = yes
+		prowess_from_martial_education = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		men_at_arms_recruitment_cost = 0.25
+		knight_effectiveness_mult = 1
+		knight_limit = 2
+	}	
+	cost = {
+		prestige = { 9000
+		}
+	}	
+	ai_will_do = {
+		value = 0}
+}
