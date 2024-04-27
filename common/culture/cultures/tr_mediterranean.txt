@@ -77,3 +77,59 @@ punic = {
 		8 = african
 	}
 }
+athenian = {
+	color = athenian
+
+	ethos = ethos_bureaucratic
+	heritage = heritage_greek
+	language = language_greek
+	martial_custom = martial_custom_male_only
+	traditions = { 
+		tradition_welcoming # Athens is particularly well known for its orators
+		tradition_legalistic # had a well-developed legal system
+		tradition_maritime_mercantilism
+		tradition_fervent_temple_builders
+	}
+
+	name_list = name_list_athenian
+
+	coa_gfx = { byzantine_group_coa_gfx } #athenian_coa_gfx greek_group_coa_gfx
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	
+	ethnicities = {
+		10 = european_med_greek_1
+	}	
+}
+laconian = {
+	color = laconian
+
+	ethos = ethos_bellicose
+	heritage = heritage_greek
+	language = language_greek
+	martial_custom = martial_custom_male_only
+	traditions = { 
+		tradition_warrior_culture
+		tradition_agoge # TODO: Adjust so it incorporates Warrior Culture instead?
+		tradition_ruling_caste
+		tradition_stand_and_fight
+	}
+	
+	dlc_tradition = {
+		trait = tradition_staunch_traditionalists
+		requires_dlc_flag = hybridize_culture
+		fallback = tradition_spartan
+	}
+
+	name_list = name_list_laconian
+
+	coa_gfx = { byzantine_group_coa_gfx  } #spartan_coa_gfx greek_group_coa_gfx
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	
+	ethnicities = {
+		10 = european_med_greek_1
+	}	
+}
