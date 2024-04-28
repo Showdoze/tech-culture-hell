@@ -3696,11 +3696,13 @@ e_byzantium = {
 				#capital = 490 # Thessaloniki
 				cultural_names = {
 					name_list_trojan = cn_Pella
+					name_list_athenian = cn_Pella
 				}
 				b_thessaloniki = {
 					province = 490
 					cultural_names = {
 						name_list_trojan = cn_Pella
+						name_list_athenian = cn_Pella
 					}
 					color = { 189 19 130 }
 				}
@@ -4201,7 +4203,7 @@ e_byzantium = {
 
 				#capital = 482 # Athens
 				cultural_names = {
-					name_list_trojan = cn_Athens
+					name_list_athenian = cn_Athens
 				}
 				b_athens = {
 					province = 482
@@ -4351,7 +4353,7 @@ e_byzantium = {
 
 				#capital = 3736 # Mistra
 				cultural_names = {
-					name_list_trojan = cn_Sparta
+					name_list_laconian = cn_Sparta
 				}
 				b_mistra = {
 					province = 3736
@@ -4366,7 +4368,7 @@ e_byzantium = {
 				b_lacedaemonia = {
 					province = 3735
 					cultural_names = {
-						name_list_trojan = cn_Sparta
+						name_list_laconian = cn_Sparta
 					}
 					color = { 195 30 195 }
 				}
@@ -11622,7 +11624,11 @@ e_persia = {
 
 			c_shiraz = {
 				color = { 30 60 130 }
-
+				cultural_names = {
+					name_list_persian = cn_Persepolis
+					name_list_elamite = cn_Persepolis
+					name_list_parthian = cn_Persepolis
+				}
 				b_shiraz-farsi = {
 					province = 4177
 
@@ -11728,15 +11734,17 @@ e_persia = {
 			}
 			c_istakhr = {
 				color = { 20 60 160 }
-				names = {
+				cultural_names = {
 					name_list_persian = cn_Pasargadae
 					name_list_elamite = cn_Pasargadae
+					name_list_parthian = cn_Pasargadae
 				}
 				b_istakhr = {
 					province = 4118
 					cultural_names = {
 						name_list_persian = cn_Pasargadae
 						name_list_elamite = cn_Pasargadae
+						name_list_parthian = cn_Pasargadae
 					}
 					color = { 20 60 100 }
 				}
@@ -11875,6 +11883,8 @@ e_persia = {
 				color = { 50 110 250 }
 				cultural_names = {
 					name_list_elamite = cn_Susa
+					name_list_persian = cn_Susa
+					name_list_parthian = cn_Susa
 				}
 				b_ahvaz = {
 					province = 6011
@@ -11882,6 +11892,8 @@ e_persia = {
 					color = { 50 110 250 }
 					cultural_names = {
 						name_list_elamite = cn_Susa
+						name_list_persian = cn_Susa
+					    name_list_parthian = cn_Susa
 					}
 				}
 				b_al-madhar = {
@@ -14149,6 +14161,8 @@ e_persia = {
 					province = 4796
 					cultural_names = {
 						name_list_persian = cn_Ctesiphon
+						name_list_parthian = cn_Ctesiphon
+						name_list_elamite = cn_Ctesiphon
 					}
 					color = { 16 135 12 }
 				}
