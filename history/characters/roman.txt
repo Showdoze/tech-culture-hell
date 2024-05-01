@@ -631,6 +631,7 @@
 	trait = gregarious
 	trait = lifestyle_gardener
 	trait = education_stewardship_4
+	father = diocletian_dad
 	244.12.22 = {
 		birth = "244.12.22"
 	}
@@ -1733,7 +1734,10 @@
 	# AKA: Severus
 	}
 	230.1.1 = {
-		death = "230.1.1"
+		death = {
+			death_reason = death_execution
+			killer = 145266
+		}
 	}
 }
 
@@ -1753,7 +1757,10 @@
 	# AKA: Callistus
 	}
 	222.10.14 = {
-		death = "222.10.14"
+		death = {
+			death_reason = death_execution
+			killer = 145266
+		}
 	}
 }
 
@@ -1793,7 +1800,10 @@
 	# AKA: Jerome
 	}
 	199.1.1 = {
-		death = "199.1.1"
+		death = {
+			death_reason = death_execution
+			killer = 145267
+		}
 	}
 }
 
@@ -2358,7 +2368,10 @@
 	# AKA: Marcus
 	}
 	304.4.1 = {
-		death = "304.4.1"
+		death = {
+			death_reason = death_execution
+			killer = 145241
+		}
 	}
 }
 
@@ -2366,10 +2379,12 @@
 	name = "Gaius"
 	religion = "catholic"
 	culture = "roman"
+	dynasty = 1022199
 	trait = diligent
 	trait = calm
 	trait = zealous
 	trait = education_diplomacy_3
+	father = diocletian_bro
 	240.1.1 = {
 		birth = "240.1.1"
 	}
@@ -2378,7 +2393,10 @@
 	# AKA: Gaius
 	}
 	296.4.22 = {
-		death = "296.4.22"
+		death = {
+			death_reason = death_execution
+			killer = 145293
+		}
 	}
 }
 
@@ -2398,7 +2416,10 @@
 	# AKA: Gaius
 	}
 	283.7.12 = {
-		death = "283.7.12"
+		death = {
+			death_reason = death_execution
+			killer = 145258
+		}
 	}
 }
 
@@ -2496,7 +2517,10 @@
 		name = "Fabianus"
 	}
 	250.1.20 = {
-		death = "250.1.20"
+		death = {
+			death_reason = death_decapitated
+			killer = 145258
+		}
 
 	}
 }
@@ -2637,7 +2661,10 @@
 		# AKA: St Martin I, or Martin the Confessor
 	}
 	653.7.17 = { # Was arrested 653.7.17 by Emperor Constans II, but actually died in 655.9.16
-		death = yes
+	death = {
+		death_reason = death_exile
+		killer = 70508
+	}
 	}
 }
 
