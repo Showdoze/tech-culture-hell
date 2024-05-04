@@ -274,3 +274,45 @@ hoplite = {
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = pikemen
 }
+byz_flame_thrower = {
+	type = archers
+	
+	damage = 200
+	toughness = 2
+	pursuit = 0
+	screen = 0
+	siege_value = 0.3
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		hills = { damage = 10 }
+		mountains = { damage = 8 }
+		desert_mountains = { damage = 8 }
+		wetlands = { damage = 5  }
+		forest = { damage = 4  }
+		taiga = { damage = 4  }
+		jungle = { damage = 4  }
+		drylands = { damage = 15 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 1
+		heavy_cavalry = 0.25
+		pikemen = 2
+		camel_cavalry = 1
+		elephant_cavalry = 1
+	}
+	
+	can_recruit = {
+		culture = { has_innovation = innovation_flame_thrower }
+	}
+
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 0.5 }
+	high_maintenance_cost = { gold = 2 }
+	
+	stack = 25
+	ai_quality = { value = 0 }
+	icon = byz_flamethrower
+}

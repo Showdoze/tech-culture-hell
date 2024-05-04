@@ -34,8 +34,23 @@
 @innovation_horseshoes = "gfx/interface/icons/culture_innovations/innovation_horseshoes.dds"
 @med_farm = "gfx/interface/icons/culture_innovations/med_farm.dds"
 @gunpowder = "gfx/interface/icons/culture_innovations/gunpowder.dds"
+@flamethrower = "gfx/interface/icons/culture_innovations/flamethrower.dds"
+
 
 #culture_group_military
+innovation_flame_thrower ={
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @flamethrower
+	potential = {	
+		has_innovation = innovation_greek_fire
+	}
+	can_progress = {
+		has_innovation = innovation_hoses
+		has_innovation = innovation_greek_fire
+	}
+	unlock_maa = byz_flame_thrower
+}
 innovation_gunpowder = {
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
@@ -138,6 +153,17 @@ innovation_manorialism = {
 }
 
 #culture_group_civic
+innovation_hoses = {
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @misc_inventions
+	character_modifier = {
+		development_growth_factor = 0.01
+	}
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
 innovation_hereditary_rule = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
