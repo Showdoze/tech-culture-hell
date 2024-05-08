@@ -7,7 +7,7 @@
 @aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
 @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
 @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
-
+@chinese_builder = "gfx/interface/icons/culture_innovations/chinese_builder.dds"
 
 #JAPAN
  innovation_samurai = {
@@ -110,7 +110,24 @@
 		prowess = 2
 	}
  }
- 
+ innovation_chinese_builder = {
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @martial_artist
+	potential = {
+		OR = {
+			this = culture:han
+			any_parent_culture_or_above = {
+				this = culture:han #han
+			}
+	}   }
+	character_modifier = {
+		build_speed = -0.1
+	}
+	county_modifier = {
+		building_slot_add = 2
+	}
+ }
 #Aztec
  innovation_aztec_weapon = {
 	group = culture_group_military
@@ -154,6 +171,9 @@ innovation_roman_concrete = {
 	#}
 	character_modifier = {
 		build_speed = -0.1
+	}
+	county_modifier = {
+		building_slot_add = 2
 	}
 	flag = global_regional
 	flag = antiquity_era_regional
