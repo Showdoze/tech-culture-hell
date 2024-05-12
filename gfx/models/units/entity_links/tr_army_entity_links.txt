@@ -387,9 +387,48 @@ fallback_army_03 = {
 	graphical_cultures = { west_iranian_unit_gfx }
 	entity = unit_west_iranian_infantry_03_entity
  }
-#
-#
-#
+#Seljuk/Turkic units
+ seljuk_army_01 = {
+	type = army
+	graphical_cultures = { seljuk_unit_gfx }
+	entity = unit_seljuks_infantry_01_entity
+ }
+ seljuk_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { seljuk_unit_gfx }
+	entity = unit_seljuks_infantry_02_entity
+ }
+ seljuk_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { seljuk_unit_gfx }
+	entity = unit_seljuks_infantry_03_entity
+ }
+#Malian Units
+ malian_army_01 = {
+	type = army
+	graphical_cultures = { malian_unit_gfx }
+	entity = unit_malian_infantry_01_entity
+ }
+ malian_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { malian_unit_gfx }
+	entity = unit_malian_infantry_02_entity
+ }
+ malian_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { malian_unit_gfx }
+	entity = unit_malian_infantry_03_entity
+ }
+#Tribal West/Central African units
+ tribal_african_army_01 = {
+	type = army
+	graphical_cultures = { central_african_unit_gfx }
+	entity = unit_tribal_african_infantry_01_entity
+ }
 #
 #
 #

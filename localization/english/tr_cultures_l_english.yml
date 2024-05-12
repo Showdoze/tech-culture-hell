@@ -111,6 +111,14 @@
  european_caucasian_brythonic_01:0 "Europe | Brythonic | Briton"  
  european_magyar_magyar_01:0 "Europe | Magyar | Magyar"  
  european_caucasian_english_1:0 "Europe | West Germanic | English"  
+ english_unit_gfx: "English"
+ scottish_unit_gfx: "Scottish"
+ welsh_unit_gfx: "Welsh"
+ french_unit_gfx: "French"
+ german_unit_gfx: "German"
+ polish_unit_gfx: "Polish"
+ magyar_unit_gfx: "Magyar"
+ circumpolar_unit_gfx: "Circumpolar"  
 
 #Slavic
  zastova:0 "Zastova"
@@ -151,6 +159,7 @@
  fiorentini_collective_noun:0 "Fiorentinis"
  dalmatian:0 "Dalmatian"
  european_med_italian_1:0 "Med | Latin | Italian"  
+ italian_unit_gfx: "Italian"
 
  #Jobs
   chancellor_male_roman:0 "Magister Officiorum"
@@ -207,6 +216,7 @@
  iranian_hun_history_loc:0 "Formed from various cultures of $iranian_group$ and $turkic_group$ [heritage|E] in the year [DATE.GetYear]"
  hephthalite:0 "Hephthalite"
  name_list_hephthalite:0 "Hephthalite"
+ west_iranian_unit_gfx: "Western Iranian" 
 
 
 #Sumerian
@@ -259,6 +269,10 @@
  east_african_nubian_01:0 "Africa | East African | Nubian" 
  emperor_west_african1:0 "Mansa"
  emperor_female_west_african1:0 "Musoo"
+ east_african_unit_gfx: "East African"
+ central_african_unit_gfx: "Central African"
+ west_african_unit_gfx: "West African"
+ malian_unit_gfx: "Malian" 
  alikr:0 "Alik'r"
     alikr_prefix:0 "Alik'r"
     alikr_collective_noun:1 "Alik'r"
@@ -274,7 +288,9 @@
     heritage_yokudan_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Yokudan', Localize('no') )]"
     heritage_yokudan_collective_noun:0 "Yokudans"
     heritage_yokudan_desc:0 "The Yokudans are dark-skinned, wiry-haired humans native to the western continent of Yokuda, across the Eltheric Ocean. A rogue group of Ansei used forbidden Sword-Singing techniques to sink Yokuda beneath the waves in the Early #LORE [compendium_first_era]#!. This event forced many of them into a bloody and ruthless migration to Tamriel, in the lands that are now called Hammerfell. Yokudans from Tamriel are known as Redguards, a term coined after the infamous Ra Gada or 'warrior waves'."
-
+#Turkic
+ seljuk_unit_gfx: "Oghuz"
+ cuman_unit_gfx: "Cuman-Kipchak" 
 
 #Fantasy
  language_gerudo_name:0 "Gerudo"
@@ -697,6 +713,7 @@
  job_treasurer_jurchen:0 "Treasurer"
  job_spymaster_jurchen:0 "Spymaster"
  job_spiritual_jurchen:0 "Libationer"
+ chinese_unit_gfx: "Chinese"
  
 
 #####################
