@@ -1,6 +1,21 @@
 ﻿@tier2_quality = 2
 @tier3_quality = 4
+fallback_army_01 = {
+	type = army
+	entity = unit_western_infantry_01_entity
+}
 
+fallback_army_02 = {
+	type = army
+	entity = unit_western_infantry_02_entity
+	quality_fallback = @tier2_quality
+}
+
+fallback_army_03 = {
+	type = army
+	entity = unit_western_infantry_03_entity
+	quality_fallback = @tier3_quality
+}
 # Japanese (provided from Asia Expansion Project)
  japanese_army_01 = {
 	type = army
@@ -138,4 +153,243 @@
 	graphical_cultures = { irish_unit_gfx }
 	entity = unit_irish_infantry_03_entity
  }
+#han
+ chinese_army_01 = {
+	type = army
+	graphical_cultures = { chinese_unit_gfx }
+	entity = unit_chinese_infantry_01_entity
+ }
+ chinese_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { chinese_unit_gfx }
+	entity = unit_chinese_infantry_02_entity
+ }
+ chinese_army_04 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { chinese_unit_gfx }
+	entity = unit_chinese_infantry_03_entity
+ }
+## Hungary
+ hungary_army_01 = {
+	type = army
+	graphical_cultures = { magyar_unit_gfx }
+	entity = unit_hungary_infantry_01_entity
+ }
+ hungary_army_02 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { magyar_unit_gfx }
+	entity = unit_hungary_infantry_02_entity
+ }
+ hungary_army_03 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { magyar_unit_gfx }
+	entity = unit_hungary_infantry_03_entity
+ }
+#East African units
+ east_african_army_01 = {
+	type = army
+	graphical_cultures = { east_african_unit_gfx }
+	entity = unit_east_african_infantry_01_entity
+ }
+ east_african_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { east_african_unit_gfx }
+	entity = unit_east_african_infantry_02_entity
+ }
+ east_african_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { east_african_unit_gfx }
+	entity = unit_east_african_infantry_03_entity
+ }
+#english
+ english_army_01 = {
+	type = army
+	graphical_cultures = { english_unit_gfx }
+	entity = unit_english_infantry_01_entity
+ }
+ english_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { english_unit_gfx }
+	entity = unit_english_infantry_02_entity
+ }
+ english_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { english_unit_gfx }
+	entity = unit_english_infantry_03_entity
+ }
+#HRE units
+ hre_army_01 = {
+	type = army
+	graphical_cultures = { german_unit_gfx }
+	entity = unit_hre_infantry_01_entity
+ }
+ hre_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { german_unit_gfx }
+	entity = unit_hre_infantry_02_entity
+ }
+ hre_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { german_unit_gfx }
+	entity = unit_hre_infantry_03_entity
+ }
+#French
+ french_army_01 = {
+	type = army
+	graphical_cultures = { french_unit_gfx }
+	entity = unit_french_infantry_01_entity
+ }
+ french_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { french_unit_gfx }
+	entity = unit_french_infantry_03_entity
+ }
+ french_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { french_unit_gfx }
+	entity = unit_french_infantry_05_entity
+ }
+#Circumpolar units Arctic peoples
+ circumpolar_army_01 = {
+	type = army
+	graphical_cultures = { circumpolar_unit_gfx }
+	entity = unit_circumpolar_infantry_01_entity
+ } 
+ circumpolar_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { circumpolar_unit_gfx }
+	entity = unit_circumpolar_infantry_02_entity
+ }
+ circumpolar_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { circumpolar_unit_gfx }
+	entity = unit_circumpolar_infantry_03_entity
+ }
+#Cuman units
+ cuman_army_01 = {
+	type = army
+	graphical_cultures = { cuman_unit_gfx }
+	entity = unit_cuman_infantry_01_entity
+ }
+ cuman_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { cuman_unit_gfx }
+	entity = unit_cuman_infantry_02_entity
+ }
+ cuman_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { cuman_unit_gfx }
+	entity = unit_cuman_infantry_03_entity
+ }
+#Italian
+ italian_army_01 = {
+	type = army
+	graphical_cultures = { italian_unit_gfx }
+	entity = unit_italian_infantry_01_entity
+ }
+ italian_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { italian_unit_gfx }
+	entity = unit_italian_infantry_02_entity
+ }
+ italian_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { italian_unit_gfx }
+	entity = unit_italian_infantry_03_entity
+ }
+#Polish units
+ polish_army_01 = {
+	type = army
+	graphical_cultures = { polish_unit_gfx }	
+	entity = unit_polish_infantry_01_entity
+ }
+ polish_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { polish_unit_gfx }	
+	entity = unit_polish_infantry_02_entity
+ }
+ polish_army_05 = {
+	type = army
+	quality = @tier3_quality	
+	graphical_cultures = { polish_unit_gfx }	
+	entity = unit_polish_infantry_03_entity
+ }
+#Scottish units
+ scottish_army_01 = {
+	type = army
+	graphical_cultures = { scottish_unit_gfx }
+	entity = unit_scottish_infantry_01_entity
+ }
+ scottish_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { scottish_unit_gfx }
+	entity = unit_scottish_infantry_02_entity
+ }
+ scottish_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { scottish_unit_gfx }
+	entity = unit_scottish_infantry_03_entity
+ }
+#West African units
+ west_african_army_01 = {
+	type = army
+	graphical_cultures = { west_african_unit_gfx }
+	entity = unit_west_african_infantry_01_entity
+ }
+ west_african_army_03 = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { west_african_unit_gfx }
+	entity = unit_west_african_infantry_02_entity
+ }
+ west_african_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { west_african_unit_gfx }
+	entity = unit_west_african_infantry_03_entity
+ }
+#West Iranian units
+ west_iranian_army_01 = {
+	type = army
+	graphical_cultures = { west_iranian_unit_gfx }
+	entity = unit_west_iranian_infantry_01_entity
+ }
+ west_iranian_army_03 = {
+	type = army
+	quality = @tier2_quality	
+	graphical_cultures = { west_iranian_unit_gfx }
+	entity = unit_west_iranian_infantry_02_entity
+ }
+ west_iranian_army_05 = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { west_iranian_unit_gfx }
+	entity = unit_west_iranian_infantry_03_entity
+ }
+#
+#
+#
+#
+#
 #
