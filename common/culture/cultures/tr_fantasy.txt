@@ -18,7 +18,7 @@
 	coa_gfx = { irish_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { northern_clothing_gfx western_clothing_gfx  }
-	unit_gfx = { western_unit_gfx }
+	unit_gfx = { irish_unit_gfx }
 	
 	ethnicities = {
 		1 = gnome_ethnicity
@@ -160,7 +160,7 @@ warsong = { #ORCISH
 	coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
-	unit_gfx = { northern_unit_gfx }
+	unit_gfx = { morc_unit_gfx }
 	
 	ethnicities = {
 		80 = green_orcish
@@ -242,7 +242,7 @@ glenumbran = { #Breton
 	coa_gfx = { french_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { french_clothing_gfx }
-	unit_gfx = { western_unit_gfx }
+	unit_gfx = { french_unit_gfx }
 	
 	ethnicities = {
 		50 = race_breton_glenumbran_1
@@ -269,9 +269,56 @@ alikr = { #RedGuard
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx african_building_gfx }
 	clothing_gfx = { afr_berber_clothing_gfx  mena_clothing_gfx}
-	unit_gfx = { mena_unit_gfx }
+	unit_gfx = { berber_unit_gfx }
 	
 	ethnicities = {
 		10 = race_redguard_alikr_1
+	}
+}
+high_valyrian = {
+	color = { 0.71 0.37 0.60 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_valyrian
+	language = language_valyrian
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_ruling_caste
+		tradition_diasporic
+		tradition_culture_blending
+		tradition_republican_legacy
+	}
+
+	name_list = name_list_high_valyrian
+
+	coa_gfx = { english_coa_gfx western_coa_gfx } #valyrian_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { #high_valyrian_clothing_gfx #valyrian_clothing_gfx
+		byzantine_clothing_gfx
+		western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+	10 = high_valyrian_ethnicity_01
+	10 = high_valyrian_ethnicity_02
+	10 = high_valyrian_ethnicity_03
+	10 = high_valyrian_ethnicity_04
+	10 = high_valyrian_ethnicity_05
+	10 = high_valyrian_ethnicity_06
+	10 = high_valyrian_ethnicity_07
+	10 = high_valyrian_ethnicity_08
+	10 = high_valyrian_ethnicity_09
+	10 = high_valyrian_ethnicity_10
+	10 = high_valyrian_ethnicity_11
+	10 = high_valyrian_ethnicity_12
+	10 = high_valyrian_ethnicity_13
+	10 = high_valyrian_ethnicity_14
+	10 = high_valyrian_ethnicity_15
+	10 = high_valyrian_ethnicity_16
+	10 = high_valyrian_ethnicity_17
+	10 = high_valyrian_ethnicity_18
+	10 = high_valyrian_ethnicity_19
+	10 = high_valyrian_ethnicity_20
 	}
 }
