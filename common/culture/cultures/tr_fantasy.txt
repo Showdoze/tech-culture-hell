@@ -10,7 +10,7 @@
 		tradition_hard_working
 		tradition_philosopher_culture
 		tradition_legalistic
-		tradition_adaptive_skirmishing
+		tradition_gnome
 	}
 
 	name_list = name_list_gnomish
@@ -208,6 +208,7 @@ alinor = { #HIGH ELF
 		tradition_elf
 		tradition_philosopher_culture
 		tradition_poetry
+		tradition_cutthroat_politics
 	}	
 
 	name_list = name_list_altmer
@@ -219,6 +220,34 @@ alinor = { #HIGH ELF
 	
 	ethnicities = {
 		10 = race_altmer
+	}
+}
+chi_addun = { #Telvanni
+	color = { 0.5 0.2 0.3 }
+	
+	created = 350.1.1
+	history_loc_override = dunmer_history_loc
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_dunmeri
+	language = language_dunmeris
+	martial_custom = martial_custom_equal
+	
+	traditions = {
+		tradition_elf
+		tradition_cynical_believers
+		tradition_dunmer
+	}
+	
+	name_list = name_list_dunmer
+	
+	coa_gfx = { iberian_group_coa_gfx } #dunmeris_group_coa_gfx
+	building_gfx = { iberian_building_gfx } #ek_telvanni_building_gfx
+	clothing_gfx = { iberian_christian_clothing_gfx iberian_muslim_clothing_gfx }
+	unit_gfx = { dunmer_unit_gfx }
+	
+	ethnicities = {
+		10 = race_dunmer
 	}
 }
 glenumbran = { #Breton
@@ -286,7 +315,7 @@ high_valyrian = {
 	traditions = {
 		tradition_ruling_caste
 		tradition_diasporic
-		tradition_culture_blending
+		tradition_valyrian
 		tradition_republican_legacy
 	}
 

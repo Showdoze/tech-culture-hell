@@ -316,3 +316,31 @@ byz_flame_thrower = {
 	ai_quality = { value = 0 }
 	icon = byz_flamethrower
 }
+dragons = {
+	type = dragon
+	
+	damage = 2000 # Let's make them at least twice as strong as a unit of heavy infantry with some buffs
+	toughness = 2000
+	pursuit = 500	# The flaming breath are very good for rampaging the battlefield
+	screen = 0		# They bail out
+	siege_tier = 5 # It's a flying dragon, walls are a bit useless innit
+	siege_value = 1
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_dragon_egg }
+	}
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 10 }
+	#max_sub_regiments = 1
+	stack = 1
+	ai_quality = { value = 0 }
+	
+	icon = dragon
+}

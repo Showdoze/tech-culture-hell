@@ -8,6 +8,11 @@
 @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
 @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 @chinese_builder = "gfx/interface/icons/culture_innovations/chinese_builder.dds"
+@dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
+
+
+
+
 
 #JAPAN
  innovation_samurai = {
@@ -194,4 +199,16 @@ innovation_marian_reform  = {
 	flag = antiquity_era_regional
 }
 
-
+innovation_dragon_egg  = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @dragon_egg
+	potential = {	
+		this = culture:high_valyrian		
+	}
+	character_modifier = {
+		men_at_arms_maintenance = -0.01
+	}
+	unlock_maa = dragons
+	flag = antiquity_era_regional
+}

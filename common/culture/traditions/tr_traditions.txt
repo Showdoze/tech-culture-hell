@@ -27,64 +27,7 @@
 		ai_boldness = 25
 	}
 	cost = {
-		prestige = {
-			add = {
-				value = 2000
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = {
-							list = flags
-							this = flag:ethos_bellicose
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_spiritual
-						}
-						has_culture_tradition = {
-							tradition_live_hard
-						}
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = bellicose_or_spiritual_desc
-				}
-			}
-			if = {
-				limit = {
-					trigger_if = {
-						limit = {
-							scope:character = {
-								is_ai = no
-							}
-						}
-						NOT = {
-							any_ruler = {
-								count >= 3
-								culture = prev
-								primary_title.tier >= tier_county
-								OR = {
-									has_trait = strong
-									has_trait = physique_good
-								}
-							}
-						}
-					}
-					trigger_else = {
-						always = no
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = strong_rulers_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
+		prestige = 750
 	}
 	ai_will_do = {
 		value = 0
@@ -969,14 +912,7 @@ tradition_raid = {
 		embarkation_cost_mult = -0.25
 	}
 	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
+		prestige = 750
 	}
 	ai_will_do = {
 		value = 0
@@ -1276,7 +1212,9 @@ tradition_germanic = {
 			has_cultural_pillar = heritage_frankish
 			has_cultural_pillar = heritage_north_germanic
 			has_cultural_pillar = heritage_west_germanic
-			has_cultural_pillar = heritage_east_germanic
+			has_cultural_pillar = heritage_germanic
+			this = culture:lombard
+			this = culture:langobard
 		}
 	}
 	parameters = {
@@ -1289,8 +1227,6 @@ tradition_germanic = {
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = 0.25
-	}
-	character_modifier = {
 	}
 	cost = {
 		prestige = 1500
@@ -1655,32 +1591,7 @@ tradition_wilsonian_interventionism = {
 		monthly_war_income_mult = 0.05
 	}
 	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = {
-							list = flags
-							this = flag:ethos_courtly
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_communal
-						}
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_courtly_or_communal_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
+		prestige = 9000
 	}
 	ai_will_do = {
 		value = 0
@@ -1759,7 +1670,6 @@ tradition_persian = {
 
 tradition_migration = {
 	category = realm
-
 	layers = {
 		0 = martial
 		1 = mena
@@ -1821,13 +1731,11 @@ tradition_migration = {
 
 tradition_depression = {
 	category = ritual
-	
 	layers = {
 		0 = intrigue
 		1 = mediterranean
 		4 = ussr.dds
 	}
-
 	is_shown = { always = no }
 	can_pick = { always = no }
 	can_pick_for_hybridization = { always = no }
@@ -1970,6 +1878,7 @@ tradition_romance_roman_republic = {
 		court_grandeur_baseline_add = 5
 		republic_government_vassal_opinion = 20
 		revolting_siege_morale_loss_mult = 0.25
+		punic_opinion = -20
 	}
 	county_modifier = {
 	}
@@ -2048,7 +1957,6 @@ tradition_taking_with_hands = {
 		4 = talking-with-hands.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_italian_american
 		NOT = { has_cultural_tradition = tradition_wilsonian_interventionism }		
 	}	
 	parameters = {
@@ -2069,7 +1977,7 @@ tradition_taking_with_hands = {
 		ai_greed = 25
 	}
 	cost = {
-		prestige = { 900}
+		prestige = 900
 	}	
 	ai_will_do = {
 		value = 0
@@ -2127,7 +2035,7 @@ tradition_luck_of_irish = {
 		close_relative_opinion = 5
 	}
 	cost = {
-		prestige = { 900 }
+		prestige = 900 
 	}	
 	ai_will_do = {
 		value = 0
@@ -2175,6 +2083,61 @@ tradition_sword_centric = {
 		knight_effectiveness_mult = 0.25
 	}
 	
-	cost = { prestige = { 9000 } }	
+	cost = { prestige = 9000  }	
 	ai_will_do = {value = 0	}
+}
+tradition_cynical_believers = { #Chi-Adduni/Telvanni
+	category = regional
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = speech.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		cynical_trait_more_common = yes
+		arrogant_trait_more_common = yes
+		tells_stories = yes
+		#bonuses to cynical and arrogant, opinion malus to theologian
+		cynical_believers_bonus = yes
+		can_appoint_court_scholar = yes
+		guardian_education_better_outcomes = yes
+		diligent_trait_more_common = yes
+	}
+	character_modifier = {
+        religious_vassal_opinion = -20
+		religious_head_opinion = -20
+		learning_per_prestige_level = 1
+	}
+	cost = {
+		prestige = 6000
+	}
+}
+tradition_cutthroat_politics = {
+	category = realm
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = noble.dds
+	}
+	can_pick = {
+	}	
+	parameters = {
+		intrigue_education_better_outcomes = yes
+		schemer_xp_rebate = yes
+		composure_valued = yes
+		courtiers_and_guests_more_likely_to_join_schemes = yes
+		disloyal_trait_more_common = yes
+		crafty_diplomats = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		rivalries_more_common = yes
+		hostile_action_vs_rival_bonuses = yes
+	}
+	character_modifier = {		
+	}	
+	cost = {
+		prestige = 6000
+	}
+	ai_will_do = { value = 0 }
 }

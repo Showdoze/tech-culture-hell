@@ -77,6 +77,43 @@ tradition_saiyan = {
 		value = 0
 	}
 }
+tradition_gnome = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = gnome.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_gnomish
+	}
+	parameters = {
+		better_blacksmith_buildings = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		architect_trait_prestige = yes
+		development_gain_on_building_complete = yes
+		innovation_from_learning_traits = yes
+		hard_working_traits_more_valued = yes
+	}
+	character_modifier = {
+		life_expectancy = 300
+		close_relative_opinion = 10
+		years_of_fertility = 250
+	}
+	county_modifier = {
+		
+	}
+	province_modifier = {
+	}
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+
 tradition_dwarf = {
 	category = regional
 	layers = {
@@ -94,9 +131,16 @@ tradition_dwarf = {
 		mountain_trait_bonuses = yes
 		better_blacksmith_buildings = yes
 		prestige_gain_on_building_complete_in_mountains = yes
+		dislikes_marrying_outside_of_culture = yes 
+		dislikes_marrying_outside_of_heritage = yes 
+		ai_doesnt_marry_outside_culture = yes 
+		reveler_traits_more_common = yes
+		reveler_traits_more_valued = yes
+		pardoning_gives_loyalty = yes
 	}
 	character_modifier = {
-		life_expectancy = 30
+		life_expectancy = 200
+		years_of_fertility = 150
 		different_culture_opinion = -10
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
@@ -126,6 +170,7 @@ tradition_dwarf = {
 		value = 0
 	}
 }
+
 tradition_giant = {
 	category = regional
 	layers = {
@@ -141,6 +186,8 @@ tradition_giant = {
 	parameters = {
 		knights_slightly_more_prone_to_injury = yes
 		logging_camps_building_bonuses = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
 	}
 	character_modifier = {
 		prowess = 5
@@ -197,6 +244,7 @@ tradition_giant = {
 		value = 0
 	}
 }
+
 tradition_elf = {
 	category = regional
 	layers = {
@@ -208,6 +256,7 @@ tradition_elf = {
 		OR = {
 		has_cultural_pillar = heritage_bosmeri
 		has_cultural_pillar = heritage_aldmeri
+		has_cultural_pillar = heritage_dunmeri
 		}
 	}
 	parameters = {
@@ -222,9 +271,9 @@ tradition_elf = {
 		learns_more_languages = yes
 	}
 	character_modifier = {
-		life_expectancy = 500
+		life_expectancy = 1000
 		no_prowess_loss_from_age = yes
-		years_of_fertility = 250
+		years_of_fertility = 2000
 		fertility = -1
 		diplomatic_range_mult = 3
 	}
@@ -235,15 +284,62 @@ tradition_elf = {
 		value = 0
 	}	
 }
-tradition_agoge = { # Laconian Unique Tradition, replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
-	category = regional
-
+tradition_dunmer = {
+	category = societal
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = dunmer.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_dunmeri
+	}
+	parameters = {
+		bonuses_from_patriarch_matriarch_trait = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		dislikes_marrying_outside_of_culture = yes 
+		dislikes_marrying_outside_of_heritage = yes 
+		ai_doesnt_marry_outside_culture = yes 
+		bossy_trait_more_common = yes
+		zealous_trait_more_common = yes
+		culture_clergy_can_fight = yes
+		prestige_from_temple_construction = yes
+		paranoid_bonuses = yes
+		paranoid_trait_more_common = yes
+		poorly_educated_leaders_distrusted = yes
+		scandinavian_elective_enabled = yes #rebranded as Popular Elective
+		content_trait_looked_down_upon = yes
+		#prestige bonus to ambitious, prestige malus to lazy, big prestige malus to content
+		ambition_valued = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		rivalries_more_common = yes
+		hostile_action_vs_rival_bonuses = yes
+		close_family_better_councillors = yes
+		close_family_better_court_positions = yes
+		penalty_for_revoking_titles_from_close_family = yes
+	}
+	character_modifier = {
+		close_relative_opinion = 5
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	cost = {
+		prestige = 9000
+	}	
+	ai_will_do = {
+		value = 0
+	}	
+}
+tradition_agoge = { # replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
+	category = ritual
 	layers = {
 		0 = martial
 		1 = mediterranean
 		4 = swords.dds
-	}
-	
+	}	
 	is_shown = {
 		OR = {
 			this = culture:laconian
@@ -252,25 +348,13 @@ tradition_agoge = { # Laconian Unique Tradition, replaces Only the Strong, unloc
 			}
 		}
 	}
-	can_pick = {
-		scope:character = {
-			OR = { 
-				government_has_flag = government_is_spartan_city_state
-				AND = { 
-					government_has_flag = government_is_hegemonic_league
-					OR = {
-						dynasty = dynasty:spartandyn001
-						dynasty = dynasty:spartandyn002
-					}
-				}
-			}
-		}
-	}
-	
 	parameters = {
 		minimum_prowess_for_knights = yes
 		blademaster_trait_bonuses = yes
 		prowess_from_martial_education = yes
+		better_ward_education = yes
+		temperate_trait_more_common = yes # Synergy with Monastic Doctrines
+		temperate_trait_bonuses = yes
 	}
 	province_modifier = {
 		levy_size = -0.25
@@ -279,6 +363,8 @@ tradition_agoge = { # Laconian Unique Tradition, replaces Only the Strong, unloc
 		men_at_arms_recruitment_cost = 0.25
 		knight_effectiveness_mult = 1
 		knight_limit = 2
+		child_health = -0.5
+	    elderly_health = 0.5
 	}	
 	cost = {
 		prestige = 9000
@@ -287,3 +373,283 @@ tradition_agoge = { # Laconian Unique Tradition, replaces Only the Strong, unloc
 		value = 0
 	}
 }
+tradition_sparta = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = sparta.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:laconian
+			any_parent_culture_or_above = {
+				this = culture:laconian
+			}
+		}
+	}
+	parameters = {
+		tells_stories = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		peasant_and_populist_factions_less_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		craven_trait_costs_prestige = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		athenian_opinion = -25
+		monthly_martial_lifestyle_xp_gain_mult = 0.01
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_athens = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = athens.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:athenian
+			any_parent_culture_or_above = {
+				this = culture:athenian
+			}
+		}
+	}
+	parameters = {
+		tells_stories = yes
+		diplomacy_education_better_outcomes = yes
+		charming_trait_more_common = yes
+		arrogant_trait_more_common = yes
+		poorly_educated_leaders_distrusted = yes
+		more_fervor_on_church_construction = yes
+		martial_education_worse_outcomes = yes
+		peasant_and_populist_factions_less_common = yes
+		poet_trait_romance_bonuses = yes
+		poet_trait_gives_bonuses = yes
+		poet_trait_more_common = yes
+		characters_are_better_court_poets = yes
+		craven_trait_costs_prestige = yes
+		diplomacy_education_better_outcomes = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+		monthly_court_grandeur_change_mult = 0.15
+		owned_personal_scheme_success_chance_add = 10
+		enemy_hostile_scheme_success_chance_add = 10
+		character_travel_safety_mult = 0.1
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		laconian_opinion = -25
+		owned_legend_spread_mult = 0.01
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_valyrian = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = valyrian.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:high_valyrian
+			any_parent_culture_or_above = {
+				this = culture:high_valyrian
+			}
+		}
+	}
+	parameters = {
+		tells_stories = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		craven_trait_costs_prestige = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		eunuch_trait_bonuses = yes
+		can_appoint_chief_eunuch = yes
+		pardoning_gives_loyalty = yes
+	}
+	county_modifier = {
+		epidemic_resistance = 1
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		health = 0.1
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_punnic = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = punnic.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:punic
+			any_parent_culture_or_above = {
+				this = culture:punic
+			}
+		}
+	}
+	parameters = {
+		tells_stories = yes
+		craven_trait_costs_prestige = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+		pardoning_gives_loyalty = yes
+		can_recruit_jungle_specialist = yes
+		elephant_pens_building_bonuses = yes
+		elephant_bonuses_for_rank_4_education = yes
+		piety_from_language_schemes = yes
+		language_success_chance_per_piety_level = yes
+		languages_speed_up_claims = yes
+		rulers_want_to_learn_languages_of_coreligionists = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		elephant_cavalry_recruitment_cost_mult = -0.15
+		elephant_cavalry_maintenance_mult = -0.15
+		elephant_cavalry_toughness_mult = 0.1
+		elephant_cavalry_damage_mult = 0.1
+		jungle_travel_danger = jungle_medium_danger_reduction
+		learn_language_scheme_power_mult = 0.25
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_venice = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = venice.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:venetian_ce
+			any_parent_culture_or_above = {
+				this = culture:venetian_ce
+			}
+		}
+	}
+	parameters = {
+		piety_from_language_schemes = yes
+		can_make_republican_vassals = yes
+		unlock_innovation_pike_columns = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		republican_vassals_pay_more = yes
+		more_parochial_vassals = yes
+		poorly_educated_leaders_distrusted = yes
+		cheaper_guest_recruitment = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		city_holding_build_gold_cost = -0.05
+		city_holding_holding_build_gold_cost = -0.05
+		parochial_tax_contribution_mult = 0.1
+		parochial_levy_contribution_mult = 0.1
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+tradition_korean = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = korean.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:korean
+			any_parent_culture_or_above = {
+				this = culture:korean
+			}
+		}
+	}
+	parameters = {
+		piety_from_language_schemes = yes
+		peasant_and_populist_factions_less_common = yes
+		republican_vassals_pay_more = yes
+		poorly_educated_leaders_distrusted = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		peasant_and_populist_factions_less_common = yes
+		landing_house_members_gives_renown = yes
+		piety_penalty_for_revoking_titles_from_house_members = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		revolting_siege_morale_loss_mult = 0.25
+		diplomacy_per_piety_level = -1
+	}	
+	cost = {
+		prestige = 9000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
+
+
