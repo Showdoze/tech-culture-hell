@@ -176,12 +176,10 @@ tradition_giant = {
 	layers = {
 		0 = diplo
 		1 = indian
-		4 = forest.dds
+		4 = giant.dds
 	}
-	can_pick = {
-		NOT = {
-			has_cultural_tradition = tradition_dwarf
-		}
+	is_shown = {
+		has_cultural_pillar = heritage_giant
 	}
 	parameters = {
 		knights_slightly_more_prone_to_injury = yes

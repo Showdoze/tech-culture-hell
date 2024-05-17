@@ -351,3 +351,30 @@ high_valyrian = {
 	10 = high_valyrian_ethnicity_20
 	}
 }
+giant = {
+	color = rgb { 48 84 150 }
+	
+	ethos = ethos_communal
+	heritage = heritage_giant
+	language = language_giant
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_loyal_soldiers
+		tradition_giant
+		tradition_winter_warriors
+		tradition_spartan
+		tradition_mountaineers
+	}
+
+	name_list = name_list_frozen_giant
+	
+	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
+	building_gfx = {  mediterranean_building_gfx norse_building_gfx }
+	clothing_gfx = {  northern_clothing_gfx }
+	unit_gfx = { northern_unit_gfx }
+	
+	ethnicities = {
+		10 = frost_giant_ethnicity
+		10 = storm_giant_ethnicity
+	}
+}
