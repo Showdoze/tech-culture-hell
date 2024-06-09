@@ -416,7 +416,7 @@ mmcyraxxmom = {
 
 mmcyraxx = {
 	name = "Patrick"
-	religion = norse_pagan
+	religion = catholic
 	culture = american
 	dynasty_house = house_lolcow_smith
 	dna = cyraxx
@@ -455,6 +455,11 @@ mmcyraxx = {
 	851.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
+		}
+	}
+	859.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
 		}
 	}
 	861.1.1 = {
@@ -673,6 +678,11 @@ mmbarb = {
 	790.10.1 = {
 		add_spouse = mmbobchan
 	}
+	821.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmbarb_son reason = rival_historical }
+		}
+	}
 	861.1.1 = {
 		effect = {
 			set_relation_lover = { target = character:mmchrischan exposed = yes }
@@ -698,6 +708,11 @@ mmbarb_son = {
 	mother = mmbarb
 	808.10.1 = {
 		birth = yes
+	}
+	821.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmbarb reason = rival_historical }
+		}
 	}
 	2026.4.17 = {
 		death = {
@@ -1211,6 +1226,71 @@ mmn3eon = {
 	870.1.10 = {
 		death = {
 			death_reason = death_stress
+		}
+	}
+}
+mmkcjfs = {
+	name = "KingCobraJFS"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	trait = witch
+	trait = lustful
+	trait = arrogant
+	trait = lazy
+	trait = drunkard
+	trait = hashishiyah
+	trait = education_learning_1
+	disallow_random_traits = yes
+	848.3.26 = {
+		birth = yes
+	}
+	859.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+		}
+	}
+	866.1.1 = {
+		add_spouse = mmkcgf
+    }
+	861.1.2 = {
+		effect = {
+			set_relation_rival = { target = character:mmkcgf reason = rival_historical }
+		}
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+mmkcgf = {
+	name = "Jessica"
+	religion = catholic
+	culture = american
+	dynasty = mmlolcow
+	female = yes
+	trait = lustful
+	trait = physique_bad_3
+	trait = arrogant
+	trait = wrathful
+	trait = irritable
+	trait = education_stewardship_1
+	disallow_random_traits = yes
+	830.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		add_spouse = mmkcjfs
+    }
+	861.1.2 = {
+		effect = {
+			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
+		}
+	}
+	870.1.1 = {
+		death = {
+			death_reason = death_cancer
 		}
 	}
 }
