@@ -52,7 +52,6 @@ name_list_hospitaller = {
 		{ "dynnp_de" "dynn_la_Pole" }
 		"dynn_Cotoner"
 	}	
-	# Does not exist in 1066 - is the result of cultural amalgamation between Saxon and Norman through events
 	male_names = {
 		14 = { # most common
 			William Gerard Jean Roger Guy Martin 
@@ -114,17 +113,11 @@ name_list_hospitaller = {
 	}
 	dynasty_of_location_prefix = "dynnp_of"
 	bastard_dynasty_prefix = "dynnp_fitz"
-
 	patronym_suffix_male = "dynnpat_suf_s"
 	patronym_suffix_female = "dynnpat_suf_s"
-	
-	# Chance of male children being named after their paternal 
-	#or maternal grandfather, or their father. Sum must not exceed 100.
 	pat_grf_name_chance = 30
 	mat_grf_name_chance = 10
 	father_name_chance = 25
-	# Chance of female children being named after their paternal 
-	#or maternal grandmother, or their mother. Sum must not exceed 100.
 	pat_grm_name_chance = 20
 	mat_grm_name_chance = 40
 	mother_name_chance = 5
@@ -132,7 +125,6 @@ name_list_hospitaller = {
 	}
 }
 name_list_templar = {
-
 	cadet_dynasty_names = {
 		{ "dynnp_of" "dynn_Capet" }
 		"dynn_Fournier"
@@ -472,7 +464,6 @@ name_list_templar = {
 		{ "dynnp_de" "dynn_Sully" }
 		{ "dynnp_of" "dynn_Burgundy" }
 	}
-
 	dynasty_names = {
 		"dynn_Fournier"
 		{ "dynnp_du" "dynn_Dros" }
@@ -812,7 +803,6 @@ name_list_templar = {
 		{ "dynnp_of" "dynn_Burgundy" }
 		{ "dynnp_de" "dynn_Creil" }
 	}
-
 	male_names = {
 		E_douard E_rrard E_tienne Adalbert AdE_mar Adrien Aimery Alain Aldebert AldE_ric 
 		Alphonse Amaury Andr_e Arnold Armand Archambaud 
@@ -865,11 +855,9 @@ name_list_templar = {
 	dynasty_of_location_prefix = "dynnp_de"
 	grammar_transform = french
 	patronym_prefix_male = "dynnpat_pre_fils"
-
 	pat_grf_name_chance = 60
 	mat_grf_name_chance = 10
 	father_name_chance = 10
-	
 	pat_grm_name_chance = 10
 	mat_grm_name_chance = 60
 	mother_name_chance = 10	
