@@ -1,8 +1,8 @@
 ﻿gnome = {
 	color = rgb { 222 135 26 }
-	
 	ethos = ethos_communal
-	heritage = heritage_gnomish
+	#heritage = heritage_gnomish
+	heritage = heritage_fantasy
 	language = language_gnomish
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -12,14 +12,11 @@
 		tradition_legalistic
 		tradition_gnome
 	}
-
-	name_list = name_list_gnomish
-	
+	name_list = name_list_gnomish	
 	coa_gfx = { irish_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { northern_clothing_gfx western_clothing_gfx  }
 	unit_gfx = { irish_unit_gfx }
-	
 	ethnicities = {
 		1 = gnome_ethnicity
 	}
@@ -27,9 +24,9 @@
 
 old_dwarven = {
 	color = rgb { 184 120 79 }
-	
 	ethos = ethos_bureaucratic
-	heritage = heritage_dwarven
+	#heritage = heritage_dwarven
+	heritage = heritage_fantasy
 	language = language_dwarven
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -39,14 +36,11 @@ old_dwarven = {
 		tradition_stand_and_fight
 		tradition_mystical_ancestors
 	}
-
 	name_list = name_list_old_dwarven
-	
 	coa_gfx = { norse_coa_gfx western_coa_gfx }
 	building_gfx = { norse_building_gfx }
 	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
 	unit_gfx = { norse_unit_gfx }
-	
 	ethnicities = {
 		1 = dwarven_ethnicity
 	}
@@ -54,9 +48,9 @@ old_dwarven = {
 
 gerudo = {
 	color = rgb { 243 146 0 }
-
 	ethos = ethos_bellicose
-	heritage = heritage_gerudo
+	#heritage = heritage_gerudo
+	heritage = heritage_fantasy
 	language = language_gerudo
 	martial_custom = martial_custom_female_only
 	traditions = {
@@ -66,14 +60,11 @@ gerudo = {
 		tradition_martial_admiration
 		tradition_practiced_pirates
 	}
-	
 	name_list = name_list_gerudo
-
 	coa_gfx = { arabic_group_coa_gfx } 
 	building_gfx = { arabic_group_building_gfx }
 	clothing_gfx = { iberian_muslim_clothing_gfx dde_abbasid_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { iberian_muslim_unit_gfx }
-
 	ethnicities = {
 		10 = gerudo
 	}
@@ -81,22 +72,19 @@ gerudo = {
 
 saiyan = {
 	color = han
-	
 	ethos = ethos_bellicose
-	heritage = heritage_saiyan
+	#heritage = heritage_saiyan
+	heritage = heritage_fantasy
 	language = language_anglic #language_common
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_saiyan
 	}
-	
 	name_list = name_list_saiyan
-	
 	coa_gfx = { chinese_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
 	clothing_gfx = { african_clothing_gfx }
 	unit_gfx = { mongol_unit_gfx }
-	
 	ethnicities = {
 		10 = asian
 	}
@@ -104,9 +92,9 @@ saiyan = {
 
 goblin = {
 	color = rgb { 145 207 79 }
-	
 	ethos = ethos_bureaucratic
-	heritage = heritage_goblin
+	#heritage = heritage_goblin
+	heritage = heritage_fantasy
 	language = language_goblin
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -137,9 +125,9 @@ goblin = {
 }
 warsong = { #ORCISH
 	color = rgb { 89 19 19 }
-	
 	ethos = ethos_bellicose
-	heritage = heritage_orcish
+	#heritage = heritage_orcish
+	heritage = heritage_fantasy
 	language = language_orcish
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -172,9 +160,9 @@ warsong = { #ORCISH
 }
 bosmer = {
 	color = { 0.33 0.53 0.12 }
-	
 	ethos = ethos_spiritual
-	heritage = heritage_bosmeri
+	#heritage = heritage_bosmeri
+	heritage = heritage_fantasy
 	language = language_bosmeris
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -184,52 +172,42 @@ bosmer = {
 		tradition_free_love
 		tradition_elf
 	}	
-	
 	name_list = name_list_bosmer
-	
 	coa_gfx = { iberian_group_coa_gfx }
 	building_gfx = { iberian_building_gfx }
 	clothing_gfx = { iberian_christian_clothing_gfx }
 	unit_gfx = { iberian_christian_unit_gfx }
-	
 	ethnicities = {
 		10 = race_bosmer
 	}
 }
 alinor = { #HIGH ELF
 	color = { 1.0 0.85 0.0 }
-	
 	ethos = ethos_courtly
-	heritage = heritage_aldmeri
+	heritage = heritage_fantasy
+	#heritage = heritage_aldmeri
 	language = language_altmeris
 	martial_custom = martial_custom_equal
-	
 	traditions = {
 		tradition_elf
 		tradition_philosopher_culture
 		tradition_poetry
 		tradition_cutthroat_politics
 	}	
-
 	name_list = name_list_altmer
-	
 	coa_gfx = { iranian_group_coa_gfx }
 	building_gfx = { iranian_building_gfx }
 	clothing_gfx = { iranian_clothing_gfx }
 	unit_gfx = { altmer_unit_gfx }
-	
 	ethnicities = {
 		10 = race_altmer
 	}
 }
 chi_addun = { #Telvanni
-	color = { 0.5 0.2 0.3 }
-	
-	created = 350.1.1
-	history_loc_override = dunmer_history_loc
-	
+	color = { 0.5 0.2 0.3 }	
 	ethos = ethos_egalitarian
-	heritage = heritage_dunmeri
+	#heritage = heritage_dunmeri
+	heritage = heritage_fantasy
 	language = language_dunmeris
 	martial_custom = martial_custom_equal
 	
@@ -238,41 +216,34 @@ chi_addun = { #Telvanni
 		tradition_cynical_believers
 		tradition_dunmer
 	}
-	
 	name_list = name_list_dunmer
-	
 	coa_gfx = { iberian_group_coa_gfx } #dunmeris_group_coa_gfx
 	building_gfx = { iberian_building_gfx } #ek_telvanni_building_gfx
 	clothing_gfx = { iberian_christian_clothing_gfx iberian_muslim_clothing_gfx }
 	unit_gfx = { dunmer_unit_gfx }
-	
 	ethnicities = {
 		10 = race_dunmer
 	}
 }
 glenumbran = { #Breton
-	color = { 0.78 0.58 0.52 }
-	
+	color = { 0.78 0.58 0.52 }	
 	ethos = ethos_courtly
-	heritage = heritage_breton
+	heritage = heritage_fantasy
+	#heritage = heritage_breton
 	language = language_bretic
-	martial_custom = martial_custom_equal
-	
+	martial_custom = martial_custom_equal	
 	traditions = {
 		tradition_hereditary_hierarchy
 		tradition_chanson_de_geste
 		tradition_castle_keepers
 		tradition_astute_diplomats
 		tradition_chivalry
-	}
-	
-	name_list = name_list_glenumbran
-	
+	}	
+	name_list = name_list_glenumbran	
 	coa_gfx = { french_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { french_clothing_gfx }
 	unit_gfx = { french_unit_gfx }
-	
 	ethnicities = {
 		50 = race_breton_glenumbran_1
 		25 = race_breton_glenumbran_elven_1
@@ -281,9 +252,9 @@ glenumbran = { #Breton
 }
 alikr = { #RedGuard
 	color = { 0.82 0.42 0.32 }
-	
 	ethos = ethos_stoic
-	heritage = heritage_yokudan
+	#heritage = heritage_yokudan
+	heritage = heritage_fantasy
 	language = language_tamrielic_yoku
 	martial_custom = martial_custom_equal
 	traditions = {
@@ -292,42 +263,35 @@ alikr = { #RedGuard
 		tradition_warriors_of_the_dry
 		tradition_sword_centric
 	}
-
 	name_list = name_list_alikr
-	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx african_building_gfx }
 	clothing_gfx = { afr_berber_clothing_gfx  mena_clothing_gfx}
 	unit_gfx = { berber_unit_gfx }
-	
 	ethnicities = {
 		10 = race_redguard_alikr_1
 	}
 }
 high_valyrian = {
 	color = { 0.71 0.37 0.60 }
-
 	ethos = ethos_bellicose
-	heritage = heritage_valyrian
+	heritage = heritage_fantasy
+	#heritage = heritage_valyrian
 	language = language_valyrian
 	martial_custom = martial_custom_male_only
-
 	traditions = {
 		tradition_ruling_caste
 		tradition_diasporic
 		tradition_valyrian
 		tradition_republican_legacy
 	}
-
 	name_list = name_list_high_valyrian
-
 	coa_gfx = { english_coa_gfx western_coa_gfx } #valyrian_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { #high_valyrian_clothing_gfx #valyrian_clothing_gfx
 		byzantine_clothing_gfx
 		western_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-
 	ethnicities = {
 	10 = high_valyrian_ethnicity_01
 	10 = high_valyrian_ethnicity_02
@@ -353,9 +317,9 @@ high_valyrian = {
 }
 giant = {
 	color = rgb { 48 84 150 }
-	
 	ethos = ethos_communal
-	heritage = heritage_giant
+	heritage = heritage_fantasy
+	#heritage = heritage_giant
 	language = language_giant
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -365,16 +329,41 @@ giant = {
 		tradition_spartan
 		tradition_mountaineers
 	}
-
 	name_list = name_list_frozen_giant
-	
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = {  mediterranean_building_gfx norse_building_gfx }
 	clothing_gfx = {  northern_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
-	
 	ethnicities = {
 		10 = frost_giant_ethnicity
 		10 = storm_giant_ethnicity
+	}
+}
+ancient_texas = {
+	color = { 120 120 120 }
+	ethos = ethos_stoic
+	heritage = heritage_fantasy
+	#heritage = heritage_ancient_texas
+	language = language_ancient_texas
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_city_keepers
+		tradition_ancient_miners
+		tradition_ruling_caste
+		tradition_loyal_soldiers
+		tradition_warrior_culture
+	}
+
+	name_list = name_list_ancient_texas
+
+	coa_gfx = { israelite_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		10 = arab
+		10 = mediterranean
 	}
 }

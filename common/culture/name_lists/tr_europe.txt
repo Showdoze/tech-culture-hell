@@ -377,25 +377,12 @@ name_list_icelandic = {
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
 	mercenary_names = {
-		{
-			name = "mercenary_company_thinglith"
-			coat_of_arms = "mc_thinglith"
-		}
-		{
-			name = "mercenary_company_army_of_kylfingar"
-		}
-		{
-			name = "mercenary_company_company_of_jarl_landless"
-		}
-		{
-			name = "mercenary_company_huscarls_of_the_sea"
-		}
-		{
-			name = "mercenary_company_band_of_firesmoke"
-		}
-		{
-			name = "mercenary_company_queens_hird"
-		}
+		{ name = "mercenary_company_thinglith" coat_of_arms = "mc_thinglith" }
+		{ name = "mercenary_company_army_of_kylfingar" }
+		{ name = "mercenary_company_company_of_jarl_landless" }
+		{ name = "mercenary_company_huscarls_of_the_sea" }
+		{ name = "mercenary_company_band_of_firesmoke" }
+		{ name = "mercenary_company_queens_hird" }
 	}
 }
 #South
@@ -2144,8 +2131,6 @@ name_list_ostrogothic = {
 	pat_grm_name_chance = 20
 	mat_grm_name_chance = 5
 	mother_name_chance = 25
-	mercenary_names = {
-	}
 }
 
 name_list_gothic = {
@@ -2810,8 +2795,6 @@ name_list_gothic = {
 	pat_grm_name_chance = 10
 	mat_grm_name_chance = 50
 	mother_name_chance = 5
-	mercenary_names = {
-	}
 }
 
 name_list_vandal = {
@@ -3321,6 +3304,10 @@ name_list_zastova = {
 	pat_grm_name_chance = 30
 	mat_grm_name_chance = 30
 	mother_name_chance = 0
+	mercenary_names = {
+		{ name = "mercenary_company_totaly_legit_army" }
+		{ name = "mercenary_company_army_of_the_people" }
+	}
 }
 
 #West
@@ -3735,5 +3722,6 @@ name_list_spanish = {
 	mercenary_names = {
 		{ name = "mercenary_company_slaughterers" }
 		{ name = "mercenary_company_band_of_the_brigand_emperor" }
+		{ name = "mercenary_company_conquistador" }
 	}
 }

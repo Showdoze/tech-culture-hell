@@ -344,3 +344,38 @@ dragons = {
 	
 	icon = dragon
 }
+croc_rider = {
+	type = light_cavalry
+	
+	damage = 20 
+	toughness = 20
+	pursuit = 20
+	screen = 10		# They bail out
+	siege_value = 0
+
+	terrain_bonus = {
+		plains = { damage = 1 }
+		drylands = { damage = 1 }
+		desert = { damage = 10 }
+		hills = { damage = -5 }
+		mountains = { damage = -25 }
+		desert_mountains = { damage = -25 }
+		wetlands = { damage = 30 toughness = 10 pursuit = 50 screen = 15 }
+	}
+	counters = {
+		archers = 1
+	}
+	winter_bonus = {
+		normal_winter = { damage = -10 toughness = -5 }
+		harsh_winter = { damage = -20 toughness = -5 }
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_nile_agriculture }
+	}
+	buy_cost = { gold = 120 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	stack = 50
+	ai_quality = { value = 0 }
+	icon = croc_rider
+}
