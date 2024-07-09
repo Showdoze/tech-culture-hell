@@ -295,7 +295,7 @@
 #Fantasy
  heritage_fantasy:0 "Fantasy"
  #gfx
-   dunmeris_group_coa_gfx:0 "Dunmeri"
+  dunmeris_group_coa_gfx:0 "Dunmeri"
   nord_group_coa_gfx:0 "Nordic"
   khajiit_group_coa_gfx:0 "Khajiiti"
   nedic_group_coa_gfx:0 "Nedic"
@@ -388,8 +388,17 @@
   ek_lilmothiit_clothing_gfx:0 "Lilmothiit"
   ek_imga_clothing_gfx:0 "Imga"
   ek_nedic_orma_clothing_gfx:0 "Orma"
-
- chi_addun:1 "Dunmer"
+  #
+ #IMPERIAL 
+    heartlander:0 "“Imperial"
+    heartlander_prefix:0 "Heartland"
+    heartlander_collective_noun:1 "Heartlanders"
+    heartlander_desc:0 "Seen as the stereotypical “Imperials”, Heartlander culture flourishes in the region around Lake Rumare and the Imperial Isle, aptly known as the Heartlands. One of the most prosperous and bountiful areas in all of Tamriel, the Heartlands have attracted the attention from numerous conquerors and warlords, eager to control the sprawling farmlands of central Cyrodiil. \n\nThis noble culture is known for its fine arts and entertainment, which can be observed on the opulent gladiatorial matches and vast urban gardens of the Imperial City, a taste inherited from the ancient Ayleids that inhabited the region. Heartlanders leverage their central position to project power over all of Cyrodiil, and through it, Tamriel as a whole. They have been at the helm of Empires multiple times, a testament to their shrewd management and political skill."
+    heartlander_opinion:0 "$heartlander$ Opinion"
+    language_cyrodiilic_name:0 "Cyrodiilic"
+  language_cyrodiilic_desc:0 "Cyrodilic is spoken in the Heart of Tamriel but also everywhere where Imperial influence once extended. As a mother tongue, however, it is only in Cyrodiil proper and some heavily imperialized cultures that you will find it. Ayleidoon and Nordic amongst others have all bestowed something upon this Nedic language, a testament to the Cyrodiils history of cultural exchange."
+ #DUNMERIS
+    chi_addun:1 "Dunmer"
     chi_addun_prefix:0 "Adduno"
     chi_addun_collective_noun:1 "Chi-Adduni"
     chi_addun_desc:0 "The Mage-Lords that settled the lands beyond the Chi-lani came late into the fold of Resdayn, and long endured with their own traditions and sometimes bizarre customs. Refusing to part with meritocratic rule by the strongest mages, the tower-building sages eventually formed House Telvanni, which joined the other Dunmeri Houses under several provisions and exemptions. Even now, the Dunmer of the north-east are a curious lot, prone to paranoia and almost eremitical bouts of secretiveness, exotic and unknown even to their fellow elves, and laissez-faire with regards to cultural norms sacred to their kin."
@@ -400,7 +409,12 @@
  gerudo_prefix:0 "Gerudo"
  gerudo_collective_noun:1 "Gerudos"
  heritage_gerudo_name:0 "Gerudo"
-
+ #ALDMERI
+ alinor:0 "High Elf"
+    alinor_prefix:0 "Alinoro"
+    alinor_collective_noun:1 "Alinori"
+    alinor_desc:0 "The Alinori are the core Altmer culture based in Summerset. They take great pride in their lineages and think themselves superiors to outsiders for which they have no lack of scorn. Few can claim to know magic better than the Alinori Mages, especially their high esteemed Sapiarchs."
+    alinor_opinion:0 "$High Elfe$ Opinion"
  name_list_gnomish:0 "$gnome$"
  gnome_prefix:0 "Gnomeregano
  gnome:1 "Gnomereganian"
@@ -431,62 +445,62 @@
   giant_collective_noun:0 "Giant's"
   name_list_storm_giant:0 "$storm_giant$"
   name_list_frozen_giant:0 "$frozen_giant$"
- 
- heritage_goblin_name:0 "Goblin"
- language_goblin_name:0 "Goblin"
- name_list_goblin:0 "$goblin$"
- goblin_prefix:0 "Goblin"
- goblin:1 "Goblin"
- goblin_collective_noun:2 "Goblin's"
- name_list_warsong:0 "$Orc$"
- heritage_orcish_name:0 "Orcish"
- language_orcish_name:0 "Orcish"
- warsong:0 "Orc"
- warsong_collective_noun:1 "Orcish"
- warsong_prefix:0 "Orc"
- overlord_male_orc_count:0 "Overlord"
- overlord_female_orc_count:0 "Overlord"
- high_overlord_male_orc_duke:0 "High Overlord"
- high_overlord_female_orc_duke:0 "High Overlord"
- warlord_male_orc_king:0 "Warlord"
- warlord_female_orc_king:0 "Warlord"
- warchief_male_orc_emperor:0 "Warchief"
- warchief_female_orc_emperor:0 "Warchief"
+ #Goblin
+  heritage_goblin_name:0 "Goblin"
+  language_goblin_name:0 "Goblin"
+  name_list_goblin:0 "$goblin$"
+  goblin_prefix:0 "Goblin"
+  goblin:1 "Goblin"
+  goblin_collective_noun:2 "Goblin's"
+ #Orc
+  name_list_warsong:0 "$Orc$"
+  heritage_orcish_name:0 "Orcish"
+  language_orcish_name:0 "Orcish"
+  warsong:0 "Orc"
+  warsong_collective_noun:1 "Orcish"
+  warsong_prefix:0 "Orc"
+  overlord_male_orc_count:0 "Overlord"
+  overlord_female_orc_count:0 "Overlord"
+  high_overlord_male_orc_duke:0 "High Overlord"
+  high_overlord_female_orc_duke:0 "High Overlord"
+  warlord_male_orc_king:0 "Warlord"
+  warlord_female_orc_king:0 "Warlord"
+  warchief_male_orc_emperor:0 "Warchief"
+  warchief_female_orc_emperor:0 "Warchief"
  #Orsimer Group
- baron_feudal_male_orsimer:0 "Chief"
- baron_feudal_female_orsimer:0 "Chieftess"
- barony_feudal_orsimer:1 "Stronghold"
- count_feudal_male_orsimer:0 "Chieftain"
- count_feudal_female_orsimer:0 "Chieftess"
- county_feudal_orsimer:0 "Chiefdom"
- duke_feudal_male_orsimer:0 "High Chieftain"
- duke_feudal_female_orsimer:0 "High Chieftess"
- duchy_feudal_orsimer:0 "Tribe"
- king_feudal_male_orsimer:0 "King"
- king_feudal_female_orsimer:0 "Queen"
+  baron_feudal_male_orsimer:0 "Chief"
+  baron_feudal_female_orsimer:0 "Chieftess"
+  barony_feudal_orsimer:1 "Stronghold"
+  count_feudal_male_orsimer:0 "Chieftain"
+  count_feudal_female_orsimer:0 "Chieftess"
+  county_feudal_orsimer:0 "Chiefdom"
+  duke_feudal_male_orsimer:0 "High Chieftain"
+  duke_feudal_female_orsimer:0 "High Chieftess"
+  duchy_feudal_orsimer:0 "Tribe"
+  king_feudal_male_orsimer:0 "King"
+  king_feudal_female_orsimer:0 "Queen"
  #Goblin Ethnicities
- goblin_ethnicity:0 "Goblin"
- gilblin_ethnicity:0 "Gilblin"
- race_goblinken_base:0 "Goblinken"
- race_goblin_green:0 "Goblin Green"
- race_goblin_yellow:0 "Goblin Yellow"
- race_goblin_riekr:0 "Goblin Riekr"
- race_goblin_riekling:0 "Goblin Riekling"
- race_orsimer:0 "Orsimer"
- race_dunmer:0 "Dunmer"
-
+  goblin_ethnicity:0 "Goblin"
+  gilblin_ethnicity:0 "Gilblin"
+  race_goblinken_base:0 "Goblinken"
+  race_goblin_green:0 "Goblin Green"
+  race_goblin_yellow:0 "Goblin Yellow"
+  race_goblin_riekr:0 "Goblin Riekr"
+  race_goblin_riekling:0 "Goblin Riekling"
+  race_orsimer:0 "Orsimer"
+  race_dunmer:0 "Dunmer"
  #Orcish Ethnicities
-  green_orcish:0 "Green Orcish"
-  gray_orcish:0 "Gray Orcish"
-  brown_orcish:0 "Brown Orcish"
-  pale_orcish:0 "Pale Orcish"
+   green_orcish:0 "Green Orcish"
+   gray_orcish:0 "Gray Orcish"
+   brown_orcish:0 "Brown Orcish"
+   pale_orcish:0 "Pale Orcish"
  #Giant Ethnicities
-  frost_giant_ethnicity:0 "Frost Giant"
-  storm_giant_ethnicity:0 "Storm Giant"
-  skrog_ethnicity:0 "Skrog"
+   frost_giant_ethnicity:0 "Frost Giant"
+   storm_giant_ethnicity:0 "Storm Giant"
+   skrog_ethnicity:0 "Skrog"
  #Elven Ethnicities
- high_elven:0 "High Elven"
- highborne_ethnicity:0 "Highborne Elven"
+   high_elven:0 "High Elven"
+   highborne_ethnicity:0 "Highborne Elven"
  #Bosmeris Group
   baron_feudal_male_bosmeris_group:0 "Clan-Keeper"
   baron_feudal_female_bosmeris_group:0 "Clan-Keeper"
@@ -600,6 +614,11 @@
      heritage_aldmeri_collective_noun:0 "Aldmer"
      heritage_aldmeri_desc:0 "The Aldmer are special amongst children of the Ehlnofey, always striving to reclaim the splendour of lost times. Settling Summerset Isles during the #LORE [compendium_merethic_era]#!, they gradually spread across the archipelago starting with Firsthold on Auridon. Many dissidents arose from their ranks to set sail on the mainland. The Corelanya sought their fate in nearby Hegathe while the Chimer journeyed as far east as Resdayn. Later even, the Direnni clan moved to Balfiera.\n\nSummerset's remaining population—now called Altmer—developed a highly stratified society. Apraxic outcasts suffer banishment for breaking social norms. The Altmer are very self-centered, with Auridon being more amenable to outsiders while Alinor is their closed-off heartland. In contrast, High Rock's Balfieri are more open-minded, even connecting with outside nobility through marriage: something utterly abhorrent in ancestral Summerset."
   #Breton
+    glenumbran:0 "Breton"
+    glenumbran_prefix:0 "Glenumbro"
+    glenumbran_collective_noun:1 "Glenumbrans"
+    glenumbran_desc:0 "Glenumbra is a land of lush, rolling hills dotted with castles and compact cities, stereotypical High Rock, and Glenumbrans are restless ambition-chasers with a penchant for adventure and heroics, stereotypically Breton. Somehow, Breton and Glenumbran became synonymous outside High Rock — and there is something to be said about the cultural prevalence of Glenumbra and its people compared to the rest of the Province. Perhaps it's the local art traditions, or the military might of Daggerfall, or maybe the tendency of the Reman dynasty to marry into Glenumbran families..."
+    glenumbran_opinion:0 "$Breton$ Opinion"
     language_bretic_name:0 "Bretic"
     language_bretic_desc:0 "Bretic is spoken all across High Rock. It has Nedic roots but the long years of the Hegemony imprinted a noticeable Altmeris superstratum on it. It includes the speakers' very own name, Breton coming from beratu - “half” -, the mixed-blood lower bureaucrats that kept the Hegemony's day-to-day operations running."
     #heritage_breton_name:0 "Breton"
@@ -621,7 +640,6 @@
  kemetic_steward:0 "Iry-pat"
  kemetic_marshal:0 "Medjay Tepi"
  kemetic_spymaster:0 "Neṭr"
- 
 #####################
 # Summer #
 #####################
@@ -659,7 +677,6 @@
  mesopotamian_steward:0 "Waklu"
  mesopotamian_marshal:0 "Turtānu"
  mesopotamian_spymaster:0 "Dāgilu"
-
 #####################
 # American USA #
 ##################### 
@@ -742,7 +759,6 @@
  canadian_baron_male:0 "Mayor"
  canadian_baron_female:0 "Miss Mayor"
  canadian_barony:0 "City"
-
 ###South America
  nahuatl:0 "Nahuatl"
  nahuatl_prefix:0 "Nahua"
@@ -772,7 +788,6 @@
  cemanahuac_clothing_gfx:0 "Cemanahuaca"
  cemanahuac_unit_gfx:0 "Cemanahuaca"
  language_nahuatl_name:0 "Nahuatl"
-
 #########
 #Asia
 ######
@@ -816,8 +831,6 @@
  job_spiritual_jurchen:0 "Libationer"
  chinese_unit_gfx: "Chinese"
  name_list_uchiha:0 "Uchiha"
- 
-
 #####################
 # Japan #
 #####################
@@ -842,7 +855,6 @@
   language_japanese_name:0 "Japanese"
   heritage_japanese_name:0 "Japanese"
   yamato:0 "Yamato"
-
 #############################
 #Mediterranean
 #############################
@@ -861,7 +873,6 @@
  venice_empire_lady:0 "Dogaressa"
  venice_emperor:0 "Doge"
  venice_queen_mother:0 "Dogaressa"
-
 #Holy Orders
  heritage_holy_order_name:0 "Holy Order"
  heritage_holy_order_collective_noun:0 "Holy Order's"
@@ -885,7 +896,6 @@
  HO_duchy:0 "Marshal"
  HO_duchy_lady:0 "Lady"
  HO_duch:0 "Order"
-
 #Game of Thrones
  valyrian_coa_gfx:0 "Freehold Heraldry"
  lyseni_building_gfx:0 "Valyrian Pleasure"
