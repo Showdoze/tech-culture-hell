@@ -3930,7 +3930,13 @@ name_list_ancient_egyptian = {
 		Nofret Nakhtneith Neferu Qalhata Udjebten Tyti Twosret Tuya Tutu Tjuyu Tetisheri Reptynub 
 		Reputnebty Satiah Shepset-ipet Sitamun Sitdjehuti Sitre
 	}
-	#founder_named_dynasties = yes
+	dynasty_of_location_prefix = ""
+	pat_grf_name_chance = 30
+	mat_grf_name_chance = 10
+	father_name_chance = 25
+	pat_grm_name_chance = 20
+	mat_grm_name_chance = 40
+	mother_name_chance = 5
 	mercenary_names = {
 		{ name = "mercenary_company_geezan_company" }
 		{ name = "mercenary_company_tigrayit_band" }
@@ -4100,6 +4106,18 @@ name_list_ptolemaic = {
 		Kleagora Kleariste Kleopatra Kleostrate Mania Melissa Nikagora Nikaia
 		Phanagora Phileia Philinna Philippa Philista Philotera Philoxena Satyra Theodora Thessalonica Timagora 
 		Timokleia Xenokrateia Zopyra Zopyris Anastasia
+	}
+	dynasty_of_location_prefix = ""
+	pat_grf_name_chance = 30
+	mat_grf_name_chance = 10
+	father_name_chance = 25
+	pat_grm_name_chance = 20
+	mat_grm_name_chance = 40
+	mother_name_chance = 5
+	mercenary_names = {
+		{ name = "mercenary_company_ptolemaic1" coat_of_arms = "house_alexandrite" }
+		#{ name = "mercenary_company_mekgineers" }
+		#{ name = "mercenary_company_battletinkers" }
 	}
 }
 
