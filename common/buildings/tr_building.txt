@@ -39,3 +39,59 @@ MA_arles_amphiteatre = {
 		base = 0
 	}
 }
+castra_praetoria = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_castra_praetoria.dds"
+	can_construct_potential = {
+		barony = title:b_roma
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_roman_concrete
+		}
+	}
+	character_culture_modifier = {
+		parameter = building_barracks_piety_bonuses
+	}
+	cost_gold = main_building_tier_1_cost
+	province_modifier = {
+		fort_level = great_building_fort_level_tier_1
+		stationed_maa_damage_mult = normal_maa_damage_tier_1
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
+		stationed_siege_weapon_siege_value_mult = normal_maa_siege_value_tier_1
+		travel_danger = -4
+		hostile_raid_time = 0.25
+	}
+	ai_value = {
+		base = 0
+	}
+}
+castra_peregrina = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_castra_peregrina.dds"
+	can_construct_potential = {
+		barony = title:b_roma
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_roman_concrete
+		}
+	}
+	character_culture_modifier = {
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+		learn_language_scheme_power_mult = 0.2
+	}
+	cost_gold = main_building_tier_1_cost
+	province_modifier = {
+		fort_level = great_building_fort_level_tier_1
+		stationed_maa_damage_mult = normal_maa_damage_tier_1
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
+		stationed_siege_weapon_siege_value_mult = normal_maa_siege_value_tier_1
+	}
+	ai_value = {
+		base = 0
+	}
+}

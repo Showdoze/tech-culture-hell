@@ -6,7 +6,12 @@ tradition_saiyan = {
 		4 = saiyan.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_saiyan
+		OR = {
+			this = culture:saiyan
+			any_parent_culture_or_above = {
+				this = culture:saiyan
+			}
+		}
 	}
 	parameters = {
 		warmonger = yes
@@ -85,7 +90,12 @@ tradition_gnome = {
 		4 = gnome.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_gnomish
+		OR = {
+			this = culture:gnome
+			any_parent_culture_or_above = {
+				this = culture:gnome
+			}
+		}
 	}
 	parameters = {
 		better_blacksmith_buildings = yes
@@ -102,7 +112,6 @@ tradition_gnome = {
 		years_of_fertility = 250
 	}
 	county_modifier = {
-		
 	}
 	province_modifier = {
 	}
@@ -122,7 +131,12 @@ tradition_dwarf = {
 		4 = dwarf_lotr.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_dwarven
+		OR = {
+			this = culture:old_dwarven
+			any_parent_culture_or_above = {
+				this = culture:old_dwarven
+			}
+		}
 	}
 	parameters = {
 		better_armory_buildings = yes
@@ -179,7 +193,12 @@ tradition_giant = {
 		4 = giant.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_giant
+		OR = {
+			this = culture:giant
+			any_parent_culture_or_above = {
+				this = culture:giant
+			}
+		}
 	}
 	parameters = {
 		knights_slightly_more_prone_to_injury = yes
@@ -252,9 +271,14 @@ tradition_elf = {
 	}
 	is_shown = {
 		OR = {
-		has_cultural_pillar = heritage_bosmeri
-		has_cultural_pillar = heritage_aldmeri
-		has_cultural_pillar = heritage_dunmeri
+			this = culture:bosmer
+			this = culture:alinor
+			this = culture:chi_addun
+			any_parent_culture_or_above = {
+				this = culture:bosmer
+				this = culture:alinor
+				this = culture:chi_addun
+			}
 		}
 	}
 	parameters = {
@@ -290,7 +314,12 @@ tradition_dunmer = {
 		4 = dunmer.dds
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_dunmeri
+		OR = {
+			this = culture:chi_addun
+			any_parent_culture_or_above = {
+				this = culture:chi_addun
+			}
+		}
 	}
 	parameters = {
 		bonuses_from_patriarch_matriarch_trait = yes
@@ -651,5 +680,46 @@ tradition_korean = {
 		value = 0
 	}
 }
-
+traditon_hidden_village = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = hidden_village.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:hidden_mist
+		}
+	}
+	parameters = {
+		herbalist_traits_more_common = yes
+		poorly_educated_leaders_distrusted = yes
+		better_ward_education = yes
+		innovation_from_learning_traits = yes
+		martial_education_more_valued = yes
+		brave_trait_gives_bonuses = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		prowess_from_martial_education = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		herbalist_trait_gives_bonuses = yes
+		learns_more_languages = yes
+	}
+	character_modifier = {
+		diplomatic_range_mult = 3
+		domain_limit = -5
+		vassal_limit = -7
+	}
+	cost = {
+		prestige = 9000
+	}	
+	ai_will_do = {
+		value = 0
+	}	
+}
 

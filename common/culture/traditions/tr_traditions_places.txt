@@ -1,12 +1,10 @@
 tradition_area_desert = {
 	category = regional
-
 	layers = {
 		0 = steward
 		1 = mena
 		4 = area_desert.dds
 	}
-	
 	can_pick = {
 		any_culture_county = {
 		any_county_province = {
@@ -17,7 +15,6 @@ tradition_area_desert = {
 			}
 		}
 	}
-	
 	parameters = {
 		drylands_hunt_success_chance = yes
 		desert_hunt_success_chance = yes
@@ -48,13 +45,11 @@ tradition_area_desert = {
 }
 tradition_area_floodplains = {
 	category = regional
-
 	layers = {
 		0 = steward
 		1 = mena
 		4 = desert.dds
 	}
-	
 	can_pick = {
 		text = culture_in_dryland_desc
 			any_culture_county = {
@@ -67,7 +62,6 @@ tradition_area_floodplains = {
 			}
 		}
 	}
-	
 	parameters = {
 		drylands_hunt_success_chance = yes
 		desert_hunt_success_chance = yes
