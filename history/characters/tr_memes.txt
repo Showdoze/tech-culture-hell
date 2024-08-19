@@ -861,12 +861,49 @@ mmjaredgenesis = {
 			killed = mmhorrvalmir
 		}
 	}
-}	
-mmlolcowdaniellarson = {
-	name = "Daniel Larson"
+}
+mmlolcowlarsonmother = {
+	name = "Elizabeth Shimer"
 	religion = catholic
 	culture = american
-	dynasty = mmlolcow
+	dynasty_house = house_lolcow_larson
+	female = yes
+	martial = 1
+	diplomacy = 1
+	intrigue = 0
+	stewardship = 1
+	learning = 0
+	trait = irritable
+	trait = education_intrigue_1
+	trait = callous
+	trait = deviant
+	trait = incestuous
+	trait = witch
+	disallow_random_traits = yes
+	800.11.4 = {
+		birth = yes
+	}
+	821.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmlolcowdaniellarson reason = rival_historical }
+		}
+	}
+	821.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmlolcowjacelarson reason = rival_historical }
+		}
+	}
+	2026.4.17 = {
+		death = {
+			death_reason = death_incapable
+		}
+	}
+}
+mmlolcowdaniellarson = {
+	name = "Daniel"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_larson
 	dna = daniellarson
 	trait = paranoid
 	trait = lunatic_genetic
@@ -881,13 +918,38 @@ mmlolcowdaniellarson = {
 	trait = spindly
 	trait = hygene_bad_2
 	disallow_random_traits = yes
+	mother = lolcowlarsonmother
 	844.9.8 = {
 		birth = yes
 	}
-	860.1.1. = {
+	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmwwotshirts reason = rival_historical }
 		}
+	}
+	1054.6.30 = {
+		death = {
+			death_reason = death_physician_mistreatment
+		}
+	}
+}
+mmlolcowjacelarson = {
+	name = "Jace"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow_larson
+	trait = paranoid
+	trait = lunatic_genetic
+	trait = possessed_genetic
+	trait = wrathful
+	trait = irritable
+	trait = irritable
+	trait = flagellant
+	trait = hygene_bad_2
+	disallow_random_traits = yes
+	mother = lolcowlarsonmother
+	838.9.8 = {
+		birth = yes
 	}
 	1054.6.30 = {
 		death = {
