@@ -862,11 +862,41 @@ mmjaredgenesis = {
 		}
 	}
 }
-mmlolcowlarsonmother = {
-	name = "Elizabeth Shimer"
+mmnancyshimer = {
+	name = "Nancy"
 	religion = catholic
 	culture = american
-	dynasty_house = house_lolcow_larson
+	dynasty_house = house_shimer
+	female = yes
+	martial = 1
+	diplomacy = 1
+	intrigue = 0
+	stewardship = 1
+	learning = 0
+	785.11.4 = {
+		birth = yes
+	}
+	811.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmlolcowdaniellarson reason = rival_historical }
+		}
+	}
+	811.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmlolcowlarsonmother reason = rival_historical }
+		}
+	}
+	852.4.17 = {
+		death = {
+			death_reason = death_cancer_lol
+		}
+	}
+}
+mmlolcowlarsonmother = {
+	name = "Elizabeth"
+	religion = catholic
+	culture = american
+	dynasty_house = house_larson
 	female = yes
 	martial = 1
 	diplomacy = 1
@@ -878,6 +908,7 @@ mmlolcowlarsonmother = {
 	trait = callous
 	trait = deviant
 	trait = incestuous
+	trait = adopted
 	trait = witch
 	disallow_random_traits = yes
 	800.11.4 = {
