@@ -858,7 +858,7 @@ mmjaredgenesis = {
 	1034.6.30 = {
 		death = {
 			death_reason = death_duel
-			killed = mmhorrvalmir
+			killer = mmhorrvalmir
 		}
 	}
 }
@@ -889,6 +889,7 @@ mmnancyshimer = {
 	852.4.17 = {
 		death = {
 			death_reason = death_cancer_lol
+			killer = mmlolcowdaniellarson
 		}
 	}
 }
@@ -912,6 +913,7 @@ mmlolcowlarsonmother = {
 	trait = witch
 	disallow_random_traits = yes
 	mother = mmnancyshimer
+	give_nickname = nick_shimer
 	800.11.4 = {
 		birth = yes
 	}
@@ -1251,7 +1253,7 @@ mmwwotshirts = {
 	890.1.10 = {
 		death = {
 			death_reason = death_beaten
-			killed = mmlolcowdaniellarson
+			killer = mmlolcowdaniellarson
 		}
 	}
 }
@@ -1273,7 +1275,7 @@ mmaoms = {
 	860.1.10 = {
 		death = {
 			death_reason = death_beaten
-			killed = mmcyraxx
+			killer = mmcyraxx
 		}
 	}
 }
@@ -1385,6 +1387,50 @@ mmkcgf = {
 	870.1.1 = {
 		death = {
 			death_reason = death_cancer
+		}
+	}
+}
+mmjupiterhybrid = {
+	name = "Jupiter the hybrid"
+	religion = catholic
+	culture = american
+	dynasty_house = house_tiktok
+	trait = witch
+	trait = lustful
+	trait = arrogant
+	trait = lazy
+	trait = deviant
+	trait = murderer
+	trait = beauty_bad_1
+	trait = education_intrigue_1
+	disallow_random_traits = yes
+	839.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+mmnovaonline = {
+	name = "Nova online"
+	religion = catholic
+	culture = american
+	dynasty_house = house_tiktok
+	trait = lustful
+	trait = arrogant
+	trait = lazy
+	trait = deviant
+	trait = beauty_bad_1
+	trait = education_stewardship_1
+	disallow_random_traits = yes
+	839.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_stress
 		}
 	}
 }
