@@ -343,7 +343,6 @@ ancient_texas = {
 	color = { 120 120 120 }
 	ethos = ethos_stoic
 	heritage = heritage_fantasy
-	#heritage = heritage_ancient_texas
 	language = language_ancient_texas
 	martial_custom = martial_custom_male_only
 
@@ -367,6 +366,29 @@ ancient_texas = {
 		10 = mediterranean
 	}
 }
+
+unknown = {
+	color = { 0 0 0 }
+	ethos = ethos_stoic
+	heritage = heritage_fantasy
+	language = language_unknown
+	martial_custom = martial_custom_equal
+
+	name_list = name_list_unknown
+
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx  western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		5 = caucasian_blond
+		5 = caucasian_ginger
+		5 = caucasian_brown_hair
+		5 = caucasian_dark_hair
+	}
+}
+
 heartlander = {
 	color = { 0.58 0.06 0.06 }
 	#created = 350.1.1
