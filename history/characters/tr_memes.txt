@@ -1047,13 +1047,46 @@ mmputin = {
 	trait = stubborn
 	trait = weak
 	disallow_random_traits = yes
-	800.4.21 = {
+	820.4.21 = {
 		birth = yes
 	}
-	1024.1.10 = {
+	845.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:mmshaigu}
+		}
+	}
+	890.1.10 = {
 		death = {
 			death_reason = death_murder
-			killer = mmpeskov
+			killer = mmshaigu
+		}
+	}
+}
+
+mmshaigu = {
+	name = "Sergei Shaigu"
+	religion = orthodox
+	culture = russian
+	dynasty = mmlolcow
+	trait = ambitious
+	trait = vengeful
+	trait = wrathful
+	trait = murderer
+	trait = disloyal
+	trait = stubborn
+	trait = greedy
+	disallow_random_traits = yes
+	830.4.21 = {
+		birth = yes
+	}
+	845.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:mmputin}
+		}
+	}
+	2024.1.10 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
 }
@@ -1357,9 +1390,11 @@ mmkcjfs = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	866.1.1 = {
-		add_spouse = mmkcgf
-    }
+	860.1.2 = {
+		effect = {
+			set_relation_lover = { target = character:mmkcgf}
+		}
+	}
 	861.1.2 = {
 		effect = {
 			set_relation_rival = { target = character:mmkcgf reason = rival_historical }
@@ -1387,9 +1422,11 @@ mmkcgf = {
 	830.1.1 = {
 		birth = yes
 	}
-	866.1.1 = {
-		add_spouse = mmkcjfs
-    }
+	860.1.2 = {
+		effect = {
+			set_relation_lover = { target = character:mmkcjfs}
+		}
+	}
 	861.1.2 = {
 		effect = {
 			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
