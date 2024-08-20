@@ -134,7 +134,7 @@ mmgordonwilkins = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	2016.4.17 = {
+	2026.4.17 = {
 		death = yes
 	}
 }
@@ -162,7 +162,7 @@ mmjenniewilkins = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	2016.4.17 = {
+	2030.4.17 = {
 		death = yes
 	}
 }
@@ -265,7 +265,8 @@ mmcyraxxgranddad = {
 	}
 	860.1.1 = {
 		death = {
-			death_reason = death_dungeon_passive
+			death_reason = death_dungeon
+			killer = 7627
 		}
 	}
 }
@@ -929,9 +930,10 @@ mmlolcowlarsonmother = {
 			set_relation_rival = { target = character:mmlolcowjacelarson reason = rival_historical }
 		}
 	}
-	2026.4.17 = {
+	1026.4.17 = {
 		death = {
-			death_reason = death_incapable
+			death_reason = death_beaten
+			killer = mmlolcowdaniellarson
 		}
 	}
 }
@@ -990,7 +992,8 @@ mmlolcowjacelarson = {
 	}
 	1054.6.30 = {
 		death = {
-			death_reason = death_physician_mistreatment
+			death_reason = death_dungeon
+			killer = 109500
 		}
 	}
 }
@@ -1046,9 +1049,10 @@ mmputin = {
 	800.4.21 = {
 		birth = yes
 	}
-	2024.1.10 = {
+	1024.1.10 = {
 		death = {
-			death_reason = death_cancer
+			death_reason = death_murder
+			killer = mmpeskov
 		}
 	}
 }
@@ -1068,10 +1072,10 @@ mmdragonlord = {
 	820.4.21 = {
 		birth = yes
 	}
-	2024.1.10 = {
+	1024.1.10 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = mmmarty
+			killer = trshaunmcglass
 		}
 	}
 }
@@ -1326,7 +1330,8 @@ mmn3eon = {
 	}
 	870.1.10 = {
 		death = {
-			death_reason = death_stress
+			death_reason = death_duel
+			killer = trtiandiNuxia
 		}
 	}
 }
@@ -1412,9 +1417,10 @@ mmjupiterhybrid = {
 	839.1.1 = {
 		birth = yes
 	}
-	890.1.1 = {
+	870.1.1 = {
 		death = {
-			death_reason = death_stress
+			death_reason = death_manhunted
+			killer = 163111
 		}
 	}
 }
@@ -1435,7 +1441,8 @@ mmnovaonline = {
 	}
 	890.1.1 = {
 		death = {
-			death_reason = death_stress
+			death_reason = death_execution
+			killer = 31720
 		}
 	}
 }
