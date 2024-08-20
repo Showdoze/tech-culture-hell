@@ -232,38 +232,6 @@
         }
     }
 
-	mmsateliteman = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = beards
-                template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = headgear
-                template = no_headgear
-                value = 0.1 # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_western_01
-            }
-        }   
-        weight = {
-            base = 0
-			modifier = {
-				add = 1000
-				exists = this
-				exists = character:mmsateliteman
-				this = character:mmsateliteman
-			}
-        }
-    }
-
 	mmbobchan = {
         dna_modifiers = {
             accessory = {
