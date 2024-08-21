@@ -10,10 +10,10 @@ cwcville_religion = {
 	doctrine = doctrine_theocracy_temporal
 
 	#Marriage
-	doctrine = doctrine_concubines
-	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_polygamy
+	doctrine = doctrine_divorce_disallowed
 	doctrine = doctrine_bastardry_none
-	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+	doctrine = doctrine_consanguinity_unrestricted
 
 	#Crimes
 	doctrine = doctrine_homosexuality_criminal
@@ -45,10 +45,10 @@ cwcville_religion = {
 	}
 
 	reserved_male_names = {
-		Sonichu Blachu Blake
+		Sonichu Blachu Blake Magichan 
 	}
 	reserved_female_names = {
-		Crystal Magichan Rosechu
+		Crystal Rosechu 
 	}
 
 	holy_order_names = {
@@ -221,9 +221,9 @@ cwcville_religion = {
 			icon = cwcville
 			reformed_icon = cwcville_reformed
 
-			doctrine = unreformed_faith_doctrine
+			doctrine = special_doctrine_ecumenical_christian
 
-			doctrine = tenet_religious_legal_pronouncements
+			doctrine = tenet_reincarnation
 			doctrine = tenet_communion
 			doctrine = tenet_literalism
 		}
