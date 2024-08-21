@@ -1232,8 +1232,8 @@ mmwbowser = {
 }
 mmianfoote = {
 	name = "Ian Foote"
-	religion = catholic
-	culture = candian
+	religion = pagan
+	culture = canadian
 	dynasty = mmlolcow
 	trait = impatient
 	trait = deviant
@@ -1248,6 +1248,26 @@ mmianfoote = {
 		birth = yes
 	}
 	890.1.10 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+mmianfootedaughter = {
+	name = "Daughter Foote"
+	religion = catholic
+	culture = canadian
+	female = yes
+	father = mmianfoote
+	848.4.29 = {
+		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
+		}
+	}
+	1020.1.10 = {
 		death = {
 			death_reason = death_cancer
 		}
