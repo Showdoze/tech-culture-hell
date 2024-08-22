@@ -50,13 +50,21 @@
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_fp2_iberian_muslim_03
-           }
-           accessory = {
-            mode = add
-            gene = headgear
-            template = no_headgear
-            value = 0.1 # For the randomness to work correctly
-        }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.3
+                }
+            }
         }   
         weight = {
             base = 0
@@ -65,6 +73,56 @@
 				exists = this
 				exists = character:mmchrischan
 				this = character:mmchrischan
+			}
+        }
+    }
+
+	mmsally = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmsally
+				this = character:mmsally
+			}
+        }
+    }
+
+	mmshannyforchrist = {
+        dna_modifiers = {
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmshannyforchrist
+				this = character:mmshannyforchrist
 			}
         }
     }
@@ -82,13 +140,13 @@
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_western_01
-           }
-           accessory = {
-            mode = add
-            gene = headgear
-            template = no_headgear
-            value = 0.1 # For the randomness to work correctly
-        }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
         }   
         weight = {
             base = 0
@@ -116,10 +174,10 @@
                 range = { 0 1 }
             }
             accessory = {
-            mode = add
-            gene = headgear
-            template = no_headgear
-            value = 0.1 # For the randomness to work correctly
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }   
         weight = {
@@ -178,7 +236,7 @@
                 mode = add
                 gene = hairstyles
                 template = all_hairstyles
-                accessory = male_hair_fp1_01
+                accessory = male_hair_western_01
             }
             accessory = {
                 mode = add
@@ -197,7 +255,48 @@
 			}
         }
     }
-
+    mmjaystation = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = -0.3
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmjaystation
+				this = character:mmjaystation
+			}
+        }
+    }
+    }
 	mmed = {
         dna_modifiers = {
             accessory = {
@@ -219,6 +318,14 @@
                 gene = headgear
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.6
+                }
             }
         }   
         weight = {
@@ -305,6 +412,14 @@
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1
+                }
+            }
         }   
         weight = {
             base = 0
@@ -382,6 +497,34 @@
         }
     }
 
+	mmboogie2988 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmboogie2988
+				this = character:mmboogie2988
+			}
+        }
+    }
+
 	mmlarson = {
         dna_modifiers = {
             accessory = {
@@ -408,8 +551,36 @@
 			modifier = {
 				add = 1000
 				exists = this
-				exists = character:mmlolcowdaniellarson
-				this = character:mmlolcowdaniellarson
+				exists = character:mmdaniellarson
+				this = character:mmdaniellarson
+			}
+        }
+    }
+
+	mmlarsonmother = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmelizabethshimer
+				this = character:mmelizabethshimer
 			}
         }
     }
@@ -435,6 +606,14 @@
                 template = all_hairstyles
                 accessory = male_hair_indian_01
                 range = { 0 1 }
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.3
+                }
             }
         }   
         weight = {
@@ -469,6 +648,14 @@
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = -0.3
+                }
+            }
         }   
         weight = {
             base = 0
@@ -500,6 +687,14 @@
                 gene = headgear
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.5
+                }
             }
         }   
         weight = {
