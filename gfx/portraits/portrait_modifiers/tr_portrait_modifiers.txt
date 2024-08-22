@@ -90,7 +90,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1
+                    multiply = 1.2
                 }
             }
         }   
@@ -112,7 +112,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1
+                    multiply = 1.4
                 }
             }
         }   
@@ -390,6 +390,34 @@
         }
     }
 
+	mmbarb = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = -0.5
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmbarb
+				this = character:mmbarb
+			}
+        }
+    }
+
 	mmwings = {
         dna_modifiers = {
             accessory = {
@@ -452,6 +480,14 @@
                 template = no_hair
                 range = { 0 1 }
             }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.2
+                }
+            }
         }   
         weight = {
             base = 0
@@ -509,7 +545,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1
+                    multiply = 1.1
                 }
             }
         }   
