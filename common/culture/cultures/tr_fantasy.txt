@@ -415,23 +415,41 @@ heartlander = {
 }
 hidden_mist = {
 	color = { 0.58 0.06 0.06 }
-	ethos = ethos_courtly
+	ethos = ethos_bellicose
 	heritage = heritage_fantasy
-	language = language_cyrodiilic
+	language = language_japanese
 	martial_custom = martial_custom_equal
 	traditions = { 
 	    tradition_eugenics
 		traditon_hidden_village
 		tradition_blood_thirst
+		tradition_area_water
 	}
 	name_list = name_list_mist
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	coa_gfx = { chinese_group_coa_gfx } 
 	building_gfx = { mediterranean_building_gfx } 
 	clothing_gfx = { byzantine_clothing_gfx  western_clothing_gfx } 
-	unit_gfx = { eastern_unit_gfx }
+	unit_gfx = { mongol_unit_gfx }
 	ethnicities = {
-		3 = race_imperial_colovian_1	
-		4 = race_imperial_colovian_1_dark
-		5 = race_imperial_nibenese_1
+		10 = asian
+	}
+}
+hidden_sand = {
+	color = { 0.58 0.06 0.06 }
+	ethos = ethos_communal
+	heritage = heritage_fantasy
+	language = language_japanese
+	martial_custom = martial_custom_equal
+	traditions = { 
+		traditon_hidden_village
+		tradition_area_desert
+	}
+	name_list = name_list_sand
+	coa_gfx = { chinese_group_coa_gfx berber_group_coa_gfx } 
+	building_gfx = { berber_group_building_gfx mena_building_gfx } 
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx } 
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = asian
 	}
 }
