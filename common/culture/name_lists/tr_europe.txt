@@ -3357,3 +3357,105 @@ name_list_spanish = {
 		{ name = "mercenary_company_conquistador" }
 	}
 }
+name_list_british = {
+	cadet_dynasty_names = {
+		{ "dynnp_de" "dynn_Bohun" }
+		{ "dynnp_de" "dynn_Vere" }
+		{ "dynnp_de" "dynn_Gand" }
+		"dynn_Myall"
+		{ "dynnp_de" "dynn_Turberville" }
+		{ "dynnp_de" "dynn_Holland" }
+		"dynn_Butler"
+		{ "dynnp_of" "dynn_Thornham" }
+		{ "dynnp_de" "dynn_Camville" }
+		"dynn_Breakspear"
+		{ "dynnp_of" "dynn_Itchington" }
+		{ "dynnp_of" "dynn_Northall" }
+		{ "dynnp_de" "dynn_Montagu" }
+		{ "dynnp_de" "dynn_Umfraville" }
+		"dynn_FitzPeter"
+		"dynn_Belles-mains"
+		{ "dynnp_of" "dynn_Warwick" }
+		"dynn_FitzAlan"
+		{ "dynnp_de" "dynn_Beauchamp" }
+		{ "dynnp_of" "dynn_Ilchester" }
+		{ "dynnp_de" "dynn_Raleigh" }
+		{ "dynnp_de" "dynn_Stratford" }
+		"dynn_Becket"
+		{ "dynnp_de" "dynn_la_Pole" }
+	}
+	dynasty_names = {
+		{ "dynnp_de" "dynn_Bohun" } { "dynnp_de" "dynn_Vere" } { "dynnp_de" "dynn_Gand" }
+		"dynn_Myall" { "dynnp_de" "dynn_Turberville" } { "dynnp_de" "dynn_Holland" }
+		"dynn_Butler" { "dynnp_of" "dynn_Thornham" } { "dynnp_de" "dynn_Camville" }
+		"dynn_Breakspear" { "dynnp_of" "dynn_Itchington" } { "dynnp_of" "dynn_Northall" }
+		{ "dynnp_de" "dynn_Montagu" } { "dynnp_de" "dynn_Umfraville" } "dynn_pelham"
+		"dynn_FitzPeter" "dynn_Belles-mains" { "dynnp_of" "dynn_Warwick" } "dynn_cavendish"
+		"dynn_FitzAlan" { "dynnp_de" "dynn_Beauchamp" } { "dynnp_of" "dynn_Ilchester" }
+		{ "dynnp_de" "dynn_Raleigh" } { "dynnp_de" "dynn_Stratford" } "dynn_Becket" "dynn_stuart"
+		{ "dynnp_de" "dynn_la_Pole" } "dynn_walpole" "dynn_compton" "dynn_pelham-holles"
+		"dynn_grenville" "dynn_Watson-Wentworth" "dynn_pitt" "dynn_north" "dynn_fitzroy"
+		"dynn_petty" "dynn_Cavendish-Bentinck" "dynn_addington" "dynn_preceval" "dynn_jenskinson"
+		"dynn_canning" "dynn_Smith-Stanley" 
+	}
+	male_names = {
+		14 = { # most common
+			William Charles George 
+		}
+		8 = { # second most common
+			John James 
+		}
+		48 = { # other common names
+			Adam Geoffrey Henry Hugh Nicholas Peter Ralph Richard Robert Roger Simon Thomas Walter
+		}
+		30 = { # everything else
+			Alan Albert Alexander Alfred Andrew Anselm Arnold Arthur Aubrey 
+			Baldrick Benjamin
+			Christopher David Edmund Edward Eric Eustace Fulk Gerald Gilbert
+			Godfrey Gregory Guy Gordon 
+			Harold Humphrey Jocelyn Jordan Laurence Lionel 
+			Mark Martin Matthew Maurice Michael 
+			Neville 
+			Paul Philip
+			Randolph Reginald Roderick Ramsay 
+			Samuel Stephen Spencer Stanley 
+			Theobald Tony 
+			Waleran Winston 
+			winston_churchill 
+		}
+		0 = { # translated versions of other culture names
+			Blethin Duncan Douglas Fergus Findlay Griffith Kenneth Patrick Teague Howell 
+			Meredith Owen Tristan Cecil Sweeney Cedric Merlin Sebastian Zachary
+		}
+		
+	}
+	female_names = {
+		Adela Adelaide Alice Amice Anne Aveline 
+		Beatrice Blanche 
+		Catherine Cecilia Constance 
+		Edith Ela Eleanor Elizabeth Emma 
+		Hawise 
+		Isabel Isabella 
+		Joan Joanna Juliana 
+		Liz 
+		Mahaut Margaret Mary Matilda Maud margaret_thatcher
+		Philippa 
+		Sybilla 
+		Theresa 
+		Victoria 
+	}
+	dynasty_of_location_prefix = "dynnp_of"
+	bastard_dynasty_prefix = "dynnp_fitz"
+	patronym_suffix_male = "dynnpat_suf_s"
+	patronym_suffix_female = "dynnpat_suf_s"
+	pat_grf_name_chance = 30
+	mat_grf_name_chance = 10
+	father_name_chance = 25
+	pat_grm_name_chance = 20
+	mat_grm_name_chance = 40
+	mother_name_chance = 5
+	mercenary_names = {
+		{ name = "mercenary_company_white_company" coat_of_arms = "mc_white_company" }
+		{ name = "mercenary_company_hawkwoods_band" }
+	}
+}

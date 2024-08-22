@@ -1,0 +1,329 @@
+tradition_kkk_simp = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = kkk_simp.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:confederate
+			any_parent_culture_or_above = {
+				this = culture:confederate
+			}
+		}
+	}
+	parameters = {
+		physical_disfigurement_blocks_inheritance = yes	
+		stubborn_trait_more_common = yes
+		brave_trait_gives_bonuses = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		harder_to_convert_county_culture_without_heritage = yes
+		zealous_trait_more_common = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -1
+	}
+	character_modifier = {
+		scottish_opinion = 10
+		close_relative_opinion = 25
+		ancient_egyptian_opinion = -10000
+		gerudo_opinion = -40 
+		american_opinion = -25
+		italian_american_opinion = -20
+		irish_american_opinion = -15
+		african_american_opinion = -100
+		canadian_opinion = -20
+		alikr_opinion = -40
+		hausa_opinion = -69
+		kanuri_opinion = -69
+		nupe_opinion = -69
+		sao_opinion = -69
+		daju_opinion = -69
+		ethiopian_opinion = -69
+		nubian_opinion = -69
+		welayta_opinion = -69
+		bobo_opinion = -69
+		gur_opinion = -69
+		malinke_opinion = -69
+		marka_opinion  = -69
+		mel_opinion  = -69
+		afar_opinion  = -69
+		beja_opinion = -69
+		somali_opinion = -69
+		edo_opinion = -69
+		ewe_opinion = -69
+		igbo_opinion = -69
+		yoruba_opinion = -69
+		bozo_opinion = -69
+		gaw_opinion = -69
+		mossi_opinion = -69
+		songhai_opinion = -69
+		soninke_opinion = -69
+		sorko_opinion = -69
+		pulaar_opinion = -69
+		serer_opinion = -69
+		wolof_opinion = -69
+		akan_opinion = -69
+		guan_opinion = -69
+		kru_opinion = -69
+		zaghawa_opinion = -69
+		guanche_opinion = -69
+		butr_opinion = -69
+		baranis_opinion = -69
+		men_at_arms_limit = -3
+		levy_size = 20
+		inbreeding_chance = 0.76
+		same_culture_opinion = 25
+		tax_slot_add  = 1
+		levy_reinforcement_rate = 1
+		monthly_income_mult = 0.05
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0.1
+	}
+}
+tradition_scotland_forever = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = scotland_forever.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:pictish
+			any_parent_culture_or_above = {
+				this = culture:pictish
+			}
+			this = culture:scottish
+			any_parent_culture_or_above = {
+				this = culture:scottish
+			}
+		}
+	}
+	parameters = {
+		peasant_and_populist_factions_less_common = yes
+		poorly_educated_leaders_distrusted = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		landing_house_members_gives_renown = yes
+		piety_penalty_for_revoking_titles_from_house_members = yes
+		can_end_defensive_wars_earlier = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		brit_opinion = -5
+		english_opinion = -25
+		anglo_saxon_opinion = -5
+		cultural_head_fascination_mult = 0.1
+		same_culture_mercenary_hire_cost_mult = -0.15
+	}	
+	cost = {
+		prestige = 1000
+	}
+	ai_will_do = {
+		value = 0.001
+	}	
+}
+tradition_heir_of_rome = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = roman.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:greek
+			any_parent_culture_or_above = {
+				this = culture:greek
+			}
+			this = culture:italian
+			any_parent_culture_or_above = {
+				this = culture:italian
+			}
+			this = culture:russian
+			any_parent_culture_or_above = {
+				this = culture:russian
+			}
+		}
+	}
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		stubborn_trait_more_common = yes
+		craven_and_content_traits_looked_down_upon = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+	}
+	province_modifier = {
+		levy_size = 0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		cultural_head_fascination_mult = 0.1
+		opinion_of_liege = 20
+	}	
+	cost = {
+		prestige = 1000
+	}
+	ai_will_do = {
+		value = 0.001
+	}	
+}
+tradition_german_centric = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = roman.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:gothic
+			any_parent_culture_or_above = {
+				this = culture:gothic
+			}
+			this = culture:germanic
+			any_parent_culture_or_above = {
+				this = culture:germanic
+			}
+			this = culture:norse
+			any_parent_culture_or_above = {
+				this = culture:norse
+			}
+			this = culture:franconian
+			any_parent_culture_or_above = {
+				this = culture:franconian
+			}
+			this = culture:bavarian
+			any_parent_culture_or_above = {
+				this = culture:bavarian
+			}
+			this = culture:swabian
+			any_parent_culture_or_above = {
+				this = culture:swabian
+			}
+			this = culture:german
+			any_parent_culture_or_above = {
+				this = culture:german
+			}
+		}
+	}
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		stubborn_trait_more_common = yes
+		craven_and_content_traits_looked_down_upon = yes
+		wounds_and_scars_give_bonuses = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+	}
+	province_modifier = {
+		levy_size = 0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		cultural_head_fascination_mult = 0.1
+		opinion_of_liege = 20
+		defender_advantage = 5
+	}	
+	cost = {
+		prestige = 1000
+	}
+	ai_will_do = {
+		value = 0.001
+	}		
+}
+tradition_chinese_centric = {
+	category = regional
+	layers = {
+		0 = steward
+		#1 = western
+		4 = china_imp.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:han
+			any_parent_culture_or_above = {
+				this = culture:han
+			}
+		}
+	}
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		better_ward_education = yes
+
+	}
+	province_modifier = {
+		levy_size = 0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		cultural_head_fascination_mult = 0.1
+		monthly_court_grandeur_change_mult = 0.1
+		opinion_of_liege = 50
+		defender_advantage = 5
+		siege_weapon_siege_value_mult = 0.1
+		ai_war_cooldown = 3
+	}	
+	cost = {
+		prestige = 2000
+	}
+	ai_will_do = {
+		value = 0.001
+	}		
+}
+tradition_ira = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = luck_of_irish.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:irish
+			any_parent_culture_or_above = {
+				this = culture:irish
+			}
+		}
+	}
+	parameters = {
+		can_end_defensive_wars_earlier = yes
+		peasant_and_populist_factions_less_common = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+	}
+	province_modifier = {
+	}
+	character_modifier = {
+		brit_opinion = -50
+		same_culture_opinion = 10
+		knight_effectiveness_mult = 1
+		cultural_head_fascination_mult = 0.1
+		defender_advantage = 5
+		owned_personal_scheme_success_chance_add = 10
+		owned_scheme_secrecy_add  = 25
+		enemy_hostile_scheme_success_chance_add = 10
+		hostile_scheme_power_mult = -0.3
+		character_travel_safety_mult = 0.1
+	}	
+	cost = {
+		prestige = 1000
+	}
+	ai_will_do = {
+		value = 0.001
+	}		
+}
+
+
