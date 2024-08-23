@@ -29,6 +29,8 @@
 		}
 	}
 	effect = {
+		tr_change_holdings_castle = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = autocracy_government
@@ -77,6 +79,8 @@ change_government_caliphate_decision = {
 		}
 	}
 	effect = {
+		tr_change_holdings_castle = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = caliphate_government
@@ -119,6 +123,8 @@ change_government_clan_decision = {
 		}
 	}
 	effect = {
+		tr_change_holdings_castle = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = clan_government
@@ -159,6 +165,8 @@ convert_whole_realm_to_feudalism_decision = {
 		}
 	}
 	effect = {
+		tr_change_holdings_castle = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = feudal_government
@@ -205,6 +213,8 @@ change_government_republic_decision = {
 	}
 
 	effect = {
+		tr_change_holdings_city = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = republic_government
@@ -258,6 +268,8 @@ change_government_theocracy_decision = {
 		}
 	}
 	effect = {
+		tr_change_holdings_church = yes
+		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = theocracy_government
@@ -307,6 +319,8 @@ convert_to_tribalism_decision = {
 		}
 	}
 	effect = {
+		tr_change_holdings_tribal = yes
+		tr_replace_crown_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = tribal_government
