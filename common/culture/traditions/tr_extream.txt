@@ -81,9 +81,7 @@ tradition_kkk_simp = {
 		levy_reinforcement_rate = 1
 		monthly_income_mult = 0.05
 	}
-	cost = {
-		prestige = 20000
-	}
+	cost = { prestige = 20000 }
 	ai_will_do = {
 		value = 0.1
 	}
@@ -125,13 +123,12 @@ tradition_scotland_forever = {
 		knight_effectiveness_mult = 1
 		brit_opinion = -5
 		english_opinion = -25
+		confederate_opinion = 15
 		anglo_saxon_opinion = -5
 		cultural_head_fascination_mult = 0.1
 		same_culture_mercenary_hire_cost_mult = -0.15
 	}	
-	cost = {
-		prestige = 1000
-	}
+	cost = { prestige = 1000 }
 	ai_will_do = {
 		value = 0.001
 	}	
@@ -318,12 +315,43 @@ tradition_ira = {
 		hostile_scheme_power_mult = -0.3
 		character_travel_safety_mult = 0.1
 	}	
-	cost = {
-		prestige = 1000
-	}
+	cost = { prestige = 1000 }
 	ai_will_do = {
 		value = 0.001
 	}		
 }
-
+tradition_arab_egypt = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = islamic.dds
+	}	
+	is_shown = {
+		OR = {
+			this = culture:egyptian
+			any_parent_culture_or_above = {
+				this = culture:egyptian
+			}
+		}
+	}
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		piety_penalty_for_revoking_titles_from_house_members = yes
+	}
+	province_modifier = {
+		levy_size = 0.25
+	}
+	character_modifier = {
+		ancient_egyptian_opinion = -1000
+		nubian_opinion = -50
+		confederate_opinion = 20
+		character_travel_speed_mult = 0.2
+	}	
+	cost = { prestige = 1000 }
+	ai_will_do = {
+		value = 0
+	}	
+}
 
