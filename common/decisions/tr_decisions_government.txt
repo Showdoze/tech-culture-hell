@@ -29,6 +29,7 @@ change_government_autocracy_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = autocracy_government
 	}
 	ai_potential = {
@@ -75,6 +76,7 @@ change_government_caliphate_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = caliphate_government
 	}
 	ai_potential = {
@@ -115,6 +117,7 @@ change_government_clan_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = clan_government
 	}
 	ai_potential = {
@@ -153,6 +156,7 @@ convert_whole_realm_to_feudalism_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = feudal_government
 	}
 	ai_potential = {
@@ -197,6 +201,7 @@ change_government_republic_decision = {
 	}
 
 	effect = {
+		save_scope_as = actor
 		change_government = republic_government
 		add_realm_law = city_succession_law
 	}
@@ -248,6 +253,7 @@ change_government_theocracy_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = theocracy_government
 		every_vassal = {
 			if = {
@@ -295,6 +301,7 @@ convert_to_tribalism_decision = {
 		}
 	}
 	effect = {
+		save_scope_as = actor
 		change_government = tribal_government
 
 		development = {
