@@ -298,13 +298,10 @@ tradition_elf = {
 		years_of_fertility = 2000
 		fertility = -1
 		diplomatic_range_mult = 3
+		inbreeding_chance = -2
 	}
-	cost = {
-		prestige = 9000
-	}	
-	ai_will_do = {
-		value = 0
-	}	
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
 }
 tradition_dunmer = {
 	category = societal
@@ -353,12 +350,8 @@ tradition_dunmer = {
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.25
 	}
-	cost = {
-		prestige = 9000
-	}	
-	ai_will_do = {
-		value = 0
-	}	
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
 }
 tradition_agoge = { # replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
 	category = ritual
@@ -393,12 +386,8 @@ tradition_agoge = { # replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
 		child_health = -0.5
 	    elderly_health = 0.5
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_sparta = {
 	category = regional
@@ -407,14 +396,7 @@ tradition_sparta = {
 		1 = mediterranean
 		4 = sparta.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:laconian
-			any_parent_culture_or_above = {
-				this = culture:laconian
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		tells_stories = yes
 		dislikes_marrying_outside_of_culture = yes
@@ -435,12 +417,8 @@ tradition_sparta = {
 		athenian_opinion = -25
 		monthly_martial_lifestyle_xp_gain_mult = 0.01
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_athens = {
 	category = regional
@@ -449,14 +427,7 @@ tradition_athens = {
 		1 = mediterranean
 		4 = athens.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:athenian
-			any_parent_culture_or_above = {
-				this = culture:athenian
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		tells_stories = yes
 		diplomacy_education_better_outcomes = yes
@@ -488,12 +459,8 @@ tradition_athens = {
 		laconian_opinion = -25
 		owned_legend_spread_mult = 0.01
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_valyrian = {
 	category = regional
@@ -502,14 +469,7 @@ tradition_valyrian = {
 		1 = mediterranean
 		4 = valyrian.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:high_valyrian
-			any_parent_culture_or_above = {
-				this = culture:high_valyrian
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		tells_stories = yes
 		dislikes_marrying_outside_of_culture = yes
@@ -534,13 +494,10 @@ tradition_valyrian = {
 	character_modifier = {
 		knight_effectiveness_mult = 1
 		health = 0.1
+		inbreeding_chance = -5
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_punnic = {
 	category = regional
@@ -549,14 +506,7 @@ tradition_punnic = {
 		1 = mediterranean
 		4 = punnic.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:punic
-			any_parent_culture_or_above = {
-				this = culture:punic
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		tells_stories = yes
 		craven_trait_costs_prestige = yes
@@ -585,12 +535,8 @@ tradition_punnic = {
 		jungle_travel_danger = jungle_medium_danger_reduction
 		learn_language_scheme_power_mult = 0.25
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_venice = {
 	category = regional
@@ -599,14 +545,7 @@ tradition_venice = {
 		1 = mediterranean
 		4 = venice.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:venetian_ce
-			any_parent_culture_or_above = {
-				this = culture:venetian_ce
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		piety_from_language_schemes = yes
 		can_make_republican_vassals = yes
@@ -630,12 +569,8 @@ tradition_venice = {
 		parochial_tax_contribution_mult = 0.1
 		parochial_levy_contribution_mult = 0.1
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 tradition_korean = {
 	category = regional
@@ -644,14 +579,7 @@ tradition_korean = {
 		1 = mediterranean
 		4 = korean.dds
 	}	
-	is_shown = {
-		OR = {
-			this = culture:korean
-			any_parent_culture_or_above = {
-				this = culture:korean
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		piety_from_language_schemes = yes
 		peasant_and_populist_factions_less_common = yes
@@ -673,12 +601,8 @@ tradition_korean = {
 		martial_per_piety_level = 1
 		prowess_per_piety_level = 1
 	}	
-	cost = {
-		prestige = 9000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
 }
 traditon_hidden_village = {
 	category = regional
@@ -687,11 +611,7 @@ traditon_hidden_village = {
 		1 = indian
 		4 = hidden_village.dds
 	}
-	is_shown = {
-		OR = {
-			this = culture:hidden_mist
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		herbalist_traits_more_common = yes
 		poorly_educated_leaders_distrusted = yes
@@ -715,10 +635,6 @@ traditon_hidden_village = {
 		domain_limit = -5
 		vassal_limit = -7
 	}
-	cost = {
-		prestige = 9000
-	}	
-	ai_will_do = {
-		value = 0
-	}	
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
 }
