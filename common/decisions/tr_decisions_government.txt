@@ -219,6 +219,9 @@ change_government_republic_decision = {
 		save_scope_as = actor
 		change_government = republic_government
 		add_realm_law = city_succession_law
+		scope:primaty_title = {
+			add_law = feudal_elective_succession_law
+		}
 	}
 
 	ai_potential = {
