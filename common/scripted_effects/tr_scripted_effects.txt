@@ -139,6 +139,7 @@ tr_replace_crown_authority = {
 	}
 }
 
+## Might not be used for now
 tr_change_holdings_castle = {
 	capital_province = {
 		limit = {
@@ -183,7 +184,7 @@ tr_change_holdings_tribal = {
 		limit = {
 			OR = {
 				has_holding_type = church_holding
-				has_holding_type = temple_holding
+				has_holding_type = castle_holding
 				has_holding_type = city_holding
 			}
 		}

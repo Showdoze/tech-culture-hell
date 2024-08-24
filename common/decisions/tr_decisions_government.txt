@@ -29,7 +29,14 @@
 		}
 	}
 	effect = {
-		tr_change_holdings_castle = yes
+		capital_province = {
+			limit = {
+				If = {
+					has_holding_type = tribal_holding
+				}
+			}
+			set_holding_type = castle_holding
+		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
@@ -79,7 +86,14 @@ change_government_caliphate_decision = {
 		}
 	}
 	effect = {
-		tr_change_holdings_castle = yes
+		capital_province = {
+			limit = {
+				If = {
+					has_holding_type = tribal_holding
+				}
+			}
+			set_holding_type = castle_holding
+		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
@@ -123,7 +137,14 @@ change_government_clan_decision = {
 		}
 	}
 	effect = {
-		tr_change_holdings_castle = yes
+		capital_province = {
+			limit = {
+				If = {
+					has_holding_type = tribal_holding
+				}
+			}
+			set_holding_type = castle_holding
+		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
@@ -165,7 +186,14 @@ convert_whole_realm_to_feudalism_decision = {
 		}
 	}
 	effect = {
-		tr_change_holdings_castle = yes
+		capital_province = {
+			limit = {
+				If = {
+					has_holding_type = tribal_holding
+				}
+			}
+			set_holding_type = castle_holding
+		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
@@ -213,14 +241,22 @@ change_government_republic_decision = {
 	}
 
 	effect = {
-		tr_change_holdings_city = yes
+		capital_province = {
+			limit = {
+				OR = {
+					has_holding_type = church_holding
+					has_holding_type = tribal_holding
+				}
+			}
+			set_holding_type = city_holding
+		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
 		change_government = republic_government
 		add_realm_law = city_succession_law
 		scope:primaty_title = {
-			add_law = feudal_elective_succession_law
+			add_realm_law = feudal_elective_succession_law
 		}
 	}
 
@@ -271,7 +307,6 @@ change_government_theocracy_decision = {
 		}
 	}
 	effect = {
-		tr_change_holdings_church = yes
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
@@ -322,7 +357,15 @@ convert_to_tribalism_decision = {
 		}
 	}
 	effect = {
-		tr_change_holdings_tribal = yes
+		capital_province = {
+			limit = {
+				OR = {
+					has_holding_type = church_holding
+					has_holding_type = city_holding
+				}
+			}
+			set_holding_type = tribal_holding
+		}
 		tr_replace_crown_authority = yes
 		trigger_event = tr_gov_change.01
 		save_scope_as = actor
