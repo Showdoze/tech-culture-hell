@@ -25,6 +25,14 @@
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.3
+                }
+            }
         }   
         weight = {
             base = 0
@@ -118,6 +126,7 @@
     }
 
 	mmsally = {
+        ignore_outfit_tags = yes
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -146,13 +155,14 @@
     }
 
 	mmshannyforchrist = {
+        ignore_outfit_tags = yes
         dna_modifiers = {
             morph = {
                 mode = modify
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1.4
+                    multiply = 2
                 }
             }
         }   
@@ -431,6 +441,7 @@
     }
 
 	mmbarb = {
+        ignore_outfit_tags = yes
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -443,7 +454,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = -0.5
+                    multiply = -0.8
                 }
             }
         }   
@@ -459,6 +470,7 @@
     }
 
 	mmjupiterthehybrid = {
+        ignore_outfit_tags = yes
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -471,7 +483,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 0.7
+                    multiply = 1.5
                 }
             }
         }   
@@ -613,7 +625,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1.1
+                    multiply = 1.6
                 }
             }
         }   
@@ -661,6 +673,7 @@
     }
 
 	mmelizabethshimer = {
+        ignore_outfit_tags = yes
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -673,7 +686,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1.4
+                    multiply = 1.5
                 }
             }
         }   
