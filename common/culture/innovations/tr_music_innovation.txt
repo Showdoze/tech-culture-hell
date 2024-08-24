@@ -54,8 +54,11 @@ innovation_guitar = {
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @music
+	can_progress = {
+		has_innovation = innovation_stringed_instruments
+	}
 	character_modifier = {
-		stress_loss_mult = 0.05
+		stress_loss_mult = 0.06
 	}
 }
 
@@ -64,6 +67,6 @@ innovation_stringed_instruments = {
 	culture_era = culture_era_antiquity
 	icon = @music
 	character_modifier = {
-		stress_loss_mult = 0.01
+		stress_loss_mult = 0.02
 	}
 }
