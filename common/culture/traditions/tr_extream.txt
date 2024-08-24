@@ -81,10 +81,16 @@ tradition_kkk_simp = {
 		levy_reinforcement_rate = 1
 		monthly_income_mult = 0.05
 	}
-	cost = { prestige = 20000 }
+	cost = { prestige = 2000 }
 	ai_will_do = {
-		value = 0.1
-	}
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
+	}	
 }
 tradition_scotland_forever = {
 	category = regional
@@ -103,6 +109,7 @@ tradition_scotland_forever = {
 			any_parent_culture_or_above = {
 				this = culture:scottish
 			}
+			has_innovation = innovation_bagpipes
 		}
 	}
 	parameters = {
@@ -130,7 +137,14 @@ tradition_scotland_forever = {
 	}	
 	cost = { prestige = 1000 }
 	ai_will_do = {
-		value = 0.001
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_bagpipes
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}	
 }
 tradition_heir_of_rome = {
@@ -175,7 +189,13 @@ tradition_heir_of_rome = {
 		prestige = 1000
 	}
 	ai_will_do = {
-		value = 0.001
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}	
 }
 tradition_german_centric = {
@@ -238,7 +258,13 @@ tradition_german_centric = {
 		prestige = 1000
 	}
 	ai_will_do = {
-		value = 0.001
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}		
 }
 tradition_chinese_centric = {
@@ -277,7 +303,13 @@ tradition_chinese_centric = {
 		prestige = 2000
 	}
 	ai_will_do = {
-		value = 0.001
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}		
 }
 tradition_ira = {
@@ -317,7 +349,13 @@ tradition_ira = {
 	}	
 	cost = { prestige = 1000 }
 	ai_will_do = {
-		value = 0.001
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}		
 }
 tradition_arab_egypt = {
@@ -352,6 +390,12 @@ tradition_arab_egypt = {
 	cost = { prestige = 1000 }
 	ai_will_do = {
 		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
 	}	
 }
 
