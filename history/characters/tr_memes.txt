@@ -552,13 +552,162 @@ mmmewtwo = {
 		death = yes
 	}
 }
+mmwild = {
+	name = "Wild"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmrosechu
+	trait = lifestyle_gardener
+	trait = education_learning_1
+	trait = callous
+	trait = murderer
+	trait = torturer
+	trait = deceitful
+	trait = dwarf
+	trait = paranoid
+	trait = stubborn
+	trait = wrathful
+	trait = vengeful
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmbubbles = {
+	name = "Bubbles Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmrosechu
+	is_female = yes
+	trait = contrite
+	trait = education_learning_1
+	trait = lustful
+	trait = seducer
+	trait = dwarf
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmblacksonichu
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmblacksonichu = {
+	name = "Blake"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	father = mmsonichu
+	trait = wrathful
+	trait = impatient
+	trait = education_martial_1
+	trait = lustful
+	trait = dwarf
+	disallow_random_traits = yes
+	845.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmbubbles
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmpunchy = {
+	name = "Punchy"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmrosechu
+	trait = contrite
+	trait = education_martial_2
+	trait = dwarf
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmangelica = {
+	name = "Angelica Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmrosechu
+	is_female = yes
+	trait = zealous
+	trait = education_learning_1
+	trait = lustful
+	trait = devoted
+	trait = albino
+	trait = dwarf
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmgraduon = {
+	name = "Count Graduon"
+	religion = stoicism
+	culture = english
+	dynasty = mmtrolls
+	trait = ambitious
+	trait = education_intrigue_5
+	disallow_random_traits = yes
+	433.11.17 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmsilvana = {
+	name = "Silvana Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	father = mmgraduon
+	mother = mmrosechu
+	is_female = yes
+	trait = zealous
+	trait = education_intrigue_1
+	trait = lustful
+	trait = seducer
+	trait = deceitful
+	trait = dwarf
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmchrischan
+		add_spouse = mmmagichan
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
 mmmagichan = {
 	name = "Magi-Chan"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
 	sexuality = bisexual
-	mother = mmchrischan
+	mother = mmrosechu
 	father = mmmewtwo
 	trait = contrite
 	trait = education_intrigue_1
@@ -577,6 +726,7 @@ mmmagichan = {
 	850.1.1 = {
 		add_spouse = mmchrischan
 		add_spouse = mmmewtwo
+		add_spouse = mmsilvana
 	}
 	2026.4.17 = {
 		death = yes
@@ -625,7 +775,7 @@ mmchrischan = {
 	name = "Ian Brandon Anderson"
 	religion = cwcville
 	culture = american
-	dynasty_house = house_lolcow_chandler
+	dynasty_house = house_sonichu
 	sexuality = bisexual
 	dna = chrischan
 	martial = 1
@@ -666,6 +816,7 @@ mmchrischan = {
 	850.1.1 = {
 		add_spouse = mmmewtwo
 		add_spouse = mmmagichan
+		add_spouse = mmsilvana
 	}
 	2026.4.17 = {
 		death = yes
