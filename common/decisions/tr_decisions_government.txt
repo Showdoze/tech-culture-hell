@@ -135,8 +135,10 @@ change_government_clan_decision = {
 	effect = {
 		capital_province = {
 			limit = {
-				If = {
+				OR = {
 					has_holding_type = tribal_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
 				}
 			}
 			set_holding_type = castle_holding
@@ -183,8 +185,10 @@ convert_whole_realm_to_feudalism_decision = {
 	effect = {
 		capital_province = {
 			limit = {
-				If = {
+				OR = {
 					has_holding_type = tribal_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
 				}
 			}
 			set_holding_type = castle_holding
