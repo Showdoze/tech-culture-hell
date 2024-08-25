@@ -524,6 +524,64 @@ mmheather = {
 		death = yes
 	}
 }
+mmmewtwo = {
+	name = "Mewtwo"
+	religion = cwcville
+	culture = american
+	dynasty = mmlolcow
+	sexuality = bisexual
+	trait = contrite
+	trait = gluttonous
+	trait = stuttering
+	trait = reclusive
+	trait = callous
+	trait = stubborn
+	trait = incestuous
+	trait = witch
+	trait = deceitful
+	trait = education_intrigue_5
+	disallow_random_traits = yes
+	800.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmchrischan
+		add_spouse = mmmagichan
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmmagichan = {
+	name = "Magi-Chan"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	sexuality = bisexual
+	mother = mmchrischan
+	father = mmmewtwo
+	trait = contrite
+	trait = education_intrigue_1
+	trait = callous
+	trait = reclusive
+	trait = deceitful
+	trait = dwarf
+	trait = paranoid
+	trait = stubborn
+	trait = incestuous
+	trait = witch
+	disallow_random_traits = yes
+	845.2.2 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmchrischan
+		add_spouse = mmmewtwo
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
 mmchrischanpast = {
 	name = "Chris-Chan"
 	religion = catholic
@@ -604,6 +662,60 @@ mmchrischan = {
 		effect = {
 			set_relation_lover = { target = character:mmbarb exposed = yes }
 		}
+	}
+	850.1.1 = {
+		add_spouse = mmmewtwo
+		add_spouse = mmmagichan
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmsonichu = {
+	name = "Sonichu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmchrischan
+	father = mmchrischanpast
+	trait = zealous
+	trait = reclusive
+	trait = dwarf
+	trait = lustful
+	trait = incestuous
+	trait = fecund
+	trait = education_martial_2
+	disallow_random_traits = yes
+	844.3.17 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmrosechu
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmrosechu = {
+	name = "Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmchrischan
+	father = mmchrischanpast
+	trait = zealous
+	trait = reclusive
+	trait = dwarf
+	trait = lustful
+	trait = profligate
+	trait = education_stewardship_1
+	trait = incestuous
+	disallow_random_traits = yes
+	844.12.22 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmsonichu
 	}
 	2026.4.17 = {
 		death = yes
@@ -1621,3 +1733,10 @@ mmnbraxtonbragg = {
 		}
 	}
 }
+
+
+
+
+
+
+
