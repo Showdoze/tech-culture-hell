@@ -644,7 +644,7 @@ mmangelica = {
 	culture = american
 	dynasty_house = house_sonichu
 	mother = mmrosechu
-	is_female = yes
+	female = yes
 	trait = zealous
 	trait = education_learning_1
 	trait = lustful
@@ -693,7 +693,6 @@ mmsilvana = {
 		birth = yes
 	}
 	850.1.1 = {
-		add_spouse = mmchrischan
 		add_spouse = mmmagichan
 	}
 	2026.4.17 = {
@@ -708,7 +707,6 @@ mmmagichan = {
 	sexuality = bisexual
 	mother = mmrosechu
 	father = mmmewtwo
-	female = yes
 	trait = contrite
 	trait = education_intrigue_1
 	trait = callous
@@ -724,8 +722,6 @@ mmmagichan = {
 		birth = yes
 	}
 	850.1.1 = {
-		add_spouse = mmchrischan
-		add_spouse = mmmewtwo
 		add_spouse = mmsilvana
 	}
 	2026.4.17 = {
@@ -813,11 +809,6 @@ mmchrischan = {
 		effect = {
 			set_relation_lover = { target = character:mmbarb exposed = yes }
 		}
-	}
-	850.1.1 = {
-		add_spouse = mmmewtwo
-		add_spouse = mmmagichan
-		add_spouse = mmsilvana
 	}
 	2026.4.17 = {
 		death = yes
