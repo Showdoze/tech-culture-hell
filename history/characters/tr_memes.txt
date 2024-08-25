@@ -572,8 +572,54 @@ mmwild = {
 	845.2.2 = {
 		birth = yes
 	}
+	850.1.1 = {
+		add_spouse = mmsimonla
+	}
 	2026.4.17 = {
 		death = yes
+	}
+}
+mmsandy = {
+	name = "Sandy Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	father = mmwild
+	mother = mmsimonla
+	female = yes
+	trait = education_stewardship_1
+	trait = callous
+	trait = murderer
+	trait = torturer
+	trait = dwarf
+	disallow_random_traits = yes
+	860.8.9 = {
+		birth = yes
+	}
+	2026.4.17 = {
+		death = yes
+	}
+}
+mmsimonla = {
+	name = "Simonla Rosechu"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	female = yes
+	trait = education_stewardship_1
+	trait = lustful
+	trait = dwarf
+	disallow_random_traits = yes
+	845.8.9 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = mmwild
+	}
+	860.8.9 = {
+		death = {
+			death_reason = death_murder_known
+		}
 	}
 }
 mmbubbles = {
