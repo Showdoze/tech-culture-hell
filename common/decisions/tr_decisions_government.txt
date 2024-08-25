@@ -37,7 +37,6 @@
 		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = autocracy_government
 	}
 	ai_potential = {
@@ -94,7 +93,6 @@ change_government_caliphate_decision = {
 		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = caliphate_government
 	}
 	ai_potential = {
@@ -145,7 +143,6 @@ change_government_clan_decision = {
 		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = clan_government
 	}
 	ai_potential = {
@@ -194,7 +191,6 @@ convert_whole_realm_to_feudalism_decision = {
 		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = feudal_government
 	}
 	ai_potential = {
@@ -251,7 +247,6 @@ change_government_republic_decision = {
 		}
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = republic_government
 		add_realm_law = city_succession_law
 		scope:primaty_title = {
@@ -309,7 +304,6 @@ change_government_theocracy_decision = {
 	effect = {
 		tr_replace_tribal_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = theocracy_government
 		every_vassal = {
 			if = {
@@ -371,7 +365,6 @@ convert_to_tribalism_decision = {
 		}
 		tr_replace_crown_authority = yes
 		trigger_event = tr_gov_change.01
-		save_scope_as = actor
 		change_government = tribal_government
 		every_vassal = {
 			opnion_of_liege = {
