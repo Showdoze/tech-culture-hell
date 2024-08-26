@@ -83,10 +83,6 @@ mmjaystation = {
 	religion = pagan
 	culture = canadian
 	dynasty = mmlolcow
-	martial = 4
-	diplomacy = 2
-	intrigue = 7
-	stewardship = 10
 	trait = deceitful
 	trait = education_stewardship_2
 	trait = arrogant
@@ -95,12 +91,32 @@ mmjaystation = {
 	trait = ambitious
 	trait = greedy
 	trait = disloyal
-	trait = greedy
 	disallow_random_traits = yes
 	840.1.11 = {
 		birth = yes
 	}
 	865.2.05 = {
+		death = {
+			death_reason = death_banned
+		}
+	}
+}
+mmshitcubeguy = {
+	name = "Eric Abramov"
+	religion = samaritan
+	culture = russian
+	dynasty = mmlolcow
+	trait = education_stewardship_1
+	trait = arrogant
+	trait = intellect_bad_1
+	trait = ambitious
+	trait = greedy
+	give_nickname = nick_tapohg
+	disallow_random_traits = yes
+	840.1.11 = {
+		birth = yes
+	}
+	885.2.05 = {
 		death = {
 			death_reason = death_banned
 		}
