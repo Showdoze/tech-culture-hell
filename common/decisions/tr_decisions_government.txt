@@ -58,9 +58,9 @@ change_government_caliphate_decision = {
 		days = 365
 	}
 	cost = {
-		prestige = 1000
+		prestige = 500
 		gold = 500
-		piety = 100
+		piety = 1000
 	}
 	is_shown = {
 		AND = {
@@ -79,7 +79,7 @@ change_government_caliphate_decision = {
 			}
 			government_has_flag = government_is_clan
 			root.faith.religion = religion:islam_religion
-			prestige_level >= 3
+			piety_level >= 4
 		}
 	}
 	effect = {
