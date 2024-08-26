@@ -272,12 +272,12 @@ tradition_elf = {
 	is_shown = {
 		OR = {
 			this = culture:bosmer
-			this = culture:alinor
-			this = culture:chi_addun
+			this = culture:altmer
+			this = culture:dumner
 			any_parent_culture_or_above = {
 				this = culture:bosmer
-				this = culture:alinor
-				this = culture:chi_addun
+				this = culture:altmer
+				this = culture:dumner
 			}
 		}
 	}
@@ -313,9 +313,9 @@ tradition_dunmer = {
 	}
 	is_shown = {
 		OR = {
-			this = culture:chi_addun
+			this = culture:dumner
 			any_parent_culture_or_above = {
-				this = culture:chi_addun
+				this = culture:dumner
 			}
 		}
 	}
@@ -349,7 +349,7 @@ tradition_dunmer = {
 		close_relative_opinion = 5
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.25
+		cultural_acceptance_gain_mult = -0.5
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -408,13 +408,13 @@ tradition_sparta = {
 		craven_trait_costs_prestige = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.25
+		cultural_acceptance_gain_mult = -1
 	}
 	province_modifier = {
 		levy_size = -0.25
 	}
 	character_modifier = {
-		knight_effectiveness_mult = 1
+		knight_effectiveness_mult = 1.25
 		athenian_opinion = -25
 		monthly_martial_lifestyle_xp_gain_mult = 0.01
 	}	
@@ -446,7 +446,7 @@ tradition_athens = {
 		diplomacy_education_better_outcomes = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.25
+		cultural_acceptance_gain_mult = -0.5
 		monthly_court_grandeur_change_mult = 0.15
 		owned_personal_scheme_success_chance_add = 10
 		enemy_hostile_scheme_success_chance_add = 10
