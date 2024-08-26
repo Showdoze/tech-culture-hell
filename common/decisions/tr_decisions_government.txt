@@ -253,8 +253,8 @@ change_government_republic_decision = {
 		trigger_event = tr_gov_change.01
 		change_government = republic_government
 		add_realm_law = city_succession_law
-		scope:primary_title = {
-			add_realm_law = feudal_elective_succession_law
+		scope:actor.primary_title = {
+			add_title_law = feudal_elective_succession_law
 		}
 	}
 
