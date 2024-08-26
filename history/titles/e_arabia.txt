@@ -131,3 +131,358 @@ e_arabia = {
 		government = clan_government
 	}
 }
+
+d_shiite = { # Ismaili
+	610.1.1 = {
+		holder_ignore_head_of_faith_requirement = 33922 # Muhammad
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+	}
+	632.6.8 = {
+		holder_ignore_head_of_faith_requirement = 33911 # Ali
+	}	
+	661.2.28 = {
+		holder = 33926 # Hasan
+	}
+	670.3.6 = {
+		holder = 33912 # Hussayn
+	}
+	680.10.10 = {
+		holder = 33913 # Ali Zayn al-Abidin
+	}
+	712.1.1 = {
+		holder = 33914 # Muhammad al Baqir
+	}
+	733.1.1 = {
+		holder = 33915 # Jafar al Sadiq
+	}
+	765.12.14 = {
+		holder = 33917 # Muhammad
+	}
+	813.1.1 = {
+		holder = 33918 # Abdullah Ahmad al-Wafi
+	}
+	828.1.1 = {
+		holder = 33919 # Ahmed Muhammad at-Taqi
+	}
+	840.1.1 = {
+		holder = 33920 # Hussayn Rabi Abdullah
+	}
+	867.1.1 = {
+		holder = 0 # Prevent startup errors
+	}
+	868.1.1 = {
+		holder = 33920 # Hussayn Rabi Abdullah
+	}
+	881.1.1 = {
+		holder = 32900 # Abdullah Rabi Abdullah
+	}
+	934.1.1 = {
+		holder = 32901 # al-Qaim
+	}
+	946.5.17 = {
+		holder = 32902 # al-Mansur
+	}
+	953.3.19 = {
+		holder = 32903 # al-Muizz
+	}
+	975.1.1 = {
+		holder = 3090 # al-Aziz
+	}
+	996.10.13 = {
+		holder = 3092 # al-Hakim
+	}
+	1021.2.12 = {
+		holder = 3094 # az-Zahir
+	}
+	1036.6.13 = {
+		holder = 3096 # al-Mustansir
+	}
+	1094.1.10 = {
+		holder = 3100 # al-Mustali
+	}
+	1101.1.1 = {
+		holder = 32905 # al-Amir
+	}
+	1130.1.1 = {
+		holder = 32907 # al-Hafiz
+	}
+	1149.1.1 = {
+		holder = 32908 # al-Zafir
+	}
+	1154.1.1 = {
+		holder = 32909 # al-Faiz
+	}
+	1160.1.1 = {
+		holder = 32910 # al-Adid
+	}
+	1171.1.1 = {
+		holder = 0 # Fall of the Fatimid Caliphate
+	}
+}
+
+d_masmudi = {
+	1.1.1 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+	}
+}
+
+d_nizari = {
+	1.1.1 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+	}
+}
+
+d_zayidi = { 
+	830.1.1 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+		holder = 159397 #died in 851, thereafter the Zayidi imamate claim was split between the Rassids of Yemen and the rulers of Tabaristan in Persia, so let's keep the title vacant at game start and see who can claim it first. 
+	}
+	851.1.1 = {
+		holder = 0
+	}
+	1031.1.1 = {
+		holder = 45048 #this needs more research into the Rassid dynasty, but this will work as placeholders for FP3 purposes 
+	}
+	1050.1.1 = {
+		holder = 0
+	}
+	1060.1.1 = {
+		holder = 45049
+	}
+}
+
+d_imami = { # Twelver Imams
+	765.12.14 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+		holder_ignore_head_of_faith_requirement = 163022 # Musa al-Kadhim
+	}
+	799.9.1 = {
+		holder_ignore_head_of_faith_requirement = 163023 # Ali al-Ridha
+	}
+	818.8.23 = {
+		holder_ignore_head_of_faith_requirement = 163024 # Muhammad al-Taqi
+	}
+	835.11.24 = {
+		holder_ignore_head_of_faith_requirement = 163025 # Ali al-Hadi
+	}
+	866.12.30 = {
+		holder_ignore_head_of_faith_requirement = 0
+	}
+	868.1.1 = {
+		holder_ignore_head_of_faith_requirement = 163026 # Hasan al-Askari
+	}
+	874.1.1 = {
+		holder_ignore_head_of_faith_requirement = 163027 # Muhammad al-Mahdi
+	}
+	909.1.1 = {
+		holder = 0
+	}
+}
+
+d_sunni = {
+	610.1.1 = {
+		holder_ignore_head_of_faith_requirement = 33922
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		government = caliphate_government
+	}
+	632.6.8 = {
+		holder = 163014
+	}
+	643.8.23 = {
+		holder = 163015
+	}
+	644.11.7 = {
+		holder = 163021
+	}
+	656.7.17 = {
+		holder_ignore_head_of_faith_requirement = 33911
+	}
+	661.2.28 = {
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.12.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.6.16 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+	775.1.1 = {
+		holder = 34003
+	}
+	785.1.1 = {
+		holder = 34004
+	}
+	786.1.1 = {
+		holder = 34005
+	}
+	809.1.1 = {
+		holder = 34006
+	}
+	813.1.1 = {
+		holder = 34007
+	}
+	833.8.9 = {
+		holder = 34008
+	}
+	842.1.5 = {
+		holder = 34009
+	}
+	847.1.1 = {
+		holder = 34010
+	}
+	861.12.1 = {
+		holder = 34012
+	}
+	862.6.7 = {
+		holder = 34013
+	}
+	866.1.1 = {
+		holder = 34014
+	}
+	869.1.1 = {
+		holder = 34015
+	}
+	870.6.1 = {
+		holder = 34016
+	}
+	892.10.1 = {
+		holder = 34018
+	}
+	902.1.1 = {
+		holder = 34019
+	}
+	908.1.1 = {
+		holder = 34021
+	}
+	932.1.1 = {
+		holder = 34020
+	}
+	934.1.1 = {
+		holder = 34022
+	}
+	940.1.1 = {
+		holder = 34023
+	}
+	944.1.1 = {
+		holder = 34024
+	}
+	946.1.1 = {
+		holder = 34025
+	}
+	974.1.1 = {
+		holder = 3080
+	}
+	991.1.1 = {
+		holder = 3082
+	}
+	1031.1.1 = {
+		holder = 3084
+	}
+	1058.1.1 = {
+		liege = k_persia
+	}
+	1075.1.1 = {
+		holder = 3086
+	}
+	1094.1.1 = {
+		holder = 3088
+	}
+	1118.1.1 = {
+		holder = 144060
+	}
+	1135.1.1 = {
+		holder = 144061
+	}
+	1136.1.1 = {
+		holder = 144062
+	}
+	1157.5.8 = {
+		liege = 0
+	}
+	1160.1.1 = {
+		holder = 144063
+	}
+	1170.1.1 = {
+		holder = 144064
+	}
+	1180.1.1 = {
+		holder = 227000
+	}
+	1225.1.1 = {
+		holder = 34027
+	}
+	1226.1.1 = {
+		holder = 34028
+	}
+	1242.1.1 = {
+		holder = 34029
+	}
+	1258.2.20 = {
+		liege = k_egypt
+	}
+	1258.2.20 = {
+		holder = 34032
+	}
+	1262.1.1 = {
+		holder = 34033
+	}
+	1302.1.1 = {
+		holder = 34034
+	}
+}
