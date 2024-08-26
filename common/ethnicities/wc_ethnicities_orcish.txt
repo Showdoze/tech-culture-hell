@@ -34,6 +34,11 @@ green_orcish = {
 	
 	skin_color = {
 		10 = { 0.3 0.5 0.35 0.7 }
+		10 = { 0.15 0.7 0.2 0.85 }
+		25 = { @ash_color_x_min @ash_color_y_min @ash_color_x_max @ash_color_y_max }
+		25 = { 0.631 0.239 0.718 0.294 } # Default
+		5 = { 0.008 0.012 0.008 0.012 } # Dark Gray/Brown
+		1 = { 0.373 0.196 0.494 0.239 } # Sickly Green
 	}
 	hair_color = {
 		# Brown
@@ -421,27 +426,6 @@ green_orcish = {
 	gene_facial_markings = {
 		5 = { name = no_markings range = { 0 1 } }
 		1 = { name = orc_eyeliner range = { 0.7 1 } }
-	}
-}
-
-brown_orcish = {
-	template = "green_orcish"
-	using = "maghar"
-	
-	skin_color = {
-		10 = { 0.15 0.7 0.2 0.85 }
-	}
-}
-
-gray_orcish = {
-	template = "green_orcish"
-	using = "blackrock"
-	
-	skin_color = {
-		25 = { @ash_color_x_min @ash_color_y_min @ash_color_x_max @ash_color_y_max }
-		25 = { 0.631 0.239 0.718 0.294 } # Default
-		5 = { 0.008 0.012 0.008 0.012 } # Dark Gray/Brown
-		1 = { 0.373 0.196 0.494 0.239 } # Sickly Green
 	}
 }
 
