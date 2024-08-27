@@ -155,12 +155,18 @@
 
 	mmshannyforchrist = {
         dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
             morph = {
                 mode = modify
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 2
+                    multiply = 5
                 }
             }
         }   
@@ -475,12 +481,18 @@
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
             morph = {
                 mode = modify
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1.5
+                    multiply = 1.6
                 }
             }
         }   
@@ -491,6 +503,99 @@
 				exists = this
 				exists = character:mmjupiterthehybrid
 				this = character:mmjupiterthehybrid
+			}
+        }
+    }
+
+	mmnovaonline = {
+        ignore_outfit_tags = yes
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 2
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmnovaonline
+				this = character:mmnovaonline
+			}
+        }
+    }
+
+	mmwhitebowser = {
+        ignore_outfit_tags = yes
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1.6
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmwhitebowser
+				this = character:mmwhitebowser
+			}
+        }
+    }
+
+	mmdragonlord = {
+        ignore_outfit_tags = yes
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 1.6
+                }
+            }
+        }
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:mmdragonlord
+				this = character:mmdragonlord
 			}
         }
     }
@@ -661,7 +766,7 @@
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1.6
+                    multiply = 1.8
                 }
             }
         }   
