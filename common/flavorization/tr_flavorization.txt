@@ -1,0 +1,918 @@
+﻿##CANADA
+ canadian_chaplain = {
+	type = character
+	special = chaplain
+	priority = 299
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_canada}
+ }
+ canadian_chancellor = {
+	type = character
+	special = chancellor
+	priority = 299
+	council_position = councillor_chancellor
+	name_lists = { name_list_canada}
+ }
+ canadian_steward = {
+	type = character
+	special = steward
+	priority = 299
+	council_position = councillor_steward
+	name_lists = { name_list_canada}
+ }
+ canadian_marshal = {
+	type = character
+	special = marshal
+	priority = 299
+	council_position = councillor_marshal
+	#heritages = { heritage_canadian }
+	name_lists = { name_list_canada}
+ }
+ canadian_spymaster = {
+	type = character
+	special = spymaster
+	priority = 299
+	council_position = councillor_spymaster
+	#heritages = { heritage_canadian }
+	name_lists = { name_list_canada}
+ }
+ canadian_queen_mother = {
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_canada}
+	priority = 42
+	top_liege = no
+ }
+ prime_minister = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	name_lists = { name_list_canada}
+ }
+ canadian_empire_lady = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_kingy = {
+	type = title
+	tier = kingdom
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_duchy = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_duchy_lady = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_duch = {
+	type = title
+	tier = duchy
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_count_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_count_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_county = {
+	type = title
+	tier = county
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_baron_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_baron_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+ canadian_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	name_lists = { name_list_canada}
+ }
+##AMERICAN USA  
+ american_chaplain = {
+	type = character
+	special = chaplain
+	priority = 299
+	top_liege = no
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_american }
+ }
+ american_chancellor = {
+	type = character
+	special = chancellor
+	priority = 299
+	top_liege = no
+	council_position = councillor_chancellor
+	name_lists = { name_list_american }
+ }
+ american_steward = {
+	type = character
+	special = steward
+	priority = 299
+	top_liege = no
+	council_position = councillor_steward
+	name_lists = { name_list_american }
+ }
+ american_marshal = {
+	type = character
+	special = marshal
+	priority = 299
+	top_liege = no
+	council_position = councillor_marshal
+	name_lists = { name_list_american }
+ }
+ american_spymaster = {
+	type = character
+	special = spymaster
+	priority = 299
+	top_liege = no
+	council_position = councillor_spymaster
+	name_lists = { name_list_american }
+ }
+ american_queen_mother = {
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_american }
+	priority = 42
+	top_liege = no
+ }
+ president = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	name_lists = { name_list_american name_list_confederate }
+ }
+ firstlady = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	name_lists = { name_list_american name_list_confederate }
+ }
+ american_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_kingy = {
+	type = title
+	tier = kingdom
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_duchy = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_duchy_lady = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_duch = {
+	type = title
+	tier = duchy
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_baron_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_baron_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_american }
+ }
+ american_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	name_lists = { name_list_american }
+ }
+#GREEK
+ syracuse_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_syracuse  }
+ }
+ syracuse_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_syracuse  }
+ }
+ demarchos_baron_female = { # Dēmarkhos
+	type = character
+	gender = female
+	special = holder
+	top_liege = no
+	tier = kingdom
+	priority = 8
+	name_lists = { name_list_athenian  }
+ }
+ demarchos_baron = { # Dēmarkhos
+	type = character
+	gender = male
+	special = holder
+	top_liege = no
+	tier = kingdom
+	priority = 8
+	name_lists = { name_list_athenian  }
+ }
+ demos_city = { # Dêmos
+	type = title
+	top_liege = no
+	tier = kingdom
+	priority = 8
+	name_lists = { name_list_athenian  }
+ }
+ prince_male_athens = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 40
+	name_lists = { name_list_athenian }
+	top_liege = no
+ }
+#HOlY Order
+ HO_queen_mother = {
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+	priority = 42
+	top_liege = no
+ }
+ grandmaster = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_empire_lady = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_kingy = {
+	type = title
+	tier = kingdom
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_duchy = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_duchy_lady = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+ HO_duch = {
+	type = title
+	tier = duchy
+	priority = 50
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+ }
+#venice REPUBLIC SO DOGE
+ doge_queen_mother = {
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_venetian }
+	priority = 42
+	top_liege = no
+ }
+ doge_emperor = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	name_lists = { name_list_venetian }
+ }
+ doge_empire_lady = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_kingy = {
+	type = title
+	tier = kingdom
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_duchy = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_duchy_lady = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+ doge_duch = {
+	type = title
+	tier = duchy
+	priority = 50
+	name_lists = { name_list_venetian }
+ }
+#USSR ZASTOVA
+ count_feudal_male_zastova = { #Komes
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ count_feudal_female_zastova = { #Komitissa
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ duke_viceroyalty_male_zastova = { #Strategos
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ duke_viceroyalty_female_zastova = { #Strategitissa
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ duchy_viceroyalty_zastova = { #Thema
+	type = title
+	tier = duchy
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ king_viceroyalty_male_zastova = { #Exarch
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ king_viceroyalty_female_zastova = { #Exarchessa
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ king_viceroyalty_zastova = { #Exarchate
+	type = title
+	tier = kingdom
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ zastova_basileus = { #Basileus
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+ zastova_basilissa = { #Basilissa
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 300
+	top_liege = no
+	governments = { autocracy_government }
+	name_lists = { name_list_zastova}
+ }
+#KOREAN
+ king_dictator_male_korea = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	name_lists = { name_list_korean }
+ }
+ king_dictator_female_korea = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	name_lists = { name_list_korean }
+ }
+ kingdom_dictator_korea = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { autocracy_government }
+	name_lists = { name_list_korean }
+ }
+#MAFIA
+ mafia_chaplain = {
+	type = character
+	special = chaplain
+	priority = 299
+	top_liege = no
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_italian_american }
+ }
+ mafia_chancellor = {
+	type = character
+	special = chancellor
+	priority = 299
+	top_liege = no
+	council_position = councillor_chancellor
+	name_lists = { name_list_italian_american }
+ }
+ mafia_steward = {
+	type = character
+	special = steward
+	priority = 299
+	top_liege = no
+	council_position = councillor_steward
+	name_lists = { name_list_italian_american }
+ }
+ mafia_marshal = {
+	type = character
+	special = marshal
+	priority = 299
+	top_liege = no
+	council_position = councillor_marshal
+	name_lists = { name_list_italian_american }
+ }
+ mafia_spymaster = {
+	type = character
+	special = spymaster
+	priority = 299
+	top_liege = no
+	council_position = councillor_spymaster
+	name_lists = { name_list_italian_american }
+ }
+ mafia_queen_mother = {
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_italian_american }
+	priority = 42
+	top_liege = no
+ }
+ mafia_emperor = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	name_lists = { name_list_italian_american }
+ }
+ mafia_empire_lady = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_king = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_king_lady = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_kingy = {
+	type = title
+	tier = kingdom
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_duchy = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_duchy_lady = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_duch = {
+	type = title
+	tier = duchy
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_count_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_count_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_county = {
+	type = title
+	tier = county
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_baron_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_baron_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+ mafia_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	name_lists = { name_list_italian_american }
+ }
+#Aztec
+ job_spiritual_aztec = {
+	type = character
+	special = chaplain
+	priority = 299
+	top_liege = no
+	council_position = councillor_court_chaplain
+	religions = { anahuac_religion } 
+	#heritages = { heritage_cemanahuac }
+	#name_lists = { name_list_nahuatl }
+ }
+ job_chancellor_aztec = {
+	type = character
+	special = chancellor
+	priority = 299
+	top_liege = no
+	council_position = councillor_chancellor
+	religions = { anahuac_religion } 
+	#heritages = { heritage_cemanahuac }
+	#name_lists = { name_list_nahuatl }
+ }
+ job_treasurer_aztec = {
+	type = character
+	special = steward
+	priority = 299
+	top_liege = no
+	council_position = councillor_steward
+	religions = { anahuac_religion } 
+	#heritages = { heritage_cemanahuac }
+	#name_lists = { name_list_nahuatl }
+ }
+ job_marshal_aztec = {
+	type = character
+	special = marshal
+	priority = 299
+	top_liege = no
+	council_position = councillor_marshal
+	religions = { anahuac_religion } 
+	#heritages = { heritage_cemanahuac }
+	#name_lists = { name_list_nahuatl }
+ }
+ job_spymaster_aztec = {
+	type = character
+	special = spymaster
+	priority = 299
+	top_liege = no
+	council_position = councillor_spymaster
+	religions = { anahuac_religion } 
+	#heritages = { heritage_cemanahuac }
+	#name_lists = { name_list_nahuatl }
+ }
+ emperor_nahuatl = {
+	type = character
+	special = holder
+	tier = empire
+	gender = male
+	priority = 301
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ emperor_female_nahuatl = {
+	type = character
+	special = holder
+	tier = empire
+	gender = female
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ king_nahuatl = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = male
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ king_female_nahuatl = {
+	type = character
+	special = holder
+	tier = kingdom
+	gender = female
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ duke_nahuatl = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = male
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ duke_female_nahuatl = {
+	type = character
+	special = holder
+	tier = duchy
+	gender = female
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ count_nahuatl = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ count_female_nahuatl = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ baron_nahuatl = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+ baron_female_nahuatl = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 50
+	heritages = { heritage_cemanahuac }
+	name_lists = { name_list_nahuatl }
+ }
+#
