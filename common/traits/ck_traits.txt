@@ -192,9 +192,7 @@ venerable = {
 }
 roman_friend = {
 	random_creation = 0
-	wre_opinion = 50
-	roman_opinion = 5
-	opinion_of_wre = 50
+	roman_opinion = 25
 	opposite_opinion = -50
 	opposites = { roman_enemy }
 	desc = {
@@ -213,9 +211,7 @@ roman_friend = {
 }
 roman_enemy = {	
 	random_creation = 0
-	roman_opinion = -10
-	wre_opinion = -50
-	opinion_of_wre = -50
+	roman_opinion = -30
 	opposite_opinion = -50
 	opposites = { roman_friend }
 	desc = {
@@ -234,8 +230,7 @@ roman_enemy = {
 }
 byz_friend = {
 	random_creation = 0
-	ere_opinion= 50
-	opinion_of_ere = 50
+	greek_opinion = 20
 	opposite_opinion = -50
 	opposites = { byz_enemy }
 	desc = {
@@ -254,8 +249,7 @@ byz_friend = {
 }
 byz_enemy = {
 	random_creation = 0
-	ere_opinion= -50
-	opinion_of_ere = -50
+	greek_opinion = -20
 	opposite_opinion = -50
 	opposites = { byz_friend }
 	desc = {
@@ -318,8 +312,9 @@ frankish_friend = {
 }
 sax_enemy = {
 	random_creation = 0
-	saxon_opinion= -10
-	old_saxon_opinion=-10
+	saxon_opinion = -20
+	anglo_saxon_opinion = -20
+	anglian_opinion = -10
 	opposite_opinion = -50
 	opposites = { sax_friend }
 	desc = {
@@ -338,8 +333,9 @@ sax_enemy = {
 }
 sax_friend = {
 	random_creation = 0
-	saxon_opinion= 5
-	old_saxon_opinion=5
+	saxon_opinion = 20
+	anglo_saxon_opinion = 20
+	anglian_opinion = 10
 	opposite_opinion = -50
 	opposites = { sax_enemy }
 	desc = {
@@ -358,7 +354,7 @@ sax_friend = {
 }
 papal_enemy = {
 	random_creation = 0
-	christian_church_opinion = -10
+	christian_church_opinion = -20
 	opposite_opinion = -50
 	opposites = { papal_friend }
 	desc = {
@@ -377,7 +373,7 @@ papal_enemy = {
 }
 papal_friend = {
 	random_creation = 0
-	christian_church_opinion = 5
+	christian_church_opinion = 15
 	opposite_opinion = -50
 	opposites = { papal_enemy }
 	desc = {
