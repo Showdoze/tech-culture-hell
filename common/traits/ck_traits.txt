@@ -1,5 +1,4 @@
 ﻿adopted = {
-	index = 4000
 	opposites = {
         born_in_the_purple
         patrician_born
@@ -26,7 +25,6 @@
 }
 
 peasant_born = {
-	index = 4001
 	opposites = {
         born_in_the_purple
         patrician_born
@@ -55,7 +53,6 @@ peasant_born = {
 }
 
 patrician_born = {
-	index = 4002
 	opposites = {
 		legitimized_bastard
 		child_of_concubine
@@ -87,7 +84,6 @@ patrician_born = {
 }
 
 german_descent = {
-	index = 4002
 	random_creation = 0
 	same_opinion = 5
 	germanic_opinion = 10
@@ -114,7 +110,6 @@ german_descent = {
 }
 
 fleeting = {
-	index = 7500
 	life_expectancy = -15
 	opposites = {
 		enduring
@@ -143,7 +138,6 @@ fleeting = {
 }
 
 enduring = {
-	index = 7501
 	opposites = {
 		fleeting
 		venerable
@@ -171,7 +165,6 @@ enduring = {
 }
 
 venerable = {
-	index = 7502
 	opposites = {
 		fleeting
 		enduring
@@ -197,7 +190,248 @@ venerable = {
 	birth = 0.05
 	random_creation = 0.05
 }
-
+roman_friend = {
+	random_creation = 0
+	wre_opinion = 50
+	roman_opinion = 5
+	opinion_of_wre = 50
+	opposite_opinion = -50
+	opposites = { roman_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_roman_friend_desc
+			}
+			desc = trait_roman_friend_desc
+		}
+	}
+}
+roman_enemy = {	
+	random_creation = 0
+	roman_opinion = -10
+	wre_opinion = -50
+	opinion_of_wre = -50
+	opposite_opinion = -50
+	opposites = { roman_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_roman_enemy_desc
+			}
+			desc = trait_roman_enemy_desc
+		}
+	}
+}
+byz_friend = {
+	random_creation = 0
+	ere_opinion= 50
+	opinion_of_ere = 50
+	opposite_opinion = -50
+	opposites = { byz_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_byz_friend_desc
+			}
+			desc = trait_byz_friend_desc
+		}
+	}
+}
+byz_enemy = {
+	random_creation = 0
+	ere_opinion= -50
+	opinion_of_ere = -50
+	opposite_opinion = -50
+	opposites = { byz_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_byz_enemy_desc
+			}
+			desc = trait_byz_enemy_desc
+		}
+	}
+}
+frankish_enemy = {
+	random_creation = 0
+	frankish_opinion = -25
+	french_opinion = -20
+	opinion_of_frankish = -25
+	opinion_of_french= -20
+	opposite_opinion = -50
+	opposites = { frankish_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_frankish_enemy_desc
+			}
+			desc = trait_frankish_enemy_desc
+		}
+	}
+}
+frankish_friend = {
+	random_creation = 0
+	frankish_opinion = 25
+	french_opinion = 20
+	opinion_of_frankish = 25
+	opinion_of_french= 20
+	opposite_opinion = -50
+	opposites = { frankish_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_frankish_friend_desc
+			}
+			desc = trait_frankish_friend_desc
+		}
+	}
+}
+sax_enemy = {
+	random_creation = 0
+	saxon_opinion= -10
+	old_saxon_opinion=-10
+	opposite_opinion = -50
+	opposites = { sax_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_sax_enemy_desc
+			}
+			desc = trait_sax_enemy_desc
+		}
+	}
+}
+sax_friend = {
+	random_creation = 0
+	saxon_opinion= 5
+	old_saxon_opinion=5
+	opposite_opinion = -50
+	opposites = { sax_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_sax_friend_desc
+			}
+			desc = trait_sax_friend_desc
+		}
+	}
+}
+papal_enemy = {
+	random_creation = 0
+	christian_church_opinion = -10
+	opposite_opinion = -50
+	opposites = { papal_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_papal_enemy_desc
+			}
+			desc = trait_papal_enemy_desc
+		}
+	}
+}
+papal_friend = {
+	random_creation = 0
+	christian_church_opinion = 5
+	opposite_opinion = -50
+	opposites = { papal_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_papal_friend_desc
+			}
+			desc = trait_papal_friend_desc
+		}
+	}
+}
+china_enemy = {
+	random_creation = 0
+	han_opinion = -20
+	opposite_opinion = -50
+	opposites = { china_friend }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_china_enemy_desc
+			}
+			desc = trait_china_enemy_desc
+		}
+	}
+}
+china_friend = {
+	random_creation = 0
+	han_opinion = 20
+	opposite_opinion = -50
+	opposites = { china_enemy }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_china_friend_desc
+			}
+			desc = trait_china_friend_desc
+		}
+	}
+}
 super_saiyan = {
 	random_creation = 0
 	monthly_character_prestige = 1
