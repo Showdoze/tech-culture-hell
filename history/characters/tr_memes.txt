@@ -74,9 +74,6 @@ gman = {
 	1.1.11 = {
 		birth = yes
 	}
-	9999.9.99 = {
-		death = yes
-	}
 }
 mmjaystation = {
 	name = "Jaystation"
@@ -145,9 +142,6 @@ mmsateliteman = {
 			set_relation_rival = { target = character:mmtonychase reason = rival_historical }
 		}
 	}
-	2016.4.17 = {
-		death = yes
-	}
 }
 mmgordonwilkins = {
 	name = "Gordon"
@@ -180,9 +174,6 @@ mmgordonwilkins = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 
 mmjenniewilkins = {
@@ -207,9 +198,6 @@ mmjenniewilkins = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
-	}
-	2030.4.17 = {
-		death = yes
 	}
 }
 
@@ -279,7 +267,7 @@ mmmusicbizmarty = {
 			set_relation_rival = { target = character:mmruplesmith reason = rival_historical }
 		}
 	}
-	2027.4.17 = {
+	907.4.17 = {
 		death = {
 			death_reason = death_obesity
 		}
@@ -348,7 +336,7 @@ mmruplesmith = {
 			set_relation_rival = { target = character:mmmusicbizmarty reason = rival_historical }
 		}
 	}
-	1026.4.17 = {
+	886.4.17 = {
 		death = {
 			death_reason = death_beaten
 			killer = mmmusicbizmarty
@@ -377,7 +365,7 @@ mmed = {
 	860.1.2 = {
 		add_spouse = mmsally
 	}
-	1026.4.17 = {
+	880.4.17 = {
 		death = {
 			death_reason = death_childbirth
 			#killer = mmmusicbizmarty
@@ -424,7 +412,7 @@ mmsally = {
 	860.1.2 = {
 		add_spouse = mmed
 	}
-	1025.4.17 = {
+	885.4.17 = {
 		death = {
 			death_reason = death_stress
 		}
@@ -517,7 +505,7 @@ mmcyraxx = {
 			set_relation_lover = { target = character:mmheather exposed = yes }
 		}
 	}
-	1026.4.17 = {
+	886.4.17 = {
 		death = {
 			death_reason = death_contest_duel_accident
 			killer = mmmusicbizmarty
@@ -533,9 +521,6 @@ mmheather = {
 	female = yes
 	850.1.11 = {
 		birth = yes
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmmewtwo = {
@@ -562,9 +547,6 @@ mmmewtwo = {
 		add_spouse = mmchrischan
 		add_spouse = mmmagichan
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmwild = {
 	name = "Wild"
@@ -590,9 +572,6 @@ mmwild = {
 	850.1.1 = {
 		add_spouse = mmsimonla
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmsandy = {
 	name = "Sandy Rosechu"
@@ -610,9 +589,6 @@ mmsandy = {
 	disallow_random_traits = yes
 	860.8.9 = {
 		birth = yes
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmsimonla = {
@@ -633,7 +609,7 @@ mmsimonla = {
 	}
 	860.8.9 = {
 		death = {
-			death_reason = death_murder_known
+			death_reason = death_murder
 		}
 	}
 }
@@ -656,9 +632,6 @@ mmbubbles = {
 	850.1.1 = {
 		add_spouse = mmblacksonichu
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmblacksonichu = {
 	name = "Blake"
@@ -678,9 +651,6 @@ mmblacksonichu = {
 	850.1.1 = {
 		add_spouse = mmbubbles
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmpunchy = {
 	name = "Punchy"
@@ -694,9 +664,6 @@ mmpunchy = {
 	disallow_random_traits = yes
 	845.2.2 = {
 		birth = yes
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmangelica = {
@@ -716,9 +683,6 @@ mmangelica = {
 	845.2.2 = {
 		birth = yes
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmgraduon = {
 	name = "Count Graduon"
@@ -730,9 +694,6 @@ mmgraduon = {
 	disallow_random_traits = yes
 	433.11.17 = {
 		birth = yes
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmsilvana = {
@@ -755,9 +716,6 @@ mmsilvana = {
 	}
 	850.1.1 = {
 		add_spouse = mmmagichan
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmmagichan = {
@@ -784,9 +742,6 @@ mmmagichan = {
 	}
 	850.1.1 = {
 		add_spouse = mmsilvana
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmchrischanpast = {
@@ -822,7 +777,7 @@ mmchrischanpast = {
 			set_relation_rival = { target = character:mmliquid reason = rival_historical }
 		}
 	}
-	1026.4.17 = {
+	906.4.17 = {
 		death = {
 			death_reason = death_duel
 			killer = mmchrischan
@@ -871,9 +826,6 @@ mmchrischan = {
 			set_relation_lover = { target = character:mmbarb exposed = yes }
 		}
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 mmsonichu = {
 	name = "Sonichu"
@@ -895,9 +847,6 @@ mmsonichu = {
 	}
 	850.1.1 = {
 		add_spouse = mmrosechu
-	}
-	2026.4.17 = {
-		death = yes
 	}
 }
 mmrosechu = {
@@ -922,9 +871,6 @@ mmrosechu = {
 	850.1.1 = {
 		add_spouse = mmsonichu
 	}
-	2026.4.17 = {
-		death = yes
-	}
 }
 
 mmcrystalchan = {
@@ -941,7 +887,7 @@ mmcrystalchan = {
 	861.1.1 = {
 		birth = yes
 	}
-	1001.4.17 = {
+	901.4.17 = {
 		death = {
 			death_reason = death_inbred
 		}
@@ -992,11 +938,6 @@ mm_bobs_son = {
 	790.10.1 = {
 		birth = yes
 	}
-	2040.4.17 = {
-		death = {
-			death_reason = death_incapable
-		}
-	}
 }	
 mmbarb = {
 	name = "Barbara Ann"
@@ -1039,12 +980,13 @@ mmbarb = {
 			set_relation_lover = { target = character:mmchrischan exposed = yes }
 		}
 	}
-	2026.4.17 = {
+	906.4.17 = {
 		death = {
 			death_reason = death_incapable
 		}
 	}
 }
+
 mmbarb_son = {
 	name = "Cole Smithy"
 	religion = catholic
@@ -1063,11 +1005,6 @@ mmbarb_son = {
 	821.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmbarb reason = rival_historical }
-		}
-	}
-	2026.4.17 = {
-		death = {
-			death_reason = death_incapable
 		}
 	}
 }
@@ -1132,9 +1069,6 @@ mmliquid = {
 			}
 		}
 	}
-	2077.4.17 = {
-		death = yes
-	}
 }
 mmcharlesguiteau = {
 	name = "Charles J. Guiteau"
@@ -1158,6 +1092,7 @@ mmcharlesguiteau = {
 		}
 	}
 }
+
 mmblindbilly = {
 	name = "Billy Seiler"
 	religion = catholic
@@ -1175,12 +1110,8 @@ mmblindbilly = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	900.6.30 = {
-		death = { 
-			death_reason = death_age
-		}
-	}
-}	
+}
+
 mmjaredgenesis = {
 	name = "Jared Genesis"
 	religion = catholic
@@ -1206,13 +1137,14 @@ mmjaredgenesis = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
 		}
 	}
-	1034.6.30 = {
+	894.6.30 = {
 		death = {
 			death_reason = death_duel
-			killer = mmhorrvalmir
+			killer = mmvenemir
 		}
 	}
 }
+
 mmnancyshimer = {
 	name = "Nancy"
 	religion = catholic
@@ -1242,6 +1174,7 @@ mmnancyshimer = {
 		}
 	}
 }
+
 mmelizabethshimer = {
 	name = "Elizabeth"
 	religion = catholic
@@ -1275,13 +1208,14 @@ mmelizabethshimer = {
 			set_relation_rival = { target = character:mmnancyshimer reason = rival_historical }
 		}
 	}
-	1026.4.17 = {
+	894.4.17 = {
 		death = {
 			death_reason = death_beaten
 			killer = mmdaniellarson
 		}
 	}
 }
+
 mmdaniellarson = {
 	name = "Daniel"
 	religion = catholic
@@ -1316,13 +1250,14 @@ mmdaniellarson = {
 			set_relation_rival = { target = character:mmnancyshimer reason = rival_historical }
 		}
 	}
-	1054.6.30 = {
+	874.6.30 = {
 		death = {
 			death_reason = death_dungeon
-			killer = trshaunmcglass
+			killer = trcolinmcglass
 		}
 	}
 }
+
 mmdaniellalarson = {
 	name = "Daniella"
 	religion = catholic
@@ -1347,13 +1282,13 @@ mmdaniellalarson = {
 	844.9.8 = {
 		birth = yes
 	}
-	1054.6.30 = {
+	875.6.30 = {
 		death = {
-			death_reason = death_dungeon
-			killer = trshaunmcglass
+			death_reason = death_childbirth
 		}
 	}
 }
+
 mmjacelarson = {
 	name = "Jace"
 	religion = catholic
@@ -1372,13 +1307,13 @@ mmjacelarson = {
 	848.9.8 = {
 		birth = yes
 	}
-	1054.6.30 = {
+	885.6.30 = {
 		death = {
-			death_reason = death_dungeon
-			killer = 109500
+			death_reason = death_explosion
 		}
 	}
 }
+
 mmwings = {
 	name = "Jordie Jordan"
 	religion = catholic
@@ -1464,9 +1399,9 @@ mmshaigu = {
 			set_relation_friend = { target = character:mmputin }
 		}
 	}
-	1024.1.10 = {
+	894.1.10 = {
 		death = {
-			death_reason = death_battle
+			death_reason = death_explosion
 		}
 	}
 }
@@ -1483,13 +1418,13 @@ mmdragonlord = {
 	trait = reaver
 	trait = education_martial_1
 	disallow_random_traits = yes
-	820.4.21 = {
+	830.4.21 = {
 		birth = yes
 	}
-	1024.1.10 = {
+	901.1.10 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = trshaunmcglass
+			killer = trtiandizhanghu
 		}
 	}
 }
@@ -1594,11 +1529,6 @@ mmianfootedaughter = {
 			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
 		}
 	}
-	1020.1.10 = {
-		death = {
-			death_reason = death_cancer
-		}
-	}
 }
 mmbella = {
 	name = "Isabelle Jenkis"
@@ -1676,13 +1606,13 @@ mmtiktokpsychic = {
 	834.4.21 = {
 		birth = yes
 	}
-	1040.1.10 = {
+	878.1.10 = {
 		death = {
 			death_reason = death_burned_witch
-			killer = 208
 		}
 	}
 }
+
 mmspidy = {
 	name = "Spidy"
 	religion = catholic
@@ -1798,7 +1728,7 @@ mmn3eon = {
 	870.1.10 = {
 		death = {
 			death_reason = death_duel
-			killer = trtiandiNuxia
+			killer = trtiandinuxia
 		}
 	}
 }
