@@ -1,42 +1,5 @@
 ﻿##CANADA
- canadian_chaplain = {
-	type = character
-	special = chaplain
-	priority = 299
-	council_position = councillor_court_chaplain
-	name_lists = { name_list_canada}
- }
- canadian_chancellor = {
-	type = character
-	special = chancellor
-	priority = 299
-	council_position = councillor_chancellor
-	name_lists = { name_list_canada}
- }
- canadian_steward = {
-	type = character
-	special = steward
-	priority = 299
-	council_position = councillor_steward
-	name_lists = { name_list_canada}
- }
- canadian_marshal = {
-	type = character
-	special = marshal
-	priority = 299
-	council_position = councillor_marshal
-	#heritages = { heritage_canadian }
-	name_lists = { name_list_canada}
- }
- canadian_spymaster = {
-	type = character
-	special = spymaster
-	priority = 299
-	council_position = councillor_spymaster
-	#heritages = { heritage_canadian }
-	name_lists = { name_list_canada}
- }
- canadian_queen_mother = {
+ canadian_queen_mother = { #Mother of the Nation
 	type = character
 	gender = female
 	special = queen_mother
@@ -44,20 +7,12 @@
 	priority = 42
 	top_liege = no
  }
- prime_minister = {
+ prime_minister = { #Prime Minister
 	type = character
 	special = holder
 	tier = empire
 	gender = male
 	priority = 301
-	name_lists = { name_list_canada}
- }
- canadian_empire_lady = {
-	type = character
-	special = holder
-	tier = empire
-	gender = female
-	priority = 50
 	name_lists = { name_list_canada}
  }
  canadian_empire = {
@@ -66,7 +21,7 @@
 	priority = 50
 	name_lists = { name_list_canada}
  }
- canadian_king = {
+ parliament = { #Parliament
 	type = character
 	special = holder
 	tier = kingdom
@@ -82,7 +37,7 @@
 	priority = 50
 	name_lists = { name_list_canada}
  }
- canadian_kingy = {
+ senate = { #Senate
 	type = title
 	tier = kingdom
 	priority = 50
@@ -132,7 +87,7 @@
 	priority = 50
 	name_lists = { name_list_canada}
  }
- canadian_baron_male = {
+ mayor = {
 	type = character
 	gender = male
 	special = holder
@@ -140,7 +95,7 @@
 	priority = 50
 	name_lists = { name_list_canada}
  }
- canadian_baron_female = {
+ miss_mayor = { #Miss Mayor
 	type = character
 	gender = female
 	special = holder
@@ -148,7 +103,7 @@
 	priority = 50
 	name_lists = { name_list_canada}
  }
- canadian_barony = {
+ canadian_barony = { #City
 	type = title
 	tier = barony
 	priority = 50
@@ -211,13 +166,13 @@
 	priority = 301
 	name_lists = { name_list_american name_list_confederate }
  }
- firstlady = {
+ firstlady_e = { #First lady
 	type = character
 	special = holder
 	tier = empire
 	gender = female
 	priority = 50
-	name_lists = { name_list_american name_list_confederate }
+	name_lists = { name_list_american name_list_confederate name_list_canada }
  }
  american_empire = {
 	type = title
@@ -225,7 +180,7 @@
 	priority = 50
 	name_lists = { name_list_american }
  }
- american_king = {
+ governor = { #Governor
 	type = character
 	special = holder
 	tier = kingdom
@@ -233,7 +188,7 @@
 	priority = 50
 	name_lists = { name_list_american }
  }
- american_king_lady = {
+ madame = { #Madame
 	type = character
 	special = holder
 	tier = kingdom
@@ -241,7 +196,7 @@
 	priority = 50
 	name_lists = { name_list_american }
  }
- american_kingy = {
+ state_k = {
 	type = title
 	tier = kingdom
 	priority = 50
@@ -300,14 +255,6 @@
 	priority = 50
 	name_lists = { name_list_syracuse  }
  }
- syracuse_king_lady = {
-	type = character
-	special = holder
-	tier = kingdom
-	gender = female
-	priority = 50
-	name_lists = { name_list_syracuse  }
- }
  demarchos_baron_female = { # Dēmarkhos
 	type = character
 	gender = female
@@ -359,7 +306,7 @@
 	priority = 301
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
- HO_empire_lady = {
+ HO_empire_lady = { #LADY
 	type = character
 	special = holder
 	tier = empire
@@ -371,7 +318,9 @@
 	type = title
 	tier = empire
 	priority = 50
-	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic
+	name_list_syracuse
+    }
  }
  HO_king = {
 	type = character
@@ -381,13 +330,15 @@
 	priority = 50
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
- HO_king_lady = {
+ HO_king_lady = { #LADY
 	type = character
 	special = holder
 	tier = kingdom
 	gender = female
 	priority = 50
-	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic 
+	name_list_syracuse 
+    }
  }
  HO_kingy = {
 	type = title
@@ -403,7 +354,7 @@
 	priority = 50
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
- HO_duchy_lady = {
+ HO_duchy_lady = { #LADY
 	type = character
 	special = holder
 	tier = duchy
@@ -590,7 +541,7 @@
 	name_lists = { name_list_zastova}
  }
 #KOREAN
- king_dictator_male_korea = {
+ dear_learder = {
 	type = character
 	gender = male
 	special = holder
@@ -599,7 +550,7 @@
 	governments = { autocracy_government }
 	name_lists = { name_list_korean }
  }
- king_dictator_female_korea = {
+ firstlady_auto = {
 	type = character
 	gender = female
 	special = holder
