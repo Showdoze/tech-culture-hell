@@ -66,17 +66,17 @@ language_mescalero = {
 	color = somali
 }
 
-language_mystery = {
+language_unknown = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_mystery
+			LANGUAGE = language_unknown
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_mystery }
+			limit = { has_cultural_pillar = language_unknown }
 			multiply = 10
 		}
 	}
