@@ -1,0 +1,78 @@
+﻿tr_portraits = {
+	
+	usage = game
+    selection_behavior = max
+    priority = 500
+
+	native_american_gfx = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = indian_hairstyles_straight
+                range = { 0 1 }
+            }
+			accessory = {
+                mode = add
+                gene = hairstyles
+                template = indian_hairstyles_wavy
+                range = { 0 1 }
+            }
+			accessory = {
+                mode = add
+                gene = hairstyles
+                template = northern_hairstyles_straight
+                range = { 0 1 }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				scope:culture = { has_clothing_gfx = native_american_clothing_gfx }
+			}
+            modifier = {
+                add = -1000
+                exists = this
+                OR = {
+                    is_from_ruler_designer = yes
+                    has_character_flag = has_scripted_appearance
+                }
+            }
+        }
+    }
+
+    no_beards_gfx = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				scope:culture = { has_clothing_gfx = no_beards_clothing_gfx }
+			}
+            modifier = {
+                add = -1000
+                exists = this
+                OR = {
+                    is_from_ruler_designer = yes
+                    has_character_flag = has_scripted_appearance
+                }
+            }
+        }
+    }
+}
