@@ -1,4 +1,4 @@
-@neg1_min = 0.4
+﻿@neg1_min = 0.4
 @neg1_max = 0.5
 
 @neg2_min = 0.3
@@ -36,7 +36,7 @@
 
 native_american = {
 	template = "ethnicity_template"
-    using = "naishan"
+    using = "apache"
 	
 	skin_color = {
 		10 = { 1 0.5 1 0.7 }
@@ -71,20 +71,6 @@ native_american = {
 	    0 = { name = eye_angle_neg    range = { @beauty2min @beauty2max }    traits = { beauty_2 }    }
 	    0 = { name = eye_angle_neg    range = { @beauty3min @beauty3max }    traits = { beauty_3 }    }
 	}
-
-# 	gene_eye_depth = {
-# 	    25 = { name = eye_depth_neg    range = { 0.25 0.35 }    }
-# 	    40 = { name = eye_depth_neg    range = { 0.35 0.45 }    }
-# 	    20 = { name = eye_depth_neg    range = { 0.45 0.5 }    }
-# 	    5 = { name = eye_depth_pos    range = { 0.5 0.55 }    }
-# 	    0 = { name = eye_depth_pos    range = { 0.55 0.65 }    }
-# 	    0 = { name = eye_depth_pos    range = { 0.65 0.75 }    }
-
-# 	    #Beauty Section
-# 	    0 = { name = eye_depth_neg    range = { @beauty1min @beauty1max }    traits = { beauty_1 }    }
-# 	    0 = { name = eye_depth_neg    range = { @beauty2min @beauty2max }    traits = { beauty_2 }    }
-# 	    0 = { name = eye_depth_neg    range = { @beauty3min @beauty3max }    traits = { beauty_3 }    }
-# 	}
 
 	gene_eye_height = {
 	    15 = { name = eye_height_neg    range = { 0.25 0.35}    }
@@ -127,12 +113,6 @@ native_american = {
  	    0 = { name = eye_shut_pos    range = { @pos3_min @pos3_max }    }
 	}
 
-# 	    #Beauty Section
-# 	    0 = { name = eye_shut_neg    range = { @beauty1min @beauty1max }    traits = { beauty_1 }    }
-# 	    0 = { name = eye_shut_neg    range = { @beauty2min @beauty2max }    traits = { beauty_2 }    }
-# 	    0 = { name = eye_shut_neg    range = { @beauty3min @beauty3max }    traits = { beauty_3 }    }
- 	
-
     gene_forehead_brow_height = {
         0 = { name = forehead_brow_height_neg    range = { @neg3_min @neg3_max }    }
         0 = { name = forehead_brow_height_neg    range = { @neg2_min @neg2_max }    }
@@ -164,10 +144,10 @@ native_american = {
     gene_forehead_roundness = {
         0 = { name = forehead_roundness_neg    range = { @neg3_min @neg3_max }    }
         0 = { name = forehead_roundness_neg    range = { @neg2_min @neg2_max }    }
-        5 = { name = forehead_roundness_neg    range = { @neg1_min @neg1_max }    }
-        15 = { name = forehead_roundness_pos    range = { @pos1_min @pos1_max }    }
-        40 = { name = forehead_roundness_pos    range = { @pos2_min @pos2_max }    }
-        25 = { name = forehead_roundness_pos    range = { @pos3_min @pos3_max }    }
+        5 = { name = forehead_roundness_neg    range = { 0.3 0.5 }    }
+        15 = { name = forehead_roundness_pos    range = { 0.5 0.7 }    }
+        40 = { name = forehead_roundness_pos    range = { 0.7 0.9 }    }
+        25 = { name = forehead_roundness_pos    range = { 0.7 0.8 }    }
 
         #Beauty Section
         0 = { name = forehead_roundness_neg    range = { @beauty1min @beauty1max }    traits = { beauty_1 }    }
@@ -210,7 +190,7 @@ native_american = {
 	    2 = { name = head_profile_neg    range = { @neg1_min @neg1_max }    }
 	    0 = { name = head_profile_pos    range = { @pos1_min @pos1_max }    }
 	    0 = { name = head_profile_pos    range = { @pos2_min @pos2_max }    }
-	    0 = { name = head_profile_pos    range = { @pos3_min 0.75 }    }
+	    0 = { name = head_profile_pos    range = { 0.2 0.75 }    }
 
 	    #Beauty Section
 	    0 = { name = head_profile_neg    range = { @beauty1min @beauty1max }    traits = { beauty_1 }    }
@@ -232,20 +212,14 @@ native_american = {
         0 = { name = head_width_neg    range = { @beauty3min @beauty3max }    traits = { beauty_3 }    }
     }
 
-
-# 	gene_head_top_width = {
-# 	    0 = { name = head_top_width_neg    range = { @neg3_min @neg3_max }    }
-# 	    0 = { name = head_top_width_neg    range = { @neg2_min @neg2_max }    }
-# 	    5 = { name = head_top_width_neg    range = { @neg1_min @neg1_max }    }
-# 	    25 = { name = head_top_width_pos    range = { @pos1_min @pos1_max }    }
-# 	    40 = { name = head_top_width_pos    range = { @pos2_min @pos2_max }    }
-# 	    25 = { name = head_top_width_pos    range = { @pos3_min @pos3_max }    }
-
-# 	    #Beauty Section
-# 	    0 = { name = head_top_width_neg    range = { @beauty1min @beauty1max }    traits = { beauty_1 }    }
-# 	    0 = { name = head_top_width_neg    range = { @beauty2min @beauty2max }    traits = { beauty_2 }    }
-# 	    0 = { name = head_top_width_neg    range = { @beauty3min @beauty3max }    traits = { beauty_3 }    }
-# 	}
+ 	gene_head_top_width = {
+ 	    0 = { name = head_top_width_neg    range = { @neg3_min @neg3_max }    }
+ 	    0 = { name = head_top_width_neg    range = { @neg2_min @neg2_max }    }
+ 	    5 = { name = head_top_width_neg    range = { 0.5 0.55 }    }
+ 	    25 = { name = head_top_width_pos    range = { 0.3 0.4 }    }
+ 	    40 = { name = head_top_width_pos    range = { 0.1 0.2 }    }
+ 	    25 = { name = head_top_width_pos    range = { 0.2 0.3 }    }
+    }
 
     gene_mouth_corner_depth = {
         1 = { name = mouth_corner_depth_neg    range = { 0.25 0.35 }    }
@@ -451,16 +425,6 @@ native_american = {
 
     }
 
-#     gene_bs_eye_size = {
-#         15 = { name = eye_size_neg    range = { @blend3min @blend3max }    }
-#         20 = { name = eye_size_neg    range = { @blend2min @blend2max }    }
-#         40 = { name = eye_size_neg    range = { @blend1min @blend1max }    }
-#         20 = { name = eye_size_pos    range = { @blend1min @blend1max }    }
-#         15 = { name = eye_size_pos    range = { @blend2min @blend2max }    }
-#         # 10 = { name = eye_size_pos    range = { @blend3min @blend3max }    }
-
-#     }
-
     gene_jaw_angle = {
         1 = { name = jaw_angle_neg    range = { @neg3_min @neg3_max }    }
         5 = { name = jaw_angle_neg    range = { @neg2_min @neg2_max }    }
@@ -544,26 +508,6 @@ native_american = {
         10 = {  name = layer_2_lower_thickness             range = { 0.25 0.75 }     }
     }
 
-#     gene_bs_mouth_upper_lip_full = {
-#         2 = { name = mouth_upper_lip_full_neg    range = { 0.4 0.5 }    }
-#         10 = { name = mouth_upper_lip_full_neg    range = { 0.15 0.4 }    }
-#         15 = { name = mouth_upper_lip_full_neg    range = { 0.0 0.15 }    }
-#         25 = { name = mouth_upper_lip_full_pos    range = { 0.0 0.15 }    }
-#         15 = { name = mouth_upper_lip_full_pos    range = { 0.15 0.4 }    }
-#         10 = { name = mouth_upper_lip_full_pos    range = { 0.4 0.5 }    }
-
-#     }
-
-#     gene_bs_mouth_lower_lip_full = {
-#         2 = { name = mouth_lower_lip_full_neg    range = { 0.4 0.5 }    }
-#         10 = { name = mouth_lower_lip_full_neg    range = { 0.15 0.4 }    }
-#         15 = { name = mouth_lower_lip_full_neg    range = { 0.0 0.15 }    }
-#         25 = { name = mouth_lower_lip_full_pos    range = { 0.0 0.15 }    }
-#         15 = { name = mouth_lower_lip_full_pos    range = { 0.15 0.4 }    }
-#         10 = { name = mouth_lower_lip_full_pos    range = { 0.4 0.5 }    }
-
-#     }
-
  	gene_bs_nose_forward = {
  	    10 = { name = nose_forward_neg    range = { 0.5 0.6   }    }
  	    20 = { name = nose_forward_neg    range = { 0.2 0.4  }    }
@@ -573,16 +517,6 @@ native_american = {
  	    # 1 = { name = nose_forward_pos    range = { 0.4 0.5   }    }
 
  	}
-
-# 	gene_bs_nose_height = {
-# 	    1 = { name = nose_height_neg    range = { @blend3min @blend3max }    }
-# 	    15 = { name = nose_height_neg    range = { @blend2min @blend2max }    }
-# 	    20 = { name = nose_height_neg    range = { @blend1min @blend1max }    }
-# 	    20 = { name = nose_height_pos    range = { @blend1min @blend1max }    }
-# 	    15 = { name = nose_height_pos    range = { @blend2min @blend2max }    }
-# 	    1 = { name = nose_height_pos    range = { @blend3min @blend3max }    }
-
-# 	}
 
     gene_bs_nose_length = {
         10 = { name = nose_length_neg    range = { 0.5 0.8 }    }
@@ -634,25 +568,25 @@ native_american = {
 
  	}
 
-# 	gene_bs_nose_ridge_width = {
-# 	    0 = { name = nose_ridge_width_neg    range = { @blend3min @blend3max }    }
-# 	    10 = { name = nose_ridge_width_neg    range = { @blend2min @blend2max }    }
-# 	    40 = { name = nose_ridge_width_neg    range = { @blend1min @blend1max }    }
-# 	    40 = { name = nose_ridge_width_pos    range = { @blend1min @blend1max }    }
-# 	    10 = { name = nose_ridge_width_pos    range = { @blend2min @blend2max }    }
-# 	    0 = { name = nose_ridge_width_pos    range = { @blend3min @blend3max }    }
+ 	gene_bs_nose_ridge_width = {
+ 	    0 = { name = nose_ridge_width_neg    range = { @blend3min @blend3max }    }
+ 	    10 = { name = nose_ridge_width_neg    range = { 0.2 0.3 }    }
+ 	    40 = { name = nose_ridge_width_neg    range = { 0.3 0.4 }    }
+ 	    40 = { name = nose_ridge_width_pos    range = { 0.3 0.5 }    }
+ 	    10 = { name = nose_ridge_width_pos    range = { 0.5 0.6 }    }
+ 	    0 = { name = nose_ridge_width_pos    range = { @blend3min @blend3max }    }
 
-# 	}
+ 	}
 
-# 	gene_bs_nose_size = {
-# 	    # 1 = { name = nose_size_neg    range = { @blend3min @blend3max }    }
-# 	    # 5 = { name = nose_size_neg    range = { @blend2min @blend2max }    }
-# 	    20 = { name = nose_size_neg    range = { @blend1min @blend1max }    }
-# 	    40 = { name = nose_size_pos    range = { @blend1min @blend1max }    }
-# 	    20 = { name = nose_size_pos    range = { 0.2 0.3 }    }
-# 	    5 = { name = nose_size_pos    range = { 0.3 0.4 }    }
+ 	gene_bs_nose_size = {
+ 	    # 1 = { name = nose_size_neg    range = { @blend3min @blend3max }    }
+ 	    # 5 = { name = nose_size_neg    range = { @blend2min @blend2max }    }
+ 	    20 = { name = nose_size_neg    range = { 0.1 0.2 }    }
+ 	    40 = { name = nose_size_pos    range = { 0.22 0.3 }    }
+ 	    20 = { name = nose_size_pos    range = { 0.2 0.3 }    }
+ 	    5 = { name = nose_size_pos    range = { 0.3 0.4 }    }
 
-# 	}
+ 	}
 
 	gene_bs_nose_tip_angle = {
 	    1 = { name = nose_tip_angle_neg    range = { 0.4 0.5   }    }
@@ -673,16 +607,6 @@ native_american = {
 	    0 = { name = nose_tip_forward_pos    range = { @blend3min @blend3max }    }
 
 	}
-
-# 	gene_bs_nose_tip_width = {
-# 	    5 = { name = nose_tip_width_neg    range = { @blend3min @blend3max }    }
-# 	    15 = { name = nose_tip_width_neg    range = { @blend2min @blend2max }    }
-# 	    40 = { name = nose_tip_width_neg    range = { @blend1min @blend1max }    }
-# 	    20 = { name = nose_tip_width_pos    range = { @blend1min @blend1max }    }
-# 	    5 = { name = nose_tip_width_pos    range = { @blend2min @blend2max }    }
-# 	    1 = { name = nose_tip_width_pos    range = { @blend3min @blend3max }    }
-
-# 	}
 
     face_detail_cheek_fat = {
         10 = {  name = cheek_fat_01_pos             range = { 0.1 0.4 }     }
@@ -731,8 +655,7 @@ native_american = {
         2 = {  name = complexion_7             range = { 0.3 1.0 }     }
 	}
 
-   gene_height = {
-
+    gene_height = {
         # 1 = { name = normal_height  range = { 0.5 0.5 }      }
 
         2 = { name = normal_height  range = { 0.3 0.35 }      }
@@ -741,9 +664,7 @@ native_american = {
         20 = { name = normal_height  range = { 0.5 0.55 }      }
         2 = { name = normal_height  range = { 0.55 0.65 }      }
         1 = { name = normal_height  range = { 0.65 0.7 }      }
-
     }
-
 
     gene_bs_body_shape = {
         25 = { name = body_shape_average     range = { 0.0 0.0 }      }
@@ -763,8 +684,8 @@ native_american = {
         10 = {  name = cheek_def_01             range = { 0.0 0.1 }     }
         10 = {  name = cheek_def_01             range = { 0.1 0.5 }     }
         0 = {  name = cheek_def_01             range = { 0.6 0.7 }     }
-        10 = {  name = cheek_def_02             range = { 0.0 0.1 }     }
-        10 = {  name = cheek_def_02             range = { 0.1 0.5 }     }
+        40 = {  name = cheek_def_02             range = { 0.6 0.8 }     }
+        40 = {  name = cheek_def_02             range = { 0.7 0.9 }     }
         0 = {  name = cheek_def_02             range = { 0.6 0.7 }     }
     }
 
@@ -825,26 +746,10 @@ native_american = {
     }
 
     gene_hair_type = {
-        90 = {  name = hair_straight             range = { 0.35 0.75 }     }
+        10 = {  name = hair_straight             range = { 0.35 0.75 }     }
         5 = {  name = hair_wavy             range = { 0.35 0.75 }     }
         5 = {  name = hair_curly             range = { 0.35 0.75 }     }
         0 = {  name = hair_afro             range = { 0.35 0.75 }     }
-        0 = {  name = hair_straight_thin_beard             range = range = { 0.35 0.75 }     }
-    }
-
-	beards = {
-        100 = {  name = no_beard             range = { 0 0 }     }
-    }
-
-    hairstyles = {
-        100 = {  name = all_hairstyles             range = { 0 1 }     }
-    }
-
-	gene_baldness = { # The age when balding starts should correspond roughly to the gene value so that, for example, characters with baldness 0.3 would start turning bald at 30
-	    0 = {  name = male_pattern_baldness             range = { 0.0 0.1 }     } 
-	    100 = {  name = no_baldness             range = { 0 1 }     } 
-	    0 = {  name = male_pattern_baldness             range = { 0.45 0.6 }     } 
-	    0 = {  name = male_pattern_baldness             range = { 0.6 0.75 }     } 
-	    0 = {  name = male_pattern_baldness             range = { 0.75 1.0 }     } 
+        90 = {  name = hair_straight_thin_beard             range = range = { 0.35 0.75 }     }
     }
 } 
