@@ -1,0 +1,11 @@
+#Triggers to control Coat of Arms weighting
+coa_valyrian_trigger = {
+	exists = scope:culture
+	scope:culture = { has_coa_gfx = valyrian_coa_gfx }
+}
+coa_aztec_trigger = {
+	exists = scope:culture
+	scope:culture = { has_coa_gfx = cemanahuac_coa_gfx }
+}
+
+
