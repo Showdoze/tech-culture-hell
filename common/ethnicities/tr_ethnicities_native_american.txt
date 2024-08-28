@@ -36,7 +36,7 @@
 
 native_american = {
 	template = "ethnicity_template"
-    using = "apache"
+    #using = "apache"
 	
 	skin_color = {
 		10 = { 1 0.5 1 0.7 }
@@ -634,7 +634,7 @@ native_american = {
         # 12 = {  name = nose_ridge_def_pos             range = { 0.0 0.1 }     }
         # 15 = {  name = nose_ridge_def_pos             range = { 0.1 0.8 }     }
         # 15 = {  name = nose_ridge_def_pos             range = { 0.8 1.0 }     }
-        2 = {  name = nose_ridge_def_neg             range = { 0.0 0.1 }     }
+        10 = {  name = nose_ridge_def_neg             range = { 0.2 0.4 }     }
         # 7 = {  name = nose_ridge_def_neg             range = { 0.1 0.8 }     }
         # 15 = {  name = nose_ridge_def_neg             range = { 0.8 1.0 }     }
     }
@@ -667,7 +667,7 @@ native_american = {
     }
 
     gene_bs_body_shape = {
-        25 = { name = body_shape_average     range = { 0.0 0.0 }      }
+        25 = { name = body_shape_average     range = { 0.0 0.2 }      }
         5 = { name = body_shape_apple_half     range = { 0.0 0.0 }      }
         5 = { name = body_shape_apple_full     range = { 0.0 0.0 }      }
         25 = { name = body_shape_hourglass_half     range = { 0.0 0.0 }      }
@@ -676,17 +676,17 @@ native_american = {
         10 = { name = body_shape_pear_full     range = { 0.0 0.0 }      }
         # 5 = { name = body_shape_rectangle_half     range = { 0.0 0.0 }      }
         # 5 = { name = body_shape_rectangle_full     range = { 0.0 0.0 }      }
-        25 = { name = body_shape_triangle_half     range = { 0.0 0.0 }      }
-        25 = { name = body_shape_triangle_full     range = { 0.0 0.0 }      }
+        25 = { name = body_shape_triangle_half     range = { 0 0.1 }      }
+        25 = { name = body_shape_triangle_full     range = { 0 0.1 }      }
     }
 
     face_detail_cheek_def = {
-        10 = {  name = cheek_def_01             range = { 0.0 0.1 }     }
-        10 = {  name = cheek_def_01             range = { 0.1 0.5 }     }
-        0 = {  name = cheek_def_01             range = { 0.6 0.7 }     }
+        10 = {  name = cheek_def_01             range = { 0.2 0.4 }     }
+        10 = {  name = cheek_def_01             range = { 0.4 0.5 }     }
+        0 = {  name = cheek_def_01             range = { 0 0.1 }     }
         40 = {  name = cheek_def_02             range = { 0.6 0.8 }     }
         40 = {  name = cheek_def_02             range = { 0.7 0.9 }     }
-        0 = {  name = cheek_def_02             range = { 0.6 0.7 }     }
+        0 = {  name = cheek_def_02             range = { 0.2 0.3 }     }
     }
 
     face_detail_chin_cleft = {
@@ -750,6 +750,15 @@ native_american = {
         5 = {  name = hair_wavy             range = { 0.35 0.75 }     }
         5 = {  name = hair_curly             range = { 0.35 0.75 }     }
         0 = {  name = hair_afro             range = { 0.35 0.75 }     }
-        90 = {  name = hair_straight_thin_beard             range = range = { 0.35 0.75 }     }
+        90 = {  name = hair_straight_thin_beard     range = { 0.35 0.75 }     }
     }
-} 
+
+    hairstyles = {
+        10 = {  name = northern_hairstyles_straight      range = { 0 1 }     }
+        10 = {  name = indian_hairstyles_straight      range = { 0 1 }     }
+    }
+
+    beards = {
+        10 = {  name = no_beard      range = { 0 1 }     }
+    }
+}
