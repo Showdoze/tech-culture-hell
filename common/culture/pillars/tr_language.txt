@@ -47,23 +47,25 @@ language_ancient_egyptian = {
 	
 	color = somali
 }
-language_ancient_texas = {
+
+language_mescalero = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_ancient_texas
+			LANGUAGE = language_mescalero
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_ancient_texas }
+			limit = { has_cultural_pillar = language_mescalero }
 			multiply = 10
 		}
 	}
 	
 	color = somali
 }
+
 language_mystery = {
 	type = language
 	is_shown = {

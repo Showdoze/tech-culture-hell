@@ -36,7 +36,7 @@
 
 native_american = {
 	template = "ethnicity_template"
-    using = "cherokee"
+    using = "naishan"
 	
 	skin_color = {
 		10 = { 1 0.5 1 0.7 }
@@ -841,11 +841,10 @@ native_american = {
     }
 
 	gene_baldness = { # The age when balding starts should correspond roughly to the gene value so that, for example, characters with baldness 0.3 would start turning bald at 30
-	    # 20 = {  name = male_pattern_baldness             range = { 0.0 0.1 }     } 
-	    100 = {  name = no_baldness             range = { 1 1 }     } 
+	    0 = {  name = male_pattern_baldness             range = { 0.0 0.1 }     } 
+	    100 = {  name = no_baldness             range = { 0 1 }     } 
 	    0 = {  name = male_pattern_baldness             range = { 0.45 0.6 }     } 
 	    0 = {  name = male_pattern_baldness             range = { 0.6 0.75 }     } 
 	    0 = {  name = male_pattern_baldness             range = { 0.75 1.0 }     } 
     }
-
 } 
