@@ -10,6 +10,7 @@
 	trait = beauty_good_3
 	trait = intellect_good_3
 	trait = education_intrigue_2
+	father = 82233
 	820.1.11 = {
 		birth = yes
 	}
@@ -39,6 +40,8 @@ mmtonychase = {
 	trait = born_in_the_purple
 	trait = patrician_born
 	disallow_random_traits = yes
+	father = 6392
+	mother = 70498
 	810.6.15 = {
 		birth = yes
 	}
@@ -200,7 +203,46 @@ mmjenniewilkins = {
 		}
 	}
 }
-
+mmdspmom = {
+	name = "Philippa"
+	religion = catholic
+	culture = american
+	female = yes
+	dynasty_house = house_burnell
+	trait = generous
+	trait = humble
+	trait = temperate
+	810.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		add_spouse = mmdspdad
+	}
+	840.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmdsp reason = rival_historical }
+		}
+	}
+}
+mmdspdad = {
+	name = "Phillip"
+	religion = catholic
+	culture = american
+	dynasty_house = house_burnell
+    trait = generous
+	trait = architect
+	800.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		add_spouse = mmdspmom
+	}
+	840.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmdsp reason = rival_historical }
+		}
+	}
+}
 mmdsp = {
 	name = "Phillip"
 	religion = catholic
@@ -222,8 +264,18 @@ mmdsp = {
 	trait = gout_ridden
 	give_nickname = nick_dsp
 	disallow_random_traits = yes
+	father = mmdspdad
+	mother = mmdspmom
 	820.4.6 = {
 		birth = yes
+	}
+	840.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmdspdad reason = rival_historical }
+		}
+		effect = {
+			set_relation_rival = { target = character:mmdspmom reason = rival_historical }
+		}
 	}
 	850.1.1 = {
 		effect = {
@@ -658,7 +710,7 @@ mmpunchy = {
 	culture = american
 	dynasty_house = house_sonichu
 	mother = mmrosechu
-	trait = contrite
+	trait = athletic
 	trait = education_martial_2
 	trait = dwarf
 	disallow_random_traits = yes
@@ -887,7 +939,7 @@ mmcrystalchan = {
 	861.1.1 = {
 		birth = yes
 	}
-	901.4.17 = {
+	868.4.17 = {
 		death = {
 			death_reason = death_inbred
 		}
@@ -915,7 +967,7 @@ mmbobchan = {
 	760.10.1 = {
 		birth = yes
 	}
-	790.10.1 = {
+	800.10.1 = {
 		add_spouse = mmbarb
 	}
 	826.4.17 = {
@@ -939,6 +991,23 @@ mm_bobs_son = {
 		birth = yes
 	}
 }	
+mmbardex = {
+	name = "Jerry"
+	religion = catholic
+	culture = american
+	trait = education_learning_1
+	trait = sadistic
+	trait = stubborn
+	disallow_random_traits = yes
+	780.1.1 = {
+		birth = yes
+	}
+	799.12.5 = {
+		death = {
+			death_reason = death_banned
+		}
+	}
+}
 mmbarb = {
 	name = "Barbara Ann"
 	religion = catholic
@@ -963,11 +1032,15 @@ mmbarb = {
 	trait = incestuous
 	trait = witch
 	trait = melancholic
+	father = mmbarb_dad
 	disallow_random_traits = yes
 	790.10.1 = {
 		birth = yes
 	}
-	790.10.1 = {
+	799.1.1 = {
+		add_spouse = mmbardex
+	}
+	800.1.1 = {
 		add_spouse = mmbobchan
 	}
 	821.1.1 = {
@@ -986,7 +1059,71 @@ mmbarb = {
 		}
 	}
 }
-
+mmbarb_dads_gds_dad = {
+	name = "Francis"
+	religion = catholic
+	culture = brit
+	dynasty_house = house_weston
+	593.2.1 = {
+		birth = yes
+	}
+	638.3.19 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}	
+mmbarb_dads_gd = {
+	name = "Joseph Edward"
+	religion = catholic
+	culture = american
+	dynasty_house = house_weston
+	trait = education_martial_2
+	trait = stubborn
+	636.7.22 = {
+		birth = yes
+	}
+	705.1.20 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}	
+mmbarb_dads_dad = {
+	name = "Joseph Edward"
+	religion = catholic
+	culture = american
+	dynasty_house = house_weston
+	trait = education_martial_2
+	trait = stubborn
+	661.1.12 = {
+		birth = yes
+	}
+	739.2.4 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+mmbarb_dad = {
+	name = "Joseph Otto"
+	religion = catholic
+	culture = american
+	dynasty_house = house_weston
+	trait = poet
+	trait = education_martial_2
+	trait = Honest
+	trait = stubborn
+	disallow_random_traits = yes
+	696.10.3 = {
+		birth = yes
+	}
+	818.4.8 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
 mmbarb_son = {
 	name = "Cole Smithy"
 	religion = catholic
