@@ -1,6 +1,8 @@
 ﻿tr_native_american_beards = {
 	
 	usage = game
+    selection_behavior = max
+    priority = 10
 
 	no_beards = {
         dna_modifiers = {
@@ -15,7 +17,9 @@
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -25,7 +29,8 @@
 tr_native_american_hair = {
 	
 	usage = game
-    selection_behavior = weighted_random
+    selection_behavior = max
+    priority = 10
     
     long_hair_1 = {
         dna_modifiers = {
@@ -39,7 +44,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -57,7 +64,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -75,7 +84,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -93,7 +104,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -111,7 +124,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -129,7 +144,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -147,7 +164,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -165,7 +184,9 @@ tr_native_american_hair = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -174,8 +195,9 @@ tr_native_american_hair = {
 
 tr_native_american_clothing = {
 
-    usage = game
-    selection_behavior = weighted_random
+	usage = game
+    selection_behavior = max
+    priority = 10
 
     clothing1 = {
         dna_modifiers = {
@@ -191,7 +213,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -210,7 +234,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -229,7 +255,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -248,7 +276,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -267,7 +297,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -286,7 +318,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -305,7 +339,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -324,7 +360,9 @@ tr_native_american_clothing = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -333,8 +371,9 @@ tr_native_american_clothing = {
 
 tr_native_american_headgear = {
 
-    usage = game
-    selection_behavior = weighted_random
+	usage = game
+    selection_behavior = max
+    priority = 10
 
     headgear1 = {
         dna_modifiers = {
@@ -350,7 +389,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -369,7 +410,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -388,7 +431,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -407,7 +452,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -426,7 +473,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -443,7 +492,9 @@ tr_native_american_headgear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -452,8 +503,9 @@ tr_native_american_headgear = {
 
 tr_native_american_legwear = {
     
-    usage = game
-    selection_behavior = weighted_random
+	usage = game
+    selection_behavior = max
+    priority = 10
 
     legwear1 = {
         dna_modifiers = {
@@ -468,7 +520,9 @@ tr_native_american_legwear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
@@ -486,7 +540,9 @@ tr_native_american_legwear = {
                 base = 0
                 modifier = {
                     add = 50
-                    portrait_native_american_clothing_trigger = yes
+                    culture = {
+                        has_cultural_pillar = heritage_native_american
+                    }
                 }
             }
         }
