@@ -10,6 +10,22 @@
 	text = {
 		trigger = {
 			OR = {
+				AND = {
+					government_has_flag = government_is_holy_order
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
+				AND = {
+					government_has_flag = government_is_theocracy
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
+			}
+				
+		}
+		localization_key = knight_ordinator
+	}	
+	text = {
+		trigger = {
+			OR = {
 				culture = { has_cultural_pillar = language_aramaic }
 				culture = { has_cultural_pillar = language_elamite }
 			}
