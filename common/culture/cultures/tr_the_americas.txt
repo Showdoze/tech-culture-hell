@@ -50,30 +50,6 @@ confederate = {
 	}
 }
 
-apache = {
-	color = { 120 120 10 }
-	ethos = ethos_bellicose
-	heritage = heritage_native_american
-	language = language_mescalero
-	martial_custom = martial_custom_male_only
-	traditions = {
-		tradition_mountaineers
-		tradition_warrior_culture
-		tradition_horse_lords
-		tradition_tribe_unity
-		tradition_sacred_mountains
-	}
-	name_list = name_list_native_american
-	coa_gfx = { mongol_coa_gfx steppe_coa_gfx }
-	building_gfx = { steppe_building_gfx }
-	clothing_gfx = { native_american_clothing_gfx no_beards_clothing_gfx }
-	unit_gfx = { mongol_unit_gfx }
-	ethnicities = {
-		90 = native_american
-		10 = mesoamerican
-	}
-}
-
 african_american = {
 	color = { 194 33 41 }
 	created = 1790.4.9
@@ -174,6 +150,30 @@ canadian = {
 		15 = caucasian_ginger
 		35 = caucasian_brown_hair
 		25 = caucasian_dark_hair
+	}
+}
+
+apache = {
+	color = { 120 120 10 }
+	ethos = ethos_bellicose
+	heritage = heritage_native_american
+	language = language_mescalero
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mountaineers
+		tradition_warrior_culture
+		tradition_horse_lords
+		tradition_tribe_unity
+		tradition_sacred_mountains
+	}
+	name_list = name_list_native_american
+	coa_gfx = { mongol_coa_gfx steppe_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	ethnicities = {
+		90 = native_american
+		10 = mesoamerican
 	}
 }
 
