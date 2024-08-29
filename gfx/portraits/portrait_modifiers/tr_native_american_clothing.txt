@@ -1,7 +1,6 @@
 ﻿tr_native_american_beards = {
 	
 	usage = game
-    priority = 10
 
 	no_beards = {
         dna_modifiers = {
@@ -15,17 +14,9 @@
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -36,7 +27,6 @@ tr_native_american_hair = {
 	
 	usage = game
     selection_behavior = weighted_random
-    priority = 10
     
     long_hair_1 = {
         dna_modifiers = {
@@ -49,17 +39,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -76,17 +58,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -103,17 +77,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -130,17 +96,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -157,16 +115,8 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    add = 56
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -183,17 +133,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -210,17 +152,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -237,17 +171,9 @@ tr_native_american_hair = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -255,9 +181,9 @@ tr_native_american_hair = {
 }
 
 tr_native_american_clothing = {
+
     usage = game
     selection_behavior = weighted_random
-    priority = 10
 
     clothing1 = {
         dna_modifiers = {
@@ -272,17 +198,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -300,17 +218,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -328,17 +238,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -356,17 +258,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -384,17 +278,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -412,17 +298,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -440,17 +318,9 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -468,26 +338,19 @@ tr_native_american_clothing = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
     }
 }
+
 tr_native_american_headgear = {
+
     usage = game
     selection_behavior = weighted_random
-    priority = 10
 
     headgear1 = {
         dna_modifiers = {
@@ -502,17 +365,9 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -530,17 +385,9 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -558,17 +405,9 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -586,17 +425,9 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -614,17 +445,9 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -640,26 +463,19 @@ tr_native_american_headgear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
     }
 }
+
 tr_native_american_legwear = {
+    
     usage = game
     selection_behavior = weighted_random
-    priority = 10
 
     legwear1 = {
         dna_modifiers = {
@@ -673,17 +489,9 @@ tr_native_american_legwear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
@@ -700,17 +508,9 @@ tr_native_american_legwear = {
             weight = {
                 base = 0
                 modifier = {
-                    add = 100
+                    add = 56
                     exists = this
-                    has_culture = apache
-                }
-                modifier = {
-                    add = -100
-                    exists = this
-                    OR = {
-                        is_from_ruler_designer = yes
-                        has_character_flag = has_scripted_appearance
-                    }
+                    tr_native_american_clothing_trigger = yes
                 }
             }
         }
