@@ -705,6 +705,28 @@ mmmusicbizmarty = {
 		add_spouse = mmbubbles
 	}
  }
+ mmdj_jamsta = {
+	name = "DJ Jamsta"
+	religion = cwcville
+	culture = american
+	dynasty_house = house_sonichu
+	mother = mmchrischan
+	father = mmchrischanpast
+	trait = sodomite
+	trait = dwarf
+	trait = lustful
+	trait = incestuous
+	trait = education_learning_1
+	disallow_random_traits = yes
+	844.3.17 = {
+		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmpunchy reason = rival_historical }
+		} 
+	}
+ }
  mmpunchy = {
 	name = "Punchy"
 	religion = cwcville
@@ -717,6 +739,11 @@ mmmusicbizmarty = {
 	disallow_random_traits = yes
 	845.2.2 = {
 		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmdj_jamsta reason = rival_historical }
+		} 
 	}
  }
  mmangelica = {
