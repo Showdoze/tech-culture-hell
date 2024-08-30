@@ -3,9 +3,15 @@
 
 	text = {
 		trigger = {
-			culture = { has_cultural_pillar = language_japanese }
-		}
+			culture = { has_name_list = name_list_japanese }
+		} #has_cultural_pillar = language_japanese
 		localization_key = knight_samurai
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_laconian }
+		}
+		localization_key = knight_hippagretes
 	}
 	text = {
 		trigger = {
@@ -18,10 +24,24 @@
 					government_has_flag = government_is_theocracy
 					culture = { has_cultural_pillar = language_dunmeris }
 				}
+				AND = {
+					government_has_flag = government_is_autocracy
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
 			}
 				
 		}
 		localization_key = knight_ordinator
+	}	
+	text = {
+		trigger = {
+			OR = {
+				faith = { religion_tag = cwcville_religion }
+				#culture = { has_cultural_pillar = language_iranian }
+			}
+				
+		}
+		localization_key = knight_guardian
 	}	
 	text = {
 		trigger = {
