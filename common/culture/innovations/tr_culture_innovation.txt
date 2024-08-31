@@ -9,7 +9,10 @@
 @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 @chinese_builder = "gfx/interface/icons/culture_innovations/chinese_builder.dds"
 @dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
-
+@ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
+@dead_culture = "gfx/interface/icons/culture_innovations/ai_innovation_dead_culture.dds"
+@community_college = "gfx/interface/icons/culture_innovations/ai_innovation_community_college.dds"
+@horse_breeding = "gfx/interface/icons/culture_innovations/ai_innovation_horse_breeding.dds"
 
 
 
@@ -214,5 +217,18 @@
  }
 
 
-
+#DUNMER
+ innovation_ashlander_customs = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @ashlander_customs
+	potential = {
+		this = culture:dunmer
+	}
+	character_modifier = {
+		county_opinion_add = 5
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+ }
 
