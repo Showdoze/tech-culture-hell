@@ -246,4 +246,81 @@ tr_doctrines = {
 			close_relative_opinion = 5
 		}
 	}
+	tenet_dwemer = {
+		icon = core_tenet_astrology
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_ancestor_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			always = no
+		}
+		parameters = {
+		}
+		traits = {
+			virtues = { architect cynical scholar journaller  }
+			sins = { intellect_bad_1 intellect_bad_2 intellect_bad_3 }
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+		}
+	}
+	tennet_blood_m = {
+		icon = tenet_bloodlust
+		piety_cost = {
+			if = {
+				limit = {
+					religion_tag = hinduism_religion
+				}
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion_tag = christianity_religion
+						religion_tag = judaism_religion
+						religion_tag = islam_religion
+						religion_tag = buddhism_religion
+						religion_tag = jainism_religion
+					}
+				}
+				value = faith_tenet_cost_high
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_albino }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			always = no
+		}
+		traits = {
+			virtues = { torturer sadistic vengeful murderer }
+		    sins = { forgiving arbitrary gluttonous }
+		}
+		parameters = {
+			death_is_glory = yes
+			sanctioned_assassinations = yes 
+			human_sacrifice_active = yes
+			flower_war_cb_active = yes
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+			self_mutilation_active = yes
+			consolamentum_active = yes
+		}
+		character_modifier = {
+			dread_baseline_add = 5
+			prowess = 2
+			controlled_province_advantage = 5
+			monthly_piety_gain_per_dread_add = 0.01
+		}
+	}
 }
