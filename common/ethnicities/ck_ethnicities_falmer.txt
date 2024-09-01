@@ -150,24 +150,6 @@ race_falmer = {
 
 }
 
-race_falmer_ear = {
-	template = "race_falmer"
-	using = "falmer"
-	
-	gene_bs_ear_outward = {
-		10 = { name = ear_outward_pos	range = { 0.19 0.37 }	}
-	}
-	
-	gene_bs_ear_angle = {
-		10 = { name = ear_angle_pos		range = { 0.0 0.6 } 	}
-		10 = { name = ear_angle_neg		range = { 0.0 0.5 } 	}
-	}
-
-	gene_bs_ear_bend = {
-		10 = { name = ear_upper_bend_pos		range = { 0.4 1.0 } 	}
-	}
-}
-
 race_falmer_betrayed = {
 	template = "race_falmer"
 	using = "falmer_betrayed"
