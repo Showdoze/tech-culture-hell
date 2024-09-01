@@ -44,7 +44,6 @@ language_ancient_egyptian = {
 			multiply = 10
 		}
 	}
-	
 	color = somali
 }
 
@@ -62,7 +61,6 @@ language_mescalero = {
 			multiply = 10
 		}
 	}
-	
 	color = somali
 }
 
@@ -80,7 +78,6 @@ language_unknown = {
 			multiply = 10
 		}
 	}
-	
 	color = somali
 }
 language_gerudo = {
@@ -97,7 +94,6 @@ language_gerudo = {
 			multiply = 10
 		}
 	}
-	
 	color = { 243 146 0 }
 }
 language_gnomish = { #Gnomish dialects
@@ -114,7 +110,6 @@ language_gnomish = { #Gnomish dialects
 			multiply = 10
 		}
 	}
-	
 	color = french ### Need to be changed
 }
 language_dwarven = { #Dwarvens dialects
@@ -131,7 +126,6 @@ language_dwarven = { #Dwarvens dialects
 			multiply = 10
 		}
 	}
-	
 	color = french ### Need to be changed
 }
 language_valyrian = {
@@ -148,7 +142,6 @@ language_valyrian = {
 			multiply = 10
 		}
 	}
-
 	color = { 0.71 0.37 0.60 }
 }
 language_common = {
@@ -181,7 +174,6 @@ language_ainu = {
 			multiply = 10
 		}
 	}
-	
 	color = ainu
 }
 language_korean = {
@@ -198,7 +190,6 @@ language_korean = {
 			multiply = 10
 		}
 	}
-	
 	color = korean
 }
 language_goblin = {
@@ -215,7 +206,6 @@ language_goblin = {
 			multiply = 10
 		}
 	}
-	
 	color = rgb { 145 207 79 }
 }
 language_orcish = { #Orcish dialects
@@ -232,7 +222,6 @@ language_orcish = { #Orcish dialects
 			multiply = 10
 		}
 	}
-	
 	color = rgb { 172 22 22 }
 }
 
@@ -250,7 +239,6 @@ language_ogre = { #Ogre dialects
 			multiply = 10
 		}
 	}
-	
 	color = rgb { 209 189 87 }
 }
 language_bosmeris = {
@@ -267,7 +255,6 @@ language_bosmeris = {
 			multiply = 10
 		}
 	}
-	
 	color = rgb { 209 189 87 }
 }
 language_altmeris = {
@@ -284,7 +271,6 @@ language_altmeris = {
 			multiply = 10
 		}
 	}
-	
 	color = altmeris
 }
 language_bretic = {
@@ -301,7 +287,6 @@ language_bretic = {
 			multiply = 10
 		}
 	}
-	
 	color = bretic
 }
 language_cyrodiilic = {
@@ -334,7 +319,6 @@ language_dunmeris = {
 			multiply = 10
 		}
 	}
-	
 	color = dunmeris
 }
 language_punic = {
@@ -352,7 +336,6 @@ language_punic = {
 		}
 
 	}
-	
 	color = ashkenazi
 }
 language_nahuatl = {
@@ -369,7 +352,6 @@ language_nahuatl = {
 			multiply = 10
 		}
 	}
-	
 	color =  { 235 64 52 }
 }
 language_giant = {
@@ -386,8 +368,22 @@ language_giant = {
 			multiply = 10
 		}
 	}
-	
 	color =  { 235 64 52 }
 }
-
+language_dwemeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_dwemeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_dwemeris }
+			multiply = 10
+		}
+	}
+	color = dwemeris
+}
 
