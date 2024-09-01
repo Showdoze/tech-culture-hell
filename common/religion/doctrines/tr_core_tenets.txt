@@ -323,4 +323,21 @@ tr_doctrines = {
 			monthly_piety_gain_per_dread_add = 0.01
 		}
 	}
+	tenet_tribunal = {
+		icon = core_tenet_astrology
+		piety_cost = {
+		}
+		is_shown = {
+			always = no
+		}
+		parameters = {
+		}
+		traits = {
+			virtues = { brave deceitful arrogant  }
+			sins = { craven lazy forgiving }
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+		}
+	}
 }
