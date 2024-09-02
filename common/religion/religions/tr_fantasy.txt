@@ -24,19 +24,16 @@ fantasy_religion = {
 	doctrine = doctrine_clerical_gender_male_only
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
-	#Special Doctrine for Christian Syncretism
-	doctrine = special_doctrine_is_christian_faith
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
 	#Funeral tradition
 	doctrine = doctrine_funeral_stoic
 	
-	reserved_male_names = {
-		Yagrum Kagrenac Dumac
-	}
-	reserved_female_names = {
-		
-	}
+	#reserved_male_names = {
+	#	Yagrum Kagrenac Dumac
+	#}
+	#reserved_female_names = {	
+	#}
 	custom_faith_icons = {
 		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 
 		custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 
@@ -225,7 +222,20 @@ faiths = {
 			#graphical_faith = "ek_dwemer_ph_gfx"
 			holy_site = alexandria
 			doctrine = doctrine_funeral_stoic
+			doctrine = doctrine_gender_equal
+			doctrine = doctrine_pluralism_fundamentalist
+			doctrine = doctrine_concubines
+	        doctrine = doctrine_divorce_allowed
+			doctrine = doctrine_consanguinity_cousins
+			doctrine = doctrine_kinslaying_accepted
+	        doctrine = doctrine_deviancy_shunned
 			doctrine = doctrine_witchcraft_accepted
+			#Clerical Functions
+	         doctrine = doctrine_clerical_function_recruitment
+	         doctrine = doctrine_clerical_gender_either
+	         doctrine = doctrine_clerical_marriage_allowed
+	         doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_funeral_cremation 
 			#Tenets
 			doctrine = tenet_dwemer
 			doctrine = tenet_inner_journey
@@ -384,11 +394,11 @@ faiths = {
 				GHWNamePlural = ghw_crusades
 			}
 		}	
-	blood_faith = {
+	    blood_faith = {
 			color = { 0.6 0.1 0.1 }
 			icon = hellenic
 			holy_site = london
-			holy_site = athens
+			holy_site = kiev
 			holy_site = alexandria
 			holy_site = carthage
 			holy_site = olympus
@@ -420,7 +430,7 @@ faiths = {
 			doctrine = tenet_astrology
 			doctrine = tenet_communal_identity
 			doctrine = tenet_esotericism
-		localization = {
+		    localization = {
 				#High God Name
 				 HighGodName = blood_high_god_name
 				 HighGodName2 = blood_high_god_name_2
@@ -500,16 +510,16 @@ faiths = {
 				PantheonTerm2 = religion_the_killer_2
 				PantheonTerm3 = religion_the_killer_3
 				PantheonTermHasHave = pantheon_term_have
-			GoodGodNames = { god_joker god_judge_holden god_cain god_john_wayne_gacy 
-			god_jack_ripper god_hhholmes god_sweet_tooth god_clarence_boddicker 
-			god_micheal_myers god_malebolgia god_mad_sam
-			}
+			    GoodGodNames = { god_joker god_judge_holden god_cain god_john_wayne_gacy 
+			    god_jack_ripper god_hhholmes god_sweet_tooth god_clarence_boddicker 
+			    god_micheal_myers god_malebolgia god_mad_sam
+			    }
 				DevilName = blood_devil_name
 				DevilNamePossessive = blood_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
 				DevilHerHis = CHARACTER_HERHIS_HIS
 				DevilHerselfHimself = CHARACTER_HIMSELF
-			EvilGodNames = { god_jesus }
+			    EvilGodNames = { god_jesus }
 				HouseOfWorship = paganism_house_of_worship
 				HouseOfWorship2 = blood_house_of_worship_2
 				HouseOfWorship3 = blood_house_of_worship_3
@@ -567,7 +577,7 @@ faiths = {
 				GHWNamePlural = ghw_blood_wars
 			}
 		}
-	tribunal_temple = {
+	    tribunal_temple = {
 			color = { 0.49 0.26 0.0 }
 			icon = tribunal_temple
 			#holy_site = hs_red_mountain
@@ -576,6 +586,11 @@ faiths = {
 			#holy_site = hs_vivec
 			#holy_site = hs_necrom			
 			# Doctrines
+			doctrine = doctrine_gender_equal
+			doctrine = doctrine_kinslaying_accepted
+			doctrine = doctrine_clerical_gender_either
+			doctrine = doctrine_clerical_succession_spiritual_appointment
+			doctrine = doctrine_homosexuality_accepted
 			doctrine = doctrine_funeral_cremation
 			#Tenets
 			doctrine = tenet_ancestor_worship
@@ -719,5 +734,7 @@ faiths = {
 				GHWNamePlural = ghw_crusades
 			}
 		}
+	#
+
 	}
 }
