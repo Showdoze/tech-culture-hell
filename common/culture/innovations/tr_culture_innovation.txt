@@ -13,7 +13,8 @@
 @dead_culture = "gfx/interface/icons/culture_innovations/ai_innovation_dead_culture.dds"
 @community_college = "gfx/interface/icons/culture_innovations/ai_innovation_community_college.dds"
 @horse_breeding = "gfx/interface/icons/culture_innovations/ai_innovation_horse_breeding.dds"
-
+@dwemer_centurion = "gfx/interface/icons/culture_innovations/dwemer_centurion.dds"
+@dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
 
 
 
@@ -231,4 +232,27 @@
 	flag = global_regional
 	flag = tribal_era_regional
  }
-
+#DWEMER
+innovation_sphere_centurion = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @dwemer_sphere
+	potential = {
+		this = culture:dwemer
+	}
+	can_progress = {
+		has_innovation = innovation_bronze_work
+	}	
+ }
+ innovation_steam_centurion = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @dwemer_centurion
+	potential = {
+		this = culture:dwemer
+	}
+	can_progress = {
+		has_innovation = innovation_sphere_centurion
+	}	
+ }
+#

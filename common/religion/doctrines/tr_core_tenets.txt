@@ -139,12 +139,7 @@ tr_doctrines = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
-		is_shown = {
-			always = yes
-		}
-		is_shown = {
-			has_doctrine = pagan_hostility_doctrine
-		}
+		is_shown = { always = no }
 		traits = {
 			virtues = {
 				pure_blooded = 2
@@ -229,10 +224,7 @@ tr_doctrines = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
-		is_shown = {
-			has_doctrine = pagan_hostility_doctrine
-		}
-
+		is_shown = { always = no }
 		parameters = {
 			increased_dynasty_prestige_birth_mult = 1
 			increased_dynasty_prestige_marriage_mult = 1
@@ -241,7 +233,6 @@ tr_doctrines = {
 			select_personal_god_active = yes
 			divine_the_stars_active = yes
 		}
-
 		character_modifier = {
 			close_relative_opinion = 5
 		}
@@ -267,41 +258,13 @@ tr_doctrines = {
 		}
 		character_modifier = {
 			close_relative_opinion = 5
+			learning_per_piety_level = 5
 		}
 	}
 	tennet_blood_m = {
 		icon = tenet_bloodlust
-		piety_cost = {
-			if = {
-				limit = {
-					religion_tag = hinduism_religion
-				}
-				value = faith_tenet_cost_mid
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion_tag = christianity_religion
-						religion_tag = judaism_religion
-						religion_tag = islam_religion
-						religion_tag = buddhism_religion
-						religion_tag = jainism_religion
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_low
-			}
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_albino }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-		is_shown = {
-			always = no
-		}
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
 		traits = {
 			virtues = { torturer sadistic vengeful murderer }
 		    sins = { forgiving arbitrary gluttonous }
@@ -327,9 +290,7 @@ tr_doctrines = {
 		icon = core_tenet_astrology
 		piety_cost = {
 		}
-		is_shown = {
-			always = no
-		}
+		is_shown = { always = no }
 		parameters = {
 		}
 		traits = {
@@ -338,6 +299,18 @@ tr_doctrines = {
 		}
 		character_modifier = {
 			close_relative_opinion = 5
+		}
+	}
+	tenet_stoicism = {
+		icon = core_tenet_inner_journey
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { patient rakish diligent }
+			sins = { impatient irritable arbitrary }
+		}
+		parameters = {
+			meditation_mechanics_active = yes
 		}
 	}
 }

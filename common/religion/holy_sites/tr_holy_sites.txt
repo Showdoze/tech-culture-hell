@@ -514,4 +514,24 @@ london = {
 	    monthly_lifestyle_xp_gain_mult = 0.15
     }
 }
+paris = { 
+    county = c_ile_de_france
+    barony = b_paris
+    character_modifier = {
+	    name = holy_site_paris_effect_name
+	    cultural_head_fascination_mult = 0.1
+	    development_growth_factor = 0.1
+    }
+}
+timbuktu = { 
+    county = c_tirakka
+    barony = b_timbuktu
+    character_modifier = {
+	    name = holy_site_timbuktu_effect_name
+	    negate_learning_penalty_add = 2
+		learning_per_piety_level = 1
+    }
+}
+
+
 

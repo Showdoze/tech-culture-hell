@@ -639,3 +639,43 @@ traditon_hidden_village = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
+tradition_dwemer = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = dwemer_science.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		better_ward_education = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+		development_gain_on_building_complete = yes
+		pensive_trait_more_common = yes
+		rowdy_trait_less_common = yes
+		innovation_from_learning_traits = yes
+		patient_trait_more_common = yes
+	}
+	character_modifier = {
+		diplomatic_range_mult = 3
+		owned_legend_spread_mult = 0.05
+		cultural_head_fascination_mult = 0.1
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		learning_per_prestige_level = 1
+		build_gold_cost = 0.5
+		monthly_county_control_growth_factor = 0.2
+		learning = 5
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.9
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }		
+}
