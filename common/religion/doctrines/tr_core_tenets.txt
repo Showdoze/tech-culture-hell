@@ -238,7 +238,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_dwemer = {
-		icon = core_tenet_astrology
+		icon = core_tenet_dwemer
 		piety_cost = {
 			value = faith_tenet_cost_low
 			# Multiplier for keeping same tenet
@@ -262,7 +262,7 @@ tr_doctrines = {
 		}
 	}
 	tennet_blood_m = {
-		icon = tenet_bloodlust
+		icon = ai_tenet_mastery_over_undeath
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
@@ -287,7 +287,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_tribunal = {
-		icon = core_tenet_astrology
+		icon = core_tenet_tribunal
 		piety_cost = {
 		}
 		is_shown = { always = no }
@@ -308,6 +308,18 @@ tr_doctrines = {
 		traits = {
 			virtues = { patient rakish diligent }
 			sins = { impatient irritable arbitrary }
+		}
+		parameters = {
+			meditation_mechanics_active = yes
+		}
+	}
+	tenet_hist = {
+		icon = core_tenet_inner_journey
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { fickle patient content }
+			sins = { stubborn vengeful arrogant }
 		}
 		parameters = {
 			meditation_mechanics_active = yes
