@@ -20,8 +20,8 @@ tr_auto.01 = { #Hygene trait distribution
 	immediate = {
 		random_list = {
 			# Bad hygene
-			40 = {
-				trigger = { 
+			10 = {
+				trigger = {
 					NOR = { 
 						has_trait = hygene_bad_1
 						has_trait = hygene_bad_2
@@ -33,7 +33,7 @@ tr_auto.01 = { #Hygene trait distribution
 			}
 			
 			# Very bad hygene
-			10 = {
+			5 = {
 				trigger = { 
 					NOR = { 
 						has_trait = hygene_bad_1
@@ -46,7 +46,7 @@ tr_auto.01 = { #Hygene trait distribution
 			}
 
 			# Good hygene
-			20 = {
+			8 = {
 				trigger = { 
 					NOR = { 
 						has_trait = hygene_bad_1
@@ -59,7 +59,7 @@ tr_auto.01 = { #Hygene trait distribution
 			}
 
 			# Very good hygene
-			10 = {
+			5 = {
 				trigger = { 
 					NOR = { 
 						has_trait = hygene_bad_1
