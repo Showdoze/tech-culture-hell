@@ -1092,42 +1092,36 @@
 	tier = county
 	priority = 20
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
  barony_dwemer { #The Assembly
 	type = title
 	tier = barony
 	priority = 30
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
  duchy_dwemer { #Great Forge
 	type = title
 	tier = duchy
 	priority = 40
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
  petty_kingdom_dwemer { #Brass Forge
 	type = title
 	tier = petty_kingdom
 	priority = 50
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
  kingdom_dwemer { #Brass Kingdom
 	type = title
 	tier = kingdom
 	priority = 60
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
  empire_dwemer { #The Great Spire
 	type = title
 	tier = empire
 	priority = 80
 	name_lists = { name_list_dwemer}
-	top_liege = no
  }
 
  emperor_dwemer { #Great Tonal Constructor
@@ -1135,55 +1129,54 @@
 	special = holder
 	tier = empire
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
  petty_king_dwemer { #Frequency Shaper
 	type = character
 	special = holder
 	tier = petty_kingdom
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
  king_dwemer { #Tonal Architect
 	type = character
 	special = holder
 	tier = kingdom
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
  duke_dwemer { #Forge Overseer
 	type = character
 	special = holder
 	tier = duchy
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
  baron_dwemer { #Assembly Supervisor
 	type = character
 	special = holder
 	tier = barony
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
  count_dwemer { #Star Counter
 	type = character
 	special = holder
 	tier = county
 	priority = 80
-	name_lists = { name_list_dwemer}
 	top_liege = no
+	name_lists = { name_list_dwemer}
  }
 
  chancellor_dwemer { #Logic Keeper
 	type = character
 	special = chancellor
 	priority = 80
-	top_liege = no
 	council_position = councillor_chancellor
 	name_lists = { name_list_dwemer }
  }
@@ -1191,7 +1184,6 @@
 	type = character
 	special = marshal
 	priority = 80
-	top_liege = no
 	council_position = councillor_marshal
 	name_lists = { name_list_dwemer }
  }
@@ -1199,31 +1191,22 @@
 	type = character
 	special = steward
 	priority = 80
-	top_liege = no
 	council_position = councillor_steward
 	name_lists = { name_list_dwemer }
  }
  court_chaplain_dwemer { #Tonal Conduct
 	type = character
 	special = court_chaplain
-	priority = 80
-	top_liege = no
+	priority = 100
+	faith = dwemer_religion
 	council_position = councillor_court_chaplain
 	name_lists = { name_list_dwemer }
  }
  spymaster_dwemer { #Hidden Overseer
 	type = character
 	special = spymaster
-	priority = 80
-	top_liege = no
-	council_position = councillor_spymaster
-	name_lists = { name_list_dwemer }
- }
-
-  automaton_dwemer { #Animunculi
-	type = men_at_arms
-	special = automaton
 	priority = 100
+	council_position = councillor_spymaster
 	name_lists = { name_list_dwemer }
  }
 # 

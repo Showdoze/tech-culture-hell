@@ -1,0 +1,14 @@
+
+GetRegionalAutomatonMAA = {
+	type = character
+	
+	text = {
+		trigger = { culture = { has_cultural_pillar = language_dwemeris } }
+		localization_key = automaton_dwemer
+	}
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = automaton
+	}
+}
