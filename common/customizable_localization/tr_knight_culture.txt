@@ -46,6 +46,14 @@
 	text = {
 		trigger = {
 			OR = {
+				culture = { has_cultural_pillar = language_dwemeris }
+			}
+		}
+		localization_key = knight_soldier
+	}
+	text = {
+		trigger = {
+			OR = {
 				culture = { has_cultural_pillar = language_aramaic }
 				culture = { has_cultural_pillar = language_elamite }
 			}
@@ -81,7 +89,7 @@
 				culture = { has_cultural_pillar = language_tamil }
 				culture = { has_cultural_pillar = language_telugu }
 				culture = { has_cultural_pillar = language_kannada }
-								culture = { has_cultural_pillar = language_north_dravidian } #FP3 addition
+				culture = { has_cultural_pillar = language_north_dravidian } #FP3 addition
 			}
 		}
 		localization_key = knight_shoorveer
