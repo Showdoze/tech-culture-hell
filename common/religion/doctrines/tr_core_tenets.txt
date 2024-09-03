@@ -325,4 +325,28 @@ tr_doctrines = {
 			meditation_mechanics_active = yes
 		}
 	}
+	tenet_ds1 = {
+		icon = core_tenet_inner_journey
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { fickle patient content }
+			sins = { stubborn vengeful arrogant }
+		}
+		parameters = {
+			meditation_mechanics_active = yes
+		}
+	}
+	tenet_imperial_cult = {
+		icon = core_tenet_inner_journey
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { born_in_the_purple augustus august peasant_leader }
+			sins = { peasant_born heresiarch disinherited }
+		}
+		parameters = {
+			meditation_mechanics_active = yes
+		}
+	}
 }
