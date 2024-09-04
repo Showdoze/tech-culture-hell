@@ -25,7 +25,7 @@
  doctrine_bastardry_low_desc:0 "All children born is polygamous relationships are considered legitimate"
  heretic_opinion:0 "Ignorant Heretic"
 
-######Building#############################################################################
+######Building####################
  building_type_theodosian_walls_02:0 "The Great Theodosian Walls"
  building_type_theodosian_walls_02_desc:1 "The Great Theodosian Walls were built during the reign of Emperor Theodosius II in the early 5th century, but they still remain some of the most formidable fortifications built by human hands, this is it's ultimate final form."
  building_theodosian_walls_02:0 "The Great Theodosian Walls"
@@ -125,6 +125,9 @@
  #roman
   building_type_castra_praetoria:0 "Castra Preatoria"
   building_type_castra_peregrina:0 "Castra Peregrina"
+ #London
+   building_type_white_chapel:0 "WhiteChapel"
+   building_type_white_chapel_Desc:0 "Whitechapel has a long history of having a high proportion of immigrants within the community. From the late 19th century until the late 20th century the area had a very high Jewish population, and it subsequently became a significant settlement for the British Bangladeshi community. Whitechapel and neighbouring Spitalfields were the locations of the infamous 11 Whitechapel murders (1888-91), some of which were attributed to the unidentified serial killer known as Jack the Ripper. These factors and others have led to Whitechapel being seen by many as the embodiment of London's East End, and for that reason it is often used to represent the East End in art and literature."
  #Tribal
   building_longhouses_03:0 "Grand Halls+"
   building_longhouses_03_desc:0 "Grand halls host a central stage, where a chief or warlord can deliver rousing speeches."
@@ -202,7 +205,7 @@
  change_government_autocracy_decision_desc:0 "Become Autocracy"
  change_government_autocracy_decision_tooltip:0 "Adopt Autocratic government type"
 
-###TRAITS#########################################################
+###TRAITS#############################################
  trait_adopted:0 "Adopted"
  trait_adopted_desc:0 "A acknowledgement and wishing that one was of there blood"
  trait_adopted_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has been Adopted and is treated like a member of the family"
@@ -485,22 +488,52 @@
  samurai_tanegashima:0 "Ashigaru"
 
 #Fantasy 
- innovation_saiyan_training_1:0 "Saiyan Tribalism"
- innovation_saiyan_training_1_desc:0 "Saiyan's have a long history of barbarism and war so much so they are more comfortable in war than in court."
- innovation_saiyan_training_2:0  "Saiyan Strength"
- innovation_saiyan_training_2_desc:0 "Saiyan's have evolved to have strength greater then that of a normal human."
- innovation_saiyan_training_3:0 "Saiyan Endurance"
- innovation_saiyan_training_3_desc:0 "Saiyan's have evolved for battle and as such there can heal from injury's that normally would lead to death."
- dragons:0 "Dragons"
- dragons_flavor:0 "#F Few have witnessed the power of the Dragons, and even fewer have managed to get a Dragon to fight with them.#!"
- dragon:2 "[dragon|E]"
- game_concept_dragon:0 "Dragon"
- game_concept_dragon_desc:0 "Dragons are [men_at_arms|E] who soar through the air on great wings, raining fire and death upon any foe.\n\nDragons ignore terrain effects, and is only Countered by specific [men_at_arms|E].\n\nDragons are represented by a small men-at-arms regiment of 10 men."
- innovation_dragon_egg:0 "Dragon Egg's"
- innovation_dragon_egg_desc:0 "Dragons are powerful and ancient creators that take a while to hatch sometimes over 100 years"
- innovation_ashlander_customs:0 "Ashlander Customs"
- innovation_ashlander_customs_desc:0 "Ashlanders Khans harness oaths, favours and gifts to ensure loyalty. On account of this, the tribesfolk show a #italic little#! leniency."
-
+ #Saiyan
+  innovation_saiyan_training_1:0 "Saiyan Tribalism"
+  innovation_saiyan_training_1_desc:0 "Saiyan's have a long history of barbarism and war so much so they are more comfortable in war than in court."
+  innovation_saiyan_training_2:0  "Saiyan Strength"
+  innovation_saiyan_training_2_desc:0 "Saiyan's have evolved to have strength greater then that of a normal human."
+  innovation_saiyan_training_3:0 "Saiyan Endurance"
+  innovation_saiyan_training_3_desc:0 "Saiyan's have evolved for battle and as such there can heal from injury's that normally would lead to death."
+ #AGOT
+  dragons:0 "Dragons"
+  dragons_flavor:0 "#F Few have witnessed the power of the Dragons, and even fewer have managed to get a Dragon to fight with them.#!"
+  dragon:2 "[dragon|E]"
+  game_concept_dragon:0 "Dragon"
+  game_concept_dragon_desc:0 "Dragons are [men_at_arms|E] who soar through the air on great wings, raining fire and death upon any foe.\n\nDragons ignore terrain effects, and is only Countered by specific [men_at_arms|E].\n\nDragons are represented by a small men-at-arms regiment of 10 men."
+  innovation_dragon_egg:0 "Dragon Egg's"
+  innovation_dragon_egg_desc:0 "Dragons are powerful and ancient creators that take a while to hatch sometimes over 100 years"
+ #Dunmer
+  innovation_ashlander_customs:0 "Ashlander Customs"
+  innovation_ashlander_customs_desc:0 "Ashlanders Khans harness oaths, favours and gifts to ensure loyalty. On account of this, the tribesfolk show a #italic little#! leniency."
+  innovation_bonemold_armor:0 "BoneMold Armor"
+  innovation_bonemold_armor_desc:0 "Bonemold, also known as Great House armor, is an expensive medium weight armor which can generally only be afforded by Morrowind's Dunmer nobles. The armor is composed of bones which are artificially shaped and assembled before being fixed with resin glues. There are a variety of Bonemold designs for each of the various houses. The book Bone tells the story of their invention. While principally used to create armor, Bonemold is also useful in the creation of Marksman weapons (bows, arrows, and bolts). It is strong yet flexible, making it ideal for this sort of application, and Bonemold Long Bows are surpassed only by such rare items as the Daedric Long Bow and Auriel's Bow in terms of their power. Bonemold Long Bows actually exceed all others in terms of enchantability."
+ innovation_horse_armor_beth:0 "Horse Armor"
+ innovation_horse_armor_beth_desc:0 "Because you can't afford not to protect your horse so buy our DLC."
+ innovation_glass_armor:0 "Glass Armor"
+ innovation_glass_armor_desc:0 "Glass weapons and armor are an ornate design light and flexible, although very difficult to make and expensive. Glass armor is a lightweight armor created using rare metals studded with volcanic glass. The result is stronger than steel due to its ability to absorb and distribute shocks very well. Glass armor not only surpasses other light armor in strength, but is also superior to most medium armor (with the exception of a few Artifacts and some new medium armor added by the two expansions). The armor is favored by the Buoyant Armigers, and one of the only places it can be found for sale is at their stronghold in Ghostgate."
+ #Argonian
+  innovation_black_marsh_natives:0 "Marsh-Steading"
+  innovation_black_marsh_natives_desc:0 "Black Marsh is, to most people, inhospitable to the point of being a fetid hell. But still there are those who live here, those who have grown accustomed to the constant rot, who know what solid ground to trust, whose expectations are low and who use the eccentric and repulsive abundance of the bogs instead of civilisation as it can exist elsewhere, in less chaotic lands."
+  innovation_hist_mending:0 "Hist Mending"
+  innovation_hist_mending_desc:0 "Our Hist menders tend to the sacred groves and keep them safe from intruders. With the right training, they can also adapt to a battlefield, keeping not only the Hist safe but also their fellow Argonians."
+  innovation_black_marsh_materials:0 "Black Marsh Materials"
+  innovation_black_marsh_materials_desc:0 "Flint and bone, hackwing feathers and volcanic glass, bog iron and brass, all these and more can be found in Black Marsh. Perhaps the armors we create from such disparate materials cannot rival steel plate, but wherever our warrios fight, it is Black Marsh itself that armors them."
+ #Khajitt cats
+   innovation_alfiq:0 "Alfiq Training"
+   innovation_alfiq_desc:0 "We are bound to the Moons, and our physiology is deeply tied to their form when we are born. The smallest of us, the Alfiq, are predisposed to the magical arts, and can support our warriors either in the backline, or by sitting in a shoulder harness worn by our largest warriors."
+   innovation_senche_raht:0 "Senche-Raht Training"
+   innovation_senche_raht_desc:0 "We are bound to the Moons, and our physiology is deeply tied to their form when we are born. Some of us, the Senche-Raht, are capable of charging the enemy lines on four feet, and are strong enough to carry a regular-sized soldier on their back. We should integrate them into our armies."
+   innovation_clan_mothers:0 "Clan-Mothers"
+   innovation_clan_mothers_desc:0 "We live our faith in everything we do, by the instruction of our beloved clan-mothers who teach wisdom to the clans and in the cities alike."
+ #Dwemer
+  innovation_sphere_centurion:0 "Sphere Animunculi"
+  innovation_sphere_centurion_desc:0 "The centurion sphere is an enchanted animated artifact of Dwemer creation. These aggressive and dangerous devices compress into a ball when inactive, and transform into a mobile warrior when aroused. Scrap metal collected from Dwemer artifacts is rare and precious, and prized both by collectors of antiquities and students of metals and enchantments"
+  sphere_centurion:0 "Sphere Centurion"
+  innovation_steam_centurion:0 "Steam Animunculi"
+  innovation_steam_centurion_desc:0 "Steam Centurions are one of the mysterious Dwemer Animunculi. Undoubtedly designed for combat, its entire body is constructed of solid metal blocks and armored with thick metal plates. What is more interesting, however, is that its shape and face roughly resemble that of a Khajiit Senche."
+  steam_centurion:0 "Steam Centurion"
+ #
 #Roman
  innovation_legionaries:0 "Marian Reform's"
  innovation_legionaries_desc:0 "Marian Reform's served the old republic well. With some modern advancement's and a standing army rome may be reborn! "
@@ -536,13 +569,7 @@
 #Italian
 
 
-#Dwemer
- innovation_sphere_centurion:0 "Sphere Animunculi"
- innovation_sphere_centurion_desc:0 "The centurion sphere is an enchanted animated artifact of Dwemer creation. These aggressive and dangerous devices compress into a ball when inactive, and transform into a mobile warrior when aroused. Scrap metal collected from Dwemer artifacts is rare and precious, and prized both by collectors of antiquities and students of metals and enchantments"
- sphere_centurion:0 "Sphere Centurion"
- innovation_steam_centurion:0 "Steam Animunculi"
- innovation_steam_centurion_desc:0 "Steam Centurions are one of the mysterious Dwemer Animunculi. Undoubtedly designed for combat, its entire body is constructed of solid metal blocks and armored with thick metal plates. What is more interesting, however, is that its shape and face roughly resemble that of a Khajiit Senche."
- steam_centurion:0 "Steam Centurion"
+
 #America
  usa_matchlock:0 "Continental Soldier"
  

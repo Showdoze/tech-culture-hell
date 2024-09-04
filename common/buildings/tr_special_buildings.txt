@@ -959,3 +959,33 @@ wonder_newgrange_01 = {
  #	flag = travel_point_of_interest_martial # wall
  #}
 #
+#London 
+ white_chapel = {
+	construction_time = slow_construction_time
+	type_icon = "icon_whitechapel.dds"
+	cost_prestige = 200
+	cost_gold = 420
+	can_construct_potential = {
+		barony = title:b_london
+		building_requirement_tribal = no
+	}
+	character_culture_modifier = {
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+		learn_language_scheme_power_mult = 0.2
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth_factor = 0.15
+		development_growth = 0.1
+		building_slot_add = 1
+	}
+	province_modifier = {
+		travel_danger = 0.1
+	}
+	ai_value = {
+		base = 0
+	}
+	flag = travel_point_of_interest_religious
+ }
+#

@@ -328,7 +328,7 @@ dragons = {
 	siege_value = 1
 	
 	counters = {
-		skirmishers = 1
+		skirmishers = 2
 		heavy_infantry = 1
 		light_cavalry = 1
 		heavy_cavalry = 1
@@ -352,7 +352,6 @@ croc_rider = {
 	toughness = 20
 	pursuit = 20
 	screen = 10		# They bail out
-	siege_value = 0
 
 	terrain_bonus = {
 		plains = { damage = 1 }
@@ -365,6 +364,7 @@ croc_rider = {
 	}
 	counters = {
 		archers = 1
+		camel_cavalry = 1
 	}
 	winter_bonus = {
 		normal_winter = { damage = -10 toughness = -5 }
