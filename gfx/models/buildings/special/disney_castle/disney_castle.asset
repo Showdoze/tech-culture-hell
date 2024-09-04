@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "disney_castle_mesh"
+	file = "disney_castle.mesh"
+
+	meshsettings = {
+		name = "disney_castleShape"
+		index = 0
+		texture_diffuse = "disney_castle_diffuse.dds"
+		texture_normal = "disney_castle_normal.dds"
+		texture_specular = "disney_castle_properties.dds"
+		texture = { file = "disney_castle_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "disney_castle_entity"
+	pdxmesh = "disney_castle_mesh"
+}

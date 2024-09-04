@@ -1,0 +1,100 @@
+##########
+# Statue of Liberty
+##########
+ statue_of_liberty = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_statue_of_liberty.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	asset = {
+		type = pdxmesh
+		name = "statue_of_liberty_mesh"
+	}
+	cost_gold = 3000
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		monthly_dynasty_prestige_mult = 0.1
+		faith_conversion_piety_cost_mult = -0.2
+		monthly_county_control_change_factor = 0.1
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth = 0.2
+		development_growth_factor = 0.2
+		defender_holding_advantage = 5  #you can see real far from up here
+	}
+	ai_value = {
+		base = 100
+	}
+	province_modifier = {
+		monthly_income = 2
+	}
+	type = special
+	flag = travel_point_of_interest_religious
+ }
+##########
+# Machu Picchu
+##########
+ machu_picchu = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_machu_picchu.dds"
+	asset = {
+		type = pdxmesh
+		name = "machu_pichu_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	cost_gold = 1000
+	character_modifier = {
+		monthly_dynasty_prestige = 1.0
+	}
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_3
+	}
+	county_modifier = {
+		development_growth = 0.1
+		development_growth_factor = 0.1
+		tax_mult = 0.05
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+ }
+##########
+# Disney Castle
+##########
+ disney_castle = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_disney_castle.dds"
+	#can_construct_potential = {
+	#	building_requirement_tribal = no
+	#}
+	asset = {
+		type = pdxmesh
+		name = "disney_castle_mesh"
+	}
+	cost_gold = 3000
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		monthly_dynasty_prestige_mult = 0.05
+		knight_effectiveness_mult = 0.2
+		knight_limit = 1
+		monthly_county_control_change_factor = 0.1
+	}
+	county_modifier = {
+		development_growth = 0.1
+	}
+	province_modifier = {
+		garrison_size = 0.5
+		fort_level = 2
+		monthly_income = 2
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+}
+#

@@ -96,3 +96,331 @@
 	}
  }
 #London 
+#Argonian
+ @holding_illustration_hist = "gfx/interface/illustrations/holding_types/ek_hist_tree.dds"
+ # Hist Trees
+ ############
+
+ ### Holding Tiers
+ hist_01 = { # Sapling
+	asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+
+	cost_piety = 1000
+
+	construction_time = very_slow_construction_time
+
+	ai_value = {
+		base = 500
+	}
+
+	can_construct_potential = {
+		ek_hist_tree_faith_construct_trigger = yes # Only proper Hist followers can plant new saplings
+		ek_hist_tree_terrain_trigger = yes
+	}
+
+    can_construct_showing_failures_only = {
+        building_requirement_hist_holding_in_county = yes
+    }
+
+	is_enabled = {
+		ek_hist_tree_faith_trigger = yes # Those who deeply respect the Hist however can still make use of them
+	}
+
+	levy = small_building_levy_tier_1
+	
+	character_modifier = {
+		monthly_piety = 0.2
+		levy_maintenance = -0.05
+		same_faith_opinion = 2
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 1
+	}
+
+	county_modifier = {
+		county_opinion_add = 5
+		levy_size = 0.05
+		levy_reinforcement_rate = 0.1
+	}
+
+    next_building = hist_02
+ }
+ hist_02 = { # Young Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+
+    cost_piety = 1000
+
+	construction_time = very_slow_construction_time
+
+	can_construct_potential = {
+        custom_tooltip = {
+            text = is_upgraded_over_time
+            always = no
+        }
+	}
+
+	is_enabled = {
+		ek_hist_tree_faith_trigger = yes
+	}
+
+	levy = small_building_levy_tier_2
+
+	character_modifier = {
+		monthly_piety = 0.4
+		same_faith_opinion = 4
+		levy_maintenance = -0.1
+	}
+	
+	province_modifier = {
+		defender_holding_advantage = 2
+	}
+
+	county_modifier = {
+		county_opinion_add = 10
+		levy_size = 0.1
+		levy_reinforcement_rate = 0.2
+	}
+
+	next_building = hist_03
+ }
+ hist_03 = { # Mature Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	can_construct_potential = {
+        custom_tooltip = {
+            text = is_upgraded_over_time
+            always = no
+        }
+	}
+	is_enabled = {
+		ek_hist_tree_faith_trigger = yes
+	}
+	levy = small_building_levy_tier_3
+	character_modifier = {
+		monthly_piety = 0.6
+		same_faith_opinion = 6
+		levy_maintenance = -0.15
+	}
+	province_modifier = {
+		defender_holding_advantage = 3
+	}
+	county_modifier = {
+		county_opinion_add = 15
+		levy_size = 0.15
+		levy_reinforcement_rate = 0.3
+	}
+	next_building = hist_04
+ }
+ hist_04 = { # Old Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	can_construct_potential = {
+        custom_tooltip = {
+            text = is_upgraded_over_time
+            always = no
+        }
+	}
+	is_enabled = {
+		ek_hist_tree_faith_trigger = yes
+	}
+	levy = small_building_levy_tier_4
+	character_modifier = {
+		monthly_piety = 0.8
+		same_faith_opinion = 8
+		levy_maintenance = -0.2
+	}
+	province_modifier = {
+		defender_holding_advantage = 4
+	}
+	county_modifier = {
+		county_opinion_add = 20
+		levy_size = 0.2
+		levy_reinforcement_rate = 0.4
+	}
+    next_building = hist_05
+ }
+ hist_05 = { # Ancient Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	can_construct_potential = {
+        custom_tooltip = {
+            text = has_reached_last_stage
+            always = no
+        }
+	}
+	is_enabled = {
+		ek_hist_tree_faith_trigger = yes
+	}
+	levy = small_building_levy_tier_5
+	character_modifier = {
+		monthly_piety = 1
+		same_faith_opinion = 10
+		levy_maintenance = -0.25
+	}	
+	province_modifier = {
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		county_opinion_add = 25
+		levy_size = 0.25
+		levy_reinforcement_rate = 0.5
+	}
+ }
+#Khajiit cats
+ # Anequina Moon Gate - a ancient portal towards the Plane of Jode, it safeguards the power of Jode's Core
+ anequina_moon_gate_01 = {
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_special_moon_gate_mesh"
+		}
+	}
+	type_icon = "icon_structure_golden_gate_of_kiev.dds"
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+	can_construct = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_moon_worship } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_moon_worship } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	cost_gold = 1000
+	construction_time = very_slow_construction_time	
+	character_modifier = {
+		monthly_piety = 0.5
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		learning_per_piety_level = 1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.1
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+ }
+#WOOD ELF
+ # Beldama Wyrd Tree
+ beldama_wyrd_tree_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_beldama_wyrd_tree.dds"
+	asset = {
+		type = pdxmesh
+		name = "tree_graht_01_c_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder = { faith = { has_doctrine_parameter = faith_uses_great_wyrd_tree } }
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_crop_rotation
+			}
+		}
+	}
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+		scope:holder = { faith = { has_doctrine_parameter = faith_uses_great_wyrd_tree } }
+	}
+	cost_gold = 2000
+	character_modifier = {
+		learning_per_piety_level = 1
+		negate_health_penalty_add = 0.25
+	}
+	county_modifier = {
+		build_speed = 0.2
+		build_gold_cost = 0.2
+		county_opinion_add = 10
+	}
+	province_modifier = {
+		stationed_mages_damage_mult = normal_maa_damage_tier_1
+		stationed_mages_toughness_mult = normal_maa_toughness_tier_1
+		stationed_mages_screen_mult = normal_maa_screen_tier_1
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+ }
+#

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "machu_pichu_mesh"
+	file = "machu_pichu.mesh"
+
+	meshsettings = {
+		name = "machu_pichuShape"
+		index = 0
+		texture_diffuse = "machu_pichu_diffuse.dds"
+		texture_normal = "machu_pichu_normal.dds"
+		texture_specular = "machu_pichu_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "machu_pichu_entity"
+	pdxmesh = "machu_pichu_mesh"
+}

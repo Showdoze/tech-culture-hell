@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "mount_rushmore_mesh"
+	file = "mount_rushmore.mesh"
+
+	meshsettings = {
+		name = "mount_rushmoreShape"
+		index = 0
+		texture_diffuse = "mount_rushmore_diffuse.dds"
+		texture_normal = "mount_rushmore_normal.dds"
+		texture_specular = "mount_rushmore_properties.dds"
+		texture = { file = "mount_rushmore_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "mount_rushmore_entity"
+	pdxmesh = "mount_rushmore_mesh"
+}

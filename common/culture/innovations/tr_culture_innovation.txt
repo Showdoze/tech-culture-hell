@@ -24,6 +24,11 @@
 @glassarmor = "gfx/interface/icons/culture_innovations/ai_innovation_glass.dds"
 @black_marsh_materials = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_materials.dds"
 @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
+@dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
+@dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
+@dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
+@silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
+@alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
 
 
 #JAPAN
@@ -229,16 +234,7 @@
 	culture_era = culture_era_late_medieval
 	icon =  @housearmor
 	potential = {
-		OR = {
-			this = culture:dunmer
-			this = culture:dwemer
-			this = culture:imperial_culture
-			this = culture:alikr
-			this = culture:glenumbran
-			this = culture:altmer
-			this = culture:bosmer
-			this = culture:warsong
-		}
+		has_cultural_pillar = heritage_fantasy
 	}
 	maa_upgrade = {
 		type = heavy_cavalry
@@ -256,16 +252,7 @@
 	culture_era = culture_era_early_medieval
 	icon =  @glassarmor
 	potential = {
-		OR = {
-		this = culture:dunmer
-		this = culture:dwemer
-		this = culture:imperial_culture
-		this = culture:alikr
-		this = culture:glenumbran
-		this = culture:altmer
-		this = culture:bosmer
-		this = culture:warsong
-		}
+		has_cultural_pillar = heritage_fantasy
 	}
 	maa_upgrade = {
 		type = skirmishers
@@ -289,6 +276,20 @@
 	}
 	flag = early_medieval_era_regular
  }
+ innovation_alchemy = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @alchemy
+	potential = {
+		has_cultural_pillar = heritage_fantasy
+	}
+	character_modifier = {
+		negate_health_penalty_add = 0.25
+		epidemic_resistance = 5
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
 #DUNMER
  innovation_ashlander_customs = {
 	group = culture_group_civic
@@ -332,6 +333,20 @@
 	}
 	flag = early_medieval_era_regular
  }
+ innovation_silt_strider = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @silt_strider
+	potential = {
+		this = culture:dunmer
+	}
+	character_modifier = {
+		development_growth_factor = 0.1
+		movement_speed = 0.15
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+}
 #DWEMER
  innovation_sphere_centurion = {
 	group = culture_group_military
@@ -353,6 +368,60 @@
 	}
 	can_progress = {
 		has_innovation = innovation_sphere_centurion
+	}	
+ }
+ innovation_sound_drill = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_tone
+	potential = {
+		this = culture:dwemer
+	}
+	county_modifier = {
+		building_slot_add = 1
+	}
+	character_modifier = {
+		build_speed = -0.4
+		build_gold_cost = -0.1
+		stewardship = 1
+	}
+	can_progress = {
+		has_innovation = innovation_song
+	}	
+ }
+ innovation_dwemer_tech = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_crossbow
+	potential = {
+		this = culture:dwemer
+	}
+	character_modifier = {
+		build_speed = -0.01
+		build_gold_cost = -0.01
+		men_at_arms_maintenance = -0.05
+		short_reign_duration_mult = -0.1
+	}
+	can_progress = {
+		has_innovation = innovation_mint
+	}	
+ }
+ innovation_dwemer_time_space = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_space
+	potential = {
+		this = culture:dwemer
+	}
+	character_modifier = {
+		build_speed = -0.01
+		build_gold_cost = -0.01
+		learning = 1
+		men_at_arms_maintenance = -0.01
+		short_reign_duration_mult = -0.1
+	}
+	can_progress = {
+		has_innovation = innovation_earth_size
 	}	
  }
 #Argonian

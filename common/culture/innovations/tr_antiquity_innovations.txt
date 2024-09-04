@@ -40,7 +40,6 @@ innovation_trireme = {
 	culture_era = culture_era_antiquity
 	icon = @trireme
 	region = ck_mediterranean
-
 	character_modifier = {
 		embarkation_cost_mult = -0.2
 		naval_movement_speed_mult = 0.75
@@ -56,7 +55,6 @@ innovation_bronze_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
-
 	character_modifier = {
 		prowess = 1
 		men_at_arms_maintenance = -0.01
@@ -75,7 +73,6 @@ innovation_iron_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
-
 	character_modifier = {
 		prowess = 1
 		advantage = 1
@@ -97,7 +94,6 @@ innovation_steel_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
-
 	character_modifier = {
 		prowess = 1
 		men_at_arms_maintenance = -0.01
@@ -113,7 +109,6 @@ innovation_caravenserai = {
 	culture_era = culture_era_antiquity
 	region = world_middle_east
 	icon = @nobility_04
-
 	character_modifier = {
 		domain_tax_mult = 0.1
 		different_culture_opinion = 10
@@ -125,12 +120,10 @@ innovation_imperial_distinguished_service = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @diadem
-
 	character_modifier = {
 		knight_effectiveness_mult = 0.2
 		accolade_glory_gain_mult = 0.1
 	}
-
 	custom = increase_war_rewards
 
 }
@@ -139,9 +132,7 @@ innovation_classical_picked_troops = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @leadership_alexander
-
 	custom = more_glory_hounds
-	
 	character_modifier = {
 		men_at_arms_cap = 1
 		men_at_arms_limit = 3
@@ -154,7 +145,6 @@ innovation_equipment_celtic = {
 	culture_era = culture_era_antiquity
 	region = ghw_region_celtic
 	icon = @eq_celtic
-
 	character_modifier = {
 		prowess = 1
 		men_at_arms_maintenance = -0.1
@@ -178,7 +168,6 @@ innovation_hellenistic_baggage_train = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @leadership_alexander
-
 	character_modifier = {
 		movement_speed = 0.1
 		supply_duration	= 0.25
@@ -191,7 +180,6 @@ innovation_mint = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @mint
-
 	character_modifier = {
 		domain_tax_mult = 0.1
 		courtly_opinion = 5
@@ -203,7 +191,6 @@ innovation_silk = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @silk
-
 	character_modifier = {
 		short_reign_duration_mult = -0.1
 		courtly_opinion = 5
@@ -215,7 +202,6 @@ innovation_world_is_round = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @administration_3
-
 	character_modifier = {
 		short_reign_duration_mult = -0.2
 		learning = 1
@@ -241,7 +227,6 @@ innovation_archaic_measurement = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @wealth
-
 	character_modifier = {
 		development_growth_factor = 0.1
 	}
@@ -254,7 +239,6 @@ innovation_hellenistic_private_banking = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @wealth
-
 	character_modifier = {
 		development_growth_factor = 0.1
 	}
@@ -264,10 +248,8 @@ innovation_ships = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @ships
-
 	custom = unlocks_naval_raiding
 	custom = unlocks_sailable_major_rivers
-
 	flag = global_regional
 	flag = antiquity_era_regional
 }
@@ -276,7 +258,6 @@ innovation_hyroglifics = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @administration_3
-
 	character_modifier = {
 		learning = 1
 		title_creation_cost_mult = -0.2
@@ -288,7 +269,6 @@ innovation_makeup = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @misc_inventions
-
 	character_modifier = {
 		attraction_opinion = 5
 		diplomacy = 1
@@ -337,7 +317,6 @@ innovation_nile_agriculture = {
 	culture_era = culture_era_antiquity
 	region = ghw_region_egypt
 	icon = @innovation_nile_agriculture
-
 	character_modifier = {
 		domain_tax_mult = 0.05
 		development_growth_factor = 0.1
@@ -355,6 +334,10 @@ innovation_wootz_steel = {
 	character_modifier = {
 		prowess = 1
 		martial = 1
+	}
+	maa_upgrade = {
+		type = automaton
+		toughness = 10
 	}
 	maa_upgrade = {
 		type = heavy_infantry
@@ -380,7 +363,6 @@ innovation_acupuncture = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @acupuncture
-
 	character_modifier = {
 		stress_loss_mult = -0.05
 		health = 0.01
@@ -394,7 +376,6 @@ innovation_abacus = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @abacus
-
 	character_modifier = {
 		domain_tax_mult = 0.01
 		development_growth_factor = 0.1
