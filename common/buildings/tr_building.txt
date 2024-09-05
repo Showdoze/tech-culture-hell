@@ -109,46 +109,47 @@
 		illustration = @holding_illustration_hist
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
 	}
-
 	cost_piety = 1000
-
 	construction_time = very_slow_construction_time
-
 	ai_value = {
 		base = 500
 	}
-
-	can_construct_potential = {
-		ek_hist_tree_faith_construct_trigger = yes # Only proper Hist followers can plant new saplings
-		ek_hist_tree_terrain_trigger = yes
+	can_construct = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
-
-    can_construct_showing_failures_only = {
-        building_requirement_hist_holding_in_county = yes
-    }
-
 	is_enabled = {
-		ek_hist_tree_faith_trigger = yes # Those who deeply respect the Hist however can still make use of them
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
-
 	levy = small_building_levy_tier_1
-	
 	character_modifier = {
 		monthly_piety = 0.2
 		levy_maintenance = -0.05
 		same_faith_opinion = 2
 	}
-
 	province_modifier = {
 		defender_holding_advantage = 1
 	}
-
 	county_modifier = {
 		county_opinion_add = 5
 		levy_size = 0.05
 		levy_reinforcement_rate = 0.1
 	}
-
     next_building = hist_02
  }
  hist_02 = { # Young Hist
@@ -158,45 +159,37 @@
 		illustration = @holding_illustration_hist
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
 	}
-
 	ai_value = {
 		base = 100
 		ai_special_building_modifier = yes
 	}
-
     cost_piety = 1000
-
 	construction_time = very_slow_construction_time
-
-	can_construct_potential = {
-        custom_tooltip = {
-            text = is_upgraded_over_time
-            always = no
-        }
-	}
-
 	is_enabled = {
-		ek_hist_tree_faith_trigger = yes
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
-
 	levy = small_building_levy_tier_2
-
 	character_modifier = {
 		monthly_piety = 0.4
 		same_faith_opinion = 4
 		levy_maintenance = -0.1
 	}
-	
 	province_modifier = {
 		defender_holding_advantage = 2
 	}
-
 	county_modifier = {
 		county_opinion_add = 10
 		levy_size = 0.1
 		levy_reinforcement_rate = 0.2
 	}
-
 	next_building = hist_03
  }
  hist_03 = { # Mature Hist
@@ -212,14 +205,16 @@
 	}
     cost_piety = 1000
 	construction_time = very_slow_construction_time
-	can_construct_potential = {
-        custom_tooltip = {
-            text = is_upgraded_over_time
-            always = no
-        }
-	}
 	is_enabled = {
-		ek_hist_tree_faith_trigger = yes
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
 	levy = small_building_levy_tier_3
 	character_modifier = {
@@ -250,14 +245,16 @@
 	}
     cost_piety = 1000
 	construction_time = very_slow_construction_time
-	can_construct_potential = {
-        custom_tooltip = {
-            text = is_upgraded_over_time
-            always = no
-        }
-	}
 	is_enabled = {
-		ek_hist_tree_faith_trigger = yes
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
 	levy = small_building_levy_tier_4
 	character_modifier = {
@@ -288,14 +285,16 @@
 	}
     cost_piety = 1000
 	construction_time = very_slow_construction_time
-	can_construct_potential = {
-        custom_tooltip = {
-            text = has_reached_last_stage
-            always = no
-        }
-	}
 	is_enabled = {
-		ek_hist_tree_faith_trigger = yes
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
 	}
 	levy = small_building_levy_tier_5
 	character_modifier = {
