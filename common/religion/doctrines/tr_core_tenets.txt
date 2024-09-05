@@ -251,6 +251,7 @@ tr_doctrines = {
 			always = no
 		}
 		parameters = {
+			piety_from_marrying_lowborn_active = yes
 		}
 		traits = {
 			virtues = { architect cynical scholar journaller  }
@@ -259,6 +260,10 @@ tr_doctrines = {
 		character_modifier = {
 			close_relative_opinion = 5
 			learning_per_piety_level = 5
+			hills_development_growth_factor = 0.15
+			hills_tax_mult = 0.1
+			hills_levy_size = 0.3
+			hills_advantage = 5
 		}
 	}
 	tennet_blood_m = {
@@ -267,7 +272,7 @@ tr_doctrines = {
 		is_shown = { always = no }
 		traits = {
 			virtues = { torturer sadistic vengeful murderer }
-		    sins = { forgiving arbitrary gluttonous }
+		    sins = { forgiving compassionate }
 		}
 		parameters = {
 			death_is_glory = yes
@@ -294,7 +299,7 @@ tr_doctrines = {
 		parameters = {
 		}
 		traits = {
-			virtues = { brave deceitful arrogant  }
+			virtues = { brave deceitful = 2 arrogant  }
 			sins = { craven lazy forgiving }
 		}
 		character_modifier = {

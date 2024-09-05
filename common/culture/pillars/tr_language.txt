@@ -386,4 +386,54 @@ language_dwemeris = {
 	}
 	color = dwemeris
 }
-
+language_old_falmeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_old_falmeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_old_falmeris }
+			multiply = 10
+		}
+	}
+	
+	color = falmeris
+}
+language_falmeris = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_falmeris
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_falmeris }
+			multiply = 10
+		}
+	}
+	
+	color = jorane
+}
+language_jel = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_jel
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_jel }
+			multiply = 10
+		}
+	}
+	
+	color = jel
+}

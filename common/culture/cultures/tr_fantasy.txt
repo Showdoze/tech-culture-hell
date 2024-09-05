@@ -1,5 +1,7 @@
 ﻿gnome = {
 	color = rgb { 222 135 26 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_communal
 	heritage = heritage_fantasy
 	language = language_gnomish
@@ -23,6 +25,8 @@
 
 old_dwarven = {
 	color = rgb { 184 120 79 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy
 	language = language_dwarven
@@ -69,6 +73,8 @@ gerudo = {
 
 saiyan = {
 	color = han
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_anglic #language_common
@@ -88,6 +94,8 @@ saiyan = {
 
 goblin = {
 	color = rgb { 145 207 79 }
+	created = 10.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy
 	language = language_goblin
@@ -113,6 +121,8 @@ goblin = {
 }
 warsong = { #ORCISH
 	color = rgb { 89 19 19 }
+	created = 5.1.1
+	history_loc_override = orc_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_orcish
@@ -140,6 +150,8 @@ warsong = { #ORCISH
 }
 bosmer = {
 	color = { 0.33 0.53 0.12 }
+	created = 10.1.1
+	history_loc_override = bosmer_history_loc
 	ethos = ethos_spiritual
 	heritage = heritage_fantasy
 	language = language_bosmeris
@@ -162,6 +174,8 @@ bosmer = {
 }
 altmer = { #HIGH ELF
 	color = { 1.0 0.85 0.0 }
+	created = 5.1.1
+	history_loc_override = altmer_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_fantasy
 	language = language_altmeris
@@ -183,6 +197,8 @@ altmer = { #HIGH ELF
 }
 dunmer = { #Telvanni
 	color = { 0.5 0.2 0.3 }	
+	created = 5.1.1
+	history_loc_override = dunmer_history_loc
 	ethos = ethos_stoic
 	heritage = heritage_fantasy
 	language = language_dunmeris
@@ -203,6 +219,8 @@ dunmer = { #Telvanni
 }
 glenumbran = { #Breton
 	color = { 0.78 0.58 0.52 }	
+	created = 10.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_fantasy
 	language = language_bretic
@@ -227,6 +245,8 @@ glenumbran = { #Breton
 }
 alikr = { #RedGuard
 	color = { 0.82 0.42 0.32 }
+	created = 15.1.1
+	history_loc_override = yokudan_history_loc
 	ethos = ethos_stoic
 	heritage = heritage_fantasy
 	language = language_tamrielic_yoku
@@ -248,6 +268,8 @@ alikr = { #RedGuard
 }
 high_valyrian = {
 	color = { 0.71 0.37 0.60 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_valyrian
@@ -320,6 +342,8 @@ ancient_texas = {
 
 unknown = {
 	color = { 0 0 0 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_stoic
 	heritage = heritage_unknown
 	language = language_unknown
@@ -339,6 +363,8 @@ unknown = {
 
 imperial_culture = {
 	color = { 0.58 0.06 0.06 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_courtly
 	heritage = heritage_fantasy
 	language = language_cyrodiilic
@@ -360,6 +386,8 @@ imperial_culture = {
 }
 hidden_mist = {
 	color = { 0.58 0.06 0.06 }
+	created = 500.1.1
+	history_loc_override = naruto_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_japanese
@@ -381,6 +409,8 @@ hidden_mist = {
 }
 hidden_sand = {
 	color = { 0.58 0.06 0.06 }
+	created = 500.1.1
+	history_loc_override = naruto_history_loc
 	ethos = ethos_communal
 	heritage = heritage_fantasy
 	language = language_japanese
@@ -400,6 +430,8 @@ hidden_sand = {
 }
 dwemer = { # Vvardenfell/MW Dwemer
 	color = { 1.0 0.85 0.0 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy
 	language = language_dwemeris
@@ -417,5 +449,55 @@ dwemer = { # Vvardenfell/MW Dwemer
 	unit_gfx = { dunmer_unit_gfx }
 	ethnicities = {
 		10 = race_dwemer
+	}
+}
+falmer = {
+	color = { 214 244 255 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_spiritual
+	heritage = heritage_fantasy
+	language = language_old_falmeris
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_knight_paladins
+		tradition_hereditary_hierarchy
+		tradition_fortress_monasteries
+		tradition_winter_warriors
+		tradition_arctic_settlers
+	}
+	name_list = name_list_falmer
+	coa_gfx = {  } #falmeris_group_coa_gfx
+	building_gfx = {  } #ek_aldmer_building_gfx
+	clothing_gfx = {  } #ek_aldmeri_clothing_gfx
+	unit_gfx = { altmer_unit_gfx }
+	ethnicities = {
+		10 = race_falmer
+		#5 = race_falmer_ear
+	}
+}
+falmer_betrayed = {
+	color = { 214 244 255 }
+	parents = { falmer }
+	created = 5.1.1
+	history_loc_override = betrayal_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy
+	language = language_falmeris
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_chaurus_husbandry
+		tradition_pale_shamans
+		tradition_mountain_homes
+		tradition_winter_warriors
+		tradition_arctic_settlers
+	}
+	name_list = name_list_falmer_betrayed
+	coa_gfx = {  } #goblin_group_coa_gfx
+	building_gfx = {  } #ek_goblin_building_gfx
+	clothing_gfx = {  } #ek_goblin_clothing_gfx
+	unit_gfx = { mongol_unit_gfx } #replace with goblin when thats done
+	ethnicities = {
+		10 = race_falmer_betrayed
 	}
 }

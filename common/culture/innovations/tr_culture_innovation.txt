@@ -29,6 +29,7 @@
 @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
 @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
 @alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
 
 
 #JAPAN
@@ -71,8 +72,18 @@
 	}
 	unlock_maa = samurai_tanegashima
  }	
-
-
+ innovation_manga = {
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @administration_1
+	potential = {	
+		this = culture:japanese		
+	}
+	character_modifier = {
+		development_growth_factor = 0.1
+		courtly_opinion = 5
+	}
+ }
 #CHINA
  innovation_china_boat1 = {
 	group = culture_group_regional
