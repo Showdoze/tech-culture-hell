@@ -93,7 +93,7 @@ saiyan = {
 }
 
 goblin = {
-	color = rgb { 145 207 79 }
+	color = goblin
 	created = 10.1.1
 	history_loc_override = mystery_history_loc
 	ethos = ethos_bureaucratic
@@ -120,7 +120,7 @@ goblin = {
 	}
 }
 warsong = { #ORCISH
-	color = rgb { 89 19 19 }
+	color = orcish
 	created = 5.1.1
 	history_loc_override = orc_history_loc
 	ethos = ethos_bellicose
@@ -139,8 +139,8 @@ warsong = { #ORCISH
 	}
 	name_list = name_list_warsong
 	coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }
-	building_gfx = { western_building_gfx }
-	clothing_gfx = { western_clothing_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { western_clothing_gfx mongol_clothing_gfx }
 	unit_gfx = { morc_unit_gfx }
 	ethnicities = {
 		80 = green_orcish
@@ -149,7 +149,7 @@ warsong = { #ORCISH
 	}
 }
 bosmer = {
-	color = { 0.33 0.53 0.12 }
+	color = bosmeris
 	created = 10.1.1
 	history_loc_override = bosmer_history_loc
 	ethos = ethos_spiritual
@@ -173,7 +173,7 @@ bosmer = {
 	}
 }
 altmer = { #HIGH ELF
-	color = { 1.0 0.85 0.0 }
+	color = altmeris
 	created = 5.1.1
 	history_loc_override = altmer_history_loc
 	ethos = ethos_courtly
@@ -196,7 +196,7 @@ altmer = { #HIGH ELF
 	}
 }
 dunmer = { #Telvanni
-	color = { 0.5 0.2 0.3 }	
+	color = dunmeris
 	created = 5.1.1
 	history_loc_override = dunmer_history_loc
 	ethos = ethos_stoic
@@ -218,7 +218,7 @@ dunmer = { #Telvanni
 	}
 }
 glenumbran = { #Breton
-	color = { 0.78 0.58 0.52 }	
+	color = bretic
 	created = 10.1.1
 	history_loc_override = mystery_history_loc
 	ethos = ethos_courtly
@@ -244,7 +244,7 @@ glenumbran = { #Breton
 	}
 }
 alikr = { #RedGuard
-	color = { 0.82 0.42 0.32 }
+	color = yoku
 	created = 15.1.1
 	history_loc_override = yokudan_history_loc
 	ethos = ethos_stoic
@@ -362,7 +362,7 @@ unknown = {
 }
 
 imperial_culture = {
-	color = { 0.58 0.06 0.06 }
+	color = cyrodiilic
 	created = 1.1.1
 	history_loc_override = mystery_history_loc
 	ethos = ethos_courtly
@@ -429,7 +429,7 @@ hidden_sand = {
 	}
 }
 dwemer = { # Vvardenfell/MW Dwemer
-	color = { 1.0 0.85 0.0 }
+	color = dwemeris
 	created = 1.1.1
 	history_loc_override = mystery_history_loc
 	ethos = ethos_bureaucratic
@@ -452,7 +452,7 @@ dwemer = { # Vvardenfell/MW Dwemer
 	}
 }
 falmer = {
-	color = { 214 244 255 }
+	color = falmeris
 	created = 1.1.1
 	history_loc_override = mystery_history_loc
 	ethos = ethos_spiritual
@@ -467,9 +467,9 @@ falmer = {
 		tradition_arctic_settlers
 	}
 	name_list = name_list_falmer
-	coa_gfx = {  } #falmeris_group_coa_gfx
-	building_gfx = {  } #ek_aldmer_building_gfx
-	clothing_gfx = {  } #ek_aldmeri_clothing_gfx
+	coa_gfx = { central_african_group_coa_gfx } #falmeris_group_coa_gfx
+	building_gfx = { african_building_gfx mena_building_gfx } #ek_aldmer_building_gfx
+	clothing_gfx = { african_clothing_gfx } #ek_aldmeri_clothing_gfx
 	unit_gfx = { altmer_unit_gfx }
 	ethnicities = {
 		10 = race_falmer
@@ -477,7 +477,7 @@ falmer = {
 	}
 }
 falmer_betrayed = {
-	color = { 214 244 255 }
+	color = falmeris
 	parents = { falmer }
 	created = 5.1.1
 	history_loc_override = betrayal_history_loc
@@ -493,9 +493,9 @@ falmer_betrayed = {
 		tradition_arctic_settlers
 	}
 	name_list = name_list_falmer_betrayed
-	coa_gfx = {  } #goblin_group_coa_gfx
-	building_gfx = {  } #ek_goblin_building_gfx
-	clothing_gfx = {  } #ek_goblin_clothing_gfx
+	coa_gfx = { central_african_group_coa_gfx } #goblin_group_coa_gfx
+	building_gfx = { african_building_gfx } #ek_goblin_building_gfx
+	clothing_gfx = { african_clothing_gfx  } #ek_goblin_clothing_gfx
 	unit_gfx = { mongol_unit_gfx } #replace with goblin when thats done
 	ethnicities = {
 		10 = race_falmer_betrayed
