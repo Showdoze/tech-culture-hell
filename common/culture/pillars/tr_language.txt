@@ -420,7 +420,7 @@ language_falmeris = {
 	
 	color = jorane
 }
-language_jel = {
+language_jel = { #Argonian
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
@@ -436,4 +436,21 @@ language_jel = {
 	}
 	
 	color = jel
+}
+language_taagra = { #khajitt
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_taagra
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_taagra }
+			multiply = 10
+		}
+	}
+	
+	color = taagra
 }

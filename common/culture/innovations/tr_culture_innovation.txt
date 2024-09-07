@@ -161,6 +161,25 @@
 		building_slot_add = 2
 	}
  }
+ innovation_match = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @porcelain
+	potential = {
+		OR = {
+		this = culture:han
+		any_parent_culture_or_above = {
+			this = culture:han #han
+		}
+    }}
+	character_modifier = {
+		domain_tax_mult = 0.01
+		courtly_opinion = 5
+		development_growth_factor = 0.01
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+ }
 #Aztec
  innovation_aztec_weapon = {
 	group = culture_group_military
