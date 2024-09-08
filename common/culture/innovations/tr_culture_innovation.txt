@@ -460,7 +460,7 @@
 	culture_era = culture_era_tribal
 	icon = @black_marsh_natives
 	potential = {
-		always = no
+		has_cultural_pillar = language_jel
 	}
 	character_modifier = {
 		black_marsh_cancel_negative_supply = yes
@@ -477,7 +477,7 @@
 	culture_era = culture_era_tribal
 	icon = @hist_mending
 	potential = {
-		has_cultural_pillar = heritage_argonian
+		has_cultural_pillar = language_jel
 	}	
 	character_modifier = {
 	}
@@ -490,8 +490,8 @@
 	culture_era = culture_era_early_medieval
 	icon = @black_marsh_materials
 	potential = {
-		has_cultural_pillar = heritage_argonian
-	}
+		has_cultural_pillar = language_jel
+	}	
 	flag = global_maa
 	flag = pikemen_maa
 	flag = innovation_steel_spearhead_replacement
@@ -502,8 +502,8 @@
 	culture_era = culture_era_tribal
 	icon = @alfiq
 	potential = {
-		has_cultural_pillar = heritage_khajiiti
-	}
+		has_cultural_pillar = language_taagra
+	}	
 	character_modifier = {
 	}
 	flag = global_maa
@@ -515,9 +515,8 @@
 	culture_era = culture_era_early_medieval
 	icon = @senche_raht
 	potential = {
-		always = no
-		#has_innovation = innovation_lunar_lattice
-	}
+		has_cultural_pillar = language_taagra
+	}	
 	flag = global_maa
 	flag = heavy_cavalry_maa
  }
@@ -526,8 +525,8 @@
 	culture_era = culture_era_tribal
 	icon = @clan_mothers
 	potential = {
-		has_cultural_pillar = heritage_khajiiti
-	}
+		has_cultural_pillar = language_taagra
+	}	
 	custom = virtues_give_county_opinion
 	custom = unlocks_clan_mother_interaction
 	

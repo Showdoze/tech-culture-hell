@@ -100,7 +100,7 @@
  germanic_prefix:0 "Germanic"
  name_list_germanic:0 "Germanic"
  language_germanic_name:0 "Germanic"
- heritage_germanic_name:0 "Germanic
+ heritage_germanic_name:0 "Germanic"
  brit:0 "British"
  brit_collective_noun:0 "Brit's"
  brit_prefix:0 "British"
@@ -124,8 +124,8 @@
 #Slavic
  zastova:0 "Zastova"
  zastova_prefix:0 "Zastovian"
- count_feudal_male_zastova
- count_feudal_female_zastova
+ #count_feudal_male_zastova
+ #count_feudal_female_zastova
  duke_viceroyalty_male_zastova:0 "Troikas"
  duke_viceroyalty_female_zastova:0 "Troikas"
  duchy_viceroyalty_zastova:0 "Province"
@@ -287,10 +287,6 @@
     kingdom_feudal_alikr:0 "Sultanate"
     language_tamrielic_yoku_name:0 "Tamrielic Yoku"
     language_tamrielic_yoku_desc:0 "The Yoku spoken in Hammerfell can be qualified as 'Tamrielic'. It has substantial influence from Cyrodilic as one can guess but also from Altmer and even Nedic sources but ultimately Yokudan in character. Forebears tend to fully embrace it whilst Crowns make a point of learning Classical Yoku #italic 'to keep the old ways alive'#!."
-    #heritage_yokudan_name:0 "Yokudan"
-    heritage_yokudan_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Yokudan', Localize('no') )]"
-    heritage_yokudan_collective_noun:0 "Yokudans"
-    heritage_yokudan_desc:0 "The Yokudans are dark-skinned, wiry-haired humans native to the western continent of Yokuda, across the Eltheric Ocean. A rogue group of Ansei used forbidden Sword-Singing techniques to sink Yokuda beneath the waves in the Early #LORE [compendium_first_era]#!. This event forced many of them into a bloody and ruthless migration to Tamriel, in the lands that are now called Hammerfell. Yokudans from Tamriel are known as Redguards, a term coined after the infamous Ra Gada or 'warrior waves'."
 #Turkic
  seljuk_unit_gfx: "Oghuz"
  cuman_unit_gfx: "Cuman-Kipchak" 

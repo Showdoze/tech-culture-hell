@@ -532,6 +532,261 @@ timbuktu = {
 		learning_per_piety_level = 1
     }
 }
+eleusis = { # Eleusis, site of the Eleusinian Telesterion (main initiation hall) and birthplace of Aeschylus
+	county = c_attica
+	
+	character_modifier = {
+		name = holy_site_eleusis_effect_name
+		development_growth_factor = 0.1
+	}
+}
+
+achaia = { # Stadium of Olimpia
+	county = c_achaia
+	barony = b_andravida
+	character_modifier = {
+		name = holy_site_eleusis_effect_name
+		men_at_arms_maintenance = -0.3
+		powerful_vassal_opinion = 10
+	}
+}
+
+laconia = { # Spartan camp
+	county = c_laconia
+	
+	character_modifier = {
+		name = holy_site_eleusis_effect_name
+		prowess_per_piety_level = 1
+		knight_effectiveness_mult = 0.3
+	}
+}
+
+boeotia = { # The Oracle
+	county = c_boeotia
+	
+	character_modifier = {
+		name = holy_site_eleusis_effect_name
+		same_faith_opinion = 10
+		hard_casualty_modifier = -0.1
+	}
+}
+
+ionia = { # Temple of Artemis
+	county = c_ionia
+	barony = b_ephesos
+
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		health = 0.1
+		stress_loss_mult = 0.1
+	}
+}
+
+nicosia = { # Temple of Aphrodite
+	county = c_nicosia
+	
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		fertility = 0.1
+		different_culture_opinion = 10
+	}
+}
+
+lesbos = { # Temple of Hefest
+	county = c_lesbos
+	
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		cultural_head_fascination_mult = 0.1
+	}
+}
+
+korinthos = { # Mosaic of Poseidon
+	county = c_korinthos
+	
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+}
+
+epeiros = { # Temple of Hades
+	county = c_epeiros
+	barony = b_grava
+
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		monthly_tyranny = -0.2
+		tyranny_gain_mult = -0.2
+	}
+}
+
+messenia = { # Temple of Hermes
+	county = c_messenia
+	
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		flag = kerala_conversion_bonus
+		naval_movement_speed_mult = 0.2
+	}
+}
+
+chandax = { # Knoss Palace
+	county = c_chandax
+	
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		short_reign_duration_mult = -0.25
+	}
+}
+
+mainz = { # Mogontiacum
+	county = c_mainz
+	
+	character_modifier = {
+		name = holy_site_mainz_effect_name
+		same_faith_opinion = 10
+	}
+}
+
+middlesex = { # Temple of Mithras, Walbrook (also later Bacchic)
+	county = c_middlesex
+	
+	character_modifier = {
+		name = holy_site_middlesex_effect_name
+		levy_reinforcement_rate_same_faith = 0.2
+		retreat_losses = -0.1
+	}
+}
+
+turnovo = { # Oescus & Novae
+	county = c_turnovo
+	
+	character_modifier = {
+		name = holy_site_turnovo_effect_name
+		dynasty_house_opinion = 5
+		intrigue_per_piety_level = 1
+	}
+}
+
+jaffa = { # Caesarea Maritima
+	county = c_jaffa
+	
+	character_modifier = {
+		name = holy_site_jaffa_effect_name
+		supply_duration = 0.2
+		defender_advantage = 5
+	}
+}
+
+zherkovo = { # Temple of Orpheus, Tatul
+	county = c_zherkovo
+	
+	character_modifier = {
+		name = holy_site_zherkovo_effect_name
+		martial_per_piety_level = 1
+		knight_effectiveness_mult = 0.1
+	}
+}
+
+siracusa = { # Villa Romana del Casale
+	county = c_siracusa
+	
+	character_modifier = {
+		name = holy_site_siracusa_effect_name
+		naval_movement_speed_mult = 0.2
+		raid_speed = 0.1
+	}
+}
+
+tripolitana = { # Leptis Magna
+	county = c_tripolitana
+	
+	character_modifier = {
+		name = holy_site_tripolitana_effect_name
+		martial = 1
+		prowess_per_prestige_level = 1
+	}
+}
+
+venaissin = { # Arles
+	county = c_venaissin
+	
+	character_modifier = {
+		name = holy_site_venaissin_effect_name
+		diplomacy = 1
+		councillor_opinion = 5
+	}
+}
+
+chios = { # Samos, Pythagoras' birthplace
+	county = c_chios
+	
+	character_modifier = {
+		name = holy_site_chios_effect_name
+		learning = 2
+	}
+}
+
+rossano = { # Crotone, where Pythagoras and his followers settled
+	county = c_rossano
+	
+	character_modifier = {
+		name = holy_site_rossano_effect_name
+		stress_loss_mult = 0.2
+		life_expectancy = 1
+	}
+}
+
+delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis; home to various temples and mosaics
+	county = c_naxos
+	
+	character_modifier = {
+		name = holy_site_delos_effect_name
+		coastal_advantage = 10
+	}
+}
+
+thermopylae = { # Thermopylae, site of the entrance to Hades and one of the major Eleusinian ritual grounds
+	county = c_demetrias
+	
+	character_modifier = {
+		name = holy_site_thermopylae_effect_name
+		stress_loss_mult = 0.1
+		domain_tax_same_faith_mult = 0.05
+	}
+}
+
+heliopolis = { # Heliopolis ('the City of the Sun'), a regional capital, major shrine and home of the solar cult
+	county = c_cairo
+	
+	character_modifier = {
+		name = holy_site_heliopolis_effect_name
+		domain_tax_same_faith_mult = 0.05
+		monthly_county_control_change_factor = 0.1
+	}
+}
+
+tyana = { # Tyana, birthplace of the Neopythagorean Apollonius
+	county = c_cappadocia
+	
+	character_modifier = {
+		name = holy_site_tyana_effect_name
+		martial = 1
+		levy_size = 0.1
+	}
+}
+
+palmyra = { # Palmyra, the origin of Elagabalus' original Cult of Sol
+	county = c_palmyra
+	
+	character_modifier = {
+		name = holy_site_palmyra_effect_name
+		prowess = 1
+		martial_per_piety_level = 1
+	}
+}
 
 
 

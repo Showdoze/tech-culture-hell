@@ -6,7 +6,7 @@ select_personal_deity_hellenic_decision = {
 	selection_tooltip = select_personal_deity_hellenic_decision_tooltip
 
 	is_shown = {
-		religion = religion:hellenism_religion
+		religion = faith:hellenic_pagan.religion
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 
@@ -120,6 +120,124 @@ select_personal_deity_hellenic_decision = {
 		}
 	}
 
+	ai_will_do = {
+		base = 100
+	}
+}
+select_personal_deity_roman_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+	desc = select_personal_deity_roman_decision_desc
+	selection_tooltip = select_personal_deity_roman_decision_tooltip
+
+	is_shown = {
+		religion = faith:religio_romana.religion
+		faith = { has_doctrine_parameter = select_personal_god_active }
+	}
+	is_valid = {}
+	is_valid_showing_failures_only = {
+		# Have to at _least_ not be in piety debt.
+		piety >= 0
+	}
+	cooldown = { years = 2 }
+	effect = {
+		show_as_tooltip = {
+			random_list = {
+				desc = select_personal_deity_roman_decision_tt
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_zeus
+					add_character_modifier = god_roman_zeus
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_hera
+					add_character_modifier = god_roman_hera
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_athena
+					add_character_modifier = god_roman_athena
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_ares
+					add_character_modifier = god_roman_ares
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_demeter
+					add_character_modifier = god_roman_demeter
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_posidion
+					add_character_modifier = god_roman_posidion
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_dionysos
+					add_character_modifier = god_roman_dionysos
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_hephestios
+					add_character_modifier = god_roman_hephestios
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_hermes
+					add_character_modifier = god_roman_hermes
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_apollon
+					add_character_modifier = god_roman_apollon
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_aphroditite
+					add_character_modifier = god_roman_aphrodite
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_artemis
+					add_character_modifier = god_roman_artemis
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_herakles
+					add_character_modifier = god_roman_herakles
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_roman_decision.select_asklepios
+					add_character_modifier = god_roman_asklepios
+				}
+			}
+		}
+		trigger_event = hellenic_decision.0101
+	}
+	ai_check_interval = 96
+	ai_potential = {
+		piety >= minor_piety_value
+		NOR = {
+			has_character_modifier = god_roman_zeus
+			has_character_modifier = god_roman_hera
+			has_character_modifier = god_roman_athena
+			has_character_modifier = god_roman_ares
+			has_character_modifier = god_roman_demeter
+			has_character_modifier = god_roman_posidion
+			has_character_modifier = god_roman_dionysos
+			has_character_modifier = god_roman_hephestios
+			has_character_modifier = god_roman_hermes
+			has_character_modifier = god_roman_apollon
+			has_character_modifier = god_roman_aphrodite
+			has_character_modifier = god_roman_artemis
+			has_character_modifier = god_roman_herakles
+			has_character_modifier = god_roman_asklepios
+		}
+	}
 	ai_will_do = {
 		base = 100
 	}
@@ -251,24 +369,18 @@ select_personal_deity_aztec_decision = {
 }
 select_personal_deity_zoroastrian_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
-
 	desc = select_personal_deity_zoroastrian_decision_desc
 	selection_tooltip = select_personal_deity_zoroastrian_decision_tooltip
-
 	is_shown = {
 		religion = religion:zoroastrianism_religion
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
-
 	is_valid = {}
-
 	is_valid_showing_failures_only = {
 		# Have to at _least_ not be in piety debt.
 		piety >= 0
 	}
-	
 	cooldown = { years = 2 }
-
 	effect = {
 		show_as_tooltip = {
 			random_list = {
@@ -309,7 +421,6 @@ select_personal_deity_zoroastrian_decision = {
 	}
 
 	ai_check_interval = 96
-	
 	ai_potential = {
 		piety >= minor_piety_value
 		NOR = {
@@ -321,7 +432,124 @@ select_personal_deity_zoroastrian_decision = {
 			has_character_modifier = bhakti_ameretat
 		}
 	}
+	ai_will_do = {
+		base = 100
+	}
+}
+select_personal_deity_ds1_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 
+	desc = select_personal_deity_ds1_decision_desc
+	selection_tooltip = select_personal_deity_ds1_decision_tooltip
+
+	is_shown = {
+		religion = faith:religio_ds1a.religion
+		faith = { has_doctrine_parameter = select_personal_god_active }
+	}
+	is_valid = {}
+	is_valid_showing_failures_only = {
+		# Have to at _least_ not be in piety debt.
+		piety >= 0
+	}
+	cooldown = { years = 2 }
+	effect = {
+		show_as_tooltip = {
+			random_list = {
+				desc = select_personal_deity_ds1_decision_tt
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_zeus
+					add_character_modifier = god_ds1_zeus
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_hera
+					add_character_modifier = god_ds1_hera
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_athena
+					add_character_modifier = god_ds1_athena
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_ares
+					add_character_modifier = god_ds1_ares
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_demeter
+					add_character_modifier = god_ds1_demeter
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_posidion
+					add_character_modifier = god_ds1_posidion
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_dionysos
+					add_character_modifier = god_ds1_dionysos
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_hephestios
+					add_character_modifier = god_ds1_hephestios
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_hermes
+					add_character_modifier = god_ds1_hermes
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_apollon
+					add_character_modifier = god_ds1_apollon
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_aphroditite
+					add_character_modifier = god_ds1_aphrodite
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_artemis
+					add_character_modifier = god_ds1_artemis
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_herakles
+					add_character_modifier = god_ds1_herakles
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_ds1_decision.select_asklepios
+					add_character_modifier = god_ds1_asklepios
+				}
+			}
+		}
+		trigger_event = hellenic_decision.0101
+	}
+	ai_check_interval = 96
+	ai_potential = {
+		piety >= minor_piety_value
+		NOR = {
+			has_character_modifier = god_ds1_zeus
+			has_character_modifier = god_ds1_hera
+			has_character_modifier = god_ds1_athena
+			has_character_modifier = god_ds1_ares
+			has_character_modifier = god_ds1_demeter
+			has_character_modifier = god_ds1_posidion
+			has_character_modifier = god_ds1_dionysos
+			has_character_modifier = god_ds1_hephestios
+			has_character_modifier = god_ds1_hermes
+			has_character_modifier = god_ds1_apollon
+			has_character_modifier = god_ds1_aphrodite
+			has_character_modifier = god_ds1_artemis
+			has_character_modifier = god_ds1_herakles
+			has_character_modifier = god_ds1_asklepios
+		}
+	}
 	ai_will_do = {
 		base = 100
 	}

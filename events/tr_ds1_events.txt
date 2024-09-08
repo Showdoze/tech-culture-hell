@@ -1,0 +1,93 @@
+namespace = ds1_decision
+
+#########################
+# Select Personal God	#
+# by herkles     		#
+# 0101					#
+#########################
+
+ds1_decision.0101 = {
+	type = character_event
+	title = ds1_decision.0101.t
+	desc = {
+		desc = ds1_decision.0101.desc
+	}
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	option = {# Zeus 
+		name = ds1_decision.0101.zeus
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_zeus } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_zeus }
+	}
+	option = {# Athena 
+		name = ds1_decision.0101.athena
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_athena } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_athena }
+	}
+	option = {# Hera 
+		name = ds1_decision.0101.hera
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_hera } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_hera }
+	}
+	option = {# Ares 
+		name = ds1_decision.0101.ares
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_ares } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_ares }
+	}
+	option = {# Demeter 
+		name = ds1_decision.0101.demeter
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_demeter } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_demeter }
+	}
+	option = {# Dionysos 
+		name = ds1_decision.0101.dionysos
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_dionysos } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_dionysos }
+	}
+	option = {# Hephestios 
+		name = ds1_decision.0101.hephestios
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_hephestios } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_hephestios }
+	}
+	option = {# Hermes 
+		name = ds1_decision.0101.hermes
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_hermes } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_hermes }
+	}
+	option = {# aphrodite 
+		name = ds1_decision.0101.aphrodite
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_aphrodite } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_aphrodite }
+	}
+	option = {# apollon 
+		name = ds1_decision.0101.apollon
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_apollon } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_apollon }
+	}
+	option = {# artemis 
+		name = ds1_decision.0101.artemis
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_artemis } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_artemis }
+	}
+	option = {# herakles 
+		name = ds1_decision.0101.herakles
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_herakles } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_herakles }
+	}
+	option = {# asklepios 
+		name = ds1_decision.0101.asklepios
+		trigger = { NOT = { has_character_modifier = kharis_hellenism_asklepios } }
+		set_bhakti_effect = { BHAKTI = kharis_hellenism_asklepios }
+	}
+	
+	# Opt-Out
+	option = {
+		name = ds1_decision.0101.optout
+		flavor = ds1_decision.0101.flavor
+		ai_chance = { base = 0 }
+	}
+}

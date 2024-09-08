@@ -280,7 +280,6 @@ hellenism_religion = {
 				GHWNamePlural = ghw_great_holy_wars
 			}
         }
-
         religio_romana = {
 			color = { 0.6 0.5 0.7 }
 			icon = hellenic
@@ -445,5 +444,234 @@ hellenism_religion = {
 				GHWNamePlural = ghw_great_holy_wars
 			}
         }
-	}
+	    sol_invictus = { # new
+			color = { 0.6 0.9 0.9 }
+			icon = sol_invictus
+			reformed_icon = sol_invictus_reformed
+			holy_site = rome
+			holy_site = palmyra
+			holy_site = constantinople
+			holy_site = heliopolis
+			holy_site = baalbek
+			#Main Group
+			 doctrine = doctrine_temporal_head
+			 doctrine = doctrine_theocracy_lay_clergy
+			#Marriage - same as Hellenism
+			#Crimes
+			 doctrine = doctrine_adultery_women_crime
+			#Clerical Functions - same as Hellenism
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_adaptive
+			doctrine = tenet_sun_worship
+			doctrine = tenet_pursuit_of_power
+			holy_order_names = {
+				{ name = "holy_order_gladiators_of_the_sun" }
+			}
+			localization = {
+				#High God Name
+				 HighGodName = sol_invictus_high_god_name
+				 HighGodName2 = sol_invictus_high_god_name_2
+				 HighGodNamePossessive = sol_invictus_high_god_name_possessive
+				 HighGodNameAlternate = sol_invictus_high_god_name_alternate
+				 HighGodNameAlternatePossessive = sol_invictus_high_god_name_alternate_possessive
+				 HighGodNameSheHe = CHARACTER_SHEHE_IT
+				 HighGodHerselfHimself = CHARACTER_ITSELF
+				 HighGodHerHis = CHARACTER_HERHIS_ITS
+				#Creator
+				 CreatorName = roman_creator_god_name
+				 CreatorNamePossessive = roman_creator_god_name_possessive
+				#HealthGod
+				 HealthGodName = roman_health_god_name
+				 HealthGodNamePossessive = roman_health_god_name_possessive
+				#FertilityGod
+				 FertilityGodName = roman_fertility_god_name
+				 FertilityGodNamePossessive = roman_fertility_god_name_possessive
+				#WealthGod
+				 WealthGodName = roman_wealth_god_name
+				 WealthGodNamePossessive = roman_wealth_god_name_possessive
+				#HouseholdGod
+				 HouseholdGodName = roman_household_god_name
+				 HouseholdGodNamePossessive = roman_household_god_name_possessive
+				#FateGod
+				 FateGodName = roman_fate_god_name
+				 FateGodNamePossessive = roman_fate_god_name_possessive
+				#KnowledgeGod
+				 KnowledgeGodName = roman_knowledge_god_name
+				 KnowledgeGodNamePossessive = roman_knowledge_god_name_possessive
+				#WarGod
+				 WarGodName = roman_war_god_name
+				 WarGodNamePossessive = roman_war_god_name_possessive
+				#TricksterGod
+				 TricksterGodName = roman_trickster_god_name
+				 TricksterGodNamePossessive = roman_trickster_god_name_possessive
+				#NightGod
+			 	 NightGodName = roman_night_god_name
+				 NightGodNamePossessive = roman_night_god_name_possessive
+				#WaterGod
+				 WaterGodName = roman_water_god_name
+				 WaterGodNamePossessive = roman_water_god_name_possessive
+				GoodGodNames = {
+					sol_invictus_high_god_name
+					sol_invictus_high_god_name_alternate
+					roman_high_god_name
+					roman_water_god_name
+					roman_knowledge_god_name
+					roman_trickster_god_name
+					roman_fertility_god_name
+					roman_health_god_name
+					bacchism_high_god_name
+					roman_good_god_juno
+					roman_good_god_diana
+					roman_good_god_ceres
+					roman_good_god_proserpina
+					roman_good_god_saturn
+					roman_good_god_vulcan
+					roman_good_god_luna
+					roman_good_god_faunus
+					roman_good_god_aurora
+					roman_good_god_victoria
+					roman_good_god_lucina
+					roman_good_god_cupid
+					roman_good_god_caelus
+				}
+				EvilGodNames = {
+					roman_death_deity_name
+					roman_devil_name
+					roman_wealth_god_name
+					roman_war_god_name
+					roman_night_god_name
+					roman_evil_god_dirae
+					roman_evil_god_mors
+					roman_evil_god_discordia
+					roman_evil_god_janus
+				}
+				DevilName = roman_devil_name
+				DevilNamePossessive = roman_devil_name_possessive
+				DeathDeityName = roman_death_deity_name
+				DeathDeityNamePossessive = roman_death_deity_name_possessive
+				WitchGodName = roman_evil_god_janus
+				WitchGodNamePossessive = roman_evil_god_janus_possessive
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
+
+				HouseOfWorship = sol_invictus_house_of_worship
+				HouseOfWorship2 = sol_invictus_house_of_worship_2
+				HouseOfWorship3 = sol_invictus_house_of_worship_3
+				HouseOfWorshipPlural = sol_invictus_house_of_worship_plural
+
+				ReligiousSymbol = sol_invictus_religious_symbol
+				ReligiousSymbol2 = sol_invictus_religious_symbol_2
+				ReligiousSymbol3 = sol_invictus_religious_symbol_3
+				ReligiousText = sol_invictus_religious_text
+				ReligiousText2 = sol_invictus_religious_text_2
+				ReligiousText3 = sol_invictus_religious_text_3
+
+				#Head of Faith Name
+				ReligiousHeadName = orthodox_religious_head_title
+				ReligiousHeadTitleName = orthodox_religious_head_title_name
+			}
+		}
+	    roman_pagan = { # new
+			color = { 0.6 0.7 0.7 }
+			icon = roman
+			reformed_icon = roman_reformed
+			holy_site = rome
+			holy_site = siracusa
+			holy_site = constantinople
+			holy_site = alexandria
+			holy_site = carthage
+			#Main Group
+			doctrine = doctrine_temporal_head
+			doctrine = doctrine_pluralism_righteous
+			#Marriage - same as Hellenism
+			#Crimes
+			doctrine = doctrine_adultery_women_crime
+			doctrine = doctrine_kinslaying_accepted
+			doctrine = doctrine_deviancy_accepted
+			#Clerical Functions - same as Hellenism
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_astrology
+			doctrine = tenet_warmonger
+			doctrine = tenet_legalism
+
+			holy_order_names = {
+				{ name = "holy_order_servants_of_jupiter" }
+				{ name = "holy_order_faithful_of_mars" }
+			}
+			localization = {
+				#High God Name
+				HighGodName = roman_high_god_name
+				HighGodName2 = roman_high_god_name_2
+				HighGodNamePossessive = roman_high_god_name_possessive
+				HighGodNameAlternate = roman_high_god_name_alternate
+				HighGodNameAlternatePossessive = roman_high_god_name_alternate_possessive
+				#Creator
+				CreatorName = roman_creator_god_name
+				CreatorNamePossessive = roman_creator_god_name_possessive
+				#HealthGod
+				HealthGodName = roman_health_god_name
+				HealthGodNamePossessive = roman_health_god_name_possessive
+				#FertilityGod
+				FertilityGodName = roman_fertility_god_name
+				FertilityGodNamePossessive = roman_fertility_god_name_possessive
+				#WealthGod
+				WealthGodName = roman_wealth_god_name
+				WealthGodNamePossessive = roman_wealth_god_name_possessive
+				#HouseholdGod
+				HouseholdGodName = roman_household_god_name
+				HouseholdGodNamePossessive = roman_household_god_name_possessive
+				#FateGod
+				FateGodName = roman_fate_god_name
+				FateGodNamePossessive = roman_fate_god_name_possessive
+				#KnowledgeGod
+				KnowledgeGodName = roman_knowledge_god_name
+				KnowledgeGodNamePossessive = roman_knowledge_god_name_possessive
+				#WarGod
+				WarGodName = roman_war_god_name
+				WarGodNamePossessive = roman_war_god_name_possessive
+				#TricksterGod
+				TricksterGodName = roman_trickster_god_name
+				TricksterGodNamePossessive = roman_trickster_god_name_possessive
+				#NightGod
+				NightGodName = roman_night_god_name
+				NightGodNamePossessive = roman_night_god_name_possessive
+				#WaterGod
+				WaterGodName = roman_water_god_name
+				WaterGodNamePossessive = roman_water_god_name_possessive
+				GoodGodNames = {
+					roman_high_god_name roman_high_god_name_alternate
+					roman_water_god_name roman_knowledge_god_name roman_trickster_god_name
+					roman_fertility_god_name roman_health_god_name bacchism_high_god_name
+					roman_good_god_juno roman_good_god_apollo roman_good_god_diana
+					roman_good_god_ceres roman_good_god_proserpina roman_good_god_sol
+					roman_good_god_saturn roman_good_god_vulcan roman_good_god_luna
+					roman_good_god_faunus roman_good_god_aurora roman_good_god_victoria
+					roman_good_god_lucina roman_good_god_cupid roman_good_god_caelus
+				}
+				EvilGodNames = {
+					roman_death_deity_name roman_devil_name roman_wealth_god_name
+					roman_war_god_name roman_night_god_name roman_evil_god_dirae
+					roman_evil_god_mors roman_evil_god_discordia roman_evil_god_janus
+				}
+				DevilName = roman_devil_name
+				DevilNamePossessive = roman_devil_name_possessive
+				DeathDeityName = roman_death_deity_name
+				DeathDeityNamePossessive = roman_death_deity_name_possessive
+				WitchGodName = roman_evil_god_janus
+				WitchGodNamePossessive = roman_evil_god_janus_possessive
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
+
+				ReligiousText = roman_religious_text
+				ReligiousText2 = roman_religious_text_2
+				ReligiousText3 = roman_religious_text_3
+			}
+		}	
+	}	
 }
