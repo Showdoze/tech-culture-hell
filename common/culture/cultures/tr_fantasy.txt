@@ -501,5 +501,30 @@ falmer_betrayed = {
 		10 = race_falmer_betrayed
 	}
 }
-
+hylian = {
+	color = { 255 221 14 }
+	ethos = ethos_bureaucratic
+	heritage = heritage_fantasy
+	language = language_hylian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_stalwart_defenders
+		tradition_loyal_soldiers
+		tradition_zealous_people
+		tradition_chivalry
+	}
+	name_list = name_list_hylian
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+	ethnicities = {
+		5 = high_elven
+		5 = harpy_ethnicity
+		5 = elven_harpy_ethnicity
+		15 = succubus_ethnicity
+		#10 = hylian
+	}
+}
 

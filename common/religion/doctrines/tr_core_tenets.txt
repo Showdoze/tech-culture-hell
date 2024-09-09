@@ -252,6 +252,8 @@ tr_doctrines = {
 		}
 		parameters = {
 			piety_from_marrying_lowborn_active = yes
+			holy_wars_forbidden = yes
+			piety_from_long_peace = 1
 		}
 		traits = {
 			virtues = { architect cynical scholar journaller  }
@@ -353,6 +355,33 @@ tr_doctrines = {
 		}
 		parameters = {
 			meditation_mechanics_active = yes
+		}
+	}
+	tenet_hyrule = {
+		icon = core_tenet_tribunal
+		piety_cost = {
+		}
+		is_shown = { always = no }
+		parameters = {
+		}
+		traits = {
+			virtues = { lifestyle_mystic calm temperate brave just  }
+			sins = { wrathful gluttonous craven arbitrary }
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+		}
+	}
+	tenet_kokiri = {
+		icon = core_tenet_inner_journey
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { possessed = 2 calm temperate brave just }
+			sins = { wrathful gluttonous craven arbitrary }
+		}
+		parameters = {
+			spirit_possession_active = yes
 		}
 	}
 }

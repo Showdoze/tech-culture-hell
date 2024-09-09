@@ -454,3 +454,20 @@ language_taagra = { #khajitt
 	
 	color = taagra
 }
+language_hylian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_hylian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_hylian }
+			multiply = 10
+		}
+	}
+	
+	color = { 255 221 14 }
+}
