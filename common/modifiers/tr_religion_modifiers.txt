@@ -287,7 +287,7 @@
 	stress_gain_mult = -0.33
  }
 #ds1
-god_ds1_osiris = {
+ god_ds1_osiris = {
 	icon = atef_crown
 	controlled_province_advantage = 3
 	dynasty_opinion = 10
@@ -360,4 +360,61 @@ god_ds1_osiris = {
 	health = 0.5
 	stress_gain_mult = -0.33
  } 
-#  
+#Dwemer
+ follow_learning = {
+	icon = learning_positive
+	intrigue = -1
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	learning_per_stress_level = 1
+	monthly_learning_lifestyle_xp_gain_mult = 0.25
+ }
+ follow_martial = {
+	icon = martial_positive
+	martial_per_piety_level = 1
+	martial_per_prestige_level = 1
+	martial_per_stress_level = 1
+	monthly_martial_lifestyle_xp_gain_mult = 0.25
+	men_at_arms_maintenance = -0.08
+	monthly_piety_gain_per_knight_add = 0.15
+ }
+ follow_steward = {
+	icon = stewardship_positive
+	monthly_income_mult = 0.25
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.25
+	stewardship_per_piety_level = 1
+	stewardship_per_prestige_level = 1
+	stewardship_per_stress_level = 1
+	build_speed = -0.1
+	development_growth = 0.10
+ }
+ follow_health = {
+	icon = treatment_positive
+	health = 0.5
+	fertility = 0.25
+	prowess_per_piety_level = 2
+	prowess_per_prestige_level = 3
+	prowess_per_stress_level = 1
+	epidemic_resistance = 8
+	attraction_opinion = 10
+ }
+ follow_darkness = {
+	icon = intrigue_positive
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.25
+	intrigue_per_piety_level = 2
+	intrigue_per_prestige_level = 2
+	intrigue_per_stress_level = 1
+	hostile_scheme_power_add = 3
+ }
+ follow_diplomacy = {
+	icon = diplomacy_positive
+	diplomacy_per_piety_level = 2
+	diplomacy_per_prestige_level = 2
+	diplomacy_per_stress_level = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.25
+	learn_language_scheme_power_add = 16 
+	befriend_scheme_power_add = 16
+	personal_scheme_power_add = 2
+	monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
+ }   
+# 

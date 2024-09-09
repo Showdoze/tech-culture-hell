@@ -554,3 +554,78 @@ select_personal_deity_ds1_decision = {
 		base = 100
 	}
 }
+select_personal_deity_dwemer_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	desc = select_personal_deity_dwemer_decision_desc
+	selection_tooltip = select_personal_deity_dwemer_decision_tooltip
+	is_shown = {
+		religion = religion:dwemer_religion
+		faith = { has_doctrine_parameter = select_personal_god_active }
+	}
+	is_valid = {}
+	is_valid_showing_failures_only = {
+		# Have to at _least_ not be in piety debt.
+		piety >= 0
+	}
+	cooldown = { years = 2 }
+	effect = {
+		show_as_tooltip = {
+			random_list = {
+				desc = select_personal_deity_dwemer_decision_tt
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_learning
+					add_character_modifier = bhakti_follow_learning
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_martial
+					add_character_modifier = bhakti_follow_martial
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_steward
+					add_character_modifier = bhakti_follow_steward
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_health
+					add_character_modifier = bhakti_follow_health
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_darkness
+					add_character_modifier = bhakti_follow_darkness
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_dwemer_decision.select_follow_diplomacy
+					add_character_modifier = bhakti_follow_diplomacy
+				}
+			}
+		}
+		trigger_event = dwemer_decision.0101
+	}
+
+	ai_check_interval = 96
+	ai_potential = {
+		piety >= minor_piety_value
+		NOR = {
+			has_character_modifier = bhakti_follow_learning
+			has_character_modifier = bhakti_follow_martial
+			has_character_modifier = bhakti_follow_steward
+			has_character_modifier = bhakti_follow_health
+			has_character_modifier = bhakti_follow_darkness
+			has_character_modifier = bhakti_follow_diplomacy
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+
+
+
+
