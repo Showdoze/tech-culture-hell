@@ -22,7 +22,6 @@
 		1 = gnome_ethnicity
 	}
 }
-
 old_dwarven = {
 	color = rgb { 184 120 79 }
 	created = 1.1.1
@@ -47,9 +46,10 @@ old_dwarven = {
 		1 = dwarven_ethnicity
 	}
 }
-
 gerudo = {
 	color = rgb { 243 146 0 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_gerudo
@@ -70,7 +70,6 @@ gerudo = {
 		10 = gerudo
 	}
 }
-
 saiyan = {
 	color = han
 	created = 1.1.1
@@ -91,7 +90,6 @@ saiyan = {
 		10 = asian
 	}
 }
-
 goblin = {
 	color = goblin
 	created = 10.1.1
@@ -293,6 +291,8 @@ high_valyrian = {
 }
 giant = {
 	color = rgb { 48 84 150 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_communal
 	heritage = heritage_fantasy
 	language = language_giant
@@ -318,6 +318,8 @@ giant = {
 
 ancient_texas = {
 	color = { 120 10 10 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
 	ethos = ethos_stoic
 	heritage = heritage_native_american
 	language = language_mescalero
@@ -339,7 +341,6 @@ ancient_texas = {
 		10 = mesoamerican
 	}
 }
-
 unknown = {
 	color = { 0 0 0 }
 	created = 1.1.1
@@ -360,7 +361,6 @@ unknown = {
 		5 = caucasian_dark_hair
 	}
 }
-
 imperial_culture = {
 	color = cyrodiilic
 	created = 1.1.1
@@ -465,6 +465,7 @@ falmer = {
 		tradition_fortress_monasteries
 		tradition_winter_warriors
 		tradition_arctic_settlers
+		tradition_elf
 	}
 	name_list = name_list_falmer
 	coa_gfx = { central_african_group_coa_gfx } #falmeris_group_coa_gfx
@@ -511,7 +512,7 @@ hylian = {
 		tradition_hereditary_hierarchy
 		tradition_stalwart_defenders
 		tradition_loyal_soldiers
-		tradition_zealous_people
+		tradition_hyrule #tradition_zealous_people
 		tradition_chivalry
 	}
 	name_list = name_list_hylian
@@ -527,4 +528,48 @@ hylian = {
 		#10 = hylian
 	}
 }
-
+kokiri = {
+	color = { 0 150 64 }
+	ethos = ethos_communal
+	heritage = heritage_fantasy
+	language = language_hylian
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_astute_diplomats
+		tradition_collective_lands
+		tradition_isolationist
+		tradition_forest_folk
+		tradition_pacifism
+		tradition_elf
+	}
+	name_list = name_list_kokiri
+	coa_gfx = { central_african_group_coa_gfx }
+	building_gfx = { african_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	ethnicities = {
+		1 = gnome_ethnicity
+		#10 = kokiri
+	}
+}
+sheikah = {
+	color = { 149 27 129 }
+	ethos = ethos_communal
+	heritage = heritage_fantasy
+	language = language_hylian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hard_working
+		tradition_philosopher_culture
+		tradition_xenophilic
+		tradition_medicinal_plants
+	}
+	name_list = name_list_sheikah
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }		
+	ethnicities = {
+		10 = race_akaviri_tsaesci_1
+	}
+}

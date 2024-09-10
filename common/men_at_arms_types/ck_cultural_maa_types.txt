@@ -5,7 +5,8 @@
 @maa_high_maintenance_cost = 5.0
 @cultural_maa_extra_ai_score = 25 # Equivalent to having 2.5 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
-samurai = {
+#Japanese
+ samurai = {
 	type = heavy_infantry
 	
 	damage = 40
@@ -35,9 +36,8 @@ samurai = {
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai
-}
-
-samurai_bow = {
+ }
+ samurai_bow = {
 	type = archers
 	
 	damage = 45
@@ -67,8 +67,8 @@ samurai_bow = {
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai_bow
-}
-samurai_tanegashima = {
+ }
+ samurai_tanegashima = {
 	type = archers
 	
 	damage = 60
@@ -106,7 +106,7 @@ samurai_tanegashima = {
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai_tanegashima
-}
+ }
 
 usa_matchlock = {
 	type = archers
@@ -381,7 +381,8 @@ croc_rider = {
 	allowed_in_hired_troops = no
 	icon = croc_rider
 }
-sphere_centurion = {
+#Dwemer
+ sphere_centurion = {
 	type = automaton
 	can_recruit = {
 		culture = { has_innovation = innovation_sphere_centurion }
@@ -412,8 +413,8 @@ sphere_centurion = {
 	allowed_in_hired_troops = no
 	ai_quality = { value = 0 }
 	icon = sphere_centurion
-}
-steam_centurion = {
+ }
+ steam_centurion = {
 	type = automaton
 	can_recruit = {
 		culture = { has_innovation = innovation_steam_centurion }
@@ -444,4 +445,31 @@ steam_centurion = {
 	allowed_in_hired_troops = no
 	ai_quality = { value = 0 }
 	icon = steam_centurion
+ }
+#LOZ 
+hyrule_solider = {
+	type = heavy_infantry
+	damage = 40
+	toughness = 20
+	pursuit = 2
+	screen = 15
+	terrain_bonus = {
+		plains = { damage = 8 }
+		hills = { toughness = 8 }
+		mountains = { toughness = 12 }
+	}
+	counters = {
+		pikemen = 1
+		light_cavalry = 2
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_hyrule1 }
+	}
+	buy_cost = { gold = 100 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 1.0 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = hyrule_sol
 }

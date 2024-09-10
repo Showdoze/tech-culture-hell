@@ -595,4 +595,19 @@
 		health = 0.5
 	}	
  }
+#ZElda
+ @zelda1 = "gfx/interface/icons/culture_innovations/zelda1.dds"
+ innovation_hyrule1 = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @zelda1
+	potential = {	
+		this = culture:hylian		
+	}
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		movement_speed = 0.01
+	}
+	unlock_maa = hyrule_solider
+ }
 #
