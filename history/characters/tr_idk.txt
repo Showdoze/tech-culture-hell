@@ -1,0 +1,411 @@
+tr_ea_nasir = {
+    name = "Ea-nāṣir"
+	dna = EaNasirofUr
+	religion = akkadian_pagan
+	dynasty = misc_history
+	culture = akkadian
+	trait = education_stewardship_4
+	trait = intellect_good_3
+	841.1.1 = {
+		birth = yes
+	}
+	900.9.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_lovecraft = {
+    name = "H. P. Lovecraft"
+	dna = hp_lovecraft
+	religion = dwemer_religion #Athiest
+	dynasty_house = house_writter
+	culture = american
+	trait = education_learning_4
+	trait = intellect_good_3
+    trait = lunatic_genetic
+    trait = scholar
+    trait = journaller
+    trait = shy
+    trait = callous
+    disallow_random_traits = yes
+	821.8.20 = {
+		birth = yes
+	}
+	937.3.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_edgar_poe = {
+    name = "Edgar Allan Poe"
+	dna = edgar_poe
+	religion = catholic 
+	dynasty_house = house_writter
+	culture = american
+	trait = education_learning_4
+	trait = intellect_good_3
+    trait = scholar
+    trait = journaller
+    trait = shy
+    trait = depressed_genetic
+    disallow_random_traits = yes
+	809.1.19 = {
+		birth = yes
+	}
+	949.10.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_tolkien = {
+    name = "J.R.R. Tolkien"
+	dna = jrr_Tolkien
+	religion = catholic 
+	dynasty_house = house_writter
+	culture = brit
+	trait = education_learning_4
+	trait = intellect_good_3
+    trait = scholar
+    trait = journaller
+    trait = compassionate
+    trait = patient
+    trait = forgiving
+    trait = diligent
+    trait = calm
+    disallow_random_traits = yes
+	792.1.3 = {
+		birth = yes
+	}
+	873.9.2 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_imotep_1 = {
+    name = "Imhotep"
+	dna = imotep_1
+	religion = kemetic_pagan
+	dynasty = misc_history
+	culture = ancient_egyptian
+	trait = education_learning_5
+	trait = intellect_good_3
+    trait = architect
+    trait = lifestyle_herbalist
+    trait = scholar
+    trait = administrator
+    trait = whole_of_body
+    trait = theologian
+	841.1.1 = {
+		birth = yes
+	}
+    852.1.1 = {
+		effect = {
+			add_trait = lifestyle_physician
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+        effect = {
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	1000.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_sopranos_chris = {
+    name = "Christopher Moltisanti"
+	dna = chris_moltisanti
+	religion = catholic 
+    dynasty_house = house_mafia
+	#dynasty = mmwitness
+	culture = italian_american
+	trait = education_martial_2
+	trait = arrogant
+    trait = lifestyle_reveler
+    trait = dull
+    trait = hashishiyah
+    trait = wrathful
+    disallow_random_traits = yes
+	849.7.20 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = {
+			death_reason = death_murder
+            #killer = 
+		}
+	}
+}
+tr_fargoth = {
+    name = "Fargoth"
+	dna = fargoth_morrowind
+	religion = tribunal_temple
+	dynasty = misc_history
+	culture = bosmer
+    trait = education_diplomacy_1
+	trait = calm
+    trait = seducer
+    trait = journaller
+    trait = compassionate
+	841.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_mussolini = {
+    name = "Benito Mussolini"
+	dna = Mussolini
+	religion = catholic 
+    dynasty_house = house_axias
+	culture = italian
+	trait = education_martial_2
+	trait = arrogant
+    trait = callous
+    trait = cynical
+    trait = ambitious
+    disallow_random_traits = yes
+	783.7.29 = {
+		birth = yes
+	}
+	895.3.28 = {
+		death = {
+			death_reason = death_murder
+            #killer = 
+		}
+	}
+}
+tr_judge_holden = {
+    name = "Judge Holden"
+	dna = judge_holden
+	religion = blood_faith
+	dynasty = misc_history
+	culture = american
+	trait = education_intrigue_5
+	trait = intellect_good_3
+    trait = murderer
+    trait = athletic
+    trait = sodomite
+    trait = deviant
+    trait = scholar
+    trait = albino
+    trait = giant
+    trait = sadistic
+    trait = cynical
+    trait = deceitful
+    trait = physique_good_3
+    disallow_random_traits = yes
+	821.1.1 = {
+		birth = yes
+	}
+    840.1.1 = {
+		effect = {
+			learn_language_of_culture = culture:german 
+			learn_language_of_culture = culture:japanese
+			learn_language_of_culture = culture:french
+			learn_language_of_culture = culture:castilian
+	   }	
+	}
+}
+tr_doc_livesey = {
+    name = "Dr. Livesey"
+	dna = judge_holden
+	religion = hyrulean_faith
+	dynasty = misc_history
+	culture = russian
+	trait = education_learning_5
+	trait = intellect_good_3
+    trait = calm
+    trait = athletic
+    trait = physique_good_3
+    trait = temperate
+    trait = scholar
+    trait = patient
+    trait = brave
+    disallow_random_traits = yes
+	821.1.1 = {
+		birth = yes
+	}
+    852.1.1 = {
+		effect = {
+			add_trait = lifestyle_physician
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+    920.3.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_gaulle = {
+    name = "Charles de Gaulle"
+	dna = gaulle
+	religion = catholic
+	dynasty_house = house_allies
+	culture = french
+	trait = education_martial_3
+    trait = zealous
+    trait = diligent
+    trait = temperate
+    trait = brave
+    disallow_random_traits = yes
+	790.11.22 = {
+		birth = yes
+	}
+    870.11.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_churchhill = {
+    name = "Winston Churchill"
+	dna = churchhill
+	religion = catholic
+	dynasty_house = house_allies
+	culture = brit
+	trait = education_stewardship_3
+    trait = callous
+    trait = diligent
+    trait = stubborn
+    trait = drunkard
+    trait = wrathful
+    trait = arrogant
+    disallow_random_traits = yes
+	874.11.30 = {
+		birth = yes
+	}
+    870.1.24 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+tr_furio = {
+    name = "Furio Giunta"
+	dna = furio_giunta
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = sicilian
+	trait = education_martial_3
+	trait = physique_good_1
+    trait = callous
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	809.3.29 = {
+		birth = yes
+	}
+	895.3.28 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+}
+tr_cleopatra = {
+    name = "Cleopatra"
+	dna = cleopatra_a
+	religion = kemetic_pagan 
+    dynasty = misc_history
+	culture = ptolemaic
+    female = yes
+	trait = education_stewardship_3
+	trait = beauty_good_3
+    trait = fickle
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	849.1.1 = {
+		birth = yes
+	}
+	895.8.30 = {
+		death = {
+			death_reason = death_suicide
+            #killer = 
+		}
+	}
+}
+tr_gandhi = {
+    name = "Gandhi"
+	dna = gandhi_civ
+	religion = vaishnavism 
+    dynasty = misc_history
+	culture = rajput
+	trait = education_learning_2
+    trait = callous
+    trait = lustful
+    trait = deviant
+    trait = arrogant
+    trait = seducer
+    trait = inappetetic
+    trait = rakish
+    trait = peasant_leader
+    disallow_random_traits = yes
+	829.10.2 = {
+		birth = yes
+	}
+	948.1.30 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+}
+tr_highelf_1 = {
+    name = "HighElf"
+	dna = mr_highelf
+	religion = tribunal_temple 
+    dynasty = misc_history
+	culture = altmer
+	trait = education_intrigue_3
+    trait = callous
+    trait = lustful
+    trait = arrogant
+    trait = seducer
+    trait = peasant_leader
+    disallow_random_traits = yes
+	829.1.1 = {
+		birth = yes
+	}
+	1048.1.1 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+}

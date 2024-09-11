@@ -8,75 +8,61 @@
 #Japanese
  samurai = {
 	type = heavy_infantry
-	
 	damage = 40
-	toughness = 25
+	toughness = 30
 	pursuit = 5
 	screen = 10
-	
 	terrain_bonus = {
 		plains = { damage = 8 }
 		hills = { toughness = 8 }
 		mountains = { toughness = 12 }
 	}
-
 	counters = {
 		pikemen = 2
 		light_cavalry = 1
 	}
-	
 	can_recruit = {
 		culture = { has_innovation = innovation_samurai }
 	}
-
 	buy_cost = { gold = 130 }
 	low_maintenance_cost = { gold = 0.2 }
 	high_maintenance_cost = { gold = 1.0 }
-	
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai
  }
  samurai_bow = {
 	type = archers
-	
 	damage = 45
 	toughness = 20
 	pursuit = 0
 	screen = 0
 	siege_value = 0.1
-	
 	terrain_bonus = {
 		hills = { damage = 10 toughness = 4 }
 		mountains = { damage = 8 toughness = 2 }
 		desert_mountains = { damage = 8 toughness = 2 }
 	}
-	
 	counters = {
 		skirmishers = 2
-	}
-	
+	}	
 	can_recruit = {
 		culture = { has_innovation = innovation_samurai_bow }
 	}
-
 	buy_cost = { gold = 120 }
 	low_maintenance_cost = { gold = 0.3 }
 	high_maintenance_cost = { gold = 1.2 }
-	
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai_bow
  }
  samurai_tanegashima = {
 	type = archers
-	
-	damage = 60
-	toughness = 16
+	damage = 100
+	toughness = 20
 	pursuit = 0
 	screen = 0
 	siege_value = 0.5
-	
 	terrain_bonus = {
 		hills = { damage = 10 toughness = 4 }
 		mountains = { damage = 8 toughness = 2 }
@@ -85,7 +71,6 @@
 		drylands = { toughness = -8 }
 		desert = { toughness = -8 }
 	}
-	
 	counters = {
 		skirmishers = 2
 		heavy_infantry = 1
@@ -94,29 +79,24 @@
 		pikemen = 0.5
 		light_cavalry = 2
 	}
-	
 	can_recruit = {
 		culture = { has_innovation = innovation_tanegashima }
 	}
-
 	buy_cost = { gold = 200 }
 	low_maintenance_cost = { gold = 0.3 }
 	high_maintenance_cost = { gold = 1.2 }
-	
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = samurai_tanegashima
  }
-
-usa_matchlock = {
+#American New World
+ usa_matchlock = {
 	type = archers
-	
-	damage = 70
-	toughness = 15
+	damage = 120
+	toughness = 10
 	pursuit = 0
 	screen = 0
 	siege_value = 0.5
-	
 	terrain_bonus = {
 		hills = { damage = 10 toughness = 4 }
 		mountains = { damage = 8 toughness = 2 }
@@ -147,20 +127,43 @@ usa_matchlock = {
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = usa_matchlock
-}
-shotel_warriors = {
+ }
+ jaguar_warrior = {
 	type = skirmishers
-
-	damage = 30
+	can_recruit = {
+		culture = { has_innovation = innovation_aztec_warriors_clothing }
+	}
+	damage = 20
+	toughness = 16
+	pursuit = 20
+	screen = 10
+	terrain_bonus = {
+		jungle = { damage = 12 toughness = 8 }
+		forest = { damage = 8 toughness = 4 }
+		hills = { damage = 8 toughness = 4 }
+	}
+	counters = {
+		pikemen = 1
+		heavy_infantry = 2
+		skirmishers = 2
+	}
+	buy_cost = { gold = @maa_buy_cost }
+	low_maintenance_cost = { gold = @maa_low_maintenance_cost }
+	high_maintenance_cost = { gold = @maa_high_maintenance_cost }
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+ }
+#AFRICAN
+ shotel_warriors = {
+	type = skirmishers
+	damage = 35
 	toughness = 12
 	pursuit = 12
 	screen = 12
-
 	terrain_bonus = {
 		hills = { damage = 5 toughness = 5 }
 		mountains = { damage = 5 toughness = 5 }
 	}
-
 	counters = {
 		light_cavalry = 2
 		heavy_infantry = 2
@@ -171,188 +174,17 @@ shotel_warriors = {
 	buy_cost = { gold = skirmisher_recruitment_cost }
 	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
 	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
-
 	allowed_in_hired_troops = no
-
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = shotel_warriors
-}
-jaguar_warrior = {
-	type = skirmishers
-	can_recruit = {
-		culture = { has_innovation = innovation_aztec_warriors_clothing }
-	}
-	damage = 20
-	toughness = 16
-	pursuit = 20
-	screen = 10
-	
-	terrain_bonus = {
-		jungle = { damage = 8 toughness = 4 }
-		forest = { damage = 8 toughness = 4 }
-		hills = { damage = 8 toughness = 4 }
-	}
-	
-	counters = {
-		pikemen = 1
-		heavy_infantry = 2
-		skirmishers = 2
-	}
-	
-	buy_cost = { gold = @maa_buy_cost }
-	low_maintenance_cost = { gold = @maa_low_maintenance_cost }
-	high_maintenance_cost = { gold = @maa_high_maintenance_cost }
-	
-	stack = 100
-	ai_quality = { value = @cultural_maa_extra_ai_score }
-}
-Legionarius = {
-	type = heavy_infantry
-	can_recruit = {
-		culture = { has_innovation = innovation_marian_reform }
-	}
-	damage = 34
-	toughness = 25
-	pursuit = 5
-	screen = 5
-	
-	terrain_bonus = {
-		plains = { damage = 8 }
-		drylands = { damage = 5 }
-		hills = { toughness = 8 }
-		mountains = { toughness = 8 }
-	}
-	counters = {
-		pikemen = 1
-		light_cavalry = 1
-		heavy_cavalry = 1
-		camel_cavalry = 1
-		skirmishers = 2
-	}
-	
-	buy_cost = { gold = heavy_infantry_recruitment_cost }
-	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
-	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
-	
-	#mercenary_fallback = yes
-	holy_order_fallback = yes
-	
-	stack = 100
-	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = legionarius
-}
-hoplite = {
-	type = pikemen
-	
-	damage = 30
-	toughness = 24
-	pursuit = 0
-	screen = 0
-	
-	terrain_bonus = {
-		hills = { damage = 3 toughness = 8 }
-		mountains = { damage = 5 toughness = 12 }
-		desert_mountains = { damage = 5 toughness = 12 }
-	}
-
-	counters = {
-		pikemen = 0.5
-		light_cavalry = 2
-		heavy_cavalry = 1
-	}
-
-	can_recruit = {
-	    culture = { has_innovation = innovation_hoplites }
-	}
-
-	buy_cost = { gold = landsknecht_recruitment_cost }
-	low_maintenance_cost = { gold = landsknecht_low_maint_cost }
-	high_maintenance_cost = { gold = landsknecht_high_maint_cost }
-	
-	stack = 100
-	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = pikemen
-}
-byz_flame_thrower = {
-	type = archers
-	
-	damage = 200
-	toughness = 2
-	pursuit = 0
-	screen = 0
-	siege_value = 0.3
-	
-	terrain_bonus = {
-		plains = { damage = 30 }
-		hills = { damage = 10 }
-		mountains = { damage = 8 }
-		desert_mountains = { damage = 8 }
-		wetlands = { damage = 5  }
-		forest = { damage = 4  }
-		taiga = { damage = 4  }
-		jungle = { damage = 4  }
-		drylands = { damage = 15 }
-	}
-	
-	counters = {
-		skirmishers = 2
-		heavy_infantry = 1
-		heavy_cavalry = 0.25
-		pikemen = 2
-		camel_cavalry = 1
-		elephant_cavalry = 1
-	}
-	
-	can_recruit = {
-		culture = { has_innovation = innovation_flame_thrower }
-	}
-
-	buy_cost = { gold = 300 }
-	low_maintenance_cost = { gold = 0.5 }
-	high_maintenance_cost = { gold = 2 }
-	
-	stack = 25
-	ai_quality = { value = 0 }
-	icon = byz_flamethrower
-}
-dragons = {
-	type = dragon
-	
-	damage = 2000 # Let's make them at least twice as strong as a unit of heavy infantry with some buffs
-	toughness = 2000
-	pursuit = 500	# The flaming breath are very good for rampaging the battlefield
-	screen = 0		# They bail out
-	siege_tier = 5 # It's a flying dragon, walls are a bit useless innit
-	siege_value = 1
-	
-	counters = {
-		skirmishers = 2
-		heavy_infantry = 1
-		light_cavalry = 1
-		heavy_cavalry = 1
-	}
-	can_recruit = {
-		culture = { has_innovation = innovation_dragon_egg }
-	}
-	buy_cost = { gold = 500 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 10 }
-	#max_sub_regiments = 1
-	stack = 1
-	ai_quality = { value = 0 }
-	allowed_in_hired_troops = no
-	icon = dragon
-}
-croc_rider = {
+ }
+ croc_rider = {
 	type = light_cavalry
-	
 	damage = 20 
 	toughness = 20
 	pursuit = 20
-	screen = 10		# They bail out
-
+	screen = 10	
 	terrain_bonus = {
 		plains = { damage = 1 }
 		drylands = { damage = 1 }
@@ -380,7 +212,62 @@ croc_rider = {
 	ai_quality = { value = 0 }
 	allowed_in_hired_troops = no
 	icon = croc_rider
+ }
+#
+hoplite = {
+	type = pikemen
+	damage = 30
+	toughness = 24
+	pursuit = 0
+	screen = 0
+	terrain_bonus = {
+		hills = { damage = 3 toughness = 8 }
+		mountains = { damage = 5 toughness = 12 }
+		desert_mountains = { damage = 5 toughness = 12 }
+	}
+	counters = {
+		pikemen = 0.5
+		light_cavalry = 2
+		heavy_cavalry = 1
+	}
+	can_recruit = {
+	    culture = { has_innovation = innovation_hoplites }
+	}
+	buy_cost = { gold = landsknecht_recruitment_cost }
+	low_maintenance_cost = { gold = landsknecht_low_maint_cost }
+	high_maintenance_cost = { gold = landsknecht_high_maint_cost }
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = pikemen
 }
+#AGOT
+ dragons = {
+	type = dragon
+	damage = 2000 # Let's make them at least twice as strong as a unit of heavy infantry with some buffs
+	toughness = 2000
+	pursuit = 500	# The flaming breath are very good for rampaging the battlefield
+	screen = 50		# They bail out
+	siege_tier = 5 # It's a flying dragon, walls are a bit useless innit
+	siege_value = 1
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_dragon_egg }
+	}
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 10 }
+	#max_sub_regiments = 1
+	stack = 1
+	ai_quality = { value = 0 }
+	allowed_in_hired_troops = no
+	icon = dragon
+ }
+
 #Dwemer
  sphere_centurion = {
 	type = automaton
@@ -447,29 +334,99 @@ croc_rider = {
 	icon = steam_centurion
  }
 #LOZ 
-hyrule_solider = {
+ hyrule_solider = {
 	type = heavy_infantry
 	damage = 40
 	toughness = 20
 	pursuit = 2
-	screen = 15
+	screen = 35
 	terrain_bonus = {
-		plains = { damage = 8 }
+		plains = { damage = 8 screen = 10 pursuit = 10 }
 		hills = { toughness = 8 }
 		mountains = { toughness = 12 }
 	}
 	counters = {
 		pikemen = 1
 		light_cavalry = 2
+		skirmishers = 1
 	}
 	can_recruit = {
 		culture = { has_innovation = innovation_hyrule1 }
 	}
-	buy_cost = { gold = 100 }
-	low_maintenance_cost = { gold = 0.2 }
-	high_maintenance_cost = { gold = 1.0 }
-	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = hyrule_sol
-}
+ }
+#Rome\ Byzantine
+ byz_flame_thrower = {
+	type = archers
+	damage = 200
+	toughness = 2
+	pursuit = 0
+	screen = 0
+	siege_value = 0.3
+	terrain_bonus = {
+		plains = { damage = 30 }
+		hills = { damage = 5 }
+		mountains = { damage = 8 }
+		desert_mountains = { damage = 8 }
+		wetlands = { damage = -5  }
+		forest = { damage = 10  }
+		taiga = { damage = 4  }
+		jungle = { damage = 4  }
+		drylands = { damage = 15 }
+	}
+	counters = {
+		skirmishers = 5
+		heavy_infantry = 2
+		heavy_cavalry = 0.25
+		pikemen = 3
+		camel_cavalry = 3
+		elephant_cavalry = 2
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_flame_thrower }
+	}
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 0.5 }
+	high_maintenance_cost = { gold = 2 }
+	stack = 25
+	ai_quality = { value = 0 }
+	icon = byz_flamethrower
+ }
+ Legionarius = {
+	type = heavy_infantry
+	can_recruit = {
+		culture = { has_innovation = innovation_marian_reform }
+	}
+	damage = 34
+	toughness = 30
+	pursuit = 5
+	screen = 5
+	terrain_bonus = {
+		plains = { damage = 8 }
+		drylands = { damage = 5 }
+		hills = { toughness = 8 }
+		mountains = { toughness = 8 }
+	}
+	counters = {
+		pikemen = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		skirmishers = 2
+	}
+	buy_cost = { gold = heavy_infantry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
+	#mercenary_fallback = yes
+	holy_order_fallback = yes
+	stack = 100
+	allowed_in_hired_troops = no
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = legionarius
+ }
+#

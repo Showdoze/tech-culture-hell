@@ -111,34 +111,7 @@ tr_doctrines = {
 	}
 	tenet_kemetic = {
 		icon = core_tenet_kemetic_syncretism
-		piety_cost = {
-			if = {
-				limit = {
-					religion_tag = hinduism_religion
-				}
-				value = faith_tenet_cost_mid
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion_tag = christianity_religion
-						religion_tag = judaism_religion
-						religion_tag = islam_religion
-						religion_tag = buddhism_religion
-						religion_tag = jainism_religion
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_low
-			}
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_albino }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
+		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
 			virtues = {
@@ -214,16 +187,7 @@ tr_doctrines = {
 	}
 	tenet_hellenic = {
 		icon = core_tenet_hellenic_syncretism
-
-		piety_cost = {
-			value = faith_tenet_cost_low
-
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_ancestor_worship }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
+		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
 			increased_dynasty_prestige_birth_mult = 1
@@ -239,17 +203,8 @@ tr_doctrines = {
 	}
 	tenet_dwemer = {
 		icon = core_tenet_dwemer
-		piety_cost = {
-			value = faith_tenet_cost_low
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_ancestor_worship }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-		is_shown = {
-			always = no
-		}
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
 		parameters = {
 			piety_from_marrying_lowborn_active = yes
 			holy_wars_forbidden = yes
@@ -296,10 +251,10 @@ tr_doctrines = {
 	}
 	tenet_tribunal = {
 		icon = core_tenet_tribunal
-		piety_cost = {
-		}
+		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
+			select_personal_god_active = yes
 		}
 		traits = {
 			virtues = { brave deceitful = 2 arrogant  }
@@ -343,6 +298,7 @@ tr_doctrines = {
 		}
 		parameters = {
 			meditation_mechanics_active = yes
+			select_personal_god_active = yes
 		}
 	}
 	tenet_imperial_cult = {
@@ -359,8 +315,7 @@ tr_doctrines = {
 	}
 	tenet_hyrule = {
 		icon = core_tenet_tribunal
-		piety_cost = {
-		}
+		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
 		}

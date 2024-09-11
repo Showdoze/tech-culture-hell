@@ -423,3 +423,144 @@
 	flag = travel_point_of_interest_wonder
  }
 #
+RICE_sri_lanka_ruins_of_anuradhapura = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_RICE_ancient_ruins.dds"
+	can_construct_potential = {
+		barony = title:b_anuradhapura
+		building_requirement_tribal = no
+		always = no
+	}
+	cost_gold = 3000
+	character_modifier = {
+		learning = 1
+		monthly_dynasty_prestige = 0.1
+	}
+	county_modifier = {
+		development_growth = -0.5
+		development_growth_factor = -0.25
+		monthly_county_control_decline_factor = -0.25
+		garrison_size = -0.2
+		levy_size = -0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_religious
+}
+RICE_siwa_oracle_of_amun = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_RICE_egypt_temple.dds" #"icon_structure_cathedral_zoroastric.dds"	
+	can_construct_potential = {
+		barony = title:b_siwa
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder = {
+			OR = {
+			religion = religion:kushitism_religion
+			religion = religion:egyptian_religion
+			}
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			OR = {
+			religion = religion:kushitism_religion
+			religion = religion:egyptian_religion
+			}
+		}
+	}
+	show_disabled = yes	
+	cost_gold = 2000
+	character_modifier = {
+		monthly_piety = 0.2
+		monthly_dynasty_prestige_mult = 0.025
+		#monthly_county_control_growth_factor = 0.05
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth_factor = 0.2
+		development_growth = 0.15
+	}	
+	ai_value = {
+		base = 100
+	}	
+	type = special
+	flag = travel_point_of_interest_religious
+}
+RICE_kharga_temple_of_hibis = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_RICE_egypt_temple.dds" #"icon_structure_cathedral_zoroastric.dds"
+	can_construct_potential = {
+		barony = title:b_kharga
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder = {
+			OR = {
+			religion = religion:kushitism_religion
+			religion = religion:egyptian_religion
+			}
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			OR = {
+			religion = religion:kushitism_religion
+			religion = religion:egyptian_religion
+			}
+		}
+	}
+	show_disabled = yes	
+	cost_gold = 2000
+	character_modifier = {
+		monthly_piety = 0.1
+		monthly_dynasty_prestige_mult = 0.01
+		monthly_county_control_growth_factor = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.05
+		development_growth_factor = 0.1
+		development_growth = 0.05
+	}	
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_religious
+}
+RICE_sicily_arch_of_trajan = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_RICE_roman_arch.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+		always = no
+	}
+	cost_gold = 3000
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.05
+		legitimacy_gain_mult = 0.05
+	}
+	province_modifier = {
+		stationed_maa_damage_mult = normal_maa_damage_tier_1
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
+		travel_danger = -10
+	}
+	county_modifier = {
+		development_growth = 0.1
+		development_growth_factor = 0.1
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+}

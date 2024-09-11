@@ -36,13 +36,24 @@ culture_has_north_asian_heritage_pillar_trigger = {
 		}
 	}
 }
-
+culture_has_central_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			has_cultural_pillar = heritage_qiangic
+			has_cultural_pillar = heritage_turkic
+			has_cultural_pillar = heritage_mongolic
+			has_cultural_pillar = heritage_hunnic
+			has_cultural_pillar = heritage_magyar
+		}
+	}
+}
 culture_has_east_african_heritage_pillar_trigger = {
 	culture = {
 		OR = {
 			has_cultural_pillar = heritage_somalian
 			has_cultural_pillar = heritage_east_african
 			has_cultural_pillar = heritage_ancient_egyptian
+			has_cultural_pillar = heritage_punic
 		}
 	}
 }
@@ -51,6 +62,7 @@ culture_has_north_african_heritage_pillar_trigger = {
 		OR = {
 		    has_cultural_pillar = heritage_berber
 		    has_cultural_pillar = heritage_punic
+			has_cultural_pillar = heritage_ancient_egyptian
 		}
 	}
 }
