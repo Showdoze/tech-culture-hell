@@ -474,4 +474,277 @@ idk_portraits = {
 			}
         }
     }
+    tr_vito_no = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            #accessory = {
+            #    mode = add
+           #     gene = hairstyles
+            #    template = all_hairstyles
+            #    accessory = male_hair_western_01
+           # }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_vito_no
+				this = character:tr_vito_no
+			}
+        }
+    }
+    tr_minecraft_villager = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_minecraft_villager
+				this = character:tr_minecraft_villager
+			}
+        }
+    }
+    tr_other_augustus = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_byzantine_02
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_other_augustus
+				this = character:tr_other_augustus
+			}
+        }
+    }
+    tr_oot_1 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_byzantine_02
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_oot_1
+				this = character:tr_oot_1
+			}
+        }
+    }
+    tr_stephen_king = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_fp1_01
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_stephen_king
+				this = character:tr_stephen_king
+			}
+        }
+    }
+    tr_hannibal_barca = {
+        dna_modifiers = { 
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_mena_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_byzantine_02
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_hannibal_barca
+				this = character:tr_hannibal_barca
+			}
+        }
+    }
+    tr_arthur_shelby_peaky_blinders = {
+        dna_modifiers = { 
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_western_05
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_fp1_09
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_arthur_shelby_peaky_blinders
+				this = character:tr_arthur_shelby_peaky_blinders
+			}
+        }
+    }
+    tr_charles_v_hre = {
+        dna_modifiers = { 
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+               gene = hairstyles
+               template = all_hairstyles
+                accessory = male_hair_western_05
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_charles_v_hre
+				this = character:tr_charles_v_hre
+			}
+        }
+    }
+    tr_george_rr_martin = {
+        dna_modifiers = { 
+            accessory = {
+                mode = add
+                gene = beards
+                template = scripted_character_beards_02
+                accessory = male_beard_fp2_iberian_christian_03
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_george_rr_martin
+				this = character:tr_george_rr_martin
+			}
+        }
+    }
 }    
