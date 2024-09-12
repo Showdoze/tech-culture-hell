@@ -1602,6 +1602,140 @@ fantasy_religion = {
 				WitchGodMotherFather = father
 			}
 		}
-
+		twomoonsdance = {
+			color = { 1.0 1.0 0.8 }
+			icon = khajiit_mane
+			#religious_head = d_mane
+			#holy_site = hs_torval
+			#holy_site = hs_moon_gate
+			#holy_site = hs_pridehome # Home of the Pride of Alkosh, a religious order composed of the Forgotten Manes
+			#holy_site = hs_rawlkha # Where the Riddle'Thar Epiphany was revealed
+			#holy_site = hs_twomoonpath
+			#Doctrines
+			# doctrine = doctrine_temporal_head
+			# doctrine = doctrine_theocracy_lay_clergy
+		    doctrine = doctrine_gender_equal
+		    #doctrine = doctrine_cultural_identity_heritage
+			doctrine = doctrine_bastardry_none
+	        doctrine = doctrine_consanguinity_cousins
+			#Funeral tradition
+			doctrine = doctrine_funeral_stoic
+			#Tenets
+			doctrine = tenet_moon_worship
+			doctrine = tenet_ritual_hospitality
+			doctrine = tenet_hedonistic
+			localization = {
+				#HighGod
+				 HighGodName  = god_riddlethar_name
+				 HighGodName2 = god_riddlethar_name
+				 HighGodNamePossessive = god_riddlethar_name_possessive
+				 HighGodNameSheHe = CHARACTER_SHEHE_THEY
+				 HighGodHerselfHimself = CHARACTER_THEMSELVES
+				 HighGodHerHis = CHARACTER_HERHIS_THEIR
+				 HighGodNameAlternate = god_riddlethar_name
+				 HighGodNameAlternatePossessive = god_riddlethar_name_possessive
+				#Creator
+				 CreatorName = god_nirni_name
+				 CreatorNamePossessive = god_nirni_name_possessive
+				 CreatorSheHe = CHARACTER_SHEHE_SHE
+				 CreatorHerHis = CHARACTER_HERHIS_HER
+				 CreatorHerHim = CHARACTER_HERHIM_HER
+				#HealthGod
+				 HealthGodName = god_azurah_name
+				 HealthGodNamePossessive = god_azurah_name_possessive
+				 HealthGodSheHe = CHARACTER_SHEHE_SHE
+				 HealthGodHerHis = CHARACTER_HERHIS_HER
+				 HealthGodHerHim = CHARACTER_HERHIM_HER
+				#FertilityGod
+				 FertilityGodName = god_mara_name
+				 FertilityGodNamePossessive = god_mara_name_possessive
+				 FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				 FertilityGodHerHis = CHARACTER_HERHIS_HER
+				 FertilityGodHerHim = CHARACTER_HERHIM_HER
+				#WealthGod
+				 WealthGodName = god_srendarr_name
+				 WealthGodNamePossessive = god_srendarr_name_possessive
+				 WealthGodSheHe = CHARACTER_SHEHE_HE
+				 WealthGodHerHis = CHARACTER_HERHIS_HIS
+				 WealthGodHerHim = CHARACTER_HERHIM_HIM
+				#HouseholdGod
+				 HouseholdGodName = god_riddlethar_name
+				 HouseholdGodNamePossessive = god_riddlethar_name_possessive
+				 HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+				 HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+				 HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+				#FateGod
+				 FateGodName = god_riddlethar_name
+				 FateGodNamePossessive = god_riddlethar_name_possessive
+				 FateGodSheHe = CHARACTER_SHEHE_THEY
+				 FateGodHerHis = CHARACTER_HERHIS_THEIR
+				 FateGodHerHim = CHARACTER_HERHIM_THEM
+				#KnowledgeGod
+				 KnowledgeGodName = god_riddlethar_name
+				 KnowledgeGodNamePossessive = god_riddlethar_name_possessive
+				 KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+				 KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+				 KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
+				#WarGod
+				 WarGodName = god_alkosh_name
+				 WarGodNamePossessive = god_alkosh_name_possessive
+				 WarGodSheHe = CHARACTER_SHEHE_HE
+				 WarGodHerHis = CHARACTER_HERHIS_HIS
+				 WarGodHerHim = CHARACTER_HERHIM_HIM
+				#TricksterGod
+				 TricksterGodName = god_baandar_name
+				 TricksterGodNamePossessive = god_baandar_name_possessive
+				 TricksterGodSheHe = CHARACTER_SHEHE_HE
+				 TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				 TricksterGodHerHim = CHARACTER_HERHIM_HIM
+				#NightGod
+				 NightGodName = god_moons_name
+				 NightGodNamePossessive = god_moons_name_possessive
+				 NightGodSheHe = CHARACTER_SHEHE_THEY
+				 NightGodHerHis = CHARACTER_HERHIS_THEIR
+				 NightGodHerHim = CHARACTER_HERHIM_THEM
+				#WaterGod
+				 WaterGodName = god_khenarthi_name
+				 WaterGodNamePossessive = god_khenarthi_name_possessive
+				 WaterGodSheHe = CHARACTER_SHEHE_SHE
+				 WaterGodHerHis = CHARACTER_HERHIS_HER
+				 WaterGodHerHim = CHARACTER_HERHIM_HER
+				GoodGodNames = {
+					god_riddlethar_name
+					god_moons_name
+					god_azurah_name
+					god_khenarthi_name
+					god_jone_name
+					god_jode_name
+					god_hircine_name
+					god_nirni_name
+					god_alkosh_name
+					god_mara_name
+					god_srendarr_name
+				}
+				EvilGodNames = {
+					god_sangiin_name
+					god_namiira_name
+					god_varmiina_name
+					god_skoomacat_name
+					god_orkha_name
+					god_molagh_name
+					god_merrunz_name
+					god_meridnunda_name
+					god_lorkhaj_name
+					god_hermorah_name
+					god_alkhan_name
+					god_boethra_name
+				}
+			}
+			holy_order_names = {
+				{ name = "holy_order_brotherhood_of_fang" }
+				{ name = "holy_order_of_crescent" }
+				{ name = "holy_order_warriors_wargod" }
+				{ name = "holy_order_warriors_of_highgod" }		
+				{ name = "holy_order_guardians_of_divinerealm" }				
+				{ name = "holy_order_warriors" }
+			}
+		}
 	}
 }

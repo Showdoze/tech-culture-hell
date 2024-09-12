@@ -339,4 +339,17 @@ tr_doctrines = {
 			spirit_possession_active = yes
 		}
 	}
+	tenet_moon_worship = {
+		icon = core_tenet_esotericism
+		is_shown = { always = no }
+		piety_cost = { value =  690 }
+		traits = {
+			virtues = { gluttonous generous gregarious patient lifestyle_mystic }
+			sins = { temperate callous shy impatient }
+		}
+		parameters = {
+			meditation_mechanics_active = yes
+			mystic_birthright_active = yes
+		}
+	}
 }
