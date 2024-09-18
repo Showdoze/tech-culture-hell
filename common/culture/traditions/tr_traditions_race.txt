@@ -640,13 +640,19 @@ tradition_hyrule = {
 	}
 	is_shown = { always = no }
 	parameters = {
+		sacred_hunts = yes
 		more_frequent_hunts = yes
+		hunting_traits_more_valued = yes
+		hunting_traits_more_pious = yes
 		hunting_traits_more_common = yes 
 		can_recruit_prisoners_easily = yes
 		forest_fighter_trait_more_common = yes
+		hunting_archery_building_bonuses = yes
 		forest_trait_bonuses = yes
 	}
 	character_modifier = {
+		build_gold_cost = 0.5
+		lifestyle_hunter_xp_gain_mult = 0.5
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -687,6 +693,7 @@ tradition_hyrule = {
 		dislikes_marrying_outside_of_heritage = yes
 		ai_doesnt_marry_outside_culture = yes
 		piety_gain_on_building_complete_in_swamp = yes
+		better_disease_resistance = yes
 	}
 	province_modifier = {
 		wetlands_tax_mult = 0.1
@@ -758,6 +765,7 @@ tradition_hyrule = {
 		next_level_economic_buildings = yes
 		desert_warrior_trait_more_common = yes
 		dry_trait_bonuses = yes
+		peasant_and_populist_factions_less_common = yes
 	}
 	character_modifier = {
 		stewardship = 2
@@ -769,6 +777,11 @@ tradition_hyrule = {
 		prowess = 3
 		powerful_vassal_opinion = -15
 		character_travel_safety_mult = 0.1
+		desert_travel_danger = desert_high_danger_reduction
+		desert_mountains_travel_danger = desert_mountains_high_danger_reduction
+	}
+	province_modifier = {
+		desert_tax_mult = 0.1
 	}
 	county_modifier = {
 		farmlands_development_growth_factor = 0.1
@@ -788,6 +801,7 @@ tradition_hyrule = {
 	is_shown = { always = no }
 	parameters = {
 		wounds_and_scars_give_bonuses = yes
+		prowess_traits_more_valued = yes
 		number_of_spouses = 3
 		dislikes_marrying_outside_of_heritage = yes
 		ai_doesnt_marry_outside_culture = yes
@@ -800,6 +814,7 @@ tradition_hyrule = {
 		has_access_to_shieldmaidens = yes
 		has_access_to_trials_by_combat = yes
 		craven_trait_costs_prestige = yes
+		craven_and_content_traits_looked_down_upon = yes
 	}
 	province_modifier = {
 		levy_reinforcement_rate = -0.3
@@ -881,7 +896,11 @@ tradition_hyrule = {
 	}
 	is_shown = { always = no }
 	parameters = {
+		loyal_trait_more_valued = yes
+		cultural_house_personal_scheme_success_chance = yes
 		doesnt_care_about_culture_faith_in_factions = yes
+		castle_fortifications_increase = yes
+		castle_grant_prestige = yes
 		wants_to_learn_liege_language = yes
 		poorly_educated_leaders_distrusted = yes
 		better_ward_education = yes
@@ -889,6 +908,7 @@ tradition_hyrule = {
 		extra_language_cap = yes
 		extra_learn_language_success_chance_vs_liege = yes
 		learns_more_languages = yes
+		commanders_likelier_to_gain_commander_traits = yes
 	}
 	character_modifier = {
 		life_expectancy = 20
@@ -957,6 +977,7 @@ tradition_hyrule = {
 		blademaster_trait_bonuses = yes
 		blademaster_traits_more_common = yes
 		blademaster_traits_give_learning = yes
+		better_blacksmith_buildings = yes
 		# dueling_culture = yes #More likely to accept duel interactionss
 		# wandering_swordsmen_may_appear = yes #events needed
 		prowess_from_martial_education = yes
@@ -993,6 +1014,8 @@ tradition_hyrule = {
 		better_armory_buildings = yes
 		better_blacksmith_buildings = yes
 		build_bonuses_on_religious_traits = yes
+		extra_piety_from_temple_construction = yes
+		renown_from_temple_construction = yes
 		architect_trait_prestige = yes
 		extra_language_cap = yes
 		wants_to_learn_liege_language = yes

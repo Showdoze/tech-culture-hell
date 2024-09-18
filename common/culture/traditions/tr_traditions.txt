@@ -1689,7 +1689,6 @@ tradition_migration = {
 		faith_conversion_piety_cost_mult = -0.2
 		different_faith_county_opinion_mult = -0.2
 	}
-	
 	cost = {
 		prestige = {
 			add = {
@@ -1725,8 +1724,7 @@ tradition_migration = {
 			
 			multiply = tradition_replacement_cost_if_relevant
 		}
-	}
-	
+	}	
 	ai_will_do = {
 		value = 0
 	}
@@ -1989,17 +1987,14 @@ tradition_taking_with_hands = {
 
 tradition_banned = {
 	category = societal
-	
 	layers = {
 		0 = intrigue
 		1 = mediterranean
 		4 = banned.dds
 	}
-
 	is_shown = { always = no }
 	can_pick = { always = no }
 	can_pick_for_hybridization = { always = no }
-
 	parameters = {
 		content_trait_more_common = yes
 		hard_working_traits_more_valued = yes
@@ -2053,7 +2048,6 @@ tradition_sword_centric = {
 	}
 	can_pick = {		
 	}
-	
 	parameters = {
 		wanderers_gain_extra_combat_skills = yes
 		more_expensive_weapon_inspiration = yes
@@ -2085,7 +2079,6 @@ tradition_sword_centric = {
 		negate_prowess_penalty_add = 5
 		knight_effectiveness_mult = 0.25
 	}
-	
 	cost = { prestige = 9000  }	
 	ai_will_do = {value = 0	}
 }
