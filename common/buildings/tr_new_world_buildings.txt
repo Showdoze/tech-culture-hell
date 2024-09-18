@@ -7,6 +7,11 @@
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_usa_build
+		}
+	}
 	asset = {
 		type = pdxmesh
 		name = "statue_of_liberty_mesh"
@@ -43,6 +48,11 @@
 		type = pdxmesh
 		name = "machu_pichu_mesh"
 	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_aztec_build
+		}
+	}
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
@@ -75,6 +85,11 @@
 	asset = {
 		type = pdxmesh
 		name = "disney_castle_mesh"
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_usa_build
+		}
 	}
 	cost_gold = 3000
 	character_modifier = {

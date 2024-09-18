@@ -30,8 +30,24 @@
 @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
 @alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
 @administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+@misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 
-
+#USA
+ innovation_usa_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {
+		OR = {
+			this = culture:american
+			any_parent_culture_or_above = {
+				this = culture:american
+			}
+	}   }
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
 #JAPAN
  innovation_samurai = {
 	group = culture_group_regional
@@ -82,6 +98,17 @@
 	character_modifier = {
 		development_growth_factor = 0.1
 		courtly_opinion = 5
+	}
+ }
+ innovation_japan_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:japanese		
+	}
+	character_modifier = {
+		build_speed = -0.01
 	}
  }
 #CHINA
@@ -211,6 +238,17 @@
 		movement_speed = 0.01
 	}
 	unlock_maa = jaguar_warrior
+ }
+ innovation_aztec_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:nahuatl		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
  }
 #Roman
  innovation_roman_concrete = {
@@ -376,7 +414,18 @@
 	}
 	flag = global_regional
 	flag = tribal_era_regional
-}
+ }
+ innovation_dumner_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:dunmer		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
 #DWEMER
  innovation_sphere_centurion = {
 	group = culture_group_military
@@ -454,6 +503,17 @@
 		has_innovation = innovation_earth_size
 	}	
  }
+ innovation_dwemer_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:dwemer		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
 #Argonian
  innovation_black_marsh_natives = {
 	group = culture_group_regional
@@ -480,10 +540,8 @@
 		has_cultural_pillar = language_jel
 	}	
 	character_modifier = {
+		build_speed = -0.01
 	}
-	flag = global_maa
-	flag = mages_maa
-	flag = innovation_war_magic_replacement 
  }
  innovation_black_marsh_materials = {
 	group = culture_group_military
@@ -532,6 +590,17 @@
 	
 	flag = global_regional
 	flag = tribal_era_regional
+ }
+ innovation_khajitt_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {
+		has_cultural_pillar = language_taagra
+	}	
+	character_modifier = {
+		build_speed = -0.01
+	}
  }
 #SAIYAN DBZ
  @saiyan_endure = "gfx/interface/icons/culture_innovations/saiyan_endure.dds"
@@ -610,4 +679,27 @@
 	}
 	unlock_maa = hyrule_solider
  }
-#
+ innovation_hyrule_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:hylian		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
+#woolf elf bosmer
+ innovation_bosmer_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:bosmer		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
+# 

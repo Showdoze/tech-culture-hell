@@ -374,27 +374,9 @@
 		building_requirement_tribal = no
 	}
 	can_construct = {
-		scope:holder = { faith = { has_doctrine_parameter = faith_uses_great_wyrd_tree } }
-		custom_description = {
-			text = holy_site_building_trigger
-			barony = {
-				is_holy_site_of = scope:holder.faith
-			}
+		scope:holder.culture = {
+			has_innovation = innovation_bosmer_build
 		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
-	is_enabled = {
-		custom_description = {
-			text = holy_site_building_trigger
-			barony = {
-				is_holy_site_of = scope:holder.faith
-			}
-		}
-		scope:holder = { faith = { has_doctrine_parameter = faith_uses_great_wyrd_tree } }
 	}
 	cost_gold = 2000
 	character_modifier = {
@@ -423,7 +405,7 @@
 	flag = travel_point_of_interest_wonder
  }
 #
-RICE_sri_lanka_ruins_of_anuradhapura = {
+ RICE_sri_lanka_ruins_of_anuradhapura = {
 	construction_time = very_slow_construction_time
 
 	type_icon = "icon_building_RICE_ancient_ruins.dds"
@@ -449,8 +431,8 @@ RICE_sri_lanka_ruins_of_anuradhapura = {
 	}
 	type = special
 	flag = travel_point_of_interest_religious
-}
-RICE_siwa_oracle_of_amun = {
+ }
+ RICE_siwa_oracle_of_amun = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_RICE_egypt_temple.dds" #"icon_structure_cathedral_zoroastric.dds"	
 	can_construct_potential = {
@@ -491,8 +473,8 @@ RICE_siwa_oracle_of_amun = {
 	}	
 	type = special
 	flag = travel_point_of_interest_religious
-}
-RICE_kharga_temple_of_hibis = {
+ }
+ RICE_kharga_temple_of_hibis = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_RICE_egypt_temple.dds" #"icon_structure_cathedral_zoroastric.dds"
 	can_construct_potential = {
@@ -532,8 +514,8 @@ RICE_kharga_temple_of_hibis = {
 	}
 	type = special
 	flag = travel_point_of_interest_religious
-}
-RICE_sicily_arch_of_trajan = {
+ }
+ RICE_sicily_arch_of_trajan = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_RICE_roman_arch.dds"
 	can_construct_potential = {
@@ -563,8 +545,8 @@ RICE_sicily_arch_of_trajan = {
 	}
 	type = special
 	flag = travel_point_of_interest_wonder
-}
-
+ }
+#
 
 
 
