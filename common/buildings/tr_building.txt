@@ -1,5 +1,5 @@
 #ROMAN
- #Varma Thermae
+ #Varma Thermae #
   MA_varna_thermae = {
 	type_icon = "MA_thermal_baths.dds"
 	cost_gold = main_building_tier_1_cost
@@ -17,7 +17,7 @@
 		base = 50
 	}
   }
- #Arles Amphiteatre
+ #Arles Amphiteatre #
   MA_arles_amphiteatre = {
 	type_icon = "MA_arles_amphiteatre.dds"
 	asset = {
@@ -96,13 +96,10 @@
 	}
  }
 #London 
-#Argonian
+#Argonian #
  @holding_illustration_hist = "gfx/interface/illustrations/holding_types/ek_hist_tree.dds"
- # Hist Trees
- ############
-
- ### Holding Tiers
- hist_01 = { # Sapling
+ # Hist Trees #
+  hist_01 = { # Sapling
 	asset = {
 		type = pdxmesh
 		name = "argonian_tree_temple_01_mesh"
@@ -151,8 +148,8 @@
 		levy_reinforcement_rate = 0.1
 	}
     next_building = hist_02
- }
- hist_02 = { # Young Hist
+  }
+  hist_02 = { # Young Hist
     asset = {
 		type = pdxmesh
 		name = "argonian_tree_temple_01_mesh"
@@ -192,7 +189,7 @@
 	}
 	next_building = hist_03
  }
- hist_03 = { # Mature Hist
+  hist_03 = { # Mature Hist
     asset = {
 		type = pdxmesh
 		name = "argonian_tree_temple_01_mesh"
@@ -231,8 +228,8 @@
 		levy_reinforcement_rate = 0.3
 	}
 	next_building = hist_04
- }
- hist_04 = { # Old Hist
+  }
+  hist_04 = { # Old Hist
     asset = {
 		type = pdxmesh
 		name = "argonian_tree_temple_01_mesh"
@@ -272,7 +269,7 @@
 	}
     next_building = hist_05
  }
- hist_05 = { # Ancient Hist
+  hist_05 = { # Ancient Hist
     asset = {
 		type = pdxmesh
 		name = "argonian_tree_temple_01_mesh"
@@ -311,7 +308,7 @@
 		levy_reinforcement_rate = 0.5
 	}
  }
-#Khajiit cats
+#Khajiit cats #
  # Anequina Moon Gate - a ancient portal towards the Plane of Jode, it safeguards the power of Jode's Core
  anequina_moon_gate_01 = {
 	asset = {
@@ -361,9 +358,9 @@
 	type = special
 	flag = travel_point_of_interest_wonder
  }
-#WOOD ELF
- # Beldama Wyrd Tree
- beldama_wyrd_tree_01 = {
+#WOOD ELF #
+ # Beldama Wyrd Tree #
+  beldama_wyrd_tree_01 = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_beldama_wyrd_tree.dds"
 	asset = {
@@ -403,7 +400,7 @@
 	}
 	type = special
 	flag = travel_point_of_interest_wonder
- }
+  }
 #
  RICE_sri_lanka_ruins_of_anuradhapura = {
 	construction_time = very_slow_construction_time
@@ -547,6 +544,40 @@
 	flag = travel_point_of_interest_wonder
  }
 #
-
-
+#Imperial
+ #IMPERIAL CITY #
+  imperial_city_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_aurelian_walls.dds"
+	can_construct_potential = {
+		barony = title:b_constantinople
+		building_requirement_tribal = no
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_special_imperial_city_mesh"
+		}
+	}
+	cost_gold = 3000	
+	max_garrison = 500	
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.1
+	}
+	county_modifier = {
+		development_growth = 0.15
+		development_growth_factor = 0.1
+		hostile_raid_time = 0.5
+	}
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.5
+	}	
+	ai_value = {
+		base = 100
+	}
+	type = duchy_capital
+  }
+#
 
