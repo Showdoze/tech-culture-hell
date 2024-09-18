@@ -80,7 +80,7 @@ old_dwarven = {
 	language = language_bosmeris
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_jungle_dwellers
+		tradition_bosmer
 		tradition_forest_fighters
 		tradition_jungle_warriors
 		tradition_free_love
@@ -105,7 +105,7 @@ old_dwarven = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_elf
-		tradition_philosopher_culture
+		tradition_altmer
 		tradition_poetry
 		tradition_cutthroat_politics
 	}	
@@ -174,7 +174,7 @@ old_dwarven = {
 	language = language_tamrielic_yoku
 	martial_custom = martial_custom_equal
 	traditions = {
-		tradition_dryland_dwellers
+		tradition_redguard #tradition_dryland_dwellers
 		tradition_desert_ribat
 		tradition_warriors_of_the_dry
 		tradition_sword_centric
@@ -321,12 +321,7 @@ warsong = { #ORCISH
 	traditions = {
 		tradition_pastoralists
 		tradition_horse_breeder
-		tradition_warrior_culture
-	}
-	dlc_tradition = {
-		trait = tradition_fp1_performative_honour
-		requires_dlc_flag = the_northern_lords
-		fallback = tradition_martial_admiration
+		tradition_orc
 	}
 	name_list = name_list_warsong
 	coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }

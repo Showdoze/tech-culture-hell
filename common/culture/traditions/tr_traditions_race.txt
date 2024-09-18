@@ -304,56 +304,7 @@ tradition_elf = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
-tradition_dunmer = {
-	category = societal
-	layers = {
-		0 = diplo
-		1 = indian
-		4 = dunmer.dds
-	}
-	is_shown = {
-		OR = {
-			this = culture:dumner
-			any_parent_culture_or_above = {
-				this = culture:dumner
-			}
-		}
-	}
-	parameters = {
-		bonuses_from_patriarch_matriarch_trait = yes
-		landing_house_members_give_prestige = yes
-		penalty_for_revoking_titles_from_house_members = yes
-		dislikes_marrying_outside_of_culture = yes 
-		dislikes_marrying_outside_of_heritage = yes 
-		ai_doesnt_marry_outside_culture = yes 
-		bossy_trait_more_common = yes
-		zealous_trait_more_common = yes
-		culture_clergy_can_fight = yes
-		prestige_from_temple_construction = yes
-		paranoid_bonuses = yes
-		paranoid_trait_more_common = yes
-		poorly_educated_leaders_distrusted = yes
-		scandinavian_elective_enabled = yes #rebranded as Popular Elective
-		content_trait_looked_down_upon = yes
-		#prestige bonus to ambitious, prestige malus to lazy, big prestige malus to content
-		ambition_valued = yes
-		vengeful_trait_more_common = yes
-		vengeful_positive_forgiving_negative = yes
-		rivalries_more_common = yes
-		hostile_action_vs_rival_bonuses = yes
-		close_family_better_councillors = yes
-		close_family_better_court_positions = yes
-		penalty_for_revoking_titles_from_close_family = yes
-	}
-	character_modifier = {
-		close_relative_opinion = 5
-	}
-	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.5
-	}
-	cost = { prestige = 9000 }	
-	ai_will_do = { value = 0 }	
-}
+
 tradition_agoge = { # replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
 	category = ritual
 	layers = {
@@ -639,7 +590,393 @@ traditon_hidden_village = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
-tradition_dwemer = {
+
+tradition_hyrule = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = hyrule.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		herbalist_traits_more_common = yes
+		poorly_educated_leaders_distrusted = yes
+		better_ward_education = yes
+		innovation_from_learning_traits = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		herbalist_trait_gives_bonuses = yes
+		learns_more_languages = yes
+		zealous_trait_more_common = yes
+		humble_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+	}
+	character_modifier = {
+		life_expectancy = 100
+		no_prowess_loss_from_age = yes
+		years_of_fertility = 200
+		fertility = -0.25
+		diplomatic_range_mult = 3
+		short_reign_duration_mult = 0.5
+		inbreeding_chance = -2
+		opinion_of_different_faith = -15
+		ignore_negative_opinion_of_culture = yes
+		ai_zeal = 25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+}
+
+#ELDER SCROLLS #
+ tradition_bosmer = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_bosmer.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		more_frequent_hunts = yes
+		hunting_traits_more_common = yes 
+		can_recruit_prisoners_easily = yes
+		forest_fighter_trait_more_common = yes
+		forest_trait_bonuses = yes
+	}
+	character_modifier = {
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_altmer = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_altmer.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		pensive_trait_more_common = yes
+		rowdy_trait_less_common = yes
+		innovation_from_learning_traits = yes
+	}
+	character_modifier = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		learning_per_prestige_level = 1
+		ai_boldness = 25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_argonian = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_argonian.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		forder_trait_more_common = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		dislikes_marrying_outside_of_heritage = yes
+		ai_doesnt_marry_outside_culture = yes
+		piety_gain_on_building_complete_in_swamp = yes
+	}
+	province_modifier = {
+		wetlands_tax_mult = 0.1
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		martial_per_piety_level = 1
+		jungle_cancel_negative_supply = yes
+		wetlands_cancel_negative_supply = yes
+		embarkation_cost_mult = -0.25
+		wetlands_advantage = 3
+		movement_speed_land_raiding = 0.2
+		wetlands_travel_danger = wetlands_high_danger_reduction
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_nord = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_nord.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		winter_soldier_trait_more_common = yes
+		winter_trait_bonuses = yes
+		better_hunting_buildings = yes
+		arrogant_trait_more_common = yes
+		tells_stories = yes
+		has_access_to_shieldmaidens = yes
+		has_access_to_trials_by_combat = yes
+		can_duel_rivals = yes
+		knights_slightly_more_prone_to_injury = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		councillor_opinion = 10
+        glory_hound_opinion = -15 #Nordic standards amirite, better hunt and fight :)
+		tundra_travel_danger = tundra_low_danger_reduction
+		taiga_travel_danger = taiga_low_danger_reduction
+		taiga_hills_travel_danger = taiga_low_danger_reduction
+		negate_prowess_penalty_add = 3
+		negate_health_penalty_add = 0.5
+		character_travel_safety_mult = 0.15
+		prowess_per_prestige_level = 1
+		prowess = 5
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_khajitt = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_khajitt.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		jungle_stalker_trait_more_common = yes
+		jungle_trait_bonuses = yes
+		stewardship_education_better_outcomes = yes
+		bossy_trait_more_common = yes
+		rowdy_trait_less_common = yes
+		next_level_economic_buildings = yes
+		desert_warrior_trait_more_common = yes
+		dry_trait_bonuses = yes
+	}
+	character_modifier = {
+		stewardship = 2
+		intrigue = 2
+		martial = -2
+		embarkation_cost_mult = 0.25
+		jungle_travel_danger = jungle_low_danger_reduction
+		supply_capacity_mult = 0.5
+		prowess = 3
+		powerful_vassal_opinion = -15
+		character_travel_safety_mult = 0.1
+	}
+	county_modifier = {
+		farmlands_development_growth_factor = 0.1
+		jungle_development_growth_factor = 0.2
+		jungle_hills_development_growth_factor = 0.2
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_orc = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_orc.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		wounds_and_scars_give_bonuses = yes
+		number_of_spouses = 3
+		dislikes_marrying_outside_of_heritage = yes
+		ai_doesnt_marry_outside_culture = yes
+		will_not_be_vassalised = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		has_access_to_shieldmaidens = yes
+		has_access_to_trials_by_combat = yes
+		craven_trait_costs_prestige = yes
+	}
+	province_modifier = {
+		levy_reinforcement_rate = -0.3
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+		mercenary_count_mult = 1
+	}
+	character_modifier = {
+		knight_limit = 1
+		negate_health_penalty_add = 0.2
+		negate_prowess_penalty_add = 5
+		same_culture_mercenary_hire_cost_mult = -0.15
+		prowess_per_prestige_level = 1
+		prowess = 3
+		cultural_head_fascination_mult = -0.05
+		ai_boldness = 25
+		accolade_glory_gain_mult = 0.2
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_dunmer = {
+	category = societal
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = es_dunmer.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:dumner
+			any_parent_culture_or_above = {
+				this = culture:dumner
+			}
+		}
+	}
+	parameters = {
+		bonuses_from_patriarch_matriarch_trait = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		dislikes_marrying_outside_of_culture = yes 
+		dislikes_marrying_outside_of_heritage = yes 
+		ai_doesnt_marry_outside_culture = yes 
+		bossy_trait_more_common = yes
+		zealous_trait_more_common = yes
+		culture_clergy_can_fight = yes
+		prestige_from_temple_construction = yes
+		paranoid_bonuses = yes
+		paranoid_trait_more_common = yes
+		poorly_educated_leaders_distrusted = yes
+		scandinavian_elective_enabled = yes #rebranded as Popular Elective
+		content_trait_looked_down_upon = yes
+		#prestige bonus to ambitious, prestige malus to lazy, big prestige malus to content
+		ambition_valued = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		rivalries_more_common = yes
+		hostile_action_vs_rival_bonuses = yes
+		close_family_better_councillors = yes
+		close_family_better_court_positions = yes
+		penalty_for_revoking_titles_from_close_family = yes
+	}
+	character_modifier = {
+		close_relative_opinion = 5
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_imperial = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_imperial.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		doesnt_care_about_culture_faith_in_factions = yes
+		wants_to_learn_liege_language = yes
+		poorly_educated_leaders_distrusted = yes
+		better_ward_education = yes
+		innovation_from_learning_traits = yes
+		extra_language_cap = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+	}
+	character_modifier = {
+		life_expectancy = 20
+		knight_effectiveness_mult = 0.5
+		diplomatic_range_mult = 5
+		short_reign_duration_mult = 0.75
+		opinion_of_different_faith = 15
+		ignore_negative_opinion_of_culture = yes
+		levy_size = -0.25
+		men_at_arms_recruitment_cost = -0.15
+		men_at_arms_maintenance = -0.15
+		levy_reinforcement_rate = -0.25
+		heavy_infantry_max_size_add = 2
+		heavy_cavalry_max_size_add = 2
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_breton = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_breton.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		poet_trait_gives_bonuses = yes
+		poet_trait_more_common = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		can_host_joust_contests = yes
+		can_use_sparring_duel = yes
+		romance_scheme_bonuses = yes
+		romance_scheme_penalty = yes
+		ai_romance_scheme_increase = yes
+		poet_trait_romance_bonuses = yes
+	}
+	character_modifier = {
+		knight_limit = 4
+		life_expectancy = 20
+		diplomatic_range_mult = 1
+		short_reign_duration_mult = 0.7
+		ignore_negative_opinion_of_culture = yes	
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		accolade_glory_gain_mult = 0.2
+		owned_legend_spread_mult = 0.05
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_redguard = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_redguard.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		drylands_hunt_success_chance = yes
+		blademaster_trait_bonuses = yes
+		blademaster_traits_more_common = yes
+		blademaster_traits_give_learning = yes
+		# dueling_culture = yes #More likely to accept duel interactionss
+		# wandering_swordsmen_may_appear = yes #events needed
+		prowess_from_martial_education = yes
+		martial_education_more_valued = yes
+		can_host_joust_contests = yes
+	}
+	character_modifier = {
+		life_expectancy = 20
+		short_reign_duration_mult = 0.1
+		ignore_negative_opinion_of_culture = yes	
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		accolade_glory_gain_mult = 0.15
+		owned_legend_spread_mult = 0.05
+		prowess_per_stress_level = 2
+		learn_language_scheme_power_mult = 0.20
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_dwemer = {
 	category = regional
 	layers = {
 		0 = diplo
@@ -689,114 +1026,8 @@ tradition_dwemer = {
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }		
-}
-tradition_hyrule = {
-	category = regional
-	layers = {
-		0 = diplo
-		1 = indian
-		4 = hyrule.dds
-	}
-	is_shown = { always = no }
-	parameters = {
-		herbalist_traits_more_common = yes
-		poorly_educated_leaders_distrusted = yes
-		better_ward_education = yes
-		innovation_from_learning_traits = yes
-		extra_language_cap = yes
-		wants_to_learn_liege_language = yes
-		extra_learn_language_success_chance_vs_liege = yes
-		herbalist_trait_gives_bonuses = yes
-		learns_more_languages = yes
-		zealous_trait_more_common = yes
-		humble_trait_more_common = yes
-		harder_to_convert_character_faith = yes
-		harder_to_convert_county_faith = yes
-	}
-	character_modifier = {
-		life_expectancy = 100
-		no_prowess_loss_from_age = yes
-		years_of_fertility = 200
-		fertility = -0.25
-		diplomatic_range_mult = 3
-		short_reign_duration_mult = 0.5
-		inbreeding_chance = -2
-		opinion_of_different_faith = -15
-		ignore_negative_opinion_of_culture = yes
-		ai_zeal = 25
-	}
-	cost = { prestige = 9000 }	
-	ai_will_do = { value = 0 }	
-}
-tradition_imperial = {
-	category = regional
-	layers = {
-		0 = diplo
-		1 = mediterranean
-		4 = imperial_es.dds
-	}
-	is_shown = { always = no }
-	parameters = {
-		doesnt_care_about_culture_faith_in_factions = yes
-		wants_to_learn_liege_language = yes
-		poorly_educated_leaders_distrusted = yes
-		better_ward_education = yes
-		innovation_from_learning_traits = yes
-		extra_language_cap = yes
-		extra_learn_language_success_chance_vs_liege = yes
-		learns_more_languages = yes
-	}
-	character_modifier = {
-		life_expectancy = 20
-		diplomatic_range_mult = 5
-		short_reign_duration_mult = 0.75
-		opinion_of_different_faith = 15
-		ignore_negative_opinion_of_culture = yes
-		levy_size = -0.25
-		men_at_arms_recruitment_cost = -0.15
-		men_at_arms_maintenance = -0.15
-		levy_reinforcement_rate = -0.25
-		heavy_infantry_max_size_add = 2
-		heavy_cavalry_max_size_add = 2
-	}
-	cost = { prestige = 9000 }	
-	ai_will_do = { value = 0 }	
-}
-tradition_breton = {
-	category = regional
-	layers = {
-		0 = diplo
-		1 = mediterranean
-		4 = breton_es.dds
-	}
-	is_shown = { always = no }
-	parameters = {
-		poet_trait_gives_bonuses = yes
-		poet_trait_more_common = yes
-		martial_education_more_valued = yes
-		prowess_traits_more_valued = yes
-		blademaster_trait_bonuses = yes
-		craven_and_content_traits_looked_down_upon = yes
-		knights_slightly_more_prone_to_injury = yes
-		can_duel_rivals = yes
-		can_host_joust_contests = yes
-		can_use_sparring_duel = yes
-		romance_scheme_bonuses = yes
-		romance_scheme_penalty = yes
-		ai_romance_scheme_increase = yes
-		poet_trait_romance_bonuses = yes
-	}
-	character_modifier = {
-		knight_limit = 4
-		life_expectancy = 20
-		diplomatic_range_mult = 1
-		short_reign_duration_mult = 0.7
-		ignore_negative_opinion_of_culture = yes	
-		negate_prowess_penalty_add = 5 # Wounded knights fight better!
-		accolade_glory_gain_mult = 0.2
-		owned_legend_spread_mult = 0.05
-	}
-	cost = { prestige = 9000 }	
-	ai_will_do = { value = 0 }	
-}
+ }
+#
+
+
 
