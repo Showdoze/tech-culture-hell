@@ -24,9 +24,6 @@
 @glassarmor = "gfx/interface/icons/culture_innovations/ai_innovation_glass.dds"
 @black_marsh_materials = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_materials.dds"
 @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
-@dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
-@dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
-@dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
 @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
 @alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
 @administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
@@ -35,7 +32,7 @@
 #USA
  innovation_usa_build = {
 	group = culture_group_regional
-	culture_era = culture_era_tribal
+	culture_era = culture_era_industrial
 	icon = @misc_inventions
 	potential = {
 		OR = {
@@ -427,6 +424,9 @@
 	}
  }
 #DWEMER
+ @dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
+ @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
+ @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
  innovation_sphere_centurion = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
