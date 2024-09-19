@@ -436,6 +436,9 @@ hoplite = {
 	toughness = 32
 	pursuit = 15
 	screen = 5
+	terrain_bonus = {
+		farmlands = { damage = 12 toughness = 8 pursuit = 15 screen = 5 }
+	}
 	counters = {
 		pikemen = 1
 	}
@@ -452,15 +455,15 @@ hoplite = {
 #bosmer
  bosmer_stalkers = {
 	type = archers
-	damage = 32
+	damage = 25 #32
 	toughness = 10
 	pursuit = 0
 	screen = 5
 	terrain_bonus = {
-		forest = { damage = 10 toughness = 4 pursuit = 3 screen = 5 }
-		jungle = { damage = 12 toughness = 4 pursuit = 3 screen = 5 }
+		forest = { damage = 25 toughness = 4 pursuit = 3 screen = 5 }
+		jungle = { damage = 20 toughness = 4 pursuit = 3 screen = 5 }
 		hills = { damage = 5 toughness = 4 }
-		jungle_hills = { damage = 12 toughness = 4 pursuit = 3 screen = 5 }
+		jungle_hills = { damage = 18 toughness = 4 pursuit = 3 screen = 5 }
 	}
 	counters = {
 		skirmishers = 1
@@ -469,15 +472,86 @@ hoplite = {
 	can_recruit = {
 		culture = { has_innovation = innovation_bosmer_build }
 	}
-	buy_cost = { gold = 55 }
+	buy_cost = { gold = 50 }
 	low_maintenance_cost = { gold = 0.2 }
 	high_maintenance_cost = { gold = 0.5 }
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = bosmer_stalkers
  }
+#RedGuard
+ yokudan_way_of_the_sword = { ###Better version available to those with the Virtues of War Tradition
+	type = heavy_infantry
+	damage = 42
+	toughness = 22
+	pursuit = 0
+	screen = 0
+	terrain_bonus = {
+		desert = { damage = 8 toughness = 8 }
+		desert_hills = { damage = 8 toughness = 8 }
+		desert_mountains = { damage = 8 toughness = 8 }
+	}
+	counters = {
+		pikemen = 1
+	}	
+	can_recruit = {
+		culture = { has_innovation = innovation_redguard_build }
+	}
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.7 }
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = swordmasters
+ }
+### Orsimer
+ orc_marauders = {
+	type = heavy_infantry
+	damage = 36
+	toughness = 28
+	pursuit = 10
+	screen = 0
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_orc_build }
+	}
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.6 }
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = orc_marauders
+ } 
+#Breton
+ breton_hedge_knights = {
+	type = heavy_cavalry
+	damage = 30
+	toughness = 35
+	pursuit = 8
+	screen = 14
+	terrain_bonus = {
+		farmlands = { damage = 12 toughness = 8 }
+		wetlands = { damage = 8 toughness = 6 pursuit = 5 }
+		hills = { damage = 8 toughness = 6 }
+	}
+	counters = {
+		#mages = 1
+		archers = 1
+		skirmishers = 1
+	}
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.8 }
+	can_recruit = {
+		culture = { has_innovation = innovation_breton_build }
+	}
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = spellblades
+ }
 #
-
-
 
 
