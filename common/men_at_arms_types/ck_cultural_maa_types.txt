@@ -442,9 +442,9 @@ hoplite = {
 	can_recruit = {
 		culture = { has_innovation = innovation_imperial_build }
 	}
-	buy_cost = { gold = heavy_infantry_maa_recruitment_cost }
-	low_maintenance_cost = { gold = heavy_infantry_maa_low_maint_cost }
-	high_maintenance_cost = { gold = heavy_infantry_maa_high_maint_cost }
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 0.6 }
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score}
 	icon = armored_legionaires
@@ -457,10 +457,10 @@ hoplite = {
 	pursuit = 0
 	screen = 5
 	terrain_bonus = {
-		forest = { damage = 6 toughness = 4 pursuit = 3 screen = 5 }
-		jungle = { damage = 6 toughness = 4 pursuit = 3 screen = 5 }
+		forest = { damage = 10 toughness = 4 pursuit = 3 screen = 5 }
+		jungle = { damage = 12 toughness = 4 pursuit = 3 screen = 5 }
 		hills = { damage = 5 toughness = 4 }
-		jungle_hills = { damage = 6 toughness = 4 pursuit = 3 screen = 5 }
+		jungle_hills = { damage = 12 toughness = 4 pursuit = 3 screen = 5 }
 	}
 	counters = {
 		skirmishers = 1
@@ -469,9 +469,9 @@ hoplite = {
 	can_recruit = {
 		culture = { has_innovation = innovation_bosmer_build }
 	}
-	buy_cost = { gold = bowmen_maa_recruitment_cost }
-	low_maintenance_cost = { gold = bowmen_maa_low_maint_cost }
-	high_maintenance_cost = { gold = bowmen_maa_high_maint_cost }
+	buy_cost = { gold = 55 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.5 }
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = bosmer_stalkers
