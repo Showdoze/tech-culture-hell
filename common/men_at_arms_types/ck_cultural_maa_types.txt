@@ -527,7 +527,7 @@ hoplite = {
  } 
 #Breton
  breton_hedge_knights = {
-	type = heavy_cavalry
+	type = spellblades
 	damage = 30
 	toughness = 35
 	pursuit = 8
@@ -551,6 +551,35 @@ hoplite = {
 	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = spellblades
+ }
+#### Aldmeris
+ summerset_justiciars = {
+	type = spellblades
+	damage = 40
+	toughness = 25
+	pursuit = 12
+	screen = 8
+	terrain_bonus = {
+		plains = { damage = 8 toughness = 6 }
+		hills = { damage = 8 toughness = 6 }
+		drylands = { damage = 8 toughness = 6 }
+		jungle_hills = { damage = 4 toughness = 3 }
+		desert_hills = { damage = 4 toughness = 3 }
+	}
+	counters = {
+		#mages = 1
+		archers = 1
+		skirmishers = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_high_elf_build }
+	}
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 1 }
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = summerset_justiciars
  }
 #
 
