@@ -553,6 +553,11 @@
 		barony = title:b_constantinople
 		building_requirement_tribal = no
 	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_imperial_build
+		}
+	}
 	asset = {
 		type = pdxmesh
 		names = {
@@ -579,5 +584,48 @@
 	}
 	type = duchy_capital
   }
+  imperial_city_arena_01 = { 
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+	construction_time = very_slow_construction_time
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = tours_and_tournaments }
+			desc = tournament_activity_cost_max_discount_effect_desc
+		}
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_imperial_build
+		}
+	}
+	type_icon = "icon_structure_colosseum.dds"	
+	can_construct_potential = {
+		barony = title:b_constantinople
+		building_requirement_tribal = no
+	}	
+	cost_gold = 3000	
+	character_modifier = {
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		army_maintenance_mult = -0.1
+		men_at_arms_limit = 1
+	}
+	province_modifier = {
+		monthly_income = 1.5
+	}
+	county_modifier = {
+		tax_mult = 0.15
+		levy_size = 0.15
+		county_opinion_add = 5
+	}	
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_martial
+ }
 #
 
