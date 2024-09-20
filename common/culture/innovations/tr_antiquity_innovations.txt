@@ -163,7 +163,21 @@ innovation_equipment_celtic = {
 		has_innovation = innovation_bronze_work
 	}	
 }
-
+innovation_spartan_military = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @leadership_alexander
+	potential = {
+		this = culture:laconian		
+	}
+	character_modifier = {
+		movement_speed = 0.1
+		supply_duration	= 0.25
+	}
+	can_progress = {
+		has_innovation = innovation_bronze_work
+	}
+}
 innovation_hellenistic_baggage_train = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity

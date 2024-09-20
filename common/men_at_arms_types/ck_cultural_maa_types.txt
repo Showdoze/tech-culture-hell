@@ -214,7 +214,64 @@
 	icon = croc_rider
  }
 #
-hoplite = {
+#GREEK
+ homoioi_hoplitai = {
+    type = heavy_infantry
+    can_recruit = {
+		culture = { has_innovation = innovation_spartan_military }
+	}
+    damage = 12
+    toughness = 25
+    pursuit = 0
+    screen = 0
+    terrain_bonus = {
+        farmlands = { damage = 9 }
+        valley = { toughness = 9 }
+        plains = { damage = 3 toughness = 3 }
+        mountains = { toughness = -6 }
+        forest = { toughness = -6 }
+        hills = { damage = -3 toughness = -3 }
+    }
+    counters = {
+        medium_infantry = 0.75
+        light_cavalry = 0.75
+    }
+    buy_cost = { gold = 105 }
+    low_maintenance_cost = { gold = 0.75 }
+    high_maintenance_cost = { gold = 2.25 }   
+    stack = 100
+    ai_quality = { value = @cultural_maa_extra_ai_score }
+    icon = spartiatai_elite
+ }
+ homoioi_hippeis = {
+    type = heavy_infantry
+    can_recruit = {
+		culture = { has_innovation = innovation_spartan_military }
+	}
+    damage = 15
+    toughness = 28
+    pursuit = 0
+    screen = 0
+    terrain_bonus = {
+        farmlands = { damage = 9 }
+        valley = { toughness = 9 }
+        plains = { damage = 3 toughness = 3 }
+        mountains = { toughness = -6 }
+        forest = { toughness = -6 }
+        hills = { damage = -3 toughness = -3 }
+    }
+    counters = {
+        medium_infantry = 0.75
+        light_cavalry = 0.75
+    }
+    buy_cost = { gold = 125 }
+    low_maintenance_cost = { gold = 0.95 }
+    high_maintenance_cost = { gold = 2.85 }
+    stack = 100
+    ai_quality = { value = @cultural_maa_extra_ai_score }
+    icon = hoplitai_guard
+ }
+ hoplite = {
 	type = pikemen
 	damage = 30
 	toughness = 24
@@ -239,7 +296,7 @@ hoplite = {
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = pikemen
-}
+ }
 #AGOT
  dragons = {
 	type = dragon
