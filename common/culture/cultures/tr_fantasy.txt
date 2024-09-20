@@ -47,6 +47,31 @@ old_dwarven = {
 	}
 }
 #ELDER SCROLLS #
+ nord_culture = {
+	color = { 0.12 0.32 0.94 }
+	created = 350.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy
+	language = language_nordic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_nord #tradition_fp2_state_ransoming
+		tradition_stand_and_fight		
+		tradition_martial_admiration
+	}
+	name_list = name_list_nord
+	coa_gfx = { norse_coa_gfx  }
+	building_gfx = { norse_building_gfx } #ek_nordic_building_gfx
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx } #ek_nordic_clothing_gfx
+	unit_gfx = { norse_unit_gfx }
+	ethnicities = {
+		80 = caucasian_northern_blond
+		10 = caucasian_northern_ginger
+		5 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+ }
  imperial_culture = {
 	color = cyrodiilic
 	created = 1.1.1
