@@ -729,11 +729,15 @@ tradition_hyrule = {
 		has_access_to_trials_by_combat = yes
 		can_duel_rivals = yes
 		knights_slightly_more_prone_to_injury = yes
+		knights_die_less_but_are_captured_more = yes
+		characters_more_likely_to_be_captured_in_sieges = yes
+		can_demand_higher_ransoms_from_lower_tiers = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.25
+		cultural_acceptance_gain_mult = -0.5
 	}
 	character_modifier = {
+		hard_casualty_modifier = -0.5
 		councillor_opinion = 10
         glory_hound_opinion = -15 #Nordic standards amirite, better hunt and fight :)
 		tundra_travel_danger = tundra_low_danger_reduction

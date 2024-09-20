@@ -318,9 +318,7 @@
 	type = title
 	tier = empire
 	priority = 50
-	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic
-	name_list_syracuse
-    }
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic name_list_syracuse }
  }
  HO_king = {
 	type = character
@@ -329,16 +327,14 @@
 	gender = male
 	priority = 50
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
- }
+  }
  HO_king_lady = { #LADY
 	type = character
 	special = holder
 	tier = kingdom
 	gender = female
 	priority = 50
-	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic 
-	name_list_syracuse 
-    }
+	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic  name_list_syracuse }
  }
  HO_kingy = {
 	type = title
@@ -865,5 +861,63 @@
 	priority = 50
 	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
+ }
+#Nord
+ #JARL
+  jarl_d_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
+	top_liege = no
+  }
+  jarl_d_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
+	top_liege = no
+	only_holder = yes
+  }
+  jarl_d = {
+	type = title
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
+  }
+ high_king_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
+	top_liege = no
+ }
+ high_king_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
+	top_liege = no
+	only_holder = yes
+ }
+ high_kingdom = {
+	type = title
+	tier = kingdom
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_nord }
  }
 #
