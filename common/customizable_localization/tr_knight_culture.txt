@@ -8,8 +8,20 @@
 		localization_key = knight_samurai
 	}
 	text = {
+		 trigger = {
+			OR = {
+				culture = { has_cultural_pillar = language_nordic }
+				culture = { has_name_list = name_list_nord }
+			}
+		 }
+		 localization_key = knight_nord
+	}
+	text = {
 		trigger = {
-			culture = { has_name_list = name_list_heartlander }
+			OR = {
+				culture = { has_cultural_pillar = language_cyrodiilic }
+			    culture = { has_name_list = name_list_heartlander }
+			}
 		} #has_cultural_pillar = language_japanese
 		localization_key = knight_legate
 	}
