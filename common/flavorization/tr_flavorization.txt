@@ -891,6 +891,35 @@
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord }
   }
+# KING 
+ king_d_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = {  name_list_glenumbran }
+	top_liege = no
+ }
+ king_d_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = {  name_list_glenumbran }
+	top_liege = no
+	only_holder = yes
+ }
+ king_d = {
+	type = title
+	tier = duchy
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = {  name_list_glenumbran }
+ }  
 #HIGH KING  
  high_king_m = {
 	type = character
@@ -899,7 +928,7 @@
 	tier = kingdom
 	priority = 30
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_nord }
+	name_lists = { name_list_nord name_list_glenumbran }
 	top_liege = no
  }
  high_king_f = {
@@ -909,7 +938,7 @@
 	tier = kingdom
 	priority = 30
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_nord }
+	name_lists = { name_list_nord name_list_glenumbran }
 	top_liege = no
 	only_holder = yes
  }
@@ -918,7 +947,7 @@
 	tier = kingdom
 	priority = 30
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_nord }
+	name_lists = { name_list_nord name_list_glenumbran }
  }
 #Counts
  count_d_m = {
