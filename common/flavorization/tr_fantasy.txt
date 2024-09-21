@@ -1,35 +1,4 @@
-﻿#Alik'r
-
- #Feudal
- king_feudal_male_alikr = { #Sultan
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government autocracy_government tribal_government }
-	name_lists = { name_list_alikr }
-	top_liege = no
- }
- king_feudal_female_alikr = { #Sultana
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government autocracy_government tribal_government }
-	name_lists = { name_list_alikr }
-	top_liege = no
- }
- kingdom_feudal_alikr = { #Sultanate
-	type = title
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government autocracy_government tribal_government }
-	name_lists = { name_list_alikr }
-	top_liege = no
-}
-#Bosmeris Group
+﻿#Bosmeris Group
  baron_feudal_male_bosmeris_group = { #Clan-Keeper
 	type = character
 	gender = male
@@ -453,35 +422,6 @@
 	top_liege = no
 }
 #Breton Group
- #Count -> Earl for Bjoule, and Iliac
- count_feudal_male_earl = { #Earl
-	type = character
-	special = holder
-	gender = male
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- count_feudal_female_earl = { #Earl
-	type = character
-	special = holder
-	gender = female
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- county_feudal_earldom = { #Earldom
-	type = title
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
  #Count -> Baron for Northmen
  count_feudal_male_baron = { #Baron
 	type = character
@@ -504,64 +444,6 @@
 	top_liege = no
  }
  county_feudal_barony = { #Barony
-	type = title
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- #Duke -> Marquis for Northmen
- duke_feudal_male_marchis = { #Marquis
-	type = character
-	special = holder
-	gender = male
-	tier = duchy
-	priority = 34
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- duke_feudal_female_marchis = { #Marchioness
-	type = character
-	special = holder
-	gender = female
-	tier = duchy
-	priority = 34
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- duchy_feudal_march = { #March
-	type = title
-	tier = duchy
-	priority = 34
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- #Count -> Count (from standard Baron) for Glenumbran
- count_feudal_male_count = { #Count
-	type = character
-	special = holder
-	gender = male
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- count_feudal_female_countess = { #Countess
-	type = character
-	special = holder
-	gender = female
-	tier = county
-	priority = 20
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- county_feudal_county = { #County
 	type = title
 	tier = county
 	priority = 20
@@ -601,69 +483,6 @@
 	priority = 21
 	top_liege = no
  }
- duke_feudal_independent_male = { #King
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 35
-	only_independent = yes
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- duke_feudal_independent_female = { #Queen
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 35
-	only_independent = yes
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	top_liege = no
- }
- duchy_feudal_independent = { #Kingdom
-	type = title
-	tier = duchy
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	only_independent = yes
-	priority = 35
-	top_liege = no
- }
- #Special Always Duke Overwrite for select Titles
- duke_feudal_overwrite_male = { #Duke
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	titles = { d_systres }
-	priority = 120
-	top_liege = no
- }
- duke_feudal_overwrite_female = { #Duchess
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	titles = { d_systres }
-	priority = 120
-	top_liege = no
- }
- duchy_feudal_overwrite = { #Duchy
-	type = title
-	tier = duchy
-	governments = { feudal_government autocracy_government }
-	name_lists = { name_list_glenumbran }
-	titles = { d_systres }
-	priority = 120
-	top_liege = no
-}
 #Dunmeris Group
  baron_feudal_male_dunmeris_group = { #Sera
 	type = character
@@ -764,115 +583,6 @@
 	priority = 28
 	governments = { republic_government }
 	name_lists = { name_list_dunmer}
-	top_liege = no
- }
- #Great Houses
- great_house_redoran_male = { #Archmaster
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_redoran }
-	top_liege = no
- }
- great_house_redoran_female = { #Archmistress
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_redoran }
-	top_liege = no
- }
- great_house_indoril_male = { #Grand Ascendant
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_indoril }
-	top_liege = no
- }
- great_house_indoril_female = { #Grand Ascendant
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_indoril }
-	top_liege = no
- }
- great_house_dres_male = { #Grand Magnate
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_dres }
-	top_liege = no
- }
- great_house_dres_female = { #Grand Magnate
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_dres }
-	top_liege = no
- }
- great_house_telvanni_male = { #Archmagister
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_telvanni }
-	top_liege = no
- }
- great_house_telvanni_female = { #Archmagister
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_telvanni }
-	top_liege = no
- }
- great_house_dagoth_male = { #Lord High Councillor
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_dagoth }
-	top_liege = no
- }
- great_house_dagoth_female = { #Lady High Councillor
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_dagoth }
-	top_liege = no
- }
- great_house_hlaalu_male = { #Grandmaster
-	type = character
-	gender = male	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_hlaalu k_sadras k_sul k_veloth }
-	top_liege = no
- }
- great_house_hlaalu_female = { #Grandmistress
-	type = character
-	gender = female	
-	special = holder
-	tier = kingdom
-	priority = 301
-	titles = { k_hlaalu k_sadras k_sul k_veloth }
 	top_liege = no
  }
  #Great House Vassal
