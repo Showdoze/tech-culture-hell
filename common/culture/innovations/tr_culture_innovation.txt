@@ -31,6 +31,7 @@
 #JAPAN
  @tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
   @samurai = "gfx/interface/icons/culture_innovations/inn_samurai.dds"
+  @jap_build = "gfx/interface/icons/culture_innovations/jap_build1.dds"
  innovation_samurai = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -85,7 +86,7 @@
  innovation_japan_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @misc_inventions
+	icon = @jap_build
 	potential = {	
 		this = culture:japanese		
 	}
