@@ -927,7 +927,7 @@ wonder_newgrange_01 = {
 		building_slot_add = 1
 	}
 	province_modifier = {
-		travel_danger = 0.1
+		travel_danger = 1
 	}
 	ai_value = {
 		base = 0
@@ -936,23 +936,23 @@ wonder_newgrange_01 = {
  }
  scotland_yard = {
 	construction_time = slow_construction_time
-	type_icon = "icon_whitechapel.dds"
+	type_icon = "scotland_yard.dds"
 	cost_prestige = 200
 	cost_gold = 420
 	can_construct_potential = {
 		barony = title:b_london
 		building_requirement_tribal = no
 	}
-	character_culture_modifier = {
-		owned_hostile_scheme_success_chance_add = 5
-		owned_personal_scheme_success_chance_add = 5
-		learn_language_scheme_power_mult = 0.2
+	character_modifier = {
+		powerful_vassal_opinion = 5
+		monthly_county_control_growth_factor = 0.05
+		revolting_siege_morale_loss_mult = 0.25
 	}
 	county_modifier = {
 		tax_mult = 0.1
 		development_growth_factor = 0.15
 		development_growth = 0.1
-		building_slot_add = 1
+		hostile_raid_time = 0.5
 	}
 	province_modifier = {
 		travel_danger = -0.5
