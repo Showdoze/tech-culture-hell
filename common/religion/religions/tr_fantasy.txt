@@ -1738,5 +1738,211 @@ fantasy_religion = {
 				{ name = "holy_order_warriors" }
 			}
 		}
+		hammerite_faith = {
+			color = { 0.6 0.1 0.1 }
+			icon = hellenic
+			holy_site = london
+			holy_site = kiev
+			holy_site = paris
+			holy_site = carthage
+			holy_site = olympus
+			#Doctrine
+			 doctrine = doctrine_pluralism_pluralistic
+	         doctrine = doctrine_theocracy_lay_clergy
+			 doctrine = abrahamic_hostility_doctrine
+			 doctrine = special_doctrine_ecumenical_christian
+		     #Marriage
+	          doctrine = doctrine_concubines
+	          doctrine = doctrine_divorce_disallowed
+	          doctrine = doctrine_bastardry_none
+	          doctrine = doctrine_consanguinity_unrestricted
+          	 #Crimes
+	          doctrine = doctrine_homosexuality_shunned
+         	  doctrine = doctrine_adultery_men_accepted
+	          doctrine = doctrine_adultery_women_shunned
+	          doctrine = doctrine_kinslaying_accepted
+	          doctrine = doctrine_deviancy_virtuous
+	          doctrine = doctrine_witchcraft_accepted
+	         #Clerical Functions
+	          doctrine = doctrine_clerical_function_recruitment
+	           doctrine = doctrine_clerical_gender_either
+	           doctrine = doctrine_clerical_marriage_allowed
+	          doctrine = doctrine_clerical_succession_temporal_appointment
+	         #Funeral tradition
+	          doctrine = doctrine_funeral_bewailment
+			
+			doctrine = tennet_blood_m
+			doctrine = tenet_fp3_fedayeen
+			doctrine = tenet_sacred_shadows
+			reserved_male_names = {
+				Aaron Abrams Anvilite Alebus Askew Archibald Agnus 
+		        Burringden 
+		        Constance 
+		        Dovetail Drept Dale Debole Dolan Dovetail 
+		        Edgar 
+		        Graimal Gerard Greidus Griswald 
+		        Herald 
+		        Imbrel Inquisitor 
+		        Jeremyn Jenel Jance 
+		        Karras Kai Keybond Kindle 
+		        Maximil Markander Murus Mason Martello Maximil Mendon Mendus 
+		        Nolman Norell 
+		        Oliver Ondilot 
+		        Partis 
+		        Renault Raphael Reginald Rivet Roland 
+		        Sachelman Severence Sledge Stalwart 
+		        Tennor Tobias Tarius Terrence Theol Thorgrim 
+		        Uriel 
+		        Vale Vault 
+		        Wimble 
+		        Yora 
+		    }
+	        reserved_female_names = {	
+				Sister 
+	        }
+		    localization = {
+				#High God Name
+				 HighGodName = god_master_builder
+				 HighGodName2 = god_master_builder
+				 HighGodNamePossessive = god_master_builder_possessive
+				 HighGodNameSheHe = CHARACTER_SHEHE_HE
+				 HighGodHerselfHimself = CHARACTER_HIMSELF
+				 HighGodHerHis = CHARACTER_HERHIS_HIS
+				 HighGodNameAlternate = god_master_builder
+				 HighGodNameAlternatePossessive = god_master_builder_possessive
+				#Creator
+				 CreatorName = god_master_builder
+				 CreatorNamePossessive = god_master_builder_possessive
+				 CreatorSheHe = CHARACTER_SHEHE_HE
+				 CreatorHerHis = CHARACTER_HERHIS_HIS
+				 CreatorHerHim = CHARACTER_HERHIM_HIM
+				#HealthGod
+				 HealthGodName = god_master_builder
+				 HealthGodNamePossessive = god_master_builder_possessive
+				 HealthGodSheHe = CHARACTER_SHEHE_HE
+				 HealthGodHerHis = CHARACTER_HERHIS_HIS
+				 HealthGodHerHim = CHARACTER_HERHIM_HIM	
+				#FertilityGod
+				 FertilityGodName = god_master_builder
+				 FertilityGodNamePossessive = god_master_builder_possessive
+				 FertilityGodSheHe = CHARACTER_SHEHE_HE
+				 FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				 FertilityGodHerHim = CHARACTER_HERHIM_HIM
+				#WealthGod
+				 WealthGodName = god_master_builder
+				 WealthGodNamePossessive = god_master_builder_possessive
+				 WealthGodSheHe = CHARACTER_SHEHE_HE
+				 WealthGodHerHis = CHARACTER_HERHIS_HIS
+				 WealthGodHerHim = CHARACTER_HERHIM_HIM
+				#HouseholdGod
+				 HouseholdGodName = god_master_builder
+				 HouseholdGodNamePossessive = god_master_builder_possessive
+				 HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				 HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				 HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+				#FateGod
+				 FateGodName = god_master_builder
+				 FateGodNamePossessive = god_master_builder_possessive
+			 	 FateGodSheHe = CHARACTER_SHEHE_HE
+			 	 FateGodHerHis = CHARACTER_HERHIS_HIS
+				 FateGodHerHim = CHARACTER_HERHIM_HIM
+				#KnowledgeGod
+				 KnowledgeGodName = god_master_builder
+				 KnowledgeGodNamePossessive = god_master_builder_possessive
+				 KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				 KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				 KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+				#WarGod
+				 WarGodName = god_master_builder
+				 WarGodNamePossessive = god_master_builder_possessive
+				 WarGodSheHe = CHARACTER_SHEHE_HE
+				 WarGodHerHis = CHARACTER_HERHIS_HIS
+				 WarGodHerHim = CHARACTER_HERHIM_HIM
+				#TricksterGod
+				 TricksterGodName = god_master_builder
+				 TricksterGodNamePossessive = god_master_builder_possessive
+				 TricksterGodSheHe = CHARACTER_SHEHE_HE
+				 TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				 TricksterGodHerHim = CHARACTER_HERHIM_HIM
+				#NightGod
+				 NightGodName = god_master_builder
+				 NightGodNamePossessive = god_master_builder_possessive
+				 NightGodSheHe = CHARACTER_SHEHE_HE
+				 NightGodHerHis = CHARACTER_HERHIS_HIS
+				 NightGodHerHim = CHARACTER_HERHIM_HIM
+				#WaterGod
+				 WaterGodName = god_master_builder
+				 WaterGodNamePossessive = god_master_builder_possessive
+				 WaterGodSheHe = CHARACTER_SHEHE_HE
+				 WaterGodHerHis = CHARACTER_HERHIS_HIS
+				 WaterGodHerHim = CHARACTER_HERHIM_HIM
+				PantheonTerm = religion_the_killer
+				PantheonTerm2 = religion_the_killer_2
+				PantheonTerm3 = religion_the_killer_3
+				PantheonTermHasHave = pantheon_term_have
+			    GoodGodNames = { god_master_builder }
+				DevilName = god_trickster
+				 DevilNamePossessive = god_trickster_possessive
+				 DevilSheHe = CHARACTER_SHEHE_HE
+				 DevilHerHis = CHARACTER_HERHIS_HIS
+				 DevilHerselfHimself = CHARACTER_HIMSELF
+			    EvilGodNames = { god_trickster }
+				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = house_chruch
+				HouseOfWorship3 = blood_house_of_worship_3
+				HouseOfWorshipPlural = paganism_house_of_worship_plural
+				ReligiousSymbol = blood_religious_symbol
+				ReligiousSymbol2 = blood_religious_symbol_2
+				ReligiousSymbol3 = blood_religious_symbol_3
+				ReligiousText = blood_religious_text
+				ReligiousText2 = blood_religious_text_2
+				ReligiousText3 = blood_religious_text_3
+				ReligiousHeadName = blood_religious_head_title
+				ReligiousHeadTitleName = paganism_religious_head_title_name
+				DevoteeMale = paganism_devotee
+				DevoteeMalePlural = paganism_devoteeplural
+				DevoteeFemale = paganism_devotee
+				DevoteeFemalePlural = paganism_devoteeplural
+				DevoteeNeuter = paganism_devotee
+				DevoteeNeuterPlural = paganism_devoteeplural
+				PriestMale = blood_priest
+				PriestMalePlural = blood_priest_plural
+				PriestFemale = blood_priest_female
+				PriestFemalePlural = blood_priest_female_plural
+				PriestNeuter = blood_priest
+				PriestNeuterPlural = blood_priest_plural
+				AltPriestTermPlural = paganism_priest_alternate_plural
+				BishopMale = blood_bishop
+				BishopMalePlural = blood_bishop_plural
+				BishopFemale = blood_bishop
+				BishopFemalePlural = blood_bishop_plural
+				BishopNeuter = blood_bishop
+				BishopNeuterPlural = blood_bishop_plural
+				DivineRealm = blood_afterlife_good
+				DivineRealm2 = blood_afterlife_good_2
+				DivineRealm3 = blood_afterlife_good_3
+				PositiveAfterLife = blood_afterlife_good
+				PositiveAfterLife2 = blood_afterlife_good_2
+				PositiveAfterLife3 = blood_afterlife_good_3
+				NegativeAfterLife = blood_afterlife_bad
+				NegativeAfterLife2 = blood_afterlife_bad_2
+				NegativeAfterLife3 = blood_afterlife_bad_3
+				DeathDeityName = god_trickster
+				DeathDeityNamePossessive = god_trickster_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_HE
+				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
+				WitchGodName = blood_witchgodname
+				WitchGodNamePossessive = blood_witchgodname
+				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodSheHe = CHARACTER_HERHIS_HER
+				WitchGodHerHim = CHARACTER_HERHIM_HER
+				WitchGodMistressMaster = mistress
+				WitchGodMotherFather = mother
+				
+				GHWName = ghw_blood_war
+				GHWNamePlural = ghw_blood_wars
+			}
+		}
 	}
 }
