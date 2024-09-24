@@ -1,11 +1,15 @@
 ﻿theocracy_government = {
 
-	religious = yes
 	required_county_holdings = { church_holding castle_holding city_holding }
 	valid_holdings = { castle_holding city_holding tribal_holding }
 	primary_holding = church_holding
-	royal_court = no
-	council = yes
+
+	government_rules = {
+	    royal_court = no
+	    council = yes
+		religious = yes
+		landless_playable = yes
+	}
 
 	can_get_government = {
 		NOT = {
@@ -47,8 +51,11 @@ republic_government = {
 	primary_holding = city_holding
 	valid_holdings = { castle_holding city_holding }
 	required_county_holdings = { city_holding castle_holding church_holding }
-	royal_court = yes
-	council = yes
+
+	government_rules = {
+		royal_court = yes
+	    council = yes
+	}
 
     character_modifier = {
         short_reign_duration_mult = 0.5
@@ -74,11 +81,14 @@ republic_government = {
 }
 
 autocracy_government = {
-	create_cadet_branches = yes
-    rulers_should_have_dynasty = yes
-    dynasty_named_realms = yes
-	council = yes
-    royal_court = no
+
+	government_rules = {
+		create_cadet_branches = yes
+        rulers_should_have_dynasty = yes
+        dynasty_named_realms = yes
+	    council = yes
+        royal_court = no
+	}
 
     primary_holding = castle_holding
 
@@ -130,16 +140,19 @@ caliphate_government = {
 	primary_holding = castle_holding
 	primary_heritages = { heritage_arabic heritage_iranian heritage_turkic }
 	preferred_religions = { islam_religion }
-	create_cadet_branches = yes
-	rulers_should_have_dynasty = yes
-	royal_court = yes
-	council = yes
+
+	government_rules = {
+	    create_cadet_branches = yes
+	    rulers_should_have_dynasty = yes
+	    royal_court = yes
+	    council = yes
+		dynasty_named_realms = yes
+	}
 
 	valid_holdings = { city_holding church_holding }
 	required_county_holdings = { castle_holding city_holding church_holding }
 
 	always_use_patronym = yes
-	dynasty_named_realms = yes
 
 	vassal_contract = {
 		clan_tax_collector_obligations
