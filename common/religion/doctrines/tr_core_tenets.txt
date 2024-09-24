@@ -352,4 +352,23 @@ tr_doctrines = {
 			mystic_birthright_active = yes
 		}
 	}
+	tenet_hammerite = {
+		icon = core_tenet_dwemer
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			holy_wars_forbidden = yes
+			piety_from_long_peace = 1
+		}
+		traits = {
+			virtues = { architect scholar journaller zealous }
+			sins = { lazy cynical }
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+			learning_per_piety_level = 5
+			monthly_piety_from_buildings_mult = 0.24
+		}
+	}
 }
