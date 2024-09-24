@@ -127,12 +127,17 @@
 	religion = "mazdayasna"
 	culture = daylamite
 	trait = education_martial_3
+	trait = callous
+	trait = murderer
 	father = 160296
-	800.1.1 = {
-		birth = "800.1.1"
+	800.5.3 = {
+		birth = yes
 	}
-	840.1.1 = {
-		death = "840.1.1"
+	840.3.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 34008
+		}
 	}
 }
 
@@ -767,9 +772,6 @@
 	}
 }
 
-
-
-
 93166 = {
 	name = "Hassan"
 	dynasty_house = house_bavandid
@@ -784,14 +786,14 @@
 	}
 }
 
-
-
-
 93167 = {
 	name = "Ardashir"
 	dynasty_house = house_bavandid
 	religion = "ismaili"
 	culture = daylamite
+	stewardship = 6
+	trait = ambitious
+	trait = diligent
 	father = 93166
 	1156.1.1 = {
 		birth = yes
@@ -800,9 +802,6 @@
 		death = yes
 	}
 }
-
-
-
 
 93168 = {
 	name = "Ghazi_Rustam"
@@ -1475,6 +1474,7 @@
 		death = yes
 	}
 }
+
 1231054 = {
 	name = "Garsha_sp" #AKA Abu Kalijar, Hamadán and Igharayn 1042-1047 (1047 to Seljuk Ibrahim Inal), then Buyid governor of Khuzestan
 	dynasty = 1029009
@@ -1491,6 +1491,7 @@
 		death = yes
 	}
 }
+
 1231055 = {
 	name = "Abu_Harb" #in Natanz
 	dynasty = 1029009
@@ -1504,6 +1505,7 @@
 		death = yes
 	}
 }
+
 1231056 = {
 	name = "_Ali" # Yazd
 	dynasty = 1029009
@@ -1520,6 +1522,7 @@
 		death = yes
 	}
 }
+
 1231057 = {
 	name = "Garsha_sp" #Yazd
 	dynasty = 1029009
@@ -1533,7 +1536,6 @@
 		death = yes
 	}
 }
-
 
 #Buyids
 1231060 = {
@@ -1684,6 +1686,9 @@
 	953.1.1 = {
 		birth = yes
 	}
+	982.1.1 = {
+		give_nickname = nick_samsam_al_dawla
+	}
 	983.3.3 = {
 		death = yes
 	}
@@ -1696,6 +1701,9 @@
 	father = 1231065
 	955.1.1 = {
 		birth = yes
+	}
+	988.1.1 = {
+		give_nickname = nick_sharaf_al_dawla
 	}
 	989.6.9 = {
 		death = yes
@@ -1710,6 +1718,9 @@
 	966.1.1 = {
 		birth = yes
 	}
+	1011.1.1 = {
+		give_nickname = nick_baha_al_dawla
+	}
 	1012.12.22 = {
 		death = yes
 	}
@@ -1723,6 +1734,9 @@
 	985.1.1 = {
 		birth = yes
 	}
+	1023.1.1 = {
+		give_nickname = nick_sultan_al_dawla
+	}
 	1024.12.12 = {
 		death = yes
 	}
@@ -1735,6 +1749,9 @@
 	father = 1231072
 	987.1.1 = {
 		birth = yes
+	}
+	1043.1.1 = {
+		give_nickname = nick_jalal_al_dawla
 	}
 	1044.3.3 = {
 		death = yes
@@ -1762,6 +1779,9 @@
 	993.1.1 = {
 		birth = yes
 	}
+	1024.1.1 = {
+		give_nickname = nick_musharraf_al_dawla
+	}
 	1025.5.5 = {
 		death = yes
 	}
@@ -1774,6 +1794,9 @@
 	father = 1231072
 	993.1.1 = {
 		birth = yes
+	}
+	1027.1.1 = {
+		give_nickname = nick_ala_al_dawla
 	}
 	1028.12.12 = {
 		death = yes

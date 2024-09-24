@@ -106,7 +106,7 @@
 	intrigue = 8
 	stewardship = 7
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = education_martial_2
 	1127.1.1 = {
 		birth = "1127.1.1"
@@ -127,7 +127,7 @@
 	intrigue = 6
 	stewardship = 7
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = lustful
 	trait = wrathful
 	trait = greedy
@@ -154,7 +154,7 @@
 	intrigue = 5
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = cynical
 	trait = arrogant
 	trait = gluttonous
@@ -175,7 +175,7 @@
 	intrigue = 5
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = honest
 	trait = education_martial_1
 	father = 204000
@@ -199,7 +199,7 @@
 	intrigue = 4
 	stewardship = 7
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = temperate
 	trait = honest
 	trait = arbitrary
@@ -220,7 +220,7 @@
 	intrigue = 5
 	stewardship = 3
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = lazy
 	trait = cynical
 	trait = education_martial_2
@@ -242,7 +242,7 @@
 	intrigue = 5
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = cynical
 	trait = brave
 	trait = education_learning_2
@@ -265,7 +265,7 @@
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = humble
 	trait = chaste
 	trait = education_diplomacy_3
@@ -287,7 +287,7 @@
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = stuttering
 	trait = education_stewardship_2
 	father = 204004
@@ -308,7 +308,7 @@
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = education_martial_2
 	father = 204004
 	mother = 204005
@@ -329,11 +329,13 @@
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = zealous
 	trait = arbitrary
+	trait = pensive
 	trait = stuttering
 	trait = education_learning_3
+	disallow_random_traits = yes
 	father = 204004
 	mother = 204005
 	1165.1.1 = {
@@ -353,7 +355,7 @@
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = lustful
 	trait = cynical
 	trait = education_intrigue_1
@@ -375,11 +377,12 @@
 	intrigue = 5
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = diligent
 	trait = greedy
 	trait = education_martial_2
 	father = 204021
+	mother = lacy_4
 	1172.1.1 = {
 		birth = "1172.1.1"
 	}
@@ -398,16 +401,22 @@
 	diplomacy = 5
 	intrigue = 5
 	stewardship = 6
+	learning = 3
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = arrogant
+	trait = ambitious
+	trait = greedy
 	trait = education_martial_2
 	father = 129082
-	1125.1.1 = {
-		birth = "1125.1.1"
+	1133.1.1 = {
+		birth = yes
+	}
+	1155.1.1 = {
+		add_spouse = lacy_4
 	}
 	1186.7.25 = {
-		death = "1186.7.25"
+		death = yes
 	}
 }
 
@@ -419,10 +428,11 @@
 	intrigue = 5
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = diligent
 	trait = education_martial_2
 	father = 204021
+	mother = lacy_4
 	1176.1.1 = {
 		birth = "1176.1.1"
 	}
@@ -440,12 +450,13 @@
 	intrigue = 5
 	stewardship = 6
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = lazy
 	trait = humble
 	trait = gluttonous
 	trait = education_diplomacy_1
 	father = 204021
+	mother = lacy_4
 	1175.1.1 = {
 		birth = "1175.1.1"
 	}
@@ -462,7 +473,7 @@
 	intrigue = 4
 	stewardship = 6
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = diligent
 	trait = education_martial_2
 	father = 204039
@@ -486,7 +497,7 @@
 	intrigue = 4
 	stewardship = 4
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = deceitful
 	trait = education_martial_2
 	1120.1.1 = {
@@ -505,7 +516,7 @@
 	intrigue = 4
 	stewardship = 6
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = cynical
 	trait = education_intrigue_1
 	1155.1.1 = {
@@ -524,7 +535,7 @@
 	intrigue = 4
 	stewardship = 6
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = temperate
 	trait = humble
 	trait = education_martial_2
@@ -547,7 +558,7 @@
 	intrigue = 4
 	stewardship = 6
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = just
 	trait = gluttonous
 	trait = education_stewardship_2
@@ -563,18 +574,25 @@
 
 204500 = {
 	name = "Henry" # Henry II
-	dynasty = 106
-	martial = 7
-	diplomacy = 4
+	dynasty_house = house_plantagenet
+	diplomacy = 7
+	martial = 8
+	stewardship = 8
 	intrigue = 8
-	stewardship = 6
+	learning = 7
+	prowess = 0 # More a strategist than a fighter: we have to keep the base apocalyptically low because otherwise he's go so many joint prowess-martial mods that he become a godly duellist.
 	religion = "catholic"
-	culture = "english"
-	trait = wrathful
-	trait = greedy
-	trait = ambitious
-	trait = lustful
-	trait = education_stewardship_3
+	culture = "norman"
+	trait = education_martial_5 # "of his 36 separate campaigns only three failed to achieve their goals"
+	trait = wrathful # "The king, enflamed with his customary fury"
+	trait = ambitious # "inordinately ambitious"
+	trait = lustful # "extremely licentious"
+	trait = forgiving
+	trait = shrewd # "a ready knowledge of nearly the whole of history and also practical experience of almost everything in daily affairs"
+	trait = seducer
+	trait = lifestyle_hunter
+	trait = strategist
+	disallow_random_traits = yes
 	father = 204506
 	mother = 202991
 	1133.3.5 = {
@@ -582,6 +600,135 @@
 	}
 	1152.5.18 = {
 		add_spouse = 205730
+		give_nickname = nick_curtmantle
+		effect = {
+			set_relation_rival = character:205500 # Louis VII of France
+		}
+	}
+	1155.1.1 = {
+		effect = {
+			house = {
+				add_house_modifier = {
+					modifier = ireland_laudabiliter_modifier
+					years = 100
+				}
+			}
+		}
+	}
+	1171.1.1 = {
+		effect = {
+			assign_favourite_child_effect = {
+				ACTOR = character:204500
+				RECIPIENT = character:204514
+			}
+			add_opinion = {
+				target = character:204514
+				modifier = love_opinion
+				opinion = 100
+			}
+			reverse_add_opinion = {
+				target = character:204514
+				modifier = love_opinion
+				opinion = 100
+			}
+		}
+	}
+	1173.3.1 = {
+		effect = {
+			# The revolt of '73.
+			## Eleanor.
+			add_opinion = {
+				target = character:205730
+				modifier = declared_war
+			}
+			set_relation_grudge = character:205730
+			reverse_add_opinion = {
+				target = character:205730
+				modifier = hate_opinion
+				opinion = -200
+			}
+			## Henry the Young King.
+			add_opinion = {
+				target = character:204508
+				modifier = declared_war
+			}
+			set_relation_potential_rival = character:204508
+			reverse_add_opinion = {
+				target = character:204508
+				modifier = unjust_patriarch_opinion
+				opinion = -200
+			}
+			## Richard the Lionheart.
+			add_opinion = {
+				target = character:204510
+				modifier = declared_war
+			}
+			set_relation_potential_rival = character:204510
+			reverse_add_opinion = {
+				target = character:204510
+				modifier = unjust_patriarch_opinion
+				opinion = -100
+			}
+			## Geoffrey of Brittany.
+			add_opinion = {
+				target = character:204511
+				modifier = declared_war
+			}
+			set_relation_potential_rival = character:204511
+			reverse_add_opinion = {
+				target = character:204511
+				modifier = unjust_patriarch_opinion
+				opinion = -100
+			}
+			## King William of Scotland.
+			add_opinion = {
+				target = character:202999
+				modifier = declared_war
+			}
+			set_relation_potential_rival = character:202999
+			## King Philip of France.
+			add_opinion = {
+				target = character:205500
+				modifier = declared_war
+			}
+			## Lesser belligerents.
+			### Duke Philippe of Flanders.
+			add_opinion = {
+				target = character:212591
+				modifier = declared_war
+			}
+			### Robert de Beaumont.
+			add_opinion = {
+				target = character:204580
+				modifier = declared_war
+			}
+			### William de Ferrers.
+			add_opinion = {
+				target = character:204690
+				modifier = declared_war
+			}
+		}
+	}
+	1174.7.8 = {
+		effect = {
+			imprison = {
+				target = character:205730
+				type = house_arrest
+			}
+			reverse_add_opinion = {
+				target = character:205730
+				modifier = imprisoned_me
+			}
+		}
+	}
+	1178.1.1 = {
+		effect = {
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_2
+				add_prestige = 3000
+			}
+		}
 	}
 	1187.1.1 = {
 		trait = ill
@@ -594,7 +741,7 @@
 204502 = {
 	name = "Constance"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 6
 	diplomacy = 6
 	intrigue = 5
@@ -615,7 +762,7 @@
 204503 = {
 	name = "Eleonore"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 4
 	intrigue = 4
@@ -635,7 +782,7 @@
 204504 = {
 	name = "Mathilde"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 8
 	diplomacy = 7
 	intrigue = 6
@@ -654,7 +801,7 @@
 
 204505 = {
 	name = "Arthur"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 7
 	intrigue = 6
@@ -673,7 +820,7 @@
 
 204507 = {
 	name = "William"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 6
 	diplomacy = 8
 	intrigue = 6
@@ -694,41 +841,67 @@
 204508 = {
 	name = "Henry"
 	# AKA: Henry the Young King
-	dynasty = 106
-	martial = 5
-	diplomacy = 7
-	intrigue = 7
-	stewardship = 4
+	dynasty_house = house_plantagenet
+	diplomacy = 3
+	martial = 4
+	stewardship = 1
+	intrigue = 3
+	learning = 1 # "he was no scholar (cum non esset literatus)"
 	religion = "catholic"
-	culture = "english"
-	trait = beauty_good_1
-	trait = lifestyle_blademaster
-	trait = diligent
-	trait = education_learning_2
+	culture = "norman"
+	trait = education_diplomacy_3 # "richly endowed with eloquence and charm of address"
+	trait = education_martial_prowess_3
+	trait = beauty_good_2 # "the most handsome prince in all the world"
+	trait = brave # "his boldness and valour"
+	trait = generous # "openhanded generosity"
+	trait = deceitful # "he was a prodigious traitor, prodigal in misdeeds, a clear spring of crimes, a pleasing source of mischief, a magnificent palace of sin"
+	trait = profligate # "the Young King’s spending outstripped his access to ready money"
+	trait = gallant # "embodiment of the chivalric virtues"
+	trait = athletic
+	health = 2.5 # Just to make him a _bit_ more susceptible to disease (baseline is 3)
 	father = 204500
 	mother = 205730
 	1155.2.28 = {
-		birth = "1155.2.28"
+		birth = yes
+	}
+	1170.1.1 = {
+		add_trait = lifestyle_hunter
 	}
 	1172.1.2 = {
 		give_nickname = nick_the_young
 		add_spouse = 205515
 	}
+	1177.1.1 = {
+		add_trait = tourney_participant
+	}
+	1178.1.1 = {
+		effect = {
+			set_relation_nemesis = { 
+				target = character:204510 # his other brother, Richard, whom he loathed
+			}
+			set_relation_rival = { 
+				target = character:204500 # his father, Henry, whose death he placed among his highest desires
+			}
+			set_relation_friend = { 
+				target = character:204540 # William Marshal; the Young King's guardian, mentor, and friend
+			}
+		}
+	}
 	1183.6.11 = {
-		death = "1183.6.11"
+		death = yes
 	}
 }
 
 204509 = {
 	name = "Matilda" #Plantagenet
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 8
 	diplomacy = 8
 	intrigue = 4
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = zealous
 	trait = education_intrigue_2
 	father = 204500
@@ -745,26 +918,39 @@
 	name = "Richard"
 	# AKA: Richard the Lionheart
 	dna = richard1st
-	dynasty = 106
-	martial = 6
+	dynasty_house = house_plantagenet
+	martial = 12 # "he was a bad son, a bad husband, and a bad king, but a gallant and splendid soldier"
 	diplomacy = 6
 	intrigue = 6
-	stewardship = 6
+	stewardship = 3
 	religion = "catholic"
 	culture = "occitan"
 	trait = chaste
 	trait = brave
-	trait = lifestyle_blademaster
-	trait = military_engineer
-	trait = impatient
+	trait = ambitious
+	trait = arrogant # "Richard’s arrogance, verging on vanity"
 	trait = beauty_good_1
-	trait = arrogant
-	trait = education_martial_4
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = poet
 	sexuality = homosexual
 	father = 204500
 	mother = 205730
 	1157.9.8 = {
 		birth = "1157.9.8"
+		effect = {
+	 		learn_language_of_culture = culture:occitan
+		} 
+	}
+	1169.1.1 = {
+		effect = {
+			create_betrothal = character:205518 # Adèle de France
+		}
+	}
+	1178.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:205730 } # "Richard ... was always his mother's favorite"
+		}
 	}
 	1187.1.1 = {
 		give_nickname = nick_the_lionheart
@@ -783,38 +969,72 @@
 
 204511 = {
 	name = "Geoffrey"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 5
 	intrigue = 6
 	stewardship = 6
+	learning = 3
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
+	trait = education_intrigue_2
+	trait = brave
 	trait = deceitful
-	trait = education_learning_3
+	trait = cynical
+	trait = disloyal
 	father = 204500
 	mother = 205730
 	1158.9.23 = {
-		birth = "1158.9.23"
+		birth = yes
 	}
 	1178.1.1 = {
 		add_spouse = 205740
 	}
+	1178.7.1 = {
+		add_trait = tourney_participant
+		effect = {
+			set_relation_rival = character:204510 # Richard
+			set_relation_rival = character:204500 # Henry II
+			# Plus, try to help him become friends with his historical bestie the future Philip Augustus, even though they haven't met yet.
+			set_relation_potential_friend = character:205506
+			add_opinion = {
+				target = character:205506
+				modifier = friendliness_opinion
+				opinion = 50
+			}
+			reverse_add_opinion = {
+				target = character:205506
+				modifier = friendliness_opinion
+				opinion = 50
+			}
+			# Try to make us a bit friendlier with the incumbent French king, just to nudge.
+			add_opinion = {
+				target = character:205500
+				modifier = respect_opinion
+				opinion = 50
+			}
+			reverse_add_opinion = {
+				target = character:205500
+				modifier = respect_opinion
+				opinion = 50
+			}
+		}
+	}
 	1186.8.19 = {
-		death = "1186.8.19"
+		death = yes
 	}
 }
 
 204512 = {
 	name = "Eleanor"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 5
 	intrigue = 7
 	stewardship = 8
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
 	trait = lazy
 	trait = generous
 	trait = cynical
@@ -832,29 +1052,31 @@
 204513 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 8
 	diplomacy = 5
 	intrigue = 6
 	stewardship = 5
 	religion = "catholic"
-	culture = "english"
+	culture = "norman"
+	disallow_random_traits = yes
+	trait = curious
 	trait = deceitful
 	trait = cynical
 	trait = education_learning_3
 	father = 204500
 	mother = 205730
-	1165.1.2 = {
-		birth = "1165.1.2"
+	1165.10.1 = {
+		birth = yes
 	}
-	1215.1.2 = {
-		death = "1215.1.2"
+	1199.9.24 = {
+		death = yes
 	}
 }
 
 204514 = {
 	name = "John" # "Lackland", "Prince_John"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 2
 	intrigue = 7
@@ -916,7 +1138,7 @@
 
 204516 = {
 	name = "Geoffrey"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -1424,7 +1646,7 @@
 
 204573 = {
 	name = "Edmund"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 4
 	intrigue = 6
@@ -1850,7 +2072,7 @@
 
 204630 = {
 	name = "Hamelin"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 5
 	intrigue = 7
@@ -3669,7 +3891,7 @@
 
 232020 = {
 	name = "William"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 7
 	intrigue = 7
@@ -3711,7 +3933,7 @@
 232682 = {
 	name = "Richard"
 	# AKA: Richard of Cornwall
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 7
 	intrigue = 4
@@ -5468,7 +5690,7 @@
 454500 = {
 	name = "Edward" # Edward III
 	dna = edward3rd
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 6
 	intrigue = 6
@@ -5501,7 +5723,7 @@
 454501 = {
 	name = "Edward" # The Black Prince
 	dna = edward_the_black_prince
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 10
 	diplomacy = 6
 	intrigue = 4
@@ -5527,7 +5749,7 @@
 454502 = {
 	name = "Isabella"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 4
 	diplomacy = 7
 	intrigue = 4
@@ -5549,7 +5771,7 @@
 454503 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 8
 	intrigue = 8
@@ -5571,7 +5793,7 @@
 454505 = {
 	name = "Eleanor"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 8
 	diplomacy = 7
 	intrigue = 4
@@ -5592,7 +5814,7 @@
 454506 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -5615,7 +5837,7 @@
 454507 = {
 	name = "John"
 	female = no
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -5637,7 +5859,7 @@
 
 454510 = {
 	name = "Edward" # Edward II
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 7
 	intrigue = 4
@@ -5774,7 +5996,7 @@
 454516 = {
 	name = "Elizabeth"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 8
 	intrigue = 4
@@ -5796,7 +6018,7 @@
 	name = "Edward"
 	# AKA: Edward Longshanks
 	dna = longshanks
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 10
 	diplomacy = 7
 	intrigue = 8
@@ -5837,7 +6059,7 @@
 454522 = {
 	name = "Henry"
 	# AKA: Henry III
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 10
 	diplomacy = 7
 	intrigue = 8
@@ -5864,7 +6086,7 @@
 
 454523 = {
 	name = "Edmund"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 7
 	intrigue = 8
@@ -5888,7 +6110,7 @@
 
 454525 = {
 	name = "Henry"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 5
@@ -5912,7 +6134,7 @@
 
 454527 = {
 	name = "Henry"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 6
@@ -5937,7 +6159,7 @@
 454529 = {
 	name = "Matilda"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 7
 	intrigue = 6
@@ -5957,7 +6179,7 @@
 454530 = {
 	name = "Blanche"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 6
@@ -5979,7 +6201,7 @@
 454531 = {
 	name = "Maud"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 6
@@ -6001,7 +6223,7 @@
 454532 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 6
@@ -6023,7 +6245,7 @@
 454533 = {
 	name = "Eleonor"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 7
 	diplomacy = 7
 	intrigue = 6
@@ -6045,7 +6267,7 @@
 454534 = {
 	name = "Mary"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 7
 	intrigue = 7
@@ -6845,7 +7067,7 @@
 454605 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 454520
@@ -7070,7 +7292,7 @@
 455764 = {
 	name = "Eleanor"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 5
 	intrigue = 5
@@ -7091,7 +7313,7 @@
 455791 = {
 	name = "Beatrice"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 5
 	intrigue = 4
@@ -7112,7 +7334,7 @@
 455792 = {
 	name = "Margaret"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 5
 	intrigue = 4
@@ -7133,7 +7355,7 @@
 487043 = {
 	name = "Margaret"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 5
 	diplomacy = 6
 	intrigue = 4
@@ -7884,7 +8106,7 @@
 7510 = {
 	name = "Isabella"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 204514
@@ -8430,7 +8652,7 @@
 
 129037 = {
 	name = "Thomas"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 454523
@@ -8446,7 +8668,7 @@
 129038 = {
 	name = "Eleanor"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 204514
@@ -9176,7 +9398,7 @@
 138451 = {
 	name = "Joan"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = bastard
@@ -11931,7 +12153,7 @@
 
 161697 = {
 	name = "Henry"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 232682
@@ -11952,7 +12174,7 @@
 
 161698 = {
 	name = "Richard"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	father = 232682
@@ -11967,7 +12189,7 @@
 
 161699 = {
 	name = "Richard"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = bastard
@@ -12185,7 +12407,7 @@
 183029 = {
 	name = "Richard"
 	# AKA: Richard FitzRoy
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = bastard
@@ -12204,7 +12426,7 @@
 	name = "Joan"
 	# AKA: Joan of England
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = beauty_good_1
@@ -12416,7 +12638,7 @@
 
 183010 = {
 	name = "William" #William FitzEmpress
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	martial = 9
 	diplomacy = 7
 	intrigue = 8
@@ -12438,7 +12660,7 @@
 
 183071 = {
 	name = "John"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = education_stewardship_2
@@ -12454,7 +12676,7 @@
 
 183072 = {
 	name = "Henry"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = education_stewardship_2
@@ -12470,7 +12692,7 @@
 
 183073 = {
 	name = "Alphonso"
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = ill
@@ -12488,7 +12710,7 @@
 183074 = {
 	name = "Mary"
 	female = yes
-	dynasty = 106
+	dynasty_house = house_plantagenet
 	religion = "catholic"
 	culture = "english"
 	trait = celibate
