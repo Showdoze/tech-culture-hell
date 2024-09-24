@@ -1747,33 +1747,13 @@ fantasy_religion = {
 			holy_site = carthage
 			holy_site = olympus
 			#Doctrine
-			 doctrine = doctrine_pluralism_pluralistic
-	         doctrine = doctrine_theocracy_lay_clergy
-			 doctrine = abrahamic_hostility_doctrine
-			 doctrine = special_doctrine_ecumenical_christian
-		     #Marriage
-	          doctrine = doctrine_concubines
-	          doctrine = doctrine_divorce_disallowed
-	          doctrine = doctrine_bastardry_none
-	          doctrine = doctrine_consanguinity_unrestricted
-          	 #Crimes
-	          doctrine = doctrine_homosexuality_shunned
-         	  doctrine = doctrine_adultery_men_accepted
-	          doctrine = doctrine_adultery_women_shunned
-	          doctrine = doctrine_kinslaying_accepted
-	          doctrine = doctrine_deviancy_virtuous
-	          doctrine = doctrine_witchcraft_accepted
 	         #Clerical Functions
-	          doctrine = doctrine_clerical_function_recruitment
-	           doctrine = doctrine_clerical_gender_either
-	           doctrine = doctrine_clerical_marriage_allowed
-	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
-	          doctrine = doctrine_funeral_bewailment
+	        
 			
-			doctrine = tennet_blood_m
-			doctrine = tenet_fp3_fedayeen
-			doctrine = tenet_sacred_shadows
+			doctrine = tenet_hammerite
+			doctrine = tenet_monasticism
+			doctrine = tenet_armed_pilgrimages
 			reserved_male_names = {
 				Aaron Abrams Anvilite Alebus Askew Archibald Agnus 
 		        Burringden 
@@ -1887,61 +1867,38 @@ fantasy_religion = {
 				 DevilHerHis = CHARACTER_HERHIS_HIS
 				 DevilHerselfHimself = CHARACTER_HIMSELF
 			    EvilGodNames = { god_trickster }
-				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship = house_chruch
 				HouseOfWorship2 = house_chruch
-				HouseOfWorship3 = blood_house_of_worship_3
-				HouseOfWorshipPlural = paganism_house_of_worship_plural
-				ReligiousSymbol = blood_religious_symbol
-				ReligiousSymbol2 = blood_religious_symbol_2
-				ReligiousSymbol3 = blood_religious_symbol_3
-				ReligiousText = blood_religious_text
-				ReligiousText2 = blood_religious_text_2
-				ReligiousText3 = blood_religious_text_3
-				ReligiousHeadName = blood_religious_head_title
-				ReligiousHeadTitleName = paganism_religious_head_title_name
-				DevoteeMale = paganism_devotee
-				DevoteeMalePlural = paganism_devoteeplural
-				DevoteeFemale = paganism_devotee
-				DevoteeFemalePlural = paganism_devoteeplural
-				DevoteeNeuter = paganism_devotee
-				DevoteeNeuterPlural = paganism_devoteeplural
-				PriestMale = blood_priest
-				PriestMalePlural = blood_priest_plural
-				PriestFemale = blood_priest_female
-				PriestFemalePlural = blood_priest_female_plural
-				PriestNeuter = blood_priest
-				PriestNeuterPlural = blood_priest_plural
-				AltPriestTermPlural = paganism_priest_alternate_plural
-				BishopMale = blood_bishop
-				BishopMalePlural = blood_bishop_plural
-				BishopFemale = blood_bishop
-				BishopFemalePlural = blood_bishop_plural
-				BishopNeuter = blood_bishop
-				BishopNeuterPlural = blood_bishop_plural
-				DivineRealm = blood_afterlife_good
-				DivineRealm2 = blood_afterlife_good_2
-				DivineRealm3 = blood_afterlife_good_3
-				PositiveAfterLife = blood_afterlife_good
-				PositiveAfterLife2 = blood_afterlife_good_2
-				PositiveAfterLife3 = blood_afterlife_good_3
-				NegativeAfterLife = blood_afterlife_bad
-				NegativeAfterLife2 = blood_afterlife_bad_2
-				NegativeAfterLife3 = blood_afterlife_bad_3
-				DeathDeityName = god_trickster
-				DeathDeityNamePossessive = god_trickster_possessive
-				DeathDeitySheHe = CHARACTER_SHEHE_HE
-				DeathDeityHerHis = CHARACTER_HERHIS_HIS
-				DeathDeityHerHim = CHARACTER_HERHIM_HIM
-				WitchGodName = blood_witchgodname
-				WitchGodNamePossessive = blood_witchgodname
-				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_HERHIS_HER
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
-				
-				GHWName = ghw_blood_war
-				GHWNamePlural = ghw_blood_wars
+				HouseOfWorship3 = house_catherdral
+				HouseOfWorshipPlural = house_chruch_plural
+				ReligiousSymbol = hammerite_religious_symbol
+				ReligiousSymbol2 = hammerite_religious_symbol_2
+				ReligiousSymbol3 = hammerite_religious_symbol_3
+				ReligiousText = hammerite_religious_text
+				ReligiousText2 = hammerite_religious_text_2
+				ReligiousText3 = hammeritereligious_text_3
+
+				DivineRealm = hammerite_afterlife
+				DivineRealm2 = hammerite_afterlife
+				DivineRealm3 = hammerite_afterlife
+				PositiveAfterLife = hammerite_afterlife
+				PositiveAfterLife2 = hammerite_afterlife
+				PositiveAfterLife3 = hammerite_afterlife
+				NegativeAfterLife = trickster_afterlife
+				NegativeAfterLife2 = trickster_afterlife2
+				NegativeAfterLife3 = trickster_afterlife
+				#DeathDeityName = god_trickster
+				#DeathDeityNamePossessive = god_trickster_possessive
+				#DeathDeitySheHe = CHARACTER_SHEHE_HE
+				#DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				#DeathDeityHerHim = CHARACTER_HERHIM_HIM
+				#WitchGodName = blood_witchgodname
+				#WitchGodNamePossessive = blood_witchgodname
+				#WitchGodHerHis = CHARACTER_HERHIS_HER
+				#WitchGodSheHe = CHARACTER_HERHIS_HER
+				#WitchGodHerHim = CHARACTER_HERHIM_HER
+				#WitchGodMistressMaster = mistress
+				#WitchGodMotherFather = mother
 			}
 		}
 	}

@@ -353,17 +353,17 @@ tr_doctrines = {
 		}
 	}
 	tenet_hammerite = {
-		icon = core_tenet_dwemer
+		icon = core_tenet_hammerite
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
 			piety_from_marrying_lowborn_active = yes
-			holy_wars_forbidden = yes
-			piety_from_long_peace = 1
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
 		}
 		traits = {
-			virtues = { architect scholar journaller zealous }
-			sins = { lazy cynical }
+			virtues = { architect scholar temperate zealous }
+			sins = { lazy cynical lifestyle_mystic }
 		}
 		character_modifier = {
 			close_relative_opinion = 5
