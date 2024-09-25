@@ -1,108 +1,4 @@
-﻿#Misc titles
- k_kemet = {
-	color = { 235 174 41 }
-
-	capital = c_giza
- }
- k_sumer = {
-	color = { 209 49 48 }
-
-	capital = c_qadisiya
- }
- k_akkadia = {
-	color = { 207 84 8 }
-
-	capital = c_baghdad
- }
- k_babylonia = {
-	color = { 68 75 152 }
-
-	capital = c_baghdad
- }
- k_assyria = {
-	color = { 117 191 48 }
-
-	capital = c_mosul
- }
- k_canaan = {
-	color = { 250 118 6 }
-
-	capital = c_acre
- }
- k_phoenicia = {
-	color = { 176 123 199 }
-
-	capital = c_acre
- }
- k_samaria = {
-	color = { 230 218 9 }
-
-	capital = c_tiberias
- }
- k_judah = {
-	color = { 230 101 9 }
-
-	capital = c_jerusalem
- }
- k_philistine = {
-	color = { 176 26 43 }
-
-	capital = c_ghazza
- }
- k_carthage = {
-	color = { 78 128 79 }
-
-	capital = c_tunis
- }
- k_brython = {
-	color = { 58 158 117 }
-
-	capital = c_gloucestershire
- }
- k_na_gaeil = {
-	color = { 54 108 156 }
-
-	capital = c_dublin
- }
- k_gaul = {
-	color = { 4 135 74 }
-
-	capital = c_ile_de_france
- }
- k_franks = {
-	color = { 93 159 121 }
- }
- k_suebi = {
-	color = { 63 63 52 }
- }
- k_ostrogoths = {
-	color = { 71 104 112 }
- }
- k_lombard = {
-	color = { 71 96 107 }
- }
- k_saxon = {
-	color = { 90 113 52 }
- }
- k_vandals = {
-	color = { 80 78 80 }
- }
- k_picts = {
-	color = { 19 60 88 }
- }
- e_hunnic = {
-	color = { 57 43 0 }
- }
- e_heph = {
-	color={ 0 20 210 }
- }
- e_wre = {
-	color={ 220 20 60 }
-	definite_form = yes
-	capital = c_ravenna
- }
-
-############################################################################
+﻿
 e_britannia = {
 	color = { 172 22 22 }
 
@@ -113,6 +9,10 @@ e_britannia = {
 		name_list_irish = cn_alba
 		name_list_gaelic = cn_alba
 		name_list_british = cn_uk
+	}
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 	}
 
 	ai_primary_priority = {
@@ -1467,6 +1367,7 @@ e_britannia = {
 				add = @better_than_the_alternatives_score
 			}
 		}
+
 
 		d_gwynedd = {
 			color = { 100 0 0 }
@@ -3325,6 +3226,16 @@ e_byzantium = {
 
 	definite_form = yes
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+		custom_tooltip = {
+			text = is_latin_emperor_tt
+			NOT = {
+				primary_title = title:e_latin_empire
+			}
+		}
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -3401,7 +3312,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					} 
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -8007,7 +7923,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -8631,7 +8552,7 @@ e_byzantium = {
 			capital = c_theodosiopolis # Theodosiopolis/Erzurum
 
 			c_theodosiopolis = {
-				color = { 200 50 50 }
+				color = { 210 40 50 }
 
 				cultural_names = {
 						name_list_turkish = cn_erzurum
@@ -9897,6 +9818,10 @@ e_italy = {
 	color = { 234 217 110 }
 
 	capital = c_roma # Rome
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -13364,6 +13289,10 @@ e_persia = {
 
 	definite_form = yes
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -13488,7 +13417,7 @@ e_persia = {
 		}
 
 		d_kirman = {
-			color = { 35 125 260 }
+			color = { 35 125 255 }
 
 			capital = c_kirman # Kirman
 

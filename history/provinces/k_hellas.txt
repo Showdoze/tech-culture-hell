@@ -1,12 +1,16 @@
 #k_hellas
 ##d_athens ###################################
 ###c_attica
-482 = {		#Atheniai
+482 = {		#Athenai
 	culture = greek
 	religion = orthodox
 	holding = castle_holding
 	1.1.1 = {
 		special_building = MA_akropolis
+	}
+	500.1.1 = {
+		special_building_slot = church_of_the_theotokos
+		special_building = church_of_the_theotokos
 	}
 	867.1.1 = {
 		buildings = {
@@ -44,6 +48,12 @@
 }
 3729 = {	#Amfissa
 	holding = city_holding
+	866.1.1 = {
+		special_building_slot = hosios_loukas
+	}
+	910.1.1 = {
+		special_building = hosios_loukas
+	}
 }
 
 ###c_euboea
@@ -66,12 +76,16 @@
 
 ##d_achaia ###################################
 ###c_achaia
-476 = {		#Achaia
+476 = {		#Patras
 	culture = greek
 	religion = orthodox
 	holding = castle_holding
 	1.1.1 = {
 		special_building_slot = phocaea_mines_01
+	}
+	552.1.1 = {
+		special_building_slot = patras_castle
+		special_building = patras_castle
 	}
 }
 3801 = {	#Vostitsa AKA Aigio
@@ -138,6 +152,7 @@
 	culture = greek
 	religion = orthodox
 	holding = castle_holding
+	special_building_slot = despot_palace
 	1.1.1 = {
 		special_building_slot = phocaea_mines_01
 	}
