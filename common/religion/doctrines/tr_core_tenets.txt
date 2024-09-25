@@ -204,7 +204,9 @@ tr_doctrines = {
 	tenet_dwemer = {
 		icon = core_tenet_dwemer
 		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
+		is_shown = {
+			culture = dwemer_culture	
+		}
 		parameters = {
 			piety_from_marrying_lowborn_active = yes
 			holy_wars_forbidden = yes
@@ -266,7 +268,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_stoicism = {
-		icon = core_tenet_inner_journey
+		icon = core_tenet_stoicism
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {

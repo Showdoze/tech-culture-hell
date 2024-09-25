@@ -8,7 +8,7 @@
 		localization_key = knight_samurai
 	}
 	text = {
-		 trigger = {
+		trigger = {
 			OR = {
 				culture = { has_cultural_pillar = language_nordic }
 				culture = { has_name_list = name_list_nord }
@@ -17,35 +17,28 @@
 		localization_key = knight_nord
 	}
 	text = {
-		 trigger = {
-			OR = {
-			    culture = { has_cultural_pillar = language_altmeris }
-			}	
+		trigger = {
+			culture = { has_cultural_pillar = language_altmeris }
 		}
 		localization_key = knight_altmer
 	}
 	text = {
-		 trigger = {
-			OR = {
-			    culture = { has_cultural_pillar = language_taagra }
-			}	
+		trigger = {
+			culture = { has_cultural_pillar = language_taagra }
 		}
 		localization_key = knight_khajiit
 	}
 	text = {
-		 trigger = {
-			OR = {
-			    culture = { has_cultural_pillar = language_bosmeris }
-			}	
+		trigger = {
+			culture = { has_cultural_pillar = language_bosmeris }
 		}
 		localization_key = knight_bosmer
 	}
 	text = {
-		 trigger = {
+		trigger = {
 			OR = {
-			    culture = { has_cultural_pillar = language_yoku }
-			    culture = { has_cultural_pillar =  language_tamrielic_yoku }
-			}	
+			    #culture = { has_cultural_pillar = language_yoku }
+			}
 		} 
 		localization_key = knight_redguard
 	}
@@ -96,9 +89,7 @@
 	}	
 	text = {
 		trigger = {
-			OR = {
-				culture = { has_cultural_pillar = language_dwemeris }
-			}
+			culture = { has_cultural_pillar = language_dwemeris }
 		}
 		localization_key = knight_soldier
 	}

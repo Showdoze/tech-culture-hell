@@ -250,7 +250,7 @@ select_personal_deity_aztec_decision = {
 
 	is_shown = {
 		religion = religion:anahuac_religion
-		faith = { has_doctrine_parameter = select_personal_god_active }
+		#faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 
 	is_valid = {}
@@ -373,7 +373,7 @@ select_personal_deity_zoroastrian_decision = {
 	selection_tooltip = select_personal_deity_zoroastrian_decision_tooltip
 	is_shown = {
 		religion = religion:zoroastrianism_religion
-		faith = { has_doctrine_parameter = select_personal_god_active }
+		#faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
 	is_valid_showing_failures_only = {
@@ -443,7 +443,7 @@ select_personal_deity_ds1_decision = {
 	selection_tooltip = select_personal_deity_ds1_decision_tooltip
 
 	is_shown = {
-		religion = faith:dark_souls_faith.religion
+		faith = { has_doctrine  =  tenet_ds1 }
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -559,7 +559,7 @@ select_personal_deity_dwemer_decision = {
 	desc = select_personal_deity_dwemer_decision_desc
 	selection_tooltip = select_personal_deity_dwemer_decision_tooltip
 	is_shown = {
-		religion = faith:dwemer_religion.religion
+		faith = { has_doctrine = tenet_dwemer }
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -567,7 +567,7 @@ select_personal_deity_dwemer_decision = {
 		# Have to at _least_ not be in piety debt.
 		piety >= 0
 	}
-	cooldown = { years = 2 }
+	cooldown = { years = 1 }
 	effect = {
 		show_as_tooltip = {
 			random_list = {
