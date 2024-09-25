@@ -590,11 +590,26 @@
 	religion = "catholic"
 	culture = "scottish"
 	trait = education_martial_2
-	trait = lustful
+	trait = lustful # fathered at least half a dozen illegitimate children
 	father = 203511
 	mother = 203515
 	1143.1.1 = {
 		birth = "1143.1.1"
+	}
+	1159.1.1 = {
+		effect = {
+	 		learn_language_of_culture = culture:french # "The Frankishness of the man ... was apparent throughout his life."
+		} 
+	}
+	1178.1.1 = {
+		effect = {
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_1
+			}
+			add_realm_law = high_partition_succession_law
+			set_relation_rival = { target = character:202971 } # Domnall mac Uilleim
+		}
 	}
 	1186.1.1 = {
 		add_spouse = 202987
@@ -690,7 +705,7 @@
 }
 
 203007 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	dynasty = 20083
 	martial = 7
 	diplomacy = 5
@@ -858,7 +873,7 @@
 }
 
 203021 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	dynasty = 20083
 	martial = 7
 	diplomacy = 5
@@ -1590,7 +1605,7 @@
 
 220030 = {
 	name = "Ruairi"
-	dynasty = 25024
+	dynasty = 25046
 	martial = 6
 	diplomacy = 6
 	intrigue = 8
@@ -4451,6 +4466,7 @@
 	dynasty = 3125
 	religion = "catholic"
 	culture = "scottish"
+	father = douglas_1
 	1150.1.1 = {
 		birth = "1150.1.1"
 	}
@@ -4610,7 +4626,7 @@
 }
 
 7347 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	dynasty = 20083
 	religion = "catholic"
 	culture = "scottish"
@@ -4989,7 +5005,7 @@
 }
 
 82014 = {
-	name = "Farquhar"
+	name = "Fearchar"
 	dynasty = 9101
 	martial = 5
 	diplomacy = 5
@@ -5028,7 +5044,7 @@
 }
 
 82016 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	dynasty = 9101
 	martial = 5
 	diplomacy = 8
@@ -5128,7 +5144,7 @@
 }
 
 82022 = {
-	name = "Farquhar"
+	name = "Fearchar"
 	dynasty = 9101
 	martial = 5
 	diplomacy = 8
@@ -5204,7 +5220,7 @@
 }
 
 82026 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	# AKA: Gille
 	dynasty = 9101
 	martial = 9
@@ -5324,7 +5340,7 @@
 }
 
 82032 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	# AKA: Gille
 	dynasty = 9101
 	martial = 7
@@ -5601,7 +5617,7 @@
 }
 
 83593 = {
-	name = "Farquhar"
+	name = "Fearchar"
 	dynasty = 100039
 	martial = 7
 	diplomacy = 4
@@ -5750,6 +5766,9 @@
 	mother = 203028
 	1137.1.1 = {
 		birth = yes
+	}
+	1177.1.1 = {
+		give_council_position = councillor_steward
 	}
 	1178.1.1 = {
 		add_spouse = 203012
@@ -6344,8 +6363,8 @@
 }
 
 203550 = {
-	name = "Gilbert"
-	# AKA: Giolla-Bhrighde
+	name = "Giolla-Bhrighde"
+	# AKA: Gilbert
 	dynasty = 371
 	religion = "catholic"
 	culture = "scottish"
@@ -6513,7 +6532,7 @@
 }
 
 203570 = {
-	name = "Lachlan"
+	name = "Lochlann"
 	dynasty = 371
 	martial = 4
 	diplomacy = 7
@@ -6770,7 +6789,7 @@
 }
 
 161658 = {
-	name = "Gilbride"
+	name = "Giolla-Bhrighde"
 	dynasty = 9101
 	religion = "catholic"
 	culture = "scottish"
@@ -7813,6 +7832,7 @@
 	trait = education_martial_4
 	trait = intellect_good_1
 	trait = ambitious
+	trait = gregarious
 	trait = sadistic
 	trait = reaver
 	trait = aggressive_attacker
@@ -7823,7 +7843,7 @@
 	}
 	1305.8.23 = {
 		death = {
-			death_reason = death_execution			#death_execution_hdq
+			death_reason = death_execution	#death_execution_hdq
 			killer = 454520
 		}
 	}
@@ -7942,6 +7962,19 @@
 		birth = yes
 	}
 	1178.1.1 = {
+		death = yes
+	}
+}
+
+douglas_1 = {  	
+	name = "Theobald"
+	dynasty = 3125
+	religion = "catholic"
+	culture = "scottish"
+	1120.1.1 = {
+		birth = yes
+	}
+	1193.1.1 = {
 		death = yes
 	}
 }
