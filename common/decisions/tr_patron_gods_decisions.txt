@@ -1,6 +1,6 @@
 ﻿##### TODO (Beta): Use some scripted modifiers to handles Mars/Ares type localizations; see vanilla Germanic Decision
 select_personal_deity_hellenic_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 
 	desc = select_personal_deity_hellenic_decision_desc
 	selection_tooltip = select_personal_deity_hellenic_decision_tooltip
@@ -125,7 +125,7 @@ select_personal_deity_hellenic_decision = {
 	}
 }
 select_personal_deity_roman_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 
 	desc = select_personal_deity_roman_decision_desc
 	selection_tooltip = select_personal_deity_roman_decision_tooltip
@@ -243,7 +243,7 @@ select_personal_deity_roman_decision = {
 	}
 }
 select_personal_deity_aztec_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 
 	desc = select_personal_deity_aztec_decision_desc
 	selection_tooltip = select_personal_deity_aztec_decision_tooltip
@@ -368,7 +368,7 @@ select_personal_deity_aztec_decision = {
 	}
 }
 select_personal_deity_zoroastrian_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 	desc = select_personal_deity_zoroastrian_decision_desc
 	selection_tooltip = select_personal_deity_zoroastrian_decision_tooltip
 	is_shown = {
@@ -437,13 +437,13 @@ select_personal_deity_zoroastrian_decision = {
 	}
 }
 select_personal_deity_ds1_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 
 	desc = select_personal_deity_ds1_decision_desc
 	selection_tooltip = select_personal_deity_ds1_decision_tooltip
 
 	is_shown = {
-		religion = faith:religio_ds1a.religion
+		religion = faith:dark_souls_faith.religion
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -555,11 +555,11 @@ select_personal_deity_ds1_decision = {
 	}
 }
 select_personal_deity_dwemer_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds" }
 	desc = select_personal_deity_dwemer_decision_desc
 	selection_tooltip = select_personal_deity_dwemer_decision_tooltip
 	is_shown = {
-		religion = religion:dwemer_religion
+		religion = faith:dwemer_religion.religion
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -623,9 +623,3 @@ select_personal_deity_dwemer_decision = {
 		base = 100
 	}
 }
-
-
-
-
-
-

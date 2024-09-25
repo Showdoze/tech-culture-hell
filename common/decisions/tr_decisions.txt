@@ -1,5 +1,5 @@
 ﻿pet_dog_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
 	desc = pet_dog_decision_desc
 	selection_tooltip = pet_dog_decision_tooltip
 	ai_check_interval = 120
@@ -42,7 +42,7 @@
 }
 
 pet_cat_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	picture =  { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
 	desc = pet_cat_decision_desc
 	selection_tooltip = pet_cat_decision_tooltip
 	ai_check_interval = 120
@@ -85,7 +85,7 @@ pet_cat_decision = {
 }
 
 found_kingdom_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"}
 	ai_check_interval = 60
 	desc = found_kingdom_decision_desc
 	is_shown = {
@@ -144,7 +144,7 @@ found_kingdom_decision = {
 }
 
 embrace_english_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	ai_check_interval = 36
 	desc = embrace_english_culture_decision_desc
 	is_shown = {
@@ -198,4 +198,87 @@ embrace_english_culture_decision = {
 	ai_will_do = {
 		base = 0
 	}
+}
+
+free_company_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+
+    ai_check_interval = 100
+
+	title = free_company_decision_title
+	desc = free_company_decision_desc
+	selection_tooltip = free_company_decision_tooltip
+	confirm_text = free_company_decision_confirm
+
+	is_shown = {
+		is_ai = no
+		NOT = {
+			has_character_flag = hired_free_company
+		}
+	}
+	cost = {
+		gold = 300
+	}
+	effect = {
+		add_character_flag = {
+			flag = hired_free_company
+		}
+		spawn_army = {
+			levies = 1000
+			men_at_arms = {
+				type = armored_footmen
+				stacks = 1
+			}
+			men_at_arms = {
+				type = pikemen_unit
+				stacks = 2
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 3
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 4
+			}
+			location = root.capital_province
+			inheritable = no
+			name = free_company
+		}
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 25
+			stress > low_medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > medium_stress
+		}
+		modifier = {
+			add = 50
+			stress > high_stress
+		}
+	}
+}
+convert_resources_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	title = convert_resources_decision
+	desc = convert_resources_decision_desc
+	selection_tooltip = convert_resources_decision_tip
+	confirm_text = convert_resources_decision_confirm
+	cooldown = {
+		days = 31
+	}
+	effect = {
+		custom_tooltip = convert_resources_decision_effect_tip
+		trigger_event = {
+			id = convert_resources_events_root.0
+		}
+	}
+	ai_check_interval = 31
 }

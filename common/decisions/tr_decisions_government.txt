@@ -1,6 +1,8 @@
 ﻿change_government_autocracy_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+	}
 	desc = change_government_autocracy_decision_desc
 	selection_tooltip = change_government_autocracy_decision_tooltip
 	ai_check_interval = 185
@@ -13,9 +15,8 @@
 		gold = 1500
 	}
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_autocracy
-		}
+		NOT = { government_has_flag = government_is_autocracy }
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
@@ -48,8 +49,10 @@
 }
 
 change_government_caliphate_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
 	desc = change_government_caliphate_decision_desc
 	selection_tooltip = change_government_caliphate_decision_tooltip
 	ai_check_interval = 185
@@ -63,12 +66,11 @@ change_government_caliphate_decision = {
 		piety = 1000
 	}
 	is_shown = {
-		AND = {
-			NOT = {
-				government_has_flag = government_is_caliphate
-			}
-			government_has_flag = government_is_clan
+		NOT = {
+			government_has_flag = government_is_caliphate
 		}
+		government_has_flag = government_is_clan
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
@@ -104,8 +106,10 @@ change_government_caliphate_decision = {
 }
 
 change_government_clan_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
 	desc = change_government_clan_decision_desc
 	selection_tooltip = change_government_clan_decision_tooltip
 	sort_order = 1
@@ -118,9 +122,8 @@ change_government_clan_decision = {
 		gold = 200
 	}
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_clan
-		}
+		NOT = { government_has_flag = government_is_clan }
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
@@ -156,8 +159,10 @@ change_government_clan_decision = {
 }
 
 convert_whole_realm_to_feudalism_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
 	desc = convert_whole_realm_to_feudalism_decision_desc
 	sort_order = 1
 	ai_check_interval = 185
@@ -169,9 +174,8 @@ convert_whole_realm_to_feudalism_decision = {
 		gold = 200
 	}
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_feudal
-		}
+		NOT = { government_has_flag = government_is_feudal }
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
@@ -206,8 +210,10 @@ convert_whole_realm_to_feudalism_decision = {
 }
 
 change_government_republic_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	}
 	desc = change_government_republic_decision_desc
 	selection_tooltip = change_government_republic_decision_tooltip
 	sort_order = 1
@@ -223,9 +229,8 @@ change_government_republic_decision = {
 	}
 
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_republic
-		}
+		NOT = { government_has_flag = government_is_republic }
+		is_landed = yes
 	}
 
 	is_valid = {
@@ -268,8 +273,10 @@ change_government_republic_decision = {
 }
 
 change_government_theocracy_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
 	desc = change_government_theocracy_decision_desc
 	selection_tooltip = change_government_theocracy_decision_tooltip
 	sort_order = 1
@@ -282,9 +289,8 @@ change_government_theocracy_decision = {
 		days = 365
 	}
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_theocracy
-		}
+		NOT = { government_has_flag = government_is_theocracy }
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
@@ -330,8 +336,10 @@ change_government_theocracy_decision = {
 }
 
 convert_to_tribalism_decision = {
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	decision_group_type = major
+	picture =  { 
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
 	desc = convert_to_tribalism_decision_desc
 	ai_check_interval = 185
 	sort_order = 1
@@ -343,9 +351,8 @@ convert_to_tribalism_decision = {
 		piety = 100
 	}
 	is_shown = {
-		NOT = {
-			government_has_flag = government_is_tribal
-		}
+		NOT = { government_has_flag = government_is_tribal }
+		is_landed = yes
 	}
 	is_valid = {
 		AND = {
