@@ -29,6 +29,8 @@ birthsign_ritual = {
 	}
 	birth = 0
 	random_creation = 0
+    negate_health_penalty_add = 0.25
+    hard_casualty_modifier = -0.15
 }
 birthsign_lover = {
 	opposites = {
@@ -61,6 +63,8 @@ birthsign_lover = {
 	}
 	birth = 0
 	random_creation = 0
+    seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+    fertility = 0.5
 }
 birthsign_lord = {
 	opposites = {
@@ -93,6 +97,8 @@ birthsign_lord = {
 	}
 	birth = 0
 	random_creation = 0
+    health = 0.7
+    min_combat_roll = -4
 }
 birthsign_mage = {
 	opposites = {
@@ -125,6 +131,7 @@ birthsign_mage = {
 	}
 	birth = 0
 	random_creation = 0
+    monthly_piety_gain_mult = 1
 }
 birthsign_shadow = {
 	opposites = {
@@ -157,6 +164,7 @@ birthsign_shadow = {
 	}
 	birth = 0
 	random_creation = 0
+    enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
 }
 birthsign_steed = {
 	opposites = {
@@ -189,6 +197,7 @@ birthsign_steed = {
 	}
 	birth = 0
 	random_creation = 0
+    character_travel_speed_mult = 0.5
 }
 birthsign_apprentice = {
 	opposites = {
@@ -221,6 +230,8 @@ birthsign_apprentice = {
 	}
 	birth = 0
 	random_creation = 0
+    stress_gain_mult = 0.1
+    learning = 3
 }
 birthsign_warrior = {
 	opposites = {
@@ -253,6 +264,8 @@ birthsign_warrior = {
 	}
 	birth = 0
 	random_creation = 0
+    prowess = 5
+    knight_effectiveness_per_prowess = 0.01
 }
 birthsign_lady = {
 	opposites = {
@@ -285,6 +298,8 @@ birthsign_lady = {
 	}
 	birth = 0
 	random_creation = 0
+    attraction_opinion = 5
+    courting_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 }
 birthsign_tower = {
 	opposites = {
@@ -317,6 +332,7 @@ birthsign_tower = {
 	}
 	birth = 0
 	random_creation = 0
+    siege_phase_time = -0.25
 }
 birthsign_atronach = {
 	opposites = {
@@ -349,6 +365,9 @@ birthsign_atronach = {
 	}
 	birth = 0
 	random_creation = 0
+    men_at_arms_limit = 1
+    men_at_arms_maintenance = -0.1
+    stress_loss_mult = 0.2
 }
 birthsign_thief = {
 	opposites = {
@@ -381,6 +400,8 @@ birthsign_thief = {
 	}
 	birth = 0
 	random_creation = 0
+    scheme_discovery_chance_mult = 0.15
+    owned_scheme_secrecy_add = 15
 }
 birthsign_serpent = {
 	opposites = {
@@ -413,4 +434,7 @@ birthsign_serpent = {
 	}
 	birth = 0
 	random_creation = 0
+    dread_baseline_add = 10
+    epidemic_resistance = 5
+    owned_hostile_scheme_success_chance_add = 10
 }
