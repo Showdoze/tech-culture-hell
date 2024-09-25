@@ -23,3 +23,119 @@ tr_birth.01 = {
 		}
 	}
 }
+
+tr_birth.02 = {
+	hidden = yes
+
+	trigger = {
+		birth_will_happen_as_usual_trigger = yes
+	}
+
+	weight_multiplier = {
+		base = 0
+		modifier = {
+			add = 1
+			if = {
+				scope:child = { culture = { has_cultural_pillar = heritage_fantasy } }
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			# Serpent
+			5 = {
+			    add_trait = birthsign_serpent
+			}
+			# Other
+			95 = {
+				trigger = {
+					If = {
+						limit = {
+							current_month = 1
+						}
+					}
+					add_trait = birthsign_ritual
+					
+					elseif = {
+						limit = {
+							current_month = 2
+						}
+					}
+					add_trait = birthsign_lover
+
+					elseif = {
+						limit = {
+							current_month = 3
+						}
+					}
+					add_trait = birthsign_lord
+
+					elseif = {
+						limit = {
+							current_month = 4
+						}
+					}
+					add_trait = birthsign_mage
+
+					elseif = {
+						limit = {
+							current_month = 5
+						}
+					}
+					add_trait = birthsign_shadow
+
+					elseif = {
+						limit = {
+							current_month = 6
+						}
+					}
+					add_trait = birthsign_steed
+
+					elseif = {
+						limit = {
+							current_month = 7
+						}
+					}
+					add_trait = birthsign_apprentice
+
+					elseif = {
+						limit = {
+							current_month = 8
+						}
+					}
+					add_trait = birthsign_warrior
+
+					elseif = {
+						limit = {
+							current_month = 9
+						}
+					}
+					add_trait = birthsign_lady
+
+					elseif = {
+						limit = {
+							current_month = 10
+						}
+					}
+					add_trait = birthsign_tower
+
+					elseif = {
+						limit = {
+							current_month = 11
+						}
+					}
+					add_trait = birthsign_atronach
+
+					else = {
+						limit = {
+							current_month = 12
+						}
+					}
+					add_trait = birthsign_thief
+			    }
+			    
+			}
+		}
+	}
+}
