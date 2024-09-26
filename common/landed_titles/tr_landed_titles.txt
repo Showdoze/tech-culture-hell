@@ -76,7 +76,6 @@ e_britannia = {
 						name_list_old_saxon = cn_lunden
 
 						name_list_roman = cn_londinium
-						name_list_ck_roman = cn_londinium
 						name_list_welsh = cn_llundein
 						name_list_cornish = cn_llundein
 						name_list_breton = cn_llundein
@@ -1814,7 +1813,6 @@ e_britannia = {
 			name_list_irish = cn_alba
 			name_list_gaelic = cn_alba
 			name_list_pictish = cn_pictland
-			name_list_ck_roman = cn_Caledonia
 			name_list_roman = cn_Caledonia
 		}
 
@@ -2605,7 +2603,6 @@ e_britannia = {
 
 		capital = c_dublin # Dublin
 		cultural_names = {
-			name_list_ck_roman = cn_Hibernia
 			name_list_roman = cn_Hibernia
 		}
 	
@@ -3270,7 +3267,7 @@ e_byzantium = {
 	}
 
 	k_rum = {
-		color = { 144 182 161 }
+		color = { 146 209 205 }
 	}
 
 	k_mentese = {
@@ -3329,11 +3326,10 @@ e_byzantium = {
 			capital = c_byzantion
 
 			c_byzantion = {
-				color = { 180 25 100 }
+				color = { 180 35 100 }
 
 				#capital = 496 # Constantinople
 				cultural_names = {
-					name_list_ck_roman = cn_Nova_Roma
 					name_list_roman = cn_Nova_Roma
 					name_list_trojan = cn_Byzantion
 					name_list_imperial = cn_ImperialCity
@@ -3345,7 +3341,6 @@ e_byzantium = {
 
 					cultural_names = {
 						name_list_turkish = cn_konstantiniyye
-						name_list_ck_roman = cn_Nova_Roma
 						name_list_roman = cn_Nova_Roma
 						name_list_trojan = cn_Byzantion
 						name_list_imperial = cn_ImperialCity
@@ -3660,6 +3655,7 @@ e_byzantium = {
 				color = { 165 30 170 }
 
 				#capital = 491 # Polygyros
+
 				b_polygyros= {
 					province = 491
 
@@ -3837,7 +3833,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -4121,7 +4122,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -4325,19 +4331,34 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
+		}
+
+		cultural_names = {
+			name_list_italian = cn_candia
 		}
 
 		d_krete = {
 			color = { 205 110 35 }
 
 			capital = c_chandax # Chandax
+			cultural_names = {
+				name_list_italian = cn_candia
+			}
 
 			c_chandax = {
 				color = { 205 110 35 }
+				cultural_names = {
+					name_list_italian = cn_candia
+				}
 
 				b_iraklio = {
 					province = 480
@@ -4359,6 +4380,9 @@ e_byzantium = {
 				color = { 210 145 20 }
 
 				#capital = 479 # Chania
+				cultural_names = {
+					name_list_italian = cn_la_canea
+				}
 
 				b_chania = {
 					province = 479
@@ -4386,7 +4410,6 @@ e_byzantium = {
 
 		cultural_names = {
 			name_list_roman = cn_dalmatia
-			name_list_ck_roman = cn_dalmatia
 		}
 
 		ai_primary_priority = {
@@ -4414,7 +4437,6 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_diadora
-					name_list_ck_roman = cn_diadora
 					name_list_greek = cn_diadora
 					name_list_italian = cn_zara
 					name_list_cisalpine = cn_zara
@@ -4475,7 +4497,6 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_spalato
-					name_list_ck_roman = cn_spalato
 					name_list_italian = cn_spalato
 					name_list_cisalpine = cn_spalato
 					name_list_sicilian = cn_spalato
@@ -4605,7 +4626,6 @@ e_byzantium = {
 			cultural_names = {
 				name_list_roman = cn_pannonia
 				name_list_greek = cn_pannonia
-				name_list_ck_roman = cn_pannonia
 			}
 
 			c_zagreb = {
@@ -4616,7 +4636,6 @@ e_byzantium = {
 				cultural_names = {
 					name_list_roman = cn_andautonia
 					name_list_greek = cn_andautonia
-					name_list_ck_roman = cn_andautonia
 				}
 
 				b_zagreb = {
@@ -4846,7 +4865,6 @@ e_byzantium = {
 
 				cultural_names = {
 					name_list_roman = cn_salines
-					name_list_ck_roman = cn_salines
 					name_list_greek = cn_salines
 					name_list_hungarian = cn_so
 					name_list_turkish = cn_tuzla	#A bit out of period, but you never know!
@@ -5009,7 +5027,6 @@ e_byzantium = {
 				cultural_names = {
 					name_list_roman = cn_emotha
 					name_list_greek = cn_emotha
-					name_list_ck_roman = cn_emotha
 				}
 				#roman = "Emotha"
 				#greek = "Emotha"
@@ -6123,7 +6140,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -6227,7 +6249,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -6970,7 +6997,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -7088,6 +7120,11 @@ e_byzantium = {
 					cultural_names = {
 						name_list_turkish = cn_ninica
 					}
+				}
+				b_soloi = {
+					province = 5674
+
+					color = { 200 20 40 }
 				}
 			}
 			c_lycandus = {
@@ -7348,7 +7385,7 @@ e_byzantium = {
 			}
 
 			c_lycaonia = {
-				color = { 200 50 50 }
+				color = { 210 50 60 }
 
 				cultural_names = {
 					name_list_greek = cn_lykaonia
@@ -7615,7 +7652,7 @@ e_byzantium = {
 				color = { 200 20 40 }
 
 				cultural_names = {
-					name_list_turkish = cn_bozkir
+					name_list_turkish = cn_sirista
 				}
 
 				b_isaura = {
@@ -7624,7 +7661,7 @@ e_byzantium = {
 					color = { 200 20 40 }
 
 					cultural_names = {
-						name_list_turkish = cn_zengibar_kalesi
+						name_list_turkish = cn_sirista
 					}
 				}
 				b_laranalia = {
@@ -7869,6 +7906,15 @@ e_byzantium = {
 						name_list_turkish = cn_gemerek
 					}
 				}
+				b_arasaxa = {
+					province = 5616
+
+					color = { 205 118 118 }
+
+					cultural_names = {
+						name_list_turkish = cn_akmescit
+					}
+				}
 			}
 			c_kyzistra = {
 				color = { 205 118 118 }
@@ -7893,15 +7939,6 @@ e_byzantium = {
 
 					cultural_names = {
 						name_list_turkish = cn_zile
-					}
-				}
-				b_arasaxa = {
-					province = 5616
-
-					color = { 205 118 118 }
-
-					cultural_names = {
-						name_list_turkish = cn_akmescit
 					}
 				}
 			}
@@ -9153,27 +9190,27 @@ e_byzantium = {
 		}
 
 		d_georgia = {
-			color = { 200 185 185 }
+			color = { 184 156 156 }
 
 			capital = c_tbilisi # Tbilisi
 
 			c_tbilisi = {
-				color = { 200 195 195 }
+				color = { 161 137 137 }
 
 				b_tbilisi = {
 					province = 5759
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 				b_dmanisi = {
 					province = 5758
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 				b_rustavi = {
 					province = 5760
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 			}
 			c_lori = {
@@ -9337,7 +9374,6 @@ e_byzantium = {
 				name_list_maghrebi = cn_siqilliya
 				name_list_andalusian = cn_siqilliya
 				name_list_yemeni = cn_siqilliya
-				name_list_ck_roman = cn_Sicilia
 				name_list_roman = cn_Sicilia
 			}
 
@@ -10153,7 +10189,6 @@ e_italy = {
 			capital = c_lombardia # Lombardia
 			cultural_names = {
 				name_list_roman = cn_CisalpineGaul
-				name_list_ck_roman = cn_CisalpineGaul
 			}
 			c_lombardia = {
 				color = { 185 120 205 }
@@ -10297,7 +10332,6 @@ e_italy = {
 				b_florentiola = {
 					province = 2490
 					cultural_names = {
-						name_list_ck_roman = cn_Florentia
 						name_list_roman = cn_Florentia
 					}	
 					color = { 255 160 195 }
@@ -14027,7 +14061,7 @@ e_persia = {
 				b_beiram = {
 					province = 4189
 
-					color = { 80 140 280 }
+					color = { 80 140 255 }
 				}
 				b_dun = {
 					province = 4190
@@ -15363,7 +15397,7 @@ e_persia = {
 				b_barda = {
 					province = 5779
 
-					color = { 20 175 1457 }
+					color = { 20 175 145 }
 				}
 			}
 			c_mugan = {
@@ -16614,22 +16648,22 @@ e_persia = {
 				}
 			}
 			c_harran = {
-				color = { 10 205 115 }
+				color = { 5 128 71 }
 
 				b_harran = {
 					province = 4870
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 				b_saruj = {
 					province = 4874
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 				b_tall_mahra = {
 					province = 4878
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 			}
 			c_dausar = {
@@ -16899,6 +16933,9 @@ e_france = {
 	color = { 11 22 170 }
 
 	capital = c_ile_de_france
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -18092,6 +18129,24 @@ e_france = {
 		}
 		d_aquitaine = {
 			color = { 43 24 226 }
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:occitan
+					}
+					add = @correct_culture_primary_score
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = culture:norman
+							culture = culture:french
+						}
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
 
 			capital = c_angouleme # Angouleme
 
@@ -19436,6 +19491,8 @@ e_spain = {
 
 			NOT = { exists = struggle:iberian_struggle }
 		}
+
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 	}
 
 	ai_primary_priority = {
@@ -20673,7 +20730,6 @@ e_spain = {
 
 		cultural_names = {
 			name_list_roman = cn_carthaginensis
-			name_list_ck_roman = cn_carthaginensis
 			# Al Sarq means "the Levant", but was the contemporary name for eastern Iberia amongst Arabic speakers.
 			name_list_bedouin = cn_al_sarq
 			name_list_baranis = cn_al_sarq
@@ -25064,6 +25120,10 @@ e_arabia = {
 
 	definite_form = yes
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -27129,6 +27189,10 @@ e_abyssinia = {
 
 	capital = c_lasta
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -27150,6 +27214,12 @@ e_abyssinia = {
 					culture = culture:egyptian
 				}
 				add = @correct_culture_primary_score
+			}
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_arabic }
+				}
+				add = @better_than_the_alternatives_score
 			}
 		}
 
@@ -29698,6 +29768,10 @@ e_guinea = {
 
 	capital = c_temne
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -31841,6 +31915,10 @@ e_deccan = {
 	capital = c_kalyani
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {

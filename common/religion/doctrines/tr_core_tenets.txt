@@ -4,40 +4,10 @@ tr_doctrines = {
 
 	tenet_albino = {
 		icon = tenet_albino_worship
-		piety_cost = {
-			if = {
-				limit = {
-					religion_tag = hinduism_religion
-				}
-				value = faith_tenet_cost_mid
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion_tag = christianity_religion
-						religion_tag = judaism_religion
-						religion_tag = islam_religion
-						religion_tag = buddhism_religion
-						religion_tag = jainism_religion
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_low
-			}
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_albino }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
+		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = {
 			always = yes
 		}
-		can_pick = {
-			always = yes
-		}	
 		traits = {
 			virtues = {
 				albino = 3
@@ -244,7 +214,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_ds1 = {
-		icon = core_tenet_inner_journey
+		icon = core_tenet_ds1
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
@@ -257,7 +227,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_imperial_cult = {
-		icon = core_tenet_inner_journey
+		icon = core_tenet_imperial_cult
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
@@ -365,7 +335,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_bosmer = {
-		icon = core_tenet_roman
+		icon = core_tenet_bosmer
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
@@ -385,7 +355,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_sun_stars = {
-		icon = core_tenet_roman
+		icon = core_tenet_astrology
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
