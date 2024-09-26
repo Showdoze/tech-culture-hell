@@ -2,63 +2,6 @@ tr_doctrines = {
 	group = "core_tenets"
 	number_of_picks = 0
 
-	tenet_pursuit_of_power = {
-		icon = core_tenet_pursuit_of_power
-
-		piety_cost = {
-			if = {
-				limit = {
-					OR = {
-						has_doctrine = pagan_hostility_doctrine
-						religion_tag = hinduism_religion
-						religion_tag = islam_religion
-					}
-				}
-				value = faith_tenet_cost_mid
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion_tag = judaism_religion
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_massive
-			}
-
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_pursuit_of_power }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-
-		parameters = {
-			conquest_cb_enabled = yes
-			invasion_cb_enabled = yes
-		}
-
-		character_modifier = {
-			title_creation_cost_mult = -0.5
-			tyranny_gain_mult = -0.5
-			direct_vassal_opinion = -10
-		}
-
-		traits = {
-			virtues = {
-				ambitious
-				loyal
-			}
-			sins = {
-				content
-				disloyal
-				
-			}
-		}
-	}
-
 	tenet_albino = {
 		icon = tenet_albino_worship
 		piety_cost = {
@@ -110,19 +53,26 @@ tr_doctrines = {
 		}
 	}
 	tenet_kemetic = {
-		icon = core_tenet_kemetic_syncretism
+		icon = core_tenet_kemetic
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
 			virtues = {
 				pure_blooded = 2
 			}
+			virtues = { just = 2 lifestyle_physician }
+			sins = { arbitrary = 2 }
 		}
 		parameters = {
 			select_personal_god_active = yes
 			divine_marriage_opinion = 10
 			divine_marriage_piety_gain_active = yes
 			divine_the_stars_active = yes
+			legalism_modified_law_costs = yes
+			legalism_modified_law_costs_2 = yes
+			legalism_reduced_faction_virtues = yes
+			legalism_increased_faction_sins = yes
+			legalism_trust_just_leader_active = yes
 		}
 		character_modifier = {
 		}
@@ -158,11 +108,8 @@ tr_doctrines = {
 			}
 		}
 		is_shown = {
-			always = yes
+			always = no
 		}
-		can_pick = {
-			always = yes
-		}	
 		traits = {
 			virtues = { vengeful = 1 }
 			sins = { craven = 1 }
@@ -212,6 +159,8 @@ tr_doctrines = {
 			holy_wars_forbidden = yes
 			piety_from_long_peace = 1
 			select_personal_god_active = yes
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
 		}
 		traits = {
 			virtues = { architect cynical scholar journaller  }
@@ -219,6 +168,7 @@ tr_doctrines = {
 		}
 		character_modifier = {
 			close_relative_opinion = 5
+			ignore_opinion_of_different_faith = yes
 			learning_per_piety_level = 5
 			monthly_piety_from_buildings_mult = 0.24
 			hills_development_growth_factor = 0.15
@@ -232,7 +182,7 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = { torturer sadistic vengeful murderer }
+			virtues = { torturer sadistic vengeful murderer gallowsbait }
 		    sins = { forgiving compassionate }
 		}
 		parameters = {
@@ -258,6 +208,8 @@ tr_doctrines = {
 		is_shown = { always = no }
 		parameters = {
 			select_personal_god_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
 		}
 		traits = {
 			virtues = { brave deceitful = 2 arrogant  }
@@ -280,11 +232,11 @@ tr_doctrines = {
 		}
 	}
 	tenet_hist = {
-		icon = core_tenet_inner_journey
+		icon = core_tenet_hist.dds
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { fickle patient content }
+			virtues = { fickle patient content reincarnation }
 			sins = { stubborn vengeful arrogant }
 		}
 		parameters = {
@@ -309,18 +261,29 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { born_in_the_purple augustus august peasant_leader }
+			virtues = { born_in_the_purple augustus august overseer }
 			sins = { peasant_born heresiarch disinherited }
 		}
 		parameters = {
 			meditation_mechanics_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+		}
+		character_modifier = {
+			different_faith_county_opinion_mult = -0.25
+			different_faith_liege_opinion = 15
+			opinion_of_different_faith_liege = 15
 		}
 	}
 	tenet_hyrule = {
-		icon = core_tenet_tribunal
+		icon = core_tenet_hyrule
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
 		}
 		traits = {
 			virtues = { lifestyle_mystic calm temperate brave just  }
@@ -340,6 +303,8 @@ tr_doctrines = {
 		}
 		parameters = {
 			spirit_possession_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
 		}
 	}
 	tenet_moon_worship = {
@@ -372,6 +337,64 @@ tr_doctrines = {
 			close_relative_opinion = 5
 			learning_per_piety_level = 5
 			monthly_piety_from_buildings_mult = 0.24
+		}
+	}
+	tenet_roman = {
+		icon = core_tenet_roman
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		traits = {
+			virtues = { family_first loyal }
+		    sins = { disloyal }
+		}
+		parameters = {
+			conquest_cb_enabled = yes
+			invasion_cb_enabled = yes
+			human_sacrifice_active = yes
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			piety_from_feasts_active = yes
+			same_culture_conversion_bonus_active = yes
+			same_faith_promote_culture_bonus_active = yes
+		}
+		character_modifier = {
+			dread_baseline_add = 5
+			prowess = 2
+			controlled_province_advantage = 5
+			monthly_piety_gain_per_dread_add = 0.01
+		}
+	}
+	tenet_bosmer = {
+		icon = core_tenet_roman
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		traits = {
+			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener }
+		    sins = { lazy }
+		}
+		parameters = {
+			conquest_cb_enabled = yes
+			invasion_cb_enabled = yes
+			human_sacrifice_active = yes
+		}
+		character_modifier = {
+			dread_baseline_add = 5
+			prowess = 2
+			controlled_province_advantage = 5
+			monthly_piety_gain_per_dread_add = 0.01
+		}
+	}
+	tenet_sun_stars = {
+		icon = core_tenet_roman
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			summer_festivals_active = yes
+			trial_by_sun_active = yes
+			divine_the_stars_active = yes
+		}
+		character_modifier = {
+			naval_movement_speed_mult = 0.25
 		}
 	}
 }

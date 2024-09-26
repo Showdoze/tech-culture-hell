@@ -1,21 +1,5 @@
-tr_ea_nasir = {
-    name = "Ea-nāṣir"
-	dna = EaNasirofUr
-	religion = akkadian_pagan
-	dynasty = misc_history
-	culture = akkadian
-	trait = education_stewardship_4
-	trait = intellect_good_3
-	841.1.1 = {
-		birth = yes
-	}
-	900.9.28 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
-}
-tr_lovecraft = {
+#WRITTERS
+ tr_lovecraft = {
     name = "H. P. Lovecraft"
 	dna = hp_lovecraft
 	religion = dwemer_religion #Athiest
@@ -37,8 +21,8 @@ tr_lovecraft = {
 			death_reason = death_old_age
 		}
 	}
-}
-tr_edgar_poe = {
+ }
+ tr_edgar_poe = {
     name = "Edgar Allan Poe"
 	dna = edgar_poe
 	religion = catholic 
@@ -59,8 +43,8 @@ tr_edgar_poe = {
 			death_reason = death_old_age
 		}
 	}
-}
-tr_tolkien = {
+ }
+ tr_tolkien = {
     name = "J.R.R. Tolkien"
 	dna = jrr_Tolkien
 	religion = catholic 
@@ -101,7 +85,175 @@ tr_tolkien = {
 			death_reason = death_old_age
 		}
 	}
+ }
+ tr_stephen_king = {
+    name = "Stephen King"
+	dna = stephen_king
+	religion = catholic 
+	dynasty_house = house_writter
+	culture = american
+	trait = education_learning_4
+	trait = intellect_good_3
+    trait = scholar
+    trait = journaller
+    trait = compassionate
+    trait = honest
+	trait = diligent
+	trait = schemer
+	trait = hashishiyah
+    disallow_random_traits = yes
+	847.9.21 = {
+		birth = yes
+	}
+	949.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
+ tr_george_rr_martin = {
+	name = "George R. R. Martin"
+	dna = george_rr_martin
+	religion = dwemer_religion 
+	dynasty_house = house_writter
+	culture = american
+	trait = education_learning_4
+	trait = intellect_good_3
+    trait = scholar
+    trait = journaller
+    trait = compassionate
+    trait = ambitious
+	trait = diligent
+	trait = schemer
+	trait = comfort_eater
+    disallow_random_traits = yes
+	838.9.20 = {
+		birth = yes
+	}
+	840.1.1 = {
+		effect = {
+			learn_language_of_culture = culture:high_valyrian 
+			learn_language_of_culture = culture:old_dwarven
+			learn_language_of_culture = culture:giant
+			learn_language_of_culture = culture:castilian
+	   }	
+	}
+	949.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
+#Mafai
+ tr_sopranos_chris = {
+    name = "Christopher Moltisanti"
+	dna = chris_moltisanti
+	religion = catholic 
+    dynasty_house = house_mafia
+	#dynasty = mmwitness
+	culture = italian_american
+	trait = education_martial_2
+	trait = arrogant
+    trait = lifestyle_reveler
+    trait = dull
+    trait = hashishiyah
+    trait = wrathful
+    disallow_random_traits = yes
+	849.7.20 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = {
+			death_reason = death_murder
+            #killer = 
+		}
+	}
+ }
+ tr_furio = {
+    name = "Furio Giunta"
+	dna = furio_giunta
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = sicilian
+	trait = education_martial_3
+	trait = physique_good_1
+    trait = callous
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	809.3.29 = {
+		birth = yes
+	}
+	895.3.28 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+ }
+ tr_vito_no = {
+    name = "Vito"
+	dna = vito_no
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_martial_2
+	trait = greedy
+    trait = depressed_genetic
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	809.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+ }
+ tr_bobby_walnuts = {
+    name = "Bobby Walnuts D'Amico"
+	dna = vito_no
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_martial_2
+	trait = gluttonous
+    trait = arrogant
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	800.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+ }
+#
+tr_ea_nasir = {
+    name = "Ea-nāṣir"
+	dna = EaNasirofUr
+	religion = akkadian_pagan
+	dynasty = misc_history
+	culture = akkadian
+	trait = education_stewardship_4
+	trait = intellect_good_3
+	841.1.1 = {
+		birth = yes
+	}
+	900.9.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
 }
+
 tr_imotep_1 = {
     name = "Imhotep"
 	dna = imotep_1
@@ -151,30 +303,7 @@ tr_imotep_1 = {
 		}
 	}
 }
-tr_sopranos_chris = {
-    name = "Christopher Moltisanti"
-	dna = chris_moltisanti
-	religion = catholic 
-    dynasty_house = house_mafia
-	#dynasty = mmwitness
-	culture = italian_american
-	trait = education_martial_2
-	trait = arrogant
-    trait = lifestyle_reveler
-    trait = dull
-    trait = hashishiyah
-    trait = wrathful
-    disallow_random_traits = yes
-	849.7.20 = {
-		birth = yes
-	}
-	880.1.1 = {
-		death = {
-			death_reason = death_murder
-            #killer = 
-		}
-	}
-}
+
 tr_fargoth = {
     name = "Fargoth"
 	dna = fargoth_morrowind
@@ -332,28 +461,7 @@ tr_churchhill = {
 		}
 	}
 }
-tr_furio = {
-    name = "Furio Giunta"
-	dna = furio_giunta
-	religion = catholic 
-    dynasty_house = house_mafia
-	culture = sicilian
-	trait = education_martial_3
-	trait = physique_good_1
-    trait = callous
-    trait = diligent
-    trait = ambitious
-    disallow_random_traits = yes
-	809.3.29 = {
-		birth = yes
-	}
-	895.3.28 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
-}
+
 tr_cleopatra = {
     name = "Cleopatra"
 	dna = cleopatra_a
@@ -466,50 +574,7 @@ tr_stalin = {
 		}
 	}
 }
-tr_vito_no = {
-    name = "Vito"
-	dna = vito_no
-	religion = catholic 
-    dynasty_house = house_mafia
-	culture = italian_american
-	trait = education_martial_2
-	trait = greedy
-    trait = depressed_genetic
-    trait = diligent
-    trait = ambitious
-    disallow_random_traits = yes
-	809.1.1 = {
-		birth = yes
-	}
-	895.1.1 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
-}
-tr_bobby_walnuts = {
-    name = "Bobby Walnuts D'Amico"
-	dna = vito_no
-	religion = catholic 
-    dynasty_house = house_mafia
-	culture = italian_american
-	trait = education_martial_2
-	trait = gluttonous
-    trait = arrogant
-    trait = diligent
-    trait = ambitious
-    disallow_random_traits = yes
-	800.1.1 = {
-		birth = yes
-	}
-	885.1.1 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
-}
+
 tr_dumner_1 = {
     name = "S'wit N'wah"
 	religion = tribunal_temple 
@@ -695,31 +760,7 @@ tr_oot_1 = {
 		}
 	}
 }
-tr_stephen_king = {
-    name = "Stephen King"
-	dna = stephen_king
-	religion = catholic 
-	dynasty_house = house_writter
-	culture = american
-	trait = education_learning_4
-	trait = intellect_good_3
-    trait = scholar
-    trait = journaller
-    trait = compassionate
-    trait = honest
-	trait = diligent
-	trait = schemer
-	trait = hashishiyah
-    disallow_random_traits = yes
-	847.9.21 = {
-		birth = yes
-	}
-	949.1.1 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
-}
+
 tr_hannibal_barca = {
 	name = "Hannibal Barca"
 	religion = punic_pagan
@@ -804,39 +845,7 @@ tr_charles_v_hre = {
 		}
 	}
 }
-tr_george_rr_martin = {
-	name = "George R. R. Martin"
-	dna = george_rr_martin
-	religion = dwemer_religion 
-	dynasty_house = house_writter
-	culture = american
-	trait = education_learning_4
-	trait = intellect_good_3
-    trait = scholar
-    trait = journaller
-    trait = compassionate
-    trait = ambitious
-	trait = diligent
-	trait = schemer
-	trait = comfort_eater
-    disallow_random_traits = yes
-	838.9.20 = {
-		birth = yes
-	}
-	840.1.1 = {
-		effect = {
-			learn_language_of_culture = culture:high_valyrian 
-			learn_language_of_culture = culture:old_dwarven
-			learn_language_of_culture = culture:giant
-			learn_language_of_culture = culture:castilian
-	   }	
-	}
-	949.1.1 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
-}
+
 tr_lara_croft = {
 	name = "Lara Croft"
 	dna = lara_croft

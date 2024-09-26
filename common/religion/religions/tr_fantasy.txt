@@ -1901,5 +1901,30 @@ fantasy_religion = {
 				#WitchGodMotherFather = mother
 			}
 		}
+		imperial_cult = {
+			color = { 1.0 0.8 0.9 }
+			icon = imperial_cult
+			graphical_faith = "catholic_gfx"
+			#religious_head = k_council_of_the_eight
+			holy_site = constantinople
+			holy_site = rome
+			holy_site = siracusa
+			holy_site = alexandria
+			holy_site = paris
+			holy_site = london
+			holy_site = ctesiphon
+			# Doctrines
+			 doctrine = doctrine_consanguinity_unrestricted
+			 doctrine = doctrine_pluralism_pluralistic
+			# Tenets
+			doctrine = tenet_monasticism
+			doctrine = tenet_imperial_cult
+			doctrine = tenet_divine_marriage
+			localization = {
+				
+				ReligiousHeadName = imperial_cult_religious_head_title
+				ReligiousHeadTitleName = imperial_cult_religious_head_title_name
+			}
+		}
 	}
 }
