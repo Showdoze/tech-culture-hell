@@ -46,18 +46,18 @@ tr_birth = {
 	}
 }
 
-tr_elective_inheritance = {
-	effect = {
-		if = {
-			limit = {
-				OR = {
-					has_realm_law = bishop_theocratic_succession_law
-					has_realm_law = holy_order_succession_law
-					has_realm_law = city_succession_law
-					has_realm_law = mercenary_company_succession_law
-				}
-			}
-			set_designated_heir = scope:candidate
-		}
-	}
-}
+#tr_elective_inheritance = {
+#	effect = {
+#		if = {
+#			limit = {
+#				OR = {
+#					has_realm_law = bishop_theocratic_succession_law
+#					has_realm_law = holy_order_succession_law
+#					has_realm_law = city_succession_law
+#					has_realm_law = mercenary_company_succession_law
+#				}
+#			}
+#			set_designated_heir = scope:candidate
+#		}
+#	}
+#}

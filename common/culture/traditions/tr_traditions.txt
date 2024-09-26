@@ -831,13 +831,13 @@ tradition_atheism = {
 		value = 0
 		if = {
 			limit = {
-				has_trait = cynical
+				scope:character = { has_trait = cynical }
 			}
 			add = 80
 		}
 		if = {
 			limit = {
-				has_trait = zealous
+				scope:character = { has_trait = zealous }
 			}
 			subtract = 1000
 		}
