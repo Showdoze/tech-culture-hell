@@ -1084,7 +1084,7 @@
  }
  maxentius_son = {
 	name = "Valerius Romulus"
-	dynasty = 1022233
+	dynasty = dynn_Maximianus
 	religion = roman_pagan
 	culture = roman
 	father = 145294
@@ -1093,6 +1093,201 @@
 		birth = yes
 	}
 	309.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_1_wife = {
+	name = "Minervina"
+	# First wife of Constantine I, mother of Crispus
+	religion = nicene
+	culture = roman
+	female = yes
+	270.1.1 = {
+		birth = yes
+	}
+	303.1.1 = {
+		add_spouse = 70523
+	}
+	330.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_son = {
+	name = "Flavius Iulius Crispus"
+	# Great son of Constantine I
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_1_wife
+	290.1.1 = {
+		birth = yes
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_2_wife = {
+	name = "Fausta"
+	# Second wife of Constantine I
+	religion = hellenic_pagan
+	culture = roman
+	female = yes
+	dynasty = dynn_Maximianus
+	father = 145293
+	289.1.1 = {
+		birth = yes
+	}
+	307.8.1 = {
+		add_spouse = 70523
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+Constantine_daughter = {
+	name = "Flavia Helena"
+	# Daughter of Constantine I, wife of Julian the Apostate
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_2_wife	#Fausta
+	female = yes
+	325.1.1 = {
+		birth = yes
+	}
+	355.11.6 = {
+		add_spouse = 145237
+	}
+	360.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_daughter1 = {
+	name = "Flavia_Constantia"
+	# Daughter of Constantine I
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_2_wife
+	female = yes
+	323.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		add_spouse = CaesarofConstantiusII
+	}
+	354.1.1 = {
+		death = yes
+	}
+ }
+ Gratian_wife = {
+	name = "Constantia"
+	# Wife of Emperor Gratian
+	religion = nicene
+	dynasty = dynn_Constantinus
+	culture = roman
+	father = 70521
+	mother = Constantius2_wife3
+	female = yes
+	361.1.1 = {
+		birth = yes
+	}
+	373.1.1 = {
+		add_spouse = 145233
+	}
+	381.8.1 = {
+		death = yes
+	}
+ }
+ Constantius2_wife3 = {
+	name = "Faustina"
+	# Third wife of Constantius II
+	religion = nicene
+	culture = roman
+	female = yes
+	336.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = 70521
+	}
+	366.1.1 = {
+		death = yes
+	}
+}
+ Constantius2_wife1 = {
+	name = "Flavia"
+	# First wife of Constantius II
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	female = yes
+	father = 145236
+	mother = JuliusConstantius_wife
+	320.1.1 = {
+		birth = yes
+	}
+	336.1.1 = {
+		add_spouse = 70521
+	}
+	353.1.1 = {
+		death = yes
+	}
+ }
+ Julian_mom = {
+	name = "Basilina"
+	# Mother of Julian the Apostate
+	religion = arian
+	culture = greek
+	#dynasty = 1300691
+	female = yes
+	#father = 1003018
+	310.1.1 = {
+		birth = yes
+	}
+	326.1.1 = {
+		add_spouse = 145236
+	}
+	333.1.1 = {
+		death = yes
+	}
+}
+ JuliusConstantius_wife = {
+	name = "Galla"
+	# First wife of Julius Constantius
+	religion = nicene
+	culture = roman
+	#dynasty = roman_dynasty_neratius
+	female = yes
+	#father = 1101024
+	305.1.1 = {
+		birth = yes
+	}
+	322.1.1 = {
+		add_spouse = 145236
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+ CaesarofConstantiusII = {
+	name = "Flavius Claudius Constantius Gallus"
+	# Caesar of Constantius II
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 145236
+	mother = JuliusConstantius_wife
+	323.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		add_spouse = Constantine_daughter1
+	}
+	354.1.1 = {
 		death = yes
 	}
  }

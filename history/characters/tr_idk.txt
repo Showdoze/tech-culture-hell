@@ -882,7 +882,34 @@ tr_lara_croft = {
 	}
 }
 
-
+tr_japanese1 = {
+	name = "Hojo"
+	religion = shinto
+	dynasty = misc_history
+	culture = japanese
+	trait = education_martial_3
+	trait = stubborn
+	trait = callous
+	trait = temperate
+	trait = chaste
+	trait = strategist
+	disallow_random_traits = yes
+	822.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		effect = {
+			learn_language_of_culture = culture:german 
+			learn_language_of_culture = culture:french
+			learn_language_of_culture = culture:castilian
+	   }	
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_drinking_passive
+		}
+	}
+}
 
 
 
