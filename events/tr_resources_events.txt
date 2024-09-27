@@ -84,6 +84,30 @@ convert_resources_events_root.0 = { #root
 	}
 	
 	option = {
+		name = convert_resources_events_provisions_sell
+		trigger = {
+			government_is_landless_adventurer = yes
+			provisions >= 1000
+		}
+		custom_tooltip = convert_resources_events_provisions_tip
+		trigger_event = {
+			id = convert_resources_events_root.71 #provisions sell
+		}
+	}
+
+	option = {
+		name = convert_resources_events_provisions_buy
+		trigger = {
+			government_is_landless_adventurer = yes
+			gold >= 100
+		}
+		custom_tooltip = convert_resources_events_provisions_tip
+		trigger_event = {
+			id = convert_resources_events_root.72 #provisions buy
+		}
+	}
+
+	option = {
 		name = convert_resources_events_cancel
 		custom_tooltip = convert_resources_events_cancel_tip
 	}
@@ -626,6 +650,84 @@ convert_resources_events_root.62 = { #charity piety
 		custom_tooltip = convert_resources_events_return_tip
 		trigger_event = {
 			id = convert_resources_events_root.60 #charity root
+		}
+	}
+}
+
+convert_resources_events_root.71 = { #provisions sell
+	type = character_event
+	title = convert_resources_events_provisions_sell
+	desc = convert_resources_events_provisions_sell_desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = convert_resources_events_provisions_sell_s1
+		remove_provisions = 200
+		add_gold = 25
+	}
+
+	option = {
+		name = convert_resources_events_provisions_sell_s2
+		remove_provisions = 500
+		add_gold = 50
+	}
+	
+	option = {
+		name = convert_resources_events_provisions_sell_s3
+		remove_provisions = 1000
+		add_gold = 100
+	}
+
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
+		trigger_event = {
+			id = convert_resources_events_root.7 #provisions root
+		}
+	}
+}
+
+convert_resources_events_root.72 = { #provisions buy
+	type = character_event
+	title = convert_resources_events_provisions_buy
+	desc = convert_resources_events_provisions_buy_desc
+	
+	theme = stewardship_wealth_focus
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = convert_resources_events_provisions_buy_s1
+		add_provisions = 200
+		remove_gold = 25
+	}
+
+	option = {
+		name = convert_resources_events_provisions_buy_s2
+		add_provisions = 500
+		remove_gold = 50
+	}
+	
+	option = {
+		name = convert_resources_events_provisions_buy_s3
+		add_provisions = 1000
+		remove_gold = 100
+	}
+
+	option = {
+		name = convert_resources_events_return
+		custom_tooltip = convert_resources_events_return_tip
+		trigger_event = {
+			id = convert_resources_events_root.7 #provisions root
 		}
 	}
 }

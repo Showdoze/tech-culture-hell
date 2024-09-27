@@ -93,10 +93,11 @@ found_kingdom_decision = {
 		NOT = {
 			has_game_rule = off_custom_kingdoms
 		}
+		is_landed = yes
+		is_independent_ruler = yes
 	}
 	is_valid = {
 		prestige_level >= 2
-		is_independent_ruler = yes
 		OR = {
 			custom_description = {
 				text = found_kingdom_decision_three_duchies_held
