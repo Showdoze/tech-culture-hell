@@ -16,6 +16,20 @@
 	821.8.20 = {
 		birth = yes
 	}
+	840.1.1 = {
+		effect = {
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
 	937.3.15 = {
 		death = {
 			death_reason = death_old_age
@@ -324,28 +338,7 @@ tr_fargoth = {
 		}
 	}
 }
-tr_mussolini = {
-    name = "Benito Mussolini"
-	dna = Mussolini
-	religion = catholic 
-    dynasty_house = house_axias
-	culture = italian
-	trait = education_martial_2
-	trait = arrogant
-    trait = callous
-    trait = cynical
-    trait = ambitious
-    disallow_random_traits = yes
-	783.7.29 = {
-		birth = yes
-	}
-	895.3.28 = {
-		death = {
-			death_reason = death_murder
-            #killer = 
-		}
-	}
-}
+
 tr_judge_holden = {
     name = "Judge Holden"
 	dna = judge_holden
@@ -353,6 +346,7 @@ tr_judge_holden = {
 	dynasty = misc_history
 	culture = american
 	trait = education_intrigue_5
+	trait = immortal
 	trait = intellect_good_3
     trait = murderer
     trait = athletic
@@ -417,7 +411,8 @@ tr_doc_livesey = {
 		}
 	}
 }
-tr_gaulle = {
+#WW2
+ tr_gaulle = {
     name = "Charles de Gaulle"
 	dna = gaulle
 	religion = catholic
@@ -437,8 +432,8 @@ tr_gaulle = {
 			death_reason = death_old_age
 		}
 	}
-}
-tr_churchhill = {
+ }
+ tr_churchhill = {
     name = "Winston Churchill"
 	dna = churchhill
 	religion = catholic
@@ -460,8 +455,62 @@ tr_churchhill = {
 			death_reason = death_old_age
 		}
 	}
-}
-
+ }
+ tr_mussolini = {
+    name = "Benito Mussolini"
+	dna = Mussolini
+	religion = catholic 
+    dynasty_house = house_axias
+	culture = italian
+	trait = education_martial_2
+	trait = arrogant
+    trait = callous
+    trait = cynical
+    trait = ambitious
+    disallow_random_traits = yes
+	783.7.29 = {
+		birth = yes
+	}
+	895.3.28 = {
+		death = {
+			death_reason = death_murder
+            #killer = 
+		}
+	}
+ }
+ tr_stalin = {
+    name = "Joseph Stalin"
+	dna = stalin_old
+	religion = stoicism 
+    dynasty_house = house_allies
+	culture = georgian
+	trait = education_intrigue_3
+    trait = callous
+    trait = confider
+    trait = arrogant
+    trait = paranoid
+    trait = cynical
+    trait = deceitful
+    trait = ambitious
+    trait = craven
+    trait = peasant_leader
+    disallow_random_traits = yes
+	829.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			learn_language_of_culture = culture:zastova 
+	   }	
+	}
+	953.3.5 = {
+		death = {
+			death_reason = death_old_age
+            #killer = 
+		}
+	}
+ }
+#
 tr_cleopatra = {
     name = "Cleopatra"
 	dna = cleopatra_a
@@ -542,38 +591,6 @@ tr_highelf_1 = {
 		}
 	}
 }
-tr_stalin = {
-    name = "Joseph Stalin"
-	dna = stalin_old
-	religion = stoicism 
-    dynasty_house = house_allies
-	culture = georgian
-	trait = education_intrigue_3
-    trait = callous
-    trait = confider
-    trait = arrogant
-    trait = paranoid
-    trait = cynical
-    trait = deceitful
-    trait = ambitious
-    trait = craven
-    trait = peasant_leader
-    disallow_random_traits = yes
-	829.1.1 = {
-		birth = yes
-	}
-	860.1.1 = {
-		effect = {
-			learn_language_of_culture = culture:zastova 
-	   }	
-	}
-	953.3.5 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
-}
 
 tr_dumner_1 = {
     name = "S'wit N'wah"
@@ -588,6 +605,20 @@ tr_dumner_1 = {
     disallow_random_traits = yes
 	800.1.1 = {
 		birth = yes
+	}
+	840.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = small_lifestyle_random_xp_low
+						max = small_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	1066.1.1 = {
 		death = {
@@ -733,6 +764,20 @@ tr_spartan_1 = {
 	805.1.1 = {
 		birth = yes
 	}
+	820.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = small_lifestyle_random_xp_low
+						max = small_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
 	870.1.1 = {
 		death = {
 			death_reason = death_battle
@@ -778,6 +823,20 @@ tr_hannibal_barca = {
 	disallow_random_traits = yes
 	825.1.1 = {
 		birth = yes
+	}
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = small_lifestyle_random_xp_low
+						max = small_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	840.1.1 = {
 		effect = {

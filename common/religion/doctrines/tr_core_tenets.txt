@@ -387,4 +387,48 @@ tr_doctrines = {
 			opinion_of_different_faith_liege = 15
 		}
 	}
+	tenet_tlaloc = {
+		icon = core_tenet_astrology
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		traits = {
+		virtues = { just temperate callous  }
+		sins = { arrogant gluttonous arbitrary }
+	}
+		parameters = {
+			human_sacrifice_active = yes
+			flower_war_cb_active = yes
+		}
+		character_modifier = {
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
+		}
+	}
+	tenet_tezcatlipoca = {
+		icon = core_tenet_astrology
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		traits = {
+			virtues = { vengeful = 1 just temperate callous }
+			sins = { craven = 1 arrogant gluttonous arbitrary }
+		}
+		parameters = {
+			human_sacrifice_active = yes
+			flower_war_cb_active = yes
+			death_is_glory = yes
+			sanctioned_assassinations = yes 
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+			self_mutilation_active = yes
+			consolamentum_active = yes
+		}
+		character_modifier = {
+			dread_baseline_add = 5
+			prowess = 2
+			controlled_province_advantage = 5
+			monthly_piety_gain_per_dread_add = 0.01
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
+		}
+	}
 }
