@@ -13,7 +13,7 @@ tr_birth.01 = {
 				AND = {
 					scope:father.title.rank = { title_rank = empire }
 					NOR = {
-						scope:father.culture = { heritage = byzantine }
+						scope:father.culture = { has_cultural_pillar = heritage_byzantine }
 						scope:child = { has_trait = born_in_the_purple }
 						scope:child = { has_trait = emperor_child }
 					}
@@ -34,10 +34,8 @@ tr_birth.02 = {
 	weight_multiplier = {
 		base = 0
 		modifier = {
+			scope:child.culture = { has_cultural_pillar = heritage_fantasy }
 			add = 1
-			if = {
-				scope:child = { culture = { has_cultural_pillar = heritage_fantasy } }
-			}
 		}
 	}
 
