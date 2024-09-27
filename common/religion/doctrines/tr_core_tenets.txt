@@ -367,4 +367,24 @@ tr_doctrines = {
 			naval_movement_speed_mult = 0.25
 		}
 	}
+	tenet_shinto = {
+		icon = core_tenet_astrology
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		traits = {
+			virtues = { brave just honest }
+			sins = { craven arbitrary deceitful }
+		}
+		parameters = {
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+		}
+		character_modifier = {
+			different_faith_county_opinion_mult = -0.25
+			different_faith_liege_opinion = 15
+			opinion_of_different_faith_liege = 15
+		}
+	}
 }

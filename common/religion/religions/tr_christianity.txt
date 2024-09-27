@@ -1166,7 +1166,78 @@
 				{ name = "holy_order_knights_of_the_first_patrirchate" }
 				{ name = "holy_order_order_of_the_holy_virgin" }
 			}
+			localization = { 
+				#FertilityGod
+				FertilityGodName = arian_fertility_god_name
+				FertilityGodNamePossessive = arian_fertility_god_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIM
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
 
+				#WealthGod
+				WealthGodName = west_christian_wealth_god_name
+				WealthGodNamePossessive = west_christian_wealth_god_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#HouseholdGod
+				HouseholdGodName = west_christian_household_god_name
+				HouseholdGodNamePossessive = west_christian_household_god_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = arian_knowledge_god_name
+				KnowledgeGodNamePossessive = arian_knowledge_god_name_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIM
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WarGod
+				WarGodName = west_christian_war_god_name
+				WarGodNamePossessive = west_christian_war_god_name_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = arian_water_god_name
+				WaterGodNamePossessive = arian_water_god_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				
+				# Patriarchs instead of Popes
+				ReligiousHeadName = orthodox_religious_head_title
+				ReligiousHeadTitleName = orthodox_religious_head_title_name
+			}			
+		}
+		nicene = {
+			icon = nicene
+			color = { 0.65 0.65 0.37 }
+			religious_head = k_papal_state
+			piety_icon_group = "christian"
+            graphical_faith = "catholic_gfx"
+			holy_site = jerusalem
+			holy_site = constantinople
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = antioch
+            doctrine = special_doctrine_ecumenical_christian
+
+			#Special Tolerance
+			#doctrine = special_doctrine_nicene_ecumenism
+
+			#Christian Doctrines
+			#doctrine = doctrine_christian_liturgical_rite_imperial_rite
+
+			#Tenets
+			doctrine = tenet_apostolic_succession
+			doctrine = tenet_monasticism
+			doctrine = tenet_pentarchy
+			holy_order_names = {}
 			localization = { # Utilizes the 'West Christian' Saints, shared by Catholics and Orthodox
 				#FertilityGod
 				FertilityGodName = west_christian_fertility_god_name
@@ -1212,8 +1283,8 @@
 
 				# Patriarchs instead of Popes
 				ReligiousHeadName = orthodox_religious_head_title
-				ReligiousHeadTitleName = orthodox_religious_head_title_name				
-			}			
+				ReligiousHeadTitleName = orthodox_religious_head_title_name
+			}
 		}
 	}
 }

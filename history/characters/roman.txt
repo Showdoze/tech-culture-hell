@@ -604,13 +604,19 @@
 145240 = {
 	name = "Galerius"
 	# Caesar Galerius Valerius Maximianus Augustus
-	dynasty = 1022198
+	dynasty = dynn_Diocletianus
+	#dynasty = 1022198
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = cynical
 	trait = education_martial_2
+	trait = adopted
+	father = 145241
 	260.1.1 = {
 		birth = "260.1.1"
+	}
+	296.1.1 = {
+		add_spouse = diocletian_daughter
 	}
 	311.5.5 = {
 		death = "311.5.5"
@@ -620,7 +626,7 @@
 145241 = {
 	name = "Diocletian"
 	# Caesar Gaius Aurelius Valerius Diocletianus Augustus
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = brave
@@ -634,6 +640,9 @@
 	father = diocletian_dad
 	244.12.22 = {
 		birth = "244.12.22"
+	}
+	284.1.1 = {
+		add_spouse = diocletian_wife
 	}
 	305.4.1 = {
 		death = yes
@@ -2379,7 +2388,7 @@
 	name = "Gaius"
 	religion = "catholic"
 	culture = "roman"
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	trait = diligent
 	trait = calm
 	trait = zealous
@@ -2959,6 +2968,9 @@
 	278.1.1 = {
 		birth = "278.1.1"
 	}
+	300.1.1 = {
+		add_spouse = galerius_daughter
+	}
 	#312.10.28 = {}
 	311.6.5 = {	
 		death = {
@@ -2972,7 +2984,7 @@
 	name = "Justinian"
 	# AKA: Ioustinianos 'the Great'
 	dna = 70512_Justinian
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 5
 	diplomacy = 12
 	intrigue = 8
@@ -3004,7 +3016,7 @@
 70513 = {
 	name = "Justin"
 	# AKA: Ioustinos
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 7
 	diplomacy = 4
 	intrigue = 7
@@ -3026,7 +3038,7 @@
 
 70527 = {
 	name = "Vigilantia"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	female = yes
 	martial = 3
 	diplomacy = 6
@@ -3048,7 +3060,7 @@
 
 70528 = {
 	name = "Vigilantia"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	female = yes
 	martial = 4
 	diplomacy = 4
@@ -3071,7 +3083,7 @@
 
 70529 = {
 	name = "Justinian"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 6
 	diplomacy = 3
 	intrigue = 4
