@@ -191,17 +191,53 @@
 		}
 	}
  }
+ ck_romulus_augustulus_dads_dad = {
+	name = "Tatulus"
+	# Flavius Tatulus
+	dynasty = dynn_Caecina
+	religion = "roman_pagan"
+	culture = roman
+	410.1.1 = {
+		birth = "410.1.1"
+	}
+	448.1.1 = {
+		death = "448.1.1"
+	}
+}
+ ck_romulus_augustulus_dad = {
+	name = "Orestes" # PLRE vol. 2 Orestes 2
+	# Flavius Orestes, father of Romulus Augustulus and Usurper
+	#dna = 96055_orestes
+	dynasty = dynn_Caecina
+	religion = nicene
+	culture = roman
+	intrigue = 20
+	father = ck_romulus_augustulus_dads_dad
+	430.1.1 = { birth = yes }
+	446.1.1 = {
+		trait = ambitious
+		trait = deceitful
+		trait = impatient
+	}
+	#448.1.1 = { add_spouse = 96055_wife } #Barbaria, for lack of a better choice
+	476.8.28 = {
+		death = {
+			death_reason = death_execution
+			killer = ck650107 #Odoacer
+		}
+	}
+}
  ck650006 = {
 	name = "Romulus Augustulus"
+	dynasty = dynn_Caecina
 	religion = catholic
 	culture = roman
 	trait = content
 	trait = patrician_born
 	trait = education_diplomacy_1
 	trait = craven
-	460.9.4 = {
-		birth = yes
-	}
+	father = ck_romulus_augustulus_dad
+	468.1.1 = { birth = yes }
 	476.9.4 = {
 		death = {
 			death_reason = death_exile
@@ -227,8 +263,8 @@
  ck650011 = {
 	name = "Theodora"
 	female = yes
-	dynasty = 1022186
-	dna=ck650011_Theodora
+	dynasty = dynn_Justinian
+	dna = ck650011_Theodora
 	religion = nestorian
 	culture = greek
 	trait = beauty_good_3
@@ -514,7 +550,7 @@
  }
  ck650056 = {
 	name = "Theodosius"	# Maurice
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	religion = orthodox
 	culture = greek
 	trait = education_martial_2
@@ -926,7 +962,7 @@
  }
  ck650103 = {
 	name = "Constantina"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	female = yes
 	religion = orthodox
 	culture = greek
@@ -948,7 +984,7 @@
  }
  diocletian_dad = {
 	name = "Gaius"
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	religion = roman_pagan
 	culture = roman
 	200.1.1 = {
@@ -960,7 +996,7 @@
  }
  diocletian_bro = {
 	name = "Gaius"
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	religion = roman_pagan
 	culture = roman
 	father = diocletian_dad
@@ -970,6 +1006,290 @@
 	270.1.1 = {
 		death = yes
 	} 
+ }
+ diocletian_wife = {
+	name = "Prisca"
+	religion = catholic
+	culture = roman
+	female = yes
+	250.1.1 = {
+		birth = yes
+	}
+	284.1.1 = {
+		add_spouse = 145241
+	}
+	305.1.1 = {
+		death = {
+			death_reason = death_sacrificed_to_gods
+			killer = 145239
+		}
+	}
+ }
+ diocletian_daughter = {
+	name = "Galeria Valeria"
+	dynasty = dynn_Diocletianus
+	religion = catholic
+	culture = roman
+	father = 145241
+	mother = diocletian_wife
+	female = yes
+	284.2.1 = {
+		birth = yes
+	}
+	296.1.1 = {
+		add_spouse = 145240
+	}
+	305.1.1 = {
+		death = {
+			death_reason = death_sacrificed_to_gods
+			killer = 145239
+		}
+	}
+ }
+ diocletian_daughter_son = {
+	name = "Candidianus"
+	dynasty = dynn_Diocletianus
+	religion = roman_pagan
+	culture = roman
+	mother = diocletian_daughter
+	father = 145240
+	trait = adopted
+	296.1.1 = {
+		birth = yes
+	}
+	313.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145238
+		}
+	}
+ }
+ galerius_daughter = {
+	name = "Valeria Maximilla"
+	dynasty = dynn_Diocletianus
+	religion = roman_pagan
+	culture = roman
+	father = 145240
+	mother = diocletian_daughter
+	female = yes
+	293.2.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		add_spouse = 145294
+	}
+	315.1.1 = {
+		death = yes
+	}
+ }
+ maxentius_son = {
+	name = "Valerius Romulus"
+	dynasty = dynn_Maximianus
+	religion = roman_pagan
+	culture = roman
+	father = 145294
+	mother = galerius_daughter
+	300.2.1 = {
+		birth = yes
+	}
+	309.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_1_wife = {
+	name = "Minervina"
+	# First wife of Constantine I, mother of Crispus
+	religion = nicene
+	culture = roman
+	female = yes
+	270.1.1 = {
+		birth = yes
+	}
+	303.1.1 = {
+		add_spouse = 70523
+	}
+	330.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_son = {
+	name = "Flavius Iulius Crispus"
+	# Great son of Constantine I
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_1_wife
+	290.1.1 = {
+		birth = yes
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_2_wife = {
+	name = "Fausta"
+	# Second wife of Constantine I
+	religion = hellenic_pagan
+	culture = roman
+	female = yes
+	dynasty = dynn_Maximianus
+	father = 145293
+	289.1.1 = {
+		birth = yes
+	}
+	307.8.1 = {
+		add_spouse = 70523
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+Constantine_daughter = {
+	name = "Flavia Helena"
+	# Daughter of Constantine I, wife of Julian the Apostate
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_2_wife	#Fausta
+	female = yes
+	325.1.1 = {
+		birth = yes
+	}
+	355.11.6 = {
+		add_spouse = 145237
+	}
+	360.1.1 = {
+		death = yes
+	}
+ }
+ Constantine_daughter1 = {
+	name = "Flavia_Constantia"
+	# Daughter of Constantine I
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 70523
+	mother = Constantine_2_wife
+	female = yes
+	323.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		add_spouse = CaesarofConstantiusII
+	}
+	354.1.1 = {
+		death = yes
+	}
+ }
+ Gratian_wife = {
+	name = "Constantia"
+	# Wife of Emperor Gratian
+	religion = nicene
+	dynasty = dynn_Constantinus
+	culture = roman
+	father = 70521
+	mother = Constantius2_wife3
+	female = yes
+	361.1.1 = {
+		birth = yes
+	}
+	373.1.1 = {
+		add_spouse = 145233
+	}
+	381.8.1 = {
+		death = yes
+	}
+ }
+ Constantius2_wife3 = {
+	name = "Faustina"
+	# Third wife of Constantius II
+	religion = nicene
+	culture = roman
+	female = yes
+	336.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = 70521
+	}
+	366.1.1 = {
+		death = yes
+	}
+}
+ Constantius2_wife1 = {
+	name = "Flavia"
+	# First wife of Constantius II
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	female = yes
+	father = 145236
+	mother = JuliusConstantius_wife
+	320.1.1 = {
+		birth = yes
+	}
+	336.1.1 = {
+		add_spouse = 70521
+	}
+	353.1.1 = {
+		death = yes
+	}
+ }
+ Julian_mom = {
+	name = "Basilina"
+	# Mother of Julian the Apostate
+	religion = arian
+	culture = greek
+	#dynasty = 1300691
+	female = yes
+	#father = 1003018
+	310.1.1 = {
+		birth = yes
+	}
+	326.1.1 = {
+		add_spouse = 145236
+	}
+	333.1.1 = {
+		death = yes
+	}
+}
+ JuliusConstantius_wife = {
+	name = "Galla"
+	# First wife of Julius Constantius
+	religion = nicene
+	culture = roman
+	#dynasty = roman_dynasty_neratius
+	female = yes
+	#father = 1101024
+	305.1.1 = {
+		birth = yes
+	}
+	322.1.1 = {
+		add_spouse = 145236
+	}
+	326.1.1 = {
+		death = yes
+	}
+ }
+ CaesarofConstantiusII = {
+	name = "Flavius Claudius Constantius Gallus"
+	# Caesar of Constantius II
+	religion = nicene
+	culture = roman
+	dynasty = dynn_Constantinus
+	father = 145236
+	mother = JuliusConstantius_wife
+	323.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		add_spouse = Constantine_daughter1
+	}
+	354.1.1 = {
+		death = yes
+	}
  }
 ########################
 #Venice #italy
@@ -1426,7 +1746,7 @@
 	#trait=tribal_gov_trait
 	#trait=war_veteran
 	trait = education_martial_3
-	father=ckMenelik
+	father = ckMenelik
 	89.1.1 = {
 		birth = yes
 		#create_bloodline = {
@@ -1787,12 +2107,12 @@
 	trait = greedy
 	#trait = cavalry_leader
 	#trait = horse_lord
-	400.1.1={
+	400.1.1 = {
 	    birth = yes
 	}
-	480.1.1={
-	    death={death_reason= death_battle
-		killer=160303
+	480.1.1 = {
+	    death = { death_reason= death_battle
+		killer = 160303
 	}}
  } 
  ck650038 = {
@@ -1804,10 +2124,10 @@
 	trait = loyal
 	#trait = horse_lord
 	father = ck650037
-	450.1.1={
+	450.1.1 = {
 	    birth=yes
 	}
-	530.1.1={
+	530.1.1 = {
 	    death= yes
 	}
  } 
@@ -2030,7 +2350,7 @@
 	religion = kushitism_pagan
 	dynasty = dynn_kush
 	culture = nubian
-	female=yes
+	female = yes
 	father = ck_nubian11
 	500.1.1 = {
 		birth = yes
@@ -2044,7 +2364,7 @@
 	religion = coptic
 	dynasty = dynn_kush
 	culture = nubian
-	female=yes
+	female = yes
 	mother = ck_nubian12
 	555.1.1 = {
 		birth = yes

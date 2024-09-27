@@ -60,7 +60,7 @@
 70520 = {
 	name = "Constantine"
 	# Caesar Flavius Claudius Constantinus Augustus
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	martial = 4
 	diplomacy = 4
 	intrigue = 7
@@ -87,12 +87,12 @@
 70521 = {
 	name = "Constantius"
 	# Caesar Flavius Iulius Constantius Augustus
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	martial = 7
 	diplomacy = 6
 	intrigue = 5
 	stewardship = 7
-	religion = "orthodox"
+	religion = nicene #"orthodox"
 	culture = "roman"
 	trait = honest
 	trait = calm
@@ -101,9 +101,15 @@
 	trait = ill
 	trait = education_stewardship_3
 	father = 70523
-	
+	mother = Constantine_2_wife
 	317.8.7 = {
 		birth = "317.8.7"
+	}
+	336.1.1 = {
+		add_spouse = Constantius2_wife3
+	}
+	361.1.1 = {
+		add_spouse = Constantius2_wife3
 	}
 	361.11.3 = {
 		death = {
@@ -115,19 +121,19 @@
 70522 = {
 	name = "Constans"
 	# Caesar Flavius Iulius Constans Augustus
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	martial = 6
 	diplomacy = 5
 	intrigue = 3
 	stewardship = 5
-	religion = "orthodox"
+	religion = nicene #"orthodox"
 	culture = "roman"
 	sexuality = homosexual
 	trait = deceitful
 	trait = kinslayer_3
 	trait = education_martial_2
 	father = 70523
-	
+	mother = Constantine_2_wife
 	322.1.1 = {
 		birth = "322.1.1"
 	}
@@ -139,7 +145,7 @@
 70523 = {
 	name = "Constantine"
 	# Caesar Flavius Constantinus Valerius Augustus 'The Great'
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	dna = 70523_constantine
 	martial = 8
 	diplomacy = 8
@@ -157,6 +163,12 @@
 	272.2.27 = {
 		birth = "272.2.27"
 	}
+	303.1.1 = {
+		add_spouse = Constantine_1_wife
+	}
+	307.8.1 = {
+		add_spouse = Constantine_2_wife
+	}
 	337.5.22 = {
 		give_nickname = nick_the_great
 		death = "337.5.22"
@@ -166,7 +178,7 @@
 70524 = {
 	name = "Constantius"
 	# Caesar Gaius Flavius Valerius Constantius Augustus
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	martial = 7
 	diplomacy = 4
 	intrigue = 5
@@ -463,12 +475,15 @@
 	name = "Gratian"
 	# Flavius Gratianus Augustus
 	dynasty = 1022193
-	religion = "catholic"
+	religion = nicene #"catholic"
 	culture = "roman"
 	trait = education_martial_2
 	father = 145231
 	359.4.18 = {
 		birth = "359.4.18"
+	}
+	373.1.1 = {
+		add_spouse = Gratian_wife
 	}
 	378.12.19 = {
 		death = {
@@ -515,13 +530,19 @@
 145236 = {
 	name = "Constantius"
 	# Iulius Constantius
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	religion = "catholic"
 	culture = "roman"
 	trait = education_diplomacy_3
 	father = 70524
 	295.1.1 = {
 		birth = "295.1.1"
+	}
+	322.1.1 = {
+		add_spouse = JuliusConstantius_wife
+	}
+	326.1.1 = {
+		add_spouse = Julian_mom
 	}
 	337.7.1 = {
 		death = {
@@ -534,7 +555,7 @@
 145237 = {
 	name = "Julian"
 	# Caesar Flavius Claudius Iulianus Augustus
-	dynasty = 1022195
+	dynasty = dynn_Constantinus
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = scholar
@@ -548,9 +569,13 @@
 	trait = logistician
 	disallow_random_traits = yes
 	father = 145236
+	mother = Julian_mom
 	332.5.1 = {
 		birth = "332.5.1"
 		give_nickname = nick_the_apostate
+	}
+	355.11.6 = {
+		add_spouse = Constantine_daughter
 	}
 	363.6.26 = {
 		death = {
@@ -604,13 +629,19 @@
 145240 = {
 	name = "Galerius"
 	# Caesar Galerius Valerius Maximianus Augustus
-	dynasty = 1022198
+	dynasty = dynn_Diocletianus
+	#dynasty = 1022198
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = cynical
 	trait = education_martial_2
+	trait = adopted
+	father = 145241
 	260.1.1 = {
 		birth = "260.1.1"
+	}
+	296.1.1 = {
+		add_spouse = diocletian_daughter
 	}
 	311.5.5 = {
 		death = "311.5.5"
@@ -620,7 +651,7 @@
 145241 = {
 	name = "Diocletian"
 	# Caesar Gaius Aurelius Valerius Diocletianus Augustus
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = brave
@@ -634,6 +665,9 @@
 	father = diocletian_dad
 	244.12.22 = {
 		birth = "244.12.22"
+	}
+	284.1.1 = {
+		add_spouse = diocletian_wife
 	}
 	305.4.1 = {
 		death = yes
@@ -2379,7 +2413,7 @@
 	name = "Gaius"
 	religion = "catholic"
 	culture = "roman"
-	dynasty = 1022199
+	dynasty = dynn_Diocletianus
 	trait = diligent
 	trait = calm
 	trait = zealous
@@ -2932,7 +2966,7 @@
 145293 = {
 	name = "Maximian"
 	# Caesar Gaius Aurelius Valerius Maximianus Herculius Augustus
-	dynasty = 1022233
+	dynasty = dynn_Maximianus
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = education_martial_3
@@ -2950,7 +2984,7 @@
 145294 = {
 	name = "Maxentius"
 	# Marcus Aurelius Valerius Maxentius Augustus
-	dynasty = 1022233
+	dynasty = dynn_Maximianus
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = arbitrary
@@ -2958,6 +2992,9 @@
 	father = 145293
 	278.1.1 = {
 		birth = "278.1.1"
+	}
+	300.1.1 = {
+		add_spouse = galerius_daughter
 	}
 	#312.10.28 = {}
 	311.6.5 = {	
@@ -2972,7 +3009,7 @@
 	name = "Justinian"
 	# AKA: Ioustinianos 'the Great'
 	dna = 70512_Justinian
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 5
 	diplomacy = 12
 	intrigue = 8
@@ -3004,7 +3041,7 @@
 70513 = {
 	name = "Justin"
 	# AKA: Ioustinos
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 7
 	diplomacy = 4
 	intrigue = 7
@@ -3026,7 +3063,7 @@
 
 70527 = {
 	name = "Vigilantia"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	female = yes
 	martial = 3
 	diplomacy = 6
@@ -3048,7 +3085,7 @@
 
 70528 = {
 	name = "Vigilantia"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	female = yes
 	martial = 4
 	diplomacy = 4
@@ -3071,7 +3108,7 @@
 
 70529 = {
 	name = "Justinian"
-	dynasty = 1022186
+	dynasty = dynn_Justinian
 	martial = 6
 	diplomacy = 3
 	intrigue = 4
