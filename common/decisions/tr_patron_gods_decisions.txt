@@ -6,7 +6,7 @@ select_personal_deity_hellenic_decision = {
 	selection_tooltip = select_personal_deity_hellenic_decision_tooltip
 
 	is_shown = {
-		religion = faith:hellenic_pagan.religion
+		faith = faith:hellenic_pagan
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 
@@ -131,7 +131,7 @@ select_personal_deity_roman_decision = {
 	selection_tooltip = select_personal_deity_roman_decision_tooltip
 
 	is_shown = {
-		religion = faith:religio_romana.religion
+		faith = faith:roman_pagan
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -443,7 +443,7 @@ select_personal_deity_ds1_decision = {
 	selection_tooltip = select_personal_deity_ds1_decision_tooltip
 
 	is_shown = {
-		faith = { has_doctrine  =  tenet_ds1 }
+		faith = faith:dark_souls_faith
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
@@ -559,7 +559,7 @@ select_personal_deity_dwemer_decision = {
 	desc = select_personal_deity_dwemer_decision_desc
 	selection_tooltip = select_personal_deity_dwemer_decision_tooltip
 	is_shown = {
-		faith = { has_doctrine = tenet_dwemer }
+		faith = faith:dwemer_religion
 		faith = { has_doctrine_parameter = select_personal_god_active }
 	}
 	is_valid = {}
