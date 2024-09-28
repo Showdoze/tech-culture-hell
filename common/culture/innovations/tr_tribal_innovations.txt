@@ -136,11 +136,11 @@ innovation_varangian_adventurers = {
 			# Frankish
 			this = culture:norman
 			any_parent_culture_or_above = {
-				this = culture:norse #Norman
+				this = culture:norse
 			}
 			this = culture:estonian
 			any_parent_culture_or_above = {
-				this = culture:estonian #Estonian
+				this = culture:estonian
 			}
 		}
 		NOT = { has_cultural_era_or_later = culture_era_early_medieval }
@@ -228,11 +228,11 @@ innovation_corpus_juris_civilis = {
 		OR = {
 			this = culture:greek
 			any_parent_culture_or_above = {
-				this = culture:greek #greek
+				this = culture:greek
 			}
 			this = culture:roman
 			any_parent_culture_or_above = {
-				this = culture:roman #roman
+				this = culture:roman
 			}
 		}
 	}
@@ -251,11 +251,11 @@ innovation_greek_fire = {
 		OR = {
 			this = culture:greek
 			any_parent_culture_or_above = {
-				this = culture:greek #greek
+				this = culture:greek
 			}
 			this = culture:roman
 			any_parent_culture_or_above = {
-				this = culture:roman #roman
+				this = culture:roman
 			}
 		}
 	}
@@ -263,7 +263,7 @@ innovation_greek_fire = {
 		development_growth_factor = 0.1
 	}
 	maa_upgrade = {
-		type = siege_weapon 			# The base MaA type to upgrade
+		type = siege_weapon 
 		siege_value = 0.2
 	}
 	flag = global_regional

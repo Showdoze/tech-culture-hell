@@ -18,8 +18,11 @@ ocean_legacy_track = {
 scale_legacy_track = {
 	is_shown = {
 		dynasty = {
-			dynast = {
-				faith = faith:hist
+			OR = {
+				dynast = {
+				    faith = faith:hist
+				}
+				has_dynasty_perk = scale_legacy_1
 			}
 		}
 	}
@@ -39,7 +42,16 @@ usa_legacy_track = {
 }
 
 skaven_legacy_track = {
-	always = yes
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+				    has_cultural_pillar = heritage_fantasy
+				}
+				has_dynasty_perk = skaven_legacy_1
+			}
+		}
+	}
 }
 
 chinese_bureaucracy_legacy_track = {
@@ -176,7 +188,14 @@ RICE_trans_saharan_trade_legacy_track = {
 
 dragonblood_legacy_track = {
 	is_shown = {
-		has_cultural_pillar = heritage_fantasy
+		dynasty = {
+			OR = {
+				dynast = {
+				    has_cultural_pillar = heritage_fantasy
+				}
+				has_dynasty_perk = dragonborn_legacy_1
+			}
+		}
 	}
 }
 
@@ -196,7 +215,7 @@ magicka_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-				#	this = culture:american
+				    has_cultural_pillar = heritage_fantasy
 				}
 				has_dynasty_perk = magicka_legacy_1
 			}
