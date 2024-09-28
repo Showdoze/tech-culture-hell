@@ -91,9 +91,9 @@
  anglian = {
 	color = { 209 116 80 }
 	created = 200.1.1
-	parents = { germanic }
+	parents = { german }
 	ethos = ethos_communal
-	heritage = heritage_germanic
+	heritage = heritage_central_germanic
 	language = language_anglic
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -123,7 +123,7 @@
 	created = 399.5.1
 	parents = { gothic }
 	ethos = ethos_bellicose
-	heritage = heritage_germanic
+	heritage = heritage_central_germanic
 	language = language_norse
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -148,9 +148,9 @@
 	color = gothic
 	# T_ 222 þ 254 Ð 208 T_ 240 E_
 	created = 150.1.1
-	parents = { germanic }
+	parents = { german }
 	ethos = ethos_stoic
-	heritage = heritage_germanic
+	heritage = heritage_central_germanic
 	language = language_norse
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -172,9 +172,9 @@
  vandal = {
 	color = { 252 216 24 }
 	created = 300.1.1
-	parents = { germanic }
+	parents = { german }
 	ethos = ethos_bellicose
-	heritage = heritage_germanic
+	heritage = heritage_central_germanic
 	language = language_scythian
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -193,28 +193,7 @@
 		50 = slavic_ginger
 	}
  }
- germanic = {
-	color = norse
-	ethos = ethos_bellicose
-	heritage = heritage_germanic
-	language = language_norse
-	martial_custom = martial_custom_male_only
-	traditions = {
-		tradition_germanic
-		tradition_migration
-	}	
-	name_list = name_list_germanic	
-	coa_gfx = { norse_coa_gfx western_coa_gfx }
-	building_gfx = { norse_building_gfx }
-	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
-	unit_gfx = { circumpolar_unit_gfx }
-	ethnicities = {
-		70 = caucasian_northern_blond
-		15 = caucasian_northern_ginger
-		10 = caucasian_northern_brown_hair
-		5 = caucasian_northern_dark_hair
-	}	
- }
+ 
 #northern
  icelandic = {
 	color = { 43 60 117 }
@@ -251,9 +230,9 @@
 
 #SOUTH
  syracuse = {
-	color = greek
+	color = dorian
 	created = 5.1.1 
-	parents = { greek }
+	parents = { laconian }
 	history_loc_override = syracuse_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_ancient_greek
