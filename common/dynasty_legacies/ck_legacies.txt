@@ -16,7 +16,13 @@ ocean_legacy_track = {
 }
 
 scale_legacy_track = {
-	always = yes
+	is_shown = {
+		dynasty = {
+			dynast = {
+				faith = faith:hist
+			}
+		}
+	}
 }
 
 usa_legacy_track = {
@@ -167,10 +173,10 @@ RICE_trans_saharan_trade_legacy_track = {
 		}
 	}
 }
+
 dragonblood_legacy_track = {
 	is_shown = {
-		#has_trait = dragonborn
-		always = no
+		has_cultural_pillar = heritage_fantasy
 	}
 }
 

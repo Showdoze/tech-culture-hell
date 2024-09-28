@@ -605,9 +605,6 @@ japan_legacy_5 = { #Hōrudingu shiro
 dragonblood_legacy_1 = { # Chosen by the Gods
 	legacy = dragonblood_legacy_track
 
-	### EK TODO: Tie that to the Dragonblood
-	can_be_picked = { has_trait = dragonborn }
-
 	character_modifier = {
 		theocracy_government_opinion_same_faith = 5
 		monthly_prestige_gain_mult = 0.05
@@ -685,12 +682,6 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 	effect = {
 		custom_description_no_bullet = {
 			text = hegemon_legacy_1_effect
-		}
-	}
-
-	can_be_picked = {
-		dynasty = {
-			exists = var:can_get_hegemon_legacy_track
 		}
 	}
 	
@@ -893,10 +884,6 @@ magicka_legacy_5 = {
  cappadocian_legacy_1 = {
     legacy = cappadocian_legacy_track
 	#cost = dynasty_legacy_tier_5_cost
-	can_be_picked  = {
-	    is_vampire_trigger = yes
-		is_cappadocian_trigger = yes
-	}
 	character_modifier = {
 	    name = cappadocian_legacy_1_name
 		learning_per_piety_level = 1
