@@ -869,6 +869,11 @@ tr_arthur_shelby_peaky_blinders = {
 	825.1.1 = {
 		birth = yes
 	}
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_dutch_van reason = rival_historical }
+		}
+	}
 	870.1.1 = {
 		death = {
 			death_reason = death_drinking_passive
@@ -969,7 +974,35 @@ tr_japanese1 = {
 		}
 	}
 }
-
+tr_dutch_van = {
+	name = "Dutch Van Der Linde"
+	dna = dutch_van
+	religion = blood_faith 
+    dynasty = misc_history
+	culture = american
+	trait = education_intrigue_3
+    trait = arrogant
+	trait = arbitrary
+	trait = architect
+	trait = greedy
+    trait = murderer
+	trait = lunatic_1
+    trait = ambitious
+    disallow_random_traits = yes
+	849.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
+		}
+	}
+	911.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
 
 
 

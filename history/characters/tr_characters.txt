@@ -33,7 +33,7 @@
  }
  ck650109 = {
 	name = "Majorian"
-	religion = catholic
+	religion = nicene
 	culture = roman
 	trait = ambitious
 	trait = education_martial_3
@@ -53,7 +53,7 @@
  }
  ck650000 = {
 	name = "Libius Severus"
-	religion = catholic
+	religion = nicene
 	culture = roman
 	trait = dull
 	trait = chaste
@@ -73,7 +73,7 @@
  }
  ck650001 = {
 	name = "Anthemius"
-	religion = catholic
+	religion = nicene
 	culture = roman
 	420.1.1 = {
 		birth = yes
@@ -87,7 +87,7 @@
  }
  ck650002 = {
 	name = "Ricimer"
-	religion = "cathar"
+	religion = "arianism"
 	culture = german
 	trait = deceitful
 	trait = sadistic
@@ -110,7 +110,7 @@
  }
  ck650003 = {
 	name = "Olybrius"
-	religion = catholic
+	religion = nicene
 	culture = roman
 	trait = patrician_born
 	420.1.1 = {
@@ -122,7 +122,7 @@
  }
  ck650004 = {
 	name = "Glycerius"
-	religion = catholic
+	religion = nicene
 	culture = roman
 	trait = education_martial_2
 	420.1.1 = {
@@ -138,8 +138,8 @@
  ck650090 = {
 	name = "Leon"
 	# AKA: Leon 'the elder
-	dynasty = 1022188
-	religion = orthodox
+	dynasty = dynn_Leonid
+	religion = nicene
 	culture = greek
 	trait = honest
 	trait = brave
@@ -156,8 +156,8 @@
  ck650089 = {
 	name = "Nepotianus"
 	# AKA: father of Julius Nepos
-	dynasty = 1022188
-	religion = orthodox
+	dynasty = dynn_Leonid
+	religion = roman_pagan
 	culture = roman
 	trait = trusting
 	trait = content
@@ -175,8 +175,8 @@
  }
  ck650005 = {
 	name = "Julius Nepos"
-	dynasty = 1022188
-	religion = catholic
+	dynasty = dynn_Leonid
+	religion = nicene
 	culture = roman
 	trait = adventurer
 	trait = patrician_born
@@ -230,7 +230,7 @@
  ck650006 = {
 	name = "Romulus Augustulus"
 	dynasty = dynn_Caecina
-	religion = catholic
+	religion = nicene
 	culture = roman
 	trait = content
 	trait = patrician_born
@@ -495,7 +495,7 @@
 	dynasty = 1022314
 	religion = orthodox
 	culture = roman
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = brave
 	trait = scarred
 	trait = physique_good_2
@@ -569,7 +569,7 @@
  ck650057 = {
 	name = "Martina"
 	female = yes
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = orthodox
 	culture = greek
 	trait = diligent
@@ -597,7 +597,7 @@
  }
  ck650058 = {
 	name = "Martinus"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = orthodox
 	culture = greek
 	#trait = chest_pain
@@ -613,7 +613,7 @@
  }
  ck650059 = {
 	name = "Herakleios"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = orthodox
 	culture = greek
 	trait = diligent
@@ -635,7 +635,7 @@
  }
  ck650060 = {
 	name = "Tiberios"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = orthodox
 	culture = greek
 	trait = ambitious
@@ -664,7 +664,7 @@
  ck650072 = {
 	name = "Hypathia"
 	female = yes
-	dynasty = 1022188
+	dynasty = dynn_Leonid
 	religion = hellenic_pagan
 	culture = greek
 	trait = intellect_good_3
@@ -693,7 +693,7 @@
  }
  ck650088 = {
 	name = "Theodosios"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = orthodox
 	culture = greek
 	trait = inbred
@@ -1145,7 +1145,7 @@
 		death = yes
 	}
  }
-Constantine_daughter = {
+ Constantine_daughter = {
 	name = "Flavia Helena"
 	# Daughter of Constantine I, wife of Julian the Apostate
 	religion = nicene
@@ -1254,7 +1254,7 @@ Constantine_daughter = {
 	333.1.1 = {
 		death = yes
 	}
-}
+ }
  JuliusConstantius_wife = {
 	name = "Galla"
 	# First wife of Julius Constantius
@@ -1290,6 +1290,16 @@ Constantine_daughter = {
 	354.1.1 = {
 		death = yes
 	}
+ }
+ FaustaWifeOfConstans2 { #Fausta, wife of Constans II
+	name = "Phausta"
+	#dynasty_house = house_arsacid_armenia
+	religion = "nicene"
+	culture = "greek"
+	female = yes
+	#father = ValentinusArsacid
+	630.1.1 = { birth = yes }
+	680.1.1 = { death = yes }
  }
 ########################
 #Venice #italy

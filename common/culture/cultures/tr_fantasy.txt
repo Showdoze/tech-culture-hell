@@ -289,26 +289,6 @@ old_dwarven = {
 	}
  }
 # 
-saiyan = {
-	color = han
-	created = 1.1.1
-	history_loc_override = mystery_history_loc
-	ethos = ethos_bellicose
-	heritage = heritage_fantasy
-	language = language_anglic #language_common
-	martial_custom = martial_custom_equal
-	traditions = {
-		tradition_saiyan
-	}
-	name_list = name_list_saiyan
-	coa_gfx = { chinese_group_coa_gfx }
-	building_gfx = { indian_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mongol_unit_gfx }
-	ethnicities = {
-		10 = asian
-	}
-}
 goblin = {
 	color = goblin
 	created = 10.1.1
@@ -456,7 +436,28 @@ unknown = {
 		5 = caucasian_dark_hair
 	}
 }
-hidden_mist = {
+#ANIME
+ saiyan = {
+	color = han
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy
+	language = language_anglic #language_common
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_saiyan
+	}
+	name_list = name_list_saiyan
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	ethnicities = {
+		10 = asian
+	}
+ }
+ hidden_mist = {
 	color = { 0.58 0.06 0.06 }
 	created = 500.1.1
 	history_loc_override = naruto_history_loc
@@ -478,8 +479,8 @@ hidden_mist = {
 	ethnicities = {
 		10 = asian
 	}
-}
-hidden_sand = {
+ }
+ hidden_sand = {
 	color = { 0.58 0.06 0.06 }
 	created = 500.1.1
 	history_loc_override = naruto_history_loc
@@ -499,7 +500,7 @@ hidden_sand = {
 	ethnicities = {
 		10 = hidden_sand_eth
 	}
-}
+ }
 #LOZ ZELDA
  hylian = {
 	color = { 255 221 14 }

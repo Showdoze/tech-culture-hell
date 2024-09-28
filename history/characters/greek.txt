@@ -9697,7 +9697,7 @@
 70506 = {
 	name = "Ioustinianos"
 	# AKA: Ioustinianos 'Rinotmetos'
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	martial = 7
 	diplomacy = 5
 	intrigue = 11
@@ -9715,7 +9715,8 @@
 	695.11.1 = {
 		trait = scarred
 		trait = disfigured
-		give_nickname = nick_the_slit-nosed
+		#give_nickname = nick_the_slit-nosed
+		give_nickname = nick_rhinotmetos
 	}
 	703.1.1 = {
 		add_spouse = 146185
@@ -9735,7 +9736,7 @@
 
 70507 = {
 	name = "Konstantinos"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	martial = 4
 	diplomacy = 5
 	intrigue = 4
@@ -9748,6 +9749,7 @@
 	trait = education_stewardship_2
 	trait = born_in_the_purple
 	father = 70508
+	mother = FaustaWifeOfConstans2
 	648.1.1 = {
 		birth = "648.1.1"
 	}
@@ -9762,7 +9764,7 @@
 70508 = {
 	name = "Konstas"
 	# AKA: Konstans 'Pogonatos'
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	martial = 3
 	diplomacy = 4
 	intrigue = 5
@@ -9778,6 +9780,9 @@
 	630.11.7 = {
 		birth = "630.11.7"
 	}
+	642.1.1 = {
+		add_spouse = FaustaWifeOfConstans2
+	}
 	668.7.15 = {
 		death = {
 			death_reason = death_bath
@@ -9788,7 +9793,7 @@
 70509 = {
 	name = "Konstantinos"
 	# AKA: Herakleios Konstantinos
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	martial = 5
 	diplomacy = 4
 	intrigue = 5
@@ -9941,7 +9946,7 @@
 70516 = {
 	name = "Leon"
 	# AKA: Leon 'the Younger'
-	dynasty = 1022188
+	dynasty = dynn_Leonid
 	martial = 4
 	diplomacy = 3
 	intrigue = 6
@@ -9967,7 +9972,7 @@
 70517 = {
 	name = "Leon"
 	# AKA: Leon 'the Thracian'
-	dynasty = 1022188
+	dynasty = dynn_Leonid
 	martial = 4
 	diplomacy = 6
 	intrigue = 5
@@ -9992,7 +9997,7 @@
 
 70530 = {
 	name = "Ariadne"
-	dynasty = 1022188
+	dynasty = dynn_Leonid
 	female = yes
 	martial = 3
 	diplomacy = 6
@@ -15874,7 +15879,7 @@
 145070 = {
 	name = "Herakleonas"
 	# AKA: Konstantinos Herakleios
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = "orthodox"
 	culture = "greek"
 	trait = inbred
@@ -15893,7 +15898,7 @@
 
 145071 = {
 	name = "Herakleios"
-	dynasty = 1022137
+	dynasty = dynn_Herakleidon
 	religion = "orthodox"
 	culture = "greek"
 	trait = diligent

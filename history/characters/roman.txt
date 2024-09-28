@@ -30,6 +30,7 @@
 	name = "Arcadius"
 	# Flavius Arcadius Augustus
 	dynasty = 1022191
+	dna = 70519_arcadius
 	martial = 4
 	diplomacy = 4
 	intrigue = 4
@@ -65,7 +66,7 @@
 	diplomacy = 4
 	intrigue = 7
 	stewardship = 5
-	religion = "catholic"
+	religion = "arian" #Valens was a Semi-Arian, but is listed as arian, so to make this consistent
 	culture = "roman"
 	trait = greedy
 	trait = wrathful
@@ -151,7 +152,7 @@
 	diplomacy = 8
 	intrigue = 9
 	stewardship = 7
-	religion = "catholic"
+	religion = roman_pagan
 	culture = "roman"
 	trait = zealous
 	trait = intellect_good_3
@@ -168,6 +169,10 @@
 	}
 	307.8.1 = {
 		add_spouse = Constantine_2_wife
+	}
+	312.1.1 = { #His conversion
+		religion = nicene
+		trait = zealous
 	}
 	337.5.22 = {
 		give_nickname = nick_the_great
@@ -196,6 +201,9 @@
 	}
 	306.7.25 = {
 		death = "306.7.25"
+	}
+	500.1.1 = {
+		give_nickname = nick_chlorus
 	}
 }
 
@@ -347,6 +355,7 @@
 145227 = {
 	name = "Honorius"
 	# Flavius Honorius Augustus
+	dna = 145227_honorius
 	dynasty = 1022191
 	religion = "catholic"
 	culture = "roman"
