@@ -1014,7 +1014,7 @@
 	special = holder
 	tier = kingdom
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
  }
@@ -1024,7 +1024,7 @@
 	special = holder
 	tier = kingdom
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
 	only_holder = yes
@@ -1033,7 +1033,7 @@
 	type = title
 	tier = kingdom
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
 #Lord 
@@ -1043,7 +1043,7 @@
 	special = holder
 	tier = duchy
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
  }
@@ -1053,7 +1053,7 @@
 	special = holder
 	tier = duchy
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
 	only_holder = yes
@@ -1062,7 +1062,7 @@
 	type = title
 	tier = duchy
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
  lord_c_m = {
@@ -1071,7 +1071,7 @@
 	special = holder
 	tier = county
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
  }
@@ -1081,7 +1081,7 @@
 	special = holder
 	tier = county
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
 	only_holder = yes
@@ -1090,7 +1090,7 @@
 	type = title
 	tier = county
 	priority = 30
-	#governments = { feudal_government tribal_government }
+	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
 #Thief Religions
@@ -1100,5 +1100,87 @@
 	priority = 80
 	council_position = councillor_marshal
 	name_lists = { name_list_thief_city }
+ }
+ steward_thief { #treasuerer
+	type = character
+	special = steward
+	priority = 80
+	council_position = councillor_steward
+	name_lists = { name_list_thief_city }
+ }
+ hammerite_b_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_b_m = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_b = {
+	type = title
+	tier = barony
+	priority = 7
+	holding = church_holding
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_c_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_c_m = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_c = {
+	type = title
+	tier = county
+	priority = 7
+	holding = church_holding
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_d_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_d_m = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 7
+	governments = { theocracy_government }
+	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_d = {
+	type = title
+	tier = duchy
+	priority = 7
+	holding = church_holding
+	faiths = { hammerite_faith mechanist_faith }
  }
 #
