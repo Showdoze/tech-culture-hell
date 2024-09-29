@@ -6,7 +6,7 @@ tr_doctrines = {
 		icon = tenet_albino_worship
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = {
-			always = yes
+			always = no
 		}
 		traits = {
 			virtues = {
@@ -45,61 +45,6 @@ tr_doctrines = {
 			legalism_trust_just_leader_active = yes
 		}
 		character_modifier = {
-		}
-	}
-	tenet_bloodlust = {
-		icon = tenet_bloodlust
-		piety_cost = {
-			if = {
-				limit = {
-					religion_tag = hinduism_religion
-				}
-				value = faith_tenet_cost_mid
-			}
-			else_if = {
-				limit = {
-					OR = {
-						religion_tag = christianity_religion
-						religion_tag = judaism_religion
-						religion_tag = islam_religion
-						religion_tag = buddhism_religion
-						religion_tag = jainism_religion
-					}
-				}
-				value = faith_tenet_cost_high
-			}
-			else = {
-				value = faith_tenet_cost_low
-			}
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_albino }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-		is_shown = {
-			always = no
-		}
-		traits = {
-			virtues = { vengeful = 1 }
-			sins = { craven = 1 }
-		}
-		parameters = {
-			select_personal_god_active = yes
-			death_is_glory = yes
-			sanctioned_assassinations = yes 
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			self_mutilation_active = yes
-			consolamentum_active = yes
-		}
-		character_modifier = {
-			dread_baseline_add = 5
-			prowess = 2
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
 		}
 	}
 	tenet_hellenic = {
@@ -429,6 +374,45 @@ tr_doctrines = {
 			monthly_piety_gain_per_dread_add = 0.01
 			ai_war_chance = 1
 			ai_war_cooldown = -0.5
+		}
+	}
+	tenet_keeper = {
+		icon = core_tenet_keeper
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			holy_wars_forbidden = yes
+			piety_from_long_peace = 1
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+		}
+		traits = {
+			virtues = { scholar journaller shy humble confider }
+			sins = { deceitful disloyal sadistic reclusive }
+		}
+		character_modifier = {
+			ignore_opinion_of_different_faith = yes
+			learning_per_piety_level = 2
+		}
+	}
+	tenet_mechanist = {
+		icon = core_tenet_mechanist
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+		}
+		traits = {
+			virtues = { architect scholar temperate zealous }
+			sins = { lazy cynical lifestyle_mystic }
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+			learning_per_piety_level = 5
+			monthly_piety_from_buildings_mult = 0.24
 		}
 	}
 }

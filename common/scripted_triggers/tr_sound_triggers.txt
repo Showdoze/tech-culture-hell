@@ -24,6 +24,8 @@ is_european_pagan = {
       religion = religion:siberian_religion
       religion = religion:paganism_religion
       religion = religion:baltic_religion
+      religion = religion:celtic_religion
+      #religion = religion:
 	}
 }
 
@@ -62,7 +64,7 @@ is_celtic = {
   OR = {
     culture = { has_cultural_pillar = heritage_brythonic}
     culture = { has_cultural_pillar = heritage_goidelic}
-
+    religion = religion:celtic_religion
   }
 }
 
@@ -70,28 +72,51 @@ is_tengri = {
   religion = religion:tengrism_religion   
 }
 is_saiyan = {
-  culture = { has_cultural_pillar = heritage_saiyan }
+  OR = {
+    culture = culture:saiyan
+    this = culture:saiyan
+  }
 }
 is_roman = {
-  culture = culture:roman
+  OR = {
+    culture = culture:roman
+    this = culture:roman
+  }
 }
 is_redguard = {
-  culture = { has_cultural_pillar = heritage_yokudan }
+  OR = {
+    culture = culture:alikr
+    this = culture:alikr
+  }
 }
 is_high_elf = {
-  culture = { has_cultural_pillar = heritage_aldmeri }
+  OR = {
+    culture = culture:altmer
+    this = culture:altmer
+  }
 }
 is_wood_elf = {
-  culture = { has_cultural_pillar = heritage_bosmeri }
+  OR = {
+    culture = culture:bosmer
+    this = culture:bosmer
+  }
 }
 is_orc = {
-  culture = { has_cultural_pillar = heritage_orcish }
-}
+  OR = {
+    culture = culture:warsong
+    this = culture:warsong
+  }
 is_breton = {
-  culture = { has_cultural_pillar = heritage_breton }
+  OR = {
+    culture = culture:glenumbran
+    this = culture:glenumbran
+  }
 }
 is_carthage = {
-  culture = { has_cultural_pillar = heritage_punic }
+  OR = {
+    culture = { has_cultural_pillar = heritage_punic }
+    religion = religion:levantine_religion
+  }  
 }
 is_chinese = {
   culture = { has_cultural_pillar = heritage_chinese }

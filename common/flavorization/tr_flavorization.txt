@@ -1007,4 +1007,98 @@
 	name_lists = { name_list_alikr }
 	top_liege = no
  }
-# 
+#Baron
+ baron_k_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+ }
+ baron_k_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+	only_holder = yes
+ }
+ baron_k = {
+	type = title
+	tier = kingdom
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+ }
+#Lord 
+ lord_d_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+ }
+ lord_d_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+	only_holder = yes
+ }
+ lord_d_idk = {
+	type = title
+	tier = duchy
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+ }
+ lord_c_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+ }
+ lord_c_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+	only_holder = yes
+ }
+ lord_c_idk = {
+	type = title
+	tier = county
+	priority = 30
+	#governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+ }
+#Thief Religions
+ marshal_thief { #Sherift
+	type = character
+	special = marshal
+	priority = 80
+	council_position = councillor_marshal
+	name_lists = { name_list_thief_city }
+ }
+#

@@ -73,9 +73,7 @@ on_declared_war = {
     }		
 	else = {
 		scope:attacker = { play_music_cue = mx_cue_war_declared }
-	}
-	
-	
+	}	
 	###############################
 	##### Defender music
 	###############################
@@ -117,6 +115,35 @@ on_declared_war = {
 	##### Effects
 	###############################
 
+	#There is no fighting in the admin room!
+	if = {
+		limit = {
+			scope:attacker = {
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_clan
+					government_has_flag = government_is_tribal
+				}			
+				liege ?= {
+					government_has_flag = government_is_administrative
+				}
+			}
+			scope:defender = {
+				government_has_flag = government_is_administrative
+				liege ?= scope:attacker.liege
+			}
+		}
+		custom_description_no_bullet = {
+			text = on_declared_war_in_admin
+		}
+		scope:attacker.liege = {
+			add_opinion = {
+				target = scope:attacker
+				modifier = declared_war_in_admin
+			}
+		}
+	}
+
 	# Breaking Truce
 	if = {
 		limit = {
@@ -129,12 +156,27 @@ on_declared_war = {
 				text = attack_breaking_truce_text
 			}
 
+			# Remove the war target from the bought_truce_list if they're in it
+			if = {
+				limit = {
+					has_purchased_truce_with_char = { TARGET = scope:defender }
+				}
+				remove_list_variable = {
+					name = bought_truce_list
+					target = scope:recipient
+				}
+			}
+
 			if = {
 				limit = {
 					NOT = { has_perk = flexible_truces_perk }
 				}
 				add_prestige = break_truce_prestige_loss
 				add_prestige_level = break_truce_prestige_level_loss
+			}
+			add_legitimacy = {
+				value = medium_legitimacy_loss
+				multiply = primary_title.tier
 			}
 			add_character_modifier = {
 				modifier = broke_truce
@@ -317,6 +359,8 @@ on_declared_war = {
 	if = {
 		limit = {
 			NOT = { scope:attacker.culture = scope:defender.culture }
+			scope:attacker = { is_landed = yes }
+			scope:defender = { is_landed = yes }
 		}
 		scope:defender.culture = {
 			change_cultural_acceptance = {
@@ -358,6 +402,7 @@ on_declared_war = {
 		DESC = clan_unity_declared_war.desc
 		REVERSE_NON_HOUSE_TARGET = no
 	}
+	intrigue_duel_on_attack_effect = yes
 }
 
 # Imprison all faction-members (rebelling vassals if there's no faction) if they lose a revolt-war and add a revoke reason
@@ -478,6 +523,9 @@ on_claimant_faction_war_win_common = {
 				}
 				add_prestige = major_prestige_gain
 			}
+
+			# Save the number of faction members for use further down
+			add_to_list = num_faction_members
 		}
 	}
 
@@ -493,6 +541,22 @@ on_claimant_faction_war_win_common = {
 		add_to_list = faction_titles
 		holder = {
 			save_scope_as = target_holder
+		}
+	}
+	target_holder ?= {
+		if = {
+			limit = {
+				is_independent_ruler = yes
+				government_allows = administrative
+				primary_title = { is_in_list = faction_titles }
+			}
+			every_held_title = {
+				limit = {
+					is_noble_family_title = no
+					tier > tier_barony
+				}
+				add_to_list = faction_titles
+			}
 		}
 	}
 	ordered_in_list = {

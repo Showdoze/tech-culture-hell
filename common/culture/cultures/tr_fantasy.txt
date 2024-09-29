@@ -436,6 +436,60 @@ unknown = {
 		5 = caucasian_dark_hair
 	}
 }
+#thief
+ thief_city = {
+	color = { 120 10 10 }
+	created = 100.1.1
+	parents = { thief_precursor }
+	ethos = ethos_stoic
+	heritage = heritage_fantasy
+	language = language_anglic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_city_keepers
+		tradition_ancient_miners
+		tradition_ruling_caste
+		tradition_loyal_soldiers
+		tradition_warrior_culture
+	}
+	name_list = name_list_thief_city
+	coa_gfx = { french_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx }
+	unit_gfx = { french_unit_gfx }
+	ethnicities = {
+		15 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+ }
+ thief_precursor = {
+	color = { 120 10 10 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_stoic
+	heritage = heritage_fantasy
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_city_keepers
+		tradition_ancient_miners
+		tradition_ruling_caste
+		tradition_loyal_soldiers
+	}
+	name_list = name_list_thief_precursor
+	coa_gfx = { french_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx }
+	unit_gfx = { french_unit_gfx }
+	ethnicities = {
+		15 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+ }
 #ANIME
  saiyan = {
 	color = han
