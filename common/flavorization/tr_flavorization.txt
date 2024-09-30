@@ -1211,4 +1211,62 @@
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
+ mechanist_k_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_mechanist }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
+ }
+ mechanist_k_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 301
+	titles = { k_mechanist }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
+ }
+#Valarian
+ marshal_agot { #Master of Laws
+	type = character
+	special = marshal
+	priority = 80
+	council_position = councillor_marshal
+	name_lists = { name_list_high_valyrian }
+ }
+ steward_agot { #Masterr of Coin
+	type = character
+	special = steward
+	priority = 80
+	council_position = councillor_steward
+	name_lists = { name_list_high_valyrian }
+ }
+ chancellor_agot { #Hand
+	type = character
+	special = chancellor
+	priority = 80
+	council_position = councillor_chancellor
+	name_lists = { name_list_high_valyrian }
+ }
+ court_chaplain_agot { #Grand Maester
+	type = character
+	special = court_chaplain
+	priority = 100
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_high_valyrian }
+ }
+ spymaster_agot { #Master of Whispers
+	type = character
+	special = spymaster
+	priority = 100
+	council_position = councillor_spymaster
+	name_lists = { name_list_high_valyrian }
+ }
 #
