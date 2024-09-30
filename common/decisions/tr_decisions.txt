@@ -275,6 +275,12 @@ convert_resources_decision = {
     cooldown = {
         days = 31
     }
+    is_valid = {
+        root.location = {
+            has_holding = yes
+            is_raided = no
+        }
+    }
     effect = {
         custom_tooltip = convert_resources_decision_effect_tip
         trigger_event = {
@@ -289,22 +295,22 @@ convert_resources_decision = {
         modifier = {
             add = 10
             AND = {
-                gold => 500
-                prestige =< 100
+                gold > 500
+                prestige < 100
             }
         }
         modifier = {
             add = 10
             AND = {
-                gold => 500
-                piety =< 100
+                gold > 500
+                piety < 100
             }
         }
         modifier = {
             add = 10
             AND = {
-                prestige => 500
-                gold =< 100
+                prestige > 500
+                gold < 100
             }
         }
     }

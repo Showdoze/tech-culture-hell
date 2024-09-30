@@ -23,10 +23,6 @@ convert_resources_events_root.0 = { #root
         name = convert_resources_events_prestige
         trigger = {
             prestige >= 200
-            root.location = {
-                has_holding = yes
-                is_raided = no
-            }
         }
         custom_tooltip = convert_resources_events_prestige_tip
         trigger_event = {
@@ -60,10 +56,6 @@ convert_resources_events_root.0 = { #root
         name = convert_resources_events_piety
         trigger = {
             piety >= 200
-            root.location = {
-                has_holding = yes
-                is_raided = no
-            }
         }
         custom_tooltip = convert_resources_events_piety_tip
         trigger_event = {
@@ -90,10 +82,6 @@ convert_resources_events_root.0 = { #root
         trigger = {
             age < 50
             health >= 3
-            root.location = {
-                has_holding = yes
-                is_raided = no
-            }
         }
         name = convert_resources_events_loan
         custom_tooltip = convert_resources_events_loan_tip
@@ -162,10 +150,6 @@ convert_resources_events_root.0 = { #root
         name = convert_resources_events_giveloan
         trigger = {
             gold >= 150
-            root.location = {
-                has_holding = yes
-                is_raided = no
-            }
         }
         custom_tooltip = convert_resources_events_giveloan_tip
         trigger_event = {
@@ -195,10 +179,6 @@ convert_resources_events_root.0 = { #root
         name = convert_resources_events_charity
         trigger = {
             gold >= 100
-            root.location = {
-                has_holding = yes
-                is_raided = no
-            }
         }
         custom_tooltip = convert_resources_events_charity_tip
         trigger_event = {
@@ -1361,7 +1341,7 @@ convert_resources_events_root.71 = { #provisions sell
         name = convert_resources_events_return
         custom_tooltip = convert_resources_events_return_tip
         trigger_event = {
-            id = convert_resources_events_root.7 #provisions root
+            id = convert_resources_events_root.0 #root
         }
     }
 }
@@ -1384,7 +1364,7 @@ convert_resources_events_root.72 = { #provisions buy
         domicile = {
             change_provisions = 200
         }
-        remove_gold = 25
+        add_gold = -25
     }
 
     option = {
@@ -1392,7 +1372,7 @@ convert_resources_events_root.72 = { #provisions buy
         domicile = {
             change_provisions = 500
         }
-        remove_gold = 50
+        add_gold = -50
     }
 
     option = {
@@ -1400,14 +1380,14 @@ convert_resources_events_root.72 = { #provisions buy
         domicile = {
             change_provisions = 1000
         }
-        remove_gold = 100
+        add_gold = -100
     }
 
     option = {
         name = convert_resources_events_return
         custom_tooltip = convert_resources_events_return_tip
         trigger_event = {
-            id = convert_resources_events_root.7 #provisions root
+            id = convert_resources_events_root.0 #provisions root
         }
     }
 }
