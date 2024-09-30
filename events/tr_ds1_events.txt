@@ -1,4 +1,4 @@
-﻿namespace = ds1_decision
+﻿namespace = ds1_event
 
 #########################
 # Select Personal God	#
@@ -6,88 +6,84 @@
 # 0101					#
 #########################
 
-ds1_decision.0101 = {
-	type = character_event
-	title = ds1_decision.0101.t
-	desc = {
-		desc = ds1_decision.0101.desc
-	}
-	theme = faith
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
+ds1_event.01 = {
 	
-	option = {# Zeus 
-		name = ds1_decision.0101.zeus
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_zeus } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_zeus }
-	}
-	option = {# Athena 
-		name = ds1_decision.0101.athena
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_athena } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_athena }
-	}
-	option = {# Hera 
-		name = ds1_decision.0101.hera
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_hera } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_hera }
-	}
-	option = {# Ares 
-		name = ds1_decision.0101.ares
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_ares } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_ares }
-	}
-	option = {# Demeter 
-		name = ds1_decision.0101.demeter
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_demeter } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_demeter }
-	}
-	option = {# Dionysos 
-		name = ds1_decision.0101.dionysos
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_dionysos } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_dionysos }
-	}
-	option = {# Hephestios 
-		name = ds1_decision.0101.hephestios
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_hephestios } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_hephestios }
-	}
-	option = {# Hermes 
-		name = ds1_decision.0101.hermes
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_hermes } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_hermes }
-	}
-	option = {# aphrodite 
-		name = ds1_decision.0101.aphrodite
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_aphrodite } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_aphrodite }
-	}
-	option = {# apollon 
-		name = ds1_decision.0101.apollon
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_apollon } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_apollon }
-	}
-	option = {# artemis 
-		name = ds1_decision.0101.artemis
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_artemis } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_artemis }
-	}
-	option = {# herakles 
-		name = ds1_decision.0101.herakles
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_herakles } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_herakles }
-	}
-	option = {# asklepios 
-		name = ds1_decision.0101.asklepios
-		trigger = { NOT = { has_character_modifier = kharis_hellenism_asklepios } }
-		set_bhakti_effect = { BHAKTI = kharis_hellenism_asklepios }
-	}
-	
-	# Opt-Out
-	option = {
-		name = ds1_decision.0101.optout
-		flavor = ds1_decision.0101.flavor
-		ai_chance = { base = 0 }
-	}
+    type = character_event
+    title = ds1_choose_covenant
+    desc = {
+        desc = ds1_choose_covenant_desc
+    }
+    theme = faith
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    option = {# Gwyn
+        name = ds1_choose_covenant_gwyn
+        trigger = {
+            NOT = {
+                has_character_modifier = ds1_covenant_gwyn
+            }
+        }
+        set_bhakti_effect = { BHAKTI = ds1_covenant_gwyn }
+    }
+
+    # Opt-Out
+    option = {
+        name = ds1_choose_covenant_optout
+        flavor = ds1_choose_covenant_optout_flavor
+        ai_chance = { base = 0 }
+    }
+}
+
+ds1_event.02 = { # not really a decision rather using its namespace to not make a whole new file
+
+    type = character_event
+    title = ds1_hollowing_event
+    desc = ds1_hollowing_event_event_desc
+    theme = mental_health
+
+    left_portrait = {
+        character = root
+        animation = severelywounded
+    }
+
+    trigger = {
+        AND = {
+            NOT = {
+                has_trait = trait_hollow
+            }
+            root.faith = faith:dark_souls_faith
+        }
+    }
+
+    weight_multiplier = {
+        base = 0.05
+        modifier = {
+            if = {
+                limit = {
+                    stress_level = 1
+                }
+                add = 0.1
+            }
+            else_if = {
+                limit = {
+                    stress_level = 2
+                }
+                add = 0.2
+            }
+            else = {
+                limit = {
+                    stress_level = 3
+                }
+                add = 0.4
+            }
+        }
+    }
+
+    immediate = {
+        play_music_cue = "mx_cue_illness"
+        add_trait = trait_hollow
+    }
 }
