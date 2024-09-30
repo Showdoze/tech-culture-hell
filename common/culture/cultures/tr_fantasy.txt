@@ -230,7 +230,7 @@ old_dwarven = {
 	} 
 	name_list = name_list_dwemer
 	coa_gfx = { israelite_group_coa_gfx byzantine_group_coa_gfx }
-	building_gfx = {  iranian_building_gfx } #ek_dwemer_building_gfx
+	building_gfx = { iranian_building_gfx } #ek_dwemer_building_gfx
 	clothing_gfx = { iranian_clothing_gfx byzantine_clothing_gfx } #ek_dwemeri_clothing_gfx
 	unit_gfx = { dunmer_unit_gfx }
 	ethnicities = {
@@ -316,7 +316,7 @@ goblin = {
 		15 = race_goblin_riekling
 	}
 }
-warsong = { #ORCISH
+warsong = {
 	color = orcish
 	created = 5.1.1
 	history_loc_override = orc_history_loc
@@ -355,11 +355,9 @@ high_valyrian = {
 		tradition_republican_legacy
 	}
 	name_list = name_list_high_valyrian
-	coa_gfx = { english_coa_gfx western_coa_gfx } #valyrian_coa_gfx }
+	coa_gfx = { english_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
-	clothing_gfx = { #high_valyrian_clothing_gfx #valyrian_clothing_gfx
-		byzantine_clothing_gfx
-		western_clothing_gfx }
+	clothing_gfx = { byzantine_clothing_gfx western_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
 	ethnicities = {
 	10 = high_valyrian_ethnicity_01
@@ -497,7 +495,7 @@ unknown = {
 	history_loc_override = mystery_history_loc
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
-	language = language_anglic #language_common
+	language = language_anglic
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_saiyan
@@ -568,7 +566,7 @@ unknown = {
 		tradition_hereditary_hierarchy
 		tradition_stalwart_defenders
 		tradition_loyal_soldiers
-		tradition_hyrule #tradition_zealous_people
+		tradition_hyrule
 		tradition_chivalry
 	}
 	name_list = name_list_hylian

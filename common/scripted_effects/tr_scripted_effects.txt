@@ -1,73 +1,4 @@
-﻿calculate_authority_cooldown_break_effect = {
-	if = {
-		limit = {
-			has_variable = crown_authority_cooldown
-			realm_law_use_crown_authority = yes
-		}
-		# Set it up if it doesn't exist.
-		if = {
-			limit = {
-				NOT = {
-					has_variable = authority_cooldown_break_tally
-				}
-			}
-			set_variable = {
-				name = authority_cooldown_break_tally
-				value = authority_cooldown_breaker_value
-			}
-			# And increment it once, since they've just taken the first use and we give no freebies.
-			change_variable = {
-				name = authority_cooldown_break_tally
-				add = authority_cooldown_breaker_value
-			}
-		}
-		# Otherwise, increment it.
-		else_if = {
-			limit = {
-				has_variable = authority_cooldown_break_tally
-			}
-			change_variable = {
-				name = authority_cooldown_break_tally
-				add = authority_cooldown_breaker_value
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_variable = tribal_authority_cooldown
-			realm_law_use_crown_authority = no
-		}
-		# Set it up if it doesn't exist.
-		if = {
-			limit = {
-				NOT = {
-					has_variable = authority_cooldown_break_tally
-				}
-			}
-			set_variable = {
-				name = authority_cooldown_break_tally
-				value = authority_cooldown_breaker_value
-			}
-			# And increment it once, since they've just taken the first use and we give no freebies.
-			change_variable = {
-				name = authority_cooldown_break_tally
-				add = authority_cooldown_breaker_value
-			}
-		}
-		# Otherwise, increment it.
-		else_if = {
-			limit = {
-				has_variable = authority_cooldown_break_tally
-			}
-			change_variable = {
-				name = authority_cooldown_break_tally
-				add = authority_cooldown_breaker_value
-			}
-		}
-	}
-}
-
-set_republic_heir = {
+﻿set_republic_heir = {
 	if = {
 		limit = { 
 		    OR = {
@@ -91,6 +22,16 @@ feudal_government_modifier = {
 			domain_tax_mult = 0.5
 		}
 	}
+}
+
+tr_play_sayan_music = {
+	if = {
+        limit = {
+            exists = scope:war
+            scope:attacker = { is_saiyan = yes }
+        }
+        scope:attacker = { play_music_cue = tr_saiyan }
+    }        
 }
 
 tr_replace_tribal_authority = {
