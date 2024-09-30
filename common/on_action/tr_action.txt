@@ -24,6 +24,10 @@ on_birth_mother = {
 	on_actions = { tr_birth }
 }
 
+on_war_started = {
+	on_actions = { tr_sayan_check }
+}
+
 ## MODDED HOOKED BELOW
 
 tr_auto = {
@@ -44,6 +48,10 @@ tr_birth = {
 		tr_birth.01
 		tr_birth.02
 	}
+}
+
+tr_sayan_check = {
+	effect = { tr_play_sayan_music = yes }
 }
 
 #tr_elective_inheritance = {
