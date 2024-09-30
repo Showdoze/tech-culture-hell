@@ -668,19 +668,19 @@ convert_resources_events_root.71 = { #provisions sell
 
 	option = {
 		name = convert_resources_events_provisions_sell_s1
-		remove_provisions = 200
+		change_provisions = -200
 		add_gold = 25
 	}
 
 	option = {
 		name = convert_resources_events_provisions_sell_s2
-		remove_provisions = 500
+		change_provisions = -500
 		add_gold = 50
 	}
 	
 	option = {
 		name = convert_resources_events_provisions_sell_s3
-		remove_provisions = 1000
+		change_provisions = -1000
 		add_gold = 100
 	}
 
@@ -707,19 +707,19 @@ convert_resources_events_root.72 = { #provisions buy
 
 	option = {
 		name = convert_resources_events_provisions_buy_s1
-		add_provisions = 200
+		change_provisions = 200
 		remove_gold = 25
 	}
 
 	option = {
 		name = convert_resources_events_provisions_buy_s2
-		add_provisions = 500
+		change_provisions = 500
 		remove_gold = 50
 	}
 	
 	option = {
 		name = convert_resources_events_provisions_buy_s3
-		add_provisions = 1000
+		change_provisions = 1000
 		remove_gold = 100
 	}
 
