@@ -93,7 +93,7 @@ tr_doctrines = {
 		}
 	}
 	tennet_blood_m = {
-		icon = ai_tenet_mastery_over_undeath
+		icon = tenet_bloodlust #core_tenet_gruesome_festivals
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
@@ -147,7 +147,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_hist = {
-		icon = core_tenet_hist.dds
+		icon = core_tenet_hist
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
@@ -201,7 +201,7 @@ tr_doctrines = {
 			reincarnation_events_active = yes
 		}
 		traits = {
-			virtues = { lifestyle_mystic calm temperate brave just  }
+			virtues = { lifestyle_mystic calm temperate brave }
 			sins = { wrathful gluttonous craven arbitrary }
 		}
 		character_modifier = {
