@@ -1027,7 +1027,7 @@
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
-	only_holder = yes
+	#only_holder = yes
  }
  baron_k = {
 	type = title
@@ -1037,6 +1037,34 @@
 	name_lists = { name_list_thief_city }
  }
 #Lord 
+ lord_b_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+ }
+ lord_b_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+	top_liege = no
+	#only_holder = yes
+ }
+ lord_b_idk = {
+	type = title
+	tier = barony
+	priority = 30
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_thief_city }
+ }
  lord_d_m = {
 	type = character
 	gender = male
@@ -1056,7 +1084,7 @@
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
-	only_holder = yes
+	#only_holder = yes
  }
  lord_d_idk = {
 	type = title
@@ -1084,7 +1112,7 @@
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
-	only_holder = yes
+	#only_holder = yes
  }
  lord_c_idk = {
 	type = title
@@ -1113,7 +1141,7 @@
 	gender = male
 	special = holder
 	tier = barony
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1122,14 +1150,14 @@
 	gender = female
 	special = holder
 	tier = barony
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_b = {
 	type = title
 	tier = barony
-	priority = 7
+	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1138,7 +1166,7 @@
 	gender = male
 	special = holder
 	tier = county
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1147,14 +1175,14 @@
 	gender = female
 	special = holder
 	tier = county
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_c = {
 	type = title
 	tier = county
-	priority = 7
+	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1163,7 +1191,7 @@
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1172,14 +1200,14 @@
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 7
+	priority = 301
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_d = {
 	type = title
 	tier = duchy
-	priority = 7
+	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
