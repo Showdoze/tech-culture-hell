@@ -60,6 +60,16 @@ can_raid_trigger = {
 	}
 }
 
+tr_play_sayan_music = {
+	if = {
+        limit = {
+            exists = scope:war
+            scope:attacker = { is_saiyan = yes }
+        }
+        scope:attacker = { play_music_cue = tr_saiyan }
+    }        
+}
+
 over_domain_limit_trigger = {
 	always = no
 }
