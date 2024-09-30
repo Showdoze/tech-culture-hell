@@ -1,285 +1,311 @@
 ﻿pet_dog_decision = {
-	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
-	desc = pet_dog_decision_desc
-	selection_tooltip = pet_dog_decision_tooltip
-	ai_check_interval = 120
-	cooldown = {
-		days = 1
-	}
-	is_shown = {
-		any_owned_story = {
-			story_type = story_cycle_pet_dog
-			exists = story_owner.var:story_cycle_dog_name
-		}
-	}
-	is_valid_showing_failures_only = {
-		is_available = yes
-	}
-	effect = {
-		custom_tooltip = pet_decision_effect_tooltip
-		trigger_event = {
-			on_action = story_cycle_dog_pet_decision_on_actions
-		}
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 25
-			stress > low_medium_stress
-		}
-		modifier = {
-			add = 50
-			stress > medium_stress
-		}
-		modifier = {
-			add = 50
-			stress > high_stress
-		}
-	}
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+    desc = pet_dog_decision_desc
+    selection_tooltip = pet_dog_decision_tooltip
+    ai_check_interval = 120
+    cooldown = {
+        days = 1
+    }
+    is_shown = {
+        any_owned_story = {
+            story_type = story_cycle_pet_dog
+            exists = story_owner.var:story_cycle_dog_name
+        }
+    }
+    is_valid_showing_failures_only = {
+        is_available = yes
+    }
+    effect = {
+        custom_tooltip = pet_decision_effect_tooltip
+        trigger_event = {
+            on_action = story_cycle_dog_pet_decision_on_actions
+        }
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            add = 25
+            stress > low_medium_stress
+        }
+        modifier = {
+            add = 50
+            stress > medium_stress
+        }
+        modifier = {
+            add = 50
+            stress > high_stress
+        }
+    }
 }
 
 pet_cat_decision = {
-	picture =  { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
-	desc = pet_cat_decision_desc
-	selection_tooltip = pet_cat_decision_tooltip
-	ai_check_interval = 120
-	cooldown = {
-		days = 1
-	}
-	is_shown = {
-		any_owned_story = {
-			story_type = story_cycle_pet_cat
-			exists = story_owner.var:story_cycle_cat_name
-		}
-	}
-	is_valid_showing_failures_only = {
-		is_available = yes
-	}
-	effect = {
-		custom_tooltip = pet_decision_effect_tooltip
-		trigger_event = {
-			on_action = story_cycle_cat_pet_decision_on_actions
-		}
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 25
-			stress > low_medium_stress
-		}
-		modifier = {
-			add = 50
-			stress > medium_stress
-		}
-		modifier = {
-			add = 75
-			stress > high_stress
-		}
-	}
+    picture =  { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+    desc = pet_cat_decision_desc
+    selection_tooltip = pet_cat_decision_tooltip
+    ai_check_interval = 120
+    cooldown = {
+        days = 1
+    }
+    is_shown = {
+        any_owned_story = {
+            story_type = story_cycle_pet_cat
+            exists = story_owner.var:story_cycle_cat_name
+        }
+    }
+    is_valid_showing_failures_only = {
+        is_available = yes
+    }
+    effect = {
+        custom_tooltip = pet_decision_effect_tooltip
+        trigger_event = {
+            on_action = story_cycle_cat_pet_decision_on_actions
+        }
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            add = 25
+            stress > low_medium_stress
+        }
+        modifier = {
+            add = 50
+            stress > medium_stress
+        }
+        modifier = {
+            add = 75
+            stress > high_stress
+        }
+    }
 }
 
 found_kingdom_decision = {
-	picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"}
-	ai_check_interval = 60
-	desc = found_kingdom_decision_desc
-	is_shown = {
-		highest_held_title_tier = tier_duchy
-		NOT = {
-			has_game_rule = off_custom_kingdoms
-		}
-		is_landed = yes
-		is_independent_ruler = yes
-	}
-	is_valid = {
-		prestige_level >= 2
-		OR = {
-			custom_description = {
-				text = found_kingdom_decision_three_duchies_held
-				any_held_title = {
-					count > 1
-					tier = tier_duchy
-				}
-			}
-			sub_realm_size >= 1
-		}
-	}
-	is_valid_showing_failures_only = {
-		is_available_adult = yes
-		is_at_war = no
-	}
-	cost = {
-		gold = 500
-		prestige = 600
-	}
-	effect = {
-		create_custom_kingdom_effect = yes
-		if = {
-			limit = {
-				is_ai = no
-				NOT = {
-					exists = global_var:found_kingdom_decision
-				}
-			}
-			set_global_variable = {
-				name = found_kingdom_decision
-				value = root
-			}
-			set_global_variable = {
-				name = found_kingdom_decision_kingdom
-				value = root.primary_title
-			}
-		}
-	}
-	ai_potential = {
-		always = no
-	}
-	ai_will_do = {
-		base = 0
-	}
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"}
+    ai_check_interval = 60
+    desc = found_kingdom_decision_desc
+    is_shown = {
+        highest_held_title_tier = tier_duchy
+        NOT = {
+            has_game_rule = off_custom_kingdoms
+        }
+        is_landed = yes
+        is_independent_ruler = yes
+    }
+    is_valid = {
+        prestige_level >= 2
+        OR = {
+            custom_description = {
+                text = found_kingdom_decision_three_duchies_held
+                any_held_title = {
+                    count > 1
+                    tier = tier_duchy
+                }
+            }
+            sub_realm_size >= 1
+        }
+    }
+    is_valid_showing_failures_only = {
+        is_available_adult = yes
+        is_at_war = no
+    }
+    cost = {
+        gold = 500
+        prestige = 600
+    }
+    effect = {
+        create_custom_kingdom_effect = yes
+        if = {
+            limit = {
+                is_ai = no
+                NOT = {
+                    exists = global_var:found_kingdom_decision
+                }
+            }
+            set_global_variable = {
+                name = found_kingdom_decision
+                value = root
+            }
+            set_global_variable = {
+                name = found_kingdom_decision_kingdom
+                value = root.primary_title
+            }
+        }
+    }
+    ai_potential = {
+        always = no
+    }
+    ai_will_do = {
+        base = 0
+    }
 }
 
 embrace_english_culture_decision = {
-	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-	ai_check_interval = 36
-	desc = embrace_english_culture_decision_desc
-	is_shown = {
-		is_landed = yes
-		culture = {
-			has_cultural_pillar = heritage_frankish
-		}
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:embrace_english_culture_decision
-			}
-		}
-	}
-	is_valid = {
-		custom_description = {
-			text = capital_in_england_region_tooltip
-			capital_province = {
-				geographical_region = world_europe_west_britannia
-			}
-		}
-	}
-	is_valid_showing_failures_only = {
-		is_imprisoned = no
-		is_available_adult = yes
-	}
-	effect = {
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:embrace_english_culture_decision
-		}
-		show_as_tooltip = {
-			embrace_english_culture_effect = yes
-		}
-		trigger_event = {
-			id = british_isles.2001
-		}
-	}
-	ai_potential = {
-		is_landed = yes
-		culture = {
-			has_cultural_pillar = heritage_frankish
-		}
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:embrace_english_culture_decision
-			}
-		}
-	}
-	ai_will_do = {
-		base = 0
-	}
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+    ai_check_interval = 36
+    desc = embrace_english_culture_decision_desc
+    is_shown = {
+        is_landed = yes
+        culture = {
+            has_cultural_pillar = heritage_frankish
+        }
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:embrace_english_culture_decision
+            }
+        }
+    }
+    is_valid = {
+        custom_description = {
+            text = capital_in_england_region_tooltip
+            capital_province = {
+                geographical_region = world_europe_west_britannia
+            }
+        }
+    }
+    is_valid_showing_failures_only = {
+        is_imprisoned = no
+        is_available_adult = yes
+    }
+    effect = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:embrace_english_culture_decision
+        }
+        show_as_tooltip = {
+            embrace_english_culture_effect = yes
+        }
+        trigger_event = {
+            id = british_isles.2001
+        }
+    }
+    ai_potential = {
+        is_landed = yes
+        culture = {
+            has_cultural_pillar = heritage_frankish
+        }
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:embrace_english_culture_decision
+            }
+        }
+    }
+    ai_will_do = {
+        base = 0
+    }
 }
 
 free_company_decision = {
-	picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
 
     ai_check_interval = 100
 
-	title = free_company_decision_title
-	desc = free_company_decision_desc
-	selection_tooltip = free_company_decision_tooltip
-	confirm_text = free_company_decision_confirm
+    title = free_company_decision_title
+    desc = free_company_decision_desc
+    selection_tooltip = free_company_decision_tooltip
+    confirm_text = free_company_decision_confirm
 
-	is_shown = {
-		is_ai = no
-		NOT = {
-			has_character_flag = hired_free_company
-		}
-	}
-	cost = {
-		gold = 300
-	}
-	effect = {
-		add_character_flag = {
-			flag = hired_free_company
-		}
-		spawn_army = {
-			levies = 1000
-			men_at_arms = {
-				type = armored_footmen
-				stacks = 1
-			}
-			men_at_arms = {
-				type = pikemen_unit
-				stacks = 2
-			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 3
-			}
-			men_at_arms = {
-				type = light_footmen
-				stacks = 4
-			}
-			location = root.capital_province
-			inheritable = no
-			name = free_company
-		}
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 25
-			stress > low_medium_stress
-		}
-		modifier = {
-			add = 50
-			stress > medium_stress
-		}
-		modifier = {
-			add = 50
-			stress > high_stress
-		}
-	}
+    is_shown = {
+        is_ai = no
+        NOT = {
+            has_character_flag = hired_free_company
+        }
+    }
+    cost = {
+        gold = 300
+    }
+    effect = {
+        add_character_flag = {
+            flag = hired_free_company
+        }
+        spawn_army = {
+            levies = 1000
+            men_at_arms = {
+                type = armored_footmen
+                stacks = 1
+            }
+            men_at_arms = {
+                type = pikemen_unit
+                stacks = 2
+            }
+            men_at_arms = {
+                type = bowmen
+                stacks = 3
+            }
+            men_at_arms = {
+                type = light_footmen
+                stacks = 4
+            }
+            location = root.capital_province
+            inheritable = no
+            name = free_company
+        }
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            add = 25
+            stress > low_medium_stress
+        }
+        modifier = {
+            add = 50
+            stress > medium_stress
+        }
+        modifier = {
+            add = 50
+            stress > high_stress
+        }
+    }
 }
 convert_resources_decision = {
-	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-	title = convert_resources_decision
-	desc = convert_resources_decision_desc
-	selection_tooltip = convert_resources_decision_tip
-	confirm_text = convert_resources_decision_confirm
-	cooldown = {
-		days = 31
-	}
-	effect = {
-		custom_tooltip = convert_resources_decision_effect_tip
-		trigger_event = {
-			id = convert_resources_events_root.0
-		}
-	}
-	ai_check_interval = 31
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+    title = convert_resources_decision
+    desc = convert_resources_decision_desc
+    selection_tooltip = convert_resources_decision_tip
+    confirm_text = convert_resources_decision_confirm
+    cooldown = {
+        days = 31
+    }
+    effect = {
+        custom_tooltip = convert_resources_decision_effect_tip
+        trigger_event = {
+            id = convert_resources_events_root.0
+        }
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 1
+        modifier = {
+            add = 10
+            AND = {
+                gold => 500
+                prestige =< 100
+            }
+        }
+        modifier = {
+            add = 10
+            AND = {
+                gold => 500
+                piety =< 100
+            }
+        }
+        modifier = {
+            add = 10
+            AND = {
+                prestige => 500
+                gold =< 100
+            }
+        }
+    }
 }
