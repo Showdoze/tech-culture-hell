@@ -32,6 +32,28 @@ convert_resources_events_root.0 = { #root
         trigger_event = {
             id = convert_resources_events_root.1 #prestige
         }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -10
+            }
+            modifier = {
+                prestige >= 300
+                add = 10
+            }
+            modifier = {
+                gold <= 200
+                add = 10
+            }
+        }
     }
 
     option = {
@@ -46,6 +68,21 @@ convert_resources_events_root.0 = { #root
         custom_tooltip = convert_resources_events_piety_tip
         trigger_event = {
             id = convert_resources_events_root.2 #piety
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                has_trait = cynical
+                add = 10
+            }
+            modifier = {
+                gold <= 200
+                add = 10
+            }
         }
     }
 
@@ -63,6 +100,25 @@ convert_resources_events_root.0 = { #root
         trigger_event = {
             id = convert_resources_events_root.3 #loan
         }
+        ai_chance = {
+            base = 1
+            modifier = {
+                ai_boldness >= 20
+                add = 20
+            }
+            modifier = {
+                has_trait = ambitious
+                add = 10
+            }
+            modifier = {
+                has_trait = craven
+                add = -20
+            }
+            modifier = {
+                at_war = yes
+                add = 10
+            }
+        }
     }
 
     option = {
@@ -73,6 +129,32 @@ convert_resources_events_root.0 = { #root
         custom_tooltip = convert_resources_events_extortion_tip
         trigger_event = {
             id = convert_resources_events_root.4 #extortion
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = 10
+            }
+            modifier = {
+                has_trait = sadistic
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -20
+            }
+            modifier = {
+                has_trait = compassionate
+                add = -80
+            }
+            modifier = {
+                at_war = yes
+                add = 10
+            }
         }
     }
 
@@ -89,6 +171,24 @@ convert_resources_events_root.0 = { #root
         trigger_event = {
             id = convert_resources_events_root.5 #give loan
         }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = -20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 10
+            }
+            modifier = {
+                gold >= 500
+                add = 10
+            }
+        }
     }
 
     option = {
@@ -104,6 +204,28 @@ convert_resources_events_root.0 = { #root
         trigger_event = {
             id = convert_resources_events_root.60 #charity
         }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = -20
+            }
+            modifier = {
+                has_trait = cynical
+                add = -10
+            }
+            modifier = {
+                has_trait = zealous
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 15
+            }
+        }
     }
 
     option = {
@@ -115,6 +237,24 @@ convert_resources_events_root.0 = { #root
         custom_tooltip = convert_resources_events_provisions_tip
         trigger_event = {
             id = convert_resources_events_root.71 #provisions sell
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -10
+            }
+            modifier = {
+                gold <= 50
+                add = 10
+            }
         }
     }
 
@@ -157,6 +297,20 @@ convert_resources_events_root.1 = { #prestige
         name = convert_resources_events_prestige_s1
         add_gold = 100
         add_prestige = -200
+        ai_chance = {
+            base = 1
+            modifier = {
+                has_trait = greedy
+                add = 2
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -2
+            }
+        }
     }
 
     option = {
@@ -166,6 +320,20 @@ convert_resources_events_root.1 = { #prestige
         name = convert_resources_events_prestige_s2
         add_gold = 200
         add_prestige = -400
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 5
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -5
+            }
+        }
+
     }
 
     option = {
@@ -175,6 +343,20 @@ convert_resources_events_root.1 = { #prestige
         name = convert_resources_events_prestige_s3
         add_gold = 500
         add_prestige = -1000
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -10
+            }
+        }
+
     }
 
     option = {
@@ -184,6 +366,20 @@ convert_resources_events_root.1 = { #prestige
         name = convert_resources_events_prestige_s4
         add_gold = 1000
         add_prestige = -2000
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -20
+            }
+        }
+
     }
 
     option = {
@@ -216,6 +412,27 @@ convert_resources_events_root.2 = { #piety
         name = convert_resources_events_piety_s1
         add_gold = 100
         add_piety = -200
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 5
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -5
+            }
+            modifier = {
+                has_trait = cynical
+                add = 10
+            }
+            modifier = {
+                has_trait = zealous
+                add = -50
+            }
+        }
     }
 
     option = {
@@ -225,6 +442,27 @@ convert_resources_events_root.2 = { #piety
         name = convert_resources_events_piety_s2
         add_gold = 200
         add_piety = -400
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -10
+            }
+            modifier = {
+                has_trait = cynical
+                add = 10
+            }
+            modifier = {
+                has_trait = zealous
+                add = -80
+            }
+        }
     }
 
     option = {
@@ -234,6 +472,27 @@ convert_resources_events_root.2 = { #piety
         name = convert_resources_events_piety_s3
         add_gold = 500
         add_piety = -1000
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 15
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -15
+            }
+            modifier = {
+                has_trait = cynical
+                add = 10
+            }
+            modifier = {
+                has_trait = zealous
+                add = -150
+            }
+        }
     }
 
     option = {
@@ -243,6 +502,27 @@ convert_resources_events_root.2 = { #piety
         name = convert_resources_events_piety_s4
         add_gold = 1000
         add_piety = -2000
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = -20
+            }
+            modifier = {
+                has_trait = cynical
+                add = 10
+            }
+            modifier = {
+                has_trait = zealous
+                add = -200
+            }
+        }
     }
 
     option = {
@@ -284,6 +564,19 @@ convert_resources_events_root.3 = { #loan
             modifier = pay_back_small_loan
             years = 5
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 20
+            }
+        }
     }
 
     option = {
@@ -298,6 +591,19 @@ convert_resources_events_root.3 = { #loan
         add_character_modifier = {
             modifier = pay_back_reasonable_loan
             years = 6
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -30
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 30
+            }
         }
     }
 
@@ -314,6 +620,19 @@ convert_resources_events_root.3 = { #loan
             modifier = pay_back_considerable_loan
             years = 10
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -50
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 50
+            }
+        }
     }
 
     option = {
@@ -328,6 +647,19 @@ convert_resources_events_root.3 = { #loan
         add_character_modifier = {
             modifier = pay_back_large_loan
             years = 15
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -100
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                }
+                add = 70
+            }
         }
     }
 
@@ -362,6 +694,24 @@ convert_resources_events_root.4 = { #extortion
         add_gold = 150
         add_dread = 10
         add_tyranny = 20
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 10
+            }
+            modifier = {
+                has_trait = sadistic
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -10
+            }
+        }
     }
 
     option = {
@@ -369,6 +719,24 @@ convert_resources_events_root.4 = { #extortion
         add_gold = 300
         add_dread = 20
         add_tyranny = 40
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 15
+            }
+            modifier = {
+                has_trait = sadistic
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -20
+            }
+        }
     }
 
     option = {
@@ -376,6 +744,24 @@ convert_resources_events_root.4 = { #extortion
         add_gold = 500
         add_dread = 30
         add_tyranny = 60
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                has_trait = sadistic
+                add = 30
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -30
+            }
+        }
     }
 
     option = {
@@ -383,6 +769,24 @@ convert_resources_events_root.4 = { #extortion
         add_gold = 1000
         add_dread = 40
         add_tyranny = 100
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 25
+            }
+            modifier = {
+                has_trait = sadistic
+                add = 50
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -50
+            }
+        }
     }
 
     option = {
@@ -424,6 +828,20 @@ convert_resources_events_root.5 = { #give loan
             modifier = gain_from_small_loan
             years = 5
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -10
+            }
+        }
     }
 
     option = {
@@ -439,6 +857,20 @@ convert_resources_events_root.5 = { #give loan
         add_character_modifier = {
             modifier = gain_from_reasonable_loan
             years = 6
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -20
+            }
         }
     }
 
@@ -457,6 +889,20 @@ convert_resources_events_root.5 = { #give loan
             modifier = gain_from_considerable_loan
             years = 8
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 30
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -30
+            }
+        }
     }
 
     option = {
@@ -473,6 +919,20 @@ convert_resources_events_root.5 = { #give loan
         add_character_modifier = {
             modifier = gain_from_large_loan
             years = 14
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 40
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = -40
+            }
         }
     }
 
@@ -508,6 +968,20 @@ convert_resources_events_root.60 = { #charity root
         trigger_event = {
             id = convert_resources_events_root.61 #charity prestige
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -50
+            }
+            modifier = {
+                OR = {
+                    has_trait = generous
+                    has_trait = content
+                    has_trait = compassionate
+                }
+                add = 20
+            }
+        }
     }
 
     option = {
@@ -515,6 +989,26 @@ convert_resources_events_root.60 = { #charity root
         custom_tooltip = convert_resources_events_charity_piety_tip
         trigger_event = {
             id = convert_resources_events_root.62 #charity piety
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = zealous
+                add = 50
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 10
+            }
+            modifier = {
+                OR = {
+                    has_trait = cynical
+                    has_trait = greedy
+                }
+                add = -50
+            }
         }
     }
 
@@ -552,6 +1046,19 @@ convert_resources_events_root.61 = { #charity prestige
             modifier = donated_to_charity_prestige_100
             days = 30
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -20
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 10
+            }
+        }
     }
 
     option = {
@@ -564,6 +1071,19 @@ convert_resources_events_root.61 = { #charity prestige
         add_character_modifier = {
             modifier = donated_to_charity_prestige_500
             days = 30
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -30
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 20
+            }
         }
     }
 
@@ -578,6 +1098,19 @@ convert_resources_events_root.61 = { #charity prestige
             modifier = donated_to_charity_prestige_1000
             days = 60
         }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -40
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 30
+            }
+        }
     }
 
     option = {
@@ -590,6 +1123,19 @@ convert_resources_events_root.61 = { #charity prestige
         add_character_modifier = {
             modifier = donated_to_charity_prestige_2000
             days = 60
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = -50
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 40
+            }
         }
     }
 
@@ -627,6 +1173,23 @@ convert_resources_events_root.62 = { #charity piety
             modifier = donated_to_charity_piety_100
             days = 30
         }
+        ai_chance = {
+            modifier = {
+                has_trait = cynical
+                add = -20
+            }
+            modifier = {
+                has_trait = zealous
+                add = 30
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 10
+            }
+        }
     }
 
     option = {
@@ -639,6 +1202,23 @@ convert_resources_events_root.62 = { #charity piety
         add_character_modifier = {
             modifier = donated_to_charity_piety_500
             days = 30
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = cynical
+                add = -30
+            }
+            modifier = {
+                has_trait = zealous
+                add = 50
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 20
+            }
         }
     }
 
@@ -653,6 +1233,23 @@ convert_resources_events_root.62 = { #charity piety
             modifier = donated_to_charity_piety_1000
             days = 60
         }
+        ai_chance = {
+            modifier = {
+                has_trait = cynical
+                add = -40
+            }
+            modifier = {
+                has_trait = zealous
+                add = 80
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 30
+            }
+        }
     }
 
     option = {
@@ -665,6 +1262,23 @@ convert_resources_events_root.62 = { #charity piety
         add_character_modifier = {
             modifier = donated_to_charity_piety_2000
             days = 60
+        }
+        ai_chance = {
+            modifier = {
+                has_trait = cynical
+                add = -50
+            }
+            modifier = {
+                has_trait = zealous
+                add = 100
+            }
+            modifier = {
+                OR = {
+                    has_trait = content
+                    has_trait = generous
+                }
+                add = 40
+            }
         }
     }
 
@@ -695,6 +1309,16 @@ convert_resources_events_root.71 = { #provisions sell
             change_provisions = -200
         }
         add_gold = tr_trade_low_price #25 gold base
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 20
+            }
+            modifier = {
+                has_trait = generous
+                add = -20
+            }
+        }
     }
 
     option = {
@@ -703,6 +1327,16 @@ convert_resources_events_root.71 = { #provisions sell
             change_provisions = -500
         }
         add_gold = tr_trade_medium_price #50 gold base
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 30
+            }
+            modifier = {
+                has_trait = generous
+                add = -30
+            }
+        }
     }
 
     option = {
@@ -711,6 +1345,16 @@ convert_resources_events_root.71 = { #provisions sell
             change_provisions = -1000
         }
         add_gold = tr_trade_high_price #80 gold base
+        ai_chance = {
+            modifier = {
+                has_trait = greedy
+                add = 40
+            }
+            modifier = {
+                has_trait = generous
+                add = -40
+            }
+        }
     }
 
     option = {
