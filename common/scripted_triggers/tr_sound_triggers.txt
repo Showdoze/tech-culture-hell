@@ -3,124 +3,120 @@
 #################################################
 
 is_muslim = {
-  religion = religion:islam_religion
+    character:religion = religion:islam_religion
 }
 
 is_orthodox = {
-  OR = {
-    faith = faith:orthodox
-		faith = faith:iconoclast
-		faith = faith:bogomilist
-		faith = faith:paulician
+    OR = {
+        character:faith = faith:orthodox
+        character:faith = faith:iconoclast
+        character:faith = faith:bogomilist
+        character:faith = faith:paulician
     }
 }
 
 is_european_pagan = {
-   OR = {
-      religion = religion:finno_ugric_religion
-      religion = religion:basque_paganism_religion
-      religion = religion:basque_religion
-      religion = religion:hellenism_religion
-      religion = religion:siberian_religion
-      religion = religion:paganism_religion
-      religion = religion:baltic_religion
-      religion = religion:celtic_religion
-      #religion = religion:
-	}
+    OR = {
+        character:religion = religion:finno_ugric_religion
+        character:religion = religion:basque_paganism_religion
+        character:religion = religion:basque_religion
+        character:religion = religion:hellenism_religion
+        character:religion = religion:siberian_religion
+        character:religion = religion:paganism_religion
+        character:religion = religion:baltic_religion
+        character:religion = religion:celtic_religion
+        #religion = religion:
+    }
 }
 
 is_viking = {
-	religion = religion:germanic_religion
+    character:religion = religion:germanic_religion
 }
 
-is_slavic = { 
-  OR = {
-    religion = religion:slavic_religion   
-		culture = { has_cultural_pillar = heritage_west_slavic}
-		culture = { has_cultural_pillar = heritage_east_slavic}
-		culture = { has_cultural_pillar = heritage_south_slavic}
-  }
+is_slavic = {
+    OR = {
+        character:religion = religion:slavic_religion
+        character:culture = { has_cultural_pillar = heritage_west_slavic}
+        character:culture = { has_cultural_pillar = heritage_east_slavic}
+        character:culture = { has_cultural_pillar = heritage_south_slavic}
+    }
 }
 
-is_slavicpagan = { religion = religion:slavic_religion  }
+is_slavicpagan = {
+    character:religion = religion:slavic_religion
+}
 
 is_africa = {
-  OR = {
-    religion = religion:west_african
-    religion = religion:west_african_bori
-    religion = religion:west_african_orisha
-    religion = religion:west_african_roog
-    religion = religion:akom
-    culture = { has_cultural_pillar = heritage_west_african}
-    culture = { has_cultural_pillar = heritage_yoruba}
-    culture = { has_cultural_pillar = heritage_senegambian}
-    culture = { has_cultural_pillar = heritage_sahelian}
-    culture = { has_cultural_pillar = heritage_akan}
-    culture = { has_cultural_pillar = heritage_central_african}
-  }
+    OR = {
+        character:religion = religion:west_african
+        character:religion = religion:west_african_bori
+        character:religion = religion:west_african_orisha
+        character:religion = religion:west_african_roog
+        character:religion = religion:akom
+        character:culture = { has_cultural_pillar = heritage_west_african}
+        character:culture = { has_cultural_pillar = heritage_yoruba}
+        character:culture = { has_cultural_pillar = heritage_senegambian}
+        character:culture = { has_cultural_pillar = heritage_sahelian}
+        character:culture = { has_cultural_pillar = heritage_akan}
+        character:culture = { has_cultural_pillar = heritage_central_african}
+    }
 }
 
 is_celtic = {
-  OR = {
-    culture = { has_cultural_pillar = heritage_brythonic}
-    culture = { has_cultural_pillar = heritage_goidelic}
-    religion = religion:celtic_religion
-  }
+    OR = {
+        character:culture = { has_cultural_pillar = heritage_brythonic}
+        character:culture = { has_cultural_pillar = heritage_goidelic}
+        character:religion = religion:celtic_religion
+    }
 }
 
 is_tengri = {
-  religion = religion:tengrism_religion   
+    character:religion = religion:tengrism_religion
 }
 is_saiyan = {
-  OR = {
-    culture = culture:saiyan
-    this = culture:saiyan
-  }
+    OR = {
+        character:culture = culture:saiyan
+    }
 }
 is_roman = {
-  OR = {
-    culture = culture:roman
-    this = culture:roman
-  }
+    OR = {
+        character:culture = culture:roman
+    }
 }
 is_redguard = {
-  OR = {
-    culture = culture:alikr
-    this = culture:alikr
-  }
+    OR = {
+        character:culture = culture:alikr
+    }
 }
 is_high_elf = {
-  OR = {
-    culture = culture:altmer
-    this = culture:altmer
-  }
+    OR = {
+        character:culture = culture:altmer
+    }
 }
 is_wood_elf = {
-  OR = {
-    culture = culture:bosmer
-    this = culture:bosmer
-  }
+    OR = {
+        character:culture = culture:bosmer
+    }
 }
 is_orc = {
-  OR = {
-    culture = culture:warsong
-    this = culture:warsong
-  }
+    OR = {
+        character:culture = culture:warsong
+    }
+}
 is_breton = {
-  OR = {
-    culture = culture:glenumbran
-    this = culture:glenumbran
-  }
+    OR = {
+        character:culture = culture:glenumbran
+    }
 }
 is_carthage = {
-  OR = {
-    culture = { has_cultural_pillar = heritage_punic }
-    religion = religion:levantine_religion
-  }  
+    OR = {
+        character:culture = { has_cultural_pillar = heritage_punic }
+        character:religion = religion:levantine_religion
+    }
 }
 is_chinese = {
-  culture = { has_cultural_pillar = heritage_chinese }
+    character:culture = { has_cultural_pillar = heritage_chinese }
 }
 is_japanese = {
-  culture = { has_cultural_pillar = heritage_japanese }
+    character:culture = { has_cultural_pillar = heritage_japanese }
 }
