@@ -52,7 +52,7 @@ ds1_event.02 = { # not really a decision rather using its namespace to not make 
     trigger = {
         AND = {
             NOT = {
-                has_trait = trait_hollow
+                has_trait = hollow
             }
             root.faith = faith:dark_souls_faith
         }
@@ -84,6 +84,6 @@ ds1_event.02 = { # not really a decision rather using its namespace to not make 
 
     immediate = {
         play_music_cue = "mx_cue_illness"
-        add_trait = trait_hollow
+        add_trait = hollow
     }
 }
