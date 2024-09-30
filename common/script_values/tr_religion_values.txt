@@ -31,16 +31,96 @@ excommunication_cb_piety_change_multiplier = 4
 excommunication_cb_piety_white_peace = -50
 
 faith_doctrine_cost_none = 0
-faith_doctrine_cost_low = 10
-faith_doctrine_cost_mid = 50
-faith_doctrine_cost_high = 100
-faith_doctrine_cost_massive = 250
+faith_doctrine_cost_low = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		10
+	}
+}
+faith_doctrine_cost_mid = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		50
+	}
+}
+faith_doctrine_cost_high = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		100
+	}
+}
+faith_doctrine_cost_massive = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		300
+	}
+}
 
 faith_tenet_cost_none = 0
-faith_tenet_cost_low = 50
-faith_tenet_cost_mid = 100
-faith_tenet_cost_high = 250
-faith_tenet_cost_massive = 500
+faith_tenet_cost_low = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		50
+	}
+}
+faith_tenet_cost_mid = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		100
+	}
+}
+faith_tenet_cost_high = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		250
+	}
+}
+faith_tenet_cost_massive = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		multipty = 2
+	}
+	else = {
+		500
+	}
+}
 
 faith_unchanged_doctrine_cost_none = 0
 faith_unchanged_doctrine_cost_mult = 0.5
