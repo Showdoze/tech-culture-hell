@@ -1,0 +1,112 @@
+tr_base_tiny_price = 5
+tr_base_low_price = 20
+tr_base_medium_price = 50
+tr_base_high_price = 80
+tr_base_massive_price = 120
+tr_base_insane_price = 200
+
+tr_correction_value = {
+    fixed_range = {
+        min = 0.85
+        max = 1.15
+    }
+}
+
+tr_era_price_correction = {
+    value = 1
+    if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_antiquity }
+        }
+        multiply = 0.5
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_tribal }
+        }
+        multiply = 0.8
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_early_medieval }
+        }
+        multiply = 1.2
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_high_medieval }
+        }
+        multiply = 1.4
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_late_medieval }
+        }
+        multiply = 1.7
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_renaissance }
+        }
+        multiply = 2
+    }
+    else_if = {
+        limit = {
+            culture = { has_cultural_era_or_later = culture_era_industrial }
+        }
+        multiply = 2.25
+    }
+    else = { multiply = 1 }
+}
+
+tr_culture_price_correction = {
+    value = 1
+}
+
+tr_trade_tiny_price = {
+    value = tr_culture_tiny_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
+
+tr_trade_low_price = {
+    value = tr_culture_low_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
+
+tr_trade_medium_price = {
+    value = tr_culture_medium_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
+
+tr_trade_high_price = {
+    value = tr_culture_high_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
+
+tr_trade_massive_price = {
+    value = tr_culture_massive_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
+
+tr_trade_insane_price = {
+    value = tr_culture_insane_price
+    multiply = tr_era_price_correction
+    multiply = tr_culture_price_correction
+    multiply = tr_correction_value
+    round = yes
+}
