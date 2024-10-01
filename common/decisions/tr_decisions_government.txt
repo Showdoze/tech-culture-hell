@@ -1,401 +1,478 @@
 ﻿change_government_autocracy_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
-	}
-	desc = change_government_autocracy_decision_desc
-	selection_tooltip = change_government_autocracy_decision_tooltip
-	ai_check_interval = 185
-	sort_order = 1
-	cooldown = {
-		days = 365
-	}
-	cost = {
-		prestige = 1000
-		gold = 1500
-	}
-	is_shown = {
-		NOT = { government_has_flag = government_is_autocracy }
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			is_landed = yes
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-		}
-	}
-	effect = {
-		capital_province = {
-			limit = {
-				If = {
-					has_holding_type = tribal_holding
-				}
-			}
-			set_holding_type = castle_holding
-		}
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = autocracy_government
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 5
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+    }
+    desc = change_government_autocracy_decision_desc
+    selection_tooltip = change_government_autocracy_decision_tooltip
+    ai_check_interval = 185
+    sort_order = 1
+    cooldown = {
+        days = 365
+    }
+    cost = {
+        prestige = 1000
+        gold = 1500
+    }
+    is_shown = {
+        NOT = { government_has_flag = government_is_autocracy }
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            is_landed = yes
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+        }
+    }
+    effect = {
+        capital_province = {
+            limit = {
+                If = {
+                    has_holding_type = tribal_holding
+                }
+            }
+            set_holding_type = castle_holding
+        }
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = autocracy_government
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            OR = {
+                has_trait = greedy
+                has_trait = callous
+                has_trait = sadistic
+            }
+            add = 10
+        }
+    }
 }
 
 change_government_caliphate_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-	}
-	desc = change_government_caliphate_decision_desc
-	selection_tooltip = change_government_caliphate_decision_tooltip
-	ai_check_interval = 185
-	sort_order = 1
-	cooldown = {
-		days = 365
-	}
-	cost = {
-		prestige = 500
-		gold = 500
-		piety = 1000
-	}
-	is_shown = {
-		NOT = {
-			government_has_flag = government_is_caliphate
-		}
-		government_has_flag = government_is_clan
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			is_landed = yes
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-			government_has_flag = government_is_clan
-			root.faith.religion = religion:islam_religion
-			piety_level >= 4
-		}
-	}
-	effect = {
-		capital_province = {
-			limit = {
-				If = {
-					has_holding_type = tribal_holding
-				}
-			}
-			set_holding_type = castle_holding
-		}
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = caliphate_government
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 5
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+    }
+    desc = change_government_caliphate_decision_desc
+    selection_tooltip = change_government_caliphate_decision_tooltip
+    ai_check_interval = 185
+    sort_order = 1
+    cooldown = {
+        days = 365
+    }
+    cost = {
+        prestige = 500
+        gold = 500
+        piety = 1000
+    }
+    is_shown = {
+        NOT = {
+            government_has_flag = government_is_caliphate
+        }
+        government_has_flag = government_is_clan
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            is_landed = yes
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+            government_has_flag = government_is_clan
+            root.faith.religion = religion:islam_religion
+            piety_level >= 4
+        }
+    }
+    effect = {
+        capital_province = {
+            limit = {
+                If = {
+                    has_holding_type = tribal_holding
+                }
+            }
+            set_holding_type = castle_holding
+        }
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = caliphate_government
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            has_government = clan_government
+            add = 50
+        }
+    }
 }
 
 change_government_clan_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-	}
-	desc = change_government_clan_decision_desc
-	selection_tooltip = change_government_clan_decision_tooltip
-	sort_order = 1
-	ai_check_interval = 185
-	cooldown = {
-		days = 365
-	}
-	cost = {
-		prestige = 200
-		gold = 200
-	}
-	is_shown = {
-		NOT = { government_has_flag = government_is_clan }
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			is_landed = yes
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-			root.faith.religion = religion:islam_religion
-		}
-	}
-	effect = {
-		capital_province = {
-			limit = {
-				OR = {
-					has_holding_type = tribal_holding
-					has_holding_type = city_holding
-					has_holding_type = church_holding
-				}
-			}
-			set_holding_type = castle_holding
-		}
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = clan_government
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 5
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+    }
+    desc = change_government_clan_decision_desc
+    selection_tooltip = change_government_clan_decision_tooltip
+    sort_order = 1
+    ai_check_interval = 185
+    cooldown = {
+        days = 365
+    }
+    cost = {
+        prestige = 200
+        gold = 200
+    }
+    is_shown = {
+        NOT = { government_has_flag = government_is_clan }
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            is_landed = yes
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+            root.faith.religion = religion:islam_religion
+        }
+    }
+    effect = {
+        capital_province = {
+            limit = {
+                OR = {
+                    has_holding_type = tribal_holding
+                    has_holding_type = city_holding
+                    has_holding_type = church_holding
+                }
+            }
+            set_holding_type = castle_holding
+        }
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = clan_government
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            scope:religion = religion:islam_religion
+            add = 50
+        }
+        modifier = {
+            has_government = tribal_government
+            add = 10
+        }
+    }
 }
 
 convert_whole_realm_to_feudalism_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
-	}
-	desc = convert_whole_realm_to_feudalism_decision_desc
-	sort_order = 1
-	ai_check_interval = 185
-	cooldown = {
-		days = 365
-	}
-	cost = {
-		prestige = 200
-		gold = 200
-	}
-	is_shown = {
-		NOT = { government_has_flag = government_is_feudal }
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			is_landed = yes
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-		}
-	}
-	effect = {
-		capital_province = {
-			limit = {
-				OR = {
-					has_holding_type = tribal_holding
-					has_holding_type = city_holding
-					has_holding_type = church_holding
-				}
-			}
-			set_holding_type = castle_holding
-		}
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = feudal_government
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 50
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+    }
+    desc = convert_whole_realm_to_feudalism_decision_desc
+    sort_order = 1
+    ai_check_interval = 185
+    cooldown = {
+        days = 365
+    }
+    cost = {
+        prestige = 200
+        gold = 200
+    }
+    is_shown = {
+        NOT = { government_has_flag = government_is_feudal }
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            is_landed = yes
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+        }
+    }
+    effect = {
+        capital_province = {
+            limit = {
+                OR = {
+                    has_holding_type = tribal_holding
+                    has_holding_type = city_holding
+                    has_holding_type = church_holding
+                }
+            }
+            set_holding_type = castle_holding
+        }
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = feudal_government
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            scope:religion = religion:islam_religion
+            add = -50
+        }
+        modifier = {
+            OR = {
+                has_government = clan_government
+                has_government = caliphate_government
+                has_government = autocracy_government
+            }
+            add = -20
+        }
+        modifier = {
+            has_government = tribal_government
+            add = 20
+        }
+    }
 }
 
 change_government_republic_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
-	}
-	desc = change_government_republic_decision_desc
-	selection_tooltip = change_government_republic_decision_tooltip
-	sort_order = 1
-	ai_check_interval = 185
-	
-	cost = {
-		prestige = 500
-		gold = 500
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+    }
+    desc = change_government_republic_decision_desc
+    selection_tooltip = change_government_republic_decision_tooltip
+    sort_order = 1
+    ai_check_interval = 185
 
-	cooldown = {
-		days = 365
-	}
+    cost = {
+        prestige = 500
+        gold = 500
+    }
 
-	is_shown = {
-		NOT = { government_has_flag = government_is_republic }
-		is_landed = yes
-	}
+    cooldown = {
+        days = 365
+    }
 
-	is_valid = {
-		AND = {
-			is_landed = yes
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-			prestige_level >= 3
-		}
-	}
+    is_shown = {
+        NOT = { government_has_flag = government_is_republic }
+        is_landed = yes
+    }
 
-	effect = {
-		capital_province = {
-			limit = {
-				OR = {
-					has_holding_type = church_holding
-					has_holding_type = tribal_holding
-				}
-			}
-			set_holding_type = city_holding
-		}
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = republic_government
-		add_realm_law = city_succession_law
-		primary_title = {
-			add_title_law = feudal_elective_succession_law
-		}
-	}
+    is_valid = {
+        AND = {
+            is_landed = yes
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+            prestige_level >= 3
+        }
+    }
 
-	ai_potential = {
-		always = yes
-	}
+    effect = {
+        capital_province = {
+            limit = {
+                OR = {
+                    has_holding_type = church_holding
+                    has_holding_type = tribal_holding
+                }
+            }
+            set_holding_type = city_holding
+        }
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = republic_government
+        add_realm_law = city_succession_law
+        primary_title = {
+            add_title_law = feudal_elective_succession_law
+        }
+    }
 
-	ai_will_do = {
-		base = 10
-	}
+    ai_potential = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 0
+        modifier = {
+            OR = {
+                has_government = clan_government
+                has_government = caliphate_government
+                has_government = autocracy_government
+            }
+            add = -20
+        }
+        modifier = {
+            has_government = tribal_government
+            add = 10
+        }
+    }
 }
 
 change_government_theocracy_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-	}
-	desc = change_government_theocracy_decision_desc
-	selection_tooltip = change_government_theocracy_decision_tooltip
-	sort_order = 1
-	ai_check_interval = 185
-	cost = {
-		piety = 1000
-		gold = 100
-	}
-	cooldown = {
-		days = 365
-	}
-	is_shown = {
-		NOT = { government_has_flag = government_is_theocracy }
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			OR = {
-				has_realm_law = crown_authority_3
-				has_realm_law = tribal_authority_3
-			}
-			culture = {
-				NOT = {
-					has_cultural_tradition = tradition_atheism
-				}
-			}
-			faith = {
-				NOT = {
-					has_doctrine_parameter = unreformed
-				}
-			}
-		    piety_level >= 3
-		}
-	}
-	effect = {
-		tr_replace_tribal_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = theocracy_government
-		every_vassal = {
-			if = {
-				limit = {
-					has_trait = cynical
-				}
-			}
-			opnion_of_liege = {
-				subtract = 50
-			}
-		}
-		add_realm_law = bishop_theocratic_succession_law
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 5
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    desc = change_government_theocracy_decision_desc
+    selection_tooltip = change_government_theocracy_decision_tooltip
+    sort_order = 1
+    ai_check_interval = 185
+    cost = {
+        piety = 1000
+        gold = 100
+    }
+    cooldown = {
+        days = 365
+    }
+    is_shown = {
+        NOT = { government_has_flag = government_is_theocracy }
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            OR = {
+                has_realm_law = crown_authority_3
+                has_realm_law = tribal_authority_3
+            }
+            culture = {
+                NOT = {
+                    has_cultural_tradition = tradition_atheism
+                }
+            }
+            faith = {
+                NOT = {
+                    has_doctrine_parameter = unreformed
+                }
+            }
+            piety_level >= 3
+        }
+    }
+    effect = {
+        tr_replace_tribal_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = theocracy_government
+        every_vassal = {
+            if = {
+                limit = {
+                    has_trait = cynical
+                }
+            }
+            opnion_of_liege = {
+                subtract = 50
+            }
+        }
+        add_realm_law = bishop_theocratic_succession_law
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            has_government = tribal_government
+            add = 10
+        }
+        modifier = {
+            has_trait = zealous
+            add = 40
+        }
+        modifier = {
+            OR = {
+                has_government = clan_government
+                has_government = caliphate_government
+                has_government = autocracy_government
+            }
+            add = -20
+        }
+    }
 }
 
 convert_to_tribalism_decision = {
-	decision_group_type = major
-	picture =  { 
-		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	}
-	desc = convert_to_tribalism_decision_desc
-	ai_check_interval = 185
-	sort_order = 1
-	cooldown = {
-		days = 50
-	}
-	cost = {
-		prestige = 200
-		piety = 100
-	}
-	is_shown = {
-		NOT = { government_has_flag = government_is_tribal }
-		is_landed = yes
-	}
-	is_valid = {
-		AND = {
-			is_landed = yes
-			has_realm_law = crown_authority_3
-			primary_title.tier <= tier_empire
-		}
-	}
-	effect = {
-		capital_province = {
-			limit = {
-				OR = {
-					has_holding_type = church_holding
-					has_holding_type = city_holding
-				}
-			}
-			set_holding_type = tribal_holding
-			development = {
-				subtract = 100
-			}
-		}
-		tr_replace_crown_authority = yes
-		trigger_event = tr_gov_change.01
-		change_government = tribal_government
-		every_vassal = {
-			opnion_of_liege = {
-				subtract = 50
-			}
-		}
-		add_prestige = {
-			add = -500
-		}
-		hidden_effect = {
-			add_character_flag = {
-				flag = just_converted_to_tribalism
-				years = 5
-			}
-		}
-	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 1
-	}
+    decision_group_type = major
+    picture =  {
+        reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+    }
+    desc = convert_to_tribalism_decision_desc
+    ai_check_interval = 185
+    sort_order = 1
+    cooldown = {
+        days = 50
+    }
+    cost = {
+        prestige = 200
+        piety = 100
+    }
+    is_shown = {
+        NOT = { government_has_flag = government_is_tribal }
+        is_landed = yes
+    }
+    is_valid = {
+        AND = {
+            is_landed = yes
+            has_realm_law = crown_authority_3
+            primary_title.tier <= tier_empire
+        }
+    }
+    effect = {
+        capital_province = {
+            limit = {
+                OR = {
+                    has_holding_type = church_holding
+                    has_holding_type = city_holding
+                }
+            }
+            set_holding_type = tribal_holding
+            development = {
+                subtract = 100
+            }
+        }
+        tr_replace_crown_authority = yes
+        trigger_event = tr_gov_change.01
+        change_government = tribal_government
+        every_vassal = {
+            opnion_of_liege = {
+                subtract = 50
+            }
+        }
+        add_prestige = {
+            add = -500
+        }
+        hidden_effect = {
+            add_character_flag = {
+                flag = just_converted_to_tribalism
+                years = 5
+            }
+        }
+    }
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 0
+        modifier = {
+            NOT = {
+                has_government = tribal_government
+            }
+            add = -80
+        }
+        modifier = {
+            OR = {
+                has_trait = lunatic
+                has_trait = possessed
+            }
+            add = 50
+        }
+    }
 }
