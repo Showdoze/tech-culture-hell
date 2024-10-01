@@ -389,6 +389,10 @@ change_government_theocracy_decision = {
             add = 40
         }
         modifier = {
+            has_trait = cynical
+            add = -40
+        }
+        modifier = {
             OR = {
                 has_government = clan_government
                 has_government = caliphate_government
