@@ -48,12 +48,13 @@ tr_access_single_heir_succession_law_trigger = {
 can_raid_trigger = {
 	OR = {
 		is_ai = no
-		government_has_flag = government_can_raid_rule
+		#government_has_flag = government_can_raid_rule
 		faith = faith:iconoclast
 		has_trait = reaver
 		has_trait = greedy
 		has_trait = sadistic
 		has_trait = viking
+		gold < 0
 		faith = {
 			has_doctrine_parameter = faith_can_raid
 		}
