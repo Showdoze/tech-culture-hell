@@ -11,7 +11,7 @@ tr_birth.01 = {
         if = {
             limit = {
                 AND = {
-                    scope:father.primary_title.tier = empire
+                    scope:father.title.tier = empire
                     NOR = {
                         scope:father.culture = { has_cultural_pillar = heritage_byzantine }
                         scope:child = { has_trait = born_in_the_purple }
