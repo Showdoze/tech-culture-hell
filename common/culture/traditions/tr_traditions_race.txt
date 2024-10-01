@@ -631,7 +631,43 @@ tradition_hyrule = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
-
+tradition_thief_city = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = thief_city.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		innovation_from_learning_traits = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+		castle_fortifications_increase = yes
+		castle_grant_prestige = yes
+		architect_trait_prestige = yes
+		next_level_guild_halls = yes
+		city_buildings_more_county_opinion = yes
+		ai_more_likely_to_castle = yes
+		ai_more_likely_to_fortify = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		bonuses_from_patriarch_matriarch_trait = yes
+		cultural_house_personal_scheme_success_chance = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		legalistic_administrator_bonuses = yes
+	}
+	character_modifier = {
+		diplomatic_range_mult = 3
+		short_reign_duration_mult = 0.5
+		ignore_negative_opinion_of_culture = yes
+		ai_zeal = 25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+}
 #ELDER SCROLLS #
  tradition_bosmer = {
 	category = regional
@@ -918,6 +954,9 @@ tradition_hyrule = {
 		extra_learn_language_success_chance_vs_liege = yes
 		learns_more_languages = yes
 		commanders_likelier_to_gain_commander_traits = yes
+		extra_language_cap_2 = yes
+		astute_diplomat_bonus = yes
+		courtiers_and_guests_less_likely_to_join_schemes = yes
 	}
 	character_modifier = {
 		life_expectancy = 12
