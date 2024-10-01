@@ -302,6 +302,13 @@ convert_resources_decision = {
         modifier = {
             add = 10
             AND = {
+                gold < 100
+                piety > 500
+            }
+        }
+        modifier = {
+            add = 10
+            AND = {
                 gold > 500
                 piety < 100
             }
