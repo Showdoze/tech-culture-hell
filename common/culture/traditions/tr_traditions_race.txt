@@ -15,6 +15,9 @@
 	}
 	parameters = {
 		warmonger = yes
+		less_likely_to_culture_convert = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
 		ambitious_trait_more_common = yes
 		gain_gold_from_battles = yes
 		clergy_can_fight = yes
@@ -536,6 +539,7 @@ tradition_korean = {
 	is_shown = { always = no }
 	parameters = {
 		piety_from_language_schemes = yes
+		just_trait_gives_bonuses = yes
 		peasant_and_populist_factions_less_common = yes
 		republican_vassals_pay_more = yes
 		poorly_educated_leaders_distrusted = yes
@@ -592,7 +596,93 @@ traditon_hidden_village = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
-
+tradition_mando = {
+	category = combat
+	layers = {
+		0 = martial
+		1 = western
+		4 = sw_mando.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:mandalorian
+			any_parent_culture_or_above = {
+				this = culture:mandalorian
+			}
+		}
+	}
+	parameters = {
+		ambitious_trait_more_common = yes
+		has_access_to_shieldmaidens = yes
+		diligent_trait_more_common = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+		has_access_to_trials_by_combat = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		craven_trait_costs_prestige = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		more_expensive_feasts = yes
+		hunting_traits_more_valued = yes
+		doesnt_care_about_culture_faith_in_factions = yes
+		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		less_likely_to_culture_convert = yes
+		blademaster_traits_give_learning = yes
+		allows_noble_family_adoption = yes
+		can_host_joust_contests = yes
+		knight_errant_trait_bonuses = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		counter_efficiency = 0.1
+		knight_effectiveness_mult = 10
+		supply_capacity_mult = 0.2
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		prowess_per_prestige_level = 1
+		travel_danger = -20
+		revolting_siege_morale_loss_mult = 0.2
+		character_travel_safety_mult = 0.1
+		retreat_losses = -0.1
+		hard_casualty_modifier = -0.1
+		levy_size = -2
+		army_toughness_mult = 0.25
+		negate_health_penalty_add = 0.15
+		ai_boldness = 10
+		owned_legend_spread_mult = 0.1
+		accolade_glory_gain_mult = 0.1
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
 tradition_hyrule = {
 	category = regional
 	layers = {
@@ -603,6 +693,7 @@ tradition_hyrule = {
 	is_shown = { always = no }
 	parameters = {
 		herbalist_traits_more_common = yes
+		just_trait_gives_bonuses = yes
 		poorly_educated_leaders_distrusted = yes
 		better_ward_education = yes
 		innovation_from_learning_traits = yes
@@ -941,6 +1032,7 @@ tradition_thief_city = {
 	is_shown = { always = no }
 	parameters = {
 		holds_triumphs = yes
+		hosts_chariot_races = yes
 		loyal_trait_more_valued = yes
 		cultural_house_personal_scheme_success_chance = yes
 		doesnt_care_about_culture_faith_in_factions = yes

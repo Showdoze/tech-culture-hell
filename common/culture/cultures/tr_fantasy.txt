@@ -84,6 +84,7 @@ old_dwarven = {
 		tradition_xenophilic
 		tradition_loyal_soldiers
 		tradition_imperial
+		tradition_welcoming
 	}
 	name_list = name_list_imperial
 	coa_gfx = { latin_group_coa_gfx western_coa_gfx } #cyrodiilic_group_coa_gfx
@@ -153,6 +154,7 @@ old_dwarven = {
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_elf
+		tradition_mendicant_mystics
 		tradition_cynical_believers
 		tradition_dunmer
 	}
@@ -656,4 +658,30 @@ unknown = {
 		10 = gerudo
 	}
  }
+#SCI-FI
+ mandalorian = {
+	color = { 0.71 0.37 0.60 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy
+	language = language_anglic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_loyal_soldiers
+		tradition_diasporic
+		tradition_mando
+	}
+	name_list = name_list_high_valyrian
+	coa_gfx = { english_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	ethnicities = {
+	    80 = caucasian_northern_blond
+		10 = caucasian_northern_ginger
+		5 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
 #
