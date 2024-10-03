@@ -788,26 +788,61 @@
 	}
  } 
 #Thief
+ @thief_city_watch = "gfx/interface/icons/culture_innovations/thief_city_watch.dds"
+  @thief_mechanist = "gfx/interface/icons/culture_innovations/thief_mechanist.dds"
  innovation_thief_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
 	potential = {	
-		this = culture:thief_city		
+		this = culture:thief_city
 	}
 	character_modifier = {
 		build_speed = -0.01
 	}
  } 
+ innovation_mechanist_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @thief_mechanist
+	potential = {	
+		this = culture:thief_city
+	}
+	can_progress = {
+		faith = faith:mechanist_faith
+	}	
+	character_modifier = {
+		build_speed = -0.1
+		movement_speed = 0.1
+		supply_duration	= 0.5
+	}
+ } 
+ innovation_thief_city_watch = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @thief_city_watch
+	potential = {
+		this = culture:thief_city
+	}
+	character_modifier = {
+		prowess = 1
+		men_at_arms_maintenance = -0.01
+		knight_effectiveness_mult = 0.1
+	}	
+	maa_upgrade = {
+		type = skirmishers
+		damage = 3
+	}
+ }
  innovation_thief_ancient_build = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @misc_inventions
 	potential = {	
-		this = culture:thief_city		
+		this = culture:thief_precursor
 	}
 	character_modifier = {
-		build_speed = -0.01
+		build_speed = -0.05
 	}
  } 
 #

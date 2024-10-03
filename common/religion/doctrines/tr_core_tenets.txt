@@ -58,8 +58,11 @@ tr_doctrines = {
 			pilgrimage_decision_active = yes
 			select_personal_god_active = yes
 			divine_the_stars_active = yes
+			piety_from_feasts_active = yes
+			consolamentum_active = yes
 		}
 		character_modifier = {
+			short_reign_duration_mult = -0.5
 			close_relative_opinion = 5
 		}
 	}
@@ -76,6 +79,7 @@ tr_doctrines = {
 			select_personal_god_active = yes
 			tenet_adaptive_conversion_resistance = yes
 			reduced_vassal_religion_discontent = yes
+			literalist_debate_enabled = yes
 		}
 		traits = {
 			virtues = { architect cynical scholar journaller  }
@@ -109,6 +113,7 @@ tr_doctrines = {
 			reduced_stress_from_torture = yes
 			self_mutilation_active = yes
 			consolamentum_active = yes
+			cannibalism_legal = yes
 		}
 		character_modifier = {
 			dread_baseline_add = 5
@@ -191,8 +196,10 @@ tr_doctrines = {
 			reincarnation_events_active = yes
 			tenet_adaptive_conversion_resistance = yes
 			reduced_vassal_religion_discontent = yes
+			consolamentum_active = yes
 		}
 		character_modifier = {
+			short_reign_duration_mult = -0.5
 			different_faith_county_opinion_mult = -0.25
 			different_faith_liege_opinion = 15
 			opinion_of_different_faith_liege = 15
@@ -249,9 +256,11 @@ tr_doctrines = {
 			piety_from_marrying_lowborn_active = yes
 			torturing_prisoners_grants_piety = yes
 			reduced_stress_from_torture = yes
+			clergy_can_fight = yes
+			fervor_per_holy_site = 1
 		}
 		traits = {
-			virtues = { architect scholar temperate zealous }
+			virtues = { architect scholar temperate zealous theologian }
 			sins = { lazy cynical lifestyle_mystic drunkard }
 		}
 		character_modifier = {
@@ -277,8 +286,11 @@ tr_doctrines = {
 			piety_from_feasts_active = yes
 			same_culture_conversion_bonus_active = yes
 			same_faith_promote_culture_bonus_active = yes
+			piety_from_feasts_active = yes
+			consolamentum_active = yes
 		}
 		character_modifier = {
+			short_reign_duration_mult = -0.5
 			dread_baseline_add = 5
 			prowess = 2
 			controlled_province_advantage = 5
@@ -331,11 +343,13 @@ tr_doctrines = {
 			reduced_vassal_religion_discontent = yes
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
+			consolamentum_active = yes
 		}
 		character_modifier = {
 			different_faith_county_opinion_mult = -0.25
 			different_faith_liege_opinion = 15
 			opinion_of_different_faith_liege = 15
+			short_reign_duration_mult = -0.5
 		}
 	}
 	tenet_tlaloc = {
@@ -374,6 +388,7 @@ tr_doctrines = {
 			consolamentum_active = yes
 		}
 		character_modifier = {
+			short_reign_duration_mult = -0.5
 			dread_baseline_add = 5
 			prowess = 2
 			controlled_province_advantage = 5
@@ -392,6 +407,12 @@ tr_doctrines = {
 			piety_from_long_peace = 1
 			tenet_adaptive_conversion_resistance = yes
 			reduced_vassal_religion_discontent = yes
+			clergy_can_fight = yes
+			tenet_esotericism_mystic_education = yes
+			literalist_debate_enabled = yes
+			pacifist_opinion_active = yes
+			opinion_of_pacifist_opinion_active = 10
+			piety_gain_from_successful_intrigue_schemes = yes
 		}
 		traits = {
 			virtues = { scholar journaller shy humble confider }
@@ -410,15 +431,69 @@ tr_doctrines = {
 			piety_from_marrying_lowborn_active = yes
 			torturing_prisoners_grants_piety = yes
 			reduced_stress_from_torture = yes
+			clergy_can_fight = yes
+			fervor_per_holy_site = 1
 		}
 		traits = {
-			virtues = { architect scholar temperate zealous }
-			sins = { lazy cynical lifestyle_mystic drunkard }
+			virtues = { architect temperate zealous diligent }
+			sins = { lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist }
 		}
 		character_modifier = {
 			close_relative_opinion = 5
 			learning_per_piety_level = 5
 			monthly_piety_from_buildings_mult = 0.24
+		}
+	}
+	tenet_mage = {
+		icon = ai_tenet_mastery_over_undeath
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			holy_wars_forbidden = yes
+			piety_from_long_peace = 1
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			clergy_can_fight = yes
+			tenet_esotericism_mystic_education = yes
+			literalist_debate_enabled = yes
+		}
+		traits = {
+			virtues = { scholar journaller lifestyle_mystic overseer }
+			sins = { lazy content dull }
+		}
+		character_modifier = {
+			ignore_opinion_of_different_faith = yes
+			learning_per_piety_level = 2
+		}
+	}
+	tenet_pagan = {
+		icon = core_tenet_pagan
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			human_sacrifice_active = yes
+			clergy_can_fight = yes
+			tenet_esotericism_mystic_education = yes
+			piety_from_feasts_active = yes
+			gruesome_festivals_active = yes
+			self_mutilation_active = yes
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+			cannibalism_legal = yes
+			can_build_megaliths = yes
+			fervor_per_holy_site = 1
+		}
+		traits = {
+			virtues = { lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic }
+			sins = { architect craven avaricious greedy }
+		}
+		character_modifier = {
+			ignore_opinion_of_different_faith = yes
+			learning_per_piety_level = 2
 		}
 	}
 }

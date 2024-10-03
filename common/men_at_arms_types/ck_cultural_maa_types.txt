@@ -213,7 +213,41 @@
 	allowed_in_hired_troops = no
 	icon = croc_rider
  }
-#
+#THIEF
+ thief_city_watch = {
+	type = skirmishers
+	damage = 26
+	toughness = 20
+	pursuit = 6
+	screen = 8
+	terrain_bonus = {
+		farmlands = { damage = 12 toughness = 8 pursuit = 15 screen = 5 }
+		plains = { damage = 10 }
+		hills = { damage = 5 }
+		mountains = { damage = 4 }
+		desert_mountains = { damage = 4 }
+		forest = { damage = 5  }
+		taiga = { damage = 4  }
+		jungle = { damage = 4  }
+		drylands = { damage = 8 }
+	}
+	counters = {
+		pikemen = 1
+		skirmishers = 2
+		camel_cavalry = 1
+		elephant_cavalry = 1
+		archers = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_thief_build }
+	}
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 1.1 }
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score}
+	icon = thief_watch
+ }
 #GREEK
  homoioi_hoplitai = {
     type = heavy_infantry
