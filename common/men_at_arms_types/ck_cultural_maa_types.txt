@@ -248,6 +248,38 @@
 	ai_quality = { value = @cultural_maa_extra_ai_score}
 	icon = thief_watch
  }
+ thief_child_of_karrus = {
+	type = automaton
+	can_recruit = {
+		culture = { has_innovation = innovation_mechanist_build }
+	}
+	damage = 250
+	toughness = 500
+	pursuit = 0
+	screen = 0
+	siege_tier = 1
+	siege_value = 0.4
+	terrain_bonus = {
+		wetlands = { damage = -30 toughness = -10 pursuit = -50 screen = -50 }
+	}
+	winter_bonus = {
+		normal_winter = {  pursuit = -2 screen = -2 }
+		harsh_winter = {  pursuit = -5 screen = -5 }
+	}
+	counters = {
+		pikemen = 1
+		light_cavalry = 1
+		camel_cavalry = 1
+		skirmishers = 2
+	}
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 1 }
+	high_maintenance_cost = { gold = 5 }
+	stack = 20
+	allowed_in_hired_troops = no
+	ai_quality = { value = 0 }
+	icon = thief_cok
+ }
 #GREEK
  homoioi_hoplitai = {
     type = heavy_infantry

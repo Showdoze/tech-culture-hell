@@ -7,6 +7,19 @@ GetRegionalAutomatonMAA = {
 		localization_key = automaton_dwemer
 	}
 	text = {
+		trigger = { culture = { has_name_list = name_list_thief_city } }
+		localization_key = automaton_thief
+	}
+	text = {
+		trigger = { 
+			OR = {
+			    culture = { has_name_list = name_list_mandalorian } 
+				culture = { has_cultural_pillar = language_mando }
+			}
+		}
+		localization_key = automaton_droid
+	}
+	text = {
 		trigger = { always = no }
 		fallback = yes
 		localization_key = automaton
