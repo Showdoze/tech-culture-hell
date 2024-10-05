@@ -845,4 +845,49 @@
 		build_speed = -0.05
 	}
  } 
-#
+#Sci Fi
+ @vibroblade = "gfx/interface/icons/culture_innovations/sw_vibroblade.dds"
+   @beskar = "gfx/interface/icons/culture_innovations/sw_beskar.dds"
+    @beskar = "gfx/interface/icons/culture_innovations/sw_beskar.dds"
+ innovation_vibroblade = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @vibroblade
+	potential = {	
+		this = culture:mandalorian
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.1
+		prowess = 5
+	}
+	can_progress = {
+		has_innovation = innovation_beskar
+	}	
+ } 
+ innovation_beskar = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @beskar
+	potential = {	
+		this = culture:mandalorian
+	}
+	character_modifier = {
+		men_at_arms_maintenance = -0.15
+		advantage = 2
+	}
+ }
+ innovation_neo_crusader = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @beskar
+	potential = {	
+		this = culture:mandalorian
+	}
+	character_modifier = {
+		men_at_arms_maintenance = -0.1
+	}
+	can_progress = {
+		has_innovation = innovation_beskar
+	}
+ }
+# 

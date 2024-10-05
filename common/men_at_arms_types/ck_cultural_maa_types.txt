@@ -546,8 +546,9 @@
 	ai_quality = { value = culture_ai_weight_heavy_infantry }
 	icon = legionarius
  }
-#Imperial
- armored_legionaires = { #Unlocked by Coin and Sword
+#ELDER SCROLLS
+ #Imperial
+  armored_legionaires = { #Unlocked by Coin and Sword
 	type = heavy_infantry
 	damage = 32
 	toughness = 32
@@ -568,9 +569,9 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score}
 	icon = es_armored_legionaires
- }
-#bosmer
- bosmer_stalkers = {
+  }
+ #bosmer
+  bosmer_stalkers = {
 	type = archers
 	damage = 25 #32
 	toughness = 10
@@ -595,9 +596,9 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = bosmer_stalkers
- }
-#RedGuard
- yokudan_way_of_the_sword = { ###Better version available to those with the Virtues of War Tradition
+  }
+ #RedGuard
+  yokudan_way_of_the_sword = { ###Better version available to those with the Virtues of War Tradition
 	type = heavy_infantry
 	damage = 42
 	toughness = 22
@@ -620,9 +621,9 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_way_of_the_sword
- }
-### Orsimer
- orc_marauders = {
+  }
+ ### Orsimer
+  orc_marauders = {
 	type = heavy_infantry
 	damage = 36
 	toughness = 28
@@ -641,9 +642,9 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_orc_marauders
- } 
-#Breton
- breton_hedge_knights = {
+  } 
+ #Breton
+  breton_hedge_knights = {
 	type = spellblades
 	damage = 30
 	toughness = 35
@@ -668,9 +669,9 @@
 	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_breton_spellblades
- }
-#### Aldmeris
- summerset_justiciars = {
+  }
+ #### Aldmeris
+  summerset_justiciars = {
 	type = spellblades
 	damage = 40
 	toughness = 25
@@ -697,9 +698,9 @@
 	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_summerset_justiciars
- }
-#### Nordic
- nord_huscarl = {
+  }
+ #### Nordic
+  nord_huscarl = {
 	type = heavy_infantry
 	damage = 38
 	toughness = 26
@@ -727,8 +728,8 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_nord1
- }
- skaal_hunter = {
+  }
+  skaal_hunter = {
 	type = skirmishers
 	damage = 18
 	toughness = 14
@@ -755,7 +756,33 @@
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = es_skaal_hunter
+  }
+#SCi Fi
+ sw_neo_crusader = {
+	type = skirmishers #archers
+	damage = 56
+	toughness = 40
+	pursuit = 0
+	screen = 0
+	siege_value = 0.1
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		pikemen = 1
+		camel_cavalry = 3
+		elephant_cavalry = 1
+		automaton = 1
+	}
+	can_recruit = {
+		culture = { has_innovation = innovation_neo_crusader }
+	}
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 1 }
+	stack = 25
+	ai_quality = { value = 0 }
+	icon = sw_neo_c
  }
-#
+# 
 
 
