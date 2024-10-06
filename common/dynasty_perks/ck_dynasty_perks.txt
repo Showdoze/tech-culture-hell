@@ -1,5 +1,5 @@
 ﻿# ROMAN LEGACIES
-ser_roman_legacy_1 = { # Legacy
+ ser_roman_legacy_1 = { # Legacy
 	legacy = ser_roman_legacy_track
 
 	character_modifier = {
@@ -30,9 +30,8 @@ ser_roman_legacy_1 = { # Legacy
 			multiply = 0
 		}
 	}
-}
-
-ser_roman_legacy_2 = { # Reinvigirated
+ }
+ ser_roman_legacy_2 = { # Reinvigirated
 	legacy = ser_roman_legacy_track
 
 	effect = {
@@ -60,9 +59,8 @@ ser_roman_legacy_2 = { # Reinvigirated
 		doctrine = doctrine_temporal_head
 		tolerance_advantage_mod = 5
 	}
-}
-
-ser_roman_legacy_3 = { # Revised-Reform's
+ }
+ ser_roman_legacy_3 = { # Revised-Reform's
 	legacy = ser_roman_legacy_track
 
 	character_modifier = {
@@ -71,9 +69,8 @@ ser_roman_legacy_3 = { # Revised-Reform's
 		counter_efficiency = 0.15
 		advantage = 5
 	}
-}
-
-ser_roman_legacy_4 = { # Ruler's
+ }
+ ser_roman_legacy_4 = { # Ruler's
 	legacy = ser_roman_legacy_track
 
 	character_modifier = {
@@ -82,9 +79,8 @@ ser_roman_legacy_4 = { # Ruler's
 		negative_inactive_inheritance_chance = -0.30
 		life_expectancy = 5
 	}
-}
-
-ser_roman_legacy_5 = { # Centralized Rule
+ }
+ ser_roman_legacy_5 = { # Centralized Rule
 	legacy = ser_roman_legacy_track
 
 	character_modifier = {
@@ -93,10 +89,9 @@ ser_roman_legacy_5 = { # Centralized Rule
 		holding_build_gold_cost = -0.1
 		domain_limit = 4
 	}
-}
-
+ }
 # Ocean legacy
-ocean_legacy_1 = { 
+ ocean_legacy_1 = { 
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 1
@@ -110,44 +105,38 @@ ocean_legacy_1 = {
 			multiply = 0
 		}
 	}
-}
-
-ocean_legacy_2 = {
+ }
+ ocean_legacy_2 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 2
 		no_water_crossing_penalty = yes
 	}
-}
-
-ocean_legacy_3 = {
+ }
+ ocean_legacy_3 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 3
 		embarkation_cost_mult = -0.2
 	}
-}
-
-ocean_legacy_4 = {
+ }
+ ocean_legacy_4 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 4
 		naval_movement_speed_mult = 0.5
 	}
-}
-
-ocean_legacy_5 = {
+ }
+ ocean_legacy_5 = {
 	legacy = ocean_legacy_track
 	character_modifier = {
 		coastal_advantage = 10
 		naval_movement_speed_mult = 1.5
 		no_disembark_penalty = yes
 	}
-}
-
-scale_legacy_1 = { # Oviparous
+ }
+ scale_legacy_1 = { # Oviparous
 	legacy = scale_legacy_track
-
 	character_modifier = {
 		fertility = 0.1
 		health = 0.5
@@ -166,17 +155,14 @@ scale_legacy_1 = { # Oviparous
 	ai_chance = {
 		value = 0
 	}
-}
-
-scale_legacy_2 = { # Adaptation
+ }
+ scale_legacy_2 = { # Adaptation
 	legacy = scale_legacy_track
-
 	# Chance to gain an extra traits for members of the dynasty or children educated by the members of the dynasty
 
 	effect = {
 		custom_description_no_bullet = { text = fp2_urbanism_legacy_2_effect }
 	}
-	
 	character_modifier = {
 		faith_creation_piety_cost_mult = -0.2
 		movement_speed = 0.1
@@ -185,11 +171,9 @@ scale_legacy_2 = { # Adaptation
 	traits = {
 		scaly = 2
 	}
-}
-
-scale_legacy_3 = { # Cold Blooded's
+ }
+ scale_legacy_3 = { # Cold Blooded's
 	legacy = scale_legacy_track
-
 	character_modifier = {
 		development_growth_factor = 0.2
 		powerful_vassal_opinion = 5
@@ -201,11 +185,9 @@ scale_legacy_3 = { # Cold Blooded's
 	traits = {
 		scaly = 3
 	}
-}
-
-scale_legacy_4 = { # Inhuman
+ }
+ scale_legacy_4 = { # Inhuman
 	legacy = scale_legacy_track
-
 	character_modifier = {
 		name = blood_legacy_3_modifier
 		pursue_efficiency = 0.30
@@ -219,9 +201,8 @@ scale_legacy_4 = { # Inhuman
 	traits = {
 		scaly = 4
 	}
-}
-
-scale_legacy_5 = { # Heir's of the Dragon
+ }
+ scale_legacy_5 = { # Heir's of the Dragon
 	legacy = scale_legacy_track
 
 	character_modifier = {
@@ -236,9 +217,9 @@ scale_legacy_5 = { # Heir's of the Dragon
 	traits = {
 		scaly = 5
 	}
-}
-
-usa_legacy_1 = { # Crossing the Delaware
+ }
+#USA
+ usa_legacy_1 = { # Crossing the Delaware
 	legacy = usa_legacy_track
 
 	character_modifier = {
@@ -249,9 +230,8 @@ usa_legacy_1 = { # Crossing the Delaware
 	}
 
 	ai_chance = { value = 0 }
-}
-
-usa_legacy_2 = { # Declaration 
+ }
+ usa_legacy_2 = { # Declaration 
 	legacy = usa_legacy_track
 
 	character_modifier = {
@@ -261,9 +241,8 @@ usa_legacy_2 = { # Declaration
 	effect = {
 		custom_description_no_bullet = { text = fp2_coterie_legacy_1_effect }
 	}
-}
-
-usa_legacy_3 = { # Era of the Common Man
+ }
+ usa_legacy_3 = { # Era of the Common Man
 	legacy = usa_legacy_track
 
 	character_modifier = {
@@ -271,9 +250,8 @@ usa_legacy_3 = { # Era of the Common Man
 		courtier_and_guest_opinion = 10
 		max_sway_schemes_add = 1
 	}
-}
-
-usa_legacy_4 = { # military congress
+ }
+ usa_legacy_4 = { # military congress
 	legacy = usa_legacy_track
 
 	character_modifier = {
@@ -284,9 +262,8 @@ usa_legacy_4 = { # military congress
 	effect = {
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
-}
-
-usa_legacy_5 = { # Freedom
+ }
+ usa_legacy_5 = { # Freedom
 	legacy = usa_legacy_track
 
 	character_modifier = {
@@ -300,10 +277,9 @@ usa_legacy_5 = { # Freedom
 		custom_description_no_bullet = { text = fp3_khvarenah_legacy_court_positions_effect	}
 	}
 }
-
-skaven_legacy_1 = { # Strength in Numbers
+#SKAVEN RAT
+ skaven_legacy_1 = { # Strength in Numbers
 	legacy = skaven_legacy_track
-
 	character_modifier = {
 		fertility = 1
 		max_loot_mult = 0.5
@@ -316,11 +292,9 @@ skaven_legacy_1 = { # Strength in Numbers
 	traits = {
 		hygene_bad_1 = 1
 	}
-}
-
-skaven_legacy_2 = { # Scurry Away
+ }
+ skaven_legacy_2 = { # Scurry Away
 	legacy = skaven_legacy_track
-
 	character_modifier = {
 		retreat_losses = -0.15
 		movement_speed = 0.1
@@ -328,11 +302,9 @@ skaven_legacy_2 = { # Scurry Away
 	traits = {
 		hygene_bad_1 = 2
 	}
-}
-
-skaven_legacy_3 = { # Lead from the Back
+ }
+ skaven_legacy_3 = { # Lead from the Back
 	legacy = skaven_legacy_track
-
 	character_modifier = {
 		knight_effectiveness_mult = 0.15
 		pursue_efficiency = 0.15
@@ -342,9 +314,8 @@ skaven_legacy_3 = { # Lead from the Back
 		hygene_bad_1 = 2
 		hygene_bad_2 = 1
 	}
-}
-
-skaven_legacy_4 = { # SKILLED MANIPULATORS
+ }
+ skaven_legacy_4 = { # SKILLED MANIPULATORS
 	legacy = skaven_legacy_track
 
 	character_modifier = {
@@ -360,9 +331,8 @@ skaven_legacy_4 = { # SKILLED MANIPULATORS
 		hygene_bad_1 = 2
 		hygene_bad_2 = 2
 	}
-}
-
-skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
+ }
+ skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 	legacy = skaven_legacy_track
 
 	character_modifier = {
@@ -380,11 +350,10 @@ skaven_legacy_5 = { # ALWAYS THREE CLAWSTEPS AHEAD
 		hygene_bad_1 = 3
 		hygene_bad_2 = 2
 	}
-}
-
-chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
+ }
+#CHINA
+ chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
 	legacy = Chinese_bureaucracy_legacy_track
-
 	character_modifier = {
 		learning = 2
         stewardship = 1
@@ -399,45 +368,37 @@ chinese_bureaucracy_legacy_1 = { # Eastern Knowlege
 	ai_chance = {
 		value = 0
 	}
-}
-
-chinese_bureaucracy_legacy_2 = { # Imperial law
+ }
+ chinese_bureaucracy_legacy_2 = { # Imperial law
 	legacy = Chinese_bureaucracy_legacy_track
-
 	character_modifier = {
 		monthly_county_control_change_add = 1 
 	}
-}
-
-chinese_bureaucracy_legacy_3 = { # Just and Honest
+ }
+ chinese_bureaucracy_legacy_3 = { # Just and Honest
 	legacy = Chinese_bureaucracy_legacy_track
-
 	character_modifier = {
 		direct_vassal_opinion = 5 
 		tyranny_gain_mult = -0.2 
 	}
-}
-
-chinese_bureaucracy_legacy_4 = { # Structured Economics
+ }
+ chinese_bureaucracy_legacy_4 = { # Structured Economics
 	legacy = Chinese_bureaucracy_legacy_track
-
 	character_modifier = {
 		domain_tax_mult = 0.2
 	}
-}
-
-chinese_bureaucracy_legacy_5 = { # Heavenly rule
+ }
+ chinese_bureaucracy_legacy_5 = { # Heavenly rule
 	legacy = Chinese_bureaucracy_legacy_track
-
 	character_modifier = {
 		diplomacy_per_piety_level = 2 
 		learning_per_piety_level = 1
         prowess_per_piety_level = 1
         life_expectancy = 3
 	}
-}
-
-mafia_legacy_1 = { #Associates
+ }
+#MAFIA
+ mafia_legacy_1 = { #Associates
 	legacy = mafia_legacy_track
 	character_modifier = {
 		county_opinion_add = 5
@@ -447,18 +408,16 @@ mafia_legacy_1 = { #Associates
 	ai_chance = {
 		value = 0
 	}
-}
-
-mafia_legacy_2 = { #Soldiers
+ }
+ mafia_legacy_2 = { #Soldiers
 	legacy = mafia_legacy_track
 	character_modifier = {
 		befriend_scheme_power_mult = 0.3
 		max_befriend_schemes_add = 1
 		lifestyle_reveler_xp_gain_mult = 0.5
 	}
-}
-
-mafia_legacy_3 = {#Caporegimes
+ }
+ mafia_legacy_3 = {#Caporegimes
 	legacy = mafia_legacy_track
 	character_modifier = {
 		max_hostile_schemes_add = 1
@@ -467,9 +426,8 @@ mafia_legacy_3 = {#Caporegimes
 	effect = {
 		custom_description_no_bullet = { text = fp2_urbanism_legacy_4_effect }
 	}
-}
-
-mafia_legacy_4 = { #Underboss
+ }
+ mafia_legacy_4 = { #Underboss
 	legacy = mafia_legacy_track
 	character_modifier = {
 		domain_tax_same_faith_mult = 0.05
@@ -479,9 +437,8 @@ mafia_legacy_4 = { #Underboss
 		# +X% extra chance to kidnap characters after sieges/raids.
 		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
 	}
-}
-
-mafia_legacy_5 = { #Boss
+ }
+ mafia_legacy_5 = { #Boss
 	legacy = mafia_legacy_track
 	character_modifier = {
 		seduce_scheme_power_mult = 0.5
@@ -493,10 +450,9 @@ mafia_legacy_5 = { #Boss
 		# +X extra enemy control loss on occupying a county.
 		custom_description_no_bullet = { text = fp1_pillage_legacy_5_effect }
 	}
-}
-
+ }
 #Japanese legacy
-japan_legacy_1 = { #Japanese cavalry
+ japan_legacy_1 = { #Japanese cavalry
 	legacy = japan_legacy_track
 	character_modifier = {
 		prowess = 2
@@ -513,27 +469,24 @@ japan_legacy_1 = { #Japanese cavalry
 			multiply = 0
 		}
 	}
-}
-
-japan_legacy_2 = { #banzai charge
+ }
+ japan_legacy_2 = { #banzai charge
 	legacy = japan_legacy_track
 	character_modifier = {
 		glory_hound_opinion = 5
 		short_reign_duration_mult = -0.2
 		negate_health_penalty_add = 0.5
 	}
-}
-
-japan_legacy_3 = { #Dan-no-ura
+ }
+ japan_legacy_3 = { #Dan-no-ura
 	legacy = japan_legacy_track
 	character_modifier = {
 		coastal_advantage = 3
 		embarkation_cost_mult = -0.2
 		naval_movement_speed_mult = 0.5
 	}
-}
-
-japan_legacy_4 = { #Senkan
+ }
+ japan_legacy_4 = { #Senkan
 	legacy = japan_legacy_track
 	character_modifier = {
 		enemy_hard_casualty_modifier = 0.1
@@ -553,9 +506,8 @@ japan_legacy_4 = { #Senkan
 	effect = {
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
 	}
-}
-
-japan_legacy_5 = { #Hōrudingu shiro
+ }
+ japan_legacy_5 = { #Hōrudingu shiro
 	legacy = japan_legacy_track
 	character_modifier = {
 		enemy_hostile_scheme_success_chance_add = -15
@@ -600,17 +552,15 @@ japan_legacy_5 = { #Hōrudingu shiro
 		# Cultural Acceptance from successful Learn Language schemes
 		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
 	}
-}
-
-dragonblood_legacy_1 = { # Chosen by the Gods
+ }
+#ELDER SCROLL
+ dragonblood_legacy_1 = { # Chosen by the Gods
 	legacy = dragonblood_legacy_track
-
 	character_modifier = {
 		theocracy_government_opinion_same_faith = 5
 		monthly_prestige_gain_mult = 0.05
 		monthly_piety_gain_mult = 0.05
 	}
-	
 	ai_chance = {
 		value = 11
 		if = { 
@@ -620,34 +570,27 @@ dragonblood_legacy_1 = { # Chosen by the Gods
 			multiply = 0
 		}
 	}
-}
-
-dragonblood_legacy_2 = { # The Flames of Youth
+ }
+ dragonblood_legacy_2 = { # The Flames of Youth
 	legacy = dragonblood_legacy_track
-	
 	### EK TODO: Add that effect
 	effect = {
 		custom_description_no_bullet = {
 			text = dragonblood_legacy_2_effect
 		}
 	}
-}
-
-dragonblood_legacy_3 = { # Right to Rule
+ }
+ dragonblood_legacy_3 = { # Right to Rule
 	legacy = dragonblood_legacy_track
-
 	character_modifier = {
 		domain_limit = 1
 		vassal_opinion = 5
 	}
-}
-
-dragonblood_legacy_4 = { # Soul of a Dragon, body of a Dragon
+ }
+ dragonblood_legacy_4 = { # Soul of a Dragon, body of a Dragon
 	legacy = dragonblood_legacy_track
-
 	character_modifier = {
 		monthly_lifestyle_xp_gain_mult = 0.05
-		
 		diplomacy = 1
 		martial = 1
 		stewardship = 1
@@ -655,14 +598,9 @@ dragonblood_legacy_4 = { # Soul of a Dragon, body of a Dragon
 		learning = 1
 		prowess = 2
 	}
-}
-
-### EK TODO: Men-at-Arms aren't tied to Innovations or Legacies anymore
-dragonblood_legacy_5 = { # Earth, Mind, Dragon
+ }
+ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 	legacy = dragonblood_legacy_track
-	
-	#unlock_maa = dovah_vahlok
-
 	character_modifier = {
 		men_at_arms_cap = 1
 	}
@@ -672,19 +610,14 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 			text = dragonblood_legacy_5_effect
 		}
 	}
-}
-
-# HEGEMON LEGACIES
-
+ }
  hegemon_legacy_1 = {
 	legacy = hegemon_legacy_track
-	
 	effect = {
 		custom_description_no_bullet = {
 			text = hegemon_legacy_1_effect
 		}
 	}
-	
 	ai_chance = {
 		value = 11
 		if = {
@@ -695,20 +628,16 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 		}
 	}
  }
-
  hegemon_legacy_2 = {
 	legacy = hegemon_legacy_track
-
 	effect = {
 		custom_description_no_bullet = {
 			text = hegemon_legacy_2_effect
 		}
 	}
  } 
-
  hegemon_legacy_3 = {
 	legacy = hegemon_legacy_track
-
 	effect = {
 		hidden_effect = {
 			# Setting up the modifiers for the first time
@@ -716,7 +645,6 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 			add_to_global_variable_list = { name = dynasties_with_legacies_modifiers_to_update target = scope:current_dynasty }
 			dynasty_update_legacies_modifiers_effect = { DYNASTY = scope:current_dynasty }
 		}
-		
 		custom_description_no_bullet = {
 			text = hegemon_legacy_3_a_effect
 		}
@@ -725,49 +653,38 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 		}
 	}
  }
-
  hegemon_legacy_4 = {
 	legacy = hegemon_legacy_track
-	
 	character_modifier = {
 		dynasty_house_opinion = 5
 	}
-
 	effect = {
 		hidden_effect = {
 			# Setting up the modifiers for the first time
 			dynasty = { save_scope_as = current_dynasty }
 			add_to_global_variable_list = { name = dynasties_with_legacies_modifiers_to_update target = scope:current_dynasty }
 			dynasty_update_legacies_modifiers_effect = { DYNASTY = scope:current_dynasty }
-		}
-		
+		}	
 		custom_description_no_bullet = {
 			text = hegemon_legacy_4_a_effect
 		}
-		# custom_description_no_bullet = { # We'll see about that later
-			# text = hegemon_legacy_4_b_effect
-		# }
 		custom_description_no_bullet = {
 			text = hegemon_legacy_4_c_effect
 		}
 	}
  }
-
  hegemon_legacy_5 = {
 	legacy = hegemon_legacy_track
-	
 	character_modifier = {
 		dynasty_opinion = 5
 	}
-
 	effect = {
 		hidden_effect = {
 			# Setting up the modifiers for the first time
 			dynasty = { save_scope_as = current_dynasty }
 			add_to_global_variable_list = { name = dynasties_with_legacies_modifiers_to_update target = scope:current_dynasty }
 			dynasty_update_legacies_modifiers_effect = { DYNASTY = scope:current_dynasty }
-		}
-		
+		}	
 		custom_description_no_bullet = {
 			text = hegemon_legacy_5_a_effect
 		}
@@ -776,18 +693,8 @@ dragonblood_legacy_5 = { # Earth, Mind, Dragon
 		}
 	}
  }
-
-# MAGICKA LEGACIES
-# Arcana boost
-# Magical arts lifestyle exp
-# Educate yo kids even without the inno, boost if you have the inno
-# Mage troops effectiveness
-# Free ritual
-# Boost chance of arcana traits
-magicka_legacy_1 = {
+ magicka_legacy_1 = {
 	legacy = magicka_legacy_track
-
-	#EK NOTE: magic code is _actual_ magic. so these effects are not applied here, but in the magic code itself. magic!
 	effect = {
 		custom_description_no_bullet = { # Arcana boost
 			text = magicka_legacy_1_a_effect
@@ -802,7 +709,6 @@ magicka_legacy_1 = {
 			text = magicka_legacy_trigger
 		}
 	}
-	
 	ai_chance = {
 		value = 11
 		if = {
@@ -812,11 +718,9 @@ magicka_legacy_1 = {
 			multiply = 0
 		}
 	}
-}
-
-magicka_legacy_2 = {
+ }
+ magicka_legacy_2 = {
 	legacy = magicka_legacy_track
-
 	character_modifier = {
 		mages_max_size_add = 1
 		mages_damage_add = 5
@@ -839,11 +743,9 @@ magicka_legacy_2 = {
 		spellblades_screen_add = 5
 		spellblades_screen_mult = 0.1
 	}
-}
-
-magicka_legacy_3 = {
+ }
+ magicka_legacy_3 = {
 	legacy = magicka_legacy_track
-
 	effect = {
 		custom_description_no_bullet = { # Can educate kids in magical arts even without the inno
 			text = magicka_legacy_3_a_effect
@@ -852,25 +754,19 @@ magicka_legacy_3 = {
 			text = magicka_legacy_3_b_effect
 		}
 	}
-	
 	character_modifier = {
 		monthly_magic_lifestyle_xp_gain_mult = 0.1
 	}
 }
-
-### EK TODO: Implement the Court Grandeur boost (monthly event to refresh it? Dirty solution but should work for now)
-# Court Grandeur boost for Arcanic Court, unlocks it
-magicka_legacy_4 = {
+ magicka_legacy_4 = {
 	legacy = magicka_legacy_track
-
 	effect = {
 		custom_description_no_bullet = { # Unlocks Arcanic Court Type, Court Grandeur boost for Arcanic
 			text = magicka_legacy_4_a_effect
 		}
 	}
-}
-
-magicka_legacy_5 = {
+ }
+ magicka_legacy_5 = {
 	legacy = magicka_legacy_track
 
 	effect = {
@@ -878,8 +774,7 @@ magicka_legacy_5 = {
 			text = magicka_legacy_5_a_effect
 		}
 	}
-}
-
+ }
 #CAPPADOCIAN LEGACIES
  cappadocian_legacy_1 = {
     legacy = cappadocian_legacy_track
@@ -968,4 +863,57 @@ magicka_legacy_5 = {
 		}		
 	}
  }
-#
+#UCHIHA
+ uchiha_legacy_1 = { 
+	legacy = uchiha_legacy_track
+	character_modifier = {
+		prowess = 1
+		positive_random_genetic_chance = 0.30
+		positive_inactive_inheritance_chance = 0.30
+		ai_boldness = medium_positive_ai_value
+		ai_energy = medium_positive_ai_value
+		dynasty_opinion = 10
+	}
+	ai_chance = { value = 0 }
+ }
+  uchiha_legacy_2 = { 
+	legacy = uchiha_legacy_track
+	effect = {
+		custom_description_no_bullet = { text = ep3_administrative_legacy_3_effect_family_rating }
+		custom_description_no_bullet = { text = erudition_legacy_4_effect }
+	}
+	character_modifier = {
+		prowess = 2
+		enemy_hostile_scheme_success_chance_add = -15
+	}
+ }
+  uchiha_legacy_3 = { # Revised-Reform's
+	legacy = uchiha_legacy_track
+	character_modifier = {
+		prowess = 3
+		development_growth_factor = 0.2
+		powerful_vassal_opinion = 5
+		counter_efficiency = 0.15
+		advantage = 5
+	}
+ }
+  uchiha_legacy_4 = { # Ruler's
+	legacy = uchiha_legacy_track
+	character_modifier = {
+		monthly_county_control_change_add = 0.1
+		negative_random_genetic_chance = -0.30
+		negative_inactive_inheritance_chance = -0.30
+		life_expectancy = 5
+		supply_duration = 1
+	}
+ }
+  uchiha_legacy_5 = { # Centralized Rule
+	legacy = ser_roman_legacy_track
+	character_modifier = {
+		tourney_participant_xp_gain_mult = 0.5
+		prowess = 5
+		county_opinion_add = 15
+		monthly_county_control_change_add = 0.5
+	}
+ }
+# 
