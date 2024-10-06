@@ -111,11 +111,11 @@ convert_resources_events_root.0 = { #root
     }
 
     option = {
-        trigger = {
-            government_is_landless_adventurer = no
-        }
         name = convert_resources_events_extortion
         custom_tooltip = convert_resources_events_extortion_tip
+        trigger = {
+            is_landed = yes
+        }
         trigger_event = {
             id = convert_resources_events_root.4 #extortion
         }
