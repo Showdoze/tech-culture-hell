@@ -507,12 +507,27 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
+			clergy_can_fight = yes
+			gruesome_festivals_active = yes
+			human_sacrifice_active = yes
+			flower_war_cb_active = yes
+			piety_from_feasts_active = yes
+			spirit_possession_active = yes
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+			self_mutilation_active = yes
 		}
 		traits = {
-			virtues = { brave deceitful = 2 arrogant  }
-			sins = { craven lazy forgiving }
+			virtues = { lustful gluttonous sadistic vengeful possessed }
+			sins = { chaste temperate forgiving compassionate }
 		}
 		character_modifier = {
+			ignore_opinion_of_different_faith = yes
+			rf_abrahamic_opinion = -50
+			blood_faith_opinion = 10
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
+			stress_loss_mult = 0.2
 		}
 	}
 	tenet_christan = {
