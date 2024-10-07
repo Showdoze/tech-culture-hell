@@ -778,4 +778,43 @@ idk_portraits = {
 			}
         }
     }
-}    
+}
+tr_idk_betruger = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_betruger = {
+        dna_modifiers = {
+            accessory = {
+                mode = modify
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = modify
+                gene = hairstyles
+                template = no_hair
+            }
+            morph = {
+                mode = modify
+                gene = gene_bs_body_type
+                value = {
+                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
+                    multiply = 0.3
+                }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_betruger
+				this = character:tr_betruger
+			}
+        }
+    }
+}
