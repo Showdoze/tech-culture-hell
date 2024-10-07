@@ -747,6 +747,336 @@ historical_religion = {
 				GHWNamePlural = ghw_great_holy_wars
 			}
 		}
+		protestant = {
+			color = { 0.7 0.7 0.8 }
+			icon = protestant
+			doctrine = special_doctrine_is_christian_faith
+			graphical_faith = "catholic_gfx"
+			piety_icon_group = "christian"
+			family = rf_abrahamic
+			holy_site = cologne
+            holy_site = jerusalem
+            holy_site = kent
+			#Special Tolerance
+			doctrine = special_doctrine_ecumenical_christian
+			#Marriage
+			doctrine = doctrine_consanguinity_cousins		
+			#Clerical Functions
+			doctrine = doctrine_clerical_marriage_allowed
+			doctrine = doctrine_clerical_succession_temporal_fixed_appointment			
+			#Tenets
+			 doctrine = tenet_asceticism
+			 doctrine = tenet_pentarchy
+			 doctrine = tenet_christan
+			#localization = { }
+		}
+		arianism = {
+			color = { 49.0 35.0 58.0 }
+			icon = arianism
+			doctrine = special_doctrine_is_christian_faith
+			family = rf_abrahamic
+			graphical_faith = "catholic_gfx"
+			piety_icon_group = "christian"
+			holy_site = jerusalem
+			holy_site = constantinople
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = antioch
+			#Special Tolerance
+			doctrine = special_doctrine_ecumenical_christian
+			#Tenets
+			 doctrine = tenet_communion
+			 doctrine = tenet_pentarchy
+			 doctrine = tenet_christan
+			holy_order_names = {
+				{ name = "holy_order_brotherhood_of_the_holy_sepulchre" }
+				{ name = "holy_order_knights_of_the_first_patrirchate" }
+				{ name = "holy_order_order_of_the_holy_virgin" }
+			}
+			localization = { 
+				#FertilityGod
+				FertilityGodName = arian_fertility_god_name
+				FertilityGodNamePossessive = arian_fertility_god_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIM
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
 
+				#WealthGod
+				WealthGodName = west_christian_wealth_god_name
+				WealthGodNamePossessive = west_christian_wealth_god_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#HouseholdGod
+				HouseholdGodName = west_christian_household_god_name
+				HouseholdGodNamePossessive = west_christian_household_god_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = arian_knowledge_god_name
+				KnowledgeGodNamePossessive = arian_knowledge_god_name_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIM
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WarGod
+				WarGodName = west_christian_war_god_name
+				WarGodNamePossessive = west_christian_war_god_name_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = arian_water_god_name
+				WaterGodNamePossessive = arian_water_god_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				
+				# Patriarchs instead of Popes
+				ReligiousHeadName = orthodox_religious_head_title
+				ReligiousHeadTitleName = orthodox_religious_head_title_name
+			}			
+		}
+		nicene = {
+			icon = nicene
+			family = rf_abrahamic
+			color = { 0.65 0.65 0.37 }
+			religious_head = k_papal_state
+			piety_icon_group = "christian"
+            graphical_faith = "catholic_gfx"
+			holy_site = jerusalem
+			holy_site = constantinople
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = antioch
+			#doctrine
+             doctrine = special_doctrine_ecumenical_christian
+			 doctrine = special_doctrine_is_christian_faith
+			 #doctrine = special_doctrine_nicene_ecumenism
+			 #doctrine = doctrine_christian_liturgical_rite_imperial_rite
+			#Tenets
+			 doctrine = tenet_communion #tenet_apostolic_succession
+			 doctrine = tenet_christan
+			 doctrine = tenet_pentarchy
+			holy_order_names = {}
+			localization = { # Utilizes the 'West Christian' Saints, shared by Catholics and Orthodox
+				#FertilityGod
+				FertilityGodName = west_christian_fertility_god_name
+				FertilityGodNamePossessive = west_christian_fertility_god_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				FertilityGodHerHis = CHARACTER_HERHIS_HER
+				FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+				#WealthGod
+				WealthGodName = west_christian_wealth_god_name
+				WealthGodNamePossessive = west_christian_wealth_god_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#HouseholdGod
+				HouseholdGodName = west_christian_household_god_name
+				HouseholdGodNamePossessive = west_christian_household_god_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = west_christian_knowledge_god_name
+				KnowledgeGodNamePossessive = west_christian_knowledge_god_name_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+				#WarGod
+				WarGodName = west_christian_war_god_name
+				WarGodNamePossessive = west_christian_war_god_name_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = west_christian_water_god_name
+				WaterGodNamePossessive = west_christian_water_god_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+				# Patriarchs instead of Popes
+				ReligiousHeadName = orthodox_religious_head_title
+				ReligiousHeadTitleName = orthodox_religious_head_title_name
+			}
+		}
+		satanic_faith = { 
+		    icon = nicene
+			color = rgb { 122 19 12 }
+			family = rf_abrahamic
+			holy_site = jerusalem
+			holy_site = constantinople
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = antioch
+			#doctrine
+			 doctrine = special_doctrine_is_christian_faith
+			 doctrine = special_doctrine_ecumenical_christian
+			 doctrine = doctrine_pluralism_pluralistic
+			 doctrine = doctrine_concubines
+			 doctrine = doctrine_consanguinity_cousins
+			 doctrine = doctrine_homosexuality_crime
+			 doctrine = doctrine_adultery_men_crime
+			 doctrine = doctrine_adultery_women_crime
+			 doctrine = doctrine_witchcraft_accepted
+			 doctrine = doctrine_clerical_gender_either
+			 doctrine = doctrine_clerical_marriage_allowed
+			 doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	         doctrine = doctrine_funeral_bewailment			
+			#tennets
+			 doctrine = tenet_satan
+			 doctrine = tenet_ritual_cannibalism
+			 doctrine = tenet_exaltation_of_pain
+			holy_order_names = {
+	        }
+			localization = {
+				#HighGod
+					HighGodName = nahua_god_tezcatlipoca
+					HighGodNamePossessive = nahua_god_tezcatlipoca_possessive
+					HighGodNameSheHe = CHARACTER_SHEHE_HE
+					HighGodHerselfHimself = CHARACTER_HIMSELF
+					HighGodHerHis = CHARACTER_HERHIS_HIS
+					HighGodNameAlternate = nahua_god_tezcatlipoca_alt
+					HighGodNameAlternatePossessive = nahua_god_tezcatlipoca_alt_possessive
+				#Creator
+					CreatorName = nahua_creator_god_name
+					CreatorNamePossessive = nahua_creator_god_name_possessive
+					CreatorSheHe = CHARACTER_SHEHE_SHE
+					CreatorHerHis = CHARACTER_HERHIS_HER
+					CreatorHerHim = CHARACTER_HERHIM_HER
+				#HealthGod
+					HealthGodName = nahua_health_god_name
+					HealthGodNamePossessive = nahua_health_god_name_possessive
+					HealthGodSheHe = CHARACTER_SHEHE_HE
+					HealthGodHerHis = CHARACTER_HERHIS_HIS
+					HealthGodHerHim = CHARACTER_HERHIM_HIM
+					#FertilityGod
+					FertilityGodName = nahua_fertility_god_name
+					FertilityGodNamePossessive = nahua_fertility_god_name_possessive
+					FertilityGodSheHe = CHARACTER_SHEHE_SHE
+					FertilityGodHerHis = CHARACTER_HERHIS_HER
+					FertilityGodHerHim = CHARACTER_HERHIM_HER
+					#WealthGod
+					WealthGodName = nahua_wealth_god_name
+					WealthGodNamePossessive = nahua_wealth_god_name_possessive
+					WealthGodSheHe = CHARACTER_SHEHE_HE
+					WealthGodHerHis = CHARACTER_HERHIS_HIS
+					WealthGodHerHim = CHARACTER_HERHIM_HIM
+					#HouseholdGod
+					HouseholdGodName = nahua_household_god_name
+					HouseholdGodNamePossessive = nahua_household_god_name_possessive
+					HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+					HouseholdGodHerHis = CHARACTER_HERHIS_HER
+					HouseholdGodHerHim = CHARACTER_HERHIM_HER
+					#FateGod
+					FateGodName = nahua_fate_god_name
+					FateGodNamePossessive = nahua_fate_god_name_possessive
+					FateGodSheHe = CHARACTER_SHEHE_HE
+					FateGodHerHis = CHARACTER_HERHIS_HIS
+					FateGodHerHim = CHARACTER_HERHIM_HIM
+					#KnowledgeGod
+					KnowledgeGodName = nahua_knowledge_god_name
+					KnowledgeGodNamePossessive = nahua_knowledge_god_name_possessive
+					KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+					KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+					KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+					#WarGod
+					WarGodName = nahua_war_god_name
+					WarGodNamePossessive = nahua_war_god_name_possessive
+					WarGodSheHe = CHARACTER_SHEHE_HE
+					WarGodHerHis = CHARACTER_HERHIS_HIS
+					WarGodHerHim = CHARACTER_HERHIM_HIM
+					#TricksterGod
+					TricksterGodName = nahua_trickster_god_name
+					TricksterGodNamePossessive = nahua_trickster_god_name_possessive
+					TricksterGodSheHe = CHARACTER_SHEHE_HE
+					TricksterGodHerHis = CHARACTER_HERHIS_HIS
+					TricksterGodHerHim = CHARACTER_HERHIM_HIM
+					#NightGod
+					NightGodName = nahua_night_god_name
+					NightGodNamePossessive = nahua_night_god_name_possessive
+					NightGodSheHe = CHARACTER_SHEHE_HE
+					NightGodHerHis = CHARACTER_HERHIS_HIS
+					NightGodHerHim = CHARACTER_HERHIM_HIM
+					#WaterGod
+					WaterGodName = nahua_water_god_name
+					WaterGodNamePossessive = nahua_water_god_name_possessive
+					WaterGodSheHe = CHARACTER_SHEHE_HE
+					WaterGodHerHis = CHARACTER_HERHIS_HIS
+					WaterGodHerHim = CHARACTER_HERHIM_HIM
+					#DeathGod
+					DeathDeityName = nahua_death_deity_name
+					DeathDeityNamePossessive = nahua_death_deity_name_possessive
+					DeathDeitySheHe = CHARACTER_SHEHE_HE
+					DeathDeityHerHis = CHARACTER_HERHIS_HIS
+					#WitchGod
+					WitchGodName = nahua_witchgodname
+					#WitchGodNamePossessive = nahua_witchgodname_possessive
+					WitchGodHerHis = CHARACTER_HERHIS_HER
+					WitchGodSheHe = CHARACTER_SHEHE_SHE
+					WitchGodHerHim = CHARACTER_HERHIM_HER
+					WitchGodMistressMaster = mistress
+					WitchGodMotherFather = mother
+		
+					#Devil
+					DevilName = nahua_devil_name
+					DevilNamePossessive = nahua_devil_name_possessive
+					DevilSheHe = CHARACTER_SHEHE_SHE
+					DevilHerHis = CHARACTER_HERHIS_HER
+					DevilHerHis = CHARACTER_HERHIS_HER
+					DevilHerselfHimself = CHARACTER_HERSELF
+
+					PantheonTerm = nahua_god_tezcatlipoca
+					PantheonTermHasHave = pantheon_term_has
+					GoodGodNames = {
+						nahua_god_itzpapalotl
+						nahua_god_tlahuizcalpantecuhtli
+					}
+					EvilGodNames = {
+						nahua_devil_name
+					}
+					HouseOfWorship = nahua_house_of_worship
+					HouseOfWorshipPlural = nahua_house_of_worship_plural
+					ReligiousSymbol = nahua_religious_symbol
+					ReligiousText = nahua_religious_text
+					ReligiousHeadName = nahua_religious_head_title
+					ReligiousHeadTitleName = nahua_religious_head_title_name
+					DevoteeMale = nahua_devotee_male
+					DevoteeMalePlural = nahua_devotee_male_plural
+					DevoteeFemale = nahua_devotee_female
+					DevoteeFemalePlural = nahua_devotee_female_plural
+					DevoteeNeuter = nahua_devotee_neuter
+					DevoteeNeuterPlural = nahua_devotee_neuter_plural
+					PriestMale = nahua_priest_male
+					PriestMalePlural = nahua_priest_male_plural
+					PriestFemale = nahua_priest_male
+				PriestFemalePlural = nahua_priest_male_plural
+				PriestNeuter = nahua_priest_male
+				PriestNeuterPlural = nahua_priest_male_plural
+				AltPriestTermPlural = nahua_alt_priest_plural
+				BishopMale = nahua_bishop
+				BishopMalePlural = nahua_bishop_plural
+				BishopFemale = nahua_bishop
+				BishopFemalePlural = nahua_bishop_plural
+				BishopNeuter = nahua_bishop
+				BishopNeuterPlural = nahua_bishop_plural
+				DivineRealm = nahua_divine_realm
+				PositiveAfterLife = nahua_positive_afterlife
+				NegativeAfterLife = nahua_negative_afterlife
+				GHWName = ghw_great_holy_war
+				GHWNamePlural = ghw_great_holy_wars
+			}
+		}
 	}
 }

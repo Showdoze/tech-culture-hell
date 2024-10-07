@@ -502,4 +502,31 @@ tr_doctrines = {
 			learning_per_piety_level = 2
 		}
 	}
+	tenet_satan = {
+		icon = core_tenet_tribunal
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+		}
+		traits = {
+			virtues = { brave deceitful = 2 arrogant  }
+			sins = { craven lazy forgiving }
+		}
+		character_modifier = {
+		}
+	}
+	tenet_christan = {
+		icon = core_tenet_tribunal
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			take_vows_active = yes
+		}
+		traits = {
+			virtues = { temperate forgiving compassionate chaste  }
+			sins = { gluttonous vengeful sadistic lustful }
+		}
+		character_modifier = {
+		}
+	}
 }
