@@ -7,7 +7,7 @@ tr_birth.01 = {
     trigger = {
         AND = {
             any_parent = {
-                any_held_title = { tier = tier_empire }
+                primary_title = { tier = tier_empire }
             }
             NOT = {
                 culture = { has_cultural_pillar = heritage_byzantine }
