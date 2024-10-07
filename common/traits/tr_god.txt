@@ -1,0 +1,213 @@
+follow_sol = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		learning = 3
+	}
+    desert_advantage = 1
+	monthly_character_prestige = 0.02
+	character_travel_speed_mult = 0.25
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_sol_desc
+			}
+			desc = trait_follow_sol_character_desc
+		}
+	}
+    opposites = {
+        follow_mars
+	}
+}
+follow_mars = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	martial = 1
+    siege_phase_time = -0.01
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mars_desc
+			}
+			desc = trait_follow_mars_character_desc
+		}
+	}
+    opposites = {
+        follow_sol
+	}
+}
+follow_mage_water = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	no_water_crossing_penalty = yes
+    wetlands_advantage = 4
+    wetlands_travel_danger = -100
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mage_water_desc
+			}
+			desc = trait_follow_mage_water_desc
+		}
+	}
+    opposites = {
+        follow_sol
+	}
+}
+follow_mage_fire = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	desert_attrition_mult = -0.25
+    character_travel_safety = 10
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mage_fire_desc
+			}
+			desc = trait_follow_mage_fire_desc
+		}
+	}
+    opposites = {
+        follow_sol
+	}
+}
+follow_mage_air = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	winter_movement_speed = 0.25
+    winter_advantage = 6
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mage_air_desc
+			}
+			desc = trait_follow_mage_air_desc
+		}
+	}
+    opposites = {
+        follow_sol
+	}
+}
+follow_mage_earth = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	hills_advantage = 4
+	hills_attrition_mult = -0.25
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mage_earth_desc
+			}
+			desc = trait_follow_mage_earth_desc
+		}
+	}
+    opposites = {
+        follow_sol
+	}
+}
+trait_follow_mage_death
+
