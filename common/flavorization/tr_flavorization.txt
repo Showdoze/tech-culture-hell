@@ -246,6 +246,30 @@
 	priority = 50
 	name_lists = { name_list_american }
  }
+ #RELIGON
+  cwc_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_cwc }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
+  }
+  cwc_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_cwc }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
+  }
+ #cwc_d
 #GREEK
  syracuse_king = {
 	type = character
@@ -1210,6 +1234,31 @@
 	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
+ }
+ hammerite_k_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 301
+	governments = { theocracy_government }
+	faiths = { hammerite_faith  }
+ }
+ hammerite_k_m = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 301
+	governments = { theocracy_government }
+	faiths = { hammerite_faith  }
+ }
+ hammerite_k = {
+	type = title
+	tier = kingdom
+	priority = 301
+	holding = church_holding
+	faiths = { hammerite_faith  }
  }
  mechanist_k_m = {
 	type = character

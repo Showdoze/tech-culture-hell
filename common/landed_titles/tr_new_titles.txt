@@ -133,3 +133,20 @@ k_mechanist = {
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
 }
+
+d_cwc = {
+    color = { 217 155 177 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+
+	capital = c_middlesex
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+}
