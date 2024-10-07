@@ -1,0 +1,162 @@
+#####DEMONS ARE NOT ALIENS AND GORDON IS SAD
+
+tr_demon_imp = {
+    type = demon
+    icon = demon_imp
+
+    can_recruit = {
+        always = no
+    }
+
+    pursuit = 20		# Damage dealt in pursuit phase if on winning side
+    screen = 20			# Damage mitigated in pursuit phase if on losing side
+    damage = 80			# Damage dealt
+    toughness = 50		# Ability to absorb damage
+    siege_value = 0.1	# How much it contributes to sieges
+    max = 5
+    stack = 50
+    allowed_in_hired_troops = no
+
+    buy_cost = { piety = 100 }
+    low_maintenance_cost = { piety = 1 }
+	high_maintenance_cost = { piety = 5 }
+
+    provision_cost = 20
+
+    fights_in_main_phase = yes
+    siege_tier = 4
+
+	terrain_bonus = {
+		farmlands = { damage = 4 toughness = 2 screen = 6 }
+		plains = { toughness = 4 screen = 4 }
+		taiga = { screen = 2 }
+	}
+
+    counters = {
+		pikemen = 2
+		archers = 2
+        light_infantry = 2
+        light_cavalry = 1
+	}
+}
+
+tr_demon_common = {
+    type = demon
+    icon = demon_common
+
+    can_recruit = {
+        always = no
+    }
+
+    pursuit = 50		# Damage dealt in pursuit phase if on winning side
+    screen = 50			# Damage mitigated in pursuit phase if on losing side
+    damage = 200			# Damage dealt
+    toughness = 100		# Ability to absorb damage
+    siege_value = 0.5	# How much it contributes to sieges
+    max = 2
+    stack = 50
+    allowed_in_hired_troops = no
+
+    buy_cost = { piety = 200 }
+    low_maintenance_cost = { piety = 2 }
+	high_maintenance_cost = { piety = 20 }
+
+    provision_cost = 30
+
+    fights_in_main_phase = yes
+    siege_tier = 2
+
+	terrain_bonus = {
+		farmlands = { damage = 4 toughness = 2 screen = 6 }
+		plains = { toughness = 4 screen = 4 }
+		taiga = { screen = 2 }
+	}
+
+    counters = {
+		pikemen = 5
+        heavy_infantry = 4
+        light_infantry = 5
+	}
+}
+
+tr_demon_hellknight = {
+    type = demon
+    icon = demon_hellknight
+
+    can_recruit = {
+        always = no
+    }
+
+    pursuit = 50		# Damage dealt in pursuit phase if on winning side
+    screen = 50			# Damage mitigated in pursuit phase if on losing side
+    damage = 400			# Damage dealt
+    toughness = 400		# Ability to absorb damage
+    siege_value = 0.4	# How much it contributes to sieges
+    max = 2
+    stack = 20
+    allowed_in_hired_troops = no
+
+    buy_cost = { piety = 400 }
+    low_maintenance_cost = { piety = 5 }
+	high_maintenance_cost = { piety = 50 }
+
+    provision_cost = 50
+
+    fights_in_main_phase = yes
+    siege_tier = 2
+
+	terrain_bonus = {
+		farmlands = { damage = 2 toughness = 1 screen = 2 }
+		plains = { toughness = 4 screen = 4 }
+		taiga = { screen = 3 }
+	}
+
+    counters = {
+		pikemen = 10
+        archers = 2
+        heavy_infantry = 5
+        light_infantry = 20
+	}
+}
+
+tr_demon_arch = {
+    type = demon
+    icon = demon_arch
+
+    can_recruit = {
+        always = no
+    }
+
+    pursuit = 100		# Damage dealt in pursuit phase if on winning side
+    screen = 100			# Damage mitigated in pursuit phase if on losing side
+    damage = 800			# Damage dealt
+    toughness = 1000		# Ability to absorb damage
+    siege_value = 1	# How much it contributes to sieges
+    max = 1
+    stack = 1
+    allowed_in_hired_troops = no
+
+    buy_cost = { piety = 1000 }
+    low_maintenance_cost = { piety = 10 }
+	high_maintenance_cost = { piety = 100 }
+
+    provision_cost = 80
+
+    fights_in_main_phase = yes
+    siege_tier = 5
+
+	terrain_bonus = {
+		farmlands = { damage = 2 toughness = 1 screen = 2 }
+		plains = { toughness = 4 screen = 4 }
+		taiga = { screen = 3 }
+	}
+
+    counters = {
+		pikemen = 50
+        archers = 50
+        heavy_infantry = 50
+        light_infantry = 100
+        light_cavalry = 30
+        heavy_cavalry = 10
+	}
+}
