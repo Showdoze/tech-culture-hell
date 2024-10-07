@@ -2,122 +2,112 @@
 
 tr_birth.01 = {
     hidden = yes
+    type = character_event
 
     trigger = {
-        birth_will_happen_as_usual_trigger = yes
-    }
-
-    immediate = {
-        if = {
-            limit = {
-                AND = {
-                    scope:father.title.tier = empire
-                    NOR = {
-                        scope:father.culture = { has_cultural_pillar = heritage_byzantine }
-                        scope:child = { has_trait = born_in_the_purple }
-                        scope:child = { has_trait = emperor_child }
-                    }
-                }
+        AND = {
+            any_parent = {
+                any_held_title = { tier = tier_empire }
             }
-            scope:child = { add_trait = emperor_child }
+            NOT = {
+                culture = { has_cultural_pillar = heritage_byzantine }
+                has_trait = born_in_the_purple
+                has_trait = emperor_child
+            }
         }
     }
+
+    immediate = { add_trait = emperor_child }
+
 }
 
 tr_birth.02 = {
     hidden = yes
 
     trigger = {
-        birth_will_happen_as_usual_trigger = yes
+        OR = {
+            culture = { has_cultural_pillar = heritage_fantasy }
+            religion = religion:fantasy_religion
+        }
     }
 
     immediate = {
-        if = {
-            limit = {
-                OR = {
-                    scope:child.culture = { has_cultural_pillar = heritage_fantasy }
-                    scope:child.religion = religion:fantasy_religion
+        random_list = {
+            # Serpent
+            5 = { add_trait = birthsign_serpent }
+            # Other
+            95 = {
+                if = {
+                    limit = {
+                        current_month = 1
+                    }
+                    add_trait = birthsign_ritual
                 }
-            }
-            random_list = {
-                # Serpent
-                5 = {
-                    scope:child = { add_trait = birthsign_serpent }
+                else_if = {
+                    limit = {
+                        current_month = 2
+                    }
+                    add_trait = birthsign_lover
                 }
-                # Other
-                95 = {
-                    if = {
-                        limit = {
-                            current_month = 1
-                        }
-                        scope:child = { add_trait = birthsign_ritual }
+                else_if = {
+                    limit = {
+                        current_month = 3
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 2
-                        }
-                        scope:child = { add_trait = birthsign_lover }
+                    add_trait = birthsign_lord
+                }
+                else_if = {
+                    limit = {
+                        current_month = 4
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 3
-                        }
-                        scope:child = { add_trait = birthsign_lord }
+                    add_trait = birthsign_mage
+                }
+                else_if = {
+                    limit = {
+                        current_month = 5
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 4
-                        }
-                        scope:child = { add_trait = birthsign_mage }
+                    add_trait = birthsign_shadow
+                }
+                else_if = {
+                    limit = {
+                        current_month = 6
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 5
-                        }
-                        scope:child = { add_trait = birthsign_shadow }
+                    add_trait = birthsign_steed
+                }
+                else_if = {
+                    limit = {
+                        current_month = 7
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 6
-                        }
-                        scope:child = { add_trait = birthsign_steed }
+                    add_trait = birthsign_apprentice
+                }
+                else_if = {
+                    limit = {
+                        current_month = 8
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 7
-                        }
-                        scope:child = { add_trait = birthsign_apprentice }
+                    add_trait = birthsign_warrior
+                }
+                else_if = {
+                    limit = {
+                        current_month = 9
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 8
-                        }
-                        scope:child = { add_trait = birthsign_warrior }
+                    add_trait = birthsign_lady
+                }
+                else_if = {
+                    limit = {
+                        current_month = 10
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 9
-                        }
-                        scope:child = { add_trait = birthsign_lady }
+                    add_trait = birthsign_tower
+                }
+                else_if = {
+                    limit = {
+                        current_month = 11
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 10
-                        }
-                        scope:child = { add_trait = birthsign_tower }
+                    add_trait = birthsign_atronach
+                }
+                else = {
+                    limit = {
+                        current_month = 12
                     }
-                    else_if = {
-                        limit = {
-                            current_month = 11
-                        }
-                        scope:child = { add_trait = birthsign_atronach }
-                    }
-                    else = {
-                        limit = {
-                            current_month = 12
-                        }
-                        scope:child = { add_trait = birthsign_thief }
-                    }
+                    add_trait = birthsign_thief
                 }
             }
         }
