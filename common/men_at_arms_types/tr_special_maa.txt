@@ -119,6 +119,46 @@ tr_demon_hellknight = {
 	}
 }
 
+tr_demon_revenant = {
+    type = demon
+    icon = demon_revenant
+
+    can_recruit = {
+        always = no
+    }
+
+    pursuit = 50		# Damage dealt in pursuit phase if on winning side
+    screen = 50			# Damage mitigated in pursuit phase if on losing side
+    damage = 700			# Damage dealt
+    toughness = 400		# Ability to absorb damage
+    siege_value = 0.8	# How much it contributes to sieges
+    max = 1
+    stack = 30
+    allowed_in_hired_troops = no
+
+    buy_cost = { piety = 600 }
+    low_maintenance_cost = { piety = 7 }
+	high_maintenance_cost = { piety = 75 }
+
+    fights_in_main_phase = yes
+    siege_tier = 2
+
+	terrain_bonus = {
+		farmlands = { damage = 2 toughness = 1 screen = 2 }
+		plains = { toughness = 4 screen = 4 }
+		taiga = { screen = 3 }
+	}
+
+    counters = {
+		pikemen = 20
+        archers = 5
+        heavy_infantry = 10
+        light_infantry = 50
+        light_cavalry = 50
+        heavy_cavalry = 20
+	}
+}
+
 tr_demon_arch = {
     type = demon
     icon = demon_arch
