@@ -6,6 +6,7 @@
 
 random_yearly_everyone_pulse = {
 	on_actions = { tr_hygene }
+	on_actions = { tr_satan }
 	on_actions = { tr_hollowing }
 }
 
@@ -31,11 +32,12 @@ on_war_started = {
 
 ## MODDED HOOKED BELOW
 
-#tr_auto = {
-#	events = { 
-#		tr_auto.01 
-#	}
-#}
+tr_satan = {
+	random_events = {
+		chance_to_happen = 5
+		100 = tr_misc.01
+	}
+}
 
 tr_hygene = {
 	random_events = {

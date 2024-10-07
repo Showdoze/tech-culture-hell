@@ -1,75 +1,62 @@
-﻿namespace = tr_auto
+﻿namespace = tr_misc
 
-tr_auto.01 = { #Hygene trait distribution
-    hidden = yes
+tr_misc.01 = {
 
-	weight_multiplier = {
-		base = 1
-		modifier = { #Less likely if you already have an extreme trait
-			add = -0.6
-			has_special_content_trait = yes
-		}
-		modifier = {
-			add = -1
-			if = {
-				age =< 6
-			}
-		}
-	}
+    type = character_event
+    title = tr_satanism_event_1
+    desc = tr_satanism_event_1_desc
+    window = visit_settlement_window
+    theme = mental_health
 
-	immediate = {
-		random_list = {
-			# Bad hygene
-			10 = {
-				trigger = {
-					NOR = { 
-						has_trait = hygene_bad_1
-						has_trait = hygene_bad_2
-						has_trait = hygene_good_1
-						has_trait = hygene_good_2
-					} 
-			    }
-			    add_trait = hygene_bad_1
-			}
-			
-			# Very bad hygene
-			5 = {
-				trigger = { 
-					NOR = { 
-						has_trait = hygene_bad_1
-						has_trait = hygene_bad_2
-						has_trait = hygene_good_1
-						has_trait = hygene_good_2
-					} 
-			    }
-			    add_trait = hygene_bad_2
-			}
+    weight_multiplier = {
+        base = 0
+        modifier = {
+            if = {
+                limit = {
+                    AND = {
+                        religion = religion:christianity_religion
+                        OR = {
+                            has_trait = possessed
+                            has_trait = lunatic
+                        }
+                        piety_level < 2
+                    }
+                    add = 0.1
+                }
+            }
+        }
+        modifier = {
+            if = {
+                limit = {
+                    is_excommunicated = yes
+                    add = 0.1
+                }
+            }
+        }
+    }
 
-			# Good hygene
-			8 = {
-				trigger = { 
-					NOR = { 
-						has_trait = hygene_bad_1
-						has_trait = hygene_bad_2
-						has_trait = hygene_good_1
-						has_trait = hygene_good_2
-					} 
-			    }
-			    add_trait = hygene_good_1
-			}
+    option = {
+        name = tr_satanism_events_accept
+        custom_tooltip = tr_satanism_events_accept_tip
 
-			# Very good hygene
-			5 = {
-				trigger = { 
-					NOR = { 
-						has_trait = hygene_bad_1
-						has_trait = hygene_bad_2
-						has_trait = hygene_good_1
-						has_trait = hygene_good_2
-					} 
-			    }
-			    add_trait = hygene_good_2
-			}
-		}
-	}
+        set_character_faith = faith:satanism
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = {
+        name = tr_satanism_events_decline
+        custom_tooltip = tr_satanism_events_decline_tip
+
+        stress_impact = {
+            base = 20
+        }
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
 }
