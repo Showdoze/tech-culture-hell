@@ -322,3 +322,27 @@ convert_resources_decision = {
         }
     }
 }
+
+summon_demons_decision = {
+
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+    title = summon_demons_decision
+    desc = summon_demons_decision_desc
+    selection_tooltip = summon_demons_decision_tip
+    confirm_text = summon_demons_decision_confirm
+
+    is_shown = {
+        faith = faith:satanism
+    }
+    is_valid = {
+        piety > 100
+        can_recruit_men_at_arms = yes
+    }
+
+    effect = {
+        custom_tooltip = summon_demons_decision_effect_tip
+        trigger_event = {
+            id = tr_satanism.02
+        }
+    }
+}

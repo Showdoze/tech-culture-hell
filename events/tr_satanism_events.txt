@@ -3,8 +3,8 @@
 tr_satanism.01 = {
 
     type = character_event
-    title = tr_satanism_event_1
-    desc = tr_satanism_event_1_desc
+    title = tr_satanism_event_convert
+    desc = tr_satanism_event_convert_desc
     window = visit_settlement_window
     theme = mental_health
 
@@ -36,8 +36,8 @@ tr_satanism.01 = {
     }
 
     option = {
-        name = tr_satanism_events_accept
-        custom_tooltip = tr_satanism_events_accept_tip
+        name = tr_satanism_event_convert_accept
+        custom_tooltip = tr_satanism_event_convert_accept_tip
 
         set_character_faith = faith:satanism
 
@@ -47,8 +47,8 @@ tr_satanism.01 = {
     }
 
     option = {
-        name = tr_satanism_events_decline
-        custom_tooltip = tr_satanism_events_decline_tip
+        name = tr_satanism_event_convert_decline
+        custom_tooltip = tr_satanism_event_convert_decline_tip
 
         stress_impact = {
             base = 20
@@ -59,4 +59,20 @@ tr_satanism.01 = {
         }
     }
 
+}
+
+tr_satanism.02 = {
+
+    type = character_event
+    title = tr_satanism_event_summon
+    desc = tr_satanism_event_summon_desc
+    window = visit_settlement_window
+
+    option = {
+        name = tr_satanism_event_summon_imp
+        custom_tooltip = tr_satanism_event_summon_imp_tip
+
+        add_maa_regiment = tr_demon_imp
+        add_piety = -100
+    }
 }
