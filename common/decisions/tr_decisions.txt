@@ -335,8 +335,7 @@ summon_demons_decision = {
         faith = faith:satanism
     }
     is_valid = {
-        piety > 100
-        can_recruit_men_at_arms = yes
+        piety_level >= 1
     }
 
     effect = {
