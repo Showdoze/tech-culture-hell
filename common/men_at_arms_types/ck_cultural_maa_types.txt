@@ -141,9 +141,13 @@
 	pursuit = 20
 	screen = 10
 	terrain_bonus = {
-		jungle = { damage = 12 toughness = 8 }
+		jungle = { damage = 12 toughness = 8 pursuit = 5 }
 		forest = { damage = 8 toughness = 4 }
 		hills = { damage = 8 toughness = 4 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = -5 pursuit = -5 screen = -5 }
+		harsh_winter = { damage = -5 pursuit = -10 screen = -10 }
 	}
 	counters = {
 		pikemen = 1
@@ -189,7 +193,7 @@
 	damage = 20 
 	toughness = 20
 	pursuit = 20
-	screen = 10	
+	screen = 10
 	terrain_bonus = {
 		plains = { damage = 1 }
 		drylands = { damage = 1 }
@@ -204,8 +208,8 @@
 		camel_cavalry = 1
 	}
 	winter_bonus = {
-		normal_winter = { damage = -10 toughness = -5 }
-		harsh_winter = { damage = -20 toughness = -5 }
+		normal_winter = { damage = -10 toughness = -5 pursuit = -10 screen = -5 }
+		harsh_winter = { damage = -20 toughness = -5 pursuit = -20 screen = -10 }
 	}
 	can_recruit = {
 		culture = { has_innovation = innovation_nile_agriculture }
@@ -529,7 +533,7 @@
  }
 #ELDER SCROLLS
  #Imperial
-  armored_legionaires = { #Unlocked by Coin and Sword
+  armored_legionaires = { 
 	type = heavy_infantry
 	damage = 32
 	toughness = 32
@@ -540,13 +544,14 @@
 	}
 	counters = {
 		pikemen = 1
+		light_cavalry = 1
 	}
 	can_recruit = {
 		culture = { has_innovation = innovation_imperial_build }
 	}
-	buy_cost = { gold = 90 }
-	low_maintenance_cost = { gold = 0.4 }
-	high_maintenance_cost = { gold = 1.6 }
+	buy_cost = { gold = 50 prestige = 50 }
+	low_maintenance_cost = { gold = 0.3 prestige = 0.1 }
+	high_maintenance_cost = { gold = 1.1 prestige = 0.5 }
 	provision_cost = 3
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score}
