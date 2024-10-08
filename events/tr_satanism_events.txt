@@ -8,6 +8,8 @@ tr_satanism.01 = {
     window = visit_settlement_window
     theme = mental_health
 
+    left_portrait = root
+
     weight_multiplier = {
         base = 0
         modifier = {
@@ -59,108 +61,4 @@ tr_satanism.01 = {
         }
     }
 
-}
-
-tr_satanism.02 = {
-
-    type = character_event
-    title = tr_satanism_event_summon
-    desc = tr_satanism_event_summon_desc
-    window = visit_settlement_window
-    theme = mental_health
-
-    option = {
-        name = tr_satanism_event_summon_imp
-        custom_tooltip = tr_satanism_event_summon_imp_tip
-
-        spawn_army = {
-            men_at_arms = {
-                type = tr_demon_imp
-                men = 50
-            }
-            location = root.location
-            name = demons_imps
-        }
-        add_piety = -100
-    }
-
-    option = {
-        name = tr_satanism_event_summon_common
-        custom_tooltip = tr_satanism_event_summon_common_tip
-
-        trigger = {
-            piety_level >= 1
-        }
-
-        spawn_army = {
-            men_at_arms = {
-                type = tr_demon_common
-                men = 50
-            }
-            location = root.location
-            inheritable = no
-            name = demons_common
-        }
-        add_piety = -200
-    }
-
-    option = {
-        name = tr_satanism_event_summon_hellknight
-        custom_tooltip = tr_satanism_event_summon_hellknight_tip
-
-        trigger = {
-            piety_level >= 2
-        }
-
-        spawn_army = {
-            men_at_arms = {
-                type = tr_demon_hellknight
-                men = 20
-            }
-            location = root.location
-            inheritable = no
-            name = demons_hellknights
-        }
-        add_piety = -400
-    }
-
-    option = {
-        name = tr_satanism_event_summon_hellknight
-        custom_tooltip = tr_satanism_event_summon_hellknight_tip
-
-        trigger = {
-            piety_level >= 3
-        }
-
-        spawn_army = {
-            men_at_arms = {
-                type = tr_demon_revenant
-                men = 30
-            }
-            location = root.location
-            inheritable = no
-            name = demons_revenants
-        }
-        add_piety = -600
-    }
-
-    option = {
-        name = tr_satanism_event_summon_archdemon
-        custom_tooltip = tr_satanism_event_summon_archdemon_tip
-
-        trigger = {
-            piety_level >= 4
-        }
-
-        spawn_army = {
-            men_at_arms = {
-                type = tr_demon_arch
-                men = 1
-            }
-            location = root.location
-            inheritable = no
-            name = demons_arch
-        }
-        add_piety = -1000
-    }
 }

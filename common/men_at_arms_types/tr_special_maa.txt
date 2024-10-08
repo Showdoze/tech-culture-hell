@@ -19,25 +19,25 @@ tr_demon_imp = {
 
     buy_cost = { piety = 100 }
     low_maintenance_cost = { piety = 1 }
-	high_maintenance_cost = { piety = 5 }
+    high_maintenance_cost = { piety = 5 }
 
     provision_cost = 20
 
     fights_in_main_phase = yes
     siege_tier = 4
 
-	terrain_bonus = {
-		farmlands = { damage = 4 toughness = 2 screen = 6 }
-		plains = { toughness = 4 screen = 4 }
-		taiga = { screen = 2 }
-	}
+    terrain_bonus = {
+        farmlands = { damage = 4 toughness = 2 screen = 6 }
+        plains = { toughness = 4 screen = 4 }
+        taiga = { screen = 2 }
+    }
 
     counters = {
-		pikemen = 2
-		archers = 2
+        pikemen = 2
+        archers = 2
         light_infantry = 2
         light_cavalry = 1
-	}
+    }
 }
 
 tr_demon_common = {
@@ -59,24 +59,24 @@ tr_demon_common = {
 
     buy_cost = { piety = 200 }
     low_maintenance_cost = { piety = 2 }
-	high_maintenance_cost = { piety = 20 }
+    high_maintenance_cost = { piety = 20 }
 
     provision_cost = 30
 
     fights_in_main_phase = yes
     siege_tier = 2
 
-	terrain_bonus = {
-		farmlands = { damage = 4 toughness = 2 screen = 6 }
-		plains = { toughness = 4 screen = 4 }
-		taiga = { screen = 2 }
-	}
+    terrain_bonus = {
+        farmlands = { damage = 4 toughness = 2 screen = 6 }
+        plains = { toughness = 4 screen = 4 }
+        taiga = { screen = 2 }
+    }
 
     counters = {
-		pikemen = 5
+        pikemen = 5
         heavy_infantry = 4
         light_infantry = 5
-	}
+    }
 }
 
 tr_demon_hellknight = {
@@ -90,7 +90,7 @@ tr_demon_hellknight = {
     pursuit = 50		# Damage dealt in pursuit phase if on winning side
     screen = 50			# Damage mitigated in pursuit phase if on losing side
     damage = 400			# Damage dealt
-    toughness = 400		# Ability to absorb damage
+    toughness = 1000		# Ability to absorb damage
     siege_value = 0.4	# How much it contributes to sieges
     max = 2
     stack = 20
@@ -98,25 +98,25 @@ tr_demon_hellknight = {
 
     buy_cost = { piety = 400 }
     low_maintenance_cost = { piety = 5 }
-	high_maintenance_cost = { piety = 50 }
+    high_maintenance_cost = { piety = 50 }
 
     provision_cost = 50
 
     fights_in_main_phase = yes
     siege_tier = 2
 
-	terrain_bonus = {
-		farmlands = { damage = 2 toughness = 1 screen = 2 }
-		plains = { toughness = 4 screen = 4 }
-		taiga = { screen = 3 }
-	}
+    terrain_bonus = {
+        farmlands = { damage = 2 toughness = 1 screen = 2 }
+        plains = { toughness = 4 screen = 4 }
+        taiga = { screen = 3 }
+    }
 
     counters = {
-		pikemen = 10
+        pikemen = 10
         archers = 2
         heavy_infantry = 5
         light_infantry = 20
-	}
+    }
 }
 
 tr_demon_revenant = {
@@ -138,25 +138,25 @@ tr_demon_revenant = {
 
     buy_cost = { piety = 600 }
     low_maintenance_cost = { piety = 7 }
-	high_maintenance_cost = { piety = 75 }
+    high_maintenance_cost = { piety = 75 }
 
     fights_in_main_phase = yes
     siege_tier = 2
 
-	terrain_bonus = {
-		farmlands = { damage = 2 toughness = 1 screen = 2 }
-		plains = { toughness = 4 screen = 4 }
-		taiga = { screen = 3 }
-	}
+    terrain_bonus = {
+        farmlands = { damage = 2 toughness = 1 screen = 2 }
+        plains = { toughness = 4 screen = 4 }
+        taiga = { screen = 3 }
+    }
 
     counters = {
-		pikemen = 20
+        pikemen = 20
         archers = 5
         heavy_infantry = 10
         light_infantry = 50
         light_cavalry = 50
         heavy_cavalry = 20
-	}
+    }
 }
 
 tr_demon_arch = {
@@ -169,7 +169,7 @@ tr_demon_arch = {
 
     pursuit = 100		# Damage dealt in pursuit phase if on winning side
     screen = 100			# Damage mitigated in pursuit phase if on losing side
-    damage = 1000			# Damage dealt
+    damage = 2000			# Damage dealt
     toughness = 5000		# Ability to absorb damage
     siege_value = 1	# How much it contributes to sieges
     max = 1
@@ -178,25 +178,87 @@ tr_demon_arch = {
 
     buy_cost = { piety = 1000 }
     low_maintenance_cost = { piety = 10 }
-	high_maintenance_cost = { piety = 100 }
+    high_maintenance_cost = { piety = 100 }
 
     provision_cost = 80
 
     fights_in_main_phase = yes
     siege_tier = 5
 
-	terrain_bonus = {
-		farmlands = { damage = 2 toughness = 1 screen = 2 }
-		plains = { toughness = 4 screen = 4 }
-		taiga = { screen = 3 }
-	}
+    terrain_bonus = {
+        farmlands = { damage = 2 toughness = 1 screen = 2 }
+        plains = { toughness = 4 screen = 4 }
+        taiga = { screen = 3 }
+    }
 
     counters = {
-		pikemen = 50
+        pikemen = 50
         archers = 50
         heavy_infantry = 50
         light_infantry = 100
         light_cavalry = 30
         heavy_cavalry = 10
-	}
+    }
+}
+
+#Dwemer
+sphere_centurion = {
+    type = automaton
+    can_recruit = { always = no }
+    damage = 500
+    toughness = 1000
+    pursuit = 30
+    screen = 30
+    siege_tier = 1
+    siege_value = 0.4
+    terrain_bonus = {
+        wetlands = { damage = -30 toughness = -10 pursuit = -50 screen = -50 }
+    }
+    winter_bonus = {
+        normal_winter = {  pursuit = -2 screen = -2 }
+        harsh_winter = {  pursuit = -5 screen = -5 }
+    }
+    counters = {
+        pikemen = 1
+        light_cavalry = 1
+        camel_cavalry = 1
+        skirmishers = 2
+    }
+    buy_cost = { gold = 400 }
+    low_maintenance_cost = { gold = 1 }
+    high_maintenance_cost = { gold = 10 }
+    stack = 20
+    allowed_in_hired_troops = no
+    ai_quality = { value = 0 }
+    icon = sphere_centurion
+}
+steam_centurion = {
+    type = automaton
+    can_recruit = { always = no }
+    damage = 1200
+    toughness = 3000
+    pursuit = 8
+    screen = 8
+    siege_tier = 2
+    siege_value = 0.8
+    terrain_bonus = {
+        wetlands = { damage = -30 toughness = -10 pursuit = -50 screen = -50 }
+    }
+    winter_bonus = {
+        normal_winter = {  pursuit = -2 screen = -2 }
+        harsh_winter = {  pursuit = -5 screen = -5 }
+    }
+    counters = {
+        pikemen = 1
+        light_cavalry = 1
+        camel_cavalry = 1
+        skirmishers = 2
+    }
+    buy_cost = { gold = 1000 }
+    low_maintenance_cost = { gold = 1 }
+    high_maintenance_cost = { gold = 10 }
+    stack = 5
+    allowed_in_hired_troops = no
+    ai_quality = { value = 0 }
+    icon = steam_centurion
 }

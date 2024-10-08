@@ -498,32 +498,32 @@ select_personal_deity_dwemer_decision = {
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_learning
-                    add_character_modifier = bhakti_follow_learning
+                    add_character_modifier = dwemer_study_learning
                 }
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_martial
-                    add_character_modifier = bhakti_follow_martial
+                    add_character_modifier = dwemer_study_martial
                 }
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_steward
-                    add_character_modifier = bhakti_follow_steward
+                    add_character_modifier = dwemer_study_steward
                 }
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_health
-                    add_character_modifier = bhakti_follow_health
+                    add_character_modifier = dwemer_study_health
                 }
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_darkness
-                    add_character_modifier = bhakti_follow_darkness
+                    add_character_modifier = dwemer_study_darkness
                 }
                 100 = {
                     show_chance = no
                     desc = select_personal_deity_dwemer_decision.select_follow_diplomacy
-                    add_character_modifier = bhakti_follow_diplomacy
+                    add_character_modifier = dwemer_study_diplomacy
                 }
             }
         }
@@ -534,12 +534,12 @@ select_personal_deity_dwemer_decision = {
     ai_potential = {
         piety >= minor_piety_value
         NOR = {
-            has_character_modifier = bhakti_follow_learning
-            has_character_modifier = bhakti_follow_martial
-            has_character_modifier = bhakti_follow_steward
-            has_character_modifier = bhakti_follow_health
-            has_character_modifier = bhakti_follow_darkness
-            has_character_modifier = bhakti_follow_diplomacy
+            has_character_modifier = dwemer_study_learning
+            has_character_modifier = dwemer_study_martial
+            has_character_modifier = dwemer_study_steward
+            has_character_modifier = dwemer_study_health
+            has_character_modifier = dwemer_study_darkness
+            has_character_modifier = dwemer_study_diplomacy
         }
     }
     ai_will_do = {

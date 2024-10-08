@@ -1,0 +1,214 @@
+namespace = tr_summoning
+
+tr_summoning.01 = { #summon demons
+
+    type = character_event
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = summon_demons_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = construct_animunculi_decision
+            }
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = summon_demons_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = construct_animunculi_decision_desc
+            }
+        }
+    }
+    window = visit_settlement_window
+    theme = mental_health
+
+    left_portrait = {
+        character = root
+        animation = {
+            first_valid = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                personality_sadistic
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                personality_rational
+            }
+
+        }
+    }
+
+    ###### DEMONS ######
+
+    option = {
+        name = tr_summoning_event_summon_imp
+        custom_tooltip = tr_summoning_event_summon_imp_tip
+
+        trigger = {
+            faith = faith:satanism
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = tr_demon_imp
+                men = 50
+            }
+            location = root.location
+            inheritable = no
+            name = demons_imps
+        }
+        add_piety = -100
+    }
+
+    option = {
+        name = tr_summoning_event_summon_common
+        custom_tooltip = tr_summoning_event_summon_common_tip
+
+        trigger = {
+            piety_level >= 2
+            faith = faith:satanism
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = tr_demon_common
+                men = 50
+            }
+            location = root.location
+            inheritable = no
+            name = demons_common
+        }
+        add_piety = -200
+    }
+
+    option = {
+        name = tr_summoning_event_summon_hellknight
+        custom_tooltip = tr_summoning_event_summon_hellknight_tip
+
+        trigger = {
+            piety_level >= 3
+            faith = faith:satanism
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = tr_demon_hellknight
+                men = 20
+            }
+            location = root.location
+            inheritable = no
+            name = demons_hellknights
+        }
+        add_piety = -400
+    }
+
+    option = {
+        name = tr_summoning_event_summon_revenant
+        custom_tooltip = tr_summoning_event_summon_revenant_tip
+
+        trigger = {
+            piety_level >= 4
+            faith = faith:satanism
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = tr_demon_revenant
+                men = 30
+            }
+            location = root.location
+            inheritable = no
+            name = demons_revenants
+        }
+        add_piety = -600
+    }
+
+    option = {
+        name = tr_summoning_event_summon_archdemon
+        custom_tooltip = tr_summoning_event_summon_archdemon_tip
+
+        trigger = {
+            piety_level >= 5
+            faith = faith:satanism
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = tr_demon_arch
+                men = 1
+            }
+            location = root.location
+            inheritable = no
+            name = demons_arch
+        }
+        add_piety = -1000
+    }
+
+    ####### DWEMER ####
+
+    option = {
+        name = tr_summoning_event_summon_dwemer_sphere
+        custom_tooltip = tr_summoning_event_summon_dwemer_sphere_tip
+
+        trigger = {
+            gold >= 400
+            faith = faith:dwemer_religion
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = sphere_centurion
+                men = 20
+            }
+            location = root.location
+            inheritable = yes
+            name = dwemer_sphere
+        }
+        add_gold = -400
+    }
+
+    option = {
+        name = tr_summoning_event_summon_dwemer_centurion
+        custom_tooltip = tr_summoning_event_summon_dwemer_centurion_tip
+
+        trigger = {
+            gold >= 1000
+            faith = faith:dwemer_religion
+        }
+
+        spawn_army = {
+            men_at_arms = {
+                type = steam_centurion
+                men = 5
+            }
+            location = root.location
+            inheritable = yes
+            name = dwemer_centurion
+        }
+        add_gold = -1000
+    }
+
+    ####CANCEL
+
+    option = {
+        name = tr_summoning_event_summon_cancel
+        custom_tooltip = tr_summoning_event_summon_cancel_tip
+    }
+}
