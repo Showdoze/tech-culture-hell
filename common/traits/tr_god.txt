@@ -101,7 +101,10 @@ follow_mage_water = {
 		}
 	}
     opposites = {
-        follow_sol
+		follow_mage_fire
+		follow_mage_air
+        follow_mage_earth
+		follow_mage_death
 	}
 }
 follow_mage_fire = {
@@ -136,7 +139,10 @@ follow_mage_fire = {
 		}
 	}
     opposites = {
-        follow_sol
+        follow_mage_water
+		follow_mage_air
+        follow_mage_earth
+		follow_mage_death
 	}
 }
 follow_mage_air = {
@@ -171,7 +177,10 @@ follow_mage_air = {
 		}
 	}
     opposites = {
-        follow_sol
+        follow_mage_water
+		follow_mage_fire
+        follow_mage_earth
+		follow_mage_death
 	}
 }
 follow_mage_earth = {
@@ -206,7 +215,10 @@ follow_mage_earth = {
 		}
 	}
     opposites = {
-        follow_sol
+        follow_mage_water
+		follow_mage_fire
+		follow_mage_air
+		follow_mage_death
 	}
 }
 follow_mage_death = {
@@ -243,7 +255,10 @@ follow_mage_death = {
 		}
 	}
     opposites = {
-        follow_sol
+		follow_mage_water
+		follow_mage_fire
+		follow_mage_air
+        follow_mage_earth
 	}
 }
 
