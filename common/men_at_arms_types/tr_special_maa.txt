@@ -262,3 +262,23 @@ steam_centurion = {
     ai_quality = { value = 0 }
     icon = steam_centurion
 }
+#THIEF
+ thief_zombie = {
+    type = undead
+    can_recruit = { always = no }
+    damage = 25
+	toughness = 20
+    pursuit = 0
+    screen = 0
+    counters = {
+        skirmishers = 2
+    }
+    buy_cost = { piety = 100 }
+    low_maintenance_cost = { piety = 0.1 }
+    high_maintenance_cost = { piety = 1 }
+    stack = 1000
+    allowed_in_hired_troops = no
+    ai_quality = { value = 0 }
+    icon = thief_zom
+ }
+#
