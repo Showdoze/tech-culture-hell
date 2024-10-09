@@ -261,4 +261,347 @@ follow_mage_death = {
         follow_mage_earth
 	}
 }
-
+ds_covenant_aldrich = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_aldrich_desc
+			}
+			desc = trait_ds_covenant_aldrich_desc
+		}
+	}
+    opposites = {
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_blue = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_blue_desc
+			}
+			desc = trait_ds_covenant_blue_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_darkmoon = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_darkmoon_desc
+			}
+			desc = trait_ds_covenant_darkmoon_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_farron = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_farron_desc
+			}
+			desc = trait_ds_covenant_farron_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_moundmakers = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_moundmakers_desc
+			}
+			desc = trait_ds_covenant_moundmakers_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_rosaria = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_rosaria_desc
+			}
+			desc = trait_ds_covenant_rosaria_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_sentinels
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_sentinels = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_sentinels_desc
+			}
+			desc = trait_ds_covenant_sentinels_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sunlight
+	}
+}
+ds_covenant_sunlight = {
+    category = fame
+	random_creation = 0
+	same_opinion = 10
+    monthly_piety = 0.3
+	dread_gain_mult = 0.25
+	dread_decay_mult = -0.25
+	epidemic_resistance = 10
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	same_faith_opinion = -5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_ds_covenant_sunlight_desc
+			}
+			desc = trait_ds_covenant_sunlight_desc
+		}
+	}
+    opposites = {
+		ds_covenant_aldrich
+		ds_covenant_blue
+		ds_covenant_darkmoon
+		ds_covenant_farron
+		ds_covenant_moundmakers
+		ds_covenant_rosaria
+		ds_covenant_sentinels
+	}
+}
