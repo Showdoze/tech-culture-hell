@@ -9,7 +9,13 @@ tr_select_deity.01 = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision
+                desc = satanism_select_demon_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision
             }
             triggered_desc = {
                 trigger = {
@@ -25,7 +31,13 @@ tr_select_deity.01 = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision_desc
+                desc = satanism_select_demon_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision_desc
             }
             triggered_desc = {
                 trigger = {
@@ -47,7 +59,7 @@ tr_select_deity.01 = {
     ######DARK SOULS
 
     option = {# Gwyn
-        name = ds1_choose_covenant_gwyn
+        name = ds1_select_covenant_gwyn
         trigger = {
             AND = {
                 faith = faith:ds1_faith
