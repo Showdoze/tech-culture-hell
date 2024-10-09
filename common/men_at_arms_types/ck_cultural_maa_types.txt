@@ -153,6 +153,7 @@
 		pikemen = 1
 		heavy_infantry = 2
 		skirmishers = 2
+		undead = 1
 	}
 	buy_cost = { gold = @maa_buy_cost }
 	low_maintenance_cost = { gold = @maa_low_maintenance_cost }
@@ -282,6 +283,7 @@
 		light_cavalry = 1
 		camel_cavalry = 1
 		skirmishers = 2
+		undead = 5
 	}
 	buy_cost = { gold = 200 }
 	low_maintenance_cost = { gold = 1 }
@@ -768,12 +770,12 @@
 		camel_cavalry = 3
 		elephant_cavalry = 1
 		automaton = 1
-		demon = 1
+		demon = 4
 	}
 	can_recruit = {
 		culture = { has_innovation = innovation_neo_crusader }
 	}
-	buy_cost = { gold = 150 }
+	buy_cost = { gold = 110 prestige = 50 }
 	low_maintenance_cost = { gold = 0.1 }
 	high_maintenance_cost = { gold = 1 }
 	provision_cost = 3
