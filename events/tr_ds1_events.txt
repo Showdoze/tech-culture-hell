@@ -1,44 +1,6 @@
 ﻿namespace = ds1_event
 
-#########################
-# Select Personal God	#
-# by herkles     		#
-# 0101					#
-#########################
-
-ds1_event.01 = {
-	
-    type = character_event
-    title = ds1_choose_covenant
-    window = visit_settlement_window
-    desc = {
-        desc = ds1_choose_covenant_desc
-    }
-    theme = faith
-    left_portrait = {
-        character = root
-        animation = personality_rational
-    }
-
-    option = {# Gwyn
-        name = ds1_choose_covenant_gwyn
-        trigger = {
-            NOT = {
-                has_character_modifier = ds1_covenant_gwyn
-            }
-        }
-        set_bhakti_effect = { BHAKTI = ds1_covenant_gwyn }
-    }
-
-    # Opt-Out
-    option = {
-        name = ds1_choose_covenant_optout
-        flavor = ds1_choose_covenant_optout_flavor
-        ai_chance = { base = 0 }
-    }
-}
-
-ds1_event.02 = { # not really a decision rather using its namespace to not make a whole new file
+ds1_event.01 = { # not really a decision rather using its namespace to not make a whole new file
 
     type = character_event
     title = ds1_hollowing_event

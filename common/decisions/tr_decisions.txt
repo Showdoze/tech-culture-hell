@@ -258,6 +258,136 @@ convert_resources_decision = {
     }
 }
 
+tr_select_personal_deity_decision = {
+    picture = {
+        trigger = { faith = faith:satanism }
+        reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
+    }
+    picture = {
+        trigger = { faith = faith:dwemer_religion }
+        reference = "gfx/interface/illustrations/decisions/decision_dwemer_factory.dds"
+    }
+        picture = {
+        trigger = { faith = faith:ds1_faith }
+        reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+    }
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision
+            }
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision_desc
+            }
+        }
+    }
+    selection_tooltip = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision_tip
+            }
+        }
+    }
+    confirm_text = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:ds1_faith
+                }
+                desc = ds1_select_covenant_decision_confirm
+            }
+        }
+    }
+    is_shown = {
+        AND = {
+            OR = {
+                faith = faith:dwemer_religion
+                faith = faith:satanism
+                faith = faith:ds1_faith
+            }
+        }
+        faith = { has_doctrine_parameter = select_personal_god_active }
+    }
+    is_valid = {
+        piety >= 0
+    }
+    cooldown = {
+        years = 1
+    }
+    effect = {
+        trigger_event = tr_select_deity.01
+    }
+
+    ai_check_interval = 360
+    ai_potential = {
+        piety >= minor_piety_value
+    }
+    ai_will_do = {
+        base = 10
+    }
+}
+
 summon_speical_maa_decision = {
 
     picture = {

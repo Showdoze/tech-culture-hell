@@ -1,0 +1,149 @@
+namespace = tr_select_deity
+
+tr_select_deity.01 = {
+
+    type = character_event
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision
+            }
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_deity_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dwemer_religion
+                }
+                desc = dwemer_select_study_decision_desc
+            }
+        }
+    }
+
+    window = visit_settlement_window
+    theme = faith
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    ######DARK SOULS
+
+    option = {# Gwyn
+        name = ds1_choose_covenant_gwyn
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_character_modifier = ds1_covenant_gwyn
+                }
+            }
+        }
+        add_character_modifier = ds1_covenant_gwyn
+    }
+
+    #####DWEMER
+
+    option = {
+        name = dwemer_choose_study_learning
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_learning
+                }
+            }
+        }
+        add_character_modifier = follow_learning
+    }
+
+    option = {
+        name = dwemer_choose_study_martial
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_martial
+                }
+            }
+        }
+        add_character_modifier = follow_martial
+    }
+
+    option = {
+        name = dwemer_choose_study_steward
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_steward
+                }
+            }
+        }
+        add_character_modifier = follow_steward
+    }
+
+    option = {
+        name = dwemer_choose_study_health
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_health
+                }
+            }
+        }
+        add_character_modifier = follow_health
+    }
+
+    option = {
+        name = dwemer_choose_study_darkness
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_darkness
+                }
+            }
+        }
+        add_character_modifier = follow_darkness
+    }
+
+    option = {
+        name = dwemer_choose_study_diplomacy
+        trigger = {
+            AND = {
+                faith = faith:dwemer_religion
+                NOT = {
+                    has_character_modifier = follow_diplomacy
+                }
+            }
+        }
+        add_character_modifier = follow_diplomacy
+    }
+
+    ####Opt-Out
+
+    option = {
+        name = tr_select_deity_cancel
+        custom_tooltip = tr_select_deity_cancel_tip
+    }
+
+}
