@@ -11,6 +11,15 @@ follow_sol = {
 		parameter = devoted_trait_bonuses
 		learning = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	culture_modifier = {
+		parameter = dry_trait_bonuses
+		drylands_attrition_mult = -0.25
+		desert_attrition_mult = -0.25
+	}
     desert_advantage = 1
 	monthly_character_prestige = 0.02
 	character_travel_speed_mult = 0.25
@@ -46,6 +55,10 @@ follow_mars = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
 	martial = 1
     siege_phase_time = -0.01
@@ -68,7 +81,10 @@ follow_mars = {
         follow_sol
 	}
 }
-follow_mage_water = {
+
+
+#norse
+ follow_thor = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
@@ -81,10 +97,54 @@ follow_mage_water = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	prowess = major_skill_bonus
+	stewardship = medium_skill_bonus
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mars_desc
+			}
+			desc = trait_follow_mars_character_desc
+		}
+	}
+    opposites = {
+	}
+ }
+#MAGe
+ follow_mage_water = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
 	no_water_crossing_penalty = yes
     wetlands_advantage = 4
     wetlands_travel_danger = -100
+	wetlands_attrition_mult = -0.25
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -106,12 +166,13 @@ follow_mage_water = {
         follow_mage_earth
 		follow_mage_death
 	}
-}
-follow_mage_fire = {
+ }
+ follow_mage_fire = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
     monthly_piety = 0.3
+	siege_phase_time = -0.1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -120,8 +181,13 @@ follow_mage_fire = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
 	desert_attrition_mult = -0.25
+	desert_mountains_attrition_mult = -0.25
     character_travel_safety = 20
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
@@ -144,12 +210,13 @@ follow_mage_fire = {
         follow_mage_earth
 		follow_mage_death
 	}
-}
-follow_mage_air = {
+ }
+ follow_mage_air = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
     monthly_piety = 0.3
+	siege_phase_time = -0.1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -158,9 +225,14 @@ follow_mage_air = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
 	winter_movement_speed = 0.25
     winter_advantage = 6
+	winter_movement_speed = 0.1
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -182,8 +254,8 @@ follow_mage_air = {
         follow_mage_earth
 		follow_mage_death
 	}
-}
-follow_mage_earth = {
+ }
+ follow_mage_earth = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
@@ -196,9 +268,15 @@ follow_mage_earth = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
+	provisions_gain_mult = 0.05
 	hills_advantage = 4
 	hills_attrition_mult = -0.25
+	mountains_attrition_mult = -0.25
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -220,8 +298,8 @@ follow_mage_earth = {
 		follow_mage_air
 		follow_mage_death
 	}
-}
-follow_mage_death = {
+ }
+ follow_mage_death = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
@@ -236,6 +314,10 @@ follow_mage_death = {
 	culture_modifier = {
 		parameter = devoted_trait_bonuses
 		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
 	}
 	monthly_character_prestige = 0.02
 	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
@@ -260,15 +342,16 @@ follow_mage_death = {
 		follow_mage_air
         follow_mage_earth
 	}
-}
-ds_covenant_aldrich = {
+ }
+#DS 
+ ds_covenant_aldrich = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
     monthly_piety = 0.3
-	dread_gain_mult = 0.25
-	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	church_holding_build_gold_cost = -0.05
+	church_holding_holding_build_gold_cost = -0.05
+	epidemic_resistance = 1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -277,9 +360,11 @@ ds_covenant_aldrich = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -303,15 +388,16 @@ ds_covenant_aldrich = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_blue = {
+ }
+ ds_covenant_blue = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
+	learn_language_scheme_power_mult = 0.1
+	liege_opinion = 5
+	barons_and_minor_landholders_opinion = 5
     monthly_piety = 0.3
-	dread_gain_mult = 0.25
-	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	epidemic_resistance = 1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -320,9 +406,11 @@ ds_covenant_blue = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -346,15 +434,16 @@ ds_covenant_blue = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_darkmoon = {
+ }
+ ds_covenant_darkmoon = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
+	prowess = 4
     monthly_piety = 0.3
 	dread_gain_mult = 0.25
 	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	epidemic_resistance = 1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -363,9 +452,11 @@ ds_covenant_darkmoon = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -389,15 +480,17 @@ ds_covenant_darkmoon = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_farron = {
+ }
+ ds_covenant_farron = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
     monthly_piety = 0.3
-	dread_gain_mult = 0.25
-	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	prowess = 2
+	wetlands_travel_danger = -50
+	wetlands_attrition_mult = -0.1
+	wetlands_advantage = 2
+	epidemic_resistance = 2
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -406,9 +499,11 @@ ds_covenant_farron = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -432,15 +527,17 @@ ds_covenant_farron = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_moundmakers = {
+ }
+ ds_covenant_moundmakers = {
     category = fame
 	random_creation = 0
-	same_opinion = 10
+	same_opinion = 5
+	prowess = 2
     monthly_piety = 0.3
 	dread_gain_mult = 0.25
 	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	monthly_prestige_gain_per_dread_add = 0.01
+	epidemic_resistance = 2
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -449,10 +546,13 @@ ds_covenant_moundmakers = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
+	ai_rationality = -200
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -475,15 +575,19 @@ ds_covenant_moundmakers = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_rosaria = {
+ }
+ ds_covenant_rosaria = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
+	prowess = 1
     monthly_piety = 0.3
 	dread_gain_mult = 0.25
 	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	monthly_prestige_gain_per_dread_add = 0.01
+	raid_speed = 0.1
+	owned_scheme_secrecy_add = 1
+	epidemic_resistance = 2
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -492,9 +596,11 @@ ds_covenant_rosaria = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -518,15 +624,16 @@ ds_covenant_rosaria = {
 		ds_covenant_sentinels
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_sentinels = {
+ }
+ ds_covenant_sentinels = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
+	prowess = 4
     monthly_piety = 0.3
 	dread_gain_mult = 0.25
 	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	epidemic_resistance = 1
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -535,9 +642,11 @@ ds_covenant_sentinels = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -561,15 +670,17 @@ ds_covenant_sentinels = {
 		ds_covenant_rosaria
 		ds_covenant_sunlight
 	}
-}
-ds_covenant_sunlight = {
+ }
+ ds_covenant_sunlight = {
     category = fame
 	random_creation = 0
 	same_opinion = 10
+	liege_opinion = 5
+	prowess = 4
+	owned_personal_scheme_success_chance_add = 2
     monthly_piety = 0.3
-	dread_gain_mult = 0.25
-	dread_decay_mult = -0.25
-	epidemic_resistance = 10
+	dread_decay_mult = 0.25
+	epidemic_resistance = 2
     culture_modifier = {
 		parameter = prowess_from_religious_traits
 		prowess = 3
@@ -578,9 +689,11 @@ ds_covenant_sunlight = {
 		parameter = devoted_trait_bonuses
 		martial = 3
 	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
 	monthly_character_prestige = 0.02
-	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
-	same_faith_opinion = -5
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -604,4 +717,5 @@ ds_covenant_sunlight = {
 		ds_covenant_rosaria
 		ds_covenant_sentinels
 	}
-}
+ }
+# 

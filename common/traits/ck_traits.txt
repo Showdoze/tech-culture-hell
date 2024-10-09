@@ -37,6 +37,10 @@ peasant_born = {
 	town_opinion = 5
 	ruler_designer_cost = -15
 	fame = yes
+	culture_modifier = {
+		parameter = grants_to_lowborns_bonuses
+		development_growth_factor = 0.2
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -63,6 +67,7 @@ patrician_born = {
 	}
 	random_creation = 0
 	same_opinion = 5
+	monthly_influence = 0.01
 	monthly_character_prestige = 0.2
 	diplomacy = 1
 	vassal_opinion = 5
@@ -135,6 +140,10 @@ fleeting = {
 	enables_inbred = yes
 	birth = 0.5
 	random_creation = 0.5
+	culture_modifier = {
+		parameter = weak_traits_looked_down_upon
+		same_culture_opinion = -10
+	}
 }
 
 enduring = {
@@ -162,6 +171,10 @@ enduring = {
 	}
 	birth = 0.2
 	random_creation = 0.2
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 0.25
+	}
 }
 
 venerable = {
@@ -189,6 +202,10 @@ venerable = {
 	}
 	birth = 0.05
 	random_creation = 0.05
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 0.5
+	}
 }
 #HISTORICAL LIKES DISLIKES
  roman_friend = {
@@ -445,6 +462,7 @@ venerable = {
 	glory_hound_opinion = 10
 	dyn = 5
 	ruler_designer_cost = 100
+	monthly_influence = 0.5
 	fame = yes
 	desc = {
 		first_valid = {
@@ -478,6 +496,11 @@ super_saiyan = {
 	vassal_opinion = 5
 	ruler_designer_cost = 9000
 	fame = yes
+	monthly_influence = 0.75
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 1
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
