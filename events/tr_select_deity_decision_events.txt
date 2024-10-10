@@ -19,6 +19,15 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision
+            }
+            triggered_desc = {
+                trigger = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision
@@ -38,6 +47,15 @@ tr_select_deity.01 = {
                     faith = faith:ds1_faith
                 }
                 desc = ds1_select_covenant_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision_desc
             }
             triggered_desc = {
                 trigger = {
@@ -233,6 +251,51 @@ tr_select_deity.01 = {
             }
         }
         add_character_modifier = follow_diplomacy
+    }
+
+    ##### LUNACY
+
+    option = {
+        name = insanity_choose_deity_cthulhu
+        trigger = {
+            AND = {
+                NOT = {
+                    has_trait = follow_cthulhu
+                }
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                }
+            }
+        }
+        add_trait = follow_cthulhu
+    }
+    option = {
+        name = insanity_choose_deity_hastur
+        trigger = {
+            AND = {
+                NOT = {
+                    has_trait = follow_hastur
+                }
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                }
+            }
+        }
+        add_trait = follow_hastur
+    }
+
+    ##### PAGAN
+
+    option = {
+        name = pagan_choose_deity_jesus
+        trigger = {
+            religion = {
+                family = rf_pagan
+            }
+        }
+        add_trait = follow_jesus
     }
 
     ####Opt-Out

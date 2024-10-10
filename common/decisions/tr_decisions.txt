@@ -271,19 +271,37 @@ tr_select_personal_deity_decision = {
         trigger = { faith = faith:ds1_faith }
         reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
     }
+    picture = {
+        trigger = {
+            OR = {
+                has_trait = lunatic_1
+                has_trait = possessed_1
+            }
+        }
+        reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+    }
     title = {
         first_valid = {
             triggered_desc = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision
+                desc = satanism_select_demon_decision
             }
             triggered_desc = {
                 trigger = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision
             }
             triggered_desc = {
                 trigger = {
@@ -299,13 +317,22 @@ tr_select_personal_deity_decision = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision_desc
+                desc = satanism_select_demon_decision_desc
             }
             triggered_desc = {
                 trigger = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision_desc
             }
             triggered_desc = {
                 trigger = {
@@ -321,13 +348,22 @@ tr_select_personal_deity_decision = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision_tip
+                desc = satanism_select_demon_decision_tip
             }
             triggered_desc = {
                 trigger = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision_tip
             }
             triggered_desc = {
                 trigger = {
@@ -343,13 +379,22 @@ tr_select_personal_deity_decision = {
                 trigger = {
                     faith = faith:satanism
                 }
-                desc = satanism_select_deity_decision_confirm
+                desc = satanism_select_demon_decision_confirm
             }
             triggered_desc = {
                 trigger = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                    }
+                }
+                desc = insanity_select_deity_decision_confirm
             }
             triggered_desc = {
                 trigger = {
