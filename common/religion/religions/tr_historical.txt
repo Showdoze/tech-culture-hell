@@ -750,7 +750,6 @@ historical_religion = {
 		protestant = {
 			color = { 0.7 0.7 0.8 }
 			icon = protestant
-			doctrine = special_doctrine_is_christian_faith
 			graphical_faith = "catholic_gfx"
 			piety_icon_group = "christian"
 			family = rf_abrahamic
@@ -758,12 +757,14 @@ historical_religion = {
             holy_site = jerusalem
             holy_site = kent
 			#Special Tolerance
-			doctrine = special_doctrine_ecumenical_christian
-			#Marriage
-			doctrine = doctrine_consanguinity_cousins		
-			#Clerical Functions
-			doctrine = doctrine_clerical_marriage_allowed
-			doctrine = doctrine_clerical_succession_temporal_fixed_appointment			
+			 doctrine = special_doctrine_is_christian_faith
+			 doctrine = special_doctrine_ecumenical_christian
+			 #Marriage
+			  doctrine = doctrine_consanguinity_cousins		
+			  doctrine = doctrine_bastardry_all
+			 #Clerical Functions
+			  doctrine = doctrine_clerical_marriage_allowed
+			  doctrine = doctrine_clerical_succession_temporal_fixed_appointment			
 			#Tenets
 			 doctrine = tenet_asceticism
 			 doctrine = tenet_pentarchy
@@ -773,7 +774,6 @@ historical_religion = {
 		arianism = {
 			color = { 49.0 35.0 58.0 }
 			icon = arianism
-			doctrine = special_doctrine_is_christian_faith
 			family = rf_abrahamic
 			graphical_faith = "catholic_gfx"
 			piety_icon_group = "christian"
@@ -783,7 +783,8 @@ historical_religion = {
 			holy_site = alexandria
 			holy_site = antioch
 			#Special Tolerance
-			doctrine = special_doctrine_ecumenical_christian
+			 doctrine = special_doctrine_is_christian_faith
+			 doctrine = special_doctrine_ecumenical_christian
 			#Tenets
 			 doctrine = tenet_communion
 			 doctrine = tenet_pentarchy
@@ -922,19 +923,24 @@ historical_religion = {
 			holy_site = antioch
 			holy_site = london
 			#doctrine
-			 doctrine = special_doctrine_is_christian_faith
+			 #doctrine = special_doctrine_is_christian_faith
 			 doctrine = special_doctrine_ecumenical_christian
 			 doctrine = doctrine_pluralism_pluralistic
-			 doctrine = doctrine_concubines
-			 doctrine = doctrine_consanguinity_cousins
-			 doctrine = doctrine_homosexuality_crime
-			 doctrine = doctrine_adultery_men_crime
-			 doctrine = doctrine_adultery_women_crime
+			 doctrine = doctrine_polygamy
+			 doctrine = doctrine_deviancy_accepted
+			 doctrine = doctrine_gender_equal
+			 doctrine = doctrine_bastardry_none
+			 doctrine = doctrine_divorce_allowed
+			 doctrine = doctrine_consanguinity_unrestricted
+			 doctrine = doctrine_kinslaying_accepted
+			 doctrine = doctrine_homosexuality_accepted
+			 doctrine = doctrine_adultery_men_accepted
+			 doctrine = doctrine_adultery_women_accepted
 			 doctrine = doctrine_witchcraft_accepted
 			 doctrine = doctrine_clerical_gender_either
 			 doctrine = doctrine_clerical_marriage_allowed
 			 doctrine = doctrine_clerical_succession_temporal_fixed_appointment
-	         doctrine = doctrine_funeral_bewailment			
+	         doctrine = doctrine_funeral_cremation			
 			#tennets
 			 doctrine = tenet_satanism
 			holy_order_names = {

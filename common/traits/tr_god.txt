@@ -82,7 +82,50 @@
         follow_sol
 	}
  }
-
+ follow_sol = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		learning = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	culture_modifier = {
+		parameter = dry_trait_bonuses
+		drylands_attrition_mult = -0.25
+		desert_attrition_mult = -0.25
+	}
+    desert_advantage = 1
+	monthly_character_prestige = 0.02
+	character_travel_speed_mult = 0.25
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_sol_desc
+			}
+			desc = trait_follow_sol_character_desc
+		}
+	}
+    opposites = {
+        follow_mars
+	}
+ }
 
 #norse
  follow_thor = {
