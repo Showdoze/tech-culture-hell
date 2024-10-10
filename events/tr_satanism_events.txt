@@ -20,18 +20,12 @@ tr_satanism.01 = {
                         OR = {
                             has_trait = possessed
                             has_trait = lunatic
+                            has_trait = heresiah
+                            is_excommunicated = yes
                         }
-                        piety_level < 2
+                        piety_level =< 1
                     }
-                    add = 0.1
-                }
-            }
-        }
-        modifier = {
-            if = {
-                limit = {
-                    is_excommunicated = yes
-                    add = 0.1
+                    add = 0.5
                 }
             }
         }
