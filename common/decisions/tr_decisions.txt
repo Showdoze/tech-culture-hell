@@ -267,7 +267,7 @@ tr_select_personal_deity_decision = {
         trigger = { faith = faith:dwemer_religion }
         reference = "gfx/interface/illustrations/decisions/decision_dwemer_factory.dds"
     }
-        picture = {
+    picture = {
         trigger = { faith = faith:ds1_faith }
         reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
     }
@@ -365,6 +365,8 @@ tr_select_personal_deity_decision = {
                 faith = faith:dwemer_religion
                 faith = faith:satanism
                 faith = faith:ds1_faith
+                has_trait = lunatic_1
+                has_trait = possessed_1
             }
         }
         faith = { has_doctrine_parameter = select_personal_god_active }
