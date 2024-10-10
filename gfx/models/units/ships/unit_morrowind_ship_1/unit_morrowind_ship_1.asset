@@ -1,0 +1,43 @@
+pdxmesh = {
+	name = "unit_morrowind_ship_1_mesh"
+	file = "unit_morrowind_ship_1.mesh"
+
+	scale = 1
+
+	meshsettings = {
+		name = "ship"
+		index = 0
+		texture_diffuse = "unit_morrowind_ship_1_BaseColor.dds"
+		texture_normal = "unit_morrowind_ship_1_Normal.dds"
+		texture_specular = "unit_morrowind_ship_1_Roughness.dds"
+		shader = "standard_usercolor_coa"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "unit_morrowind_ship_1_entity"
+	pdxmesh = "unit_morrowind_ship_1_mesh"
+	
+	locator = { name = "hull_front"				position = { 0 0 -0.5 } rotation = { 0 0 0 } }
+	locator = { name = "hull_back"				position = { 0 0 1 } rotation = { 0 0 0 } }
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		event = { time = 0.0 sound = { soundeffect = "event:/SFX/Animations/Units/Ships/Generic/sfx_anim_ship_generic_idle"} }
+	}
+	state = {
+		name = "move"
+		looping = no
+		next_state = move_loop
+		event = { time = 0.0 sound = { soundeffect = "event:/SFX/Animations/Units/Ships/Generic/sfx_anim_ship_generic_start_move"} }
+	}
+	state = {
+		name = "move_loop"
+		event = { time = 0 node = "hull_front" particle = "units/ship_water_front_01_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "hull_back" particle = "units/ship_water_back_01_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "root" particle = "units/ship_wind_01_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 sound = { soundeffect = "event:/SFX/Animations/Units/Ships/Generic/sfx_anim_ship_generic_move"} }
+	}
+}
