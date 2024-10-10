@@ -1021,6 +1021,50 @@ tr_dutch_van = {
 	}
 }
 #THIEF
+ tr_thief_mage_fire = {
+	name = "Kreos"
+	religion = mage_faith
+	dynasty_house = house_fantasy
+	culture = thief_city
+	trait = education_learning_4
+	trait = stubborn
+	trait = callous
+	trait = temperate
+	trait = follow_mage_fire
+	trait = wrathful
+	trait = scholar
+	disallow_random_traits = yes
+	820.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
+ tr_thief_mage_water = {
+	name = "Kreos"
+	religion = mage_faith
+	dynasty_house = house_fantasy
+	culture = thief_city
+	trait = education_learning_4
+	trait = stubborn
+	trait = callous
+	trait = temperate
+	trait = follow_mage_water
+	trait = wrathful
+	trait = scholar
+	disallow_random_traits = yes
+	820.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
  tr_thief_karrus = {
 	name = "Karrus"
 	religion = mechanist_faith
