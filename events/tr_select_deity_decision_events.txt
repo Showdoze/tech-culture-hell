@@ -59,16 +59,100 @@ tr_select_deity.01 = {
     ######DARK SOULS
 
     option = {
-        name = ds1_select_covenant_gwyn
+        name = ds1_select_covenant_aldrich
         trigger = {
             AND = {
                 faith = faith:ds1_faith
                 NOT = {
-                    has_character_modifier = ds1_covenant_gwyn
+                    has_trait = ds_covenant_aldrich
                 }
             }
         }
-        add_character_modifier = ds1_covenant_gwyn
+        add_trait = ds_covenant_aldrich
+    }
+    option = {
+        name = ds1_select_covenant_blue
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_blue
+                }
+            }
+        }
+        add_trait = ds_covenant_blue
+    }
+    option = {
+        name = ds1_select_covenant_darkmoon
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_darkmoon
+                }
+            }
+        }
+        add_trait = ds_covenant_darkmoon
+    }
+    option = {
+        name = ds1_select_covenant_farron
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_farron
+                }
+            }
+        }
+        add_trait = ds_covenant_farron
+    }
+    option = {
+        name = ds1_select_covenant_moundmakers
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_moundmakers
+                }
+            }
+        }
+        add_trait = ds_covenant_moundmakers
+    }
+    option = {
+        name = ds1_select_covenant_rosaria
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_rosaria
+                }
+            }
+        }
+        add_trait = ds_covenant_rosaria
+    }
+    option = {
+        name = ds1_select_covenant_sentinels
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_sentinels
+                }
+            }
+        }
+        add_trait = ds_covenant_sentinels
+    }
+    option = {
+        name = ds1_select_covenant_sunlight
+        trigger = {
+            AND = {
+                faith = faith:ds1_faith
+                NOT = {
+                    has_trait = ds_covenant_sunlight
+                }
+            }
+        }
+        add_trait = ds_covenant_sunlight
     }
 
     #####DWEMER
