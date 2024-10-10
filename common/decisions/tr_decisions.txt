@@ -480,8 +480,11 @@ tr_select_personal_deity_decision = {
                 faith = faith:mage_faith
                 #faith = faith:
             }
+            NOT = {
+                has_flag = tr_follow_god_trait
+            }
+            #faith = { has_doctrine_parameter = select_personal_god_active }
         }
-        faith = { has_doctrine_parameter = select_personal_god_active }
     }
     is_valid = {
         piety >= 0

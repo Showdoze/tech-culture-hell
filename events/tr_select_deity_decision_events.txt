@@ -32,6 +32,20 @@ tr_select_deity.01 = {
                 }
                 desc = dwemer_select_study_decision
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision
+            }
         }
     }
     desc = {
@@ -62,6 +76,20 @@ tr_select_deity.01 = {
                     faith = faith:dwemer_religion
                 }
                 desc = dwemer_select_study_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_desc
             }
         }
     }
@@ -284,6 +312,70 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_hastur
+    }
+
+
+    ####MAGE
+
+    option = {
+        name = mage_select_water
+        trigger = {
+            AND = {
+                faith = faith:mage_faith
+                NOT = {
+                    has_trait = follow_mage_water
+                }
+            }
+        }
+        add_trait = follow_mage_water
+    }
+    option = {
+        name = mage_select_fire
+        trigger = {
+            AND = {
+                faith = faith:mage_faith
+                NOT = {
+                    has_trait = follow_mage_fire
+                }
+            }
+        }
+        add_trait = follow_mage_fire
+    }
+    option = {
+        name = mage_select_air
+        trigger = {
+            AND = {
+                faith = faith:mage_faith
+                NOT = {
+                    has_trait = follow_mage_air
+                }
+            }
+        }
+        add_trait = follow_mage_air
+    }
+    option = {
+        name = mage_select_earth
+        trigger = {
+            AND = {
+                faith = faith:mage_faith
+                NOT = {
+                    has_trait = follow_mage_earth
+                }
+            }
+        }
+        add_trait = follow_mage_earth
+    }
+    option = {
+        name = mage_select_death
+        trigger = {
+            AND = {
+                faith = faith:mage_faith
+                NOT = {
+                    has_trait = follow_mage_death
+                }
+            }
+        }
+        add_trait = follow_mage_death
     }
 
     ##### PAGAN
