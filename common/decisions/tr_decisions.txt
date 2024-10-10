@@ -272,6 +272,14 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
     }
     picture = {
+        trigger = { faith = faith:roman_pagan }
+        reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+    }
+    picture = {
+        trigger = { faith = faith:mage_faith }
+        reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds"
+    }
+    picture = {
         trigger = {
             OR = {
                 has_trait = lunatic_1
@@ -309,6 +317,20 @@ tr_select_personal_deity_decision = {
                 }
                 desc = ds1_select_covenant_decision
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision
+            }
         }
     }
     desc = {
@@ -339,6 +361,20 @@ tr_select_personal_deity_decision = {
                     faith = faith:ds1_faith
                 }
                 desc = ds1_select_covenant_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_desc
             }
         }
     }
@@ -371,6 +407,20 @@ tr_select_personal_deity_decision = {
                 }
                 desc = ds1_select_covenant_decision_tip
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_tip
+            }
         }
     }
     confirm_text = {
@@ -402,6 +452,20 @@ tr_select_personal_deity_decision = {
                 }
                 desc = ds1_select_covenant_decision_confirm
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_confirm
+            }
         }
     }
     is_shown = {
@@ -412,6 +476,9 @@ tr_select_personal_deity_decision = {
                 faith = faith:ds1_faith
                 has_trait = lunatic_1
                 has_trait = possessed_1
+                faith = faith:roman_pagan
+                faith = faith:mage_faith
+                #faith = faith:
             }
         }
         faith = { has_doctrine_parameter = select_personal_god_active }

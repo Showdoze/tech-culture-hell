@@ -744,13 +744,11 @@ tr_highelf_1 = {
     trait = seducer
     trait = peasant_leader
     disallow_random_traits = yes
-	829.1.1 = {
-		birth = yes
-	}
+	829.1.1 = { birth = yes }
 	1048.1.1 = {
 		death = {
-			death_reason = death_old_age
-            #killer = 
+			death_reason = death_battle
+            killer = tr_judge_holden
 		}
 	}
 }
@@ -768,9 +766,7 @@ tr_teriana  = {
     trait = diligent
     trait = scholar
     disallow_random_traits = yes
-	849.1.1 = {
-		birth = yes
-	}
+	849.1.1 = { birth = yes }
 	1068.8.30 = {
 		death = {
 			death_reason = death_suicide
@@ -1364,7 +1360,7 @@ tr_dutch_van = {
 	830.1.1 = { birth = yes }
 	900.1.1 = {
 		death = {
-			death_reason = death_old_age
+			death_reason = death_drinking_passive
 		}
 	}
  }
@@ -1383,6 +1379,50 @@ tr_dutch_van = {
 	father = tr_dumner_1
 	824.1.1 = { birth = yes }
 	1000.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
+ tr_nord_1 = {
+	name = "Ulfric StormCloak"
+	religion = norse_pagan
+    dynasty_house = house_fantasy
+	culture = nord_culture
+	trait = education_martial_2
+	trait = callous
+	trait = aggressive_attacker
+	trait = strong
+	trait = adventurer_follower
+	trait = arrogant
+    trait = adopted
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	father = tr_dumner_1
+	830.1.1 = { birth = yes }
+	900.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+ }
+ tr_imperial_1 = {
+	name = "Amiel Richton"
+	religion = imperial_cult
+    dynasty_house = house_fantasy
+	culture = imperial_culture
+	trait = education_diplomacy_2
+	trait = arrogant
+	trait = eccentric
+	trait = populist_leader
+    trait = adopted
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	father = tr_dumner_1
+	831.1.1 = { birth = yes }
+	890.1.1 = {
 		death = {
 			death_reason = death_old_age
 		}

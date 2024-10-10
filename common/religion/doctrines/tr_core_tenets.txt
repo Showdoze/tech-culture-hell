@@ -94,7 +94,9 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = { torturer sadistic vengeful murderer gallowsbait follow_mage_death }
+			virtues = { torturer sadistic vengeful murderer gallowsbait follow_mage_death 
+			follow_cthulhu follow_hastur ds_covenant_moundmakers 
+			}
 		    sins = { forgiving compassionate }
 		}
 		parameters = {
@@ -499,6 +501,7 @@ tr_doctrines = {
 			hammerite_faith_opinion = -25
 			ignore_opinion_of_different_faith = yes
 			learning_per_piety_level = 2
+			rf_pagan_opinion = 10
 		}
 	}
 	tenet_satanism = {
