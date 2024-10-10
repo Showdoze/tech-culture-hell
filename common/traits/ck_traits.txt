@@ -446,6 +446,118 @@ venerable = {
 		}
 	}
  }
+ blues_supporter = {
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blues_supporter_desc
+			}
+			desc = trait_blues_supporter_character_desc
+		}
+	}
+	ruler_designer_cost = 10
+	monthly_piety = 0.1
+	intrigue = 1
+	diplomacy = 1
+	opposites = {
+		greens_supporter
+		reds_supporter
+		whites_supporter
+	}
+	same_opinion = 10
+	opposite_opinion = -20
+	clergy_opinion = -5
+	random_creation = 0
+	category = fame
+	birth = 0
+ }
+ greens_supporter = {
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_greens_supporter_desc
+			}
+			desc = trait_greens_supporter_character_desc
+		}
+	}
+	ruler_designer_cost = 10
+	monthly_piety = 0.1
+	martial = 1
+	stewardship = 1
+	opposites = {
+		blues_supporter
+		reds_supporter
+		whites_supporter
+	}
+	same_opinion = 10
+	opposite_opinion = -20
+	clergy_opinion = 5
+	random_creation = 0
+	category = fame
+	birth = 0
+}
+ reds_supporter = {
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_reds_supporter_desc
+			}
+			desc = trait_reds_supporter_character_desc
+		}
+	}
+	ruler_designer_cost = 10
+	monthly_piety = 0.1
+	intrigue = 1
+	diplomacy = 1
+	opposites = {
+		blues_supporter
+		greens_supporter
+		whites_supporter
+	}
+	same_opinion = 10
+	opposite_opinion = -20
+	clergy_opinion = -5
+	random_creation = 0
+	category = fame
+	birth = 0
+ }
+ whites_supporter = {
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_whites_supporter_desc
+			}
+			desc = trait_whites_supporter_character_desc
+		}
+	}
+	ruler_designer_cost = 10
+	monthly_piety = 0.1
+	intrigue = 1
+	diplomacy = 1
+	opposites = {
+		blues_supporter
+		greens_supporter
+		reds_supporter
+	}
+	same_opinion = 10
+	opposite_opinion = -20
+	clergy_opinion = -5
+	random_creation = 0
+	category = fame
+	birth = 0
+ }
 #Founder dynastry traits
  start_uchiha = {
 	random_creation = 0
@@ -460,7 +572,7 @@ venerable = {
 	dread_baseline_add = 5
 	health = 1
 	glory_hound_opinion = 10
-	dyn = 5
+	dynasty_opinion = 5
 	ruler_designer_cost = 100
 	monthly_influence = 0.5
 	fame = yes
@@ -474,7 +586,38 @@ venerable = {
 				}
 				desc = trait_start_uchiha_desc
 			}
-			desc = trait_start_uchiha_desc
+			desc = trait_start_uchiha_character_desc
+		}
+	}
+ }
+ start_septim = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	legitimacy_gain_mult = 0.5
+	character_travel_speed_mult = 1
+	character_travel_safety = 1
+	movement_speed = 1
+	prowess = 5
+	negate_health_penalty_add = 1
+	attraction_opinion = 10
+	minority_opinion = 10
+	health = 1.5
+	glory_hound_opinion = 10
+	dynasty_opinion = 5
+	ruler_designer_cost = 100
+	monthly_influence = 0.75
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_septim_desc
+			}
+			desc = trait_start_septim_character_desc
 		}
 	}
  }

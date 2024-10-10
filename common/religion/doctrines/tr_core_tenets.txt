@@ -5,9 +5,7 @@ tr_doctrines = {
 	tenet_albino = {
 		icon = tenet_albino_worship
 		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = {
-			always = no
-		}
+		is_shown = { always = no }
 		traits = {
 			virtues = {
 				albino = 3
@@ -27,10 +25,7 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = {
-				pure_blooded = 2
-			}
-			virtues = { just = 2 lifestyle_physician }
+			virtues = { just = 2 lifestyle_physician pure_blooded = 2 }
 			sins = { arbitrary = 2 }
 		}
 		parameters = {
@@ -69,9 +64,7 @@ tr_doctrines = {
 	tenet_dwemer = {
 		icon = core_tenet_dwemer
 		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = {
-			culture = dwemer_culture	
-		}
+		is_shown = { always = no }
 		parameters = {
 			piety_from_marrying_lowborn_active = yes
 			holy_wars_forbidden = yes
@@ -226,7 +219,7 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { possessed = 2 calm temperate brave just }
+			virtues = { possessed = 2 calm temperate brave just follow_mage_earth }
 			sins = { wrathful gluttonous craven arbitrary }
 		}
 		parameters = {
@@ -304,7 +297,7 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener }
+			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth }
 		    sins = { lazy }
 		}
 		parameters = {
@@ -438,7 +431,9 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { architect temperate zealous diligent }
-			sins = { lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist follow_mage_death }
+			sins = { lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
+			follow_mage_death follow_mage_earth ds_covenant_farron 
+			}
 		}
 		character_modifier = {
 			pagan_faith_opinion = -45
@@ -463,7 +458,9 @@ tr_doctrines = {
 			literalist_debate_enabled = yes
 		}
 		traits = {
-			virtues = { scholar journaller lifestyle_mystic overseer follow_mage_water follow_mage_fire follow_mage_air follow_mage_earth }
+			virtues = { scholar journaller lifestyle_mystic overseer follow_mage_water 
+			follow_mage_fire follow_mage_air follow_mage_earth 
+			}
 			sins = { lazy content dull }
 		}
 		character_modifier = {
@@ -492,7 +489,9 @@ tr_doctrines = {
 			fervor_per_holy_site = 1
 		}
 		traits = {
-			virtues = { lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic follow_mage_death }
+			virtues = { lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
+			follow_mage_death ds_covenant_farron follow_mage_earth 
+			}
 			sins = { architect craven avaricious greedy }
 		}
 		character_modifier = {

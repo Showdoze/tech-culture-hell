@@ -1,4 +1,5 @@
-follow_sol = {
+#ROMAN
+ follow_sol = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
@@ -41,8 +42,8 @@ follow_sol = {
     opposites = {
         follow_mars
 	}
-}
-follow_mars = {
+ }
+ follow_mars = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
@@ -80,7 +81,7 @@ follow_mars = {
     opposites = {
         follow_sol
 	}
-}
+ }
 
 
 #norse
@@ -115,9 +116,48 @@ follow_mars = {
 						exists = this
 					}
 				}
-				desc = trait_follow_mars_desc
+				desc = trait_follow_thor_desc
 			}
-			desc = trait_follow_mars_character_desc
+			desc = trait_follow_thor_desc
+		}
+	}
+    opposites = {
+	}
+ }
+ follow_odin = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	intrigue = medium_skill_bonus
+	intrigue_per_prestige_level = 1
+	monthly_piety_gain_per_dread_add = 0.03
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_odin_desc
+			}
+			desc = trait_follow_odin_desc
 		}
 	}
     opposites = {
@@ -720,6 +760,88 @@ follow_mars = {
 		ds_covenant_moundmakers
 		ds_covenant_rosaria
 		ds_covenant_sentinels
+	}
+ }
+#
+#MISC
+ follow_cthulhu = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	monthly_income_mult = 0.1
+	intrigue_per_prestige_level = 1
+	monthly_piety_gain_per_dread_add = 0.75
+	men_at_arms_maintenance_per_dread_mult = -0.02
+	knight_effectiveness_per_dread = 0.02
+	same_faith_opinion = -10
+	ruler_designer_cost = 15
+	ai_rationality = -200
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_cthulhu_desc
+			}
+			desc = trait_follow_cthulhu_desc
+		}
+	}
+    opposites = {
+	}
+ }
+ follow_jesus = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	zealot_same_faith_opinion = -25
+	christianity_religion_opinion = 10
+	ruler_designer_cost = 15
+	ai_rationality = -200
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_jesus_desc
+			}
+			desc = trait_follow_jesus_desc
+		}
+	}
+    opposites = {
 	}
  }
 # 
