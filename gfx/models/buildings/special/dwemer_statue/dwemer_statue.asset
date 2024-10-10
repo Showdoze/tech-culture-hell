@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "dwemer_statue_mesh"
+	file = "dwemer_statue.mesh"
+
+	meshsettings = {
+		name = "statue"
+		index = 0
+		texture_diffuse = "dwemer_statue_BaseColor.dds"
+		texture_normal = "dwemer_statue_Normal.dds"
+		texture_specular = "dwemer_statue_Roughness.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "dwemer_statue_entity"
+	pdxmesh = "dwemer_statue_mesh"
+}
