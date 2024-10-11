@@ -1,190 +1,193 @@
 ﻿############################################################
 # valmir
- ############################################################
+############################################################
 
 mmhorrvalmir = {
-	name = "Horr"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 20
-	diplomacy = 5
-	intrigue = 2
-	stewardship = 8
-	learning = 5
-	prowess = 35
-	trait = brave
-	trait = education_martial_4
-	trait = viking
-	trait = scarred
-	trait = berserker
-	trait = diligent
-	trait = wrathful
-	trait = adventurer
-	father = mmvalmirfounder
-	disallow_random_traits = yes
-	790.1.11 = {
-		birth = yes
-	}
-	810.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	870.4.17 = {
-		death = {
-			death_reason = death_duel
-		}
-	}
+    name = "Horr"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    martial = 20
+    diplomacy = 5
+    intrigue = 2
+    stewardship = 8
+    learning = 5
+    prowess = 35
+    trait = brave
+    trait = education_martial_4
+    trait = viking
+    trait = scarred
+    trait = berserker
+    trait = diligent
+    trait = wrathful
+    trait = adventurer
+    father = mmvalmirfounder
+    disallow_random_traits = yes
+    790.1.11 = {
+        birth = yes
+    }
+    810.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+    870.4.17 = {
+        death = {
+            death_reason = death_duel
+        }
+    }
 }
 
 mmhofvarpnir = {
-	name = "Hofvarpnir"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 18
-	diplomacy = 6
-	intrigue = 3
-	stewardship = 10
-	learning = 8
-	prowess = 31
-	trait = brave
-	trait = education_martial_3
-	trait = viking
-	trait = reaver
-	trait = berserker
-	trait = content
-	trait = wrathful
-	trait = adventurer
-	father = mmvalmirfounder
-	disallow_random_traits = yes
-	800.1.11 = {
-		birth = yes
-	}
-	820.1.1 = {
-		effect = {
-			add_trait = lifestyle_hunter
-			add_trait_xp = {
-				trait = lifestyle_hunter
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
+    name = "Hofvarpnir"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    martial = 18
+    diplomacy = 6
+    intrigue = 3
+    stewardship = 10
+    learning = 8
+    prowess = 31
+    trait = brave
+    trait = education_martial_3
+    trait = viking
+    trait = reaver
+    trait = berserker
+    trait = content
+    trait = wrathful
+    trait = adventurer
+    father = mmvalmirfounder
+    disallow_random_traits = yes
+    800.1.11 = {
+        birth = yes
+    }
+    820.1.1 = {
+        effect = {
+            add_trait = lifestyle_hunter
+            add_trait_xp = {
+                trait = lifestyle_hunter
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
 }
 
 mmvenemir = {
-	name = "Venemir"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 11
-	diplomacy = 8
-	intrigue = 5
-	stewardship = 5
-	learning = 12
-	prowess = 45
-	trait = brave
-	trait = education_martial_2
-	trait = wild_oat
-	trait = diligent
-	trait = athlete
-	father = mmhofvarpnir
-	disallow_random_traits = yes
-	840.1.11 = {
-		birth = yes
-	}
+    name = "Venemir"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    martial = 11
+    diplomacy = 8
+    intrigue = 5
+    stewardship = 5
+    learning = 12
+    prowess = 45
+    trait = brave
+    trait = education_martial_2
+    trait = wild_oat
+    trait = diligent
+    trait = athlete
+    father = mmhofvarpnir
+    disallow_random_traits = yes
+    840.1.11 = {
+        birth = yes
+    }
 }
 
 mmsurr = {
-	name = "Baggrum"
-	religion = ds1_faith
-	culture = norse
-	dynasty = mmvalmir
-	martial = 10
-	diplomacy = 10
-	intrigue = 2
-	stewardship = 5
-	learning = 5
-	prowess = 60
-	trait = vengeful
-	trait = education_martial_3
-	trait = lifestyle_blademaster
-	trait = diligent
-	trait = athlete
-	father = mmhorrvalmir
-	disallow_random_traits = yes
-	820.5.14 = {
-		birth = yes
-	}
+    name = "Baggrum"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    martial = 10
+    diplomacy = 10
+    intrigue = 2
+    stewardship = 5
+    learning = 5
+    prowess = 60
+    trait = vengeful
+    trait = education_martial_3
+    trait = lifestyle_blademaster
+    trait = diligent
+    trait = athlete
+    father = mmhorrvalmir
+    disallow_random_traits = yes
+    820.5.14 = {
+        birth = yes
+    }
+    840.5.14 = {
+        set_character_faith = ds1_faith
+    }
 }
 
 mmfrida = {
-	name = "Frida"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	female = yes
-	martial = 12
-	diplomacy = 12
-	intrigue = 2
-	stewardship = 5
-	learning = 8
-	prowess = 20
-	give_nickname = nick_madeofice
-	trait = brave
-	trait = education_martial_1
-	trait = albino
-	trait = compassionate
-	trait = honest
-	trait = athlete
-	trait = adventurer
-	father = mmhofvarpnir
-	disallow_random_traits = yes
-	830.1.11 = {
-		birth = yes
-	}
+    name = "Frida"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    female = yes
+    martial = 12
+    diplomacy = 12
+    intrigue = 2
+    stewardship = 5
+    learning = 8
+    prowess = 20
+    give_nickname = nick_madeofice
+    trait = brave
+    trait = education_martial_1
+    trait = albino
+    trait = compassionate
+    trait = honest
+    trait = athlete
+    trait = adventurer
+    father = mmhofvarpnir
+    disallow_random_traits = yes
+    830.1.11 = {
+        birth = yes
+    }
 }
 
 mmvalmirfounder = {
-	name = "Freidrr"
-	religion = norse_pagan
-	culture = norse
-	dynasty = mmvalmir
-	martial = 34
-	diplomacy = 6
-	intrigue = 3
-	stewardship = 10
-	learning = 8
-	prowess = 20
-	trait = brave
-	trait = education_martial_3
-	trait = viking
-	trait = adventurer
-	trait = berserker
-	trait = diligent
-	trait = wrathful
-	disallow_random_traits = yes
-	750.1.11 = {
-		birth = yes
-	}
-	837.4.17 = {
-		death = {
-			death_reason = death_age
-		}
-	}
+    name = "Freidrr"
+    religion = norse_pagan
+    culture = norse
+    dynasty = mmvalmir
+    martial = 34
+    diplomacy = 6
+    intrigue = 3
+    stewardship = 10
+    learning = 8
+    prowess = 20
+    trait = brave
+    trait = education_martial_3
+    trait = viking
+    trait = adventurer
+    trait = berserker
+    trait = diligent
+    trait = wrathful
+    disallow_random_traits = yes
+    750.1.11 = {
+        birth = yes
+    }
+    837.4.17 = {
+        death = {
+            death_reason = death_age
+        }
+    }
 }
