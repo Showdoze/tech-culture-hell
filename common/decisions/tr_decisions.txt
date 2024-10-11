@@ -487,7 +487,11 @@ tr_select_personal_deity_decision = {
         }
     }
     is_valid = {
-        piety >= 0
+        if = {
+            faith = faith:mage_faith
+            piety >= 0
+        }
+        else = yes
     }
     cooldown = {
         years = 1
@@ -597,6 +601,7 @@ summon_speical_maa_decision = {
             AND = {
                 faith = faith:satanism
                 piety_level >= 1
+                piety >= 0
             }
             AND = {
                 faith = faith:dwemer_religion
