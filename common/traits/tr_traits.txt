@@ -159,6 +159,101 @@ albino = {
     }
 }
 
+education_republican_knowledge_1 = {
+	minimum_age = 16
+	learning = 1
+	stewardship = 1
+	diplomacy = 1
+	category = education
+	ruler_designer_cost = 40
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_republican_knowledge_1_desc
+			}
+			desc = trait_education_republican_knowledge_1_character_desc
+		}
+	}
+
+	group = education_republican_knowledge
+	level = 1
+}
+
+education_republican_knowledge_2 = {
+	minimum_age = 16
+	learning = 2
+	stewardship = 2
+	diplomacy = 2
+	category = education
+	ruler_designer_cost = 60
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_republican_knowledge_2_desc
+			}
+			desc = trait_education_republican_knowledge_2_character_desc
+		}
+	}
+
+	group = education_republican_knowledge
+	level = 2
+}
+
+education_republican_knowledge_3 = {
+	minimum_age = 16
+	learning = 3
+	stewardship = 3
+	diplomacy = 3
+	category = education
+	ruler_designer_cost = 80
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_republican_knowledge_3_desc
+			}
+			desc = trait_education_republican_knowledge_3_character_desc
+		}
+	}
+
+	group = education_republican_knowledge
+	level = 3
+}
+
+education_republican_knowledge_4 = {
+	minimum_age = 16
+	learning = 4
+	stewardship = 4
+	diplomacy = 4
+	category = education
+	ruler_designer_cost = 100
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_republican_knowledge_4_desc
+			}
+			desc = trait_education_republican_knowledge_4_character_desc
+		}
+	}
+
+	group = education_republican_knowledge
+	level = 4
+}
 hygene_bad_1 = {
 
     minimum_age = 10

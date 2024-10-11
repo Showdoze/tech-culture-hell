@@ -658,99 +658,94 @@ super_saiyan = {
 		}
 	}
 }
-
-education_republican_knowledge_1 = {
-	minimum_age = 16
-	learning = 1
-	stewardship = 1
-	diplomacy = 1
-	category = education
-	ruler_designer_cost = 40
-
+#Roman
+  senator_west = {
+	shown_in_ruler_designer = yes
+	flag = initial_legitimacy_boost
+	legitimacy_gain_mult = 0.05
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_education_republican_knowledge_1_desc
+				trigger = { NOT = { exists = this } }
+				desc = trait_senator_west_desc
 			}
-			desc = trait_education_republican_knowledge_1_character_desc
+			desc = trait_senator_west_character_desc
 		}
 	}
-
-	group = education_republican_knowledge
-	level = 1
-}
-
-education_republican_knowledge_2 = {
-	minimum_age = 16
-	learning = 2
-	stewardship = 2
-	diplomacy = 2
-	category = education
-	ruler_designer_cost = 60
-
+	monthly_prestige = 0.5
+	culture_modifier = { #NB: Only applies if the char's culture has the associated tradition
+		parameter = astute_diplomat_bonus #astute_diplomat_bonus
+		monthly_prestige_gain_mult = 0.10
+		monthly_prestige = 0.5
+		owned_hostile_scheme_success_chance_add = 5
+		legitimacy_gain_mult = 0.05
+	}
+	ruler_designer_cost = 20
+  }
+  senator_east = {
+	shown_in_ruler_designer = yes
+	flag = initial_legitimacy_boost
+	legitimacy_gain_mult = 0.05
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_education_republican_knowledge_2_desc
+				trigger = { NOT = { exists = this } }
+				desc = trait_senator_east_desc
 			}
-			desc = trait_education_republican_knowledge_2_character_desc
+			desc = trait_senator_east_character_desc
 		}
 	}
-
-	group = education_republican_knowledge
-	level = 2
-}
-
-education_republican_knowledge_3 = {
-	minimum_age = 16
-	learning = 3
-	stewardship = 3
-	diplomacy = 3
-	category = education
-	ruler_designer_cost = 80
-
+	monthly_prestige = 0.5
+	culture_modifier = { #NB: Only applies if the char's culture has the associated tradition
+		parameter = astute_diplomat_bonus #roman_legal_traits_are_valued
+		monthly_prestige_gain_mult = 0.10
+		monthly_prestige = 0.5
+		owned_hostile_scheme_success_chance_add = 5
+		legitimacy_gain_mult = 0.05
+	}
+	ruler_designer_cost = 20
+  }
+ #Former Consuls
+  former_consul_west = {
+	shown_in_ruler_designer = no
+	flag = initial_legitimacy_boost
+	legitimacy_gain_mult = 0.1
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_education_republican_knowledge_3_desc
+				trigger = { NOT = { exists = this } }
+				desc = trait_former_consul_west_desc
 			}
-			desc = trait_education_republican_knowledge_3_character_desc
+			desc = trait_former_consul_west_character_desc
 		}
 	}
-
-	group = education_republican_knowledge
-	level = 3
-}
-
-education_republican_knowledge_4 = {
-	minimum_age = 16
-	learning = 4
-	stewardship = 4
-	diplomacy = 4
-	category = education
-	ruler_designer_cost = 100
-
+	monthly_prestige = 0.25 #One Fifth of being Consul
+	culture_modifier = { #NB: Only applies if the char's culture has the associated tradition
+		parameter = astute_diplomat_bonus #roman_legal_traits_are_valued
+		monthly_prestige = 0.25
+		monthly_dynasty_prestige = 0.01
+		legitimacy_gain_mult = 0.1
+	}
+  }
+  former_consul_east = {
+	shown_in_ruler_designer = no
+	flag = initial_legitimacy_boost
+	legitimacy_gain_mult = 0.1
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_education_republican_knowledge_4_desc
+				trigger = { NOT = { exists = this } }
+				desc = trait_former_consul_east_desc
 			}
-			desc = trait_education_republican_knowledge_4_character_desc
+			desc = trait_former_consul_east_character_desc
 		}
+	}	
+	monthly_prestige = 0.25	#One Fifth of being Consul
+	culture_modifier = { #NB: Only applies if the char's culture has the associated tradition
+		parameter = astute_diplomat_bonus #roman_legal_traits_are_valued
+		monthly_prestige = 0.25
+		monthly_dynasty_prestige = 0.01
+		legitimacy_gain_mult = 0.1
 	}
-
-	group = education_republican_knowledge
-	level = 4
-}
+  }
+#

@@ -41,6 +41,7 @@
 	}
     opposites = {
         follow_mars
+		follow_jupiter
 	}
  }
  follow_mars = {
@@ -80,9 +81,10 @@
 	}
     opposites = {
         follow_sol
+		follow_jupiter
 	}
  }
- follow_sol = {
+ follow_jupiter = {
     category = fame
 	random_creation = 0
 	same_opinion = 5
@@ -99,14 +101,9 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
-	}
-    desert_advantage = 1
 	monthly_character_prestige = 0.02
-	character_travel_speed_mult = 0.25
+	controlled_province_advantage = 3
+	dynasty_opinion = 10
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -117,13 +114,14 @@
 						exists = this
 					}
 				}
-				desc = trait_follow_sol_desc
+				desc = trait_follow_jupiter_desc
 			}
-			desc = trait_follow_sol_character_desc
+			desc = trait_follow_jupiter_character_desc
 		}
 	}
     opposites = {
         follow_mars
+		follow_sol
 	}
  }
 
