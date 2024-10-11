@@ -5,9 +5,9 @@
 #}
 
 random_yearly_everyone_pulse = {
-	on_actions = { tr_hygene }
-	on_actions = { tr_satanism }
-	on_actions = { tr_hollowing }
+    on_actions = { tr_hygene }
+    on_actions = { tr_satanism_random }
+    on_actions = { tr_hollowing }
 }
 
 #yearly_global_pulse = {
@@ -23,45 +23,62 @@ random_yearly_everyone_pulse = {
 #}
 
 on_birth_mother = {
-	on_actions = { tr_birth }
+    on_actions = { tr_birth }
 }
 
 on_war_started = {
-	on_actions = { tr_sayan_check }
+    on_actions = { tr_sayan_check }
+}
+
+on_game_start = {
+    on_actions = {
+        tr_satanism_start
+    }
 }
 
 ## MODDED HOOKED BELOW
 
-tr_satanism = {
-	random_events = {
-		chance_to_happen = 5
-		100 = tr_satanism.01
-	}
+tr_satanism_random = {
+    random_events = {
+        chance_to_happen = 5
+        100 = tr_satanism.01
+    }
+}
+
+tr_satanism_start = {
+    if = {
+        limit = {
+			character_exists = yes
+            character.faith = faith:satanism
+        }
+        character.set_piety_level = 0
+        character.add_piety = -100
+    }
 }
 
 tr_hygene = {
-	random_events = {
-		chance_to_happen = 10
-		100 = tr_hygene.01
-	}
+    random_events = {
+        chance_to_happen = 10
+        100 = tr_hygene.01
+    }
 }
 
 tr_hollowing = {
-	random_events = {
-		chance_to_happen = 10
-		100 = ds1_event.01
-	}
+    random_events = {
+        chance_to_happen = 10
+        100 = ds1_event.01
+    }
 }
 
 tr_birth = {
-	events = {
-		tr_birth.01
-		tr_birth.02
-	}
+    events = {
+        tr_birth.01
+        tr_birth.02
+    }
 }
 
 tr_sayan_check = {
-	effect = { tr_play_sayan_music = yes }
+    effect = { tr_play_sayan_music = yes }
 }
 
 #tr_elective_inheritance = {
