@@ -40,21 +40,21 @@ fallback_army_03 = {
 # Dunmer
  dunmer_army_01 = {
 	type = army
-	graphical_cultures = { dunmer_unit_gfx }
+	graphical_cultures = { dunmer_unit_gfx dwemer_unit_gfx }
 	entity = unit_dunmer_infantry_01_entity
  }
 
  dunmer_army_03 = {
 	type = army
 	quality = @tier2_quality
-	graphical_cultures = { dunmer_unit_gfx }
+	graphical_cultures = { dunmer_unit_gfx dwemer_unit_gfx }
 	entity = unit_dunmer_infantry_02_entity
  }
 
  dunmer_army_05 = {
 	type = army
 	quality = @tier3_quality
-	graphical_cultures = { dunmer_unit_gfx }
+	graphical_cultures = { dunmer_unit_gfx dwemer_unit_gfx }
 	entity = unit_dunmer_infantry_03_entity
  }
 #  Altmer
@@ -502,7 +502,24 @@ fallback_army_03 = {
 	graphical_cultures = { south_slavic_unit_gfx }
 	entity = unit_south_slav_infantry_03_entity 
  }
-#
+#usa 
+ western_army_01_a = {
+	type = army
+	graphical_cultures = { usa_unit_gfx }
+	entity = unit_western_infantry_01_entity
+ }
+ western_army_02_a = {
+	type = army
+	quality = @tier2_quality
+	graphical_cultures = { usa_unit_gfx }
+	entity = unit_western_infantry_02_entity
+ }
+ western_army_03_a = {
+	type = army
+	quality = @tier3_quality
+	graphical_cultures = { usa_unit_gfx }
+	entity = unit_western_infantry_03_entity
+ }
 #
 #
 #
