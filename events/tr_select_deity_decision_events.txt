@@ -319,20 +319,128 @@ tr_select_deity.01 = {
     option = {
         name = satanism_choose_demon_baphomet
         trigger = {
-            faith = faith:satanism
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
         }
+        add_character_modifier = satanism_follow_baphomet
     }
     option = {
         name = satanism_choose_demon_samael
         trigger = {
-            faith = faith:satanism
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
         }
+        add_character_modifier = satanism_follow_samael
     }
     option = {
         name = satanism_choose_demon_lucifer
         trigger = {
-            faith = faith:satanism
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
         }
+        add_character_modifier = satanism_follow_lucifer
+    }
+    option = {
+        name = satanism_choose_demon_abaddon
+        trigger = {
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
+        }
+        add_character_modifier = satanism_follow_abaddon
+    }
+    option = {
+        name = satanism_choose_demon_belzebulb
+        trigger = {
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
+        }
+        add_character_modifier = satanism_follow_belzebulb
+    }
+    option = {
+        name = satanism_choose_demon_belphegor
+        trigger = {
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
+        }
+        add_character_modifier = satanism_follow_belphegor
+    }
+    option = {
+        name = satanism_choose_demon_asmodeus
+        trigger = {
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                }
+                faith = faith:satanism
+            }
+        }
+        add_character_modifier = satanism_follow_asmodeus
     }
 
     ####MAGE
