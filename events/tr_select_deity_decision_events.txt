@@ -36,6 +36,9 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:norse_pagan
+                        faith = faith:kemetic_pagan
                     }
                 }
                 desc = pagan_select_god_decision
@@ -81,6 +84,9 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:norse_pagan
+                        faith = faith:kemetic_pagan
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -506,6 +512,45 @@ tr_select_deity.01 = {
         add_trait = follow_mage_death
     }
 
+    ######Roman PAGAN
+
+    option = {
+        name = god_choice_sol
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_sol
+                }
+            }
+        }
+        add_trait = follow_sol
+    }
+    option = {
+        name = god_choice_mars
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_mars
+                }
+            }
+        }
+        add_trait = follow_mars
+    }
+    option = {
+        name = god_choice_jove
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_jupiter
+                }
+            }
+        }
+        add_trait = follow_jupiter
+    }
+
     ##### PAGAN
 
     option = {
@@ -514,11 +559,73 @@ tr_select_deity.01 = {
             OR = {
                 faith = faith:roman_pagan
                 faith = faith:norse_pagan
+                faith = faith:hellenic_pagan
+                faith = faith:norse_pagan
+                faith = faith:kemetic_pagan
+                faith = faith:basque_pagan
+                faith = faith:magyar_pagan
+                faith = faith:north_african_acham_pagan
+                faith = faith:pagan
+                faith = faith:slavic_pagan
+                faith = faith:tengri_pagan
+                faith = faith:waaqism_pagan
+                faith = faith:west_african_pagan
+                faith = faith:west_african_bidu_pagan
+                faith = faith:west_african_bori_pagan
+                faith = faith:west_african_orisha_pagan
+                faith = faith:west_african_roog_pagan
+                faith = faith:zun_pagan
+                faith = faith:akom_pagan
+                faith = faith:baltic_pagan
+                faith = faith:bon
+                faith = faith:old_bon
+                faith = faith:donyipoloism
+                faith = faith:sedism
+                faith = faith:finnish_pagan
+                faith = faith:kushitism_pagan
+                faith = faith:kiratism
+                faith = faith:yumaism
             }
         }
         add_trait = follow_jesus
     }
 
+    option = {
+        name = pagan_choose_deity_islam
+        trigger = {
+            OR = {
+                faith = faith:roman_pagan
+                faith = faith:norse_pagan
+                faith = faith:hellenic_pagan
+                faith = faith:norse_pagan
+                faith = faith:kemetic_pagan
+                faith = faith:basque_pagan
+                faith = faith:magyar_pagan
+                faith = faith:north_african_acham_pagan
+                faith = faith:pagan
+                faith = faith:slavic_pagan
+                faith = faith:tengri_pagan
+                faith = faith:waaqism_pagan
+                faith = faith:west_african_pagan
+                faith = faith:west_african_bidu_pagan
+                faith = faith:west_african_bori_pagan
+                faith = faith:west_african_orisha_pagan
+                faith = faith:west_african_roog_pagan
+                faith = faith:zun_pagan
+                faith = faith:akom_pagan
+                faith = faith:baltic_pagan
+                faith = faith:bon
+                faith = faith:old_bon
+                faith = faith:donyipoloism
+                faith = faith:sedism
+                faith = faith:finnish_pagan
+                faith = faith:kushitism_pagan
+                faith = faith:kiratism
+                faith = faith:yumaism
+            }
+        }
+        add_trait = follow_islam
+    }
     ####Opt-Out
 
     option = {

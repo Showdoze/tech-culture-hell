@@ -945,7 +945,6 @@
 	zealot_same_faith_opinion = -25
 	christianity_religion_opinion = 10
 	ruler_designer_cost = 15
-	ai_rationality = -200
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -957,6 +956,43 @@
 				desc = trait_follow_jesus_desc
 			}
 			desc = trait_follow_jesus_desc
+		}
+	}
+    opposites = {
+	}
+ }
+ follow_islam = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	zealot_same_faith_opinion = -25
+	islam_religion_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_islam_desc
+			}
+			desc = trait_follow_islam_desc
 		}
 	}
     opposites = {
