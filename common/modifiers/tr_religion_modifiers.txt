@@ -1,500 +1,513 @@
 #hellenism
- kharis_hellenism_zeus = {
-	icon = zeus_icon
-	controlled_province_advantage = 3
-	dynasty_opinion = 10
- }
- kharis_hellenism_hera = {
-	icon = hera_icon
-	spouse_opinion = 20
-	close_relative_opinion = 10
-	dynasty_opinion = 10
- }
- kharis_hellenism_athena = {
-	icon = athena_icon
-	learning = 2
-	diplomacy = 2
- } 
- kharis_hellenism_ares = {
-	icon = ares_icon
-	attacker_advantage = 3
-	prowess = 4
- }
- kharis_hellenism_demeter = {
-	icon = demeter_icon
-	stewardship = 1
-	domain_tax_mult = 0.02
- }
- kharis_hellenism_posidion = {
-	icon = posidion_icon
-	embarkation_cost_mult = -0.05
-	naval_movement_speed_mult = 0.05
- }
- kharis_hellenism_dionysos = {
-	icon = dionysos_icon
-	intrigue = 1
-	diplomacy = 1
- }
- kharis_hellenism_hephestios = {
-	icon = hephestios_icon
-	stewardship = 2
-	domain_tax_mult = 0.05
-	attraction_opinion = -10
- }
- kharis_hellenism_hermes = {
-	icon = hermes_icon
-	domain_tax_same_faith_mult = 0.1
-	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
- }
- kharis_hellenism_aphrodite = {
-	icon = aphrodite_icon
-	fertility = 0.25
-	attraction_opinion = 10
-	close_relative_opinion = 10
- }
- kharis_hellenism_apollon = {
-	icon = apollon_icon
-	health = 0.25
-	vassal_opinion = 10
- }
- kharis_hellenism_artemis = {
-	icon = artemis_icon
-	prowess = 4
-	diplomacy = 2
- }
- kharis_hellenism_herakles = {
-	icon = prowess_positive
-	tolerance_advantage_mod = 4
-	prowess = 4
- }
- kharis_hellenism_asklepios = {
-	icon = health_positive
-	health = 0.5
-	stress_gain_mult = -0.33
- }
+kharis_hellenism_zeus = {
+    icon = zeus_icon
+    controlled_province_advantage = 3
+    dynasty_opinion = 10
+}
+kharis_hellenism_hera = {
+    icon = hera_icon
+    spouse_opinion = 20
+    close_relative_opinion = 10
+    dynasty_opinion = 10
+}
+kharis_hellenism_athena = {
+    icon = athena_icon
+    learning = 2
+    diplomacy = 2
+}
+kharis_hellenism_ares = {
+    icon = ares_icon
+    attacker_advantage = 3
+    prowess = 4
+}
+kharis_hellenism_demeter = {
+    icon = demeter_icon
+    stewardship = 1
+    domain_tax_mult = 0.02
+}
+kharis_hellenism_posidion = {
+    icon = posidion_icon
+    embarkation_cost_mult = -0.05
+    naval_movement_speed_mult = 0.05
+}
+kharis_hellenism_dionysos = {
+    icon = dionysos_icon
+    intrigue = 1
+    diplomacy = 1
+}
+kharis_hellenism_hephestios = {
+    icon = hephestios_icon
+    stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+}
+kharis_hellenism_hermes = {
+    icon = hermes_icon
+    domain_tax_same_faith_mult = 0.1
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+}
+kharis_hellenism_aphrodite = {
+    icon = aphrodite_icon
+    fertility = 0.25
+    attraction_opinion = 10
+    close_relative_opinion = 10
+}
+kharis_hellenism_apollon = {
+    icon = apollon_icon
+    health = 0.25
+    vassal_opinion = 10
+}
+kharis_hellenism_artemis = {
+    icon = artemis_icon
+    prowess = 4
+    diplomacy = 2
+}
+kharis_hellenism_herakles = {
+    icon = prowess_positive
+    tolerance_advantage_mod = 4
+    prowess = 4
+}
+kharis_hellenism_asklepios = {
+    icon = health_positive
+    health = 0.5
+    stress_gain_mult = -0.33
+}
 #Aztec
- kharis_aztec_huitzilopochtli = { #Huitzilopochtli, Father of the Aztecs
-	icon = blood_positive
-	controlled_province_advantage = 3
-	prowess = 3
- }
- kharis_aztec_tlaloc = { #Tlaloc, God of Rain and Storms
-	icon = family_positive
-	jungle_attrition_mult = -0.35
-	forest_attrition_mult = -0.25
-	taiga_attrition_mult = -0.2
- }
- kharis_aztec_tonatiuh = { #Tonatiuh, God of the Sun
-	icon = vampire_negative
-	raid_speed = 1.0
-	hostile_county_attrition = -0.75
- } 
- kharis_aztec_tezcatlipoca = { #Tezcatlipoca, God of Night
-	icon = mirror_first
-	enemy_hostile_scheme_success_chance_add = -5
-	travel_danger = -1
- }
- kharis_aztec_chalchiuhtlicue = { #Chalchiuhtlicue. Goddess of Running Water
-	icon = compass_mixed
-	no_water_crossing_penalty = yes
-	coastal_advantage = 5
- }
- kharis_aztec_centeotl = { #Centeotl, God of Maize
-	icon = food_positive
-	supply_capacity_mult = 0.2
-	supply_duration = 1
- }
- kharis_aztec_quetzalcoatl = { #Quetzalcoatl, The Feathered Serpent
-	icon = PODdragon_positive
-	cultural_head_fascination_mult = 0.1
-	learning = 3
- }
- kharis_aztec_xipe_totec = { #Xipe Totec, God of Fertility and Sacrifice
-	icon = fertility_positive
-	fertility = 0.25
-	attraction_opinion = 10
- }
- kharis_aztec_mayahuel = { #Mayahuel, Goddess of Maguey
-	icon = drink_positive
-	guest_opinion = 5
-	befriend_scheme_power_mult = 0.3
- }
- kharis_aztec_tlaltecuhtli = { #Tlaltecuhtli, Earth Goddess
-	icon = fertility_positive
-	fertility = 0.25
-	attraction_opinion = 10
-	close_relative_opinion = 10
- }
- kharis_aztec_apollon = {
-	icon = health_positive
-	health = 0.25
-	vassal_opinion = 10
- }
- kharis_aztec_artemis = {
-	icon = martial_positive
-	prowess = 4
-	diplomacy = 2
- }
- kharis_aztec_herakles = {
-	icon = prowess_positive
-	tolerance_advantage_mod = 4
-	prowess = 4
- }
- kharis_aztec_asklepios = {
-	icon = health_positive
-	health = 0.5
-	stress_gain_mult = -0.33
- } 
+kharis_aztec_huitzilopochtli = { #Huitzilopochtli, Father of the Aztecs
+    icon = blood_positive
+    controlled_province_advantage = 3
+    prowess = 3
+}
+kharis_aztec_tlaloc = { #Tlaloc, God of Rain and Storms
+    icon = family_positive
+    jungle_attrition_mult = -0.35
+    forest_attrition_mult = -0.25
+    taiga_attrition_mult = -0.2
+}
+kharis_aztec_tonatiuh = { #Tonatiuh, God of the Sun
+    icon = vampire_negative
+    raid_speed = 1.0
+    hostile_county_attrition = -0.75
+}
+kharis_aztec_tezcatlipoca = { #Tezcatlipoca, God of Night
+    icon = mirror_first
+    enemy_hostile_scheme_success_chance_add = -5
+    travel_danger = -1
+}
+kharis_aztec_chalchiuhtlicue = { #Chalchiuhtlicue. Goddess of Running Water
+    icon = compass_mixed
+    no_water_crossing_penalty = yes
+    coastal_advantage = 5
+}
+kharis_aztec_centeotl = { #Centeotl, God of Maize
+    icon = food_positive
+    supply_capacity_mult = 0.2
+    supply_duration = 1
+}
+kharis_aztec_quetzalcoatl = { #Quetzalcoatl, The Feathered Serpent
+    icon = PODdragon_positive
+    cultural_head_fascination_mult = 0.1
+    learning = 3
+}
+kharis_aztec_xipe_totec = { #Xipe Totec, God of Fertility and Sacrifice
+    icon = fertility_positive
+    fertility = 0.25
+    attraction_opinion = 10
+}
+kharis_aztec_mayahuel = { #Mayahuel, Goddess of Maguey
+    icon = drink_positive
+    guest_opinion = 5
+    befriend_scheme_power_mult = 0.3
+}
+kharis_aztec_tlaltecuhtli = { #Tlaltecuhtli, Earth Goddess
+    icon = fertility_positive
+    fertility = 0.25
+    attraction_opinion = 10
+    close_relative_opinion = 10
+}
+kharis_aztec_apollon = {
+    icon = health_positive
+    health = 0.25
+    vassal_opinion = 10
+}
+kharis_aztec_artemis = {
+    icon = martial_positive
+    prowess = 4
+    diplomacy = 2
+}
+kharis_aztec_herakles = {
+    icon = prowess_positive
+    tolerance_advantage_mod = 4
+    prowess = 4
+}
+kharis_aztec_asklepios = {
+    icon = health_positive
+    health = 0.5
+    stress_gain_mult = -0.33
+}
 #zoroastrian
- ### Khurmazta Deities
- bhakti_vohu_manah = {
-	icon = diplomacy_positive
-	intrigue = -1
-	diplomacy = 1
- }
- bhakti_khshathra_vairya = {
-	icon = county_modifier_development_positive
-	learning = -1
-	build_speed = -0.1
- }
- bhakti_haurvatat = {
-	icon = stewardship_positive
-	diplomacy = -1
-	stewardship = 1
- }
- bhakti_asha_vahishta = {
-	icon = magic_positive
-	monthly_piety = 2
-	martial = -1
- }
- bhakti_armaiti = {
-	icon = stress_positive
-	stewardship = -1
-	learning = 1
- }
- bhakti_ameretat = {
-	icon = treatment_positive
-	fertility = -0.1
-	health = 0.5
- }
- ### Bon Deities
-  patron_god_bon_war_god = {
-	icon = martial_positive
-	martial = 2
-	diplomacy = -1
-	prowess = 1
-  }
-  patron_god_bon_creator_god = {
-	icon = letter_positive
-	diplomacy = 2
-	martial = -1
-	monthly_piety = 0.25
-  }
-  patron_god_bon_trickster_god = {
-	icon = magic_positive
-	diplomacy = 3
-	stewardship = -1
-  }
-  patron_god_bon_household_god = {
-	icon = stewardship_positive
-	martial = 2
-	learning = -1
-	vassal_opinion = 5
-  }
-  patron_god_bon_knowledge_god = {
-	icon = stewardship_positive
-	learning = 2
-	intrigue = -1
-	monthly_prestige = 0.50
-  }
-  patron_god_bon_health_god = {
-	icon = treatment_positive
-	martial = -1
-	health = 0.50
-  } 
+### Khurmazta Deities
+bhakti_vohu_manah = {
+    icon = diplomacy_positive
+    intrigue = -1
+    diplomacy = 1
+}
+bhakti_khshathra_vairya = {
+    icon = county_modifier_development_positive
+    learning = -1
+    build_speed = -0.1
+}
+bhakti_haurvatat = {
+    icon = stewardship_positive
+    diplomacy = -1
+    stewardship = 1
+}
+bhakti_asha_vahishta = {
+    icon = magic_positive
+    monthly_piety = 2
+    martial = -1
+}
+bhakti_armaiti = {
+    icon = stress_positive
+    stewardship = -1
+    learning = 1
+}
+bhakti_ameretat = {
+    icon = treatment_positive
+    fertility = -0.1
+    health = 0.5
+}
+### Bon Deities
+patron_god_bon_war_god = {
+    icon = martial_positive
+    martial = 2
+    diplomacy = -1
+    prowess = 1
+}
+patron_god_bon_creator_god = {
+    icon = letter_positive
+    diplomacy = 2
+    martial = -1
+    monthly_piety = 0.25
+}
+patron_god_bon_trickster_god = {
+    icon = magic_positive
+    diplomacy = 3
+    stewardship = -1
+}
+patron_god_bon_household_god = {
+    icon = stewardship_positive
+    martial = 2
+    learning = -1
+    vassal_opinion = 5
+}
+patron_god_bon_knowledge_god = {
+    icon = stewardship_positive
+    learning = 2
+    intrigue = -1
+    monthly_prestige = 0.50
+}
+patron_god_bon_health_god = {
+    icon = treatment_positive
+    martial = -1
+    health = 0.50
+}
 #Kemetic
- kharis_kemet_osiris = {
-	icon = atef_crown
-	controlled_province_advantage = 3
-	dynasty_opinion = 10
- }
- kharis_kemet_isis = {
-	icon = family_positive
-	spouse_opinion = 20
-	close_relative_opinion = 10
-	dynasty_opinion = 10
- }
- kharis_kemet_horus = {
-	icon = eye_of_horus
-	learning = 2
-	diplomacy = 2
- }
- kharis_kemet_seth = {
-	icon = prowess_positive
-	attacker_advantage = 3
-	prowess = 4
- }
- kharis_kemet_ptah = {
-	icon = stewardship_positive
-	stewardship = 1
-	domain_tax_mult = 0.02
- }
- kharis_kemet_re = {
-	icon = letter_positive
-	embarkation_cost_mult = -0.05
-	naval_movement_speed_mult = 0.05
- }
- kharis_kemet_hathor = {
-	icon = letter_positive
-	intrigue = 1
-	diplomacy = 1
- }
- kharis_kemet_anubis = {
-	icon = stewardship_positive
-	stewardship = 2
-	domain_tax_mult = 0.05
-	attraction_opinion = -10
- }
- kharis_kemet_thoth = {
-	icon = economy_positive
-	domain_tax_same_faith_mult = 0.1
-	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
- }
- kharis_kemet_bastet = {
-	icon = fertility_positive
-	fertility = 0.25
-	attraction_opinion = 10
-	close_relative_opinion = 10
- }
- kharis_kemet_amon = {
-	icon = health_positive
-	health = 0.25
-	vassal_opinion = 10
- }
- kharis_kemet_artemis = {
-	icon = martial_positive
-	prowess = 4
-	diplomacy = 2
- }
- kharis_kemet_herakles = {
-	icon = prowess_positive
-	tolerance_advantage_mod = 4
-	prowess = 4
- }
- kharis_kemet_asklepios = {
-	icon = health_positive
-	health = 0.5
-	stress_gain_mult = -0.33
- }
+kharis_kemet_osiris = {
+    icon = atef_crown
+    controlled_province_advantage = 3
+    dynasty_opinion = 10
+}
+kharis_kemet_isis = {
+    icon = family_positive
+    spouse_opinion = 20
+    close_relative_opinion = 10
+    dynasty_opinion = 10
+}
+kharis_kemet_horus = {
+    icon = eye_of_horus
+    learning = 2
+    diplomacy = 2
+}
+kharis_kemet_seth = {
+    icon = prowess_positive
+    attacker_advantage = 3
+    prowess = 4
+}
+kharis_kemet_ptah = {
+    icon = stewardship_positive
+    stewardship = 1
+    domain_tax_mult = 0.02
+}
+kharis_kemet_re = {
+    icon = letter_positive
+    embarkation_cost_mult = -0.05
+    naval_movement_speed_mult = 0.05
+}
+kharis_kemet_hathor = {
+    icon = letter_positive
+    intrigue = 1
+    diplomacy = 1
+}
+kharis_kemet_anubis = {
+    icon = stewardship_positive
+    stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+}
+kharis_kemet_thoth = {
+    icon = economy_positive
+    domain_tax_same_faith_mult = 0.1
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+}
+kharis_kemet_bastet = {
+    icon = fertility_positive
+    fertility = 0.25
+    attraction_opinion = 10
+    close_relative_opinion = 10
+}
+kharis_kemet_amon = {
+    icon = health_positive
+    health = 0.25
+    vassal_opinion = 10
+}
+kharis_kemet_artemis = {
+    icon = martial_positive
+    prowess = 4
+    diplomacy = 2
+}
+kharis_kemet_herakles = {
+    icon = prowess_positive
+    tolerance_advantage_mod = 4
+    prowess = 4
+}
+kharis_kemet_asklepios = {
+    icon = health_positive
+    health = 0.5
+    stress_gain_mult = -0.33
+}
 #ds1
- god_ds1_osiris = {
-	icon = atef_crown
-	controlled_province_advantage = 3
-	dynasty_opinion = 10
- }
- god_ds1_isis = {
-	icon = family_positive
-	spouse_opinion = 20
-	close_relative_opinion = 10
-	dynasty_opinion = 10
- }
- god_ds1_horus = {
-	icon = eye_of_horus
-	learning = 2
-	diplomacy = 2
- }
- god_ds1_seth = {
-	icon = prowess_positive
-	attacker_advantage = 3
-	prowess = 4
- }
- god_ds1_ptah = {
-	icon = stewardship_positive
-	stewardship = 1
-	domain_tax_mult = 0.02
- }
- god_ds1_re = {
-	icon = letter_positive
-	embarkation_cost_mult = -0.05
-	naval_movement_speed_mult = 0.05
- }
- god_ds1_hathor = {
-	icon = letter_positive
-	intrigue = 1
-	diplomacy = 1
- }
- god_ds1_anubis = {
-	icon = stewardship_positive
-	stewardship = 2
-	domain_tax_mult = 0.05
-	attraction_opinion = -10
- }
- god_ds1_thoth = {
-	icon = economy_positive
-	domain_tax_same_faith_mult = 0.1
-	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
- }
- god_ds1_bastet = {
-	icon = fertility_positive
-	fertility = 0.25
-	attraction_opinion = 10
-	close_relative_opinion = 10
- }
- god_ds1_amon = {
-	icon = health_positive
-	health = 0.25
-	vassal_opinion = 10
- }
- god_ds1_artemis = {
-	icon = martial_positive
-	prowess = 4
-	diplomacy = 2
- }
- god_ds1_herakles = {
-	icon = prowess_positive
-	tolerance_advantage_mod = 4
-	prowess = 4
- }
- god_ds1_asklepios = {
-	icon = health_positive
-	health = 0.5
-	stress_gain_mult = -0.33
- } 
+god_ds1_osiris = {
+    icon = atef_crown
+    controlled_province_advantage = 3
+    dynasty_opinion = 10
+}
+god_ds1_isis = {
+    icon = family_positive
+    spouse_opinion = 20
+    close_relative_opinion = 10
+    dynasty_opinion = 10
+}
+god_ds1_horus = {
+    icon = eye_of_horus
+    learning = 2
+    diplomacy = 2
+}
+god_ds1_seth = {
+    icon = prowess_positive
+    attacker_advantage = 3
+    prowess = 4
+}
+god_ds1_ptah = {
+    icon = stewardship_positive
+    stewardship = 1
+    domain_tax_mult = 0.02
+}
+god_ds1_re = {
+    icon = letter_positive
+    embarkation_cost_mult = -0.05
+    naval_movement_speed_mult = 0.05
+}
+god_ds1_hathor = {
+    icon = letter_positive
+    intrigue = 1
+    diplomacy = 1
+}
+god_ds1_anubis = {
+    icon = stewardship_positive
+    stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+}
+god_ds1_thoth = {
+    icon = economy_positive
+    domain_tax_same_faith_mult = 0.1
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+}
+god_ds1_bastet = {
+    icon = fertility_positive
+    fertility = 0.25
+    attraction_opinion = 10
+    close_relative_opinion = 10
+}
+god_ds1_amon = {
+    icon = health_positive
+    health = 0.25
+    vassal_opinion = 10
+}
+god_ds1_artemis = {
+    icon = martial_positive
+    prowess = 4
+    diplomacy = 2
+}
+god_ds1_herakles = {
+    icon = prowess_positive
+    tolerance_advantage_mod = 4
+    prowess = 4
+}
+god_ds1_asklepios = {
+    icon = health_positive
+    health = 0.5
+    stress_gain_mult = -0.33
+}
 #Dwemer
- follow_learning = {
-	icon = learning_positive
-	intrigue = -1
-	learning_per_piety_level = 1
-	learning_per_prestige_level = 1
-	learning_per_stress_level = 1
-	monthly_learning_lifestyle_xp_gain_mult = 0.25
- }
- follow_martial = {
-	icon = martial_positive
-	martial_per_piety_level = 1
-	martial_per_prestige_level = 1
-	martial_per_stress_level = 1
-	monthly_martial_lifestyle_xp_gain_mult = 0.25
-	men_at_arms_maintenance = -0.08
-	monthly_piety_gain_per_knight_add = 0.15
- }
- follow_steward = {
-	icon = stewardship_positive
-	monthly_income_mult = 0.25
-	monthly_stewardship_lifestyle_xp_gain_mult = 0.25
-	stewardship_per_piety_level = 1
-	stewardship_per_prestige_level = 1
-	stewardship_per_stress_level = 1
-	build_speed = -0.1
-	development_growth = 0.10
- }
- follow_health = {
-	icon = treatment_positive
-	health = 0.5
-	fertility = 0.25
-	prowess_per_piety_level = 2
-	prowess_per_prestige_level = 3
-	prowess_per_stress_level = 1
-	epidemic_resistance = 8
-	attraction_opinion = 10
- }
- follow_darkness = {
-	icon = intrigue_positive
-	monthly_intrigue_lifestyle_xp_gain_mult = 0.25
-	intrigue_per_piety_level = 2
-	intrigue_per_prestige_level = 2
-	intrigue_per_stress_level = 1
-	hostile_scheme_power_add = 3
- }
- follow_diplomacy = {
-	icon = diplomacy_positive
-	diplomacy_per_piety_level = 2
-	diplomacy_per_prestige_level = 2
-	diplomacy_per_stress_level = 1
-	monthly_diplomacy_lifestyle_xp_gain_mult = 0.25
-	learn_language_scheme_power_add = 16 
-	befriend_scheme_power_add = 16
-	personal_scheme_power_add = 2
-	monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
- }   
+follow_learning = {
+    icon = learning_positive
+    intrigue = -1
+    learning_per_piety_level = 1
+    learning_per_prestige_level = 1
+    learning_per_stress_level = 1
+    monthly_learning_lifestyle_xp_gain_mult = 0.25
+}
+follow_martial = {
+    icon = martial_positive
+    martial_per_piety_level = 1
+    martial_per_prestige_level = 1
+    martial_per_stress_level = 1
+    monthly_martial_lifestyle_xp_gain_mult = 0.25
+    men_at_arms_maintenance = -0.08
+    monthly_piety_gain_per_knight_add = 0.15
+}
+follow_steward = {
+    icon = stewardship_positive
+    monthly_income_mult = 0.25
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.25
+    stewardship_per_piety_level = 1
+    stewardship_per_prestige_level = 1
+    stewardship_per_stress_level = 1
+    build_speed = -0.1
+    development_growth = 0.10
+}
+follow_health = {
+    icon = treatment_positive
+    health = 0.5
+    fertility = 0.25
+    prowess_per_piety_level = 2
+    prowess_per_prestige_level = 3
+    prowess_per_stress_level = 1
+    epidemic_resistance = 8
+    attraction_opinion = 10
+}
+follow_darkness = {
+    icon = intrigue_positive
+    monthly_intrigue_lifestyle_xp_gain_mult = 0.25
+    intrigue_per_piety_level = 2
+    intrigue_per_prestige_level = 2
+    intrigue_per_stress_level = 1
+    hostile_scheme_power_add = 3
+}
+follow_diplomacy = {
+    icon = diplomacy_positive
+    diplomacy_per_piety_level = 2
+    diplomacy_per_prestige_level = 2
+    diplomacy_per_stress_level = 1
+    monthly_diplomacy_lifestyle_xp_gain_mult = 0.25
+    learn_language_scheme_power_add = 16
+    befriend_scheme_power_add = 16
+    personal_scheme_power_add = 2
+    monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
+}
 #
 # Satanism
- satanism_follow_lucifer = {
-	diplomacy_per_prestige_level = 2
-	icon = satanism_modifier
-	monthly_prestige = 0.5
-	monthly_piety = -1
-	attraction_opinion = 5
-	monthly_legitimacy_add = 0.1
-	owned_legend_spread_mult = 1.5
-	development_decline = 1.5
-	guest_opinion = 10
-	vassal_opinion = -20
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = -10
- }
- satanism_follow_belzebulb = {
-	intrigue_per_piety_level = 3
-	monthly_prestige = -1
-	monthly_county_control_growth_add = 15
-	faith_conversion_piety_cost_mult = 10
-	tax_mult = 2
-	character_travel_safety = -10
-	hostile_scheme_power_add = 3
-	befriend_scheme_power_add = -5
- }
- satanism_follow_abaddon = {
-	stress_loss_per_piety_level = 10
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = 10
-	fertility = 10
-	prowess = -5
-	development_decline = 5
-	build_speed = -5
-	max_combat_roll = -2
-	attraction_opinion = -5
-	life_expectancy = 10
- }
-  satanism_follow_belphegor = {
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = 10
-	fertility = -10
-	prowess = 20
-	attraction_opinion = -5
-	life_expectancy = -10
-	supply_duration = -10
-	fort_level = 1
-	monthly_income_mult = 2
-	development_growth = 2
-	provisions_use_mult = 2
- }
-   satanism_follow_asmodeus = {
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = -10
-	intrigue_per_piety_level = 3
-	fertility = 50
-	prowess = -5
-	attraction_opinion = 20
+satanism_follow_lucifer = {
+    icon = satanism_modifier
+
+    diplomacy_per_prestige_level = 2
+    monthly_prestige = 0.5
+    monthly_piety = -1
+    attraction_opinion = 5
+    monthly_legitimacy_add = 0.1
+    owned_legend_spread_mult = 1.5
+    development_decline = 1.5
+    guest_opinion = 10
+    vassal_opinion = -20
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = -10
+}
+satanism_follow_belzebulb = {
+    icon = satanism_modifier
+
+    intrigue_per_piety_level = 3
+    monthly_prestige = -1
+    monthly_county_control_growth_add = 15
+    faith_conversion_piety_cost_mult = 10
+    tax_mult = 2
+    character_travel_safety = -10
+    hostile_scheme_power_add = 3
+    befriend_scheme_power_add = -5
+}
+satanism_follow_abaddon = {
+    icon = satanism_modifier
+
+    stress_loss_per_piety_level = 10
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = 10
+    fertility = 10
+    prowess = -5
+    development_decline = 5
+    build_speed = -5
+    max_combat_roll = -2
+    attraction_opinion = -5
+    life_expectancy = 10
+}
+satanism_follow_belphegor = {
+    icon = satanism_modifier
+
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = 10
+    fertility = -10
+    prowess = 20
+    attraction_opinion = -5
+    life_expectancy = -10
+    supply_duration = -10
+    fort_level = 1
+    monthly_income_mult = 2
+    development_growth = 2
+    provisions_use_mult = 2
+}
+satanism_follow_asmodeus = {
+    icon = satanism_modifier
+
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = -10
+    intrigue_per_piety_level = 3
+    fertility = 50
+    prowess = -5
+    attraction_opinion = 20
     negate_diplomacy_penalty_add = 5
-	monthly_income_mult = -1.5
- }
- satanism_follow_baphomet = {
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = 10
-	fertility = 10
-	prowess = 10
-	attraction_opinion = 10
-	scheme_resistance = -5
-	enemy_hostile_scheme_phase_duration_add = -5
- }
-  satanism_follow_samael = {
-	faith_conversion_piety_cost_mult = 10
-	character_travel_safety = -10
-	fertility = -10
-	learning = 10
-	supply_duration = 10
-	life_expectancy = -10
-	movement_speed = -5
-	retreat_losses = 5
-	provisions_use_mult = -1
- }
+    monthly_income_mult = -1.5
+}
+satanism_follow_baphomet = {
+    icon = satanism_modifier
+
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = 10
+    fertility = 10
+    prowess = 10
+    attraction_opinion = 10
+    scheme_resistance = -5
+    enemy_hostile_scheme_phase_duration_add = -5
+}
+satanism_follow_samael = {
+    icon = satanism_modifier
+
+    faith_conversion_piety_cost_mult = 10
+    character_travel_safety = -10
+    fertility = -10
+    learning = 10
+    supply_duration = 10
+    life_expectancy = -10
+    movement_speed = -5
+    retreat_losses = 5
+    provisions_use_mult = -1
+}
