@@ -656,7 +656,7 @@ dwemer_forge_1 = {
 		# To randomize between multiple meshes/entities. Note that they must all be entities, or all be meshes:
 		names = { "dwemer_building_1_mesh" "dwemer_building_2_mesh"}
 		# Path to illustration shown in the county view, texture can be accessed in GUI: "[Holding.GetIllustration]"
-		illustration = "path/to/image.dds"
+		illustration = "gfx/interface/holding_types/dwemer_forge.dds"
 		# Associated sound effect and an optional parameter, can also be just soundeffect = "event:..." if no parameter is needed
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Generic/sfx_amb_3d_holdings_generic_castle" soundparameter = { "Tier" = 2.0 } }
 		# Graphical cultures that prefer this asset to be shown
@@ -685,7 +685,7 @@ dwemer_forge_1 = {
 
 	# A special modifier applied to every holding of specified type in the county
 	county_holding_modifier = {
-		holding = castle_holding
+		holding = city_holding
 		income_mult = 1
 	}
 
