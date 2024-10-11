@@ -1270,23 +1270,6 @@ tr_dutch_van = {
 		}
 	}
  }
- tr_betruger = {
-    name = "Dr. Malcolm Betruger"
-	religion = satanism
-	culture = german
-	dna = betruger
-	dynasty_house = house_fantasy
-    trait = education_learning_3
-	trait = intellect_good_2
-	trait = calm
-    trait = callous
-    trait = ambitious
-    trait = arbitrary
-	trait = immortal
-	821.5.10 = {
-		birth = yes
-	}
- }
  tr_dumner_1 = {
     name = "S'wit N'wah"
 	religion = tribunal_temple 
@@ -1429,3 +1412,27 @@ tr_dutch_van = {
 	}
  }
 #
+###DOOM
+ tr_betruger = {
+    name = "Dr. Malcolm Betruger"
+	religion = pagan
+	culture = german
+	dna = betruger
+	dynasty_house = house_fantasy
+    trait = education_learning_3
+	trait = intellect_good_2
+	trait = calm
+    trait = callous
+    trait = ambitious
+    trait = arbitrary
+	821.5.10 = {
+		birth = yes
+	}
+	848.1.05 = {
+		add_trait = possessed_1
+		set_character_faith = faith:satanism
+	}
+	855.5.10 = {
+		add_trait = immortal
+	}
+ }
