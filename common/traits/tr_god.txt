@@ -838,6 +838,7 @@
 	same_faith_opinion = -10
 	ruler_designer_cost = 15
 	ai_rationality = -200
+	satanism_opinion = 15
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -880,6 +881,7 @@
 	same_faith_opinion = -10
 	ruler_designer_cost = 15
 	ai_rationality = -200
+	satanism_opinion = 8
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -893,7 +895,33 @@
 			desc = trait_follow_hastur_desc
 		}
 	}
-    opposites = {
+ }
+ follow_quake = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 1
+	prowess_per_piety_level = 5
+	men_at_arms_maintenance_per_dread_mult = 1.2
+	knight_effectiveness_per_dread = 0.1
+	ruler_designer_cost = 25
+	satanism_opinion = 15
+	diplomacy = -5
+	travel_speed = 2
+	travel_safety = 10
+	ai_rationality = -50
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_quake_desc
+			}
+			desc = trait_follow_quake_desc
+		}
 	}
  }
  follow_jesus = {
