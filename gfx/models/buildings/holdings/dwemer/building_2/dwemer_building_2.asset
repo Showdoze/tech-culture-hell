@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "dwemer_building_2_mesh"
+	file = "dwemer_building_2.mesh"
+
+	meshsettings = {
+		name = "dwemer_building_2"
+		index = 0
+		texture_diffuse = "dwemer_building_2_BaseColor.dds"
+		texture_normal = "dwemer_building_2_Normal.dds"
+		texture_specular = "dwemer_building_2_Roughness.dds"
+		shader = "standard_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "dwemer_building_2_entity"
+	pdxmesh = "dwemer_building_2_mesh"
+}

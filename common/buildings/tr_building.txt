@@ -629,3 +629,87 @@
  }
 #thief 
 
+#dwemer
+
+dwemer_forge_1 = {
+	
+	# How many levies does the building give
+	levy = 500
+	
+	# How much garrison does the building give
+	max_garrison = 500
+
+	# How much garrison regains a percentage of its maximal garrison equal to the garrison reinforcement rate
+	garrison_reinforcement_factor = 0.01
+	
+	# How long does it take to construct the building
+	construction_time = 720
+	
+	type = regular
+	
+	# Which asset does the building use
+	asset = {
+		# 'pdxmesh' or 'entity', specifies wheter to use a mesh or an entity. Meshes are more performant and should be preferred.
+		type = pdxmesh
+		# The name of the mesh or the entity
+		name = "dwemer_building_2_mesh"
+		# To randomize between multiple meshes/entities. Note that they must all be entities, or all be meshes:
+		names = { "dwemer_building_1_mesh" "dwemer_building_2_mesh"}
+		# Path to illustration shown in the county view, texture can be accessed in GUI: "[Holding.GetIllustration]"
+		illustration = "path/to/image.dds"
+		# Associated sound effect and an optional parameter, can also be just soundeffect = "event:..." if no parameter is needed
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Generic/sfx_amb_3d_holdings_generic_castle" soundparameter = { "Tier" = 2.0 } }
+		# Graphical cultures that prefer this asset to be shown
+		graphical_cultures = { dwemer_building_gfx }
+		# Province IDs in which this asset is preferred. Has a higher priority than graphical region.
+		provinces = { 496 1000 }
+		# Governments that prefer this asset to be shown
+		governments = { republic_government }
+	}
+
+	is_enabled = { yes }
+	can_construct_potential = {
+		scope:holder.culture = culture_dwemer
+	}
+	can_construct_showing_failures_only = {
+		gold >= 500
+	}
+	can_construct = {
+		gold >= 500
+		scope:holder.culture = culture_dwemer
+	}
+	show_disabled = no	# if set to yes, the building will show in the build menu even if disabled (will still use can_construct_potential). No by default
+	
+	# How much cost does the building cost
+	cost = { gold = 500 }
+
+	# A special modifier applied to every holding of specified type in the county
+	county_holding_modifier = {
+		holding = castle_holding
+		income_mult = 1
+	}
+
+	# A modifier applied if the holder's dynasty of the county has a specific perk
+	county_dynasty_modifier = {
+		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # The name of the perk
+		# The effect
+		development_growth_factor = 0.2
+	}
+
+	# A modifier applied to the county holder
+	county_holder_character_modifier = {
+
+	}
+	
+	# Building flags
+	flag = castle
+	flag = city
+	
+	# How desirable is the building for the AI
+	ai_value = {
+		base = 100
+	}
+	
+	# If this is set to yes, the building will be used for figuring out which background asset (walls/no walls etc) should be shown
+	is_graphical_background = no
+}
