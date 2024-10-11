@@ -13,7 +13,7 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    faith = faith:ds1_faith
+                    faith = faith:dark_souls_faith
                 }
                 desc = ds1_select_covenant_decision
             }
@@ -58,7 +58,7 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    faith = faith:ds1_faith
+                    faith = faith:dark_souls_faith
                 }
                 desc = ds1_select_covenant_decision_desc
             }
@@ -108,7 +108,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_aldrich
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_aldrich
                 }
@@ -120,7 +120,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_blue
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_blue
                 }
@@ -132,7 +132,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_darkmoon
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_darkmoon
                 }
@@ -144,7 +144,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_farron
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_farron
                 }
@@ -156,7 +156,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_moundmakers
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_moundmakers
                 }
@@ -168,7 +168,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_rosaria
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_rosaria
                 }
@@ -180,7 +180,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_sentinels
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_sentinels
                 }
@@ -192,7 +192,7 @@ tr_select_deity.01 = {
         name = ds1_select_covenant_sunlight
         trigger = {
             AND = {
-                faith = faith:ds1_faith
+                faith = faith:dark_souls_faith
                 NOT = {
                     has_trait = ds_covenant_sunlight
                 }
@@ -383,8 +383,9 @@ tr_select_deity.01 = {
     option = {
         name = pagan_choose_deity_jesus
         trigger = {
-            religion = {
-                family = rf_pagan
+            OR = {
+                faith = faith:roman_pagan
+                faith = faith:norse_pagan
             }
         }
         add_trait = follow_jesus
