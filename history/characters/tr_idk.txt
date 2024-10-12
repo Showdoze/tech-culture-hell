@@ -1272,7 +1272,7 @@ tr_dutch_van = {
  }
  tr_dumner_1 = {
     name = "S'wit N'wah"
-	religion = tribunal_temple 
+	religion = old_velothi 
     dynasty_house = house_fantasy
 	culture = dunmer
 	trait = education_martial_3
@@ -1309,7 +1309,7 @@ tr_dutch_van = {
  }
  tr_dumner_2 = {
     name = "N'chow Fetcher"
-	religion = tribunal_temple 
+	religion = sixth_house 
     dynasty_house = house_fantasy
 	culture = dunmer
 	trait = education_intrigue_2
@@ -1349,7 +1349,7 @@ tr_dutch_van = {
  }
  tr_altmer_1 = {
     name = "Gerrick Cardruhn"
-	religion = hist 
+	religion = auriel
     dynasty_house = house_fantasy
 	culture = altmer
 	trait = education_diplomacy_3
@@ -1411,6 +1411,27 @@ tr_dutch_van = {
 		}
 	}
  }
+ dagoth_100 = {
+	name = "Voryn" # Voryn Dagoth
+	dna = voryn_dna_entry
+	dynasty_house = house_fantasy
+	culture = dunmer #chimer
+	religion = old_velothi
+	#trait = scarab_blood
+	200.1.1 = { birth = yes }
+	216.1.1 = {
+		trait = education_intrigue_4
+		trait = vengeful
+		trait = deceitful
+		trait = arrogant
+		trait = immortal
+		give_nickname = nick_dagoth_ur
+		religion = sixth_house
+	}
+	1668.1.1 = {
+		death = { death_reason = death_red_mountain }
+	}
+}
 #
 ###DOOM
  tr_betruger = {

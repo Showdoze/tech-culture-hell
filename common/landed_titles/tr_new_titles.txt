@@ -150,3 +150,32 @@ d_cwc = {
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
 }
+d_auriel = { # EK TODO: add correct colors to this as well as a CoA
+	color = {147 126 105} 
+	ignore_titularity_for_title_weighting = yes
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	capital = c_canarias
+	landless = yes
+	ruler_uses_title_name = yes
+	definite_form = yes
+	de_jure_drift_disabled = yes
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+	always_follows_primary_heir = yes
+	can_be_named_after_dynasty = no
+}
+k_dagoth = {
+	color={ 65 0 10 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	capital = c_middlesex
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+}
