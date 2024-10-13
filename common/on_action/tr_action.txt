@@ -10,6 +10,10 @@ random_yearly_everyone_pulse = {
     on_actions = { tr_hollowing }
 }
 
+on_character_culture_change = {
+    on_actions = { tr_dwemer_buildings }
+}
+
 #yearly_global_pulse = {
 #	on_actions = { tr_elective_inheritance }
 #}
@@ -30,10 +34,8 @@ on_war_started = {
     on_actions = { tr_sayan_check }
 }
 
-on_game_start = {
-    on_actions = {
-        tr_satanism_start
-    }
+on_game_start_after_lobby = {
+    on_actions = { tr_satanism_start }
 }
 
 ## MODDED HOOKED BELOW
@@ -46,13 +48,30 @@ tr_satanism_random = {
 }
 
 tr_satanism_start = {
-    if = {
-        limit = {
-			character_exists = yes
-            character.faith = faith:satanism
+    effect = {
+        if = {
+            limit = {
+                character.faith = faith:satanism
+            }
+            character.set_piety_level = 0
+            character.add_piety = -100
         }
-        character.set_piety_level = 0
-        character.add_piety = -100
+    }
+
+}
+
+tr_dwemer_buildings = {
+    effect = {
+        any_realm_county = {
+            limit = {
+                AND = {
+                    NOT = { has_holding_type = dwemer_forge_1 }
+                    character.culture = culture_dwemer
+                    character.faith = faith:dwemer_religion
+                }
+            }
+            county = { set_holding_type = dwemer_forge_1 }
+        }
     }
 }
 
