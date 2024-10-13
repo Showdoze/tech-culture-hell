@@ -144,63 +144,6 @@ found_kingdom_decision = {
     }
 }
 
-embrace_english_culture_decision = {
-    picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-    ai_check_interval = 36
-    desc = embrace_english_culture_decision_desc
-    is_shown = {
-        is_landed = yes
-        culture = {
-            has_cultural_pillar = heritage_frankish
-        }
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:embrace_english_culture_decision
-            }
-        }
-    }
-    is_valid = {
-        custom_description = {
-            text = capital_in_england_region_tooltip
-            capital_province = {
-                geographical_region = world_europe_west_britannia
-            }
-        }
-    }
-    is_valid_showing_failures_only = {
-        is_imprisoned = no
-        is_available_adult = yes
-    }
-    effect = {
-        add_to_global_variable_list = {
-            name = unavailable_unique_decisions
-            target = flag:embrace_english_culture_decision
-        }
-        show_as_tooltip = {
-            embrace_english_culture_effect = yes
-        }
-        trigger_event = {
-            id = british_isles.2001
-        }
-    }
-    ai_potential = {
-        is_landed = yes
-        culture = {
-            has_cultural_pillar = heritage_frankish
-        }
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:embrace_english_culture_decision
-            }
-        }
-    }
-    ai_will_do = {
-        base = 0
-    }
-}
-
 convert_resources_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
     title = convert_resources_decision

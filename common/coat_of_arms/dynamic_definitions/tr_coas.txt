@@ -1,111 +1,99 @@
 ﻿e_russia = {
-	item = {
-		trigger = {
-			exists = holder
-			holder = {
-				has_government = autocracy_government
-			}
-		}
-		coat_of_arms = e_russia_tsar
-	}
+    item = {
+        trigger = {
+            exists = holder
+            holder = {
+                has_government = autocracy_government
+            }
+        }
+        coat_of_arms = e_russia_tsar
+    }
 }
 
 e_france = {
-	item = {
-		trigger = {
-			exists = holder
-			holder = {
-				has_government = autocracy_government
-			}
-		}
-		coat_of_arms = e_france_nap
-	}
+    item = {
+        trigger = {
+            exists = holder
+            holder = {
+                has_government = autocracy_government
+            }
+        }
+        coat_of_arms = e_france_nap
+    }
 }
 k_england = {
-	item = {
-		trigger = {
-			coa_switch_to_norman_trigger = yes
-			coa_england_switches_to_france_coa_trigger = yes
-		}
-		coat_of_arms = k_england_france
-	}
-	item = {
-		trigger = {
-			coa_switch_to_norman_trigger = yes
-		}
-		coat_of_arms = k_england_norman
-	}
+    item = {
+        trigger = {
+            coa_switch_to_norman_trigger = yes
+            coa_england_switches_to_france_coa_trigger = yes
+        }
+        coat_of_arms = k_england_france
+    }
+    item = {
+        trigger = {
+            coa_switch_to_norman_trigger = yes
+        }
+        coat_of_arms = k_england_norman
+    }
 }
 d_athens = {
-	item = {
-		trigger = {
-			holder.faith.religion = religion:hellenism_religion
-		}
-		coat_of_arms = d_athens_old	
-	}		
-}
-
-e_spain = {
-	item = {
-		trigger = {
-			OR = {
-				holder.faith.religion = religion:islam_religion
-				holder.culture = {
-					OR = {
-						has_coa_gfx = arabic_group_coa_gfx
-						has_coa_gfx = berber_group_coa_gfx
-					}
-				}
-			}
-		}
-		coat_of_arms = e_spain_islamic	
-	}		
+    item = {
+        trigger = {
+            holder.faith.religion = religion:hellenism_religion
+        }
+        coat_of_arms = d_athens_old
+    }
 }
 d_alexandria = {
-	item = {
-		trigger = {
-			OR = {
-				holder.faith.religion = religion:hellenism_religion
-			    holder.faith.religion = religion:egyptian_religion
-				holder.faith.religion = religion:kushitism_religion
-			}
-		}
-		coat_of_arms = d_alexandria_old	
-	}		
+    item = {
+        trigger = {
+            OR = {
+                holder.faith.religion = religion:hellenism_religion
+                holder.faith.religion = religion:egyptian_religion
+                holder.faith.religion = religion:kushitism_religion
+            }
+        }
+        coat_of_arms = d_alexandria_old
+    }
 }
 c_alexandria = {
-	item = {
-		trigger = {
-			OR = {
-				holder.faith.religion = religion:hellenism_religion
-			    holder.faith.religion = religion:egyptian_religion
-				holder.faith.religion = religion:kushitism_religion
-			}
-		}
-		coat_of_arms = c_alexandria_old	
-	}		
+    item = {
+        trigger = {
+            OR = {
+                holder.faith.religion = religion:hellenism_religion
+                holder.faith.religion = religion:egyptian_religion
+                holder.faith.religion = religion:kushitism_religion
+            }
+        }
+        coat_of_arms = c_alexandria_old
+    }
 }
 c_laconia = {
-	item = {
-		trigger = {
-			holder.faith.religion = religion:hellenism_religion
-		}
-		coat_of_arms = k_lacadaemonia	
-	}		
+    item = {
+        trigger = {
+            OR = {
+                holder.culture = {
+                    Culture = laconian
+                }
+                holder.faith.religion = religion:hellenism_religion
+            }
+        }
+        coat_of_arms = k_lacadaemonia
+    }
 }
 c_baghdad = {
-	item = {
-		trigger = {
-			holder.faith.religion = religion:mesopotamian_religion
-		}
-		coat_of_arms = e_babylon	
-	}		
+    item = {
+        trigger = {
+            holder.faith.religion = religion:mesopotamian_religion
+        }
+        coat_of_arms = e_babylon
+    }
 }
 k_romagna = {
-	item = {
-		trigger = {
-			holder.faith.religion = religion:hellenism_religion
-		}
-		coat_of_arms = d_blood_peace	
-	}		
+    item = {
+        trigger = {
+            holder.faith.faith = faith:roman_pagan
+        }
+        coat_of_arms = d_blood_peace
+    }
 }

@@ -1429,6 +1429,36 @@ mmmusicbizmarty = {
 	}
  }
 #LOLCOW
+ mmmrbased = {
+	name = "Mr.Based" #Jason Itzler
+	religion = samaritan
+	culture = american
+	dynasty = mmlolcow
+	trait = deceitful
+	trait = education_intrigue_1
+	trait = murder
+	trait = lustful
+	trait = deviant
+	trait = arrogant
+	trait = stubborn
+	trait = callous
+	trait = drunkard
+	trait = greedy
+	trait = arbitrary
+	disallow_random_traits = yes
+	810.2.23 = { birth = yes }
+	860.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:mmworldoftshirts }
+		}
+	}
+	870.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = mmpolish
+		}
+	}
+ }
  mmLeslieClarkgm = {
 	name = "Granny Clark"
 	sexuality = bisexual
@@ -1832,6 +1862,7 @@ mmmusicbizmarty = {
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmdaniellarson reason = rival_historical }
+			set_relation_friend = { target = character:mmmrbased }
 		}
 	}
 	870.1.10 = {
@@ -1870,6 +1901,8 @@ mmmusicbizmarty = {
 	dynasty = mmlolcow
 	trait = impatient
 	trait = wrathful
+	trait = lunatic_1
+	trait = paranoid
 	trait = depressed_1
 	trait = irritable
 	trait = greedy
@@ -1964,6 +1997,11 @@ mmmusicbizmarty = {
 	intrigue = 0
 	stewardship = 1
 	learning = 0
+	trait = education_diplomacy_1
+	trait = compassionate
+	trait = forgiving
+	trait = patient
+	disallow_random_traits = yes
 	785.11.4 = { birth = yes }
 	850.1.1 = {
 		effect = {
@@ -1994,6 +2032,7 @@ mmmusicbizmarty = {
 	learning = 0
 	trait = irritable
 	trait = education_intrigue_1
+	trait = lunatic_genetic
 	trait = callous
 	trait = deviant
 	trait = incestuous
@@ -2011,7 +2050,7 @@ mmmusicbizmarty = {
 			set_relation_rival = { target = character:mmnancyshimer reason = rival_historical }
 		}
 	}
-	894.4.17 = {
+	868.4.17 = {
 		death = {
 			death_reason = death_beaten
 			killer = mmdaniellarson

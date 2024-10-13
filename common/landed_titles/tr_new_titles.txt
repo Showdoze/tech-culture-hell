@@ -179,3 +179,23 @@ k_dagoth = {
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
 }
+d_tonal_architects = {
+	color={ 255 251 132 }
+
+    ignore_titularity_for_title_weighting = yes
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	capital = c_alexandria
+	
+	landless = yes
+	ruler_uses_title_name = yes
+	definite_form = yes
+	de_jure_drift_disabled = yes
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+	always_follows_primary_heir = yes
+	can_be_named_after_dynasty = no
+}
+

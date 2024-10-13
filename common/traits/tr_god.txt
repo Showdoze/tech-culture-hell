@@ -24,6 +24,7 @@
     desert_advantage = 1
 	monthly_character_prestige = 0.02
 	character_travel_speed_mult = 0.25
+	flag = lower_chance_of_dying_in_combat
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -810,7 +811,273 @@
 		ds_covenant_sentinels
 	}
  }
-#
+#Kemet
+ follow_osiris= {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	controlled_province_advantage = 3
+	fertility = 0.1
+	negate_health_penalty_add = 0.1
+    dynasty_opinion = 10
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_osiris_desc
+			}
+			desc = trait_follow_osiris_character_desc
+		}
+	}
+    opposites = {
+		follow_bastet
+		follow_anubis
+		follow_seth
+		follow_horus
+		follow_isis
+	}
+ }
+ follow_isis= {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	spouse_opinion = 20
+    close_relative_opinion = 10
+    dynasty_opinion = 10
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_isis_desc
+			}
+			desc = trait_follow_isis_character_desc
+		}
+	}
+    opposites = {
+		follow_bastet
+		follow_anubis
+		follow_seth
+		follow_horus
+		follow_osiris
+	}
+ }
+ follow_horus = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	learning = 2
+    diplomacy = 2
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_horus_desc
+			}
+			desc = trait_follow_horus_character_desc
+		}
+	}
+    opposites = {
+		follow_bastet
+		follow_anubis
+		follow_seth
+		follow_isis
+		follow_osiris
+	}
+ }
+ follow_seth = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	attacker_advantage = 3
+    prowess = 4
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_seth_desc
+			}
+			desc = trait_follow_seth_character_desc
+		}
+	}
+    opposites = {
+		follow_bastet
+		follow_anubis
+		follow_horus
+		follow_isis
+		follow_osiris
+	}
+ }
+ follow_anubis = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	stewardship_per_piety_level = 1
+	stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_anubis_desc
+			}
+			desc = trait_follow_anubis_character_desc
+		}
+	}
+    opposites = {
+		follow_bastet
+		follow_seth
+		follow_horus
+		follow_isis
+		follow_osiris
+	}
+ }
+ follow_bastet = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	fertility = 0.25
+    attraction_opinion = 10
+	provisions_gain_mult = 0.01
+    close_relative_opinion = 10
+	dynasty_opinion = 5
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_bastet_desc
+			}
+			desc = trait_follow_bastet_character_desc
+		}
+	}
+    opposites = {
+		follow_anubis
+		follow_seth
+		follow_horus
+		follow_isis
+		follow_osiris
+	}
+ }
 #MISC
  follow_cthulhu = {
     category = fame
