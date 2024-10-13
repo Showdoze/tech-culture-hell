@@ -621,6 +621,98 @@ venerable = {
 		}
 	}
  }
+ start_telvani = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	legitimacy_gain_mult = 0.5
+	character_travel_speed_mult = 1
+	character_travel_safety = 5
+	movement_speed = 1
+	prowess = 5
+	negate_health_penalty_add = 1
+	attraction_opinion = 10
+	minority_opinion = -10
+	health = 1.5
+	glory_hound_opinion = 10
+	dynasty_opinion = 5
+	ruler_designer_cost = 100
+	monthly_influence = 0.75
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_telvani_desc
+			}
+			desc = trait_start_telvani_character_desc
+		}
+	}
+ }
+ start_hlaalu = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	legitimacy_gain_mult = 0.5
+	character_travel_speed_mult = 1
+	character_travel_safety = 1
+	movement_speed = 1
+	prowess = 5
+	negate_health_penalty_add = 1
+	minority_opinion = 10
+	health = 1.5
+	glory_hound_opinion = 5
+	dynasty_opinion = 5
+	ruler_designer_cost = 100
+	monthly_influence = 0.75
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_hlaalu_desc
+			}
+			desc = trait_start_hlaalu_character_desc
+		}
+	}
+ }
+ start_redoran = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	legitimacy_gain_mult = 0.5
+	character_travel_speed_mult = 1
+	character_travel_safety = 5
+	movement_speed = 1
+	prowess = 10
+	negate_health_penalty_add = 1
+	attraction_opinion = 5
+	minority_opinion = 5
+	health = 1.5
+	glory_hound_opinion = 10
+	dynasty_opinion = 5
+	ruler_designer_cost = 100
+	monthly_influence = 0.75
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_redoran_desc
+			}
+			desc = trait_start_redoran_character_desc
+		}
+	}
+ }
 #
 super_saiyan = {
 	random_creation = 0

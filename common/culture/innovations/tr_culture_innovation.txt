@@ -1,12 +1,9 @@
 #### Local Types ####
 
-@roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
 @dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
 @dead_culture = "gfx/interface/icons/culture_innovations/ai_innovation_dead_culture.dds"
 @community_college = "gfx/interface/icons/culture_innovations/ai_innovation_community_college.dds"
 @horse_breeding = "gfx/interface/icons/culture_innovations/ai_innovation_horse_breeding.dds"
-@bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
-@housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
 @glassarmor = "gfx/interface/icons/culture_innovations/ai_innovation_glass.dds"
 @alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
 @administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
@@ -240,6 +237,7 @@
 	}
  }
 #Roman
+ @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
  innovation_roman_concrete = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -349,7 +347,9 @@
 }
 #DUNMER
  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
- @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
+  @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
+  @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
+  @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
  innovation_ashlander_customs = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
@@ -419,10 +419,10 @@
  }
 #DWEMER
  @dwemer_centurion = "gfx/interface/icons/culture_innovations/dwemer_centurion.dds"
- @dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
- @dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
- @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
- @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
+  @dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
+  @dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
+  @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
+  @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
  innovation_sphere_centurion = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -512,8 +512,8 @@
  }
 #Argonian
  @black_marsh_materials = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_materials.dds"
- @black_marsh_natives = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_natives.dds"
- @hist_mending = "gfx/interface/icons/culture_innovations/ai_innovation_hist_mending.dds"
+  @black_marsh_natives = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_natives.dds"
+  @hist_mending = "gfx/interface/icons/culture_innovations/ai_innovation_hist_mending.dds"
  innovation_black_marsh_natives = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
