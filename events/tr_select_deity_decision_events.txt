@@ -334,6 +334,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -352,6 +353,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -370,6 +372,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -388,6 +391,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -406,6 +410,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -424,6 +429,7 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
@@ -442,11 +448,31 @@ tr_select_deity.01 = {
                     has_character_modifier = satanism_follow_asmodeus
                     has_character_modifier = satanism_follow_baphomet
                     has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
                 }
                 faith = faith:satanism
             }
         }
         add_character_modifier = satanism_follow_asmodeus
+    }
+        option = {
+        name = satanism_choose_demon_maledict
+        trigger = {
+            AND = {
+                NOT = {
+                    has_character_modifier = satanism_follow_lucifer
+                    has_character_modifier = satanism_follow_belzebulb
+                    has_character_modifier = satanism_follow_abaddon
+                    has_character_modifier = satanism_follow_belphegor
+                    has_character_modifier = satanism_follow_asmodeus
+                    has_character_modifier = satanism_follow_baphomet
+                    has_character_modifier = satanism_follow_samael
+                    has_character_modifier = satanism_follow_maledict
+                }
+                faith = faith:satanism
+            }
+        }
+        add_character_modifier = satanism_follow_maledict
     }
 
     ####MAGE

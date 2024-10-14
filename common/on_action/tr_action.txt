@@ -10,7 +10,7 @@ random_yearly_everyone_pulse = {
     on_actions = { tr_hollowing }
 }
 
-on_character_culture_change = {
+yearly_culture_pulse = {
     on_actions = { tr_dwemer_buildings }
 }
 
@@ -57,20 +57,18 @@ tr_satanism_start = {
             character.add_piety = -100
         }
     }
-
 }
 
 tr_dwemer_buildings = {
     effect = {
-        any_realm_county = {
+        if = {
             limit = {
                 AND = {
                     NOT = { has_holding_type = dwemer_forge_1 }
                     character.culture = culture_dwemer
-                    character.faith = faith:dwemer_religion
                 }
             }
-            county = { set_holding_type = dwemer_forge_1 }
+            any_realm_county = { county = { set_holding_type = dwemer_forge_1 } }
         }
     }
 }
