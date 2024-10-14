@@ -36,9 +36,33 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
+                        faith = faith:norse_pagan
                         faith = faith:hellenic_pagan
                         faith = faith:norse_pagan
                         faith = faith:kemetic_pagan
+                        faith = faith:basque_pagan
+                        faith = faith:magyar_pagan
+                        faith = faith:north_african_acham_pagan
+                        faith = faith:pagan
+                        faith = faith:slavic_pagan
+                        faith = faith:tengri_pagan
+                        faith = faith:waaqism_pagan
+                        faith = faith:west_african_pagan
+                        faith = faith:west_african_bidu_pagan
+                        faith = faith:west_african_bori_pagan
+                        faith = faith:west_african_orisha_pagan
+                        faith = faith:west_african_roog_pagan
+                        faith = faith:zun_pagan
+                        faith = faith:akom_pagan
+                        faith = faith:baltic_pagan
+                        faith = faith:bon
+                        faith = faith:old_bon
+                        faith = faith:donyipoloism
+                        faith = faith:sedism
+                        faith = faith:finnish_pagan
+                        faith = faith:kushitism_pagan
+                        faith = faith:kiratism
+                        faith = faith:yumaism
                     }
                 }
                 desc = pagan_select_god_decision
@@ -84,9 +108,33 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
+                        faith = faith:norse_pagan
                         faith = faith:hellenic_pagan
                         faith = faith:norse_pagan
                         faith = faith:kemetic_pagan
+                        faith = faith:basque_pagan
+                        faith = faith:magyar_pagan
+                        faith = faith:north_african_acham_pagan
+                        faith = faith:pagan
+                        faith = faith:slavic_pagan
+                        faith = faith:tengri_pagan
+                        faith = faith:waaqism_pagan
+                        faith = faith:west_african_pagan
+                        faith = faith:west_african_bidu_pagan
+                        faith = faith:west_african_bori_pagan
+                        faith = faith:west_african_orisha_pagan
+                        faith = faith:west_african_roog_pagan
+                        faith = faith:zun_pagan
+                        faith = faith:akom_pagan
+                        faith = faith:baltic_pagan
+                        faith = faith:bon
+                        faith = faith:old_bon
+                        faith = faith:donyipoloism
+                        faith = faith:sedism
+                        faith = faith:finnish_pagan
+                        faith = faith:kushitism_pagan
+                        faith = faith:kiratism
+                        faith = faith:yumaism
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -455,7 +503,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_asmodeus
     }
-        option = {
+    option = {
         name = satanism_choose_demon_maledict
         trigger = {
             AND = {
@@ -577,6 +625,128 @@ tr_select_deity.01 = {
         add_trait = follow_jupiter
     }
 
+    ####Kemet
+
+    option = {
+        name = god_choice_anubis
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_anubis
+                }
+            }
+        }
+        add_trait = follow_anubis
+    }
+    option = {
+        name = god_choice_seth
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_seth
+                }
+            }
+        }
+        add_trait = follow_seth
+    }
+    option = {
+        name = god_choice_horus
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_horus
+                }
+            }
+        }
+        add_trait = follow_horus
+    }
+    option = {
+        name = god_choice_isis
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_isis
+                }
+            }
+        }
+        add_trait = follow_isis
+    }
+    option = {
+        name = god_choice_osiris
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_osiris
+                }
+            }
+        }
+        add_trait = follow_osiris
+    }
+    option = {
+        name = god_choice_amun
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_amun
+                }
+            }
+        }
+        add_trait = follow_amun
+    }
+    option = {
+        name = god_choice_bastet
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_bastet
+                }
+            }
+        }
+        add_trait = follow_bastet
+    }
+    option = {
+        name = god_choice_hathor
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_hathor
+                }
+            }
+        }
+        add_trait = follow_hathor
+    }
     ##### PAGAN
 
     option = {

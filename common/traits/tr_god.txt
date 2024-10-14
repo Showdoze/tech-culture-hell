@@ -855,6 +855,8 @@
 		follow_seth
 		follow_horus
 		follow_isis
+		follow_amun
+        follow_hathor
 	}
  }
  follow_isis= {
@@ -899,6 +901,8 @@
 		follow_seth
 		follow_horus
 		follow_osiris
+		follow_amun
+        follow_hathor
 	}
  }
  follow_horus = {
@@ -942,6 +946,8 @@
 		follow_seth
 		follow_isis
 		follow_osiris
+		follow_amun
+        follow_hathor
 	}
  }
  follow_seth = {
@@ -985,6 +991,8 @@
 		follow_horus
 		follow_isis
 		follow_osiris
+		follow_amun
+        follow_hathor
 	}
  }
  follow_anubis = {
@@ -1030,6 +1038,8 @@
 		follow_horus
 		follow_isis
 		follow_osiris
+		follow_amun
+        follow_hathor
 	}
  }
  follow_bastet = {
@@ -1076,6 +1086,103 @@
 		follow_horus
 		follow_isis
 		follow_osiris
+		follow_amun
+        follow_hathor
+	}
+ }
+ follow_amun = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	fertility = 0.25
+    attraction_opinion = 10
+	provisions_gain_mult = 0.01
+    close_relative_opinion = 10
+	dynasty_opinion = 5
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_amun_desc
+			}
+			desc = trait_follow_amun_character_desc
+		}
+	}
+    opposites = {
+		follow_anubis
+		follow_seth
+		follow_horus
+		follow_isis
+		follow_osiris
+		follow_bastet
+        follow_hathor
+	}
+ }
+ follow_hathor = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	intrigue = 1
+	intrigue_per_piety_level = 1
+    diplomacy = 1
+	diplomacy_per_piety_level = 1
+	same_faith_opinion = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_hathor_desc
+			}
+			desc = trait_follow_hathor_character_desc
+		}
+	}
+    opposites = {
+		follow_anubis
+		follow_seth
+		follow_horus
+		follow_isis
+		follow_osiris
+		follow_amun
+        follow_bastet
 	}
  }
 #MISC
