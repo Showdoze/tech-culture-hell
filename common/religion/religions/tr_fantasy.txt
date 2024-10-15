@@ -443,6 +443,10 @@ fantasy_religion = {
 			doctrine = tennet_blood_m
 			doctrine = tenet_fp3_fedayeen
 			doctrine = tenet_sacred_shadows
+			holy_order_names = {
+				{ name = "holy_order_warriors_wargod" }
+				{ name = "holy_order_warriors_nightgod" }
+			}
 			reserved_male_names = {
 				god_joker god_judge_holden god_cain god_john_wayne_gacy god_jack_ripper 
 				god_hhholmes god_sweet_tooth god_clarence_boddicker god_micheal_myers 
@@ -1155,6 +1159,30 @@ fantasy_religion = {
 		dark_souls_faith = {
 			color = { 0.6 0.1 0.1 }
 			icon = ds1
+			#Doctrine
+			 doctrine = doctrine_pluralism_pluralistic
+	         doctrine = doctrine_theocracy_lay_clergy
+		     #Marriage
+	          doctrine = doctrine_concubines
+	          doctrine = doctrine_divorce_disallowed
+	          doctrine = doctrine_bastardry_none
+	          doctrine = doctrine_consanguinity_unrestricted
+          	 #Crimes
+	          doctrine = doctrine_homosexuality_shunned
+	          doctrine = doctrine_adultery_women_shunned
+	          doctrine = doctrine_kinslaying_accepted
+	          doctrine = doctrine_witchcraft_virtuous
+	         #Clerical Functions
+	          doctrine = doctrine_clerical_function_recruitment
+	           doctrine = doctrine_clerical_gender_either
+	           doctrine = doctrine_clerical_marriage_allowed
+	          doctrine = doctrine_clerical_succession_temporal_appointment
+	         #Funeral tradition
+	          doctrine = doctrine_funeral_bewailment
+			
+			  doctrine = tenet_ds1
+			  doctrine = tenet_communal_identity
+			  doctrine = tenet_esotericism
 			reserved_male_names = {
 				Andre Artorias Argo Alva Albert Aldrich 
 				Aldia Ashen_Knight Alken Agdayne Andrei Aslatiel Aurheim 
@@ -1206,31 +1234,11 @@ fantasy_religion = {
        		    Witch 
        		    Yulva Yorshka Yuria 
 	        }
-			#Doctrine
-			 doctrine = doctrine_pluralism_pluralistic
-	         doctrine = doctrine_theocracy_lay_clergy
-		     #Marriage
-	          doctrine = doctrine_concubines
-	          doctrine = doctrine_divorce_disallowed
-	          doctrine = doctrine_bastardry_none
-	          doctrine = doctrine_consanguinity_unrestricted
-          	 #Crimes
-	          doctrine = doctrine_homosexuality_shunned
-	          doctrine = doctrine_adultery_women_shunned
-	          doctrine = doctrine_kinslaying_accepted
-	          doctrine = doctrine_witchcraft_virtuous
-	         #Clerical Functions
-	          doctrine = doctrine_clerical_function_recruitment
-	           doctrine = doctrine_clerical_gender_either
-	           doctrine = doctrine_clerical_marriage_allowed
-	          doctrine = doctrine_clerical_succession_temporal_appointment
-	         #Funeral tradition
-	          doctrine = doctrine_funeral_bewailment
-			
-			  doctrine = tenet_ds1
-			  doctrine = tenet_communal_identity
-			  doctrine = tenet_esotericism
-		      localization = {
+			holy_order_names = {
+				{ name = "holy_order_warriors_wargod" }
+				{ name = "holy_order_warriors_nightgod" }
+			}
+		    localization = {
 				#High God Name
 				 HighGodName = dark_souls_high_god_name
 				 HighGodName2 = dark_souls_high_god_name_2
@@ -1381,15 +1389,16 @@ fantasy_religion = {
 			color = { 255 221 14 }
 			graphical_faith = "catholic_gfx"
 			icon = triforce
-			holy_site = tyana
-			holy_site = mount_damavand
-			holy_site = badd
-			holy_site = genoa
-			#holy_site = temple_of_time
-			#holy_site = power_spring
-			#holy_site = wisdom_spring
-			#holy_site = courage_spring
-			#holy_site = tower_of_the_gods
+			#holy site
+			 holy_site = tyana
+			 holy_site = mount_damavand
+			 holy_site = badd
+			 holy_site = genoa
+			 #holy_site = temple_of_time
+			 #holy_site = power_spring
+			 #holy_site = wisdom_spring
+			 #holy_site = courage_spring
+			 #holy_site = tower_of_the_gods
 			doctrine = pagan_hostility_doctrine
 			doctrine = doctrine_homosexuality_accepted
 			doctrine = doctrine_kinslaying_extended_family_crime
@@ -1995,19 +2004,20 @@ fantasy_religion = {
 			color = { 0.6 0.1 0.1 }
 			religious_head = k_mechanist
 			icon = mechanist
-			holy_site = london
-			holy_site = cornwall
-			holy_site = kiev
-			holy_site = paris
-			holy_site = carthage
-			holy_site = olympus
-			holy_site = constantinople
-			holy_site = istakhr
-			holy_site = jerusalem
-			holy_site = tus_hs
-			holy_site = toledo
-			holy_site = granada
-			holy_site = kent
+			#holy site
+			 holy_site = london
+			 holy_site = cornwall
+			 holy_site = kiev
+			 holy_site = paris
+			 holy_site = carthage
+			 holy_site = olympus
+			 holy_site = constantinople
+			 holy_site = istakhr
+			 holy_site = jerusalem
+			 holy_site = tus_hs
+			 holy_site = toledo
+			 holy_site = granada
+			 holy_site = kent
 			#Doctrine
 			 doctrine = doctrine_spiritual_head
 			 doctrine = doctrine_pluralism_fundamentalist
