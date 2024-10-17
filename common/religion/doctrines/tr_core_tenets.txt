@@ -299,8 +299,10 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth }
-		    sins = { lazy }
+			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth 
+			fickle just generous
+			}
+		    sins = { lazy stubborn arbitrary shy }
 		}
 		parameters = {
 			conquest_cb_enabled = yes

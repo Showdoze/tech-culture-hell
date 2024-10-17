@@ -217,7 +217,20 @@ sonichu_cross = {
 		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
 	}
 }
-mo_false_jarl={
+blood_caleb = {
+	textured_emblem = {
+		texture = "blood_caleb.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
+}
+blood_jack = {
+	textured_emblem = {
+		texture = "blood_jack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
+}
+#Elder scrolls
+ mo_false_jarl={
 	pattern="pattern_vertical_stripes_05.dds"
 	color1=skyrim_gold
 	color2=black
@@ -246,8 +259,8 @@ mo_false_jarl={
 			depth=2.010000
 		}
 	}
-}
-mo_brotherhood_bear={
+ }
+ mo_brotherhood_bear={
 	pattern="pattern_solid.dds"
 	color1=skyrim_dmauve
 	color2=skyrim_mblue
@@ -294,8 +307,8 @@ mo_brotherhood_bear={
 			depth=1.010000
 		}
 	}
-}
-mo_longboat_legions={
+ }
+ mo_longboat_legions={
 	pattern="pattern__solid_designer.dds"
 	color1=rgb { 35 46 56 }
 	color2=skyrim_silver
@@ -328,8 +341,8 @@ mo_longboat_legions={
 			depth=2.010000
 		}
 	}
-}
-mo_brotherhood_wolf={
+ }
+ mo_brotherhood_wolf={
 	pattern="pattern_solid.dds"
 	color1=rgb { 64 27 27 }
 	color2=white
@@ -376,8 +389,8 @@ mo_brotherhood_wolf={
 			depth=5.010000
 		}
 	}
-}
-mo_reavers_lost_ark={
+ }
+ mo_reavers_lost_ark={
 	pattern="pattern_vertical_stripes_05.dds"
 	color1=skyrim_dmauve
 	color2=white
@@ -419,8 +432,8 @@ mo_reavers_lost_ark={
 			depth=1.010000
 		}
 	}
-}
-mo_brigand_emperor={
+ }
+ mo_brigand_emperor={
 	pattern="pattern__solid_designer.dds"
 	color1=black
 	color2=red
@@ -456,8 +469,8 @@ mo_brigand_emperor={
 			depth=1.010000
 		}
 	}
-}
-mo_blackboot_cohort={
+ }
+ mo_blackboot_cohort={
 	pattern="pattern__solid_designer.dds"
 	color1=rgb { 45 70 94 }
 	color2=black
@@ -490,8 +503,8 @@ mo_blackboot_cohort={
 			depth=1.010000
 		}
 	}
-}
-mo_lonely_harp_highlanders={
+ }
+ mo_lonely_harp_highlanders={
 	pattern="pattern__solid_designer.dds"
 	color1=green
 	color2=white
@@ -518,9 +531,8 @@ mo_lonely_harp_highlanders={
 			depth=1.010000
 		}
 	}
-}
-
-mo_black_daggers={
+ }
+ mo_black_daggers={
 	pattern="pattern__solid_designer.dds"
 	color1=black
 	color2=rgb { 41 69 105 }
@@ -548,8 +560,8 @@ mo_black_daggers={
 			depth=1.010000
 		}
 	}
-}
-ho_children_mountain={
+ }
+ ho_children_mountain={
 	pattern="pattern_solid.dds"
 	color1=rgb { 68 25 25 }
 	color2=ashlander_brown
@@ -604,5 +616,170 @@ ho_children_mountain={
 			scale={ 0.250000 0.250000 }
 		}
 	}
-}
-
+ }
+ ho_veloth_judgement={
+	pattern="pattern_solid.dds"
+	color1=rgb { 37 13 13 }
+	color2=ashlander_brown
+	colored_emblem={
+		color1=rgb { 94 75 69 }
+		texture="ce_daedra_sigil_A.dds"
+		instance={
+			position={ 0.500000 0.180000 }
+			scale={ 0.200000 0.200000 }
+		}
+	}
+	colored_emblem={
+		color1=rgb { 37 13 13 }
+		color2=rgb { 94 75 69 }
+		texture="ce_hammer_strong.dds"
+		instance={
+			position={ 0.500000 0.585000 }
+			scale={ 0.600000 0.600000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 94 75 69 }
+		texture="ce_daedra_sigil_B.dds"
+		instance={
+			position={ 0.370000 0.666000 }
+			scale={ 0.200000 0.200000 }
+			depth=1.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 94 75 69 }
+		texture="ce_daedra_sigil_M.dds"
+		instance={
+			position={ 0.630000 0.666000 }
+			scale={ 0.200000 0.200000 }
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 94 75 69 }
+		color2=rgb { 37 13 13 }
+		texture="ce_dunmer_frame_temple_velothi_1.dds"
+		instance={
+			depth=4.010000
+		}
+	}
+ }
+ ho_paladins_auriel={
+	pattern="pattern_solid.dds"
+	color1=rgb { 202 202 198 }
+	colored_emblem={
+		color1=yellow
+		texture="ce_auriel_bird.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.600000 0.600000 }
+			depth=1.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_frame_side.dds"
+		instance={
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 48 40 27 }
+		texture="ce_mena_pale.dds"
+		instance={
+			scale={ 2.600000 1.000000 }
+			depth=7.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_auriel_stars.dds"
+		instance={
+			position={ 0.500000 0.750000 }
+			scale={ 0.600000 -0.600000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_star_ishtar.dds"
+		instance={
+			position={ 0.500000 0.230000 }
+			scale={ 0.335000 0.335000 }
+		}
+	}
+	colored_emblem={
+		color1=rgb { 211 211 210 }
+		texture="ce_altmer_bg_2.dds"
+		instance={
+			position={ 0.500000 0.650000 }
+			scale={ 0.660000 0.660000 }
+			depth=4.010000
+		}
+		instance={
+			position={ 0.500000 0.100000 }
+			scale={ 0.660000 0.660000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 202 202 198 }
+		texture="ce_mena_pale.dds"
+		instance={
+			scale={ 2.200000 1.000000 }
+			depth=6.010000
+		}
+	}
+ }
+ ho_paladins_jephre={
+	pattern="pattern_solid.dds"
+	color1=rgb { 44 117 119 }
+	colored_emblem={
+		color1=rgb { 199 162 107 }
+		texture="ce_mena_pale.dds"
+		instance={
+			scale={ 2.600000 1.000000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 44 117 119 }
+		texture="ce_mena_pale.dds"
+		instance={
+			scale={ 2.200000 1.000000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 30 70 87 }
+		texture="ce_altmer_bg_2.dds"
+		instance={
+			position={ 0.500000 0.650000 }
+			scale={ 0.660000 0.660000 }
+			depth=2.010000
+		}
+		instance={
+			position={ 0.500000 0.100000 }
+			scale={ 0.660000 0.660000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 199 162 107 }
+		color2=rgb { 67 118 32 }
+		texture="ce_peacock.dds"
+		instance={
+			scale={ 0.750000 0.750000 }
+		}
+	}
+	colored_emblem={
+		color1=rgb { 90 120 54 }
+		texture="ce_frame_side.dds"
+		instance={
+			depth=1.010000
+		}
+	}
+ }
+#
