@@ -1504,6 +1504,29 @@
   historical_religion_adj:0 "Historical"
   historical_religion_adherent:0 "Historical"
   historical_religion_adherent_plural:0 "Historical"
+   #dragon
+    dragon_cult_religious_symbol:0 "dragonstone"
+    dragon_cult_religious_text:0 "the word-walls"
+    dragon_cult_religious_head_title:0 "Dragoncaller"
+     dragon_cult_religious_head_title_name:0 "Hall of Dovah"
+     dragon_cult_devotee_male:0 "mystic"
+     dragon_cult_devotee_male_plural:0 "mystics"
+     dragon_cult_devotee_female:0 "mystic"
+     dragon_cult_devotee_female_plural:0 "mystics"
+     dragon_cult_devotee_neuter:0 "mystic"
+     dragon_cult_devotee_neuter_plural:0 "mystics"
+     dragon_cult_priest_male:0 "dragon servant"
+     dragon_cult_priest_male_plural:0 "dragon servants"
+     dragon_cult_priest_female:0 "dragon servant"
+     dragon_cult_priest_female_plural:0 "dragon servants"
+     dragon_cult_priest_alternate_plural:0 "dragon servants"
+     dragon_cult_bishop_male:0 "dragon priest"
+     dragon_cult_bishop_male_plural:0 "dragon priests"
+     dragon_cult_bishop_female:0 "dragon priestess"
+     dragon_cult_bishop_female_plural:0 "dragon priestesses"
+     dragon_cult_bishop_neuter:0 "dragon priest"
+     dragon_cult_bishop_alternate_plural:0 "dragon priesthood"
+     sovngarde_name:0 "Sovngarde"
   #Tribunal Cult
  #High Velothi
    tribunal_cult:1 "Tribunal Cult"
@@ -1641,37 +1664,9 @@
    cantemiric_sect_adherent:1 "Cantemirist"
    cantemiric_sect_adherent_plural:1 "Cantemirists"
    cantemiric_sect_desc:0 "So numerous were the successors of Veloth's ministry that many fell into obscurity... but not Cantemir. Such was her charisma that heterodox Velothi coalesced around her, settling in the southern marshes of Resdayn and even outer Argonia rather than ashen Vvardenfell or lush Deshaan.\n\nBy the time she passed, the 'Cantemiric' Sect solidified her lessons into dogma separate from other Chimeri temples. Mundus is a trial ground where worthy souls are selected to serve the Good Daedra into eternity. Those souls of more mundane individuals are 'fed' to the House of Troubles, hopefully tempered for their next passage onto Mundus. One must constantly strive against the ordinary in order to transcend the mortal plane and escape from the House of Troubles.\n\nCantemirics often engage in meditative introspection to discern the flaws which bar their path to improvement. Exquisite mantras were refined over the years, each house depositing its most secret words of knowledge within the family tomb. Having played a critical role in Cantemir's enlightenment, Hist Trees are considered to be protector saints by some tribes."
-   cantemiric_high_god_name:0 "$god_padhome_name$"
-   cantemiric_high_god_name_2:0 "$cantemiric_high_god_name$" # Optional translation alt
-   cantemiric_high_god_name_3:0 "$cantemiric_high_god_name$" # Optional translation alt
-   cantemiric_high_god_name_possessive:0 "$god_padhome_name_possessive$"
-   cantemiric_high_god_she_he:0 "he"
-   cantemiric_high_god_name_alternate:0 "$cantemiric_high_god_name$"
-   cantemiric_high_god_name_alternate_possessive:0 "$cantemiric_high_god_name_possessive$"
-   cantemiric_pantheon_term:0 "$god_good_daedra_name$"
-   cantemiric_pantheon_term_has_have:0 "$pantheon_term_have$" 
-   cantemiric_devil_name:0 "$god_house_of_troubles_name$"
-   cantemiric_devil_name_possessive:0 "$god_house_of_troubles_name_possessive$"
-   cantemiric_devil_shehe:0 "they"
-   cantemiric_devil_herselfhimself:0 "themselves"
-   cantemiric_devil_herhis:0 "their"
-   cantemiric_death_deity_name:0 "$god_padhome_name$"
-   cantemiric_death_deity_name_possessive:0 "$god_padhome_name_possessive$"
-   cantemiric_death_deity_herhis:0 "he"
    cantemiric_religious_symbol:0 "scarab-that-becomes-the-new-man"
    cantemiric_religious_text:0 "teachings of Cantemir"
    cantemiric_religious_head_title_name:0 "Padomaic Temple"
-   cantemiric_divine_realm:0 "$god_amaranth_name$"
-   cantemiric_positive_afterlife:0 "$god_amaranth_name$"
-   cantemiric_positive_afterlife_2:1 "" # Optional translation alt
-   cantemiric_positive_afterlife_3:1 "" # Optional translation alt
-   cantemiric_negative_afterlife:0 "$thisworld_name$"
-   cantemiric_negative_afterlife_2:1 "" # Optional translation alt
-   cantemiric_negative_afterlife_3:1 "" # Optional translation alt
-   cantemiric_creator_god_name:0 "$god_padhome_name$"
-   cantemiric_creator_god_name_possessive:0 "$god_padhome_name_possessive$"
-   cantemiric_witchgodname_the_horned_god:0 "$god_sharmat_name$"
-   cantemiric_witchgodname_the_horned_god_possessive:0 "$god_sharmat_name_possessive$"
   #Bosmer
    ooze_name:0 "the #LORE [compendium_ooze]#!"
    greenpact:0 "Green Pact"
@@ -1683,13 +1678,6 @@
    greenpact_religious_head_title_name:0 "Silvenar"
    bosmeri_religious_head_title:0 "Guardian"
    bosmeri_religious_head_title_name:0 "the Green Pact"
- 	 # See Aldmer section for Auri-El
- 	 # See Aldmer section for Y'ffre
- 	 # See Aldmer section for Xarxes
- 	 # See Aldmer section for Lorkhan
- 	 # See Imperial/generic section for Stendarr
- 	 # See Imperial/generic section for Mara
- 	 # See Imperial/generic section for Arkay
    bosmeri_house_of_worship:0 "sacred grove"
    bosmeri_house_of_worship_plural:0 "sacred groves"
    bosmeri_religious_symbol:0 "frond and leaf"
@@ -1739,10 +1727,6 @@
    auriel_desc:1 "The traditional pantheon of the Altmer of Summerset, this faith holds the God of Time Auri-El as King of all the other gods, and ancestor to all the Altmer. After becoming aware of Lorkhan's treachery, Auri-El led the original Aldmer against the Trickster God, creating the first kingdoms of the Aldmer after his victory. The treachery of Lorkhan and their direct link with Auri-El makes this faith see existence on the mortal plane as a curse."
    auriel_religious_head_title:0 "Scribe of Auri-El"
    auriel_religious_head_title_name:0 "Xarxean Priesthood"
-   auriel_good_god_phynaster:0 "$god_phynaster_name$"
-   auriel_good_god_syrabane:0 "$god_syrabane_name$"
-   auriel_good_god_xarxes:0 "$god_xarxes_name$"
-   auriel_good_god_topal:0 "$god_topal_name$"
    aldmeri_pantheon_name:0 "Aldmeri Pantheon"
    god_our_ancestors:0 "Our Ancestors"
    god_auriel_name:0 "Auri-El"
@@ -1817,44 +1801,6 @@
      aldmeri_priest_neuter_plural:0 "curates"
      aldmeri_bishop:0 "aldarch"
      aldmeri_bishop_plural:0 "aldarchs"
-     aldmeri_divine_realm:0 "$aetherius_name$"
-     aldmeri_positive_afterlife:0 "$aetherius_name$"
-     aldmeri_positive_afterlife_2:1 "" # Optional translation alt
-     aldmeri_positive_afterlife_3:1 "" # Optional translation alt
-     aldmeri_negative_afterlife:0 "$oblivion_name$"
-     aldmeri_negative_afterlife_2:1 "" # Optional translation alt
-     aldmeri_negative_afterlife_3:1 "" # Optional translation alt
-     aldmeri_creator_god_name:0 "$god_anu_name$"
-     aldmeri_creator_god_name_possessive:0 "$god_anu_name_possessive$"
-     aldmeri_health_god_name:0 "$god_phynaster_name$"
-     aldmeri_health_god_name_possessive:0 "$god_phynaster_name_possessive$"
-     aldmeri_fertility_god_name:0 "$god_mara_name$"
-     aldmeri_fertility_god_name_possessive:0 "$god_mara_name_possessive$"
-     aldmeri_wealth_god_name:0 "$god_xen_name$"
-     aldmeri_wealth_god_name_possessive:0 "$god_xen_name_possessive$"
-     aldmeri_household_god_name:0 "$god_mara_name$"
-     aldmeri_household_god_name_possessive:0 "$god_mara_name_possessive$"
-     aldmeri_fate_god_name:0 "$god_xarxes_name$"
-     aldmeri_fate_god_name_possessive:0 "$god_xarxes_name_possessive$"
-     aldmeri_knowledge_god_name:0 "$god_xarxes_name$"
-     aldmeri_knowledge_god_name_possessive:0 "$god_xarxes_name_possessive$"
-     aldmeri_war_god_name:0 "$god_trinimac_name$"
-     aldmeri_war_god_name_possessive:0 "$god_trinimac_name_possessive$"
-     aldmeri_trickster_god_name:0 "$god_phynaster_name$"
-     aldmeri_trickster_god_name_possessive:0 "$god_phynaster_name_possessive$"
-     aldmeri_night_god_name:0 "$god_moons_name$"
-     aldmeri_night_god_name_possessive:0 "$god_moons_name_possessive$"
-     aldmeri_water_god_name:0 "$god_topal_name$"
-     aldmeri_water_god_name_possessive:0 "$god_topal_name_possessive$"
-     aldmeri_good_god_auriel:0 "$god_auriel_name$"
-     aldmeri_good_god_jephre:0 "$god_jephre_name$"
-     aldmeri_good_god_trinimac:0 "$god_trinimac_name$"
-     aldmeri_good_god_xen:0 "$god_xen_name$"
-     aldmeri_good_god_mara:0 "$god_mara_name$"
-     aldmeri_evil_god_lorkhan:0 "$god_lorkhan_name$"
-     aldmeri_evil_god_the_princes:0 "$god_daedric_princes_name$"
-     aldmeri_witchgodname_the_horned_god:0 "$god_lorkhan_name$"
-     aldmeri_witchgodname_the_horned_god_possessive:0 "$god_lorkhan_name_possessive$"
   # Shinto faith
     shinto:0 "Shinto"
    shinto_adj:0 "Shinto"
@@ -2016,22 +1962,6 @@
   dwemer_religion_adherent:0 "Dwemeri"
   dwemer_religion_adherent_plural:0 "Dwemeri"
   dwemer_religion_desc:0 "The ancient extinct Dwemer of Northern Tamriel did not worship  any literal gods, instead choosing to focus on the ideals of Reason and Logic."
-  dwemer_religion_high_god_name:0 "$god_reason_and_logic_name$"
-  dwemer_religion_high_god_name_2:0 "$dwemer_religion_high_god_name$" # Optional translation alt
-  dwemer_religion_high_god_name_3:0 "$dwemer_religion_high_god_name$" # Optional translation alt
-  dwemer_religion_high_god_name_possessive:0 "$god_reason_and_logic_name_possessive$"
-  dwemer_religion_high_god_she_he:0 "they"
-  dwemer_religion_high_god_name_alternate:0 "$god_reason_and_logic_name$"
-  dwemer_religion_high_god_name_alternate_possessive:0 "$god_reason_and_logic_name_possessive$"
-  dwemer_religion_pantheon_term:0 "$god_reason_and_logic_name$"
-  dwemer_religion_pantheon_term_has_have:0 "$pantheon_term_have$" 
-  dwemer_religion_devil_name:0 "$god_dwemermundus_name$"
-  dwemer_religion_devil_name_possessive:0 "$god_dwemermundus_name_possessive$"
-  dwemer_religion_devil_shehe:0 "it"
-  dwemer_religion_devil_herselfhimself:0 "itself"
-  dwemer_religion_devil_herhis:0 "its"
-  dwemer_religion_death_deity_name:0 "$void_name$"
-  dwemer_religion_death_deity_name_possessive:0 "$void_name_possessive$"
   void_name:0 "the Void"
   void_name_possessive:0 "the Void's"
   dwemer_religion_death_deity_herhis:0 "its"
@@ -2526,6 +2456,8 @@
  house_library_plural:0 "Library's"
  house_MageTower:0 "Mage Tower"
  house_MageTower_plural:0 "Mage Towers"
+ house_shrine:0 "shrine"
+ house_shrine_plural:0 "shrines"
 #Soul
  sol_invictus:0 "Sol Invictus"
  sol_invictus_adj:0 "Solar"
@@ -2637,6 +2569,12 @@
  	god_hircine_name_possessive:0 "Hircine's"
   god_stendarr_name:0 "Stendarr"
  	god_stendarr_name_possessive:0 "Stendarr's"
+  god_alduin_name:0 "Alduin"
+ 	god_alduin_name_possessive:0 "Alduin's"
+  god_dragon_plural_name:0  "the Dragons" #for dragon cult
+ 	god_dragon_plural_name_possessive:0 "the Dragons'"
+  god_paarthurnax_name:0 "Paarthunax"
+  god_paarthurnax_name_possessive:0 "Paarthunax's"
  #DS1
   god_gwyn:0 "Lord Gwyn"
   god_manus:0 "Manus, Father of the Abyss"
@@ -2928,6 +2866,7 @@
  #ELDER SCROLLS
    holy_order_brotherhood_of_fang:0 "Brotherhood of the Fang"
     holy_order_of_crescent:0 "Order of the Crescent"
+     holy_order_veloth_judgement:0 "Veloth's Judgement"
     holy_order_warriors:0 "[FAITH.GetAdjectiveNoTooltip] Warriors of [TITLE.GetNameNoTierNoTooltip]"
     holy_order_warriors_wargod:0 "Warriors of [FAITH.WarGodName]"
     holy_order_warriors_healthgod:0 "Warriors of [FAITH.HealthGodName]" 
@@ -3037,6 +2976,8 @@
  tenet_sixth_house_desc:0 "The teachings of Dagoth Ur"
  tenet_old_velothi_name:0 "Tenets of old Velothi"
  tenet_old_velothi_desc:0 "The teachings of Velothi"
+ tenet_dragon_cult_name:0 "Tenets of Dragons"
+ tenet_dragon_cult_desc:0 "The teachings of Alduin"
  #_name:0
  #_desc:0
 ##PICK YOUR DEITY
