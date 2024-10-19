@@ -69,7 +69,7 @@ sardan = {
 	}
 }
 
-ninive = {
+ninive = {#Temple of Ishtar
 	county = c_ninive
 
 	character_modifier = {
@@ -127,15 +127,6 @@ harran = {
 	}
 }
 
-nicosia = {
-	county = c_nicosia
-
-	character_modifier = {
-		name = holy_site_nicosia_effect_name
-		heavy_infantry_toughness_mult = 0.1
-		knight_effectiveness_mult = 0.2
-	}
-}
 
 syrte = {
 	county = c_syrte
@@ -587,8 +578,11 @@ nicosia = { # Temple of Aphrodite
 	
 	character_modifier = {
 		name = holy_site_ionia_effect_name
-		fertility = 0.1
-		different_culture_opinion = 10
+		heavy_infantry_toughness_mult = 0.01
+		knight_effectiveness_mult = 0.01
+		sway_scheme_power_mult = 0.01
+		fertility = 0.01
+		different_culture_opinion = 5
 	}
 }
 
@@ -866,10 +860,238 @@ granada = { # Alhambra
 		learning_per_piety_level = 2
 	}
 }
-genoa = { #
-	county = c_genoa
+aquileia = {
+	county = c_aquileia
 	character_modifier = {
-		monthly_piety_gain_per_knight_mult = 0.1
-		knight_effectiveness_mult = 0.07
+		diplomacy = 1 # Patriarchate of Aquileia, major city and striving for autonomy from Rome
+		religious_vassal_opinion = 5
 	}
 }
+chur = { #Let's just admire that Raetians were practically independent from anyone in history for more than 4 centuries after the fall of WRE
+	county = c_grisons
+	barony = b_chur
+	character_modifier = {
+		prowess_per_piety_level = 1 
+	}
+}
+genoa = { #Trade city, not quite powerful at the time but Aquileianism is gonna appear only in 553 anyway
+	county = c_genoa
+	character_modifier = {
+		stewardship = 1
+		development_growth_factor = 0.05
+	}
+}
+cyrenaica = {
+	county = c_derna
+	character_modifier = {
+		life_expectancy = 2 #Some healing practices were originating from here
+	}
+}
+sevilla = {
+	county = c_sevilla
+	character_modifier = {
+		same_faith_opinion = 10 #Considering it's the center of Early Christians in Iberia
+	}
+}
+mtskheta = {
+	county = c_kakheti
+	barony = b_mtskheta
+	character_modifier = {
+		religious_vassal_opinion = 10 #Religious center of Georgia
+	}
+}
+vaspurakan = {
+	county = c_vaspurakan
+	flag = vaspurakan_same_culture_conversion_bonus #50% conversion speed bonus on the counties with same culture
+}
+tephrike = {
+	county = c_satala
+	barony = b_tephrice
+	character_modifier = {
+		knight_limit = 1 #it was a heretic stronghold for real
+	}
+}
+samosata = {
+	county = c_samosata
+	character_modifier = {
+		religious_vassal_opinion = 5
+	}
+}
+mt_tondrak = {
+	county = c_bagrewand
+	barony = b_bagavan
+	flag = mt_tondrak_resistance_bonus #30% bonus to conversion resistance and return to the old religion
+}
+pepuza = {
+	county = c_pacatiana
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+	}
+}
+durham = {
+	county = c_durham
+	character_modifier = {
+		defender_advantage = 5
+	}
+}
+dyfed = {
+	county = c_pembrokeshire
+	character_modifier = {
+		powerful_vassal_opinion = 5
+	}
+}
+nicopolis = { #Site where Ulfilas converted the Goths
+	county = c_nikopolis
+	character_modifier = {
+		religious_vassal_opinion = 5
+	}
+}
+nisibis = { #Clone of Alexandria; was the major center for the Church of the East
+	county = c_nasibin
+	character_modifier = {
+		name = holy_site_nisibis_effect_name
+		learning_per_piety_level = 2
+	}
+}
+# Celtic Pagan
+isle_of_man = {
+	county = c_isle_of_man
+	character_modifier = {
+		raid_speed = 0.1
+	}
+}
+# Germanic Pagan
+magdeburg = {
+	county = c_magdeburg
+	character_modifier = {
+		same_faith_opinion = 5
+	}
+}
+york = {
+	county = c_north_riding
+	character_modifier = {
+		skirmishers_toughness_mult = 0.1
+	}
+}
+bregenz = {
+	county = c_ravensburg
+	barony = b_bregenz
+	character_modifier = {
+		movement_speed = 0.1
+	}
+}
+# Egyptian Pagan
+rosetta = {
+	county = c_al-buhaira
+	barony = b_rashid
+	character_modifier = {
+		floodplains_advantage = 5
+	}
+}
+gizeh = {
+	county = c_giza
+	barony = b_gizeh
+	character_modifier = {
+		religious_vassal_opinion = 10
+	}
+}
+asyut = {
+	county = c_asyut
+	character_modifier = {
+		same_faith_opinion = 5
+	}
+}
+# Basque Pagan
+toulouse = {
+	county = c_toulouse
+	character_modifier = {
+		religious_vassal_opinion = 5 #just wine
+	}
+}
+beziers = {
+	county = c_beziers
+	character_modifier = {
+		stewardship = 1
+	}
+}
+asturias_de_santillana = {
+	county = c_asturias_de_santillana
+	character_modifier = {
+		mountains_advantage = 10
+	}
+}
+navarra = {
+	county = c_navarra
+	character_modifier = {
+		defender_advantage = 5
+	}
+}
+# Greco-Roman Pagan
+mt_olympus = {
+	county = c_veria
+	barony = b_kalyvia
+	character_modifier = {
+		name = holy_site_mt_olympus_effect_name
+		learning = 2
+	}
+}
+olympia = {
+	county = c_messenia
+	barony = b_arcadia
+	character_modifier = {
+		name = holy_site_olympia_effect_name
+		learning = 1
+		martial = 1 # Olympic games
+	}
+}
+pangaion_hills = {
+	county = c_serres
+	barony = b_chrysopolis
+	character_modifier = {
+		name = holy_site_pangaion_hills_effect_name
+		development_growth_factor = 0.1 # Oracle of Dionysus
+	}
+}
+pimpleia = {
+	county = c_veria
+	barony = b_veria
+	character_modifier = {
+		name = holy_site_pimpleia_effect_name
+		diplomacy_per_prestige_level = 1 # Birthplace and early abode of Orpheus, legendary musician and poet
+	}
+}
+crotona = {
+	county = c_rossano
+	barony = b_cotrone
+	character_modifier = {
+		name = holy_site_crotona_effect_name
+		health = 0.1 # Inhabitants famous for physical strength and sobriety of their lives
+	}
+}
+satif = {
+	county = c_satif
+	character_modifier = {
+		attraction_opinion = 10
+	}
+}
+phrygia = {
+	county = c_phrygia
+	barony = b_pessinus
+	character_modifier = {
+		martial_per_prestige_level = 1
+	}
+}
+vienna = {
+	county = c_vienna
+	character_modifier = {
+		owned_scheme_secrecy_add = 10
+	}
+}
+cilicia = {
+	county = c_cilicia
+	character_modifier = {
+		raid_speed = 0.1
+	}
+}
+
+

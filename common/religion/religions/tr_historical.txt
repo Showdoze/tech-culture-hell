@@ -29,11 +29,6 @@
     #Funeral tradition
     doctrine = doctrine_funeral_stoic
 
-    #reserved_male_names = {
-    #	Yagrum Kagrenac Dumac
-    #}
-    #reserved_female_names = {
-    #}
     custom_faith_icons = {
         custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
         custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10
@@ -400,29 +395,27 @@
         }
         cult_of_tlaloc = { #Average Nahua
             color = rgb { 235 64 52 }
-
+            icon = cult_of_tlaloc
             holy_site = giza
             holy_site = qus
             holy_site = palermo
             holy_site = rome
             holy_site = sardan
-
-            doctrine = doctrine_pluralism_pluralistic
-            doctrine = doctrine_concubines
-            doctrine = doctrine_consanguinity_cousins
-            doctrine = doctrine_homosexuality_crime
-            doctrine = doctrine_adultery_men_crime
-            doctrine = doctrine_adultery_women_crime
-            doctrine = doctrine_witchcraft_accepted
-            doctrine = doctrine_clerical_gender_either
-            doctrine = doctrine_clerical_marriage_allowed
-            doctrine = doctrine_clerical_succession_temporal_fixed_appointment
-            doctrine = pagan_hostility_doctrine
-            #doctrine = cemanahuac_hostility_doctrine
-            #Funeral tradition
-            doctrine = doctrine_funeral_bewailment
-            icon = cult_of_tlaloc
-
+            #doctrine
+             doctrine = doctrine_pluralism_pluralistic
+             doctrine = doctrine_concubines
+             doctrine = doctrine_consanguinity_cousins
+             doctrine = doctrine_homosexuality_crime
+             doctrine = doctrine_adultery_men_crime
+             doctrine = doctrine_adultery_women_crime
+             doctrine = doctrine_witchcraft_accepted
+             doctrine = doctrine_clerical_gender_either
+             doctrine = doctrine_clerical_marriage_allowed
+             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+             doctrine = pagan_hostility_doctrine
+             #doctrine = cemanahuac_hostility_doctrine
+             #Funeral tradition
+             doctrine = doctrine_funeral_bewailment
             doctrine = tenet_pursuit_of_power
             doctrine = tenet_ancestor_worship
             doctrine = tenet_tlaloc
@@ -520,7 +513,6 @@
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
-
                 #Devil
                 DevilName = nahua_devil_name
                 DevilNamePossessive = nahua_devil_name_possessive
@@ -571,33 +563,30 @@
                 GHWName = ghw_great_holy_war
                 GHWNamePlural = ghw_great_holy_wars
             }
-
         }
         cult_of_tezcatlipoca = { #War and humility
             color = rgb { 122 19 12 }
-
+            icon = cult_of_tezcatlipoca
             holy_site = giza
             holy_site = qus
             holy_site = palermo
             holy_site = rome
             holy_site = sardan
-
-            doctrine = doctrine_pluralism_pluralistic
-            doctrine = doctrine_concubines
-            doctrine = doctrine_consanguinity_cousins
-            doctrine = doctrine_homosexuality_crime
-            doctrine = doctrine_adultery_men_crime
-            doctrine = doctrine_adultery_women_crime
-            doctrine = doctrine_witchcraft_accepted
-            doctrine = doctrine_clerical_gender_either
-            doctrine = doctrine_clerical_marriage_allowed
-            doctrine = doctrine_clerical_succession_temporal_fixed_appointment
-            doctrine = pagan_hostility_doctrine
-            #doctrine = cemanahuac_hostility_doctrine
-            #Funeral tradition
-            doctrine = doctrine_funeral_bewailment
-            icon = cult_of_tezcatlipoca
-
+            #doctrine
+             doctrine = doctrine_pluralism_pluralistic
+             doctrine = doctrine_concubines
+             doctrine = doctrine_consanguinity_cousins
+             doctrine = doctrine_homosexuality_crime
+             doctrine = doctrine_adultery_men_crime
+             doctrine = doctrine_adultery_women_crime
+             doctrine = doctrine_witchcraft_accepted
+             doctrine = doctrine_clerical_gender_either
+             doctrine = doctrine_clerical_marriage_allowed
+             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+             doctrine = pagan_hostility_doctrine
+             #doctrine = cemanahuac_hostility_doctrine
+             #Funeral tradition
+             doctrine = doctrine_funeral_bewailment
             # Doctrine about humility and self-flaggalation?
             doctrine = tenet_tezcatlipoca #tenet_warmonger
             doctrine = tenet_ritual_cannibalism
@@ -849,16 +838,17 @@
             holy_site = rome
             holy_site = alexandria
             holy_site = antioch
+            holy_site = nisibis
             #doctrine
              doctrine = special_doctrine_ecumenical_christian
              doctrine = special_doctrine_is_christian_faith
              #doctrine = special_doctrine_nicene_ecumenism
              #doctrine = doctrine_christian_liturgical_rite_imperial_rite
             #Tenets
-            doctrine = tenet_communion #tenet_apostolic_succession
-            doctrine = tenet_christan
-            doctrine = tenet_pentarchy
-            holy_order_names = {}
+             doctrine = tenet_communion #tenet_apostolic_succession
+             doctrine = tenet_christan
+             doctrine = tenet_pentarchy
+            #holy_order_names = {}
             localization = { # Utilizes the 'West Christian' Saints, shared by Catholics and Orthodox
                 #FertilityGod
                 FertilityGodName = west_christian_fertility_god_name
@@ -936,8 +926,8 @@
             doctrine = doctrine_clerical_marriage_allowed
             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
             doctrine = doctrine_funeral_cremation
-            #tennets
-            doctrine = tenet_satanism
+            #tenets
+             doctrine = tenet_satanism
             holy_order_names = {
                 { name = "holy_order_satan_1" coat_of_arms = "order_satan_1" }
 				{ name = "holy_order_satan_2" coat_of_arms = "order_satan_2" }
