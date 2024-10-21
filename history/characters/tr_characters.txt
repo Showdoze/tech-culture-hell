@@ -179,7 +179,7 @@
 	culture = roman
 	410.1.1 = { birth = yes }
 	448.1.1 = {
-		death = "448.1.1"
+		death = yes
 	}
 }
  ck_romulus_augustulus_dad = {
@@ -450,7 +450,7 @@
  ck650045 = {
 	name = "Belisarius"
 	dynasty = 1022314
-	religion = orthodox
+	religion = nicene
 	culture = roman
 	trait = education_martial_5
 	trait = brave
@@ -1236,8 +1236,8 @@
  }
  ck650107 = {
 	name = "Odoacer"
-	religion = "cathar"
-	culture = germanic
+	religion = arianism
+	culture = german
 	trait = ambitious
 	trait = education_martial_3
 	trait = winter_soldier
@@ -1353,9 +1353,18 @@
 ########################
 #Frisia
 ########################
+ folcwald_frisian = {
+	name = "Folcwald"
+	dynasty = 724
+	religion = norse_pagan
+	culture = frisian
+	300.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+ }
  ck650009 = {
 	name = "Finn"
 	dynasty = 724
+	father = folcwald_frisian
 	religion = norse_pagan
 	culture = frisian
 	#trait = legend
@@ -1726,15 +1735,12 @@
 	#trait = horse_rider
 	#trait = conf_gov_trait
 	#trait = war_veteran
-	350.1.1 = {
-	    birth = yes
-		give_nickname= nick_the_hun
-	}	
+	give_nickname= nick_the_hun
+	350.1.1 = { birth = yes }	
 	400.1.1 = {
-	death = { death_reason= death_battle
-	killer = 168769
-	} }
- }
+	    death = { death_reason= death_battle
+	        killer = 168769 }   }
+  }
  ck650114 = {
     name = "Uldin"
 	dynasty = 591
@@ -1744,10 +1750,8 @@
 	#trait = conf_gov_trait
 	#trait = horse_rider
 	father = ck650012
-	370.1.1 = {
-	    birth = yes
-		give_nickname= nick_the_hun
-	}	
+	give_nickname= nick_the_hun
+	370.1.1 = { birth = yes }	
 	412.1.1 = {
 	death = { death_reason= death_poor_health
 	} }
@@ -1761,10 +1765,8 @@
 	#trait = conf_gov_trait
 	#trait = horse_rider
 	father = ck650012
-	371.1.1 = {
-	    birth = yes
-		give_nickname= nick_the_hun
-	}	
+	give_nickname= nick_the_hun
+	371.1.1 = { birth = yes }	
 	413.1.1 = {
 	death = { death_reason= death_poison
 	killer = ck650112
@@ -1782,10 +1784,8 @@
 	trait = brave
 	trait = drunkard
 	father = ck650012
-	373.1.1 = {
-	    birth = yes
-		give_nickname= nick_the_hun
-	}	
+	give_nickname= nick_the_hun
+	373.1.1 = { birth = yes }	
 	430.1.1 = {
 	death = { death_reason= death_drinking_passive
 	} }
