@@ -650,7 +650,7 @@
     pat_grm_name_chance = 10
     mat_grm_name_chance = 10
     mother_name_chance = 10
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
     founder_named_dynasties = yes
  }
  name_list_khajitt = { #khajitt
@@ -954,7 +954,7 @@
     pat_grm_name_chance = 10
     mat_grm_name_chance = 10
     mother_name_chance = 10
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
     mercenary_names = {
         { name = "mercenary_knights_pride" }
         { name = "mercenary_knights_battlecats" }
@@ -1215,7 +1215,7 @@
         Yarmia
         Zahimah Zifri
     }
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
     pat_grf_name_chance = 20
     mat_grf_name_chance = 10
     father_name_chance = 10
@@ -2052,7 +2052,7 @@
         { name = "mercenary_knights_crypt" }
         { name = "mercenary_knights" }
     }
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
     #founder_named_dynasties = yes
     pat_grf_name_chance = 20
     mat_grf_name_chance = 10
@@ -3017,7 +3017,7 @@
         Czoubryn Raohnch
     }
     #founder_named_dynasties = yes
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
 }
  name_list_falmer = {
     male_names = {
@@ -4034,7 +4034,7 @@ name_list_high_valyrian = {
         Semella Shiera Syrella
         Valaena Vaella Visenya Viserra
     }
-    dynasty_of_location_prefix = "dynnp_of"
+    dynasty_of_location_prefix = ""
     pat_grf_name_chance = 10
     mat_grf_name_chance = 5
     father_name_chance = 5
@@ -4678,6 +4678,138 @@ name_list_unknown = {
     founder_named_dynasties = yes
  }
 #From soft
+ name_list_sekiro = {
+    cadet_dynasty_names = {
+    }
+    dynasty_names = {
+        Mibu Ashina Rejuvenation Nogami Kumano of_the_Water Gensai Hirata of_Ashina Harunaga 
+        Koremori Shugendo Jinzaemon Inosuke Tamura Shuzen Kodou Takamine Shoukichi 
+        Yamahito 
+    }
+    male_names = {
+        Anayama 
+        Doujun 
+        Fujioka 
+        Gensai 
+        Hanbei Harunaga 
+        Inosuke Isshin 
+        Jinzaemon Juzou 
+        Kotaro Kuro Koremori Kumano Kodou 
+        Nogami 
+        Owl 
+        Sekiro Shosuke Shuzen Shoukichi 
+        Tengu Tamura Takamine 
+        Yamahito 
+    }
+    female_names = {
+        Emma 
+        O_Rin 
+        Shura Suzu 
+    }
+    #founder_named_dynasties = yes
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 30
+    mat_grf_name_chance = 10
+    father_name_chance = 25
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    #mercenary_names = {
+    #    { name = "mercenary_company_lost_dwarfs_of_old" coat_of_arms = "4200Bronzebeard" }
+    #    { name = "mercenary_company_sons_of_khaz" }
+    #}
+ }
+ name_list_souls = {
+    cadet_dynasty_names = {
+        { "dynnp_of" "Carim" } { "dynnp_of" "Lordran" } { "dynnp_of" "Oolacile" } 
+        { "dynnp_of" "Izalith" } { "dynnp_of" "Astora" } { "dynnp_of" "Zena" } 
+        { "dynnp_of" "Vinheim" } { "dynnp_of" "Balder" } { "dynnp_of" "Catarina" } 
+        "dynn_the_great_swamp" "dynn_the_east" "dynn_the_darkroot_wood"
+        Oolacile Izalith Astora Carim Zena Thorolund Vinheim Lordran Balder
+        Catarina
+        "dynn_sotfs" "dynn_silentoracle" "dynn_theoldguard" "dynn_thefold"
+        "dynn_WanderingKnightofForossa" "dynn_EleumLoyce" "dynn_OHarrah"
+        Mirrah Jugo Lindelt Lanafir Melfia Olaphis Forossa
+        { "dynnp_of" "Mirrah" } { "dynnp_of" "Jugo" } { "dynnp_of" "Forossa" } 
+        McDonnell "ofCarim" "ofFarron" "oftheSunlessRealms" "ofLondor" "ofCourland" 
+        "ofSin" "ofVinheim" "SeekeroftheSpurned" "ofCrystalKriemhild"
+    }
+    dynasty_names = {
+        { "dynnp_of" "Carim" } { "dynnp_of" "Lordran" } { "dynnp_of" "Oolacile" } 
+        { "dynnp_of" "Izalith" } { "dynnp_of" "Astora" } { "dynnp_of" "Zena" } 
+        { "dynnp_of" "Vinheim" } { "dynnp_of" "Balder" } { "dynnp_of" "Catarina" } 
+        "dynn_the_great_swamp" "dynn_the_east" "dynn_the_darkroot_wood"
+        Oolacile Izalith Astora Carim Zena Thorolund Vinheim Lordran Balder
+        Catarina
+        "dynn_sotfs" "dynn_silentoracle" "dynn_theoldguard" "dynn_thefold"
+        "dynn_WanderingKnightofForossa" "dynn_EleumLoyce" "dynn_OHarrah"
+        Mirrah Jugo Lindelt Lanafir Melfia Olaphis Forossa
+        { "dynnp_of" "Mirrah" } { "dynnp_of" "Jugo" } { "dynnp_of" "Forossa" } 
+        McDonnell "ofCarim" "ofFarron" "oftheSunlessRealms" "ofLondor" "ofCourland" 
+        "ofSin" "ofVinheim" "SeekeroftheSpurned" "ofCrystalKriemhild"
+    }
+    male_names = {
+        Andre Artorias Aldia Ashen_Knight Alken Agdayne Andrei Aslatiel Aurheim 
+        Argo Alva Albert 
+        Boyd Benhart Bradley Baldyr 
+        Chester Crestfallen Cale Carhillion Creighton Cromwell Cornyx Creighton Cuculus 
+        Domhnall Dennis Drummond Durgo Denizen
+        Eingyi Eygon 
+        Frampt Felkin Forlorn 
+        Gough Griggs Gwyn Gwyndolin Grandahl Gordin Gilligan Gavlan Gren Gully 
+        Greirat Gael Gotthard 
+        Hawkwood Hodrick Horace 
+        Ingward
+        Jeremiah
+        Kaathe Kirk Knight Kamui 
+        Laurentius Logam Lautreck Leeroy Lenigast Lapp Leonhard Ludleth LondorPaleShade Ledo 
+        Magerold Maughlin McDuff Maldron Morne McDonnell 
+        Nito Nico Navlaan Nicholai Nameless 
+        Oswald Ornstein Oscar Oliver Orbeck 
+        Patches Petrus Primordial Pate Peculiar Porcine 
+        Rickert Ricard Ray Rapacious Rhoy 
+        Shiva Smough Salaman Siegmeyer Solaire Saulden Straid 
+        Tarkus Targray Tark Titchy TitchyGren Thomas Tsorig        
+        Vamos Vince Vendrick Vengarl Villard Vorgel Victor Vilhelm 
+        Wellager
+        Xanthous Xanthous_King
+        Yoel 
+    }
+    female_names = {
+        Alvina Alsanna Anri 
+        Beatrice
+        Ciaran Chloanne Caitha 
+        Dusk Donna 
+        Elizabeth Emerald Emma 
+        Filianore 
+        Gwyndolin Gwynevere Griant Guthry 
+        Heysel 
+        Knightess Karla 
+        Lucatiel Licia Livid 
+        Manhunter Melentia Milfanito Milibeth Morrel Melinda 
+        Nadalia Nameless 
+        Ornifex 
+        Priscilla
+        Quelaag Quelana
+        Reah Rosabeth Roenna Rachel Rosaria 
+        Sieglinde Strowen Shalquoir Sharron Sirris Shira
+        Velka
+        Witch
+        Yulva Yorshka Yuria 
+    }
+    #founder_named_dynasties = yes
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 30
+    mat_grf_name_chance = 10
+    father_name_chance = 25
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    #mercenary_names = {
+    #    { name = "mercenary_company_lost_dwarfs_of_old" coat_of_arms = "4200Bronzebeard" }
+    #    { name = "mercenary_company_sons_of_khaz" }
+    #}
+ }
  name_list_ds1 = {
     cadet_dynasty_names = {
         "dynn_the_great_swamp" "dynn_the_east" "dynn_the_darkroot_wood"
@@ -4810,7 +4942,142 @@ name_list_unknown = {
     #founder_named_dynasties = yes
     dynasty_of_location_prefix = ""
  }
-
+ name_list_bloodborne = {
+    cadet_dynasty_names = {
+    }
+    dynasty_names = {
+        of_the_Vilebloods of_the_Night Oedon Yharnam Amelia of_Hemwick of_the_Cosmos 
+        Host_of_the_Nightmare of_the_Astral_Clocktower of_Kos of_Yharnam
+    }
+    male_names = {
+        Alfred Amygdala 
+        Brador 
+        Djura 
+        Gilbert Gascoigne Gehrman 
+        Henryk 
+        Logarius Ludwig Laurence 
+        Mergo Micolash 
+        Patches Paarl 
+        Rom 
+        Simon 
+        Valtr 
+        Willem 
+    }
+    female_names = {
+        Annalise Arianna Adella Adeline 
+        Eileen Ebrietas 
+        Iosefka 
+        Plain_Doll 
+        Mergo Maria 
+        Viola Vicar Vicar_Amelia 
+    }
+    #founder_named_dynasties = yes
+    dynasty_of_location_prefix = ""
+ }
+ name_list_fromsoft = {
+    cadet_dynasty_names = {
+        { "dynnp_of" "Carim" } { "dynnp_of" "Lordran" } { "dynnp_of" "Oolacile" } 
+        { "dynnp_of" "Izalith" } { "dynnp_of" "Astora" } { "dynnp_of" "Zena" } 
+        { "dynnp_of" "Vinheim" } { "dynnp_of" "Balder" } { "dynnp_of" "Catarina" } 
+        of_the_Vilebloods of_the_Night Oedon Yharnam Amelia of_Hemwick of_the_Cosmos 
+        Host_of_the_Nightmare of_the_Astral_Clocktower of_Kos of_Yharnam 
+        "dynn_the_great_swamp" "dynn_the_east" "dynn_the_darkroot_wood"
+        Oolacile Izalith Astora Carim Zena Thorolund Vinheim Lordran Balder
+        Catarina
+        "dynn_sotfs" "dynn_silentoracle" "dynn_theoldguard" "dynn_thefold"
+        "dynn_WanderingKnightofForossa" "dynn_EleumLoyce" "dynn_OHarrah"
+        Mirrah Jugo Lindelt Lanafir Melfia Olaphis Forossa
+        { "dynnp_of" "Mirrah" } { "dynnp_of" "Jugo" } { "dynnp_of" "Forossa" } 
+        McDonnell "ofCarim" "ofFarron" "oftheSunlessRealms" "ofLondor" "ofCourland" 
+        "ofSin" "ofVinheim" "SeekeroftheSpurned" "ofCrystalKriemhild"
+    }
+    dynasty_names = {
+        { "dynnp_of" "Carim" } { "dynnp_of" "Lordran" } { "dynnp_of" "Oolacile" } 
+        { "dynnp_of" "Izalith" } { "dynnp_of" "Astora" } { "dynnp_of" "Zena" } 
+        { "dynnp_of" "Vinheim" } { "dynnp_of" "Balder" } { "dynnp_of" "Catarina" } 
+        of_the_Vilebloods of_the_Night Oedon Yharnam Amelia of_Hemwick of_the_Cosmos 
+        Host_of_the_Nightmare of_the_Astral_Clocktower of_Kos of_Yharnam 
+        "dynn_the_great_swamp" "dynn_the_east" "dynn_the_darkroot_wood"
+        Oolacile Izalith Astora Carim Zena Thorolund Vinheim Lordran Balder
+        Catarina   
+        "dynn_sotfs" "dynn_silentoracle" "dynn_theoldguard" "dynn_thefold"
+        "dynn_WanderingKnightofForossa" "dynn_EleumLoyce" "dynn_OHarrah"
+        Mirrah Jugo Lindelt Lanafir Melfia Olaphis Forossa
+        { "dynnp_of" "Mirrah" } { "dynnp_of" "Jugo" } { "dynnp_of" "Forossa" } 
+        McDonnell "ofCarim" "ofFarron" "oftheSunlessRealms" "ofLondor" "ofCourland" 
+        "ofSin" "ofVinheim" "SeekeroftheSpurned" "ofCrystalKriemhild"
+        #DEMONS SOULS
+         Latria Dregling Boletaria The_Nexus of_the_Twin_Fangs Allant Vinland 
+         Adjudicator Flamelurker Vanguard 
+         { "dynnp_of" "Latria" } { "dynnp_of" "Boletaria" } { "dynnp_of" "The_Nexus" } 
+         { "dynnp_of" "Vinland" } 
+    }
+    male_names = {
+        Andre Artorias Aldia Ashen_Knight Alken Agdayne Andrei Aslatiel Aurheim 
+        Argo Alva Albert Alfred Amygdala Allant Ariona Ariona_Allant Adjudicator 
+        Boyd Benhart Bradley Baldyr Brador Boldwin Blige Biorr 
+        Chester Crestfallen Cale Carhillion Creighton Cromwell Cornyx Creighton Cuculus 
+        Domhnall Dennis Drummond Durgo Denizen Djura Dregling Doran 
+        Eingyi Eygon Ed 
+        Frampt Felkin Forlorn Freke Flamelurker 
+        Gough Griggs Gwyn Gwyndolin Grandahl Gordin Gilligan Gavlan Gren Gully Garl 
+        Greirat Gael Gotthard Gilbert Gascoigne Gehrman 
+        Hawkwood Hodrick Horace Henryk 
+        Ingward
+        Jeremiah
+        Kaathe Kirk Knight Kamui 
+        Laurentius Logam Lautreck Leeroy Lenigast Lapp Leonhard Ludleth LondorPaleShade Ledo 
+        Logarius Ludwig Laurence 
+        Magerold Maughlin McDuff Maldron Morne McDonnell Mergo Micolash Monumental 
+        Nito Nico Navlaan Nicholai Nameless Metas 
+        Oswald Ornstein Oscar Oliver Orbeck Ostrava 
+        Patches Petrus Primordial Pate Peculiar Porcine Paarl 
+        Rickert Ricard Ray Rapacious Rhoy Rom Rydell 
+        Shiva Smough Salaman Siegmeyer Solaire Saulden Straid Simon Sparkly Scirvir Satsuki 
+        Tarkus Targray Tark Titchy TitchyGren Thomas Tsorig Thomas 
+        Urbain 
+        Vamos Vince Vendrick Vengarl Villard Vorgel Victor Vilhelm Valtr Vanguard 
+        Wellager Willem 
+        Xanthous Xanthous_King
+        Yoel Yurt 
+    }
+    female_names = {
+        Alvina Alsanna Anri Annalise Arianna Adella Adeline 
+        Beatrice
+        Ciaran Chloanne Caitha 
+        Dusk Donna 
+        Elizabeth Emerald Emma Eileen Ebrietas 
+        Filianore Fools_Idol 
+        Gwyndolin Gwynevere Griant Guthry 
+        Heysel 
+        Iosefka 
+        Knightess Karla 
+        Lucatiel Licia Livid 
+        Manhunter Melentia Milfanito Milibeth Morrel Melinda Mergo Maria Miralda 
+        Maiden_in_Black Mephistopheles 
+        Nadalia Nameless 
+        Ornifex Oolan 
+        Priscilla Plain_Doll 
+        Quelaag Quelana
+        Reah Rosabeth Roenna Rachel Rosaria 
+        Sieglinde Strowen Shalquoir Sharron Sirris Shira Sparkly Selen 
+        Velka Viola Vicar Vicar_Amelia 
+        Witch
+        Yulva Yorshka Yuria 
+    }
+    #founder_named_dynasties = yes
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 30
+    mat_grf_name_chance = 10
+    father_name_chance = 25
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    #mercenary_names = {
+    #    { name = "mercenary_company_lost_dwarfs_of_old" coat_of_arms = "4200Bronzebeard" }
+    #    { name = "mercenary_company_sons_of_khaz" }
+    #}
+ }
 #LOZ
  name_list_hylian = {
     cadet_dynasty_names = {
