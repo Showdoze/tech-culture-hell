@@ -630,9 +630,39 @@
 #thief 
  cragscleft_01 = {
 	construction_time = slow_construction_time
-	type_icon = "cragscleft_01.dds"
-	cost_prestige = 200
-	cost_gold = 420
+	type_icon = "thief_cragscleft_01.dds"
+	cost_gold = 451
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		revolting_siege_morale_loss_mult = 0.25
+		hostile_scheme_power_add = 2
+	}
+	county_modifier = {
+		defender_holding_advantage = 2
+		hostile_raid_time = 0.2
+	}
+	province_modifier = {
+		travel_danger = -0.5
+		fort_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+	next_building = cragscleft_02
+ }
+ cragscleft_02 = {
+	construction_time = slow_construction_time
+	type_icon = "thief_cragscleft_02.dds"
+	cost_gold = 902
 	can_construct_potential = {
 		barony = title:b_castletown
 		building_requirement_tribal = no
@@ -649,11 +679,155 @@
 		hostile_scheme_power_add = 5
 	}
 	county_modifier = {
+		tax_mult = 0.25
 		defender_holding_advantage = 5
 		hostile_raid_time = 0.5
 	}
 	province_modifier = {
-		travel_danger = -1
+		travel_danger = -5
+		fort_level = 2
+		build_speed = -0.05
+		defender_holding_advantage = 5
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ stonemarket = {
+	construction_time = slow_construction_time
+	type_icon = "thief_stonemarket2.dds"
+	cost_gold = 750
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		powerful_vassal_opinion = 5
+		monthly_county_control_growth_factor = 0.05
+		revolting_siege_morale_loss_mult = 0.25
+		monthly_dynasty_prestige_mult = 0.01
+		county_opinion_add = 5
+		knight_effectiveness_mult = 0.25
+	}
+	county_modifier = {
+		tax_mult = 1.5
+		monthly_county_control_growth_add = 1
+		development_growth = 0.25
+		development_growth_factor = medium_development_growth_gain
+		building_slot_add = 2
+	}
+	province_modifier = {
+		build_speed = -0.05
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ thief_docks = {
+	construction_time = slow_construction_time
+	type_icon = "thief_docks1.dds"
+	cost_gold = 451
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		naval_movement_speed_mult = 0.25
+		revolting_siege_morale_loss_mult = 0.25
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+	}
+	county_modifier = {
+		tax_mult = 0.25
+		hostile_raid_time = 0.5
+		development_growth = 0.01
+		building_slot_add = 1
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+		fort_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ south_quarter = {
+	construction_time = slow_construction_time
+	type_icon = "thief_south_quarter.dds"
+	cost_gold = 451
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		revolting_siege_morale_loss_mult = 0.25
+		monthly_dynasty_prestige_mult = 0.01
+		county_opinion_add = 5
+	}
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.1
+		building_slot_add = 2
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ auldale = {
+	construction_time = slow_construction_time
+	type_icon = "thief_auldale.dds"
+	cost_gold = 1451
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		monthly_dynasty_prestige_mult = 0.01
+		county_opinion_add = 10
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_prestige_gain_mult = 0.05
+		monthly_piety_gain_mult = 0.01
+		short_reign_duration_mult = -0.25
+		learn_language_scheme_power_mult = 0.25
+		knight_effectiveness_mult = 0.2
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
+		powerful_vassal_opinion = 10
+		stress_gain_mult = -0.1
+	}
+	county_modifier = {
+		tax_mult = 2
+		development_growth_factor = 0.25
+		building_slot_add = 1
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+		fort_level = 2
 	}
 	ai_value = {
 		base = 0
