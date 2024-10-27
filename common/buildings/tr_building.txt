@@ -629,7 +629,7 @@
  }
 #thief 
  cragscleft_01 = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_cragscleft_01.dds"
 	cost_gold = 451
 	can_construct_potential = {
@@ -660,7 +660,7 @@
 	next_building = cragscleft_02
  }
  cragscleft_02 = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_cragscleft_02.dds"
 	cost_gold = 902
 	can_construct_potential = {
@@ -694,7 +694,7 @@
 	}
  }
  stonemarket = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_stonemarket2.dds"
 	cost_gold = 750
 	can_construct_potential = {
@@ -723,13 +723,14 @@
 	}
 	province_modifier = {
 		build_speed = -0.05
+		fort_level = 1
 	}
 	ai_value = {
 		base = 0
 	}
  }
  thief_docks = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_docks1.dds"
 	cost_gold = 451
 	can_construct_potential = {
@@ -753,6 +754,8 @@
 		hostile_raid_time = 0.5
 		development_growth = 0.01
 		building_slot_add = 1
+		epidemic_resistance = 20
+		supply_limit_mult = 0.25
 	}
 	province_modifier = {
 		defender_holding_advantage = 5
@@ -763,7 +766,7 @@
 	}
  }
  south_quarter = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_south_quarter.dds"
 	cost_gold = 451
 	can_construct_potential = {
@@ -794,7 +797,7 @@
 	}
  }
  auldale = {
-	construction_time = slow_construction_time
+	construction_time = 1095
 	type_icon = "thief_auldale.dds"
 	cost_gold = 1451
 	can_construct_potential = {
@@ -810,7 +813,6 @@
 		monthly_county_control_growth_factor = 0.05
 		monthly_dynasty_prestige_mult = 0.01
 		county_opinion_add = 10
-		monthly_dynasty_prestige_mult = 0.05
 		monthly_prestige_gain_mult = 0.05
 		monthly_piety_gain_mult = 0.01
 		short_reign_duration_mult = -0.25
@@ -828,6 +830,131 @@
 	province_modifier = {
 		defender_holding_advantage = 5
 		fort_level = 2
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ shalebridge_cradle = {
+	construction_time = 265
+	type_icon = "thief_shalebridge_cradle.dds"
+	cost_gold = 265
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		monthly_dynasty_prestige_mult = 0.01
+		monthly_prestige_gain_mult = 0.01
+	}
+	county_modifier = {
+		building_slot_add = 1
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+		fort_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ edgar_church = {
+	construction_time = 1095
+	type_icon = "thief_auldale.dds"
+	cost_gold = 285
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		monthly_dynasty_prestige_mult = 0.01
+		clergy_opinion = 10
+		monthly_piety_gain_mult = 0.05
+		short_reign_duration_mult = -0.25
+		learn_language_scheme_power_mult = 0.25
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.25
+		building_slot_add = 1
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+		fort_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ lost_city = {
+	construction_time = 320
+	type_icon = "thief_lost_city2.dds"
+	cost_gold = 320
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.01
+		monthly_prestige_gain_mult = 0.05
+		monthly_piety_gain_mult = 0.01
+		learn_language_scheme_power_mult = 0.25
+		owned_legend_spread_mult = 0.2
+		legitimacy_gain_mult = 0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.25
+		building_slot_add = 1
+	}
+	province_modifier = {
+		fort_level = 1
+	}
+	ai_value = {
+		base = 0
+	}
+ }
+ thief_old_quater = {
+	construction_time = 1095
+	type_icon = "thief_old_quater.dds"
+	cost_gold = 451
+	can_construct_potential = {
+		barony = title:b_castletown
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_thief_build
+		}
+	}
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.01
+		monthly_prestige_gain_mult = 0.05
+		monthly_piety_gain_mult = 0.01
+		learn_language_scheme_power_mult = 0.25
+	}
+	county_modifier = {
+		development_growth_factor = 0.25
+		building_slot_add = 1
+	}
+	province_modifier = {
+		fort_level = 1
 	}
 	ai_value = {
 		base = 0
