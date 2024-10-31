@@ -790,6 +790,7 @@
 #Thief
  @thief_city_watch = "gfx/interface/icons/culture_innovations/thief_city_watch.dds"
   @thief_mechanist = "gfx/interface/icons/culture_innovations/thief_mechanist.dds"
+  @thief_lost_city_inno = "gfx/interface/icons/culture_innovations/thief_lost_city_inno.dds"
  innovation_thief_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -837,7 +838,7 @@
  innovation_thief_ancient_build = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
-	icon = @misc_inventions
+	icon = @thief_lost_city_inno
 	potential = {	
 		this = culture:thief_precursor
 	}

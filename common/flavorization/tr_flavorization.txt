@@ -1235,7 +1235,7 @@
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
- hammerite_k_m = {
+ hammerite_k_f = {
 	type = character
 	gender = male
 	special = holder
@@ -1259,6 +1259,28 @@
 	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith  }
+ }
+ mechanist_d_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_mechanist }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
+ }
+ mechanist_d_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_mechanist }
+	#flavourization_rules = { 
+	#	top_liege = no
+	#}
  }
  mechanist_k_m = {
 	type = character
