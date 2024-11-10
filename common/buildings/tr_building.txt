@@ -45,9 +45,7 @@
 	can_construct_potential = {
 		barony = title:b_roma
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_roman_concrete
 		}
 	}
@@ -73,9 +71,7 @@
 	can_construct_potential = {
 		barony = title:b_roma
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_roman_concrete
 		}
 	}
@@ -594,15 +590,13 @@
 			desc = tournament_activity_cost_max_discount_effect_desc
 		}
 	}
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_imperial_build
-		}
-	}
 	type_icon = "icon_structure_colosseum.dds"	
 	can_construct_potential = {
 		barony = title:b_constantinople
 		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_imperial_build
+		}
 	}	
 	cost_gold = 3000	
 	character_modifier = {
@@ -1252,6 +1246,7 @@
 	county_modifier = {
 		defender_holding_advantage = 5
 		hostile_raid_time = 0.5
+		building_slot_add = 1
 	}
 	province_modifier = {
 		fort_level = 1
@@ -1260,6 +1255,85 @@
 	}
 	ai_value = { base = 0 }
  }
+ thief_hamer_tempel = {
+	construction_time = 400
+	type_icon = "thief_hamer_temple.dds"
+	cost = {
+		gold = 2108
+		prestige = 250
+	} 
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_thief_build
+		}
+		barony = title:b_castletown
+		building_requirement_tribal = no
+		#has_building_or_higher = auldale
+	}
+	character_modifier = {
+		cultural_head_fascination_mult = 0.01
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_prestige_gain_mult = 0.1
+		monthly_piety = 0.4
+		owned_legend_spread_mult = 0.01
+		artifact_decay_reduction_mult = -0.01
+		monthly_county_control_growth_factor = 0.02
+		revolting_siege_morale_loss_mult = 0.25
+		zealot_opinion = 5
+		zealot_tax_contribution_mult = 0.1
+		zealot_levy_contribution_mult = 0.1
+	}
+	county_modifier = {
+		tax_mult = 0.01
+		development_growth_factor = 0.1
+		building_slot_add = 1
+	}
+	province_modifier = {
+		fort_level = 1
+	}
+	ai_value = { base = 0 }
+	flag = travel_point_of_interest_religious
+ }
+ thief_anglewatch = {
+	construction_time = 195
+	type_icon = "thief_anglewatch.dds"
+	cost = {
+		gold = 2358
+		prestige = 300
+	} 
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_thief_build
+		}
+		barony = title:b_castletown
+		building_requirement_tribal = no
+		#has_building_or_higher = auldale
+	}
+	character_modifier = {
+		cultural_head_fascination_mult = 0.01
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_prestige_gain_mult = 0.1
+		monthly_piety = 0.2
+		owned_legend_spread_mult = 0.01
+		artifact_decay_reduction_mult = -0.01
+		monthly_county_control_growth_factor = 0.02
+		revolting_siege_morale_loss_mult = 0.25
+		zealot_opinion = 5
+		zealot_tax_contribution_mult = 0.1
+		zealot_levy_contribution_mult = 0.1
+	}
+	county_modifier = {
+		tax_mult = 0.05
+		development_growth_factor = 0.1
+		building_slot_add = 1
+	}
+	province_modifier = {
+		fort_level = 2
+	}
+	ai_value = { base = 0 }
+	flag = travel_point_of_interest_religious
+ }
+
 #dwemer
 
 dwemer_forge_1 = {

@@ -4,9 +4,7 @@
 	type_icon = "icon_structure_statue_of_liberty.dds"
 	can_construct_potential = {
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_usa_build
 		}
 	}
@@ -27,9 +25,7 @@
 		development_growth_factor = 0.2
 		defender_holding_advantage = 5  #you can see real far from up here
 	}
-	ai_value = {
-		base = 100
-	}
+	ai_value = { base = 0 }
 	province_modifier = {
 		monthly_income = 2
 	}
@@ -44,13 +40,11 @@
 		type = pdxmesh
 		name = "machu_pichu_mesh"
 	}
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_aztec_build
-		}
-	}
 	can_construct_potential = {
 		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_aztec_build
+		}
 	}
 	cost_gold = 1000
 	character_modifier = {
@@ -64,9 +58,7 @@
 		development_growth_factor = 0.1
 		tax_mult = 0.05
 	}
-	ai_value = {
-		base = 100
-	}
+	ai_value = { base = 0 }
 	type = special
  }
 # Disney Castle #
@@ -101,9 +93,7 @@
 		fort_level = 2
 		monthly_income = 2
 	}
-	ai_value = {
-		base = 100
-	}
+	ai_value = { base = 0 }
 	type = special
  }
 #Aztec 
@@ -116,9 +106,7 @@
 	type_icon = "icon_structure_the_pyramids.dds"
 	can_construct_potential = {
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_aztec_build
 		}
 	}
@@ -153,9 +141,7 @@
 	province_modifier = {
 		monthly_income = 2
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_wonder
  }

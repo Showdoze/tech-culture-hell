@@ -218,9 +218,7 @@ the_pyramids_02 = {
 	type_icon = "icon_structure_the_pyramids.dds"
 	can_construct_potential = {
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_nile_agriculture
 		}
 	}
@@ -371,9 +369,7 @@ aurelian_walls_02 = {
 	can_construct_potential = {
 		barony = title:b_roma
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_roman_concrete
 		}
 	}
@@ -452,9 +448,7 @@ the_colosseum_02 = {
 	type_icon = "icon_structure_colosseum.dds"
 	can_construct_potential = {
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_roman_concrete
 		}
 	}
@@ -495,9 +489,7 @@ MA_meroe_pyramids = {
 	can_construct_potential = {
 		barony = title:b_grnetti
 		building_requirement_tribal = no
-	}
-	can_construct = {
-		scope:holder.culture = {
+		culture = {
 			has_innovation = innovation_nile_agriculture
 		}
 	}
@@ -642,16 +634,14 @@ kyoto_palace_01 = {
 	}
 	construction_time = very_slow_construction_time
 	type_icon = "becp_icon_jingfugong.dds"
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_japan_build
-		}
-	}
 	can_construct_potential = {
 		OR = {
 			barony = title:b_suq-socotra
 		}
 		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
 	}
 	show_disabled = yes
 	cost_gold = 1000
@@ -670,13 +660,7 @@ kyoto_palace_01 = {
 		garrison_size = 1
 		travel_danger = -35
 	}	
-	ai_value = {
-		base = 0
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+	ai_value = { base = 0 }
 	type = special
 }
 # 
@@ -733,9 +717,7 @@ MA_karnak = {
 	county_modifier = {
 		development_growth_factor = medium_development_growth_gain
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_religious
 }
@@ -756,9 +738,7 @@ MA_abu_simbel = {
 	character_modifier = {
 		diplomacy_per_prestige_level = 1
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 }
 MA_pompeys_pillar = {
@@ -781,9 +761,7 @@ MA_pompeys_pillar = {
 		build_speed = -0.05
 		stationed_maa_damage_add = normal_maa_damage_tier_2
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_martial
 }
@@ -807,9 +785,7 @@ MA_aula_palatina = {
 		build_speed = great_building_build_speed_tier_1
 		monthly_county_control_change_factor = medium_development_growth_gain
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_diplomatic
 }
@@ -843,9 +819,7 @@ wonder_newgrange_01 = {
 		levy_size = 0.15
 	}	
 	type = special
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 }
 # The Great Wall of China - 万里长城
  #AEP_great_wall_of_china = {
@@ -896,9 +870,7 @@ wonder_newgrange_01 = {
 	province_modifier = {
 		travel_danger = 1
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	flag = travel_point_of_interest_religious
  }
  scotland_yard = {
@@ -924,8 +896,6 @@ wonder_newgrange_01 = {
 	province_modifier = {
 		travel_danger = -0.5
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
  }
 #

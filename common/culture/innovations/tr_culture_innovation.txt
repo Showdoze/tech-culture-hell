@@ -25,6 +25,23 @@
 		build_speed = -0.01
 	}
  }
+ #Mafia
+  innovation_mafia_build = {
+	group = culture_group_regional
+	culture_era = culture_era_industrial
+	icon = @misc_inventions
+	potential = {
+		OR = {
+			this = culture:italian_american
+			any_parent_culture_or_above = {
+				this = culture:italian_american
+			}
+	}   }
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+ # 
 #JAPAN
  @tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
   @samurai = "gfx/interface/icons/culture_innovations/inn_samurai.dds"
