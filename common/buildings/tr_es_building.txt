@@ -1,0 +1,470 @@
+#Argonian #
+ @holding_illustration_hist = "gfx/interface/illustrations/holding_types/ek_hist_tree.dds"
+ # Hist Trees #
+  hist_01 = { # Sapling
+	asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	cost_piety = 1000
+	construction_time = very_slow_construction_time
+	ai_value = {
+		base = 500
+	}
+	can_construct = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	levy = small_building_levy_tier_1
+	character_modifier = {
+		monthly_piety = 0.2
+		levy_maintenance = -0.05
+		same_faith_opinion = 2
+	}
+	province_modifier = {
+		defender_holding_advantage = 1
+	}
+	county_modifier = {
+		county_opinion_add = 5
+		levy_size = 0.05
+		levy_reinforcement_rate = 0.1
+	}
+    next_building = hist_02
+  }
+  hist_02 = { # Young Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	levy = small_building_levy_tier_2
+	character_modifier = {
+		monthly_piety = 0.4
+		same_faith_opinion = 4
+		levy_maintenance = -0.1
+	}
+	province_modifier = {
+		defender_holding_advantage = 2
+	}
+	county_modifier = {
+		county_opinion_add = 10
+		levy_size = 0.1
+		levy_reinforcement_rate = 0.2
+	}
+	next_building = hist_03
+ }
+  hist_03 = { # Mature Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	levy = small_building_levy_tier_3
+	character_modifier = {
+		monthly_piety = 0.6
+		same_faith_opinion = 6
+		levy_maintenance = -0.15
+	}
+	province_modifier = {
+		defender_holding_advantage = 3
+	}
+	county_modifier = {
+		county_opinion_add = 15
+		levy_size = 0.15
+		levy_reinforcement_rate = 0.3
+	}
+	next_building = hist_04
+  }
+  hist_04 = { # Old Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	levy = small_building_levy_tier_4
+	character_modifier = {
+		monthly_piety = 0.8
+		same_faith_opinion = 8
+		levy_maintenance = -0.2
+	}
+	province_modifier = {
+		defender_holding_advantage = 4
+	}
+	county_modifier = {
+		county_opinion_add = 20
+		levy_size = 0.2
+		levy_reinforcement_rate = 0.4
+	}
+    next_building = hist_05
+ }
+  hist_05 = { # Ancient Hist
+    asset = {
+		type = pdxmesh
+		name = "argonian_tree_temple_01_mesh"
+		illustration = @holding_illustration_hist
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/pagan_temple" soundparameter = { "Tier" = 0 } }
+	}
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+    cost_piety = 1000
+	construction_time = very_slow_construction_time
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_hist } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	levy = small_building_levy_tier_5
+	character_modifier = {
+		monthly_piety = 1
+		same_faith_opinion = 10
+		levy_maintenance = -0.25
+	}	
+	province_modifier = {
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		county_opinion_add = 25
+		levy_size = 0.25
+		levy_reinforcement_rate = 0.5
+	}
+ }
+#Khajiit cats #
+ # Anequina Moon Gate - a ancient portal towards the Plane of Jode, it safeguards the power of Jode's Core
+ anequina_moon_gate_01 = {
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_special_moon_gate_mesh"
+		}
+	}
+	type_icon = "icon_structure_golden_gate_of_kiev.dds"
+	ai_value = {
+		base = 100
+		ai_special_building_modifier = yes
+	}
+	can_construct = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_moon_worship } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	is_enabled = {
+		custom_tooltip = {
+			text = holy_site_or_moon_worship
+			OR = {
+				scope:holder = { faith = { has_doctrine = tenet_moon_worship } }
+				barony = {
+					is_holy_site_of = scope:holder.faith
+				}
+			}
+		}
+	}
+	cost_gold = 1000
+	construction_time = very_slow_construction_time	
+	character_modifier = {
+		monthly_piety = 0.5
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		learning_per_piety_level = 1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.1
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+ }
+#WOOD ELF #
+ # Beldama Wyrd Tree #
+  beldama_wyrd_tree_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_beldama_wyrd_tree.dds"
+	asset = {
+		type = pdxmesh
+		name = "tree_graht_01_c_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_bosmer_build
+		}
+	}
+	cost_gold = 2000
+	character_modifier = {
+		learning_per_piety_level = 1
+		negate_health_penalty_add = 0.25
+	}
+	county_modifier = {
+		build_speed = 0.2
+		build_gold_cost = 0.2
+		county_opinion_add = 10
+	}
+	province_modifier = {
+		stationed_mages_damage_mult = normal_maa_damage_tier_1
+		stationed_mages_toughness_mult = normal_maa_toughness_tier_1
+		stationed_mages_screen_mult = normal_maa_screen_tier_1
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	type = special
+	flag = travel_point_of_interest_wonder
+  }
+#Imperial
+ #IMPERIAL CITY #
+  imperial_city_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "es_imperial_city.dds"
+	can_construct_potential = {
+		barony = title:b_constantinople
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_imperial_build
+		}
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_special_imperial_city_mesh"
+		}
+	}
+	cost_gold = 3000	
+	max_garrison = 500	
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.25
+	}
+	county_modifier = {
+		development_growth = 0.25
+		development_growth_factor = 0.15
+		hostile_raid_time = 0.75
+	}
+	province_modifier = {
+		fort_level = 5
+		garrison_size = 0.5
+	}	
+	ai_value = {
+		base = 100
+	}
+	#type = duchy_capital
+  }
+  imperial_city_arena_01 = { 
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+	construction_time = very_slow_construction_time
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = tours_and_tournaments }
+			desc = tournament_activity_cost_max_discount_effect_desc
+		}
+	}
+	type_icon = "icon_structure_colosseum.dds"	
+	can_construct_potential = {
+		barony = title:b_constantinople
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_imperial_build
+		}
+	}	
+	cost_gold = 3000	
+	character_modifier = {
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		army_maintenance_mult = -0.1
+		men_at_arms_limit = 1
+	}
+	province_modifier = {
+		monthly_income = 1.5
+	}
+	county_modifier = {
+		tax_mult = 0.15
+		levy_size = 0.15
+		county_opinion_add = 5
+	}	
+	ai_value = {
+		base = 100
+	}
+	#type = special
+	#flag = travel_point_of_interest_martial
+ }
+#
+
+#dwemer
+dwemer_forge_1 = {
+	
+	# How many levies does the building give
+	levy = 500
+	
+	# How much garrison does the building give
+	max_garrison = 500
+
+	# How much garrison regains a percentage of its maximal garrison equal to the garrison reinforcement rate
+	garrison_reinforcement_factor = 0.01
+	
+	# How long does it take to construct the building
+	construction_time = 720
+	
+	type = regular
+	
+	# Which asset does the building use
+	asset = {
+		# 'pdxmesh' or 'entity', specifies wheter to use a mesh or an entity. Meshes are more performant and should be preferred.
+		type = pdxmesh
+		# The name of the mesh or the entity
+		name = "dwemer_building_2_mesh"
+		# To randomize between multiple meshes/entities. Note that they must all be entities, or all be meshes:
+		names = { "dwemer_building_1_mesh" "dwemer_building_2_mesh"}
+		# Path to illustration shown in the county view, texture can be accessed in GUI: "[Holding.GetIllustration]"
+		illustration = "gfx/interface/holding_types/dwemer_forge.dds"
+		# Associated sound effect and an optional parameter, can also be just soundeffect = "event:..." if no parameter is needed
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Generic/sfx_amb_3d_holdings_generic_castle" soundparameter = { "Tier" = 2.0 } }
+		# Graphical cultures that prefer this asset to be shown
+		graphical_cultures = { dwemer_building_gfx }
+		# Province IDs in which this asset is preferred. Has a higher priority than graphical region.
+		provinces = { 496 1000 }
+		# Governments that prefer this asset to be shown
+		governments = { republic_government }
+	}
+
+	is_enabled = { yes }
+	can_construct_potential = {
+		scope:holder.culture = culture_dwemer
+	}
+	can_construct_showing_failures_only = {
+		gold >= 500
+	}
+	can_construct = {
+		gold >= 500
+		scope:holder.culture = culture_dwemer
+	}
+	show_disabled = no	# if set to yes, the building will show in the build menu even if disabled (will still use can_construct_potential). No by default
+	
+	# How much cost does the building cost
+	cost = { gold = 500 }
+
+	# A special modifier applied to every holding of specified type in the county
+	county_holding_modifier = {
+		holding = city_holding
+		income_mult = 1
+	}
+
+	# A modifier applied if the holder's dynasty of the county has a specific perk
+	county_dynasty_modifier = {
+		county_holder_dynasty_perk = fp2_urbanism_legacy_1 # The name of the perk
+		# The effect
+		development_growth_factor = 0.2
+	}
+
+	# A modifier applied to the county holder
+	county_holder_character_modifier = {
+
+	}
+	
+	# Building flags
+	flag = castle
+	flag = city
+	flag = church
+	
+	# How desirable is the building for the AI
+	ai_value = {
+		base = 100
+	}
+	
+	# If this is set to yes, the building will be used for figuring out which background asset (walls/no walls etc) should be shown
+	is_graphical_background = no
+}   

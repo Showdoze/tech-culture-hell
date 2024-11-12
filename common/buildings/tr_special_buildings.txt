@@ -394,9 +394,7 @@ aurelian_walls_02 = {
 		garrison_size = 1
 		travel_danger = -35
 	}	
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = duchy_capital
 }
 ##########
@@ -471,14 +469,12 @@ the_colosseum_02 = {
 	province_modifier = {
 		travel_danger = -5
 	}	
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_martial
 }
 #Meroe Pyramids
-MA_meroe_pyramids = {
+ MA_meroe_pyramids = {
 	type_icon = "MA_meroe_pyramids.dds"
 	cost_gold = main_building_tier_1_cost
 	construction_time = slow_construction_time
@@ -509,14 +505,12 @@ MA_meroe_pyramids = {
 	county_modifier = {
 		monthly_county_control_change_factor = medium_development_growth_gain
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_wonder
-}
+ }
 #Pharos of Alexandria
-MA_pharos_alexandria = {
+ MA_pharos_alexandria = {
 	type_icon = "MA_pharos_alexandria.dds"
 	next_building = MA_pharos_alexandria_02
 	cost_gold = main_building_tier_2_cost
@@ -543,8 +537,8 @@ MA_pharos_alexandria = {
 		base = 50
 	}
 	type = special
-}
-MA_pharos_alexandria_02 = {
+ }
+ MA_pharos_alexandria_02 = {
 	type_icon = "MA_pharos_alexandria.dds"
 	cost_gold = main_building_tier_2_cost
 	construction_time = slow_construction_time
@@ -570,13 +564,11 @@ MA_pharos_alexandria_02 = {
 	province_modifier = {
 		defender_holding_advantage = normal_building_advantage_tier_3
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
-}
+ }
 #Akropolis
-MA_akropolis = {
+ MA_akropolis = {
 	type_icon = "MA_parthenon.dds"
 	next_building = MA_akropolis_02
 	cost_gold = main_building_tier_2_cost
@@ -597,8 +589,8 @@ MA_akropolis = {
 		base = 50
 	}
 	type = special
-}
-MA_akropolis_02 = {
+ }
+ MA_akropolis_02 = {
 	type_icon = "MA_parthenon.dds"
 	cost_gold = main_building_tier_2_cost
 	construction_time = slow_construction_time
@@ -621,48 +613,7 @@ MA_akropolis_02 = {
 		base = 50
 	}
 	type = special
-}
-
-
-##########
-# Kyoto Palace
-##########
-kyoto_palace_01 = {
-	asset = {
-		type = pdxmesh
-		name = "building_kyoto_palace_mesh"
-	}
-	construction_time = very_slow_construction_time
-	type_icon = "becp_icon_jingfugong.dds"
-	can_construct_potential = {
-		OR = {
-			barony = title:b_suq-socotra
-		}
-		building_requirement_tribal = no
-		culture = {
-			has_innovation = innovation_japan_build
-		}
-	}
-	show_disabled = yes
-	cost_gold = 1000
-	character_modifier = {
-		powerful_vassal_opinion = 5
-		clergy_opinion = 5
-		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
-		tyranny_gain_mult = -0.2
-		monthly_dynasty_prestige_mult = 0.05
-	}
-	county_modifier = {
-		development_growth = 0.2
-	}
-	province_modifier = {
-		fort_level = 6
-		garrison_size = 1
-		travel_danger = -35
-	}	
-	ai_value = { base = 0 }
-	type = special
-}
+ }
 # 
 MA_rock_cashel = {
 	type_icon = "MA_rock_cashel.dds"
@@ -845,57 +796,4 @@ wonder_newgrange_01 = {
  #	type = special
  #	flag = travel_point_of_interest_martial # wall
  #}
-#
-#London 
- white_chapel = {
-	construction_time = slow_construction_time
-	type_icon = "icon_whitechapel.dds"
-	cost_prestige = 200
-	cost_gold = 420
-	can_construct_potential = {
-		barony = title:b_london
-		building_requirement_tribal = no
-	}
-	character_culture_modifier = {
-		owned_hostile_scheme_success_chance_add = 5
-		owned_personal_scheme_success_chance_add = 5
-		learn_language_scheme_power_mult = 0.2
-	}
-	county_modifier = {
-		tax_mult = 0.1
-		development_growth_factor = 0.15
-		development_growth = 0.1
-		building_slot_add = 1
-	}
-	province_modifier = {
-		travel_danger = 1
-	}
-	ai_value = { base = 0 }
-	flag = travel_point_of_interest_religious
- }
- scotland_yard = {
-	construction_time = slow_construction_time
-	type_icon = "scotland_yard.dds"
-	cost_prestige = 200
-	cost_gold = 420
-	can_construct_potential = {
-		barony = title:b_london
-		building_requirement_tribal = no
-	}
-	character_modifier = {
-		powerful_vassal_opinion = 5
-		monthly_county_control_growth_factor = 0.05
-		revolting_siege_morale_loss_mult = 0.25
-	}
-	county_modifier = {
-		tax_mult = 0.1
-		development_growth_factor = 0.15
-		development_growth = 0.1
-		hostile_raid_time = 0.5
-	}
-	province_modifier = {
-		travel_danger = -0.5
-	}
-	ai_value = { base = 0 }
- }
-#
+# 
