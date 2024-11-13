@@ -1,6 +1,5 @@
 #### Local Types ####
 
-@dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
 @dead_culture = "gfx/interface/icons/culture_innovations/ai_innovation_dead_culture.dds"
 @community_college = "gfx/interface/icons/culture_innovations/ai_innovation_community_college.dds"
 @horse_breeding = "gfx/interface/icons/culture_innovations/ai_innovation_horse_breeding.dds"
@@ -26,17 +25,19 @@
 	}
  }
  #Mafia
+  @mafia_1 = "gfx/interface/icons/culture_innovations/mafia_1.dds"
   innovation_mafia_build = {
 	group = culture_group_regional
 	culture_era = culture_era_industrial
-	icon = @misc_inventions
+	icon = @mafia_1
 	potential = {
 		OR = {
 			this = culture:italian_american
 			any_parent_culture_or_above = {
 				this = culture:italian_american
 			}
-	}   }
+	    }   
+	}
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -44,7 +45,7 @@
  # 
 #JAPAN
  @tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
-  @samurai = "gfx/interface/icons/culture_innovations/inn_samurai.dds"
+  @samurai = "gfx/interface/icons/culture_innovations/jap_samurai.dds"
   @jap_build = "gfx/interface/icons/culture_innovations/jap_build1.dds"
  innovation_samurai = {
 	group = culture_group_regional
@@ -109,36 +110,36 @@
 	}
  }
 #CHINA
- @innovation_china_boat1 = "gfx/interface/icons/culture_innovations/innovation_china_boat1.dds"
-  @porcelain = "gfx/interface/icons/culture_innovations/porcelain.dds"
-  @martial_artist = "gfx/interface/icons/culture_innovations/martial_artist.dds"
-  @chinese_builder = "gfx/interface/icons/culture_innovations/chinese_builder.dds"
+ @china_boat1 = "gfx/interface/icons/culture_innovations/china_boat1.dds"
+  @china_porcelain = "gfx/interface/icons/culture_innovations/china_porcelain.dds"
+  @martial_artist_1 = "gfx/interface/icons/culture_innovations/china_martial_artist1.dds"
+  @chinese_builder = "gfx/interface/icons/culture_innovations/china_builder.dds"
+  @china_rice_carry = "gfx/interface/icons/culture_innovations/china_rice_carry.dds"
  innovation_china_boat1 = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @innovation_china_boat1
-
+	icon = @china_boat1
 	character_modifier = {
 		embarkation_cost_mult = -1.1
 		naval_movement_speed_mult = 0.4
 	}
 	potential = {
 		OR = {
-		this = culture:han
-		any_parent_culture_or_above = {
-			this = culture:han #han
-		}
-    }}
+		    this = culture:han
+		        any_parent_culture_or_above = {
+			    this = culture:han #han
+		        }
+        }
+	}
 	custom = unlocks_naval_raiding
 	custom = unlocks_sailable_major_rivers
-
 	flag = global_regional
 	flag = tribal_era_regional
  }
  innovation_porcelain = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = @porcelain
+	icon = @china_porcelain
 	character_modifier = {
 		domain_tax_mult = 0.01
 		courtly_opinion = 5
@@ -157,7 +158,7 @@
  innovation_martial_artist = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
-	icon = @martial_artist
+	icon = @martial_artist_1
 	potential = {
 		OR = {
 			this = culture:han
@@ -174,7 +175,7 @@
  innovation_chinese_builder = {
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
-	icon = @martial_artist
+	icon = @chinese_builder
 	potential = {
 		OR = {
 			this = culture:han
@@ -255,6 +256,7 @@
  }
 #Roman
  @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
+  @roman_army1 = "gfx/interface/icons/culture_innovations/roman_army1.dds"
  innovation_roman_concrete = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -275,7 +277,7 @@
  innovation_marian_reform  = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
-	icon = @roman_concrete
+	icon = @roman_army1
 	potential = {	
 		this = culture:roman		
 	}
@@ -288,6 +290,7 @@
 	flag = antiquity_era_regional
  }
 #Fantasy
+ @dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
  innovation_dragon_egg  = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -367,6 +370,7 @@
   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
   @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
   @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
+  @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
  innovation_ashlander_customs = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
@@ -426,7 +430,7 @@
  innovation_dumner_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @misc_inventions
+	icon = @es_dunmer_1
 	potential = {	
 		this = culture:dunmer		
 	}
@@ -733,10 +737,11 @@
 	}
  }
 #Imperial
+ @es_imperial_1 = "gfx/interface/icons/culture_innovations/es_imperial_1.dds"
  innovation_imperial_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @misc_inventions
+	icon = @es_imperial_1
 	potential = {	
 		this = culture:imperial_culture		
 	}
@@ -745,10 +750,11 @@
 	}
  }
 #REDGUARD
+ @es_redguard_1 = "gfx/interface/icons/culture_innovations/es_redguard_1.dds"
  innovation_redguard_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @misc_inventions
+	icon = @es_redguard_1
 	potential = {	
 		this = culture:alikr		
 	}
@@ -793,10 +799,11 @@
 	}
  } 
 #Nord
+ @es_nord_1 = "gfx/interface/icons/culture_innovations/es_nord_1.dds"
  innovation_nord_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @misc_inventions
+	icon = @es_nord_1
 	potential = {	
 		this = culture:nord_culture		
 	}

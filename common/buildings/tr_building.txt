@@ -1130,4 +1130,379 @@
 	ai_value = { base = 100 }
 	flag = travel_point_of_interest_martial
  }
+ kashima_shrine_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_cathedral_pagan.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = 1000
+	character_modifier = {
+		monthly_piety = 0.25
+		monthly_dynasty_prestige_mult = 0.05
+		knight_effectiveness_mult = 0.15
+		levy_reinforcement_rate = 0.1
+		monthly_county_control_growth_factor = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		levy_size = 0.1
+		development_growth_factor = 0.2
+		development_growth = 0.15
+	}
+	levy = 500
+	province_modifier = {
+		monthly_income = 1
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	flag = travel_point_of_interest_religious
+ }
+ sado_gold_mines_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_1_cost
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.05
+	}
+	next_building = sado_gold_mines_02
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ sado_gold_mines_02 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_2_cost	
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.1
+	}
+	next_building = sado_gold_mines_03
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ sado_gold_mines_03 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	county_modifier = {
+		tax_mult = 0.3
+		development_growth_factor = 0.15
+	}
+	next_building = sado_gold_mines_04
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ sado_gold_mines_04 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+	county_modifier = {
+		tax_mult = 0.35
+		development_growth_factor = 0.2
+	}
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ ikuno_silver_mines_01 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_1_cost	
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth_factor = 0.05
+	}	
+	next_building = ikuno_silver_mines_02	
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ ikuno_silver_mines_02 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_2_cost
+	county_modifier = {
+		tax_mult = 0.15
+		development_growth_factor = 0.1
+	}
+	next_building = ikuno_silver_mines_03
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ ikuno_silver_mines_03 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.15
+	}
+	next_building = ikuno_silver_mines_04
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ ikuno_silver_mines_04 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.2
+	}
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ tada_copper_mines_01 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_1_cost
+	county_modifier = {
+		tax_mult = 0.05
+		levy_size = 0.1
+		development_growth_factor = 0.05
+	}
+	next_building = tada_copper_mines_02
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ tada_copper_mines_02 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_2_cost
+	county_modifier = {
+		tax_mult = 0.1
+		levy_size = 0.2
+		development_growth_factor = 0.1
+	}
+	next_building = tada_copper_mines_03
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ tada_copper_mines_03 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	county_modifier = {
+		tax_mult = 0.15
+		levy_size = 0.3
+		development_growth_factor = 0.15
+	}
+	next_building = tada_copper_mines_04
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ tada_copper_mines_04 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+	county_modifier = {
+		tax_mult = 0.2
+		levy_size = 0.4
+		development_growth_factor = 0.2
+	}
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ hakata_trade_port_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_tradeport.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_1_cost
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.05
+	}
+	next_building = hakata_trade_port_02
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ hakata_trade_port_02 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_tradeport.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_2_cost
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.1
+	}
+	next_building = hakata_trade_port_03
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ hakata_trade_port_03 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_tradeport.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	county_modifier = {
+		tax_mult = 0.3
+		development_growth_factor = 0.15
+	}
+	next_building = hakata_trade_port_04
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
+ hakata_trade_port_04 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_tradeport.dds"
+	can_construct_potential = {
+		OR = {
+			barony = title:b_suq-socotra
+		}
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_japan_build
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+	county_modifier = {
+		tax_mult = 0.35
+		development_growth_factor = 0.2
+	}
+	ai_value = { base = 100 }
+	flag = travel_point_of_interest_economic
+ }
 #
