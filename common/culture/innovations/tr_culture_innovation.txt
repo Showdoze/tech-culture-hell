@@ -364,7 +364,20 @@
 	}
 	flag = global_regular
 	flag = tribal_era_regular
-}
+ }
+ innovation_hobbit_build = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @alchemy
+	potential = {	
+		this = culture:halfling		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+ }
 #DUNMER
  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
