@@ -3185,7 +3185,7 @@ e_britannia = {
 	k_cornwall = {
 		color = { 204 153 10 }
 		cultural_names = {
-		name_list_glenumbran = cn_high_rock
+		    name_list_glenumbran = cn_high_rock
 	    }
 		can_create = {
 			trigger_if = {
@@ -9809,11 +9809,13 @@ e_byzantium = {
 			capital = c_venezia # Venice
 			cultural_names = {
 				name_list_venetian = cn_Venice
+				name_list_italian_american = cn_new_venice
 			}
 			c_venezia = {
 				color = { 40 143 132 }
 				cultural_names = {
 					name_list_venetian = cn_Venice
+					name_list_italian_american = cn_new_venice
 				}
 				b_venezia = {
 					province = 2517
@@ -32973,11 +32975,16 @@ e_deccan = {
 				color = { 120 75 75 }
 				
 				definite_form = yes
-
+				cultural_names = {
+				    name_list_nahuatl = cn_new_mexico
+			    }
 				b_mahal = {
 					province = 1360
 
 					color = { 120 75 75 }
+					cultural_names = {
+				        name_list_nahuatl = cn_new_mexico
+			        }
 				}
 				b_thiladhunmathi = {
 					province = 8712

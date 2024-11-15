@@ -48,11 +48,14 @@ theodosian_walls_02 = {
 		barony = title:b_constantinople
 		building_requirement_tribal = no
 	}
-	cost_gold = 5000
+	cost = {
+		gold = 5000
+		prestige = 1000
+	} 
 	max_garrison = 3000
 	duchy_capital_county_modifier = {
 		levy_size = 0.15
-		tax_mult = 0.15
+		tax_mult = 0.5
 	}
 	character_modifier = {
 		monthly_dynasty_prestige_mult = 0.1
@@ -66,9 +69,9 @@ theodosian_walls_02 = {
 	}
 	province_modifier = {
 		fort_level = 30
-		monthly_income = normal_building_tax_tier_8
+		monthly_income = 15
 		garrison_size = 2
-		cow_metropolis_holding_build_gold_cost = -0.15
+		#cow_metropolis_holding_build_gold_cost = -0.15
 		defender_holding_advantage = 50
 		travel_danger = -69
 		stationed_maa_toughness_mult = 0.05
@@ -80,9 +83,7 @@ theodosian_walls_02 = {
 		tax_mult = 2
 		hostile_raid_time = 2
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = duchy_capital
 }
 
@@ -379,6 +380,7 @@ aurelian_walls_02 = {
 		monthly_piety_gain_per_knight_add = 0.1
 		prowess = 1
 		knight_effectiveness_mult = 0.1
+		max_loot_mult = 0.25
 	}
 	duchy_capital_county_modifier = {
 		levy_size = 0.15

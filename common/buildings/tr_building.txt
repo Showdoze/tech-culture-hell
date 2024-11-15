@@ -35,9 +35,7 @@
 	character_modifier = {
 		revolting_siege_morale_loss_mult = 0.25
 	}	
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
   }
  castra_praetoria = {
 	construction_time = slow_construction_time
@@ -61,9 +59,7 @@
 		travel_danger = -4
 		hostile_raid_time = 0.25
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
  }
  castra_peregrina = {
 	construction_time = slow_construction_time
@@ -87,9 +83,7 @@
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
 		stationed_siege_weapon_siege_value_mult = normal_maa_siege_value_tier_1
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
  }
 #London 
  white_chapel = {
@@ -189,10 +183,10 @@
 		}
 	}
 	is_enabled = {
-		scope:holder = {
-			OR = {
-			religion = religion:kushitism_religion
-			religion = religion:egyptian_religion
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
 			}
 		}
 	}
@@ -231,10 +225,10 @@
 		}
 	}
 	is_enabled = {
-		scope:holder = {
-			OR = {
-			religion = religion:kushitism_religion
-			religion = religion:egyptian_religion
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
 			}
 		}
 	}
@@ -1443,6 +1437,9 @@
 		tax_mult = 0.2
 		development_growth_factor = 0.05
 	}
+	character_modifier = {
+		diplomatic_range_mult = 0.5
+	}
 	next_building = hakata_trade_port_02
 	ai_value = { base = 100 }
 	flag = travel_point_of_interest_economic
@@ -1463,6 +1460,9 @@
 	county_modifier = {
 		tax_mult = 0.25
 		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		diplomatic_range_mult = 1
 	}
 	next_building = hakata_trade_port_03
 	ai_value = { base = 100 }
@@ -1485,6 +1485,9 @@
 		tax_mult = 0.3
 		development_growth_factor = 0.15
 	}
+	character_modifier = {
+		diplomatic_range_mult = 1.5
+	}
 	next_building = hakata_trade_port_04
 	ai_value = { base = 100 }
 	flag = travel_point_of_interest_economic
@@ -1505,6 +1508,9 @@
 	county_modifier = {
 		tax_mult = 0.35
 		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		diplomatic_range_mult = 2
 	}
 	ai_value = { base = 100 }
 	flag = travel_point_of_interest_economic

@@ -33,34 +33,7 @@
 	flag = travel_point_of_interest_religious
  }
 # Machu Picchu #
- machu_picchu = {
-	construction_time = very_slow_construction_time
-	type_icon = "icon_structure_machu_picchu.dds"
-	asset = {
-		type = pdxmesh
-		name = "machu_pichu_mesh"
-	}
-	can_construct_potential = {
-		building_requirement_tribal = no
-		culture = {
-			has_innovation = innovation_aztec_build
-		}
-	}
-	cost_gold = 1000
-	character_modifier = {
-		monthly_dynasty_prestige = 1.0
-	}
-	province_modifier = {
-		defender_holding_advantage = normal_building_advantage_tier_3
-	}
-	county_modifier = {
-		development_growth = 0.1
-		development_growth_factor = 0.1
-		tax_mult = 0.05
-	}
-	ai_value = { base = 0 }
-	type = special
- }
+ 
 # Disney Castle #
  disney_castle = {
 	construction_time = very_slow_construction_time
@@ -96,7 +69,7 @@
 	ai_value = { base = 0 }
 	type = special
  }
-#Aztec 
+#Aztec Mesoamerican
  aztec_pyramids_01 = {
 	asset = {
 		type = pdxmesh
@@ -144,6 +117,34 @@
 	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_wonder
+ }
+ machu_picchu = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_machu_picchu.dds"
+	asset = {
+		type = pdxmesh
+		name = "machu_pichu_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_aztec_build
+		}
+	}
+	cost_gold = 1000
+	character_modifier = {
+		monthly_dynasty_prestige = 1.0
+	}
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_3
+	}
+	county_modifier = {
+		development_growth = 0.1
+		development_growth_factor = 0.1
+		tax_mult = 0.05
+	}
+	ai_value = { base = 0 }
+	type = special
  }
 #mafia
  mafia_brothel = {
@@ -195,5 +196,81 @@
 		hostile_raid_time = 0.5
 	}
 	ai_value = { base = 0 }
+ }
+ mafia_casino_1 = {
+	construction_time = slow_construction_time
+	type_icon = "mafia_casino.dds"
+	cost = {
+		gold = 120
+		prestige = 200
+	}
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_mafia_build
+		}
+		building_requirement_tribal = no
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+	}
+	ai_value = { base = 0 }
+	next_building = mafia_casino_2
+ }
+ mafia_casino_2 = {
+	construction_time = slow_construction_time
+	type_icon = "mafia_casino.dds"
+	cost = {
+		gold = 420
+		prestige = 200
+	}
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_mafia_build
+		}
+		building_requirement_tribal = no
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.25
+	}
+	province_modifier = {
+		monthly_income = 0.1
+	}
+	ai_value = { base = 0 }
+	next_building = mafia_casino_3
+ }
+ mafia_casino_3 = {
+	construction_time = slow_construction_time
+	type_icon = "mafia_casino.dds"
+	cost = {
+		gold = 820
+		prestige = 200
+	}
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_mafia_build
+		}
+		building_requirement_tribal = no
+	}
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		stewardship_per_prestige_level = 1
+		max_loot_mult = 0.25
+		diplomatic_range_mult = 0.5
+	}
+	county_modifier = {
+		tax_mult = 0.45
+		county_opinion_add = 5
+	}
+	province_modifier = {
+		monthly_income = 0.25
+	}
+	ai_value = { base = 0 }
+	#next_building = mafia_casino_3
  }
 #
