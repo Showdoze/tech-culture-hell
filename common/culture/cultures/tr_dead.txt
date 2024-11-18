@@ -1,35 +1,39 @@
-﻿#gothic = {
-#	color = gothic
-#	
-#	ethos = ethos_bellicose
-#	heritage = heritage_gothic
-#	language = language_central_germanic
-#	martial_custom = martial_custom_male_only
-#	traditions = {
-#		tradition_isolationist
-#		tradition_martial_admiration
-#		tradition_stand_and_fight
-#	}
-#	
-#	dlc_tradition = {
-#		trait = tradition_malleable_invaders
-#		requires_dlc_flag = hybridize_culture
-#	}
-#	
-#	name_list = name_list_visigothic
-#	
-#	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
-#	building_gfx = { mediterranean_building_gfx }
-#	clothing_gfx = { western_clothing_gfx }
-#	unit_gfx = { western_unit_gfx }
-#	
-#	ethnicities = { # Copied from Norse
-#		70 = caucasian_northern_blond
-#		15 = caucasian_northern_ginger
-#		10 = caucasian_northern_brown_hair
-#		5 = caucasian_northern_dark_hair
-#	}
-#}
+﻿gothic = {
+	color = gothic
+	created = 150.1.1
+	parents = { german }
+	ethos = ethos_bellicose
+	heritage = heritage_gothic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_isolationist
+		tradition_martial_admiration
+		tradition_stand_and_fight
+        tradition_tribe_unity
+		tradition_migration
+		tradition_germanic
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_gothic
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = { # Copied from Norse
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
 
 #ancient_egyptian = {
 #	color = ancient_egyptian

@@ -45,6 +45,30 @@ halfling = {
 		1 = gnome_ethnicity
 	}
 }
+hanling = {
+	color = rgb { 222 135 26 }
+	created = 2.1.1
+	parents = { han halfling }
+	ethos = ethos_communal
+	heritage = heritage_fantasy
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_merryment
+		tradition_family_entrepreneurship
+		tradition_mystical_ancestors
+		tradition_court_eunuchs
+		tradition_hobbit
+	}
+	name_list = name_list_han_halfling	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx  }
+	unit_gfx = { chinese_unit_gfx }
+	ethnicities = {
+		1 = hanling_eth
+	}
+}
 old_dwarven = {
 	color = rgb { 184 120 79 }
 	created = 1.1.1
@@ -314,6 +338,31 @@ old_dwarven = {
 	}
  }
 # 
+nile_elf = {
+	color = { 0.1 0.6 0.1 }
+	created = 7.1.1
+	parents = { altmer ancient_egyptian }
+	#history_loc_override = ancient_egyptian_history_loc
+	ethos = ethos_bureaucratic
+	heritage = heritage_fantasy
+	language = language_ancient_egyptian
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_poetry
+		tradition_elf
+		tradition_egypt
+		tradition_land_of_the_bow
+	}
+	name_list = name_list_ancient_egyptian
+	coa_gfx = { east_african_coa_gfx } 
+	building_gfx = { african_building_gfx mena_building_gfx } 
+	clothing_gfx = { african_clothing_gfx mena_clothing_gfx }  #Replace with POD's Egyptian Clothing
+	unit_gfx = { sub_sahran_unit_gfx } 	
+	ethnicities = {
+		10 = faldorei_ethnicity
+	}
+}
+
 goblin = {
 	color = goblin
 	created = 10.1.1
