@@ -713,6 +713,33 @@ venerable = {
 		}
 	}
  }
+ start_belmont = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	character_travel_speed_mult = 1
+	character_travel_safety = 1
+	movement_speed = 1
+	prowess = 25
+	negate_health_penalty_add = 1
+	attraction_opinion = 20
+	health = 1
+	dynasty_opinion = 15
+	ruler_designer_cost = 100
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_belmont_desc
+			}
+			desc = trait_start_belmont_character_desc
+		}
+	}
+ }
 #
 super_saiyan = {
 	random_creation = 0
