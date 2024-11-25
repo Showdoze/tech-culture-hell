@@ -65,8 +65,14 @@
 	construction_time = slow_construction_time
 	type_icon = "icon_structure_castra_peregrina.dds"
 	can_construct_potential = {
-		barony = title:b_roma
+		#barony = title:b_roma
+		#provinces = { 2575 }
 		building_requirement_tribal = no
+		#scope:holder.culture = {
+		#	has_innovation = innovation_roman_concrete
+		#}
+	}
+	can_construct = {
 		culture = {
 			has_innovation = innovation_roman_concrete
 		}

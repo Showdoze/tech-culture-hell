@@ -740,6 +740,30 @@ venerable = {
 		}
 	}
  }
+ start_dragonborn = {
+	random_creation = 0
+	monthly_character_prestige = 0.5
+	character_travel_speed_mult = 1
+	movement_speed = 1
+	prowess = 10
+	health = 1
+	minority_opinion = 10
+	ruler_designer_cost = 100
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_start_dragonborn_desc
+			}
+			desc = trait_start_dragonborn_character_desc
+		}
+	}
+ }
 #
 super_saiyan = {
 	random_creation = 0

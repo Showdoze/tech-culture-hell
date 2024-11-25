@@ -276,7 +276,7 @@
 	effect = {
 		custom_description_no_bullet = { text = fp3_khvarenah_legacy_court_positions_effect	}
 	}
-}
+ }
 #SKAVEN RAT
  skaven_legacy_1 = { # Strength in Numbers
 	legacy = skaven_legacy_track
@@ -908,12 +908,67 @@
 	}
  }
   uchiha_legacy_5 = { # Centralized Rule
-	legacy = ser_roman_legacy_track
+	legacy = uchiha_legacy_track
 	character_modifier = {
 		tourney_participant_xp_gain_mult = 0.5
 		prowess = 5
 		county_opinion_add = 15
 		monthly_county_control_change_add = 0.5
+	}
+ }
+#Belmont
+ belmont_legacy_1 = { 
+	legacy = belmont_legacy_track
+	character_modifier = {
+		prowess = 1
+		positive_random_genetic_chance = 0.30
+		positive_inactive_inheritance_chance = 0.30
+		ai_boldness = medium_positive_ai_value
+		ai_energy = medium_positive_ai_value
+		dynasty_opinion = 10
+	}
+	ai_chance = { value = 0 }
+ }
+  belmont_legacy_2 = { 
+	legacy = belmont_legacy_track
+	effect = {
+		custom_description_no_bullet = { text = ep3_administrative_legacy_3_effect_family_rating }
+		custom_description_no_bullet = { text = erudition_legacy_4_effect }
+	}
+	character_modifier = {
+		prowess = 2
+		prowess_per_piety_level = 2
+		knight_effectiveness_mult = 0.15
+	}
+ }
+  belmont_legacy_3 = { # Revised-Reform's
+	legacy = belmont_legacy_track
+	character_modifier = {
+		prowess = 3
+		development_growth_factor = 0.2
+		powerful_vassal_opinion = 5
+		counter_efficiency = 0.15
+		advantage = 5
+	}
+ }
+  belmont_legacy_4 = { # Ruler's
+	legacy = belmont_legacy_track
+	character_modifier = {
+		monthly_county_control_change_add = 0.1
+		negative_random_genetic_chance = -0.30
+		negative_inactive_inheritance_chance = -0.30
+		life_expectancy = 5
+		supply_duration = 1
+	}
+ }
+  belmont_legacy_5 = { # Centralized Rule
+	legacy = belmont_legacy_track
+	character_modifier = {
+		tourney_participant_xp_gain_mult = 0.5
+		prowess = 5
+		monthly_county_control_change_add = 0.5
+		no_prowess_loss_from_age = yes
+		minority_opinion = 5
 	}
  }
 # 

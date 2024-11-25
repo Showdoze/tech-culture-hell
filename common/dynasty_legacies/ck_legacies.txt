@@ -1,9 +1,11 @@
-﻿ser_roman_legacy_track = {
+﻿ ser_roman_legacy_track = {
 	is_shown = {
 		dynasty = {
 			OR = {
 				dynast = {
-					this = culture:roman
+					culture = {
+						this = culture:roman
+					}
 				}
 				has_dynasty_perk = ser_roman_legacy_1
 			}
@@ -17,13 +19,23 @@ ocean_legacy_track = {
 
 scale_legacy_track = {
 	is_shown = {
+		OR = {
 		dynasty = {
 			OR = {
 				dynast = {
-				    faith = faith:hist
+					culture = {
+						OR = {
+							this = culture:argonian
+							any_parent_culture_or_above = {
+								this = culture:argonian
+							}
+						}
+					}
 				}
 				has_dynasty_perk = scale_legacy_1
 			}
+		}
+		has_trait = scaly
 		}
 	}
 }
@@ -33,7 +45,14 @@ usa_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					this = culture:american
+					culture = {
+						OR = {
+							this = culture:american
+							any_parent_culture_or_above = {
+								this = culture:american
+							}
+						}
+					}
 				}
 				has_dynasty_perk = usa_legacy_1
 			}
@@ -45,9 +64,6 @@ skaven_legacy_track = {
 	is_shown = {
 		dynasty = {
 			OR = {
-				dynast = {
-				    has_cultural_pillar = heritage_fantasy
-				}
 				has_dynasty_perk = skaven_legacy_1
 			}
 		}
@@ -59,8 +75,9 @@ chinese_bureaucracy_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-                        this = culture:han
-					    #religion = religion:taoism_religion
+					culture = {
+						this = culture:han
+					}
 				}
 				has_dynasty_perk = Chinese_bureaucracy_legacy
 			}
@@ -73,7 +90,9 @@ mafia_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					this = culture:italian_american
+					culture = {
+						this = culture:italian_american
+					}
 				}
 				has_dynasty_perk = mafia_legacy_1
 			}
@@ -86,7 +105,9 @@ japan_legacy_track = {
 		dynasty = {
 			OR = {
 				dynast = {
-					this = culture:japanese
+					culture = {
+						this = culture:japanese
+					}
 				}
 				has_dynasty_perk = japan_legacy_1
 			}
@@ -199,13 +220,11 @@ RICE_trans_saharan_trade_legacy_track = {
 
 dragonblood_legacy_track = {
 	is_shown = {
-		dynasty = {
-			OR = {
-				dynast = {
-				    has_cultural_pillar = heritage_fantasy
-				}
+		OR = {
+			dynasty = {
 				has_dynasty_perk = dragonborn_legacy_1
-			}
+		    }
+			has_trait = start_dragonborn
 		}
 	}
 }
@@ -223,21 +242,42 @@ hegemon_legacy_track = {
 
 magicka_legacy_track = {
 	is_shown = {
-		dynasty = {
-			OR = {
-				dynast = {
-				    has_cultural_pillar = heritage_fantasy
-				}
-				has_dynasty_perk = magicka_legacy_1
-			}
-		}
+		OR = {
+		    dynasty = {
+			    OR = {
+				    dynast = {
+					    culture = {
+					    #	this = culture:japanese
+					    }
+				    }
+				    has_dynasty_perk = magicka_legacy_1
+			    }
+		    }
+		    has_trait = follow_mage_water
+		    has_trait = follow_mage_fire
+		    has_trait = follow_mage_air
+		    has_trait = follow_mage_earth
+		    has_trait = follow_mage_death
+	    }
 	}
 }
 cappadocian_legacy_track = {
+	is_shown = {
+		OR = {
+			dynasty = {
+				has_dynasty_perk = cappadocian_legacy_1
+		    }
+			#has_trait = start_uchiha
+		}
+	}
+}
+belmont_legacy_track = {
     is_shown = {
 		OR = {
-			has_trait = giovanni
-			has_trait = cappadocian
+			dynasty = {
+				has_dynasty_perk = belmont_legacy_1
+		    }
+			has_trait = start_belmont
 		}
 	}
 }
