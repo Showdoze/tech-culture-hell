@@ -1185,6 +1185,1173 @@
         follow_bastet
 	}
  }
+#Greek 
+ follow_zeus = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	controlled_province_advantage = 3
+    dynasty_opinion = 10
+
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_zeus_desc
+			}
+			desc = trait_follow_zeus_desc
+		}
+	}
+    opposites = {
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_hera = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	spouse_opinion = 20
+    close_relative_opinion = 10
+    dynasty_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_hera_desc
+			}
+			desc = trait_follow_hera_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_athena = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	learning = 2
+    diplomacy = 2
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_athena_desc
+			}
+			desc = trait_follow_athena_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_ares = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	attacker_advantage = 3
+    prowess = 4
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_ares_desc
+			}
+			desc = trait_follow_ares_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_demeter = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	stewardship = 1
+    domain_tax_mult = 0.02
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_demeter_desc
+			}
+			desc = trait_follow_demeter_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_posidion = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	embarkation_cost_mult = -0.05
+    naval_movement_speed_mult = 0.05
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_posidion_desc
+			}
+			desc = trait_follow_posidion_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_dionysos = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	intrigue = 1
+    diplomacy = 1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_dionysos_desc
+			}
+			desc = trait_follow_dionysos_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_hephestios = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_hephestios_desc
+			}
+			desc = trait_follow_hephestios_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_hermes = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	domain_tax_same_faith_mult = 0.1
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_hermes_desc
+			}
+			desc = trait_follow_hermes_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_apollon = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	health = 0.25
+    vassal_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_apollon_desc
+			}
+			desc = trait_follow_apollon_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_aphrodite = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	attraction_opinion = 10
+    close_relative_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_aphrodite_desc
+			}
+			desc = trait_follow_aphrodite_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_artemis
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_artemis = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	prowess = 4
+    diplomacy = 2
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_artemis_desc
+			}
+			desc = trait_follow_artemis_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_herakles
+		follow_asklepios
+	}
+ }
+ follow_herakles = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	tolerance_advantage_mod = 4
+    prowess = 4
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_herakles_desc
+			}
+			desc = trait_follow_herakles_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_asklepios
+	}
+ }
+ follow_asklepios = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	health = 0.5
+    stress_gain_mult = -0.33
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_asklepios_desc
+			}
+			desc = trait_follow_asklepios_desc
+		}
+	}
+    opposites = {
+		follow_zeus
+		follow_hera
+		follow_athena
+		follow_ares
+		follow_demeter
+		follow_posidion
+		follow_dionysos
+		follow_hephestios
+		follow_hermes
+		follow_apollon
+		follow_aphrodite
+		follow_artemis
+		follow_herakles
+	}
+ }
+#aztec
+ follow_huitzilopochtli = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	controlled_province_advantage = 3
+    prowess = 3
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_huitzilopochtli_desc
+			}
+			desc = trait_follow_huitzilopochtli_desc
+		}
+	}
+    opposites = {
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_tlaloc = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	jungle_attrition_mult = -0.35
+    forest_attrition_mult = -0.25
+    taiga_attrition_mult = -0.2
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_tlaloc_desc
+			}
+			desc = trait_follow_tlaloc_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_tonatiuh = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	raid_speed = 1.0
+    hostile_county_attrition = -0.75
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_tonatiuh_desc
+			}
+			desc = trait_follow_tonatiuh_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_tezcatlipoca = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	enemy_hostile_scheme_success_chance_add = -5
+    travel_danger = -1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_tezcatlipoca_desc
+			}
+			desc = trait_follow_tezcatlipoca_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_chalchiuhtlicue = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	no_water_crossing_penalty = yes
+    coastal_advantage = 5
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_chalchiuhtlicue_desc
+			}
+			desc = trait_follow_chalchiuhtlicue_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_centeotl = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	supply_capacity_mult = 0.2
+    supply_duration = 1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_centeotl_desc
+			}
+			desc = trait_follow_centeotl_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_quetzalcoatl = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	cultural_head_fascination_mult = 0.1
+    learning = 3
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_quetzalcoatl_desc
+			}
+			desc = trait_follow_quetzalcoatl_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_xipe_totec
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_xipe_totec = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	fertility = 0.25
+    attraction_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_xipe_totec_desc
+			}
+			desc = trait_follow_xipe_totec_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_mayahuel
+		follow_tlaltecuhtli
+	}
+ }
+ follow_mayahuel = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	guest_opinion = 5
+    befriend_scheme_power_mult = 0.3
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mayahuel_desc
+			}
+			desc = trait_follow_mayahuel_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_tlaltecuhtli
+	}
+ }
+ follow_tlaltecuhtli = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		martial = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.02
+	fertility = 0.25
+    attraction_opinion = 10
+    close_relative_opinion = 10
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_tlaltecuhtli_desc
+			}
+			desc = trait_follow_tlaltecuhtli_desc
+		}
+	}
+    opposites = {
+		follow_huitzilopochtli
+		follow_tlaloc
+		follow_tonatiuh
+		follow_tezcatlipoca
+		follow_chalchiuhtlicue
+		follow_centeotl
+		follow_quetzalcoatl
+		follow_xipe_totec
+		follow_mayahuel
+	}
+ }
 #MISC
  follow_cthulhu = {
     category = fame

@@ -36,7 +36,6 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
-                        faith = faith:norse_pagan
                         faith = faith:hellenic_pagan
                         faith = faith:norse_pagan
                         faith = faith:kemetic_pagan
@@ -110,7 +109,6 @@ tr_select_deity.01 = {
                         faith = faith:roman_pagan
                         faith = faith:norse_pagan
                         faith = faith:hellenic_pagan
-                        faith = faith:norse_pagan
                         faith = faith:kemetic_pagan
                         faith = faith:basque_pagan
                         faith = faith:magyar_pagan
@@ -135,6 +133,8 @@ tr_select_deity.01 = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        faith = faith:cult_of_tlaloc
+                        faith = faith:cult_of_tezcatlipoca
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -625,6 +625,32 @@ tr_select_deity.01 = {
         add_trait = follow_jupiter
     }
 
+    ###NORSE
+     option = {
+        name = god_choice_odin
+        trigger = {
+            AND = {
+                faith = faith:norse_pagan
+                NOT = {
+                    has_trait = follow_odin
+                }
+            }
+        }
+        add_trait = follow_odin
+    }
+     option = {
+        name = god_choice_thor
+        trigger = {
+            AND = {
+                faith = faith:norse_pagan
+                NOT = {
+                    has_trait = follow_thor
+                }
+            }
+        }
+        add_trait = follow_thor
+    }
+
     ####Kemet
 
     option = {
@@ -747,6 +773,157 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hathor
     }
+    ####aztec
+    option = {
+        name = god_choice_huitzilopochtli
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_huitzilopochtli
+                }
+            }
+        }
+        add_trait = follow_huitzilopochtli
+    }
+    option = {
+        name = god_choice_tlaloc
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_tlaloc
+                }
+            }
+        }
+        add_trait = follow_tlaloc
+    }
+    option = {
+        name = god_choice_tonatiuh
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_tonatiuh
+                }
+            }
+        }
+        add_trait = follow_tonatiuh
+    }
+    option = {
+        name = god_choice_tezcatlipoca
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_tezcatlipoca
+                }
+            }
+        }
+        add_trait = follow_tezcatlipoca
+    }
+    option = {
+        name = god_choice_chalchiuhtlicue
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_chalchiuhtlicue
+                }
+            }
+        }
+        add_trait = follow_chalchiuhtlicue
+    }
+    option = {
+        name = god_choice_centeotl
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_centeotl
+                }
+            }
+        }
+        add_trait = follow_centeotl
+    }
+    option = {
+        name = god_choice_quetzalcoatl
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_quetzalcoatl
+                }
+            }
+        }
+        add_trait = follow_quetzalcoatl
+    }
+    option = {
+        name = god_choice_xipe_totec
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_xipe_totec
+                }
+            }
+        }
+        add_trait = follow_xipe_totec
+    }
+    option = {
+        name = god_choice_mayahuel
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_mayahuel
+                }
+            }
+        }
+        add_trait = follow_mayahuel
+    }
+    option = {
+        name = god_choice_tlaltecuhtli
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_tlaltecuhtli
+                }
+            }
+        }
+        add_trait = follow_tlaltecuhtli
+    }
     ##### PAGAN
 
     option = {
@@ -756,7 +933,6 @@ tr_select_deity.01 = {
                 faith = faith:roman_pagan
                 faith = faith:norse_pagan
                 faith = faith:hellenic_pagan
-                faith = faith:norse_pagan
                 faith = faith:kemetic_pagan
                 faith = faith:basque_pagan
                 faith = faith:magyar_pagan
@@ -793,7 +969,6 @@ tr_select_deity.01 = {
                 faith = faith:roman_pagan
                 faith = faith:norse_pagan
                 faith = faith:hellenic_pagan
-                faith = faith:norse_pagan
                 faith = faith:kemetic_pagan
                 faith = faith:basque_pagan
                 faith = faith:magyar_pagan

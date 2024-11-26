@@ -227,6 +227,17 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_ancient_egypt_temple.dds"
     }
     picture = {
+        trigger = { faith = faith:norse_pagan }
+        reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+    }
+    picture = {
+        OR = {
+            trigger = { faith = faith:cult_of_tlaloc }
+            trigger = { faith = faith:cult_of_tezcatlipoca }
+        }
+        reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+    }
+    picture = {
         trigger = {
             OR = {
                 has_trait = lunatic_1
@@ -294,6 +305,8 @@ tr_select_personal_deity_decision = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        faith = faith:cult_of_tlaloc
+                        faith = faith:cult_of_tezcatlipoca
                     }
                 }
                 desc = pagan_select_god_decision
@@ -365,6 +378,8 @@ tr_select_personal_deity_decision = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        faith = faith:cult_of_tlaloc
+                        faith = faith:cult_of_tezcatlipoca
                     }
                 }
                 desc = pagan_select_god_decision_desc

@@ -1,7 +1,6 @@
 ﻿# ROMAN LEGACIES
  ser_roman_legacy_1 = { # Legacy
 	legacy = ser_roman_legacy_track
-
 	character_modifier = {
 		diplomatic_range_mult = 0.3
 		positive_random_genetic_chance = 0.30
@@ -9,12 +8,10 @@
 		ai_boldness = medium_positive_ai_value
 		ai_energy = medium_positive_ai_value
 	}
-
 	effect = {
 		# More likely to accept Demand Conversion requests.
 		custom_description_no_bullet = { text = fp1_adventure_legacy_3_effect }
 	}
-
 	ai_chance = {
 		value = 11
 		if = {
@@ -33,17 +30,14 @@
  }
  ser_roman_legacy_2 = { # Reinvigirated
 	legacy = ser_roman_legacy_track
-
 	effect = {
 		custom_description_no_bullet = {
 			text = erudition_legacy_4_effect
 		}
 	}
-	
 	character_modifier = {
 		faith_creation_piety_cost_mult = -0.2
 	}
-
 	doctrine_character_modifier = {
 		name = erudition_legacy_4_modifier_name
 		doctrine = doctrine_no_head
@@ -62,7 +56,6 @@
  }
  ser_roman_legacy_3 = { # Revised-Reform's
 	legacy = ser_roman_legacy_track
-
 	character_modifier = {
 		development_growth_factor = 0.2
 		powerful_vassal_opinion = 5
@@ -72,7 +65,6 @@
  }
  ser_roman_legacy_4 = { # Ruler's
 	legacy = ser_roman_legacy_track
-
 	character_modifier = {
 		name = blood_legacy_3_modifier
 		negative_random_genetic_chance = -0.30
@@ -82,7 +74,6 @@
  }
  ser_roman_legacy_5 = { # Centralized Rule
 	legacy = ser_roman_legacy_track
-
 	character_modifier = {
 		monthly_county_control_change_add = 0.2
 	    build_gold_cost = -0.1
@@ -221,7 +212,6 @@
 #USA
  usa_legacy_1 = { # Crossing the Delaware
 	legacy = usa_legacy_track
-
 	character_modifier = {
 		diplomatic_range_mult = 0.3
 		ai_boldness = medium_positive_ai_value
@@ -233,7 +223,6 @@
  }
  usa_legacy_2 = { # Declaration 
 	legacy = usa_legacy_track
-
 	character_modifier = {
 		faith_creation_piety_cost_mult = -0.2
 		title_creation_cost_mult = -0.2
@@ -244,7 +233,6 @@
  }
  usa_legacy_3 = { # Era of the Common Man
 	legacy = usa_legacy_track
-
 	character_modifier = {
 		short_reign_duration_mult = -0.2
 		courtier_and_guest_opinion = 10
@@ -253,7 +241,6 @@
  }
  usa_legacy_4 = { # military congress
 	legacy = usa_legacy_track
-
 	character_modifier = {
 	}
 	effect = {
@@ -265,7 +252,6 @@
  }
  usa_legacy_5 = { # Freedom
 	legacy = usa_legacy_track
-
 	character_modifier = {
 		monthly_county_control_change_add = 0.2
 		diplomatic_range_mult = 0.3
@@ -695,19 +681,15 @@
  }
  magicka_legacy_1 = {
 	legacy = magicka_legacy_track
+	character_modifier = {
+		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		ai_sociability = medium_positive_ai_value
+	}
 	effect = {
-		custom_description_no_bullet = { # Arcana boost
-			text = magicka_legacy_1_a_effect
-		}
-		custom_description_no_bullet = { # Magicka regeneration boost
-			text = magicka_legacy_1_b_effect
-		}
-		custom_description_no_bullet = { # 20% chance of getting positive arcana congenital traits upon birth
-			text = magicka_legacy_1_c_effect
-		}
-		custom_description_no_bullet = {
-			text = magicka_legacy_trigger
-		}
+		# Can learn one extra language
+		custom_description_no_bullet = { text = legacy_additional_language_effect }
+		# Cultural Acceptance from successful Learn Language schemes
+		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
 	}
 	ai_chance = {
 		value = 11
@@ -722,56 +704,29 @@
  magicka_legacy_2 = {
 	legacy = magicka_legacy_track
 	character_modifier = {
-		mages_max_size_add = 1
-		mages_damage_add = 5
-		mages_damage_mult = 0.1
-		mages_pursuit_add = 5
-		mages_pursuit_mult = 0.1
-		mages_toughness_add = 5
-		mages_toughness_mult = 0.1
-		mages_screen_add = 5
-		mages_screen_mult = 0.1
-		mages_siege_value_add = 0.1
-		mages_siege_value_mult = 0.1
-		spellblades_max_size_add = 1
-		spellblades_damage_add = 5
-		spellblades_damage_mult = 0.1
-		spellblades_pursuit_add = 5
-		spellblades_pursuit_mult = 0.1
-		spellblades_toughness_add = 5
-		spellblades_toughness_mult = 0.1
-		spellblades_screen_add = 5
-		spellblades_screen_mult = 0.1
+		cultural_head_fascination_mult = 0.10
 	}
  }
  magicka_legacy_3 = {
 	legacy = magicka_legacy_track
-	effect = {
-		custom_description_no_bullet = { # Can educate kids in magical arts even without the inno
-			text = magicka_legacy_3_a_effect
-		}
-		custom_description_no_bullet = { # If you have the inno, magical arts education is a bit more effective
-			text = magicka_legacy_3_b_effect
-		}
-	}
 	character_modifier = {
-		monthly_magic_lifestyle_xp_gain_mult = 0.1
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		development_growth_factor = 0.2
 	}
-}
+ }
  magicka_legacy_4 = {
 	legacy = magicka_legacy_track
 	effect = {
-		custom_description_no_bullet = { # Unlocks Arcanic Court Type, Court Grandeur boost for Arcanic
-			text = magicka_legacy_4_a_effect
+		custom_description_no_bullet = {
+			text = erudition_legacy_4_effect
 		}
 	}
  }
  magicka_legacy_5 = {
 	legacy = magicka_legacy_track
-
 	effect = {
-		custom_description_no_bullet = { # Free ritual
-			text = magicka_legacy_5_a_effect
+		custom_description_no_bullet = {
+			text = erudition_legacy_5_effect
 		}
 	}
  }
