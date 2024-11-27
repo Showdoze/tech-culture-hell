@@ -28,12 +28,6 @@ fantasy_religion = {
 	doctrine = doctrine_pilgrimage_encouraged
 	#Funeral tradition
 	doctrine = doctrine_funeral_stoic
-	
-	#reserved_male_names = {
-	#	Yagrum Kagrenac Dumac
-	#}
-	#reserved_female_names = {	
-	#}
 	custom_faith_icons = {
 		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 
 		custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 
@@ -462,7 +456,7 @@ fantasy_religion = {
 				TheZiEbicCannibal BeastofBirkenshaw MetalFang TheFloridaSexBeast 
 				TheYorkshireRipper ThePiousPoisoner TheHammerman TheToolBoxKillers 
 				LarryBittaker TheHillsideStranglers KennethBianchi AngeloBuono 
-				BaselineKiller WalterWhite 
+				BaselineKiller WalterWhite god_bhaal god_bane god_myrkul god_cyric 
 		    }
 	        reserved_female_names = {	
 				aileen_wuornos BelleGunness JaneToppan RosemaryWest TheZodiacKiller 
@@ -548,13 +542,21 @@ fantasy_religion = {
 				PantheonTerm2 = religion_the_killer_2
 				PantheonTerm3 = religion_the_killer_3
 				PantheonTermHasHave = pantheon_term_have
-			    GoodGodNames = { god_terror_mask god_joker god_judge_holden god_cain god_john_wayne_gacy god_jack_ripper god_hhholmes god_sweet_tooth god_clarence_boddicker god_micheal_myers god_malebolgia god_mad_sam }
+			    GoodGodNames = { 
+					god_terror_mask god_joker god_judge_holden god_cain god_john_wayne_gacy 
+					god_jack_ripper god_hhholmes god_sweet_tooth god_clarence_boddicker 
+					god_micheal_myers god_malebolgia god_mad_sam god_bane god_bhaal 
+					god_myrkul god_cyric 
+				}
 				DevilName = blood_devil_name
 				DevilNamePossessive = blood_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
 				DevilHerHis = CHARACTER_HERHIS_HIS
 				DevilHerselfHimself = CHARACTER_HIMSELF
-			    EvilGodNames = { god_jesus }
+			    EvilGodNames = { 
+					god_jesus god_arkay_name god_liquid_chris god_bahamut 
+					god_corellon_larethian 
+				}
 				HouseOfWorship = paganism_house_of_worship
 				HouseOfWorship2 = blood_house_of_worship_2
 				HouseOfWorship3 = blood_house_of_worship_3

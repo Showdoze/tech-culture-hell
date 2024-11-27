@@ -246,6 +246,14 @@ tr_select_personal_deity_decision = {
         }
         reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
     }
+    picture = {
+        trigger = { faith = faith:blood_faith }
+        reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds"
+    }
+    picture = {
+        trigger = { faith = faith:imperial_cult }
+        reference = "gfx/interface/illustrations/decisions/decision_imperial_faith.dds"
+    }
     title = {
         first_valid = {
             triggered_desc = {
@@ -316,6 +324,18 @@ tr_select_personal_deity_decision = {
                     faith = faith:mage_faith
                 }
                 desc = mage_select_school_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision
             }
         }
     }
@@ -390,6 +410,18 @@ tr_select_personal_deity_decision = {
                 }
                 desc = mage_select_school_decision_desc
             }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision_desc
+            }
         }
     }
     selection_tooltip = {
@@ -460,6 +492,18 @@ tr_select_personal_deity_decision = {
                     faith = faith:mage_faith
                 }
                 desc = mage_select_school_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision_tip
             }
         }
     }
@@ -532,6 +576,18 @@ tr_select_personal_deity_decision = {
                 }
                 desc = mage_select_school_decision_confirm
             }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision_confirm
+            }
         }
     }
     is_shown = {
@@ -570,6 +626,10 @@ tr_select_personal_deity_decision = {
                 faith = faith:kushitism_pagan
                 faith = faith:kiratism
                 faith = faith:yumaism
+                faith = faith:cult_of_tlaloc
+                faith = faith:cult_of_tezcatlipoca
+                faith = faith:imperial_cult
+                faith = faith:blood_faith
                 #faith = faith:
             }
             NOT = {

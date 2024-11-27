@@ -145,6 +145,18 @@ tr_select_deity.01 = {
                 }
                 desc = mage_select_school_decision_desc
             }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision_desc
+            }
         }
     }
 
