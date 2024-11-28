@@ -2370,11 +2370,6 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
-	}
 	monthly_character_prestige = 0.05
 	christianity_religion_opinion = 15
 	rf_pagan_opinion = -20
@@ -2414,11 +2409,6 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
-	}
 	monthly_character_prestige = 0.05
 	monthly_influence = 1
 	stewardship_per_prestige_level = 1
@@ -2457,11 +2447,6 @@
 	culture_modifier = {
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
-	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
 	}
 	monthly_character_prestige = 0.05
 	monthly_influence = 1
@@ -2504,11 +2489,6 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
-	}
 	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
 	intrigue_per_piety_level = 1
 	ruler_designer_cost = 15
@@ -2544,11 +2524,6 @@
 	culture_modifier = {
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
-	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
 	}
 	monthly_character_prestige = 0.03
 	owned_hostile_scheme_success_chance_max_add = 10
@@ -2587,11 +2562,6 @@
 	culture_modifier = {
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
-	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
 	}
 	monthly_character_prestige = 0.03
 	tyranny_gain_mult = -0.5
@@ -2632,15 +2602,13 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
-	culture_modifier = {
-		parameter = dry_trait_bonuses
-		drylands_attrition_mult = -0.25
-		desert_attrition_mult = -0.25
-	}
-	monthly_character_prestige = 0.03
+	monthly_character_prestige = 0.01
 	health = 1
 	dread_gain_mult = 0.1
+	monthly_prestige_gain_per_dread_add = 0.05
+	men_at_arms_maintenance_per_dread_mult = -0.0025
 	dread_baseline_add = 35
+	knight_effectiveness_per_dread = 0.002
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -2653,6 +2621,45 @@
 				desc = trait_follow_b_myrkul_desc
 			}
 			desc = trait_follow_b_myrkul_character_desc
+		}
+	}
+    opposites = {
+	}
+ }
+ follow_b_caleb = {
+    category = fame
+	random_creation = 0
+	same_opinion = 15
+    monthly_piety = 0.3
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		learning = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.03
+	prowess_per_piety_level = 1
+	prowess_per_prestige_level = 1
+	knight_effectiveness_per_prowess = 0.01
+	dread_gain_mult = 0.1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_b_caleb_desc
+			}
+			desc = trait_follow_b_caleb_character_desc
 		}
 	}
     opposites = {
