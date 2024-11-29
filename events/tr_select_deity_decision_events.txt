@@ -72,6 +72,18 @@ tr_select_deity.01 = {
                 }
                 desc = mage_select_school_decision
             }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:imperial_cult
+                }
+                desc = ruler_select_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:blood_faith
+                }
+                desc = killer_select_decision
+            }
         }
     }
     desc = {
@@ -358,7 +370,9 @@ tr_select_deity.01 = {
                 }
                 OR = {
                     has_trait = possessed_1
+                    has_trait = possessed_genetic
                     has_trait = lunatic_1
+                    has_trait = lunatic_genetic
                 }
             }
         }
@@ -373,7 +387,9 @@ tr_select_deity.01 = {
                 }
                 OR = {
                     has_trait = possessed_1
+                    has_trait = possessed_genetic
                     has_trait = lunatic_1
+                    has_trait = lunatic_genetic
                 }
             }
         }
@@ -536,8 +552,7 @@ tr_select_deity.01 = {
     }
 
     ####MAGE
-
-    option = {
+     option = {
         name = mage_select_water
         trigger = {
             AND = {
@@ -547,9 +562,9 @@ tr_select_deity.01 = {
                 }
             }
         }
-        add_trait = follow_mage_water
+         add_trait = follow_mage_water
     }
-    option = {
+     option = {
         name = mage_select_fire
         trigger = {
             AND = {
@@ -560,8 +575,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_fire
-    }
-    option = {
+     }
+     option = {
         name = mage_select_air
         trigger = {
             AND = {
@@ -572,8 +587,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_air
-    }
-    option = {
+     }
+     option = {
         name = mage_select_earth
         trigger = {
             AND = {
@@ -584,8 +599,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_earth
-    }
-    option = {
+     }
+     option = {
         name = mage_select_death
         trigger = {
             AND = {
@@ -596,11 +611,10 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_death
-    }
-
+     }
     ######Roman PAGAN
 
-    option = {
+     option = {
         name = god_choice_sol
         trigger = {
             AND = {
@@ -611,8 +625,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_sol
-    }
-    option = {
+     }
+     option = {
         name = god_choice_mars
         trigger = {
             AND = {
@@ -623,8 +637,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mars
-    }
-    option = {
+     }
+     option = {
         name = god_choice_jove
         trigger = {
             AND = {
@@ -635,7 +649,7 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_jupiter
-    }
+     }
 
     ###NORSE
      option = {
@@ -936,6 +950,116 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaltecuhtli
     }
+    ####Imperial
+     option = {
+        name = god_choice_justinian
+        trigger = {
+            AND = {
+                faith = faith:imperial_cult
+                NOT = {
+                    has_trait = follow_justinian
+                }
+            }
+        }
+        add_trait = follow_justinian
+     }
+     option = {
+        name = god_choice_augustus
+        trigger = {
+            AND = {
+                faith = faith:imperial_cult
+                NOT = {
+                    has_trait = follow_augustus
+                }
+            }
+        }
+        add_trait = follow_augustus
+    }
+     option = {
+        name = god_choice_diocletian
+        trigger = {
+            AND = {
+                faith = faith:imperial_cult
+                NOT = {
+                    has_trait = follow_diocletian
+                }
+            }
+        }
+        add_trait = follow_diocletian
+     }
+    ###Blood
+     option = {
+        name = god_choice_ripper
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_ripper
+                }
+            }
+        }
+        add_trait = follow_b_ripper
+     }
+     option = {
+        name = god_choice_bhaal
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_bhaal
+                }
+            }
+        }
+        add_trait = follow_b_bhaal
+    }
+     option = {
+        name = god_choice_bane
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_bane
+                }
+            }
+        }
+        add_trait = follow_b_bane
+     }
+     option = {
+        name = god_choice_myrkul
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_myrkul
+                }
+            }
+        }
+        add_trait = follow_b_myrkul
+     }
+     option = {
+        name = god_choice_caleb
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_caleb
+                }
+            }
+        }
+        add_trait = follow_b_caleb
+     }
+     option = {
+        name = god_choice_madara
+        trigger = {
+            AND = {
+                faith = faith:blood_faith
+                NOT = {
+                    has_trait = follow_b_madara
+                }
+            }
+        }
+        add_trait = follow_b_madara
+     }
     ##### PAGAN
 
     option = {

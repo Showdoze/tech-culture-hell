@@ -2665,6 +2665,45 @@
     opposites = {
 	}
  }
+ follow_b_madara = {
+    category = fame
+	random_creation = 0
+	same_opinion = -5
+    monthly_piety = 0.1
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		learning = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_character_prestige = 0.03
+	prowess_per_piety_level = 1
+	prowess_per_prestige_level = 2
+	knight_effectiveness_per_prowess = 0.01
+	dread_gain_mult = 0.1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_b_madara_desc
+			}
+			desc = trait_follow_b_madara_character_desc
+		}
+	}
+    opposites = {
+	}
+ }
 #MISC
  follow_cthulhu = {
     category = fame
