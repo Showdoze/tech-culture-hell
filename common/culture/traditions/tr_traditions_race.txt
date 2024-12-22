@@ -818,6 +818,65 @@ tradition_thief_city = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
+tradition_sus = {
+	category = combat
+	layers = {
+		0 = martial
+		1 = western
+		4 = sus.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:sus_culture
+			any_parent_culture_or_above = {
+				this = culture:sus_culture
+			}
+		}
+	}
+	parameters = {
+		intrigue_education_better_outcomes = yes
+		disloyal_trait_more_common = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		hostile_action_vs_rival_bonuses = yes
+		less_likely_to_culture_convert = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
+		ambitious_trait_more_common = yes
+		has_access_to_trials_by_combat = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		more_expensive_feasts = yes
+		hunting_traits_more_valued = yes
+		doesnt_care_about_culture_faith_in_factions = yes
+		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		prowess_per_prestige_level = 1
+	}
+	cost = { prestige = 20000 }
+	ai_will_do = { value = 0 }
+ }
 #ELDER SCROLLS #
  tradition_bosmer = {
 	category = regional
