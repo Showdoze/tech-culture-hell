@@ -95,20 +95,45 @@ old_dwarven = {
 }
 #DND
  drow = {
-	color = { 0.1 0.6 0.1 }
+	color = { 0.0 0.0 0.0 }
 	created = 1.1.1
-	history_loc_override = mystery_history_loc
+	history_loc_override = drow_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy
 	language = language_anglic
 	martial_custom = martial_custom_equal
 	traditions = {
 		tradition_drow
+		tradition_female_only_inheritance
+		tradition_cutthroat_politics
+		tradition_mendicant_mystics
 	}
 	name_list = name_list_drow
 	coa_gfx = { east_african_coa_gfx } 
 	building_gfx = { african_building_gfx mena_building_gfx } 
-	clothing_gfx = { african_clothing_gfx mena_clothing_gfx }  #Replace with POD's Egyptian Clothing
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx } 	
+	ethnicities = {
+		10 = drow_eth
+	}
+ }
+ gith = {
+	color = { 0.1 0.6 0.1 }
+	created = 1.1.1
+	history_loc_override = gith_history_loc
+	ethos = ethos_bureaucratic
+	heritage = heritage_fantasy
+	language = language_anglic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_gith
+		tradition_equal_inheritance
+		tradition_warrior_culture
+	}
+	name_list = name_list_gith
+	coa_gfx = { east_african_coa_gfx } 
+	building_gfx = { african_building_gfx mena_building_gfx } 
+	clothing_gfx = { african_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { sub_sahran_unit_gfx } 	
 	ethnicities = {
 		10 = faldorei_ethnicity
@@ -373,6 +398,7 @@ nile_elf = {
 		tradition_elf
 		tradition_egypt
 		tradition_land_of_the_bow
+		tradition_african_tolerance
 	}
 	name_list = name_list_ancient_egyptian
 	coa_gfx = { east_african_coa_gfx } 

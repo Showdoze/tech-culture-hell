@@ -235,16 +235,69 @@ tradition_giant = {
 	}
 	parameters = {
 		vengeful_trait_more_common = yes
+		ambitious_trait_more_common = yes
 		vengeful_positive_forgiving_negative = yes
 		rivalries_more_common = yes
 		hostile_action_vs_rival_bonuses = yes
 		arrogant_trait_more_common = yes
 		tells_stories = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		may_challenge_to_board_games = yes
+		may_wager_land_on_board_games = yes
+		house_hostility_more_common = yes
+		vassals_more_likely_to_refuse_demands = yes
+		weak_traits_looked_down_upon = yes
+		has_access_to_runestones = yes
 	}
 	character_modifier = {
 		life_expectancy = 500
 		no_prowess_loss_from_age = yes
 		years_of_fertility = 100
+		cultural_acceptance_gain_mult = -1
+		ai_honor = -100
+		dread_baseline_add = 10
+		different_culture_opinion = -25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_gith = {
+	category = regional
+	layers = {
+		0 = martial
+		#1 = indian
+		4 = dnd_gith.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:gith
+			any_parent_culture_or_above = {
+				this = culture:gith
+			}
+		}
+	}
+	parameters = {
+		has_access_to_trials_by_combat = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		rivalries_more_common = yes
+		hostile_action_vs_rival_bonuses = yes
+		arrogant_trait_more_common = yes
+		tells_stories = yes
+		craven_trait_costs_prestige = yes
+		weak_traits_looked_down_upon = yes
+	}
+	character_modifier = {
+		life_expectancy = 75
+		knight_effectiveness_mult = 1
+		no_prowess_loss_from_age = yes
+		years_of_fertility = 100
+		dread_baseline_add = 25
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
