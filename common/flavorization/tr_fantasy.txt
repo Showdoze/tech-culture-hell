@@ -919,4 +919,33 @@
 	council_position = councillor_spymaster
 	name_lists = { name_list_dwemer }
  }
-# 
+#drow
+ king_drow_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 100
+	name_lists = { name_list_drow }
+	top_liege = no
+	only_holder = yes
+ }
+ emp_drow_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 100
+	name_lists = { name_list_drow }
+	top_liege = no
+	only_holder = yes
+ }
+ drow_queen_mother = { #Mother of the Nation
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_drow}
+	priority = 100
+	top_liege = no
+ }
+#

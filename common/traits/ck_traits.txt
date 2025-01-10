@@ -41,6 +41,17 @@ peasant_born = {
 		parameter = grants_to_lowborns_bonuses
 		development_growth_factor = 0.2
 	}
+	name = {
+		first_valid = {
+            triggered_desc = {
+				trigger = {
+					culture = { has_innovation = innovation_drow_build }
+				}
+				desc = trait_peasant_born_drow
+			}
+			desc = trait_peasant_born
+		}
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -76,6 +87,17 @@ patrician_born = {
 	culture_modifier = {
 		parameter = palace_politics_trait_bonuses
 		monthly_influence = 0.25
+	}
+	name = {
+		first_valid = {
+            triggered_desc = {
+				trigger = {
+					culture = { has_innovation = innovation_drow_build }
+				}
+				desc = trait_patrician_born_drow
+			}
+			desc = trait_patrician_born
+		}
 	}
 	desc = {
 		first_valid = {

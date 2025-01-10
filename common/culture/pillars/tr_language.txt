@@ -522,4 +522,37 @@ language_mando = {
 	
 	color = nordic
 }
-
+language_drow = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_drow
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_drow }
+			multiply = 10
+		}
+	}
+	
+	color = nordic
+}
+language_gith = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_gith
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_gith }
+			multiply = 10
+		}
+	}
+	
+	color = nordic
+}

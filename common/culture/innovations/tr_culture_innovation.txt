@@ -824,6 +824,32 @@
 		build_speed = -0.01
 	}
  } 
+#Drow
+  @dnd_drow_1 = "gfx/interface/icons/culture_innovations/dnd_drow_1.dds"
+ innovation_drow_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @dnd_drow_1
+	potential = {	
+		this = culture:drow		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ } 
+#Gith
+ @dnd_gith_1 = "gfx/interface/icons/culture_innovations/dnd_gith_1.dds"
+ innovation_gith_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @dnd_gith_1
+	potential = {	
+		this = culture:gith		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ } 
 #Thief
  @thief_city_watch = "gfx/interface/icons/culture_innovations/thief_city_watch.dds"
   @thief_mechanist = "gfx/interface/icons/culture_innovations/thief_mechanist.dds"
