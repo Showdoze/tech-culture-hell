@@ -234,6 +234,7 @@ tradition_giant = {
 		}
 	}
 	parameters = {
+		less_likely_to_culture_convert = yes
 		vengeful_trait_more_common = yes
 		ambitious_trait_more_common = yes
 		vengeful_positive_forgiving_negative = yes
@@ -248,6 +249,10 @@ tradition_giant = {
 		vassals_more_likely_to_refuse_demands = yes
 		weak_traits_looked_down_upon = yes
 		has_access_to_runestones = yes
+		ai_doesnt_marry_outside_culture = yes
+		expensive_convert_to_local_culture = yes
+		dislikes_marrying_outside_of_culture = yes 
+		courtiers_less_likely_to_leave_same_culture_court = yes
 	}
 	character_modifier = {
 		life_expectancy = 500
@@ -890,7 +895,7 @@ tradition_thief_city = {
 	ai_will_do = { value = 0 }	
 }
 tradition_sus = {
-	category = combat
+	category = regional
 	layers = {
 		0 = martial
 		1 = western
