@@ -2476,7 +2476,6 @@
     category = fame
 	random_creation = 0
 	same_opinion = 15
-	opposite_opinion = -20
     monthly_piety = 0.3
     culture_modifier = {
 		parameter = prowess_from_religious_traits
@@ -2511,8 +2510,8 @@
 			desc = trait_follow_bahamut_character_desc
 		}
 	}
-    opposites = {
-		follow_tiamat
+	compatibility = {
+		follow_tiamat = -20
 	}
  }
  follow_b_bane = {
@@ -3597,7 +3596,6 @@
     category = fame
 	random_creation = 0
 	same_opinion = 15
-	opposite_opinion = -20
     monthly_piety = 0.3
     culture_modifier = {
 		parameter = prowess_from_religious_traits
@@ -3631,8 +3629,8 @@
 			desc = trait_follow_tiamat_character_desc
 		}
 	}
-    opposites = {
-		follow_bahamut
+	compatibility = {
+		follow_bahamut = -20
 	}
  }
  follow_tymora = {

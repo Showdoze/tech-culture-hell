@@ -5,6 +5,7 @@
 	}
 	random_creation = 0
 	same_opinion = 5
+	same_culture_opinion = 10
 	monthly_character_prestige = 0.02
 	shown_in_ruler_designer = no
 	ruler_designer_cost = 5
@@ -791,6 +792,1341 @@ venerable = {
 	}
  }
 #DND CLASS
+ class_bar = {
+	shown_in_ruler_designer = yes
+	martial = 2
+	prowess = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bar_desc
+			}
+			desc = trait_class_bar_desc
+		}
+	}
+	monthly_prestige = 0.01
+	movement_speed = 0.01
+	ruler_designer_cost = 20
+	ai_energy = 10
+	ai_boldness = 10
+  }
+  class_bar_berserker = {
+	shown_in_ruler_designer = yes
+	prowess = 5
+	dread_baseline_add = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bar_berserker_desc
+			}
+			desc = trait_class_bar_berserker_desc
+		}
+	}
+	opposites = {
+		class_bar_wild_magic
+		class_bar_wildheart
+	}
+	monthly_prestige = 0.01
+	movement_speed = 0.01
+	prowess_per_prestige_level = 2
+	prowess_per_stress_level = 5
+	ruler_designer_cost = 20
+	ai_energy = 10
+	ai_boldness = 10
+	ai_rationality = medium_negative_ai_value
+  }
+  class_bar_wild_magic = {
+	shown_in_ruler_designer = yes
+	prowess = 3
+	dread_baseline_add = 30
+	flag = higher_chance_of_dying_in_battle
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bar_wild_magic_desc
+			}
+			desc = trait_class_bar_wild_magic_desc
+		}
+	}
+	opposites = {
+		class_bar_wildheart
+		class_bar_berserker
+	}
+	monthly_prestige = 0.01
+	movement_speed = 0.01
+	ruler_designer_cost = 20
+	ai_rationality = -50
+  }
+  class_bar_wildheart = {
+	shown_in_ruler_designer = yes
+	prowess = 3
+	courtly_same_culture_opinion = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bar_wildheart_desc
+			}
+			desc = trait_class_bar_wildheart_desc
+		}
+	}
+	opposites = {
+		class_bar_wild_magic
+		class_bar_berserker
+	}
+	monthly_prestige = 0.01
+	movement_speed = 0.01
+	ruler_designer_cost = 20
+  }
+ class_bard = {
+	shown_in_ruler_designer = yes
+	seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	diplomacy = 3
+	#diplomacy_per_prestige_level = 1
+	attraction_opinion = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bard_desc
+			}
+			desc = trait_class_bard_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_energy = 10
+	ai_sociability = 10
+  }
+  class_bard_college_of_lore = {
+	shown_in_ruler_designer = yes
+	diplomacy = 1
+	learning_per_prestige_level = 1
+	diplomacy_per_prestige_level = 1
+	development_growth = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = class_bard_college_of_lore_desc
+			}
+			desc = class_bard_college_of_lore_desc
+		}
+	}
+	opposites = {
+		class_bard_college_of_valour
+		class_bard_college_of_sword
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_bard_college_of_valour = {
+	shown_in_ruler_designer = yes
+	diplomacy = 1
+	personal_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	diplomacy_per_prestige_level = 2
+	courtly_opinion = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = class_bard_college_of_valour_desc
+			}
+			desc = class_bard_college_of_valour_desc
+		}
+	}
+	opposites = {
+		class_bard_college_of_lore
+		class_bard_college_of_sword
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_energy = 10
+  }
+  class_bard_college_of_sword = {
+	shown_in_ruler_designer = yes
+	diplomacy = 1
+	martial_per_prestige_level = 1
+	prowess = 1
+	martial = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = class_bard_college_of_sword_desc
+			}
+			desc = class_bard_college_of_sword_desc
+		}
+	}
+	opposites = {
+		class_bard_college_of_lore
+		class_bard_college_of_valour
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_boldness = 5
+  }
+ class_cleric = {
+	shown_in_ruler_designer = yes
+	#learning_per_prestige_level = 1
+	learning = 3
+	monthly_piety = 0.3
+	same_faith_opinion = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_desc
+			}
+			desc = trait_class_cleric_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_zeal = 10
+  }
+  class_cleric_life = {
+	shown_in_ruler_designer = yes
+	learning = 1
+	monthly_piety = 0.1
+	negate_health_penalty_add = 0.5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_life_desc
+			}
+			desc = trait_class_cleric_life_desc
+		}
+	}
+	opposites = {
+		class_cleric_light
+		class_cleric_trick
+		class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_compassion = 10
+  }
+  class_cleric_light = {
+	shown_in_ruler_designer = yes
+	learning = 1
+	monthly_piety = 0.1
+	prowess = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_light_desc
+			}
+			desc = trait_class_cleric_light_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_trick
+		class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_cleric_trick = {
+	shown_in_ruler_designer = yes
+	owned_scheme_secrecy_add = 5
+	monthly_piety = 0.1
+	intrigue = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_trick_desc
+			}
+			desc = trait_class_cleric_trick_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_honor = -20
+  }
+  class_cleric_knowledge = {
+	shown_in_ruler_designer = yes
+	learning_per_prestige_level = 1
+	monthly_piety = 0.1
+	learn_language_scheme_phase_duration_add = major_scheme_phase_duration_bonus_value
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_knowledge_desc
+			}
+			desc = trait_class_cleric_knowledge_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_trick
+		#class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_cleric_nature = {
+	shown_in_ruler_designer = yes
+	forest_advantage = 1
+	monthly_piety = 0.1
+	jungle_advantage = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_nature_desc
+			}
+			desc = trait_class_cleric_nature_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_trick
+		class_cleric_knowledge
+		#class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_cleric_tempest = {
+	shown_in_ruler_designer = yes
+	embarkation_cost_mult = -0.25
+	naval_movement_speed_mult = 0.5
+	monthly_piety = 0.1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_tempest_desc
+			}
+			desc = trait_class_cleric_tempest_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_trick
+		class_cleric_knowledge
+		class_cleric_nature
+		#class_cleric_tempest
+		class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_cleric_war = {
+	shown_in_ruler_designer = yes
+	martial_per_piety_level = 1
+	prowess_per_piety_level = 1
+	monthly_piety = 0.1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_war_desc
+			}
+			desc = trait_class_cleric_war_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_trick
+		class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		#class_cleric_war
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_druid = {
+	shown_in_ruler_designer = yes
+	forest_advantage = 1
+	taiga_advantage = 1
+	jungle_advantage = 1
+	stewardship = 3
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_druid_desc
+			}
+			desc = trait_class_druid_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_druid_land = {
+	shown_in_ruler_designer = yes
+	forest_attrition_mult = -0.5
+	taiga_attrition_mult = -0.5
+	jungle_attrition_mult = -0.5
+	stewardship_per_piety_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_druid_land_desc
+			}
+			desc = trait_class_druid_land_desc
+		}
+	}
+	opposites = {
+		#class_druid_land
+		class_druid_moon
+		class_druid_spore
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_druid_moon = {
+	shown_in_ruler_designer = yes
+	winter_movement_speed = 0.5
+	movement_speed_land_raiding = 0.25
+	stewardship_per_piety_level = 2
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_druid_moon_desc
+			}
+			desc = trait_class_druid_moon_desc
+		}
+	}
+	opposites = {
+		class_druid_land
+		#class_druid_moon
+		class_druid_spore
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_druid_spore = {
+	shown_in_ruler_designer = yes
+	winter_movement_speed = -0.01
+	movement_speed = 0.1
+	stewardship_per_piety_level = 1
+	stewardship_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_druid_spore_desc
+			}
+			desc = trait_class_druid_spore_desc
+		}
+	}
+	opposites = {
+		class_druid_land
+		class_druid_moon
+		#class_druid_spore
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_fighter = {
+	shown_in_ruler_designer = yes
+	martial = 3
+	prowess = 2
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_fighter_desc
+			}
+			desc = trait_class_fighter_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_fighter_master = {
+	shown_in_ruler_designer = yes
+	army_maintenance_mult = -0.5
+	enemy_hard_casualty_modifier = 0.25
+	knight_effectiveness_per_prowess = 0.02
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_fighter_master_desc
+			}
+			desc = trait_class_fighter_master_desc
+		}
+	}
+	opposites = {
+		#class_fighter_master
+		class_fighter_knight
+		class_fighter_champion
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_fighter_knight = {
+	shown_in_ruler_designer = yes
+	martial_per_piety_level = 1
+	prowess_per_piety_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_fighter_knight_desc
+			}
+			desc = trait_class_fighter_knight_desc
+		}
+	}
+	opposites = {
+		class_fighter_master
+		#class_fighter_knight
+		class_fighter_champion
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_fighter_champion = {
+	shown_in_ruler_designer = yes
+	martial_per_prestige_level = 1
+	prowess_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_fighter_champion_desc
+			}
+			desc = trait_class_fighter_champion_desc
+		}
+	}
+	opposites = {
+		class_fighter_master
+		class_fighter_knight
+		#class_fighter_champion
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_monk = {
+	shown_in_ruler_designer = yes
+	negate_health_penalty_add = 0.25
+	prowess = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_monk_desc
+			}
+			desc = trait_class_monk_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_monk_shadow = {
+	shown_in_ruler_designer = yes
+	owned_hostile_scheme_success_chance_add = 5
+	intrigue_per_prestige_level = 1
+	intrigue_per_piety_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_monk_shadow_desc
+			}
+			desc = trait_class_monk_shadow_desc
+		}
+	}
+	opposites = {
+		#class_monk_shadow
+		class_monk_element
+		class_monk_hand
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_monk_element = {
+	shown_in_ruler_designer = yes
+	negate_health_penalty_add = 0.5
+	health = 0.5
+	fertility = 0.2
+	stress_gain_mult = -0.2
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_monk_element_desc
+			}
+			desc = trait_class_monk_element_desc
+		}
+	}
+	opposites = {
+		class_monk_shadow
+		#class_monk_element
+		class_monk_hand
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_monk_hand = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 1
+	prowess_per_prestige_level = 1
+	prowess_per_stress_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_monk_hand_desc
+			}
+			desc = trait_class_monk_hand_desc
+		}
+	}
+	opposites = {
+		class_monk_shadow
+		class_monk_element
+		#class_monk_hand
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_paladin = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 5
+	prowess = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_desc
+			}
+			desc = trait_class_paladin_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_zeal = 5
+  }
+  class_paladin_ancient = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 1
+	attraction_opinion = 5
+	forest_advantage = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_ancient_desc
+			}
+			desc = trait_class_paladin_ancient_desc
+		}
+	}
+	opposites = {
+		#class_paladin_ancient
+		class_paladin_devotion
+		class_paladin_vengence
+		class_paladin_oathbreaker
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_paladin_devotion = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 2
+	clergy_opinion = 5
+	zealot_opinion = 5
+	same_opinion_if_same_faith = 5
+	same_faith_opinion = 5
+	flag = can_duel_criminals_interaction
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_devotion_desc
+			}
+			desc = trait_class_paladin_devotion_desc
+		}
+	}
+	opposites = {
+		class_paladin_ancient
+		#class_paladin_devotion
+		class_paladin_vengence
+		class_paladin_oathbreaker
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_paladin_vengence = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 2
+	dread_baseline_add = 35
+	flag = extra_scheme_success_chance_vs_rivals
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_vengence_desc
+			}
+			desc = trait_class_paladin_vengence_desc
+		}
+	}
+	opposites = {
+		class_paladin_ancient
+		class_paladin_devotion
+		#class_paladin_vengence
+		class_paladin_oathbreaker
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_vengefulness = 200
+  }
+  class_paladin_oathbreaker = {
+	shown_in_ruler_designer = yes
+	prowess = 10
+	dread_baseline_add = 35
+	monthly_piety_gain_per_dread_mult = 0.1
+	negate_prowess_penalty_add = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_oathbreaker_desc
+			}
+			desc = trait_class_paladin_oathbreaker_desc
+		}
+	}
+	opposites = {
+		class_paladin_ancient
+		class_paladin_devotion
+		class_paladin_vengence
+		#class_paladin_oathbreaker
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_ranger = {
+	shown_in_ruler_designer = yes
+	martial = 1
+	prowess = 1
+	character_travel_safety = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_ranger_desc
+			}
+			desc = trait_class_ranger_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_ranger_hunter = {
+	shown_in_ruler_designer = yes
+	martial_per_prestige_level = 1
+	prowess = 1
+	supply_duration = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_ranger_hunter_desc
+			}
+			desc = trait_class_ranger_hunter_desc
+		}
+	}
+	opposites = {
+		#class_ranger_hunter
+		class_ranger_master
+		class_ranger_gloom
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_ranger_master = {
+	shown_in_ruler_designer = yes
+	jungle_cancel_negative_supply = yes
+	steppe_advantage = 1
+	light_cavalry_damage_mult = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_ranger_master_desc
+			}
+			desc = trait_class_ranger_master_desc
+		}
+	}
+	opposites = {
+		class_ranger_hunter
+		#class_ranger_master
+		class_ranger_gloom
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_ranger_gloom = {
+	shown_in_ruler_designer = yes
+	intrigue_per_prestige_level = 1
+	martial = 1
+	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_ranger_gloom_desc
+			}
+			desc = trait_class_ranger_gloom_desc
+		}
+	}
+	opposites = {
+		class_ranger_hunter
+		class_ranger_master
+		#class_ranger_gloom
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_rogue = {
+	shown_in_ruler_designer = yes
+	intrigue = 5
+	owned_scheme_secrecy_add = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_rogue_desc
+			}
+			desc = trait_class_rogue_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_rogue_thief = {
+	shown_in_ruler_designer = yes
+	intrigue_per_prestige_level = 3
+	owned_scheme_secrecy_add = 5
+	provisions_gain_mult = 0.05
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_rogue_thief_desc
+			}
+			desc = trait_class_rogue_thief_desc
+		}
+	}
+	opposites = {
+		#class_rogue_thief
+		class_rogue_trick
+		class_rogue_assassin
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_greed = 10
+  }
+  class_rogue_trick = {
+	shown_in_ruler_designer = yes
+	intrigue_per_piety_level = 2
+	owned_scheme_secrecy_add = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_rogue_trick_desc
+			}
+			desc = trait_class_rogue_trick_desc
+		}
+	}
+	opposites = {
+		class_rogue_thief
+		#class_rogue_trick
+		class_rogue_assassin
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_rogue_assassin = {
+	shown_in_ruler_designer = yes
+	intrigue_per_prestige_level = 1
+	owned_scheme_secrecy_add = 5
+	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_rogue_assassin_desc
+			}
+			desc = trait_class_rogue_assassin_desc
+		}
+	}
+	opposites = {
+		class_rogue_thief
+		class_rogue_trick
+		#class_rogue_assassin
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_honor = -20
+  }
+ class_sorcerer = {
+	shown_in_ruler_designer = yes
+	learning = 3
+	diplomacy = 2
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_sorcerer_desc
+			}
+			desc = trait_class_sorcerer_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_sorcerer_wild = {
+	shown_in_ruler_designer = yes
+	learning_per_piety_level = 1
+	diplomacy_per_piety_level = 1
+	learning_per_stress_level = 2
+	diplomacy_per_stress_level = 2
+	flag = higher_chance_of_dying_in_battle
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_sorcerer_wild_desc
+			}
+			desc = trait_class_sorcerer_wild_desc
+		}
+	}
+	opposites = {
+		#class_sorcerer_wild
+		class_sorcerer_dragon
+		class_sorcerer_storm
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_rationality = -50
+  }
+  class_sorcerer_dragon = {
+	shown_in_ruler_designer = yes
+	learning_per_influence_level = 2
+	diplomacy_per_influence_level = 3
+	learning_per_prestige_level = 1
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	flag = initial_legitimacy_boost
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_sorcerer_dragon_desc
+			}
+			desc = trait_class_sorcerer_dragon_desc
+		}
+	}
+	opposites = {
+		class_sorcerer_wild
+		#class_sorcerer_dragon
+		class_sorcerer_storm
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_sorcerer_storm = {
+	shown_in_ruler_designer = yes
+	embarkation_cost_mult = -0.25
+	learning_per_prestige_level = 1
+	diplomacy_per_piety_level = 1
+	diplomacy_per_prestige_level = 1
+	learning_per_piety_level = 1
+	monthly_piety = 0.01
+	flag = initial_legitimacy_boost
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_sorcerer_storm_desc
+			}
+			desc = trait_class_sorcerer_storm_desc
+		}
+	}
+	opposites = {
+		class_sorcerer_wild
+		class_sorcerer_dragon
+		#class_sorcerer_storm
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_warlock = {
+	shown_in_ruler_designer = yes
+	diplomacy = 3
+	stewardship = 2
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_warlock_desc
+			}
+			desc = trait_class_warlock_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_warlock_fiend = {
+	shown_in_ruler_designer = yes
+	diplomacy_per_prestige_level = 2
+	diplomacy_per_piety_level = 1
+	learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_warlock_fiend_desc
+			}
+			desc = trait_class_warlock_fiend_desc
+		}
+	}
+	opposites = {
+		#class_warlock_fiend
+		class_warlock_great
+		class_warlock_archfey
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_warlock_great = {
+	shown_in_ruler_designer = yes
+	stewardship_per_piety_level = 1
+	diplomacy_per_piety_level = 3
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	dread_baseline_add = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_warlock_great_desc
+			}
+			desc = trait_class_warlock_great_desc
+		}
+	}
+	opposites = {
+		class_warlock_fiend
+		#class_warlock_great
+		class_warlock_archfey
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_rationality = -75
+  }
+  class_warlock_archfey = {
+	shown_in_ruler_designer = yes
+	diplomacy_per_prestige_level = 2
+	diplomacy_per_piety_level = 3
+	monthly_influence = 0.05
+	attraction_opinion = 10
+	child_opinion = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_warlock_archfey_desc
+			}
+			desc = trait_class_warlock_archfey_desc
+		}
+	}
+	opposites = {
+		class_warlock_fiend
+		class_warlock_great
+		#class_warlock_archfey
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+ class_wizard = {
+	shown_in_ruler_designer = yes
+	learning = 5
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_desc
+			}
+			desc = trait_class_wizard_desc
+		}
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_abjuration = {
+	shown_in_ruler_designer = yes
+	negate_health_penalty_add = 0.5
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	negate_fertility_penalty_add = 1
+	negate_prowess_penalty_add = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_abjuration_desc
+			}
+			desc = trait_class_wizard_abjuration_desc
+		}
+	}
+	opposites = {
+		#class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_evocation = {
+	shown_in_ruler_designer = yes
+	owned_personal_scheme_success_chance_add = 10
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_evocation_desc
+			}
+			desc = trait_class_wizard_evocation_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		#class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_necromancy = {
+	shown_in_ruler_designer = yes
+	dread_gain_mult = 0.2
+	dread_decay_mult = -0.5
+	epidemic_resistance = 5
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_necromancy_desc
+			}
+			desc = trait_class_wizard_necromancy_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		#class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_conjuration = {
+	shown_in_ruler_designer = yes
+	stewardship_per_piety_level = 1
+	stewardship_per_prestige_level = 1
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_conjuration_desc
+			}
+			desc = trait_class_wizard_conjuration_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		#class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_enchantment = {
+	shown_in_ruler_designer = yes
+	stewardship_per_piety_level = 1
+	stewardship_per_prestige_level = 1
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_enchantment_desc
+			}
+			desc = trait_class_wizard_enchantment_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		#class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_divination = {
+	shown_in_ruler_designer = yes
+	learning_per_piety_level = 2
+	learning_per_prestige_level = 1
+	courtier_and_guest_opinion = 10
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_divination_desc
+			}
+			desc = trait_class_wizard_divination_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		#class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_illusion = {
+	shown_in_ruler_designer = yes
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	intrigue_per_piety_level = 1
+	intrigue_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_illusion_desc
+			}
+			desc = trait_class_wizard_illusion_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		#class_wizard_illusion
+		class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_transmutation = {
+	shown_in_ruler_designer = yes
+	learning_per_piety_level = 1
+	learning_per_prestige_level = 1
+	negate_fertility_penalty_add = 0.25
+	negate_learning_penalty_add = 2
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_transmutation_desc
+			}
+			desc = trait_class_wizard_transmutation_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		#class_wizard_transmutation
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
 #
 super_saiyan = {
 	random_creation = 0

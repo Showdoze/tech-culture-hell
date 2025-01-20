@@ -38,8 +38,10 @@ tr_doctrines = {
 		character_modifier = {
 		}
 		traits = {
-			virtues = { just = 2 lifestyle_physician pure_blooded = 2 follow_osiris follow_isis 
-			follow_horus follow_seth follow_anubis follow_bastet follow_amun follow_hathor 
+			virtues = { 
+				just = 2 lifestyle_physician pure_blooded = 2 follow_osiris follow_isis 
+			    follow_horus follow_seth follow_anubis follow_bastet follow_amun 
+				follow_hathor 
 			}
 			sins = { arbitrary = 2 }
 		}
@@ -77,8 +79,12 @@ tr_doctrines = {
 			literalist_debate_enabled = yes
 		}
 		traits = {
-			virtues = { architect cynical scholar journaller  }
-			sins = { intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull }
+			virtues = { 
+				architect cynical scholar journaller  class_cleric_knowledge 
+			}
+			sins = { 
+				intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull 
+			}
 		}
 		character_modifier = {
 			close_relative_opinion = 5
@@ -113,11 +119,15 @@ tr_doctrines = {
 			monthly_piety_gain_per_dread_add = 0.01
 		}
 		traits = {
-			virtues = { torturer sadistic vengeful murderer gallowsbait follow_mage_death 
-			follow_cthulhu follow_hastur ds_covenant_moundmakers 
+			virtues = { 
+				torturer sadistic vengeful murderer gallowsbait follow_mage_death 
+			    follow_cthulhu follow_hastur ds_covenant_moundmakers 
+			    class_paladin_oathbreaker 
+			    class_cleric_trick class_paladin_vengence class_wizard_necromancy 
+				follow_b_bane follow_b_bhaal follow_lolth follow_b_myrkul 
 			}
 		    sins = { forgiving compassionate }
-		}
+		} 
 	}
 	tenet_tribunal = {
 		icon = core_tenet_tribunal
@@ -153,8 +163,12 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { fickle patient content reincarnation }
-			sins = { stubborn vengeful arrogant }
+			virtues = { 
+				fickle patient content reincarnation 
+			}
+			sins = { 
+				stubborn vengeful arrogant 
+			}
 		}
 		parameters = {
 			meditation_mechanics_active = yes
@@ -165,8 +179,12 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { fickle patient content ds_covenant_blue }
-			sins = { stubborn vengeful arrogant hollow }
+			virtues = { 
+				fickle patient content ds_covenant_blue 
+			}
+			sins = { 
+				stubborn vengeful arrogant hollow class_sorcerer_dragon 
+			}
 		}
 		parameters = {
 			meditation_mechanics_active = yes
@@ -184,7 +202,10 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { born_in_the_purple augustus august overseer }
+			virtues = { 
+				born_in_the_purple augustus august overseer 
+			    class_bard_college_of_valour class_cleric_knowledge class_fighter_master 
+			}
 			sins = { peasant_born heresiarch disinherited }
 		}
 		parameters = {
@@ -237,7 +258,10 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { gluttonous generous gregarious patient lifestyle_mystic }
+			virtues = { 
+				gluttonous generous gregarious patient lifestyle_mystic 
+				class_druid_moon 
+			}
 			sins = { temperate callous shy impatient }
 		}
 		parameters = {
@@ -257,8 +281,13 @@ tr_doctrines = {
 			fervor_per_holy_site = 1
 		}
 		traits = {
-			virtues = { architect scholar temperate zealous theologian }
-			sins = { lazy cynical lifestyle_mystic drunkard follow_mage_death }
+			virtues = { 
+				architect scholar temperate zealous theologian 
+			}
+			sins = { 
+				lazy cynical lifestyle_mystic drunkard follow_mage_death 
+				class_wizard_necromancy 
+			}
 		}
 		character_modifier = {
 			mechanist_faith_opinion = -10
@@ -273,7 +302,10 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-			virtues = { family_first loyal follow_thor follow_mars follow_sol follow_jupiter }
+			virtues = { 
+				family_first loyal follow_thor follow_mars follow_sol follow_jupiter 
+				class_fighter_champion class_fighter_master 
+			}
 		    sins = { disloyal }
 		}
 		parameters = {
@@ -314,8 +346,10 @@ tr_doctrines = {
 			monthly_piety_gain_per_dread_add = 0.01
 		}
 		traits = {
-			virtues = { lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth 
-			fickle just generous cannibal = 2
+			virtues = { 
+				lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth 
+			    fickle just generous cannibal = 2 
+				class_ranger 
 			}
 		    sins = { lazy stubborn arbitrary shy }
 		}
@@ -418,7 +452,9 @@ tr_doctrines = {
 			piety_gain_from_successful_intrigue_schemes = yes
 		}
 		traits = {
-			virtues = { scholar journaller shy humble confider }
+			virtues = { 
+				scholar journaller shy humble confider class_cleric_knowledge 
+			}
 			sins = { deceitful disloyal sadistic reclusive }
 		}
 		character_modifier = {
@@ -447,8 +483,10 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { architect temperate zealous diligent }
-			sins = { lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
-			follow_mage_death follow_mage_earth ds_covenant_farron 
+			sins = { 
+				lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
+			    follow_mage_death follow_mage_earth ds_covenant_farron 
+				class_wizard_necromancy 
 			}
 		}
 	}
@@ -472,8 +510,9 @@ tr_doctrines = {
 			learning_per_piety_level = 2
 		}
 		traits = {
-			virtues = { scholar journaller lifestyle_mystic overseer follow_mage_water 
-			follow_mage_fire follow_mage_air follow_mage_earth 
+			virtues = { 
+				scholar journaller lifestyle_mystic overseer follow_mage_water 
+			    follow_mage_fire follow_mage_air follow_mage_earth 
 			}
 			sins = { lazy content dull }
 		}
@@ -506,8 +545,10 @@ tr_doctrines = {
 			rf_pagan_opinion = 10
 		}
 		traits = {
-			virtues = { lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
-			follow_mage_death ds_covenant_farron follow_mage_earth 
+			virtues = { 
+				lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
+			    follow_mage_death ds_covenant_farron follow_mage_earth 
+				class_rogue_trick 
 			}
 			sins = { architect craven avaricious greedy }
 		}
@@ -565,8 +606,9 @@ tr_doctrines = {
 			reincarnation_events_active = yes
 		}
 		traits = {
-			virtues = { intellect_good_3 physique_good_3 beauty_good_3  honest just 
-			diligent 
+			virtues = { 
+				intellect_good_3 physique_good_3 beauty_good_3  honest just 
+			    diligent 
 			}
 			sins = { lazy deceitful arbitrary }
 		}
@@ -615,11 +657,31 @@ tr_doctrines = {
 			reincarnation_events_active = yes
 		}
 		traits = {
-			virtues = { generous diligent honest }
+			virtues = { 
+				generous diligent honest class_sorcerer_dragon 
+			}
 			sins = { greedy lazy deceitful }
 		}
 		character_modifier = {
 			monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+		}
+	}
+	tenet_lolth = {
+		icon = core_tenet_pentarchy
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			fervor_per_holy_site = 1
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+		}
+		traits = {
+			virtues = { 
+				callous sadistic diligent deceitful lustful vengeful 
+			}
+			sins = { 
+				compassionate lazy honest chaste forgiving 
+			}
 		}
 	}
 }
