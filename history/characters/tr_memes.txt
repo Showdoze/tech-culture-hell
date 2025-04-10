@@ -11,12 +11,8 @@
 	trait = intellect_good_3
 	trait = education_intrigue_2
 	father = 82233
-	820.1.11 = {
-		birth = yes
-	}
-	2016.4.17 = {
-		death = yes
-	}
+	820.1.11 = { birth = yes }
+	2016.4.17 = { death = yes }
 }
 mmtonychase = {
 	name = "Mark Ray"
@@ -42,9 +38,7 @@ mmtonychase = {
 	disallow_random_traits = yes
 	father = 6392
 	mother = 70498
-	810.6.15 = {
-		birth = yes
-	}
+	810.6.15 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmsateliteman reason = rival_historical }
@@ -52,8 +46,8 @@ mmtonychase = {
 	}
 	1016.4.17 = {
 		death = { 
-		death_reason = death_duel
-		killer = mmsateliteman
+		    death_reason = death_duel
+		        killer = mmsateliteman
 		}
 	}
 }
@@ -121,9 +115,7 @@ mmmusicbizmarty = {
 	trait = deceitful
 	trait = callous
 	disallow_random_traits = yes
-	830.1.11 = {
-		birth = yes
-	}
+	830.1.11 = { birth = yes }
 	851.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
@@ -132,9 +124,44 @@ mmmusicbizmarty = {
 			set_relation_rival = { target = character:mmruplesmith reason = rival_historical }
 		}
 	}
-	907.4.17 = {
+	866.2.4 = {
 		death = {
-			death_reason = death_obesity
+			death_reason = death_drug
+		}
+	}
+}
+mmnwordboi = {
+	name = "N Word Boi"
+	religion = satanism #idk what religion
+	culture = american
+	dynasty_house = house_trolls
+	martial = 5
+	diplomacy = 5
+	intrigue = 20
+	stewardship = 10
+	learning = 10
+	prowess = 7
+	trait = calm
+	trait = arbitrary
+	trait = intellect_good_1
+	trait = education_intrigue_3
+	trait = diligent
+	trait = sadistic
+	trait = cynical
+	trait = journaller
+	disallow_random_traits = yes
+	831.1.11 = { birth = yes }
+	851.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+		}
+		effect = {
+			set_relation_rival = { target = character:mmruplesmith reason = rival_historical }
+		}
+	}
+	917.4.17 = {
+		death = {
+			death_reason = death_stress
 		}
 	}
 }
@@ -356,18 +383,19 @@ mmmusicbizmarty = {
 	father = mmwilliamdsmith
 	disallow_random_traits = yes
 	825.1.11 = { birth = yes }
-	850.1.1 = {
-		add_spouse = mmconnie
-	}
+	850.1.1 = { add_spouse = mmconnie }
 	851.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmmusicbizmarty reason = rival_historical }
+		}
+		effect = {
+			set_relation_rival = { target = character:mmnwordboi reason = rival_historical }
 		}
 	}
 	886.4.17 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmmusicbizmarty
+			killer = mmnwordboi
 		}
 	}
  }
@@ -421,21 +449,11 @@ mmmusicbizmarty = {
 	trait = weak
 	disallow_random_traits = yes
 	805.1.11 = { birth = yes }
-	810.1.11 = {
-		add_spouse = mmwilliamdsmith
-	}
-	840.1.11 = {
-		remove_spouse = mmwilliamdsmith
-	}
-	850.1.11 = {
-		add_spouse = mmgordonwilkins
-	}
-	851.1.11 = {
-		remove_spouse = mmgordonwilkins
-	}
-	860.1.2 = {
-		add_spouse = mmed
-	}
+	810.1.11 = { add_spouse = mmwilliamdsmith }
+	840.1.11 = { remove_spouse = mmwilliamdsmith }
+	850.1.11 = { add_spouse = mmgordonwilkins }
+	851.1.11 = { remove_spouse = mmgordonwilkins }
+	860.1.2 = { add_spouse = mmed }
 	885.4.17 = {
 		death = {
 			death_reason = death_stress
@@ -464,9 +482,7 @@ mmmusicbizmarty = {
 	father = mmfounder
 	disallow_random_traits = yes
 	835.1.11 = { birth = yes }
-	850.1.1 = {
-		add_spouse = mmruplesmith
-	}
+	850.1.1 = { add_spouse = mmruplesmith }
 	865.4.17 = {
 		death = {
 			death_reason = death_burned
@@ -520,6 +536,9 @@ mmmusicbizmarty = {
 		effect = {
 			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
 		}
+		effect = {
+			set_relation_rival = { target = character:mmnwordboi reason = rival_historical }
+		}
 	}
 	861.1.1 = {
 		effect = {
@@ -529,7 +548,7 @@ mmmusicbizmarty = {
 	886.4.17 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = mmmusicbizmarty
+			killer = mmnwordboi
 		}
 	}
  }
@@ -1331,7 +1350,7 @@ mmmusicbizmarty = {
 	837.7.19 = {
 		birth = yes
 	}
-	900.1.1 = {
+	866.1.2 = {
 		death = {
 			death_reason = death_duel
 			killer = mmliquid
@@ -1353,7 +1372,7 @@ mmmusicbizmarty = {
 	836.2.5 = {
 		birth = yes
 	}
-	900.1.1 = {
+	866.1.1 = {
 		death = {
 			death_reason = death_duel
 			killer = mmliquid
@@ -1731,9 +1750,7 @@ mmmusicbizmarty = {
 	trait = education_diplomacy_1
 	give_nickname = nick_boogie2988
 	disallow_random_traits = yes
-	820.4.21 = {
-		birth = yes
-	}
+	820.4.21 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmwings reason = rival_historical }
@@ -1762,9 +1779,7 @@ mmmusicbizmarty = {
 	trait = arrogant
 	trait = education_learning_1
 	disallow_random_traits = yes
-	820.4.29 = {
-		birth = yes
-	}
+	820.4.29 = { birth = yes }
 	890.1.10 = {
 		death = {
 			death_reason = death_cancer
@@ -1788,9 +1803,7 @@ mmmusicbizmarty = {
 	trait = beauty_bad_1
 	trait = education_stewardship_1
 	disallow_random_traits = yes
-	834.4.21 = {
-		birth = yes
-	}
+	834.4.21 = { birth = yes }
 	890.1.10 = {
 		death = {
 			death_reason = death_obesity
@@ -1813,9 +1826,7 @@ mmmusicbizmarty = {
 	trait = stubborn
 	trait = education_learning_1
 	disallow_random_traits = yes
-	834.4.21 = {
-		birth = yes
-	}
+	834.4.21 = { birth = yes }
 	878.1.10 = {
 		death = {
 			death_reason = death_burned_witch
@@ -1833,9 +1844,7 @@ mmmusicbizmarty = {
 	trait = hashishiyah
 	trait = education_diplomacy_1
 	disallow_random_traits = yes
-	848.4.29 = {
-		birth = yes
-	}
+	848.4.29 = { birth = yes }
 	870.1.10 = {
 		death = {
 			death_reason = death_cancer
@@ -1856,9 +1865,7 @@ mmmusicbizmarty = {
 	trait = drunkard
 	trait = education_diplomacy_1
 	disallow_random_traits = yes
-	848.4.29 = {
-		birth = yes
-	}
+	848.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmdaniellarson reason = rival_historical }
@@ -1884,9 +1891,7 @@ mmmusicbizmarty = {
 	trait = intellect_bad_1
 	trait = education_diplomacy_1
 	disallow_random_traits = yes
-	840.4.29 = {
-		birth = yes
-	}
+	840.4.29 = { birth = yes }
 	860.1.10 = {
 		death = {
 			death_reason = death_beaten
@@ -1975,9 +1980,11 @@ mmmusicbizmarty = {
 	trait = lazy
 	trait = deviant
 	trait = beauty_bad_1
+	trait = paranoid
 	trait = education_stewardship_1
+	trait = hygene_bad_1
 	disallow_random_traits = yes
-	839.1.1 = { birth = yes }
+	844.1.1 = { birth = yes }
 	890.1.1 = {
 		death = {
 			death_reason = death_execution
@@ -2000,11 +2007,12 @@ mmmusicbizmarty = {
 	trait = education_stewardship_1
 	trait = callous
 	trait = deviant
+	trait = hygene_bad_2
 	disallow_random_traits = yes
 	mother = mmmomachu
 	father = mmpapachu
 	837.6.6 = { birth = yes }
-	900.4.17 = {
+	870.4.17 = {
 		death = {
 			death_reason = death_beaten
 			killer = mmdaniellarson
@@ -2019,6 +2027,7 @@ mmmusicbizmarty = {
 	trait = education_intrigue_1
 	trait = callous
 	trait = deviant
+	trait = hygene_bad_1
 	disallow_random_traits = yes
 	mother = mmmomachu
 	father = mmpapachu
@@ -2039,6 +2048,7 @@ mmmusicbizmarty = {
 	trait = education_diplomacy_1
 	trait = callous
 	trait = deviant
+	trait = hygene_bad_1
 	disallow_random_traits = yes
 	780.6.6 = { birth = yes }
 	830.1.1 = { add_spouse = mmpapachu }
@@ -2061,10 +2071,11 @@ mmmusicbizmarty = {
 	trait = deviant
 	trait = wrathful
 	trait = arrogant
+	trait = hygene_bad_2
 	disallow_random_traits = yes
 	780.6.6 = { birth = yes }
 	830.1.1 = { add_spouse = mmmomachu }
-	890.1.1 = {
+	870.1.1 = {
 		death = {
 			death_reason = death_dungeon
 			#killer = mmbossmanjack
@@ -2163,9 +2174,7 @@ mmmusicbizmarty = {
 	trait = hygene_bad_2
 	disallow_random_traits = yes
 	mother = mmelizabethshimer
-	844.9.8 = {
-		birth = yes
-	}
+	844.9.8 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmwwotshirts reason = rival_historical }
@@ -2199,9 +2208,7 @@ mmmusicbizmarty = {
 	trait = hygene_bad_2
 	disallow_random_traits = yes
 	mother = mmelizabethshimer
-	848.9.8 = {
-		birth = yes
-	}
+	848.9.8 = { birth = yes }
 	885.6.30 = {
 		death = {
 			death_reason = death_explosion
@@ -2279,11 +2286,9 @@ mmmusicbizmarty = {
 	trait = spindly
 	trait = hashishiyah
 	trait = education_learning_3
+	trait = incestuous
 	disallow_random_traits = yes
-	
-	818.4.29 = {
-		birth = yes
-	}
+	818.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmianfootedaughter reason = rival_historical }
@@ -2305,9 +2310,7 @@ mmmusicbizmarty = {
 	female = yes
 	father = mmianfoote
 	mother = mmianfootewife1
-	848.4.29 = {
-		birth = yes
-	}
+	848.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
@@ -2321,15 +2324,9 @@ mmmusicbizmarty = {
 	culture = canadian
 	dynasty = mmwitness
 	female = yes
-	828.4.29 = {
-		birth = yes
-	}
-	845.1.1 = {
-		add_spouse = mmianfoote
-	}
-	859.1.1 = {
-		remove_spouse = mmianfoote
-	}
+	828.4.29 = { birth = yes }
+	845.1.1 = { add_spouse = mmianfoote }
+	859.1.1 = { remove_spouse = mmianfoote }
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
@@ -2342,15 +2339,9 @@ mmmusicbizmarty = {
 	religion = catholic
 	culture = canadian
 	female = yes
-	835.4.29 = {
-		birth = yes
-	}
-	860.1.1 = {
-		add_spouse = mmianfoote
-	}
-	865.1.1 = {
-		remove_spouse = mmianfoote
-	}
+	835.4.29 = { birth = yes }
+	860.1.1 = { add_spouse = mmianfoote }
+	865.1.1 = { remove_spouse = mmianfoote }
  }
 #KING COBRA
  mmkcjfs = {
@@ -2412,7 +2403,7 @@ mmmusicbizmarty = {
 			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
 		}
 	}
-	870.1.1 = {
+	866.1.1 = {
 		death = {
 			death_reason = death_cancer
 		}
@@ -2433,9 +2424,7 @@ mmmusicbizmarty = {
 	trait = aggressive_attacker
 	trait = reckless
 	disallow_random_traits = yes
-	817.3.22 = {
-		birth = yes
-	}
+	817.3.22 = { birth = yes }
 	876.9.27 = {
 		death = {
 			death_reason = death_stress
