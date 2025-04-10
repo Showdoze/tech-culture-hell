@@ -180,18 +180,10 @@ mmnwordboi = {
 	trait = education_martial_3
 	trait = brave
 	trait = honest
-	800.1.11 = {
-		birth = yes
-	}
-	840.1.1 = {
-		add_spouse = mmsally
-	}
-	841.1.1 = {
-		remove_spouse = mmsally
-	}
-	845.1.1 = {
-		add_spouse = mmjenniewilkins
-	}
+	800.1.11 = { birth = yes }
+	840.1.1 = { add_spouse = mmsally }
+	841.1.1 = { remove_spouse = mmsally }
+	845.1.1 = { add_spouse = mmjenniewilkins }
 	847.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
@@ -211,12 +203,8 @@ mmnwordboi = {
 	stewardship = 10
 	trait = beauty_good_1
 	trait = education_diplomacy_2
-	810.1.11 = {
-		birth = yes
-	}
-	845.1.1 = {
-		add_spouse = mmgordonwilkins
-	}
+	810.1.11 = { birth = yes }
+	845.1.1 = { add_spouse = mmgordonwilkins }
 	847.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
@@ -229,9 +217,7 @@ mmnwordboi = {
 	culture = american
 	dynasty = mmwitness
 	female = yes
-	850.1.11 = {
-		birth = yes
-	}
+	850.1.11 = { birth = yes }
  }
  mmblindbilly = {
 	name = "Billy Seiler"
@@ -242,9 +228,7 @@ mmnwordboi = {
 	trait = diligent
 	trait = honest
 	trait = blind
-	837.9.8 = {
-		birth = yes
-	}
+	837.9.8 = { birth = yes }
 	841.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
@@ -262,9 +246,7 @@ mmnwordboi = {
 	trait = humble
 	trait = temperate
 	810.1.1 = { birth = yes }
-	830.1.1 = {
-		add_spouse = mmdspdad
-	}
+	830.1.1 = { add_spouse = mmdspdad }
 	840.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmdsp reason = rival_historical }
@@ -279,9 +261,7 @@ mmnwordboi = {
     trait = generous
 	trait = architect
 	800.1.1 = { birth = yes }
-	830.1.1 = {
-		add_spouse = mmdspmom
-	}
+	830.1.1 = { add_spouse = mmdspmom }
 	840.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmdsp reason = rival_historical }
@@ -346,12 +326,8 @@ mmnwordboi = {
 	trait = deviant
 	trait = lustful
 	785.1.11 = { birth = yes }
-	810.1.11 = {
-		add_spouse = mmsally
-	}
-	830.1.11 = {
-		remove_spouse = mmsally
-	}
+	810.1.11 = { add_spouse = mmsally }
+	830.1.11 = { remove_spouse = mmsally }
 	860.1.1 = {
 		death = {
 			death_reason = death_dungeon
@@ -416,13 +392,11 @@ mmnwordboi = {
 	trait = stubborn
 	trait = drunkard
 	805.1.11 = { birth = yes }
-	860.1.2 = {
-		add_spouse = mmsally
-	}
-	880.4.17 = {
+	860.1.2 = { add_spouse = mmsally }
+	885.4.17 = {
 		death = {
-			death_reason = death_childbirth
-			#killer = mmmusicbizmarty
+			death_reason = death_childbirth_lol
+			killer = mmcyraxx
 		}
 	}
  }
@@ -456,7 +430,8 @@ mmnwordboi = {
 	860.1.2 = { add_spouse = mmed }
 	885.4.17 = {
 		death = {
-			death_reason = death_stress
+			death_reason = death_stress_lol
+			killer = mmcyraxx
 		}
 	}
  }
