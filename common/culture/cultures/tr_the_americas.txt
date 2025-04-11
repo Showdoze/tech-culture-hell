@@ -74,7 +74,6 @@ african_american = {
 		5 = west_african_1
 	}
 }
-
 italian_american = {
 	color = italian
 	parents = { italian american }
@@ -97,7 +96,6 @@ italian_american = {
 		10 = european_med_italian_1
 	}
 }
-
 irish_american = {
 	color = hsv { 0.43 0.86 0.61 }
 	parents = { irish american }
@@ -111,14 +109,11 @@ irish_american = {
 		tradition_poetry
 		tradition_luck_of_irish
 	}
-	
-	name_list = name_list_irish
-	
+	name_list = name_list_irish	
 	coa_gfx = { irish_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { northern_clothing_gfx }
-	unit_gfx = { western_unit_gfx }
-	
+	unit_gfx = { western_unit_gfx }	
 	ethnicities = {
 		5 = caucasian_blond
 		30 = caucasian_ginger
@@ -126,7 +121,6 @@ irish_american = {
 		30 = caucasian_dark_hair
 	}
 }
-
 canadian = {
 	color = { 194 33 41 }
 	created = 1760.1.1
@@ -152,7 +146,6 @@ canadian = {
 		25 = caucasian_dark_hair
 	}
 }
-
 apache = {
 	color = { 120 120 10 }
 	ethos = ethos_bellicose
@@ -176,28 +169,48 @@ apache = {
 		10 = mesoamerican
 	}
 }
-
 nahuatl = {
 	color = { 235 64 52 }
-
 	ethos = ethos_bureaucratic
 	heritage = heritage_native_american
 	language = language_nahuatl
 	martial_custom = martial_custom_male_only
-
 	traditions = {
 		tradition_warriors_by_merit
 		tradition_sacred_mountains
 		tradition_blood_thirst
-	}
-	
+	}	
 	name_list = name_list_nahuatl
 	coa_gfx = { cemanahuac_coa_gfx }
 	building_gfx = { african_building_gfx }
 	clothing_gfx = { cemanahuac_clothing_gfx }
-	unit_gfx = { cemanahuac_unit_gfx }
-	
+	unit_gfx = { cemanahuac_unit_gfx }	
 	ethnicities = {
 		10 = mesoamerican
 	}
 }
+mexican = {
+	color = { 235 64 52 }
+	created = 1521.1.1
+	parents = { spanish nahuatl }
+	ethos = ethos_bureaucratic
+	heritage = heritage_native_american
+	language = language_iberian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_fp2_ritualised_friendship
+		tradition_sacred_mountains
+		tradition_hit_and_run
+	}
+	name_list = name_list_mexico
+	coa_gfx = { castilian_coa_gfx iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	ethnicities = {
+		10 = mesoamerican
+	}
+}
+
+
+
