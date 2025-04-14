@@ -464,6 +464,45 @@ mmnwordboi = {
 	}
  }
 
+ mmwancechilkins = {
+	name = "Wance"
+	religion = stoicism
+	culture = american
+	dynasty_house = house_wilkins
+	martial = 10
+	diplomacy = 15
+	intrigue = 5
+	stewardship = 10
+	learning = 15
+	prowess = 20
+	sexuality = asexual
+	trait = brave
+	trait = content
+	trait = calm
+	trait = loyal
+	trait = intellect_good_3
+	trait = education_learning_3
+	trait = beauty_good_3
+	trait = hygene_good_2
+	trait = herculean
+	trait = giant
+	father = mmgordonwilkins
+	mother = mmjenniewilkins
+	disallow_random_traits = yes
+	835.5.24 = { birth = yes }
+	841.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:mmliquid }
+		}
+		effect = {
+			set_relation_friend = { target = character:mmmusicbizmarty }
+		}
+		effect = {
+			set_relation_friend = { target = character:mmnwordboi }
+		}
+	}
+ }
+
  mmcyraxx = {
 	name = "Patrick"
 	religion = catholic
