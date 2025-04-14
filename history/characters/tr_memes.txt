@@ -87,9 +87,7 @@ mmsateliteman = {
 	trait = intellect_good_4
 	trait = schemer
 	disallow_random_traits = yes
-	100.1.11 = {
-		birth = yes
-	}
+	100.1.11 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmtonychase reason = rival_historical }
@@ -1543,9 +1541,14 @@ mmnwordboi = {
 	trait = weak
 	trait = stubborn
 	trait = dull
+	trait = deceitful
+	give_nickname = nick_nintendo_simp
 	disallow_random_traits = yes
-	830.1.1 = {
-		birth = yes
+	840.1.1 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmshitcubeguy reason = rival_historical }
+		}
 	}
 	884.1.1 = {
 		death = {
@@ -1570,9 +1573,7 @@ mmnwordboi = {
 	trait = stubborn
 	trait = dull
 	disallow_random_traits = yes
-	830.7.11 = {
-		birth = yes
-	}
+	830.7.11 = { birth = yes }
 	894.1.1 = {
 		death = {
 			death_reason = death_dungeon
@@ -1597,9 +1598,7 @@ mmnwordboi = {
 	trait = stubborn
 	trait = dull
 	disallow_random_traits = yes
-	834.9.8 = {
-		birth = yes
-	}
+	834.9.8 = { birth = yes }
 	841.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
@@ -1626,9 +1625,7 @@ mmnwordboi = {
 	trait = greedy
 	trait = disloyal
 	disallow_random_traits = yes
-	840.1.11 = {
-		birth = yes
-	}
+	840.1.11 = { birth = yes }
 	865.2.05 = {
 		death = {
 			death_reason = death_banned
@@ -1648,8 +1645,11 @@ mmnwordboi = {
 	trait = zealous
 	give_nickname = nick_tapohg
 	disallow_random_traits = yes
-	840.1.11 = {
-		birth = yes
+	840.1.11 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:mmnintendofanboy reason = rival_historical }
+		}
 	}
 	885.2.05 = {
 		death = {
@@ -1673,9 +1673,7 @@ mmnwordboi = {
 	trait = gluttonous
 	disallow_random_traits = yes
 	give_nickname = nick_wor
-	824.4.21 = {
-		birth = yes
-	}
+	824.4.21 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mmdsp reason = rival_historical }
@@ -1702,9 +1700,7 @@ mmnwordboi = {
 	trait = reaver
 	trait = education_martial_1
 	disallow_random_traits = yes
-	830.4.21 = {
-		birth = yes
-	}
+	830.4.21 = { birth = yes }
 	901.1.10 = {
 		death = {
 			death_reason = death_contest_duel_accident
