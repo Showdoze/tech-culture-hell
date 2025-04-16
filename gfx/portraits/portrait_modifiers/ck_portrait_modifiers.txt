@@ -744,4 +744,29 @@ ck_portraits = {
 			}
         }
     }
+    145278_Hadrian = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_mena_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_mena_03
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:145278
+				this = character:145278
+			}
+        }
+    }
 }

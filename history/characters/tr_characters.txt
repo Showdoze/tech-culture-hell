@@ -1494,7 +1494,8 @@
 	#trait=sympathy_christendom
 	trait = disloyal
 	trait = ill
-	350.1.1 = { birth = yes
+	350.1.1 = { 
+		birth = yes
 		#create_bloodline = {
 		#type = suebi_blood }
 	}
@@ -1504,7 +1505,6 @@
 		}
 	}
  }
-
  ck650063 = {
 	name = "Rechila"
 	dynasty = 1046017
@@ -1517,7 +1517,6 @@
 	390.1.1 = { birth = yes }
 	488.1.1 = { death = yes }
  }
-
  ck650064 = {
 	name = "Rechiar"
 	dynasty = 1046017
@@ -1586,7 +1585,7 @@
 	350.1.1 = { birth = yes }	
 	400.1.1 = {
 	    death = { death_reason= death_battle
-	        killer = 168769 }   }
+	    killer = 168769 }   }
   }
  ck650114 = {
     name = "Uldin"
@@ -1599,9 +1598,7 @@
 	father = ck650012
 	give_nickname = nick_the_hun
 	370.1.1 = { birth = yes }	
-	412.1.1 = {
-	    death = { death_reason= death_poor_health
-	} }
+	412.1.1 = { death = { death_reason= death_poor_health } }
  }	
  ck650111 = { 
     name = "Charaton"
@@ -1616,7 +1613,7 @@
 	371.1.1 = { birth = yes }	
 	413.1.1 = {
 	    death = { death_reason= death_poison
-	        killer = ck650112 } 
+	    killer = ck650112 } 
 	}
  }	
  ck650112 = {
@@ -1633,9 +1630,7 @@
 	father = ck650012
 	give_nickname = nick_the_hun
 	373.1.1 = { birth = yes }	
-	430.1.1 = {
-	    death = { death_reason= death_drinking_passive
-	} }
+	430.1.1 = { death = { death_reason= death_drinking_passive } }
  }	
  ck650113 = {
     name = "Rugila"

@@ -98,7 +98,7 @@ tr_doctrines = {
 		}
 	}
 	tennet_blood_m = {
-		icon = tenet_bloodlust #core_tenet_gruesome_festivals
+		icon = core_tenet_bloodm #core_tenet_gruesome_festivals
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
@@ -120,7 +120,8 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				torturer sadistic vengeful murderer gallowsbait
+				torturer sadistic vengeful murderer gallowsbait 
+				follow_mage_death ds_covenant_moundmakers 
 			}
 		    sins = { forgiving compassionate }
 		} 

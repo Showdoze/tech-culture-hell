@@ -142,11 +142,7 @@
 			learn_language_of_culture = culture:castilian
 	   }	
 	}
-	949.1.1 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	949.1.1 = { death = { death_reason = death_old_age } }
  }
 #Mafia
  tr_sopranos_chris = {
@@ -154,7 +150,6 @@
 	dna = chris_moltisanti
 	religion = catholic 
     dynasty_house = house_mafia
-	#dynasty = mmwitness
 	culture = italian_american
 	trait = education_martial_2
 	trait = arrogant
@@ -166,6 +161,28 @@
     disallow_random_traits = yes
 	849.7.20 = { birth = yes }
 	880.1.1 = {
+		death = {
+			death_reason = death_murder
+            killer = tr_sopranos_tony
+		}
+	}
+ }
+ tr_sopranos_tony = {
+    name = "Tony Soprano"
+	dna = sopranos_tony
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_martial_3
+	trait = arrogant
+    trait = lifestyle_reveler
+    trait = ambitious
+    trait = wrathful
+	trait = greedy
+	father = tr_vito_no
+    disallow_random_traits = yes
+	820.8.22 = { birth = yes }
+	900.1.1 = {
 		death = {
 			death_reason = death_murder
             #killer = 
@@ -227,12 +244,7 @@
     trait = ambitious
     disallow_random_traits = yes
 	800.1.1 = { birth = yes }
-	885.1.1 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
+	885.1.1 = { death = { death_reason = death_old_age } }
  }
 #ancient cultures 
  tr_hannibal_barca = {
@@ -288,11 +300,7 @@
 	trait = education_stewardship_4
 	trait = intellect_good_3
 	841.1.1 = { birth = yes }
-	900.9.28 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	900.9.28 = { death = { death_reason = death_old_age } }
  }
  tr_imotep_1 = {
     name = "Imhotep"
@@ -335,11 +343,7 @@
 			}
 		}
 	}
-	1000.1.1 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	1000.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_cleopatra = {
     name = "Cleopatra"
@@ -363,12 +367,7 @@
 			learn_language_of_culture = culture:alan
 	   }	
 	}
-	895.8.30 = {
-		death = {
-			death_reason = death_suicide
-            #killer = 
-		}
-	}
+	895.8.30 = { death = { death_reason = death_suicide } }
  }
  tr_astericky = {
 	name = "Astericky"
@@ -400,11 +399,7 @@
 	trait = administrator
 	trait = callous
 	845.1.1 = { birth = yes }
-	888.8.19 = {
-		death = {
-			death_reason = death_suicide
-		}
-	}
+	888.8.19 = { death = { death_reason = death_suicide } }
  }
  tr_other_augustus1 = {
 	name = "Octavia"
@@ -420,11 +415,7 @@
 	trait = administrator
 	trait = callous
 	845.1.1 = { birth = yes }
-	888.8.19 = {
-		death = {
-			death_reason = death_suicide
-		}
-	}
+	888.8.19 = { death = { death_reason = death_suicide } }
  }
  tr_athenian_1 = {
 	name = "Plato"
@@ -436,11 +427,7 @@
 	trait = shrewd
 	trait = callous
 	805.1.1 = { birth = yes }
-	888.1.1 = {
-		death = {
-			death_reason = death_suicide
-		}
-	}
+	888.1.1 = { death = { death_reason = death_suicide } }
  }
  tr_spartan_1 = {
 	name = "leonidos"
@@ -555,12 +542,8 @@ tr_doc_livesey = {
     trait = temperate
     trait = brave
     disallow_random_traits = yes
-	790.11.22 = { birth = yes }
-    870.11.9 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	814.11.22 = { birth = yes }
+    870.11.9 = { death = { death_reason = death_old_age } }
  }
  tr_churchhill = {
     name = "Winston Churchill"
@@ -576,12 +559,8 @@ tr_doc_livesey = {
     trait = wrathful
     trait = arrogant
     disallow_random_traits = yes
-	874.11.30 = { birth = yes }
-    870.1.24 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	794.11.30 = { birth = yes }
+    870.1.24 = { death = { death_reason = death_old_age } }
  }
  tr_mussolini = {
     name = "Benito Mussolini"
@@ -595,7 +574,7 @@ tr_doc_livesey = {
     trait = cynical
     trait = ambitious
     disallow_random_traits = yes
-	783.7.29 = {birth = yes}
+	805.7.29 = {birth = yes}
 	895.3.28 = {
 		death = {
 			death_reason = death_murder
@@ -626,12 +605,7 @@ tr_doc_livesey = {
 			learn_language_of_culture = culture:zastova 
 	   }	
 	}
-	953.3.5 = {
-		death = {
-			death_reason = death_old_age
-            #killer = 
-		}
-	}
+	953.3.5 = { death = { death_reason = death_old_age } }
  }
 #
 tr_mando = {

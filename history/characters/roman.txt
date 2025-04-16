@@ -346,8 +346,10 @@
 	trait = brave
 	trait = arbitrary
 	trait = kinslayer_3
-	trait = education_martial_2
+	trait = education_martial_3
 	trait = deviant
+	trait = schemer
+	trait = avaricious
 	disallow_random_traits = yes
 	mother = ck650094
 	2.11.16 = {
@@ -379,11 +381,7 @@
 	384.9.9 = {
 		birth = "384.9.9"
 	}
-	421.2.8 = {
-		death = {
-		    death_reason = death_gout_ridden
-		}
-	}
+	421.2.8 = { death = { death_reason = death_gout_ridden } }
 }
 
 145228 = {
@@ -579,6 +577,7 @@
 	trait = wounded_1
 	trait = just
 	trait = august
+	trait = gregarious
 	trait = theologian
 	trait = lifestyle_mystic
 	trait = logistician
@@ -589,9 +588,7 @@
 		birth = "332.5.1"
 		give_nickname = nick_the_apostate
 	}
-	355.11.6 = {
-		add_spouse = Constantine_daughter
-	}
+	355.11.6 = { add_spouse = Constantine_daughter }
 	363.6.26 = {
 		death = {
 			death_reason = death_wounds
@@ -656,9 +653,7 @@
 	260.1.1 = {
 		birth = "260.1.1"
 	}
-	296.1.1 = {
-		add_spouse = diocletian_daughter
-	}
+	296.1.1 = { add_spouse = diocletian_daughter }
 	311.5.5 = {
 		death = "311.5.5"
 	}
@@ -677,14 +672,13 @@
 	trait = zealous
 	trait = gregarious
 	trait = lifestyle_gardener
+	trait = overseer
 	trait = education_stewardship_4
 	father = diocletian_dad
 	244.12.22 = {
 		birth = "244.12.22"
 	}
-	284.1.1 = {
-		add_spouse = diocletian_wife
-	}
+	284.1.1 = { add_spouse = diocletian_wife }
 	305.4.1 = {
 		death = yes
 	} 
@@ -700,11 +694,7 @@
 	224.1.1 = {
 		birth = "224.1.1"
 	}
-	283.8.1 = {
-		death = {
-			death_reason = death_shock
-		}
-	}
+	283.8.1 = { death = { death_reason = death_shock } }
 }
 
 145243 = {
@@ -886,11 +876,7 @@
 	213.5.10 = {
 		birth = "213.5.10"
 	}
-	270.1.15 = {
-		death = {
-			death_reason = death_bubonic_plague
-		}
-	}
+	270.1.15 = { death = { death_reason = death_bubonic_plague } }
 }
 
 145253 = {
@@ -904,11 +890,7 @@
 	215.1.1 = {
 		birth = "215.1.1"
 	}
-	270.5.1 = {
-		death = { 
-			death_reason = death_suicide
-		}
-	}
+	270.5.1 = { death = { death_reason = death_suicide } }
 }
 
 145254 = {
@@ -1109,11 +1091,7 @@
 	170.1.1 = {
 		birth = "170.1.1"
 	}
-	238.6.1 = {
-		death = {
-			death_reason = killed_praetorian
-		}
-	}
+	238.6.1 = { death = { death_reason = killed_praetorian } }
 }
 
 145265 = {
@@ -1134,11 +1112,7 @@
 	170.1.1 = {
 		birth = "170.1.1"
 	}
-	238.3.22 = {
-		death = {
-			death_reason = killed_praetorian
-		}
-	}
+	238.3.22 = { death = { death_reason = killed_praetorian } }
 }
 
 145266 = {
@@ -1178,6 +1152,7 @@
 	trait = adulterer
 	trait = fornicator
 	trait = education_learning_1
+	trait = seducer
 	disallow_random_traits = yes
 	203.1.1 = {
 		birth = "203.1.1"
@@ -1363,11 +1338,7 @@
 		birth = "161.8.31"
 		add_trait = born_in_the_purple
 	}
-	192.12.31 = {
-		death = {
-			death_reason = death_bath
-		}
-	}
+	192.12.31 = { death = { death_reason = death_bath } }
 }
 
 145276 = {
@@ -1423,6 +1394,7 @@
 	dynasty = nerva_antonine
 	religion = "roman_pagan"
 	sexuality = homosexual
+	dna = 145278_Hadrian
 	culture = "roman"
 	trait = scholar
 	trait = gallant
@@ -1431,6 +1403,10 @@
 	trait = overseer
 	trait = diligent
 	trait = education_martial_3
+	trait = wrathful
+	trait = organizer
+	trait = logistician
+	trait = whole_of_body
 	trait = adopted
 	trait = former_consul_west
 	disallow_random_traits = yes
@@ -1448,6 +1424,7 @@
 	# Caesar Marcus Ulpius Nerva Traianus Augustus
 	dynasty = nerva_antonine
 	dna = 145279_trajan
+	sexuality = bisexual
 	religion = "roman_pagan"
 	culture = "roman"
 	trait = honest
@@ -1456,6 +1433,8 @@
 	trait = generous
 	trait = just
 	trait = diligent
+	trait = strategist
+	trait = administrator
 	trait = intellect_good_3
 	trait = education_martial_4
 	trait = adopted
