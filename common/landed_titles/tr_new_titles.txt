@@ -94,6 +94,15 @@ e_hunnic = {
 }
 e_heph = {
 	color={ 0 20 210 }
+	capital = c_rayy
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
 }
 e_wre = {
 	color={ 220 20 60 }
@@ -181,21 +190,14 @@ k_dagoth = {
 }
 d_tonal_architects = {
 	color={ 255 251 132 }
-
-    ignore_titularity_for_title_weighting = yes
-	ai_primary_priority = {
-		add = @always_primary_score
-	}
-
-	capital = c_alexandria
-	
-	landless = yes
-	ruler_uses_title_name = yes
+	capital = c_alexandria	
 	definite_form = yes
-	de_jure_drift_disabled = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
-	always_follows_primary_heir = yes
-	can_be_named_after_dynasty = no
+
+	ai_primary_priority = { add = @never_primary_score }
 }
 
