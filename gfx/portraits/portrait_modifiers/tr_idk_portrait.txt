@@ -943,6 +943,12 @@ tr_idk_freeman = {
                 template = spectacles
                 accessory = male_headgear_special_spectacles_01
             }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
         }
         weight = {
             base = 0
@@ -986,6 +992,12 @@ tr_idk_elivance = {
                 gene = clothes
                 template = ep2_western_era4_war_nobility_clothes
                 accessory = m_clothes_sec_ep2_western_era4_war_nob_01_lo
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }
         weight = {
@@ -1031,6 +1043,12 @@ tr_idk_isaackleiner = {
                 template = spectacles
                 accessory = male_headgear_special_spectacles_01
             }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
         }
         weight = {
             base = 0
@@ -1039,6 +1057,94 @@ tr_idk_isaackleiner = {
                 exists = this
                 exists = character:tr_isaackleiner
                 this = character:tr_isaackleiner
+            }
+        }
+    }
+}
+tr_idk_barneycalhoun = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_barneycalhoun = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = western_hairstyles_straight
+                accessory = male_hair_western_09
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = ep2_western_war_legwear
+                accessory = m_legwear_sec_ep2_western_era4_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = northern_war_nobility_clothes
+                accessory = m_clothes_sec_northern_war_nob_01_hi
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_barneycalhoun
+                this = character:tr_barneycalhoun
+            }
+        }
+    }
+}
+tr_idk_wallacebreen = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_wallacebreen = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = western_hairstyles_straight
+                accessory = male_hair_western_03
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = fp1_common_legwear
+                accessory = male_legwear_secular_fp1_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = pol_commoner_clothes
+                accessory = m_clothes_sec_pol_common_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_wallacebreen
+                this = character:tr_wallacebreen
             }
         }
     }
