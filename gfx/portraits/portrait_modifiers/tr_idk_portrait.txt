@@ -840,6 +840,31 @@ idk_portraits = {
 			}
         }
     }
+    tr_thief_hammer_11 = {
+        dna_modifiers = { 
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 }
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_thief_hammer_11
+				this = character:tr_thief_hammer_11
+			}
+        }
+    }
 }
 tr_idk_betruger = {
 

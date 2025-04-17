@@ -28,8 +28,7 @@
 			}
 		}
 	}
-	937.3.15 = { death = { death_reason = death_old_age }
-	}
+	937.3.15 = { death = { death_reason = death_old_age } }
  }
  tr_edgar_poe = {
     name = "Edgar Allan Poe"
@@ -476,6 +475,7 @@ tr_judge_holden = {
 			learn_language_of_culture = culture:castilian
 	   }	
 	}
+	#He says that he will never die.
 }
 tr_doc_livesey = {
     name = "Dr. Livesey"
@@ -508,11 +508,7 @@ tr_doc_livesey = {
 			}
 		}
 	}
-    920.3.28 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+    920.3.28 = { death = { death_reason = death_old_age } }
 }
 #WW2
  tr_gaulle = {
@@ -831,11 +827,7 @@ tr_charles_2_spain = {
 	trait = content
 	disallow_random_traits = yes
 	842.9.17 = { birth = yes }
-	880.11.1 = {
-		death = {
-			death_reason = death_inbred
-		}
-	}
+	880.11.1 = { death = { death_reason = death_inbred } }
 }
 tr_lara_croft = {
 	name = "Lara Croft"
@@ -918,11 +910,7 @@ tr_dutch_van = {
 			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
 		}
 	}
-	911.1.1 = {
-		death = {
-			death_reason = death_suicide
-		}
-	}
+	911.1.1 = { death = { death_reason = death_suicide } }
 }
 #THIEF
  tr_thief_keeper = {
@@ -1013,7 +1001,7 @@ tr_dutch_van = {
 		}
 	}
  }
- tr_thief_hammer4 = {
+ tr_thief_hammer_yora = {
 	name = "Yora"
 	religion = hammerite_faith
 	dynasty_house = house_thief
@@ -1022,9 +1010,108 @@ tr_dutch_van = {
 	trait = diligent
 	trait = temperate
 	trait = chaste
-	trait = strategist
+	trait = architect
 	trait = theologian
 	trait = intellect_good_3
+	give_nickname = nick_the_saint
+	disallow_random_traits = yes
+	270.1.1 = { birth = yes }
+	380.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_hammer7 = {
+	name = "Uriel"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_3
+	trait = diligent
+	trait = temperate
+	trait = chaste
+	trait = strategist
+	trait = theologian
+	disallow_random_traits = yes
+	350.1.1 = { birth = yes }
+	450.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_hammer8 = {
+	name = "Raphael"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_2
+	trait = lazy
+	trait = drunkard
+	trait = chaste
+	trait = strategist
+	trait = theologian
+	disallow_random_traits = yes
+	425.1.1 = { birth = yes }
+	500.1.1 = { death = { death_reason = death_drinking_passive } }
+ }
+ tr_thief_hammer9 = {
+	name = "Herald"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_2
+	trait = diligent
+	trait = temperate
+	trait = chaste
+	trait = administrator
+	trait = theologian
+	trait = reckless
+	disallow_random_traits = yes
+	475.1.1 = { birth = yes }
+	550.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_hammer_10 = {
+	name = "Uriel"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_2
+	trait = diligent
+	trait = temperate
+	trait = chaste
+	trait = adventurer
+	trait = theologian
+	trait = intellect_good_1
+	disallow_random_traits = yes
+	525.1.1 = { birth = yes }
+	620.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_hammer_11 = {
+	name = "Inquisitor"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	dna = dna_dante_alighieri
+	trait = education_learning_3
+	trait = diligent
+	trait = zealous
+	trait = wrathful
+	trait = torturer
+	trait = theologian
+	trait = sadistic
+	disallow_random_traits = yes
+	600.1.1 = { birth = yes }
+	680.1.1 = { death = {
+			death_reason = death_murder
+            killer = trbeccamcglass
+		} }
+ }
+ tr_thief_hammer4 = {
+	name = "Uriel"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_2
+	trait = diligent
+	trait = temperate
+	trait = chaste
+	trait = inappetetic
+	trait = theologian
+	trait = whole_of_body
 	disallow_random_traits = yes
 	650.1.1 = { birth = yes }
 	750.1.1 = { death = { death_reason = death_old_age } }
@@ -1057,6 +1144,10 @@ tr_dutch_van = {
 	trait = strategist
 	trait = theologian
 	trait = intellect_good_3
+	trait = venerable
+	trait = whole_of_body
+	trait = strong
+	give_nickname = nick_the_saint
 	disallow_random_traits = yes
 	750.1.1 = { birth = yes }
 	850.1.1 = { death = { death_reason = death_old_age } }

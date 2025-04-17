@@ -219,7 +219,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	trait = lazy
+	trait = content
+	trait = wrathful
 	trait = generous
+	trait = athletic
+	trait = adventurer
 	trait = education_martial_3
 	father = 108
 	1016.1.1 = {
@@ -227,10 +231,14 @@
 	}
 	1036.1.2 = {
 		add_spouse = 41101
+		give_nickname = nick_the_exile
+		effect = {
+			learn_language_of_culture = culture:russian
+			learn_language_of_culture = culture:hungarian
+		}
 	}
 	1057.8.30 = {
 		death = "1057.8.30"
-		give_nickname = nick_the_exile
 	}
 }
 
@@ -362,11 +370,7 @@
 		add_spouse = 121
 		add_trait = ill
 	}
-	1066.1.5 = {
-		death = {
-			death_reason = death_ill
-		}
-	}
+	1066.1.5 = {	death = { death_reason = death_ill } }
 }
 
 115 = {
@@ -1676,10 +1680,12 @@
 	
 	# Education
 	trait = education_martial_3
+
 	# Personality Traits
 	trait = ambitious
 	trait = vengeful #killed a bunch of Normans who killed his brother
 	trait = wrathful #see above
+
 	# Other Traits
 	trait = forder #defended the fenlands
 	trait = adventurer
@@ -1689,7 +1695,6 @@
 	}
 	1060.1.1 = {
 		add_spouse = 90160 #Turfida
-		#employer = 364 #Baldwin of Flanders
 		add_pressed_claim = title:c_cambridgeshire
 		give_nickname = nick_the_wake
 		effect = {
