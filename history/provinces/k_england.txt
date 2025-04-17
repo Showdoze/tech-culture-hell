@@ -28,7 +28,7 @@
 		culture = english
 	}
 }
-1526 = {	#Southwark London
+1526 = {	#Southwark
 	holding = city_holding
 	800.1.1 = {
 		special_building_slot = london_bridge_01
@@ -320,7 +320,7 @@
 	#1071
 }
 1500 = {	#Yarlestre
-	holding = none
+	holding = church_holding
 }
 
 ###c_east_riding
@@ -680,6 +680,10 @@
 	culture = anglo_saxon
 	religion = catholic
 	holding = castle_holding
+	special_building_slot = generic_university
+	1096.1.1 = {
+		special_building = generic_university
+	}
 	1100.11.11 = {
 		culture = english
 	}
