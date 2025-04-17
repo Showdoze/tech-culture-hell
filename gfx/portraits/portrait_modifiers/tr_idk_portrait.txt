@@ -880,3 +880,34 @@ tr_idk_betruger = {
         }
     }
 }
+tr_idk_freeman = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_gordonfreeman = {
+        dna_modifiers = {
+            accessory = {
+                mode = modify
+                gene = beards
+                template = all_beards
+                accessory = male_beard_western_05
+            }
+            accessory = {
+                mode = modify
+                gene = hairstyles
+                template = male_hair_byzantine_02
+            }
+        }
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_gordonfreeman
+				this = character:tr_gordonfreeman
+			}
+        }
+    }
+}
