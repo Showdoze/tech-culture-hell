@@ -999,3 +999,47 @@ tr_idk_elivance = {
         }
     }
 }
+tr_idk_isaackleiner = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_isaackleiner = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = western_hairstyles_wavy
+                accessory = male_hair_western_04
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = ccp4_sami_common_legwear
+                accessory = m_legwear_sec_ccp4_sami_com_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = western_bedchamber
+                accessory = male_clothes_situational_western_bedchamber_01_common
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = spectacles
+                accessory = male_headgear_special_spectacles_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_isaackleiner
+                this = character:tr_isaackleiner
+            }
+        }
+    }
+}
