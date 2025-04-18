@@ -1011,6 +1011,82 @@ tr_idk_elivance = {
         }
     }
 }
+tr_idk_azianvance = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_elivance = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp1_hairstyles_straight
+                accessory = female_hair_fp1_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_azianvance
+                this = character:tr_azianvance
+            }
+        }
+    }
+}
+tr_idk_alyxvance = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_elivance = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = western_hairstyles_straight
+                accessory = female_hair_western_09
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = mena_war_legwear
+                accessory = female_legwear_secular_mena_war_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = pol_war_nobility_clothes
+                accessory = f_clothes_sec_pol_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_alyxvance
+                this = character:tr_alyxvance
+            }
+        }
+    }
+}
 tr_idk_isaackleiner = {
 
     usage = game
@@ -1042,6 +1118,12 @@ tr_idk_isaackleiner = {
                 gene = special_headgear_spectacles
                 template = spectacles
                 accessory = male_headgear_special_spectacles_01
+            }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
@@ -1086,6 +1168,12 @@ tr_idk_barneycalhoun = {
                 gene = clothes
                 template = northern_war_nobility_clothes
                 accessory = m_clothes_sec_northern_war_nob_01_hi
+            }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
@@ -1145,6 +1233,64 @@ tr_idk_wallacebreen = {
                 exists = this
                 exists = character:tr_wallacebreen
                 this = character:tr_wallacebreen
+            }
+        }
+    }
+}
+tr_idk_judithmossman = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_judithmossman = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_judithmossman
+                this = character:tr_judithmossman
+            }
+        }
+    }
+}
+tr_idk_arnemagnusson = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_arnemagnusson = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_arnemagnusson
+                this = character:tr_arnemagnusson
             }
         }
     }
