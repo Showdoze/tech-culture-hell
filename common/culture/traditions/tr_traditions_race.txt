@@ -954,7 +954,7 @@ tradition_sus = {
 	cost = { prestige = 20000 }
 	ai_will_do = { value = 0 }
  }
- tradition_innsmouth = {
+tradition_innsmouth = {
 	category = ritual
 	layers = {
 		0 = martial
@@ -987,32 +987,99 @@ tradition_sus = {
 		wounds_and_scars_give_bonuses = yes
 		guardians_can_transfer_commander_traits = yes
 		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
 		stubborn_trait_more_common = yes
 		expensive_convert_to_local_culture = yes
 		harder_to_hybridize = yes
 		more_expensive_feasts = yes
 		hunting_traits_more_valued = yes
-		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		less_likely_to_culture_convert = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		vassals_more_likely_accept_punishments = yes
+		coastal_holdings_give_defensive_bonus = yes
+		coastal_agriculture_building_bonuses = yes
+		coastal_holding_bonuses = yes
+		reveler_traits_more_common = yes
+		reveler_traits_more_valued = yes
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		close_family_better_councillors = yes
+		close_family_better_court_positions = yes
+		penalty_for_revoking_titles_from_close_family = yes
+		better_disease_resistance = yes
+		tells_stories = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+	}
+	province_modifier = {
+		hostile_raid_time = 0.5
+	}
+	character_modifier = {
+		close_relative_opinion = 10
+		sea_travel_danger = medium_sea_danger_reduction
+		coastal_sea_travel_danger = medium_sea_danger_reduction
+	}
+	cost = { prestige = 20000 }
+	ai_will_do = { value = 0 }
+}
+tradition_fromsoft = {
+	category = ritual
+	layers = {
+		0 = martial
+		1 = western
+		4 = innsmouth.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		ambitious_trait_more_common = yes
+		diligent_trait_more_common = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		brave_trait_gives_bonuses = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+		knights_slightly_more_prone_to_injury = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		hunting_traits_more_valued = yes
 		culture_can_raid_at_sea_even_if_feudal = yes
 		not_tribal_raiding_malus = yes
 		war_stress_loss = yes
 		less_likely_to_culture_convert = yes
 		can_host_joust_contests = yes
 		knight_errant_trait_bonuses = yes
-		dislikes_marrying_outside_of_culture = yes
-		ai_doesnt_marry_outside_culture = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		build_bonuses_on_religious_traits = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
+		has_access_to_runestones = yes
 	}
 	culture_modifier = {
-		cultural_acceptance_gain_mult = -0.5
+		cultural_acceptance_gain_mult = -0.15
 	}
 	character_modifier = {
+		same_culture_mercenary_hire_cost_mult = -0.25
+		negate_health_penalty_add = 0.1
 	}
-	cost = {
-		prestige = 20000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 20000 }
+	ai_will_do = { value = 0 }
 }
 #ELDER SCROLLS #
  tradition_bosmer = {

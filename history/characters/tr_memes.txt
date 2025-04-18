@@ -2181,8 +2181,8 @@ mmnwordboi = {
 	865.1.1 = { remove_spouse = mmianfoote }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
-#KING COBRA
-mmcob_dad = {
+#KING COBRA family
+ mmcob_dad = {
 	name = "Clint Saunders"
 	religion = catholic
 	culture = american
@@ -2194,7 +2194,7 @@ mmcob_dad = {
 	disallow_random_traits = yes
 	800.3.26 = { birth = yes }
 	848.1.3 = { add_spouse = mmcob_mom }
-	890.1.1 = { death = { death_reason = death_stress } }
+	890.1.1 = { death = { death_reason = death_old_age } }
  }
  mmcob_mom = {
 	name = "Agnes"
@@ -2205,11 +2205,12 @@ mmcob_dad = {
 	trait = witch
 	trait = lustful
 	trait = arrogant
+	trait = follow_cthulhu
 	trait = education_stewardship_2
 	disallow_random_traits = yes
-	800.3.26 = { birth = yes }
+	820.3.26 = { birth = yes }
 	848.1.3 = { add_spouse = mmcob_dad }
-	860.1.1 = { death = { death_reason = death_sea_calling } }
+	850.1.1 = { death = { death_reason = death_sea_calling } }
  }
  mmkcjfs = {
 	name = "KingCobraJFS"
