@@ -954,6 +954,66 @@ tradition_sus = {
 	cost = { prestige = 20000 }
 	ai_will_do = { value = 0 }
  }
+ tradition_innsmouth = {
+	category = ritual
+	layers = {
+		0 = martial
+		1 = western
+		4 = innsmouth.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:innsmouth
+			any_parent_culture_or_above = {
+				this = culture:innsmouth
+			}
+		}
+	}
+	parameters = {
+		ambitious_trait_more_common = yes
+		intrigue_education_better_outcomes = yes
+		diligent_trait_more_common = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+		knights_slightly_more_prone_to_injury = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		more_expensive_feasts = yes
+		hunting_traits_more_valued = yes
+		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		less_likely_to_culture_convert = yes
+		can_host_joust_contests = yes
+		knight_errant_trait_bonuses = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+	}
+	character_modifier = {
+	}
+	cost = {
+		prestige = 20000
+	}
+	ai_will_do = {
+		value = 0
+	}
+}
 #ELDER SCROLLS #
  tradition_bosmer = {
 	category = regional
