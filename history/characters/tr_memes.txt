@@ -2182,11 +2182,42 @@ mmnwordboi = {
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 #KING COBRA
+mmcob_dad = {
+	name = "Clint Saunders"
+	religion = catholic
+	culture = american
+	dynasty_house = house_lolcow
+	trait = patient
+	trait = calm
+	trait = compassionate
+	trait = education_diplomacy_2
+	disallow_random_traits = yes
+	800.3.26 = { birth = yes }
+	848.1.3 = { add_spouse = mmcob_mom }
+	890.1.1 = { death = { death_reason = death_stress } }
+ }
+ mmcob_mom = {
+	name = "Agnes"
+	religion = catholic
+	culture = innsmouth
+	#dynasty_house = house_lolcow
+	dna = please_take_her
+	trait = witch
+	trait = lustful
+	trait = arrogant
+	trait = education_stewardship_2
+	disallow_random_traits = yes
+	800.3.26 = { birth = yes }
+	848.1.3 = { add_spouse = mmcob_dad }
+	860.1.1 = { death = { death_reason = death_sea_calling } }
+ }
  mmkcjfs = {
 	name = "KingCobraJFS"
 	religion = catholic
 	culture = american
 	dynasty_house = house_lolcow
+	father = mmcob_dad
+	mother = mmcob_mom
 	trait = witch
 	trait = lustful
 	trait = arrogant
