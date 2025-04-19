@@ -1398,7 +1398,7 @@ tr_dutch_van = {
 	831.1.1 = { birth = yes }
 	890.1.1 = { death = { death_reason = death_old_age } }
  }
- tr_dagoth_100 = {
+ tr_dagothur = {
 	name = "Voryn" # Voryn Dagoth
 	dna = voryn_dna_entry
 	dynasty_house = house_elder_scrolls
@@ -1417,6 +1417,17 @@ tr_dutch_van = {
 	}
 	1668.1.1 = {
 		death = { death_reason = death_red_mountain }
+	}
+ }
+ tr_nerevar = {
+	name = "Nerevar"
+	culture = random
+	religion = random
+	830.1.1 = { birth = yes }
+	855.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:tr_dagothur }
+		}
 	}
  }
 #
