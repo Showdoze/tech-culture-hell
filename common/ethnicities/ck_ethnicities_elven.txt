@@ -50,7 +50,7 @@ high_elven = {
 	template = "night_elven"
 	#using = "vlach"
 	
-	hair_color = {
+	tr_hair_color = {
 		## Blonde
 		#40 = { @blonde_color_x_min @blonde_color_y_min @blonde_color_x_max @blonde_color_y_max }
 		## Brown
@@ -64,10 +64,10 @@ high_elven = {
 		20 = { 0.004 0.443 0.067 0.541 } #Red/Orange
 		5 = { 0.055 0.820 0.078 1 } #Brown/Black
 	}
-	skin_color = {
+	tr_skin_color = {
 		10 = { 0.055 0.192 0.078 0.250 }
 	}
-	eye_color = {
+	tr_eye_color = {
         ## Blue
         #75 = { @blue_eye_color_x_min @arcane_color_y_min @blue_eye_color_x_max @arcane_color_y_max }
 		## Purple
@@ -469,14 +469,14 @@ night_elven = {
 	visible = no
 	gene_race = { 1 = { name = creature_night_elf range = { 0 1 } } }
 	
-	hair_color = {
+	tr_hair_color = {
 		### From Green to Red
 		10 = { 0.35 @white_color_y_min @elven_red_color_x_max 1 }
 	}
-	skin_color = {
+	tr_skin_color = {
 		10 = { 0.85 0.24 0.95 0.34 }
 	}
-	eye_color = {
+	tr_eye_color = {
         # Silver to Bright Blue
         75 = { 0.639 0.15 0.667 0.35 }
 	}
@@ -903,15 +903,15 @@ faldorei_ethnicity = {
 	
 	gene_race = { 1 = { name = creature_faldorei range = { 0 1 } } }
 	
-	hair_color = {
+	tr_hair_color = {
 		# White
 		1 = { 0.129 0.043 0.137 0.110 } # Platinum Blonde & White
 	}
-	skin_color = {
+	tr_skin_color = {
 		70 = { 0.73 0.93 0.73 0.99 } # Black
 		30 = { 0.714 0.75 0.75 0.75 } # Gray
 	}
-	eye_color = {
+	tr_eye_color = {
 		# White
 		1 = { 0.702 0.114 0.702 0.3 }
 	}

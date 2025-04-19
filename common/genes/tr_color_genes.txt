@@ -1,0 +1,20 @@
+tr_color_genes = {
+	tr_hair_color = {
+		group = hair
+		color = eye
+		blend_range = { 0.0 0.0 }
+	}
+	tr_skin_color = {
+		sync_inheritance_with = hair_color
+		group = body
+		color = eye
+		blend_range = { 0.55 0.65 }
+	}
+	tr_eye_color = {
+		sync_inheritance_with = hair_color
+		group = eyes
+		color = eye
+		blend_range = { 0.0 0.0 }
+	}
+
+}

@@ -1337,8 +1337,44 @@ tr_idk_dagothur = {
             accessory = {
                 mode = add
                 gene = beards
-                template = no_beard
-                range = { 0 1 } # For the randomness to work correctly
+                template = fp1_beards_straight
+                accessory = male_beard_fp1_02
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp2_hairstyles_iberian_muslim_straight
+                accessory = male_hair_fp2_iberian_muslim_03
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = religious_african_high_clothes
+                accessory = male_clothes_religious_african_high_01_common
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_face_mask
+                template = ep3_golden_nose
+                accessory = m_headgear_spec_ep3_golden_nose
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = spectacles
+                accessory = male_headgear_special_spectacles_01
+            }
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = pol_crest
+                accessory = m_headgear_sec_pol_era3_war_crest_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                value = 0.1 # For the randomness to work correctly
             }
             accessory = {
                 mode = add
