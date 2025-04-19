@@ -72,6 +72,7 @@ peasant_born = {
 		first_valid = {
             triggered_desc = {
 				trigger = {
+					exists = this
 					culture = { has_innovation = innovation_drow_build }
 				}
 				desc = trait_peasant_born_drow
