@@ -1,0 +1,29 @@
+norse = {
+	is_shown = {
+		OR = {
+			has_culture = culture:norse
+			AND = {
+				religion = religion:germanic_religion
+				culture = { has_cultural_pillar = heritage_north_germanic }
+			}
+		}
+	}
+}
+
+iberian = {
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_iberian }
+	}
+}
+
+iranian = {
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_iranian }
+	}
+}
+
+byzantine = {
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_byzantine }
+	}
+}
