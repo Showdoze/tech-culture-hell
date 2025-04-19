@@ -239,7 +239,46 @@
 		10 = european_med_greek_1
 	}	
  }
-
+ minoan = {
+	color = minoan
+	ethos = ethos_spiritual
+	heritage = heritage_ancient_greek #heritage_aegean
+	language = language_ancient_greek #language_minoan
+	martial_custom = martial_custom_male_only #placeholder
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_artisans
+		tradition_pacifism
+		tradition_sacred_mountains
+	}
+	name_list = name_list_aegean
+	coa_gfx = { byzantine_group_coa_gfx } #helladic_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	ethnicities = {
+		10 = aegean 
+	}
+ }
+ helladic = {
+	color = helladic	
+	ethos = ethos_egalitarian
+	heritage = heritage_ancient_greek #heritage_aegean
+	language = language_ancient_greek #language_helladic
+	martial_custom = martial_custom_male_only #placeholder
+	traditions = {
+		tradition_hill_dwellers
+		tradition_sacred_groves
+	}	
+	name_list = name_list_aegean
+	coa_gfx = { byzantine_group_coa_gfx } #helladic_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }	
+	ethnicities = {
+		10 = aegean 
+	}
+ }
 ###HOLY ORDER
  hospitaller = {
 	color = hsv { 0.08 0.02 0.8 }

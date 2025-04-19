@@ -24,7 +24,33 @@
 		}
 	}
 }
-
+clone = {
+	opposites = {
+        bastard
+		wild_oat
+		legitimized_bastard
+		child_of_concubine
+	}
+	random_creation = 0
+	close_relative_opinion = 15
+	#same_culture_opinion = 10
+	monthly_character_prestige = 0.01
+	shown_in_ruler_designer = no
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_clone_trait_desc
+			}
+			desc = trait_clone_trait_character_desc
+		}
+	}
+}
 peasant_born = {
 	opposites = {
         born_in_the_purple
@@ -67,7 +93,6 @@ peasant_born = {
 		}
 	}
 }
-
 patrician_born = {
 	opposites = {
 		legitimized_bastard

@@ -75,7 +75,7 @@ mesopotamian = {
 	}
 }
 akkadian = {
-	color = { 200 200 10 }
+	color = akkadian #{ 200 200 10 }
 	created = 10.1.1
 	parents = { sumer }
 	history_loc_override = akkadian_history_loc
@@ -98,7 +98,7 @@ akkadian = {
 	}
 }
 sumer = {
-	color = { 245 205 10 }
+	color = sumerian #{ 245 205 10 }
 	created = 5.1.1
 	parents = { mesopotamian }
 	history_loc_override = sumer_history_loc
@@ -120,7 +120,6 @@ sumer = {
 		10 = iranian_persian_1
 	}
 }
-
 babylonian = {
 	color = { 10 245 172 }
 	created = 8.1.1
@@ -145,7 +144,7 @@ babylonian = {
 	}
 }
 elamite = {
-	color = { 165 118 22 }
+	color = elamite #{ 165 118 22 }
 	created = 8.1.1
 	parents = { sumer }
 	history_loc_override = elamite_history_loc
