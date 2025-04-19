@@ -14,7 +14,6 @@ death_troop = {
 }
 
 death_shock = {
-	default = yes
 	natural = yes
 	icon = "death_natural.dds"
 }
@@ -55,10 +54,16 @@ death_childbirth_lol = {
 	icon = "death_disease.dds"
 }
 death_drug = {
-	default = yes
 	natural = yes
 	icon = "death_disease.dds"
 }
 death_sea_calling = {
+	natural_death_trigger = {
+		OR = {
+			has_trait = follow_cthulhu
+			#has_character_modifier = stress_drinking_binge
+		}
+	}
+	priority = 36
 	icon = "death_unknown.dds"
 }
