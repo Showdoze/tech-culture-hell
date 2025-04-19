@@ -120,8 +120,8 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				torturer sadistic vengeful murderer gallowsbait 
-				follow_mage_death ds_covenant_moundmakers 
+				torturer sadistic vengeful murderer gallowsbait follow_b_ripper follow_b_caleb 
+				follow_mage_death ds_covenant_moundmakers follow_b_madara 
 			}
 		    sins = { forgiving compassionate }
 		} 
@@ -161,7 +161,7 @@ tr_doctrines = {
 		piety_cost = { value =  690 }
 		traits = {
 			virtues = { 
-				fickle patient content reincarnation 
+				fickle patient content reincarnation class_sorcerer_dragon 
 			}
 			sins = { 
 				stubborn vengeful arrogant 
@@ -316,6 +316,10 @@ tr_doctrines = {
 			same_faith_promote_culture_bonus_active = yes
 			piety_from_feasts_active = yes
 			consolamentum_active = yes
+			increased_dynasty_prestige_birth_mult = 1
+			increased_dynasty_prestige_marriage_mult = 1
+			increased_dynasty_prestige_long_reign_mult = 0.5
+			pilgrimage_decision_active = yes
 		}
 		character_modifier = {
 			short_reign_duration_mult = -0.5
@@ -323,6 +327,7 @@ tr_doctrines = {
 			prowess = 2
 			controlled_province_advantage = 5
 			monthly_piety_gain_per_dread_add = 0.01
+			close_relative_opinion = 5
 		}
 	}
 	tenet_bosmer = {

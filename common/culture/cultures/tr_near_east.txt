@@ -1,0 +1,170 @@
+parthian = {
+	color = { 0.7 0.1 0.2 }	
+	parents = { macedonian persian }
+	created = 15.1.1
+	history_loc_override = parthian_history_loc	
+	ethos = ethos_egalitarian #Parthian "philhellenes"
+	heritage = heritage_iranian
+	language = language_parthian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_xenophilic
+		tradition_ruling_caste
+		tradition_futuwaa
+		tradition_horse_lords #Parthian Cavalry
+	}	
+	name_list = name_list_parthian	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { west_iranian_unit_gfx }	
+	ethnicities = {
+		10 = iranian_kurdish_1
+	}
+}
+hephthalite = {
+	color = { 0.35 0.03 0.19  }
+	parents = { saka turkish }
+	created = 350.1.1 # First mentioned in 361 CE, likely part of wave of major nomadic migrations in Central Asia c. 350 CE
+	history_loc_override = iranian_hun_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Warriors from the steppes
+		tradition_mountain_homes # May have originated from the Pamir region
+		tradition_sacred_mountains # Zun was a solar mountain god
+		tradition_city_keepers # Although they may (or may not) have started off as nomads, they often settled into cities, and according to recent scholarship the Kidarite/Hephthalite period was one of increased urban growth in the eastern Iranian worlds
+		#tradition_RICE_white_huns
+	}
+	dlc_tradition = { # Did a lot of culture blending later on
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	name_list = name_list_hephthalite
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		8 = arab
+		5 = mediterranean_byzantine # mediterranean
+	}
+}
+mesopotamian = {
+	color = { 21 162 91 }
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_gardening
+		tradition_xenophilic
+	}
+	name_list = name_list_mesopotamian	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx african_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = iranian_persian_1
+	}
+}
+akkadian = {
+	color = { 200 200 10 }
+	created = 10.1.1
+	parents = { sumer }
+	history_loc_override = akkadian_history_loc
+	ethos = ethos_bellicose
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_gardening
+		tradition_storytellers
+		tradition_city_keepers
+	}
+	name_list = name_list_akkadian
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx african_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = iranian_persian_1
+	}
+}
+sumer = {
+	color = { 245 205 10 }
+	created = 5.1.1
+	parents = { mesopotamian }
+	history_loc_override = sumer_history_loc
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_two_rivers_two_people
+		tradition_frugal_armorsmiths
+	}
+	name_list = name_list_sumer	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx african_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = iranian_persian_1
+	}
+}
+
+babylonian = {
+	color = { 10 245 172 }
+	created = 8.1.1
+	parents = { sumer }
+	history_loc_override = babylonian_history_loc
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_eye_for_an_eye
+		tradition_legalistic
+		tradition_parochialism
+	}
+	name_list = name_list_babylonian
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx african_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = iranian_persian_1
+	}
+}
+elamite = {
+	color = { 165 118 22 }
+	created = 8.1.1
+	parents = { sumer }
+	history_loc_override = elamite_history_loc
+	ethos = ethos_courtly
+	heritage = heritage_sumerian
+	language = language_elamite
+	martial_custom = martial_custom_male_only
+	traditions = {
+        tradition_city_keepers
+		tradition_philosopher_culture
+		tradition_language_scholars
+		tradition_persian
+	}
+	name_list = name_list_elamite	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx african_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = iranian_persian_1
+	}
+}
