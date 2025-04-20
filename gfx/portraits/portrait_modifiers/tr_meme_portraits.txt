@@ -1154,3 +1154,58 @@ tr_meme_rickastley = {
         }
     }
 }
+tr_meme_kcjfs = {
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    mmkcjfs = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = thin_beards_straight
+                accessory = male_beard_steppe_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp2_hairstyles_iberian_christian_straight
+                accessory = male_hair_fp2_iberian_christian_03
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = western_common_legwear
+                accessory = male_legwear_secular_western_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = fp1_commoner_clothes
+                accessory = male_clothes_secular_fp1_common_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_christian_common
+                accessory = male_headgear_secular_fp2_iberian_christian_common_01
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = spectacles
+                accessory = male_headgear_special_spectacles_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:mmkcjfs
+                this = character:mmkcjfs
+            }
+        }
+    }
+}
