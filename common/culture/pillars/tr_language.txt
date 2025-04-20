@@ -12,7 +12,7 @@
 			multiply = 10
 		}
 	}
-	color = assyrian
+	color = elamite
 }
 language_japanese = {
 	type = language
@@ -28,7 +28,7 @@ language_japanese = {
 			multiply = 10
 		}
 	}
-	color = han
+	color = japanese
 }
 language_ancient_egyptian = {
 	type = language
@@ -44,9 +44,8 @@ language_ancient_egyptian = {
 			multiply = 10
 		}
 	}
-	color = somali
+	color = kemetic
 }
-
 language_mescalero = {
 	type = language
 	is_shown = {
@@ -63,7 +62,6 @@ language_mescalero = {
 	}
 	color = somali
 }
-
 language_unknown = {
 	type = language
 	is_shown = {
@@ -224,7 +222,6 @@ language_orcish = { #Orcish dialects
 	}
 	color = rgb { 172 22 22 }
 }
-
 language_ogre = { #Ogre dialects
 	type = language
 	is_shown = {
@@ -255,7 +252,7 @@ language_bosmeris = {
 			multiply = 10
 		}
 	}
-	color = rgb { 209 189 87 }
+	color = bosmeris
 }
 language_altmeris = {
 	type = language
@@ -336,7 +333,7 @@ language_punic = {
 		}
 
 	}
-	color = ashkenazi
+	color = puntic
 }
 language_nahuatl = {
 	type = language
@@ -400,7 +397,6 @@ language_old_falmeris = {
 			multiply = 10
 		}
 	}
-	
 	color = falmeris
 }
 language_falmeris = {
@@ -417,7 +413,6 @@ language_falmeris = {
 			multiply = 10
 		}
 	}
-	
 	color = jorane
 }
 language_jel = { #Argonian
@@ -434,7 +429,6 @@ language_jel = { #Argonian
 			multiply = 10
 		}
 	}
-	
 	color = jel
 }
 language_taagra = { #khajitt
@@ -451,7 +445,6 @@ language_taagra = { #khajitt
 			multiply = 10
 		}
 	}
-	
 	color = taagra
 }
 language_hylian = {
@@ -468,7 +461,6 @@ language_hylian = {
 			multiply = 10
 		}
 	}
-	
 	color = { 255 221 14 }
 }
 language_nordic = {
@@ -485,7 +477,6 @@ language_nordic = {
 			multiply = 10
 		}
 	}
-	
 	color = nordic
 }
 language_yoku = {
@@ -502,8 +493,7 @@ language_yoku = {
 			multiply = 10
 		}
 	}
-	
-	color = { 200 10 10 }
+	color = yoku
 }
 language_mando = {
 	type = language
@@ -519,7 +509,6 @@ language_mando = {
 			multiply = 10
 		}
 	}
-	
 	color = nordic
 }
 language_drow = {
@@ -555,4 +544,20 @@ language_gith = {
 	}
 	
 	color = nordic
+}
+language_luwian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_luwian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_luwian }
+			multiply = 10
+		}
+	}
+	color = luwian
 }

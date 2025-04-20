@@ -1235,30 +1235,46 @@
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
- hammerite_k_f = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 301
-	governments = { theocracy_government }
-	faiths = { hammerite_faith  }
- }
- hammerite_k_m = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 301
-	governments = { theocracy_government }
-	faiths = { hammerite_faith  }
- }
+  #hammerite_k_f = {
+ #	type = character
+ #	gender = male
+ # 	special = holder
+ #	tier = kingdom
+ #	priority = 301
+ #	governments = { theocracy_government }
+ #	faiths = { hammerite_faith  }
+  #}
+ #hammerite_k_m = {
+ #	type = character
+ #	gender = female
+ #	special = holder
+ #	tier = kingdom
+ #	priority = 301
+ #	governments = { theocracy_government }
+ #	faiths = { hammerite_faith  }
+ #}
  hammerite_k = {
 	type = title
 	tier = kingdom
 	priority = 301
 	holding = church_holding
 	faiths = { hammerite_faith  }
+ }
+ hammerite_k_m = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_hammerite }
+ }
+ mechanist_k_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_hammerite }
  }
  mechanist_d_m = {
 	type = character
@@ -1339,5 +1355,390 @@
 	priority = 100
 	council_position = councillor_spymaster
 	name_lists = { name_list_high_valyrian }
+ }
+# Mycenaean
+ baron_feudal_male_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	name_lists = { name_list_mycenaean }
+	flavourization_rules = { 
+		top_liege = no
+	}
+ }
+ baron_feudal_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	name_lists = { name_list_mycenaean }
+	flavourization_rules = { 
+		top_liege = no
+	}
+ }
+ count_feudal_male_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 17
+	name_lists = { name_list_mycenaean }
+ }
+ count_feudal_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 17
+	name_lists = { name_list_mycenaean }
+ }
+ county_feudal_mycenaean = {
+	type = title
+	tier = county
+	priority = 18
+	name_lists = { name_list_mycenaean }
+ }
+ duke_feudal_male_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	name_lists = { name_list_mycenaean }
+ }
+ duke_feudal_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	name_lists = { name_list_mycenaean }
+ }
+ duke_feudal_independent_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	flavourization_rules = {
+		only_independent = yes
+	}
+	name_lists = { name_list_mycenaean }
+ }
+ duke_feudal_independent_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	flavourization_rules = {
+		only_independent = yes
+	}
+	name_lists = { name_list_mycenaean }
+ }
+ duchy_feudal_mycenaean = {
+	type = title
+	tier = duchy
+	name_lists = { name_list_mycenaean }
+	priority = 29
+ }
+ king_feudal_male_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_mycenaean }
+ }
+ king_feudal_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_mycenaean }
+ }
+ kingdom_feudal_mycenaean = {
+	type = title
+	tier = kingdom
+	priority = 48
+	name_lists = { name_list_mycenaean }
+ }
+ emperor_feudal_male_mycenaean = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_mycenaean }
+ }
+ emperor_feudal_female_mycenaean = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_mycenaean }
+ }
+ empire_feudal_mycenaean = {
+	type = title
+	tier = empire
+	priority = 103
+	name_lists = { name_list_mycenaean }
+ }
+# # Aegean
+ baron_feudal_male_aegean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	name_lists = { name_list_aegean }
+	flavourization_rules = {
+		top_liege = no
+	}
+ }
+ baron_feudal_female_aegean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	name_lists = { name_list_aegean }
+	flavourization_rules = {
+		top_liege = no
+	}
+ }
+ baron_theocracy_male_aegean_group = {
+	type = title
+	tier = barony
+	priority = 7
+	name_lists = { name_list_aegean }
+	governments = { theocracy_government }
+ }
+ count_feudal_male_aegean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 17
+	name_lists = { name_list_aegean }
+ }
+ count_feudal_female_aegean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 17
+	name_lists = { name_list_aegean }
+ }
+ duke_feudal_male_aegean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	name_lists = { name_list_aegean }
+ }
+ duke_feudal_female_aegean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	name_lists = { name_list_aegean }
+ }
+ king_feudal_male_aegean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_aegean }
+ }
+ king_feudal_female_aegean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_aegean }
+ }
+ emperor_feudal_male_aegean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_aegean }
+ }
+ emperor_feudal_female_aegean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_aegean }
+ }
+##Hittite
+ baron_feudal_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+ }
+ baron_feudal_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+ }
+ barony_feudal_hittite = {
+	type = title
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+ }
+ baron_theocracy_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+	governments = { theocracy_government }
+ }
+ baron_theocracy_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+	governments = { theocracy_government }
+ }
+ barony_theocracy_hittite = {
+	type = title
+	tier = barony
+	priority = 7
+	name_lists = { name_list_hittite }
+	governments = { theocracy_government }
+ }
+ count_feudal_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	name_lists = { name_list_hittite }
+ }
+ count_feudal_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	name_lists = { name_list_hittite }
+ }
+ county_feudal_hittite = {
+	type = title
+	tier = county
+	priority = 18
+	name_lists = { name_list_hittite }
+ }
+ duke_feudal_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	name_lists = { name_list_hittite }
+ }
+ duke_feudal_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	name_lists = { name_list_hittite }
+ }
+ duchy_feudal_hittite = {
+	type = title
+	tier = duchy
+	name_lists = { name_list_hittite }
+	priority = 29
+ }
+ duke_feudal_male_independent_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	flavourization_rules = {
+		only_independent = yes
+	}
+	name_lists = { name_list_hittite }
+ }
+ duke_feudal_female_independent_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	flavourization_rules = {
+		only_independent = yes
+	}
+	name_lists = { name_list_hittite }
+ }
+ king_feudal_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	name_lists = { name_list_hittite }
+ }
+ king_feudal_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	name_lists = { name_list_hittite }
+ }
+ kingdom_feudal_hittite = {
+	type = title
+	tier = kingdom
+	priority = 48
+	name_lists = { name_list_hittite }
+ }
+ emperor_feudal_male_hittite = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_hittite }
+ }
+ emperor_feudal_female_hittite = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 103
+	name_lists = { name_list_hittite }
+ }
+ empire_feudal_hittite = {
+	type = title
+	tier = empire
+	priority = 103
+	name_lists = { name_list_hittite }
  }
 #

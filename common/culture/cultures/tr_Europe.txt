@@ -280,6 +280,56 @@
 		10 = aegean 
 	}
  }
+ achaian = {
+	color = hsv { 0.60  0.75  0.8 }
+	#created = 1200.1.1 #placeholder for now about 1700 BCE
+	#parents = { proto_greek }
+	ethos = ethos_bellicose
+	heritage = heritage_ancient_greek #heritage_hellenic
+	language = language_ancient_greek
+	martial_custom = martial_custom_male_only #placeholder
+	traditions = {
+		tradition_hill_dwellers
+		tradition_mystical_ancestors
+		tradition_sacred_groves
+		tradition_formation_fighting
+		tradition_swords_for_hire
+	}
+	name_list = name_list_mycenaean
+	coa_gfx = { byzantine_group_coa_gfx } #helladic_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	ethnicities = {
+		10 = greek
+	}
+ }
+ neohittite = {
+	color = hittite
+	#created = 1100.1.1 #placeholder for now about 1200 BCE
+	#parents = { nesili kizzuni }
+	#history_loc_override = neo_hittite_history_loc
+	ethos = ethos_bureaucratic
+	heritage = heritage_caucasian #heritage_luwian
+	language = language_luwian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hill_dwellers
+		tradition_sorcerous_metallurgy
+		tradition_metal_craftsmanship
+		tradition_legalistic
+		tradition_hereditary_hierarchy
+	}
+	name_list = name_list_hittite
+	coa_gfx = { byzantine_group_coa_gfx } #anatolian_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	ethnicities = {
+		10 = mediterranean_byzantine
+		#10 = luwian
+	}
+ }
 ###HOLY ORDER
  hospitaller = {
 	color = hsv { 0.08 0.02 0.8 }

@@ -203,7 +203,9 @@ tr_doctrines = {
 				born_in_the_purple augustus august overseer 
 			    class_bard_college_of_valour class_cleric_knowledge class_fighter_master 
 			}
-			sins = { peasant_born heresiarch disinherited }
+			sins = { 
+				peasant_born heresiarch disinherited 
+			}
 		}
 		parameters = {
 			meditation_mechanics_active = yes
@@ -229,8 +231,12 @@ tr_doctrines = {
 			reincarnation_events_active = yes
 		}
 		traits = {
-			virtues = { lifestyle_mystic calm temperate brave }
-			sins = { wrathful gluttonous craven arbitrary }
+			virtues = { 
+				lifestyle_mystic calm temperate brave 
+			}
+			sins = { 
+				wrathful gluttonous craven arbitrary 
+			}
 		}
 		character_modifier = {
 			close_relative_opinion = 5
@@ -241,8 +247,13 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { possessed = 2 calm temperate brave just follow_mage_earth }
-			sins = { wrathful gluttonous craven arbitrary }
+			virtues = { 
+				possessed = 2 calm temperate brave just follow_mage_earth class_cleric_nature 
+				class_druid 
+			}
+			sins = { 
+				wrathful gluttonous craven arbitrary 
+			}
 		}
 		parameters = {
 			spirit_possession_active = yes
@@ -257,7 +268,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				gluttonous generous gregarious patient lifestyle_mystic 
-				class_druid_moon 
+				class_druid_moon class_druid_star 
 			}
 			sins = { temperate callous shy impatient }
 		}
@@ -283,7 +294,7 @@ tr_doctrines = {
 			}
 			sins = { 
 				lazy cynical lifestyle_mystic drunkard follow_mage_death 
-				class_wizard_necromancy 
+				class_wizard_necromancy class_cleric_death 
 			}
 		}
 		character_modifier = {
@@ -488,7 +499,7 @@ tr_doctrines = {
 			sins = { 
 				lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
 			    follow_mage_death follow_mage_earth ds_covenant_farron 
-				class_wizard_necromancy 
+				class_wizard_necromancy class_cleric_death 
 			}
 		}
 	}
@@ -549,7 +560,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
-			    follow_mage_death ds_covenant_farron follow_mage_earth 
+			    follow_mage_death ds_covenant_farron follow_mage_earth class_cleric_death 
 				class_rogue_trick 
 			}
 			sins = { architect craven avaricious greedy }
@@ -682,7 +693,7 @@ tr_doctrines = {
 				callous sadistic diligent deceitful lustful vengeful follow_lolth 
 			}
 			sins = { 
-				compassionate lazy honest chaste forgiving follow_eilistraee 
+				compassionate lazy honest chaste forgiving follow_eilistraee class_paladin_oathbreaker 
 			}
 		}
 	}

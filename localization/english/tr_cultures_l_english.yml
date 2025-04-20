@@ -57,10 +57,43 @@
  hittite_collective_noun:1 "Isaurians"
  trojan:0 "Trojan"
  trojan_collective_noun:1 "Trojans"
+ helladic:0 "Pelasgian"
+  helladic_prefix:0 "Pelasgo"
+  helladic_collective_noun:0 "Pelasgians"
  achaian:0 "Achaean"
- achaian_prefix:0 "Achaeo"
- achaian_collective_noun:0 "Achaeans"
- name_list_aegean:0 "Aegean"
+  achaian_prefix:0 "Achaeo"
+  achaian_collective_noun:0 "Achaeans"
+  name_list_aegean:0 "Aegean"
+  baron_feudal_male_aegean_group:100 "Prukyan" #High official. from 'Prytanis'
+  baron_feudal_female_aegean_group:100 "Numkwa" #Lady. from 'Nymphe'
+  baron_theocracy_male_aegean_group:100 "Akya" #Priest. from 'Essen'
+  count_feudal_male_aegean_group:100 "Arwu" #Lord. from 'Heros'
+  count_feudal_female_aegean_group:100 "Numkwa" 
+  duke_feudal_male_aegean_group:100 "Kwasyilawu" #Petty King. from 'Basileus'. I'm still unsure if the form Kwasyil might be better to run with.
+  duke_feudal_female_aegean_group:100 "Numkwa"
+  king_feudal_male_aegean_group:100 "Wanatyk" #Ruler. from 'Anax'
+  king_feudal_female_aegean_group:100 "Apya-Numkwa" #Great Lady. from 'Aipys Nymphe'
+  emperor_feudal_male_aegean_group:0 "Turanya" #Tyrant. from 'Tyrannos'
+  emperor_feudal_female_aegean_group:100 "Apya-Numkwa"
+ #Mycenean
+  baron_feudal_male_mycenaean:100 "Koreter"
+  baron_feudal_female_mycenaean:100 "Koreter"
+  barony_feudal_mycenaean:100 "Wastu"
+  count_feudal_male_mycenaean:100 "Damokoros"
+  count_feudal_female_mycenaean:100 "Damokoros"
+  county_feudal_mycenaean:100 "Damos"
+  duke_feudal_male_mycenaean:100 "Lawagetas"
+  duke_feudal_female_mycenaean:100 "Lawagetas"
+  duchy_feudal_mycenaean:100 "Ptolin"
+  duke_feudal_independent_mycenaean:100 "Lawagetas"
+  duke_feudal_independent_female_mycenaean:100 "Lawagetas"
+  duchy_feudal_independent_mycenaean:100 "Ptolin"
+  king_feudal_male_mycenaean:100 "Gwasileus"
+  king_feudal_female_mycenaean:100 "Gwasileia"
+  kingdom_feudal_mycenaean:100 "Gwasileion"
+  emperor_feudal_male_mycenaean:0 "Wanax"
+  emperor_feudal_female_mycenaean:0 "Wanassa"
+  empire_feudal_mycenaean:0 "Wanaktoron"
  heritage_ancient_greek_name:0 "Ancient Greek"
  heritage_ancient_greek_collective_noun:0 "Ancient Greek's"
  heritage_syracuse_name:0  "Syracusan"
@@ -661,3 +694,28 @@
  ancient_texas:0 "Ancient Texas"
  ancient_texas_collective_noun:0 "Ancient Texonians"
  ancient_texas_prefix:0 "Ancient Texonian"
+neohittite:0 "Hittite"
+ neohittite_prefix:0 "Hittite"
+ neohittite_collective_noun:0 "Hittites"
+ language_luwian_name:0 "Luwian"
+ #Hittite #I've decided to not use s-caron (š) or h-breve (ḫ) as they confuse laypersons in pronounciations of Hittite (the former is a straightforward /s/ amd the latter likely a /kh/), being bad romanizations based on the cuneiform rather than language. For example, Iskhas is rendered as Išḫaš. But this is a personal choice and one based on recommendations from proffesors in the course of my study, thus if anyone else objects my decisions I can reimplement the diacritics. 
+ #Other diacritics such as i-undercircumflex (i̭) and u-undercircumflex (ṷ) are represented as /y/ and /w/ for the sake of simplicity, even though Hittite possessed a separate (w) phoneme. The ability for thes engine to support these characters also appears. 
+ baron_feudal_male_hittite:0 "Tapariyallis" # lit. Commander. Maybe use 'Gurtanwannis': Keeper of the Citadel
+ baron_feudal_female_hittite:0 "Tapariyassara"
+ barony_feudal_hittite:0 "Gurtan" # lit. Town, citadel.
+ baron_theocracy_male_hittite:0 "Karimnalas" # lit. Sanctuary-functionary. Interpret as 'priest'
+ baron_theocracy_female_hittite:0 "Suppiessara" # lit. Sanctuary-functionary. Interpret as 'priest'
+ barony_theocracy_hittite:0 "Karimmin" # lit. Chapel, sanctuary.
+ count_feudal_male_hittite:0 "Iskhas" # lit. Lord
+ count_feudal_female_hittite:0 "Iskhassara"
+ county_feudal_hittite:0 "Gimran" # lit. Open tract, countryside of.
+ duke_feudal_male_hittite:0 "Sallais Iskhas" # lit. Great Lord
+ duke_feudal_female_hittite:0 "Sallaia Iskhassara"
+ duchy_feudal_hittite:0 "Utnin" # lit. Land, Country. Might use 'Utne' alternative as it's less bureaucratic and more abstract.
+ king_feudal_male_hittite:0 "Hantawadis"
+ king_feudal_female_hittite:0 "Hantawassara"
+ kingdom_feudal_hittite:0 "Hantawatahitan" # lit. Kingdom
+ emperor_feudal_female_hittite:0 "Hassussara"
+ emperor_feudal_male_hittite:0 "Hassus"
+ empire_feudal_hittite:0 "Dassuwatar" # lit. Power. Simpilar concept to Latin imperium and implies potentate.
+ emperor_theocracy_female_hittite:0 "Tawananna" #This is a mechanic I think the Hittites really need in the long run. Queens like Puduhepa represent the theocratic aspect of Hittite kingship and wielded immense power that should be akin to atleast an ecumenical patriarch in the base game. 
