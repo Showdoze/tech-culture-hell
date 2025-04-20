@@ -1,19 +1,16 @@
-﻿tr_color_genes = {
-    hair_color = {
-		index = 0
+﻿color_genes = {
+    tr_hair_color = {
         group = hair
-        color = rgb
+        color = eye
         blend_range = { 0.0 0.0 }
     }
-    skin_color = {
-		index = 0
+    tr_skin_color = {
         sync_inheritance_with = hair_color
         group = body
         color = eye
         blend_range = { 0.55 0.65 }
     }
-    eye_color = {
-		index = 0
+    tr_eye_color = {
         sync_inheritance_with = hair_color
         group = eyes
         color = eye
