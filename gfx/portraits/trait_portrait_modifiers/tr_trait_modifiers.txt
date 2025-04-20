@@ -116,16 +116,31 @@ hollow = {
                     value = 1
                 }
                 morph = {
-					mode = replace
-					gene = gene_eyebrows_fullness
-					value = 0
-				}
+                    mode = replace
+                    gene = gene_eyebrows_fullness
+                    value = 0
+                }
                 morph = {
-					mode = add
-					gene = gene_measles
-					range = {0 1}
-					template = measles
-				}
+                    mode = add
+                    gene = gene_measles
+                    range = {0 1}
+                    template = measles
+                }
+            }
+        }
+    }
+}
+dragon_scales = {
+    dragon_scales_1 = {
+        traits = { class_sorcerer_dragon }
+        dna_modifiers = {
+            human = {
+                morph = {
+                    mode = add
+                    gene = gene_scaly
+                    value = 1.0
+                    template = scaly
+                }
             }
         }
     }
