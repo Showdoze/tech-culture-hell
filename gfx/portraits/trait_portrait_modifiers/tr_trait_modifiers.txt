@@ -1,65 +1,106 @@
 ﻿eyes = {
-	bloodshot_eyes = {
-		traits = {
+    bloodshot_eyes = {
+        traits = {
             hashishiyah
-		}
-		dna_modifiers = {
-			accessory = {
-				mode = modify				
-				gene = eye_accessory
-				template = bloodshot_eyes
-				value = 0.5
-			}
-		}
-	}
+        }
+        dna_modifiers = {
+            accessory = {
+                mode = modify
+                gene = eye_accessory
+                template = bloodshot_eyes
+                value = 0.5
+            }
+        }
+    }
 }
 
 hygene = {
-	hygene_bad_1 = {
-			traits = {
-				hygene_bad_1
-			}
-			dna_modifiers = {
-				morph = {
-					mode = add
-					gene = gene_lovers_pox
-					value = 0.5
-					template = lovers_pox
-				}
-				color = {
-					gene = skin_color
-					mode = modify
-	
-					x = 0.1
-					y = 0.0
-				}
-		}
-	}
+    hygene_bad_1 = {
+        traits = {
+            hygene_bad_1
+        }
+        dna_modifiers = {
+            morph = {
+                mode = add
+                gene = gene_lovers_pox
+                value = 0.5
+                template = lovers_pox
+            }
+            color = {
+                gene = skin_color
+                mode = modify
 
-	hygene_bad_2 = {
-		traits = {
-			hygene_bad_2
-		}
-		dna_modifiers = {
-			morph = {
-				mode = add
-				gene = gene_lovers_pox
-				value = 1.0
-				template = lovers_pox
-			}
-			morph = {
-				mode = add
-				gene = gene_smallpox
-				value = 1.0
-				template = smallpox
-			}
-			color = {
-				gene = skin_color
-				mode = modify
+                x = 0.1
+                y = 0.0
+            }
+        }
+    }
 
-				x = 0.1
-				y = 0.0
-			}
-	    }
+    hygene_bad_2 = {
+        traits = {
+            hygene_bad_2
+        }
+        dna_modifiers = {
+            morph = {
+                mode = add
+                gene = gene_lovers_pox
+                value = 1.0
+                template = lovers_pox
+            }
+            morph = {
+                mode = add
+                gene = gene_smallpox
+                value = 1.0
+                template = smallpox
+            }
+            color = {
+                gene = skin_color
+                mode = modify
+
+                x = 0.1
+                y = 0.0
+            }
+        }
+    }
+}
+hollow = {
+    hollow_1 = {
+        traits = {
+            hollow
+        }
+        dna_modifiers = {
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0.1
+                y = 0.0
+            }
+            color = {
+                gene = eye_color
+                mode = replace
+
+                x = -1.0
+                y = 1.0
+            }
+            morph = {
+                mode = add
+                gene = gene_illness
+                value = 1.0
+                template = illness
+            }
+			morph = {
+                mode = add
+                gene = gene_spindly
+                value = 1.0
+                template = spindly
+            }
+            accessory = {
+                mode = modify
+                gene = eye_accessory
+                template = bloodshot_eyes
+                value = 1
+            }
+        }
     }
 }

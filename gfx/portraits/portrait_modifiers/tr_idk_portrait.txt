@@ -1425,3 +1425,23 @@ tr_idk_dagothur = {
         }
     }
 }
+tr_idk_gael = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_gael = {
+        dna_modifiers = {
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_gael
+                this = character:tr_ds_gael
+            }
+        }
+    }
+}
