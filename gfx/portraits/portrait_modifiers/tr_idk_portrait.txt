@@ -927,6 +927,31 @@ idk_portraits = {
             }
         }
     }
+    tr_thief_karrus = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = male_hair_western_01
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_thief_karrus
+                this = character:tr_thief_karrus
+            }
+        }
+    }
 }
 tr_idk_betruger = {
 
