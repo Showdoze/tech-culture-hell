@@ -1458,6 +1458,48 @@ tr_idk_gael = {
 
     tr_gael = {
         dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = fp1_beards_straight
+                accessory = male_beard_fp1_05
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = afr_common_legwear
+                accessory = m_legwear_sec_afr_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = byzantine_war_nobility_clothes
+                accessory = m_clothes_sec_byzantine_war_nob_01_hi
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = western_common
+                accessory = male_headgear_secular_western_common_02
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = eye_patch
+                accessory = male_headgear_special_eye_patch_01
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_face_mask
+                template = head_bandage
+                accessory = male_headgear_special_head_bandage_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
         }
         weight = {
             base = 0
