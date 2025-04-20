@@ -14,7 +14,7 @@
 			triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_longboats }
+					this = { culture = { has_innovation = innovation_longboats } }
 				}
 				desc = trait_viking_has_longships
 			}
@@ -29,7 +29,7 @@
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_viking_has_drow
 			}
@@ -66,14 +66,14 @@ torturer = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_gith_build }
+					this = { culture = { has_innovation = innovation_gith_build } }
 				}
 				desc = trait_torturer_gith
 			}
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_torturer_drow
 			}
@@ -115,7 +115,7 @@ family_first = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_family_first_drow
 			}
@@ -168,7 +168,7 @@ whole_of_body = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_whole_of_body_drow
 			}
@@ -217,7 +217,7 @@ arrogant = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_arrogant_drow
 			}
@@ -304,7 +304,7 @@ humble = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_humble_drow
 			}
@@ -355,7 +355,7 @@ murderer = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_murderer_drow
 			}
@@ -406,7 +406,7 @@ loyal = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_loyal_drow
 			}
@@ -457,7 +457,7 @@ disloyal = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_disloyal_drow
 			}
@@ -499,7 +499,7 @@ dwarf = {
     ruler_designer_cost = -10
     if = {
         limit = {
-            culture = { has_culture_tradition = tradition_dwarf }
+            this = { culture = { has_culture_tradition = tradition_dwarf } }
             birth = 1
             inherit_chance = 100
             both_parent_has_trait_inherit_chance = 100
@@ -538,7 +538,7 @@ giant = {
     same_opinion = 20
     if = {
         limit = {
-            culture = { has_culture_tradition = tradition_giant }
+            this = { culture = { has_culture_tradition = tradition_giant } }
             health = 0.25
             birth = 1
             inherit_chance = 100

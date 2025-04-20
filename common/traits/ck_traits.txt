@@ -73,7 +73,7 @@ peasant_born = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_peasant_born_drow
 			}
@@ -120,7 +120,7 @@ patrician_born = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					culture = { has_innovation = innovation_drow_build }
+					this = { culture = { has_innovation = innovation_drow_build } }
 				}
 				desc = trait_patrician_born_drow
 			}
