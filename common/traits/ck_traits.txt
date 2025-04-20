@@ -73,7 +73,7 @@ peasant_born = {
             triggered_desc = {
 				trigger = {
 					exists = this
-					this = { culture = { has_innovation = innovation_drow_build } }
+					culture = { has_innovation = innovation_drow_build }
 				}
 				desc = trait_peasant_born_drow
 			}
@@ -119,8 +119,7 @@ patrician_born = {
 		first_valid = {
             triggered_desc = {
 				trigger = {
-					exists = this
-					this = { culture = { has_innovation = innovation_drow_build } }
+					culture = { has_innovation = innovation_drow_build }
 				}
 				desc = trait_patrician_born_drow
 			}
@@ -854,6 +853,7 @@ venerable = {
 	opposites = {
 		class_bar_wild_magic
 		class_bar_wildheart
+		class_bar_giant
 	}
 	monthly_prestige = 0.01
 	movement_speed = 0.01
@@ -881,6 +881,7 @@ venerable = {
 	opposites = {
 		class_bar_wildheart
 		class_bar_berserker
+		class_bar_giant
 	}
 	monthly_prestige = 0.01
 	movement_speed = 0.01
@@ -903,9 +904,32 @@ venerable = {
 	opposites = {
 		class_bar_wild_magic
 		class_bar_berserker
+		class_bar_giant
 	}
 	monthly_prestige = 0.01
 	movement_speed = 0.01
+	ruler_designer_cost = 20
+  }
+  class_bar_giant = {
+	shown_in_ruler_designer = yes
+	prowess = 6
+	courtly_same_culture_opinion = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_bar_giant_desc
+			}
+			desc = trait_class_bar_giant_desc
+		}
+	}
+	opposites = {
+		class_bar_wild_magic
+		class_bar_berserker
+		class_bar_wildheart
+	}
+	monthly_prestige = 0.01
+	tribal_government_opinion = 5
 	ruler_designer_cost = 20
   }
  class_bard = {
@@ -946,6 +970,7 @@ venerable = {
 	opposites = {
 		class_bard_college_of_valour
 		class_bard_college_of_sword
+		class_bard_college_of_glamour
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -968,6 +993,7 @@ venerable = {
 	opposites = {
 		class_bard_college_of_lore
 		class_bard_college_of_sword
+		class_bard_college_of_glamour
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -991,11 +1017,35 @@ venerable = {
 	opposites = {
 		class_bard_college_of_lore
 		class_bard_college_of_valour
+		class_bard_college_of_glamour
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
 	ai_boldness = 5
   }
+ class_bard_college_of_glamour = {
+	shown_in_ruler_designer = yes
+	#diplomacy = 1
+	diplomacy_per_piety_level = 1
+	health = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = class_bard_college_of_glamour_desc
+			}
+			desc = class_bard_college_of_glamour_desc
+		}
+	}
+	opposites = {
+		class_bard_college_of_lore
+		class_bard_college_of_valour
+		class_bard_college_of_glamour
+		class_bard_college_of_sword
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+ }
  class_cleric = {
 	shown_in_ruler_designer = yes
 	#learning_per_prestige_level = 1
@@ -1036,6 +1086,7 @@ venerable = {
 		class_cleric_nature
 		class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1062,6 +1113,7 @@ venerable = {
 		class_cleric_nature
 		class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1087,6 +1139,7 @@ venerable = {
 		class_cleric_nature
 		class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1114,6 +1167,7 @@ venerable = {
 		class_cleric_nature
 		class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1140,6 +1194,7 @@ venerable = {
 		#class_cleric_nature
 		class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1166,6 +1221,7 @@ venerable = {
 		class_cleric_nature
 		#class_cleric_tempest
 		class_cleric_war
+		class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1192,6 +1248,34 @@ venerable = {
 		class_cleric_nature
 		class_cleric_tempest
 		#class_cleric_war
+		class_cleric_death
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_cleric_death = {
+	shown_in_ruler_designer = yes
+	martial_per_piety_level = 1
+	prowess_per_piety_level = 1
+	monthly_piety = 0.1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_cleric_death_desc
+			}
+			desc = trait_class_cleric_death_desc
+		}
+	}
+	opposites = {
+		class_cleric_life
+		class_cleric_light
+		class_cleric_trick
+		class_cleric_knowledge
+		class_cleric_nature
+		class_cleric_tempest
+		class_cleric_war
+		#class_cleric_death
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1233,6 +1317,7 @@ venerable = {
 		#class_druid_land
 		class_druid_moon
 		class_druid_spore
+		class_druid_star
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1255,6 +1340,7 @@ venerable = {
 		class_druid_land
 		#class_druid_moon
 		class_druid_spore
+		class_druid_star
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1278,6 +1364,31 @@ venerable = {
 		class_druid_land
 		class_druid_moon
 		#class_druid_spore
+		class_druid_star
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_druid_star = {
+	shown_in_ruler_designer = yes
+	winter_movement_speed = 0.1
+	movement_speed = -0.01
+	stewardship_per_piety_level = 1
+	stewardship_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_druid_star_desc
+			}
+			desc = trait_class_druid_star_desc
+		}
+	}
+	opposites = {
+		class_druid_land
+		class_druid_moon
+		class_druid_spore
+		#class_druid_star
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1316,6 +1427,7 @@ venerable = {
 		#class_fighter_master
 		class_fighter_knight
 		class_fighter_champion
+		class_fighter_arcane_archer
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1337,6 +1449,7 @@ venerable = {
 		class_fighter_master
 		#class_fighter_knight
 		class_fighter_champion
+		class_fighter_arcane_archer
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1358,6 +1471,29 @@ venerable = {
 		class_fighter_master
 		class_fighter_knight
 		#class_fighter_champion
+		class_fighter_arcane_archer
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_fighter_arcane_archer = {
+	shown_in_ruler_designer = yes
+	martial_per_prestige_level = 1
+	diplomacy = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_fighter_arcane_archer_desc
+			}
+			desc = trait_class_fighter_arcane_archer_desc
+		}
+	}
+	opposites = {
+		class_fighter_master
+		class_fighter_knight
+		class_fighter_champion
+		#class_fighter_arcane_archer
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1396,6 +1532,7 @@ venerable = {
 		#class_monk_shadow
 		class_monk_element
 		class_monk_hand
+		class_monk_drunk
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1419,6 +1556,7 @@ venerable = {
 		class_monk_shadow
 		#class_monk_element
 		class_monk_hand
+		class_monk_drunk
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1441,9 +1579,33 @@ venerable = {
 		class_monk_shadow
 		class_monk_element
 		#class_monk_hand
+		class_monk_drunk
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
+  }
+  class_monk_drunk = {
+	shown_in_ruler_designer = yes
+	stress_loss_mult = 0.2
+	prowess_per_piety_level = 1
+	owned_hostile_scheme_success_chance_add = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_monk_drunk_desc
+			}
+			desc = trait_class_monk_drunk_desc
+		}
+	}
+	ai_rationality = -10
+	ai_energy = -15
+	opposites = {
+		class_monk_shadow
+		class_monk_element
+		class_monk_hand
+		#class_monk_drunk
+	}
   }
  class_paladin = {
 	shown_in_ruler_designer = yes
@@ -1480,6 +1642,7 @@ venerable = {
 		#class_paladin_ancient
 		class_paladin_devotion
 		class_paladin_vengence
+		class_paladin_crown
 		class_paladin_oathbreaker
 	}
 	monthly_prestige = 0.01
@@ -1506,6 +1669,7 @@ venerable = {
 		class_paladin_ancient
 		#class_paladin_devotion
 		class_paladin_vengence
+		class_paladin_crown
 		class_paladin_oathbreaker
 	}
 	monthly_prestige = 0.01
@@ -1529,11 +1693,37 @@ venerable = {
 		class_paladin_ancient
 		class_paladin_devotion
 		#class_paladin_vengence
+		class_paladin_crown
 		class_paladin_oathbreaker
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
 	ai_vengefulness = 200
+  }
+  class_paladin_crown = {
+	shown_in_ruler_designer = yes
+	prowess = 2
+	martial_per_prestige_level = 1
+	prowess_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_paladin_crown_desc
+			}
+			desc = trait_class_paladin_crown_desc
+		}
+	}
+	opposites = {
+		class_paladin_ancient
+		class_paladin_devotion
+		class_paladin_vengence
+		#class_paladin_crown
+		class_paladin_oathbreaker
+	}
+	monthly_prestige = 0.01
+	monthly_prestige_gain_mult = 0.2
+	ruler_designer_cost = 20
   }
   class_paladin_oathbreaker = {
 	shown_in_ruler_designer = yes
@@ -1554,6 +1744,7 @@ venerable = {
 		class_paladin_ancient
 		class_paladin_devotion
 		class_paladin_vengence
+		class_paladin_crown
 		#class_paladin_oathbreaker
 	}
 	monthly_prestige = 0.01
@@ -1594,6 +1785,7 @@ venerable = {
 		#class_ranger_hunter
 		class_ranger_master
 		class_ranger_gloom
+		class_ranger_swarmkeeper
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1616,6 +1808,7 @@ venerable = {
 		class_ranger_hunter
 		#class_ranger_master
 		class_ranger_gloom
+		class_ranger_swarmkeeper
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1638,6 +1831,29 @@ venerable = {
 		class_ranger_hunter
 		class_ranger_master
 		#class_ranger_gloom
+		class_ranger_swarmkeeper
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_ranger_swarmkeeper = {
+	shown_in_ruler_designer = yes
+	martial = 1
+	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_ranger_swarmkeeper_desc
+			}
+			desc = trait_class_ranger_swarmkeeper_desc
+		}
+	}
+	opposites = {
+		class_ranger_hunter
+		class_ranger_master
+		class_ranger_gloom
+		#class_ranger_swarmkeeper
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1676,6 +1892,7 @@ venerable = {
 		#class_rogue_thief
 		class_rogue_trick
 		class_rogue_assassin
+		class_rogue_swashbuckler
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1698,6 +1915,7 @@ venerable = {
 		class_rogue_thief
 		#class_rogue_trick
 		class_rogue_assassin
+		class_rogue_swashbuckler
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1720,10 +1938,34 @@ venerable = {
 		class_rogue_thief
 		class_rogue_trick
 		#class_rogue_assassin
+		class_rogue_swashbuckler
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
 	ai_honor = -20
+  }
+  class_rogue_swashbuckler = {
+	shown_in_ruler_designer = yes
+	movement_speed = 0.2
+	prowess_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_rogue_swashbuckler_desc
+			}
+			desc = trait_class_rogue_swashbuckler_desc
+		}
+	}
+	opposites = {
+		class_rogue_thief
+		class_rogue_trick
+		class_rogue_assassin
+		#class_rogue_swashbuckler
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+	ai_energy = -20
   }
  class_sorcerer = {
 	shown_in_ruler_designer = yes
@@ -1763,6 +2005,7 @@ venerable = {
 		#class_sorcerer_wild
 		class_sorcerer_dragon
 		class_sorcerer_storm
+		class_sorcerer_shadow
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1789,6 +2032,7 @@ venerable = {
 		class_sorcerer_wild
 		#class_sorcerer_dragon
 		class_sorcerer_storm
+		class_sorcerer_shadow
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1815,6 +2059,31 @@ venerable = {
 		class_sorcerer_wild
 		class_sorcerer_dragon
 		#class_sorcerer_storm
+		class_sorcerer_shadow
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_sorcerer_shadow = {
+	shown_in_ruler_designer = yes
+	intrigue = 1
+	intrigue_per_stress_level = 1
+	dread_gain_mult = 0.5
+	prowess_per_influence_level = 2
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_sorcerer_shadow_desc
+			}
+			desc = trait_class_sorcerer_shadow_desc
+		}
+	}
+	opposites = {
+		class_sorcerer_wild
+		class_sorcerer_dragon
+		class_sorcerer_storm
+		#class_sorcerer_shadow
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1854,6 +2123,7 @@ venerable = {
 		#class_warlock_fiend
 		class_warlock_great
 		class_warlock_archfey
+		class_warlock_hexblade
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1877,6 +2147,7 @@ venerable = {
 		class_warlock_fiend
 		#class_warlock_great
 		class_warlock_archfey
+		class_warlock_hexblade
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1902,6 +2173,31 @@ venerable = {
 		class_warlock_fiend
 		class_warlock_great
 		#class_warlock_archfey
+		class_warlock_hexblade
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_warlock_hexblade = {
+	shown_in_ruler_designer = yes
+	prowess_per_influence_level = 1
+	monthly_influence = 0.01
+	attraction_opinion = 10
+	prowess_per_prestige_level = 1
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_warlock_hexblade_desc
+			}
+			desc = trait_class_warlock_hexblade_desc
+		}
+	}
+	opposites = {
+		class_warlock_fiend
+		class_warlock_great
+		class_warlock_archfey
+		#class_warlock_hexblade
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1948,6 +2244,7 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -1976,6 +2273,7 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2006,6 +2304,7 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2035,6 +2334,7 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2064,6 +2364,7 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2092,6 +2393,7 @@ venerable = {
 		#class_wizard_divination
 		class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2121,6 +2423,7 @@ venerable = {
 		class_wizard_divination
 		#class_wizard_illusion
 		class_wizard_transmutation
+		class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
@@ -2150,6 +2453,35 @@ venerable = {
 		class_wizard_divination
 		class_wizard_illusion
 		#class_wizard_transmutation
+		class_wizard_bladesinging
+	}
+	monthly_prestige = 0.01
+	ruler_designer_cost = 20
+  }
+  class_wizard_bladesinging = {
+	shown_in_ruler_designer = yes
+	prowess_per_piety_level = 2
+	learning_per_prestige_level = 1
+	monthly_piety = 0.01
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_class_wizard_bladesinging_desc
+			}
+			desc = trait_class_wizard_bladesinging_desc
+		}
+	}
+	opposites = {
+		class_wizard_abjuration
+		class_wizard_evocation
+		class_wizard_necromancy
+		class_wizard_conjuration
+		class_wizard_enchantment
+		class_wizard_divination
+		class_wizard_illusion
+		class_wizard_transmutation
+		#class_wizard_bladesinging
 	}
 	monthly_prestige = 0.01
 	ruler_designer_cost = 20
