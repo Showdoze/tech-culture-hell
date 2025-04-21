@@ -115,7 +115,6 @@ tradition_free_love = {
 	}
 	ai_will_do = { value = 0 }
 }
-
 tradition_totalitarian = {
 	category = realm
 	layers = {
@@ -322,7 +321,6 @@ tradition_pacifist = {
 		}
 	}
 }
-
 tradition_bushido = {
 	category = societal
 	layers = {
@@ -1298,14 +1296,9 @@ tradition_transport_sea = {
 		supply_capacity_mult = 0.5
 		coastal_sea_travel_danger = low_sea_danger_reduction
 	}
-	cost = {
-		prestige = 5000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 5000 }
+	ai_will_do = { value = 0 }
 }
-
 tradition_transport_walk = {
 	category = combat
 	layers = {
@@ -1347,14 +1340,9 @@ tradition_transport_walk = {
 		pilgrim_xp_gain_mult = 0.5
 		lifestyle_traveler_xp_gain_mult = 0.5
 	}
-	cost = {
-		prestige = 5000
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 5000 }
+	ai_will_do = { value = 0 }
 }
-
 tradition_imperial_idea = {
 	category = regional
 	layers = {
@@ -1410,34 +1398,7 @@ tradition_imperial_idea = {
 		ai_amenity_target_baseline = 0.75
 		ai_amenity_spending = 1
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = {
-							list = flags
-							this = flag:ethos_courtly
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_communal
-						}
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_courtly_or_communal_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
+	cost = { prestige = 1000 }
 	ai_will_do = { value = 0 }
 }
 tradition_music = {
@@ -1542,32 +1503,7 @@ tradition_persian = {
 	province_modifier = {
 		desert_tax_mult = 0.01
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = 250
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					any_in_list = {
-						list = flags
-						this = flag:ethos_spiritual
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = spiritual_desc
-				}
-			}
-			add = {
-				value = tradition_unfulfilled_criteria_penalty
-				desc = forest_percentage_desc
-			}
-		}
-		multiply = tradition_replacement_cost_if_relevant
-	}
+	cost = { prestige = 1000 }
 	ai_will_do = { value = 0 }
 }
 tradition_migration = {
@@ -1577,8 +1513,7 @@ tradition_migration = {
 		1 = mena
 		4 = migration.dds
 	}
-	is_shown = {
-	}
+	is_shown = { always = no }
 	parameters = {
 		easier_to_hybridize = yes
 		cheaper_to_hybridize = yes
@@ -1588,42 +1523,7 @@ tradition_migration = {
 		faith_conversion_piety_cost_mult = -0.2
 		different_faith_county_opinion_mult = -0.2
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						culture_pillar:ethos_bellicose = { is_in_list = traits }
-						culture_pillar:ethos_egalitarian = { is_in_list = traits }
-						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_egalitarian_or_bureaucratic_desc
-				}
-			}
-			if = {
-				limit = {
-					NOR = {
-						culture_pillar:heritage_turkic = { is_in_list = traits }
-						culture_pillar:heritage_mongolic = { is_in_list = traits }
-					}
-				}
-				add = {
-					value = tradition_unfulfilled_criteria_penalty
-					desc = turkic_or_mongolic_desc
-				}
-			}
-			
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}	
+	cost = { prestige = 1000 }
 	ai_will_do = { value = 0 }
 }
 tradition_depression = {
@@ -1921,8 +1821,7 @@ tradition_sword_centric = {
 		1 = indian
 		4 = swords.dds
 	}
-	can_pick = {		
-	}
+	is_shown = { always = no }
 	parameters = {
 		wanderers_gain_extra_combat_skills = yes
 		more_expensive_weapon_inspiration = yes
@@ -2016,10 +1915,19 @@ tradition_two_rivers_two_people = { # Mesopotamian Unity
 		1 = western
 		4 = babylonian.dds
 	}
-	is_shown = { always = no }
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_syriac
+			has_cultural_pillar = heritage_sumerian
+		}
+	}
 	parameters = {
 		easier_to_learn_sumerian_and_akkadian = yes
 		more_likely_to_learn_sumerian_and_akkadian = yes
+		prowess_from_religious_traits = yes
+		learns_more_languages = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = 0.15
