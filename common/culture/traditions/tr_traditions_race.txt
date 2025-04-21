@@ -82,7 +82,6 @@
 	cost = { prestige = 2000 }
 	ai_will_do = { value = 0 }
 }
-
 tradition_dwarf = {
 	category = regional
 	layers = {
@@ -140,7 +139,6 @@ tradition_dwarf = {
 	cost = { prestige = 900 }
 	ai_will_do = { value = 0 }
 }
-
 tradition_giant = {
 	category = regional
 	layers = {
@@ -412,18 +410,7 @@ tradition_elf = {
 		1 = indian
 		4 = elf.dds
 	}
-	is_shown = {
-		OR = {
-			this = culture:bosmer
-			this = culture:altmer
-			this = culture:dunmer
-			any_parent_culture_or_above = {
-				this = culture:bosmer
-				this = culture:altmer
-				this = culture:dunmer
-			}
-		}
-	}
+	is_shown = { always = no }
 	parameters = {
 		herbalist_traits_more_common = yes
 		poorly_educated_leaders_distrusted = yes
