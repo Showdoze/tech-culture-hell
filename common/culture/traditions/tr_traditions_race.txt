@@ -181,41 +181,8 @@ tradition_giant = {
 		modifier = strong_traits_more_valued
 		monthly_prestige = 0.5
 	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = {
-							list = flags
-							this = flag:ethos_courtly
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_communal
-						}
-						any_in_list = {
-							list = flags
-							this = flag:ethos_spiritual
-						}
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_courtly_communal_or_spiritual_desc
-				}
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
-	ai_will_do = {
-		value = 0
-	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }
 }
 #DND
  tradition_drow = {
@@ -303,6 +270,43 @@ tradition_giant = {
 		no_prowess_loss_from_age = yes
 		years_of_fertility = 100
 		dread_baseline_add = 25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_tiefling = {
+	category = regional
+	layers = {
+		0 = martial
+		#1 = indian
+		4 = dnd_tiefling.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:tiefling
+			any_parent_culture_or_above = {
+				this = culture:tiefling
+			}
+		}
+	}
+	parameters = {
+		less_likely_to_culture_convert = yes
+		tells_stories = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		expensive_convert_to_local_culture = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		stubborn_trait_more_common = yes
+		may_propose_best_friendship = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+	}
+	character_modifier = {
+		life_expectancy = 150
+		no_prowess_loss_from_age = yes
+		years_of_fertility = 100
+		cultural_acceptance_gain_mult = -1
+		dread_baseline_add = 10
+		same_culture_opinion = 20
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
