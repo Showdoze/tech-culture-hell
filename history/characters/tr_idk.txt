@@ -165,6 +165,8 @@
     trait = ambitious
     trait = wrathful
 	trait = greedy
+	trait = irritable
+	trait = profligate
 	trait = avaricious
 	father = tr_sopranos_tony_dad
     disallow_random_traits = yes
@@ -204,7 +206,9 @@
     trait = lifestyle_reveler
     trait = ambitious
     trait = stubborn
+	trait = callous
 	trait = greedy
+	trait = reclusive
 	father = tr_mafia_found
     disallow_random_traits = yes
 	780.1.1 = { birth = yes }
@@ -221,9 +225,12 @@
     trait = callous
     trait = diligent
     trait = ambitious
+	trait = wild_oat
+	trait = schemer
+	trait = reclusive
 	father = tr_bobby_walnuts
     disallow_random_traits = yes
-	809.3.29 = { birth = yes }
+	826.3.29 = { birth = yes }
 	895.3.28 = {
 		death = {
 			death_reason = death_old_age
@@ -231,19 +238,40 @@
 		}
 	}
  }
+ tr_john_sacrimoni_soprano = {
+    name = "John Sacrimoni"
+	dna = john_sacrimoni_soprano
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	father = tr_bobby_walnuts
+	trait = education_intrigue_3
+    trait = avaricious
+    trait = diligent
+    trait = ambitious
+	trait = stubborn
+	trait = schemer
+	trait = confider
+	trait = arrogant
+	give_nickname = nick_sack
+    disallow_random_traits = yes
+	813.2.8 = { birth = yes }
+	870.1.1 = { death = { death_reason = death_cancer } }
+ }
  tr_vito_no = {
     name = "Vito"
 	dna = vito_no
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
+	father = tr_mafia_founder
 	trait = education_martial_2
 	trait = greedy
     trait = depressed_genetic
 	trait = drunkard
     trait = diligent
     trait = ambitious
-	father = tr_bobby_walnuts
+	trait = contrite
     disallow_random_traits = yes
 	809.1.1 = { birth = yes }
 	895.1.1 = {
@@ -259,20 +287,21 @@
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
-	father = tr_mafia_found
+	father = tr_mafia_founder
 	trait = education_martial_2
 	trait = gluttonous
     trait = arrogant
     trait = diligent
     trait = ambitious
 	trait = wild_oat
+	trait = rakish
     disallow_random_traits = yes
 	800.1.1 = { birth = yes }
 	885.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_mafia_founder = {
     name = "Don"
-	#dna = vito_no
+	dna = al_pacino
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
@@ -284,9 +313,78 @@
 	trait = adulterer
 	trait = avaricious
 	trait = schemer
+	trait = improvident
     disallow_random_traits = yes
 	720.1.1 = { birth = yes }
-	860.1.1 = { death = { death_reason = death_old_age } }
+	820.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_oswald_cobblepot_the_penguin_a = {
+    name = "Oswald Cobblepot"
+	dna = oswald_cobblepot_the_penguin
+	religion = stoicism
+    dynasty_house = house_mafia
+	culture = american
+	father = tr_oswald_cobblepot_the_penguin
+	trait = education_intrigue_4
+	trait = clone
+    trait = arrogant
+    trait = diligent
+    trait = ambitious
+	trait = deceitful
+	trait = greedy
+	trait = avaricious
+	trait = dwarf
+	trait = schemer
+	trait = sadistic
+	trait = clubfooted
+	give_nickname = nicknick_the_penguin_penguin
+    disallow_random_traits = yes
+	830.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_dungeon } }
+ }
+ tr_oswald_cobblepot_the_penguin = {
+    name = "Oswald Cobb"
+	dna = oswald_cobblepot_the_penguin
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = american
+	mother = tr_oswald_cobblepot_mother
+	father = tr_mafia_founder
+	trait = education_intrigue_4
+	trait = wild_oat
+    trait = arrogant
+    trait = diligent
+    trait = ambitious
+	trait = deceitful
+	trait = greedy
+	trait = avaricious
+	trait = schemer
+	trait = sadistic
+	trait = clubfooted
+	give_nickname = nick_penguin
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_dungeon } }
+ }
+ tr_oswald_cobblepot_mother = {
+    name = "Francis Cobb"
+	#dna = oswald_cobblepot_the_penguin
+	religion = catholic 
+    #dynasty_house = house_mafia
+	culture = american
+	#father = tr_mafia_founder
+	trait = education_diplomacy_2
+	trait = patient
+    trait = arrogant
+    trait = diligent
+    trait = ambitious
+	trait = eccentric
+	trait = forgiving
+	trait = compassionate
+	trait = family_first
+    disallow_random_traits = yes
+	800.1.1 = { birth = yes }
+	880.1.1 = { death = { death_reason = death_old_age } }
  }
 #ancient cultures 
  tr_hannibal_barca = {
@@ -861,7 +959,7 @@ tr_arthur_shelby_peaky_blinders = {
 }
 #Habsburg
  tr_charles_v_hre = {
-	name = "Charles V Habsburg"
+	name = "Charles V Holy Roman Empire"
 	religion = catholic
 	dna = charles_v_hre
 	dynasty_house = house_ck_habsburg
@@ -881,7 +979,7 @@ tr_arthur_shelby_peaky_blinders = {
 			learn_language_of_culture = culture:castilian
 	   }	
 	}
-	880.9.21 = {
+	1558.9.21 = {
 		death = {
 			death_reason = death_drinking_passive
 		}
@@ -901,8 +999,27 @@ tr_arthur_shelby_peaky_blinders = {
 	trait = content
 	disallow_random_traits = yes
 	842.9.17 = { birth = yes }
-	880.11.1 = { death = { death_reason = death_inbred } }
+	1700.11.1 = { death = { death_reason = death_inbred } }
  }
+tr_ivan_the_terrible = {
+	name = "Ivan IV Vasilyevich"
+	religion = orthodox
+	dna = ivan_the_terrible
+	dynasty = misc_history
+	culture = russian
+	trait = education_martial_3
+	trait = wrathful
+	trait = sadistic
+	trait = temperate
+	trait = ambitious
+	trait = august
+	trait = administrator
+	trait = torturer
+	give_nickname = nick_the_terrible
+	disallow_random_traits = yes
+	837.8.25 = { birth = yes }
+	1584.3.28 = { death = { death_reason = death_old_age } }
+ } 
 tr_lara_croft = {
 	name = "Lara Croft"
 	dna = lara_croft

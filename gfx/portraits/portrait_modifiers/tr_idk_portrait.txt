@@ -920,8 +920,8 @@ idk_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = male_hair_western_01
-                range = { 0 1 }
+                template = all_hairstyles
+                accessory = male_hair_western_01
             }
             accessory = {
                 mode = add
@@ -951,8 +951,8 @@ idk_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = male_hair_western_01
-                range = { 0 1 }
+                template = all_hairstyles
+                accessory = male_hair_western_01
             }
         }
         weight = {
@@ -1007,8 +1007,8 @@ idk_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = male_hair_western_01
-                range = { 0 1 }
+                template = all_hairstyles
+                accessory = male_hair_western_01
             }
             #accessory = {
             #    mode = add
@@ -1038,8 +1038,8 @@ idk_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = male_hair_western_01
-                range = { 0 1 }
+                template = all_hairstyles
+                accessory = male_hair_byzantine_02
             }
             accessory = {
                 mode = add
@@ -1055,6 +1055,130 @@ idk_portraits = {
                 exists = this
                 exists = character:tr_mafia_founder
                 this = character:tr_mafia_founder
+            }
+        }
+    }
+    tr_john_sacrimoni_soprano = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = hairstyles
+            #    template = male_hair_western_01
+            #    range = { 0 1 }
+            #}
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_john_sacrimoni_soprano
+                this = character:tr_john_sacrimoni_soprano
+            }
+        }
+    }
+    tr_oswald_cobblepot_the_penguin = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = hairstyles
+            #    template = male_hair_western_01
+            #    range = { 0 1 }
+            #}
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_oswald_cobblepot_the_penguin
+                this = character:tr_oswald_cobblepot_the_penguin
+            }
+        }
+    }
+    tr_oswald_cobblepot_the_penguin_a = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = male_hair_western_01
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_oswald_cobblepot_the_penguin_a
+                this = character:tr_oswald_cobblepot_the_penguin_a
+            }
+        }
+    }
+    tr_ivan_the_terrible = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_indian_02
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ivan_the_terrible
+                this = character:tr_ivan_the_terrible
             }
         }
     }
