@@ -879,3 +879,37 @@ hollow = {
 
     desc = trait_hollow_desc
 }
+
+deaf = {
+    category = fame
+    physical = yes
+	ai_sociability = -50
+
+	diplomacy = -10
+	learning = -10
+	stewardship = -5
+	intrigue = -5
+
+	stress_gain_mult = -2
+
+	ruler_designer_cost = -20
+    general_opinion = -10
+    attraction_opinion = -20
+}
+
+mute = {
+    category = fame
+    physical = yes
+	ai_sociability = -30
+
+	diplomacy = -5
+	stewardship = -3
+	intrigue = 5
+
+	dread_baseline_add = 10
+	owned_scheme_secrecy_add = 50
+
+	ruler_designer_cost = -10
+    general_opinion = -5
+    attraction_opinion = -10
+}
