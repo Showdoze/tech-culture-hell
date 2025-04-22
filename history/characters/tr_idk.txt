@@ -139,6 +139,7 @@
 	trait = arrogant
     trait = lifestyle_reveler
     trait = dull
+	trait = fornicator
     trait = hashishiyah
     trait = wrathful
 	father = tr_vito_no
@@ -159,11 +160,13 @@
 	culture = italian_american
 	trait = education_martial_3
 	trait = arrogant
+	trait = adulterer
     trait = lifestyle_reveler
     trait = ambitious
     trait = wrathful
 	trait = greedy
-	father = tr_vito_no
+	trait = avaricious
+	father = tr_sopranos_tony_dad
     disallow_random_traits = yes
 	820.8.22 = { birth = yes }
 	900.1.1 = {
@@ -172,6 +175,40 @@
             #killer = 
 		}
 	}
+ }
+ tr_sopranos_tony_dad = {
+    name = "Junor Soprano"
+	#dna = sopranos_tony
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_martial_3
+	trait = arrogant
+    trait = arbitrary
+    trait = ambitious
+    trait = stubborn
+	trait = greedy
+	father = tr_mafia_found
+    disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	850.1.1 = { death = { death_reason = death_stress } }
+ }
+ tr_sopranos_junor = {
+    name = "Junor Soprano"
+	#dna = sopranos_tony
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_stewardship_2
+	trait = arrogant
+    trait = lifestyle_reveler
+    trait = ambitious
+    trait = stubborn
+	trait = greedy
+	father = tr_mafia_found
+    disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+	880.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_furio = {
     name = "Furio Giunta"
@@ -203,6 +240,7 @@
 	trait = education_martial_2
 	trait = greedy
     trait = depressed_genetic
+	trait = drunkard
     trait = diligent
     trait = ambitious
 	father = tr_bobby_walnuts
@@ -221,14 +259,34 @@
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
+	father = tr_mafia_found
 	trait = education_martial_2
 	trait = gluttonous
     trait = arrogant
     trait = diligent
     trait = ambitious
+	trait = wild_oat
     disallow_random_traits = yes
 	800.1.1 = { birth = yes }
 	885.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_mafia_founder = {
+    name = "Don"
+	#dna = vito_no
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_diplomacy_3
+	trait = venerable
+    trait = arrogant
+    trait = diligent
+    trait = ambitious
+	trait = adulterer
+	trait = avaricious
+	trait = schemer
+    disallow_random_traits = yes
+	720.1.1 = { birth = yes }
+	860.1.1 = { death = { death_reason = death_old_age } }
  }
 #ancient cultures 
  tr_hannibal_barca = {
@@ -651,7 +709,6 @@ tr_gandhi = {
 		}
 	}
 }
-
 #minecraft IDK YOU TELL ME ALEX
  tr_minecraft_villager = {
 	name = "Minecraft Villager"
@@ -879,7 +936,6 @@ tr_lara_croft = {
 		}
 	}
 }
-
 tr_japanese1 = {
 	name = "Hojo"
 	religion = shinto
@@ -923,7 +979,7 @@ tr_vlad_tepes = {
 	give_nickname = nick_the_impaler
     disallow_random_traits = yes
 	849.11.2 = { birth = yes }
-	1476.12.14 = { death = { death_reason = death_suicide } }
+	1476.12.14 = { death = { death_reason = death_execution } }
 }
 tr_dutch_van = {
 	name = "Dutch Van Der Linde"
@@ -1698,3 +1754,4 @@ tr_dutch_van = {
 		birth = yes
 	}
  }
+# 

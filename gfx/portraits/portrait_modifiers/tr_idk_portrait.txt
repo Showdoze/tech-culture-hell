@@ -283,6 +283,12 @@ idk_portraits = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_fp1_02
+            }
         }
         weight = {
             base = 0
@@ -370,12 +376,12 @@ idk_portraits = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
-            #accessory = {
-            #    mode = add
-            #     gene = hairstyles
-            #    template = all_hairstyles
-            #    accessory = male_hair_western_01
-            # }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp2_hairstyles_iberian_christian_straight
+                accessory = male_hair_fp2_iberian_christian_03
+            }
         }
         weight = {
             base = 0
@@ -401,12 +407,13 @@ idk_portraits = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
-            #accessory = {
-            #    mode = add
-            #     gene = hairstyles
-            #    template = all_hairstyles
-            #    accessory = male_hair_western_01
-            # }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                type = female
+                template = byzantine_hairstyles_straight
+                accessory = female_hair_byzantine_02
+            }
         }
         weight = {
             base = 0
@@ -463,6 +470,12 @@ idk_portraits = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_indian_01
+            }
         }
         weight = {
             base = 0
@@ -488,12 +501,12 @@ idk_portraits = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
-            #accessory = {
-            #    mode = add
-            #     gene = hairstyles
-            #    template = all_hairstyles
-            #    accessory = male_hair_western_01
-            # }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_indian_01
+            }
         }
         weight = {
             base = 0
@@ -980,6 +993,68 @@ idk_portraits = {
                 exists = this
                 exists = character:tr_vlad_tepes
                 this = character:tr_vlad_tepes
+            }
+        }
+    }
+    tr_sopranos_junor = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = male_hair_western_01
+                range = { 0 1 }
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = headgear
+            #    template = no_headgear
+            #    value = 0.1 # For the randomness to work correctly
+            #}
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_sopranos_junor
+                this = character:tr_sopranos_junor
+            }
+        }
+    }
+    tr_mafia_founder = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = male_hair_western_01
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_mafia_founder
+                this = character:tr_mafia_founder
             }
         }
     }
