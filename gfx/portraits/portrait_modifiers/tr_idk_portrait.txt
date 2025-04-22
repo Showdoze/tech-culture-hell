@@ -876,8 +876,8 @@ idk_portraits = {
             accessory = {
                 mode = add
                 gene = hairstyles
+                template = all_hairstyles
                 template = male_hair_western_07
-                range = { 0 1 }
             }
             accessory = {
                 mode = add
@@ -949,6 +949,37 @@ idk_portraits = {
                 exists = this
                 exists = character:tr_thief_karrus
                 this = character:tr_thief_karrus
+            }
+        }
+    }
+    tr_vlad_tepes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                template = male_beard_western_05
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_western_07
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_vlad_tepes
+                this = character:tr_vlad_tepes
             }
         }
     }
