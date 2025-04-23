@@ -26,19 +26,180 @@ tr_class_event.01 = { ##root
         }
     }
 
-    option = { # select/modify class
+    option = { # reset classes
         name = class_events_clean
         trigger = {
             if = {
                 OR = {
-                    root = { has_trait =  }
+                    root = { has_trait = class_bar }
+                    root = { has_trait = class_bar_berserker }
+                    root = { has_trait = class_bar_wild_magic }
+                    root = { has_trait = class_bar_wildheart }
+                    root = { has_trait = class_bar_giant }
+
+                    root = { has_trait = class_bard }
+                    root = { has_trait = class_bard_college_of_lore }
+                    root = { has_trait = class_bard_college_of_valour }
+                    root = { has_trait = class_bard_college_of_sword }
+                    root = { has_trait = class_bard_college_of_glamour }
+
+                    root = { has_trait = class_cleric }
+                    root = { has_trait = class_cleric_life }
+                    root = { has_trait = class_cleric_light }
+                    root = { has_trait = class_cleric_trick }
+                    root = { has_trait = class_cleric_knowledge }
+                    root = { has_trait = class_cleric_nature }
+                    root = { has_trait = class_cleric_tempest }
+                    root = { has_trait = class_cleric_war }
+                    root = { has_trait = class_cleric_death }
+
+                    root = { has_trait = class_druid }
+                    root = { has_trait = class_druid_land }
+                    root = { has_trait = class_druid_moon }
+                    root = { has_trait = class_druid_spore }
+                    root = { has_trait = class_druid_star }
+
+                    root = { has_trait = class_fighter }
+                    root = { has_trait = class_fighter_master }
+                    root = { has_trait = class_fighter_knight }
+                    root = { has_trait = class_fighter_champion }
+                    root = { has_trait = class_fighter_arcane_archer }
+
+                    root = { has_trait = class_monk }
+                    root = { has_trait = class_monk_shadow }
+                    root = { has_trait = class_monk_element }
+                    root = { has_trait = class_monk_hand }
+                    root = { has_trait = class_monk_drunk }
+
+                    root = { has_trait = class_paladin }
+                    root = { has_trait = class_paladin_ancient }
+                    root = { has_trait = class_paladin_devotion }
+                    root = { has_trait = class_paladin_vengeance }
+                    root = { has_trait = class_paladin_crown }
+                    root = { has_trait = class_paladin_oathbreaker }
+
+                    root = { has_trait = class_ranger }
+                    root = { has_trait = class_ranger_hunter }
+                    root = { has_trait = class_ranger_master }
+                    root = { has_trait = class_ranger_gloom }
+                    root = { has_trait = class_ranger_swarmkeeper }
+
+                    root = { has_trait = class_rogue }
+                    root = { has_trait = class_rogue_thief }
+                    root = { has_trait = class_rogue_trick }
+                    root = { has_trait = class_rogue_assassin }
+                    root = { has_trait = class_rogue_swashbuckler }
+
+                    root = { has_trait = class_sorcerer }
+                    root = { has_trait = class_sorcerer_wild }
+                    root = { has_trait = class_sorcerer_dragon }
+                    root = { has_trait = class_sorcerer_storm }
+                    root = { has_trait = class_sorcerer_shadow }
+
+                    root = { has_trait = class_warlock }
+                    root = { has_trait = class_warlock_fiend }
+                    root = { has_trait = class_warlock_great }
+                    root = { has_trait = class_warlock_archfey }
+                    root = { has_trait = class_warlock_hexblade }
+
+                    root = { has_trait = class_wizard }
+                    root = { has_trait = class_wizard_abjuration }
+                    root = { has_trait = class_wizard_evocation }
+                    root = { has_trait = class_wizard_necromancy }
+                    root = { has_trait = class_wizard_conjuration }
+                    root = { has_trait = class_wizard_enchantement }
+                    root = { has_trait = class_wizard_divination }
+                    root = { has_trait = class_wizard_illusion }
+                    root = { has_trait = class_wizard_transmutation }
+                    root = { has_trait = class_wizard_bladesinging }
                 }
             }
         }
         custom_tooltip = class_events_clean_tip
 
         remove_trait = class_bar
-        remove_trait = class_bar
+        remove_trait = class_bar_berserker
+        remove_trait = class_bar_wild_magic
+        remove_trait = class_bar_wildheart
+        remove_trait = class_bar_giant
+
+        remove_trait = class_bard
+        remove_trait = class_bard_college_of_lore
+        remove_trait = class_bard_college_of_valour
+        remove_trait = class_bard_college_of_sword
+        remove_trait = class_bard_college_of_glamour
+
+        remove_trait = class_cleric
+        remove_trait = class_cleric_life
+        remove_trait = class_cleric_light
+        remove_trait = class_cleric_trick
+        remove_trait = class_cleric_knowledge
+        remove_trait = class_cleric_nature
+        remove_trait = class_cleric_tempest
+        remove_trait = class_cleric_war
+        remove_trait = class_cleric_death
+
+        remove_trait = class_druid
+        remove_trait = class_druid_land
+        remove_trait = class_druid_moon
+        remove_trait = class_druid_spore
+        remove_trait = class_druid_star
+
+        remove_trait = class_fighter
+        remove_trait = class_fighter_master
+        remove_trait = class_fighter_knight
+        remove_trait = class_fighter_champion
+        remove_trait = class_fighter_arcane_archer
+
+        remove_trait = class_monk
+        remove_trait = class_monk_shadow
+        remove_trait = class_monk_element
+        remove_trait = class_monk_hand
+        remove_trait = class_monk_drunk
+
+        remove_trait = class_paladin
+        remove_trait = class_paladin_ancient
+        remove_trait = class_paladin_devotion
+        remove_trait = class_paladin_vengeance
+        remove_trait = class_paladin_crown
+        remove_trait = class_paladin_oathbreaker
+
+        remove_trait = class_ranger
+        remove_trait = class_ranger_hunter
+        remove_trait = class_ranger_master
+        remove_trait = class_ranger_gloom
+        remove_trait = class_ranger_swarmkeeper
+
+        remove_trait = class_rogue
+        remove_trait = class_rogue_thief
+        remove_trait = class_rogue_trick
+        remove_trait = class_rogue_assassin
+        remove_trait = class_rogue_swashbuckler
+
+        remove_trait = class_sorcerer
+        remove_trait = class_sorcerer_wild
+        remove_trait = class_sorcerer_dragon
+        remove_trait = class_sorcerer_storm
+        remove_trait = class_sorcerer_shadow
+
+        remove_trait = class_warlock
+        remove_trait = class_warlock_fiend
+        remove_trait = class_warlock_great
+        remove_trait = class_warlock_archfey
+        remove_trait = class_warlock_hexblade
+
+        remove_trait = class_wizard
+        remove_trait = class_wizard_abjuration
+        remove_trait = class_wizard_evocation
+        remove_trait = class_wizard_necromancy
+        remove_trait = class_wizard_conjuration
+        remove_trait = class_wizard_enchantement
+        remove_trait = class_wizard_divination
+        remove_trait = class_wizard_illusion
+        remove_trait = class_wizard_transmutation
+        remove_trait = class_wizard_bladesinging
+
+        add_piety = 500
 
         ai_chance = {
             base = 1
@@ -58,7 +219,7 @@ tr_class_event.02 = { ## select/modify class
         animation = personality_rational
     }
 
-    option = { # 
+    option = { #
         name = select_class_events_prestige
         trigger = {
             piety >= 500
