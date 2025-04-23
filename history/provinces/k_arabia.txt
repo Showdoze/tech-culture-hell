@@ -160,7 +160,7 @@
 6212 = {	# MEDINA / AL-MADINA
 	culture = bedouin
 	religion = ashari
-	holding = castle_holding
+	holding = tribal_holding
 	622.1.1 = {
 		holding = castle_holding
 		special_building_slot = holy_site_prophetic_mosque_01
@@ -207,6 +207,7 @@
 6200 = {	#AL-ULA
 	holding = city_holding
 	#Founded in ancient times, important for trade during Middle Ages
+	special_building_slot = generic_copper_mines_01
 }
 6201 = {	#AL-HIJR aka Mada'in Saleh aka Hegra
 	holding = none
@@ -251,7 +252,7 @@
 6223 = {	#MAKKA	aka Mecca
 	culture = bedouin
 	religion = ashari
-	holding = castle_holding
+	holding = tribal_holding
 	634.1.1 = {
 		holding = castle_holding
 		special_building_slot = holy_site_great_mosque_of_mecca_01
@@ -587,9 +588,7 @@
 	culture = bedouin
 	religion = ismaili
 	holding = castle_holding
-	1.1.1 = {
-		special_building_slot = phocaea_mines_01
-	}
+	special_building_slot = generic_copper_mines_01
 }
 
 ###c_samman
@@ -624,6 +623,7 @@
 6139 = {	#BAHLA
 	holding = castle_holding
 	#2nd castle holding as it's one ofthe oldest fortresses in the country (1st, maybe 3rd millenium BC)
+	special_building_slot = generic_copper_mines_01
 }
 6141 = {	#SAMAD	aka Samad al-Shan
 	holding = none
@@ -675,6 +675,7 @@
 	holding = city_holding
 	#already used under persian rule, forts built in VIIth
 	#set as city instead of castle for holding diversity
+	special_building_slot = generic_copper_mines_01
 }
 
 ###c_az-dhahira
