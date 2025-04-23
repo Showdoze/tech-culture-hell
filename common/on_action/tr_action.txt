@@ -8,7 +8,6 @@ random_yearly_everyone_pulse = {
     on_actions = { tr_hygene }
     on_actions = { tr_satanism_random }
     on_actions = { tr_hollowing }
-    on_actions = { tr_class_check }
 }
 
 yearly_culture_pulse = {
@@ -113,15 +112,6 @@ tr_birth_random = {
 
 tr_sayan_check = {
     effect = { tr_play_sayan_music = yes }
-}
-
-tr_class_check = {
-    effect = {
-        if = {
-            character.religion = fantasy_religion
-        }
-        events = { tr_class_event.01 }
-    }
 }
 
 #tr_elective_inheritance = {

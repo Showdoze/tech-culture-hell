@@ -1,5 +1,74 @@
 namespace = tr_class_event
 
-tr_class_event.01 = {
-    
+tr_class_event.01 = { ##root
+
+    type = character_event
+    title = class_events_root
+    window = visit_settlement_window
+    desc = class_events_root_desc
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    option = { # select/modify class
+        name = class_events_select
+        trigger = {
+            piety >= 500
+        }
+        custom_tooltip = class_events_select_tip
+        trigger_event = {
+            id = tr_class_event.02 #select root class
+        }
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # select/modify class
+        name = class_events_clean
+        trigger = {
+            if = {
+                OR = {
+                    root = { has_trait =  }
+                }
+            }
+        }
+        custom_tooltip = class_events_clean_tip
+
+        remove_trait = class_bar
+        remove_trait = class_bar
+
+        ai_chance = {
+            base = 1
+        }
+    }
+}
+
+tr_class_event.02 = { ## select/modify class
+
+    type = character_event
+    title = select_class_events_root
+    window = visit_settlement_window
+    desc = select_class_events_root_desc
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    option = { # 
+        name = select_class_events_prestige
+        trigger = {
+            piety >= 500
+        }
+        custom_tooltip = select_class_events_tip
+        trigger_event = {
+            id = tr_class_event.02 #select root class
+        }
+        ai_chance = {
+            base = 1
+        }
+    }
 }

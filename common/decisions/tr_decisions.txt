@@ -788,3 +788,34 @@ summon_speical_maa_decision = {
         always = yes
     }
 }
+
+tr_choose_class_decision = {
+
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_major.dds" }
+    title = select_class_decision
+    desc = select_class_decision_desc
+    selection_tooltip = select_class_decision_tip
+    confirm_text = select_class_decision_confirm
+    cooldown = {
+        days = 31
+    }
+
+    is_shown = {
+        religion = fantasy_religion
+    }
+
+    is_valid = {
+        piety >= 500
+    }
+
+    effect = {
+        custom_tooltip = tr_class_event_effect_tip
+        trigger_event = {
+            events = { tr_class_event.01 }
+        }
+    }
+
+    ai_potential = {
+        always = yes
+    }
+}
