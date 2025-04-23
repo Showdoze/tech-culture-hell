@@ -107,7 +107,7 @@ tr_class_event.01 = { ##root
                     root = { has_trait = class_wizard_evocation }
                     root = { has_trait = class_wizard_necromancy }
                     root = { has_trait = class_wizard_conjuration }
-                    root = { has_trait = class_wizard_enchantement }
+                    root = { has_trait = class_wizard_enchantment }
                     root = { has_trait = class_wizard_divination }
                     root = { has_trait = class_wizard_illusion }
                     root = { has_trait = class_wizard_transmutation }
@@ -193,7 +193,7 @@ tr_class_event.01 = { ##root
         remove_trait = class_wizard_evocation
         remove_trait = class_wizard_necromancy
         remove_trait = class_wizard_conjuration
-        remove_trait = class_wizard_enchantement
+        remove_trait = class_wizard_enchantment
         remove_trait = class_wizard_divination
         remove_trait = class_wizard_illusion
         remove_trait = class_wizard_transmutation
@@ -205,14 +205,19 @@ tr_class_event.01 = { ##root
             base = 1
         }
     }
+
+    option = { ## cancel
+        name = class_events_cancel
+        custom_tooltip = class_events_cancel_tip
+    }
 }
 
 tr_class_event.11 = { ## select/modify class
 
     type = character_event
-    title = class_events_select_base
+    title = class_events_select
     window = visit_settlement_window
-    desc = class_events_select_base_desc
+    desc = class_events_select_desc
 
     left_portrait = {
         character = root
@@ -248,27 +253,50 @@ tr_class_event.11 = { ## select/modify class
     }
 
     option = { #
-        name = class_events_add
+        name = class_events_add_sub
         trigger = {
-            root = { has_trait = class_bar }
+            OR = {
+                root = { has_trait = class_bar }
+                root = { has_trait = class_rogue }
+                root = { has_trait = class_ranger }
+                root = { has_trait = class_fighter }
+                root = { has_trait = class_sorcerer }
+                root = { has_trait = class_wizard }
+                root = { has_trait = class_warlock }
+                root = { has_trait = class_paladin }
+                root = { has_trait = class_cleric }
+                root = { has_trait = class_monk }
+                root = { has_trait = class_bard }
+                root = { has_trait = class_druid }
+            }
             piety >= 500
         }
-        custom_tooltip = class_events_add_tip
+        custom_tooltip = class_events_add_sub_tip
         trigger_event = {
-            id = tr_class_event.31 #modify barbarian
+            id = tr_class_event.31 #modify sub class
         }
         ai_chance = {
             base = 1
         }
     }
+
+    option = { # return
+        name = class_events_return
+        custom_tooltip = class_events_return_tip
+
+        trigger_event = {
+            id = tr_class_event.01 #root
+        }
+    }
+
 }
 
 tr_class_event.21 = { ## add base class
 
     type = character_event
-    title = class_events_select
+    title = class_events_add
     window = visit_settlement_window
-    desc = class_events_select_desc
+    desc = class_events_add_desc
 
     left_portrait = {
         character = root
@@ -490,6 +518,15 @@ tr_class_event.21 = { ## add base class
             base = 1
         }
     }
+
+    option = { # return
+        name = class_events_return
+        custom_tooltip = class_events_return_tip
+
+        trigger_event = {
+            id = tr_class_event.11 #root
+        }
+    }
 }
 
 tr_class_event.31 = { ## add sub class
@@ -504,11 +541,16 @@ tr_class_event.31 = { ## add sub class
         animation = personality_rational
     }
 
+    ## BARBARIAN
+
     option = { # Barbarian Berserker
         name = class_events_add_bar_berserker
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_bar_berserker }
+                root = { has_trait = class_bar_wild_magic }
+                root = { has_trait = class_bar_wildheart }
+                root = { has_trait = class_bar_giant }
             }
             root = { has_trait = class_bar } # base class
             piety >= 500
@@ -526,8 +568,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Barbarian wild magic
         name = class_events_add_bar_wild_magic
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bar_berserker }
                 root = { has_trait = class_bar_wild_magic }
+                root = { has_trait = class_bar_wildheart }
+                root = { has_trait = class_bar_giant }
             }
             root = { has_trait = class_bar } # base class
             piety >= 500
@@ -545,8 +590,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Barbarian wildheart
         name = class_events_add_bar_wildheart
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bar_berserker }
+                root = { has_trait = class_bar_wild_magic }
                 root = { has_trait = class_bar_wildheart }
+                root = { has_trait = class_bar_giant }
             }
             root = { has_trait = class_bar } # base class
             piety >= 500
@@ -564,7 +612,10 @@ tr_class_event.31 = { ## add sub class
     option = { # Barbarian giant
         name = class_events_add_bar_giant
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bar_berserker }
+                root = { has_trait = class_bar_wild_magic }
+                root = { has_trait = class_bar_wildheart }
                 root = { has_trait = class_bar_giant }
             }
             root = { has_trait = class_bar } # base class
@@ -580,11 +631,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### BARD
+
     option = { # Bard college of lore
         name = class_events_add_bard_college_of_lore
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_bard_college_of_lore }
+                root = { has_trait = class_bard_college_of_glamour }
+                root = { has_trait = class_bard_college_of_sword }
+                root = { has_trait = class_bard_college_of_valour }
             }
             root = { has_trait = class_bard } # base class
             piety >= 500
@@ -602,7 +658,10 @@ tr_class_event.31 = { ## add sub class
     option = { # Bard college of valour
         name = class_events_add_bard_college_of_valour
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bard_college_of_lore }
+                root = { has_trait = class_bard_college_of_glamour }
+                root = { has_trait = class_bard_college_of_sword }
                 root = { has_trait = class_bard_college_of_valour }
             }
             root = { has_trait = class_bard } # base class
@@ -621,8 +680,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Bard college of sword
         name = class_events_add_bard_college_of_sword
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bard_college_of_lore }
+                root = { has_trait = class_bard_college_of_glamour }
                 root = { has_trait = class_bard_college_of_sword }
+                root = { has_trait = class_bard_college_of_valour }
             }
             root = { has_trait = class_bard } # base class
             piety >= 500
@@ -640,8 +702,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Bard college of glamour
         name = class_events_add_bard_college_of_glamour
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_bard_college_of_lore }
                 root = { has_trait = class_bard_college_of_glamour }
+                root = { has_trait = class_bard_college_of_sword }
+                root = { has_trait = class_bard_college_of_valour }
             }
             root = { has_trait = class_bard } # base class
             piety >= 500
@@ -656,11 +721,20 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### CLERIC
+
     option = { # cleric of life
         name = class_events_add_cleric_life
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -678,8 +752,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of light
         name = class_events_add_cleric_light
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
                 root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -697,8 +778,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of trick
         name = class_events_add_cleric_trick
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
                 root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -716,8 +804,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of knowledge
         name = class_events_add_cleric_knowledge
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
                 root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -735,8 +830,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of nature
         name = class_events_add_cleric_nature
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
                 root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -754,8 +856,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of tempest
         name = class_events_add_cleric_tempest
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
                 root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -773,7 +882,14 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of war
         name = class_events_add_cleric_war
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
                 root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
@@ -792,8 +908,15 @@ tr_class_event.31 = { ## add sub class
     option = { # cleric of death
         name = class_events_add_cleric_death
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_cleric_life }
                 root = { has_trait = class_cleric_death }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_war }
             }
             root = { has_trait = class_cleric } # base class
             piety >= 500
@@ -808,11 +931,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### DRUID
+
     option = { # Druid Land
         name = class_events_add_druid_land
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_druid_land }
+                root = { has_trait = class_druid_moon }
+                root = { has_trait = class_druid_spore }
+                root = { has_trait = class_druid_star }
             }
             root = { has_trait = class_druid } # base class
             piety >= 500
@@ -830,8 +958,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Druid moon
         name = class_events_add_druid_moon
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_druid_land }
                 root = { has_trait = class_druid_moon }
+                root = { has_trait = class_druid_spore }
+                root = { has_trait = class_druid_star }
             }
             root = { has_trait = class_druid } # base class
             piety >= 500
@@ -849,8 +980,11 @@ tr_class_event.31 = { ## add sub class
     option = { # Druid spore
         name = class_events_add_druid_spore
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_druid_land }
+                root = { has_trait = class_druid_moon }
                 root = { has_trait = class_druid_spore }
+                root = { has_trait = class_druid_star }
             }
             root = { has_trait = class_druid } # base class
             piety >= 500
@@ -868,7 +1002,10 @@ tr_class_event.31 = { ## add sub class
     option = { # Druid Land
         name = class_events_add_druid_star
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_druid_land }
+                root = { has_trait = class_druid_moon }
+                root = { has_trait = class_druid_spore }
                 root = { has_trait = class_druid_star }
             }
             root = { has_trait = class_druid } # base class
@@ -884,11 +1021,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### Fighter
+
     option = { # fighter master
         name = class_events_add_fighter_master
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_fighter_master }
+                root = { has_trait = class_fighter_arcane_archer }
+                root = { has_trait = class_fighter_champion }
+                root = { has_trait = class_fighter_knight }
             }
             root = { has_trait = class_fighter } # base class
             piety >= 500
@@ -906,7 +1048,10 @@ tr_class_event.31 = { ## add sub class
     option = { # fighter knight
         name = class_events_add_fighter_knight
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_fighter_master }
+                root = { has_trait = class_fighter_arcane_archer }
+                root = { has_trait = class_fighter_champion }
                 root = { has_trait = class_fighter_knight }
             }
             root = { has_trait = class_fighter } # base class
@@ -925,8 +1070,11 @@ tr_class_event.31 = { ## add sub class
     option = { # fighter champion
         name = class_events_add_fighter_champion
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_fighter_master }
+                root = { has_trait = class_fighter_arcane_archer }
                 root = { has_trait = class_fighter_champion }
+                root = { has_trait = class_fighter_knight }
             }
             root = { has_trait = class_fighter } # base class
             piety >= 500
@@ -944,8 +1092,11 @@ tr_class_event.31 = { ## add sub class
     option = { # fighter arcane archer
         name = class_events_add_fighter_arcane_archer
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_fighter_master }
                 root = { has_trait = class_fighter_arcane_archer }
+                root = { has_trait = class_fighter_champion }
+                root = { has_trait = class_fighter_knight }
             }
             root = { has_trait = class_fighter } # base class
             piety >= 500
@@ -960,11 +1111,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### MONK
+
     option = { # monk shadow
         name = class_events_add_monk_shadow
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_monk_shadow }
+                root = { has_trait = class_monk_drunk }
+                root = { has_trait = class_monk_element }
+                root = { has_trait = class_monk_hand }
             }
             root = { has_trait = class_monk } # base class
             piety >= 500
@@ -982,8 +1138,11 @@ tr_class_event.31 = { ## add sub class
     option = { # monk element
         name = class_events_add_monk_element
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_monk_shadow }
+                root = { has_trait = class_monk_drunk }
                 root = { has_trait = class_monk_element }
+                root = { has_trait = class_monk_hand }
             }
             root = { has_trait = class_monk } # base class
             piety >= 500
@@ -1001,7 +1160,10 @@ tr_class_event.31 = { ## add sub class
     option = { # monk hand
         name = class_events_add_monk_hand
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_monk_shadow }
+                root = { has_trait = class_monk_drunk }
+                root = { has_trait = class_monk_element }
                 root = { has_trait = class_monk_hand }
             }
             root = { has_trait = class_monk } # base class
@@ -1020,8 +1182,11 @@ tr_class_event.31 = { ## add sub class
     option = { # monk drunk
         name = class_events_add_monk_drunk
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_monk_shadow }
                 root = { has_trait = class_monk_drunk }
+                root = { has_trait = class_monk_element }
+                root = { has_trait = class_monk_hand }
             }
             root = { has_trait = class_monk } # base class
             piety >= 500
@@ -1036,11 +1201,17 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### PALADIN
+
     option = { # paladin ancient
         name = class_events_add_paladin_ancient
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_paladin_ancient }
+                root = { has_trait = class_paladin_crown }
+                root = { has_trait = class_paladin_devotion }
+                root = { has_trait = class_paladin_oathbreaker }
+                root = { has_trait = class_paladin_vengeance }
             }
             root = { has_trait = class_paladin } # base class
             piety >= 500
@@ -1058,8 +1229,12 @@ tr_class_event.31 = { ## add sub class
     option = { # paladin devotion
         name = class_events_add_paladin_devotion
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_paladin_ancient }
+                root = { has_trait = class_paladin_crown }
                 root = { has_trait = class_paladin_devotion }
+                root = { has_trait = class_paladin_oathbreaker }
+                root = { has_trait = class_paladin_vengeance }
             }
             root = { has_trait = class_paladin } # base class
             piety >= 500
@@ -1077,7 +1252,11 @@ tr_class_event.31 = { ## add sub class
     option = { # paladin vengeance
         name = class_events_add_paladin_vengeance
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_paladin_ancient }
+                root = { has_trait = class_paladin_crown }
+                root = { has_trait = class_paladin_devotion }
+                root = { has_trait = class_paladin_oathbreaker }
                 root = { has_trait = class_paladin_vengeance }
             }
             root = { has_trait = class_paladin } # base class
@@ -1096,8 +1275,12 @@ tr_class_event.31 = { ## add sub class
     option = { # paladin crown
         name = class_events_add_paladin_crown
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_paladin_ancient }
                 root = { has_trait = class_paladin_crown }
+                root = { has_trait = class_paladin_devotion }
+                root = { has_trait = class_paladin_oathbreaker }
+                root = { has_trait = class_paladin_vengeance }
             }
             root = { has_trait = class_paladin } # base class
             piety >= 500
@@ -1115,8 +1298,12 @@ tr_class_event.31 = { ## add sub class
     option = { # paladin oathbreaker
         name = class_events_add_paladin_oathbreaker
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_paladin_ancient }
+                root = { has_trait = class_paladin_crown }
+                root = { has_trait = class_paladin_devotion }
                 root = { has_trait = class_paladin_oathbreaker }
+                root = { has_trait = class_paladin_vengeance }
             }
             root = { has_trait = class_paladin } # base class
             piety >= 500
@@ -1131,11 +1318,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### RANGER
+
     option = { # ranger hunter
         name = class_events_add_ranger_hunter
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_ranger_hunter }
+                root = { has_trait = class_ranger_gloom }
+                root = { has_trait = class_ranger_master }
+                root = { has_trait = class_ranger_swarmkeeper }
             }
             root = { has_trait = class_ranger } # base class
             piety >= 500
@@ -1153,8 +1345,11 @@ tr_class_event.31 = { ## add sub class
     option = { # ranger master
         name = class_events_add_ranger_master
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_ranger_hunter }
+                root = { has_trait = class_ranger_gloom }
                 root = { has_trait = class_ranger_master }
+                root = { has_trait = class_ranger_swarmkeeper }
             }
             root = { has_trait = class_ranger } # base class
             piety >= 500
@@ -1172,8 +1367,11 @@ tr_class_event.31 = { ## add sub class
     option = { # ranger gloom
         name = class_events_add_ranger_gloom
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_ranger_hunter }
                 root = { has_trait = class_ranger_gloom }
+                root = { has_trait = class_ranger_master }
+                root = { has_trait = class_ranger_swarmkeeper }
             }
             root = { has_trait = class_ranger } # base class
             piety >= 500
@@ -1191,7 +1389,10 @@ tr_class_event.31 = { ## add sub class
     option = { # ranger swarmkeeper
         name = class_events_add_ranger_swarmkeeper
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_ranger_hunter }
+                root = { has_trait = class_ranger_gloom }
+                root = { has_trait = class_ranger_master }
                 root = { has_trait = class_ranger_swarmkeeper }
             }
             root = { has_trait = class_ranger } # base class
@@ -1207,11 +1408,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### ROGUE
+
     option = { # rogue thief
         name = class_events_add_rogue_thief
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_rogue_thief }
+                root = { has_trait = class_rogue_assassin }
+                root = { has_trait = class_rogue_swashbuckler }
+                root = { has_trait = class_rogue_trick }
             }
             root = { has_trait = class_rogue } # base class
             piety >= 500
@@ -1229,7 +1435,10 @@ tr_class_event.31 = { ## add sub class
     option = { # rogue trick
         name = class_events_add_rogue_trick
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_rogue_thief }
+                root = { has_trait = class_rogue_assassin }
+                root = { has_trait = class_rogue_swashbuckler }
                 root = { has_trait = class_rogue_trick }
             }
             root = { has_trait = class_rogue } # base class
@@ -1248,8 +1457,11 @@ tr_class_event.31 = { ## add sub class
     option = { # rogue assassin
         name = class_events_add_rogue_assassin
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_rogue_thief }
                 root = { has_trait = class_rogue_assassin }
+                root = { has_trait = class_rogue_swashbuckler }
+                root = { has_trait = class_rogue_trick }
             }
             root = { has_trait = class_rogue } # base class
             piety >= 500
@@ -1267,8 +1479,11 @@ tr_class_event.31 = { ## add sub class
     option = { # rogue swashbuckler
         name = class_events_add_rogue_swashbuckler
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_rogue_thief }
+                root = { has_trait = class_rogue_assassin }
                 root = { has_trait = class_rogue_swashbuckler }
+                root = { has_trait = class_rogue_trick }
             }
             root = { has_trait = class_rogue } # base class
             piety >= 500
@@ -1283,11 +1498,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### SORCERER
+
     option = { # sorcerer wild
         name = class_events_add_sorcerer_wild
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_sorcerer_wild }
+                root = { has_trait = class_sorcerer_dragon }
+                root = { has_trait = class_sorcerer_shadow }
+                root = { has_trait = class_sorcerer_storm }
             }
             root = { has_trait = class_sorcerer } # base class
             piety >= 500
@@ -1305,8 +1525,11 @@ tr_class_event.31 = { ## add sub class
     option = { # sorcerer dragon
         name = class_events_add_sorcerer_dragon
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_sorcerer_wild }
                 root = { has_trait = class_sorcerer_dragon }
+                root = { has_trait = class_sorcerer_shadow }
+                root = { has_trait = class_sorcerer_storm }
             }
             root = { has_trait = class_sorcerer } # base class
             piety >= 500
@@ -1324,7 +1547,10 @@ tr_class_event.31 = { ## add sub class
     option = { # sorcerer storm
         name = class_events_add_sorcerer_storm
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_sorcerer_wild }
+                root = { has_trait = class_sorcerer_dragon }
+                root = { has_trait = class_sorcerer_shadow }
                 root = { has_trait = class_sorcerer_storm }
             }
             root = { has_trait = class_sorcerer } # base class
@@ -1343,8 +1569,11 @@ tr_class_event.31 = { ## add sub class
     option = { # sorcerer shadow
         name = class_events_add_sorcerer_shadow
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_sorcerer_wild }
+                root = { has_trait = class_sorcerer_dragon }
                 root = { has_trait = class_sorcerer_shadow }
+                root = { has_trait = class_sorcerer_storm }
             }
             root = { has_trait = class_sorcerer } # base class
             piety >= 500
@@ -1359,11 +1588,16 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### WARLOCK
+
     option = { # warlock fiend
         name = class_events_add_warlock_fiend
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_warlock_fiend }
+                root = { has_trait = class_warlock_archfey }
+                root = { has_trait = class_warlock_great }
+                root = { has_trait = class_warlock_hexblade }
             }
             root = { has_trait = class_warlock } # base class
             piety >= 500
@@ -1381,8 +1615,11 @@ tr_class_event.31 = { ## add sub class
     option = { # warlock fiend
         name = class_events_add_warlock_great
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_warlock_fiend }
+                root = { has_trait = class_warlock_archfey }
                 root = { has_trait = class_warlock_great }
+                root = { has_trait = class_warlock_hexblade }
             }
             root = { has_trait = class_warlock } # base class
             piety >= 500
@@ -1400,8 +1637,11 @@ tr_class_event.31 = { ## add sub class
     option = { # warlock archfey
         name = class_events_add_warlock_archfey
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_warlock_fiend }
                 root = { has_trait = class_warlock_archfey }
+                root = { has_trait = class_warlock_great }
+                root = { has_trait = class_warlock_hexblade }
             }
             root = { has_trait = class_warlock } # base class
             piety >= 500
@@ -1419,7 +1659,10 @@ tr_class_event.31 = { ## add sub class
     option = { # warlock hexblade
         name = class_events_add_warlock_hexblade
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_warlock_fiend }
+                root = { has_trait = class_warlock_archfey }
+                root = { has_trait = class_warlock_great }
                 root = { has_trait = class_warlock_hexblade }
             }
             root = { has_trait = class_warlock } # base class
@@ -1435,11 +1678,21 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
+    ### WIZARD
+
     option = { # wizard abjuration
         name = class_events_add_wizard_abjuration
         trigger = {
-            NOT = {
+            NAND = {
                 root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1457,8 +1710,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard evocation
         name = class_events_add_wizard_evocation
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
                 root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1476,8 +1737,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard necromancy
         name = class_events_add_wizard_necromancy
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
                 root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1495,8 +1764,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard conjuration
         name = class_events_add_wizard_conjuration
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
                 root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1514,8 +1791,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard enchantment
         name = class_events_add_wizard_enchantment
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
                 root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1533,8 +1818,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard divination
         name = class_events_add_wizard_divination
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
                 root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1552,8 +1845,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard illusion
         name = class_events_add_wizard_illusion
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
                 root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1571,7 +1872,15 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard transmutation
         name = class_events_add_wizard_transmutation
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
+                root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
                 root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
@@ -1590,8 +1899,16 @@ tr_class_event.31 = { ## add sub class
     option = { # wizard bladesinging
         name = class_events_add_wizard_bladesinging
         trigger = {
-            NOT = {
+            NAND = {
+                root = { has_trait = class_wizard_abjuration }
                 root = { has_trait = class_wizard_bladesinging }
+                root = { has_trait = class_wizard_conjuration }
+                root = { has_trait = class_wizard_divination }
+                root = { has_trait = class_wizard_enchantment }
+                root = { has_trait = class_wizard_evocation }
+                root = { has_trait = class_wizard_illusion }
+                root = { has_trait = class_wizard_necromancy }
+                root = { has_trait = class_wizard_transmutation }
             }
             root = { has_trait = class_wizard } # base class
             piety >= 500
@@ -1603,6 +1920,15 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+        }
+    }
+
+    option = { # return
+        name = class_events_return
+        custom_tooltip = class_events_return_tip
+
+        trigger_event = {
+            id = tr_class_event.21 #select base class
         }
     }
 }
