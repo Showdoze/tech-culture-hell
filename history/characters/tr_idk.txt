@@ -171,6 +171,11 @@
 	father = tr_sopranos_tony_dad
     disallow_random_traits = yes
 	820.8.22 = { birth = yes }
+	860.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_sopranos_tony_mom reason = rival_historical }
+		}
+	}
 	900.1.1 = {
 		death = {
 			death_reason = death_murder
@@ -193,7 +198,35 @@
 	father = tr_mafia_found
     disallow_random_traits = yes
 	790.1.1 = { birth = yes }
+	820.1.1 = { add_spouse = tr_sopranos_tony_mom }
 	850.1.1 = { death = { death_reason = death_stress } }
+ }
+ tr_sopranos_tony_mom = {
+    name = "Livia Soprano"
+	#dna = sopranos_tony
+	religion = catholic 
+    #dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_intrigue_4
+	trait = deceitful
+    trait = paranoid
+    trait = sadistic
+    trait = stubborn
+	trait = vengeful
+	trait = schemer
+	trait = irritable
+	trait = cynical
+	trait = torturer
+	#father = tr_mafia_found
+    disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	820.1.1 = { add_spouse = tr_sopranos_tony_dad }
+	860.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_sopranos_tony reason = rival_historical }
+		}
+	}
+	870.1.1 = { death = { death_reason = death_cancer } }
  }
  tr_sopranos_junor = {
     name = "Junor Soprano"
