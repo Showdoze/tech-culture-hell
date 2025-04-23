@@ -19,7 +19,7 @@ tr_class_event.01 = { ##root
         }
         custom_tooltip = class_events_select_tip
         trigger_event = {
-            id = tr_class_event.02 #select root class
+            id = tr_class_event.11 #select root class
         }
         ai_chance = {
             base = 1
@@ -207,27 +207,1400 @@ tr_class_event.01 = { ##root
     }
 }
 
-tr_class_event.02 = { ## select/modify class
+tr_class_event.11 = { ## select/modify class
 
     type = character_event
-    title = select_class_events_root
+    title = class_events_select_base
     window = visit_settlement_window
-    desc = select_class_events_root_desc
+    desc = class_events_select_base_desc
 
     left_portrait = {
         character = root
         animation = personality_rational
     }
 
-    option = { #
-        name = select_class_events_prestige
+    option = { # ADD NEW
+        name = class_events_add
         trigger = {
+            NAND = {
+                root = { has_trait = class_bar }
+                root = { has_trait = class_rogue }
+                root = { has_trait = class_ranger }
+                root = { has_trait = class_fighter }
+                root = { has_trait = class_sorcerer }
+                root = { has_trait = class_wizard }
+                root = { has_trait = class_warlock }
+                root = { has_trait = class_paladin }
+                root = { has_trait = class_cleric }
+                root = { has_trait = class_monk }
+                root = { has_trait = class_bard }
+                root = { has_trait = class_druid }
+            }
             piety >= 500
         }
-        custom_tooltip = select_class_events_tip
+        custom_tooltip = class_events_add_tip
         trigger_event = {
-            id = tr_class_event.02 #select root class
+            id = tr_class_event.21 #add another base class
         }
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { #
+        name = class_events_add
+        trigger = {
+            root = { has_trait = class_bar }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_tip
+        trigger_event = {
+            id = tr_class_event.31 #modify barbarian
+        }
+        ai_chance = {
+            base = 1
+        }
+    }
+}
+
+tr_class_event.21 = { ## add base class
+
+    type = character_event
+    title = class_events_select
+    window = visit_settlement_window
+    desc = class_events_select_desc
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    option = { # Barbarian
+        name = class_events_add_bar
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bar }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bar_tip
+
+        add_trait = class_bar
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Bard
+        name = class_events_add_bard
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bard }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bard_tip
+
+        add_trait = class_bard
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # druid
+        name = class_events_add_druid
+        trigger = {
+            NOT = {
+                root = { has_trait = class_druid }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_druid_tip
+
+        add_trait = class_druid
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric
+        name = class_events_add_cleric
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_tip
+
+        add_trait = class_cleric
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin
+        name = class_events_add_paladin
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_tip
+
+        add_trait = class_paladin
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # sorcerer
+        name = class_events_add_sorcerer
+        trigger = {
+            NOT = {
+                root = { has_trait = class_sorcerer }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_sorcerer_tip
+
+        add_trait = class_sorcerer
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard
+        name = class_events_add_wizard
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_tip
+
+        add_trait = class_wizard
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # monk
+        name = class_events_add_monk
+        trigger = {
+            NOT = {
+                root = { has_trait = class_monk }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_monk_tip
+
+        add_trait = class_monk
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # fighter
+        name = class_events_add_fighter
+        trigger = {
+            NOT = {
+                root = { has_trait = class_fighter }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_fighter_tip
+
+        add_trait = class_fighter
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # warlock
+        name = class_events_add_warlock
+        trigger = {
+            NOT = {
+                root = { has_trait = class_warlock }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_warlock_tip
+
+        add_trait = class_warlock
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # rogue
+        name = class_events_add_rogue
+        trigger = {
+            NOT = {
+                root = { has_trait = class_rogue }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_rogue_tip
+
+        add_trait = class_rogue
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # ranger
+        name = class_events_add_ranger
+        trigger = {
+            NOT = {
+                root = { has_trait = class_ranger }
+            }
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_ranger_tip
+
+        add_trait = class_ranger
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+}
+
+tr_class_event.31 = { ## add sub class
+
+    type = character_event
+    title = class_events_select_sub
+    window = visit_settlement_window
+    desc = class_events_select_sub_desc
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    option = { # Barbarian Berserker
+        name = class_events_add_bar_berserker
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bar_berserker }
+            }
+            root = { has_trait = class_bar } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bar_berserker_tip
+
+        add_trait = class_bar_berserker
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Barbarian wild magic
+        name = class_events_add_bar_wild_magic
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bar_wild_magic }
+            }
+            root = { has_trait = class_bar } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bar_wild_magic_tip
+
+        add_trait = class_bar_wild_magic
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Barbarian wildheart
+        name = class_events_add_bar_wildheart
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bar_wildheart }
+            }
+            root = { has_trait = class_bar } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bar_wildheart_tip
+
+        add_trait = class_bar_wildheart
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Barbarian giant
+        name = class_events_add_bar_giant
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bar_giant }
+            }
+            root = { has_trait = class_bar } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bar_giant_tip
+
+        add_trait = class_bar_giant
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Bard college of lore
+        name = class_events_add_bard_college_of_lore
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bard_college_of_lore }
+            }
+            root = { has_trait = class_bard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bard_college_of_lore_tip
+
+        add_trait = class_bard_college_of_lore
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Bard college of valour
+        name = class_events_add_bard_college_of_valour
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bard_college_of_valour }
+            }
+            root = { has_trait = class_bard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bard_college_of_valour_tip
+
+        add_trait = class_bard_college_of_valour
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Bard college of sword
+        name = class_events_add_bard_college_of_sword
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bard_college_of_sword }
+            }
+            root = { has_trait = class_bard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bard_college_of_sword_tip
+
+        add_trait = class_bard_college_of_sword
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Bard college of glamour
+        name = class_events_add_bard_college_of_glamour
+        trigger = {
+            NOT = {
+                root = { has_trait = class_bard_college_of_glamour }
+            }
+            root = { has_trait = class_bard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_bard_college_of_glamour_tip
+
+        add_trait = class_bard_college_of_glamour
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of life
+        name = class_events_add_cleric_life
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_life }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_life_tip
+
+        add_trait = class_cleric_life
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of light
+        name = class_events_add_cleric_light
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_light }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_light_tip
+
+        add_trait = class_cleric_light
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of trick
+        name = class_events_add_cleric_trick
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_trick }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_trick_tip
+
+        add_trait = class_cleric_trick
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of knowledge
+        name = class_events_add_cleric_knowledge
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_knowledge }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_knowledge_tip
+
+        add_trait = class_cleric_knowledge
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of nature
+        name = class_events_add_cleric_nature
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_nature }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_nature_tip
+
+        add_trait = class_cleric_nature
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of tempest
+        name = class_events_add_cleric_tempest
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_tempest }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_tempest_tip
+
+        add_trait = class_cleric_tempest
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of war
+        name = class_events_add_cleric_war
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_war }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_war_tip
+
+        add_trait = class_cleric_war
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # cleric of death
+        name = class_events_add_cleric_death
+        trigger = {
+            NOT = {
+                root = { has_trait = class_cleric_death }
+            }
+            root = { has_trait = class_cleric } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_cleric_death_tip
+
+        add_trait = class_cleric_death
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Druid Land
+        name = class_events_add_druid_land
+        trigger = {
+            NOT = {
+                root = { has_trait = class_druid_land }
+            }
+            root = { has_trait = class_druid } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_druid_land_tip
+
+        add_trait = class_druid_land
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Druid moon
+        name = class_events_add_druid_moon
+        trigger = {
+            NOT = {
+                root = { has_trait = class_druid_moon }
+            }
+            root = { has_trait = class_druid } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_druid_moon_tip
+
+        add_trait = class_druid_moon
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Druid spore
+        name = class_events_add_druid_spore
+        trigger = {
+            NOT = {
+                root = { has_trait = class_druid_spore }
+            }
+            root = { has_trait = class_druid } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_druid_spore_tip
+
+        add_trait = class_druid_spore
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # Druid Land
+        name = class_events_add_druid_star
+        trigger = {
+            NOT = {
+                root = { has_trait = class_druid_star }
+            }
+            root = { has_trait = class_druid } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_druid_star_tip
+
+        add_trait = class_druid_star
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # fighter master
+        name = class_events_add_fighter_master
+        trigger = {
+            NOT = {
+                root = { has_trait = class_fighter_master }
+            }
+            root = { has_trait = class_fighter } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_fighter_master_tip
+
+        add_trait = class_fighter_master
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # fighter knight
+        name = class_events_add_fighter_knight
+        trigger = {
+            NOT = {
+                root = { has_trait = class_fighter_knight }
+            }
+            root = { has_trait = class_fighter } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_fighter_knight_tip
+
+        add_trait = class_fighter_knight
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # fighter champion
+        name = class_events_add_fighter_champion
+        trigger = {
+            NOT = {
+                root = { has_trait = class_fighter_champion }
+            }
+            root = { has_trait = class_fighter } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_fighter_champion_tip
+
+        add_trait = class_fighter_champion
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # fighter arcane archer
+        name = class_events_add_fighter_arcane_archer
+        trigger = {
+            NOT = {
+                root = { has_trait = class_fighter_arcane_archer }
+            }
+            root = { has_trait = class_fighter } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_fighter_arcane_archer_tip
+
+        add_trait = class_fighter_arcane_archer
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # monk shadow
+        name = class_events_add_monk_shadow
+        trigger = {
+            NOT = {
+                root = { has_trait = class_monk_shadow }
+            }
+            root = { has_trait = class_monk } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_monk_shadow_tip
+
+        add_trait = class_monk_shadow
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # monk element
+        name = class_events_add_monk_element
+        trigger = {
+            NOT = {
+                root = { has_trait = class_monk_element }
+            }
+            root = { has_trait = class_monk } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_monk_element_tip
+
+        add_trait = class_monk_element
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # monk hand
+        name = class_events_add_monk_hand
+        trigger = {
+            NOT = {
+                root = { has_trait = class_monk_hand }
+            }
+            root = { has_trait = class_monk } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_monk_hand_tip
+
+        add_trait = class_monk_hand
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # monk drunk
+        name = class_events_add_monk_drunk
+        trigger = {
+            NOT = {
+                root = { has_trait = class_monk_drunk }
+            }
+            root = { has_trait = class_monk } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_monk_drunk_tip
+
+        add_trait = class_monk_drunk
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin ancient
+        name = class_events_add_paladin_ancient
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin_ancient }
+            }
+            root = { has_trait = class_paladin } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_ancient_tip
+
+        add_trait = class_paladin_ancient
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin devotion
+        name = class_events_add_paladin_devotion
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin_devotion }
+            }
+            root = { has_trait = class_paladin } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_devotion_tip
+
+        add_trait = class_paladin_devotion
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin vengeance
+        name = class_events_add_paladin_vengeance
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin_vengeance }
+            }
+            root = { has_trait = class_paladin } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_vengeance_tip
+
+        add_trait = class_paladin_vengeance
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin crown
+        name = class_events_add_paladin_crown
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin_crown }
+            }
+            root = { has_trait = class_paladin } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_crown_tip
+
+        add_trait = class_paladin_crown
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # paladin oathbreaker
+        name = class_events_add_paladin_oathbreaker
+        trigger = {
+            NOT = {
+                root = { has_trait = class_paladin_oathbreaker }
+            }
+            root = { has_trait = class_paladin } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_paladin_oathbreaker_tip
+
+        add_trait = class_paladin_oathbreaker
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # ranger hunter
+        name = class_events_add_ranger_hunter
+        trigger = {
+            NOT = {
+                root = { has_trait = class_ranger_hunter }
+            }
+            root = { has_trait = class_ranger } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_ranger_hunter_tip
+
+        add_trait = class_ranger_hunter
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # ranger master
+        name = class_events_add_ranger_master
+        trigger = {
+            NOT = {
+                root = { has_trait = class_ranger_master }
+            }
+            root = { has_trait = class_ranger } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_ranger_master_tip
+
+        add_trait = class_ranger_master
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # ranger gloom
+        name = class_events_add_ranger_gloom
+        trigger = {
+            NOT = {
+                root = { has_trait = class_ranger_gloom }
+            }
+            root = { has_trait = class_ranger } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_ranger_gloom_tip
+
+        add_trait = class_ranger_gloom
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # ranger swarmkeeper
+        name = class_events_add_ranger_swarmkeeper
+        trigger = {
+            NOT = {
+                root = { has_trait = class_ranger_swarmkeeper }
+            }
+            root = { has_trait = class_ranger } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_ranger_swarmkeeper_tip
+
+        add_trait = class_ranger_swarmkeeper
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # rogue thief
+        name = class_events_add_rogue_thief
+        trigger = {
+            NOT = {
+                root = { has_trait = class_rogue_thief }
+            }
+            root = { has_trait = class_rogue } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_rogue_thief_tip
+
+        add_trait = class_rogue_thief
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # rogue trick
+        name = class_events_add_rogue_trick
+        trigger = {
+            NOT = {
+                root = { has_trait = class_rogue_trick }
+            }
+            root = { has_trait = class_rogue } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_rogue_trick_tip
+
+        add_trait = class_rogue_trick
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # rogue assassin
+        name = class_events_add_rogue_assassin
+        trigger = {
+            NOT = {
+                root = { has_trait = class_rogue_assassin }
+            }
+            root = { has_trait = class_rogue } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_rogue_assassin_tip
+
+        add_trait = class_rogue_assassin
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # rogue swashbuckler
+        name = class_events_add_rogue_swashbuckler
+        trigger = {
+            NOT = {
+                root = { has_trait = class_rogue_swashbuckler }
+            }
+            root = { has_trait = class_rogue } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_rogue_swashbuckler_tip
+
+        add_trait = class_rogue_swashbuckler
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # sorcerer wild
+        name = class_events_add_sorcerer_wild
+        trigger = {
+            NOT = {
+                root = { has_trait = class_sorcerer_wild }
+            }
+            root = { has_trait = class_sorcerer } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_sorcerer_wild_tip
+
+        add_trait = class_sorcerer_wild
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # sorcerer dragon
+        name = class_events_add_sorcerer_dragon
+        trigger = {
+            NOT = {
+                root = { has_trait = class_sorcerer_dragon }
+            }
+            root = { has_trait = class_sorcerer } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_sorcerer_dragon_tip
+
+        add_trait = class_sorcerer_dragon
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # sorcerer storm
+        name = class_events_add_sorcerer_storm
+        trigger = {
+            NOT = {
+                root = { has_trait = class_sorcerer_storm }
+            }
+            root = { has_trait = class_sorcerer } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_sorcerer_storm_tip
+
+        add_trait = class_sorcerer_storm
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # sorcerer shadow
+        name = class_events_add_sorcerer_shadow
+        trigger = {
+            NOT = {
+                root = { has_trait = class_sorcerer_shadow }
+            }
+            root = { has_trait = class_sorcerer } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_sorcerer_shadow_tip
+
+        add_trait = class_sorcerer_shadow
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # warlock fiend
+        name = class_events_add_warlock_fiend
+        trigger = {
+            NOT = {
+                root = { has_trait = class_warlock_fiend }
+            }
+            root = { has_trait = class_warlock } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_warlock_fiend_tip
+
+        add_trait = class_warlock_fiend
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # warlock fiend
+        name = class_events_add_warlock_great
+        trigger = {
+            NOT = {
+                root = { has_trait = class_warlock_great }
+            }
+            root = { has_trait = class_warlock } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_warlock_great_tip
+
+        add_trait = class_warlock_great
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # warlock archfey
+        name = class_events_add_warlock_archfey
+        trigger = {
+            NOT = {
+                root = { has_trait = class_warlock_archfey }
+            }
+            root = { has_trait = class_warlock } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_warlock_archfey_tip
+
+        add_trait = class_warlock_archfey
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # warlock hexblade
+        name = class_events_add_warlock_hexblade
+        trigger = {
+            NOT = {
+                root = { has_trait = class_warlock_hexblade }
+            }
+            root = { has_trait = class_warlock } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_warlock_hexblade_tip
+
+        add_trait = class_warlock_hexblade
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard abjuration
+        name = class_events_add_wizard_abjuration
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_abjuration }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_abjuration_tip
+
+        add_trait = class_wizard_abjuration
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard evocation
+        name = class_events_add_wizard_evocation
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_evocation }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_evocation_tip
+
+        add_trait = class_wizard_evocation
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard necromancy
+        name = class_events_add_wizard_necromancy
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_necromancy }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_necromancy_tip
+
+        add_trait = class_wizard_necromancy
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard conjuration
+        name = class_events_add_wizard_conjuration
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_conjuration }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_conjuration_tip
+
+        add_trait = class_wizard_conjuration
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard enchantment
+        name = class_events_add_wizard_enchantment
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_enchantment }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_enchantment_tip
+
+        add_trait = class_wizard_enchantment
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard divination
+        name = class_events_add_wizard_divination
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_divination }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_divination_tip
+
+        add_trait = class_wizard_divination
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard illusion
+        name = class_events_add_wizard_illusion
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_illusion }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_illusion_tip
+
+        add_trait = class_wizard_illusion
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard transmutation
+        name = class_events_add_wizard_transmutation
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_transmutation }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_transmutation_tip
+
+        add_trait = class_wizard_transmutation
+        add_piety = -500
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+    option = { # wizard bladesinging
+        name = class_events_add_wizard_bladesinging
+        trigger = {
+            NOT = {
+                root = { has_trait = class_wizard_bladesinging }
+            }
+            root = { has_trait = class_wizard } # base class
+            piety >= 500
+        }
+        custom_tooltip = class_events_add_wizard_bladesinging_tip
+
+        add_trait = class_wizard_bladesinging
+        add_piety = -500
+
         ai_chance = {
             base = 1
         }
