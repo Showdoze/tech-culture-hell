@@ -33,6 +33,7 @@
 	trait = brave
 	trait = diligent
 	trait = frankish_enemy
+	trait = flexible_leader
 	420.11.1 = { birth = yes }
 	461.8.7 = {
 		death = {
@@ -1445,11 +1446,7 @@
 		#create_bloodline = {
 		#type = suebi_blood }
 	}
-	441.1.1 = {
-		death = {
-			death_reason = death_ill
-		}
-	}
+	441.1.1 = { death = { death_reason = death_ill } }
  }
  ck650063 = {
 	name = "Rechila"
@@ -1637,7 +1634,7 @@
 	trait = lifestyle_hunter
 	trait = ambitious
 	trait = logistician
-	#trait = hedonist
+	trait = lifestyle_reveler
 	#trait = cavalry_leader
 	#trait = horse_rider
 	#trait = warmonger
@@ -1652,9 +1649,7 @@
 	give_nickname = nick_the_hun
 	father = ck650016
     406.1.1 = { birth = yes }
-	453.3.1 = {
-	    death = { death_reason= death_murder_known
-	} }
+	453.3.1 = { death = { death_reason= death_murder_known } }
  }	
  ck650061 = {
 	name = "Ernak"
@@ -1682,14 +1677,12 @@
 	religion = tengri_pagan
 	trait = lustful
 	#trait = lush
-	#trait = hedonist
+	trait = lifestyle_reveler
 	trait = child_of_concubine_female
 	trait = drunkard
 	father = ck650061
 	510.1.1 = { birth = yes }
-	631.1.1 = {
-	    death = { death_reason= death_drank_to_death
-	} }
+	631.1.1 = { death = { death_reason= death_drank_to_death } }
  }
  ck650108 = {
 	name="Bayan"
