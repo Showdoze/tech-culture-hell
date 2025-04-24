@@ -145,3 +145,33 @@ dragon_scales = {
         }
     }
 }
+barbarian_giant = {
+    barbarian_giant_1 = {
+        traits = { class_bar_giant }
+        dna_modifiers = {
+            human = {
+				morph = {
+					mode = modify_multiply
+					gene = gene_height
+					template = giant_height
+					value = 0
+				}
+            }
+        }
+    }
+}
+monk_drunk = {
+    monk_drunk = {
+        traits = { class_monk_drunk }
+        dna_modifiers = {
+            human = {
+				morph = {
+					mode = add
+					gene = gene_drunkard
+					range = { 0.75 1.0 }
+					template = drunkard
+				}
+            }
+        }
+    }
+}
