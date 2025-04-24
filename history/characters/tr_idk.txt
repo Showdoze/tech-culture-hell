@@ -404,6 +404,7 @@
 	#dna = oswald_cobblepot_the_penguin
 	religion = catholic 
     #dynasty_house = house_mafia
+	female = yes
 	culture = american
 	#father = tr_mafia_founder
 	trait = education_diplomacy_2
@@ -1146,7 +1147,7 @@ tr_dutch_van = {
 	trait = lunatic_1
     trait = ambitious
     disallow_random_traits = yes
-	849.1.1 = { birth = yes }
+	840.1.1 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
@@ -1154,6 +1155,89 @@ tr_dutch_van = {
 	}
 	911.1.1 = { death = { death_reason = death_suicide } }
 }
+#Castlevania
+ tr_trevor_belmont = {
+	name = "Trevor Belmont"
+	dna = trevor_belmont
+	religion = catholic 
+    dynasty = dynasty_fantasy
+	culture = occitan
+	trait = education_martial_3
+    trait = drunkard
+	trait = physique_good_3
+	trait = architect
+	trait = class_fighter
+    trait = athletic
+	trait = brave
+    trait = whole_of_body
+	trait = scarred
+    disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+	866.1.1 = { add_spouse = tr_sypha_belnades }
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_sypha_belnades = {
+	name = "Sypha Belnades"
+	dna = sypha_belnades
+	religion = orthodox 
+    dynasty = dynasty_fantasy
+	culture = aragonese
+	female = yes
+	trait = education_learning_4
+    trait = lifestyle_mystic
+	trait = intellect_good_3
+	trait = class_wizard
+	trait = diligent
+    trait = compassionate
+	trait = brave
+    trait = journaller
+    disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+	866.1.1 = { add_spouse = tr_trevor_belmont }
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
+#BG3
+ tr_laezel = {
+	name = "Lae'zel"
+	dna = laezel
+	religion = blood_faith 
+    dynasty = dynasty_fantasy
+	culture = gith
+	female = yes
+	trait = education_martial_4
+    trait = follow_vlaakith
+	trait = intellect_good_3
+	trait = class_fighter
+	trait = athletic
+    trait = lifestyle_blademaster
+	trait = brave
+    trait = lustful
+	trait = loyal
+	trait = arrogant
+    disallow_random_traits = yes
+	848.1.1 = { birth = yes }
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_shart = {
+	name = "Shadowheart"
+	dna = shadowheart
+	religion = sixth_house 
+    dynasty = dynasty_fantasy
+	culture = dwemer
+	female = yes
+	trait = education_learning_3
+    trait = follow_shar
+	trait = class_cleric_trick
+	trait = deceitful
+	trait = diligent
+    trait = beauty_good_2
+	trait = stubborn
+    trait = arrogant
+	trait = confider
+    disallow_random_traits = yes
+	837.1.1 = { birth = yes }
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
 #THIEF
  tr_thief_keeper = {
 	name = "Artemus"
