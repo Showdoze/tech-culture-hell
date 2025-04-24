@@ -801,11 +801,11 @@ tr_choose_class_decision = {
     }
 
     is_shown = {
-        character.religion = fantasy_religion
+        faith.religion = religion:fantasy_religion
     }
 
     is_valid = {
-        piety >= 500
+        piety >= 0
     }
 
     effect = {
