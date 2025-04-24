@@ -846,7 +846,7 @@ class_paladin_ancient = {
     opposites = {
         #class_paladin_ancient
         class_paladin_devotion
-        class_paladin_vengence
+        class_paladin_vengeance
         class_paladin_crown
         class_paladin_oathbreaker
     }
@@ -873,14 +873,14 @@ class_paladin_devotion = {
     opposites = {
         class_paladin_ancient
         #class_paladin_devotion
-        class_paladin_vengence
+        class_paladin_vengeance
         class_paladin_crown
         class_paladin_oathbreaker
     }
     monthly_prestige = 0.01
     ruler_designer_cost = 20
 }
-class_paladin_vengence = {
+class_paladin_vengeance = {
     shown_in_ruler_designer = yes
     prowess_per_piety_level = 2
     prowess_per_influence_level = 2
@@ -891,15 +891,15 @@ class_paladin_vengence = {
         first_valid = {
             triggered_desc = {
                 trigger = { NOT = { exists = this } }
-                desc = trait_class_paladin_vengence_desc
+                desc = trait_class_paladin_vengeance_desc
             }
-            desc = trait_class_paladin_vengence_desc
+            desc = trait_class_paladin_vengeance_desc
         }
     }
     opposites = {
         class_paladin_ancient
         class_paladin_devotion
-        #class_paladin_vengence
+        #class_paladin_vengeance
         class_paladin_crown
         class_paladin_oathbreaker
     }
@@ -925,7 +925,7 @@ class_paladin_crown = {
     opposites = {
         class_paladin_ancient
         class_paladin_devotion
-        class_paladin_vengence
+        class_paladin_vengeance
         #class_paladin_crown
         class_paladin_oathbreaker
     }
@@ -951,7 +951,7 @@ class_paladin_oathbreaker = {
     opposites = {
         class_paladin_ancient
         class_paladin_devotion
-        class_paladin_vengence
+        class_paladin_vengeance
         class_paladin_crown
         #class_paladin_oathbreaker
     }

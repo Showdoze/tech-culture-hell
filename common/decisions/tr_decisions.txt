@@ -791,7 +791,7 @@ summon_speical_maa_decision = {
 
 tr_choose_class_decision = {
 
-    picture = { reference = "gfx/interface/illustrations/decisions/decision_major.dds" }
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
     title = select_class_decision
     desc = select_class_decision_desc
     selection_tooltip = select_class_decision_tip
@@ -801,7 +801,7 @@ tr_choose_class_decision = {
     }
 
     is_shown = {
-        religion = fantasy_religion
+        character.religion = fantasy_religion
     }
 
     is_valid = {
@@ -809,9 +809,9 @@ tr_choose_class_decision = {
     }
 
     effect = {
-        custom_tooltip = tr_class_event_effect_tip
+        custom_tooltip = select_class_decision_tip
         trigger_event = {
-            events = { tr_class_event.01 }
+            id = tr_class_event.01
         }
     }
 
