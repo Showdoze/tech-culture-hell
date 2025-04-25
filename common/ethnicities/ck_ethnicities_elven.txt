@@ -1871,8 +1871,14 @@ race_bosmer = {
     skin_color = {
         10 = { 0.4 0.3 0.9 0.6 }
     }
-    race_gene_skin_color = {
-        3 = { name = bosmer_skin	range = { 0.0 1.0 } }
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0 0 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0 0 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
     }
     gene_height = {
         # 1 = { name = normal_height		range = { 0.59 0.61 }		} #altmer ##
@@ -2195,8 +2201,19 @@ race_bosmer = {
     }
 }
 race_dunmer = {
-    template = "race_altmer"
+    template = "tr_ethnicity_template"
     using = "dunmer"
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.6 0.65 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.1 0.2 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
+    }
+
     skin_color = {
         90 = { 0.0 0.35 0.1 0.62 }
     }
