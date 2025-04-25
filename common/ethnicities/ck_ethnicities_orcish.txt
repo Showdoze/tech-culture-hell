@@ -32,22 +32,47 @@ green_orcish = {
 	
 	gene_race = { 1 = { name = creature_orc range = { 0 1 } } }
 	
-	skin_color = {
-		10 = { 0.3 0.5 0.35 0.7 }
-		10 = { 0.15 0.7 0.2 0.85 }
-		25 = { @ash_color_x_min @ash_color_y_min @ash_color_x_max @ash_color_y_max }
-		25 = { 0.631 0.239 0.718 0.294 } # Default
-		5 = { 0.008 0.012 0.008 0.012 } # Dark Gray/Brown
-		1 = { 0.373 0.196 0.494 0.239 } # Sickly Green
-	}
-	hair_color = {
-		# Brown
-		30 = { @brown_color_x_min @brown_color_y_min @brown_color_x_max @brown_color_y_max }
-		# Red
-		1 = { @red_color_x_min @red_color_y_min @red_color_x_max @red_color_y_max }
-		# Black
-		69 = { @brown_color_x_min @black_color_y_min @brown_color_x_max @black_color_y_max }
-	}
+    skin_color = {
+        # Blonde
+        50 = { 0.5 1 0.5 1 }
+		50 = { 1 0.5 1 0.5 }
+    }
+
+    hair_color = {
+        # Blonde
+        100 = { 0 1 0 1 }
+    }
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.2 0.3 } }
+		50 = { name = custom_skin_hue    range = { 0.9 0.95 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.3 0.5 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
+    }
+
+    tr_hair_hue = {
+        50 = { name = custom_hair_hue    range = { 0 0 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0 } }
+    }
+    tr_hair_value = {
+        50 = { name = custom_hair_value    range = { 0 0 } }
+    }
+
+    tr_eyes_hue = {
+        50 = { name = custom_eyes_hue    range = { 0.3 0.35 } }
+    }
+    tr_eyes_saturation = {
+        50 = { name = custom_eyes_saturation    range = { 1 1 } }
+    }
+    tr_eyes_value = {
+        50 = { name = custom_eyes_value    range = { 1 1 } }
+    }
 	
 	#Height
 	gene_height = {
@@ -430,15 +455,48 @@ green_orcish = {
 }
 
 pale_orcish = {
-	template = "gray_orcish"
+	template = "green_orcish"
 	using = "twilights_hammer"
 	
-	# hairstyles = {
-		# 10 = { name = no_hairstyles 		range = { 0.0 1.0 } }
-	# }
-	# beards = {
-		# 10 = { name = no_beard 		range = { 0.0 1.0 } }
-	# }
+    skin_color = {
+        # Blonde
+		100 = { 0 0 0 0 }
+    }
+
+    hair_color = {
+        # Blonde
+        100 = { 0 0 0 0 }
+    }
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0 0 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0 0 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 1 1 } }
+    }
+
+    tr_hair_hue = {
+        50 = { name = custom_hair_hue    range = { 0 0 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0 } }
+    }
+    tr_hair_value = {
+        50 = { name = custom_hair_value    range = { 0 0 } }
+    }
+
+    tr_eyes_hue = {
+        50 = { name = custom_eyes_hue    range = { 0.3 0.35 } }
+    }
+    tr_eyes_saturation = {
+        50 = { name = custom_eyes_saturation    range = { 1 1 } }
+    }
+    tr_eyes_value = {
+        50 = { name = custom_eyes_value    range = { 1 1 } }
+    }
 	
 	#Body
 	#To make them WEAK!
@@ -453,13 +511,50 @@ pale_orcish = {
 race_orsimer = {
 	template = "race_altmer"
 	using = "warsong"
-	skin_color = {
-		#green range
-		90 = { 0.2 0.66 0.54 0.85 }
-	}
+
+    skin_color = {
+        # Blonde
+		100 = { 0.5 0.5 0.5 0.5 }
+    }
+
+    hair_color = {
+        # Blonde
+        100 = { 0 1 0 1 }
+    }
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.3 0.3 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.2 0.3 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0.1 0.2 } }
+    }
+
+    tr_hair_hue = {
+        50 = { name = custom_hair_hue    range = { 0 0 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0 } }
+    }
+    tr_hair_value = {
+        50 = { name = custom_hair_value    range = { 0 0 } }
+    }
+
+    tr_eyes_hue = {
+        50 = { name = custom_eyes_hue    range = { 0.3 0.35 } }
+    }
+    tr_eyes_saturation = {
+        50 = { name = custom_eyes_saturation    range = { 1 1 } }
+    }
+    tr_eyes_value = {
+        50 = { name = custom_eyes_value    range = { 1 1 } }
+    }
 	race_gene_skin_color = {
 		3 = { name = orsimer_skin	range = { 0.4 0.85 } }
 	}
+
 	gene_height = {
 		# 1 = { name = normal_height		range = { 0.54 0.56 }		} #altmer
 		# 1 = { name = normal_height		range = { 0.44 0.47 }		} #bosmer

@@ -29,19 +29,17 @@ frost_giant_ethnicity = {
 	template = "tr_ethnicity_template"
 	using = "old_dwarven"
 	gene_race = { 1 = { name = creature_giant range = { 0 1 } } }
-	skin_color = {
-		30 = { 0.714 0.75 0.75 0.75 } # Gray
-		30 = { 0.631 0.239 0.718 0.294 } # Idk what colour this is yet
-	}
-	hair_color = {
-		1 = { 0.686 0.310 0.686 0.350 } # Blue
-		1 = { 0.68 0.512 0.746 0.62 } #blue
 
-	}
-	eye_color = {
-        1 = { 0.447 0.455 0.475 0.5 } # Blue-green
-		1 = { 0.65 0.055 0.71 0.239 } #White/Silver
-	}
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.55 0.58 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.4 0.5 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
+    }
+
 	#Height
 	gene_height = {
         1 = { name = normal_height  range = { 0.95 1 }      }
@@ -414,26 +412,39 @@ storm_giant_ethnicity = {
 	template = "dwarven_ethnicity"
 	using = "giant"
 
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.55 0.58 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.5 0.7 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
+    }
+
+    tr_hair_hue = {
+        50 = { name = custom_hair_hue    range = { 0.5 0.55 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0.1 } }
+    }
+    tr_hair_value = {
+        50 = { name = custom_hair_value    range = { 0.5 0.9 } }
+    }
+
+    tr_eyes_hue = {
+        50 = { name = custom_eyes_hue    range = { 0.5 0.6 } }
+    }
+    tr_eyes_saturation = {
+        50 = { name = custom_eyes_saturation    range = { 0.5 0.8 } }
+    }
+    tr_eyes_value = {
+        50 = { name = custom_eyes_value    range = { 0.5 1 } }
+    }
 
 	gene_height = {
         1 = { name = normal_height  range = { 0.95 1 }      }
     }
-	skin_color = {
-		1 = { 0.086 0.263 0.122 0.322 } # Slightly tan
-	}
-	eye_color = {
-		1 = { 0.447 0.455 0.475 0.5 } # Blue-green
-		1 = { 0.65 0.055 0.71 0.239 } #White/Silver
-		1 = { 0.686 0.310 0.686 0.350 } # Blue
-		1 = { 0.176 0.482 0.176 0.741 } # Yellow
-		1 = { 0.110 0.396 0.110 0.714 } # Orange/Brown
-	}
-	hair_color = {
-		1 = { 0.686 0.310 0.686 0.350 } # Blue
-		1 = { 0.68 0.512 0.746 0.62 } #blue
-		1 = { @brown_color_x_min @brown_color_y_min @brown_color_x_max @brown_color_y_max } #brown
-		1 = { @brown_color_x_min @black_color_y_min @brown_color_x_max @black_color_y_max } # black
-	}
 }
 
 watcher_ethnicity = {
@@ -442,20 +453,47 @@ watcher_ethnicity = {
 	
 	gene_race = { 1 = { name = creature_watcher range = { 0 1 } } }
 	
-	skin_color = {
-		1 = { 0.067 0.259 0.122 0.300 }
-	}
-	eye_color = {
-		1 = { 0.714 0.098 0.714 0.631 } # Gray to Blue
-		1 = { 0.078 0.424 0.078 0.729 } # Brown/Yellow
-		1 = { 0.314 0.788 0.314 0.820 } # Hazel
-	}
-	hair_color = {
-		1 = { 0.094 0.918 0.094 0.918 } # Brown
-		1 = { 0.063 0.773 0.063 0.839 } # Orange/Ginger
-		1 = { 0.122 0.741 0.122 0.855 } # Yellow/Light Brown
-		1 = { 0.157 0.239 0.157 0.239 } # Blonde
-	}
+    skin_color = {
+        100 = { 0.8 0.8 0.8 0.8 }
+    }
+    eye_color = {
+        # Brown
+        100 = { 0 0 0 0 }
+    }
+    hair_color = {
+        # Blonde
+        100 = { 0 1 0 1 }
+    }
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.5 0.52 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0 0.1 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0.1 0.2 } }
+    }
+
+    tr_hair_hue = {
+        50 = { name = custom_hair_hue    range = { 0 0 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0 } }
+    }
+    tr_hair_value = {
+        50 = { name = custom_hair_value    range = { 0 0.2 } }
+    }
+
+    tr_eyes_hue = {
+        50 = { name = custom_eyes_hue    range = { 0 1 } }
+    }
+    tr_eyes_saturation = {
+        50 = { name = custom_eyes_saturation    range = { 0 1 } }
+    }
+    tr_eyes_value = {
+        50 = { name = custom_eyes_value    range = { 0 1 } }
+    }
 	
 	#Height
 	gene_height = {
