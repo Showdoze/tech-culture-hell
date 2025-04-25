@@ -66,18 +66,15 @@
 	792.1.3 = { birth = yes }
 	800.1.1 = {
 		effect = {
-			learn_language_of_culture = culture:gnome
-			learn_language_of_culture = culture:old_dwarven
-			learn_language_of_culture = culture:goblin
-			learn_language_of_culture = culture:warsong
-			learn_language_of_culture = culture:bosmer
-			learn_language_of_culture = culture:altmer
-			learn_language_of_culture = culture:dunmer
-			learn_language_of_culture = culture:glenumbran
-			learn_language_of_culture = culture:alikr
-			learn_language_of_culture = culture:imperial_culture
-			learn_language_of_culture = culture:dwemer
-			learn_language_of_culture = culture:norse
+			learn_language = language_dwarven
+			learn_language = language_orcish
+			learn_language = language_gnomish
+			learn_language = language_goblin
+			learn_language = language_altmeris
+			learn_language = language_bosmeris
+			learn_language = language_dunmeris
+			learn_language = language_dwemeris
+			add_character_flag = no_headgear
 	   }	
 	}
 	873.9.2 = { death = { death_reason = death_old_age } }
@@ -120,9 +117,9 @@
 	838.9.20 = { birth = yes }
 	840.1.1 = {
 		effect = {
-			learn_language_of_culture = culture:high_valyrian 
-			learn_language_of_culture = culture:old_dwarven
-			learn_language_of_culture = culture:giant
+			learn_language = language_valyrian 
+			learn_language = language_dwarven
+			learn_language = language_giant
 			learn_language_of_culture = culture:castilian
 	   }	
 	}
@@ -917,11 +914,7 @@ tr_gandhi = {
 	trait = dwarf
 	trait = depressed_genetic
 	835.1.1 = { birth = yes }
-	1063.1.1 = {
-		death = {
-			death_reason = death_old_age
-		}
-	}
+	1063.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_highelf_1 = {
     name = "Lonk"
@@ -957,13 +950,16 @@ tr_gandhi = {
     trait = diligent
     trait = scholar
     disallow_random_traits = yes
-	849.1.1 = { birth = yes }
-	1068.8.30 = {
-		death = {
-			death_reason = death_suicide
-            #killer = 
+	849.1.1 = {
+		birth = yes
+		effect = {
+			#add_character_flag = has_scripted_appearance
+			#add_character_flag = has_scripted_weight
+			add_character_flag = no_headgear
+			learn_language = language_anglic
 		}
 	}
+	1068.8.30 = { death = { death_reason = death_suicide } }
  }
 tr_arthur_shelby_peaky_blinders = {
 	name = "Arthur Shelby"
@@ -1005,8 +1001,8 @@ tr_arthur_shelby_peaky_blinders = {
 	trait = chaste
 	trait = strategist
 	disallow_random_traits = yes
-	822.2.24 = { birth = yes }
-	840.1.1 = {
+	822.2.24 = { 
+		birth = yes 
 		effect = {
 			learn_language_of_culture = culture:german 
 			learn_language_of_culture = culture:french
@@ -1078,7 +1074,8 @@ tr_lara_croft = {
 			learn_language_of_culture = culture:punic
 			learn_language_of_culture = culture:greek
 			learn_language_of_culture = culture:french
-	   }	
+			add_secret = { type = secret_non_believer	}
+	    }	
 	}
 	895.8.30 = {
 		death = {
@@ -1105,7 +1102,8 @@ tr_japanese1 = {
 			learn_language_of_culture = culture:german 
 			learn_language_of_culture = culture:french
 			learn_language_of_culture = culture:castilian
-	   }	
+			learn_language = language_anglic
+	    }
 	}
 	890.1.1 = {
 		death = {
@@ -1129,7 +1127,12 @@ tr_vlad_tepes = {
     trait = diplomat
 	give_nickname = nick_the_impaler
     disallow_random_traits = yes
-	849.11.2 = { birth = yes }
+	849.11.2 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	1476.12.14 = { death = { death_reason = death_execution } }
 }
 tr_dutch_van = {
@@ -1172,7 +1175,12 @@ tr_dutch_van = {
     trait = whole_of_body
 	trait = scarred
     disallow_random_traits = yes
-	847.1.1 = { birth = yes }
+	847.1.1 = { 
+		birth = yes 
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	866.1.1 = { add_spouse = tr_sypha_belnades }
 	920.1.1 = { death = { death_reason = death_old_age } }
  }
@@ -1192,7 +1200,12 @@ tr_dutch_van = {
 	trait = brave
     trait = journaller
     disallow_random_traits = yes
-	847.1.1 = { birth = yes }
+	847.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	866.1.1 = { add_spouse = tr_trevor_belmont }
 	920.1.1 = { death = { death_reason = death_old_age } }
  }
@@ -1203,6 +1216,7 @@ tr_dutch_van = {
 	religion = blood_faith 
     dynasty = dynasty_fantasy
 	culture = gith
+	sexuality = bisexual
 	female = yes
 	trait = education_martial_4
     trait = follow_vlaakith
@@ -1215,7 +1229,12 @@ tr_dutch_van = {
 	trait = loyal
 	trait = arrogant
     disallow_random_traits = yes
-	848.1.1 = { birth = yes }
+	848.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	920.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_shart = {
@@ -1224,6 +1243,7 @@ tr_dutch_van = {
 	religion = sixth_house 
     dynasty = dynasty_fantasy
 	culture = dwemer
+	sexuality = bisexual
 	female = yes
 	trait = education_learning_3
     trait = follow_shar
@@ -1235,7 +1255,12 @@ tr_dutch_van = {
     trait = arrogant
 	trait = confider
     disallow_random_traits = yes
-	837.1.1 = { birth = yes }
+	837.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	920.1.1 = { death = { death_reason = death_old_age } }
  }
 #THIEF
@@ -1545,6 +1570,7 @@ tr_dutch_van = {
 	793.3.3 = { birth = yes }
 	840.1.1 = {
 		effect = {
+			learn_language = language_anglic
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
 				trait = lifestyle_blademaster
@@ -1577,7 +1603,12 @@ tr_dutch_van = {
     trait = cynical
 	female = yes
     disallow_random_traits = yes
-	833.3.3 = { birth = yes }
+	833.3.3 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	1076.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_fargoth = {
@@ -1593,7 +1624,12 @@ tr_dutch_van = {
     trait = compassionate
 	trait = adopted
 	father = tr_dwemer1
-	841.1.1 = { birth = yes }
+	841.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	1000.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_dunmer_1 = {
@@ -1612,6 +1648,7 @@ tr_dutch_van = {
 	800.1.1 = { birth = yes }
 	840.1.1 = {
 		effect = {
+			learn_language = language_anglic
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
 				trait = lifestyle_blademaster
@@ -1638,7 +1675,12 @@ tr_dutch_van = {
     trait = ambitious
     disallow_random_traits = yes
 	father = tr_dunmer_1
-	820.1.1 = { birth = yes }
+	820.1.1 = { 
+		birth = yes 
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	1066.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_breton_1 = {
@@ -1654,7 +1696,12 @@ tr_dutch_van = {
     trait = ambitious
     disallow_random_traits = yes
 	father = tr_dunmer_1
-	830.1.1 = { birth = yes }
+	830.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	900.1.1 = { death = { death_reason = death_drinking_passive } }
  }
  tr_altmer_1 = {
@@ -1670,7 +1717,12 @@ tr_dutch_van = {
     trait = ambitious
     disallow_random_traits = yes
 	father = tr_dunmer_1
-	824.1.1 = { birth = yes }
+	824.1.1 = {
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	1000.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_nord_1 = {
@@ -1689,7 +1741,12 @@ tr_dutch_van = {
     trait = ambitious
     disallow_random_traits = yes
 	father = tr_dunmer_1
-	830.1.1 = { birth = yes }
+	830.1.1 = {
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	900.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_imperial_1 = {
@@ -1706,7 +1763,12 @@ tr_dutch_van = {
     trait = ambitious
     disallow_random_traits = yes
 	father = tr_dunmer_1
-	831.1.1 = { birth = yes }
+	831.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
 	890.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_dagothur = {
@@ -1726,6 +1788,16 @@ tr_dutch_van = {
 		give_nickname = nick_dagoth_ur
 		religion = sixth_house
 	}
+	400.1.1 = {
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
+	830.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:tr_dagothur }
+	    }
+	}
 	1668.1.1 = {
 		death = { death_reason = death_red_mountain }
 	}
@@ -1734,11 +1806,12 @@ tr_dutch_van = {
 	name = "Nerevar"
 	culture = random
 	religion = random
-	830.1.1 = { birth = yes }
-	855.1.1 = {
+	830.1.1 = { 
+		birth = yes 
 		effect = {
+			learn_language = language_anglic
 			set_relation_friend = { target = character:tr_dagothur }
-		}
+	    }
 	}
  }
 #
@@ -1761,6 +1834,11 @@ tr_dutch_van = {
 		set_character_faith = faith:satanism
 	}
 	855.5.10 = { add_trait = immortal }
+	860.1.1 = {
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
  }
 ###HalfLife3
   tr_gordonfreeman = {
