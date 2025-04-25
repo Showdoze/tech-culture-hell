@@ -80,8 +80,26 @@ hollow = {
                     gene = skin_color
                     mode = replace
 
-                    x = 1.0
-                    y = 1.0
+                    x = 0.8
+                    y = 0.8
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_hue
+                    value = 0
+                    template = custom_eyes_hue
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_saturation
+                    value = 0
+                    template = custom_eyes_saturation
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_value
+                    value = 1
+                    template = custom_eyes_value
                 }
                 color = {
                     gene = eye_color
@@ -94,21 +112,45 @@ hollow = {
                     gene = hair_color
                     mode = replace
 
-                    x = -1.0
-                    y = -1.0
+                    x = 1.0
+                    y = 1.0
                 }
                 morph = {
-                    mode = add
-                    gene = gene_illness
-                    value = 1.0
-                    template = illness
+                    mode = replace
+                    gene = tr_skin_hue
+                    value = 0.48
+                    template = custom_skin_hue
                 }
+                morph = {
+                    mode = replace
+                    gene = tr_skin_saturation
+                    value = 0
+                    template = custom_skin_saturation
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_skin_value
+                    value = 0
+                    template = custom_skin_value
+                }
+                #morph = {
+                #    mode = add
+                #    gene = gene_illness
+                #    value = 1.0
+                #    template = illness
+                #}
                 morph = {
                     mode = add
                     gene = gene_spindly
                     value = 5.0
                     template = spindly
                 }
+				morph = {
+					mode = add
+					gene = gene_leprosy
+					value = 1.0
+					template = leprosy
+				}
                 accessory = {
                     mode = modify
                     gene = eye_accessory
