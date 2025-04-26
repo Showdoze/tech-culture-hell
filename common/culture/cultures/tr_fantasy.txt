@@ -93,6 +93,28 @@ old_dwarven = {
 		1 = dwarven_ethnicity
 	}
 }
+elf_culture = {
+	color = rgb { 184 120 79 }
+	created = 1.1.1
+	history_loc_override = mystery_history_loc
+	ethos = ethos_stoic
+	heritage = heritage_fantasy
+	language = language_elf
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_elf
+		tradition_stand_and_fight
+		tradition_mystical_ancestors
+	}
+	name_list = name_list_elf
+	coa_gfx = { french_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { french_clothing_gfx }
+	unit_gfx = { altmer_unit_gfx }
+	ethnicities = {
+		1 = high_elven
+	}
+}
 #DND
  drow = {
 	color = { 0.0 0.0 0.0 }
@@ -158,7 +180,7 @@ old_dwarven = {
 	clothing_gfx = { african_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { sub_sahran_unit_gfx } 	
 	ethnicities = {
-		10 = faldorei_ethnicity
+		10 = succubus_ethnicity
 	}
  }
 #ELDER SCROLLS #
@@ -409,7 +431,7 @@ old_dwarven = {
 nile_elf = {
 	color = { 0.1 0.6 0.1 }
 	created = 7.1.1
-	parents = { altmer ancient_egyptian }
+	parents = { elf_culture ancient_egyptian }
 	#history_loc_override = ancient_egyptian_history_loc
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy

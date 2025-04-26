@@ -559,3 +559,19 @@ language_luwian = {
 	}
 	color = luwian
 }
+language_elf = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_elf
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_elf }
+			multiply = 10
+		}
+	}
+	color = altmeris
+}
