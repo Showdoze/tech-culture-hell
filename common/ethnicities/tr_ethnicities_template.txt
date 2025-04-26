@@ -1308,10 +1308,7 @@ tr_ethnicity_template = {
     # 	}
 
     gene_age = {
-        10 = { name = old_1      range = { 0.0 1.0 } }
-        10 = { name = old_2      range = { 0.0 1.0 } }
-        10 = { name = old_3      range = { 0.0 1.0 } }
-        10 = { name = old_4      range = { 0.0 1.0 } }
+        10 = { name = old_beauty_1      range = { 0 1 } }
     }
 
     gene_eyebrows_shape = {
@@ -1355,13 +1352,9 @@ tr_ethnicity_template = {
         25 = {  name = hair_afro             range = { 0.35 0.75 }     }
     }
 
-    #gene_baldness = { # The age when balding starts should correspond roughly to the gene value so that, for example, characters with baldness 0.3 would start turning bald at 30
-    #    # 20 = {  name = male_pattern_baldness             range = { 0.0 0.1 }     }
-    #    30 = {  name = male_pattern_baldness             range = { 0.25 0.45 }     }
-    #    30 = {  name = male_pattern_baldness             range = { 0.45 0.6 }     }
-    #    30 = {  name = male_pattern_baldness             range = { 0.6 0.75 }     }
-    #    10 = {  name = male_pattern_baldness             range = { 0.75 1.0 }     }
-    #}
+    gene_baldness = { # The age when balding starts should correspond roughly to the gene value so that, for example, characters with baldness 0.3 would start turning bald at 30
+        30 = {  name = male_pattern_baldness             range = { 0 0 }     }
+    }
 
     eyelashes_accessory = {
         10 = { name = normal_eyelashes          range = { 0.0 1.0 } }
