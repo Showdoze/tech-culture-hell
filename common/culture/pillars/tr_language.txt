@@ -204,7 +204,7 @@ language_goblin = {
 			multiply = 10
 		}
 	}
-	color = rgb { 145 207 79 }
+	color = goblin
 }
 language_orcish = { #Orcish dialects
 	type = language
@@ -220,23 +220,7 @@ language_orcish = { #Orcish dialects
 			multiply = 10
 		}
 	}
-	color = rgb { 172 22 22 }
-}
-language_ogre = { #Ogre dialects
-	type = language
-	is_shown = {
-		language_is_shown_trigger = {
-			LANGUAGE = language_ogre
-		}
-	}
-	ai_will_do = {
-		value = 10
-		if = {
-			limit = { has_cultural_pillar = language_ogre }
-			multiply = 10
-		}
-	}
-	color = rgb { 209 189 87 }
+	color = orcish
 }
 language_bosmeris = {
 	type = language
@@ -365,7 +349,7 @@ language_giant = {
 			multiply = 10
 		}
 	}
-	color =  { 235 64 52 }
+	color =  skaal
 }
 language_dwemeris = {
 	type = language
@@ -525,7 +509,7 @@ language_drow = {
 			multiply = 10
 		}
 	}
-	color = nordic
+	color = daedra_purple
 }
 language_gith = {
 	type = language
@@ -541,7 +525,7 @@ language_gith = {
 			multiply = 10
 		}
 	}
-	color = nordic
+	color = cyrodiil_green
 }
 language_luwian = {
 	type = language
