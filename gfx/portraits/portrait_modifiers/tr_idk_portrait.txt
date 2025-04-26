@@ -1341,23 +1341,30 @@ tr_idk_betruger = {
     tr_betruger = {
         dna_modifiers = {
             accessory = {
-                mode = modify
+                mode = add
                 gene = beards
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
-                mode = modify
+                mode = add
                 gene = hairstyles
                 template = no_hair
+                range = { 0 1 }
             }
             morph = {
-                mode = modify
+                mode = add
                 gene = gene_bs_body_type
                 value = {
                     value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
                     multiply = 0.3
                 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
             }
         }
         weight = {
