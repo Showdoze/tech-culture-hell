@@ -1560,17 +1560,23 @@ tr_idk_laezel = {
 
     tr_laezel = {
         dna_modifiers = {
-            #accessory = {
-            #    mode = add
-            #    gene = beards
-            #    template = no_beard
-            #    range = { 0 1 }
-            #}
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = female_hair_northern_02
+                template = fp1_hairstyles_straight
+                accessory = female_hair_fp1_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = ep3_byzantine_imperial_legwear
+                accessory = f_legwear_sec_ep3_byzantine_nob_01_hi
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = ep2_western_era4_war_nobility_clothes
+                accessory = f_clothes_sec_ep2_western_era4_war_nob_01_lo
             }
             accessory = {
                 mode = add
