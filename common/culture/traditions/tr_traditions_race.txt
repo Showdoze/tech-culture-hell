@@ -423,9 +423,9 @@ tradition_elf = {
 		learns_more_languages = yes
 	}
 	character_modifier = {
-		life_expectancy = 1000
+		life_expectancy = 5000
 		no_prowess_loss_from_age = yes
-		years_of_fertility = 2000
+		years_of_fertility = 5000
 		fertility = -1
 		diplomatic_range_mult = 3
 		short_reign_duration_mult = 0.5
@@ -1508,6 +1508,9 @@ tradition_fromsoft = {
 		supply_capacity_mult = 1
 		steppe_cancel_negative_supply = yes
 		embarkation_cost_mult = 0.25
+		life_expectancy = 500
+		no_prowess_loss_from_age = yes
+		years_of_fertility = 400
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.9

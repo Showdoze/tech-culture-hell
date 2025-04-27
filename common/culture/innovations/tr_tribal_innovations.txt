@@ -35,6 +35,7 @@
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
 @innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
+@RICE_south_ethiopian_walls = "gfx/interface/icons/culture_innovations/innovation_RICE_south_ethiopian_walls.dds"
 
 
 
@@ -175,46 +176,38 @@ innovation_longboats = {
     flag = global_regional
     flag = tribal_era_regional
 }
-
 innovation_african_canoes = {
     group = culture_group_regional
     culture_era = culture_era_tribal
     region = world_africa_west
     icon = @africaboat
-
     character_modifier = {
         embarkation_cost_mult = -0.50
         raid_speed = 0.2
     }
-
     province_modifier = {
         value = tr_culture_price_correction
         multiply = 0.92
     }
-
     custom = unlocks_naval_raiding
     custom = unlocks_sailable_major_rivers
     flag = global_regional
     flag = tribal_era_regional
 }
-
 innovation_hindu_arabic_numberal = {
     group = culture_group_regional
     culture_era = culture_era_tribal
     region = world_india
     icon = @administration_1
-
     character_modifier = {
         development_growth_factor = 0.1
         domain_tax_mult = 0.05
     }
-
     province_modifier = {
         value = tr_culture_price_correction
         multiply = 1.1
     }
 }
-
 innovation_ghazal = {
     group = culture_group_regional
     culture_era = culture_era_tribal
@@ -224,7 +217,6 @@ innovation_ghazal = {
         monthly_prestige_gain_mult = 0.1
     }
 }
-
 innovation_stirrups = {
     group = culture_group_regional
     culture_era = culture_era_tribal
@@ -236,7 +228,6 @@ innovation_stirrups = {
         heavy_cavalry_toughness_mult = 0.1
     }
 }
-
 innovation_corpus_juris_civilis = {
     group = culture_group_regional
     culture_era = culture_era_tribal
@@ -259,7 +250,6 @@ innovation_corpus_juris_civilis = {
         vassal_tax_contribution_mult = 0.1
     }
 }
-
 innovation_greek_fire = {
     group = culture_group_military
     culture_era = culture_era_tribal
@@ -287,7 +277,6 @@ innovation_greek_fire = {
     flag = global_regional
     flag = tribal_era_regional
 }
-
 innovation_shotel = {
     group = culture_group_regional
     culture_era = culture_era_tribal
@@ -298,4 +287,24 @@ innovation_shotel = {
     unlock_maa = shotel_warriors
     flag = global_regional
     flag = tribal_era_regional
+}
+innovation_RICE_south_ethiopian_walls = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @RICE_south_ethiopian_walls
+	potential = {
+	 	OR = {
+	 		has_cultural_pillar = heritage_east_african
+	 		has_cultural_pillar = heritage_somalian
+	 	}		
+	}
+	county_modifier = {
+		defender_holding_advantage = 2
+		hills_development_growth_factor = 0.025
+		mountains_development_growth_factor = 0.025
+		desert_mountains_development_growth_factor = 0.025
+		hostile_raid_time = 0.1
+	}
+	flag = global_regional
+	flag = tribal_era_regional
 }
