@@ -132,3 +132,12 @@ tr_change_holdings_tribal = {
 		set_holding_type = tribal_holding
 	}
 }
+
+tr_fantasy_piety_gain_change = {
+	if = {
+		limit = {
+			faith.religion = religion:fantasy_religion
+		}
+		monthly_piety_gain_multiplier = tr_fantasy_piety_gain_value
+	}
+}

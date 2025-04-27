@@ -10,6 +10,12 @@ random_yearly_everyone_pulse = {
     on_actions = { tr_hollowing }
 }
 
+on_faith_monthly = {
+	on_actions = {
+
+	}
+}
+
 yearly_culture_pulse = {
     on_actions = { tr_dwemer_buildings }
 }
@@ -72,6 +78,10 @@ tr_dwemer_buildings = {
             any_realm_county = { county = { set_holding_type = dwemer_forge_1 } }
         }
     }
+}
+
+tr_piety_gain = {
+    effect = tr_fantasy_piety_gain_change
 }
 
 tr_hygene = {
