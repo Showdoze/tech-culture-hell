@@ -134,10 +134,10 @@ tr_change_holdings_tribal = {
 }
 
 tr_fantasy_piety_gain_change = {
-	if = {
-		limit = {
-			faith.religion = religion:fantasy_religion
-		}
-		monthly_piety_gain_multiplier = tr_fantasy_piety_gain_value
-	}
+    if = {
+        scope:faith.religion = religion:fantasy_religion
+    }
+    scope:character = {
+        monthly_piety = tr_fantasy_piety_gain_value
+    }
 }
