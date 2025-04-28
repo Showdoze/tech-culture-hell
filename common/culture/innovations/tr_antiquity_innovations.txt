@@ -33,9 +33,10 @@
 @tea = "gfx/interface/icons/culture_innovations/tea.dds"
 @abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
 @mint = "gfx/interface/icons/culture_innovations/mint.dds"
+@RICE_south_ethiopian_walls = "gfx/interface/icons/culture_innovations/innovation_RICE_south_ethiopian_walls.dds"
 
-
-innovation_triremes = {
+#military
+ innovation_triremes = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @trireme
@@ -49,9 +50,8 @@ innovation_triremes = {
 	custom = unlocks_sailable_major_rivers
 	flag = global_regional
 	flag = antiquity_era_regional
-}
-
-innovation_bronze_work = {
+ }
+ innovation_bronze_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
@@ -68,9 +68,9 @@ innovation_bronze_work = {
 		damage = 1
 		toughness = 1
 	}
-}
-
-innovation_iron_work = {
+	flag = antiquity_era_regional
+ }
+ innovation_iron_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
@@ -89,10 +89,10 @@ innovation_iron_work = {
 	}
     can_progress = {
 		has_innovation = innovation_bronze_work
-	}	
-}
-
-innovation_steel_work = {
+	}
+	flag = antiquity_era_regional
+ }
+ innovation_steel_work = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @metal_work
@@ -103,22 +103,10 @@ innovation_steel_work = {
 	}
     can_progress = {
 		has_innovation = innovation_iron_work
-	}	
-}	
-
-innovation_caravenserai = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	region = world_middle_east
-	icon = @nobility_04
-	character_modifier = {
-		domain_tax_mult = 0.1
-		different_culture_opinion = 10
-		stewardship = 1
 	}
-}
-
-innovation_imperial_distinguished_service = {
+	flag = antiquity_era_regional
+ }
+ innovation_imperial_distinguished_service = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @diadem
@@ -127,10 +115,9 @@ innovation_imperial_distinguished_service = {
 		accolade_glory_gain_mult = 0.1
 	}
 	custom = increase_war_rewards
-
-}
-
-innovation_classical_picked_troops = {
+	flag = antiquity_era_regional
+ }
+ innovation_classical_picked_troops = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @leadership_alexander
@@ -140,9 +127,9 @@ innovation_classical_picked_troops = {
 		men_at_arms_limit = 3
 		knight_effectiveness_mult = 0.2
 	}
-}
-
-innovation_equipment_celtic = {
+	flag = antiquity_era_regional
+ }
+ innovation_equipment_celtic = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	region = ghw_region_celtic
@@ -163,9 +150,10 @@ innovation_equipment_celtic = {
 	}
 	can_progress = {
 		has_innovation = innovation_bronze_work
-	}	
-}
-innovation_spartan_military = {
+	}
+	flag = antiquity_era_regional
+ }
+ innovation_spartan_military = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @leadership_alexander
@@ -179,8 +167,9 @@ innovation_spartan_military = {
 	can_progress = {
 		has_innovation = innovation_bronze_work
 	}
-}
-innovation_hellenistic_baggage_train = {
+	flag = antiquity_era_regional
+ }
+ innovation_hellenistic_baggage_train = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @leadership_alexander
@@ -188,11 +177,11 @@ innovation_hellenistic_baggage_train = {
 		movement_speed = 0.1
 		supply_duration	= 0.25
 	}
-}
-
+	flag = antiquity_era_regional
+ }
 
 #CIVIC
-innovation_mint = {
+ innovation_mint = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @mint
@@ -203,8 +192,9 @@ innovation_mint = {
 		short_reign_duration_mult = -0.05
 		character_capital_county_monthly_development_growth_add = 1
 	}
-}
-innovation_silk = {
+	flag = antiquity_era_regional
+ }
+ innovation_silk = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @silk
@@ -213,9 +203,9 @@ innovation_silk = {
 		courtly_opinion = 5
 		travel_danger = -1
 	}
-}
-
-innovation_world_is_round = {
+	flag = antiquity_era_regional
+ }
+ innovation_world_is_round = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @administration_3
@@ -224,9 +214,9 @@ innovation_world_is_round = {
 		learning = 1
 		movement_speed = 0.2
 	}
-}
-
-innovation_earth_size = {
+	flag = antiquity_era_regional
+ }
+ innovation_earth_size = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @misc_inventions
@@ -238,9 +228,9 @@ innovation_earth_size = {
 		movement_speed = 0.1
 		learning = 1
     }
-}
-
-innovation_archaic_measurement = {
+	flag = antiquity_era_regional
+ }
+ innovation_archaic_measurement = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @wealth
@@ -250,18 +240,18 @@ innovation_archaic_measurement = {
 	county_modifier = {
 		building_slot_add = 1
 	}
-}
-
-innovation_hellenistic_private_banking = {
+	flag = antiquity_era_regional
+ }
+ innovation_hellenistic_private_banking = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @wealth
 	character_modifier = {
 		development_growth_factor = 0.1
 	}
-}
-
-innovation_ships = {
+	flag = antiquity_era_regional
+ }
+ innovation_ships = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @ships
@@ -269,9 +259,8 @@ innovation_ships = {
 	custom = unlocks_sailable_major_rivers
 	flag = global_regional
 	flag = antiquity_era_regional
-}
-
-innovation_hyroglifics = {
+ }
+ innovation_hyroglifics = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @administration_3
@@ -280,9 +269,9 @@ innovation_hyroglifics = {
 		title_creation_cost_mult = -0.2
 		short_reign_duration_mult = -0.25
 	}
-}
-
-innovation_makeup = {
+	flag = antiquity_era_regional
+ }
+ innovation_makeup = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @misc_inventions
@@ -290,9 +279,8 @@ innovation_makeup = {
 		attraction_opinion = 5
 		diplomacy = 1
 	}	
-}
-
-innovation_earth_quake = {
+ }
+ innovation_earth_quake = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @misc_inventions
@@ -300,9 +288,8 @@ innovation_earth_quake = {
 		monthly_dynasty_prestige_mult = 0.01
 		monthly_learning_lifestyle_xp_gain_mult = 0.1
     }
-}
-
-innovation_archaic_popular_assemblies = {
+ }
+ innovation_archaic_popular_assemblies = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @nobility_greek
@@ -313,9 +300,8 @@ innovation_archaic_popular_assemblies = {
 	county_modifier = {
 		building_slot_add = 1
 	}
-}
-
-innovation_tea_production = {
+ }
+ innovation_tea_production = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @tea
@@ -327,23 +313,52 @@ innovation_tea_production = {
 	county_modifier = {
 		epidemic_resistance = 1
 	}
-}
-
-innovation_nile_agriculture = {
+ }
+ innovation_abacus = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @abacus
+	character_modifier = {
+		domain_tax_mult = 0.01
+		development_growth_factor = 0.1
+	}	
+	flag = antiquity_era_regional
+ }
+#Regional
+ innovation_RICE_south_ethiopian_walls = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
-	region = ghw_region_egypt
-	icon = @innovation_nile_agriculture
-	character_modifier = {
-		domain_tax_mult = 0.05
-		development_growth_factor = 0.1
-		desert_advantage = 1	
-		oasis_advantage = 1
-		ancient_egyptian_opinion = 5
+	icon = @RICE_south_ethiopian_walls
+	potential = {
+	 	OR = {
+	 		has_cultural_pillar = heritage_east_african
+	 		has_cultural_pillar = heritage_somalian
+	 	}		
 	}
-}
-
-innovation_wootz_steel = {
+	county_modifier = {
+		defender_holding_advantage = 2
+		hills_development_growth_factor = 0.025
+		mountains_development_growth_factor = 0.025
+		desert_mountains_development_growth_factor = 0.025
+		hostile_raid_time = 0.1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+ }
+ innovation_acupuncture = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @acupuncture
+	character_modifier = {
+		stress_loss_mult = -0.05
+		health = 0.01
+	}	
+	county_modifier = {
+		epidemic_resistance = 1
+	}
+	flag = antiquity_era_regional
+ }
+ innovation_wootz_steel = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = world_india_deccan
@@ -374,27 +389,28 @@ innovation_wootz_steel = {
 	unlock_building = wind_furnace_01
 	flag = global_regional
 	flag = antiquity_era_regional
-}
-
-innovation_acupuncture = {
+ }
+ innovation_nile_agriculture = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
-	icon = @acupuncture
+	region = ghw_region_egypt
+	icon = @innovation_nile_agriculture
 	character_modifier = {
-		stress_loss_mult = -0.05
-		health = 0.01
-	}	
-	county_modifier = {
-		epidemic_resistance = 1
-	}
-}
-
-innovation_abacus = {
-	group = culture_group_civic
-	culture_era = culture_era_antiquity
-	icon = @abacus
-	character_modifier = {
-		domain_tax_mult = 0.01
+		domain_tax_mult = 0.05
 		development_growth_factor = 0.1
-	}	
-}
+		desert_advantage = 1	
+		oasis_advantage = 1
+		ancient_egyptian_opinion = 5
+	}
+ }
+ innovation_caravenserai = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	region = world_middle_east
+	icon = @nobility_04
+	character_modifier = {
+		domain_tax_mult = 0.1
+		different_culture_opinion = 10
+		stewardship = 1
+	}
+ }

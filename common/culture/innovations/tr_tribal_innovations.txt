@@ -35,7 +35,6 @@
 @justinian = "gfx/interface/icons/culture_innovations/justinian.dds"
 @greek_fire = "gfx/interface/icons/culture_innovations/innovation_greek_fire.dds"
 @innovation_shotel = "gfx/interface/icons/culture_innovations/innovation_shotel.dds"
-@RICE_south_ethiopian_walls = "gfx/interface/icons/culture_innovations/innovation_RICE_south_ethiopian_walls.dds"
 
 
 
@@ -287,24 +286,4 @@ innovation_shotel = {
     unlock_maa = shotel_warriors
     flag = global_regional
     flag = tribal_era_regional
-}
-innovation_RICE_south_ethiopian_walls = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @RICE_south_ethiopian_walls
-	potential = {
-	 	OR = {
-	 		has_cultural_pillar = heritage_east_african
-	 		has_cultural_pillar = heritage_somalian
-	 	}		
-	}
-	county_modifier = {
-		defender_holding_advantage = 2
-		hills_development_growth_factor = 0.025
-		mountains_development_growth_factor = 0.025
-		desert_mountains_development_growth_factor = 0.025
-		hostile_raid_time = 0.1
-	}
-	flag = global_regional
-	flag = tribal_era_regional
 }
