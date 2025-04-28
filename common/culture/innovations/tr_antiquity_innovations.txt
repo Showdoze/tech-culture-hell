@@ -34,6 +34,7 @@
 @abacus = "gfx/interface/icons/culture_innovations/abacus.dds"
 @mint = "gfx/interface/icons/culture_innovations/mint.dds"
 @RICE_south_ethiopian_walls = "gfx/interface/icons/culture_innovations/innovation_RICE_south_ethiopian_walls.dds"
+@africa_build_1 = "gfx/interface/icons/culture_innovations/africa_build_1.dds"
 
 #military
  innovation_triremes = {
@@ -341,6 +342,31 @@
 		mountains_development_growth_factor = 0.025
 		desert_mountains_development_growth_factor = 0.025
 		hostile_raid_time = 0.1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+ }
+ innovation_africa_build_1 = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @africa_build_1
+	potential = {
+	 	OR = {
+	 		has_cultural_pillar = heritage_east_african
+	 		has_cultural_pillar = heritage_somalian
+			has_cultural_pillar = heritage_central_african
+			has_cultural_pillar = heritage_west_african
+			has_cultural_pillar = heritage_bantu
+			has_cultural_pillar = heritage_berber
+			has_cultural_pillar = heritage_yoruba
+			has_cultural_pillar = heritage_african
+	 	}		
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		hills_development_growth_factor = 0.025
+		mountains_development_growth_factor = 0.025
+		desert_mountains_development_growth_factor = 0.025
 	}
 	flag = global_regional
 	flag = antiquity_era_regional

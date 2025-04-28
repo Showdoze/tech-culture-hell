@@ -41,7 +41,10 @@ walls_of_benin_02 = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_walls_of_benin.dds"
 	can_construct_potential = {
-		building_requirement_tribal = no
+		#building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_africa_build_1
+		}
 	}
 	cost_gold = 1000	
 	county_modifier = {
@@ -56,6 +59,7 @@ walls_of_benin_02 = {
 		garrison_size = 1
 		fort_level = 8
 		travel_danger = -40
+		monthly_income = 1
 	}	
 	ai_value = {
 		base = 100
@@ -73,7 +77,10 @@ walls_of_benin_03 = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_walls_of_benin.dds"	
 	can_construct_potential = {
-		building_requirement_tribal = no
+		#building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_africa_build_1
+		}
 	}	
 	cost_gold = 1000	
 	county_modifier = {
@@ -88,6 +95,7 @@ walls_of_benin_03 = {
 		garrison_size = 2
 		fort_level = 16
 		travel_danger = -60
+		monthly_income = 2
 	}	
 	ai_value = {
 		base = 100
@@ -355,9 +363,7 @@ the_pyramids_02 = {
 	province_modifier = {
 		monthly_income = 2
 	}
-	ai_value = {
-		base = 0
-	}
+	ai_value = { base = 0 }
 	type = special
 	flag = travel_point_of_interest_wonder
 }
