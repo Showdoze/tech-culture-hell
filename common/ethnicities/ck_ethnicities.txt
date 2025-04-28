@@ -90,20 +90,53 @@ hobbit_eth = {
 }
 elf_eth_1 = {
     template = "high_elven"
-    tr_hair_hue = {
-        50 = { name = custom_hair_hue    range = { 0 0 } }
-    }
-    tr_hair_saturation = {
-        50 = { name = custom_hair_saturation    range = { 0 0 } }
-    }
-    tr_hair_value = {
-        50 = { name = custom_hair_value    range = { 0 0 } }
-    }
+	#Hair
+     tr_hair_hue = {
+        40 = { name = custom_hair_hue    range = { 0 0 } }
+		10 = { name = custom_hair_hue    range = { 0.1 0.15 } } #altmer
+		10 = { name = custom_hair_hue    range = { 0.15 0.2 } }
+		10 = { name = custom_hair_hue    range = { 0.2 0.25 } }
+		10 = { name = custom_hair_hue    range = { 0.5 0.6 } }
+		10 = { name = custom_hair_hue    range = { 0.9 0.95 } }
+     }
+     tr_hair_saturation = {
+        40 = { name = custom_hair_saturation    range = { 0 0 } }
+		10 = { name = custom_hair_saturation    range = { 0 0.1 } }
+		10 = { name = custom_hair_saturation    range = { 0 0.8 } } #altmer
+		10 = { name = custom_hair_saturation    range = { 0.9 1 } } #dunmer
+     }
+     tr_hair_value = {
+        40 = { name = custom_hair_value    range = { 0 0 } }
+		20 = { name = custom_hair_value    range = { 0 0.8 } }
+		10 = { name = custom_hair_value    range = { 0.6 0.9 } } #altmer
+		10 = { name = custom_hair_value    range = { 1 1 } } #dunmer
+     }
+	#skin
+	 tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0 0 } }
+		10 = { name = custom_skin_hue    range = { 0.5 1 } }
+     }
+     tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0 0 } }
+		10 = { name = custom_skin_saturation    range = { 0.5 1 } }
+     }
+     tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0 } }
+		10 = { name = custom_skin_value    range = { 0.5 1 } }
+     }
     #Height
     gene_height = {
+		30 = { name = normal_height  range = { 0.3 0.4 }      }
+		20 = { name = normal_height  range = { 0.35 0.475 }      }
         10 = { name = normal_height  range = { 0.495 0.525 }      }
-        10 = { name = normal_height  range = { 0.3 0.4 }      }
-        10 = { name = normal_height  range = { 0.35 0.475 }      }
+    }
+	gene_bs_body_type = {
+        50 = { name = body_fat_head_fat_low		range = { 0.33 0.5 } }
+		10 = { name = body_fat_head_fat_low		range = { 0.1 0.32 } }
+    }
+	gene_bs_body_shape = {
+        50 = { name = body_shape_triangle_full		range = { 0 0.5 } }
+		10 = { name = body_shape_triangle_full		range = { 0 0 } }
     }
 }
 aegean_eth = {
