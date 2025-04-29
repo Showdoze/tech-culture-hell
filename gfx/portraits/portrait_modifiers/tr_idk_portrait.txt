@@ -2246,3 +2246,47 @@ tr_idk_gael = {
         }
     }
 }
+tr_idk_corvus = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_corvus = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp2_hairstyles_iberian_christian_straight
+                accessory = male_hair_fp2_iberian_christian_02
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = ep2_western_war_legwear
+                accessory = m_legwear_sec_ep2_western_era4_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = indian_war_nobility_clothes
+                accessory = m_clothes_sec_indian_war_nob_01_roy
+            }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_corvus
+                this = character:tr_corvus
+            }
+        }
+    }
+}
