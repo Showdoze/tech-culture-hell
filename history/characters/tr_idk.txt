@@ -780,7 +780,7 @@ tr_f_a_h_Enki = {
     name = "Enki"
 	religion = dark_souls_faith 
     dynasty = dynasty_fantasy
-	culture = ds_culture
+	culture = dark_souls_culture
 	trait = education_learning_3
     trait = callous
     trait = arrogant
@@ -1221,6 +1221,7 @@ tr_dutch_van = {
 	trait = education_martial_4
     trait = follow_vlaakith
 	trait = class_fighter
+	trait = strong
 	trait = athletic
     trait = lifestyle_blademaster
 	trait = brave
@@ -1232,6 +1233,8 @@ tr_dutch_van = {
 		birth = yes
 		effect = {
 			learn_language = language_anglic
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
 	    }
 	}
 	920.1.1 = { death = { death_reason = death_old_age } }
@@ -1241,7 +1244,7 @@ tr_dutch_van = {
 	dna = shadowheart
 	religion = sixth_house 
     dynasty = dynasty_fantasy
-	culture = dwemer
+	culture = elf_culture
 	sexuality = bisexual
 	female = yes
 	trait = education_learning_3
@@ -1258,6 +1261,37 @@ tr_dutch_van = {
 		birth = yes
 		effect = {
 			learn_language = language_anglic
+			add_character_flag = has_scripted_appearance
+	    }
+	}
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_karlach = {
+	name = "Karlach"
+	dna = karlach
+	religion = stoicism 
+    dynasty = dynasty_fantasy
+	culture = tiefling
+	sexuality = bisexual
+	female = yes
+	trait = education_martial_4
+    trait = physique_good_3
+	trait = class_bar
+	trait = strong
+	trait = athletic
+    trait = lifestyle_blademaster
+	trait = brave
+    trait = compassionate
+	trait = loyal
+	trait = aggressive_attacker
+    disallow_random_traits = yes
+	840.1.1 = { 
+		birth = yes
+		effect = {
+			#learn_language = language_anglic
+			add_character_flag = no_headgear
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
 	    }
 	}
 	920.1.1 = { death = { death_reason = death_old_age } }
@@ -1503,6 +1537,14 @@ tr_dutch_van = {
 	give_nickname = nick_the_saint
 	disallow_random_traits = yes
 	750.1.1 = { birth = yes }
+	800.1.1 = {
+		effect = {
+			create_artifact_pedestal_human_skull_specific_effect = {
+				OWNER = root
+				DESKULLED = character:tr_thief_hammer_yora
+			}
+		}
+	}
 	880.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_thief_hammer2 = {
@@ -1553,6 +1595,21 @@ tr_dutch_van = {
 	disallow_random_traits = yes
 	1040.1.1 = { birth = yes }
 	1140.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_hammer_12 = {
+	name = "Vault"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_3
+	trait = greedy
+	trait = callous
+	trait = zealous
+	trait = architect
+	trait = honest
+	disallow_random_traits = yes
+	1111.1.1 = { birth = yes }
+	1211.1.1 = { death = { death_reason = death_old_age } }
  }
 #ELDER SCROLLS CHARACTERS
  tr_dwemer1 = {
@@ -1627,6 +1684,7 @@ tr_dutch_van = {
 		birth = yes
 		effect = {
 			learn_language = language_anglic
+			add_secret = { type = secret_cannibal }
 	    }
 	}
 	1000.1.1 = { death = { death_reason = death_old_age } }
