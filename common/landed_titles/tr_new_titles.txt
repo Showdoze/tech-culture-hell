@@ -175,7 +175,7 @@ d_auriel = { # EK TODO: add correct colors to this as well as a CoA
 	can_be_named_after_dynasty = no
 }
 k_dagoth = {
-	color={ 65 0 10 }
+	color = { 65 0 10 }
 	definite_form = yes
 	ruler_uses_title_name = no
 	landless = yes
@@ -188,7 +188,7 @@ k_dagoth = {
 	destroy_if_invalid_heir = yes
 }
 d_tonal_architects = {
-	color={ 255 251 132 }
+	color = { 255 251 132 }
 	capital = c_alexandria	
 	definite_form = yes
 	landless = yes
@@ -199,4 +199,16 @@ d_tonal_architects = {
 
 	ai_primary_priority = { add = @never_primary_score }
 }
+d_alex_brit_name = { # 
+	color = { 100 100 100 }
+	capital = c_dakhina_desa 
 
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}

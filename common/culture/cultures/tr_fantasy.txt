@@ -43,7 +43,7 @@ halfling = {
     clothing_gfx = { northern_clothing_gfx western_clothing_gfx  }
     unit_gfx = { irish_unit_gfx }
     ethnicities = {
-        1 = gnome_ethnicity
+        1 = hobbit_eth
     }
 }
 
@@ -295,18 +295,20 @@ elf_culture = {
     }
  }
 
- chimer = { #Telvanni
-    color = dunmeris
+ chimer = { #
+    color = chimeris
     created = 20.1.1
     parents = { elf_culture }
     history_loc_override = chimer_history_loc
-    ethos = ethos_stoic
+    ethos = ethos_spiritual
     heritage = heritage_fantasy
     language = language_dunmeris
     martial_custom = martial_custom_equal
     traditions = {
-        tradition_mendicant_mystics
-        tradition_cynical_believers
+        tradition_mystical_ancestors
+		tradition_philosopher_culture
+		tradition_zealous_people
+		tradition_ruling_caste
         tradition_elf
     }
     name_list = name_list_altmer

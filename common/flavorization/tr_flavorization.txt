@@ -18,7 +18,7 @@
  canadian_empire = {
 	type = title
 	tier = empire
-	priority = 50
+	priority = 300
 	name_lists = { name_list_canada}
  }
  parliament = { #Parliament
@@ -171,13 +171,13 @@
 	special = holder
 	tier = empire
 	gender = female
-	priority = 50
+	priority = 300
 	name_lists = { name_list_american name_list_confederate name_list_canada }
  }
  american_empire = {
 	type = title
 	tier = empire
-	priority = 50
+	priority = 300
 	name_lists = { name_list_american }
  }
  governor = { #Governor
@@ -327,7 +327,7 @@
 	special = holder
 	tier = empire
 	gender = male
-	priority = 301
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
  HO_empire_lady = { #LADY
@@ -335,13 +335,13 @@
 	special = holder
 	tier = empire
 	gender = female
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
  HO_empire = {
 	type = title
 	tier = empire
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic name_list_syracuse }
  }
  HO_king = {
@@ -349,7 +349,7 @@
 	special = holder
 	tier = kingdom
 	gender = male
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
   }
  HO_king_lady = { #LADY
@@ -357,13 +357,13 @@
 	special = holder
 	tier = kingdom
 	gender = female
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic  name_list_syracuse }
  }
  HO_kingy = {
 	type = title
 	tier = kingdom
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
  HO_duchy = {
@@ -371,7 +371,7 @@
 	special = holder
 	tier = duchy
 	gender = male
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
  HO_duchy_lady = { #LADY
@@ -379,13 +379,13 @@
 	special = holder
 	tier = duchy
 	gender = female
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
  HO_duch = {
 	type = title
 	tier = duchy
-	priority = 50
+	priority = 500
 	name_lists = { name_list_hospitaller name_list_templar name_list_teutonic}
  }
 #venice REPUBLIC SO DOGE
@@ -394,7 +394,7 @@
 	gender = female
 	special = queen_mother
 	name_lists = { name_list_venetian }
-	priority = 42
+	priority = 50
 	top_liege = no
  }
  doge_emperor = {
@@ -410,13 +410,13 @@
 	special = holder
 	tier = empire
 	gender = female
-	priority = 50
+	priority = 300
 	name_lists = { name_list_venetian }
  }
  doge_empire = {
 	type = title
 	tier = empire
-	priority = 50
+	priority = 300
 	name_lists = { name_list_venetian }
  }
  doge_king = {
@@ -566,7 +566,7 @@
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 470
 	governments = { autocracy_government }
 	name_lists = { name_list_korean }
  }
@@ -575,14 +575,14 @@
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 470
 	governments = { autocracy_government }
 	name_lists = { name_list_korean }
  }
  kingdom_dictator_korea = {
 	type = title
 	tier = kingdom
-	priority = 47
+	priority = 470
 	governments = { autocracy_government }
 	name_lists = { name_list_korean }
  }
@@ -640,7 +640,7 @@
 	special = holder
 	tier = empire
 	gender = male
-	priority = 301
+	priority = 500
 	name_lists = { name_list_italian_american }
  }
  mafia_empire_lady = {
@@ -648,13 +648,13 @@
 	special = holder
 	tier = empire
 	gender = female
-	priority = 50
+	priority = 500
 	name_lists = { name_list_italian_american }
  }
  mafia_empire = {
 	type = title
 	tier = empire
-	priority = 50
+	priority = 500
 	name_lists = { name_list_italian_american }
  }
  mafia_king = {
@@ -801,7 +801,7 @@
 	special = holder
 	tier = empire
 	gender = male
-	priority = 301
+	priority = 500
 	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
@@ -810,7 +810,7 @@
 	special = holder
 	tier = empire
 	gender = female
-	priority = 50
+	priority = 500
 	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
@@ -892,7 +892,7 @@
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord }
 	top_liege = no
@@ -902,7 +902,7 @@
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord }
 	top_liege = no
@@ -911,7 +911,7 @@
   jarl_d = {
 	type = title
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord }
   }
@@ -921,7 +921,7 @@
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = {  name_list_glenumbran }
 	top_liege = no
@@ -931,7 +931,7 @@
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = {  name_list_glenumbran }
 	top_liege = no
@@ -940,7 +940,7 @@
  king_d = {
 	type = title
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = {  name_list_glenumbran }
  }  
@@ -950,7 +950,7 @@
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord name_list_glenumbran }
 	top_liege = no
@@ -960,7 +960,7 @@
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord name_list_glenumbran }
 	top_liege = no
@@ -969,7 +969,7 @@
  high_kingdom = {
 	type = title
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_nord name_list_glenumbran }
  }
@@ -1037,7 +1037,7 @@
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1047,7 +1047,7 @@
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1056,7 +1056,7 @@
  baron_k = {
 	type = title
 	tier = kingdom
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
@@ -1066,7 +1066,7 @@
 	gender = male
 	special = holder
 	tier = barony
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1076,7 +1076,7 @@
 	gender = female
 	special = holder
 	tier = barony
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1085,7 +1085,7 @@
  lord_b_idk = {
 	type = title
 	tier = barony
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
@@ -1094,7 +1094,7 @@
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1104,7 +1104,7 @@
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1113,7 +1113,7 @@
  lord_d_idk = {
 	type = title
 	tier = duchy
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
@@ -1122,7 +1122,7 @@
 	gender = male
 	special = holder
 	tier = county
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1132,7 +1132,7 @@
 	gender = female
 	special = holder
 	tier = county
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
 	top_liege = no
@@ -1141,7 +1141,7 @@
  lord_c_idk = {
 	type = title
 	tier = county
-	priority = 30
+	priority = 50
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
@@ -1472,7 +1472,7 @@
 	gender = male
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_mycenaean }
  }
  emperor_feudal_female_mycenaean = {
@@ -1480,13 +1480,13 @@
 	gender = female
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_mycenaean }
  }
  empire_feudal_mycenaean = {
 	type = title
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_mycenaean }
  }
 # # Aegean
@@ -1572,7 +1572,7 @@
 	gender = male
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_aegean }
  }
  emperor_feudal_female_aegean_group = {
@@ -1580,7 +1580,7 @@
 	gender = female
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_aegean }
  }
 ##Hittite
@@ -1724,7 +1724,7 @@
 	gender = male
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_hittite }
  }
  emperor_feudal_female_hittite = {
@@ -1732,13 +1732,13 @@
 	gender = female
 	special = holder
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_hittite }
  }
  empire_feudal_hittite = {
 	type = title
 	tier = empire
-	priority = 103
+	priority = 300
 	name_lists = { name_list_hittite }
  }
 #

@@ -1,20 +1,40 @@
 ﻿heritage_sumerian = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_sumerian
+		}
+	}
 	audio_parameter = mena
 }
 
 heritage_american = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_american
+		}
+	}
 	audio_parameter = european
 }
 
 heritage_native_american = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_native_american
+		}
+	}
 	audio_parameter = mena
 }
 
 heritage_asian = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_asian
+		}
+	}
 	audio_parameter = mena
 }
 
@@ -25,6 +45,11 @@ heritage_asian = {
 
 heritage_african = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_african
+		}
+	}
 	audio_parameter = mena
 }
 
@@ -41,13 +66,23 @@ heritage_unknown = {
 
 heritage_canadian = {
 	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_canadian
+		}
+	}
 	audio_parameter = european
 }
 
-heritage_holy_order = {
-	type = heritage
-	audio_parameter = european
-}
+#heritage_holy_order = {
+#	type = heritage
+#	is_shown = {
+#		heritage_is_shown_trigger = {
+#			HERITAGE = heritage_holy_order
+#		}
+#	}
+#	audio_parameter = european
+#}
 
 #heritage_korean = {
 #	type = heritage
@@ -73,5 +108,10 @@ heritage_egyptian = {
 
 heritage_fantasy = {
     type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_fantasy
+		}
+	}
     audio_parameter = european
 }
