@@ -446,10 +446,6 @@
 					}
 				}
 			}
-		}
-	}
-	840.1.1 = {
-		effect = {
 			learn_language_of_culture = culture:greek 
 			learn_language_of_culture = culture:ptolemaic
 			learn_language_of_culture = culture:roman
@@ -500,8 +496,6 @@
 					}
 				}
 			}
-		}
-        effect = {
 			add_trait = lifestyle_mystic
 			add_trait_xp = {
 				trait = lifestyle_mystic
@@ -746,7 +740,7 @@ tr_doc_livesey = {
 	895.3.28 = {
 		death = {
 			death_reason = death_murder
-            #killer = 
+            killer = tr_sopranos_tony
 		}
 	}
  }
@@ -776,23 +770,6 @@ tr_doc_livesey = {
 	953.3.5 = { death = { death_reason = death_old_age } }
  }
 #
-tr_f_a_h_Enki = {
-    name = "Enki"
-	religion = dark_souls_faith 
-    dynasty = dynasty_fantasy
-	culture = dark_souls_culture
-	dna = f_a_h_Enki
-	trait = education_learning_3
-    trait = callous
-    trait = arrogant
-    trait = stubborn
-    trait = class_wizard_necromancy
-    trait = intellect_good_1
-    disallow_random_traits = yes
-	martial = 20
-	845.1.1 = { birth = yes }
-	908.1.1 = { death = { death_reason = death_suicide } }
-}
 tr_mando = {
     name = "Canderous"
 	religion = blood_faith 
@@ -1051,40 +1028,6 @@ tr_ivan_the_terrible = {
 	837.8.25 = { birth = yes }
 	1584.3.28 = { death = { death_reason = death_old_age } }
  } 
-tr_lara_croft = {
-	name = "Lara Croft"
-	dna = lara_croft
-	religion = dwemer_religion 
-    dynasty = misc_history
-	culture = brit
-    female = yes
-	trait = education_learning_3
-	trait = beauty_good_3
-    trait = arrogant
-	trait = scholar
-	trait = architect
-	trait = intellect_good_1
-	trait = strong
-    trait = diligent
-    trait = ambitious
-    disallow_random_traits = yes
-	849.1.1 = { 
-		birth = yes 
-		effect = {
-			learn_language_of_culture = culture:ancient_egyptian 
-			learn_language_of_culture = culture:punic
-			learn_language_of_culture = culture:greek
-			learn_language_of_culture = culture:french
-			add_secret = { type = secret_non_believer	}
-	    }	
-	}
-	895.8.30 = {
-		death = {
-			death_reason = death_suicide
-            #killer = 
-		}
-	}
-}
 tr_japanese1 = {
 	name = "Hojo"
 	religion = shinto
@@ -1135,29 +1078,6 @@ tr_vlad_tepes = {
 	    }
 	}
 	1476.12.14 = { death = { death_reason = death_execution } }
-}
-tr_dutch_van = {
-	name = "Dutch Van Der Linde"
-	dna = dutch_van
-	religion = blood_faith 
-    dynasty = misc_history
-	culture = american
-	trait = education_intrigue_3
-    trait = arrogant
-	trait = arbitrary
-	trait = architect
-	trait = greedy
-    trait = murderer
-	trait = lunatic_1
-    trait = ambitious
-    disallow_random_traits = yes
-	840.1.1 = { birth = yes }
-	850.1.1 = {
-		effect = {
-			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
-		}
-	}
-	911.1.1 = { death = { death_reason = death_suicide } }
 }
 #Castlevania
  tr_trevor_belmont = {
@@ -1888,7 +1808,6 @@ tr_dutch_van = {
 	trait = diligent
     trait = intellect_good_3
 	trait = stubborn
-    trait = arrogant
 	trait = eccentric
 	trait = lifestyle_mystic
 	trait = poet
@@ -1904,6 +1823,15 @@ tr_dutch_van = {
 			learn_language = language_dunmeris
 			learn_language = language_drow
 			learn_language = language_gith
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
 	    }
 	}
 	1920.1.1 = { death = { death_reason = death_old_age } }
@@ -2159,7 +2087,7 @@ tr_dutch_van = {
 		birth = yes
 	}
  }
-# 
+#misc Games
  tr_corvus = {
     name = "Corvus"
 	religion = pagan
@@ -2179,7 +2107,84 @@ tr_dutch_van = {
 	251.5.10 = {
 		birth = yes
 	}
+  }
+ tr_lara_croft = {
+	name = "Lara Croft"
+	dna = lara_croft
+	religion = dwemer_religion 
+    dynasty = misc_history
+	culture = brit
+    female = yes
+	trait = education_learning_3
+	trait = beauty_good_3
+    trait = arrogant
+	trait = scholar
+	trait = architect
+	trait = intellect_good_1
+	trait = strong
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	849.1.1 = { 
+		birth = yes 
+		effect = {
+			learn_language_of_culture = culture:ancient_egyptian 
+			learn_language_of_culture = culture:punic
+			learn_language_of_culture = culture:greek
+			learn_language_of_culture = culture:french
+			add_secret = { type = secret_non_believer	}
+	    }	
+	}
+	895.8.30 = {
+		death = {
+			death_reason = death_suicide
+            #killer = 
+		}
+	}
  }
+ #fear and hunger
+  tr_f_a_h_Enki = { 
+    name = "Enki"
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	dna = f_a_h_Enki
+	trait = education_learning_3
+    trait = callous
+    trait = arrogant
+    trait = stubborn
+    trait = class_wizard_necromancy
+    trait = intellect_good_1
+    disallow_random_traits = yes
+	martial = 20
+	845.1.1 = { birth = yes }
+	908.1.1 = { death = { death_reason = death_suicide } }
+  }
+ #RED DEAD
+  tr_dutch_van = {
+	name = "Dutch Van Der Linde"
+	dna = dutch_van
+	religion = blood_faith 
+    dynasty = misc_history
+	culture = american
+	trait = education_intrigue_3
+    trait = arrogant
+	trait = arbitrary
+	trait = architect
+	trait = greedy
+    trait = murderer
+	trait = lunatic_1
+    trait = ambitious
+    disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
+		}
+	}
+	911.1.1 = { death = { death_reason = death_suicide } }
+  }
+ # 
 #british 
  tr_brit_alex_wanted = {
     name = "Bloke"
