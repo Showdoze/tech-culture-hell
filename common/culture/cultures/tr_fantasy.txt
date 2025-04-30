@@ -22,6 +22,7 @@
         1 = gnome_ethnicity
     }
 }
+
 halfling = {
     color = rgb { 222 135 26 }
     created = 1.1.1
@@ -45,6 +46,7 @@ halfling = {
         1 = gnome_ethnicity
     }
 }
+
 hanling = {
     color = cantonese
     created = 2.1.1
@@ -69,6 +71,7 @@ hanling = {
         1 = hanling_eth
     }
 }
+
 old_dwarven = {
     color = rgb { 184 120 79 }
     created = 1.1.1
@@ -93,8 +96,9 @@ old_dwarven = {
         1 = dwarven_ethnicity
     }
 }
+
 elf_culture = {
-    color = rgb { 184 120 79 }
+    color = { 184 120 79 }
     created = 1.1.1
     history_loc_override = mystery_history_loc
     ethos = ethos_stoic
@@ -116,11 +120,13 @@ elf_culture = {
         50 = elf_eth_1
     }
 }
+
 #DND
  drow = {
     color = { 0.0 0.0 0.0 }
-    created = 1.1.1
-    history_loc_override = drow_history_loc
+    created = 20.1.1
+    parents = { elf_culture }
+    #history_loc_override = drow_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_drow
@@ -140,6 +146,7 @@ elf_culture = {
         10 = drow_eth
     }
  }
+
  gith = {
     color = { 0.1 0.6 0.1 }
     created = 1.1.1
@@ -162,6 +169,7 @@ elf_culture = {
         10 = faldorei_ethnicity
     }
  }
+
  tiefling = {
     color = { 0.1 0.6 0.1 }
     created = 1.1.1
@@ -184,6 +192,7 @@ elf_culture = {
         10 = succubus_ethnicity
     }
  }
+
 #ELDER SCROLLS #
  nord_culture = {
     color = { 0.12 0.32 0.94 }
@@ -210,6 +219,7 @@ elf_culture = {
         5 = caucasian_northern_dark_hair
     } 
  }
+
  imperial_culture = {
     color = cyrodiilic
     created = 10.1.1
@@ -235,10 +245,12 @@ elf_culture = {
         5 = race_imperial_nibenese_1
     }
  }
+
  bosmer = {
     color = bosmeris
-    created = 10.1.1
-    history_loc_override = bosmer_history_loc
+    created = 30.1.1
+    parents = { elf_culture }
+    #history_loc_override = bosmer_history_loc
     ethos = ethos_spiritual
     heritage = heritage_fantasy
     language = language_bosmeris
@@ -258,10 +270,12 @@ elf_culture = {
         10 = race_bosmer
     }
  }
+
  altmer = { #HIGH ELF
     color = altmeris
-    created = 5.1.1
-    history_loc_override = altmer_history_loc
+    created = 50.1.1
+    parents = { elf_culture }
+    #history_loc_override = altmer_history_loc
     ethos = ethos_courtly
     heritage = heritage_fantasy
     language = language_altmeris
@@ -280,10 +294,36 @@ elf_culture = {
         10 = race_altmer
     }
  }
+
+ chimer = { #Telvanni
+    color = dunmeris
+    created = 20.1.1
+    parents = { elf_culture }
+    #history_loc_override = dunmer_history_loc
+    ethos = ethos_stoic
+    heritage = heritage_fantasy
+    language = language_dunmeris
+    martial_custom = martial_custom_equal
+    traditions = {
+        tradition_mendicant_mystics
+        tradition_cynical_believers
+        tradition_elf
+    }
+    name_list = name_list_altmer
+    coa_gfx = { iberian_group_coa_gfx } #dunmeris_group_coa_gfx
+    building_gfx = { iberian_building_gfx } #ek_telvanni_building_gfx
+    clothing_gfx = { iberian_christian_clothing_gfx iberian_muslim_clothing_gfx }
+    unit_gfx = { dunmer_unit_gfx }
+    ethnicities = {
+        10 = elf_eth_1
+    }
+ }
+
  dunmer = { #Telvanni
     color = dunmeris
-    created = 1.1.1
-    history_loc_override = dunmer_history_loc
+    created = 100.1.1
+    parents = { chimer }
+    #history_loc_override = dunmer_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_dunmeris
@@ -302,6 +342,7 @@ elf_culture = {
         10 = race_dunmer
     }
  }
+
  glenumbran = { #Breton
     color = bretic
     created = 20.1.1
@@ -328,6 +369,7 @@ elf_culture = {
         25 = race_breton_northman_1
     }
  }
+
  alikr = { #RedGuard
     color = yoku
     created = 15.1.1
@@ -351,10 +393,12 @@ elf_culture = {
         10 = race_redguard_alikr_1
     }
  }
+
  dwemer = { # Vvardenfell/MW Dwemer #
     color = dwemeris
-    created = 1.1.1
-    history_loc_override = mystery_history_loc
+    created = 35.1.1
+    parents = { elf_culture }
+    #history_loc_override = mystery_history_loc
     ethos = ethos_bureaucratic
     heritage = heritage_fantasy
     language = language_dwemeris
@@ -373,10 +417,12 @@ elf_culture = {
         10 = race_dwemer
     }
  }
+
  falmer = {
     color = falmeris
-    created = 1.1.1
-    history_loc_override = mystery_history_loc
+    created = 20.1.1
+    parents = { elf_culture }
+    #history_loc_override = mystery_history_loc
     ethos = ethos_spiritual
     heritage = heritage_fantasy
     language = language_old_falmeris
@@ -398,10 +444,11 @@ elf_culture = {
         #5 = race_falmer_ear
     }
  }
+
  falmer_betrayed = {
     color = falmeris
     parents = { falmer }
-    created = 5.1.1
+    created = 200.1.1
     history_loc_override = betrayal_history_loc
     ethos = ethos_bellicose
     heritage = heritage_fantasy
@@ -426,7 +473,7 @@ elf_culture = {
 #
 nile_elf = {
     color = medjay
-    created = 7.1.1
+    created = 70.1.1
     parents = { elf_culture ancient_egyptian }
     #history_loc_override = ancient_egyptian_history_loc
     ethos = ethos_bureaucratic
@@ -449,6 +496,7 @@ nile_elf = {
         10 = faldorei_ethnicity
     }
 }
+
 goblin = {
     color = goblin
     created = 10.1.1
@@ -476,6 +524,7 @@ goblin = {
         15 = race_goblin_riekling
     }
 }
+
 warsong = {
     color = orcish
     created = 5.1.1
@@ -500,6 +549,7 @@ warsong = {
         5 = pale_orcish
     }
 }
+
 giant = {
     color = rgb { 48 84 150 }
     created = 1.1.1
@@ -526,11 +576,12 @@ giant = {
         20 = watcher_ethnicity
     }
 }
+
 ancient_texas = {
     color = { 120 10 10 }
-    created = 1.1.1
+    created = 20.1.1
     parents = { apache }
-    history_loc_override = mystery_history_loc
+    #history_loc_override = mystery_history_loc
     ethos = ethos_stoic
     heritage = heritage_native_american
     language = language_mescalero
@@ -552,6 +603,7 @@ ancient_texas = {
         10 = mesoamerican
     }
 }
+
 unknown = {
     color = { 0 0 0 }
     created = 1.1.1
@@ -572,6 +624,7 @@ unknown = {
         5 = caucasian_dark_hair
     }
 }
+
 #thief
  thief_city = {
     color = { 120 10 10 }
@@ -601,6 +654,7 @@ unknown = {
         25 = caucasian_dark_hair
     }
  }
+
  thief_precursor = {
     color = { 120 10 10 }
     created = 1.1.1
@@ -627,6 +681,7 @@ unknown = {
         25 = caucasian_dark_hair
     }
  }
+
 #ANIME
  saiyan = {
     color = han
@@ -648,6 +703,7 @@ unknown = {
         10 = asian
     }
  }
+
  hidden_mist = {
     color = { 0.58 0.06 0.06 }
     created = 500.1.1
@@ -671,6 +727,7 @@ unknown = {
         10 = asian
     }
  }
+
  hidden_sand = {
     color = { 0.58 0.06 0.06 }
     created = 500.1.1
@@ -691,7 +748,8 @@ unknown = {
     ethnicities = {
         10 = hidden_sand_eth
     }
- } 
+ }
+
 #LOZ ZELDA
  hylian = {
     color = { 255 221 14 }
@@ -721,6 +779,7 @@ unknown = {
         #10 = hylian
     }
  }
+
  kokiri = {
     color = { 0 150 64 }
     created = 1.1.1
@@ -746,6 +805,7 @@ unknown = {
         #10 = kokiri
     }
  }
+
  sheikah = {
     color = { 149 27 129 }
     created = 1.1.1
@@ -769,6 +829,7 @@ unknown = {
         10 = race_akaviri_tsaesci_1
     }
  }
+
  gerudo = {
     color = rgb { 243 146 0 }
     created = 1.1.1
@@ -793,6 +854,7 @@ unknown = {
         10 = gerudo
     }
  }
+
 #SCI-FI
  mandalorian = {
     color = { 0.71 0.37 0.60 }
@@ -826,6 +888,7 @@ unknown = {
         5 = european_caucasian_english_1
     }
  }
+
  sus_culture = {
     color = rgb { 222 135 26 }
     created = 2.1.1
@@ -846,6 +909,7 @@ unknown = {
         1 = hanling_eth
     }
  }
+
 #Fromsoft
  dark_souls_culture = {
     color = { 0.71 0.37 0.60 }
@@ -879,6 +943,7 @@ unknown = {
         5 = european_caucasian_english_1
     }
  }
+
 #Literature
  innsmouth = {
     color = { 0.71 0.37 0.60 }
@@ -910,6 +975,7 @@ unknown = {
         5 = european_caucasian_english_1
     }
  }
+
  high_valyrian = {
     color = high_valyrian
     created = 1.1.1
