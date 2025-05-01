@@ -690,7 +690,14 @@ tr_doc_livesey = {
     trait = patient
     trait = brave
     disallow_random_traits = yes
-	821.1.1 = { birth = yes }
+	821.1.1 = { 
+		birth = yes 
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+			add_character_flag = no_headgear
+	    }
+	}
     852.1.1 = {
 		effect = {
 			add_trait = lifestyle_physician
@@ -777,8 +784,8 @@ tr_doc_livesey = {
     trait = craven
     trait = peasant_leader
     disallow_random_traits = yes
-	829.1.1 = {birth = yes}
-	860.1.1 = {
+	829.1.1 = {
+		birth = yes
 		effect = {
 			learn_language_of_culture = culture:zastova 
 	   }	
@@ -1121,10 +1128,10 @@ tr_vlad_tepes = {
 	848.1.1 = { 
 		birth = yes
 		effect = {
-			add_character_flag = has_scripted_appearance
 			learn_language = language_anglic
 			add_character_flag = has_scripted_appearance
 			add_character_flag = has_scripted_weight
+			add_character_flag = no_headgear
 	    }
 	}
 	920.1.1 = { death = { death_reason = death_old_age } }
@@ -1150,9 +1157,9 @@ tr_vlad_tepes = {
 	837.1.1 = { 
 		birth = yes
 		effect = {
-			add_character_flag = has_scripted_appearance
 			learn_language = language_anglic
 			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
 	    }
 	}
 	920.1.1 = { death = { death_reason = death_old_age } }
@@ -1291,7 +1298,14 @@ tr_vlad_tepes = {
 	trait = intellect_good_3
 	give_nickname = nick_the_saint
 	disallow_random_traits = yes
-	270.1.1 = { birth = yes }
+	270.1.1 = { 
+		birth = yes 
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+			add_character_flag = no_headgear
+	    }
+	}
 	380.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_thief_hammer7 = {
@@ -1427,7 +1441,14 @@ tr_vlad_tepes = {
 	health = 999
 	give_nickname = nick_the_saint
 	disallow_random_traits = yes
-	750.1.1 = { birth = yes }
+	750.1.1 = { 
+		birth = yes 
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+			add_character_flag = no_headgear
+	    }
+	}
 	800.1.1 = {
 		effect = {
 			create_artifact_pedestal_human_skull_specific_effect = {
