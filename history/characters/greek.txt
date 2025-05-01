@@ -46,6 +46,13 @@
 			check_can_recruit = no
 			size = 2
 		}
+
+		effect = {
+			if = {
+				limit = { has_realm_law = imperial_bureaucracy_0 }
+				add_realm_law = imperial_bureaucracy_1
+			}
+		}
 	}
 	886.8.29 = {
 		death = {
@@ -434,19 +441,19 @@
 }
 
 125722 = {
-	name = "Theodora"
-	female = yes
-	dynasty = 634
-	religion = "orthodox"
-	culture = "greek"
-	father = 125720
-	mother = 145078
-	1250.1.1 = {
-		birth = "1250.1.1"
-	}
-	1303.1.1 = {
-		death = "1303.1.1"
-	}
+	 name = "Theodora"
+	 female = yes
+	 dynasty = 634
+	 religion = "orthodox"
+	 culture = "greek"
+	 father = 125720
+	 mother = 145078
+	 1250.1.1 = {
+		  birth = "1250.1.1"
+	 }
+	 1303.1.1 = {
+		  death = "1303.1.1"
+	 }
 }
 
 125723 = {
@@ -1470,7 +1477,7 @@
 	1045.1.1 = {
 		add_spouse = 725
 	}
-1066.1.1 = {
+    1066.1.1 = {
 		effect = {
 			if = {
 				limit = {
@@ -1482,7 +1489,7 @@
 				}
 			}
 		}
-	}	
+	}
 	1068.8.1 = {
 		add_spouse = 1733
 	}
@@ -4972,6 +4979,12 @@
 	}
 	1161.1.1 = {
 		add_spouse = 223743
+		effect = {
+			if = {
+				limit = { has_realm_law = imperial_bureaucracy_0 }
+				add_realm_law = imperial_bureaucracy_1
+			}
+		}
 	}
 	1180.9.24 = {
 		death = "1180.9.24"
@@ -5633,7 +5646,7 @@
 
 232501 = {
 	name = "Theophylaktos"
-	# AKA: Theophylaktos Acominatos	
+	# AKA: Theophylaktos Acominatos
 	dynasty = 101081
 	martial = 4
 	diplomacy = 4
@@ -9444,7 +9457,7 @@
 }
 
 70497 = {
-	name = "Nikephoros" 
+	name = "Nikephoros"
 	# AKA: Nikephoros 'Logothetes'
 	dynasty = 8645
 	martial = 3
@@ -10265,7 +10278,7 @@
 
 70551 = {
 	name = "Nikolaos"
-	# AKA: Nikolaos 'Mystikos'	
+	# AKA: Nikolaos 'Mystikos'
 	dynasty = 8649
 	martial = 5
 	diplomacy = 6
@@ -14466,7 +14479,6 @@
 	}
 }
 
-
 34412 = {
 	name = "Ioannes"
 	dna = "bookmark_ioannes_kantakouzenos_34412"
@@ -14748,7 +14760,6 @@
 	1070.1.1 = {
 		birth = "1070.1.1"
 	}
-
 	1089.1.1 = {
 		death = "1089.1.1"
 	}
@@ -14764,7 +14775,6 @@
 	1071.1.1 = {
 		birth = "1071.1.1"
 	}
-
 	1094.1.1 = {
 		trait = blind
 	}
@@ -17172,10 +17182,10 @@
 	trait = education_martial_2
 	trait = peasant_born
 	811.1.1 = {
-		birth = "811.1.1"
+		birth = yes
 	}
 	872.1.1 = {
-		death = "872.1.1"
+		death = yes
 	}
 }
 
@@ -17188,7 +17198,7 @@
 	trait = peasant_born
 	father = 145129
 	838.1.1 = {
-		birth = "838.1.1"
+		birth = yes
 	}
 	892.1.1 = {
 		death = yes
@@ -18377,7 +18387,7 @@
 	culture = "greek"
 	religion = "ashari"
 
-	trait = "eunuch"
+	trait = beardless_eunuch
 
 	845.1.1 = {
 		birth = "845.1.1"
@@ -21550,6 +21560,19 @@
 	}
 	842.2.19 = {
 		religion = "orthodox"
+	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 5
+				}
+			}
+		}
 	}
 	885.1.1 = {
 		death = "885.1.1"
