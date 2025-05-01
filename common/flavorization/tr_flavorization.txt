@@ -1741,4 +1741,89 @@
 	priority = 300
 	name_lists = { name_list_hittite }
  }
-#
+#Bri'ish teeea
+ emperor_tea { #Big Bloke
+	type = character
+	special = holder
+	tier = empire
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+ petty_king_tea { #Sorta Big Bloke
+	type = character
+	special = holder
+	tier = petty_kingdom
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+ king_tea { #Medium Sized Bloke
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+ duke_tea { #smaller Bloke
+	type = character
+	special = holder
+	tier = duchy
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+ baron_tea { #small bloke
+	type = character
+	special = holder
+	tier = barony
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+ count_tea { #tiny Bloke
+	type = character
+	special = holder
+	tier = county
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_tea}
+ }
+
+ chancellor_tea { #Chin Wag Minister
+	type = character
+	special = chancellor
+	priority = 80
+	council_position = councillor_chancellor
+	name_lists = { name_list_tea }
+ }
+ marshal_tea { #Shiv Minister
+	type = character
+	special = marshal
+	priority = 80
+	council_position = councillor_marshal
+	name_lists = { name_list_tea }
+ }
+ steward_tea { #Coin Monister
+	type = character
+	special = steward
+	priority = 80
+	council_position = councillor_steward
+	name_lists = { name_list_tea }
+ }
+ court_chaplain_tea { #Witchhunt Minister
+	type = character
+	special = court_chaplain
+	priority = 100
+	faith = tea_religion
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_tea }
+ }
+ spymaster_tea { #Sneasking Minister
+	type = character
+	special = spymaster
+	priority = 100
+	council_position = councillor_spymaster
+	name_lists = { name_list_tea }
+ }
