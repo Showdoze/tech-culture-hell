@@ -1,4 +1,4 @@
-﻿
+
 e_britannia = {
 	color = { 172 22 22 }
 
@@ -1372,7 +1372,6 @@ e_britannia = {
 				add = @better_than_the_alternatives_score
 			}
 		}
-
 
 		d_gwynedd = {
 			color = { 100 0 0 }
@@ -2865,6 +2864,30 @@ e_britannia = {
 			color = { 43 229 108 }
 
 			capital = c_mayo # Cruachu
+			c_mayo = {
+				color = { 15 190 70 }
+
+				b_cruachu = {
+					province = 8745
+
+					color = { 15 190 70 }
+				}
+				b_castlebar = {
+					province = 21
+
+					color = { 15 190 70 }
+				}
+				b_sligo = {
+					province = 22
+
+					color = { 15 190 70 }
+				}
+				b_killala = {
+					province = 8748
+
+					color = { 15 190 70 }
+				}
+			}
 
 			c_connacht = {	#Hy Many
 				color = { 45 230 70 }
@@ -2896,31 +2919,6 @@ e_britannia = {
 					province = 8747
 
 					color = { 45 230 70 }
-				}
-			}
-
-			c_mayo = {
-				color = { 15 190 70 }
-
-				b_cruachu = {
-					province = 8745
-
-					color = { 15 190 70 }
-				}
-				b_castlebar = {
-					province = 21
-
-					color = { 15 190 70 }
-				}
-				b_sligo = {
-					province = 22
-
-					color = { 15 190 70 }
-				}
-				b_killala = {
-					province = 8748
-
-					color = { 15 190 70 }
 				}
 			}
 
@@ -3235,9 +3233,11 @@ e_byzantium = {
 	can_create = {
 		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 		custom_tooltip = {
-			text = is_latin_emperor_tt
+			text = holds_latin_empire_tt
 			NOT = {
-				primary_title = title:e_latin_empire
+				any_held_title = {
+					this = title:e_latin_empire
+				} 
 			}
 		}
 	}
@@ -3437,7 +3437,7 @@ e_byzantium = {
 			capital = c_mosynopolis # Mosynopolis
 
 			c_mosynopolis = {
-				color = { 49 43 135 }
+				color = { 39 53 135 }
 
 				b_mosynopolis = {
 					province = 492
@@ -5686,6 +5686,10 @@ e_byzantium = {
 		d_dobrudja = {
 			color = { 75 100 80 }
 
+			cultural_names = {
+				name_list_greek = cn_scythia_minor
+			}
+
 			capital = c_constanta # Constanta
 
 			c_constanta = {
@@ -7038,7 +7042,7 @@ e_byzantium = {
 			}
 
 			c_cilicia = {
-				color = { 223 117 26 }
+				color = { 213 107 26 }
 
 				cultural_names = {
 					name_list_greek = cn_kilikia
@@ -11123,6 +11127,9 @@ e_wendish_empire = {
 	capital = c_vidzeme # Riga
 
 	definite_form = yes
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -12563,6 +12570,12 @@ e_wendish_empire = {
 			c_zemigalians = {
 				color = { 200 40 40 }
 				cultural_names = {
+					name_list_latgalian = cn_zemgale
+					name_list_lithuanian = cn_ziemgala
+					name_list_franconian = cn_semgallen
+					name_list_saxon = cn_semgallen
+					name_list_swabian = cn_semgallen
+					name_list_bavarian = cn_semgallen
 				name_list_bosmer = cn_falinesti
 			    }
 				#b_riga = {
@@ -22925,6 +22938,9 @@ e_maghreb = {
 	color = { 209 63 44 }
 
 	capital = c_kairwan # Kairouan
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -25544,6 +25560,7 @@ e_arabia = {
 
 			c_mecca = {
 				color = { 122 198 5 }
+				can_use_nomadic_naming = no
 
 				b_makka = {
 					province = 6223
@@ -26633,6 +26650,7 @@ e_arabia = {
 
 			c_jerusalem = {
 				color = { 176 190 140 }
+				can_use_nomadic_naming = no
 
 				b_jerusalem = {
 					province = 5965
@@ -33380,7 +33398,7 @@ e_deccan = {
 				b_bhadracala = {
 					province = 7913
 
-					color = { 195 65 650 }
+					color = { 195 65 65 }
 				}
 			}
 		}

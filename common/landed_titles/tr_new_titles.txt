@@ -103,11 +103,13 @@ e_heph = {
 	destroy_if_invalid_heir = yes
 
 	ai_primary_priority = { add = @never_primary_score }
+	can_use_nomadic_naming = no
 }
 e_wre = {
 	color={ 220 20 60 }
 	definite_form = yes
 	capital = c_ravenna
+	can_use_nomadic_naming = no
 }
 d_hammerite = {
 	color = { 255 249 198 }
@@ -125,6 +127,7 @@ d_hammerite = {
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
 }
 d_mechanist = {
     color = { 217 155 177 }
@@ -141,6 +144,7 @@ d_mechanist = {
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
+	can_use_nomadic_naming = no
 }
 d_cwc = {
     color = { 217 155 177 }
@@ -157,6 +161,7 @@ d_cwc = {
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
+	can_use_nomadic_naming = no
 }
 d_auriel = { # EK TODO: add correct colors to this as well as a CoA
 	color = {147 126 105} 
@@ -173,6 +178,7 @@ d_auriel = { # EK TODO: add correct colors to this as well as a CoA
 	destroy_if_invalid_heir = yes
 	always_follows_primary_heir = yes
 	can_be_named_after_dynasty = no
+	can_use_nomadic_naming = no
 }
 k_dagoth = {
 	color = { 65 0 10 }
@@ -186,6 +192,7 @@ k_dagoth = {
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
+	can_use_nomadic_naming = no
 }
 d_tonal_architects = {
 	color = { 255 251 132 }
