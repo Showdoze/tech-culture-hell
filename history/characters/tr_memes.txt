@@ -1,4 +1,4 @@
-﻿mmpolish = {
+﻿mm_polish = {
 	name = "Grzegorz Brzęczyszczykiewicz"
 	dynasty_house = house_trolls
 	religion = slavic_pagan
@@ -14,7 +14,7 @@
 	820.1.11 = { birth = yes }
 	2016.4.17 = { death = yes }
 }
-mmtonychase = {
+mm_tonychase = {
 	name = "Mark Ray"
 	religion = stoicism
 	culture = american
@@ -44,17 +44,17 @@ mmtonychase = {
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmsateliteman reason = rival_historical }
+			set_relation_rival = { target = character:mm_sateliteman reason = rival_historical }
 		}
 	}
 	1016.4.17 = {
 		death = { 
 		    death_reason = death_duel
-		        killer = mmsateliteman
+		        killer = mm_sateliteman
 		}
 	}
 }
-gman = {
+tr_gman = {
 	name = "Unknown"
 	religion = stoicism
 	culture = unknown
@@ -76,7 +76,7 @@ gman = {
 		effect = { add_character_flag = has_scripted_appearance }
 	}
 }
-mmsateliteman = {
+mm_sateliteman = {
 	name = "Satelite Man"
 	dynasty_house = house_trolls
 	religion = stoicism
@@ -97,11 +97,11 @@ mmsateliteman = {
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmtonychase reason = rival_historical }
+			set_relation_rival = { target = character:mm_tonychase reason = rival_historical }
 		}
 	}
 }
-mmmusicbizmarty = {
+mm_musicbizmarty = {
 	name = "MusicBiz Marty"
 	religion = samaritan
 	culture = american
@@ -126,7 +126,7 @@ mmmusicbizmarty = {
 	}
 	851.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 		effect = {
 			set_relation_rival = { target = character:mmruplesmith reason = rival_historical }
@@ -134,7 +134,7 @@ mmmusicbizmarty = {
 	}
 	866.2.4 = { death = { death_reason = death_drug } }
 }
-mmnwordboi = {
+mm_nwordboi = {
 	name = "N Word Boi"
 	religion = satanism #idk what religion
 	culture = american
@@ -157,7 +157,7 @@ mmnwordboi = {
 	831.1.11 = { birth = yes }
 	851.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 		effect = {
 			set_relation_rival = { target = character:mmruplesmith reason = rival_historical }
@@ -166,7 +166,7 @@ mmnwordboi = {
 	917.4.17 = { death = { death_reason = death_stress } }
 }
 ##CRYAXX VICTOMS
- mmgordonwilkins = {
+ mm_gordonwilkins = {
 	name = "Gordon"
 	religion = catholic
 	culture = american
@@ -186,15 +186,15 @@ mmnwordboi = {
 	}
 	840.1.1 = { add_spouse = mmsally }
 	841.1.1 = { remove_spouse = mmsally }
-	845.1.1 = { add_spouse = mmjenniewilkins }
+	845.1.1 = { add_spouse = mm_jenniewilkins }
 	847.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
  }
 
- mmjenniewilkins = {
+ mm_jenniewilkins = {
 	name = "Jennie"
 	religion = catholic
 	culture = american
@@ -207,14 +207,14 @@ mmnwordboi = {
 	trait = beauty_good_1
 	trait = education_diplomacy_2
 	810.1.11 = { birth = yes }
-	845.1.1 = { add_spouse = mmgordonwilkins }
+	845.1.1 = { add_spouse = mm_gordonwilkins }
 	847.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
  }
- mmheather = {
+ mm_heather = {
 	name = "Heather"
 	religion = catholic
 	culture = american
@@ -222,7 +222,7 @@ mmnwordboi = {
 	female = yes
 	850.1.11 = { birth = yes }
  }
- mmblindbilly = {
+ mm_blindbilly = {
 	name = "Billy Seiler"
 	religion = catholic
 	culture = american
@@ -234,12 +234,12 @@ mmnwordboi = {
 	837.9.8 = { birth = yes }
 	841.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
  }
 #DSP FAMILY
- mmdspmom = {
+ mm_dspmom = {
 	name = "Philippa"
 	religion = catholic
 	culture = american
@@ -249,14 +249,14 @@ mmnwordboi = {
 	trait = humble
 	trait = temperate
 	810.1.1 = { birth = yes }
-	830.1.1 = { add_spouse = mmdspdad }
+	830.1.1 = { add_spouse = mm_dspdad }
 	840.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdsp reason = rival_historical }
+			set_relation_rival = { target = character:mm_dsp reason = rival_historical }
 		}
 	}
  }
- mmdspdad = {
+ mm_dspdad = {
 	name = "Phillip"
 	religion = catholic
 	culture = american
@@ -264,14 +264,14 @@ mmnwordboi = {
     trait = generous
 	trait = architect
 	800.1.1 = { birth = yes }
-	830.1.1 = { add_spouse = mmdspmom }
+	830.1.1 = { add_spouse = mm_dspmom }
 	840.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdsp reason = rival_historical }
+			set_relation_rival = { target = character:mm_dsp reason = rival_historical }
 		}
 	}
  }
- mmdsp = {
+ mm_dsp = {
 	name = "Phillip"
 	religion = catholic
 	culture = american
@@ -292,30 +292,30 @@ mmnwordboi = {
 	trait = gout_ridden
 	give_nickname = nick_dsp
 	disallow_random_traits = yes
-	father = mmdspdad
-	mother = mmdspmom
+	father = mm_dspdad
+	mother = mm_dspmom
 	820.4.6 = { 
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
 	840.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdspdad reason = rival_historical }
+			set_relation_rival = { target = character:mm_dspdad reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmdspmom reason = rival_historical }
+			set_relation_rival = { target = character:mm_dspmom reason = rival_historical }
 		}
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmwings reason = rival_historical }
+			set_relation_rival = { target = character:mm_wings reason = rival_historical }
 		}
 	}
 	876.4.17 = { death = { death_reason = death_gout_ridden } }
  }
 
 ##CYRAXX HOUSE FUCK YOU MARTYYYY
- mmwilliamdsmith = {
+ mm_williamdsmith = {
 	name = "William D"
 	religion = catholic
 	culture = american
@@ -328,8 +328,8 @@ mmnwordboi = {
 	trait = deviant
 	trait = lustful
 	785.1.11 = { birth = yes }
-	810.1.11 = { add_spouse = mmsally }
-	830.1.11 = { remove_spouse = mmsally }
+	810.1.11 = { add_spouse = mm_sally }
+	830.1.11 = { remove_spouse = mm_sally }
 	860.1.1 = {
 		death = {
 			death_reason = death_dungeon
@@ -337,7 +337,7 @@ mmnwordboi = {
 		}
 	}
  }
- mmruplesmith = {
+ mm_ruplesmith = {
 	name = "Ruple"
 	religion = catholic
 	culture = american
@@ -356,30 +356,30 @@ mmnwordboi = {
 	trait = callous
 	trait = lustful
 	trait = weak
-	mother = mmsally
-	father = mmwilliamdsmith
+	mother = mm_sally
+	father = mm_williamdsmith
 	disallow_random_traits = yes
 	825.1.11 = { 
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
-	850.1.1 = { add_spouse = mmconnie }
+	850.1.1 = { add_spouse = mm_connie }
 	851.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmmusicbizmarty reason = rival_historical }
+			set_relation_rival = { target = character:mm_musicbizmarty reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmnwordboi reason = rival_historical }
+			set_relation_rival = { target = character:mm_nwordboi reason = rival_historical }
 		}
 	}
 	886.4.17 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmnwordboi
+			killer = mm_nwordboi
 		}
 	}
  }
- mmed = {
+ mm_ed = {
 	name = "Ed"
 	religion = catholic
 	culture = american
@@ -395,15 +395,15 @@ mmnwordboi = {
 	trait = stubborn
 	trait = drunkard
 	805.1.11 = { birth = yes }
-	860.1.2 = { add_spouse = mmsally }
+	860.1.2 = { add_spouse = mm_sally }
 	885.4.17 = {
 		death = {
 			death_reason = death_childbirth_lol
-			killer = mmcyraxx
+			killer = mm_cyraxx
 		}
 	}
  }
- mmsally = {
+ mm_sally = {
 	name = "Sally"
 	religion = catholic
 	culture = american
@@ -428,19 +428,19 @@ mmnwordboi = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
-	810.1.11 = { add_spouse = mmwilliamdsmith }
-	840.1.11 = { remove_spouse = mmwilliamdsmith }
-	850.1.11 = { add_spouse = mmgordonwilkins }
-	851.1.11 = { remove_spouse = mmgordonwilkins }
-	860.1.2 = { add_spouse = mmed }
+	810.1.11 = { add_spouse = mm_williamdsmith }
+	840.1.11 = { remove_spouse = mm_williamdsmith }
+	850.1.11 = { add_spouse = mm_gordonwilkins }
+	851.1.11 = { remove_spouse = mm_gordonwilkins }
+	860.1.2 = { add_spouse = mm_ed }
 	885.4.17 = {
 		death = {
 			death_reason = death_stress_lol
-			killer = mmcyraxx
+			killer = mm_cyraxx
 		}
 	}
  }
- mmconnie = {
+ mm_connie = {
 	name = "Connie Lobdell"
 	religion = catholic
 	culture = american
@@ -458,18 +458,18 @@ mmnwordboi = {
 	trait = drunkard
 	trait = adopted
 	trait = hashishiyah
-	father = mmfounder
+	father = mm_founder
 	disallow_random_traits = yes
 	835.1.11 = { birth = yes }
-	850.1.1 = { add_spouse = mmruplesmith }
+	850.1.1 = { add_spouse = mm_ruplesmith }
 	865.4.17 = {
 		death = {
 			death_reason = death_burned
-			killer = mmconnie
+			killer = mm_connie
 		}
 	}
  }
- mmwancechilkins = {
+ mm_wancechilkins = {
 	name = "Wance Chilkins"
 	religion = stoicism
 	culture = american
@@ -491,29 +491,29 @@ mmnwordboi = {
 	trait = hygene_good_2
 	trait = herculean
 	trait = giant
-	father = mmgordonwilkins
-	mother = mmjenniewilkins
+	father = mm_gordonwilkins
+	mother = mm_jenniewilkins
 	disallow_random_traits = yes
 	835.5.24 = { birth = yes }
 	841.1.1 = {
 		effect = {
-			set_relation_friend = { target = character:mmliquid }
+			set_relation_friend = { target = character:mm_liquid }
 		}
 		effect = {
-			set_relation_friend = { target = character:mmmusicbizmarty }
+			set_relation_friend = { target = character:mm_musicbizmarty }
 		}
 		effect = {
-			set_relation_friend = { target = character:mmnwordboi }
+			set_relation_friend = { target = character:mm_nwordboi }
 		}
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmcyraxx = {
+ mm_cyraxx = {
 	name = "Patrick"
 	religion = catholic
 	culture = american
@@ -550,43 +550,43 @@ mmnwordboi = {
 	}
 	841.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmliquid reason = rival_historical }
+			set_relation_rival = { target = character:mm_liquid reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmmusicbizmarty reason = rival_historical }
+			set_relation_rival = { target = character:mm_musicbizmarty reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
+			set_relation_rival = { target = character:mm_chrischan reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
+			set_relation_rival = { target = character:mm_kcjfs reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmnwordboi reason = rival_historical }
+			set_relation_rival = { target = character:mm_nwordboi reason = rival_historical }
 		}
 	}
 	861.1.1 = {
 		effect = {
-			set_relation_lover = { target = character:mmheather exposed = yes }
+			set_relation_lover = { target = character:mm_heather exposed = yes }
 		}
 	}
 	886.4.17 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = mmnwordboi
+			killer = mm_nwordboi
 		}
 	}
  }
 #
 
 #Pokemon????
- mmsonichu = {
+ mm_sonichu = {
 	name = "Sonichu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmchrischan
-	father = mmchrischanpast
+	mother = mm_chrischan
+	father = mm_chrischanpast
 	trait = zealous
 	trait = wrathful
 	trait = dwarf
@@ -596,10 +596,10 @@ mmnwordboi = {
 	trait = education_martial_2
 	disallow_random_traits = yes
 	844.3.17 = { birth = yes }
-	850.1.1 = { add_spouse = mmrosechu }
+	850.1.1 = { add_spouse = mm_rosechu }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmmewtwo = {
+ mm_mewtwo = {
 	name = "Mewtwo"
 	religion = cwcville
 	culture = american
@@ -618,17 +618,17 @@ mmnwordboi = {
 	disallow_random_traits = yes
 	800.1.1 = { birth = yes }
 	850.1.1 = {
-		add_spouse = mmchrischan
-		add_spouse = mmmagichan
+		add_spouse = mm_chrischan
+		add_spouse = mm_magichan
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmwild = {
+ mm_wild = {
 	name = "Wild"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmrosechu
+	mother = mm_rosechu
 	trait = lifestyle_gardener
 	trait = education_learning_1
 	trait = callous
@@ -642,16 +642,16 @@ mmnwordboi = {
 	trait = vengeful
 	disallow_random_traits = yes
 	845.2.2 = { birth = yes }
-	850.1.1 = { add_spouse = mmsimonla }
+	850.1.1 = { add_spouse = mm_simona }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmsandy = {
+ mm_sandy = {
 	name = "Sandy Rosechu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	father = mmwild
-	mother = mmsimonla
+	father = mm_wild
+	mother = mm_simona
 	female = yes
 	trait = education_stewardship_1
 	trait = callous
@@ -662,7 +662,7 @@ mmnwordboi = {
 	860.8.9 = { birth = yes }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmsimonla = {
+ mm_simona = {
 	name = "Simonla Rosechu"
 	religion = cwcville
 	culture = american
@@ -673,19 +673,19 @@ mmnwordboi = {
 	trait = dwarf
 	disallow_random_traits = yes
 	845.8.9 = { birth = yes }
-	850.1.1 = { add_spouse = mmwild }
+	850.1.1 = { add_spouse = mm_wild }
 	860.8.9 = {
 		death = {
 			death_reason = death_murder
 		}
 	}
  }
- mmbubbles = {
+ mm_bubbles = {
 	name = "Bubbles Rosechu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmrosechu
+	mother = mm_rosechu
 	female = yes
 	trait = inappetetic
 	trait = education_learning_1
@@ -694,15 +694,15 @@ mmnwordboi = {
 	trait = dwarf
 	disallow_random_traits = yes
 	845.2.2 = { birth = yes }
-	850.1.1 = { add_spouse = mmblacksonichu }
+	850.1.1 = { add_spouse = mm_blacksonichu }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmblacksonichu = {
+ mm_blacksonichu = {
 	name = "Blake"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	father = mmsonichu
+	father = mm_sonichu
 	trait = wrathful
 	trait = impatient
 	trait = irritable
@@ -711,16 +711,16 @@ mmnwordboi = {
 	trait = dwarf
 	disallow_random_traits = yes
 	845.1.1 = { birth = yes }
-	850.1.1 = { add_spouse = mmbubbles }
+	850.1.1 = { add_spouse = mm_bubbles }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmdj_jamsta = {
+ mm_jamsta = {
 	name = "DJ Jamsta"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmchrischan
-	father = mmchrischanpast
+	mother = mm_chrischan
+	father = mm_chrischanpast
 	trait = sodomite
 	trait = dwarf
 	trait = lustful
@@ -730,17 +730,17 @@ mmnwordboi = {
 	844.3.17 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmpunchy reason = rival_historical }
+			set_relation_rival = { target = character:mm_punchy reason = rival_historical }
 		} 
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmpunchy = {
+ mm_punchy = {
 	name = "Punchy"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmrosechu
+	mother = mm_rosechu
 	trait = athletic
 	trait = education_martial_2
 	trait = dwarf
@@ -748,17 +748,17 @@ mmnwordboi = {
 	845.2.2 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdj_jamsta reason = rival_historical }
+			set_relation_rival = { target = character:mm_jamsta reason = rival_historical }
 		} 
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmangelica = {
+ mm_angelica = {
 	name = "Angelica Rosechu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
-	mother = mmrosechu
+	mother = mm_rosechu
 	female = yes
 	trait = zealous
 	trait = education_learning_1
@@ -771,14 +771,14 @@ mmnwordboi = {
 	845.2.2 = { birth = yes }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmsilvana = {
+ mm_silvana = {
 	name = "Silvana Rosechu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
 	sexuality = bisexual
-	father = mmgraduon
-	mother = mmrosechu
+	father = mm_graduon
+	mother = mm_rosechu
 	female = yes
 	trait = zealous
 	trait = education_intrigue_1
@@ -789,17 +789,17 @@ mmnwordboi = {
 	trait = dwarf
 	disallow_random_traits = yes
 	845.2.2 = { birth = yes }
-	850.1.1 = { add_spouse = mmmagichan }
+	850.1.1 = { add_spouse = mm_magichan }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmmagichan = {
+ mm_magichan = {
 	name = "Magi-Chan"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
 	sexuality = bisexual
-	mother = mmrosechu
-	father = mmmewtwo
+	mother = mm_rosechu
+	father = mm_mewtwo
 	trait = reclusive
 	trait = education_intrigue_1
 	trait = callous
@@ -811,17 +811,17 @@ mmnwordboi = {
 	trait = witch
 	disallow_random_traits = yes
 	845.2.2 = { birth = yes }
-	850.1.1 = { add_spouse = mmsilvana }
+	850.1.1 = { add_spouse = mm_silvana }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmrosechu = {
+ mm_rosechu = {
 	name = "Rosechu"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_sonichu
 	female = yes
-	mother = mmchrischan
-	father = mmchrischanpast
+	mother = mm_chrischan
+	father = mm_chrischanpast
 	trait = zealous
 	trait = comfort_eater
 	trait = dwarf
@@ -831,11 +831,11 @@ mmnwordboi = {
 	trait = incestuous
 	disallow_random_traits = yes
 	844.12.22 = { birth = yes }
-	850.1.1 = { add_spouse = mmsonichu }
+	850.1.1 = { add_spouse = mm_sonichu }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 ####Chris CHAN
- mmchrischanpast = {
+ mm_chrischanpast = {
 	name = "Christopher"
 	religion = protestant
 	culture = american
@@ -847,8 +847,8 @@ mmnwordboi = {
 	stewardship = 1
 	learning = 0
 	prowess = 0
-	mother = mmbarb
-	father = mmbobchan
+	mother = mm_barb
+	father = mm_bobchan
 	give_nickname = nick_chrischan
 	trait = craven
 	trait = zealous
@@ -867,17 +867,17 @@ mmnwordboi = {
 	}
 	841.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmliquid reason = rival_historical }
+			set_relation_rival = { target = character:mm_liquid reason = rival_historical }
 		}
 	}
 	906.4.17 = {
 		death = {
 			death_reason = death_duel
-			killer = mmchrischan
+			killer = mm_chrischan
 		}
 	}
  }
- mmchrischan = {
+ mm_chrischan = {
 	name = "Ian Brandon Anderson"
 	religion = cwcville
 	culture = american
@@ -890,8 +890,8 @@ mmnwordboi = {
 	stewardship = 1
 	learning = 0
 	prowess = -2
-	mother = mmbarb
-	father = mmbobchan
+	mother = mm_barb
+	father = mm_bobchan
 	trait = craven
 	trait = zealous
 	trait = gluttonous
@@ -913,24 +913,24 @@ mmnwordboi = {
 	}
 	821.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmliquid reason = rival_historical }
+			set_relation_rival = { target = character:mm_liquid reason = rival_historical }
 		}
 	}
 	841.1.1 = {
 		effect = {
-			set_relation_lover = { target = character:mmbarb exposed = yes }
+			set_relation_lover = { target = character:mm_barb exposed = yes }
 		}
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 
- mmcrystalchan = {
+ mm_crystalchan = {
 	name = "Crystal"
 	religion = cwcville
 	culture = american
 	dynasty_house = house_chandler
-	mother = mmbarb
-	father = mmchrischan
+	mother = mm_barb
+	father = mm_chrischan
 	female = yes
 	trait = stuttering
 	trait = inbred
@@ -939,7 +939,7 @@ mmnwordboi = {
 	868.4.17 = { death = { death_reason = death_inbred } }
  }
 ##CHANDLER BOBS FAMILY
- mmbob_dads_gd8 = {
+ mm_bob_dads_gd8 = {
 	name = "John Richard"
 	religion = protestant
 	culture = english
@@ -947,93 +947,93 @@ mmnwordboi = {
 	377.9.7 = { birth = yes }
 	422.5.22 = { death = yes }
  }
- mmbob_dads_gd7 = {
+ mm_bob_dads_gd7 = {
 	name = "John"
 	religion = protestant
 	culture = english
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd8
+	father = mm_bob_dads_gd8
 	400.9.7 = { birth = yes }
 	458.1.1 = { death = yes }
  }
- mmbob_dads_gd6 = {
+ mm_bob_dads_gd6 = {
 	name = "Robert"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd7
+	father = mm_bob_dads_gd7
 	430.1.1 = { birth = yes }
 	469.1.1 = { death = yes }
  }
- mmbob_dads_gd5 = {
+ mm_bob_dads_gd5 = {
 	name = "Robert"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd6
+	father = mm_bob_dads_gd6
 	456.1.1 = { birth = yes }
 	520.1.1 = { death = yes }
  }
- mmbob_dads_gd4 = {
+ mm_bob_dads_gd4 = {
 	name = "Joseph"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd5
+	father = mm_bob_dads_gd5
 	499.8.11 = { birth = yes }
 	564.10.11 = { death = yes }
  }
- mmbob_dads_gd3 = {
+ mm_bob_dads_gd3 = {
 	name = "Joseph"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd4
+	father = mm_bob_dads_gd4
 	525.2.4 = { birth = yes }
 	608.10.1 = { death = yes }
  }
- mmbob_dads_gd2 = {
+ mm_bob_dads_gd2 = {
 	name = "Edmund"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd3
+	father = mm_bob_dads_gd3
 	569.5.1 = { birth = yes }
 	618.1.1 = { death = yes }
  }
- mmbob_dads_gd1 = {
+ mm_bob_dads_gd1 = {
 	name = "Sidney Smith"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd2
+	father = mm_bob_dads_gd2
 	605.1.1 = { birth = yes }
 	664.9.1 = { death = yes }
  }
- mmbob_dads_gd = {
+ mm_bob_dads_gd = {
 	name = "Joseph"
 	religion = protestant
 	culture = confederate
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd1
+	father = mm_bob_dads_gd1
 	632.4.14 = { birth = yes }
 	725.1.4 = { death = yes }
  }
- mmbob_dads_dad = {
+ mm_bob_dads_dad = {
 	name = "Joseph Jessie"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_gd
+	father = mm_bob_dads_gd
 	671.1.23 = { birth = yes }
 	747.7.10 = { death = yes }
  }
- mmbob_dad = {
+ mm_bob_dad = {
 	name = "Robert Franklin"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dads_dad
+	father = mm_bob_dads_dad
 	trait = calm
 	trait = education_martial_1
 	trait = lazy
@@ -1043,12 +1043,12 @@ mmnwordboi = {
 	706.10.1 = { birth = yes }
 	777.4.17 = { death = { death_reason = death_incapable } }
  }
- mmbobchan = {
+ mm_bobchan = {
 	name = "Robert Bob"
 	religion = protestant
 	culture = american
 	dynasty_house = house_chandler
-	father = mmbob_dad
+	father = mm_bob_dad
 	dna = bobchan
 	martial = 1
 	diplomacy = 3
@@ -1066,7 +1066,7 @@ mmnwordboi = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
-	800.10.1 = { add_spouse = mmbarb }
+	800.10.1 = { add_spouse = mm_barb }
 	826.4.17 = { death = { death_reason = death_incapable } }
  }
  mm_bobs_son = {
@@ -1078,13 +1078,13 @@ mmnwordboi = {
 	trait = education_learning_4
 	trait = compassionate
 	trait = content
-	father = mmbobchan
+	father = mm_bobchan
 	#disallow_random_traits = yes
 	790.10.1 = { birth = yes }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }	
 #BARBS FAMILY  
- mmbardex = {
+ mm_bardex = {
 	name = "Jerry"
 	religion = catholic
 	culture = american
@@ -1095,7 +1095,7 @@ mmnwordboi = {
 	770.1.1 = { birth = yes }
 	799.12.5 = { death = { death_reason = death_banned } }
  }
- mmbarb = {
+ mm_barb = {
 	name = "Barbara Ann"
 	religion = catholic
 	culture = american
@@ -1119,27 +1119,27 @@ mmnwordboi = {
 	trait = incestuous
 	trait = witch
 	trait = depressed_1
-	father = mmbarb_dad
+	father = mm_barb_dad
 	disallow_random_traits = yes
 	790.10.1 = { 
 		birth = yes 
 		effect = { add_character_flag = has_scripted_appearance }
 	}
-	799.1.1 = { add_spouse = mmbardex }
-	800.1.1 = { add_spouse = mmbobchan }
+	799.1.1 = { add_spouse = mm_bardex }
+	800.1.1 = { add_spouse = mm_bobchan }
 	821.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmbarb_son reason = rival_historical }
+			set_relation_rival = { target = character:mm_barb_son reason = rival_historical }
 		}
 	}
 	861.1.1 = {
 		effect = {
-			set_relation_lover = { target = character:mmchrischan exposed = yes }
+			set_relation_lover = { target = character:mm_chrischan exposed = yes }
 		}
 	}
 	906.4.17 = { death = { death_reason = death_incapable } }
  }
- mmbarb_dads_gds_dad = {
+ mm_barb_dads_gds_dad = {
 	name = "Francis"
 	religion = catholic
 	culture = brit
@@ -1147,34 +1147,34 @@ mmnwordboi = {
 	593.2.1 = { birth = yes }
 	638.3.19 = { death = { death_reason = death_stress } }
  }	
- mmbarb_dads_gd = {
+ mm_barb_dads_gd = {
 	name = "Joseph Edward"
 	religion = catholic
 	culture = american
 	dynasty_house = house_weston
-	father = mmbarb_dads_gds_dad
+	father = mm_barb_dads_gds_dad
 	trait = education_martial_2
 	trait = stubborn
 	636.7.22 = { birth = yes }
 	705.1.20 = { death = { death_reason = death_stress } }
  }	
- mmbarb_dads_dad = {
+ mm_barb_dads_dad = {
 	name = "Joseph Edward"
 	religion = catholic
 	culture = american
 	dynasty_house = house_weston
-	father = mmbarb_dads_gd
+	father = mm_barb_dads_gd
 	trait = education_martial_2
 	trait = stubborn
 	661.1.12 = { birth = yes }
 	739.2.4 = { death = { death_reason = death_stress } }
  }
- mmbarb_dad = {
+ mm_barb_dad = {
 	name = "Joseph Otto"
 	religion = catholic
 	culture = american
 	dynasty_house = house_weston
-	father = mmbarb_dads_dad
+	father = mm_barb_dads_dad
 	trait = poet
 	trait = education_martial_2
 	trait = honest
@@ -1183,7 +1183,7 @@ mmnwordboi = {
 	696.10.3 = { birth = yes }
 	818.4.8 = { death = { death_reason = death_stress } }
  }
- mmbarb_son = {
+ mm_barb_son = {
 	name = "Cole Smithy"
 	religion = catholic
 	culture = american
@@ -1194,17 +1194,17 @@ mmnwordboi = {
 	trait = callous
 	trait = stubborn
 	disallow_random_traits = yes
-	mother = mmbarb
+	mother = mm_barb
 	808.10.1 = { birth = yes }
 	821.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmbarb reason = rival_historical }
+			set_relation_rival = { target = character:mm_barb reason = rival_historical }
 		}
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 ###CHRIS_CHAN TROLLZ
- mmliquid = {
+ mm_liquid = {
 	name = "The True And Honest Christian Weston Chandler"
 	religion = dwemer_religion
 	culture = american
@@ -1242,13 +1242,13 @@ mmnwordboi = {
 	}
 	851.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmchrischan reason = rival_historical }
+			set_relation_rival = { target = character:mm_chrischan reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmchrischan_past reason = rival_historical }
+			set_relation_rival = { target = character:mm_chrischan_past reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
 	852.1.1 = {
@@ -1267,7 +1267,7 @@ mmnwordboi = {
 	}
 	3000.1.1 = { death = { death_reason = death_old_age } }
  }
- mmidea_guy = {
+ mm_idea_guy = {
 	name = "Joshua Allen Wise"
 	religion = stoicism
 	culture = american
@@ -1283,11 +1283,11 @@ mmnwordboi = {
 	866.1.2 = {
 		death = {
 			death_reason = death_duel
-			killer = mmliquid
+			killer = mm_liquid
 		}
 	}
  }
- mmidea_guy1 = {
+ mm_idea_guy1 = {
 	name = "Stephen Boyd"
 	religion = stoicism
 	culture = american
@@ -1303,11 +1303,11 @@ mmnwordboi = {
 	866.1.1 = {
 		death = {
 			death_reason = death_duel
-			killer = mmliquid
+			killer = mm_liquid
 		}
 	}
  }
- mmgraduon = {
+ mm_graduon = {
 	name = "Count Graduon"
 	religion = stoicism
 	culture = english
@@ -1318,7 +1318,7 @@ mmnwordboi = {
 	433.11.17 = { birth = yes }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
- mmbella = {
+ mm_bella = {
 	name = "Isabelle Jenkis"
 	religion = blood_faith
 	culture = american
@@ -1343,11 +1343,11 @@ mmnwordboi = {
 	865.6.30 = {
 		death = {
 			death_reason = death_duel
-			killer = mmliquid
+			killer = mm_liquid
 		}
 	}
  }
- mmbluespike = {
+ mm_bluespike = {
 	name = "BlueSpike"
 	religion = stoicism
 	culture = american
@@ -1366,12 +1366,12 @@ mmnwordboi = {
 	865.1.1 = {
 		death = {
 			death_reason = death_duel
-			killer = mmliquid
+			killer = mm_liquid
 		}
 	}
  }
 #LOLCOW
- mmmrbased = {
+ mm_mrbased = {
 	name = "Mr.Based" #Jason Itzler
 	religion = samaritan
 	culture = american
@@ -1391,17 +1391,17 @@ mmnwordboi = {
 	810.2.23 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_friend = { target = character:mmworldoftshirts }
+			set_relation_friend = { target = character:mm_worldoftshirts }
 		}
 	}
 	870.1.1 = {
 		death = {
 			death_reason = death_execution
-			killer = mmpolish
+			killer = mm_polish
 		}
 	}
  }
- mmLeslieClarkgm = {
+ mm_leslieclarkgm = {
 	name = "Granny Clark"
 	sexuality = bisexual
 	religion = protestant
@@ -1414,17 +1414,17 @@ mmnwordboi = {
 	884.1.1 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmLeslieClark
+			killer = mm_leslieclark
 		}
 	}
  }
- mmLeslieClarkdad = {
+ mm_leslieclarkdad = {
 	name = "Papa Clark"
 	sexuality = bisexual
 	religion = protestant
 	culture = american
 	dynasty_house = house_lolcow
-	mother = mmLeslieClarkgm
+	mother = mm_leslieclarkgm
 	trait = lazy
 	trait = education_diplomacy_1
 	trait = irritable
@@ -1441,13 +1441,13 @@ mmnwordboi = {
 	800.1.1 = { birth = yes }
 	870.1.1 = { death = { death_reason = death_cancer } }
  }
- mmLeslieClark = {
+ mm_leslieclark = {
 	name = "Leslie Clark"
 	sexuality = bisexual
 	religion = protestant
 	culture = american
 	dynasty_house = house_lolcow
-	father = mmLeslieClarkdad
+	father = mm_leslieclarkdad
 	female = yes
 	trait = lazy
 	trait = education_diplomacy_1
@@ -1470,7 +1470,7 @@ mmnwordboi = {
 	840.1.1 = { birth = yes }
 	884.1.1 = { death = { death_reason = death_obesity } }
  }
- mmnintendofanboy = {
+ mm_nintendofanboy = {
 	name = "Harman Smith"
 	religion = catholic
 	culture = american
@@ -1494,7 +1494,7 @@ mmnwordboi = {
 	}
 	884.1.1 = { death = { death_reason = death_cancer } }
  }
- mmimnotnicholas = {
+ mm_imnotnicholas = {
 	name = "Nicholas Alahverdian"
 	religion = catholic
 	culture = american
@@ -1519,7 +1519,7 @@ mmnwordboi = {
 		}
 	}
  }
- mmjaredgenesis = {
+ mm_jaredgenesis = {
 	name = "Jared Genesis"
 	religion = catholic
 	culture = american
@@ -1542,17 +1542,17 @@ mmnwordboi = {
 	}
 	841.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
 	894.6.30 = {
 		death = {
 			death_reason = death_duel
-			killer = mmvenemir
+			killer = mm_venemir
 		}
 	}
  }
- mmjaystation = {
+ mm_jaystation = {
 	name = "Jaystation"
 	religion = satanism
 	culture = canadian
@@ -1572,7 +1572,7 @@ mmnwordboi = {
 	}
 	865.2.05 = { death = { death_reason = death_banned } }
  }
- mmshitcubeguy = {
+ mm_shitcubeguy = {
 	name = "Eric Abramov"
 	religion = samaritan
 	culture = russian
@@ -1591,12 +1591,12 @@ mmnwordboi = {
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmnintendofanboy reason = rival_historical }
+			set_relation_rival = { target = character:mm_nintendofanboy reason = rival_historical }
 		}
 	}
 	885.2.05 = { death = { death_reason = death_banned } }
  }
- mmwings = {
+ mm_wings = {
 	name = "Jordie Jordan"
 	religion = protestant
 	culture = american
@@ -1618,15 +1618,15 @@ mmnwordboi = {
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdsp reason = rival_historical }
+			set_relation_rival = { target = character:mm_dsp reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmboogie2988 reason = rival_historical }
+			set_relation_rival = { target = character:mm_boogie2988 reason = rival_historical }
 		}
 	}
 	890.6.30 = { death = { death_reason = death_obesity } }
  }
- mmdragonlord = {
+ mm_dragonlord = {
 	name = "Dragon Lord"
 	religion = catholic
 	culture = german
@@ -1642,11 +1642,11 @@ mmnwordboi = {
 	901.1.10 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = trtiandizhanghu
+			killer = tr_tiandizhanghu
 		}
 	}
  }
- mmboogie2988 = {
+ mm_boogie2988 = {
 	name = "Steven Williams"
 	religion = stoicism #theist
 	culture = american
@@ -1662,17 +1662,17 @@ mmnwordboi = {
 	820.4.21 = { birth = yes }
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmwings reason = rival_historical }
+			set_relation_rival = { target = character:mm_wings reason = rival_historical }
 		}
 	}
 	890.1.10 = {
 		death = {
 			death_reason = death_contest_duel_accident
-			killer = mmwings
+			killer = mm_wings
 		}
 	}
  }
- mmwhitebowser = { 
+ mm_whitebowser = { 
 	name = "The White Bowser"
 	religion = catholic
 	culture = american
@@ -1691,7 +1691,7 @@ mmnwordboi = {
 	820.4.29 = { birth = yes }
 	890.1.10 = { death = { death_reason = death_cancer } }
  }
- mmshannyforchrist = {
+ mm_shannyforchrist = {
 	name = "Shanny For Christ"
 	religion = catholic
 	culture = american
@@ -1711,7 +1711,7 @@ mmnwordboi = {
 	834.4.21 = { birth = yes }
 	890.1.10 = { death = { death_reason = death_obesity } }
  }
- mmtiktokpsychic = {
+ mm_tiktokpsychic = {
 	name = "Ashley Guilliard"
 	religion = catholic
 	culture = african_american
@@ -1730,7 +1730,7 @@ mmnwordboi = {
 	834.4.21 = { birth = yes }
 	878.1.10 = { death = { death_reason = death_burned_witch } }
  }
- mmspidy = {
+ mm_spidy = {
 	name = "Spidy"
 	religion = catholic
 	culture = brit #Austrilian
@@ -1744,7 +1744,7 @@ mmnwordboi = {
 	848.4.29 = { birth = yes }
 	870.1.10 = { death = { death_reason = death_cancer } }
  }
- mmworldoftshirts = {
+ mm_worldoftshirts = {
 	name = "World Of T Shirts"
 	religion = catholic
 	culture = american 
@@ -1761,18 +1761,18 @@ mmnwordboi = {
 	848.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdaniellarson reason = rival_historical }
-			set_relation_friend = { target = character:mmmrbased }
+			set_relation_rival = { target = character:mm_daniellarson reason = rival_historical }
+			set_relation_friend = { target = character:mm_mrbased }
 		}
 	}
 	870.1.10 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmdaniellarson
+			killer = mm_daniellarson
 		}
 	}
  }
- mmawareofmyself = {
+ mm_awareofmyself = {
 	name = "AWARE OF MYSELF"
 	religion = catholic
 	culture = american 
@@ -1788,11 +1788,11 @@ mmnwordboi = {
 	860.1.10 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmcyraxx
+			killer = mm_cyraxx
 		}
 	}
  }
- mmbossmanjack = {
+ mm_bossmanjack = {
 	name = "Bossman Jack" #Austin Curtis Peterson
 	religion = catholic
 	culture = american
@@ -1817,7 +1817,7 @@ mmnwordboi = {
 		}
 	}
  }
- mmn3eon = {
+ mm_n3eon = {
 	name = "N3on"
 	religion = ashari #Muslim idk what type
 	culture = american
@@ -1835,11 +1835,11 @@ mmnwordboi = {
 	870.1.10 = {
 		death = {
 			death_reason = death_duel
-			killer = trtiandinuxia
+			killer = tr_tiandinuxia
 		}
 	}
  }
- mmjupiterthehybrid = {
+ mm_jupiterthehybrid = {
 	name = "Jupiter the hybrid"
 	religion = satanism
 	culture = american
@@ -1863,7 +1863,7 @@ mmnwordboi = {
 		}
 	}
  }
- mmnovaonline = {
+ mm_novaonline = {
 	name = "Nova online"
 	religion = catholic
 	culture = american
@@ -1885,7 +1885,7 @@ mmnwordboi = {
 		}
 	}
  }
- mmtophiachu = {
+ mm_tophiachu = {
 	name = "Tophiachu"
 	religion = catholic
 	culture = african_american
@@ -1902,17 +1902,17 @@ mmnwordboi = {
 	trait = deviant
 	trait = hygene_bad_2
 	disallow_random_traits = yes
-	mother = mmmomachu
-	father = mmpapachu
+	mother = mm_momachu
+	father = mm_papachu
 	837.6.6 = { birth = yes }
 	870.4.17 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmdaniellarson
+			killer = mm_daniellarson
 		}
 	}
  }
- mmbrotherchu = {
+ mm_brotherchu = {
 	name = "Brotherchu"
 	religion = catholic
 	culture = african_american
@@ -1922,17 +1922,17 @@ mmnwordboi = {
 	trait = deviant
 	trait = hygene_bad_1
 	disallow_random_traits = yes
-	mother = mmmomachu
-	father = mmpapachu
+	mother = mm_momachu
+	father = mm_papachu
 	840.6.6 = { birth = yes }
 	866.3.11 = {
 		death = {
 			death_reason = death_murder
-			killer = mmbossmanjack
+			killer = mm_bossmanjack
 		}
 	}
  }
- mmmomachu = {
+ mm_momachu = {
 	name = "Momachu"
 	religion = catholic
 	culture = mexican
@@ -1944,15 +1944,15 @@ mmnwordboi = {
 	trait = hygene_bad_1
 	disallow_random_traits = yes
 	780.6.6 = { birth = yes }
-	830.1.1 = { add_spouse = mmpapachu }
+	830.1.1 = { add_spouse = mm_papachu }
 	866.3.11 = {
 		death = {
 			death_reason = death_murder
-			killer = mmbossmanjack
+			killer = mm_bossmanjack
 		}
 	}
  }
- mmpapachu = {
+ mm_papachu = {
 	name = "Papachu"
 	religion = catholic
 	culture = african_american
@@ -1966,16 +1966,16 @@ mmnwordboi = {
 	trait = hygene_bad_2
 	disallow_random_traits = yes
 	780.6.6 = { birth = yes }
-	830.1.1 = { add_spouse = mmmomachu }
+	830.1.1 = { add_spouse = mm_momachu }
 	870.1.1 = {
 		death = {
 			death_reason = death_dungeon
-			#killer = mmbossmanjack
+			#killer = mm_bossmanjack
 		}
 	}
  }
 #DANIEL FAMILY 
- mmnancyshimer = {
+ mm_nancyshimer = {
 	name = "Nancy"
 	religion = catholic
 	culture = american
@@ -1994,20 +1994,20 @@ mmnwordboi = {
 	785.11.4 = { birth = yes }
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdaniellarson reason = rival_historical }
+			set_relation_rival = { target = character:mm_daniellarson reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmelizabethshimer reason = rival_historical }
+			set_relation_rival = { target = character:mm_elizabethshimer reason = rival_historical }
 		}
 	}
 	852.4.17 = {
 		death = {
 			death_reason = death_cancer_lol
-			killer = mmdaniellarson
+			killer = mm_daniellarson
 		}
 	}
  }
- mmelizabethshimer = {
+ mm_elizabethshimer = {
 	name = "Elizabeth"
 	religion = catholic
 	culture = american
@@ -2028,7 +2028,7 @@ mmnwordboi = {
 	trait = adopted
 	trait = witch
 	disallow_random_traits = yes
-	mother = mmnancyshimer
+	mother = mm_nancyshimer
 	give_nickname = nick_shimer
 	820.11.4 = { 
 		birth = yes
@@ -2036,20 +2036,20 @@ mmnwordboi = {
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmdaniellarson reason = rival_historical }
+			set_relation_rival = { target = character:mm_daniellarson reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmnancyshimer reason = rival_historical }
+			set_relation_rival = { target = character:mm_nancyshimer reason = rival_historical }
 		}
 	}
 	868.4.17 = {
 		death = {
 			death_reason = death_beaten
-			killer = mmdaniellarson
+			killer = mm_daniellarson
 		}
 	}
  }
- mmdaniellarson = {
+ mm_daniellarson = {
 	name = "Daniel"
 	religion = catholic
 	culture = american
@@ -2068,7 +2068,7 @@ mmnwordboi = {
 	trait = spindly
 	trait = hygene_bad_2
 	disallow_random_traits = yes
-	mother = mmelizabethshimer
+	mother = mm_elizabethshimer
 	844.9.8 = { 
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
@@ -2078,20 +2078,20 @@ mmnwordboi = {
 			set_relation_rival = { target = character:mmwwotshirts reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmelizabethshimer reason = rival_historical }
+			set_relation_rival = { target = character:mm_elizabethshimer reason = rival_historical }
 		}
 		effect = {
-			set_relation_rival = { target = character:mmnancyshimer reason = rival_historical }
+			set_relation_rival = { target = character:mm_nancyshimer reason = rival_historical }
 		}
 	}
 	874.6.30 = {
 		death = {
 			death_reason = death_dungeon
-			killer = trcolinmcglass
+			killer = tr_colinmcglass
 		}
 	}
  }
- mmjacelarson = {
+ mm_jacelarson = {
 	name = "Jace"
 	religion = catholic
 	culture = american
@@ -2105,17 +2105,17 @@ mmnwordboi = {
 	trait = flagellant
 	trait = hygene_bad_2
 	disallow_random_traits = yes
-	mother = mmelizabethshimer
+	mother = mm_elizabethshimer
 	848.9.8 = { birth = yes }
 	885.6.30 = {
 		death = {
 			death_reason = death_explosion
-			killer = mmjacelarson
+			killer = mm_jacelarson
 		}
 	}
  }
 ##ZASTOVA
- mmputin = {
+ mm_putin = {
 	name = "Vladimir Putin"
 	religion = orthodox
 	culture = russian
@@ -2132,18 +2132,18 @@ mmnwordboi = {
 	820.4.21 = { birth = yes }
 	845.1.1 = {
 		effect = {
-			set_relation_friend = { target = character:mmshaigu }
+			set_relation_friend = { target = character:mm_shaigu }
 		}
 	}
 	890.1.10 = {
 		death = {
 			death_reason = death_murder
-			killer = mmshaigu
+			killer = mm_shaigu
 		}
 	}
  }
 
- mmshaigu = {
+ mm_shaigu = {
 	name = "Sergei Shaigu"
 	religion = orthodox
 	culture = russian
@@ -2159,7 +2159,7 @@ mmnwordboi = {
 	830.4.21 = { birth = yes }
 	845.1.1 = {
 		effect = {
-			set_relation_friend = { target = character:mmputin }
+			set_relation_friend = { target = character:mm_putin }
 		}
 	}
 	894.1.10 = {
@@ -2170,7 +2170,7 @@ mmnwordboi = {
  }
 #
 ##IAN FOOT LORE CANADA's CRYAXX
- mmianfoote = {
+ mm_ianfoote = {
 	name = "Ian Foote"
 	religion = catholic
 	culture = canadian
@@ -2190,63 +2190,63 @@ mmnwordboi = {
 	818.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmianfootedaughter reason = rival_historical }
+			set_relation_rival = { target = character:mm_ianfootedaughter reason = rival_historical }
 		}
 	}
 	890.1.10 = {
 		death = {
 			death_reason = death_execution
-			killer = mmianfootedaughter
+			killer = mm_ianfootedaughter
 		}
 	}
  }
 
- mmianfootedaughter = {
+ mm_ianfootedaughter = {
 	name = "Daughter Foote"
 	religion = catholic
 	culture = canadian
 	dynasty_house = house_witness
 	female = yes
-	father = mmianfoote
-	mother = mmianfootewife1
+	father = mm_ianfoote
+	mother = mm_ianfootewife1
 	848.4.29 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
+			set_relation_rival = { target = character:mm_ianfoote reason = rival_historical }
 		}
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 
- mmianfootewife1 = {
+ mm_ianfootewife1 = {
 	name = "Wife 1"
 	religion = catholic
 	culture = canadian
 	dynasty_house = house_witness
 	female = yes
 	828.4.29 = { birth = yes }
-	845.1.1 = { add_spouse = mmianfoote }
-	859.1.1 = { remove_spouse = mmianfoote }
+	845.1.1 = { add_spouse = mm_ianfoote }
+	859.1.1 = { remove_spouse = mm_ianfoote }
 	860.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmianfoote reason = rival_historical }
+			set_relation_rival = { target = character:mm_ianfoote reason = rival_historical }
 		}
 	}
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 
- mmianfootewife2 = {
+ mm_ianfootewife2 = {
 	name = "Shannon"
 	religion = catholic
 	culture = canadian
 	female = yes
 	835.4.29 = { birth = yes }
-	860.1.1 = { add_spouse = mmianfoote }
-	865.1.1 = { remove_spouse = mmianfoote }
+	860.1.1 = { add_spouse = mm_ianfoote }
+	865.1.1 = { remove_spouse = mm_ianfoote }
 	2066.1.1 = { death = { death_reason = death_old_age } }
  }
 #KING COBRA family
- mmcob_dad = {
+ mm_cob_dad = {
 	name = "Clint Saunders"
 	religion = catholic
 	culture = american
@@ -2257,10 +2257,10 @@ mmnwordboi = {
 	trait = education_diplomacy_2
 	disallow_random_traits = yes
 	800.3.26 = { birth = yes }
-	848.1.3 = { add_spouse = mmcob_mom }
+	848.1.3 = { add_spouse = mm_cob_mom }
 	890.1.1 = { death = { death_reason = death_old_age } }
  }
- mmcob_mom = {
+ mm_cob_mom = {
 	name = "Agnes Saunders"
 	religion = catholic
 	culture = innsmouth
@@ -2274,10 +2274,10 @@ mmnwordboi = {
 	trait = education_stewardship_2
 	disallow_random_traits = yes
 	820.3.26 = { birth = yes }
-	848.1.3 = { add_spouse = mmcob_dad }
+	848.1.3 = { add_spouse = mm_cob_dad }
 	850.1.1 = { death = { death_reason = death_sea_calling } }
  }
- mmkcjfs = {
+ mm_kcjfs = {
 	name = "Joshua Saunders" # who da FUCK just crammed "U" in the middle of "sanders"
 	religion = satanism
 	culture = american
@@ -2302,23 +2302,23 @@ mmnwordboi = {
 	}
 	851.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:mmcyraxx reason = rival_historical }
+			set_relation_rival = { target = character:mm_cyraxx reason = rival_historical }
 		}
 	}
 	860.1.2 = {
 		effect = {
-			set_relation_lover = { target = character:mmkcgf }
+			set_relation_lover = { target = character:mm_kcgf }
 		}
 	}
 	860.1.3 = { add_trait = lovers_pox }
 	861.1.2 = {
 		effect = {
-			set_relation_rival = { target = character:mmkcgf reason = rival_historical }
+			set_relation_rival = { target = character:mm_kcgf reason = rival_historical }
 		}
 	}
 	890.1.1 = { death = { death_reason = death_stress } }
  }
- mmkcgf = {
+ mm_kcgf = {
 	name = "Jessica Boil"
 	religion = catholic
 	culture = american
@@ -2335,19 +2335,19 @@ mmnwordboi = {
 	830.1.1 = { birth = yes }
 	860.1.2 = {
 		effect = {
-			set_relation_lover = { target = character:mmkcjfs }
+			set_relation_lover = { target = character:mm_kcjfs }
 		}
 	}
 	861.1.2 = {
 		effect = {
-			set_relation_rival = { target = character:mmkcjfs reason = rival_historical }
+			set_relation_rival = { target = character:mm_kcjfs reason = rival_historical }
 		}
 	}
 	866.1.1 = { death = { death_reason = death_cancer } }
  }
 
 #HISTORICAL LOLZ
- mmnbraxtonbragg = {
+ mm_nbraxtonbragg = {
 	name = "Braxton Bragg"
 	religion = protestant
 	culture = confederate
@@ -2363,7 +2363,7 @@ mmnwordboi = {
 	817.3.22 = { birth = yes }
 	876.9.27 = { death = { death_reason = death_stress } }
  }
- mmcharlesguiteau = {
+ mm_charlesguiteau = {
 	name = "Charles J. Guiteau"
 	religion = catholic
 	culture = american
@@ -2379,11 +2379,11 @@ mmnwordboi = {
 	882.6.30 = {
 		death = {
 			death_reason = death_execution
-			killer = mmsateliteman
+			killer = mm_sateliteman
 		}
 	}
  }
- mmrickastley = {
+ mm_rickastley = {
 	name = "Rick Astley"
 	religion = catholic
 	culture = brit

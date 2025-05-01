@@ -1876,6 +1876,12 @@ tr_vlad_tepes = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
+	840.10.5 = {
+		employer = tr_wallacebreen
+	}
+	860.10.5 = {
+		employer = tr_elivance
+	}
 	2066.1.1 = { death = { death_reason = death_mysterious } }
  }
  tr_barneycalhoun = {
@@ -1891,6 +1897,12 @@ tr_vlad_tepes = {
 	825.5.10 = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
+	}
+	840.10.5 = {
+		employer = tr_wallacebreen
+	}
+	860.10.5 = {
+		employer = tr_elivance
 	}
 	844.5.10 = {
 		effect = {
@@ -1914,6 +1926,9 @@ tr_vlad_tepes = {
 	810.5.10 = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
+	}
+	840.10.5 = {
+		employer = tr_wallacebreen
 	}
  }
  tr_alyxvance = {
@@ -1974,6 +1989,12 @@ tr_vlad_tepes = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
+	840.10.5 = {
+		employer = tr_wallacebreen
+	}
+	860.10.5 = {
+		employer = tr_elivance
+	}
  }
  tr_arnemagnusson = {
     name = "Arne Magnusson"
@@ -1989,6 +2010,12 @@ tr_vlad_tepes = {
 	disallow_random_traits = yes
 	816.5.10 = {
 		birth = yes
+	}
+	840.10.5 = {
+		employer = tr_wallacebreen
+	}
+	860.10.5 = {
+		employer = tr_elivance
 	}
  }
  tr_judithmossman = {
@@ -2006,6 +2033,12 @@ tr_vlad_tepes = {
 	disallow_random_traits = yes
 	830.5.10 = {
 		birth = yes
+	}
+	840.10.5 = {
+		employer = tr_wallacebreen
+	}
+	860.10.5 = {
+		employer = tr_elivance
 	}
  }
  tr_wallacebreen = {
@@ -2287,4 +2320,34 @@ tr_vlad_tepes = {
 	dynasty = dynn_tea
 	850.1.1 = { birth = yes }
 	950.1.1 = { death = yes }
+ }
+ tr_brit_alex_wanted_3 = {
+    name = "Wilford"
+	religion = protestant
+	culture = tr_tea
+	dynasty = dynn_tea
+	840.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
+ }
+  tr_brit_alex_wanted_4 = {
+    name = "Richard"
+	religion = protestant
+	culture = tr_tea
+	dynasty = dynn_tea
+	842.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
+ }
+  tr_brit_alex_wanted_5 = {
+    name = "Benedict"
+	religion = protestant
+	culture = tr_tea
+	dynasty = dynn_tea
+	832.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
  }

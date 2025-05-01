@@ -201,7 +201,59 @@ d_tonal_architects = {
 }
 d_alex_brit_name = { # 
 	color = { 100 100 100 }
-	capital = c_dakhina_desa 
+	capital = c_socotra
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+d_blackmesa = { # 
+	color = { 100 100 0 }
+	capital = c_burgas
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+d_mcglass = { # 
+	color = { 0 100 50 }
+	capital = c_gowrie
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+d_tiandi = { # 
+	color = { 200 0 0 }
+	capital = c_khotang
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+d_valmir = { # 
+	color = { 0 0 100 }
+	capital = c_nordmark
 
 	definite_form = yes
 	landless = yes

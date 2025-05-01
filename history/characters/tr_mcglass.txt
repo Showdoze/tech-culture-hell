@@ -1,8 +1,8 @@
-﻿trgeirmcglass = {
+﻿tr_geirmcglass = {
 	name = "Geir"
 	religion = norse_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	dna = geirmcglass
 	martial = 20
 	diplomacy = 5
@@ -18,7 +18,7 @@
 	trait = wrathful
 	trait = adventurer
 	520.1.11 = { birth = yes }
-	560.1.11 = { add_spouse = trgeirwife }
+	560.1.11 = { add_spouse = tr_geirwife }
 	540.1.1 = {
 		effect = {
 			add_trait = lifestyle_blademaster
@@ -40,7 +40,7 @@
 	}
 }
 
-trgeirwife = {
+tr_geirwife = {
 	name = "Olivia"
 	religion = gaelic_pagan
 	dna = mary_of_scot
@@ -61,7 +61,7 @@ trgeirwife = {
 		birth = yes
 	}
 	560.1.11 = {
-		add_spouse = trgeirmcglass
+		add_spouse = tr_geirmcglass
 	}
 	600.4.17 = {
 		death = {
@@ -70,11 +70,11 @@ trgeirwife = {
 	}
 }
 
-trfeargusmcglass = {
+tr_feargusmcglass = {
 	name = "Feargus"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 5
@@ -88,8 +88,8 @@ trfeargusmcglass = {
 	trait = arbitrary
 	trait = wrathful
 	trait = adventurer
-	father = trgeirmcglass
-	mother = trgeirwife
+	father = tr_geirmcglass
+	mother = tr_geirwife
 	560.1.11 = {
 		birth = yes
 	}
@@ -100,11 +100,11 @@ trfeargusmcglass = {
 	}
 }
 
-trloramcglass = {
+tr_loramcglass = {
 	name = "Lora"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	female = yes
 	martial = 5
 	diplomacy = 22
@@ -118,8 +118,8 @@ trloramcglass = {
 	trait = gregarious
 	trait = witch
 	trait = lustful
-	father = trgeirmcglass
-	mother = trgeirwife
+	father = tr_geirmcglass
+	mother = tr_geirwife
 	565.1.11 = {
 		birth = yes
 	}
@@ -130,11 +130,11 @@ trloramcglass = {
 	}
 }
 
-tralastairmcglass = {
+tr_alastairmcglass = {
 	name = "Alastair"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 3
 	diplomacy = 10
 	intrigue = 10
@@ -151,7 +151,7 @@ tralastairmcglass = {
 	trait = intellect_good_2
 	trait = shy
 	trait = reclusive
-	father = trfeargusmcglass
+	father = tr_feargusmcglass
 	580.1.11 = {
 		birth = yes
 	}
@@ -162,11 +162,11 @@ tralastairmcglass = {
 	}
 }
 
-trwolanmcglass = {
+tr_wolanmcglass = {
 	name = "Wolan"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 3
 	diplomacy = 1
 	intrigue = 1
@@ -176,8 +176,8 @@ trwolanmcglass = {
 	trait = inbred
 	trait = lazy
 	trait = weak
-	father = trfeargusmcglass
-	mother = trloramcglass
+	father = tr_feargusmcglass
+	mother = tr_loramcglass
 	570.1.11 = {
 		birth = yes
 	}
@@ -188,11 +188,11 @@ trwolanmcglass = {
 	}
 }
 
-trbrethmcglass = {
+tr_brethmcglass = {
 	name = "Breth"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
@@ -201,7 +201,7 @@ trbrethmcglass = {
 	prowess = 10
 	trait = vengeful
 	trait = diligent
-	father = trfeargusmcglass
+	father = tr_feargusmcglass
 	570.1.11 = {
 		birth = yes
 	}
@@ -212,11 +212,11 @@ trbrethmcglass = {
 	}
 }
 
-trkennethmcglass = {
+tr_kennethmcglass = {
 	name = "Kenneth"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
@@ -231,7 +231,7 @@ trkennethmcglass = {
 	trait = brave
 	trait = greedy
 	trait = irritable
-	mother = trloramcglass
+	mother = tr_loramcglass
 	560.1.11 = {
 		birth = yes
 	}
@@ -242,11 +242,11 @@ trkennethmcglass = {
 	}
 }
 
-tralfsirmcglass = {
+tr_alfsirmcglass = {
 	name = "Alfsir"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
@@ -260,7 +260,7 @@ tralfsirmcglass = {
 	trait = loyal
 	trait = content
 	trait = tactitian
-	father = trkennethmcglass
+	father = tr_kennethmcglass
 	600.1.11 = {
 		birth = yes
 	}
@@ -285,11 +285,11 @@ tralfsirmcglass = {
 	}
 }
 
-trbeccamcglass = {
+tr_beccamcglass = {
 	name = "Becca"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	female = yes
 	martial = 5
 	diplomacy = 10
@@ -303,7 +303,7 @@ trbeccamcglass = {
 	trait = arbitrary
 	trait = diligent
 	trait = adventurer
-	father = tralfsirmcglass
+	father = tr_alfsirmcglass
 	640.1.11 = {
 		birth = yes
 	}
@@ -314,11 +314,11 @@ trbeccamcglass = {
 	}
 }
 
-trmalcolmmcglass = {
+tr_malcolmmcglass = {
 	name = "Malcolm"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
@@ -331,7 +331,7 @@ trmalcolmmcglass = {
 	trait = arbitrary
 	trait = lustful
 	trait = callous
-	mother = trbeccamcglass
+	mother = tr_beccamcglass
 	670.1.11 = {
 		birth = yes
 	}
@@ -342,11 +342,11 @@ trmalcolmmcglass = {
 	}
 }
 
-trannamcglass = {
+tr_annamcglass = {
 	name = "Anna"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	female = yes
 	martial = 10
 	diplomacy = 10
@@ -360,7 +360,7 @@ trannamcglass = {
 	trait = content
 	trait = impatient
 	trait = deviant
-	mother = trbeccamcglass
+	mother = tr_beccamcglass
 	680.1.11 = {
 		birth = yes
 	}
@@ -371,11 +371,11 @@ trannamcglass = {
 	}
 }
 
-trthennmcglass = {
+tr_thennmcglass = {
 	name = "Thenn"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
@@ -388,7 +388,7 @@ trthennmcglass = {
 	trait = arbitrary
 	trait = lustful
 	trait = sadistic
-	mother = trannamcglass
+	father = tr_malcolmmcglass
 	700.1.11 = {
 		birth = yes
 	}
@@ -399,18 +399,18 @@ trthennmcglass = {
 	}
 }
 
-trliammcglass = {
+tr_liammcglass = {
 	name = "Liam"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
 	stewardship = 10
 	learning = 10
 	prowess = 10
-	father = trthennmcglass
+	father = tr_thennmcglass
 	730.1.11 = {
 		birth = yes
 	}
@@ -421,18 +421,18 @@ trliammcglass = {
 	}
 }
 
-trsteinmcglass = {
+tr_steinmcglass = {
 	name = "Stein"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
 	stewardship = 10
 	learning = 10
 	prowess = 10
-	father = trliammcglass
+	father = tr_liammcglass
 	760.1.11 = {
 		birth = yes
 	}
@@ -443,18 +443,18 @@ trsteinmcglass = {
 	}
 }
 
-trdonmcglass = {
+tr_donmcglass = {
 	name = "Don"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
 	stewardship = 10
 	learning = 10
 	prowess = 10
-	father = trsteinmcglass
+	father = tr_steinmcglass
 	800.1.11 = {
 		birth = yes
 	}
@@ -465,18 +465,18 @@ trdonmcglass = {
 	}
 }
 
-trcolinmcglass = {
+tr_colinmcglass = {
 	name = "Colin"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
+	dynasty_house = house_mcglass
 	martial = 10
 	diplomacy = 10
 	intrigue = 10
 	stewardship = 10
 	learning = 10
 	prowess = 10
-	father = trdonmcglass
+	father = tr_donmcglass
 	840.1.11 = {
 		birth = yes
 	}
@@ -487,49 +487,49 @@ trcolinmcglass = {
 	}
 }
 
-traleksmcglass = {
+tr_aleksmcglass = {
 	name = "Aleks"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
-	father = trcolinmcglass
-	900.1.1 = {
+	dynasty_house = house_mcglass
+	father = tr_colinmcglass
+	880.1.1 = {
 		birth = yes
 	}
-	970.4.17 = {
+	925.4.17 = {
 		death = {
 			death_reason = death_stress
 		}
 	}
 }
 
-trdeanthmcglass = {
+tr_deanthmcglass = {
 	name = "Deanth"
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
-	father = traleksmcglass
-	960.1.1 = {
+	dynasty_house = house_mcglass
+	father = tr_aleksmcglass
+	920.1.1 = {
 		birth = yes
 	}
-	1030.4.17 = {
+	990.4.17 = {
 		death = {
 			death_reason = death_fear
 		}
 	}
 }
 
-trshaunmcglass = {
+tr_shaunmcglass = {
 	name = "Shaun"
 	dna = civ_robert_bruce
 	religion = gaelic_pagan
 	culture = scottish
-	dynasty_house = house_trmcglass
-	father = trdeanthmcglass
-	1000.1.1 = {
+	dynasty_house = house_mcglass
+	father = tr_deanthmcglass
+	950.1.1 = {
 		birth = yes
 	}
-	1070.4.17 = {
+	1025.4.17 = {
 		death = {
 			death_reason = death_training_accident
 		}

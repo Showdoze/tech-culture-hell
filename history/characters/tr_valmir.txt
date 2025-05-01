@@ -2,11 +2,11 @@
 # valmir
 ############################################################
 
-mmhorrvalmir = {
+mm_horrvalmir = {
     name = "Horr"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     martial = 20
     diplomacy = 5
     intrigue = 2
@@ -21,7 +21,7 @@ mmhorrvalmir = {
     trait = diligent
     trait = wrathful
     trait = adventurer
-    father = mmvalmirfounder
+    father = mm_valmirfounder
     disallow_random_traits = yes
     790.1.11 = {
         birth = yes
@@ -43,16 +43,16 @@ mmhorrvalmir = {
     870.4.17 = {
         death = {
             death_reason = death_duel
-            killer = mmsurr
+            killer = mm_surr
         }
     }
 }
 
-mmhofvarpnir = {
+mm_hofvarpnir = {
     name = "Hofvarpnir"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     martial = 18
     diplomacy = 6
     intrigue = 3
@@ -67,7 +67,7 @@ mmhofvarpnir = {
     trait = content
     trait = wrathful
     trait = adventurer
-    father = mmvalmirfounder
+    father = mm_valmirfounder
     disallow_random_traits = yes
     800.1.11 = {
         birth = yes
@@ -88,11 +88,11 @@ mmhofvarpnir = {
     }
 }
 
-mmvenemir = {
+mm_venemir = {
     name = "Venemir"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     martial = 11
     diplomacy = 8
     intrigue = 5
@@ -104,18 +104,18 @@ mmvenemir = {
     trait = wild_oat
     trait = diligent
     trait = athlete
-    father = mmhofvarpnir
+    father = mm_hofvarpnir
     disallow_random_traits = yes
     840.1.11 = {
         birth = yes
     }
 }
 
-mmsurr = {
+mm_surr = {
     name = "Baggrum"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     martial = 10
     diplomacy = 10
     intrigue = 2
@@ -127,7 +127,7 @@ mmsurr = {
     trait = lifestyle_blademaster
     trait = diligent
     trait = athlete
-    father = mmhorrvalmir
+    father = mm_horrvalmir
     disallow_random_traits = yes
     820.5.14 = {
         birth = yes
@@ -137,11 +137,11 @@ mmsurr = {
     }
 }
 
-mmfrida = {
+mm_frida = {
     name = "Frida"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     female = yes
     martial = 12
     diplomacy = 12
@@ -157,18 +157,18 @@ mmfrida = {
     trait = honest
     trait = athlete
     trait = adventurer
-    father = mmhofvarpnir
+    father = mm_hofvarpnir
     disallow_random_traits = yes
     830.1.11 = {
         birth = yes
     }
 }
 
-mmvalmirfounder = {
+mm_valmirfounder = {
     name = "Freidrr"
     religion = norse_pagan
     culture = norse
-    dynasty_house = house_mmvalmir
+    dynasty_house = house_valmir
     martial = 34
     diplomacy = 6
     intrigue = 3
