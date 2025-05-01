@@ -207,7 +207,7 @@
     trait = ambitious
     trait = stubborn
 	trait = greedy
-	father = tr_mafia_found
+	father = tr_mafia_founder
     disallow_random_traits = yes
 	790.1.1 = { birth = yes }
 	820.1.1 = { add_spouse = tr_sopranos_tony_mom }
@@ -1784,6 +1784,7 @@ tr_vlad_tepes = {
 		effect = {
 			set_relation_friend = { target = character:tr_nerevar }
 	    }
+		set_relation_best_friend = { reason = friend_generic_history target = character:tr_nerevar }
 	}
 	1668.1.1 = {
 		death = { death_reason = death_red_mountain }
