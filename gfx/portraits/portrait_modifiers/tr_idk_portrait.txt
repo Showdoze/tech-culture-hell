@@ -1604,17 +1604,23 @@ tr_idk_karlach = {
 
     tr_karlach = {
         dna_modifiers = {
-            #accessory = {
-            #    mode = add
-            #    gene = beards
-            #    template = no_beard
-            #    range = { 0 1 }
-            #}
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = female_hair_fp1_01
+                template = rtt_hairstyles
+                accessory = female_hair_rtt_02_milla
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = western_common_legwear
+                accessory = female_legwear_secular_western_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = religious_african_high_clothes
+                accessory = female_clothes_religious_african_high_01_common
             }
             accessory = {
                 mode = add
