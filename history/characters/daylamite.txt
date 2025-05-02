@@ -1,14 +1,14 @@
 ﻿45107 = {
-	name = "Vandad"	# Fictional leader of the House of Karen at the time
-	dynasty = 7511	# Karen
+	name = "Baduspan" 
+	dynasty_house = house_karen # Karen
 	martial = 7
 	diplomacy = 5
 	intrigue = 5
 	stewardship = 4
-	religion = mazdayasna
+	religion = mutazila
 	culture = daylamite
 	trait = education_martial_2
-	father = 45110
+	father = extra_daylamites_4
 	830.1.1 = {
 		birth = yes
 	}
@@ -108,8 +108,8 @@
 45109 = {
 	name = "Farah" # Fictional
 	female = yes
-	dynasty = 7511
-	religion = "mazdayasna"
+	dynasty_house = house_karen
+	religion = "ashari"
 	culture = daylamite
 	father = 45110
 	835.1.1 = {
@@ -122,7 +122,7 @@
 
 45110 = {
 	name = "Maziar" # Historical. Died in revolt against the Caliph
-	dynasty = 7511
+	dynasty_house = house_karen
 	martial = 7
 	religion = "mazdayasna"
 	culture = daylamite
@@ -132,6 +132,9 @@
 	father = 160296
 	800.5.3 = {
 		birth = yes
+	}
+	820.1.1 = {
+		religion = ashari
 	}
 	840.3.1 = {
 		death = {
@@ -143,7 +146,7 @@
 
 160296 = {
 	name = "Karen"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160297
@@ -156,7 +159,7 @@
 }
 160297 = {
 	name = "Vandad_Hormozd"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160298
@@ -169,7 +172,7 @@
 }
 188731 = {
 	name = "Maziar" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160298
@@ -182,7 +185,7 @@
 }
 160298 = {
 	name = "Karen" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160299
@@ -195,7 +198,7 @@
 }
 160299 = {
 	name = "Vandad" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160300
@@ -208,7 +211,7 @@
 }
 160300 = {
 	name = "Balash"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160301
@@ -221,7 +224,7 @@
 }
 160301 = {
 	name = "Alanda"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160302
@@ -234,11 +237,11 @@
 }
 160302 = {
 	name = "Karen"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160303
-	490.1.1 = {
+	520.1.1 = {
 		birth = yes
 	}
 	600.1.1 = {
@@ -247,7 +250,7 @@
 }
 160303 = {
 	name = "Sukhra"
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	trait = ambitious
@@ -272,7 +275,7 @@
 }
 160304 = {
 	name = "Zarmihr" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160305
@@ -285,7 +288,7 @@
 }
 160305 = {
 	name = "Alanda" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160306
@@ -298,7 +301,7 @@
 }
 160306 = {
 	name = "Sukhra" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160307
@@ -311,7 +314,7 @@
 }
 160307 = {
 	name = "Balash" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160308
@@ -324,7 +327,7 @@
 }
 160308 = {
 	name = "Zarmihr" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 160309
@@ -337,7 +340,7 @@
 }
 160309 = {
 	name = "Karen" #unhistorical
-	dynasty = 7511
+	dynasty_house = house_karen
 	religion = "mazdayasna"
 	culture = daylamite
 	father = 159557 #Karen-Pahlav lineage
@@ -359,7 +362,7 @@
 	intrigue = 5
 	stewardship = 4
 	learning = 3
-	religion = "mazdayasna"
+	religion = "ashari"
 	culture = daylamite
 	trait = diligent
 	trait = just
@@ -499,9 +502,9 @@
 	}
 }
 160294 = {
-	name = "Karen"
+	name = "Qarin"
 	dynasty_house = house_bavandid # Bavandid
-	religion = "mazdayasna"
+	religion = "ashari"
 	culture = daylamite
 	father = 160292
 	795.1.1 = {
@@ -525,9 +528,9 @@
 	name = "Shervin"
 	dna = 160295_shervin_II
 	dynasty_house = house_bavandid # Bavandid
-	religion = "mazdayasna"
+	religion = "ashari"
 	culture = daylamite
-	mother = fictional_daylamites_1
+	mother = fictional_daylamites_1 
 	father = 45105
 	865.3.3 = {
 		birth = yes
@@ -1053,12 +1056,11 @@
 180750 = {
 	name = "Justan"
 	# Justan I of Gilan
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "mazdayasna"
-	culture = persian
-	father = 1059969
-	739.1.1 = {
-		birth = "739.1.1"
+	culture = daylamite
+	745.1.1 = {
+		birth = "745.1.1"
 	}
 	805.1.1 = {
 		death = "805.1.1"
@@ -1067,7 +1069,7 @@
 180751 = {
 	name = "Merzuban"
 	# ruler of Gilan
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "mazdayasna" # Really ismaili, but we need a suitable mazdayasna presence in the area
 	culture = daylamite
 	father = 180750
@@ -1081,8 +1083,8 @@
 180752 = {
 	name = "Justan"
 	# Justan II of Gilan
-	dynasty = 1029100
-	religion = "mazdayasna"	# Really ismaili, but we need a suitable mazdayasna presence in the area
+	dynasty = 7513
+	religion = "zayidi" 
 	culture = daylamite
 	father = 180751
 	805.1.1 = {
@@ -1096,9 +1098,9 @@
 	name = "Zerya"	# fictional
 	# wife of Musafir Sallarid
 	female = yes
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "mazdayasna"
-	culture = persian
+	culture = daylamite
 	father = 180752
 	839.1.1 = {
 		birth = "839.1.1"
@@ -1110,9 +1112,9 @@
 180755 = {
 	name = "Justan"
 	# Justan III of Gilan
-	dynasty = 1029100
-	religion = "mazdayasna"	# Really ismaili, but we need a suitable mazdayasna presence in the area
-	culture = persian
+	dynasty = 7513
+	religion = zayidi
+	culture = daylamite
 	father = 41605
 	mother = 180763
 	860.1.1 = {
@@ -1126,7 +1128,7 @@
 	name = "NazenI_n"
 	# wife of Muhammad ibn Musafir
 	female = yes
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "ismaili"
 	culture = daylamite
 	father = 180755
@@ -1140,9 +1142,9 @@
 180757 = {
 	name = "Ali"
 	# Abbasid governor of Rayy
-	dynasty = 1029100
-	religion = "mazdayasna"	# Really ismaili, but we need a suitable mazdayasna presence in the area
-	culture = persian
+	dynasty = 7513
+	religion = "zayidi" 
+	culture = daylamite
 	father = 41605
 	mother = 180763
 	862.1.1 = {
@@ -1158,9 +1160,9 @@
 180758 = {
 	name = "Khosrow_Firuz"
 	# ruler of Gilan
-	dynasty = 1029100
-	religion = "mazdayasna"	# Really ismaili, but we need a suitable mazdayasna presence in the area
-	culture = persian
+	dynasty = 7513
+	religion = "zayidi"
+	culture = daylamite
 	father = 41605
 	mother = 180763
 	864.1.1 = {
@@ -1173,7 +1175,7 @@
 180759 = {
 	name = "Mahdi"
 	# ruler of Gilan
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "zayidi"
 	culture = daylamite
 	father = 180758
@@ -1187,7 +1189,7 @@
 180760 = {
 	name = "Justan"
 	# Justan IV
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "zayidi"
 	culture = daylamite
 	father = 180759
@@ -1200,7 +1202,7 @@
 }
 180761 = {
 	name = "Manadhar"
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "zayidi"
 	culture = daylamite
 	father = 180760
@@ -1213,7 +1215,7 @@
 }
 180762 = {
 	name = "Khosrow"
-	dynasty = 1029100
+	dynasty = 7513
 	religion = "zayidi"
 	culture = daylamite
 	father = 180761
@@ -1225,96 +1227,18 @@
 	}
 }
 41605 = {
-	name = "Khosrau"
-	dynasty = 1029100	# Justanid
-	martial = 15
-	diplomacy = 15
-	religion = "mazdayasna"	# Really ismaili, but we need a suitable mazdayasna presence in the area
-	culture = persian
+	name = "Wahsudan"
+	dynasty = 7513 # Justanid
+	martial = 7
+	religion = "zayidi"
+	culture = daylamite
 	father = 180752
-	trait = ambitious
-	trait = brave
-	trait = just
-	trait = stubborn
-	trait = education_martial_4
-	trait = pure_blooded
-	disallow_random_traits = yes
+	trait = education_learning_3
 	835.1.1 = {
 		birth = yes
 	}
 	859.1.1 = {
 		add_spouse = 180763
-		effect = {
-			add_gold = 666
-		}
-		add_pressed_claim = title:d_fars
-		add_pressed_claim = title:d_hamadan
-		add_pressed_claim = title:k_makran
-		add_pressed_claim = title:d_tabaristan
-	}
-	867.1.1 = {
-		# Give Viking adventurer some adventuring troops.
-		effect = {
-			if = {
-				limit = {
-					has_fp1_dlc_trigger = yes
-				}
-				spawn_army = {
-					name = event_troop_default_name
-					levies = 2000
-					men_at_arms = {
-						type = huscarl
-						stacks = 2
-					}
-					men_at_arms = {
-						type = varangian_veterans
-						stacks = 2
-					}
-					location = 2157
-					origin = 2157
-					inheritable = no
-				}
-			}
-			else = {
-				spawn_army = {
-					name = event_troop_default_name
-					levies = 2600
-					men_at_arms = {
-						type = huscarl
-						stacks = 4
-					}
-					location = 2157
-					origin = 2157
-					inheritable = no
-				}
-			}
-		}
-		effect = {
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-		}
 	}
 	#867.1.1 = {
 	#	# A little something to hold out
@@ -1516,8 +1440,7 @@
 		birth = yes
 	}
 	1075.1.1 = {
-		add_spouse = 1229910
-		#add_spouse = 1000229910
+		add_spouse = 1000229910
 	}
 	1095.1.1 = {
 		death = yes
