@@ -372,6 +372,9 @@
 	potential = {	
 		this = culture:halfling		
 	}
+	county_modifier = {
+		building_slot_add = 1
+	}
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -883,7 +886,7 @@
  } 
  innovation_thief_city_watch = {
 	group = culture_group_military
-	culture_era = culture_era_antiquity
+	culture_era = culture_era_tribal
 	icon = @thief_city_watch
 	potential = {
 		this = culture:thief_city
