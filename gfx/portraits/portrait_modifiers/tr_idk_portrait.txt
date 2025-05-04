@@ -2301,6 +2301,44 @@ tr_idk_gael = {
         }
     }
 }
+tr_idk_patches = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_patches = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_patches
+                this = character:tr_ds_patches
+            }
+        }
+    }
+}
 tr_idk_corvus = {
 
     usage = game

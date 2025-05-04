@@ -8,30 +8,33 @@
         dna_modifiers = {
             accessory = {
                 mode = add
-                gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_steppe_01
+                gene = beards
+                template = western_beards_straight
+                accessory = male_beard_western_01
             }
             accessory = {
                 mode = add
-                gene = beards
-                template = all_beards
-                accessory = male_beard_fp2_iberian_christian_04
-                range = { 0 1 } # For the randomness to work correctly
+                gene = hairstyles
+                template = mpo_mongol_hairstyles
+                accessory = m_hair_mpo_mongol_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = mena_war_legwear
+                accessory = male_legwear_secular_mena_war_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = western_bedchamber
+                accessory = male_clothes_situational_western_bedchamber_01_common
             }
             accessory = {
                 mode = add
                 gene = headgear
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
-            }
-            morph = {
-                mode = modify
-                gene = gene_bs_body_type
-                value = {
-                    value = scope:weight_for_portrait # An absolute and normalized value derived from character body weight
-                    multiply = 1
-                }
             }
         }
         weight = {
