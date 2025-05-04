@@ -41,9 +41,32 @@ tr_doctrines = {
 			virtues = { 
 				just = 2 lifestyle_physician pure_blooded = 2 follow_osiris follow_isis 
 			    follow_horus follow_seth follow_anubis follow_bastet follow_amun 
-				follow_hathor 
+				follow_hathor forgiving just temperate 
 			}
-			sins = { arbitrary = 2 }
+			sins = { arbitrary = 2 greedy deceitful }
+		}
+	}
+	tenet_atenist = {
+		icon = core_tenet_kemetic
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			divine_marriage_opinion = 10
+			divine_marriage_piety_gain_active = yes
+			divine_the_stars_active = yes
+			legalism_modified_law_costs = yes
+			legalism_modified_law_costs_2 = yes
+			legalism_reduced_faction_virtues = yes
+			legalism_increased_faction_sins = yes
+			legalism_trust_just_leader_active = yes
+		}
+		character_modifier = {
+		}
+		traits = {
+			virtues = { 
+				just = 2 lifestyle_physician pure_blooded = 2  forgiving just temperate 
+			}
+			sins = { arbitrary = 2 greedy deceitful }
 		}
 	}
 	tenet_hellenic = {
@@ -694,6 +717,262 @@ tr_doctrines = {
 			}
 			sins = { 
 				compassionate lazy honest chaste forgiving follow_eilistraee class_paladin_oathbreaker 
+			}
+		}
+	}
+	tenet_sumerian = {
+		icon = core_tenet_sanctity_of_nature
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			fervor_per_holy_site = 1
+			believes_in_harmony_with_nature_invisible = yes
+		}
+		traits = {
+			virtues = { 
+				chaste just diligent 
+			}
+			sins = { 
+				lustful arbitrary lazy  
+			}
+		}
+		character_modifier = {
+			forest_advantage = 5
+			forest_attrition_mult = -0.25
+			taiga_advantage = 5
+			taiga_attrition_mult = -0.25
+			jungle_advantage = 5
+			jungle_attrition_mult = -0.25
+			build_gold_cost = 0.1
+			county_opinion_add = 5
+		}
+	}
+	tenet_akkadian = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		parameters = {
+			fervor_per_holy_site = 1
+			clergy_can_fight = yes
+		}
+		traits = {
+			virtues = { 
+				chaste just diligent 
+			}
+			sins = { 
+				lustful arbitrary lazy 
+			}
+		}
+	}
+	tenet_babylonian = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		parameters = {
+			fervor_per_holy_site = 1
+			clergy_can_fight = yes
+		}
+		traits = {
+			virtues = { 
+				chaste just diligent 
+			}
+			sins = { 
+				lustful arbitrary lazy 
+			}
+		}
+	}
+	tenet_assyrian = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		parameters = {
+			fervor_per_holy_site = 1
+			clergy_can_fight = yes
+		}
+		traits = {
+			virtues = { 
+				chaste just diligent 
+			}
+			sins = { 
+				lustful arbitrary lazy 
+			}
+		}
+	}
+	tenet_brythonic = {
+		icon = core_tenet_pentarchy
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			no_unfaithfulness_penalty_active = yes
+		}
+		traits = {
+			virtues = { 
+				honest just brave gregarious 
+			}
+			sins = { 
+				deceitful arbitrary vengeful lazy 
+			}
+		}
+	}
+	tenet_gaelic = {
+		icon = core_tenet_pentarchy
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			no_unfaithfulness_penalty_active = yes
+		}
+		traits = {
+			virtues = { 
+				honest just brave gregarious 
+			}
+			sins = { 
+				deceitful arbitrary vengeful lazy 
+			}
+		}
+	}
+	tenet_gaulish = {
+		icon = core_tenet_pentarchy
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			no_unfaithfulness_penalty_active = yes
+		}
+		traits = {
+			virtues = { 
+				honest just brave gregarious 
+			}
+			sins = { 
+				deceitful arbitrary vengeful lazy 
+			}
+		}
+	}
+	tenet_welsh = {
+		icon = core_tenet_pentarchy
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			no_unfaithfulness_penalty_active = yes
+		}
+		traits = {
+			virtues = { 
+				honest just brave gregarious 
+			}
+			sins = { 
+				deceitful arbitrary vengeful lazy 
+			}
+		}
+	}
+	tenet_canaanite = {
+		icon = core_tenet_human_sacrifice
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			human_sacrifice_active = yes
+			flower_war_cb_active = yes
+		}
+		character_modifier = {
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
+		}
+		traits = {
+			virtues = { 
+				brave just diligent compassionate 
+			}
+			sins = { 
+				craven arbitrary lazy wrathful 
+			}
+		}
+	}
+	tenet_yahwism = {
+		icon = core_tenet_communal_identity
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			same_culture_conversion_bonus_active = yes
+			same_faith_promote_culture_bonus_active = yes
+			other_culture_conversion_penalty_active = yes
+		}
+		character_modifier = {
+			name = "tenet_communal_identity_opinion"
+			same_faith_opinion = 10
+		}
+		traits = {
+			virtues = { 
+				brave just diligent compassionate 
+			}
+			sins = { 
+				craven arbitrary lazy wrathful 
+			}
+		}
+	}
+	tenet_philistinian = {
+		icon = core_tenet_false_conversion_sanction
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			sanctioned_false_conversion = yes
+		}
+		character_modifier = {
+			monthly_intrigue_lifestyle_xp_gain_mult = 0.1 #FP3 addition to make this tenet more attractive
+		}
+		traits = {
+			virtues = { 
+				brave just diligent compassionate 
+			}
+			sins = { 
+				craven arbitrary lazy wrathful 
+			}
+		}
+	}
+	tenet_phoenician = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			clergy_can_fight = yes
+		}
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		traits = {
+			virtues = { 
+				brave just diligent compassionate 
+			}
+			sins = { 
+				craven arbitrary lazy wrathful 
+			}
+		}
+	}
+	tenet_punic = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			clergy_can_fight = yes
+		}
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		traits = {
+			virtues = { 
+				brave just diligent compassionate 
+			}
+			sins = { 
+				craven arbitrary lazy wrathful 
 			}
 		}
 	}
