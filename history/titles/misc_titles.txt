@@ -386,6 +386,24 @@
 	1170.1.1 = { holder = ck_persian_claimant_8 }
 	1249.1.1 = { holder = 0 }
  }
+ d_merovech_claimant = {
+	751.11.1 = {
+		liege = 0
+		holder = 168127
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1920.1.1 }
+		}
+	}
+	804.1.1 = { holder = 168129 }
+	825.1.1 = { holder = mero_frank_claimant_1 }
+	850.1.1 = { holder = mero_frank_claimant_2 }
+	900.1.1 = { holder = mero_frank_claimant_3 }
+	1000.1.1 = { holder = 0 }
+ }
  d_mafia = {
 	750.1.1 = {
 		liege = 0

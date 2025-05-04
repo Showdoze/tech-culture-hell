@@ -1913,8 +1913,9 @@
 	555.1.1 = { birth = yes }
 	666.1.1 = { death = yes }
  }    
-
-#Persian
+#########
+#Persian#
+#########
  ck_persian_claimant_1 = {
 	name = "Shapur"
 	religion="mazdayasna"
@@ -2018,5 +2019,55 @@
 	culture = "persian"
 	1150.1.1 = { birth = yes }
 	1249.1.1 = { death = { death_reason = death_old_age } }
+ }
+###### 
+#Frence/ Frankish ME_rovech
+###########
+ mero_frank_claimant_1 = {
+	name = "ChildE_ric"
+	dynasty = 542
+	religion = "catholic"
+	culture = "frankish"
+	father = 168129
+	800.1.1 = { birth = yes }
+	850.1.1 = { death = yes }
+ }
+ mero_frank_claimant_2 = {
+	name = "ME_rovech"
+	dynasty = 542
+	religion = "catholic"
+	culture = "frankish"
+	father = mero_frank_claimant_1
+	trait = ambitious
+	trait = diligent
+	trait = organizer
+	trait = education_martial_4
+	trait = lifestyle_hunter
+	disallow_random_traits = yes
+	840.1.1 = { 
+		birth = yes 
+		add_pressed_claim = title:k_france
+		add_pressed_claim = title:c_ile_de_france
+	}
+	900.1.1 = { death = yes }
+ }
+ mero_frank_claimant_2_son = {
+	name = "Clodion"
+	dynasty = 542
+	religion = "catholic"
+	culture = "frankish"
+	father = mero_frank_claimant_2
+	860.1.1 = {  birth = yes  }
+	890.1.1 = { death = { death_reason = death_contest_joust_accident } }
+ }
+ mero_frank_claimant_3 = {
+	name = "Clovis"
+	dynasty = 542
+	religion = "catholic"
+	culture = "frankish"
+	father = mero_frank_claimant_2
+	trait = venerable
+	888.1.1 = { birth = yes }
+	1000.1.1 = { death = yes }
  }
 #
