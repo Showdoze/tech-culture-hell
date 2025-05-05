@@ -2333,6 +2333,87 @@ mm_nwordboi = {
 	dynasty_house = house_amoug_us
 	848.1.1 = {  birth = yes }
  }
+  tr_sus_2 = {
+	name = "Very" 
+	religion = blood_faith
+	culture = sus_culture
+	dynasty_house = house_amoug_us
+	842.1.1 = {  birth = yes }
+	850.10.5 = {
+		employer = tr_sus_1
+	}
+ }
+   tr_sus_3 = {
+	name = "Adequately" 
+	religion = blood_faith
+	culture = sus_culture
+	dynasty_house = house_amoug_us
+	835.1.1 = {  birth = yes }
+	860.10.5 = {
+		employer = tr_sus_1
+	}
+ }
+ #british 
+ tr_brit_alex_wanted = {
+    name = "Charles"
+	religion = protestant
+	culture = tr_tea
+	dynasty_house = house_tea
+	dna = nigel_thornberry
+    trait = education_martial_3
+	trait = diligent
+	trait = just
+	trait = brave
+	trait = honest
+	trait = lifestyle_wayfarer
+	trait = arrogant
+	trait = athletic
+	disallow_random_traits = yes
+	830.1.1 = { 
+		birth = yes 
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+	900.1.1 = { death = yes }
+ }
+ tr_brit_alex_wanted_2 = {
+    name = "Robert"
+	father = tr_brit_alex_wanted
+	religion = protestant
+	culture = tr_tea
+	dynasty_house = house_tea
+	850.1.1 = { birth = yes }
+	950.1.1 = { death = yes }
+ }
+ tr_brit_alex_wanted_3 = {
+    name = "Wilford"
+	religion = protestant
+	culture = tr_tea
+	dynasty_house = house_tea
+	840.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
+ }
+  tr_brit_alex_wanted_4 = {
+    name = "Richard"
+	religion = protestant
+	culture = tr_tea
+	dynasty_house = house_tea
+	842.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
+ }
+  tr_brit_alex_wanted_5 = {
+    name = "Benedict"
+	religion = protestant
+	culture = tr_tea
+	dynasty_house = house_tea
+	832.1.1 = { birth = yes }
+	850.10.5 = {
+		employer = tr_brit_alex_wanted
+	}
+ }
 #HISTORICAL LOLZ
  mm_nbraxtonbragg = {
 	name = "Braxton Bragg"
