@@ -28,7 +28,6 @@
     doctrine = doctrine_pilgrimage_encouraged
     #Funeral tradition
     doctrine = doctrine_funeral_stoic
-
     custom_faith_icons = {
         custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
         custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10
@@ -241,9 +240,7 @@
             doctrine = tenet_ancestor_worship
             doctrine = tenet_shinto
             doctrine = tenet_adorcism
-
-            # SHOGUNATE teaching of buddhism
-            doctrine = special_doctrine_is_buddhist_faith
+            doctrine = special_doctrine_is_buddhist_faith # SHOGUNATE teaching of buddhism
             localization = {
                 #HighGodName
                 HighGodName = shinto_high_god_name
@@ -869,42 +866,36 @@
                 FertilityGodSheHe = CHARACTER_SHEHE_SHE
                 FertilityGodHerHis = CHARACTER_HERHIS_HER
                 FertilityGodHerHim = CHARACTER_HERHIM_HER
-
                 #WealthGod
                 WealthGodName = west_christian_wealth_god_name
                 WealthGodNamePossessive = west_christian_wealth_god_name_possessive
                 WealthGodSheHe = CHARACTER_SHEHE_HE
                 WealthGodHerHis = CHARACTER_HERHIS_HIS
                 WealthGodHerHim = CHARACTER_HERHIM_HIM
-
                 #HouseholdGod
                 HouseholdGodName = west_christian_household_god_name
                 HouseholdGodNamePossessive = west_christian_household_god_name_possessive
                 HouseholdGodSheHe = CHARACTER_SHEHE_HE
                 HouseholdGodHerHis = CHARACTER_HERHIS_HIS
                 HouseholdGodHerHim = CHARACTER_HERHIM_HIM
-
                 #KnowledgeGod
                 KnowledgeGodName = west_christian_knowledge_god_name
                 KnowledgeGodNamePossessive = west_christian_knowledge_god_name_possessive
                 KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
                 KnowledgeGodHerHis = CHARACTER_HERHIS_HER
                 KnowledgeGodHerHim = CHARACTER_HERHIM_HER
-
                 #WarGod
                 WarGodName = west_christian_war_god_name
                 WarGodNamePossessive = west_christian_war_god_name_possessive
                 WarGodSheHe = CHARACTER_SHEHE_HE
                 WarGodHerHis = CHARACTER_HERHIS_HIS
                 WarGodHerHim = CHARACTER_HERHIM_HIM
-
                 #WaterGod
                 WaterGodName = west_christian_water_god_name
                 WaterGodNamePossessive = west_christian_water_god_name_possessive
                 WaterGodSheHe = CHARACTER_SHEHE_HE
                 WaterGodHerHis = CHARACTER_HERHIS_HIS
                 WaterGodHerHim = CHARACTER_HERHIM_HIM
-
                 # Patriarchs instead of Popes
                 ReligiousHeadName = orthodox_religious_head_title
                 ReligiousHeadTitleName = orthodox_religious_head_title_name
@@ -1073,13 +1064,11 @@
 			color = { 0.67 0.19 0.19 }
 			icon = sumerian
 			reformed_icon = sumerian_reformed
-
 			holy_site = qadisiya
 			holy_site = wasit
 			holy_site = basra
 			holy_site = takrit
 			holy_site = sardan
-
 			doctrine = unreformed_faith_doctrine
             doctrine = pagan_hostility_doctrine
 	        #Main Group
@@ -1278,7 +1267,6 @@
 			 doctrine = doctrine_clerical_succession_spiritual_appointment
 			#Funeral tradition
 			 doctrine = doctrine_funeral_cremation
-
 			doctrine = tenet_akkadian
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_astrology
@@ -1434,7 +1422,7 @@
 			 doctrine = doctrine_consanguinity_restricted
 			#Crimes
 			 doctrine = doctrine_homosexuality_accepted
-			doctrine = doctrine_adultery_men_accepted
+			 doctrine = doctrine_adultery_men_accepted
 			 doctrine = doctrine_adultery_women_crime
 			 doctrine = doctrine_kinslaying_close_kin_crime
 			 doctrine = doctrine_deviancy_accepted
@@ -1446,11 +1434,9 @@
 			 doctrine = doctrine_clerical_succession_spiritual_appointment
 			#Funeral tradition
 			 doctrine = doctrine_funeral_cremation
-			
 			doctrine = tenet_babylonian
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_ancestor_worship
-
 			holy_order_names = {
 				{ name = "holy_order_knights_of_marduk" }
 				{ name = "holy_order_champions_of_the_dying_god" }
@@ -1593,31 +1579,32 @@
 			holy_site = harran
 			holy_site = nicosia
 			holy_site = tyana
-			doctrine = unreformed_faith_doctrine
-            #Main Group
-			 doctrine = doctrine_spiritual_head
-			 doctrine = doctrine_gender_male_dominated
-			 doctrine = doctrine_pluralism_righteous
-			 doctrine = doctrine_theocracy_temporal
-			#Marriage
-			 doctrine = doctrine_concubines
-			 doctrine = doctrine_divorce_approval
-			 doctrine = doctrine_bastardry_legitimization
-			 doctrine = doctrine_consanguinity_restricted
-			#Crimes
-			 doctrine = doctrine_homosexuality_accepted
-			 doctrine = doctrine_adultery_men_accepted
-			 doctrine = doctrine_adultery_women_crime
-			 doctrine = doctrine_kinslaying_close_kin_crime
-			 doctrine = doctrine_deviancy_accepted
-			 doctrine = doctrine_witchcraft_accepted
-			#Clerical Functions
-			 doctrine = doctrine_clerical_function_taxation
-			 doctrine = doctrine_clerical_gender_either
-			 doctrine = doctrine_clerical_marriage_allowed
-			 doctrine = doctrine_clerical_succession_spiritual_appointment
-			#Funeral tradition
-			 doctrine = doctrine_funeral_cremation
+			#doctrine
+			 doctrine = unreformed_faith_doctrine
+             #Main Group
+			  doctrine = doctrine_spiritual_head
+			  doctrine = doctrine_gender_male_dominated
+			  doctrine = doctrine_pluralism_righteous
+			  doctrine = doctrine_theocracy_temporal
+			 #Marriage
+			  doctrine = doctrine_concubines
+			  doctrine = doctrine_divorce_approval
+			  doctrine = doctrine_bastardry_legitimization
+			  doctrine = doctrine_consanguinity_restricted
+			 #Crimes
+			  doctrine = doctrine_homosexuality_accepted
+			  doctrine = doctrine_adultery_men_accepted
+			  doctrine = doctrine_adultery_women_crime
+			  doctrine = doctrine_kinslaying_close_kin_crime
+			  doctrine = doctrine_deviancy_accepted
+			  doctrine = doctrine_witchcraft_accepted
+			 #Clerical Functions
+			  doctrine = doctrine_clerical_function_taxation
+			  doctrine = doctrine_clerical_gender_either
+			  doctrine = doctrine_clerical_marriage_allowed
+			  doctrine = doctrine_clerical_succession_spiritual_appointment
+			 #Funeral tradition
+			  doctrine = doctrine_funeral_cremation
 			doctrine = tenet_assyrian
 			doctrine = tenet_esotericism
 			doctrine = tenet_ancestor_worship
@@ -1756,7 +1743,6 @@
             color = { 0.2 0.54 0.46 }
 			icon = brythonic
 			reformed_icon = brythonic_reformed
-
 			holy_site = gloucestershire
 			holy_site = cornwall
 			holy_site = vannes
@@ -1785,7 +1771,6 @@
 	        #Funeral tradition
 	        doctrine = doctrine_funeral_bewailment
 			doctrine = unreformed_faith_doctrine
-
 			#doctrine = tenet_polyamory
             doctrine = tenet_brythonic
 			doctrine = tenet_sanctity_of_nature
@@ -1821,87 +1806,74 @@
 				HighGodHerHis = CHARACTER_HERHIS_HIS
 				HighGodNameAlternate = brythonic_high_god_name_alternate
 				HighGodNameAlternatePossessive = brythonic_high_god_name_alternate_possessive
-
 				#Creator
 				CreatorName = brythonic_creator_god_name
 				CreatorNamePossessive = brythonic_creator_god_name_possessive
 				CreatorSheHe = CHARACTER_SHEHE_HE
 				CreatorHerHis = CHARACTER_HERHIS_HIS
 				CreatorHerHim = CHARACTER_HERHIM_HIM
-
 				#HealthGod
 				HealthGodName = brythonic_health_god_name
 				HealthGodNamePossessive = brythonic_health_god_name_possessive
 				HealthGodSheHe = CHARACTER_SHEHE_HE
 				HealthGodHerHis = CHARACTER_HERHIS_HIS
 				HealthGodHerHim = CHARACTER_HERHIM_HIM
-				
 				#FertilityGod
 				FertilityGodName = brythonic_fertility_god_name
 				FertilityGodNamePossessive = brythonic_fertility_god_name_possessive
 				FertilityGodSheHe = CHARACTER_SHEHE_HE
 				FertilityGodHerHis = CHARACTER_HERHIS_HIS
 				FertilityGodHerHim = CHARACTER_HERHIM_HIM
-
 				#WealthGod
 				WealthGodName = brythonic_wealth_god_name
 				WealthGodNamePossessive = brythonic_wealth_god_name_possessive
 				WealthGodSheHe = CHARACTER_SHEHE_HE
 				WealthGodHerHis = CHARACTER_HERHIS_HIS
 				WealthGodHerHim = CHARACTER_HERHIM_HIM
-
 				#HouseholdGod
 				HouseholdGodName = brythonic_household_god_name
 				HouseholdGodNamePossessive = brythonic_household_god_name_possessive
 				HouseholdGodSheHe = CHARACTER_SHEHE_SHE
 				HouseholdGodHerHis = CHARACTER_HERHIS_HER
 				HouseholdGodHerHim = CHARACTER_HERHIM_HER
-
 				#FateGod
 				FateGodName = brythonic_fate_god_name
 				FateGodNamePossessive = brythonic_fate_god_name_possessive
 				FateGodSheHe = CHARACTER_SHEHE_SHE
 				FateGodHerHis = CHARACTER_HERHIS_HER
 				FateGodHerHim = CHARACTER_HERHIM_HER
-
 				#KnowledgeGod
 				KnowledgeGodName = brythonic_knowledge_god_name
 				KnowledgeGodNamePossessive = brythonic_knowledge_god_name_possessive
 				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
 				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
 				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
-
 				#WarGod
 				WarGodName = brythonic_war_god_name
 				WarGodNamePossessive = brythonic_war_god_name_possessive
 				WarGodSheHe = CHARACTER_SHEHE_HE
 				WarGodHerHis = CHARACTER_HERHIS_HIS
 				WarGodHerHim = CHARACTER_HERHIM_HIM
-
 				#TricksterGod
 				TricksterGodName = brythonic_trickster_god_name
 				TricksterGodNamePossessive = brythonic_trickster_god_name_possessive
 				TricksterGodSheHe = CHARACTER_SHEHE_HE
 				TricksterGodHerHis = CHARACTER_HERHIS_HIS
 				TricksterGodHerHim = CHARACTER_HERHIM_HIM
-
 				#NightGod
 				NightGodName = brythonic_night_god_name
 				NightGodNamePossessive = brythonic_night_god_name_possessive
 				NightGodSheHe = CHARACTER_SHEHE_SHE
 				NightGodHerHis = CHARACTER_HERHIS_HER
 				NightGodHerHim = CHARACTER_HERHIM_HER
-
 				#WaterGod
 				WaterGodName = brythonic_water_god_name
 				WaterGodNamePossessive = brythonic_water_god_name_possessive
 				WaterGodSheHe = CHARACTER_SHEHE_HE
 				WaterGodHerHis = CHARACTER_HERHIS_HIS
 				WaterGodHerHim = CHARACTER_HERHIM_HIM
-
 				GoodGodNames = { brythonic_good_god_nudd brythonic_good_god_creiddylad brythonic_good_god_gofannon brythonic_good_god_briganti brythonic_good_god_the_spirits brythonic_good_god_the_fae brythonic_good_god_andraste brythonic_good_god_gwydion brythonic_good_god_arianrhod brythonic_good_god_coventina brythonic_good_god_arawn brythonic_good_god_ambactonos brythonic_good_god_belisama brythonic_good_god_rigantona brythonic_good_god_lugus }
 				EvilGodNames = { brythonic_evil_god_goemagot brythonic_evil_god_the_giants }
-
 				DevilName = brythonic_devil_name
 				DevilNamePossessive = brythonic_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
@@ -1948,7 +1920,6 @@
 				WitchGodHerHim = CHARACTER_HERHIM_HER
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother
-
 				GHWName = ghw_great_holy_war
 				GHWNamePlural = ghw_great_holy_wars
 			}
@@ -1985,7 +1956,6 @@
 	        #Funeral tradition
 	        doctrine = doctrine_funeral_bewailment
 			doctrine = unreformed_faith_doctrine
-
 			doctrine = tenet_gaelic
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_communal_identity
@@ -2020,87 +1990,74 @@
 				HighGodHerHis = CHARACTER_HERHIS_HIS
 				HighGodNameAlternate = gaelic_high_god_name_alternate
 				HighGodNameAlternatePossessive = gaelic_high_god_name_alternate_possessive
-
 				#Creator Eiocha
 				CreatorName = gaelic_creator_god_name
 				CreatorNamePossessive = gaelic_creator_god_name_possessive
 				CreatorSheHe = CHARACTER_SHEHE_SHE
 				CreatorHerHis = CHARACTER_HERHIS_HER
 				CreatorHerHim = CHARACTER_HERHIM_HER
-
 				#HealthGod Dian Cecht
 				HealthGodName = gaelic_health_god_name
 				HealthGodNamePossessive = gaelic_health_god_name_possessive
 				HealthGodSheHe = CHARACTER_SHEHE_HE
 				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
-				
+				HealthGodHerHim = CHARACTER_HERHIM_HIM			
 				#FertilityGod Brigid
 				FertilityGodName = gaelic_fertility_god_name
 				FertilityGodNamePossessive = gaelic_fertility_god_name_possessive
 				FertilityGodSheHe = CHARACTER_SHEHE_SHE
 				FertilityGodHerHis = CHARACTER_HERHIS_HER
 				FertilityGodHerHim = CHARACTER_HERHIM_HER
-
 				#WealthGod Áine
 				WealthGodName = gaelic_wealth_god_name
 				WealthGodNamePossessive = gaelic_wealth_god_name_possessive
 				WealthGodSheHe = CHARACTER_SHEHE_SHE
 				WealthGodHerHis = CHARACTER_HERHIS_HER
 				WealthGodHerHim = CHARACTER_HERHIM_HER
-
 				#HouseholdGod Danu
 				HouseholdGodName = gaelic_household_god_name
 				HouseholdGodNamePossessive = gaelic_household_god_name_possessive
 				HouseholdGodSheHe = CHARACTER_SHEHE_SHE
 				HouseholdGodHerHis = CHARACTER_HERHIS_HER
 				HouseholdGodHerHim = CHARACTER_HERHIM_HER
-
 				#FateGod 
 				FateGodName = gaelic_fate_god_name
 				FateGodNamePossessive = gaelic_fate_god_name_possessive
 				FateGodSheHe = CHARACTER_SHEHE_SHE
 				FateGodHerHis = CHARACTER_HERHIS_HER
 				FateGodHerHim = CHARACTER_HERHIM_HER
-
 				#KnowledgeGod Ecne
 				KnowledgeGodName = gaelic_knowledge_god_name
 				KnowledgeGodNamePossessive = gaelic_knowledge_god_name_possessive
 				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
 				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
 				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
-
 				#WarGod
 				WarGodName = gaelic_war_god_name
 				WarGodNamePossessive = gaelic_war_god_name_possessive
 				WarGodSheHe = CHARACTER_SHEHE_SHE
 				WarGodHerHis = CHARACTER_HERHIS_HER
 				WarGodHerHim = CHARACTER_HERHIM_HER
-
 				#TricksterGod Lugh of the Long Arm
 				TricksterGodName = gaelic_trickster_god_name
 				TricksterGodNamePossessive = gaelic_trickster_god_name_possessive
 				TricksterGodSheHe = CHARACTER_SHEHE_HE
 				TricksterGodHerHis = CHARACTER_HERHIS_HIS
 				TricksterGodHerHim = CHARACTER_HERHIM_HIM
-
 				#NightGod Maine mac Darthacht
 				NightGodName = gaelic_night_god_name
 				NightGodNamePossessive = gaelic_night_god_name_possessive
 				NightGodSheHe = CHARACTER_SHEHE_HE
 				NightGodHerHis = CHARACTER_HERHIS_HIS
 				NightGodHerHim = CHARACTER_HERHIM_HIM
-
 				#WaterGod Manannán mac Lir
 				WaterGodName = gaelic_water_god_name
 				WaterGodNamePossessive = gaelic_water_god_name_possessive
 				WaterGodSheHe = CHARACTER_SHEHE_HE
 				WaterGodHerHis = CHARACTER_HERHIS_HIS
 				WaterGodHerHim = CHARACTER_HERHIM_HIM
-
 				GoodGodNames = { gaelic_good_god_lugh gaelic_good_god_aed gaelic_good_god_dian_cecht gaelic_good_god_airmed gaelic_good_god_ecne gaelic_good_god_morrigan gaelic_good_god_goibniu gaelic_good_god_anu gaelic_good_god_aine gaelic_good_god_neit gaelic_good_god_manannan_mac_lir gaelic_good_god_canacludhmor gaelic_good_god_builg gaelic_good_god_lucktaine gaelic_good_god_abcan }
 				EvilGodNames = { gaelic_evil_god_cethlenn gaelic_evil_god_carman gaelic_evil_god_tethre gaelic_evil_god_elatha gaelic_evil_god_cichol_grichenchos gaelic_evil_god_conand gaelic_evil_god_fomoire }
-
 				DevilName = gaelic_devil_name
 				DevilNamePossessive = gaelic_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
@@ -3201,7 +3158,6 @@
             color = { 0.29 0.48 0.3 }
 			icon = punic
 			reformed_icon = punic_reformed
-
 			holy_site = carthage
 			holy_site = syrte
 			holy_site = palermo
@@ -3570,7 +3526,6 @@
 			color = { 0.9 0.8 0.4 }
 			icon = atenist
 			reformed_icon = atenist_reformed
-
 			holy_site = bahnasa
 			holy_site = giza
 			holy_site = qus
