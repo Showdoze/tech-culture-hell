@@ -1921,6 +1921,7 @@ tradition_two_rivers_two_people = { # Mesopotamian Unity
 		learns_more_languages = yes
 		more_fame_for_successful_defensive_wars = yes
 		more_gold_for_successful_defensive_wars = yes
+		wants_to_learn_liege_language = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = 0.15
@@ -1929,6 +1930,43 @@ tradition_two_rivers_two_people = { # Mesopotamian Unity
 		max_learn_language_schemes_add = 1
 		learn_language_scheme_power_mult = 0.25
 	}
-	cost = { prestige = 1000 }
+	cost = { prestige = 500 }
 	ai_will_do = { value = 100 }
+}
+tradition_assyrian = { # 
+	category = realm
+	layers = {
+		0 = diplo
+		1 = western
+		4 = assyrian.dds
+	}
+	is_shown = { has_cultural_pillar = heritage_syriac }
+	parameters = {
+		vengeful_trait_more_common = yes
+		vengeful_positive_forgiving_negative = yes
+		rivalries_more_common = yes
+		tells_stories = yes
+		hostile_action_vs_rival_bonuses = yes
+		diligent_trait_more_common = yes
+		ambitious_trait_more_common = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		eunuch_trait_bonuses = yes
+		can_appoint_chief_eunuch = yes
+		family_castration = yes
+		less_likely_to_culture_convert = yes
+		other_cultures_more_likely_to_hybridize = yes
+		faith_warrior_traits_more_valued = yes
+		harder_to_convert_county_culture = yes
+	}
+	culture_modifier = {
+	}
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.1
+		controlled_province_advantage = 5
+		same_culture_opinion = 5
+		rf_abrahamic_opinion = -50
+	}
+	cost = { prestige = 500 }
+	ai_will_do = { value = 0 }
 }
