@@ -2850,7 +2850,6 @@
             color = { 0.83 0.4 0.56 }
 			icon = philistinian
 			reformed_icon = philistinian_reformed
-
 			holy_site = ghazza
 			holy_site = chania
 			holy_site = jerusalem
@@ -2874,7 +2873,6 @@
 	        #Funeral tradition
 	        doctrine = doctrine_funeral_cremation
 			doctrine = unreformed_faith_doctrine
-
 			doctrine = tenet_legalism
 			doctrine = tenet_adaptive
 			#doctrine = tenet_false_conversion_sanction
@@ -3014,7 +3012,6 @@
             color = { 0.29 0.48 0.3 }
 			icon = phoenician
 			reformed_icon = phoenician_reformed
-
 			holy_site = sufed
 			holy_site = antioch
 			holy_site = raqqa
@@ -3038,7 +3035,6 @@
 	        #Funeral tradition
 	        doctrine = doctrine_funeral_cremation
 			doctrine = unreformed_faith_doctrine
-
 			#doctrine = tenet_unrelenting_faith
             doctrine = tenet_phoenician
 			doctrine = tenet_ancestor_worship
@@ -3359,26 +3355,27 @@
 			holy_site = gizeh
 			holy_site = asyut
 			doctrine = unreformed_faith_doctrine
-            #Main Group
-	        doctrine = doctrine_temporal_head
-	        doctrine = doctrine_gender_equal
-	        doctrine = doctrine_pluralism_pluralistic
-	        doctrine = doctrine_theocracy_lay_clergy
-	        #Marriage
-	        doctrine = doctrine_polygamy
-	        doctrine = doctrine_divorce_allowed
-	        doctrine = doctrine_consanguinity_unrestricted
-	        #Crimes
-	        doctrine = doctrine_homosexuality_accepted
-	        doctrine = doctrine_adultery_men_crime
-	        doctrine = doctrine_deviancy_shunned
-	        doctrine = doctrine_witchcraft_accepted
-	        #Clerical Functions
-	        doctrine = doctrine_clerical_gender_either
-	        doctrine = doctrine_clerical_marriage_allowed
-	        doctrine = doctrine_clerical_succession_temporal_appointment
-	        #Funeral tradition
-	        doctrine = doctrine_funeral_mummification
+			#doctrine
+             #Main Group
+	          doctrine = doctrine_temporal_head
+	          doctrine = doctrine_gender_equal
+	          doctrine = doctrine_pluralism_pluralistic
+	          doctrine = doctrine_theocracy_lay_clergy
+	         #Marriage
+	          doctrine = doctrine_polygamy
+	          doctrine = doctrine_divorce_allowed
+	          doctrine = doctrine_consanguinity_unrestricted
+	         #Crimes
+	          doctrine = doctrine_homosexuality_accepted
+	          doctrine = doctrine_adultery_men_crime
+	          doctrine = doctrine_deviancy_shunned
+	          doctrine = doctrine_witchcraft_accepted
+	         #Clerical Functions
+	          doctrine = doctrine_clerical_gender_either
+	          doctrine = doctrine_clerical_marriage_allowed
+	          doctrine = doctrine_clerical_succession_temporal_appointment
+	         #Funeral tradition
+	          doctrine = doctrine_funeral_mummification
 			doctrine = tenet_ancestor_worship #tenet_legalism
 			doctrine = tenet_kemetic
 			doctrine = tenet_alexandrian_catechism #tenet_astrology
@@ -3389,25 +3386,24 @@
 			}
 			reserved_male_names = {
 				Adjo Aesculapius Afhmose Aha Aken Aker Akhenaten Akhenaton Akhnaten Akhnaton 
-                Akhom Akiiki Akil Ako Amenemhat 
+                Akhom Akiiki Akil Ako Amenemhat Anti Anubis Anum Anupu Apedemak 
 				Amenemhet Amenhotep Amun Amun-Ra Amunhotep Anhur Ankhenaten Ankhenaton Anpu 
-                Anti Anubis Anum Anupu Apedemak 
-				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf Ba-Pef Baba Babi 
-                Banebdjedet Bennu Bes Bisu Buchis 
-				Dedun Denwen Duamutef Efu-Ra Ennead Fetket Geb Ha Han-her Hapi Hapy Hardedef 
+				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf 
+				Ba_Pef Baba Babi Banebdjedet Bennu Bes Bisu Buchis 
+				Dedun Denwen Duamutef Efu_Ra Ennead Fetket Geb Ha Han_her Hapi Hapy Hardedef 
                 Haurun Heh Heka Horus Hu Khenmu 
 				Menefer Meretseger Min Nefertum Nehebu-Kau Nekheny Neper Nile Nu Onuris Osiris 
                 Panebtawy Peteese Pihor Pili 
-				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis Ta-Nehisi Tatenen 
-                Tau Thoth Tutu Wallis 
+				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis 
+				Ta_Nehisi Tatenen Tau Thoth Tutu Wallis 
 				Weneg Wenenu Wepwawet Zaim Zane
 			}
 			reserved_female_names = {
 				Akila Amenet Amentet Ammit Ammut Amunet Anat Anipe Anqet Anta Anuke Anuket Anukit 
                 Astarte Ata Aten Bast Bastet 
-				Bat Bennu Beset Cleopatra Giza Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet Heket 
-                Heqet Heret-Kau Heset 
-				Hu Iabet Ipy Ishtar Isis Iusaaset Iw Kabechet Kebehwet Keket Layla Ma_at Maat Mafdet Mau 
+				Bat Bennu Beset Cleopatra Giza 
+				Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet Heket Heqet Heret_Kau Heset Hu 
+				Iabet Ipy Ishtar Isis Iusaaset Iw Kabechet Kebehwet Keket Layla Ma_at Maat Mafdet Mau 
                 Mefdet Mehit Mekhit Menefer 
 				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut Nashwa Naunet Nebethetpet 
                 Nefertiti Nehmetawy Neith 
@@ -3415,7 +3411,7 @@
                 Renenutet Renpet Reret Reshep 
 				Sanura Satet  Satis Satit Sekhmet Selket Seret Serket Serkis Serqet Seshat Shai Sharifa 
                 Shay Shentayet Shepet Shesmetet 
-				Shu Sslama Ta-Bitjet Ta-Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
+				Shu Sslama Ta_Bitjet Ta_Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
                 Tjenenyet Uajyt Unut Uto Wadj-Wer 
 				Wadjet Wallis Waset Wepset Zaim Zane
 			}
@@ -3598,13 +3594,14 @@
                 Akhnaton Akhom Akiiki Akil Ako Amenemhat 
 				Amenemhet Amenhotep Amun Amun-Ra Amunhotep Anhur Ankhenaten Ankhenaton Anpu Anti 
                 Anubis Anum Anupu Apedemak 
-				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf Ba-Pef Baba Babi Banebdjedet 
+				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf Ba_Pef Baba Babi Banebdjedet 
                 Bennu Bes Bisu Buchis 
-				Dedun Denwen Duamutef Efu-Ra Ennead Fetket Geb Ha Han-her Hapi Hapy Hardedef Haurun 
+				Dedun Denwen Duamutef Efu_Ra Ennead Fetket Geb Ha Han_her Hapi Hapy Hardedef Haurun 
                 Heh Heka Horus Hu Khenmu 
 				Menefer Meretseger Min Nefertum Nehebu-Kau Nekheny Neper Nile Nu Onuris Osiris Panebtawy 
                 Peteese Pihor Pili 
-				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis Ta-Nehisi Tatenen Tau Thoth Tutu Wallis 
+				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis 
+				Ta_Nehisi Tatenen Tau Thoth Tutu Wallis 
 				Weneg Wenenu Wepwawet Zaim Zane
 				
 			}
@@ -3612,7 +3609,7 @@
 				Akila Amenet Amentet Ammit Ammut Amunet Anat Anipe Anqet Anta Anuke Anuket Anukit 
                 Astarte Ata Aten Bast Bastet 
 				Bat Bennu Beset Cleopatra Giza Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet 
-                Heket Heqet Heret-Kau Heset 
+                Heket Heqet Heret_Kau Heset 
 				Hu Iabet Ipy Ishtar Isis Iusaaset Iw Kabechet Kebehwet Keket Layla Ma_at Maat Mafdet 
                 Mau Mefdet Mehit Mekhit Menefer 
 				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut Nashwa Naunet Nebethetpet 
@@ -3621,7 +3618,7 @@
                 Renenutet Renpet Reret Reshep 
 				Sanura Satet  Satis Satit Sekhmet Selket Seret Serket Serkis Serqet Seshat Shai 
                 Sharifa Shay Shentayet Shepet Shesmetet 
-				Shu Sslama Ta-Bitjet Ta-Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
+				Shu Sslama Ta_Bitjet Ta_Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
                 Tjenenyet Uajyt Unut Uto Wadj-Wer 
 				Wadjet Wallis Waset Wepset Zaim Zane
 			}

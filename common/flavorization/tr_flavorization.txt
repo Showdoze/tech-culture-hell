@@ -752,8 +752,7 @@
 	priority = 299
 	top_liege = no
 	council_position = councillor_court_chaplain
-	religions = { anahuac_religion } 
-	#heritages = { heritage_cemanahuac }
+	faiths = { cult_of_tlaloc cult_of_tezcatlipoca }
 	#name_lists = { name_list_nahuatl }
  }
  job_chancellor_aztec = {
@@ -762,8 +761,7 @@
 	priority = 299
 	top_liege = no
 	council_position = councillor_chancellor
-	religions = { anahuac_religion } 
-	#heritages = { heritage_cemanahuac }
+	faiths = { cult_of_tlaloc cult_of_tezcatlipoca }
 	#name_lists = { name_list_nahuatl }
  }
  job_treasurer_aztec = {
@@ -772,8 +770,7 @@
 	priority = 299
 	top_liege = no
 	council_position = councillor_steward
-	religions = { anahuac_religion } 
-	#heritages = { heritage_cemanahuac }
+	faiths = { cult_of_tlaloc cult_of_tezcatlipoca }
 	#name_lists = { name_list_nahuatl }
  }
  job_marshal_aztec = {
@@ -782,8 +779,7 @@
 	priority = 299
 	top_liege = no
 	council_position = councillor_marshal
-	religions = { anahuac_religion } 
-	#heritages = { heritage_cemanahuac }
+	faiths = { cult_of_tlaloc cult_of_tezcatlipoca }
 	#name_lists = { name_list_nahuatl }
  }
  job_spymaster_aztec = {
@@ -792,8 +788,7 @@
 	priority = 299
 	top_liege = no
 	council_position = councillor_spymaster
-	religions = { anahuac_religion } 
-	#heritages = { heritage_cemanahuac }
+	faiths = { cult_of_tlaloc cult_of_tezcatlipoca }
 	#name_lists = { name_list_nahuatl }
  }
  emperor_nahuatl = {
@@ -802,7 +797,6 @@
 	tier = empire
 	gender = male
 	priority = 500
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  emperor_female_nahuatl = {
@@ -811,7 +805,6 @@
 	tier = empire
 	gender = female
 	priority = 500
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  king_nahuatl = {
@@ -820,7 +813,6 @@
 	tier = kingdom
 	gender = male
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  king_female_nahuatl = {
@@ -829,7 +821,6 @@
 	tier = kingdom
 	gender = female
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  duke_nahuatl = {
@@ -838,7 +829,6 @@
 	tier = duchy
 	gender = male
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  duke_female_nahuatl = {
@@ -847,7 +837,6 @@
 	tier = duchy
 	gender = female
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  count_nahuatl = {
@@ -856,7 +845,6 @@
 	special = holder
 	tier = county
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  count_female_nahuatl = {
@@ -865,7 +853,6 @@
 	special = holder
 	tier = county
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  baron_nahuatl = {
@@ -874,7 +861,6 @@
 	special = holder
 	tier = barony
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
  baron_female_nahuatl = {
@@ -883,7 +869,6 @@
 	special = holder
 	tier = barony
 	priority = 50
-	heritages = { heritage_cemanahuac }
 	name_lists = { name_list_nahuatl }
  }
 #JARL
@@ -1816,7 +1801,7 @@
 	type = character
 	special = court_chaplain
 	priority = 100
-	faith = tea_religion
+	#faith = tea_religion
 	council_position = councillor_court_chaplain
 	name_lists = { name_list_tea }
  }
