@@ -36,7 +36,7 @@ qadisiya = {
 }
 wasit = {
 	county = c_wasit
-
+	barony = b_wasit
 	character_modifier = {
 		name = holy_site_wasit_effect_name
 		monthly_prestige_gain_mult = 0.05
@@ -45,7 +45,7 @@ wasit = {
 }
 takrit = {
 	county = c_takrit
-
+	barony = b_takrit
 	character_modifier = {
 		name = holy_site_takrit_effect_name
 		build_speed = -0.1
@@ -74,7 +74,7 @@ ninive = {#Temple of Ishtar
 }
 raqqa = {
 	county = c_raqqa
-
+	barony = b_raqqa
 	character_modifier = {
 		name = holy_site_raqqa_effect_name
 		knight_effectiveness_mult = 0.1
@@ -83,25 +83,25 @@ raqqa = {
 }
 tabuk = {
 	county = c_tabuk
-
+	barony = b_tabuk
 	character_modifier = {
 		name = holy_site_tabuk_effect_name
 		same_culture_opinion = 5
 		diplomacy = 1
 	}
 }
-beirut = {
-	county = c_beirut
-
-	character_modifier = {
-		name = holy_site_beirut_effect_name
-		defender_advantage = 5
-		martial = 2
-	}
-}
+#beirut = {
+#	county = c_beirut
+#
+#	character_modifier = {
+#		name = holy_site_beirut_effect_name
+#		defender_advantage = 5
+#		martial = 2
+#	}
+#}
 farama = {
 	county = c_farama
-
+	barony = b_farama
 	character_modifier = {
 		name = holy_site_farama_effect_name
 		diplomacy = 3
@@ -109,7 +109,7 @@ farama = {
 }
 harran = {
 	county = c_harran
-
+	barony = b_harran
 	character_modifier = {
 		name = holy_site_harran_effect_name
 		monthly_piety_gain_mult = 0.1
@@ -118,7 +118,7 @@ harran = {
 }
 syrte = {
 	county = c_syrte
-
+	barony = b_syrte
 	character_modifier = {
 		name = holy_site_syrte_effect_name
 		stewardship_per_piety_level = 1
@@ -127,7 +127,7 @@ syrte = {
 }
 tiberias = {
 	county = c_tiberias
-
+	barony = b_tiberias
 	character_modifier = {
 		name = holy_site_tiberias_effect_name
 		same_faith_opinion = 5
@@ -165,7 +165,7 @@ sinai = {
 }
 ghazza = {
 	county = c_ghazza
-
+	barony = b_ghazza
 	character_modifier = {
 		name = holy_site_ghazza_effect_name
 		learning = 1
@@ -174,7 +174,7 @@ ghazza = {
 }
 chania = {
 	county = c_chania
-
+	barony = b_chania
 	character_modifier = {
 		name = holy_site_chania_effect_name
 		direct_vassal_opinion = 10
@@ -182,7 +182,7 @@ chania = {
 }
 cagliari = {
 	county = c_cagliari
-
+	barony = b_cagliari
 	character_modifier = {
 		name = holy_site_cagliari_effect_name
 		monthly_piety_gain_per_knight_mult = 0.02
@@ -191,7 +191,7 @@ cagliari = {
 }
 cadiz = {
 	county = c_cadiz
-
+	barony = b_cadiz
 	character_modifier = {
 		name = holy_site_chania_effect_name
 		controlled_province_advantage = 7.5
@@ -200,7 +200,7 @@ cadiz = {
 }
 palermo = {
 	county = c_palermo
-
+	barony = b_palermo
 	character_modifier = {
 		name = holy_site_cagliari_effect_name
 		domain_tax_mult = 0.05
@@ -227,7 +227,7 @@ cornwall = {
 }
 vannes = {
 	county = c_vannes
-
+	barony = b_vannes
 	character_modifier = {
 		name = holy_site_vannes_effect_name
 		prowess_per_prestige_level = 1
@@ -245,7 +245,7 @@ essex = {
 }
 durham = {
 	county = c_durham
-
+	barony = b_durham
 	character_modifier = {
 		name = holy_site_durham_effect_name
 		monthly_county_control_change_factor = 0.1
@@ -298,7 +298,7 @@ ailech = {
 }
 dijon = {
 	county = c_dijon
-
+	barony = b_dijon
 	character_modifier = {
 		name = holy_site_dijon_effect_name
 		close_relative_opinion = 5
@@ -307,7 +307,7 @@ dijon = {
 }
 orleans = {
 	county = c_orleans
-
+	barony = b_orleans
 	character_modifier = {
 		name = holy_site_orleans_effect_name
 		retreat_losses = -0.2
@@ -389,7 +389,6 @@ viterbo = {
 tivoli = {
 	county = c_tivoli
 	barony = b_velletri
-	
 	character_modifier = {
 		name = holy_site_tivoli_effect_name
 		monthly_piety_gain_per_knight_mult = 0.01
@@ -399,7 +398,6 @@ tivoli = {
 firenze = {
 	county = c_firenze
 	barony = b_volterra
-	
 	character_modifier = {
 		name = holy_site_firenze_effect_name
 		county_opinion_add = 5
@@ -410,7 +408,6 @@ firenze = {
 delphi = {
 	county = c_aetolia
 	barony = b_lidoriki
-	
 	character_modifier = {
 		name = holy_site_delphi_effect_name
 		knight_effectiveness_mult = 0.25
@@ -439,14 +436,16 @@ meroe = {
 } 
 cairo = {
 	county = c_cairo
+	barony = b_cairo
 	character_modifier = {
 		name = holy_site_cairo_effect_name
 		artifact_decay_reduction_mult = -0.5
 		county_opinion_add = 5 
 	}
 } 
-carthage = {
+carthage_capital = {
 	county = c_tunis
+	barony = b_tunis
 	character_modifier = {
 		name = holy_site_carthage_effect_name
 		dread_baseline_add = 2.5
@@ -484,7 +483,6 @@ timbuktu = {
 }
 eleusis = { # Eleusis, site of the Eleusinian Telesterion (main initiation hall) and birthplace of Aeschylus
 	county = c_attica
-	
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		development_growth_factor = 0.1
@@ -501,7 +499,6 @@ achaia = { # Stadium of Olimpia
 }
 laconia = { # Spartan camp
 	county = c_laconia
-	
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		prowess_per_piety_level = 1
@@ -510,7 +507,6 @@ laconia = { # Spartan camp
 }
 boeotia = { # The Oracle
 	county = c_boeotia
-	
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		same_faith_opinion = 10
@@ -520,7 +516,6 @@ boeotia = { # The Oracle
 ionia = { # Temple of Artemis
 	county = c_ionia
 	barony = b_ephesos
-
 	character_modifier = {
 		name = holy_site_ionia_effect_name
 		health = 0.1
@@ -529,7 +524,6 @@ ionia = { # Temple of Artemis
 }
 nicosia = { # Temple of Aphrodite
 	county = c_nicosia
-	
 	character_modifier = {
 		name = holy_site_ionia_effect_name
 		heavy_infantry_toughness_mult = 0.01
@@ -541,7 +535,6 @@ nicosia = { # Temple of Aphrodite
 }
 lesbos = { # Temple of Hefest
 	county = c_lesbos
-	
 	character_modifier = {
 		name = holy_site_ionia_effect_name
 		cultural_head_fascination_mult = 0.1
@@ -549,7 +542,6 @@ lesbos = { # Temple of Hefest
 }
 korinthos = { # Mosaic of Poseidon
 	county = c_korinthos
-	
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
 		embarkation_cost_mult = -0.25
@@ -559,7 +551,6 @@ korinthos = { # Mosaic of Poseidon
 epeiros = { # Temple of Hades
 	county = c_epeiros
 	barony = b_grava
-
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
 		monthly_tyranny = -0.2
@@ -568,7 +559,6 @@ epeiros = { # Temple of Hades
 }
 messenia = { # Temple of Hermes
 	county = c_messenia
-	
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
 		flag = kerala_conversion_bonus
@@ -577,7 +567,6 @@ messenia = { # Temple of Hermes
 }
 chandax = { # Knoss Palace
 	county = c_chandax
-	
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
 		short_reign_duration_mult = -0.25
@@ -585,7 +574,6 @@ chandax = { # Knoss Palace
 }
 mainz = { # Mogontiacum
 	county = c_mainz
-	
 	character_modifier = {
 		name = holy_site_mainz_effect_name
 		same_faith_opinion = 10
@@ -593,7 +581,6 @@ mainz = { # Mogontiacum
 }
 middlesex = { # Temple of Mithras, Walbrook (also later Bacchic)
 	county = c_middlesex
-	
 	character_modifier = {
 		name = holy_site_middlesex_effect_name
 		levy_reinforcement_rate_same_faith = 0.2
@@ -602,7 +589,7 @@ middlesex = { # Temple of Mithras, Walbrook (also later Bacchic)
 }
 turnovo = { # Oescus & Novae
 	county = c_turnovo
-	
+	barony = b_turnovo
 	character_modifier = {
 		name = holy_site_turnovo_effect_name
 		dynasty_house_opinion = 5
@@ -611,7 +598,6 @@ turnovo = { # Oescus & Novae
 }
 jaffa = { # Caesarea Maritima
 	county = c_jaffa
-	
 	character_modifier = {
 		name = holy_site_jaffa_effect_name
 		supply_duration = 0.2
@@ -620,7 +606,7 @@ jaffa = { # Caesarea Maritima
 }
 zherkovo = { # Temple of Orpheus, Tatul
 	county = c_zherkovo
-	
+	barony = b_zherkovo
 	character_modifier = {
 		name = holy_site_zherkovo_effect_name
 		martial_per_piety_level = 1
@@ -629,7 +615,6 @@ zherkovo = { # Temple of Orpheus, Tatul
 }
 siracusa = { # Villa Romana del Casale
 	county = c_siracusa
-	
 	character_modifier = {
 		name = holy_site_siracusa_effect_name
 		naval_movement_speed_mult = 0.2
@@ -638,7 +623,6 @@ siracusa = { # Villa Romana del Casale
 }
 tripolitana = { # Leptis Magna
 	county = c_tripolitana
-	
 	character_modifier = {
 		name = holy_site_tripolitana_effect_name
 		martial = 1
@@ -647,7 +631,6 @@ tripolitana = { # Leptis Magna
 }
 venaissin = { # Arles
 	county = c_venaissin
-	
 	character_modifier = {
 		name = holy_site_venaissin_effect_name
 		diplomacy = 1
@@ -656,7 +639,7 @@ venaissin = { # Arles
 }
 chios = { # Samos, Pythagoras' birthplace
 	county = c_chios
-	
+	barony = b_chios
 	character_modifier = {
 		name = holy_site_chios_effect_name
 		learning = 2
@@ -664,7 +647,7 @@ chios = { # Samos, Pythagoras' birthplace
 }
 rossano = { # Crotone, where Pythagoras and his followers settled
 	county = c_rossano
-	
+	barony = b_rossano
 	character_modifier = {
 		name = holy_site_rossano_effect_name
 		stress_loss_mult = 0.2
@@ -673,7 +656,6 @@ rossano = { # Crotone, where Pythagoras and his followers settled
 }
 delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis; home to various temples and mosaics
 	county = c_naxos
-	
 	character_modifier = {
 		name = holy_site_delos_effect_name
 		coastal_advantage = 10
@@ -681,7 +663,6 @@ delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis;
 }
 thermopylae = { # Thermopylae, site of the entrance to Hades and one of the major Eleusinian ritual grounds
 	county = c_demetrias
-	
 	character_modifier = {
 		name = holy_site_thermopylae_effect_name
 		stress_loss_mult = 0.1
@@ -690,7 +671,6 @@ thermopylae = { # Thermopylae, site of the entrance to Hades and one of the majo
 }
 heliopolis = { # Heliopolis ('the City of the Sun'), a regional capital, major shrine and home of the solar cult
 	county = c_cairo
-	
 	character_modifier = {
 		name = holy_site_heliopolis_effect_name
 		domain_tax_same_faith_mult = 0.05
@@ -699,7 +679,6 @@ heliopolis = { # Heliopolis ('the City of the Sun'), a regional capital, major s
 }
 tyana = { # Tyana, birthplace of the Neopythagorean Apollonius
 	county = c_cappadocia
-	
 	character_modifier = {
 		name = holy_site_tyana_effect_name
 		martial = 1
@@ -708,7 +687,6 @@ tyana = { # Tyana, birthplace of the Neopythagorean Apollonius
 }
 palmyra = { # Palmyra, the origin of Elagabalus' original Cult of Sol
 	county = c_palmyra
-	
 	character_modifier = {
 		name = holy_site_palmyra_effect_name
 		prowess = 1
@@ -718,7 +696,6 @@ palmyra = { # Palmyra, the origin of Elagabalus' original Cult of Sol
 napoli = {
 	county = c_napoli
 	barony = b_aversa
-	
 	character_modifier = {
 		monthly_piety_gain_per_knight_mult = 0.01
 		knight_effectiveness_mult = 0.05
@@ -747,6 +724,7 @@ igbo = { #
 }
 istakhr = { # tomb_of_cyrus_01
 	county = c_istakhr
+	barony = b_istakhr
 	character_modifier = {
 		name = holy_site_istakhr_effect_name
 		drylands_attrition_mult = -0.2
@@ -782,6 +760,7 @@ algeciras = { # Rock of Gibraltar
 }
 aachen = { # Palace of Aachen
 	county = c_aachen
+	barony = b_aachen
 	character_modifier = {
 		diplomacy_per_piety_level = 1
 	}
@@ -859,12 +838,6 @@ pepuza = {
 	county = c_pacatiana
 	character_modifier = {
 		monthly_piety_gain_mult = 0.1
-	}
-}
-durham = {
-	county = c_durham
-	character_modifier = {
-		defender_advantage = 5
 	}
 }
 dyfed = {
@@ -1090,3 +1063,13 @@ cilicia = {
 	}
  }
 #Satanism METAL
+#Brittish brythonic
+ stonehenge = {
+	county = c_wiltshire
+	barony = b_salisbury
+	character_modifier = {
+		development_growth_factor = 0.1
+		artifact_decay_reduction_mult = -0.5
+	}
+ }
+#
