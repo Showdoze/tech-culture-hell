@@ -1403,6 +1403,7 @@
 			color = { 0.3 0.37 0.5 }
 			icon = babylonian
 			reformed_icon = babylonian_reformed
+			holy_site = babylon
 			holy_site = tabuk
 			holy_site = raqqa
 			holy_site = basra
@@ -1410,30 +1411,30 @@
 			holy_site = beirut
 			holy_site = tyana
 			doctrine = unreformed_faith_doctrine
-            #Main Group
-			 doctrine = doctrine_spiritual_head
-			 doctrine = doctrine_gender_male_dominated
-			 doctrine = doctrine_pluralism_pluralistic
-			 doctrine = doctrine_theocracy_temporal
-			#Marriage
-			 doctrine = doctrine_concubines
-			 doctrine = doctrine_divorce_approval
-			 doctrine = doctrine_bastardry_legitimization
-			 doctrine = doctrine_consanguinity_restricted
-			#Crimes
-			 doctrine = doctrine_homosexuality_accepted
-			 doctrine = doctrine_adultery_men_accepted
-			 doctrine = doctrine_adultery_women_crime
-			 doctrine = doctrine_kinslaying_close_kin_crime
-			 doctrine = doctrine_deviancy_accepted
-			 doctrine = doctrine_witchcraft_accepted
-			#Clerical Functions
-			 doctrine = doctrine_clerical_function_taxation
-			 doctrine = doctrine_clerical_gender_either
-			 doctrine = doctrine_clerical_marriage_allowed
-			 doctrine = doctrine_clerical_succession_spiritual_appointment
-			#Funeral tradition
-			 doctrine = doctrine_funeral_cremation
+             #Main Group
+			  doctrine = doctrine_spiritual_head
+			  doctrine = doctrine_gender_male_dominated
+			  doctrine = doctrine_pluralism_pluralistic
+			  doctrine = doctrine_theocracy_temporal
+			 #Marriage
+			  doctrine = doctrine_concubines
+			  doctrine = doctrine_divorce_approval
+			  doctrine = doctrine_bastardry_legitimization
+			  doctrine = doctrine_consanguinity_restricted
+			 #Crimes
+			  doctrine = doctrine_homosexuality_accepted
+			  doctrine = doctrine_adultery_men_accepted
+			  doctrine = doctrine_adultery_women_crime
+			  doctrine = doctrine_kinslaying_close_kin_crime
+			  doctrine = doctrine_deviancy_accepted
+			  doctrine = doctrine_witchcraft_accepted
+			 #Clerical Functions
+			  doctrine = doctrine_clerical_function_taxation
+			  doctrine = doctrine_clerical_gender_either
+			  doctrine = doctrine_clerical_marriage_allowed
+			  doctrine = doctrine_clerical_succession_spiritual_appointment
+			 #Funeral tradition
+			  doctrine = doctrine_funeral_cremation
 			doctrine = tenet_babylonian
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_ancestor_worship
@@ -3415,7 +3416,7 @@
 				{ name = "holy_order_luxor_guard" }
 			}
 			reserved_male_names = {
-				Adjo Aesculapius Afhmose Aha Aken Aker Akhenaten Akhenaton Akhnaten Akhnaton 
+				Adjo Aesculapius Afhmose Aha Aken Aker Akhenaton Akhnaten Akhnaton 
                 Akhom Akiiki Akil Ako Amenemhat Anti Anubis Anum Anupu Apedemak 
 				Amenemhet Amenhotep Amun Amun-Ra Amunhotep Anhur Ankhenaten Ankhenaton Anpu 
 				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf 
@@ -3425,24 +3426,31 @@
 				Menefer Meretseger Min Nefertum Nehebu-Kau Nekheny Neper Nile Nu Onuris Osiris 
                 Panebtawy Peteese Pihor Pili 
 				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis 
-				Ta_Nehisi Tatenen Tau Thoth Tutu Wallis 
-				Weneg Wenenu Wepwawet Zaim Zane
+				Ta_Nehisi Tatenen Tau Thoth Tutu 
+				Wallis Weneg Wenenu Wepwawet 
+				Zaim Zane
 			}
 			reserved_female_names = {
 				Akila Amenet Amentet Ammit Ammut Amunet Anat Anipe Anqet Anta Anuke Anuket Anukit 
-                Astarte Ata Aten Bast Bastet 
-				Bat Bennu Beset Cleopatra Giza 
+                Astarte Ata Aten 
+				Bast Bastet Bat Bennu Beset 
+				Cleopatra 
+				Giza 
 				Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet Heket Heqet Heret_Kau Heset Hu 
-				Iabet Ipy Ishtar Isis Iusaaset Iw Kabechet Kebehwet Keket Layla Ma_at Maat Mafdet Mau 
-                Mefdet Mehit Mekhit Menefer 
-				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut Nashwa Naunet Nebethetpet 
-                Nefertiti Nehmetawy Neith 
-				Nekhbet Nephthys Nile Nubia Pakhet Pili Ptah Qadesh Qebhet Qudshu Raet Raettawy Ramla 
-                Renenutet Renpet Reret Reshep 
+				Iabet Ipy Ishtar Isis Iusaaset Iw 
+				Kabechet Kebehwet Keket 
+				Layla 
+				Ma_at Maat Mafdet Mau Mefdet Mehit Mekhit Menefer 
+				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut 
+				Nashwa Naunet Nebethetpet Nefertiti Nehmetawy Neith 
+				Nekhbet Nephthys Nile Nubia 
+				Pakhet Pili Ptah 
+				Qadesh Qebhet Qudshu 
+				Raet Raettawy Ramla Renenutet Renpet Reret Reshep 
 				Sanura Satet  Satis Satit Sekhmet Selket Seret Serket Serkis Serqet Seshat Shai Sharifa 
                 Shay Shentayet Shepet Shesmetet 
 				Shu Sslama Ta_Bitjet Ta_Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
-                Tjenenyet Uajyt Unut Uto Wadj-Wer 
+                Tjenenyet Uajyt Unut Uto Wadj_Wer 
 				Wadjet Wallis Waset Wepset Zaim Zane
 			}
             localization = {
@@ -3624,35 +3632,48 @@
 			reserved_male_names = {
 				Adjo Aesculapius Afhmose Aha Aken Aker Akhenaten Akhenaton Akhnaten 
                 Akhnaton Akhom Akiiki Akil Ako Amenemhat 
-				Amenemhet Amenhotep Amun Amun-Ra Amunhotep Anhur Ankhenaten Ankhenaton Anpu Anti 
+				Amenemhet Amun Amun-Ra Amunhotep Anhur Ankhenaten Ankhenaton Anpu Anti 
                 Anubis Anum Anupu Apedemak 
-				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf Ba_Pef Baba Babi Banebdjedet 
-                Bennu Bes Bisu Buchis 
-				Dedun Denwen Duamutef Efu_Ra Ennead Fetket Geb Ha Han_her Hapi Hapy Hardedef Haurun 
-                Heh Heka Horus Hu Khenmu 
+				Apep Apis Apophis Arensnuphis Asclepius Ash Ata Aten Auf 
+				Ba_Pef Baba Babi Banebdjedet Bennu Bes Bisu Buchis 
+				Dedun Denwen Duamutef 
+				Efu_Ra Ennead 
+				Fetket 
+				Geb 
+				Ha Han_her Hapi Hapy Hardedef Haurun Heh Heka Horus Hu 
+				Khenmu 
 				Menefer Meretseger Min Nefertum Nehebu-Kau Nekheny Neper Nile Nu Onuris Osiris Panebtawy 
                 Peteese Pihor Pili 
 				Ptah Sah Sed Set Seth Shed Shezmu Shu Sia Sobek Sokar Sopdu Sothis 
-				Ta_Nehisi Tatenen Tau Thoth Tutu Wallis 
-				Weneg Wenenu Wepwawet Zaim Zane
-				
+				Ta_Nehisi Tatenen Tau Thoth Tutu Tutankhaten 
+				Wallis Weneg Wenenu Wepwawet 
+				Zaim Zane 
 			}
 			reserved_female_names = {
 				Akila Amenet Amentet Ammit Ammut Amunet Anat Anipe Anqet Anta Anuke Anuket Anukit 
-                Astarte Ata Aten Bast Bastet 
-				Bat Bennu Beset Cleopatra Giza Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet 
-                Heket Heqet Heret_Kau Heset 
-				Hu Iabet Ipy Ishtar Isis Iusaaset Iw Kabechet Kebehwet Keket Layla Ma_at Maat Mafdet 
-                Mau Mefdet Mehit Mekhit Menefer 
-				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut Nashwa Naunet Nebethetpet 
-                Nefertiti Nehmetawy Neith 
-				Nekhbet Nephthys Nile Nubia Pakhet Pili Ptah Qadesh Qebhet Qudshu Raet Raettawy Ramla 
-                Renenutet Renpet Reret Reshep 
+                Astarte Ata Aten 
+				Bast Bastet Bat Bennu Beset 
+				Cleopatra 
+				Giza 
+				Hathor Hatmehit Hatmehyt Hatshepsput Hauhet Hedetet Heket Heqet Heret_Kau Heset 
+				Hu 
+				Iabet Ipy Ishtar Isis Iusaaset Iw 
+				Kabechet Kebehwet Keket 
+				Layla 
+				Ma_at Maat Mafdet Mau Mefdet Mehit Mekhit Menefer 
+				Menhit Menhyt Meretseger Merit Meskhenet Mestjet Meyht Min Mut 
+				Nashwa Naunet Nebethetpet Nefertiti Nehmetawy Neith 
+				Nekhbet Nephthys Nile Nubia 
+				Pakhet Pili Ptah 
+				Qadesh Qebhet Qudshu 
+				Raet Raettawy Ramla Renenutet Renpet Reret Reshep 
 				Sanura Satet  Satis Satit Sekhmet Selket Seret Serket Serkis Serqet Seshat Shai 
-                Sharifa Shay Shentayet Shepet Shesmetet 
-				Shu Sslama Ta_Bitjet Ta_Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
-                Tjenenyet Uajyt Unut Uto Wadj-Wer 
-				Wadjet Wallis Waset Wepset Zaim Zane
+                Sharifa Shay Shentayet Shepet Shesmetet Shu Sslama 
+				Ta_Bitjet Ta_Nehisi Tasenetnofret Tau Taweret Tayet Tefnut Tenenit Thoth 
+                Tjenenyet 
+				Uajyt Unut Uto 
+				Wadj_Wer Wadjet Wallis Waset Wepset 
+				Zaim Zane
 			}
 			localization = {
 				#High God Name
