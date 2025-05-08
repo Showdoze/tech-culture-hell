@@ -92,7 +92,17 @@
 	ai_value = { base = 0 }
  }
 #London 
- white_chapel = {
+ white_chapel_01 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_building_cereal_fields.dds"
+	can_construct_potential = {
+		barony = title:b_london
+		building_requirement_tribal = no
+	}
+	next_building = white_chapel_02
+	ai_value = { base = 0 }
+ }
+ white_chapel_02 = {
 	construction_time = slow_construction_time
 	type_icon = "icon_whitechapel.dds"
 	cost = {
@@ -120,7 +130,17 @@
 	ai_value = { base = 0 }
 	flag = travel_point_of_interest_religious
  }
- scotland_yard = {
+ scotland_yard_01 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_building_cereal_fields.dds"
+	can_construct_potential = {
+		barony = title:b_london
+		building_requirement_tribal = no
+	}
+	next_building = scotland_yard_02
+	ai_value = { base = 0 }
+ }
+ scotland_yard_02 = {
 	construction_time = slow_construction_time
 	type_icon = "scotland_yard.dds"
 	cost = {

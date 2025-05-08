@@ -410,7 +410,15 @@ stonehenge_02 = {
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
-	cost_gold = 7600
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+	}
+	cost_gold = 3000
 	character_modifier = {
 		learning = 2
 		monthly_learning_lifestyle_xp_gain_mult = 0.15
@@ -907,4 +915,84 @@ wonder_newgrange_01 = {
  #	type = special
  #	flag = travel_point_of_interest_martial # wall
  #}
-# 
+#ASSUR
+ assur_special_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_RICE_ancient_ruins.dds" 	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}	
+	cost_gold = 3000 
+	county_holder_character_modifier = {
+		learning = 1
+	}
+	county_modifier = {
+		build_speed = -0.1 # Baghdad was constructed using stones from Ctesiphon
+	}
+	next_building = assur_special_02
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_learning # ancient ruin
+ }
+ assur_special_02 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_ziggurats.dds" 
+	can_construct = {
+		scope:holder = {
+			AND = {
+				faith = faith:assyrian_pagan
+				#highest_held_title_tier >= tier_kingdom
+				is_independent_ruler = yes
+			}
+		}
+	}
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+	}
+	show_disabled = yes
+	cost_gold = 2000
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.2
+		diplomacy_per_piety_level = 1
+		title_creation_cost_mult = -0.25
+		desert_mountains_attrition_mult = -0.5
+		stewardship_per_prestige_level = 1
+	}
+	county_modifier = {
+		build_prestige_cost = -0.2
+		build_gold_cost = -0.2
+		monthly_county_control_growth_add = 0.5
+	}
+	province_modifier = {
+		monthly_income = 2
+		defender_holding_advantage = normal_building_advantage_tier_3
+		fort_level = good_building_fort_level_tier_2
+		stationed_maa_damage_mult = normal_maa_damage_tier_2
+		stationed_maa_toughness_mult = normal_maa_toughness_tier_2
+		stationed_siege_weapon_siege_value_mult = normal_maa_siege_value_tier_2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	type = special
+	flag = travel_point_of_interest_learning # ancient ruin
+ } 
+#
