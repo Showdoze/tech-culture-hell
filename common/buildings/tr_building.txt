@@ -170,7 +170,6 @@
 #
  RICE_sri_lanka_ruins_of_anuradhapura = {
 	construction_time = very_slow_construction_time
-
 	type_icon = "icon_building_RICE_ancient_ruins.dds"
 	can_construct_potential = {
 		barony = title:b_anuradhapura
@@ -203,8 +202,9 @@
 	can_construct = {
 		scope:holder = {
 			OR = {
-			religion = religion:kushitism_religion
-			religion = religion:egyptian_religion
+			    religion = religion:kushitism_religion
+			    faith = faith:kemetic_pagan
+				faith = faith:atenist_pagan
 			}
 		}
 	}
@@ -245,8 +245,9 @@
 	can_construct = {
 		scope:holder = {
 			OR = {
-			religion = religion:kushitism_religion
-			religion = religion:egyptian_religion
+			    religion = religion:kushitism_religion
+			    faith = faith:kemetic_pagan
+				faith = faith:atenist_pagan
 			}
 		}
 	}
