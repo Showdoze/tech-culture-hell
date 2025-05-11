@@ -446,3 +446,87 @@
 	}
 	flag = antiquity_era_regional
  }
+ innovation_persian_urbanization = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @civil_construction_2
+	potential = {
+		OR = {
+			this = culture:persian
+			any_parent_culture_or_above = {
+				this = culture:persian
+			}
+	    }   
+	}
+	character_modifier = { development_growth_factor = 0.10 }
+	custom = reduce_develop_county_penalty_special_urbanizations
+	custom = very_early_urbanization_effect
+	character_modifier = {
+		development_growth_factor = 0.15
+		building_slot_add = 1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+ }
+ innovation_chinese_urbanization = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @civil_construction_2
+	potential = { has_cultural_pillar = heritage_chinese }
+	custom = reduce_develop_county_penalty_special_urbanizations
+	custom = very_early_urbanization_effect
+	character_modifier = {
+		building_slot_add = 1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+ }
+ innovation_ancient_urbanites = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @civil_construction_2
+	potential = {
+		OR = {
+			this = culture:punic
+			this = culture:greek
+			this = culture:trojan
+			this = culture:syracuse
+			this = culture:venetian_ce
+			this = culture:athenian
+			this = culture:laconian
+			this = culture:minoan
+			this = culture:helladic
+			this = culture:achaian
+			this = culture:mesopotamian
+			this = culture:akkadian
+			this = culture:sumer
+			this = culture:babylonian
+			this = culture:elamite
+			this = culture:assyrian
+	    }   
+		has_cultural_parameter = can_build_cities_in_classical_antiquity
+		#Special Urbanization variants for these triggers
+		NOT = { this = culture:garamantian }
+		NOT = { has_cultural_pillar = heritage_iranian }
+		NOT = { has_cultural_pillar = heritage_chinese }
+		NOT = { has_cultural_pillar = heritage_indo_aryan }
+		NOT = { has_cultural_pillar = heritage_dravidian }
+		#NOT = { has_cultural_parameter = unlock_innovation_roman_civil }
+	}
+	custom = reduce_develop_county_penalty_special_urbanizations
+	custom = very_early_urbanization_effect
+	character_modifier = {
+		building_slot_add = 1
+	}
+	flag = global_regional
+	flag = antiquity_era_regional
+ }
+ innovation_paper_making = {
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	region = world_india
+	icon = @administration_3
+	character_modifier = { domain_limit = 1 }
+	flag = global_regional
+	flag = antiquity_era_regional
+}
