@@ -1,357 +1,6 @@
-﻿giza = {
-	county = c_giza
-	
-	character_modifier = {
-		name = holy_site_giza_effect_name
-		life_expectancy = 3
-		health = 0.1
-	}
-}
-qus = {
-	county = c_qus
-	
-	character_modifier = {
-		name = holy_site_qus_effect_name
-		learning_per_piety_level = 2
-	}	
-	flag = cordoba_conversion_bonus # +20% county conversion speed
-}
-bahnasa = {
-	county = c_bahnasa
-	
-	character_modifier = {
-		name = holy_site_bahnasa_effect_name
-		monthly_lifestyle_xp_gain_mult = 0.1
-	}	
-	flag = visoki_conversion_resistance_bonus # 50% County Conversion Resistance
-}
-qadisiya = {
-	county = c_qadisiya
-
-	character_modifier = {
-		name = holy_site_qadisiya_effect_name
-		monthly_piety_gain_mult = 0.1
-		prowess_per_piety_level = 1
-	}
-}
-wasit = {
-	county = c_wasit
-	barony = b_wasit
-	character_modifier = {
-		name = holy_site_wasit_effect_name
-		monthly_prestige_gain_mult = 0.05
-		same_faith_opinion = 5
-	}
-}
-takrit = {
-	county = c_takrit
-	barony = b_takrit
-	character_modifier = {
-		name = holy_site_takrit_effect_name
-		build_speed = -0.1
-		stewardship = 1
-	}
-}
-sardan = {
-	county = c_sardan
-	character_modifier = {
-		name = holy_site_sardan_effect_name
-		dread_baseline_add = 5
-		monthly_tyranny = -0.1
-		tyranny_gain_mult = -0.1
-	}
-}
-ninive = {#Temple of Ishtar
-	county = c_ninive
-	barony = b_ninawa
-	character_modifier = {
-		name = holy_site_ninive_effect_name
-		levy_reinforcement_rate_same_faith = 0.1
-		knight_effectiveness_mult = 0.1
-		prowess_per_piety_level = 1
-	}
-}
-raqqa = {
-	county = c_raqqa
-	barony = b_raqqa
-	character_modifier = {
-		name = holy_site_raqqa_effect_name
-		knight_effectiveness_mult = 0.1
-		knight_limit = 1
-	}
-}
-tabuk = {
-	county = c_tabuk
-	barony = b_tabuk
-	character_modifier = {
-		name = holy_site_tabuk_effect_name
-		same_culture_opinion = 5
-		diplomacy = 1
-	}
-}
-#beirut = {
-#	county = c_beirut
-#
-#	character_modifier = {
-#		name = holy_site_beirut_effect_name
-#		defender_advantage = 5
-#		martial = 2
-#	}
-#}
-farama = {
-	county = c_farama
-	barony = b_farama
-	character_modifier = {
-		name = holy_site_farama_effect_name
-		diplomacy = 3
-	}
-}
-harran = {
-	county = c_harran
-	barony = b_harran
-	character_modifier = {
-		name = holy_site_harran_effect_name
-		monthly_piety_gain_mult = 0.1
-		monthly_prestige_gain_mult = 0.1
-	}
-}
-syrte = {
-	county = c_syrte
-	barony = b_syrte
-	character_modifier = {
-		name = holy_site_syrte_effect_name
-		stewardship_per_piety_level = 1
-		naval_movement_speed_mult = 0.2
-	}
-}
-tiberias = {
-	county = c_tiberias
-	barony = b_tiberias
-	character_modifier = {
-		name = holy_site_tiberias_effect_name
-		same_faith_opinion = 5
-		same_culture_opinion = 5
-	}
-}
-homs = {
-	county = c_homs
-
-	character_modifier = {
-		name = holy_site_homs_effect_name
-		fertility = 0.5
-		stress_loss_mult = 0.2
-	}
-}
-negev = {
-	county = c_negev
-
-	character_modifier = {
-		name = holy_site_homs_effect_name
-		desert_advantage = 5
-		desert_mountains_advantage = 5
-		drylands_advantage = 5
-	}
-}
-sinai = {
-	county = c_sinai
-
-	character_modifier = {
-		name = holy_site_sinai_effect_name
-		negate_learning_penalty_add = 1
-	}
-
-	flag = kerala_conversion_bonus
-}
-ghazza = {
-	county = c_ghazza
-	barony = b_ghazza
-	character_modifier = {
-		name = holy_site_ghazza_effect_name
-		learning = 1
-		clergy_opinion = 5
-	}
-}
-chania = {
-	county = c_chania
-	barony = b_chania
-	character_modifier = {
-		name = holy_site_chania_effect_name
-		direct_vassal_opinion = 10
-	}
-}
-cagliari = {
-	county = c_cagliari
-	barony = b_cagliari
-	character_modifier = {
-		name = holy_site_cagliari_effect_name
-		monthly_piety_gain_per_knight_mult = 0.02
-		intrigue = 1
-	}
-}
-cadiz = {
-	county = c_cadiz
-	barony = b_cadiz
-	character_modifier = {
-		name = holy_site_chania_effect_name
-		controlled_province_advantage = 7.5
-		monthly_county_control_change_factor = 0.1
-	}
-}
-palermo = {
-	county = c_palermo
-	barony = b_palermo
-	character_modifier = {
-		name = holy_site_cagliari_effect_name
-		domain_tax_mult = 0.05
-		direct_vassal_opinion = 5
-	}
-}
-gloucestershire = {
-	county = c_gloucestershire
-
-	character_modifier = {
-		name = holy_site_gloucestershire_effect_name
-		learning = 2
-		clergy_opinion = 5
-	}
-}
-cornwall = {
-	county = c_cornwall
-
-	character_modifier = {
-		name = holy_site_cornwall_effect_name
-		army_maintenance_mult = -0.05
-		embarkation_cost_mult = -0.25
-	}
-}
-vannes = {
-	county = c_vannes
-	barony = b_vannes
-	character_modifier = {
-		name = holy_site_vannes_effect_name
-		prowess_per_prestige_level = 1
-		prowess_per_piety_level = 1
-	}
-}
-durham = {
-	county = c_durham
-	barony = b_durham
-	character_modifier = {
-		name = holy_site_durham_effect_name
-		monthly_county_control_change_factor = 0.1
-		domain_tax_same_faith_mult = 0.1
-	}
-}
-argyll = {
-	county = c_argyll
-
-	character_modifier = {
-		name = holy_site_argyll_effect_name
-		fertility = 0.15
-		health = 1
-	}
-}
-dublin = {
-	county = c_dublin
-	barony = b_dublin
-	character_modifier = {
-		name = holy_site_dublin_effect_name
-		powerful_vassal_opinion = 5
-		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
-	}
-}
-desmond = {
-	county = c_desmond
-
-	character_modifier = {
-		name = holy_site_desmond_effect_name
-		dynasty_house_opinion = 10
-	}
-}
-dunbar = {
-	county = c_dunbar
-	barony = b_dunbar
-	character_modifier = {
-		name = holy_site_dunbar_effect_name
-		stewardship = 1
-		stress_loss_mult = 0.2
-	}
-}
-ailech = {
-	county = c_ailech
-
-	character_modifier = {
-		name = holy_site_ailech_effect_name
-		heavy_infantry_damage_mult = 0.05
-		knight_effectiveness_mult = 0.2
-	}
-}
-
-auvergne = {
-	county = c_auvergne
-
-	character_modifier = {
-		name = holy_site_auvergne_effect_name
-		martial = 1
-		learning = 1
-		intrigue = 1
-	}
-}
-lombardia = {
-	county = c_lombardia
-
-	character_modifier = {
-		name = holy_site_lombardia_effect_name
-		councillor_opinion = 5
-		county_opinion_add = 5
-	}
-}
-yperen = {
-	county = c_yperen
-
-	character_modifier = {
-		name = holy_site_yperen_effect_name
-		monthly_tyranny = -0.1
-		tyranny_gain_mult = -0.2
-	}
-}
-ravenna = {
-	county = c_ravenna
-
-	character_modifier = {
-		name = holy_site_ravenna_effect_name
-		artifact_decay_reduction_mult = -0.2
-		advantage_against_coreligionists = 5
-	}
-} 
-viterbo = {
-	county = c_viterbo
-	barony = b_sutri
-	character_modifier = {
-		sway_scheme_power_mult = 0.1
-		personal_scheme_power_mult = 0.1
-	}
-}
-tivoli = {
-	county = c_tivoli
-	barony = b_velletri
-	character_modifier = {
-		name = holy_site_tivoli_effect_name
-		monthly_piety_gain_per_knight_mult = 0.01
-		heavy_infantry_damage_mult = 0.05
-	}
-}
-firenze = {
-	county = c_firenze
-	barony = b_volterra
-	character_modifier = {
-		name = holy_site_firenze_effect_name
-		county_opinion_add = 5
-		different_culture_opinion = 5
-		learn_language_scheme_power_mult = 0.2 
-	}
-}
-delphi = {
+﻿
+#Byzantine
+ delphi = {
 	county = c_aetolia
 	barony = b_lidoriki
 	character_modifier = {
@@ -359,8 +8,118 @@ delphi = {
 		knight_effectiveness_mult = 0.25
 		learn_language_scheme_power_mult = 0.2 
 	}
-}
-athens = {
+ }
+ chania = {
+	county = c_chania
+	barony = b_chania
+	character_modifier = {
+		name = holy_site_chania_effect_name
+		direct_vassal_opinion = 10
+	}
+ } 
+ ionia = { # Temple of Artemis
+	county = c_ionia
+	barony = b_ephesos
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		health = 0.1
+		stress_loss_mult = 0.1
+	}
+ }
+ nicosia = { # Temple of Aphrodite
+	county = c_nicosia
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		heavy_infantry_toughness_mult = 0.01
+		knight_effectiveness_mult = 0.01
+		sway_scheme_power_mult = 0.01
+		fertility = 0.01
+		different_culture_opinion = 5
+	}
+ }
+ chandax = { # Knoss Palace
+	county = c_chandax
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		short_reign_duration_mult = -0.25
+	}
+ }
+ #anatolia
+  pepuza = {
+	county = c_pacatiana
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+	}
+  }
+  tyana = { # Tyana, birthplace of the Neopythagorean Apollonius
+	county = c_cappadocia
+	character_modifier = {
+		name = holy_site_tyana_effect_name
+		martial = 1
+		levy_size = 0.1
+	}
+  }
+ #armenia
+  mt_tondrak = {
+	county = c_bagrewand
+	barony = b_bagavan
+	flag = mt_tondrak_resistance_bonus #30% bonus to conversion resistance and return to the old religion
+  }
+  vaspurakan = {
+	county = c_vaspurakan
+	flag = vaspurakan_same_culture_conversion_bonus #50% conversion speed bonus on the counties with same culture
+  }
+ #epirus
+   epeiros = { # Temple of Hades
+	county = c_epeiros
+	barony = b_grava
+	character_modifier = {
+		name = holy_site_korinthos_effect_name
+		monthly_tyranny = -0.2
+		tyranny_gain_mult = -0.2
+	}
+  }
+ #georgia
+  mtskheta = {
+	county = c_kakheti
+	barony = b_mtskheta
+	character_modifier = {
+		religious_vassal_opinion = 10 #Religious center of Georgia
+	}
+  }
+ #thessalonika 
+  delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis; home to various temples and mosaics
+	county = c_naxos
+	character_modifier = {
+		name = holy_site_delos_effect_name
+		coastal_advantage = 10
+	}
+  }
+  lesbos = { # Temple of Hefest
+	county = c_lesbos
+	character_modifier = {
+		name = holy_site_ionia_effect_name
+		cultural_head_fascination_mult = 0.1
+	}
+  }
+  thermopylae = { # Thermopylae, site of the entrance to Hades and one of the major Eleusinian ritual grounds
+	county = c_demetrias
+	character_modifier = {
+		name = holy_site_thermopylae_effect_name
+		stress_loss_mult = 0.1
+		domain_tax_same_faith_mult = 0.05
+	}
+  }
+  chios = { # Samos, Pythagoras' birthplace
+	county = c_chios
+	barony = b_chios
+	character_modifier = {
+		name = holy_site_chios_effect_name
+		learning = 2
+	}
+  }
+ #hellas 
+  athens = {
 	county = c_attica
 	barony = b_athens
 	character_modifier = {
@@ -371,52 +130,15 @@ athens = {
 		coastal_advantage = 5
 	}
 	flag = cordoba_conversion_bonus # +20% county conversion speed
-}
-meroe = {
-	county = c_meroe
-	character_modifier = {
-		name = holy_site_meroe_effect_name
-		artifact_decay_reduction_mult = -0.5
-		learn_language_scheme_power_mult = 0.2 
-	}
-} 
-cairo = {
-	county = c_cairo
-	barony = b_cairo
-	character_modifier = {
-		name = holy_site_cairo_effect_name
-		artifact_decay_reduction_mult = -0.5
-		county_opinion_add = 5 
-	}
-} 
-carthage_capital = {
-	county = c_tunis
-	barony = b_tunis
-	character_modifier = {
-		name = holy_site_carthage_effect_name
-		dread_baseline_add = 2.5
-		same_faith_opinion = 10
-		naval_movement_speed_mult = 0.4
-		coastal_advantage = 5
-	}
-}
-timbuktu = { 
-    county = c_tirakka
-    barony = b_timbuktu
-    character_modifier = {
-	    name = holy_site_timbuktu_effect_name
-	    negate_learning_penalty_add = 2
-		learning_per_piety_level = 1
-    }
-}
-eleusis = { # Eleusis, site of the Eleusinian Telesterion (main initiation hall) and birthplace of Aeschylus
+  }
+  eleusis = { # Eleusis, site of the Eleusinian Telesterion (main initiation hall) and birthplace of Aeschylus
 	county = c_attica
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		development_growth_factor = 0.1
 	}
-}
-achaia = { # Stadium of Olimpia
+  }
+  achaia = { # Stadium of Olimpia
 	county = c_achaia
 	barony = b_andravida
 	character_modifier = {
@@ -424,115 +146,57 @@ achaia = { # Stadium of Olimpia
 		men_at_arms_maintenance = -0.3
 		powerful_vassal_opinion = 10
 	}
-}
-laconia = { # Spartan camp
+  }
+  laconia = { # Spartan camp
 	county = c_laconia
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		prowess_per_piety_level = 1
 		knight_effectiveness_mult = 0.3
 	}
-}
-boeotia = { # The Oracle
+  }
+  boeotia = { # The Oracle
 	county = c_boeotia
 	character_modifier = {
 		name = holy_site_eleusis_effect_name
 		same_faith_opinion = 10
 		hard_casualty_modifier = -0.1
 	}
-}
-ionia = { # Temple of Artemis
-	county = c_ionia
-	barony = b_ephesos
-	character_modifier = {
-		name = holy_site_ionia_effect_name
-		health = 0.1
-		stress_loss_mult = 0.1
-	}
-}
-nicosia = { # Temple of Aphrodite
-	county = c_nicosia
-	character_modifier = {
-		name = holy_site_ionia_effect_name
-		heavy_infantry_toughness_mult = 0.01
-		knight_effectiveness_mult = 0.01
-		sway_scheme_power_mult = 0.01
-		fertility = 0.01
-		different_culture_opinion = 5
-	}
-}
-lesbos = { # Temple of Hefest
-	county = c_lesbos
-	character_modifier = {
-		name = holy_site_ionia_effect_name
-		cultural_head_fascination_mult = 0.1
-	}
-}
-korinthos = { # Mosaic of Poseidon
-	county = c_korinthos
-	character_modifier = {
-		name = holy_site_korinthos_effect_name
-		embarkation_cost_mult = -0.25
-		retreat_losses = -0.1
-	}
-}
-epeiros = { # Temple of Hades
-	county = c_epeiros
-	barony = b_grava
-	character_modifier = {
-		name = holy_site_korinthos_effect_name
-		monthly_tyranny = -0.2
-		tyranny_gain_mult = -0.2
-	}
-}
-messenia = { # Temple of Hermes
+  }
+  messenia = { # Temple of Hermes
 	county = c_messenia
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
 		flag = kerala_conversion_bonus
 		naval_movement_speed_mult = 0.2
 	}
-}
-chandax = { # Knoss Palace
-	county = c_chandax
+  }
+  korinthos = { # Mosaic of Poseidon
+	county = c_korinthos
 	character_modifier = {
 		name = holy_site_korinthos_effect_name
-		short_reign_duration_mult = -0.25
-	}
-}
-mainz = { # Mogontiacum
-	county = c_mainz
-	character_modifier = {
-		name = holy_site_mainz_effect_name
-		same_faith_opinion = 10
-	}
-}
-middlesex = { # Temple of Mithras, Walbrook (also later Bacchic)
-	county = c_middlesex
-	character_modifier = {
-		name = holy_site_middlesex_effect_name
-		levy_reinforcement_rate_same_faith = 0.2
+		embarkation_cost_mult = -0.25
 		retreat_losses = -0.1
 	}
-}
-turnovo = { # Oescus & Novae
-	county = c_turnovo
-	barony = b_turnovo
+  }
+ #Pontus
+  tephrike = {
+	county = c_satala
+	barony = b_tephrice
 	character_modifier = {
-		name = holy_site_turnovo_effect_name
-		dynasty_house_opinion = 5
-		intrigue_per_piety_level = 1
+		knight_limit = 1 #it was a heretic stronghold for real
 	}
-}
-jaffa = { # Caesarea Maritima
-	county = c_jaffa
+  }
+ #
+#EAST EUROPE
+ #bulgaria
+  nicopolis = { #Site where Ulfilas converted the Goths
+	county = c_nikopolis
 	character_modifier = {
-		name = holy_site_jaffa_effect_name
-		supply_duration = 0.2
-		defender_advantage = 5
+		religious_vassal_opinion = 5
 	}
-}
-zherkovo = { # Temple of Orpheus, Tatul
+  }
+  zherkovo = { # Temple of Orpheus, Tatul
 	county = c_zherkovo
 	barony = b_zherkovo
 	character_modifier = {
@@ -540,135 +204,29 @@ zherkovo = { # Temple of Orpheus, Tatul
 		martial_per_piety_level = 1
 		knight_effectiveness_mult = 0.1
 	}
-}
-siracusa = { # Villa Romana del Casale
-	county = c_siracusa
+  }
+  turnovo = { # Oescus & Novae
+	county = c_turnovo
+	barony = b_turnovo
 	character_modifier = {
-		name = holy_site_siracusa_effect_name
-		naval_movement_speed_mult = 0.2
-		raid_speed = 0.1
+		name = holy_site_turnovo_effect_name
+		dynasty_house_opinion = 5
+		intrigue_per_piety_level = 1
 	}
-}
-tripolitana = { # Leptis Magna
-	county = c_tripolitana
-	character_modifier = {
-		name = holy_site_tripolitana_effect_name
-		martial = 1
-		prowess_per_prestige_level = 1
-	}
-}
-venaissin = { # Arles
-	county = c_venaissin
-	character_modifier = {
-		name = holy_site_venaissin_effect_name
-		diplomacy = 1
-		councillor_opinion = 5
-	}
-}
-chios = { # Samos, Pythagoras' birthplace
-	county = c_chios
-	barony = b_chios
-	character_modifier = {
-		name = holy_site_chios_effect_name
-		learning = 2
-	}
-}
-rossano = { # Crotone, where Pythagoras and his followers settled
-	county = c_rossano
-	barony = b_rossano
-	character_modifier = {
-		name = holy_site_rossano_effect_name
-		stress_loss_mult = 0.2
-		life_expectancy = 1
-	}
-}
-delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis; home to various temples and mosaics
-	county = c_naxos
-	character_modifier = {
-		name = holy_site_delos_effect_name
-		coastal_advantage = 10
-	}
-}
-thermopylae = { # Thermopylae, site of the entrance to Hades and one of the major Eleusinian ritual grounds
-	county = c_demetrias
-	character_modifier = {
-		name = holy_site_thermopylae_effect_name
-		stress_loss_mult = 0.1
-		domain_tax_same_faith_mult = 0.05
-	}
-}
-heliopolis = { # Heliopolis ('the City of the Sun'), a regional capital, major shrine and home of the solar cult
-	county = c_cairo
-	character_modifier = {
-		name = holy_site_heliopolis_effect_name
-		domain_tax_same_faith_mult = 0.05
-		monthly_county_control_change_factor = 0.1
-	}
-}
-tyana = { # Tyana, birthplace of the Neopythagorean Apollonius
-	county = c_cappadocia
-	character_modifier = {
-		name = holy_site_tyana_effect_name
-		martial = 1
-		levy_size = 0.1
-	}
-}
-palmyra = { # Palmyra, the origin of Elagabalus' original Cult of Sol
-	county = c_palmyra
-	character_modifier = {
-		name = holy_site_palmyra_effect_name
-		prowess = 1
-		martial_per_piety_level = 1
-	}
-}
-tus_hs = { # Imam Reza shrine
-	county = c_tus
-	character_modifier = {
-		learning_per_piety_level = 1
-		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
-	}
-}
-mtskheta = {
-	county = c_kakheti
-	barony = b_mtskheta
-	character_modifier = {
-		religious_vassal_opinion = 10 #Religious center of Georgia
-	}
-}
-vaspurakan = {
-	county = c_vaspurakan
-	flag = vaspurakan_same_culture_conversion_bonus #50% conversion speed bonus on the counties with same culture
-}
-tephrike = {
-	county = c_satala
-	barony = b_tephrice
-	character_modifier = {
-		knight_limit = 1 #it was a heretic stronghold for real
-	}
-}
-mt_tondrak = {
-	county = c_bagrewand
-	barony = b_bagavan
-	flag = mt_tondrak_resistance_bonus #30% bonus to conversion resistance and return to the old religion
-}
-pepuza = {
-	county = c_pacatiana
-	character_modifier = {
-		monthly_piety_gain_mult = 0.1
-	}
-}
-nicopolis = { #Site where Ulfilas converted the Goths
-	county = c_nikopolis
-	character_modifier = {
-		religious_vassal_opinion = 5
-	}
-}
+  }
 # Germany Germanic Pagan
  aachen = { # Palace of Aachen
 	county = c_aachen
 	barony = b_aachen
 	character_modifier = {
 		diplomacy_per_piety_level = 1
+	}
+ }
+ mainz = { # Mogontiacum
+	county = c_mainz
+	character_modifier = {
+		name = holy_site_mainz_effect_name
+		same_faith_opinion = 10
 	}
  }
  magdeburg = {
@@ -707,6 +265,15 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		same_faith_opinion = 10
 	}
  }
+ cadiz = {
+	county = c_cadiz
+	barony = b_cadiz
+	character_modifier = {
+		name = holy_site_chania_effect_name
+		controlled_province_advantage = 7.5
+		monthly_county_control_change_factor = 0.1
+	}
+  }
  granada = { # Alhambra
 	county = c_granada
 	barony = b_granada
@@ -734,6 +301,33 @@ nicopolis = { #Site where Ulfilas converted the Goths
 	}
  }
 #FRENCH France
+ vannes = {
+	county = c_vannes
+	barony = b_vannes
+	character_modifier = {
+		name = holy_site_vannes_effect_name
+		prowess_per_prestige_level = 1
+		prowess_per_piety_level = 1
+	}
+ }
+ yperen = {
+	county = c_yperen
+	character_modifier = {
+		name = holy_site_yperen_effect_name
+		monthly_tyranny = -0.1
+		tyranny_gain_mult = -0.2
+	}
+ }
+ auvergne = {
+	county = c_auvergne
+
+	character_modifier = {
+		name = holy_site_auvergne_effect_name
+		martial = 1
+		learning = 1
+		intrigue = 1
+	}
+ }
  paris = { 
     county = c_ile_de_france
     barony = b_paris
@@ -773,6 +367,14 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		name = holy_site_orleans_effect_name
 		retreat_losses = -0.2
 		levy_reinforcement_rate_same_faith = 0.2
+	}
+ }
+ venaissin = { # Arles
+	county = c_venaissin
+	character_modifier = {
+		name = holy_site_venaissin_effect_name
+		diplomacy = 1
+		councillor_opinion = 5
 	}
  }
 # Greco-Roman Pagan
@@ -845,6 +447,15 @@ nicopolis = { #Site where Ulfilas converted the Goths
 	}
  }
 #Italy 
+ cagliari = {
+	county = c_cagliari
+	barony = b_cagliari
+	character_modifier = {
+		name = holy_site_cagliari_effect_name
+		monthly_piety_gain_per_knight_mult = 0.02
+		intrigue = 1
+	}
+ }
  napoli = {
 	county = c_napoli
 	barony = b_aversa
@@ -854,6 +465,51 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		monthly_piety_gain_mult = 0.05
 		learning = 2
 		monthly_lifestyle_xp_gain_mult = 0.08
+	}
+ }
+ lombardia = {
+	county = c_lombardia
+
+	character_modifier = {
+		name = holy_site_lombardia_effect_name
+		councillor_opinion = 5
+		county_opinion_add = 5
+	}
+ }
+ ravenna = {
+	county = c_ravenna
+
+	character_modifier = {
+		name = holy_site_ravenna_effect_name
+		artifact_decay_reduction_mult = -0.2
+		advantage_against_coreligionists = 5
+	}
+ } 
+ viterbo = {
+	county = c_viterbo
+	barony = b_sutri
+	character_modifier = {
+		sway_scheme_power_mult = 0.1
+		personal_scheme_power_mult = 0.1
+	}
+ }
+ tivoli = {
+	county = c_tivoli
+	barony = b_velletri
+	character_modifier = {
+		name = holy_site_tivoli_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		heavy_infantry_damage_mult = 0.05
+	}
+ }
+ firenze = {
+	county = c_firenze
+	barony = b_volterra
+	character_modifier = {
+		name = holy_site_firenze_effect_name
+		county_opinion_add = 5
+		different_culture_opinion = 5
+		learn_language_scheme_power_mult = 0.2 
 	}
  }
  genoa = { #Trade city, not quite powerful at the time but Aquileianism is gonna appear only in 553 anyway
@@ -872,6 +528,33 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		religious_vassal_opinion = 5
 	}
  }
+ #sicily
+   palermo = {
+	county = c_palermo
+	barony = b_palermo
+	character_modifier = {
+		name = holy_site_cagliari_effect_name
+		domain_tax_mult = 0.05
+		direct_vassal_opinion = 5
+	}
+  }
+  siracusa = { # Villa Romana del Casale
+	county = c_siracusa
+	character_modifier = {
+		name = holy_site_siracusa_effect_name
+		naval_movement_speed_mult = 0.2
+		raid_speed = 0.1
+	}
+  }
+  rossano = { # Crotone, where Pythagoras and his followers settled
+	county = c_rossano
+	barony = b_rossano
+	character_modifier = {
+		name = holy_site_rossano_effect_name
+		stress_loss_mult = 0.2
+		life_expectancy = 1
+	}
+  }
  #Roma
   roma = { #ROME
 	county = c_roma
@@ -939,8 +622,26 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		owned_scheme_secrecy_add = 10
 	}
   }
+  argyll = {
+	county = c_argyll
+
+	character_modifier = {
+		name = holy_site_argyll_effect_name
+		fertility = 0.15
+		health = 1
+	}
+  }
+  dunbar = {
+	county = c_dunbar
+	barony = b_dunbar
+	character_modifier = {
+		name = holy_site_dunbar_effect_name
+		stewardship = 1
+		stress_loss_mult = 0.2
+	}
+  }
  #Wales Welsh
- cardiganshire = {
+  cardiganshire = {
 	county = c_cardiganshire
 	character_modifier = {
 		powerful_vassal_opinion = 5
@@ -978,6 +679,41 @@ nicopolis = { #Site where Ulfilas converted the Goths
 	}
   }
  # 
+  gloucestershire = {
+	county = c_gloucestershire
+
+	character_modifier = {
+		name = holy_site_gloucestershire_effect_name
+		learning = 2
+		clergy_opinion = 5
+	}
+  }
+  cornwall = {
+	county = c_cornwall
+
+	character_modifier = {
+		name = holy_site_cornwall_effect_name
+		army_maintenance_mult = -0.05
+		embarkation_cost_mult = -0.25
+	}
+  }
+  durham = {
+	county = c_durham
+	barony = b_durham
+	character_modifier = {
+		name = holy_site_durham_effect_name
+		monthly_county_control_change_factor = 0.1
+		domain_tax_same_faith_mult = 0.1
+	}
+  }
+  middlesex = { # Temple of Mithras, Walbrook (also later Bacchic)
+	county = c_middlesex
+	character_modifier = {
+		name = holy_site_middlesex_effect_name
+		levy_reinforcement_rate_same_faith = 0.2
+		retreat_losses = -0.1
+	}
+ }
  london = { 
     county = c_middlesex
     barony = b_london
@@ -1010,7 +746,79 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		artifact_decay_reduction_mult = -0.5
 	}
  }
+ #Ierland
+  dublin = {
+	county = c_dublin
+	barony = b_dublin
+	character_modifier = {
+		name = holy_site_dublin_effect_name
+		powerful_vassal_opinion = 5
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
+	}
+  }
+  desmond = {
+	county = c_desmond
+
+	character_modifier = {
+		name = holy_site_desmond_effect_name
+		dynasty_house_opinion = 10
+	}
+  }
+  ailech = {
+	county = c_ailech
+
+	character_modifier = {
+		name = holy_site_ailech_effect_name
+		heavy_infantry_damage_mult = 0.05
+		knight_effectiveness_mult = 0.2
+	}
+  }
 #AFRICA 
+ meroe = {
+	county = c_meroe
+	character_modifier = {
+		name = holy_site_meroe_effect_name
+		artifact_decay_reduction_mult = -0.5
+		learn_language_scheme_power_mult = 0.2 
+	}
+ } 
+ syrte = {
+	county = c_syrte
+	barony = b_syrte
+	character_modifier = {
+		name = holy_site_syrte_effect_name
+		stewardship_per_piety_level = 1
+		naval_movement_speed_mult = 0.2
+	}
+ }
+ carthage_capital = {
+	county = c_tunis
+	barony = b_tunis
+	character_modifier = {
+		name = holy_site_carthage_effect_name
+		dread_baseline_add = 2.5
+		same_faith_opinion = 10
+		naval_movement_speed_mult = 0.4
+		coastal_advantage = 5
+	}
+ }
+ timbuktu = { 
+    county = c_tirakka
+    barony = b_timbuktu
+    character_modifier = {
+	    name = holy_site_timbuktu_effect_name
+	    negate_learning_penalty_add = 2
+		learning_per_piety_level = 1
+    }
+ }
+ tripolitana = { # Leptis Magna
+	county = c_tripolitana
+	character_modifier = {
+		name = holy_site_tripolitana_effect_name
+		martial = 1
+		prowess_per_prestige_level = 1
+	}
+ }
  ife = { # 
 	county = c_ife
 	barony = b_ile-ife
@@ -1030,6 +838,66 @@ nicopolis = { #Site where Ulfilas converted the Goths
 	}
  }
  #Egyptian KEMic
+   giza = {
+	county = c_giza
+	
+	character_modifier = {
+		name = holy_site_giza_effect_name
+		life_expectancy = 3
+		health = 0.1
+	}
+  }
+  qus = {
+	county = c_qus
+	
+	character_modifier = {
+		name = holy_site_qus_effect_name
+		learning_per_piety_level = 2
+	}	
+	flag = cordoba_conversion_bonus # +20% county conversion speed
+  }
+  bahnasa = {
+	county = c_bahnasa
+	
+	character_modifier = {
+		name = holy_site_bahnasa_effect_name
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}	
+	flag = visoki_conversion_resistance_bonus # 50% County Conversion Resistance
+  }
+   sinai = {
+	county = c_sinai
+	character_modifier = {
+		name = holy_site_sinai_effect_name
+		negate_learning_penalty_add = 1
+	}
+	flag = kerala_conversion_bonus
+  }
+  farama = {
+	county = c_farama
+	barony = b_farama
+	character_modifier = {
+		name = holy_site_farama_effect_name
+		diplomacy = 3
+	}
+  }
+  cairo = {
+	county = c_cairo
+	barony = b_cairo
+	character_modifier = {
+		name = holy_site_cairo_effect_name
+		artifact_decay_reduction_mult = -0.5
+		county_opinion_add = 5 
+	}
+  } 
+  heliopolis = { # Heliopolis ('the City of the Sun'), a regional capital, major shrine and home of the solar cult
+	county = c_cairo
+	character_modifier = {
+		name = holy_site_heliopolis_effect_name
+		domain_tax_same_faith_mult = 0.05
+		monthly_county_control_change_factor = 0.1
+	}
+  }
   cyrenaica = {
 	county = c_derna
 	character_modifier = {
@@ -1080,6 +948,15 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		same_faith_opinion = 5
 	}
   }
+  harran = {
+	county = c_harran
+	barony = b_harran
+	character_modifier = {
+		name = holy_site_harran_effect_name
+		monthly_piety_gain_mult = 0.1
+		monthly_prestige_gain_mult = 0.1
+	}
+  }
   istakhr = { # tomb_of_cyrus_01
 	county = c_istakhr
 	barony = b_istakhr
@@ -1089,6 +966,68 @@ nicopolis = { #Site where Ulfilas converted the Goths
 		monthly_dynasty_prestige_mult = 0.01
 	}
   }
+  tus_hs = { # Imam Reza shrine
+	county = c_tus
+	character_modifier = {
+		learning_per_piety_level = 1
+		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	}
+  }
+  qadisiya = {
+	county = c_qadisiya
+
+	character_modifier = {
+		name = holy_site_qadisiya_effect_name
+		monthly_piety_gain_mult = 0.1
+		prowess_per_piety_level = 1
+	}
+  }
+  wasit = {
+	county = c_wasit
+	barony = b_wasit
+	character_modifier = {
+		name = holy_site_wasit_effect_name
+		monthly_prestige_gain_mult = 0.05
+		same_faith_opinion = 5
+	}
+  }
+  takrit = {
+	county = c_takrit
+	barony = b_takrit
+	character_modifier = {
+		name = holy_site_takrit_effect_name
+		build_speed = -0.1
+		stewardship = 1
+	}
+  }
+  sardan = {
+	county = c_sardan
+	character_modifier = {
+		name = holy_site_sardan_effect_name
+		dread_baseline_add = 5
+		monthly_tyranny = -0.1
+		tyranny_gain_mult = -0.1
+	}
+  }
+  ninive = {#Temple of Ishtar
+	county = c_ninive
+	barony = b_ninawa
+	character_modifier = {
+		name = holy_site_ninive_effect_name
+		levy_reinforcement_rate_same_faith = 0.1
+		knight_effectiveness_mult = 0.1
+		prowess_per_piety_level = 1
+	}
+  }
+  raqqa = {
+	county = c_raqqa
+	barony = b_raqqa
+	character_modifier = {
+		name = holy_site_raqqa_effect_name
+		knight_effectiveness_mult = 0.1
+		knight_limit = 1
+	}
+ }
  #mesopatamia
   nisibis = { #Clone of Alexandria; was the major center for the Church of the East
 	county = c_nasibin
@@ -1105,6 +1044,71 @@ nicopolis = { #Site where Ulfilas converted the Goths
 	}
   }
  #Arabia
+  tabuk = {
+	county = c_tabuk
+	barony = b_tabuk
+	character_modifier = {
+		name = holy_site_tabuk_effect_name
+		same_culture_opinion = 5
+		diplomacy = 1
+	}
+  }
+ #jerusalem
+  jaffa = { # Caesarea Maritima
+	county = c_jaffa
+	character_modifier = {
+		name = holy_site_jaffa_effect_name
+		supply_duration = 0.2
+		defender_advantage = 5
+	}
+  }
+  tiberias = {
+	county = c_tiberias
+	barony = b_tiberias
+	character_modifier = {
+		name = holy_site_tiberias_effect_name
+		same_faith_opinion = 5
+		same_culture_opinion = 5
+	}
+ }
+  negev = {
+	county = c_negev
+
+	character_modifier = {
+		name = holy_site_homs_effect_name
+		desert_advantage = 5
+		desert_mountains_advantage = 5
+		drylands_advantage = 5
+	}
+  }
+  ghazza = {
+	county = c_ghazza
+	barony = b_ghazza
+	character_modifier = {
+		name = holy_site_ghazza_effect_name
+		learning = 1
+		clergy_opinion = 5
+	}
+  }
+ #syria
+  palmyra = { # Palmyra, the origin of Elagabalus' original Cult of Sol
+	county = c_palmyra
+	character_modifier = {
+		name = holy_site_palmyra_effect_name
+		prowess = 1
+		martial_per_piety_level = 1
+	}
+  }
+  homs = {
+	county = c_homs
+
+	character_modifier = {
+		name = holy_site_homs_effect_name
+		fertility = 0.5
+		stress_loss_mult = 0.2
+	}
+  }
+ #
 #Scandanavia
   oslosyslar = {
 	county = c_vingulmork
