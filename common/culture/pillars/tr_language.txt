@@ -299,10 +299,6 @@ language_cyrodiilic = {
 			limit = { has_cultural_pillar = language_cyrodiilic }
 			multiply = 10
 		}
-		if = {
-			limit = { has_cultural_pillar = language_bretic }
-			multiply = 2
-		}
 	}
 	color = cyrodiilic
 }
@@ -432,10 +428,6 @@ language_jel = { #Argonian
 			limit = { has_cultural_pillar = language_jel }
 			multiply = 10
 		}
-		if = {
-			limit = { has_cultural_pillar = language_taagra }
-			multiply = 2
-		}
 	}
 	color = jel
 }
@@ -451,10 +443,6 @@ language_taagra = { #khajitt
 		if = {
 			limit = { has_cultural_pillar = language_taagra }
 			multiply = 10
-		}
-		if = {
-			limit = { has_cultural_pillar = language_jel }
-			multiply = 2
 		}
 	}
 	color = taagra
@@ -583,22 +571,6 @@ language_elf = {
 		if = {
 			limit = { has_cultural_pillar = language_elf }
 			multiply = 10
-		}
-		if = {
-			limit = { has_cultural_pillar = language_hylian }
-			multiply = 1
-		}
-		if = {
-			limit = { has_cultural_pillar = language_dwemeris }
-			multiply = 5
-		}
-		if = {
-			limit = { has_cultural_pillar = language_dunmeris }
-			multiply = 1
-		}
-		if = {
-			limit = { has_cultural_pillar = language_bosmeris }
-			multiply = 1
 		}
 	}
 	color = altmeris

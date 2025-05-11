@@ -211,7 +211,7 @@
  }
 #Aztec
  @aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
- @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
+  @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
  innovation_aztec_weapon = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
@@ -240,6 +240,10 @@
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		movement_speed = 0.01
+	}
+	maa_upgrade = {
+		type = skirmishers
+		toughness = 1
 	}
 	unlock_maa = jaguar_warrior
  }
