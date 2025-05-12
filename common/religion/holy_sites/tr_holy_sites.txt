@@ -221,6 +221,17 @@
 		intrigue_per_piety_level = 1
 	}
   }
+ #
+  bialowieza_forest = {
+	county = c_volkovysk
+	character_modifier = {
+		name = holy_site_bialowieza_forest_effect_name
+		forest_advantage = 5
+	}
+	# Białowieża Forest is a forest on the border between Belarus and Poland. It is one of the last and largest remaining parts of the immense primeval forest that once stretched across the European Plain. Setting for Werewolf the Apocalypse - Heart of the Forest
+    # https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest 
+  }
+ 
 # Germany Germanic Pagan
  aachen = { # Palace of Aachen
 	county = c_aachen
@@ -228,6 +239,16 @@
 	character_modifier = {
 		diplomacy_per_piety_level = 1
 	}
+ }
+ black_forest = {
+	county = c_breisgau
+	barony = b_geroldseck
+	character_modifier = {
+		name = holy_site_black_forest_effect_name
+		domain_tax_mult = 0.2
+	}
+	# The Black Forest is a large forested mountain range in the state of Baden-Württemberg in southwest Germany, bounded by the Rhine Valley to the west and south and close to the borders with France and Switzerland. It is the source of the Danube and Neckar rivers. So called because it is so thick that it does not allow the sun's rays to penetrate it, the Black Forest has always inspired fairy tales and legends. In addition to hosting numerous panoramas, an ideal habitat for a wide variety of flora and fauna, it seems that too wizards and witches have found a home here. It is said of the so-called "Freischützen", or soldiers who, aided by the devil himself, fired infallible bullets, of werewolves, of paranormal appearances like that of the oppressive monks of the monastery of St. Blasien, who remained to wander through the forest even after death. However, equally magical but more affable creatures would also live near the forest, however the main inhabitants of these places would be witches, responsible for bad weather, plant deaths and animal diseases. Despite these terrible legends, the Black Forest continues, with its charm, to attract visitors from all over the world. 
+    # https://en.wikipedia.org/wiki/Black_Forest
  }
  mainz = { # Mogontiacum
 	county = c_mainz
@@ -300,6 +321,15 @@
 	}
  }
 #FRENCH France
+ broceliande = {
+	county = c_rennes
+	character_modifier = {
+		name = holy_site_broceliande_effect_name
+		stewardship_per_piety_level = 1
+	}
+	#Brocéliande, earlier known as Brécheliant and Brécilien, is a legendary enchanted forest that had a reputation in the medieval European imagination as a place of magic and mystery. Brocéliande is featured in several medieval texts, mostly related to the Arthurian legend and the characters of Merlin, Morgan le Fay, the Lady of the Lake, and some of the Knights of the Round Table. It first appeared in literature in the Roman de Rou chronicle by Wace in 1160 and today is most commonly identified as Paimpont forest in Rennes, Brittany, France.
+    # https://en.wikipedia.org/wiki/Broc%C3%A9liande
+ }
  vannes = {
 	county = c_vannes
 	barony = b_vannes
@@ -613,6 +643,14 @@
 #Satanism METAL
 #Brittish brythonic
  # scotland
+  loch_ness = {
+	county = c_inverness
+	barony = b_urquhart
+	character_modifier = {
+		name = holy_site_loch_ness_effect_name
+		learning_per_prestige_level = 1
+	}
+  }
   isle_of_man = {
 	county = c_isle_of_man
 	barony = b_castletown
@@ -629,6 +667,13 @@
 		owned_scheme_secrecy_add = 10
 	}
   }
+  castle_lake_holy = {
+	county = c_gowrie
+	character_modifier = {
+		name = holy_site_castle_lake_effect_name
+		knight_effectiveness_mult = 0.1
+	}
+  }	
   argyll = {
 	county = c_argyll
 
@@ -686,6 +731,23 @@
 	}
   }
  # 
+  wistmans_wood ={
+	county = c_devon
+	character_modifier = {
+		name = holy_site_wistmans_wood_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	# Wistman's Wood has been mentioned in writing for hundreds of years. It is likely to be a left-over from the ancient forest that covered much of Dartmoor c. 7000 BCE, before Mesolithic hunter/gatherers cleared it around 5000 BCE. The wood has been the inspiration for numerous artists, poets, and photographers. It appears in hundreds of 19th century accounts. One tradition holds that it was planted by Isabella de Fortibus (1237–93). The name of Wistman's Wood may derive from the dialect word "wisht", meaning "eerie/uncanny"[12] or "pixie-led/haunted". The legendary Wild Hunt in Devon, whose hellhounds are known as Yeth (Heath) or Wisht Hounds in the Devonshire dialect, is particularly associated with Wistman's Wood.
+     # https://en.wikipedia.org/wiki/Wistman%27s_Wood
+  }
+  chester = {
+	county = c_cheshire
+	barony = b_chester
+	character_modifier = {
+		name = holy_site_chester_effect_name
+		domain_tax_same_faith_mult = 0.1
+	}		
+  }
   gloucestershire = {
 	county = c_gloucestershire
 
