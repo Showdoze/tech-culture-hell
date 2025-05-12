@@ -582,13 +582,12 @@
 		direct_vassal_opinion = 5
 	}
   }
-  vesuvius = {
+  vesuvius = { # Mount Vesuvius
 	county = c_capua
 	barony = b_cassino
 	character_modifier = {
 		name = holy_site_vesuvius_effect_name
 		learning_per_piety_level = 1
-		# Mount Vesuvius
         # https://en.wikipedia.org/wiki/Mount_Vesuvius
 	}
   }
@@ -931,6 +930,23 @@
 		powerful_vassal_opinion = 5
 	}
  }
+ damot = { # Mount Damota, important site culturally for the Welayta people, and coronotation/burial place for Wolayta kings
+	county = c_damot
+	character_modifier = {
+		name = holy_site_damot_effect_name
+		county_opinion_add = 5
+		close_relative_opinion = 5
+	}
+  }
+  abbo_wonsho = { # Abbo-Wonsho, a place with a lot of sacred groves for the Sidama people, close to Kambata
+	county = c_sharka
+	barony = b_kambata
+	character_modifier = {
+		name = holy_site_abbo_wonsho_effect_name
+		prestige_level_impact_mult = 0.1
+		church_holding_build_speed = -0.1
+	}
+  }
  #Egyptian KEMic
    giza = {
 	county = c_giza
@@ -1223,14 +1239,12 @@
 	#Stórhöfði  is a peninsula and the southernmost point of Heimaey, the largest island in the Vestmannaeyjar archipelago, in Iceland. It is claimed to be the windiest place in Europe
     # https://en.wikipedia.org/wiki/St%C3%B3rh%C3%B6f%C3%B0i
   } 
-  hekla = {
+  hekla = { # Krýsuvík erupted from 1151 to 1188. 
 	county = c_sudurland
 	character_modifier = {
 		name = holy_site_hekla_effect_name
 		knight_limit = 2
 	}
-	# Krýsuvík erupted from 1151 to 1188. 
-    # CK3 Suderland, Island, Norway
     # https://en.wikipedia.org/wiki/Kr%C3%BDsuv%C3%ADk_(volcanic_system)
     # https://en.wikipedia.org/wiki/Hekla
   }
