@@ -88,6 +88,13 @@
 	}
   }
  #thessalonika 
+  thessalonika = { # Hagios Demetrios
+	county = c_thessalonika
+	character_modifier = {
+		drylands_attrition_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.01
+	}
+  }
   delos = { # Delos, a major Hellenic shrine and birthplace of Apollo and Artemis; home to various temples and mosaics
 	county = c_naxos
 	character_modifier = {
@@ -248,14 +255,6 @@
 	barony = b_bregenz
 	character_modifier = {
 		movement_speed = 0.1
-	}
- }
-#Greece
- thessalonika = { # Hagios Demetrios
-	county = c_thessalonika
-	character_modifier = {
-		drylands_attrition_mult = -0.2
-		monthly_dynasty_prestige_mult = 0.01
 	}
  }
 # Spain Hispania Basque Pagan
@@ -454,6 +453,14 @@
 		name = holy_site_cagliari_effect_name
 		monthly_piety_gain_per_knight_mult = 0.02
 		intrigue = 1
+	}
+ }
+ milan = {
+	county = c_lombardia
+	barony = b_milano
+	character_modifier = {
+		diplomacy = 1
+		monthly_prestige_gain_mult = 0.1
 	}
  }
  napoli = {
@@ -782,6 +789,14 @@
 		learn_language_scheme_power_mult = 0.2 
 	}
  } 
+ canarias = {
+	county = c_canarias
+	character_modifier = {
+		name = holy_site_tenerife_effect_name
+		hills_development_growth_factor = 0.25
+		naval_movement_speed_mult = 0.2
+	}
+ }
  syrte = {
 	county = c_syrte
 	barony = b_syrte
@@ -1110,6 +1125,7 @@
   }
  #
 #Scandanavia
+ #Norway
   oslosyslar = {
 	county = c_vingulmork
 	barony = b_oslosyslar
