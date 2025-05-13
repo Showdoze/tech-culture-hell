@@ -2383,3 +2383,35 @@ tr_idk_corvus = {
         }
     }
 }
+tr_idk_conan = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_corvus = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_northern_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_conan
+                this = character:tr_conan
+            }
+        }
+    }
+}
