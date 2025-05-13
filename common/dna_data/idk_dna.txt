@@ -1791,7 +1791,8 @@ enabled = yes
 }
 churchhill = {
     portrait_info = {
-        genes={ 		hair_color={ 1 213 79 69 }
+        genes={ 		
+        hair_color={ 1 213 79 69 }
         skin_color={ 30 20 32 22 }
         eye_color={ 110 205 232 16 }
         gene_chin_forward={ "chin_forward_pos" 194 "chin_forward_pos" 151 }
@@ -1926,15 +1927,15 @@ churchhill = {
         beards={ "no_beard" 255 "no_beard" 0 }
         clothes={ "no_clothes" 208 "most_clothes" 0 }
         cloaks={ "no_cloak" 208 "no_cloak" 0 }
-    }
+    }}
     #		custom_hair=cfp_male_hair_bald_western_02
     #		custom_beards=male_empty
-}
-enabled = yes
+    enabled = yes
 }
 furio_giunta = {
     portrait_info = {
-        genes={ 		hair_color={ 70 229 225 226 }
+        genes={ 		
+            hair_color={ 70 229 225 226 }
         skin_color={ 2 35 2 35 }
         eye_color={ 77 192 191 140 }
         gene_chin_forward={ "chin_forward_pos" 83 "chin_forward_pos" 122 }
@@ -2072,15 +2073,15 @@ furio_giunta = {
         beards={ "all_beards" 124 "no_beard" 0 }
         hairstyles={ "all_hairstyles" 135 "all_hairstyles" 0 }
         clothes={ "no_clothes" 208 "most_clothes" 0 }
-    }
+    }}
     #	custom_beards=epe_male_beard_indian_01
     #	custom_hair=male_hair_fp2_iberian_christian_03
-}
-enabled = yes
+    enabled = yes
 }
 cleopatra_a = {
     portrait_info = {
-        genes={ 		hair_color={ 221 126 59 238 }
+        genes={ 		
+            hair_color={ 221 126 59 238 }
         skin_color={ 72 115 90 165 }
         eye_color={ 70 195 70 195 }
         gene_chin_forward={ "chin_forward_pos" 146 "chin_forward_pos" 146 }
@@ -2187,11 +2188,10 @@ cleopatra_a = {
         hairstyles={ "byzantine_hairstyles_straight" 218 "all_hairstyles" 0 }
         beards={ "mena_beards_curly" 255 "no_beard" 0 }
         clothes={ "western_bedchamber" 95 "most_clothes" 0 }
-    }
+    }}
     #	custom_hair=female_hair_byzantine_02
     #	custom_beards=female_empty
-}
-enabled = yes
+    enabled = yes
 }
 gandhi_civ = {
     portrait_info = {
@@ -2522,11 +2522,10 @@ stalin_old = {
         beards={ "western_beards_straight" 90 "no_beard" 0 }
         hairstyles={ "indian_hairstyles_straight" 127 "all_hairstyles" 0 }
         clothes={ "western_bedchamber" 95 "most_clothes" 0 }
-    }
+    }}
     #	custom_beards=male_beard_western_05
     #	custom_hair=male_hair_indian_01
-}
-enabled = yes
+    enabled = yes
 }
 vito_no = {
     portrait_info = {
@@ -6371,7 +6370,8 @@ astarions={
             gene_bs_body_type={ "body_fat_head_fat_low" 129 "body_fat_head_fat_low" 130 }
             gene_bs_body_shape={ "body_shape_triangle_half" 165 "body_shape_hourglass_half" 187 }
             gene_bs_bust={ "bust_clothes" 179 "bust_shape_3_half" 162 }
-            gene_age={ "old_beauty_1" 2 "old_beauty_1" 0 }
+            #gene_age={ "old_beauty_1" 2 "old_beauty_1" 0 }
+            gene_age={ "no_aging" 0 "old_4" 7 }
             gene_eyebrows_shape={ "far_spacing_avg_thickness" 169 "no_eyebrows" 0 }
             gene_eyebrows_fullness={ "layer_2_low_thickness" 226 "no_eyebrows" 0 }
             gene_body_hair={ "body_hair_sparse" 1 "body_hair_sparse" 0 }
@@ -6514,7 +6514,8 @@ minthara={
             gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 130 }
             gene_bs_body_shape={ "body_shape_hourglass_half" 150 "body_shape_hourglass_half" 187 }
             gene_bs_bust={ "bust_clothes" 184 "bust_shape_3_half" 162 }
-            gene_age={ "old_beauty_1" 4 "old_beauty_1" 0 }
+            #gene_age={ "old_beauty_1" 4 "old_beauty_1" 0 }
+            gene_age={ "no_aging" 0 "old_4" 7 }
             gene_eyebrows_shape={ "far_spacing_lower_thickness" 219 "no_eyebrows" 0 }
             gene_eyebrows_fullness={ "layer_2_lower_thickness" 196 "no_eyebrows" 0 }
             gene_body_hair={ "body_hair_sparse" 4 "body_hair_sparse" 0 }

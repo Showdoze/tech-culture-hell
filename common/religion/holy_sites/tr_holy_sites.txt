@@ -1,5 +1,15 @@
 ﻿
 #Byzantine
+ perpuza = {
+	county = c_hadrianeia
+	barony = b_sebaste
+	character_modifier = {
+		name = holy_site_perpuza_effect_name
+		learning_per_piety_level = 1
+		mountains_advantage = 3
+		desert_mountains_advantage = 3
+	}
+ }
  delphi = {
 	county = c_aetolia
 	barony = b_lidoriki
@@ -746,6 +756,14 @@
 		monthly_prestige_gain_per_knight_mult = 0.02
 	}
   }
+  anglesey = {
+	county = c_anglesey
+	# barony = b_anglesey # No such barony
+	character_modifier = {
+		name = holy_site_anglesey_effect_name
+		fertility = 0.1
+	}
+  }
  # 
   wistmans_wood ={
 	county = c_devon
@@ -808,6 +826,24 @@
 	    monthly_lifestyle_xp_gain_mult = 0.15
     }
  }
+ winchester = { #capital of england
+    county = c_hampton
+    barony = b_winchester
+    character_modifier = {
+	    name = holy_site_winchester_effect_name
+	    diplomacy = 1
+	    knight_effectiveness_mult = 0.1
+    }
+ }
+ hexham = { #Hadrian's Wall
+	county = c_durham
+	barony = b_hexham
+	character_modifier = {
+		name = holy_site_hexham_effect_name
+		defender_advantage = 5
+		diplomacy = 1
+	}
+ }
  york = {
 	county = c_north_riding
 	barony = b_york
@@ -867,7 +903,22 @@
 		learn_language_scheme_power_mult = 0.2 
 	}
  } 
- canarias = {
+ ayn_farrah = {
+	county = c_ayn_farah #aprox location of Ido Ha - real location is a CK3 wasteland
+	character_modifier = {
+		name = holy_site_ayn_farrah_effect_name
+		raid_speed = 0.2
+	}
+  }
+  kordofan = {
+	county = c_kordofan #Nuba heartland at this time
+	character_modifier = {
+		name = holy_site_kordofan_effect_name
+		mountains_attrition_mult = -0.3
+		mountains_advantage = 5
+	}
+  }
+  canarias = {
 	county = c_canarias
 	character_modifier = {
 		name = holy_site_tenerife_effect_name
@@ -945,6 +996,20 @@
 		name = holy_site_abbo_wonsho_effect_name
 		prestige_level_impact_mult = 0.1
 		church_holding_build_speed = -0.1
+	}
+  }
+  beipi = { # Political and religious capital for the Jukun
+	county = c_kwararafa
+	character_modifier = {
+		name = holy_site_beipi_effect_name
+		knight_effectiveness_mult = 0.1
+	}
+  }
+  bida = { # Political and religious capital for the Nupe.
+	county = c_nupe
+	character_modifier = {
+		name = holy_site_bida_effect_name
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
 	}
   }
  #Egyptian KEMic
@@ -1248,4 +1313,14 @@
     # https://en.wikipedia.org/wiki/Kr%C3%BDsuv%C3%ADk_(volcanic_system)
     # https://en.wikipedia.org/wiki/Hekla
   }
+ #sweden
+  gotland = {
+	county = c_gutland
+	# barony = b_wisbu # No such barony
+	character_modifier = {
+		name = holy_site_gotland_effect_name
+		different_culture_opinion = 10
+		cultural_head_acceptance_gain_mult = 0.15
+	}
+  } 
 #  

@@ -135,7 +135,7 @@
 			learn_language = language_valyrian 
 			learn_language = language_dwarven
 			learn_language = language_giant
-			learn_language_of_culture = culture:castilian
+			learn_language = language_iberian
 	   }	
 	}
 	949.1.1 = { death = { death_reason = death_old_age } }
@@ -260,6 +260,31 @@
 	780.1.1 = { birth = yes }
 	880.1.1 = { death = { death_reason = death_old_age } }
  }
+ tr_joker_1989 = {
+    name = "Jack Napier"
+	dna = joker_1989
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = american
+	trait = education_intrigue_4
+	trait = intellect_good_2
+    trait = sadistic
+    trait = diligent
+    trait = ambitious
+	trait = wild_oat
+	trait = schemer
+	trait = torturer
+	trait = eccentric
+	father = tr_john_sacrimoni_soprano
+    disallow_random_traits = yes
+	832.1.1 = { birth = yes }
+	898.1.1 = {
+		death = {
+			death_reason = death_murder
+            killer = tr_sopranos_tony
+		}
+	}
+ }
  tr_furio = {
     name = "Furio Giunta"
 	dna = furio_giunta
@@ -279,8 +304,8 @@
 	826.3.29 = { birth = yes }
 	895.3.28 = {
 		death = {
-			death_reason = death_old_age
-            #killer = 
+			death_reason = death_murder
+            killer = tr_joker_1989
 		}
 	}
  }
@@ -462,9 +487,9 @@
 					}
 				}
 			}
-			learn_language_of_culture = culture:greek 
-			learn_language_of_culture = culture:ptolemaic
-			learn_language_of_culture = culture:roman
+			learn_language = language_greek 
+			learn_language = language_ancient_greek
+			learn_language = language_latin
 	   }	
 	}
 	910.1.1 = {
@@ -542,9 +567,9 @@
 	849.1.1 = { birth = yes }
 	860.1.1 = {
 		effect = {
-			learn_language_of_culture = culture:ancient_egyptian 
-			learn_language_of_culture = culture:punic
-			learn_language_of_culture = culture:greek
+			learn_language = language_ancient_egyptian 
+			learn_language = language_punic
+			learn_language = language_greek
 			learn_language_of_culture = culture:alan
 	   }	
 	}
@@ -666,10 +691,10 @@
 	821.1.1 = { 
 		birth = yes
 		effect = {
-			learn_language_of_culture = culture:german 
+			learn_language = language_central_germanic 
 			learn_language_of_culture = culture:japanese
-			learn_language_of_culture = culture:french
-			learn_language_of_culture = culture:castilian
+			learn_language = language_french
+			learn_language = language_iberian
 	   }	
 	}
 	#He says that he will never die.
@@ -1009,9 +1034,9 @@ tr_arthur_shelby_peaky_blinders = {
 	822.2.24 = { 
 		birth = yes 
 		effect = {
-			learn_language_of_culture = culture:german 
-			learn_language_of_culture = culture:french
-			learn_language_of_culture = culture:castilian
+			learn_language = language_central_germanic 
+			learn_language = language_french
+			learn_language = language_iberian
 	   }	
 	}
 	1558.9.21 = {
@@ -1073,9 +1098,9 @@ tr_japanese1 = {
 	822.1.1 = { 
 		birth = yes 
 		effect = {
-			learn_language_of_culture = culture:german 
-			learn_language_of_culture = culture:french
-			learn_language_of_culture = culture:castilian
+			learn_language = language_central_germanic 
+			learn_language = language_french
+			learn_language = language_iberian
 			learn_language = language_anglic
 	    }
 	}
@@ -1199,6 +1224,65 @@ tr_vlad_tepes = {
 	}
 	920.1.1 = { death = { death_reason = death_old_age } }
  }
+ tr_minthara = {
+	name = "Minthara Baenre"
+	dna = minthara
+	religion = sixth_house 
+    dynasty = dynasty_fantasy
+	culture = drow
+	sexuality = bisexual
+	female = yes
+	trait = education_martial_3
+    trait = callous
+	trait = class_paladin_oathbreaker
+	trait = schemer
+	trait = diligent
+    trait = cynical
+	trait = deceitful
+    trait = arrogant
+	trait = aggressive_attacker
+	trait = rakish
+    disallow_random_traits = yes
+	667.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+	    }
+	}
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_astarions = {
+	name = "Astarions"
+	dna = astarions
+	religion = sixth_house 
+    dynasty = dynasty_fantasy
+	culture = elf_culture
+	sexuality = bisexual
+	trait = education_intrigue_4
+	trait = class_rogue
+	trait = schemer
+	trait = lustful
+    trait = beauty_good_1
+	trait = deceitful
+    trait = arrogant
+	trait = seducer
+	trait = rakish
+	trait = lifestyle_reveler
+	trait = immortal #vanpire
+	trait = ambitious
+    disallow_random_traits = yes
+	537.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+	    }
+	}
+	920.1.1 = { death = { death_reason = death_old_age } }
+ }
 #THIEF
  tr_thief_keeper = {
 	name = "Artemus"
@@ -1278,9 +1362,9 @@ tr_vlad_tepes = {
 			}
 		}
 		effect = {
-			learn_language_of_culture = culture:german 
-			learn_language_of_culture = culture:french
-			learn_language_of_culture = culture:castilian
+			learn_language = language_central_germanic 
+			learn_language = language_french
+			learn_language = language_iberian
 	   }	
 	}
 	880.1.1 = {
@@ -2206,10 +2290,12 @@ tr_vlad_tepes = {
 	849.1.1 = { 
 		birth = yes 
 		effect = {
-			learn_language_of_culture = culture:ancient_egyptian 
-			learn_language_of_culture = culture:punic
-			learn_language_of_culture = culture:greek
-			learn_language_of_culture = culture:french
+			learn_language = language_ancient_egyptian 
+			learn_language = language_punic
+			learn_language = language_greek
+			learn_language = language_french
+			learn_language = language_nahuatl
+			learn_language = language_mescalero
 			add_character_flag = has_scripted_appearance
 			add_secret = { type = secret_non_believer	}
 	    }	
