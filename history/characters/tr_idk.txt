@@ -474,8 +474,8 @@
 	trait = zealous
 	trait = ambitious
 	disallow_random_traits = yes
-	825.1.1 = { birth = yes }
-	830.1.1 = {
+	825.1.1 = { 
+		birth = yes
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
@@ -524,8 +524,8 @@
     trait = administrator
     trait = whole_of_body
     trait = theologian
-	841.1.1 = { birth = yes }
-    852.1.1 = {
+	841.1.1 = { 
+		birth = yes
 		effect = {
 			add_trait = lifestyle_physician
 			add_trait_xp = {
@@ -665,6 +665,21 @@
 			killer = 1700
 		}
 	}
+ }
+ tr_hittie_1 = {
+	name = "Šuppiluliuma"
+	religion = tengri_pagan
+	dynasty = misc_history
+	culture = neohittite
+	trait = education_martial_2
+	trait = strategist
+	trait = strong
+	trait = shrewd
+	trait = ambitious
+	trait = reaver
+	disallow_random_traits = yes
+	805.1.1 = { birth = yes }
+	888.1.1 = { death = { death_reason = death_suicide } }
  }
 # Literature
  tr_judge_holden = {
