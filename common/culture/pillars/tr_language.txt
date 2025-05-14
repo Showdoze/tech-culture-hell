@@ -43,6 +43,17 @@ language_ancient_egyptian = {
 			limit = { has_cultural_pillar = language_ancient_egyptian }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = kemetic_pagan
+						faith = atenist_pagan
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = kemetic
 }
@@ -331,6 +342,17 @@ language_punic = {
 			limit = { has_cultural_pillar = language_punic }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = punic_pagan
+					#	faith = atenist_pagan
+					}
+				}
+			}
+			multiply = 2
+		}
 
 	}
 	color = puntic
@@ -347,6 +369,17 @@ language_nahuatl = {
 		if = {
 			limit = { has_cultural_pillar = language_nahuatl }
 			multiply = 10
+		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = cult_of_tlaloc
+						faith = cult_of_tezcatlipoca
+					}
+				}
+			}
+			multiply = 2
 		}
 	}
 	color =  { 235 64 52 }
@@ -428,6 +461,17 @@ language_jel = { #Argonian
 			limit = { has_cultural_pillar = language_jel }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = hist
+					#	faith = cult_of_tezcatlipoca
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = jel
 }
@@ -443,6 +487,17 @@ language_taagra = { #khajitt
 		if = {
 			limit = { has_cultural_pillar = language_taagra }
 			multiply = 10
+		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = twomoonsdance
+					#	faith = cult_of_tezcatlipoca
+					}
+				}
+			}
+			multiply = 2
 		}
 	}
 	color = taagra

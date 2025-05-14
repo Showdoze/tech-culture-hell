@@ -207,7 +207,6 @@
 			killer = ck650107
 		}
 	}
-	#480.9.4 = {
  }
  ck650043 = {
 	name = "Sophia"
@@ -599,8 +598,7 @@
 		trait = blind
 		trait = devoted
 	}
-	777.1.1 = { death = yes }
-	#death_sleep
+	777.1.1 = { death = yes } #death_sleep
  }
  ck650110 = {
 	name = "Valentinus"
@@ -1045,7 +1043,7 @@
 	271.1.1 = { add_spouse = 70524 }
 	330.8.18 = { death = yes }
  }
-########################
+############### 
 #Venice #italy
 ########################	
  ck650007 = {
@@ -1226,66 +1224,7 @@
 	trait = arrogant
 	489.1.1 = { birth = yes }
 	646.1.1 = { death = yes }
- }
-########################
-#Persia
-########################
- ck650036 = {
-	name = "Zamasp"
-	dynasty = 1029100
-	culture = persian
-	religion = mazdayasna
-	trait = one_eyed
-	#trait = azadan
-	trait = lovers_pox
-	trait = education_martial_1
-	father = 180627
-	504.3.3 = { birth = yes }
-	531.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = ck650045
-		}
-	}
- }
- ck650044 = {
-	name = "Mazdak"
-	religion = mazdakism
-	culture = persian
-	trait = zealous
-	#trait = vegetarian
-	trait = education_learning_4
-	trait = generous
-	trait = peaceful
-	trait = compassionate
-	#trait = charismatic
-	trait = honest
-	488.1.1 = { birth = yes }
-	528.9.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 180628
-		}
-	}
- }
- ck650042 = {
-	name = "Anoshazad"
-	dynasty = 1029100
-	religion = nestorian
-	culture = persian
-	#trait = azadan
-	trait = lustful
-	trait = ambitious
-	father = 180628
-	mother = ck650043
-	531.1.1 = { birth = yes }
-	569.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 180628
-		}
-	}
- }
+}
 ########################
 #ethiopian
 ########################
@@ -1414,8 +1353,7 @@
 		#create_bloodline = {
 		#	type = abyssinia_blood}
 	}
-	180.1.1 = { death = yes }
- }
+	180.1.1 = { death = yes }}
  ckMenelik  = {
 	name = "Menelik"
 	dynasty = 7246
@@ -1906,6 +1844,62 @@
 #########
 #Persian#
 #########
+ ck650036 = {
+	name = "Zamasp"
+	dynasty = 1029100
+	culture = persian
+	religion = mazdayasna
+	trait = one_eyed
+	#trait = azadan
+	trait = lovers_pox
+	trait = education_martial_1
+	father = 180627
+	504.3.3 = { birth = yes }
+	531.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = ck650045
+		}
+	}
+ }
+ ck650044 = {
+	name = "Mazdak"
+	religion = mazdakism
+	culture = persian
+	trait = zealous
+	#trait = vegetarian
+	trait = education_learning_4
+	trait = generous
+	trait = peaceful
+	trait = compassionate
+	#trait = charismatic
+	trait = honest
+	488.1.1 = { birth = yes }
+	528.9.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 180628
+		}
+	}
+ }
+ ck650042 = {
+	name = "Anoshazad"
+	dynasty = 1029100
+	religion = nestorian
+	culture = persian
+	#trait = azadan
+	trait = lustful
+	trait = ambitious
+	father = 180628
+	mother = ck650043
+	531.1.1 = { birth = yes }
+	569.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 180628
+		}
+	}
+ }
  ck_persian_claimant_1 = {
 	name = "Shapur"
 	religion="mazdayasna"
