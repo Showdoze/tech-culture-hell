@@ -35,12 +35,7 @@
 	trait = frankish_enemy
 	trait = flexible_leader
 	420.11.1 = { birth = yes }
-	461.8.7 = {
-		death = {
-			death_reason = death_murder_known
-			killer = ck650002
-		}
-	}
+	461.8.7 = { death = { death_reason = death_murder_known killer = ck650002 } }
  }
  ck650000 = {
 	name = "Libius Severus"
@@ -53,24 +48,14 @@
 	trait = craven
 	trait = education_learning_2
 	420.1.1 = { birth = yes }
-	465.7.15 = {
-		death = {
-			death_reason = death_poison
-			killer = ck650002
-		}
-	}
+	465.7.15 = { death = { death_reason = death_poison killer = ck650002 } }
  }
  ck650001 = {
 	name = "Anthemius"
 	religion = nicene
 	culture = roman
 	420.1.1 = { birth = yes }
-	472.7.11 = {
-		death = {
-			death_reason = death_drowned
-			killer = ck650002
-		}
-	}
+	472.7.11 = { death = { death_reason = death_drowned killer = ck650002 } }
  }
  ck650002 = {
 	name = "Ricimer"
@@ -103,12 +88,7 @@
 	culture = roman
 	trait = education_martial_2
 	420.1.1 = { birth = yes }
-	474.6.1 = {
-		death = {
-			death_reason = death_poison
-			killer = ck650005
-		}
-	}
+	474.6.1 = { death = { death_reason = death_poison killer = ck650005 } }
  }
  ck650090 = {
 	name = "Leon"
@@ -135,12 +115,7 @@
 	trait = education_diplomacy_1
 	father = ck650090
 	403.1.1 = { birth = yes }
-	460.1.18 = {
-		death = {
-			death_reason = death_exile
-			killer = ck650069
-		}
-	}
+	460.1.18 = { death = { death_reason = death_exile killer = ck650069 } }
  }
  ck650005 = {
 	name = "Julius Nepos"
@@ -151,12 +126,7 @@
 	trait = patrician_born
 	father = ck650089
 	430.1.1 = { birth = yes }
-	475.6.22 = {
-		death = {
-			death_reason = death_murder_poison
-			killer = 200283
-		}
-	}
+	475.6.22 = { death = { death_reason = death_murder_poison killer = 200283 } }
  }
  ck_romulus_augustulus_dads_dad = {
 	name = "Tatulus"
@@ -183,12 +153,7 @@
 		trait = impatient
 	}
 	#448.1.1 = { add_spouse = 96055_wife } #Barbaria, for lack of a better choice
-	476.8.28 = {
-		death = {
-			death_reason = death_execution
-			killer = ck650107 #Odoacer
-		}
-	}
+	476.8.28 = { death = { death_reason = death_execution killer = ck650107  } } #Odoacer
 }
  ck650006 = {
 	name = "Romulus Augustulus"
@@ -201,12 +166,7 @@
 	trait = craven
 	father = ck_romulus_augustulus_dad
 	468.1.1 = { birth = yes }
-	476.9.4 = {
-		death = {
-			death_reason = death_exile
-			killer = ck650107
-		}
-	}
+	476.9.4 = { death = { death_reason = death_exile killer = ck650107 } }
  }
  ck650043 = {
 	name = "Sophia"
@@ -252,12 +212,7 @@
 	father = 145290
 	2.11.6 = { birth = yes }
 	15.11.6 = { add_spouse = ck650014 }
-	33.10.17 = {
-		death = {
-			death_reason = death_exile
-			killer = 145075
-		}
-	}
+	33.10.17 = { death = { death_reason = death_exile killer = 145075 } }
  }
  ck650106 = {
 	name = "Drusus"
@@ -284,12 +239,7 @@
 	father = ck650106
 	2.11.16 = { birth = yes }
 	15.11.6 = { add_spouse = ck650013 }
-	19.11.16 = {
-		death = {
-			death_reason = death_poison
-			killer = 145075
-		}
-	}
+	19.11.16 = { death = { death_reason = death_poison killer = 145075 } }
  }
  ck650015 = {
 	name = "Agrippina"
@@ -306,12 +256,7 @@
 	mother = ck650013
 	15.11.6 = { birth = yes }
 	50.1.1 = { add_spouse = 145288 }
-	59.3.23 = {
-		death = {
-			death_reason = death_stab
-			killer = 145287
-		}
-	}
+	59.3.23 = { death = { death_reason = death_stab killer = 145287 } }
  }
  ck650023 = {
 	name = "Messalina"
@@ -333,12 +278,7 @@
 	give_nickname = nick_the_whore
 	20.1.25 = { birth = yes }
 	35.1.1 = { add_spouse = 145288 }
-	48.1.20 = {
-		death = {
-			death_reason = death_execution
-			killer = 145288
-		}
-	}
+	48.1.20 = { death = { death_reason = death_execution killer = 145288 } }
  }
  ck650024 = {
 	name = "Julia Drusilla"
@@ -348,11 +288,7 @@
 	culture = roman
 	father = 145289
 	39.5.6 = { birth = yes }
-	41.1.24 = {
-		death = {
-			death_reason = killed_praetorian
-		}
-	}
+	41.1.24 = { death = { death_reason = killed_praetorian } }
  }
  ck650025 = {
 	name = "Claudia"
@@ -365,15 +301,10 @@
 	mother = ck650023
 	40.5.6 = { birth = yes }
 	54.1.1 = {
-		add_spouse = 145287		#Nero
+		add_spouse = 145287	#Nero
 		give_nickname = nick_octavia
 	}
-	62.1.24 = {
-		death = {
-			death_reason = death_beaten
-			killer = 145287
-		}
-	}
+	62.1.24 = { death = { death_reason = death_beaten killer = 145287 } } #Nero
  }
  ck650026 = {
 	name = "Britannicus"
@@ -384,12 +315,7 @@
 	father = 145288
 	mother = ck650023
 	41.2.12 = { birth = yes }
-	55.2.11 = {
-		death = {
-			death_reason = death_poison
-			killer = ck650015
-		}
-	}
+	55.2.11 = { death = { death_reason = death_poison killer = ck650015 } }
  }
  ck650030 = {
 	name = "Claudia"
@@ -427,11 +353,7 @@
 	#create_bloodline = {
 	#		type = belisarius_byz}
 	#}
-	565.3.1 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+	565.3.1 = { death = { death_reason = death_natural_causes } }
  }
  ck650055 = {
 	name = "Anna"
@@ -447,11 +369,7 @@
 	718.9.1 = { birth = yes }
 	720.1.1 = { add_matrilineal_spouse = 145225 }
 	743.11.2 = { add_trait = blind }
-	775.9.14 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+	775.9.14 = { death = { death_reason = death_natural_causes } }
  }
  ck650056 = {
 	name = "Theodosius"	# Maurice
@@ -462,12 +380,7 @@
 	trait = ambitious
 	father = 70510
 	583.1.1 = { birth = yes }
-	602.11.27 = {
-		death = {
-			death_reason = death_uprising
-			killer = 145072
-		}
-	}
+	602.11.27 = { death = { death_reason = death_uprising killer = 145072 } }
  }
  ck650057 = {
 	name = "Martina"
@@ -538,13 +451,8 @@
 		#add_trait = in_hiding
 		add_trait = adventurer
 	}
-	713.6.3 = #{ remove_trait = in_hiding }
-	800.11.24 = {
-		death = {
-			death_reason = death_crucified
-			killer = 70498
-		}
-	}
+	#713.6.3 = { remove_trait = in_hiding }
+	800.11.24 = { death = { death_reason = death_crucified killer = 70498 } }
  }
  ck650072 = {
 	name = "Hypathia"
@@ -567,12 +475,7 @@
 	disallow_random_traits = yes
 	father = ck650090
 	370.2.2 = { birth = yes }
-	415.1.1 = {
-		death = {
-			death_reason = death_torture
-			killer = 70533
-		}
-	}
+	415.1.1 = { death = { death_reason = death_torture killer = 70533 } }
  }
  ck650088 = {
 	name = "Theodosios"
@@ -639,9 +542,7 @@
 	father = ck650110
 	630.11.1 = { birth = yes }
 	642.1.1 = { add_spouse = 70508 }
-	681.1.1 = {
-		death = yes
-	}
+	681.1.1 = { death = yes }
  }
  ck650091 = {
 	name = "Mizizios"
@@ -657,12 +558,7 @@
 		#add_trait = byz_usurper
 		#add_trait = crown_like_late_basilius
 	}
-	669.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 70507
-		}
-	}
+	669.1.1 = { death = { death_reason = death_battle killer = 70507 } }
  }
  ck650092 = {
 	name = "John"
@@ -675,12 +571,7 @@
 	trait = ambitious
 	trait = arbitrary
 	645.11.1 = { birth = yes }
-	669.1.2 = {
-		death = {
-			death_reason = death_battle
-			killer = 70507
-		}
-	}
+	669.1.2 = { death = { death_reason = death_battle killer = 70507 } }
  }
  ck650095 = {
 	name = "Verina"
@@ -741,12 +632,7 @@
 			give_job_title = job_marshal
 		}
 	}
-	477.1.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 70515
-		}
-	}
+	477.1.1 = { death = { death_reason = death_execution killer = 70515 } }
  }
  ck650100 = {
 	name = "Pompeius"
@@ -799,12 +685,7 @@
 	father = 145073
 	560.1.1 = { birth = yes }
 	582.8.14 = { add_spouse = 70510 }
-	605.1.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 145072
-		}
-	}
+	605.1.1 = { death = { death_reason = death_execution killer = 145072 } }
  }
  diocletian_dad = {
 	name = "Gaius"
@@ -830,12 +711,7 @@
 	female = yes
 	250.1.1 = { birth = yes }
 	284.1.1 = { add_spouse = 145241 }
-	305.1.1 = {
-		death = {
-			death_reason = death_sacrificed_to_gods
-			killer = 145239
-		}
-	}
+	305.1.1 = { death = { death_reason = death_sacrificed_to_gods killer = 145239 } }
  }
  diocletian_daughter = {
 	name = "Galeria Valeria"
@@ -847,12 +723,7 @@
 	female = yes
 	284.2.1 = { birth = yes }
 	296.1.1 = { add_spouse = 145240 }
-	305.1.1 = {
-		death = {
-			death_reason = death_sacrificed_to_gods
-			killer = 145239
-		}
-	}
+	305.1.1 = { death = { death_reason = death_sacrificed_to_gods killer = 145239 } }
  }
  diocletian_daughter_son = {
 	name = "Candidianus"
@@ -863,12 +734,7 @@
 	father = 145240
 	trait = adopted
 	296.1.1 = { birth = yes }
-	313.1.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 145238
-		}
-	}
+	313.1.1 = { death = { death_reason = death_execution killer = 145238 } }
  }
  galerius_daughter = {
 	name = "Valeria Maximilla"
@@ -1076,12 +942,7 @@
 		give_nickname = nick_tegalliano
 		add_trait = peasant_born
 	}
-	726.1.1 = {
-		death = {
-			death_reason = death_drowned
-			killer = 190196
-		}
-	}
+	726.1.1 = { death = { death_reason = death_drowned killer = 190196 } }
  }
  ck650107 = {
 	name = "Odoacer"
@@ -1093,13 +954,7 @@
 	#trait = land_reform_trait
 	#trait = sen_gov_trait
 	433.1.1 = { birth = yes }
-	493.3.15 = {
-		death = {
-			death_reason = death_execution
-			#death_murder_beheading
-			killer = 168775
-		}
-	}
+	493.3.15 = { death = { death_reason = death_decapitated killer = 168775 } }
  }
  orsini_n2 = {
 	name = "Cajo Orso Orsini"
@@ -1349,7 +1204,8 @@
 	#trait=war_veteran
 	trait = education_martial_3
 	father = ckMenelik
-	89.1.1 = { birth = yes
+	89.1.1 = { 
+		birth = yes
 		#create_bloodline = {
 		#	type = abyssinia_blood}
 	}
@@ -1406,12 +1262,7 @@
 	father = ck650063
 	trait = wounded_1
 	420.1.1 = { birth = yes }
-	510.1.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 200274
-		}
-	}
+	510.1.1 = { death = { death_reason = death_execution killer = 200274 } }
  }
  ck650065 = {
 	name = "Aioulf"
@@ -1420,12 +1271,7 @@
 	culture = suebi
 	father = ck650064
 	499.1.1 = { birth = yes }
-	580.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 200273
-		}
-	}
+	580.1.1 = { death = { death_reason = death_battle killer = 200273 } }
  }
  ck650066 = {
 	name = "Framta"
@@ -1461,10 +1307,8 @@
 	#trait = war_veteran
 	give_nickname = nick_the_hun
 	350.1.1 = { birth = yes }	
-	400.1.1 = {
-	    death = { death_reason= death_battle
-	    killer = 168769 }   }
-  }
+	400.1.1 = { death = { death_reason= death_battle killer = 168769 }  }
+ }
  ck650114 = {
     name = "Uldin"
 	dynasty = 591
@@ -1520,9 +1364,7 @@
 	    birth = yes
 		give_nickname = nick_the_hun
 	}	
-	434.1.1 = {
-	    death = { death_reason= death_shock
-	} }
+	434.1.1 = { death = { death_reason= death_shock } }
  }	
  ck650016 = {
     name = "Mundzuk"
@@ -1537,9 +1379,7 @@
 	    birth = yes
 		give_nickname = nick_the_hun
 	}	
-	425.1.1 = {
-	    death = { death_reason = death_ill
-	} }
+	425.1.1 = { death = { death_reason = death_ill } }
  }	
  ck650017 = {
     name = "Bleda"
@@ -1554,10 +1394,7 @@
 	    birth = yes
 		give_nickname = nick_the_hun
 	}	
-	445.1.1 = {
-	    death = { death_reason= death_hunting_mistakenly_shot
-	        killer = ck650034
-	} }
+	445.1.1 = { death = { death_reason= death_hunting_mistakenly_shot killer = ck650034 } }
  }	
  ck650034 = {
     name = "Attila"
