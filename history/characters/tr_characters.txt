@@ -299,11 +299,9 @@
 	trait = infertile
 	father = 145288
 	mother = ck650023
+	give_nickname = nick_octavia
 	40.5.6 = { birth = yes }
-	54.1.1 = {
-		add_spouse = 145287	#Nero
-		give_nickname = nick_octavia
-	}
+	54.1.1 = {add_spouse = 145287 }	#Nero
 	62.1.24 = { death = { death_reason = death_beaten killer = 145287 } } #Nero
  }
  ck650026 = {
@@ -400,7 +398,7 @@
 	600.1.1 = { birth = yes }
 	613.8.13 = { add_spouse = 145071 }
 	641.12.11 = {
-		#add_trait = muted
+		add_trait = mute
 		death = {
 			death_reason = death_exile
 			killer = 70508
@@ -517,9 +515,7 @@
 		culture = greek
 		employer = 70509
 	}
-	641.4.20 = {
-		employer = 145070
-	}
+	641.4.20 = { employer = 145070 }
 	641.10.1 = {
 		employer = 70508
 		effect = {
@@ -1692,12 +1688,7 @@
 	trait = education_martial_1
 	father = 180627
 	504.3.3 = { birth = yes }
-	531.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = ck650045
-		}
-	}
+	531.1.1 = { death = { death_reason = death_battle killer = ck650045 } }
  }
  ck650044 = {
 	name = "Mazdak"
@@ -1712,12 +1703,7 @@
 	#trait = charismatic
 	trait = honest
 	488.1.1 = { birth = yes }
-	528.9.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 180628
-		}
-	}
+	528.9.1 = { death = { death_reason = death_execution killer = 180628 } }
  }
  ck650042 = {
 	name = "Anoshazad"
@@ -1730,12 +1716,7 @@
 	father = 180628
 	mother = ck650043
 	531.1.1 = { birth = yes }
-	569.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 180628
-		}
-	}
+	569.1.1 = { death = { death_reason = death_battle killer = 180628 } }
  }
  ck_persian_claimant_1 = {
 	name = "Shapur"
