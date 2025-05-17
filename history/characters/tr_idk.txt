@@ -1792,6 +1792,7 @@ tr_vlad_tepes = {
 	religion = imperial_cult
     dynasty_house = house_elder_scrolls
 	culture = imperial_culture
+	father = tr_imperial_1_father
 	trait = education_diplomacy_2
 	trait = arrogant
 	trait = eccentric
@@ -1805,10 +1806,25 @@ tr_vlad_tepes = {
 			learn_language = language_anglic
 	    }
 	}
-	850.10.5 = {
-		employer = tr_dwemer1
-	}
+	850.10.5 = { employer = tr_dwemer1 }
 	890.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_imperial_1_father = {
+	name = "Cicero Mede"
+	religion = imperial_cult
+    dynasty_house = house_elder_scrolls
+	culture = imperial_culture
+	trait = education_republican_knowledge_4
+	trait = patrician_born
+	trait = temperate
+	trait = inappetetic
+    trait = diligent
+    trait = shy
+    disallow_random_traits = yes
+	798.1.1 = { birth = yes }
+	800.1.1 = { set_relation_best_friend = { reason = friend_generic_history target = character:tr_dwemer1 } }
+	850.10.5 = { employer = tr_dwemer1 }
+	868.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_redguard_1 = {
 	name = "Camarino Auridon"
@@ -1889,9 +1905,7 @@ tr_vlad_tepes = {
 	    }
 		set_relation_best_friend = { reason = friend_generic_history target = character:tr_nerevar }
 	}
-	1668.1.1 = {
-		death = { death_reason = death_red_mountain }
-	}
+	1668.1.1 = { death = { death_reason = death_red_mountain } }
  }
  tr_nerevar = {
 	name = "Nerevar"
