@@ -1943,6 +1943,25 @@ tr_vlad_tepes = {
 	    }
 	}
  }
+ tr_falmor_slave = {
+	name = "Xamxil"
+	culture = falmer_betrayed
+	religion = sixth_house
+	dynasty_house = house_elder_scrolls
+	father = tr_falmor_1
+	830.1.1 = { birth = yes }
+	830.10.5 = { employer = tr_dagothur }
+	868.1.1 = { death = { death_reason = death_execution killer = tr_dagothur } }
+ }
+ tr_falmor_1 = {
+	name = "Salmo"
+	culture = falmer
+	religion = old_velothi
+	dynasty_house = house_elder_scrolls
+	800.1.1 = { birth = yes }
+	830.10.5 = { employer = tr_dwemer1 }
+	868.1.1 = { death = { death_reason = death_execution killer = tr_dagothur } }
+ }
 #Anime
  tr_frieren = {
 	name = "Frieren"
