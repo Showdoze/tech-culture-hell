@@ -308,12 +308,7 @@ mm_nwordboi = {
 	785.1.11 = { birth = yes }
 	810.1.11 = { add_spouse = mm_sally }
 	830.1.11 = { remove_spouse = mm_sally }
-	860.1.1 = {
-		death = {
-			death_reason = death_dungeon
-			killer = 7627
-		}
-	}
+	860.1.1 = { death = { death_reason = death_dungeon killer = 7627 } }
  }
  mm_ruplesmith = {
 	name = "Ruple"
@@ -350,12 +345,7 @@ mm_nwordboi = {
 			set_relation_rival = { target = character:mm_nwordboi reason = rival_historical }
 		}
 	}
-	886.4.17 = {
-		death = {
-			death_reason = death_beaten
-			killer = mm_nwordboi
-		}
-	}
+	886.4.17 = { death = { death_reason = death_beaten killer = mm_nwordboi } }
  }
  mm_ed = {
 	name = "Ed"
@@ -374,12 +364,7 @@ mm_nwordboi = {
 	trait = drunkard
 	805.1.11 = { birth = yes }
 	860.1.2 = { add_spouse = mm_sally }
-	885.4.17 = {
-		death = {
-			death_reason = death_childbirth_lol
-			killer = mm_cyraxx
-		}
-	}
+	885.4.17 = { death = { death_reason = death_childbirth_lol killer = mm_cyraxx } }
  }
  mm_sally = {
 	name = "Sally"
@@ -411,12 +396,7 @@ mm_nwordboi = {
 	850.1.11 = { add_spouse = mm_gordonwilkins }
 	851.1.11 = { remove_spouse = mm_gordonwilkins }
 	860.1.2 = { add_spouse = mm_ed }
-	885.4.17 = {
-		death = {
-			death_reason = death_stress_lol
-			killer = mm_cyraxx
-		}
-	}
+	885.4.17 = { death = { death_reason = death_stress_lol killer = mm_cyraxx } }
  }
  mm_connie = {
 	name = "Connie Lobdell"
@@ -440,12 +420,7 @@ mm_nwordboi = {
 	disallow_random_traits = yes
 	835.1.11 = { birth = yes }
 	850.1.1 = { add_spouse = mm_ruplesmith }
-	865.4.17 = {
-		death = {
-			death_reason = death_burned
-			killer = mm_connie
-		}
-	}
+	865.4.17 = { death = { death_reason = death_burned killer = mm_connie } }
  }
  mm_wancechilkins = {
 	name = "Wance Chilkins"
@@ -550,12 +525,7 @@ mm_nwordboi = {
 			set_relation_lover = { target = character:mm_heather exposed = yes }
 		}
 	}
-	886.4.17 = {
-		death = {
-			death_reason = death_contest_duel_accident
-			killer = mm_nwordboi
-		}
-	}
+	886.4.17 = { death = { death_reason = death_contest_duel_accident killer = mm_nwordboi } }
  }
 #
 
