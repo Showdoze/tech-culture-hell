@@ -716,6 +716,115 @@ education_republican_knowledge_4 = {
 	group = education_republican_knowledge
 	level = 4
 }
+
+education_martial_prowess_1 = {
+	#category = education
+	minimum_age = 16
+	prowess = 1
+	
+	culture_modifier = {
+		parameter = prowess_traits_more_valued
+		same_culture_opinion = 1
+		monthly_prestige = 0.1
+	}
+
+	group = education_martial_prowess
+	level = 1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_martial_prowess_1_desc
+			}
+			desc = trait_education_martial_prowess_1_character_desc
+		}
+	}
+}
+
+education_martial_prowess_2 = {
+	#category = education
+	minimum_age = 16
+	prowess = 2
+	
+	culture_modifier = {
+		parameter = prowess_traits_more_valued
+		same_culture_opinion = 2
+		monthly_prestige = 0.2
+	}
+
+	group = education_martial_prowess
+	level = 2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_martial_prowess_2_desc
+			}
+			desc = trait_education_martial_prowess_2_character_desc
+		}
+	}
+}
+
+education_martial_prowess_3 = {
+	#category = education
+	minimum_age = 16
+	prowess = 3
+	
+	culture_modifier = {
+		parameter = prowess_traits_more_valued
+		same_culture_opinion = 3
+		monthly_prestige = 0.3
+	}
+
+	group = education_martial_prowess
+	level = 3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_martial_prowess_3_desc
+			}
+			desc = trait_education_martial_prowess_3_character_desc
+		}
+	}
+}
+
+education_martial_prowess_4 = {
+	#category = education
+	minimum_age = 16
+	prowess = 4
+	
+	culture_modifier = {
+		parameter = prowess_traits_more_valued
+		same_culture_opinion = 4
+		monthly_prestige = 0.4
+	}
+
+	group = education_martial_prowess
+	level = 4
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_education_martial_prowess_4_desc
+			}
+			desc = trait_education_martial_prowess_4_character_desc
+		}
+	}
+}
+
 hygene_bad_1 = {
 
     minimum_age = 10
