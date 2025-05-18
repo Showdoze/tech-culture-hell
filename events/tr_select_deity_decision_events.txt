@@ -552,7 +552,7 @@ tr_select_deity.01 = {
     }
 
     ####MAGE
-     option = {
+    option = {
         name = mage_select_water
         trigger = {
             AND = {
@@ -562,9 +562,9 @@ tr_select_deity.01 = {
                 }
             }
         }
-         add_trait = follow_mage_water
+        add_trait = follow_mage_water
     }
-     option = {
+    option = {
         name = mage_select_fire
         trigger = {
             AND = {
@@ -575,8 +575,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_fire
-     }
-     option = {
+    }
+    option = {
         name = mage_select_air
         trigger = {
             AND = {
@@ -587,8 +587,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_air
-     }
-     option = {
+    }
+    option = {
         name = mage_select_earth
         trigger = {
             AND = {
@@ -599,8 +599,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_earth
-     }
-     option = {
+    }
+    option = {
         name = mage_select_death
         trigger = {
             AND = {
@@ -611,10 +611,10 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mage_death
-     }
+    }
     ######Roman PAGAN
 
-     option = {
+    option = {
         name = god_choice_sol
         trigger = {
             AND = {
@@ -625,8 +625,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_sol
-     }
-     option = {
+    }
+    option = {
         name = god_choice_mars
         trigger = {
             AND = {
@@ -637,8 +637,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_mars
-     }
-     option = {
+    }
+    option = {
         name = god_choice_jove
         trigger = {
             AND = {
@@ -649,10 +649,10 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_jupiter
-     }
+    }
 
     ###NORSE
-     option = {
+    option = {
         name = god_choice_odin
         trigger = {
             AND = {
@@ -664,7 +664,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_odin
     }
-     option = {
+    option = {
         name = god_choice_thor
         trigger = {
             AND = {
@@ -950,8 +950,10 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaltecuhtli
     }
+
     ####Imperial
-     option = {
+
+    option = {
         name = god_choice_justinian
         trigger = {
             AND = {
@@ -962,8 +964,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_justinian
-     }
-     option = {
+    }
+    option = {
         name = god_choice_augustus
         trigger = {
             AND = {
@@ -975,7 +977,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_augustus
     }
-     option = {
+    option = {
         name = god_choice_diocletian
         trigger = {
             AND = {
@@ -986,9 +988,11 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_diocletian
-     }
+    }
+
     ###Blood
-     option = {
+
+    option = {
         name = god_choice_ripper
         trigger = {
             AND = {
@@ -999,44 +1003,8 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_ripper
-     }
-     option = {
-        name = god_choice_bhaal
-        trigger = {
-            AND = {
-                faith = faith:blood_faith
-                NOT = {
-                    has_trait = follow_bhaal
-                }
-            }
-        }
-        add_trait = follow_bhaal
     }
-     option = {
-        name = god_choice_bane
-        trigger = {
-            AND = {
-                faith = faith:blood_faith
-                NOT = {
-                    has_trait = follow_bane
-                }
-            }
-        }
-        add_trait = follow_bane
-     }
-     option = {
-        name = god_choice_myrkul
-        trigger = {
-            AND = {
-                faith = faith:blood_faith
-                NOT = {
-                    has_trait = follow_myrkul
-                }
-            }
-        }
-        add_trait = follow_myrkul
-     }
-     option = {
+    option = {
         name = god_choice_caleb
         trigger = {
             AND = {
@@ -1047,19 +1015,455 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_caleb
-     }
-     option = {
+    }
+
+    ###DND
+
+    option = {
+        name = god_choice_bhaal
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:blood_faith
+                    faith = faith:dnd_faith
+                }
+                NOT = {
+                    has_trait = follow_bhaal
+                }
+            }
+        }
+        add_trait = follow_bhaal
+    }
+    option = {
+        name = god_choice_bane
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:blood_faith
+                    faith = faith:dnd_faith
+                }
+                NOT = {
+                    has_trait = follow_bane
+                }
+            }
+        }
+        add_trait = follow_bane
+    }
+    option = {
+        name = god_choice_myrkul
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:blood_faith
+                    faith = faith:dnd_faith
+                }
+                NOT = {
+                    has_trait = follow_myrkul
+                }
+            }
+        }
+        add_trait = follow_myrkul
+    }
+    option = {
         name = god_choice_madara
         trigger = {
             AND = {
-                faith = faith:blood_faith
+                OR = {
+                    faith = faith:blood_faith
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_madara
                 }
             }
         }
         add_trait = follow_madara
-     }
+    }
+    option = {
+        name = god_choice_bahamut
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_bahamut
+                }
+            }
+        }
+        add_trait = follow_bahamut
+    }
+    option = {
+        name = god_choice_corellon_larethian
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_corellon_larethian
+                }
+            }
+        }
+        add_trait = follow_corellon_larethian
+    }
+    option = {
+        name = god_choice_cyric
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_cyric
+                }
+            }
+        }
+        add_trait = follow_cyric
+    }
+    option = {
+        name = god_choice_eilistraee
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_eilistraee
+                }
+            }
+        }
+        add_trait = follow_eilistraee
+    }
+    option = {
+        name = god_choice_garl_glittergold
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_garl_glittergold
+                }
+            }
+        }
+        add_trait = follow_garl_glittergold
+    }
+    option = {
+        name = god_choice_gond
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_gond
+                }
+            }
+        }
+        add_trait = follow_gond
+    }
+    option = {
+        name = god_choice_gruumsh
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_gruumsh
+                }
+            }
+        }
+        add_trait = follow_gruumsh
+    }
+    option = {
+        name = god_choice_helm
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_helm
+                }
+            }
+        }
+        add_trait = follow_helm
+    }
+    option = {
+        name = god_choice_ilmater
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_ilmater
+                }
+            }
+        }
+        add_trait = follow_ilmater
+    }
+    option = {
+        name = god_choice_jergal
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_jergal
+                }
+            }
+        }
+        add_trait = follow_jergal
+    }
+    option = {
+        name = god_choice_kelemvor
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_kelemvor
+                }
+            }
+        }
+        add_trait = follow_kelemvor
+    }
+    option = {
+        name = god_choice_kereska
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_kereska
+                }
+            }
+        }
+        add_trait = follow_kereska
+    }
+    option = {
+        name = god_choice_laduguer
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_laduguer
+                }
+            }
+        }
+        add_trait = follow_laduguer
+    }
+    option = {
+        name = god_choice_lathander
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_lathander
+                }
+            }
+        }
+        add_trait = follow_lathander
+    }
+    option = {
+        name = god_choice_lolth
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_lolth
+                }
+            }
+        }
+        add_trait = follow_lolth
+    }
+    option = {
+        name = god_choice_loviatar
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_loviatar
+                }
+            }
+        }
+        add_trait = follow_loviatar
+    }
+    option = {
+        name = god_choice_mielikki
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_mielikki
+                }
+            }
+        }
+        add_trait = follow_mielikki
+    }
+    option = {
+        name = god_choice_moradin
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_moradin
+                }
+            }
+        }
+        add_trait = follow_moradin
+    }
+    option = {
+        name = god_choice_mystra
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_mystra
+                }
+            }
+        }
+        add_trait = follow_mystra
+    }
+    option = {
+        name = god_choice_oghma
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_oghma
+                }
+            }
+        }
+        add_trait = follow_oghma
+    }
+    option = {
+        name = god_choice_selune
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_selune
+                }
+            }
+        }
+        add_trait = follow_selune
+    }
+    option = {
+        name = god_choice_shar
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_shar
+                }
+            }
+        }
+        add_trait = follow_shar
+    }
+    option = {
+        name = god_choice_silvanus
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_silvanus
+                }
+            }
+        }
+        add_trait = follow_silvanus
+    }
+    option = {
+        name = god_choice_talos
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_talos
+                }
+            }
+        }
+        add_trait = follow_talos
+    }
+    option = {
+        name = god_choice_tempus
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_tempus
+                }
+            }
+        }
+        add_trait = follow_tempus
+    }
+    option = {
+        name = god_choice_tiamat
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_tiamat
+                }
+            }
+        }
+        add_trait = follow_tiamat
+    }
+    option = {
+        name = god_choice_tymora
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_tymora
+                }
+            }
+        }
+        add_trait = follow_tymora
+    }
+    option = {
+        name = god_choice_tyr
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_tyr
+                }
+            }
+        }
+        add_trait = follow_tyr
+    }
+    option = {
+        name = god_choice_umberlee
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_umberlee
+                }
+            }
+        }
+        add_trait = follow_umberlee
+    }
+    option = {
+        name = god_choice_vlaakith
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_vlaakith
+                }
+            }
+        }
+        add_trait = follow_vlaakith
+    }
+    option = {
+        name = god_choice_waukeen
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_waukeen
+                }
+            }
+        }
+        add_trait = follow_waukeen
+    }
+    option = {
+        name = god_choice_yondalla
+        trigger = {
+            AND = {
+                faith = faith:dnd_faith
+                NOT = {
+                    has_trait = follow_yondalla
+                }
+            }
+        }
+        add_trait = follow_yondalla
+    }
+
     ##### PAGAN
 
     option = {
