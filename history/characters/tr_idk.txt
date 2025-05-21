@@ -1486,9 +1486,39 @@ tr_vlad_tepes = {
 	trait = strategist
 	trait = theologian
 	trait = intellect_good_1
+	mother = tr_thief_drept_parrent
 	disallow_random_traits = yes
 	800.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_thief_drept_parrent = {
+	name = "Martha"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	female = yes
+	trait = education_stewardship_2
+	trait = compassionate
+	trait = content
+	trait = lustful
+	disallow_random_traits = yes
+	784.1.1 = { birth = yes }
+	801.1.1 = { death = { death_reason = death_childbirth } }
+ }
+ tr_thief_lauryl = {
+	name = "Lauryl"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	mother = tr_thief_drept_parrent
+	female = yes
+	trait = athletic
+	trait = compassionate
+	trait = charming
+	trait = curious
+	disallow_random_traits = yes
+	801.1.1 = { birth = yes }
+	815.1.1 = { death = { death_reason = death_murder } }
  }
  tr_thief_hammer1 = {
 	name = "Edgar"
@@ -1585,6 +1615,187 @@ tr_vlad_tepes = {
 	disallow_random_traits = yes
 	1111.1.1 = { birth = yes }
 	1211.1.1 = { death = { death_reason = death_old_age } }
+ }
+ thief_cradel_9 = {
+	name = "Wrenfeld, A."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	female = yes
+	trait = eccentric
+	trait = diligent
+	trait = deceitful
+	trait = lunatic_genetic
+	trait = education_intrigue_2
+	disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_8_dad = {
+	name = "Elmwood"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = comfort_eater
+	trait = education_diplomacy_2
+	trait = patrician_born
+	trait = arrogant
+	trait = callous
+	trait = lunatic_genetic
+	disallow_random_traits = yes
+	750.1.1 = { birth = yes }
+	815.5.5 = { death = yes }
+ }
+ thief_cradel_8_husband = {
+	name = "Barton Corino"
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = irritable
+	trait = education_stewardship_1
+	trait = patrician_born
+	trait = arrogant
+	trait = weak
+	trait = sadistic
+	disallow_random_traits = yes
+	770.1.1 = { birth = yes }
+	810.1.1 = { add_spouse = thief_cradel_8 }
+	810.1.5 = { death = { death_reason = death_murder killer = thief_cradel_8 } }
+ }
+ thief_cradel_8 = {
+	name = "Elliot, V."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	father = thief_cradel_8_dad
+	female = yes
+	trait = education_intrigue_2
+	trait = wrathful
+	trait = patrician_born
+	trait = craven
+	trait = murderer
+	trait = lunatic_genetic
+	disallow_random_traits = yes
+	789.1.1 = { birth = yes }
+	810.1.1 = { add_spouse = thief_cradel_8_husband }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_7 = {
+	name = "Pins, C."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	father = thief_cradel_8_dad
+	female = yes
+	trait = education_intrigue_2
+	trait = lunatic_genetic
+	trait = essentric
+	trait = craven
+	trait = murderer
+	disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_6 = {
+	name = "Topper, F."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = wrathful
+	trait = eccentric
+	trait = murderer
+	trait = diligent
+	trait = lunatic_genetic
+	trait = education_learning_2
+	disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_6_daughter = {
+	name = "Topper."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	mother = thief_cradel_6
+	disallow_random_traits = yes
+	809.1.1 = { birth = yes }
+	810.1.1 = { death = yes }
+ }
+ thief_cradel_5 = {
+	name = "Nuvio, J."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = wrathful
+	trait = eccentric
+	trait = murderer
+	trait = diligent
+	trait = lunatic_genetic
+	trait = education_learning_2
+	disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_4 = {
+	name = "Solzer, A."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = reclusive
+	trait = calm
+	trait = patient
+	trait = lunatic_genetic
+	trait = possessed_1
+	trait = education_learning_3
+	disallow_random_traits = yes
+	730.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_3 = {
+	name = "Izen, S."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = depressed_1
+	trait = cannibal
+	trait = murderer
+	trait = gluttonous
+	trait = lunatic_genetic
+	trait = education_diplomacy_2
+	disallow_random_traits = yes
+	777.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_2 = {
+	name = "Gunter, M."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = wrathful
+	trait = cannibal
+	trait = comfort_eater
+	trait = lunatic_genetic
+	trait = education_intrigue_2
+	disallow_random_traits = yes
+	777.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_murder } }
+ }
+ thief_cradel_1 = {
+	name = "Poshtoll, E."
+	religion = hammerite_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = disfigured
+	trait = scarred
+	trait = murderer
+	trait = lunatic_genetic
+	trait = gregarious
+	trait = diplomat
+	trait = vengeful
+	trait = education_diplomacy_4
+	disallow_random_traits = yes
+	777.1.1 = { birth = yes }
+	815.5.5 = { death = { death_reason = death_disappearance } }
  }
 #ELDER SCROLLS CHARACTERS
  tr_dwemer1 = {
