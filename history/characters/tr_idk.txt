@@ -176,7 +176,7 @@
 	trait = avaricious
 	father = tr_sopranos_tony_dad
     disallow_random_traits = yes
-	820.8.22 = { birth = yes }
+	830.8.22 = { birth = yes }
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:tr_sopranos_tony_mom reason = rival_historical }
@@ -184,21 +184,50 @@
 	}
 	900.1.1 = { death = { death_reason = death_murder killer = tr_oswald_cobblepot_the_penguin_a } }
  }
+ tr_sopranos_aj = {
+    name = "A.J. Soprano"
+	#dna = sopranos_tony
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_stewardship_2
+	trait = content
+	trait = arbitrary
+    trait = irritable
+	father = tr_sopranos_tony
+    disallow_random_traits = yes
+	853.6.17 = { birth = yes }
+	920.1.1 = { death = yes }
+ }
+ tr_sopranos_meadow = {
+    name = "Meadow Soprano"
+	#dna = sopranos_tony
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_diplomacy_2
+	trait = family_first
+	trait = arbitrary
+    trait = intellect_good_2
+	father = tr_sopranos_tony
+	female = yes
+    disallow_random_traits = yes
+	851.9.23 = { birth = yes }
+	920.1.1 = { death = yes }
+ }
  tr_sopranos_tony_dad = {
     name = "Johnny Soprano"
-	#dna = sopranos_tony
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
 	trait = education_martial_3
 	trait = arrogant
-    trait = arbitrary
+    trait = sadistic
     trait = ambitious
-    trait = stubborn
-	trait = greedy
-	father = tr_mafia_founder
+    trait = adulterer
+	father = sopranos_founder
     disallow_random_traits = yes
-	790.1.1 = { birth = yes }
+	800.7.26 = { birth = yes }
 	820.1.1 = { add_spouse = tr_sopranos_tony_mom }
 	850.1.1 = { death = { death_reason = death_stress } }
  }
@@ -232,7 +261,6 @@
  }
  tr_sopranos_junor = {
     name = "Junor Soprano"
-	#dna = sopranos_tony
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
@@ -244,10 +272,25 @@
 	trait = callous
 	trait = greedy
 	trait = reclusive
+	father = sopranos_founder
+    disallow_random_traits = yes
+	799.2.23 = { birth = yes }
+	880.1.1 = { death = { death_reason = death_old_age } }
+ }
+ sopranos_founder = {
+	name = "Corrado Soprano"
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	trait = education_stewardship_2
+	trait = diligent
+    trait = architect
+    trait = humble
+    trait = wild_oat
 	father = tr_mafia_found
     disallow_random_traits = yes
-	780.1.1 = { birth = yes }
-	880.1.1 = { death = { death_reason = death_old_age } }
+	750.1.1 = { birth = yes }
+	830.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_joker_1989 = {
     name = "Jack Napier"
@@ -428,12 +471,9 @@
  }
  tr_oswald_cobblepot_mother = {
     name = "Francis Cobb"
-	#dna = oswald_cobblepot_the_penguin
 	religion = catholic 
-    #dynasty_house = house_mafia
 	female = yes
 	culture = american
-	#father = tr_mafia_founder
 	trait = education_diplomacy_2
 	trait = patient
     trait = arrogant
@@ -1352,6 +1392,21 @@ tr_vlad_tepes = {
 			learn_language = language_iberian
 	    }
 	}
+	880.1.1 = { death = { death_reason = death_revenge } }
+ }
+ thief_cavador = {
+	name = "Brother Cavador"
+	religion = mechanist_faith
+	dynasty_house = house_thief
+	culture = thief_city
+	trait = education_learning_4
+	trait = architect
+	trait = loyal
+	trait = temperate
+	trait = intellect_good_3
+	trait = chaste
+	disallow_random_traits = yes
+	829.1.1 = { birth = yes }
 	880.1.1 = { death = { death_reason = death_revenge } }
  }
  tr_thief_hammer_yora = {
