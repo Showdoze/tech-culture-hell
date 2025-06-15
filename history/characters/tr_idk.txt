@@ -779,6 +779,90 @@
 	}
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
+ tr_tar_1_dad = {
+	name = "Aenar"
+	religion = dragon_cult
+	dynasty_house = house_allies
+	culture = high_valyrian
+	trait = education_diplomacy_2
+    trait = ambitious
+    trait = diligent
+    trait = weak
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+    840.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_tar_1 = {
+    name = "Aegon"
+	religion = dragon_cult
+	dynasty_house = house_allies
+	culture = high_valyrian
+	father = tr_tar_1_dad
+	trait = education_martial_3
+    trait = ambitious
+    trait = diligent
+    trait = scarred
+    trait = brave
+	trait = strategist
+    disallow_random_traits = yes
+	814.1.1 = { birth = yes }
+	853.1.1 = { add_spouse = tr_tar_1 }
+    864.1.1 = { death = { death_reason = death_duel killer = tr_tar_2 } }
+ }
+ tr_tar_2_mom = {
+    name = "Visenya"
+	religion = dragon_cult
+	dynasty_house = house_allies
+	culture = high_valyrian
+	female = yes
+	father = tr_tar_1
+	trait = education_intrigue_4
+    trait = sadistic
+    trait = diligent
+    trait = reckless
+    trait = beauty_good_3
+    disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+	853.1.1 = { add_spouse = tr_tar_1 }
+	864.1.1 = { add_spouse = tr_tar_2 }
+    890.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_tar_2 = {
+    name = "Maegor"
+	religion = dragon_cult
+	dynasty_house = house_allies
+	culture = high_valyrian
+	father = tr_tar_1
+	mother = tr_tar_2_mom
+	trait = education_martial_3
+    trait = wrathful
+    trait = diligent
+    trait = athletic
+    trait = brave
+    disallow_random_traits = yes
+	853.1.1 = { birth = yes }
+	864.1.1 = { add_spouse = tr_tar_2_mom }
+    900.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_tar_3 = {
+    name = " Jaehaerys"
+	religion = dragon_cult
+	dynasty_house = house_allies
+	culture = high_valyrian
+	father = tr_tar_2
+	mother = tr_tar_2_mom
+	trait = education_learning_4
+    trait = scholar
+    trait = diligent
+    trait = shrewd
+    trait = brave
+    disallow_random_traits = yes
+	880.1.1 = { birth = yes }
+	864.1.1 = { add_spouse = tr_tar_2_mom }
+    900.1.1 = { death = { death_reason = death_old_age } }
+ }
 #
 tr_doc_livesey = {
     name = "Dr. Livesey"
