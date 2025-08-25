@@ -611,12 +611,33 @@
 	841.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_execution killer = 1702 } }
  }
+ tr_historia_augusta_emperor = {
+	name = "Censorinus"
+	dna = other_augustus
+	religion = roman_pagan
+	dynasty = misc_history
+	culture = roman
+	700.1.1 = { birth = yes }
+	810.8.19 = { death = { death_reason = death_old_age } }
+ }
+ tr_historia_augusta_historian = {
+	name = "Aelius Cordus"
+	dna = other_augustus
+	religion = roman_pagan
+	dynasty = misc_history
+	culture = roman
+	father = tr_historia_augusta_emperor
+	trait = education_learning_3
+	800.1.1 = { birth = yes }
+	870.1.1 = { death = { death_reason = death_disappearance } }
+ }
  tr_other_augustus = {
 	name = "Octavian"
 	dna = other_augustus
 	religion = roman_pagan
 	dynasty = misc_history
 	culture = roman
+	father = tr_historia_augusta_historian
 	trait = education_diplomacy_3
 	trait = intellect_good_3
 	trait = ambitious
@@ -632,6 +653,7 @@
 	religion = roman_pagan
 	dynasty = misc_history
 	culture = roman
+	father = tr_historia_augusta_historian
 	female = yes
 	trait = education_diplomacy_3
 	trait = intellect_good_3
