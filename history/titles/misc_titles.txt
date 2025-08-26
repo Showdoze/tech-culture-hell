@@ -195,57 +195,27 @@
         liege = 0
 		government = nomad_government
     }
-    408.1.1={
-	    holder = ck650037
-    }
-    480.1.1 = {
-	    holder = ck650038
-    }
-    530.1.1 = {
-	    holder = ck650039
-    }
-    570.1.1 = {
-	    holder = ck650040
-    }
-    600.1.1 = {
-	    holder = ck650041
-    }
-    670.1.1 = {
-	    holder = 0
-    }
+    408.1.1 = { holder = ck650037 }
+    480.1.1 = { holder = ck650038 }
+    530.1.1 = {  holder = ck650039 }
+    570.1.1 = { holder = ck650040 }
+    600.1.1 = { holder = ck650041 }
+    670.1.1 = { holder = 0 }
  }
  e_hunnic = {
     370.1.1 = {
         holder = ck650012
 	    government = nomad_government
     }
-    400.1.1 = {
-        holder = ck650114
-    }
-    412.1.1 = {
-        holder = ck650111
-    }
-    413.1.1 = {
-        holder = ck650112
-    }	
-    430.1.1 = {
-        holder = ck650113
-    }
-    434.1.1 = {
-        holder = ck650017
-    }	
-    445.1.1 = {
-        holder = ck650034
-    }
-    453.3.2 = {
-        holder = ck650061
-    }
-    520.2.11 = {
-        holder = ck650035
-    }
-    631.1.1 = {
-        holder = 0
-    }
+    400.1.1 = { holder = ck650114 }
+    412.1.1 = { holder = ck650111 }
+    413.1.1 = { holder = ck650112 }	
+    430.1.1 = {  holder = ck650113 }
+    434.1.1 = {  holder = ck650017 }	
+    445.1.1 = { holder = ck650034 }
+    453.3.2 = { holder = ck650061 }
+    520.2.11 = { holder = ck650035 }
+    631.1.1 = { holder = 0 }
  }
  k_suebi = {
 	409.1.1={
@@ -419,6 +389,64 @@
 	820.1.1 = { holder = tr_sopranos_tony_dad }
 	850.1.1 = { holder = tr_sopranos_tony }
 	900.1.1 = { holder = 0 }
+ }
+ d_totaly_roman_empire = {
+	1.1.1 = {
+		liege = 0
+		holder = tr_fake_roman_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1920.1.1 }
+		}
+	}
+	24.8.19 = { holder = tr_fake_roman_2 }
+	37.3.16 = { holder = tr_fake_roman_caligula }
+	41.1.24 = { holder = tr_fake_roman_claudius }
+	54.10.13 = { holder = tr_fake_roman_nero }
+	68.6.9 = { holder = tr_fake_roman_1 }
+	69.4.16 = { holder = tr_fake_roman_vespaian } 
+	79.6.23 = { holder = tr_fake_roman_titus }
+    81.9.13 = { holder = tr_fake_roman_domitian }
+	96.9.18 = { holder = tr_fake_roman_1 }
+	100.8.19 = { holder = tr_fake_roman_trajan }
+	117.8.9 = { holder = tr_fake_roman_hadrian }
+	138.7.10 = { holder = tr_fake_roman_antoninus }
+	161.3.7 = { holder =  tr_fake_roman_marcus_aurelius }
+	180.3.17 = { holder = tr_fake_roman_marcus_commodus }
+	192.12.31 = { holder = tr_fake_roman_septimius }
+	211.2.4 = { holder = tr_fake_roman_geta }
+	211.12.19 = { holder = tr_fake_roman_caracalla }
+	217.4.8 = { holder = tr_fake_roman_elagabalus }
+	222.3.11 = { holder = tr_fake_roman_severus_alexander }
+	235.3.19 = { holder = tr_fake_roman_thrax }
+	250.3.22 = { holder = tr_fake_roman_diocletian }
+	305.4.1 = { holder = tr_fake_roman_constantine1 }
+	337.5.22 = { holder = tr_fake_roman_constantine2 }
+	340.4.1 = { holder = tr_fake_roman_constans }
+	350.2.1 = { holder = tr_fake_roman_julian }
+	411.6.26 = { holder = tr_fake_roman_honorius }
+	421.2.8 = { holder = tr_fake_roman_theodosius2 }
+	450.7.28 = { holder = tr_fake_roman_marcian }
+	457.1.27 = { holder = tr_fake_roman_leon1 }
+	474.1.18 = { holder = tr_fake_roman_leon2 }
+	474.11.17 = { holder = tr_fake_roman_zenon }
+	491.4.9 = { holder = tr_fake_roman_anastasius }
+	518.7.9 = { holder = tr_fake_roman_justin }
+	527.8.1 = { holder = tr_fake_roman_justinian }
+	565.11.14 = { holder = tr_fake_roman_justin2 }
+	578.10.5 = { holder = tr_fake_roman_tiberius2 }
+	582.8.14 = { holder = tr_fake_roman_heraclius }
+	641.2.11 = { holder = tr_fake_roman_constantine3 }
+	641.4.20 = { holder = tr_fake_roman_constans2 }
+	641.10.1 = { holder = tr_fake_roman_justinian2 }
+	711.11.24 = { holder = tr_fake_roman_dayless }
+	718.1.1 = { holder = tr_fake_roman_daylen }
+	720.1.1 = { holder = tr_historia_augusta_emperor }
+	810.8.19 = { holder = tr_historia_augusta_historian }
+	870.1.1 = { holder = 0 }
  }
  d_alex_brit_name = {
 	840.1.1 = {

@@ -1130,6 +1130,27 @@
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_thief_city }
  }
+#Emperor
+ fake_emperor = {
+	type = character
+	gender = male
+	special = holder
+	priority = 299
+	titles = { d_totaly_roman_empire }
+ }
+ fake_emperor_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 299
+	titles = { d_totaly_roman_empire }
+ }
+ fake_empire = {
+	type = title
+	#tier = kingdom
+	titles = { d_totaly_roman_empire }
+	priority = 299
+} 
 #Thief Religions
  marshal_thief { #Sherift
 	type = character
