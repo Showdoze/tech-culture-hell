@@ -473,7 +473,7 @@
 	880.1.1 = { death = { death_reason = death_old_age } }
  }
 #ancient cultures 
- tr_Hamilcar_barca = {
+ tr_hamilcar_barca = {
 	name = "Hamilcar Barca"
 	religion = punic_pagan
 	#dna = hannibal_barca
@@ -493,7 +493,7 @@
 	dna = hannibal_barca
 	dynasty = misc_history
 	culture = punic
-	father = tr_Hamilcar_barca
+	father = tr_hamilcar_barca
 	trait = education_martial_4
 	trait = wrathful
 	trait = strategist
@@ -880,13 +880,11 @@
 	trait = education_diplomacy_4
 	trait = former_consul_west
 	disallow_random_traits = yes
-	121.4.26 = {
-		birth = "121.4.26"
-		give_nickname = nick_aurelius
-	}
+	give_nickname = nick_aurelius
+	121.4.26 = { birth = yes }
 	180.3.17 = { death = yes }
-  }
-   tr_fake_roman_marcus_commodus = {
+   }
+   tr_fake_roman_commodus = {
 	name = "Cummodus"
 	dynasty_house = house_fake_roman
 	religion = roman_pagan
@@ -902,7 +900,20 @@
 	disallow_random_traits = yes
 	161.8.31 = { birth = yes }
 	192.12.31 = { death = { death_reason = death_bath } }
-  } 
+   } 
+   tr_fake_roman_commodus_brother = {
+	name = "Sala"
+	dynasty_house = house_fake_roman
+	religion = roman_pagan
+	culture = roman
+	father = tr_fake_roman_marcus_aurelius
+	trait = generous
+	trait = diligent
+	trait = zealous
+	trait = education_martial_3
+	170.1.1 = { birth = yes }
+	190.1.1 = { death = { death_reason = death_execution killer = tr_fake_roman_commodus } }
+   }
    tr_fake_roman_septimius = {
 	name = "Septimius"
 	dynasty_house = house_fake_roman
@@ -915,6 +926,20 @@
 	trait = education_martial_3
 	145.4.11 = { birth = yes }
 	211.2.4 = { death = yes }
+   }
+   tr_fake_roman_septimius_brother = {
+	name = "Biggus Dickus"
+	dynasty_house = house_fake_roman
+	religion = roman_pagan
+	culture = roman
+	father = tr_fake_roman_antoninus
+	trait = generous
+	trait = diligent
+	trait = zealous
+	trait = education_martial_2
+	trait = giant
+	145.4.11 = { birth = yes }
+	190.2.4 = { death = { death_reason = death_murder killer = tr_fake_roman_commodus } }
    }
    tr_fake_roman_geta = {
 	name = "Getia"
@@ -1008,13 +1033,34 @@
 	trait = education_stewardship_4
 	disallow_random_traits = yes
 	244.12.22 = { birth = yes }
+	272.1.1 = { add_spouse = tr_fake_roman_diocletian_sister }
 	305.4.1 = { death = yes } 
-  }
+   }
+   tr_fake_roman_diocletian_sister = {
+	name = "Cuntantina"
+	dna = 1733_eudokia
+	female = yes
+	religion = roman_pagan
+	culture = roman
+	father = tr_fake_roman_thrax
+	martial = 4
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 8
+	trait = humble
+	trait = content
+	trait = education_stewardship_4
+	255.1.1 = { birth = yes }
+	272.1.1 = { add_spouse = tr_fake_roman_diocletian }
+	333.3.3 = { add_spouse = tr_fake_roman_constantine1 }
+	340.1.1 = { death = yes }
+   }
    tr_fake_roman_constantine1 = {
-	name = "Cunstantine"
+	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_diocletian
+	mother = tr_fake_roman_diocletian_sister
 	martial = 8
 	diplomacy = 8
 	intrigue = 9
@@ -1027,13 +1073,15 @@
 	disallow_random_traits = yes
 	give_nickname = nick_the_great
 	272.2.27 = { birth = yes }
+	333.3.3 = { add_spouse = tr_fake_roman_diocletian_sister }
 	337.5.22 = { death = yes }
   }
    tr_fake_roman_constantine2 = {
-	name = "Cunstantine"
+	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constantine1
+	mother = tr_fake_roman_diocletian_sister
 	martial = 4
 	diplomacy = 4
 	intrigue = 7
@@ -1047,10 +1095,11 @@
 	340.4.1 = { death = { death_reason = death_duel killer = tr_fake_roman_constans } }
   }
    tr_fake_roman_constans = {
-	name = "Cunstans"
+	name = "Cuntsans"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constantine1
+	mother = tr_fake_roman_diocletian_sister
 	martial = 6
 	diplomacy = 5
 	intrigue = 3
@@ -1067,6 +1116,7 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constantine1
+	mother = tr_fake_roman_diocletian_sister
 	trait = scholar
 	trait = intellect_good_1
 	trait = education_martial_3
@@ -1347,7 +1397,7 @@
 	641.2.11 = { death = { death_reason = death_murder killer = tr_fake_roman_dayless } }
   }
    tr_fake_roman_heraclius_sister = {
-	name = "Cunstantina"
+	name = "Slutia"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_tiberius2
@@ -1369,7 +1419,7 @@
 	666.10.31 = { death = { death_reason = death_murder killer = tr_fake_roman_dayless } }
    }
    tr_fake_roman_constantine3 = {
-	name = "Cunstantine"
+	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_heraclius
@@ -1403,7 +1453,7 @@
 	}
  }
    tr_fake_roman_constans2 = {
-	name = "Cunstans"
+	name = "Cuntsans"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constantine3
@@ -1562,7 +1612,6 @@
 	dynasty_house = house_fake_roman
 	culture = roman
 	father = tr_other_augustus
-	trait = born_in_the_purple
 	trait = education_learning_3
 	trait = scholar
 	give_nickname = nick_the_wise
@@ -1570,7 +1619,7 @@
 	912.5.1 = { death = yes }
    }
    tr_fake_roman_constantine4 = {
-	name = "Cuntsstantine"
+	name = "Cuntstantine"
 	religion = roman_pagan
 	dynasty_house = house_fake_roman
 	culture = roman
@@ -1913,23 +1962,6 @@ tr_doc_livesey = {
 	953.3.5 = { death = { death_reason = death_old_age } }
  }
 #
-tr_mando = {
-    name = "Canderous"
-	religion = blood_faith 
-    dynasty = dynasty_fantasy
-	culture = mandalorian
-	trait = education_martial_3
-    trait = callous
-    trait = arrogant
-    trait = stubborn
-    trait = strategist
-    trait = strong
-    disallow_random_traits = yes
-	martial = 20
-	839.1.1 = { birth = yes }
-	857.1.1 = { trait = disfigured }
-	948.1.1 = { death = { death_reason = death_battle killer = traleksmcglass } }
-}
 tr_gandhi = {
     name = "Gandhi"
 	dna = gandhi_civ
@@ -2082,9 +2114,7 @@ tr_arthur_shelby_peaky_blinders = {
 	#dna = charles_v_hre
 	dynasty_house = house_ck_habsburg
 	culture = german
-	85.1.1 = { 
-		birth = yes 
-	}
+	785.1.1 = {  birth = yes }
 	1045.1.1 = { death = yes }
  }
  tr_charles_v_hre = {
@@ -2247,7 +2277,7 @@ tr_vlad_tepes = {
 			add_character_flag = no_headgear
 	    }
 	}
-	920.1.1 = { death = { death_reason = death_old_age } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_shart = {
 	name = "Shadowheart"
@@ -2275,7 +2305,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	920.1.1 = { death = { death_reason = death_old_age } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_karlach = {
 	name = "Karlach"
@@ -2305,7 +2335,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	920.1.1 = { death = { death_reason = death_old_age } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_minthara = {
 	name = "Minthara Baenre"
@@ -2334,7 +2364,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	920.1.1 = { death = { death_reason = death_old_age } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_astarion = {
 	name = "Astarion"
@@ -2364,7 +2394,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	920.1.1 = { death = { death_reason = death_old_age } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
  }
 #THIEF
  tr_thief_keeper = {
@@ -3670,6 +3700,7 @@ tr_vlad_tepes = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
+	908.1.1 = { death = { death_reason = death_disappearance } }
   }
  tr_lara_croft = {
 	name = "Lara Croft"
@@ -3703,6 +3734,23 @@ tr_vlad_tepes = {
 	}
 	895.8.30 = { death = { death_reason = death_suicide } }
  }
+ tr_mando = {
+    name = "Canderous Ordo"
+	religion = blood_faith 
+    dynasty = dynasty_fantasy
+	culture = mandalorian
+	trait = education_martial_3
+    trait = callous
+    trait = arrogant
+    trait = stubborn
+    trait = strategist
+    trait = strong
+    disallow_random_traits = yes
+	martial = 20
+	839.1.1 = { birth = yes }
+	857.1.1 = { trait = disfigured }
+	948.1.1 = { death = { death_reason = death_battle killer = traleksmcglass } }
+ }
  #fear and hunger
   tr_f_a_h_Enki = { 
     name = "Enki"
@@ -3719,7 +3767,7 @@ tr_vlad_tepes = {
     disallow_random_traits = yes
 	martial = 20
 	845.1.1 = { birth = yes }
-	908.1.1 = { death = { death_reason = death_suicide } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
   }
  #RED DEAD
   tr_dutch_van = {
@@ -3910,3 +3958,62 @@ tr_vlad_tepes = {
 	1106.1.1 = { death = { death_reason = death_old_age } }
   }
  # 
+#Anime
+ tr_vinland_askeladd_mom = {
+	name = "Lydia"
+	dna = lara_croft
+	religion = catholic 
+    dynasty = dynasty_fantasy
+	culture = welsh
+    female = yes
+	trait = education_diplomacy_2
+	trait = beauty_good_1
+    trait = compassionate
+    trait = diligent
+	trait = ill
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+	848.1.1 = { death = { death_reason = death_ill } }
+ }
+ tr_vinland_askeladd_dad= {
+	name = "Olaf"
+	religion = norse_pagan 
+    dynasty = dynasty_fantasy
+	culture = norse
+    female = yes
+	trait = education_martial_3
+	trait = callous
+    trait = ambitious
+    trait = diligent
+	trait = reaver
+	trait = viking
+    disallow_random_traits = yes
+	800.1.1 = { birth = yes }
+	850.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } }
+ }
+ tr_vinland_askeladd = {
+    name = "Lucius Artorius Castus"
+	religion = norse_pagan
+	culture = welsh
+	dynasty = dynasty_fantasy
+	mother = tr_vinland_askeladd_mom
+	dna = askeladd_vinland
+    trait = education_martial_3
+	trait = diligent
+	trait = brave
+	trait = deceitful
+	trait = lifestyle_wayfarer
+	trait = athletic
+	trait = organizer
+	trait = reaver
+	trait = viking
+	trait = child_of_concubine_female
+	disallow_random_traits = yes
+	give_nickname = nick_askeladd #born 969.1.1
+	834.1.1 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+	1014.1.1 = { death = { death_reason = death_duel killer = 101510 } } #
+  }
+# 
