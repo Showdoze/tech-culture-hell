@@ -4012,7 +4012,11 @@ tr_vlad_tepes = {
 	give_nickname = nick_askeladd #born 969.1.1
 	834.1.1 = {
 		birth = yes
-		effect = { add_character_flag = has_scripted_appearance }
+		effect = { 
+			add_character_flag = has_scripted_appearance 
+			learn_language = language_latin 
+			learn_language = language_norse
+		}
 	}
 	1014.1.1 = { death = { death_reason = death_duel killer = 101510 } } #
   }
