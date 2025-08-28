@@ -653,8 +653,19 @@
 	dynasty_house = house_fake_roman
 	culture = roman
 	father = tr_fake_roman_1
+	trait = twin
 	11.1.1 = { birth = yes }
 	14.3.16 = { death = { death_reason = death_drowned killer = tr_fake_roman_2 } }
+   }
+   tr_fake_roman_2_victom_2 = {
+	name = "Booatonius"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_1
+	trait = twin
+	11.1.1 = { birth = yes }
+	15.3.16 = { death = { death_reason = death_drowned killer = tr_fake_roman_2 } }
    }
    tr_fake_roman_2 = {
 	name = "Tideberius"
@@ -751,7 +762,7 @@
 	79.6.23 = { death = { death_reason = death_dysentery } }
   }
    tr_fake_roman_titus = {
-	name = "Titus"
+	name = "Kitus"
 	dynasty_house = house_fake_roman
 	religion = roman_pagan
 	culture = roman
@@ -858,10 +869,8 @@
 	trait = intellect_good_1
 	trait = education_diplomacy_4
 	disallow_random_traits = yes
-	86.9.19 = {
-		birth = yes
-		give_nickname = nick_pius
-	}
+	give_nickname = nick_pius
+	86.9.19 = { birth = yes }
 	161.3.7 = { death = yes }
   }
    tr_fake_roman_marcus_aurelius = {
@@ -1043,10 +1052,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_thrax
-	martial = 4
-	diplomacy = 3
-	intrigue = 4
-	stewardship = 8
 	trait = humble
 	trait = content
 	trait = education_stewardship_4
@@ -1061,10 +1066,6 @@
 	culture = roman
 	father = tr_fake_roman_diocletian
 	mother = tr_fake_roman_diocletian_sister
-	martial = 8
-	diplomacy = 8
-	intrigue = 9
-	stewardship = 7
 	trait = zealous
 	trait = intellect_good_3
 	trait = brave
@@ -1082,10 +1083,6 @@
 	culture = roman
 	father = tr_fake_roman_constantine1
 	mother = tr_fake_roman_diocletian_sister
-	martial = 4
-	diplomacy = 4
-	intrigue = 7
-	stewardship = 5
 	trait = greedy
 	trait = wrathful
 	trait = kinslayer_3
@@ -1100,10 +1097,6 @@
 	culture = roman
 	father = tr_fake_roman_constantine1
 	mother = tr_fake_roman_diocletian_sister
-	martial = 6
-	diplomacy = 5
-	intrigue = 3
-	stewardship = 5
 	sexuality = homosexual
 	trait = deceitful
 	trait = kinslayer_3
@@ -1216,10 +1209,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_julian
-	martial = 6
-	diplomacy = 6
-	intrigue = 6
-	stewardship = 6
 	trait = zealous
 	trait = greedy
 	trait = craven
@@ -1233,11 +1222,7 @@
 	name = "Leo"
 	religion = roman_pagan
 	culture = roman
-	father = tr_fake_roman_marcian
-	martial = 4
-	diplomacy = 6
-	intrigue = 5
-	stewardship = 6
+	father = tr_fake_roman_julian
 	trait = trusting
 	trait = content
 	trait = physique_good_2
@@ -1251,10 +1236,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_zenon
-	martial = 4
-	diplomacy = 3
-	intrigue = 6
-	stewardship = 5
 	trait = ill
 	trait = education_diplomacy_1
 	give_nickname = nick_the_younger
@@ -1266,10 +1247,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_leon1
-	martial = 7
-	diplomacy = 6
-	intrigue = 6
-	stewardship = 4
 	trait = honest
 	trait = calm
 	trait = education_diplomacy_3
@@ -1282,10 +1259,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_zenon
-	martial = 5
-	diplomacy = 6
-	intrigue = 5
-	stewardship = 8
 	trait = temperate
 	trait = trusting
 	trait = honest
@@ -1307,10 +1280,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_zenon
-	martial = 7
-	diplomacy = 4
-	intrigue = 7
-	stewardship = 5
 	trait = intellect_good_1
 	trait = ambitious
 	trait = education_martial_2
@@ -1323,10 +1292,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_justin
-	martial = 5
-	diplomacy = 12
-	intrigue = 8
-	stewardship = 12
 	trait = just
 	trait = blues_supporter
 	trait = diligent
@@ -1345,10 +1310,6 @@
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_justinian
-	martial = 5
-	diplomacy = 4
-	intrigue = 5
-	stewardship = 6
 	trait = lunatic_1
 	trait = paranoid
 	trait = arrogant
@@ -1403,10 +1364,6 @@
 	father = tr_fake_roman_tiberius2
 	dna = Irene_of_Athens
 	female = yes
-	martial = 4
-	diplomacy = 4
-	intrigue = 8
-	stewardship = 3
 	trait = ambitious
 	trait = deceitful
 	trait = generous
@@ -1424,10 +1381,6 @@
 	culture = roman
 	father = tr_fake_roman_heraclius
 	mother = tr_fake_roman_heraclius_sister
-	martial = 5
-	diplomacy = 4
-	intrigue = 5
-	stewardship = 4
 	trait = ill
 	trait = content
 	trait = lazy
@@ -1435,7 +1388,7 @@
 	disallow_random_traits = yes
 	612.5.3 = { birth = yes }
 	641.4.20 = { death = { death_reason = death_ill } }
-  }
+   }
    tr_fake_roman_heraclonas= {
 	name = "Heraclonas"
 	religion = roman_pagan
@@ -1451,40 +1404,46 @@
 		}
 		add_trait = disfigured
 	}
- }
+  }
    tr_fake_roman_constans2 = {
 	name = "Cuntsans"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constantine3
 	mother = tr_fake_roman_heraclius_sister
-	martial = 3
-	diplomacy = 4
-	intrigue = 5
-	stewardship = 4
 	trait = arbitrary
 	trait = paranoid
 	trait = stubborn
 	trait = education_diplomacy_1
+	trait = albino
 	give_nickname = nick_the_bearded
 	630.11.7 = { birth = yes }
 	642.1.1 = { add_spouse = tr_fake_roman_heraclius_sister }
 	668.7.15 = { death = { death_reason = death_bath killer = tr_fake_roman_dayless } }
- }
+   }
+   tr_fake_roman_dwarf = { 
+	name = "Pumilus"
+	religion = roman_pagan
+	culture = roman
+	father = tr_fake_roman_constans2
+	trait = poet
+	trait = ambitious
+	trait = education_intrigue_2
+	trait = dwarf
+	trait = adulterer
+	trait = legitimized_bastard
+	666.1.1 = { birth = yes }
+	711.1.1 = { death = { death_reason = death_duel killer = tr_fake_roman_dayless } }
+   }
    tr_fake_roman_justinian2 = {
 	name = "Justinian"
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_constans2
 	mother = tr_fake_roman_heraclius_sister
-	martial = 7
-	diplomacy = 5
-	intrigue = 11
-	stewardship = 7
 	trait = arbitrary
 	trait = ambitious
 	trait = education_intrigue_2
-	trait = born_in_the_purple
 	660.1.1 = { birth = yes }
 	695.11.1 = {
 		trait = scarred
@@ -1505,11 +1464,37 @@
 	trait = arrogant
 	trait = kinslayer_3
 	trait = murderer
+	trait = sodomite
+	trait = deceitful
+	trait = rakish
+	trait = irritable
 	trait = education_diplomacy_2
 	trait = legitimized_bastard
 	disallow_random_traits = yes
 	635.1.1 = { birth = yes }
 	718.1.1 = { death = { death_reason = death_suicide } }
+  }
+  tr_fake_roman_dayless_kid_1 = {
+	name = "Daylia"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_dayless
+	female = yes
+	trait = child_of_concubine_female
+	700.1.1 = { birth = yes }
+	710.1.1 = { death = { death_reason = death_murder killer = tr_fake_roman_dayless } }
+  }
+  tr_fake_roman_dayless_kid_2 = {
+	name = "Daylia"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_dayless
+	female = yes
+	trait = child_of_concubine_female
+	705.1.1 = { birth = yes }
+	712.1.1 = { death = { death_reason = death_murder killer = tr_fake_roman_dayless } }
   }
    tr_fake_roman_daylen = {
 	name = "Daylen Namaran"
@@ -1522,6 +1507,8 @@
 	trait = child_of_concubine_female
 	trait = arrogant
 	trait = sodomite
+	trait = deceitful
+	trait = irritable
 	trait = education_martial_1
 	disallow_random_traits = yes
 	703.1.1 = { birth = yes }
@@ -1533,6 +1520,8 @@
 	dynasty_house = house_fake_roman
 	culture = roman
 	father = tr_fake_roman_justinian2
+	dna = julius_caesar_tusculum_bust
+	trait = former_consul_west
 	700.1.1 = { birth = yes }
 	810.8.19 = { death = { death_reason = death_old_age } }
   }
@@ -1546,6 +1535,20 @@
 	trait = deceitful
 	800.1.1 = { birth = yes }
 	870.1.1 = { death = { death_reason = death_disappearance } }
+   }
+   tr_fake_roman_unus_oculus = {
+	name = "Unus Oculus"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_historia_augusta_historian
+	trait = education_martial_3
+	trait = brave
+	trait = strong
+	trait = one_eyed
+	850.1.1 = { birth = yes }
+	860.1.1 = { effect = { set_relation_friend = {  target = character:tr_other_augustus } } }
+	870.1.1 = { death = { death_reason = death_deer } }
    }
    tr_other_augustus = {
 	name = "Octavian"
@@ -1563,6 +1566,8 @@
 	trait = twin
 	disallow_random_traits = yes
 	845.1.1 = { birth = yes }
+	858.1.1 = { effect = { set_relation_lover = { target = character:tr_other_augustus1 } } }
+	860.1.1 = { effect = { set_relation_friend = {  target = character:tr_fake_roman_unus_oculus } } }
 	888.8.19 = { death = { death_reason = death_suicide } }
   }
    tr_other_augustus1 = {
@@ -1582,6 +1587,7 @@
 	trait = twin
 	disallow_random_traits = yes
 	845.1.1 = { birth = yes }
+	858.1.1 = { effect = { set_relation_lover = { target = character:tr_other_augustus } } }
 	888.8.19 = { death = { death_reason = death_suicide } }
   }
    tr_fake_roman_basil = {
@@ -1604,7 +1610,7 @@
 	give_nickname = nick_the_macedonian
 	disallow_random_traits = yes
 	860.1.1 = { birth = yes }
-	886.8.29 = { death = { death_reason = death_deer } }
+	912.8.29 = { death = { death_reason = death_deer } }
     }
    tr_fake_roman_leo3 = {
 	name = "Leo"
@@ -1612,24 +1618,72 @@
 	dynasty_house = house_fake_roman
 	culture = roman
 	father = tr_other_augustus
+	mother = tr_other_augustus1
+	dna = greek_towel_boy
+	sexuality = homosexual
 	trait = education_learning_3
 	trait = scholar
 	give_nickname = nick_the_wise
 	866.9.29 = { birth = yes }
-	912.5.1 = { death = yes }
+	902.5.1 = { death = yes }
    }
    tr_fake_roman_constantine4 = {
 	name = "Cuntstantine"
 	religion = roman_pagan
 	dynasty_house = house_fake_roman
 	culture = roman
-	father = tr_other_augustus
+	father = tr_fake_roman_basil
 	trait = scholar
 	trait = drunkard
 	give_nickname = nick_porphyrogennetos
 	905.9.2 = { birth = yes }
 	959.11.9 = { death = yes }
    }
+   tr_fake_roman_basil2 = { #1716
+	name = "Basil"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_constantine4
+	trait = greedy
+	trait = diligent
+	trait = brave
+	trait = venerable
+	trait = wrathful
+	trait = education_martial_4
+	give_nickname = nick_the_bulgar_slayer
+	958.1.1 = { birth = yes }
+	1025.12.15 = { death = yes }
+   }
+   tr_fake_roman_konstantinos_x = {
+	name = "Konstantinos"
+	dna = 1732_konstantinos_x
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_basil2
+	trait = arbitrary
+	trait = gluttonous
+	trait = clubfooted
+	trait = lustful
+	trait = education_stewardship_1
+	1006.1.1 = { birth = yes }
+	1067.5.22 = { death = yes }  
+    }
+   tr_fake_roman_eudokia = {
+	name = "Eudokia"
+	dna = 1733_eudokia
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_fake_roman_konstantinos_x
+	female = yes
+	trait = humble
+	trait = content
+	trait = education_stewardship_4
+	1030.1.1 = { birth = yes }
+	1096.1.1 = { death = yes }
+  }
  tr_athenian_1 = {
 	name = "Plato"
 	religion = hellenic_pagan
@@ -1639,7 +1693,7 @@
 	trait = intellect_good_1
 	trait = shrewd
 	trait = callous
-	805.1.1 = { birth = yes }
+	837.1.1 = { birth = yes }
 	888.1.1 = { death = { death_reason = death_suicide } }
  }
  tr_spartan_1 = {
@@ -1651,7 +1705,7 @@
 	trait = strong
 	trait = strategist
 	trait = callous
-	805.1.1 = { 
+	837.1.1 = { 
 		birth = yes 
 		effect = {
 			add_trait = lifestyle_blademaster
@@ -1680,8 +1734,8 @@
 	trait = ambitious
 	trait = reaver
 	disallow_random_traits = yes
-	805.1.1 = { birth = yes }
-	888.1.1 = { death = { death_reason = death_suicide } }
+	837.1.1 = { birth = yes }
+	888.1.1 = { death = { death_reason = death_drinking_passive } }
  }
 # Literature
  tr_judge_holden = {
@@ -3362,6 +3416,100 @@ tr_vlad_tepes = {
 	}
 	1920.1.1 = { death = { death_reason = death_old_age } }
  }
+  tr_vinland_askeladd_mom = {
+	name = "Lydia"
+	dna = lara_croft
+	religion = catholic 
+    dynasty = dynasty_fantasy
+	culture = welsh
+    female = yes
+	trait = education_diplomacy_2
+	trait = beauty_good_1
+    trait = compassionate
+    trait = diligent
+	trait = ill
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+	848.1.1 = { death = { death_reason = death_ill } }
+ }
+ tr_vinland_askeladd_dad= {
+	name = "Olaf"
+	religion = norse_pagan 
+    dynasty = dynasty_fantasy
+	culture = norse
+    female = yes
+	trait = education_martial_3
+	trait = callous
+    trait = ambitious
+    trait = diligent
+	trait = reaver
+	trait = viking
+    disallow_random_traits = yes
+	800.1.1 = { birth = yes }
+	850.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } }
+ }
+ tr_vinland_askeladd = {
+    name = "Lucius Artorius Castus"
+	religion = norse_pagan
+	culture = welsh
+	dynasty = dynasty_fantasy
+	mother = tr_vinland_askeladd_mom
+	dna = askeladd_vinland
+    trait = education_martial_3
+	trait = diligent
+	trait = brave
+	trait = deceitful
+	trait = lifestyle_wayfarer
+	trait = athletic
+	trait = organizer
+	trait = reaver
+	trait = viking
+	trait = child_of_concubine_female
+	disallow_random_traits = yes
+	give_nickname = nick_askeladd #born 969.1.1
+	834.1.1 = {
+		birth = yes
+		effect = { 
+			add_character_flag = has_scripted_appearance 
+			learn_language = language_latin 
+			learn_language = language_norse
+		}
+	}
+	868.1.1 = { death = { death_reason = death_revenge killer = tr_vinland_canute } } #
+  }
+  tr_vinland_sweyn = {
+	name = "Sweyn"
+	dynasty = dynasty_fantasy
+	religion = "catholic"
+	culture = norse
+	trait = arbitrary
+	trait = education_martial_3
+	trait = early_great_pox
+	trait = lovers_pox
+	trait = callous
+	trait = lustful
+	trait = beauty_bad_3
+	trait = intellect_good_2
+	disallow_random_traits = yes
+	816.1.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } } 
+  }
+  tr_vinland_canute = {
+	name = "Canute" # The Great
+	dynasty = dynasty_fantasy #dynasty_house = house_knytling # Knud is first Knytling
+	religion = "catholic"
+	culture = norse
+	father = tr_vinland_sweyn
+	sexuality = bisexual
+	dna = canute_vinland
+	trait = greedy
+	trait = education_diplomacy_3
+	trait = beauty_good_3
+	trait = intellect_good_2
+	851.7.12 = { birth = yes }
+	1030.1.1 = { give_nickname = nick_the_great }
+	1035.11.12 = { death = yes }
+  }
 ###DOOM
  tr_betruger = {
     name = "Dr. Malcolm Betruger"
@@ -3958,66 +4106,5 @@ tr_vlad_tepes = {
 	1106.1.1 = { death = { death_reason = death_old_age } }
   }
  # 
-#Anime
- tr_vinland_askeladd_mom = {
-	name = "Lydia"
-	dna = lara_croft
-	religion = catholic 
-    dynasty = dynasty_fantasy
-	culture = welsh
-    female = yes
-	trait = education_diplomacy_2
-	trait = beauty_good_1
-    trait = compassionate
-    trait = diligent
-	trait = ill
-    disallow_random_traits = yes
-	820.1.1 = { birth = yes }
-	848.1.1 = { death = { death_reason = death_ill } }
- }
- tr_vinland_askeladd_dad= {
-	name = "Olaf"
-	religion = norse_pagan 
-    dynasty = dynasty_fantasy
-	culture = norse
-    female = yes
-	trait = education_martial_3
-	trait = callous
-    trait = ambitious
-    trait = diligent
-	trait = reaver
-	trait = viking
-    disallow_random_traits = yes
-	800.1.1 = { birth = yes }
-	850.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } }
- }
- tr_vinland_askeladd = {
-    name = "Lucius Artorius Castus"
-	religion = norse_pagan
-	culture = welsh
-	dynasty = dynasty_fantasy
-	mother = tr_vinland_askeladd_mom
-	dna = askeladd_vinland
-    trait = education_martial_3
-	trait = diligent
-	trait = brave
-	trait = deceitful
-	trait = lifestyle_wayfarer
-	trait = athletic
-	trait = organizer
-	trait = reaver
-	trait = viking
-	trait = child_of_concubine_female
-	disallow_random_traits = yes
-	give_nickname = nick_askeladd #born 969.1.1
-	834.1.1 = {
-		birth = yes
-		effect = { 
-			add_character_flag = has_scripted_appearance 
-			learn_language = language_latin 
-			learn_language = language_norse
-		}
-	}
-	1014.1.1 = { death = { death_reason = death_duel killer = 101510 } } #
-  }
+#
 # 
