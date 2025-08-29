@@ -823,4 +823,29 @@ ck_portraits = {
 			}
         }
     }
+    tr_gilgamesh = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_sub_saharan_03
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_gilgamesh
+				this = character:tr_gilgamesh
+			}
+        }
+    }
 }

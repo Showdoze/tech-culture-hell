@@ -535,6 +535,19 @@
 	841.1.1 = { birth = yes }
 	900.9.28 = { death = { death_reason = death_old_age } }
  }
+ tr_gilgamesh = {
+	name = "Gilgamesh"
+	dna = gilgamesh_civ6
+	religion = sumerian_pagan
+	dynasty = misc_history
+	culture = sumer
+	trait = education_martial_4
+	trait = intellect_good_3
+	trait = arrogant
+	trait = brave
+	841.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_old_age } }
+ }
  tr_imotep_1 = {
     name = "Imhotep"
 	dna = imotep_1
@@ -1474,7 +1487,7 @@
 	635.1.1 = { birth = yes }
 	718.1.1 = { death = { death_reason = death_suicide } }
   }
-  tr_fake_roman_dayless_kid_1 = {
+   tr_fake_roman_dayless_kid_1 = {
 	name = "Daylia"
 	religion = roman_pagan
 	dynasty_house = house_fake_roman
@@ -1485,7 +1498,7 @@
 	700.1.1 = { birth = yes }
 	710.1.1 = { death = { death_reason = death_murder killer = tr_fake_roman_dayless } }
   }
-  tr_fake_roman_dayless_kid_2 = {
+   tr_fake_roman_dayless_kid_2 = {
 	name = "Daylia"
 	religion = roman_pagan
 	dynasty_house = house_fake_roman
@@ -1821,7 +1834,8 @@
 	}
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
- tr_tar_1_dad = {
+ #Game of thrones
+  tr_tar_1_dad = {
 	name = "Aenar"
 	religion = dragon_cult
 	dynasty_house = house_allies
@@ -1836,7 +1850,7 @@
 	780.1.1 = { birth = yes }
     840.1.1 = { death = { death_reason = death_old_age } }
  }
- tr_tar_1 = {
+  tr_tar_1 = {
     name = "Aegon"
 	religion = dragon_cult
 	dynasty_house = house_allies
@@ -1853,7 +1867,7 @@
 	853.1.1 = { add_spouse = tr_tar_1 }
     864.1.1 = { death = { death_reason = death_duel killer = tr_tar_2 } }
  }
- tr_tar_2_mom = {
+  tr_tar_2_mom = {
     name = "Visenya"
 	religion = dragon_cult
 	dynasty_house = house_allies
@@ -1871,7 +1885,7 @@
 	864.1.1 = { add_spouse = tr_tar_2 }
     890.1.1 = { death = { death_reason = death_old_age } }
  }
- tr_tar_2 = {
+  tr_tar_2 = {
     name = "Maegor"
 	religion = dragon_cult
 	dynasty_house = house_allies
@@ -1888,7 +1902,7 @@
 	864.1.1 = { add_spouse = tr_tar_2_mom }
     900.1.1 = { death = { death_reason = death_old_age } }
  }
- tr_tar_3 = {
+  tr_tar_3 = {
     name = " Jaehaerys"
 	religion = dragon_cult
 	dynasty_house = house_allies
@@ -2212,12 +2226,24 @@ tr_arthur_shelby_peaky_blinders = {
 	842.9.17 = { birth = yes }
 	1700.11.1 = { death = { death_reason = death_inbred } }
  }
+tr_vasili_3_russia = {
+	name = "Vasili III Ivanovich"
+	religion = orthodox
+	dynasty = misc_history
+	culture = russian
+	786.3.25 = { #1479
+		birth = yes
+		#effect = { add_character_flag = has_scripted_appearance }
+	}
+	1533.12.3 = { death = { death_reason = death_deer } }
+ } 
 tr_ivan_the_terrible = {
 	name = "Ivan IV Vasilyevich"
 	religion = orthodox
 	dna = ivan_the_terrible
 	dynasty = misc_history
 	culture = russian
+	father = tr_vasili_3_russia
 	trait = education_martial_3
 	trait = wrathful
 	trait = sadistic
