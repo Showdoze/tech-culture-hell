@@ -760,6 +760,37 @@ ck_portraits = {
 			}
         }
     }
+     tr_philip_4_spain = {
+        dna_modifiers = {
+            accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = m_beard_sp2_western_01
+			}
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_mena_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_philip_4_spain
+				this = character:tr_philip_4_spain
+			}
+        }
+    }
     #Fantasy
      tr_vinland_askeladd = {
         dna_modifiers = {
@@ -892,7 +923,7 @@ ck_portraits = {
 			}
         }
     }
-    tr_toad_nes = {
+     tr_toad_nes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -917,7 +948,7 @@ ck_portraits = {
 			}
         }
     }
-    tr_peach_nes = {
+     tr_peach_nes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -933,6 +964,106 @@ ck_portraits = {
 				exists = this
 				exists = character:tr_peach_nes
 				this = character:tr_peach_nes
+			}
+        }
+    }
+     tr_fguy_peter = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_fguy_peter
+				this = character:tr_fguy_peter
+			}
+        }
+    }
+     tr_fguy_chris = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_fguy_chris
+				this = character:tr_fguy_chris
+			}
+        }
+    }
+     tr_fguy_quagmire = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_fguy_quagmire
+				this = character:tr_fguy_quagmire
+			}
+        }
+    }
+     tr_elder_scrolls_caius_cosades = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_elder_scrolls_caius_cosades
+				this = character:tr_elder_scrolls_caius_cosades
 			}
         }
     }

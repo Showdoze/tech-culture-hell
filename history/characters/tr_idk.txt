@@ -2260,12 +2260,41 @@ tr_arthur_shelby_peaky_blinders = {
 	}
 	1558.9.21 = { death = { death_reason = death_drinking_passive } }
  }
+ tr_mariana_austria = {
+	name = "Mariana of Austria"
+	religion = catholic
+	dynasty_house = house_ck_habsburg
+	father = tr_habsburg_founder
+	culture = german
+	830.12.24 = { birth = yes }
+	840.1.1 = { add_spouse = tr_philip_4_spain }
+	1696.5.16 = { death = { death_reason = death_inbred } }
+ }
+ tr_philip_4_spain = {
+	name = "Philip IV of Spain"
+	religion = catholic
+	dna = philip_4_spain
+	dynasty_house = house_ck_habsburg
+	father = tr_habsburg_founder
+	culture = spanish
+	trait = education_intrigue_2
+	trait = paranoid
+	trait = rakish
+	trait = lustful
+	trait = arrogant
+	trait = lazy
+	disallow_random_traits = yes
+	822.4.6 = { birth = yes }
+	840.1.1 = { add_spouse = tr_mariana_austria }
+	1665.9.17 = { death = { death_reason = death_inbred } }
+ }
  tr_charles_2_spain = {
 	name = "Charles II Spain"
 	religion = catholic
 	dna = charles_2_spain
 	dynasty_house = house_ck_habsburg
-	father = tr_habsburg_founder
+	father = tr_philip_4_spain
+	mother = tr_mariana_austria
 	culture = spanish
 	trait = education_diplomacy_2
 	trait = inbred
@@ -2333,6 +2362,23 @@ tr_japanese1 = {
 	    }
 	}
 	890.1.1 = { death = { death_reason = death_drinking_passive } }
+}
+tr_japanese2 = {
+	name = "Toda Mariko"
+	religion = shinto
+	dynasty = misc_history
+	culture = japanese
+	father = tr_japanese1
+	dna = toda_mariko
+	trait = education_diplomacy_3
+	trait = loyal
+	trait = calm
+	trait = temperate
+	trait = patient
+	trait = lifestyle_gardener
+	disallow_random_traits = yes
+	847.1.1 = {  birth = yes  }
+	890.1.1 = { death = { death_reason = death_bath } }
 }
 tr_vlad_2 = {
 	name = "Vlad Dracul"
@@ -2415,7 +2461,7 @@ tr_vlad_tepes = {
 	dna = shadowheart
 	religion = sixth_house 
     dynasty = dynasty_fantasy
-	culture = elf_culture
+	culture = elf_culture #half elf
 	sexuality = bisexual
 	female = yes
 	trait = education_intrigue_3
@@ -3332,6 +3378,23 @@ tr_vlad_tepes = {
 	800.1.1 = { set_relation_best_friend = { reason = friend_generic_history target = character:tr_dwemer1 } }
 	850.10.5 = { employer = tr_dwemer1 }
 	868.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_elder_scrolls_caius_cosades = {
+	name = "Caius Cosades"
+	religion = imperial_cult
+    dynasty_house = house_elder_scrolls
+	culture = imperial_culture
+	father = tr_imperial_1_father
+	dna = elder_scrolls_caius_cosades
+	trait = education_intrigue_3
+	trait = hashishiyah
+	trait = temperate
+	trait = loyal
+    trait = diligent
+    trait = schemer
+    disallow_random_traits = yes
+	822.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_beaten_by_mob } }
  }
  tr_redguard_1 = {
 	name = "Camarino Auridon"
@@ -4296,5 +4359,99 @@ tr_vlad_tepes = {
 	}
 	908.1.1 = { death = { death_reason = death_disappearance } }
   }
-#
+#tv shows
+ tr_fguy_peter = {
+	name = "Peter Griffin"
+	religion = catholic
+	dynasty = dynasty_fantasy
+	culture = american
+	dna = fguy_peter
+	trait = comfort_eater
+	trait = drunkard
+	trait = intellect_bad_3
+	trait = irritable
+	trait = arbitrary
+	trait = lazy
+	trait = education_intrigue_1
+	disallow_random_traits = yes
+	822.1.1 = { birth = yes }
+	840.1.1 = { add_spouse = tr_fguy_lois }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_fguy_lois = {
+	name = "Lois Griffin"
+	religion = protestant
+	dynasty = dynasty_fantasy
+	culture = american
+	dna = fguy_lois
+	female = yes
+	trait = profligate
+	trait = deceitful
+	trait = callous
+	trait = vengeful
+	trait = education_stewardship_1
+	disallow_random_traits = yes
+	824.1.1 = { birth = yes }
+	840.1.1 = { add_spouse = tr_fguy_peter }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_fguy_chris = {
+	name = "Chris Griffin"
+	religion = catholic
+	dynasty = dynasty_fantasy
+	culture = american
+	mother = tr_fguy_lois
+	father = tr_fguy_peter
+	dna = fguy_chris
+	trait = intellect_bad_3
+	trait = scarred
+	trait = murderer
+	trait = lunatic_genetic
+	trait = gregarious
+	trait = diplomat
+	trait = vengeful
+	trait = education_learning_1
+	disallow_random_traits = yes
+	851.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_fguy_meg = {
+	name = "Meg Griffin"
+	religion = catholic
+	dynasty = dynasty_fantasy
+	culture = american
+	mother = tr_fguy_lois
+	father = tr_fguy_peter
+	female = yes
+	dna = fguy_meg
+	trait = comfort_eater
+	trait = humble
+	trait = shy
+	trait = reclusive
+	trait = education_diplomacy_1
+	disallow_random_traits = yes
+	849.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_fguy_quagmire = {
+	name = "Quagmire"
+	religion = protestant
+	dynasty = dynasty_fantasy
+	culture = american
+	dna = fguy_quagmire
+	trait = deviant
+	trait = rakish
+	trait = lustful
+	trait = lovers_pox
+	trait = seducer
+	trait = diplomat
+	trait = deceitful
+	trait = early_great_pox
+	trait = fornicator
+	trait = adulterer
+	trait = education_intrigue_1
+	disallow_random_traits = yes
+	822.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
 # 
