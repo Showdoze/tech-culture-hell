@@ -823,7 +823,7 @@ ck_portraits = {
 			}
         }
     }
-    tr_gilgamesh = {
+     tr_gilgamesh = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -845,6 +845,94 @@ ck_portraits = {
 				exists = this
 				exists = character:tr_gilgamesh
 				this = character:tr_gilgamesh
+			}
+        }
+    }
+     tr_mario_nes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_western_05
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = hairstyles
+            #    template = no_hair
+            #    range = { 0 1 } # For the randomness to work correctly
+            #}
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_mario_nes
+				this = character:tr_mario_nes
+			}
+        }
+    }
+     tr_luigi_nes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_western_05
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_luigi_nes
+				this = character:tr_luigi_nes
+			}
+        }
+    }
+    tr_toad_nes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_toad_nes
+				this = character:tr_toad_nes
+			}
+        }
+    }
+    tr_peach_nes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_peach_nes
+				this = character:tr_peach_nes
 			}
         }
     }

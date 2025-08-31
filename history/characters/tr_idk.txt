@@ -4189,7 +4189,7 @@ tr_vlad_tepes = {
     name = "Grandpa Mario"
 	religion = dark_souls_faith
 	culture = italian_american
-	dynasty = dynasty_fantasy
+	dynasty_house = house_nes
 	father = tr_mario_nes_dad
 	dna = mario_nes
     trait = education_stewardship_2
@@ -4205,7 +4205,7 @@ tr_vlad_tepes = {
     name = "Papa Mario"
 	religion = dark_souls_faith
 	culture = italian_american
-	dynasty = dynasty_fantasy
+	dynasty_house = house_nes
 	father = tr_mario_nes_dad
 	dna = mario_nes
     trait = education_stewardship_2
@@ -4220,7 +4220,7 @@ tr_vlad_tepes = {
     name = "Mario"
 	religion = dark_souls_faith
 	culture = italian_american
-	dynasty = dynasty_fantasy
+	dynasty_house = house_nes
 	father = tr_mario_nes_dad
 	dna = mario_nes
     trait = education_martial_2
@@ -4241,7 +4241,7 @@ tr_vlad_tepes = {
     name = "Luigi"
 	religion = dark_souls_faith
 	culture = italian_american
-	dynasty = dynasty_fantasy
+	dynasty_house = house_nes
 	father = tr_mario_nes_dad
 	dna = luigi_nes
     trait = education_martial_2
@@ -4256,6 +4256,44 @@ tr_vlad_tepes = {
 		effect = { add_character_flag = has_scripted_appearance }
 	}
 	840.1.1 = { effect = { set_relation_friend = {  target = character:tr_mario_nes } } }
+	908.1.1 = { death = { death_reason = death_disappearance } }
+  }
+  tr_peach_nes = {
+    name = "Princess Peach Toadstool"
+	religion = dark_souls_faith
+	culture = sus_culture
+	dynasty_house = house_nes
+	dna = peach_nes
+    trait = education_diplomacy_2
+	trait = beauty_good_3
+	trait = eccentric
+	trait = confider
+	trait = forgiving
+	trait = lifestyle_gardener
+	disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+	908.1.1 = { death = { death_reason = death_disappearance } }
+  }
+  tr_toad_nes = {
+    name = "Toad"
+	religion = dark_souls_faith
+	culture = sus_culture
+	dynasty_house = house_nes
+	dna = toad_nes
+    trait = education_intrigue_2
+	trait = content
+	trait = humble
+	trait = greedy
+	trait = irritable
+	trait = lifestyle_reveler
+	disallow_random_traits = yes
+	840.1.1 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
 	908.1.1 = { death = { death_reason = death_disappearance } }
   }
 #
