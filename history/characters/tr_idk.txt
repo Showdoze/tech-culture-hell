@@ -2204,28 +2204,6 @@ tr_gandhi = {
 	}
 	1068.8.30 = { death = { death_reason = death_suicide } }
  }
-tr_arthur_shelby_peaky_blinders = {
-	name = "Arthur Shelby"
-	religion = protestant
-	dna = arthur_shelby_peaky_blinders
-	dynasty = misc_history
-	culture = brit
-	trait = education_intrigue_3
-	trait = stubborn
-	trait = cynical
-	trait = callous
-	trait = temperate
-	trait = chaste
-	trait = just
-	disallow_random_traits = yes
-	825.1.1 = { birth = yes }
-	850.1.1 = {
-		effect = {
-			set_relation_rival = { target = character:tr_dutch_van reason = rival_historical }
-		}
-	}
-	870.1.1 = { death = { death_reason = death_drinking_passive } }
-}
 #Habsburg
  tr_habsburg_founder = {
 	name = "Radbot of Klettgau"
@@ -4360,6 +4338,28 @@ tr_vlad_tepes = {
 	908.1.1 = { death = { death_reason = death_disappearance } }
   }
 #tv shows
+ tr_arthur_shelby_peaky_blinders = {
+	name = "Arthur Shelby"
+	religion = protestant
+	dna = arthur_shelby_peaky_blinders
+	dynasty = misc_history
+	culture = brit
+	trait = education_intrigue_3
+	trait = stubborn
+	trait = cynical
+	trait = callous
+	trait = temperate
+	trait = chaste
+	trait = just
+	disallow_random_traits = yes
+	825.1.1 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_dutch_van reason = rival_historical }
+		}
+	}
+	870.1.1 = { death = { death_reason = death_drinking_passive } }
+ }
  tr_fguy_peter = {
 	name = "Peter Griffin"
 	religion = catholic
