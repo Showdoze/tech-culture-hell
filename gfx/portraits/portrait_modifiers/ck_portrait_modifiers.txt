@@ -791,6 +791,81 @@ ck_portraits = {
 			}
         }
     }
+     168704_Dagobert_II = {
+        dna_modifiers = {
+            accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = male_beard_western_10
+			}
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_fp2_iberian_christian_02
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:168704
+				this = character:168704
+			}
+        }
+    }
+     tr_usa_per_1 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_usa_per_1
+				this = character:tr_usa_per_1
+			}
+        }
+    }
+     tr_usa_per_36 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_usa_per_36
+				this = character:tr_usa_per_36
+			}
+        }
+    }
     #Fantasy
      tr_vinland_askeladd = {
         dna_modifiers = {
@@ -1064,6 +1139,112 @@ ck_portraits = {
 				exists = this
 				exists = character:tr_elder_scrolls_caius_cosades
 				this = character:tr_elder_scrolls_caius_cosades
+			}
+        }
+    }
+     tr_al_capone = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_al_capone
+				this = character:tr_al_capone
+			}
+        }
+    }
+     tr_agot_Ramsay_Bolton = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_agot_Ramsay_Bolton
+				this = character:tr_agot_Ramsay_Bolton
+			}
+        }
+    }
+     tr_gale_bg3 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = m_hair_fp3_iranian_03
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_gale_bg3
+				this = character:tr_gale_bg3
+			}
+        }
+    }
+     tr_f_a_h_d_ragnvalder = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_rtt_01
+            }
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_f_a_h_d_ragnvalder
+				this = character:tr_f_a_h_d_ragnvalder
 			}
         }
     }

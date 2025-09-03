@@ -287,7 +287,7 @@
     trait = architect
     trait = humble
     trait = wild_oat
-	father = tr_mafia_found
+	father = tr_mafia_founder
     disallow_random_traits = yes
 	750.1.1 = { birth = yes }
 	830.1.1 = { death = { death_reason = death_old_age } }
@@ -351,6 +351,26 @@
 	813.2.8 = { birth = yes }
 	870.1.1 = { death = { death_reason = death_cancer } }
  }
+ tr_Phil_Leotardo = {
+    name = "Phil Leotardo"
+	dna = Frank_Vincent_actor
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	father = tr_bobby_walnuts
+	sexuality = bisexual
+	trait = education_martial_2
+    trait = torturer
+    trait = vengeful
+    trait = impatient
+	trait = stubborn
+	trait = schemer
+	trait = irritable
+	trait = wrathful
+    disallow_random_traits = yes
+	813.4.11 = { birth = yes }
+	871.1.1 = { death = { death_reason = death_murder killer = tr_sopranos_tony } }
+ }
  tr_vito_no = {
     name = "Vito"
 	dna = vito_no
@@ -387,12 +407,30 @@
 	800.1.1 = { birth = yes }
 	885.1.1 = { death = { death_reason = death_old_age } }
  }
+ tr_mafia_founder_dad = {
+    name = "Don"
+	dna = James_Randal
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian
+	trait = education_intrigue_3
+	trait = venerable
+    trait = arrogant
+    trait = ambitious
+	trait = avaricious
+	trait = schemer
+	trait = improvident
+    disallow_random_traits = yes
+	666.6.6 = { birth = yes }
+	750.1.1 = { death = { death_reason = death_old_age } }
+ }
  tr_mafia_founder = {
     name = "Don"
 	dna = al_pacino
 	religion = catholic 
     dynasty_house = house_mafia
 	culture = italian_american
+	father = tr_mafia_founder_dad
 	trait = education_diplomacy_3
 	trait = venerable
     trait = arrogant
@@ -405,6 +443,22 @@
     disallow_random_traits = yes
 	720.1.1 = { birth = yes }
 	820.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_mafia_founder_son = {
+    name = "Micheal"
+	dna = al_pacino
+	religion = catholic 
+    dynasty_house = house_mafia
+	culture = italian_american
+	father = tr_mafia_founder_dad
+	trait = education_diplomacy_3
+    trait = arrogant
+    trait = diligent
+	trait = chaste
+	trait = improvident
+    disallow_random_traits = yes
+	800.1.1 = { birth = yes }
+	840.1.1 = { death = { death_reason = death_murder killer = tr_oswald_cobblepot_the_penguin } }
  }
  tr_oswald_cobblepot_the_penguin_a = {
     name = "Oswald Cobblepot"
@@ -471,6 +525,24 @@
     disallow_random_traits = yes
 	800.1.1 = { birth = yes }
 	880.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_al_capone = {
+	name = "Al Capone"
+	religion = catholic 
+	culture = italian_american
+	dynasty_house = house_mafia
+	father = tr_mafia_founder_son
+	dna = Alphonse_Capone
+	trait = education_stewardship_3
+	trait = gregarious
+    trait = arrogant
+    trait = overseer
+    trait = ambitious
+	trait = improvident
+	trait = scarred
+    disallow_random_traits = yes
+	837.1.17 = { birth = yes }
+	947.1.25 = { death = { death_reason = death_old_age } }
  }
 #ancient cultures 
  tr_hamilcar_barca = {
@@ -1837,6 +1909,24 @@
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
  #Game of thrones
+  tr_agot_Ramsay_Bolton = {
+	name = "Ramsay Bolton"
+	religion = dragon_cult
+	dynasty = dynasty_fantasy
+	culture = nord_culture
+	dna = Ramsay_Bolton_Iwan_Rheon
+	trait = education_intrigue_3
+    trait = ambitious
+    trait = sadistic
+    trait = beauty_bad_3
+    trait = schemer
+	trait = family_first
+	trait = deceitful
+	trait = legitimized_bastard
+    disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+    870.1.1 = { death = { death_reason = death_battle killer = tr_tar_2 } }
+  }
   tr_tar_1_dad = {
 	name = "Aenar"
 	religion = dragon_cult
@@ -1876,6 +1966,7 @@
 	culture = high_valyrian
 	female = yes
 	father = tr_tar_1
+	dna = Emilia_Clarke_actor
 	trait = education_intrigue_4
     trait = sadistic
     trait = diligent
@@ -2204,6 +2295,41 @@ tr_gandhi = {
 	}
 	1068.8.30 = { death = { death_reason = death_suicide } }
  }
+#Presatent
+  tr_usa_per_1 = {
+	name = "George Washington"
+	religion = stoicism
+	dynasty = misc_history
+	culture = brit
+	dna = George_Washington
+	trait = education_martial_3
+	trait = calm
+	trait = overseer
+	trait = temperate
+	trait = diligent
+	trait = drunkard
+	trait = forder
+	disallow_random_traits = yes
+	832.2.22 = { birth = yes  }
+	899.12.14 = { death = { death_reason = death_cancer } }
+ }
+ tr_usa_per_36 = {
+	name = "Lyndon B. Johnson"
+	religion = stoicism
+	dynasty = misc_history
+	culture = american
+	dna = Lyndon_Baines_Johnson
+	trait = education_stewardship_3
+	trait = callous
+	trait = hashishiyah
+	trait = fickle
+	trait = ambitious
+	trait = schemer
+	disallow_random_traits = yes
+	808.2.22 = { birth = yes  }
+	873.12.14 = { death = { death_reason = death_cancer } }
+ }
+
 #Habsburg
  tr_habsburg_founder = {
 	name = "Radbot of Klettgau"
@@ -2348,6 +2474,7 @@ tr_japanese2 = {
 	culture = japanese
 	father = tr_japanese1
 	dna = toda_mariko
+	female = yes
 	trait = education_diplomacy_3
 	trait = loyal
 	trait = calm
@@ -2432,7 +2559,7 @@ tr_vlad_tepes = {
 			add_character_flag = no_headgear
 	    }
 	}
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	868.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_shart = {
 	name = "Shadowheart"
@@ -2460,7 +2587,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	868.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_karlach = {
 	name = "Karlach"
@@ -2490,7 +2617,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	868.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_minthara = {
 	name = "Minthara Baenre"
@@ -2519,7 +2646,7 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	868.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_astarion = {
 	name = "Astarion"
@@ -2549,7 +2676,33 @@ tr_vlad_tepes = {
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	868.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_gale_bg3 = {
+	name = "Gale"
+	dna = bg3_gale
+	religion = dwemer_religion 
+    dynasty = dynasty_fantasy
+	culture = imperial_culture
+	sexuality = bisexual
+	trait = education_learning_4
+	trait = class_wizard
+    trait = intellect_good_1
+	trait = calm
+    trait = arrogant
+	trait = journaller
+	trait = lifestyle_mystic
+	trait = ambitious
+    disallow_random_traits = yes
+	837.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+			add_character_flag = has_scripted_appearance
+			add_character_flag = has_scripted_weight
+	    }
+	}
+	868.1.1 = { death = { death_reason = death_disappearance } }
  }
 #THIEF
  tr_thief_keeper = {
@@ -4020,22 +4173,89 @@ tr_vlad_tepes = {
 	948.1.1 = { death = { death_reason = death_battle killer = traleksmcglass } }
  }
  #fear and hunger
-  tr_f_a_h_Enki = { 
-    name = "Enki"
+  tr_f_a_h_Enki_dad = { 
+    name = "Mister Ankarian"
 	religion = dark_souls_faith 
     dynasty = dynasty_fantasy
 	culture = dark_souls_culture
+	800.1.1 = { birth = yes }
+	866.1.1 = { death = { death_reason = death_disappearance } }
+  }
+  tr_f_a_h_Enki = { 
+    name = "Enki Ankarian"
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	father = tr_f_a_h_Enki_dad
 	dna = f_a_h_Enki
 	trait = education_learning_3
     trait = callous
+    trait = stubborn
+    trait = class_wizard_necromancy
+    trait = intellect_good_1
+	trait = lifestyle_mystic
+	trait = twin
+	trait = weak
+    disallow_random_traits = yes
+	give_nickname = nick_the_dark_priest
+	839.10.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_disappearance } }
+  }
+  tr_f_a_h_Enki_sister = { 
+    name = "Sister Ankarian"
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	father = tr_f_a_h_Enki_dad
+	dna = f_a_h_Enki
+	female = yes
+	trait = education_learning_4
+    trait = compassionate
     trait = arrogant
     trait = stubborn
     trait = class_wizard_necromancy
     trait = intellect_good_1
+	trait = twin
     disallow_random_traits = yes
-	martial = 20
-	845.1.1 = { birth = yes }
-	908.1.1 = { death = { death_reason = death_disappearance } }
+	839.10.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_duel killer = tr_f_a_h_Enki } }
+  }
+  tr_f_a_h_d_arc = {
+	name = "D'arce Cataliss"
+	dna = fear_and_hunger_d_arc
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	female = yes
+	trait = education_martial_3
+	trait = diplomat
+    trait = zealous
+    trait = diligent
+    trait = stubborn
+    trait = class_fighter_knight
+    disallow_random_traits = yes
+	give_nickname = nick_the_knight
+	843.3.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_disappearance } }
+  }
+  tr_f_a_h_d_ragnvalder = {
+	name = "Ragnvaldr"
+	dna = fear_and_hunger_ragnvalder
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	trait = education_martial_prowess_3
+	trait = gallant
+	trait = temperate
+    trait = cannibal
+    trait = diligent
+    trait = stubborn
+	trait = physique_good_2
+    trait = class_bar
+    disallow_random_traits = yes
+	give_nickname = nick_the_outlander
+	836.7.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_disappearance } }
   }
  #RED DEAD
   tr_dutch_van = {
@@ -4305,6 +4525,7 @@ tr_vlad_tepes = {
 	culture = sus_culture
 	dynasty_house = house_nes
 	dna = peach_nes
+	female = yes
     trait = education_diplomacy_2
 	trait = beauty_good_3
 	trait = eccentric

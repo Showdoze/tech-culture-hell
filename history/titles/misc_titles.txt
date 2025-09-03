@@ -357,20 +357,23 @@
 	1000.1.1 = { holder = 0 }
  }
  d_mafia = {
-	750.1.1 = {
+	666.6.6 = {
 		liege = 0
-		holder = tr_mafia_founder
+		holder = tr_mafia_founder_dad
 		government = landless_adventurer_government
 		succession_laws = { landless_adventurer_succession_law }
 		effect = {
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 900.1.1 }
+			#destroy_landless_title_no_dlc_effect = { DATE = 900.1.1 }
 		}
 	}
-	820.1.1 = { holder = tr_sopranos_tony_dad }
+	750.1.1 = { holder = tr_mafia_founder }
+	820.1.1 = { holder = tr_mafia_founder_son }
+	840.1.1 = { holder = tr_sopranos_tony_dad }
 	850.1.1 = { holder = tr_sopranos_tony }
-	900.1.1 = { holder = 0 }
+	900.1.1 = { holder = tr_sopranos_aj }
+	920.1.1 = { holder = tr_al_capone }
  }
  d_totaly_roman_empire = {
 	1.1.1 = {
