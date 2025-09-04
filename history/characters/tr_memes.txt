@@ -603,6 +603,7 @@ mm_nwordboi = {
 	trait = murderer
 	trait = torturer
 	trait = dwarf
+	trait = rowdy
 	disallow_random_traits = yes
 	860.8.9 = { birth = yes }
 	2066.1.1 = { death = { death_reason = death_old_age } }
@@ -879,6 +880,7 @@ mm_nwordboi = {
 	female = yes
 	trait = stuttering
 	trait = inbred
+	trait = charming
 	disallow_random_traits = yes
 	861.1.1 = { birth = yes }
 	868.4.17 = { death = { death_reason = death_inbred } }
@@ -2137,7 +2139,7 @@ mm_nwordboi = {
 			set_relation_rival = { target = character:mm_kcgf reason = rival_historical }
 		}
 	}
-	890.1.1 = { death = { death_reason = death_stress } }
+	2025.10.21 = { death = { death_reason = death_drinking_passive } }
  }
  mm_kcgf = {
 	name = "Jessica Boil"
@@ -2285,12 +2287,7 @@ mm_nwordboi = {
 	trait = callous
 	trait = murderer
 	831.9.8 = { birth = yes }
-	882.6.30 = {
-		death = {
-			death_reason = death_execution
-			killer = mm_sateliteman
-		}
-	}
+	882.6.30 = { death = { death_reason = death_execution killer = mm_sateliteman } }
  }
  mm_rickastley = {
 	name = "Rick Astley"
