@@ -217,3 +217,18 @@ monk_drunk = {
         }
     }
 }
+immortal = {
+    immortal = {
+        traits = { immortal }
+        dna_modifiers = {
+            human = {
+                morph = {
+                    mode = replace
+					gene = gene_balding_hair_effect
+					template = no_baldness
+                    range = { 1 1 }
+                }
+            }
+        }
+    }
+}
