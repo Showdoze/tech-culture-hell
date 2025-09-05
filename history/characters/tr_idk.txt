@@ -710,6 +710,7 @@
 	culture = german
 	trait = education_intrigue_3
 	trait = intellect_good_3
+	trait = roman_enemy
 	give_nickname = nick_the_gaul
 	841.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_execution killer = 1702 } }
@@ -3784,6 +3785,7 @@ tr_oliver_cromwell = {
 	trait = lustful
 	trait = beauty_bad_3
 	trait = intellect_good_2
+	trait = sax_enemy
 	disallow_random_traits = yes
 	816.1.1 = { birth = yes }
 	868.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } } 
@@ -4279,6 +4281,26 @@ tr_oliver_cromwell = {
 	836.7.1 = { birth = yes }
 	868.1.1 = { death = { death_reason = death_disappearance } }
   }
+  tr_f_a_h_d_cahara = {
+	name = "Cahara"
+	dna = fear_and_hunger_Cahara
+	religion = dark_souls_faith 
+    dynasty = dynasty_fantasy
+	culture = dark_souls_culture
+	trait = education_martial_3
+	trait = lifestyle_wayfarer
+	trait = reaver
+    trait = gallowsbait
+    trait = diligent
+    trait = ambitious
+	trait = rakish
+	trait = shrewd
+    trait = class_rogue_swashbuckler
+    disallow_random_traits = yes
+	give_nickname = nick_the_mercenary
+	841.2.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_disappearance } }
+  }
  #RED DEAD
   tr_dutch_van = {
 	name = "Dutch Van Der Linde"
@@ -4686,7 +4708,6 @@ tr_oliver_cromwell = {
 	trait = lustful
 	trait = lovers_pox
 	trait = seducer
-	trait = diplomat
 	trait = deceitful
 	trait = early_great_pox
 	trait = fornicator
