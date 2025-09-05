@@ -4509,42 +4509,12 @@ tr_oliver_cromwell = {
 	1106.1.1 = { death = { death_reason = death_old_age } }
   }
  #Mario bros
-  tr_mario_nes_granddad = {
-    name = "Grandpa Mario"
-	religion = dark_souls_faith
-	culture = italian_american
-	dynasty_house = house_nes
-	dna = mario_nes
-    trait = education_stewardship_2
-	trait = dwarf
-	trait = diligent
-	trait = just
-	trait = brave
-	disallow_random_traits = yes
-	700.1.1 = { birth = yes }
-	800.1.1 = { death = { death_reason = death_old_age } }
-  }
-  tr_mario_nes_dad = {
-    name = "Papa Mario"
-	religion = dark_souls_faith
-	culture = italian_american
-	dynasty_house = house_nes
-	father = tr_mario_nes_granddad
-	dna = mario_nes
-    trait = education_stewardship_2
-	trait = diligent
-	trait = just
-	trait = brave
-	disallow_random_traits = yes
-	796.1.1 = { birth = yes }
-	870.1.1 = { death = { death_reason = death_old_age } }
-  }
   tr_mario_nes = {
     name = "Mario"
 	religion = dark_souls_faith
 	culture = italian_american
 	dynasty_house = house_nes
-	father = tr_mario_nes_dad
+	father = tr_stalin
 	dna = mario_nes
     trait = education_martial_2
 	trait = brave
@@ -4565,7 +4535,7 @@ tr_oliver_cromwell = {
 	religion = dark_souls_faith
 	culture = italian_american
 	dynasty_house = house_nes
-	father = tr_mario_nes_dad
+	father = tr_stalin
 	dna = luigi_nes
     trait = education_martial_2
 	trait = diligent
