@@ -2021,7 +2021,14 @@ mm_nwordboi = {
 			set_relation_rival = { target = character:mm_ianfootedaughter reason = rival_historical }
 		}
 	}
-	890.1.10 = { death = { death_reason = death_execution killer = mm_ianfootedaughter } }
+	865.1.10 = { 
+        effect = {
+            rightfully_imprison_character_effect = {
+                TARGET = character: mm_ianfoote
+                IMPRISONER = character:140
+            }
+        }
+	}
  }
 
  mm_ianfootedaughter = {
