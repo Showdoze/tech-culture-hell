@@ -1791,6 +1791,7 @@
 	religion = hellenic_pagan
 	dynasty = misc_history
 	culture = laconian
+	dna = AC_Odyssey_Leonidas_I_Sparta
 	trait = education_martial_3
 	trait = strong
 	trait = strategist
@@ -2534,6 +2535,23 @@ tr_vlad_tepes = {
 	    }
 	}
 	1476.12.14 = { death = { death_reason = death_execution } }
+}
+tr_oliver_cromwell = {
+	name = "Oliver Cromwell"
+	dna = Oliver_Cromwell
+	religion = protestant
+    dynasty = misc_history
+	culture = brit
+	trait = education_intrigue_3
+    trait = arrogant
+	trait = arbitrary
+	trait = zealous
+	trait = ambitious
+    trait = murderer
+	trait = irritable
+    disallow_random_traits = yes
+	817.4.25 = { birth = yes }
+	1658.9.3 = { death = { death_reason = death_typhus } }
 }
 #BG3
  tr_laezel = {
