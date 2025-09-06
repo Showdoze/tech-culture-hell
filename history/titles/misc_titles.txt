@@ -356,6 +356,25 @@
 	900.1.1 = { holder = mero_frank_claimant_3 }
 	1000.1.1 = { holder = 0 }
  }
+ d_targaryen_claimant = {
+	500.1.1 = {
+		liege = 0
+		holder = tr_tar_founder
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			#destroy_landless_title_no_dlc_effect = { DATE = 1920.1.1 }
+		}
+	}
+	667.1.1 = { holder = tr_tar_1_grandpa }
+	790.1.1 = { holder = tr_tar_1_dad }
+	840.1.1 = { holder = tr_tar_1 }
+	864.1.1 = { holder = tr_tar_2 }
+	900.1.1 = { holder = tr_tar_3 }
+	980.1.1 = { holder = 0 }
+ }
  d_mafia = {
 	666.6.6 = {
 		liege = 0

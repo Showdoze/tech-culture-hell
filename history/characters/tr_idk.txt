@@ -636,6 +636,7 @@
     trait = administrator
     trait = whole_of_body
     trait = theologian
+	trait = diligent
 	841.1.1 = { 
 		birth = yes
 		effect = {
@@ -1951,11 +1952,43 @@
 	847.1.1 = { birth = yes }
     870.1.1 = { death = { death_reason = death_battle killer = tr_tar_2 } }
   }
+  tr_tar_founder = {
+	name = "Aenar"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	trait = education_diplomacy_2
+    trait = ambitious
+    trait = diligent
+    trait = weak
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	500.1.1 = { birth = yes }
+    667.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_1_grandpa = {
+	name = "Aegon"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	trait = education_diplomacy_2
+	trait = class_sorcerer_dragon
+    trait = ambitious
+    trait = diligent
+    trait = strong
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	666.1.1 = { birth = yes }
+    790.1.1 = { death = { death_reason = death_old_age } }
+ }
   tr_tar_1_dad = {
 	name = "Aenar"
 	religion = dragon_cult
 	dynasty_house = house_Targaryen
 	culture = high_valyrian
+	father = tr_tar_1_grandpa
 	trait = education_diplomacy_2
     trait = ambitious
     trait = diligent
@@ -2034,8 +2067,7 @@
     trait = brave
     disallow_random_traits = yes
 	880.1.1 = { birth = yes }
-	864.1.1 = { add_spouse = tr_tar_2_mom }
-    900.1.1 = { death = { death_reason = death_old_age } }
+    980.1.1 = { death = { death_reason = death_old_age } }
  }
 #
 tr_doc_livesey = {
@@ -2324,7 +2356,7 @@ tr_gandhi = {
   tr_usa_per_1 = {
 	name = "George Washington"
 	religion = stoicism
-	dynasty = misc_history
+	dynasty_house = house_usa
 	culture = brit
 	dna = George_Washington
 	trait = education_martial_3
@@ -2341,7 +2373,7 @@ tr_gandhi = {
  tr_usa_per_36 = {
 	name = "Lyndon B. Johnson"
 	religion = stoicism
-	dynasty = misc_history
+	dynasty_house = house_usa
 	culture = american
 	dna = Lyndon_Baines_Johnson
 	trait = education_stewardship_3
@@ -3684,6 +3716,50 @@ tr_oliver_cromwell = {
 	800.1.1 = { birth = yes }
 	830.10.5 = { employer = tr_dwemer1 }
 	868.1.1 = { death = { death_reason = death_execution killer = tr_dagothur } }
+ }
+# misc fantasy culture
+ tr_gnome_1 = {
+	name = "Puck"
+	culture = gnome
+	religion = dwemer_religion
+	dynasty = dynasty_fantasy
+	trait = trusting
+	trait = architect
+	830.1.1 = { birth = yes }
+	868.1.1 = { death = { death_reason = death_execution killer = tr_dagothur } }
+ }
+ tr_hobbit_1 = {
+	name = "Bilbo"
+	culture = halfling
+	religion = keeper_faith
+	dynasty = dynasty_fantasy
+	trait = humble
+	trait = journaller
+	trait = compassionate
+	830.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_dwarf_1 = {
+	name = "Gimli"
+	culture = old_dwarven
+	religion = dragon_cult
+	dynasty = dynasty_fantasy
+	trait = callous
+	trait = education_martial_3
+	trait = comfort_eater
+	820.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
+ }
+ tr_goblin_1 = {
+	name = "Gobbie"
+	culture = goblin
+	religion = old_velothi
+	dynasty = dynasty_fantasy
+	trait = greedy
+	trait = education_martial_2
+	trait = rakish
+	835.1.1 = { birth = yes }
+	900.1.1 = { death = { death_reason = death_disappearance } }
  }
 #Anime
  tr_frieren = {
