@@ -118,6 +118,7 @@ tradition_dwarf = {
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
 		dwarf = 100
+	    elderly_health = 100
 	}
 	traits = {
 		dwarf = 100
@@ -227,6 +228,8 @@ tradition_giant = {
 		ai_honor = -100
 		dread_baseline_add = 10
 		different_culture_opinion = -25
+		negate_health_penalty_add = 5
+	    elderly_health = 50
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -305,6 +308,8 @@ tradition_giant = {
 		cultural_acceptance_gain_mult = -1
 		dread_baseline_add = 10
 		same_culture_opinion = 20
+		negate_health_penalty_add = 5
+	    elderly_health = 10
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -337,6 +342,7 @@ tradition_giant = {
 		life_expectancy = 350
 		close_relative_opinion = 10
 		years_of_fertility = 100
+	    elderly_health = 3
 	}
 	county_modifier = {
 	}
@@ -395,6 +401,7 @@ tradition_giant = {
 		life_expectancy = 60
 		close_relative_opinion = 10
 		stress_gain_mult = -0.1
+	    elderly_health = 6
 	}
 	county_modifier = {
 	}
@@ -430,11 +437,13 @@ tradition_elf = {
 		diplomatic_range_mult = 3
 		short_reign_duration_mult = 0.5
 		inbreeding_chance = -2
+		negate_health_penalty_add = 10
+		child_health = 0.5
+	    elderly_health = 1000
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
 }
-
 tradition_agoge = { # replaces Only the Strong, unlocks Spartiatai Hoplitai MaA
 	category = ritual
 	layers = {
@@ -1099,6 +1108,7 @@ tradition_fromsoft = {
 		life_expectancy = 300
 		no_prowess_loss_from_age = yes
 		years_of_fertility = 250
+	    elderly_health = 10
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -1339,6 +1349,7 @@ tradition_fromsoft = {
 		life_expectancy = 300
 		no_prowess_loss_from_age = yes
 		years_of_fertility = 250
+	    elderly_health = 10
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.5
@@ -1511,6 +1522,7 @@ tradition_fromsoft = {
 		life_expectancy = 500
 		no_prowess_loss_from_age = yes
 		years_of_fertility = 400
+	    elderly_health = 10
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.9
