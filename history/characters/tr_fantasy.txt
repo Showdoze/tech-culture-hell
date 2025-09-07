@@ -1691,6 +1691,31 @@
 	}
 }
 #Dark Souls
+ tr_ds_gwyn = {
+    name = "Gwyn"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+    trait = education_martial_prowess_4
+	trait = brave
+	trait = ambitious
+	trait = callous
+	trait = diligent
+	trait = hollow
+	trait = whole_of_body
+	trait = gallant
+	trait = aggressive_attacker
+	trait = poet
+	trait = class_fighter_knight
+	trait = class_sorcerer_wild
+	trait = birthsign_lord
+	trait = ds_covenant_sunlight
+	disallow_random_traits = yes
+	101.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
  tr_ds_gael = {
     name = "Slave Knight Gael"
 	religion = dark_souls_faith
