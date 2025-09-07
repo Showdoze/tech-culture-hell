@@ -14,26 +14,6 @@
             }
         }
     }
-    byakugan_eyes = {
-        traits = { byakugan }
-        dna_modifiers = {
-            human = {
-                accessory = {
-                    mode = modify
-                    gene = eye_accessory
-                    template = bloodshot_eyes
-                    value = 0.5
-                }
-                color = {
-					gene = eye_color
-					mode = modify
-
-					x = 0.0
-					y = 0.0
-				}
-            }
-        }
-    }
 }
 
 hygene = {
@@ -84,6 +64,40 @@ hygene = {
 
                     x = 0.1
                     y = 0.0
+                }
+            }
+        }
+    }
+}
+byakugan_eyes = {
+    byakugan_eyes_1 = {
+        traits = { byakugan }
+        dna_modifiers = {
+            human = {
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_hue
+                    value = 0
+                    template = custom_eyes_hue
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_saturation
+                    value = 0
+                    template = custom_eyes_saturation
+                }
+                morph = {
+                    mode = replace
+                    gene = tr_eyes_value
+                    value = 1
+                    template = custom_eyes_value
+                }
+                color = {
+                    gene = eye_color
+                    mode = replace
+
+                    x = 1.0
+                    y = -1.0
                 }
             }
         }
