@@ -1009,7 +1009,7 @@
 	trait = generous
 	trait = diligent
 	trait = zealous
-	trait = education_martial_3
+	trait = education_diplomacy_2
 	170.1.1 = { birth = yes }
 	190.1.1 = { death = { death_reason = death_execution killer = tr_fake_roman_commodus } }
    }
@@ -1272,7 +1272,8 @@
 	trait = education_stewardship_1
 	trait = intellect_bad_2
 	trait = craven
-	trait = stubborn
+	trait = lustful
+	trait = rakish
 	trait = callous
 	trait = gout_ridden
 	trait = incestuous
@@ -1474,6 +1475,7 @@
 	trait = generous
 	trait = gregarious
 	trait = zealous
+	trait = lustful
 	trait = beauty_good_2
 	trait = education_intrigue_4
 	580.1.1 = { birth = yes }
@@ -1646,6 +1648,19 @@
 	800.1.1 = { birth = yes }
 	870.1.1 = { death = { death_reason = death_disappearance } }
    }
+   tr_historia_augusta_emperor_daughter = {
+	name = "Slutian"
+	religion = roman_pagan
+	dynasty_house = house_fake_roman
+	culture = roman
+	father = tr_historia_augusta_emperor
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = lustful
+	female = yes
+	810.1.1 = { birth = yes }
+	870.1.1 = { death = { death_reason = death_shock } }
+   }
    tr_fake_roman_unus_oculus = {
 	name = "Unus Oculus"
 	religion = roman_pagan
@@ -1698,7 +1713,7 @@
 	disallow_random_traits = yes
 	845.1.1 = { birth = yes }
 	858.1.1 = { effect = { set_relation_lover = { target = character:tr_other_augustus } } }
-	888.8.19 = { death = { death_reason = death_suicide } }
+	910.8.19 = { death = { death_reason = death_old_age } }
   }
    tr_fake_roman_basil = {
 	name = "Basil"
@@ -1744,13 +1759,14 @@
 	dynasty_house = house_fake_roman
 	culture = roman
 	father = tr_fake_roman_basil
+	mother = tr_other_augustus1
 	trait = scholar
 	trait = drunkard
 	give_nickname = nick_porphyrogennetos
 	905.9.2 = { birth = yes }
 	959.11.9 = { death = yes }
    }
-   tr_fake_roman_basil2 = { #1716
+   tr_fake_roman_basil2 = {
 	name = "Basil"
 	religion = roman_pagan
 	dynasty_house = house_fake_roman
@@ -4241,6 +4257,8 @@ tr_oliver_cromwell = {
     trait = callous
     trait = ambitious
     trait = arbitrary
+	trait = reclusive
+	disallow_random_traits = yes
 	821.5.10 = { 
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
