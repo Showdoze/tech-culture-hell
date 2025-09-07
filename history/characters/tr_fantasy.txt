@@ -1,39 +1,3 @@
-tr_doc_livesey = {
-    name = "Dr. Livesey"
-	dna = judge_holden
-	religion = hyrulean_faith
-	dynasty = dynasty_memes
-	culture = russian
-	trait = education_learning_5
-	trait = intellect_good_3
-    trait = calm
-    trait = athletic
-    trait = physique_good_3
-    trait = temperate
-    trait = scholar
-    trait = patient
-    trait = brave
-    disallow_random_traits = yes
-	821.1.1 = { 
-		birth = yes 
-		effect = {
-			add_character_flag = has_scripted_appearance
-			add_character_flag = has_scripted_weight
-			add_character_flag = no_headgear
-			add_trait = lifestyle_physician
-			add_trait_xp = {
-				trait = lifestyle_physician
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-    920.3.28 = { death = { death_reason = death_old_age } }
-}
 #minecraft IDK YOU TELL ME ALEX
  tr_minecraft_villager_dad = {
 	name = "Minecraft Villager Elder"
@@ -2365,4 +2329,225 @@ tr_doc_livesey = {
 	822.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_disappearance } }
  }
-# 
+#
+# Literature
+ tr_judge_holden = {
+    name = "Judge Holden"
+	dna = judge_holden
+	religion = blood_faith
+	dynasty = dynasty_fantasy
+	culture = american
+	sexuality = bisexual
+	trait = education_intrigue_5
+	trait = immortal #He says that he will never die.
+	trait = intellect_good_3
+    trait = murderer
+    trait = athletic
+    trait = sodomite
+    trait = deviant
+    trait = scholar
+    trait = albino
+    trait = giant
+    trait = sadistic
+    trait = cynical
+    trait = deceitful
+    trait = physique_good_3
+    disallow_random_traits = yes
+	821.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_central_germanic 
+			learn_language = language_japanese
+			learn_language = language_french
+			learn_language = language_iberian
+			learn_language = language_israelite
+			learn_language = language_latin
+			learn_language = language_high_german
+			learn_language = language_ancient_greek
+	   }	
+	}
+	866.1.1 = { employer = tr_brit_alex_wanted }
+ }
+ tr_conan = {
+    name = "Conan"
+	dna = conan_barbarian
+	religion = blood_faith
+	dynasty = dynasty_fantasy
+	culture = cimmerian
+	trait = education_martial_5
+	trait = physique_good_3
+	trait = intellect_good_3
+    trait = strategist
+    trait = athletic
+    trait = lifestyle_wayfarer
+    trait = lustful
+    trait = scholar
+    trait = diligent
+    trait = brave
+    trait = cynical
+    trait = class_fighter
+    trait = class_rogue
+	trait = gallant
+	trait = whole_of_body
+    disallow_random_traits = yes
+	give_nickname = nick_the_barbarian
+	835.1.1 = { 
+		birth = yes
+		effect = {
+			learn_language = language_central_germanic 
+			learn_language = language_scythian
+			learn_language = language_nordic
+			learn_language = language_dwemeris
+			learn_language = language_cyrodiilic
+			learn_language = language_valyrian
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = small_lifestyle_random_xp_low
+						max = small_lifestyle_random_xp_high
+					}
+				}
+			}
+	    }	
+	}
+	920.3.28 = { death = { death_reason = death_old_age } }
+ }
+ #Game of thrones
+  tr_agot_Ramsay_Bolton = {
+	name = "Ramsay Bolton"
+	religion = dragon_cult
+	dynasty = dynasty_fantasy
+	culture = nord_culture
+	dna = Ramsay_Bolton_Iwan_Rheon
+	trait = education_intrigue_3
+    trait = ambitious
+    trait = sadistic
+    trait = beauty_bad_3
+    trait = schemer
+	trait = family_first
+	trait = deceitful
+	trait = legitimized_bastard
+    disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+    870.1.1 = { death = { death_reason = death_battle killer = tr_tar_2 } }
+  }
+  tr_tar_founder = {
+	name = "Aenar"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	trait = education_diplomacy_2
+    trait = ambitious
+    trait = diligent
+    trait = weak
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	500.1.1 = { birth = yes }
+    667.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_1_grandpa = {
+	name = "Aegon"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	trait = education_diplomacy_2
+	trait = class_sorcerer_dragon
+    trait = ambitious
+    trait = diligent
+    trait = strong
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	666.1.1 = { birth = yes }
+    790.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_1_dad = {
+	name = "Aenar"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	father = tr_tar_1_grandpa
+	trait = education_diplomacy_2
+    trait = ambitious
+    trait = diligent
+    trait = weak
+    trait = brave
+	trait = family_first
+    disallow_random_traits = yes
+	780.1.1 = { birth = yes }
+    840.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_1 = {
+    name = "Aegon"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	father = tr_tar_1_dad
+	trait = education_martial_3
+    trait = ambitious
+    trait = diligent
+    trait = scarred
+    trait = brave
+	trait = strategist
+    disallow_random_traits = yes
+	814.1.1 = { birth = yes }
+	853.1.1 = { add_spouse = tr_tar_1 }
+    864.1.1 = { death = { death_reason = death_duel killer = tr_tar_2 } }
+ }
+  tr_tar_2_mom = {
+    name = "Visenya"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	female = yes
+	father = tr_tar_1
+	dna = Emilia_Clarke_actor
+	trait = education_intrigue_4
+    trait = sadistic
+    trait = diligent
+    trait = reckless
+    trait = beauty_good_3
+    disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+	853.1.1 = { add_spouse = tr_tar_1 }
+	864.1.1 = { add_spouse = tr_tar_2 }
+    890.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_2 = {
+    name = "Maegor"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	father = tr_tar_1
+	mother = tr_tar_2_mom
+	trait = education_martial_3
+    trait = wrathful
+    trait = diligent
+    trait = athletic
+    trait = brave
+	trait = bossy
+    disallow_random_traits = yes
+	853.1.1 = { birth = yes }
+	864.1.1 = { add_spouse = tr_tar_2_mom }
+    900.1.1 = { death = { death_reason = death_old_age } }
+ }
+  tr_tar_3 = {
+    name = " Jaehaerys"
+	religion = dragon_cult
+	dynasty_house = house_Targaryen
+	culture = high_valyrian
+	father = tr_tar_2
+	mother = tr_tar_2_mom
+	trait = education_learning_4
+    trait = scholar
+    trait = diligent
+    trait = shrewd
+    trait = brave
+    disallow_random_traits = yes
+	880.1.1 = { birth = yes }
+    980.1.1 = { death = { death_reason = death_old_age } }
+ }
+#
