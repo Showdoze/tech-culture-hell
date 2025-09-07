@@ -1279,7 +1279,7 @@ ck_portraits = {
 			}
         }
     }
-    tr_f_a_h_d_cahara = {
+     tr_f_a_h_d_cahara = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1302,6 +1302,62 @@ ck_portraits = {
 				exists = character:tr_f_a_h_d_cahara
 				this = character:tr_f_a_h_d_cahara
 			}
+        }
+    }
+     tr_frieren = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+            #accessory = {
+            #    mode = add
+            #    gene = hairstyles
+             #   template = all_hairstyles
+             #   accessory = female_hair_custom_07
+            #}
+        }   
+        weight = {
+            base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:tr_frieren
+				this = character:tr_frieren
+			}
+        }
+    }
+     tr_f_a_h_Enki = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_western_07
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_f_a_h_Enki
+                this = character:tr_f_a_h_Enki
+            }
         }
     }
 }
