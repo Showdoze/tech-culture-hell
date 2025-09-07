@@ -256,6 +256,40 @@ venerable = {
 		monthly_prestige = 0.5
 	}
 }
+byakugan = {
+	inherit_chance = 50
+    both_parent_has_trait_inherit_chance = 100
+	martial = 6
+	stewardship = 2
+	intrigue = 2
+	prowess = 10
+	health = 0.25
+	dread_baseline_add = 10
+	random_creation = 0
+	attraction_opinion = -10
+	ruler_designer_cost = 25
+	enemy_hostile_scheme_success_chance_add = -10
+	culture_modifier = {
+		parameter = prowess_traits_more_valued
+		same_culture_opinion = 4
+		monthly_prestige = 0.4
+	}
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 1
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_byakugan_desc
+			}
+			desc = trait_byakugan_character_desc
+		}
+	}
+}
 #HISTORICAL LIKES DISLIKES
  roman_friend = {
 	random_creation = 0

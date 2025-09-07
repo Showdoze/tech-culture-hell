@@ -14,6 +14,28 @@
             }
         }
     }
+    byakugan_eyes = {
+        traits = {
+            byakugan
+        }
+        dna_modifiers = {
+            human = {
+                accessory = {
+                    mode = modify
+                    gene = eye_accessory
+                    template = bloodshot_eyes
+                    value = 0.5
+                }
+                color = {
+					gene = eye_color
+					mode = modify
+
+					x = 0.0
+					y = 0.0
+				}
+            }
+        }
+    }
 }
 
 hygene = {
