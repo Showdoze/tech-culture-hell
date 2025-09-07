@@ -1,4 +1,5 @@
-﻿tr_geirmcglass = {
+﻿####MC Glass
+tr_geirmcglass = {
 	name = "Geir"
 	religion = norse_pagan
 	culture = scottish
@@ -586,5 +587,470 @@ tr_mcglassfollower4 = {
 	}
 	860.10.5 = {
 		employer = tr_donmcglass
+	}
+}
+
+####TIANDI
+
+tr_tiandi1 = {
+	name = "Uia"
+	religion = zhengyi
+	culture = han
+	dynasty_house = house_tiandi
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = brave
+	trait = education_martial_3
+	trait = arrogant
+	trait = wrathful
+	trait = adventurer
+	820.1.11 = {
+		birth = yes
+	}
+	850.10.5 = {
+		employer = tr_tiandizhanghu
+	}
+	840.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	887.4.17 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
+
+tr_tiandi2 = {
+	name = "Xìngshì"
+	religion = zhengyi
+	culture = han
+	dynasty_house = house_tiandi
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = diligent
+	trait = education_martial_3
+	trait = calm
+	trait = tactitian
+	trait = gallant
+	835.1.11 = {
+		birth = yes
+	}
+	850.10.5 = {
+		employer = tr_tiandizhanghu
+	}
+	850.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	907.4.17 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
+tr_tiandizhanghu = {
+	name = "Zhang Hu"
+	religion = zhengyi
+	culture = han
+	dynasty_house = house_tiandi
+	martial = 8
+	diplomacy = 6
+	intrigue = 13
+	stewardship = 10
+	learning = 10
+	prowess = 10
+	trait = diligent
+	trait = education_martial_3
+	trait = impatient
+	trait = scarred
+	trait = gallant
+	831.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	917.4.17 = {
+		death = {
+			death_reason = death_contest_melee_accident
+			killer = mm_liquid
+		}
+	}
+}
+tr_tiandijj = {
+	name = "Jiang Jun"
+	religion = zhengyi
+	culture = han
+	dynasty_house = house_tiandi
+	martial = 20
+	diplomacy = 15
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 10
+	trait = diligent
+	trait = adventurer
+	trait = flexible_leader
+	trait = education_martial_3
+	trait = calm
+	trait = military_engineer
+	trait = overseer
+	trait = strategist
+	795.1.11 = {
+		birth = yes
+	}
+	810.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	890.4.1 = {
+		death = {
+			death_reason = death_age
+		}
+	}
+}
+tr_tiandinuxia = {
+	name = "Nuxia"
+	religion = zhengyi
+	culture = han
+	dynasty_house = house_tiandi
+	female = yes
+	martial = 8
+	diplomacy = 12
+	intrigue = 13
+	stewardship = 6
+	learning = 8
+	prowess = 10
+	trait = diligent
+	trait = education_martial_3
+	trait = seducer
+	trait = beauty_good_2
+	trait = whole_of_body
+	father = tr_tiandiJJ
+	847.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_high
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
+	}
+	900.4.17 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+###VALMIR
+
+mm_horrvalmir = {
+    name = "Horr"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    martial = 20
+    diplomacy = 5
+    intrigue = 2
+    stewardship = 8
+    learning = 5
+    prowess = 35
+    trait = brave
+    trait = education_martial_prowess_4
+    trait = viking
+    trait = scarred
+    trait = berserker
+    trait = diligent
+    trait = wrathful
+    trait = adventurer
+    father = mm_valmirfounder
+    disallow_random_traits = yes
+    790.1.11 = {
+        birth = yes
+    }
+    810.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+    870.4.17 = {
+        death = {
+            death_reason = death_duel
+            killer = mm_surr
+        }
+    }
+}
+
+mm_hofvarpnir = {
+    name = "Hofvarpnir"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    martial = 18
+    diplomacy = 6
+    intrigue = 3
+    stewardship = 10
+    learning = 8
+    prowess = 31
+    trait = brave
+    trait = education_martial_prowess_3
+    trait = viking
+    trait = reaver
+    trait = berserker
+    trait = content
+    trait = wrathful
+    trait = adventurer
+    father = mm_valmirfounder
+    disallow_random_traits = yes
+    800.1.11 = {
+        birth = yes
+    }
+    820.1.1 = {
+        effect = {
+            add_trait = lifestyle_hunter
+            add_trait_xp = {
+                trait = lifestyle_hunter
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+}
+
+mm_venemir = {
+    name = "Venemir"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    martial = 11
+    diplomacy = 8
+    intrigue = 5
+    stewardship = 5
+    learning = 12
+    prowess = 45
+    trait = brave
+    trait = education_martial_prowess_2
+    trait = wild_oat
+    trait = diligent
+    trait = athlete
+    father = mm_hofvarpnir
+    disallow_random_traits = yes
+    840.1.11 = {
+        birth = yes
+    }
+    865.1.11 = {
+        effect = {
+			set_relation_friend = { target = character:tr_colinmcglass }
+		}
+    }
+}
+
+mm_surr = {
+    name = "Baggrum"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    martial = 10
+    diplomacy = 10
+    intrigue = 2
+    stewardship = 5
+    learning = 5
+    prowess = 60
+    trait = vengeful
+    trait = education_martial_prowess_3
+    trait = lifestyle_blademaster
+    trait = diligent
+    trait = athlete
+    father = mm_horrvalmir
+    disallow_random_traits = yes
+    820.5.14 = {
+        birth = yes
+    }
+    840.5.14 = {
+        set_character_faith = ds1_faith
+    }
+}
+
+mm_frida = {
+    name = "Frida"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    female = yes
+    martial = 12
+    diplomacy = 12
+    intrigue = 2
+    stewardship = 5
+    learning = 8
+    prowess = 20
+    give_nickname = nick_madeofice
+    trait = brave
+    trait = albino
+    trait = compassionate
+    trait = honest
+    trait = athlete
+    trait = adventurer
+    father = mm_hofvarpnir
+    disallow_random_traits = yes
+    830.1.11 = {
+        birth = yes
+    }
+}
+
+mm_valmirfounder = {
+    name = "Freidrr"
+    religion = norse_pagan
+    culture = norse
+    dynasty_house = house_valmir
+    martial = 34
+    diplomacy = 6
+    intrigue = 3
+    stewardship = 10
+    learning = 8
+    prowess = 20
+    trait = brave
+    trait = education_martial_3
+    trait = viking
+    trait = adventurer
+    trait = berserker
+    trait = diligent
+    trait = wrathful
+    disallow_random_traits = yes
+    750.1.11 = {
+        birth = yes
+    }
+    837.4.17 = {
+        death = {
+            death_reason = death_age
+        }
+    }
+}
+
+tr_valmirfollower1 = {
+	name = "Bjorn"
+    religion = norse_pagan
+    culture = norse
+	850.1.1 = {
+		birth = yes
+	}
+	862.10.5 = {
+		employer = mm_hofvarpnir
+	}
+}
+
+tr_valmirfollower2 = {
+	name = "Ivarr"
+    religion = norse_pagan
+    culture = norse
+	845.1.1 = {
+		birth = yes
+	}
+	862.10.5 = {
+		employer = mm_hofvarpnir
+	}
+}
+tr_valmirfollower4 = {
+	name = "Erik"
+    religion = norse_pagan
+    culture = norse
+	840.1.1 = {
+		birth = yes
+	}
+	862.10.5 = {
+		employer = mm_hofvarpnir
+	}
+}
+tr_valmirfollower5 = {
+	name = "Agnes"
+    religion = norse_pagan
+    culture = norse
+	850.1.1 = {
+		birth = yes
+	}
+	862.10.5 = {
+		employer = mm_hofvarpnir
+	}
+}
+tr_valmirfollower6 = {
+	name = "Dag"
+    religion = norse_pagan
+    culture = norse
+	848.1.1 = {
+		birth = yes
+	}
+	862.10.5 = {
+		employer = mm_hofvarpnir
 	}
 }
