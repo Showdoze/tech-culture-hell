@@ -664,6 +664,21 @@
 	}
 	1000.1.1 = { death = { death_reason = death_old_age } }
  }
+ tr_nefertiti = {
+	name = "Nefertiti"
+	dna = Cassandra_cktinder
+	religion = kemetic_pagan 
+	dynasty_house = house_nefertiti
+	female = yes
+	culture = ptolemaic
+	trait = education_diplomacy_3
+    trait = greedy
+    trait = diligent
+    trait = ambitious
+    disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+	870.1.1 = { death = { death_reason = death_suicide } }
+ }
  tr_ptolemaic1 = {
     name = "Ptolemy I Soter"
 	dna = cleopatra_a
@@ -2352,7 +2367,7 @@ tr_gandhi = {
 	name = "Mido"
 	religion = kokiri_faith
 	dna = mr_highelf
-	dynasty = dynasty_fantasy
+	dynasty_house = house_nes
 	culture = kokiri
 	trait = education_diplomacy_1
 	trait = arrogant
@@ -2366,7 +2381,7 @@ tr_gandhi = {
     name = "Lonk"
 	dna = mr_highelf
 	religion = hyrulean_faith 
-    dynasty = dynasty_fantasy
+    dynasty_house = house_nes
 	culture = hylian
 	trait = education_intrigue_3
     trait = callous
@@ -2382,7 +2397,7 @@ tr_gandhi = {
     name = "Teriana"
 	dna = Teriana_Elf_Princess
 	religion = hyrulean_faith 
-    dynasty = dynasty_fantasy
+    dynasty_house = house_nes
 	culture = hylian
     female = yes
 	trait = education_stewardship_3
@@ -3858,7 +3873,6 @@ tr_oliver_cromwell = {
  }
   tr_vinland_askeladd_mom = {
 	name = "Lydia"
-	dna = lara_croft
 	religion = catholic 
     dynasty = dynasty_fantasy
 	culture = welsh
@@ -3877,7 +3891,6 @@ tr_oliver_cromwell = {
 	religion = norse_pagan 
     dynasty = dynasty_fantasy
 	culture = norse
-    female = yes
 	trait = education_martial_3
 	trait = callous
     trait = ambitious
