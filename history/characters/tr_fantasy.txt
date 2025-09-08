@@ -151,6 +151,16 @@
 	1068.8.30 = { death = { death_reason = death_suicide } }
  }
 #BG3
+ tr_tav = {
+	name = "Tav"
+    dynasty_house = house_baldursgate
+	culture = imperial_culture
+	religion = pagan
+	840.1.1 = { 
+		birth = yes
+	}
+	1060.1.1 = { death = { death_reason = death_disappearance } }
+ }
  tr_laezel = {
 	name = "Lae'zel"
 	dna = laezel
@@ -179,7 +189,10 @@
 			add_character_flag = no_headgear
 	    }
 	}
-	868.1.1 = { death = { death_reason = death_disappearance } }
+	865.10.5 = {
+		employer = tr_tav
+	}
+	1060.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_shart = {
 	name = "Shadowheart"
@@ -207,7 +220,10 @@
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	868.1.1 = { death = { death_reason = death_disappearance } }
+	865.10.5 = {
+		employer = tr_tav
+	}
+	1060.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_karlach = {
 	name = "Karlach"
@@ -238,6 +254,9 @@
 			add_character_flag = has_scripted_weight
 	    }
 	}
+	865.10.5 = {
+		employer = tr_tav
+	}
 	868.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_minthara = {
@@ -267,7 +286,7 @@
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	868.1.1 = { death = { death_reason = death_disappearance } }
+	1060.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_astarion = {
 	name = "Astarion"
@@ -297,7 +316,10 @@
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	868.1.1 = { death = { death_reason = death_disappearance } }
+	865.10.5 = {
+		employer = tr_tav
+	}
+	1268.1.1 = { death = { death_reason = death_disappearance } }
  }
  tr_gale_bg3 = {
 	name = "Gale"
@@ -323,7 +345,10 @@
 			add_character_flag = has_scripted_weight
 	    }
 	}
-	868.1.1 = { death = { death_reason = death_disappearance } }
+	865.10.5 = {
+		employer = tr_tav
+	}
+	1060.1.1 = { death = { death_reason = death_disappearance } }
  }
 #THIEF
  tr_thief_keeper = {
