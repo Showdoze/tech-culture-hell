@@ -292,6 +292,19 @@ d_whiteforest = { #
 
 	ai_primary_priority = { add = @never_primary_score }
 }
+d_ds_kiln = { # 
+	color = { 200 100 0 }
+	capital = c_vannes
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
 d_mcglass = { # 
 	color = { 0 100 50 }
 	capital = c_gowrie

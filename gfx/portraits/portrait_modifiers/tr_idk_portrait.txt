@@ -2321,6 +2321,62 @@ tr_idk_dagothur = {
         }
     }
 }
+tr_idk_gwyn = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_gwyn = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = fp1_beards_straight
+                accessory = male_beard_fp1_04
+            }
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = fp1_cloak
+                accessory = male_furs_secular_fp1_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = pol_common_legwear
+                accessory = m_legwear_sec_pol_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = fp3_iranian_war_nobility_clothes
+                accessory = m_clothes_sec_fp3_iranian_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep1_sub_saharan_royalty
+                accessory = male_headgear_secular_ep1_sub_saharan_royalty_01
+            }
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = pol_crest
+                accessory = m_headgear_sec_pol_era3_war_crest_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_gwyn
+                this = character:tr_ds_gwyn
+            }
+        }
+    }
+}
 tr_idk_gael = {
 
     usage = game
