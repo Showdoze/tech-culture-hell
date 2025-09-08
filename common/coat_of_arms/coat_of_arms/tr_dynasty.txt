@@ -636,15 +636,6 @@ house_sparta = {
 	color1 = "red"
 	color2 = "yellow"
 	colored_emblem = {
-		texture = "ce_spartan_lambda.dds"
-		color1 = "yellow"
-	}
-	colored_emblem = {
-		texture = "ce_wreath.dds"
-		color1 = "brown"
-		color2 = "green"
-	}
-	colored_emblem = {
 		texture = "ce_spartan_solar.dds"
 		color1 = "red"
 		color2 = "white"
@@ -653,6 +644,15 @@ house_sparta = {
 		texture = "ce_border_dotted.dds"
 		color1 = "white"
 		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_spartan_lambda.dds"
+		color1 = "yellow"
+	}
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "brown"
+		color2 = "green"
 	}
 }
 house_athens = {
@@ -665,4 +665,16 @@ house_athens = {
 		color2 = "orange"
 		color3 = "green_light"
 	}
+}
+house_zastova = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+	color3 = "black"
+	colored_emblem = {
+		texture = "cat_communist.dds"
+		color1 = "grey"
+		color2 = "yellow"
+		instance = { position = { 0.5 1.2 } scale = { 3.0 2.0 } rotation = 225 }		
+	}	
 }
