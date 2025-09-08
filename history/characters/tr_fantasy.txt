@@ -1716,6 +1716,32 @@
 		effect = { add_character_flag = has_scripted_appearance }
 	}
  }
+ tr_ds_gwynevere = {
+    name = "Gwynevere"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	father = tr_ds_gwyn
+	female = yes
+    trait = immortal
+	301.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
+  tr_ds_gwyndolyn = {
+    name = "Gwyndolyn"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	father = tr_ds_gwyn
+	trait = ds_covenant_darkmoon
+    trait = immortal
+	351.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
  tr_ds_gael = {
     name = "Slave Knight Gael"
 	religion = dark_souls_faith
@@ -1742,6 +1768,81 @@
 	506.5.10 = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
+ tr_ds_solaire = {
+    name = "Solaire"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+    trait = education_martial_prowess_2
+	trait = compassionate
+	trait = brave
+	trait = trusting
+	trait = fickle
+	trait = birthsign_apprentice
+	trait = ds_covenant_sunlight
+	trait = class_paladin_devotion
+	disallow_random_traits = yes
+	831.5.10 = {
+		birth = yes
+	}
+ }
+ tr_ds_siegward = {
+    name = "Siegward"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+    trait = education_martial_3
+	trait = gregarious
+	trait = brave
+	trait = fickle
+	trait = arbitrary
+	trait = birthsign_steed
+	trait = ds_covenant_blue
+	trait = lifestyle_blademaster
+	trait = class_fighter_knight
+	disallow_random_traits = yes
+	820.5.10 = {
+		birth = yes
+	}
+ }
+ tr_ds_vilhelm = {
+    name = "Vilhelm"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+    trait = education_republican_knowledge_3
+	trait = cynical
+	trait = calm
+	trait = stubborn
+	trait = arbitrary
+	trait = birthsign_shadow
+	trait = ds_covenant_darkmoon
+	trait = lifestyle_blademaster
+	trait = class_wizard_bladesinging
+	disallow_random_traits = yes
+	820.5.10 = {
+		birth = yes
+	}
+ }
+ tr_ds_firekeeper = {
+    name = "Firekeeper"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	female = yes
+    trait = education_republican_knowledge_3
+	trait = compassionate
+	trait = calm
+	trait = content
+	trait = trusting
+	trait = birthsign_lady
+	trait = class_sorcerer
+	trait = immortal
+	trait = tr_thief_mage_fire
+	820.5.10 = {
+		birth = yes
 	}
  }
  tr_ds_patches = {
