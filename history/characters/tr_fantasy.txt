@@ -1742,6 +1742,53 @@
 		effect = { add_character_flag = has_scripted_appearance }
 	}
  }
+ tr_ds_rosaria = {
+    name = "Rosaria"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	mother = tr_ds_gwynevere
+	female = yes
+    trait = immortal
+	trait = mute
+	trait = ds_covenant_rosaria
+	401.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
+ tr_ds_yorshka = {
+    name = "Yorshka"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	mother = tr_ds_gwynevere
+	female = yes
+    trait = immortal
+	trait = spindly
+	trait = ds_covenant_blue
+	441.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
+ tr_ds_priscilla = {
+    name = "Priscilla"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+	female = yes
+	mother = tr_ds_gwynevere
+	flag = illegitimate
+    trait = immortal
+	trait = disputed_heritage
+	trait = scaly
+	trait = class_sorcerer_dragon
+	451.2.17 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
  tr_ds_gael = {
     name = "Slave Knight Gael"
 	religion = dark_souls_faith
@@ -1766,6 +1813,27 @@
 	trait = ds_covenant_blue
 	disallow_random_traits = yes
 	506.5.10 = {
+		birth = yes
+		effect = { add_character_flag = has_scripted_appearance }
+	}
+ }
+ tr_ds_artorias = {
+    name = "Artorias"
+	religion = dark_souls_faith
+	culture = dark_souls_culture
+	dynasty_house = house_darksouls
+    trait = education_martial_prowess_4
+	trait = brave
+	trait = scarred
+	trait = diligent
+	trait = hollow
+	trait = whole_of_body
+	trait = aggressive_attacker
+	trait = lifestyle_faithful_blade
+	trait = class_fighter_knight
+	trait = class_warlock
+	trait = birthsign_ritual
+	502.5.10 = {
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
@@ -1833,6 +1901,7 @@
 	dynasty_house = house_darksouls
 	female = yes
     trait = education_republican_knowledge_3
+	trait = blind
 	trait = compassionate
 	trait = calm
 	trait = content
@@ -1841,7 +1910,7 @@
 	trait = class_sorcerer
 	trait = immortal
 	trait = tr_thief_mage_fire
-	820.5.10 = {
+	220.5.10 = {
 		birth = yes
 	}
  }

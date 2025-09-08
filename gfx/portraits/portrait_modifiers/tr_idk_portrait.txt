@@ -2377,6 +2377,50 @@ tr_idk_gwyn = {
         }
     }
 }
+tr_idk_gwynevere = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_gwynevere = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = no_cloak
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = fp2_hairstyles_iberian_muslim_wavy
+                accessory = female_hair_fp2_iberian_muslim_02
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = indian_high_nobility_clothes
+                accessory = female_clothes_secular_indian_nobility_01_high
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_gwynevere
+                this = character:tr_ds_gwynevere
+            }
+        }
+    }
+}
 tr_idk_gwyndolyn = {
 
     usage = game
@@ -2429,6 +2473,68 @@ tr_idk_gwyndolyn = {
                 exists = this
                 exists = character:tr_ds_gwyndolyn
                 this = character:tr_ds_gwyndolyn
+            }
+        }
+    }
+}
+tr_idk_artorias = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_artorias = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = ep3_beards_straight
+                accessory = m_beard_ep3_byzantine_01
+            }
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = ep1_cloak_adventurer
+                accessory = male_cloaks_secular_ep1_adventurer_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = ep3_byzantine_hairstyle
+                accessory = m_hair_ep3_byzantine_02
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = ep2_western_war_legwear
+                accessory = m_legwear_sec_ep2_western_era4_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = ep3_byzantine_era2_war_nobility_clothes
+                accessory = m_clothes_sec_ep3_byzantine_era2_war_nob_01_lo
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep2_western_era4_war_nobility
+                accessory = m_headgear_sec_ep2_western_era4_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_face_mask
+                template = fp3_iranian_face_mask_open
+                accessory = m_headgear_fp3_iranian_face_mask_closed_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_artorias
+                this = character:tr_ds_artorias
             }
         }
     }
@@ -2589,6 +2695,44 @@ tr_idk_firekeeper = {
                 template = blindfold
                 accessory = female_headgear_special_blindfold_01
             }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 1 1 }
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0.6
+                template = custom_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0.5
+                template = custom_skin_saturation
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_value
+                value = 1
+                template = custom_skin_value
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
         }
         weight = {
             base = 0
@@ -2597,6 +2741,252 @@ tr_idk_firekeeper = {
                 exists = this
                 exists = character:tr_ds_firekeeper
                 this = character:tr_ds_firekeeper
+            }
+        }
+    }
+}
+tr_idk_rosaria = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_rosaria = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = ep2_cloak_western_travel
+                accessory = f_cloaks_sec_ep2_western_travel_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = sp4_mena_hairstyles
+                accessory = f_hair_sp4_mena_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = ep3_byzantine_era2_high_nobility_clothes
+                accessory = f_clothes_sec_ep3_byzantine_era2_nob_03_hi
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = mena_common
+                accessory = female_headgear_secular_dde_abbasid_common_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 1 1 }
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0.6
+                template = custom_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0.5
+                template = custom_skin_saturation
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_value
+                value = 1
+                template = custom_skin_value
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_rosaria
+                this = character:tr_ds_rosaria
+            }
+        }
+    }
+}
+tr_idk_yorshka = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_yorshka = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = sp3_cloak
+                accessory = f_cloaks_sec_sp3_western_roy_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = sp4_western_hairstyles
+                accessory = f_hair_sp4_western_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = religious_jain_high_clothes
+                accessory = female_clothes_religious_jain_devoted_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_high_nobility
+                accessory = female_headgear_secular_byzantine_high_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 1 1 }
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0.6
+                template = custom_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0.5
+                template = custom_skin_saturation
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_value
+                value = 1
+                template = custom_skin_value
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_yorshka
+                this = character:tr_ds_yorshka
+            }
+        }
+    }
+}
+tr_idk_priscilla = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_priscilla = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = sp3_cloak
+                accessory = f_cloaks_sec_sp3_western_roy_01
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = sp4_western_hairstyles
+                accessory = f_hair_sp4_western_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = religious_jain_high_clothes
+                accessory = female_clothes_religious_jain_devoted_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_high_nobility
+                accessory = female_headgear_secular_byzantine_high_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 1 1 }
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0.6
+                template = custom_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0.5
+                template = custom_skin_saturation
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_value
+                value = 1
+                template = custom_skin_value
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ds_priscilla
+                this = character:tr_ds_priscilla
             }
         }
     }
