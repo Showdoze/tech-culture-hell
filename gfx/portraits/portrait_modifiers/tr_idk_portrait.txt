@@ -1963,8 +1963,8 @@ tr_idk_alyxvance = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = ep3_byzantine_hairstyle
-                accessory = f_hair_ep3_byzantine_01_common
+                template = western_hairstyles_straight
+                accessory = female_hair_western_09
             }
             accessory = {
                 mode = add
@@ -1975,8 +1975,8 @@ tr_idk_alyxvance = {
             accessory = {
                 mode = add
                 gene = clothes
-                template = mena_war_nobility_clothes
-                accessory = f_clothes_sec_mena_war_nob_01_lo
+                template = pol_commoner_clothes
+                accessory = f_clothes_sec_pol_common_02
             }
             accessory = {
                 mode = add
@@ -2409,6 +2409,44 @@ tr_idk_gwynevere = {
                 template = indian_high_nobility_clothes
                 accessory = female_clothes_secular_indian_nobility_01_high
             }
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = no_headgear
+                range = { 1 1 }
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0.5
+                y = 0.8
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0.2
+                y = 0.2
+            }
+            morph = {
+                mode = replace
+                gene = tr_hair_value
+                value = 0
+                template = custom_hair_value
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0
+                template = vanilla_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0
+                template = vanilla_skin_saturation
+            }
         }
         weight = {
             base = 0
@@ -2464,6 +2502,12 @@ tr_idk_gwyndolyn = {
                 gene = headgear
                 template = religious_african_high
                 accessory = male_headgear_religious_african_high_01
+            }
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = blindfold
+                accessory = male_headgear_special_blindfold_01
             }
         }
         weight = {
@@ -2774,8 +2818,8 @@ tr_idk_rosaria = {
             accessory = {
                 mode = add
                 gene = headgear
-                template = mena_common
-                accessory = female_headgear_secular_dde_abbasid_common_01
+                template = ep3_byzantine_era1_commoner
+                accessory = f_headgear_sec_ep3_byzantine_era1_com_01
             }
             accessory = {
                 mode = add
@@ -2861,6 +2905,12 @@ tr_idk_yorshka = {
             }
             accessory = {
                 mode = add
+                gene = additive_headgear
+                template = no_headgear
+                range = { 1 1 }
+            }
+            accessory = {
+                mode = add
                 gene = legwear
                 template = no_legwear
                 range = { 1 1 }
@@ -2940,6 +2990,12 @@ tr_idk_priscilla = {
                 gene = headgear
                 template = byzantine_high_nobility
                 accessory = female_headgear_secular_byzantine_high_nobility_01
+            }
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = no_headgear
+                range = { 1 1 }
             }
             accessory = {
                 mode = add
