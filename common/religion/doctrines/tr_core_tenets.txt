@@ -999,4 +999,24 @@ tr_doctrines = {
 			}
 		}
 	}
+	tenet_primative = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			clergy_can_fight = yes
+		}
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		traits = {
+			virtues = { 
+				profligate arrogant greedy avaricious ambitious gluttonous 
+			}
+			sins = { 
+				peasant_leader populist_leader improvident humble generous content temperate 
+			}
+		}
+	}
 }
