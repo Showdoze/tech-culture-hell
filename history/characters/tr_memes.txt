@@ -297,14 +297,13 @@ mm_nwordboi = {
 	840.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mm_dspdad reason = rival_historical }
-		}
-		effect = {
 			set_relation_rival = { target = character:mm_dspmom reason = rival_historical }
 		}
 	}
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:mm_wings reason = rival_historical }
+			remove_short_term_gold = 2000
 		}
 	}
 	876.4.17 = { death = { death_reason = death_gout_ridden } }
