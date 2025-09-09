@@ -1391,4 +1391,35 @@ ck_portraits = {
             }
         }
     }
+     mm_tomar = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_steppe_02
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = no_hair
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                value = 0.1 # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:mm_tomar
+                this = character:mm_tomar
+            }
+        }
+    }
 }
