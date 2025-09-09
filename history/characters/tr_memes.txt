@@ -46,6 +46,7 @@ mm_tonychase = {
 	stewardship = 10
 	dna = tonychase
 	give_nickname = nick_tonychase
+	add_character_flag = no_headgear
 	trait = beauty_good_1
 	trait = education_intrigue_1
 	trait = paranoid
@@ -516,17 +517,15 @@ mm_nwordboi = {
 	trait = weak
 	trait = dwarf
 	trait = follow_thor
-	father = mm_ruplesmith
+	#father = mm_ruplesmith
 	mother = mm_connie
 	disallow_random_traits = yes
 	835.5.24 = { 
 		birth = yes
-		effect = { add_character_flag = has_scripted_appearance }
-	}
-	835.5.25 = {
-		effect = {
+		effect = { 
+			add_character_flag = has_scripted_appearance
 			set_father = character:mm_ruplesmith 
-			set_real_father = character:mm_williamdsmith
+	        set_real_father = character:mm_williamdsmith
 		}
 	}
 	841.1.1 = {
