@@ -630,3 +630,35 @@ language_elf = {
 	}
 	color = altmeris
 }
+language_grineer = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_grineer
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_grineer }
+			multiply = 10
+		}
+	}
+	color = altmeris
+}
+language_kurshok = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_kurshok
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_kurshok }
+			multiply = 10
+		}
+	}
+	color = altmeris
+}
