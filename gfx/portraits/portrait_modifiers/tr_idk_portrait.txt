@@ -2192,6 +2192,56 @@ tr_idk_arnemagnusson = {
                 template = no_headgear
                 value = 0.1 # For the randomness to work correctly
             }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = sp4_mena_hairstyles
+                accessory = m_hair_sp4_mena_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = mena_common_legwear
+                accessory = male_legwear_secular_mena_common_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = fp4_western_bedchamber_clothes
+                accessory = m_clothes_sec_fp4_western_bedchamber_02_lo
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0.7
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0.2
+                y = 0.2
+            }
+            morph = {
+                mode = replace
+                gene = tr_hair_value
+                value = 0
+                template = custom_hair_value
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0
+                template = vanilla_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0
+                template = vanilla_skin_saturation
+            }
         }
         weight = {
             base = 0
