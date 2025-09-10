@@ -203,11 +203,12 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { 
+			virtues = {
 				fickle patient content ds_covenant_blue 
 			}
 			sins = { 
 				stubborn vengeful arrogant hollow class_sorcerer_dragon 
+				follow_kereska follow_bahamut follow_tiamat 
 			}
 		}
 		parameters = {
@@ -833,7 +834,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_gaelic = {
-		icon = core_tenet_pentarchy
+		icon = core_tenet_halfling
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
@@ -983,7 +984,7 @@ tr_doctrines = {
 		}
 	}
 	tenet_money_talks = {
-		icon = core_tenet_unrelenting_faith
+		icon = core_tenet_capitalism
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		parameters = {
