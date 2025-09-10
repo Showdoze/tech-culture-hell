@@ -1010,6 +1010,10 @@ tr_doctrines = {
 		is_shown = { always = no }
 		parameters = {
 			clergy_can_fight = yes
+			piety_from_marrying_lowborn_active = yes
+			cannibalism_legal = yes
+			human_sacrifice_active = yes
+			piety_from_hunts_active = yes
 		}
 		character_modifier = {
 			prowess = 4
@@ -1017,10 +1021,65 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				profligate arrogant greedy avaricious ambitious gluttonous 
+				berserker athletic lifestyle_herbalist brave lifestyle_hunter ds_covenant_farron 
 			}
 			sins = { 
-				peasant_leader populist_leader improvident humble generous content temperate 
+				albino craven ds_covenant_aldrich 
+			}
+		}
+	}
+	tenet_deep_cult = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			clergy_can_fight = yes
+			human_sacrifice_active = yes
+			piety_from_hunts_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			piety_from_feasts_active = yes
+		}
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		traits = {
+			virtues = { 
+				brave viking lifestyle_hunter lifestyle_reveler follow_cthulhu 
+				follow_posidion follow_talos follow_umberlee follow_mage_water 
+			}
+			sins = { 
+				craven deceitful forgiving follow_mage_earth 
+			}
+		}
+	}
+	tenet_green_cult = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			clergy_can_fight = yes
+			piety_from_marrying_lowborn_active = yes
+			human_sacrifice_active = yes
+			piety_from_hunts_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			piety_from_feasts_active = yes
+		}
+		character_modifier = {
+			prowess = 4
+			tolerance_advantage_mod = 2
+		}
+		traits = {
+			virtues = { 
+				lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
+			    ds_covenant_farron follow_mage_earth 
+				class_ranger class_cleric_nature class_druid 
+			}
+			sins = { 
+				craven deceitful forgiving follow_mage_water lazy stubborn arbitrary shy 
+				gluttonous  
 			}
 		}
 	}
