@@ -250,14 +250,14 @@ fantasy_religion = {
 			}
 			localization = {
 				#HighGod
-				HighGodName  = god_reason_and_logic_name
-				HighGodName2 = god_reason_and_logic_name
-				HighGodNamePossessive = god_reason_and_logic_name_possessive
-				HighGodNameSheHe = CHARACTER_SHEHE_THEY
-				HighGodHerselfHimself = CHARACTER_THEMSELF
-				HighGodHerHis = CHARACTER_HERHIS_THEIR
-				HighGodNameAlternate = god_reason_and_logic_name
-				HighGodNameAlternatePossessive = god_reason_and_logic_name_possessive
+				 HighGodName  = god_reason_and_logic_name
+				 HighGodName2 = god_reason_and_logic_name
+				 HighGodNamePossessive = god_reason_and_logic_name_possessive
+				 HighGodNameSheHe = CHARACTER_SHEHE_THEY
+				 HighGodHerselfHimself = CHARACTER_THEMSELF
+				 HighGodHerHis = CHARACTER_HERHIS_THEIR
+				 HighGodNameAlternate = god_reason_and_logic_name
+				 HighGodNameAlternatePossessive = god_reason_and_logic_name_possessive
 				#Creator
 				CreatorName = god_reason_and_logic_name
 				CreatorNamePossessive = god_reason_and_logic_name_possessive
@@ -1322,11 +1322,15 @@ fantasy_religion = {
 				 WaterGodSheHe = CHARACTER_SHEHE_HE
 				 WaterGodHerHis = CHARACTER_HERHIS_HIS
 				 WaterGodHerHim = CHARACTER_HERHIM_HIM
-				 PantheonTerm = religion_the_gods
+				PantheonTerm = religion_the_gods
 				 PantheonTerm2 = religion_the_gods_2
 				 PantheonTerm3 = religion_the_gods_3
 				 PantheonTermHasHave = pantheon_term_have
-			    GoodGodNames = { god_kingseeker_frampt god_gravelord_nito god_flann god_gwynevere god_gwyndolin god_gwyn god_lloyd god_seath god_frampt god_velka god_fina god_filianore god_nameless_king }
+			    GoodGodNames = { 
+					god_kingseeker_frampt god_gravelord_nito god_flann god_gwynevere god_gwyndolin 
+					god_gwyn god_lloyd god_seath god_frampt god_velka god_fina god_filianore 
+					god_nameless_king 
+				}
 				#Devil
 				 DevilName = darksouls_devil_name
 				 DevilNamePossessive = darksouls_devil_name_possessive
@@ -3663,6 +3667,7 @@ fantasy_religion = {
 		green_cult = {
 			color = { 0.1 0.6 0.1 }
 			icon = greenpact
+			reformed_icon = greenpact
 			#religious_head = d_green_pact
 			piety_icon_group = "pagan"
 			#HOLY SITE

@@ -1391,6 +1391,7 @@
     dynasty = dynasty_fantasy
 	culture = elf_culture
 	sexuality = bisexual
+	learning = 15
 	female = yes
 	trait = education_learning_5
     trait = immortal
@@ -1466,6 +1467,9 @@
 	mother = tr_vinland_askeladd_mom
 	father = tr_vinland_askeladd_dad
 	dna = askeladd_vinland
+	intrigue = 15
+	prowess = 5
+	diplomacy = 10
     trait = education_martial_3
 	trait = diligent
 	trait = brave
@@ -1515,11 +1519,15 @@
 	father = tr_vinland_sweyn
 	sexuality = bisexual
 	dna = canute_vinland
+	diplomacy = 15
 	trait = greedy
 	trait = education_diplomacy_3
 	trait = beauty_good_3
 	trait = intellect_good_2
 	trait = sax_friend
+	trait = fickle
+	trait = diligent
+	disallow_random_traits = yes
 	851.7.12 = { birth = yes }
 	1030.1.1 = { give_nickname = nick_the_great }
 	1035.11.12 = { death = yes }
@@ -2274,7 +2282,7 @@
 	name = "Dutch Van Der Linde"
 	dna = dutch_van
 	religion = blood_faith 
-    dynasty = dynasty_fantasy
+    dynasty_house = house_red_dead
 	culture = american
 	trait = education_intrigue_3
     trait = arrogant
@@ -2285,13 +2293,49 @@
 	trait = lunatic_1
     trait = ambitious
     disallow_random_traits = yes
-	840.1.1 = { birth = yes }
+	823.1.1 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:tr_arthur_shelby_peaky_blinders reason = rival_historical }
+			set_relation_rival = { target = character:tr_peaky_blinders_tommy_shelby reason = rival_historical }
 		}
 	}
 	911.1.1 = { death = { death_reason = death_suicide } }
+  }
+  tr_arthur_morgan = {
+  name = "Arthur Morgan"
+	dna = Arthur_Morgan
+	religion = stoicism
+    dynasty_house = house_red_dead
+	culture = american
+	trait = education_martial_prowess_4
+    trait = honest
+	trait = loyal
+	trait = cynical
+	trait = journaller
+    trait = lifestyle_blademaster
+	trait = brave
+    disallow_random_traits = yes
+	831.1.1 = { birth = yes }
+	899.1.1 = { death = { death_reason = death_consumption } }
+  }
+  tr_Micah_Bell = {
+  name = "Micah Bell"
+	dna = Micah_Bell
+	religion = blood_faith
+    dynasty_house = house_red_dead
+	culture = american
+	trait = education_martial_3
+    trait = deceitful
+	trait = arbitrary
+	trait = sadistic
+	trait = seducer
+    trait = murderer
+	trait = profligate
+    trait = ambitious
+    disallow_random_traits = yes
+	828.1.1 = { birth = yes }
+	907.1.1 = { death = { death_reason = death_revenge killer = tr_dutch_van } }
   }
  #Castlevania
   tr_belmont_founder = {
@@ -2541,10 +2585,9 @@
 	908.1.1 = { death = { death_reason = death_disappearance } }
   }
 #tv shows
- tr_arthur_shelby_peaky_blinders = {
-	name = "Arthur Shelby"
+ tr_peaky_blinders_shelby_dad = {
+	name = "Arthur Shelby Sr."
 	religion = protestant
-	dna = arthur_shelby_peaky_blinders
 	dynasty = misc_history
 	culture = brit
 	trait = education_intrigue_3
@@ -2555,7 +2598,40 @@
 	trait = chaste
 	trait = just
 	disallow_random_traits = yes
+	803.1.1 = { birth = yes }
+	867.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_arthur_shelby_peaky_blinders = {
+	name = "Arthur Shelby"
+	religion = protestant
+	dna = arthur_shelby_peaky_blinders
+	dynasty = misc_history
+	culture = brit
+	father = tr_peaky_blinders_shelby_dad
+	trait = education_intrigue_3
+	trait = stubborn
+	trait = cynical
+	trait = callous
+	trait = temperate
+	trait = chaste
+	trait = just
+	disallow_random_traits = yes
 	825.1.1 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_dutch_van reason = rival_historical }
+		}
+	}
+	870.1.1 = { death = { death_reason = death_drinking_passive } }
+ }
+ tr_peaky_blinders_tommy_shelby = {
+	name = "Tommy Shelby"
+	religion = protestant
+	dna = Cillian_Murphy
+	dynasty = misc_history
+	culture = brit
+	father = tr_peaky_blinders_shelby_dad
+	821.1.1 = { birth = yes }
 	850.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:tr_dutch_van reason = rival_historical }
@@ -2664,6 +2740,9 @@
 	religion = blood_faith
 	dynasty = dynasty_fantasy
 	culture = american
+	prowess = 20
+	intrigue = 15
+	diplomacy = 15
 	sexuality = bisexual
 	trait = education_intrigue_5
 	trait = immortal #He says that he will never die.
@@ -2701,6 +2780,7 @@
 	religion = blood_faith
 	dynasty = dynasty_fantasy
 	culture = cimmerian
+	prowess = 20
 	trait = education_martial_5
 	trait = physique_good_3
 	trait = intellect_good_3
@@ -2744,7 +2824,7 @@
  #Game of thrones
   tr_agot_Ramsay_Bolton = {
 	name = "Ramsay Bolton"
-	religion = dragon_cult
+	religion = green_cult
 	dynasty = dynasty_fantasy
 	culture = nord_culture
 	dna = Ramsay_Bolton_Iwan_Rheon
@@ -2753,12 +2833,12 @@
     trait = sadistic
     trait = beauty_bad_3
     trait = schemer
-	trait = family_first
+	trait = torturer
 	trait = deceitful
 	trait = legitimized_bastard
     disallow_random_traits = yes
 	847.1.1 = { birth = yes }
-    870.1.1 = { death = { death_reason = death_battle killer = tr_tar_2 } }
+    870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
   }
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
@@ -2946,6 +3026,17 @@
 	853.1.1 = { birth = yes }
 	864.1.1 = { add_spouse = tr_tar_2_mom }
     900.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_tar_2_daughter = {
+    name = "Daenerys"
+	religion = dragon_cult
+	dynasty = dynasty_Targaryen
+	culture = high_valyrian
+	father = tr_tar_2
+	mother = tr_tar_2_mom
+	female = yes
+	865.1.1 = { birth = yes }
+    950.1.1 = { death = { death_reason = death_old_age } }
  }
   tr_tar_3 = {
     name = " Jaehaerys"
