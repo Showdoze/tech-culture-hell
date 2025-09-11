@@ -43,6 +43,7 @@ on_war_started = {
 
 on_game_start_after_lobby = {
     on_actions = { tr_satanism_start }
+    on_actions = { tr_spawn_artifacts }
 }
 
 ## MODDED HOOKED BELOW
@@ -122,6 +123,10 @@ tr_birth_random = {
 
 tr_sayan_check = {
     effect = { tr_play_sayan_music = yes }
+}
+
+tr_spawn_artifacts = {
+    create_artifact_cloranthy_ring = { owner = tr_siegward } #Siegward
 }
 
 #tr_elective_inheritance = {
