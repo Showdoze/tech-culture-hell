@@ -1,12 +1,17 @@
-namespace = tr_artifact_spawn
+﻿namespace = tr_artifact_spawn
 
 tr_artifact_spawn.01 = {
     scope = none
     hidden = yes
 
-    immediate = {
-        create_artifact_cloranthy_ring = {
-            OWNER = tr_ds_siegward
+    immediate = { # Weird fucking system, but i guess we gotta give specific characters specific item somehow...
+        if = {
+            limit = {
+                this = character:tr_ds_siegward
+            }
+            scope:tr_ds_siegward = {
+                create_artifact_cloranthy_ring = { OWNER = this }
+            }
         }
     }
 }

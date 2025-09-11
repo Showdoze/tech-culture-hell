@@ -1,5 +1,8 @@
-create_artifact_cloranthy_ring = {
+﻿create_artifact_cloranthy_ring = {
+
     $OWNER$ = { save_scope_as = owner }
+
+    set_artifact_rarity_common = yes
 
     create_artifact = {
         name = cloranthy_ring
@@ -12,9 +15,8 @@ create_artifact_cloranthy_ring = {
         history = {
             type = created_before_history
         }
-        modifier = = {
-            icon = dread_positive
-            movement_speed = 1
+        modifier = {
+            character_travel_speed = 1
         }
         save_scope_as = newly_created_artifact
         decaying = no
