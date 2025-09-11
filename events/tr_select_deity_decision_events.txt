@@ -28,7 +28,7 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    faith = faith:dwemer_religion
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision
             }
@@ -111,7 +111,7 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    faith = faith:dwemer_religion
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision_desc
             }
@@ -368,7 +368,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_learning
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_learning
                 }
@@ -381,7 +381,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_martial
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_martial
                 }
@@ -394,7 +394,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_steward
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_steward
                 }
@@ -407,7 +407,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_health
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_health
                 }
@@ -420,7 +420,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_darkness
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_darkness
                 }
@@ -433,7 +433,7 @@ tr_select_deity.01 = {
         name = dwemer_choose_study_diplomacy
         trigger = {
             AND = {
-                faith = faith:dwemer_religion
+                culture = culture:dwemer
                 NOT = {
                     has_character_modifier = follow_diplomacy
                 }
