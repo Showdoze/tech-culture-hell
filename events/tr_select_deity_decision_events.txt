@@ -187,18 +187,18 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 faith = faith:dark_souls_faith
-                NOT = {
+                NOR = {
                     has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
                 }
             }
         }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_farron
-        remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_moundmakers
         add_trait = ds_covenant_aldrich
     }
     option = {
@@ -206,18 +206,18 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 faith = faith:dark_souls_faith
-                NOT = {
+                NOR = {
+                    has_trait = ds_covenant_aldrich
                     has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
                 }
             }
         }
-        remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_farron
-        remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_moundmakers
         add_trait = ds_covenant_blue
     }
     option = {
@@ -225,18 +225,18 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 faith = faith:dark_souls_faith
-                NOT = {
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
                     has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
                 }
             }
         }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_farron
-        remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_moundmakers
         add_trait = ds_covenant_darkmoon
     }
     option = {
@@ -244,18 +244,18 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 faith = faith:dark_souls_faith
-                NOT = {
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
                     has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
                 }
             }
         }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_moundmakers
         add_trait = ds_covenant_farron
     }
     option = {
@@ -263,7 +263,91 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 faith = faith:dark_souls_faith
-                NOT = {
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
+                }
+            }
+        }
+        add_trait = ds_covenant_moundmakers
+    }
+    option = {
+        name = ds1_select_covenant_rosaria
+        trigger = {
+            AND = {
+                faith = faith:dark_souls_faith
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
+                }
+            }
+        }
+        add_trait = ds_covenant_rosaria
+    }
+    option = {
+        name = ds1_select_covenant_sentinels
+        trigger = {
+            AND = {
+                faith = faith:dark_souls_faith
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
+                }
+            }
+        }
+        add_trait = ds_covenant_sentinels
+    }
+    option = {
+        name = ds1_select_covenant_sunlight
+        trigger = {
+            AND = {
+                faith = faith:dark_souls_faith
+                NOR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
+                    has_trait = ds_covenant_moundmakers
+                }
+            }
+        }
+        add_trait = ds_covenant_sunlight
+    }
+
+    option = {
+        name = ds1_select_covenant_reset
+        trigger = {
+            AND = {
+                faith = faith:dark_souls_faith
+                OR = {
+                    has_trait = ds_covenant_aldrich
+                    has_trait = ds_covenant_blue
+                    has_trait = ds_covenant_darkmoon
+                    has_trait = ds_covenant_sunlight
+                    has_trait = ds_covenant_rosaria
+                    has_trait = ds_covenant_farron
+                    has_trait = ds_covenant_sentinels
                     has_trait = ds_covenant_moundmakers
                 }
             }
@@ -274,65 +358,8 @@ tr_select_deity.01 = {
         remove_trait = ds_covenant_rosaria
         remove_trait = ds_covenant_farron
         remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_aldrich
-        add_trait = ds_covenant_moundmakers
-    }
-    option = {
-        name = ds1_select_covenant_rosaria
-        trigger = {
-            AND = {
-                faith = faith:dark_souls_faith
-                NOT = {
-                    has_trait = ds_covenant_rosaria
-                }
-            }
-        }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_farron
-        remove_trait = ds_covenant_sentinels
         remove_trait = ds_covenant_moundmakers
-        add_trait = ds_covenant_rosaria
-    }
-    option = {
-        name = ds1_select_covenant_sentinels
-        trigger = {
-            AND = {
-                faith = faith:dark_souls_faith
-                NOT = {
-                    has_trait = ds_covenant_sentinels
-                }
-            }
-        }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_sunlight
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_farron
         remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_moundmakers
-        add_trait = ds_covenant_sentinels
-    }
-    option = {
-        name = ds1_select_covenant_sunlight
-        trigger = {
-            AND = {
-                faith = faith:dark_souls_faith
-                NOT = {
-                    has_trait = ds_covenant_sunlight
-                }
-            }
-        }
-        remove_trait = ds_covenant_blue
-        remove_trait = ds_covenant_darkmoon
-        remove_trait = ds_covenant_aldrich
-        remove_trait = ds_covenant_rosaria
-        remove_trait = ds_covenant_farron
-        remove_trait = ds_covenant_sentinels
-        remove_trait = ds_covenant_moundmakers
-        add_trait = ds_covenant_sunlight
     }
 
     #####DWEMER
