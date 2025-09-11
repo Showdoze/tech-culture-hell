@@ -423,14 +423,14 @@ dwemer_forge_1 = {
 
 	is_enabled = { yes }
 	can_construct_potential = {
-		scope:holder.culture = culture_dwemer
+		scope:holder.culture = dwemer
 	}
 	can_construct_showing_failures_only = {
 		gold >= 500
 	}
 	can_construct = {
 		gold >= 500
-		scope:holder.culture = culture_dwemer
+		scope:holder.culture = dwemer
 	}
 	show_disabled = no	# if set to yes, the building will show in the build menu even if disabled (will still use can_construct_potential). No by default
 	
