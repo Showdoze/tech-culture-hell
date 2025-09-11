@@ -124,6 +124,38 @@ tr_doctrines = {
 			hills_advantage = 5
 		}
 	}
+	tenet_science = {
+		icon = core_tenet_science
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			holy_wars_forbidden = yes
+			piety_from_long_peace = 1
+			select_personal_god_active = yes
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			literalist_debate_enabled = yes
+		}
+		traits = {
+			virtues = { 
+				architect cynical scholar journaller class_cleric_knowledge intellect_good_1 intellect_good_2 intellect_good_3
+			}
+			sins = { 
+				intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull 
+			}
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+			ignore_opinion_of_different_faith = yes
+			learning_per_piety_level = 5
+			monthly_piety_from_buildings_mult = 0.24
+			hills_development_growth_factor = 0.15
+			hills_tax_mult = 0.1
+			hills_levy_size = 0.3
+			hills_advantage = 5
+		}
+	}
 	tennet_blood_m = {
 		icon = core_tenet_bloodm #core_tenet_gruesome_festivals
 		piety_cost = { value = faith_tenet_cost_high }

@@ -397,7 +397,200 @@ fantasy_religion = {
 				GHWName = ghw_crusade
 				GHWNamePlural = ghw_crusades
 			}
-		}	
+		}
+		science = {
+			color = { 0.7 0.7 0.1 }
+			icon = dwemer
+			#religious_head = d_tonal_architects
+			#graphical_faith = "ek_dwemer_ph_gfx"
+			#Holy Site
+			 holy_site = alexandria
+			 holy_site = timbuktu
+			 holy_site = jaffa
+			 holy_site = cornwall
+			 holy_site = constantinople
+			 holy_site = tus_hs
+			 holy_site = baghdad
+			 holy_site = granada
+			 holy_site = athens
+			 holy_site = stonehenge
+			 holy_site = hekla #volcano
+			 holy_site = vesuvius #volcano
+			 holy_site = rome
+			#
+			 doctrine = doctrine_funeral_stoic
+			 doctrine = doctrine_gender_equal
+			 doctrine = doctrine_pluralism_pluralistic
+			 doctrine = doctrine_concubines
+	         doctrine = doctrine_divorce_allowed
+			 doctrine = doctrine_consanguinity_cousins
+			 doctrine = doctrine_kinslaying_accepted
+	         doctrine = doctrine_deviancy_shunned
+			 doctrine = doctrine_witchcraft_accepted
+			#Clerical Functions
+	         doctrine = doctrine_clerical_function_recruitment
+	         doctrine = doctrine_clerical_gender_either
+	         doctrine = doctrine_clerical_marriage_allowed
+	         doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_funeral_cremation 
+			#Tenets
+			doctrine = tenet_science
+			doctrine = tenet_inner_journey
+			doctrine = tenet_astrology
+			holy_order_names = {
+				{ name = "holy_order_artificer" }
+				{ name = "holy_order_craftlords" }
+			}
+			localization = {
+				#HighGod
+				 HighGodName  = god_reason_and_logic_name
+				 HighGodName2 = god_reason_and_logic_name
+				 HighGodNamePossessive = god_reason_and_logic_name_possessive
+				 HighGodNameSheHe = CHARACTER_SHEHE_THEY
+				 HighGodHerselfHimself = CHARACTER_THEMSELF
+				 HighGodHerHis = CHARACTER_HERHIS_THEIR
+				 HighGodNameAlternate = god_reason_and_logic_name
+				 HighGodNameAlternatePossessive = god_reason_and_logic_name_possessive
+				#Creator
+				CreatorName = god_reason_and_logic_name
+				CreatorNamePossessive = god_reason_and_logic_name_possessive
+				CreatorSheHe = CHARACTER_SHEHE_THEY
+				CreatorHerHis = CHARACTER_HERHIS_THEIR
+				CreatorHerHim = CHARACTER_HERHIM_THEM
+				#HealthGod
+				HealthGodName = god_reason_and_logic_name
+				HealthGodNamePossessive = god_reason_and_logic_name_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_THEY
+				HealthGodHerHis = CHARACTER_HERHIS_THEIR
+				HealthGodHerHim = CHARACTER_HERHIM_THEM
+				#FertilityGod
+				FertilityGodName = god_reason_and_logic_name
+				FertilityGodNamePossessive = god_reason_and_logic_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_THEY
+				FertilityGodHerHis = CHARACTER_HERHIS_THEIR
+				FertilityGodHerHim = CHARACTER_HERHIM_THEM
+				#WealthGod
+				WealthGodName = god_reason_and_logic_name
+				WealthGodNamePossessive = god_reason_and_logic_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_THEY
+				WealthGodHerHis = CHARACTER_HERHIS_THEIR
+				WealthGodHerHim = CHARACTER_HERHIM_THEM		
+				#HouseholdGod
+				HouseholdGodName = god_reason_and_logic_name
+				HouseholdGodNamePossessive = god_reason_and_logic_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+				HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+				HouseholdGodHerHim = CHARACTER_HERHIM_THEM		
+				#FateGod
+				FateGodName = god_reason_and_logic_name
+				FateGodNamePossessive = god_reason_and_logic_name_possessive
+				FateGodSheHe = CHARACTER_SHEHE_THEY
+				FateGodHerHis = CHARACTER_HERHIS_THEIR
+				FateGodHerHim = CHARACTER_HERHIM_THEM		
+				#KnowledgeGod
+				KnowledgeGodName = god_reason_and_logic_name
+				KnowledgeGodNamePossessive = god_reason_and_logic_name_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+				KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+				KnowledgeGodHerHim = CHARACTER_HERHIM_THEM		
+				#WarGod
+				WarGodName = god_reason_and_logic_name
+				WarGodNamePossessive = god_reason_and_logic_name_possessive
+				WarGodSheHe = CHARACTER_SHEHE_THEY
+				WarGodHerHis = CHARACTER_HERHIS_THEIR
+				WarGodHerHim = CHARACTER_HERHIM_THEM		
+				#TricksterGod
+				TricksterGodName = god_reason_and_logic_name
+				TricksterGodNamePossessive = god_reason_and_logic_name_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_THEY
+				TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+				TricksterGodHerHim = CHARACTER_HERHIM_THEM		
+				#NightGod
+				NightGodName = god_reason_and_logic_name
+				NightGodNamePossessive = god_reason_and_logic_name_possessive
+				NightGodSheHe = CHARACTER_SHEHE_THEY
+				NightGodHerHis = CHARACTER_HERHIS_THEIR
+				NightGodHerHim = CHARACTER_HERHIM_THEM
+		
+				#WaterGod
+				WaterGodName = god_reason_and_logic_name
+				WaterGodNamePossessive = god_reason_and_logic_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_THEY
+				WaterGodHerHis = CHARACTER_HERHIS_THEIR
+				WaterGodHerHim = CHARACTER_HERHIM_THEM
+		
+				PantheonTerm = god_reason_and_logic_name
+				PantheonTerm2 = god_reason_and_logic_name
+				PantheonTerm3 = god_reason_and_logic_name
+				PantheonTermHasHave = pantheon_term_have
+				GoodGodNames = {
+					god_reason_and_logic_name
+				}
+				DevilName = god_daedric_princes_name
+				DevilNamePossessive = god_daedric_princes_name_possessive
+				DevilSheHe = CHARACTER_SHEHE_THEY
+				DevilHerHis = CHARACTER_HERHIS_THEIR
+				DevilHerselfHimself = CHARACTER_THEMSELF
+				EvilGodNames = {
+					god_the_divines_name
+					god_daedric_princes_name
+				}
+				HouseOfWorship  = science_house_of_worship
+				HouseOfWorship2 = science_house_of_worship
+				HouseOfWorship3 = science_house_of_worship
+				HouseOfWorshipPlural = science_house_of_worship_plural
+				ReligiousSymbol  = science_religious_symbol
+				ReligiousSymbol2 = science_religious_symbol
+				ReligiousSymbol3 = science_religious_symbol
+				ReligiousText  = science_religious_text
+				ReligiousText2 = science_religious_text
+				ReligiousText3 = science_religious_text
+				ReligiousHeadName = science_religious_head_title
+				ReligiousHeadTitleName = science_religious_head_title_name
+				DevoteeMale = science_devotee_male
+				DevoteeMalePlural = science_devotee_male_plural
+				DevoteeFemale = science_devotee_female
+				DevoteeFemalePlural = science_devotee_female_plural
+				DevoteeNeuter = science_devotee_neuter
+				DevoteeNeuterPlural = science_devotee_neuter_plural
+				PriestMale = science_priest_male
+				PriestMalePlural = science_priest_male_plural
+				PriestFemale = science_priest_female
+				PriestFemalePlural = science_priest_female_plural
+				PriestNeuter = science_priest_neuter
+				PriestNeuterPlural = science_priest_neuter_plural
+				AltPriestTermPlural = science_priest_alternate_plural
+				BishopMale = science_bishop_male
+				BishopMalePlural = science_bishop_male_plural
+				BishopFemale = science_bishop_female
+				BishopFemalePlural = science_bishop_female_plural
+				BishopNeuter = science_bishop_neuter
+				BishopNeuterPlural = science_bishop_neuter_plural
+				DivineRealm  = dreamsleeve_name
+				DivineRealm2 = dreamsleeve_name
+				DivineRealm3 = dreamsleeve_name
+				PositiveAfterLife  = dreamsleeve_name
+				PositiveAfterLife2 = dreamsleeve_name
+				PositiveAfterLife3 = dreamsleeve_name
+				NegativeAfterLife = mundus_name
+				NegativeAfterLife2 = mundus_name
+				NegativeAfterLife3 = mundus_name
+				DeathDeityName = void_name
+				DeathDeityNamePossessive = void_name_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_HE
+				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				WitchGodName = god_lhkan_name
+				WitchGodNamePossessive = god_lhkan_name_possessive
+				WitchGodHerHis = CHARACTER_HERHIS_ITS
+				WitchGodSheHe = CHARACTER_SHEHE_IT
+				WitchGodHerHim = CHARACTER_HERHIM_IT
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
+		
+				GHWName = ghw_crusade
+				GHWNamePlural = ghw_crusades
+			}
+		}
 	    blood_faith = {
 			color = { 0.6 0.1 0.1 }
 			icon = blood_meridian
