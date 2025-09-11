@@ -207,7 +207,7 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
     }
     picture = {
-        trigger = { culture = { has_culture = dwemer } }
+        trigger = { culture = culture:dwemer }
         reference = "gfx/interface/illustrations/decisions/decision_dwemer_factory.dds"
     }
     picture = {
@@ -264,7 +264,7 @@ tr_select_personal_deity_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision
             }
@@ -349,7 +349,7 @@ tr_select_personal_deity_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision_desc
             }
@@ -434,7 +434,7 @@ tr_select_personal_deity_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision_tip
             }
@@ -517,7 +517,7 @@ tr_select_personal_deity_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision_confirm
             }
@@ -593,7 +593,7 @@ tr_select_personal_deity_decision = {
     is_shown = {
         AND = {
             OR = {
-                culture = { has_culture = dwemer }
+                culture = culture:dwemer
                 faith = faith:satanism
                 faith = faith:dark_souls_faith
                 has_trait = lunatic_1
@@ -668,7 +668,7 @@ summon_speical_maa_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
     }
     picture = {
-        trigger = { culture = { has_culture = dwemer } }
+        trigger = { culture = culture:dwemer }
         reference = "gfx/interface/illustrations/decisions/decision_dwemer_factory.dds"
     }
     picture = {
@@ -696,7 +696,7 @@ summon_speical_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision
             }
@@ -712,7 +712,7 @@ summon_speical_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_desc
             }
@@ -728,7 +728,7 @@ summon_speical_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_tip
             }
@@ -744,7 +744,7 @@ summon_speical_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
-                    culture = { has_culture = dwemer }
+                    culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_confirm
             }
@@ -754,8 +754,8 @@ summon_speical_maa_decision = {
     is_shown = {
         OR = {
             faith = faith:satanism
-            culture = { has_culture = dwemer }
             faith = faith:mage_faith
+            culture = culture:dwemer
         }
     }
     is_valid = {
@@ -766,7 +766,7 @@ summon_speical_maa_decision = {
                 piety >= 100
             }
             AND = {
-                culture = { has_culture = dwemer }
+                culture = culture:dwemer
                 gold >= 400
             }
             AND = {
