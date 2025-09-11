@@ -82,6 +82,76 @@
 	cost = { prestige = 2000 }
 	ai_will_do = { value = 0 }
 }
+tradition_primative = {
+	category = combat
+	layers = {
+		0 = martial
+		1 = western
+		4 = primative.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		less_likely_to_culture_convert = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
+		gain_gold_from_battles = yes
+		has_access_to_trials_by_combat = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		craven_trait_costs_prestige = yes
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		more_expensive_feasts = yes
+		hunting_traits_more_valued = yes
+		rivalries_more_common = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		more_frequent_feasts = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -1
+		culture_tradition_max_add = -4
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		supply_capacity_mult = 0.5
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		prowess_per_prestige_level = 1
+		prowess = 10
+		levy_size = -5
+		army_toughness_mult = 0.25
+		negate_health_penalty_add = 0.15
+		stewardship = -2
+		diplomacy = -2
+		learning = -2
+		ai_boldness = 20
+		opinion_of_different_culture = -25
+		different_culture_opinion = -25
+		same_culture_opinion = 25
+		close_relative_opinion = 10
+	}
+	cost = { prestige = 2000 }
+	ai_will_do = { value = 0 }
+}
 tradition_dwarf = {
 	category = regional
 	layers = {
@@ -1637,7 +1707,8 @@ tradition_fromsoft = {
 	}
 	character_modifier = {
 		inbreeding_chance = 0.5
-		prowess_per_prestige_level = 2
+		prowess_per_prestige_level = 1
+		martial_per_prestige_level = 1
 		martial = 1
 		supply_duration = 1
 		opinion_of_different_culture = -25
