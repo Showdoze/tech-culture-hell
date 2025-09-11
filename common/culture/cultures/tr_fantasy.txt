@@ -172,6 +172,7 @@ elf_culture = {
  nord_culture = {
     color = { 0.12 0.32 0.94 }
     created = 10.1.1
+    parents = { fantasy_culture }
     history_loc_override = mystery_history_loc
     ethos = ethos_bellicose
     heritage = heritage_fantasy
@@ -198,6 +199,7 @@ elf_culture = {
  imperial_culture = {
     color = cyrodiilic
     created = 10.1.1
+    parents = { fantasy_culture }
     history_loc_override = mystery_history_loc
     ethos = ethos_courtly
     heritage = heritage_fantasy
@@ -350,6 +352,7 @@ elf_culture = {
  alikr = { #RedGuard
     color = yoku
     created = 15.1.1
+    parents = { fantasy_culture }
     history_loc_override = yokudan_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
@@ -605,9 +608,7 @@ unknown = {
 }
 fantasy_culture = {
     color = { 120 120 120 }
-    created = 400.1.1
-    parents = { anglic }
-    #history_loc_override = mystery_history_loc
+    parents = { breton }
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_anglic
@@ -621,7 +622,11 @@ fantasy_culture = {
         tradition_chivalry
         tradition_swords_for_hire
     }
-    name_list = { name_list_imperial name_list_souls name_list_french name_list_breton name_list_english }
+    name_list = name_list_imperial
+    name_list = name_list_souls
+    name_list = name_list_french
+    name_list = name_list_breton
+    name_list = name_list_english
     coa_gfx = { english_coa_gfx western_coa_gfx french_coa_gfx }
     building_gfx = { western_building_gfx }
     clothing_gfx = { french_clothing_gfx western_clothing_gfx }
