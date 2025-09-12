@@ -1,9 +1,9 @@
 ﻿tr_native_american_beards = {
-	
-	usage = game
-    priority = 10
 
-	tr_na_no_beards = {
+    usage = game
+    selection_behavior = weighted_random
+
+    tr_na_no_beards = {
         dna_modifiers = {
 
             accessory = {
@@ -12,13 +12,14 @@
                 template = no_beard
                 range = { 0 1 } # For the randomness to work correctly
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -26,25 +27,26 @@
 }
 
 tr_native_american_hair = {
-	
-	usage = game
-    priority = 10
-    
+
+    usage = game
+    selection_behavior = weighted_random
+
     tr_na_long_hair_1 = {
         dna_modifiers = {
-			accessory = {
+            accessory = {
                 mode = add
                 gene = hairstyles
                 template = northern_hairstyles_straight
                 range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -56,15 +58,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_fp1_05
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -76,15 +78,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = m_hair_fp3_iranian_01
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -96,15 +98,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = m_hair_fp3_iranian_02
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -116,15 +118,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_fp2_iberian_muslim_03
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -136,15 +138,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_fp2_iberian_christian_03
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -156,15 +158,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_fp1_08
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -176,15 +178,15 @@ tr_native_american_hair = {
                 gene = hairstyles
                 template = all_hairstyles
                 accessory = male_hair_western_07
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -193,8 +195,9 @@ tr_native_american_hair = {
 
 tr_native_american_clothing = {
 
-	usage = game
-    priority = 10
+    usage = game
+    selection_behavior = weighted_random
+    priority = 0
 
     tr_na_clothing_1 = {
         dna_modifiers = {
@@ -204,15 +207,15 @@ tr_native_american_clothing = {
                 template = fp4_western_era3_commoner_clothes
                 accessory = m_clothes_sec_fp4_western_era3_nob_02_lo
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -225,15 +228,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = male_clothes_religious_african_high_01_common
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -246,15 +249,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = male_clothes_secular_indian_nobility_01_common
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -267,15 +270,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = male_clothes_secular_fp1_common_01
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -288,15 +291,15 @@ tr_native_american_clothing = {
                 template = fp4_western_era3_commoner_clothes
                 accessory = f_clothes_sec_fp4_western_era3_nob_02_lo
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -309,15 +312,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = female_clothes_religious_african_high_01_common
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -330,15 +333,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = female_clothes_secular_indian_nobility_01_common
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -351,15 +354,15 @@ tr_native_american_clothing = {
                 template = most_clothes
                 accessory = female_clothes_secular_fp1_common_01
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -368,8 +371,9 @@ tr_native_american_clothing = {
 
 tr_native_american_headgear = {
 
-	usage = game
-    priority = 10
+    usage = game
+    selection_behavior = weighted_random
+    priority = 0
 
     tr_na_headgear_1 = {
         dna_modifiers = {
@@ -379,15 +383,15 @@ tr_native_american_headgear = {
                 template = all_headgear
                 accessory = male_headgear_religious_african_high_01
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -400,15 +404,15 @@ tr_native_american_headgear = {
                 template = all_headgear
                 accessory = male_headgear_religious_northern_high_01
                 type = male
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -421,15 +425,15 @@ tr_native_american_headgear = {
                 template = all_headgear
                 accessory = female_headgear_religious_african_high_01
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -442,15 +446,15 @@ tr_native_american_headgear = {
                 template = western_wedding
                 accessory = f_headgear_spec_ep2_western_wedding
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -463,15 +467,15 @@ tr_native_american_headgear = {
                 template = all_headgear
                 accessory = female_headgear_religious_northern_high_01
                 type = female
-                range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -484,13 +488,14 @@ tr_native_american_headgear = {
                 template = no_headgear
                 range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
@@ -498,9 +503,10 @@ tr_native_american_headgear = {
 }
 
 tr_native_american_legwear = {
-    
-	usage = game
-    priority = 10
+
+    usage = game
+    selection_behavior = weighted_random
+    priority = 1
 
     tr_na_legwear_1 = {
         dna_modifiers = {
@@ -510,13 +516,14 @@ tr_native_american_legwear = {
                 template = mena_common_legwear
                 range = { 0 1 }
             }
-            weight = {
-                base = 0
-                modifier = {
-                    add = 55
-                    culture = {
-                        has_cultural_pillar = heritage_native_american
-                    }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10
+                portrait_shared_clothing_contents_trigger = {
+                    CULTURE_SCOPE = scope:culture
+                    CULTURE_FLAG = native_american
                 }
             }
         }
