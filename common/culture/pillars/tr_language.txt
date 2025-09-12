@@ -660,5 +660,21 @@ language_kurshok = {
 			multiply = 10
 		}
 	}
-	color = altmeris
+	color = agot_blue_light
+}
+language_primative = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_primative
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_primative }
+			multiply = 10
+		}
+	}
+	color = agot_brown
 }
