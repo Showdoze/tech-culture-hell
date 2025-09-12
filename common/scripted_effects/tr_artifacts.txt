@@ -7,17 +7,15 @@
     create_artifact = {
         name = cloranthy_ring
         description = cloranthy_ring_description
+        template = dark_souls_ring
         type = regalia_simple
         visuals = cloranthy_ring
         wealth = scope:wealth
         quality = scope:quality
-        template = dark_souls_ring
         history = {
             type = created_before_history
         }
-        modifier = {
-            character_travel_speed = 1
-        }
+        modifier = cloranthy_ring_modifier
         save_scope_as = newly_created_artifact
         decaying = no
     }

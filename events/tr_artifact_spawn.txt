@@ -7,11 +7,10 @@ tr_artifact_spawn.01 = {
     immediate = { # Weird fucking system, but i guess we gotta give specific characters specific item somehow...
         if = {
             limit = {
-                this = character:tr_ds_siegward
+                exists = character:tr_ds_siegward
+                character:tr_ds_siegward = { is_alive = yes }
             }
-            scope:tr_ds_siegward = {
-                create_artifact_cloranthy_ring = { OWNER = this }
-            }
+            create_artifact_cloranthy_ring = { OWNER = character:tr_ds_siegward }
         }
     }
 }

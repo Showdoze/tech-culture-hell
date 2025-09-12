@@ -43,7 +43,7 @@ on_war_started = {
 
 on_game_start_after_lobby = {
     on_actions = { tr_satanism_start }
-    on_actions = { tr_artifact_spawn }
+    on_actions = { tr_artifact_start_spawn }
 }
 
 ## MODDED HOOKED BELOW
@@ -125,7 +125,7 @@ tr_sayan_check = {
     effect = { tr_play_sayan_music = yes }
 }
 
-tr_artifact_spawn = {
+tr_artifact_start_spawn = {
     events = {
         tr_artifact_spawn.01
     }
