@@ -369,6 +369,21 @@
 	flag = global_regular
 	flag = tribal_era_regular
  }
+ #primative_culture
+  @monkey_fire = "gfx/interface/icons/culture_innovations/monkey_fire.dds"
+  innovation_monkey_fire = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @monkey_fire
+	potential = { this = culture:primative_culture }
+	character_modifier = {
+		negate_health_penalty_add = 0.25
+		epidemic_resistance = 5
+		development_growth_factor = 0.08
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+  }
 #DUNMER
  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
