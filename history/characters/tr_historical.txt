@@ -2,7 +2,7 @@
  tr_lovecraft = {
     name = "H. P. Lovecraft"
 	dna = hp_lovecraft
-	religion = dwemer_religion #Athiest
+	religion = science #Athiest
 	dynasty_house = house_writers
 	culture = american
 	trait = education_learning_4
@@ -109,7 +109,7 @@
  tr_george_rr_martin = {
 	name = "George R. R. Martin"
 	dna = george_rr_martin
-	religion = dwemer_religion 
+	religion = science 
 	dynasty_house = house_writers
 	culture = american
 	trait = education_learning_4
@@ -139,7 +139,7 @@
     name = "Christopher Moltisanti"
 	dna = chris_moltisanti
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_martial_2
 	trait = arrogant
@@ -162,7 +162,7 @@
     name = "Tony Soprano"
 	dna = sopranos_tony
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_martial_3
 	trait = arrogant
@@ -188,7 +188,7 @@
     name = "A.J. Soprano"
 	#dna = sopranos_tony
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_stewardship_2
 	trait = content
@@ -204,7 +204,7 @@
     name = "Meadow Soprano"
 	#dna = sopranos_tony
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_diplomacy_2
 	trait = family_first
@@ -220,7 +220,7 @@
  tr_sopranos_tony_dad = {
     name = "Johnny Soprano"
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_martial_3
 	trait = arrogant
@@ -237,7 +237,7 @@
     name = "Livia Soprano"
 	#dna = sopranos_tony
 	religion = catholic 
-    #dynasty_house = house_mafia
+    #dynasty = mafia
 	female = yes
 	culture = italian_american
 	trait = education_intrigue_4
@@ -264,7 +264,7 @@
  tr_sopranos_junor = {
     name = "Junor Soprano"
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_stewardship_2
 	trait = arrogant
@@ -282,7 +282,7 @@
  sopranos_founder = {
 	name = "Corrado Soprano"
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	trait = education_stewardship_2
 	trait = diligent
@@ -298,7 +298,7 @@
     name = "Jack Napier"
 	dna = joker_1989
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = american
 	trait = education_intrigue_4
 	trait = intellect_good_2
@@ -318,7 +318,7 @@
     name = "Furio Giunta"
 	dna = furio_giunta
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = sicilian
 	trait = education_martial_prowess_3
 	trait = physique_good_1
@@ -337,7 +337,7 @@
     name = "John Sacrimoni"
 	dna = john_sacrimoni_soprano
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_bobby_walnuts
 	trait = education_intrigue_3
@@ -357,7 +357,7 @@
     name = "Phil Leotardo"
 	dna = Frank_Vincent_actor
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_bobby_walnuts
 	sexuality = bisexual
@@ -377,7 +377,7 @@
     name = "Vito"
 	dna = vito_no
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_mafia_founder
 	trait = education_martial_2
@@ -395,7 +395,7 @@
     name = "Bobby Walnuts D'Amico"
 	dna = vito_no
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_mafia_founder
 	trait = education_martial_2
@@ -413,7 +413,7 @@
     name = "Don"
 	dna = James_Randal
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian
 	trait = education_intrigue_3
 	trait = venerable
@@ -430,7 +430,7 @@
     name = "Don"
 	dna = al_pacino
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_mafia_founder_dad
 	trait = education_diplomacy_3
@@ -450,7 +450,7 @@
     name = "Micheal"
 	dna = al_pacino
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = italian_american
 	father = tr_mafia_founder_dad
 	trait = education_diplomacy_3
@@ -466,7 +466,7 @@
     name = "Oswald Cobblepot"
 	dna = oswald_cobblepot_the_penguin
 	religion = stoicism
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = american
 	father = tr_oswald_cobblepot_the_penguin
 	trait = education_intrigue_4
@@ -490,7 +490,7 @@
     name = "Oswald Cobb"
 	dna = oswald_cobblepot_the_penguin
 	religion = catholic 
-    dynasty_house = house_mafia
+    dynasty = mafia
 	culture = american
 	mother = tr_oswald_cobblepot_mother
 	father = tr_mafia_founder
@@ -532,7 +532,7 @@
 	name = "Al Capone"
 	religion = catholic 
 	culture = italian_american
-	dynasty_house = house_mafia
+	dynasty = mafia
 	father = tr_mafia_founder_son
 	dna = Alphonse_Capone
 	trait = education_stewardship_3
@@ -735,7 +735,7 @@
    tr_fake_roman_1 = {
 	name = "Oldgustus"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	trait = just
 	trait = brave
@@ -755,7 +755,7 @@
    tr_fake_roman_2_victom = {
 	name = "Zooatonius"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_1
 	trait = twin
@@ -765,7 +765,7 @@
    tr_fake_roman_2_victom_2 = {
 	name = "Booatonius"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_1
 	trait = twin
@@ -775,7 +775,7 @@
    tr_fake_roman_2 = {
 	name = "Tideberius"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_1
 	trait = sadistic
@@ -795,7 +795,7 @@
    tr_fake_roman_caligula = {
 	name = "Caligula"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_1
 	trait = lifestyle_reveler
@@ -813,7 +813,7 @@
    tr_fake_roman_claudius = {
 	name = "Claudeius"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_1
 	trait = scholar
@@ -830,7 +830,7 @@
    }
    tr_fake_roman_nero = {
 	name = "Nero"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_claudius
@@ -849,7 +849,7 @@
   }
    tr_fake_roman_vespaian = {
 	name = "Vesppasian"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_1
@@ -868,7 +868,7 @@
   }
    tr_fake_roman_titus = {
 	name = "Kitus"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_vespaian
@@ -883,7 +883,7 @@
  }
    tr_fake_roman_domitian = {
 	name = "Domitian"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_vespaian
@@ -902,7 +902,7 @@
   }	
    tr_fake_roman_nerva = {
 	name = "Nerdva"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_vespaian
@@ -919,7 +919,7 @@
   }
    tr_fake_roman_trajan = {
 	name = "Trayjan"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_nerva
@@ -941,7 +941,7 @@
    tr_fake_roman_hadrian = {
 	name = "Hidrian"
 	sexuality = homosexual
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_trajan
@@ -963,7 +963,7 @@
   }
    tr_fake_roman_antoninus = {
 	name = "Antoninus"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_hadrian
@@ -980,7 +980,7 @@
   }
    tr_fake_roman_marcus_aurelius = {
 	name = "Markus"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_antoninus
@@ -1000,7 +1000,7 @@
    }
    tr_fake_roman_commodus = {
 	name = "Cummodus"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_marcus_aurelius
@@ -1017,7 +1017,7 @@
    } 
    tr_fake_roman_commodus_brother = {
 	name = "Sala"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_marcus_aurelius
@@ -1030,7 +1030,7 @@
    }
    tr_fake_roman_septimius = {
 	name = "Septimius"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_antoninus
@@ -1043,7 +1043,7 @@
    }
    tr_fake_roman_septimius_brother = {
 	name = "Biggus Dickus"
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	religion = roman_pagan
 	culture = roman
 	father = tr_fake_roman_antoninus
@@ -1059,7 +1059,7 @@
 	name = "Getia"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_septimius
 	trait = trusting
 	trait = education_diplomacy_2
@@ -1070,7 +1070,7 @@
 	name = "Caracalla"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_septimius
 	trait = callous
 	trait = vengeful
@@ -1087,7 +1087,7 @@
 	name = "Gaballus"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_caracalla
 	sexuality = bisexual
 	trait = lifestyle_reveler
@@ -1109,7 +1109,7 @@
 	name = "Alexander"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_caracalla
 	trait = honest
 	trait = humble
@@ -1123,7 +1123,7 @@
 	name = "Maximinus"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_septimius
 	trait = strong
 	trait = callous
@@ -1141,7 +1141,7 @@
 	name = "Diecletian"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_thrax
 	trait = brave
 	trait = diligent
@@ -1163,7 +1163,7 @@
 	female = yes
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_thrax
 	trait = humble
 	trait = content
@@ -1177,7 +1177,7 @@
 	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_diocletian
 	mother = tr_fake_roman_diocletian_sister
 	trait = zealous
@@ -1195,7 +1195,7 @@
 	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constantine1
 	mother = tr_fake_roman_diocletian_sister
 	trait = greedy
@@ -1210,7 +1210,7 @@
 	name = "Cuntsans"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constantine1
 	mother = tr_fake_roman_diocletian_sister
 	sexuality = homosexual
@@ -1224,7 +1224,7 @@
 	name = "Julian"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constantine1
 	mother = tr_fake_roman_diocletian_sister
 	trait = scholar
@@ -1246,7 +1246,7 @@
 	name = "Theotrosius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_julian
 	trait = arbitrary
 	trait = lifestyle_mystic
@@ -1260,7 +1260,7 @@
 	name = "Arecatius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_theodosius
 	dna = 70519_arcadius
 	trait = humble
@@ -1280,7 +1280,7 @@
 	dna = 145227_honorius
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_theodosius
 	trait = arbitrary
 	trait = lazy
@@ -1300,7 +1300,7 @@
 	name = "Theotrosius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_arcadius
 	trait = honest
 	trait = gregarious
@@ -1318,7 +1318,7 @@
 	name = "Markian"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_julian
 	trait = zealous
 	trait = greedy
@@ -1333,7 +1333,7 @@
 	name = "Leo"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_julian
 	trait = trusting
 	trait = content
@@ -1347,7 +1347,7 @@
 	name = "Leo"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_zenon
 	trait = ill
 	trait = education_diplomacy_1
@@ -1359,7 +1359,7 @@
 	name = "Zeno"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_leon1
 	trait = honest
 	trait = calm
@@ -1372,7 +1372,7 @@
 	name = "Anastasius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_zenon
 	trait = temperate
 	trait = trusting
@@ -1394,7 +1394,7 @@
 	name = "Justin"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_zenon
 	trait = intellect_good_1
 	trait = ambitious
@@ -1407,7 +1407,7 @@
 	dna = 70512_Justinian
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_justin
 	trait = just
 	trait = blues_supporter
@@ -1426,7 +1426,7 @@
 	name = "Justin"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_justinian
 	trait = lunatic_1
 	trait = paranoid
@@ -1444,7 +1444,7 @@
 	name = "Tideberius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_justin2
 	trait = generous
 	trait = temperate
@@ -1462,7 +1462,7 @@
 	name = "Heraclius"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_tiberius2
 	trait = diligent
 	trait = brave
@@ -1481,7 +1481,7 @@
 	name = "Slutia"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_tiberius2
 	dna = Irene_of_Athens
 	female = yes
@@ -1501,7 +1501,7 @@
 	name = "Cuntantine"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_heraclius
 	mother = tr_fake_roman_heraclius_sister
 	trait = ill
@@ -1516,7 +1516,7 @@
 	name = "Heraclonas"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_heraclius
 	mother = tr_fake_roman_heraclius_sister
 	trait = inbred
@@ -1533,7 +1533,7 @@
 	name = "Cuntsans"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constantine3
 	mother = tr_fake_roman_heraclius_sister
 	trait = arbitrary
@@ -1550,7 +1550,7 @@
 	name = "Pumilus"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constans2
 	trait = poet
 	trait = ambitious
@@ -1565,7 +1565,7 @@
 	name = "Justinian"
 	religion = roman_pagan
 	culture = roman
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	father = tr_fake_roman_constans2
 	mother = tr_fake_roman_heraclius_sister
 	trait = arbitrary
@@ -1582,7 +1582,7 @@
    tr_fake_roman_dayless = {
 	name = "Dayless"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_heraclonas
 	give_nickname = nick_the_conqueror
@@ -1604,7 +1604,7 @@
    tr_fake_roman_dayless_kid_1 = {
 	name = "Daylia"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_dayless
 	female = yes
@@ -1615,7 +1615,7 @@
    tr_fake_roman_dayless_kid_2 = {
 	name = "Daylia"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_dayless
 	female = yes
@@ -1626,7 +1626,7 @@
    tr_fake_roman_daylen = {
 	name = "Daylen Namaran"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_dayless
 	trait = deviant
@@ -1644,7 +1644,7 @@
    tr_historia_augusta_emperor = {
 	name = "Censorinus"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_justinian2
 	dna = julius_caesar_tusculum_bust
@@ -1655,7 +1655,7 @@
    tr_historia_augusta_historian = {
 	name = "Aelius Cordus"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_historia_augusta_emperor
 	trait = education_learning_2
@@ -1666,7 +1666,7 @@
    tr_historia_augusta_emperor_daughter = {
 	name = "Slutian"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_historia_augusta_emperor
 	trait = education_intrigue_2
@@ -1679,7 +1679,7 @@
    tr_fake_roman_unus_oculus = {
 	name = "Unus Oculus"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_historia_augusta_historian
 	trait = education_martial_3
@@ -1694,7 +1694,7 @@
 	name = "Octavian"
 	dna = other_augustus
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_historia_augusta_historian
 	trait = education_diplomacy_3
@@ -1714,7 +1714,7 @@
 	name = "Octavia"
 	dna = other_augustus
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_historia_augusta_historian
 	female = yes
@@ -1734,7 +1734,7 @@
 	name = "Basil"
 	dna = 1700_basileios_makedon
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_other_augustus
 	mother = tr_other_augustus1
@@ -1756,7 +1756,7 @@
    tr_fake_roman_leo3 = {
 	name = "Leo"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_other_augustus
 	mother = tr_other_augustus1
@@ -1771,7 +1771,7 @@
    tr_fake_roman_constantine4 = {
 	name = "Cuntstantine"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_basil
 	mother = tr_other_augustus1
@@ -1784,7 +1784,7 @@
    tr_fake_roman_basil2 = {
 	name = "Basil"
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_constantine4
 	trait = greedy
@@ -1801,7 +1801,7 @@
 	name = "Konstantinos"
 	dna = 1732_konstantinos_x
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_basil2
 	trait = arbitrary
@@ -1816,7 +1816,7 @@
 	name = "Eudokia"
 	dna = 1733_eudokia
 	religion = roman_pagan
-	dynasty_house = house_fake_roman
+	dynasty = fake_roman
 	culture = roman
 	father = tr_fake_roman_konstantinos_x
 	female = yes
@@ -1935,7 +1935,7 @@
     name = "Winston Churchill"
 	dna = churchhill
 	religion = stoicism
-	dynasty_house = house_allies
+	dynasty = british
 	culture = brit
 	trait = education_stewardship_3
     trait = callous
@@ -1967,7 +1967,7 @@
     name = "Joseph Stalin"
 	dna = stalin_old
 	religion = stoicism 
-    dynasty_house = house_zastova
+    dynasty = zastova
 	culture = georgian
 	trait = education_intrigue_3
     trait = callous
@@ -2013,7 +2013,7 @@ tr_gandhi = {
   tr_usa_per_1 = {
 	name = "George Washington"
 	religion = stoicism
-	dynasty_house = house_usa
+	dynasty = usa
 	culture = brit
 	dna = George_Washington
 	trait = education_martial_3
@@ -2030,7 +2030,7 @@ tr_gandhi = {
  tr_usa_per_36 = {
 	name = "Lyndon B. Johnson"
 	religion = stoicism
-	dynasty_house = house_usa
+	dynasty = usa
 	culture = american
 	dna = Lyndon_Baines_Johnson
 	trait = education_stewardship_3
