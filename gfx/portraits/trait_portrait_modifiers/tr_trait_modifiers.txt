@@ -179,12 +179,12 @@ hollow = {
                     value = 5.0
                     template = spindly
                 }
-				morph = {
-					mode = add
-					gene = gene_leprosy
-					value = 1.0
-					template = leprosy
-				}
+                morph = {
+                    mode = add
+                    gene = gene_leprosy
+                    value = 1.0
+                    template = leprosy
+                }
                 accessory = {
                     mode = modify
                     gene = eye_accessory
@@ -226,12 +226,12 @@ barbarian_giant = {
         traits = { class_bar_giant }
         dna_modifiers = {
             human = {
-				morph = {
-					mode = modify_multiply
-					gene = gene_height
-					template = giant_height
-					value = 0
-				}
+                morph = {
+                    mode = modify_multiply
+                    gene = gene_height
+                    template = giant_height
+                    value = 0
+                }
             }
         }
     }
@@ -241,12 +241,12 @@ monk_drunk = {
         traits = { class_monk_drunk }
         dna_modifiers = {
             human = {
-				morph = {
-					mode = add
-					gene = gene_drunkard
-					range = { 0.75 1.0 }
-					template = drunkard
-				}
+                morph = {
+                    mode = add
+                    gene = gene_drunkard
+                    range = { 0.75 1.0 }
+                    template = drunkard
+                }
             }
         }
     }
@@ -258,15 +258,39 @@ immortal = {
             human = {
                 morph = {
                     mode = replace
-					gene = gene_balding_hair_effect
-					template = no_baldness
+                    gene = gene_balding_hair_effect
+                    template = no_baldness
                     range = { 1 1 }
                 }
                 morph = {
                     mode = replace
-					gene = gene_age
-					template = no_aging
+                    gene = gene_age
+                    template = no_aging
                     range = { 1 1 }
+                }
+                morph = {
+                    mode = modify
+                    gene = gene_bs_body_type
+                    value = 1
+                    template = body_fat_head_fat_full
+                }
+                morph = {
+                    mode = modify
+                    gene = gene_bs_jaw_def
+                    value = 1
+                    template = jaw_def_neg
+                }
+                morph = {
+                    mode = modify
+                    gene = gene_eye_shut
+                    value = 0.5
+                    template = eye_shut_pos
+                }
+                morph = {
+                    mode = modify
+                    gene = gene_bs_cheek_height
+                    value = 1
+                    template = cheek_height_pos
                 }
             }
         }
