@@ -51,9 +51,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @samurai
-	potential = {	
-		this = culture:japanese		
-	}
+	potential = { this = culture:japanese }
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.1
 		movement_speed = 0.01
@@ -64,9 +62,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @samurai
-	potential = {	
-		this = culture:japanese		
-	}
+	potential = { this = culture:japanese }
 	maa_upgrade = {
         type = archers
         damage = 1
@@ -77,9 +73,7 @@
 	group = culture_group_military
 	culture_era = culture_era_renaissance
 	icon = @tanegashima
-	potential = {	
-		this = culture:japanese		
-	}
+	potential = { this = culture:japanese }
 	can_progress = {
 		has_innovation = innovation_gunpowder
 		has_innovation = innovation_steel_work
@@ -90,9 +84,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_high_medieval
 	icon = @administration_1
-	potential = {	
-		this = culture:japanese		
-	}
+	potential = { this = culture:japanese }
 	character_modifier = {
 		development_growth_factor = 0.1
 		courtly_opinion = 5
@@ -102,9 +94,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @jap_build
-	potential = {	
-		this = culture:japanese		
-	}
+	potential = { this = culture:japanese }
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -371,6 +361,7 @@
  }
  #primative_culture
   @monkey_fire = "gfx/interface/icons/culture_innovations/monkey_fire.dds"
+   @flinting_stone = "gfx/interface/icons/culture_innovations/flinting_stone.dds"
   innovation_monkey_fire = {
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
@@ -381,8 +372,28 @@
 		epidemic_resistance = 5
 		development_growth_factor = 0.08
 	}
-	flag = global_regular
-	flag = tribal_era_regular
+	#flag = global_regular
+	flag = antiquity_era_regional
+  }
+  innovation_flinting_stone = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @monkey_fire
+	potential = {	
+		OR = {
+		    this = culture:primative_culture	
+			has_cultural_pillar = heritage_native_american
+			this = culture:guanches
+		}	
+	}
+	maa_upgrade = {
+		type = skirmishers
+		damage = 3
+	}
+	character_modifier = {
+	}
+	#flag = global_regular
+	flag = antiquity_era_regional
   }
 #DUNMER
  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
@@ -394,9 +405,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @ashlander_customs
-	potential = {
-		this = culture:dunmer
-	}
+	potential = { this = culture:dunmer }
 	character_modifier = {
 		county_opinion_add = 5
 	}
@@ -407,9 +416,7 @@
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon =  @housearmor
-	potential = {
-		this = culture:dunmer
-	}
+	potential = { this = culture:dunmer }
 	maa_upgrade = {
 		type = skirmishers
 		toughness = 3
@@ -436,9 +443,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @silt_strider
-	potential = {
-		this = culture:dunmer
-	}
+	potential = { this = culture:dunmer }
 	character_modifier = {
 		development_growth_factor = 0.1
 		movement_speed = 0.15
@@ -450,9 +455,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @es_dunmer_1
-	potential = {	
-		this = culture:dunmer		
-	}
+	potential = { this = culture:dunmer }
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -467,9 +470,7 @@
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dwemer_sphere
-	potential = {
-		this = culture:dwemer
-	}
+	potential = { this = culture:dwemer }
 	can_progress = {
 		has_innovation = innovation_bronze_work
 	}	
@@ -478,9 +479,7 @@
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dwemer_centurion
-	potential = {
-		this = culture:dwemer
-	}
+	potential = { this = culture:dwemer }
 	can_progress = {
 		has_innovation = innovation_sphere_centurion
 	}	
@@ -489,9 +488,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_tone
-	potential = {
-		this = culture:dwemer
-	}
+	potential = { this = culture:dwemer }
 	county_modifier = {
 		building_slot_add = 1
 	}
@@ -508,9 +505,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_crossbow
-	potential = {
-		this = culture:dwemer
-	}
+	potential = { this = culture:dwemer }
 	character_modifier = {
 		build_speed = -0.01
 		build_gold_cost = -0.01
@@ -525,9 +520,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_space
-	potential = {
-		this = culture:dwemer
-	}
+	potential = { this = culture:dwemer }
 	character_modifier = {
 		build_speed = -0.01
 		build_gold_cost = -0.01
@@ -543,9 +536,7 @@
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
-	potential = {	
-		this = culture:dwemer		
-	}
+	potential = { this = culture:dwemer }
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -595,8 +586,8 @@
  }
 #khajitt cats
  @alfiq = "gfx/interface/icons/culture_innovations/ai_innovation_alfiq.dds"
- @senche_raht = "gfx/interface/icons/culture_innovations/ai_innovation_senche_raht.dds"
- @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
+  @senche_raht = "gfx/interface/icons/culture_innovations/ai_innovation_senche_raht.dds"
+  @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
  innovation_alfiq = { #Khajiiti version of War Magic. Should do everything that innovation does, except also unlock their Alfiq MaA 
 	group = culture_group_military
 	culture_era = culture_era_tribal
