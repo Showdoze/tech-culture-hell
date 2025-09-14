@@ -1,0 +1,18 @@
+﻿namespace = tr_start
+
+tr_start.01 = {
+    hidden = yes
+
+    immediate = {
+        random_list = {
+            4 = {
+				trigger = { NOT = { has_trait = mute } }
+				add_trait = mute
+			}
+            3 = {
+				trigger = { NOT = { has_trait = deaf } }
+				add_trait = deaf
+			}
+        }
+    }
+}
