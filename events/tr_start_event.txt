@@ -6,13 +6,21 @@ tr_start.01 = {
     immediate = {
         random_list = {
             4 = {
-				trigger = { NOT = { has_trait = mute } }
-				add_trait = mute
-			}
+                if = {
+                    limit = {
+                        NOT = { has_trait = mute }
+                    }
+                    add_trait = mute
+                }
+            }
             3 = {
-				trigger = { NOT = { has_trait = deaf } }
-				add_trait = deaf
-			}
+                if = {
+                    limit = {
+                        NOT = { has_trait = deaf }
+                    }
+                    add_trait = deaf
+                }
+            }
         }
     }
 }
