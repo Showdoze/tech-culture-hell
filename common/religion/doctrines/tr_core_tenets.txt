@@ -270,35 +270,16 @@ tr_doctrines = {
 			close_relative_opinion = 5
 		}
 	}
-	tenet_kokiri = {
-		icon = core_tenet_inner_journey
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = { 
-				possessed = 2 calm temperate brave just follow_mage_earth class_cleric_nature 
-				class_druid 
-			}
-			sins = { 
-				wrathful gluttonous craven arbitrary 
-			}
-		}
-		parameters = {
-			spirit_possession_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-		}
-	}
 	tenet_moon_worship = {
 		icon = core_tenet_moon_cat
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
 			virtues = { 
-				gluttonous generous gregarious patient lifestyle_mystic 
-				class_druid_moon class_druid_star 
+				generous gregarious patient lifestyle_mystic follow_selune 
+				class_druid_moon class_druid_star ds_covenant_darkmoon follow_eilistraee 
 			}
-			sins = { temperate callous shy impatient }
+			sins = { callous shy impatient follow_shar follow_lolth }
 		}
 		parameters = {
 			meditation_mechanics_active = yes
@@ -367,32 +348,6 @@ tr_doctrines = {
 			controlled_province_advantage = 5
 			monthly_piety_gain_per_dread_add = 0.01
 			close_relative_opinion = 5
-		}
-	}
-	tenet_bosmer = {
-		icon = core_tenet_bosmer
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			conquest_cb_enabled = yes
-			invasion_cb_enabled = yes
-			human_sacrifice_active = yes
-			cannibalism_legal = yes
-			piety_from_hunts_active = yes
-		}
-		character_modifier = {
-			dread_baseline_add = 5
-			prowess = 2
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
-		}
-		traits = {
-			virtues = { 
-				lifestyle_hunter lifestyle_herbalist lifestyle_gardener follow_mage_earth 
-			    fickle just generous cannibal = 2 
-				class_ranger 
-			}
-		    sins = { lazy stubborn arbitrary shy }
 		}
 	}
 	tenet_sun_stars = {

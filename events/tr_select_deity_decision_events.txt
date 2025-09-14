@@ -62,6 +62,9 @@ tr_select_deity.01 = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision
@@ -147,6 +150,9 @@ tr_select_deity.01 = {
                         faith = faith:yumaism
                         faith = faith:cult_of_tlaloc
                         faith = faith:cult_of_tezcatlipoca
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -456,6 +462,7 @@ tr_select_deity.01 = {
                     has_trait = possessed_genetic
                     has_trait = lunatic_1
                     has_trait = lunatic_genetic
+                    faith = faith:deep_cult
                 }
             }
         }
@@ -1099,7 +1106,21 @@ tr_select_deity.01 = {
         }
         add_trait = follow_caleb
     }
-
+    option = {
+        name = god_choice_madara
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:blood_faith
+                    faith = faith:dnd_faith
+                }
+                NOT = {
+                    has_trait = follow_madara
+                }
+            }
+        }
+        add_trait = follow_madara
+    }
     ###DND
 
     option = {
@@ -1148,25 +1169,13 @@ tr_select_deity.01 = {
         add_trait = follow_myrkul
     }
     option = {
-        name = god_choice_madara
-        trigger = {
-            AND = {
-                OR = {
-                    faith = faith:blood_faith
-                    faith = faith:dnd_faith
-                }
-                NOT = {
-                    has_trait = follow_madara
-                }
-            }
-        }
-        add_trait = follow_madara
-    }
-    option = {
         name = god_choice_bahamut
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    faith = faith:dragon_cult
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_bahamut
                 }
@@ -1178,7 +1187,10 @@ tr_select_deity.01 = {
         name = god_choice_corellon_larethian
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:elf_culture
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_corellon_larethian
                 }
@@ -1190,7 +1202,10 @@ tr_select_deity.01 = {
         name = god_choice_cyric
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_cyric
                 }
@@ -1202,7 +1217,12 @@ tr_select_deity.01 = {
         name = god_choice_eilistraee
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:drow
+                    faith = faith:dnd_faith
+                    faith = faith:green_cult
+                    faith = faith:twomoonsdance
+                }
                 NOT = {
                     has_trait = follow_eilistraee
                 }
@@ -1214,7 +1234,10 @@ tr_select_deity.01 = {
         name = god_choice_garl_glittergold
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:gnome
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_garl_glittergold
                 }
@@ -1226,7 +1249,10 @@ tr_select_deity.01 = {
         name = god_choice_gond
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:gnome
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_gond
                 }
@@ -1238,7 +1264,10 @@ tr_select_deity.01 = {
         name = god_choice_gruumsh
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:warsong
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_gruumsh
                 }
@@ -1250,7 +1279,10 @@ tr_select_deity.01 = {
         name = god_choice_helm
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_helm
                 }
@@ -1262,7 +1294,10 @@ tr_select_deity.01 = {
         name = god_choice_ilmater
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_ilmater
                 }
@@ -1274,7 +1309,10 @@ tr_select_deity.01 = {
         name = god_choice_jergal
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_jergal
                 }
@@ -1286,7 +1324,10 @@ tr_select_deity.01 = {
         name = god_choice_kelemvor
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_kelemvor
                 }
@@ -1298,7 +1339,10 @@ tr_select_deity.01 = {
         name = god_choice_kereska
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    faith = faith:dragon_cult
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_kereska
                 }
@@ -1310,7 +1354,10 @@ tr_select_deity.01 = {
         name = god_choice_laduguer
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_laduguer
                 }
@@ -1322,7 +1369,10 @@ tr_select_deity.01 = {
         name = god_choice_lathander
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_lathander
                 }
@@ -1334,7 +1384,10 @@ tr_select_deity.01 = {
         name = god_choice_lolth
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_lolth
                 }
@@ -1346,7 +1399,10 @@ tr_select_deity.01 = {
         name = god_choice_loviatar
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_loviatar
                 }
@@ -1358,7 +1414,11 @@ tr_select_deity.01 = {
         name = god_choice_mielikki
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                    faith = faith:green_cult
+                }
                 NOT = {
                     has_trait = follow_mielikki
                 }
@@ -1370,7 +1430,10 @@ tr_select_deity.01 = {
         name = god_choice_moradin
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:old_dwarven
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_moradin
                 }
@@ -1382,7 +1445,10 @@ tr_select_deity.01 = {
         name = god_choice_mystra
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_mystra
                 }
@@ -1394,7 +1460,10 @@ tr_select_deity.01 = {
         name = god_choice_oghma
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_oghma
                 }
@@ -1406,7 +1475,11 @@ tr_select_deity.01 = {
         name = god_choice_selune
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                    faith = faith:twomoonsdance
+                }
                 NOT = {
                     has_trait = follow_selune
                 }
@@ -1418,7 +1491,10 @@ tr_select_deity.01 = {
         name = god_choice_shar
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_shar
                 }
@@ -1430,7 +1506,11 @@ tr_select_deity.01 = {
         name = god_choice_silvanus
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                    faith = faith:green_cult
+                }
                 NOT = {
                     has_trait = follow_silvanus
                 }
@@ -1442,7 +1522,10 @@ tr_select_deity.01 = {
         name = god_choice_talos
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_talos
                 }
@@ -1454,7 +1537,10 @@ tr_select_deity.01 = {
         name = god_choice_tempus
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_tempus
                 }
@@ -1466,7 +1552,10 @@ tr_select_deity.01 = {
         name = god_choice_tiamat
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    faith = faith:dragon_cult
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_tiamat
                 }
@@ -1478,7 +1567,10 @@ tr_select_deity.01 = {
         name = god_choice_tymora
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_tymora
                 }
@@ -1490,7 +1582,10 @@ tr_select_deity.01 = {
         name = god_choice_tyr
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_tyr
                 }
@@ -1502,7 +1597,11 @@ tr_select_deity.01 = {
         name = god_choice_umberlee
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:deep_cult
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_umberlee
                 }
@@ -1514,7 +1613,10 @@ tr_select_deity.01 = {
         name = god_choice_vlaakith
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:gith
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_vlaakith
                 }
@@ -1526,7 +1628,10 @@ tr_select_deity.01 = {
         name = god_choice_waukeen
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    #culture = culture:drow
+                    faith = faith:dnd_faith
+                }
                 NOT = {
                     has_trait = follow_waukeen
                 }
@@ -1538,7 +1643,11 @@ tr_select_deity.01 = {
         name = god_choice_yondalla
         trigger = {
             AND = {
-                faith = faith:dnd_faith
+                OR = {
+                    culture = culture:halfling
+                    faith = faith:dnd_faith
+                    faith = faith:green_cult
+                }
                 NOT = {
                     has_trait = follow_yondalla
                 }
