@@ -107,7 +107,8 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				architect cynical scholar journaller class_cleric_knowledge intellect_good_1 intellect_good_2 intellect_good_3
+				architect cynical scholar journaller class_cleric_knowledge 
+				intellect_good_1 intellect_good_2 intellect_good_3
 			}
 			sins = { 
 				intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull 
@@ -189,6 +190,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				fickle patient content reincarnation class_sorcerer_dragon 
+				class_ranger_gloom class_ranger_master class_ranger_hunter 
 			}
 			sins = { 
 				stubborn vengeful arrogant 
@@ -228,7 +230,7 @@ tr_doctrines = {
 		piety_cost = { value =  690 }
 		traits = {
 			virtues = { 
-				born_in_the_purple august overseer class_paladin_crown 
+				born_in_the_purple august overseer class_paladin_crown class_bard_college_of_valour 
 			    class_bard_college_of_valour class_cleric_knowledge class_fighter_master 
 			}
 			sins = { 
@@ -279,7 +281,9 @@ tr_doctrines = {
 				generous gregarious patient lifestyle_mystic follow_selune 
 				class_druid_moon class_druid_star ds_covenant_darkmoon follow_eilistraee 
 			}
-			sins = { callous shy impatient follow_shar follow_lolth }
+			sins = { 
+				callous shy impatient follow_shar follow_lolth 
+			}
 		}
 		parameters = {
 			meditation_mechanics_active = yes
@@ -303,7 +307,7 @@ tr_doctrines = {
 			}
 			sins = { 
 				lazy cynical lifestyle_mystic drunkard follow_mage_death 
-				class_wizard_necromancy class_cleric_death 
+				class_wizard_necromancy class_cleric_death class_monk_drunk 
 			}
 		}
 		character_modifier = {
@@ -449,14 +453,13 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				scholar journaller shy humble confider class_cleric_knowledge 
+				scholar journaller shy humble confider class_cleric_knowledge class_bard_college_of_lore 
 			}
 			sins = { deceitful disloyal sadistic reclusive }
 		}
 		character_modifier = {
 			ignore_opinion_of_different_faith = yes
 			learning_per_piety_level = 2
-			ignore_opinion_of_different_faith = 10
 		}
 	}
 	tenet_mechanist = {
@@ -654,10 +657,10 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				generous diligent honest class_sorcerer_dragon follow_kereska follow_bahamut 
-				follow_tiamat 
+				generous diligent class_sorcerer_dragon 
+				follow_kereska follow_bahamut follow_tiamat 
 			}
-			sins = { greedy lazy deceitful }
+			sins = { greedy lazy }
 		}
 		character_modifier = {
 			monthly_intrigue_lifestyle_xp_gain_mult = 0.1
@@ -953,10 +956,12 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				profligate arrogant greedy avaricious ambitious gluttonous class_rogue_thief 
+				arrogant greedy avaricious ambitious gluttonous class_rogue_thief 
+				class_paladin_oathbreaker class_paladin_crown 
 			}
 			sins = { 
 				peasant_leader populist_leader improvident humble generous content temperate 
+				class_paladin_ancient class_paladin_devotion 
 			}
 		}
 	}
@@ -979,6 +984,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				berserker athletic lifestyle_herbalist brave lifestyle_hunter ds_covenant_farron 
+				class_ranger_master class_ranger_hunter 
 			}
 			sins = { 
 				albino craven ds_covenant_aldrich 
@@ -1032,7 +1038,7 @@ tr_doctrines = {
 			virtues = { 
 				lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
 			    ds_covenant_farron follow_mage_earth 
-				class_ranger class_cleric_nature class_druid 
+				class_ranger_swarmkeeper class_cleric_nature class_druid_land 
 			}
 			sins = { 
 				craven deceitful forgiving follow_mage_water lazy stubborn arbitrary shy 
