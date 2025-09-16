@@ -275,7 +275,7 @@ fantasy_religion = {
 				TheYorkshireRipper ThePiousPoisoner TheHammerman TheToolBoxKillers 
 				LarryBittaker TheHillsideStranglers KennethBianchi AngeloBuono 
 				BaselineKiller WalterWhite god_bhaal god_bane god_myrkul god_cyric 
-				god_iblis Judas 
+				god_iblis Judas Bloodmopper 
 		    }
 	        reserved_female_names = {	
 				aileen_wuornos BelleGunness JaneToppan RosemaryWest TheZodiacKiller 
@@ -621,7 +621,6 @@ fantasy_religion = {
 	        doctrine = doctrine_adultery_women_accepted
 	        doctrine = doctrine_deviancy_shunned
 	        doctrine = doctrine_witchcraft_accepted
-			doctrine = doctrine_pluralism_pluralistic
 	        #Clerical Functions
 	        doctrine = doctrine_clerical_gender_either
 	        doctrine = doctrine_clerical_marriage_allowed
@@ -808,20 +807,20 @@ fantasy_religion = {
 			 #holy_site = hs_hatching_pools
 			 #holy_site = hs_vakka_bok
 			 #holy_site = hs_thorn
-			doctrine = doctrine_gender_equal
-			doctrine = doctrine_pluralism_pluralistic
-			#Marriage
-			doctrine = doctrine_divorce_allowed
-			doctrine = doctrine_consanguinity_cousins 
-			#tribes are pretty self-contained but I don't see them doing avunculate
-			#Crimes
-			doctrine = doctrine_witchcraft_accepted
-			#Clerical Functions
-			doctrine = doctrine_clerical_function_alms_and_pacification
-			doctrine = doctrine_clerical_gender_either
-			#Allow pilgrimages
-			#Funeral tradition
-			doctrine = doctrine_funeral_grave_stake
+			#doctrine 
+			 doctrine = doctrine_gender_equal
+			 #Marriage
+			  doctrine = doctrine_divorce_allowed
+			  doctrine = doctrine_consanguinity_cousins 
+			 #tribes are pretty self-contained but I don't see them doing avunculate
+			 #Crimes
+			  doctrine = doctrine_witchcraft_accepted
+			 #Clerical Functions
+			  doctrine = doctrine_clerical_function_alms_and_pacification
+			  doctrine = doctrine_clerical_gender_either
+			  #Allow pilgrimages
+			 #Funeral tradition
+			  doctrine = doctrine_funeral_sky_burial
 			localization = {
 				#HighGod
 				 HighGodName  = god_hist_name
@@ -981,7 +980,7 @@ fantasy_religion = {
 		     #Marriage
 	          doctrine = doctrine_concubines
 	          doctrine = doctrine_divorce_disallowed
-	          doctrine = doctrine_bastardry_none
+	          #doctrine = doctrine_bastardry_none
 	          doctrine = doctrine_consanguinity_unrestricted
           	 #Crimes
 	          doctrine = doctrine_homosexuality_shunned
@@ -1227,7 +1226,6 @@ fantasy_religion = {
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
-			doctrine = doctrine_pluralism_pluralistic
 			doctrine = unreformed_faith_doctrine
 			doctrine = tenet_astrology
 			doctrine = tenet_hyrule
@@ -1412,7 +1410,6 @@ fantasy_religion = {
 			 doctrine = special_doctrine_is_islamic_faith
 			 doctrine = doctrine_bastardry_none
 	         doctrine = doctrine_consanguinity_cousins
-			 doctrine = doctrine_pluralism_pluralistic
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_stoic
 			#Tenets
@@ -1558,7 +1555,8 @@ fantasy_religion = {
 			doctrine = tenet_hammerite
 			doctrine = tenet_monasticism
 			doctrine = tenet_armed_pilgrimages
-			reserved_male_names = {
+			#name
+			 reserved_male_names = {
 				Aaron Abrams Anvilite Alebus Askew Archibald Agnus Anvil Alfred 
 		        Burringden 
 		        Constance Carpenter 
@@ -1580,10 +1578,10 @@ fantasy_religion = {
 		        Vale Vault 
 		        Wimble 
 		        Yora 
-		    }
-	        reserved_female_names = {	
+		     }
+	         reserved_female_names = {	
 				Sister 
-	        }
+	         }
 		    localization = {
 				#High God Name
 				 HighGodName = god_master_builder
@@ -1931,7 +1929,6 @@ fantasy_religion = {
 	         doctrine = doctrine_gender_equal
 	         doctrine = doctrine_witchcraft_accepted
 			 doctrine = doctrine_clerical_gender_either
-			 doctrine = doctrine_pluralism_pluralistic
 			#tenets 
 			 doctrine = tenet_keeper
 			 doctrine = tenet_inner_journey
@@ -2135,7 +2132,6 @@ fantasy_religion = {
 			 doctrine = doctrine_homosexuality_shunned
 	         doctrine = doctrine_witchcraft_virtuous
 			 doctrine = doctrine_funeral_cremation
-			 doctrine = doctrine_pluralism_pluralistic
 			#tenets 
 			 doctrine = tenet_mage
 			 doctrine = tenet_mystical_birthright
@@ -2345,7 +2341,6 @@ fantasy_religion = {
 			 doctrine = doctrine_clerical_gender_either
 			 doctrine = doctrine_concubines
 			 doctrine = doctrine_funeral_sky_burial
-			 doctrine = doctrine_pluralism_pluralistic
 			holy_order_names = {
 				{ name = "holy_order_ordervine" }
 			}
@@ -2570,7 +2565,6 @@ fantasy_religion = {
 			 holy_site = winchester
 			# Doctrines
 			 doctrine = doctrine_consanguinity_unrestricted
-			 doctrine = doctrine_pluralism_pluralistic
 			 doctrine = unreformed_faith_doctrine
 			# Tenets
 			 doctrine = tenet_monasticism
@@ -3156,7 +3150,7 @@ fantasy_religion = {
 			#doctrine
 			 doctrine = doctrine_pluralism_fundamentalist
 			 doctrine = doctrine_gender_equal
-			 doctrine = doctrine_monogamy
+			 doctrine = doctrine_polygamy
 			 doctrine = doctrine_divorce_allowed
 			 doctrine = doctrine_deviancy_accepted
 			 doctrine = doctrine_witchcraft_accepted
@@ -3165,15 +3159,7 @@ fantasy_religion = {
 			 doctrine = doctrine_clerical_marriage_allowed
 			 doctrine = doctrine_clerical_succession_temporal_appointment
 			 doctrine = doctrine_consanguinity_unrestricted
-			 #doctrine = doctrine_main_pantheon_type_monolatrism
-			 #doctrine = doctrine_pantheon_dragons
-			 #doctrine = doctrine_sp_none
-			 #doctrine = doctrine_liturgical_language_dragon
-			 #doctrine = doctrine_pantheon_aspect_word_law
-			 #doctrine = doctrine_necromancy_accepted
-			 #Funeral tradition
 			 doctrine = doctrine_funeral_mummification
-		
 			#Tenets
 			 doctrine = tenet_human_sacrifice
 			 doctrine = tenet_divine_marriage
@@ -3491,7 +3477,6 @@ fantasy_religion = {
 			#Funeral tradition
 			 doctrine = doctrine_spiritual_head
 	         doctrine = doctrine_gender_equal
-	         doctrine = doctrine_pluralism_pluralistic
 			 doctrine = doctrine_divorce_allowed
 	         doctrine = doctrine_bastardry_none
 	         doctrine = doctrine_consanguinity_cousins
@@ -3849,7 +3834,6 @@ fantasy_religion = {
 		primative_cult = {
 			color = agot_brown
 			icon = primitivism
-			family = rf_abrahamic
 			reformed_icon = primitivism
 			piety_icon_group = "pagan"
 			#holy site
