@@ -2048,7 +2048,6 @@ tr_gandhi = {
  tr_habsburg_founder = {
 	name = "Radbot of Klettgau"
 	religion = catholic
-	#dna = charles_v_hre
 	dynasty_house = house_ck_habsburg
 	culture = german
 	785.1.1 = {  birth = yes }
@@ -2262,6 +2261,42 @@ tr_oliver_cromwell = {
 	817.4.25 = { birth = yes }
 	1658.9.3 = { death = { death_reason = death_typhus } }
 }
-
-
+#PIRATE
+ tr_ZhengYiSao = {
+	name = "Zheng Yi Sao"
+	dna = PirateQueen_Ching_Shih
+	religion = zhengyi
+    dynasty_house = house_pirate
+	culture = han
+	female = yes
+	trait = education_diplomacy_5
+    trait = shrewd
+	trait = viking
+	trait = calm
+	trait = ambitious
+    trait = generous
+	trait = avaricious
+	trait = diplomat
+	trait = intellect_good_3
+    disallow_random_traits = yes
+	844.1.1 = { birth = yes }
+ 	1844.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_blackbeard = {
+	name = "Edward Teach"
+	religion = blood_faith
+    dynasty_house = house_pirate
+	culture = brit
+	trait = education_martial_3
+    trait = shrewd
+	trait = viking
+	trait = callous
+	trait = ambitious
+    trait = generous
+	trait = greedy
+	trait = diplomat
+    disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+ 	1718.11.22 = { death = { death_reason = death_battle } }
+ }
 
