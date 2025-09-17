@@ -2825,11 +2825,296 @@
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
  #Game of thrones
-  tr_agot_Ramsay_Bolton = {
-	name = "Ramsay Bolton"
+  #stark
+   Stark_12 = {
+	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
+	dynasty = dynn_Stark
+	#dna = Stark_12
+	martial = 12
+	stewardship = 20
+	diplomacy = 15
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	trait = education_learning_4
+	trait = intellect_good_3
+	trait = diligent
+	trait = just
+	trait = honest
+	trait = curious
+	give_nickname = nick_the_builder
+	disallow_random_traits = yes
+	20.1.1 = {
+		birth = yes
+		#add_character_flag = has_scripted_appearance
+		#add_character_flag = canon_status_canon
+	}
+	36.1.1 = { trait = architect }
+	#110.1.1 = { death = yes }
+	799.1.1 = { death = yes }
+   }
+   Stark_1 = {
+	name = Rickard # Canon, THE Rickard Stark, a lord
+	dynasty = dynn_Stark
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	sexuality = heterosexual
+	father = Stark_12
+	#father = Stark_122 # Edwyle Stark
+	#mother = Locke_50
+	trait = education_martial_2
+	trait = honest
+	trait = authoritative
+	trait = just
+	trait = brave
+	trait = bossy
+	disallow_random_traits = yes
+	799.1.1 = { birth = yes }
+	851.7.9 = {
+		death = {
+			death_reason = death_wildfire_killer # Burned alive in his armor
+			#killer = Targaryen_1 # Aerys II Targaryen
+		}
+	}
+   }
+   Stark_3 = {
+	name = Eddard # Canon, THE Eddard, a lord
+	dynasty = dynn_Stark
+	#dna = Stark_3
+	martial = 8
+	diplomacy = 9
+	intrigue = 1
+	stewardship = 6
+	learning = 5
+	prowess = 9
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	sexuality = heterosexual
+	father = Stark_1
+	#mother = Stark_127
+	trait = education_martial_prowess_3
+	trait = humble
+	trait = trusting
+	trait = pensive
+	trait = honest
+	trait = just
+	disallow_random_traits = yes
+	832.1.1 = {
+		birth = yes
+		#add_character_flag = has_scripted_appearance
+		#add_character_flag = canon_status_canon
+		#add_character_flag = sexuality_ensure_heterosexual
+	}
+	868.1.10 = {
+		death = {
+			death_reason = death_execution # Beheaded
+			#killer = Baratheon_5 # Joffrey Baratheon
+		}
+	}
+  }
+  Stark_6 = {
+	name = Robb # Canon, AKA: Young Wolf, a lord
+	dynasty = dynn_Stark
+	#dna = Stark_6
+	martial = 7
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 4
+	learning = 5
+	prowess = 6
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	sexuality = heterosexual
+	father = Stark_3
+	#mother = Tully_4
+	trait = education_martial_4
+	trait = bossy
+	disallow_random_traits = yes
+	852.9.13 = {birth = yes }
+	866.1.1 = {
+		trait = brave
+		trait = just
+		trait = honest
+		trait = flexible_leader
+		give_nickname = nick_the_young_wolf
+	}
+	869.12.15 = {
+		death = {
+			death_reason = death_bloody_wedding # The Red Wedding
+			#killer = Frey_1 #Walder Frey
+		}
+	}
+  }
+  Stark_7 = {
+	name = Jon # Canon, THE Jon Snow, Lord Commander of the Night's Watch, He don't want it
+	dynasty = dynn_Stark
+	#dna = Stark_7
+	martial = 4
+	diplomacy = 9
+	intrigue = 3
+	stewardship = 9
+	learning = 5
+	prowess = 8
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	father = Stark_3
+	trait = bastard
+	trait = education_martial_2
+	trait = pensive
+	disallow_random_traits = yes
+	852.8.2 = {birth = yes }
+	866.1.1 = {
+		trait = brave
+		trait = just
+		trait = honest
+		trait = compassionate
+		trait = unyielding_defender
+		effect = {
+			if = {
+				limit = { character:Stark_6 = { is_alive = yes } }
+				set_relation_friend = character:Stark_6 # Robb Stark
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Stark_9 = { is_alive = yes } }
+				set_relation_friend = character:Stark_9 # Arya Stark
+			}
+		}
+	}
+	900.1.1 = { death = { death_reason = death_vanished } }
+  } 
+  Stark_8 = {
+	name = Sansa # Canon, THE Sansa, married Tyrion Lannister
+	dynasty = dynn_Stark
+	female = yes
+	#dna = Stark_8
+	martial = 2
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	learning = 5
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	sexuality = heterosexual
+	father = Stark_3
+	#mother = Tully_4
+	trait = education_diplomacy_1
+	trait = beauty_good_2
+	trait = bossy
+	disallow_random_traits = yes
+	855.12.5 = { birth = yes }
+	855.12.12 = {
+		trait = content
+		#trait = fashionable
+		effect = {
+			add_trait = arrogant
+			add_trait = trusting
+		}
+	}
+	866.1.10 = {
+		trait = patient
+		effect = {
+			remove_trait = trusting
+			remove_trait = arrogant
+			add_stress = major_stress_gain
+		}
+	}
+	900.1.1 = { death = { death_reason = death_vanished } }
+  }
+  Stark_9 = { #Arya Stark
+	name = Arya # Canon, THE Arya Stark
+	dynasty = dynn_Stark
+	female = yes
+	#dna = Stark_9
+	martial = 6
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 2
+	learning = 4
+	prowess = 6
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	father = Stark_3
+	#mother = Tully_4
+	trait = education_intrigue_4
+	trait = rowdy
+	trait = wrathful
+	trait = brave
+	trait = lifestyle_blademaster
+	trait = vengeful	
+	disallow_random_traits = yes
+	857.3.16 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+	}
+	900.10.24 = {
+		death = { death_reason = death_vanished }
+	}
+  }
+  #Bolten
+   tr_agot_Roose_Bolton = {
+	name = "Roose Bolton"
+	religion = hist
+	dynasty = dynasty_Bolton
+	culture = fantasy_culture
+	#dna = Ramsay_Bolton_Iwan_Rheon
+	trait = education_intrigue_3
+    trait = calm
+    trait = callous
+    trait = shrewd
+	trait = cautious_leader
+	trait = deceitful
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+    870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
+   }
+   tr_agot_Domeric_Bolton = {
+	name = "Domeric Bolton"
+	religion = hist
+	dynasty = dynasty_Bolton
+	culture = fantasy_culture
+	father = tr_agot_Roose_Bolton
+	#dna = Ramsay_Bolton_Iwan_Rheon
+	trait = education_diplomacy_3
+    trait = generous
+    trait = gregarious
+    trait = trusting
+	trait = athletic
+	trait = open_terrain_expert
+    disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+    860.1.1 = { death = { death_reason = death_murder killer = tr_agot_Ramsay_Bolton_mom } }
+   }
+   tr_agot_Ramsay_Bolton_mom = {
+	name = "Miller's wife"
 	religion = hist
 	dynasty = fantasy
 	culture = fantasy_culture
+	female = yes
+	trait = education_stewardship_2
+    trait = vengeful
+    trait = peasant_born
+    trait = beauty_good_1
+    trait = family_first
+	trait = deceitful
+    disallow_random_traits = yes
+	831.1.1 = { birth = yes }
+    880.1.1 = { death = { death_reason = death_old_age } }
+   }
+   tr_agot_Ramsay_Bolton = {
+	name = "Ramsay Bolton"
+	religion = hist
+	dynasty = dynasty_Bolton
+	culture = fantasy_culture
+	father = tr_agot_Roose_Bolton
+	mother = tr_agot_Ramsay_Bolton_mom
 	dna = Ramsay_Bolton_Iwan_Rheon
 	trait = education_intrigue_3
     trait = ambitious
@@ -2838,11 +3123,12 @@
     trait = schemer
 	trait = torturer
 	trait = deceitful
+	trait = aggressive_attacker
 	trait = legitimized_bastard
     disallow_random_traits = yes
 	847.1.1 = { birth = yes }
     870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
-  }
+   }
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
 	dynasty = dynasty_Targaryen
@@ -3030,7 +3316,7 @@
 	864.1.1 = { add_spouse = tr_tar_2_mom }
     900.1.1 = { death = { death_reason = death_old_age } }
  }
- tr_tar_2_daughter = {
+  tr_tar_2_daughter = {
     name = "Daenerys"
 	religion = dragon_cult
 	dynasty = dynasty_Targaryen
