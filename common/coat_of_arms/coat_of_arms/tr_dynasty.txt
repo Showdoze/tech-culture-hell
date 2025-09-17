@@ -716,3 +716,24 @@ british = {
 		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
 	}
 }
+house_altmer = { # Direnni
+	pattern="pattern_solid.dds"
+	color1=red
+	colored_emblem={
+		color1=skyrim_lgold
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			scale={ 0.910000 0.910000 }
+		}
+	}
+	colored_emblem={
+		color1=black
+		color2=skyrim_lgold
+		texture="ce_altmer_direnni.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.650000 0.650000 }
+			depth=1.010000
+		}
+	}
+}

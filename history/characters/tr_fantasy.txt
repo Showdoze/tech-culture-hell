@@ -1082,12 +1082,33 @@
 	}
 	900.1.1 = { death = { death_reason = death_drinking_passive } }
  }
+ tr_altmer_1_dad = {
+    name = "Vanus Cardruhn"
+	religion = auriel
+    dynasty_house = house_altmer
+	culture = altmer
+	trait = education_learning_4
+	trait = calm
+	trait = shrewd
+    trait = diligent
+    trait = ambitious
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	300.1.1 = {
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
+	850.1.1 = { death = { death_reason = death_ill } }
+ }
  tr_altmer_1 = {
     name = "Gerrick Cardruhn"
 	religion = auriel
-    dynasty = elder_scrolls
+    dynasty_house = house_altmer
 	culture = altmer
-	trait = education_diplomacy_3
+	father = tr_altmer_1_dad
+	trait = education_learning_3
 	trait = sadistic
 	trait = fickle
     trait = diligent
@@ -1099,10 +1120,31 @@
 			learn_language = language_anglic
 	    }
 	}
-	850.10.5 = {
-		employer = tr_dwemer1
-	}
 	1000.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_altmer_1_d = {
+    name = "Ayrenn Cardruhn"
+	religion = auriel
+    dynasty_house = house_altmer
+	culture = altmer
+	father = tr_altmer_1
+	female = yes
+	trait = education_learning_3
+	trait = callous
+	trait = fickle
+    trait = calm
+    trait = chaste
+    disallow_random_traits = yes
+	850.1.1 = {
+		birth = yes
+		effect = {
+			learn_language = language_anglic
+	    }
+	}
+	850.10.5 = {
+		employer = tr_altmer_1
+	}
+	1070.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_nord_1 = {
 	name = "Ulfric StormCloak"
@@ -2917,7 +2959,7 @@
 		}
 	}
   }
-  Stark_6 = {
+   Stark_6 = {
 	name = Robb # Canon, AKA: Young Wolf, a lord
 	dynasty = dynn_Stark
 	#dna = Stark_6
@@ -2950,7 +2992,7 @@
 		}
 	}
   }
-  Stark_7 = {
+   Stark_7 = {
 	name = Jon # Canon, THE Jon Snow, Lord Commander of the Night's Watch, He don't want it
 	dynasty = dynn_Stark
 	#dna = Stark_7
@@ -2989,7 +3031,7 @@
 	}
 	900.1.1 = { death = { death_reason = death_vanished } }
   } 
-  Stark_8 = {
+   Stark_8 = {
 	name = Sansa # Canon, THE Sansa, married Tyrion Lannister
 	dynasty = dynn_Stark
 	female = yes
@@ -3007,27 +3049,11 @@
 	trait = education_diplomacy_1
 	trait = beauty_good_2
 	trait = bossy
-	disallow_random_traits = yes
+	#disallow_random_traits = yes
 	855.12.5 = { birth = yes }
-	855.12.12 = {
-		trait = content
-		#trait = fashionable
-		effect = {
-			add_trait = arrogant
-			add_trait = trusting
-		}
-	}
-	866.1.10 = {
-		trait = patient
-		effect = {
-			remove_trait = trusting
-			remove_trait = arrogant
-			add_stress = major_stress_gain
-		}
-	}
 	900.1.1 = { death = { death_reason = death_vanished } }
   }
-  Stark_9 = { #Arya Stark
+   Stark_9 = { #Arya Stark
 	name = Arya # Canon, THE Arya Stark
 	dynasty = dynn_Stark
 	female = yes
@@ -3049,22 +3075,27 @@
 	trait = lifestyle_blademaster
 	trait = vengeful	
 	disallow_random_traits = yes
-	857.3.16 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_canon
-	}
+	857.3.16 = { birth = yes }
 	900.10.24 = {
 		death = { death_reason = death_vanished }
 	}
   }
   #Bolten
+   Bolton_6 = {
+	name = Royce # I
+	dynasty = dynasty_Bolton
+	#dna = Bolton_6
+	dynasty = dynasty_Bolton
+	culture = fantasy_culture
+	534.1.1 = { birth = yes }
+	819.1.1 = { death = yes }
+   }
    tr_agot_Roose_Bolton = {
 	name = "Roose Bolton"
 	religion = hist
 	dynasty = dynasty_Bolton
 	culture = fantasy_culture
-	#dna = Ramsay_Bolton_Iwan_Rheon
+	father = Bolton_6
 	trait = education_intrigue_3
     trait = calm
     trait = callous
