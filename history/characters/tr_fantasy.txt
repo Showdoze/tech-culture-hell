@@ -386,6 +386,7 @@
 	}
 	865.10.5 = {
 		employer = tr_tav
+		effect = { set_immortal_age = 27 }
 	}
 	1268.1.1 = { death = { death_reason = death_disappearance } }
  }
@@ -1186,7 +1187,7 @@
  tr_nord_1 = {
 	name = "Ulfric StormCloak"
 	religion = dragon_cult
-    dynasty = elder_scrolls
+    dynasty_house = house_Stormcloak
 	culture = nord_culture
 	trait = education_martial_2
 	trait = callous
@@ -1236,7 +1237,7 @@
  tr_imperial_1 = {
 	name = "Amiel Richton"
 	religion = imperial_cult
-    dynasty = elder_scrolls
+    dynasty_house = house_company_hat
 	culture = imperial_culture
 	father = tr_imperial_1_father
 	trait = education_diplomacy_2
@@ -1258,7 +1259,7 @@
  tr_imperial_1_father = {
 	name = "Cicero Mede"
 	religion = imperial_cult
-    dynasty = elder_scrolls
+    dynasty_house = house_company_hat
 	culture = imperial_culture
 	trait = education_republican_knowledge_4
 	trait = patrician_born
@@ -1275,7 +1276,7 @@
  tr_elder_scrolls_caius_cosades = {
 	name = "Caius Cosades"
 	religion = imperial_cult
-    dynasty = elder_scrolls
+    dynasty_house = house_company_hat
 	culture = imperial_culture
 	father = tr_imperial_1_father
 	dna = elder_scrolls_caius_cosades
@@ -1340,7 +1341,7 @@
  tr_dagothur = {
 	name = "Voryn" # Voryn Dagoth
 	dna = dagoth_ur
-	dynasty = elder_scrolls
+	dynasty_house = house_dagoth
 	culture = dunmer #chimer
 	religion = old_velothi
 	#trait = scarab_blood
@@ -1370,6 +1371,7 @@
 	}
 	1668.1.1 = { death = { death_reason = death_red_mountain } }
  }
+ 
  tr_nerevar = {
 	name = "Nerevar"
 	culture = fantasy_culture
