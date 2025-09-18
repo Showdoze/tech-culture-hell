@@ -1094,7 +1094,7 @@
 	    }
 	}
 	850.10.5 = {
-		employer = tr_dwemer1
+		employer = tr_dagothur
 	}
 	1066.1.1 = { death = { death_reason = death_old_age } }
  }
@@ -1208,6 +1208,21 @@
 		employer = tr_dwemer1
 	}
 	900.1.1 = { death = { death_reason = death_old_age } }
+ }
+ tr_nord_2 = {
+	name = "Jorunn"
+	religion = dragon_cult
+    dynasty_house = house_Stormcloak
+	culture = nord_culture
+	father = tr_nord_1
+	trait = education_martial_2
+	trait = curious
+    trait = diligent
+    trait = ambitious
+	trait = bossy
+    disallow_random_traits = yes
+	860.1.1 = {birth = yes}
+	950.1.1 = { death = { death_reason = death_old_age } }
  }
  tr_breton_2 = {
 	name = "Balder Riscel"
@@ -1361,6 +1376,7 @@
 	400.1.1 = {
 		effect = {
 			learn_language = language_anglic
+			set_relation_friend = { target = character:mora_nerevar }
 	    }
 	}
 	830.1.1 = {
@@ -1371,11 +1387,66 @@
 	}
 	1668.1.1 = { death = { death_reason = death_red_mountain } }
  }
- 
+ mora_100 = {
+	name = "Casath"
+	dynasty_house = house_indoril
+	religion = old_velothi
+	culture = chimer
+	14.1.1 = { birth = yes }
+	90.1.1 = { give_nickname = nick_prince_of_garlands }
+	197.5.19 = { death = { death_reason = death_battle } }
+ }
+ mora_101 = { #Mora Kronin (name from Daggerfall), nord collaborationist (from TR)
+	name = "Kronin" #Lore
+	dynasty_house = house_indoril
+	religion = old_velothi
+	culture = chimer
+	father = mora_100
+	107.1.1 = { birth = yes }
+	#210.1.1 = { add_spouse = mora_101_wife }
+	#Submits to nords, but gets assassinated soon after
+	252.5.22 = { death = { death_reason = death_morag_tong } }
+	#History ToDo: possibly give k_morrowind to represent nordic kingdom?
+ }
+ mora_102c = { #Moraelyn, Witch-King in Daggerfall, father of Nerever in TR
+	name = "Moraelyn" #Lore
+	dynasty_house = house_indoril
+	religion = old_velothi
+	culture = chimer
+	father = mora_101
+	#mother = mora_101_wife
+	222.1.1 = { birth = yes }
+	420.1.1 = { give_nickname = nick_the_witch_king_queen }
+	421.6.25 = { death = { death_reason = death_morag_tong } }
+ }
+ mora_nerevar = { #Indoril Nerevar Mora
+	name = "Nerevar"  #Lore
+	dynasty_house = house_indoril
+	culture = chimer
+	religion = old_velothi
+	trait = intellect_good_3
+	father = mora_102c
+	#Great leader
+	trait = education_martial_5
+	trait = organizer
+	trait = ambitious
+	trait = trusting
+	trait = just
+	trait = saint
+	#Also a guy who actually killed real Nerevar Mora
+	trait = deceitful
+	#trait = p_ob_azura
+	#trait = lifespan_6
+	290.1.1 = { birth = yes } #Older than a tribunal by a generation
+	#420.1.1 = { add_spouse = indoril_almalexia } # Alma Laesa Indoril
+	421.1.1 = { give_nickname = nick_hortator }
+	700.1.1 = { death = { death_reason = death_red_mountain } }
+ }
  tr_nerevar = {
 	name = "Nerevar"
 	culture = fantasy_culture
 	religion = stoicism
+	dynasty_house = house_indoril
 	trait = reincarnation
 	830.1.1 = { 
 		birth = yes 
@@ -2404,7 +2475,7 @@
 	899.1.1 = { death = { death_reason = death_consumption } }
   }
   tr_Micah_Bell = {
-  name = "Micah Bell"
+    name = "Micah Bell"
 	dna = Micah_Bell
 	religion = blood_faith
     dynasty = red_dead

@@ -784,3 +784,29 @@ house_company_hat = {
 		}
 	}
 }
+house_indoril = { # Indoril
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 77 95 119 }	
+	colored_emblem = {
+		texture = "ce_frame_side.dds"
+		color1 = rgb { 6 21 35 }
+		instance = {	position = { 0.5 0.5 }	scale = { 0.8 1 }	}
+	}		
+	colored_emblem = {
+		texture = "ce_dunmer_frame_greathouse_1.dds"
+		color1 = rgb { 22 36 50 }
+		color2 = rgb { 77 95 119 }
+		instance = {	position = { 0.5 0.5 }	scale = { 0.74 1 }	}
+	}
+	colored_emblem = {
+		texture = "ce_dunmer_sigil_indoril_5.dds"
+		color1 = rgb { 6 21 35 }
+		instance = {	position = { 0.5 0.375 }	scale = { 0.5 0.56 }	}
+	}	
+	colored_emblem = {
+		texture = "ce_daedra_sigil_I.dds"
+		color1 = rgb { 6 21 35 }
+		instance = {	position = { 0.5 0.775 }	scale = { 0.3 0.3 }	}
+	}	
+}
+
