@@ -2421,7 +2421,17 @@
 			desc = trait_follow_justinian_character_desc
 		}
 	}
+	compatibility = {
+		august = 10
+		byz_friend = 30
+		byz_enemy = -30
+		administrator = 10
+		follow_diocletian = -20
+	}
     opposites = {
+		#follow_justinian
+		follow_augustus
+		follow_diocletian
 	}
  }
  follow_augustus = {
@@ -2467,6 +2477,9 @@
 		family_first = 10
 	}
     opposites = {
+		follow_justinian
+		#follow_augustus
+		follow_diocletian
 	}
  }
  follow_diocletian = {
@@ -2507,6 +2520,15 @@
 		}
 	}
     opposites = {
+		follow_justinian
+		follow_augustus
+		#follow_diocletian
+	}
+	compatibility = {
+		august = 10
+		roman_friend = 30
+		roman_enemy = -30
+		administrator = 10
 	}
  }
 #DND 
@@ -2549,7 +2571,7 @@
 		}
 	}
 	compatibility = {
-		follow_tiamat = -20
+		follow_tiamat = -30 #Rival
 	}
  }
  follow_bane = {
@@ -3157,6 +3179,10 @@
 			desc = trait_follow_lathander_character_desc
 		}
 	}
+	compatibility = {
+		start_belmont = 50
+		just = 10
+	}
     opposites = {
 	}
  }
@@ -3164,7 +3190,6 @@
     category = fame
 	random_creation = 0
 	same_opinion = 15
-	opposite_opinion = -20
     monthly_piety = 0.3
     culture_modifier = {
 		parameter = prowess_from_religious_traits
@@ -3199,7 +3224,7 @@
 		}
 	}
 	compatibility = {
-		follow_eilistraee = -15
+		follow_eilistraee = -30 #Rival
 		schemer = 15
 		family_first = 10
 		lustful = 10
@@ -3243,6 +3268,13 @@
 			}
 			desc = trait_follow_loviatar_character_desc
 		}
+	}
+	compatibility = {
+		flagellant = 50
+		torturer = 30
+		sadistic = 15
+		callous = -10
+		compassionate = -15
 	}
     opposites = {
 	}
@@ -3460,7 +3492,6 @@
     category = fame
 	random_creation = 0
 	same_opinion = 15
-	opposite_opinion = -20
     monthly_piety = 0.3
     culture_modifier = {
 		parameter = prowess_from_religious_traits
@@ -3493,6 +3524,9 @@
 			desc = trait_follow_selune_character_desc
 		}
 	}
+	compatibility = {
+		follow_shar = -30 #Rival
+	}
     opposites = {
 		follow_shar
 	}
@@ -3501,7 +3535,6 @@
     category = fame
 	random_creation = 0
 	same_opinion = 15
-	opposite_opinion = -20
     monthly_piety = 0.3
     culture_modifier = {
 		parameter = prowess_from_religious_traits
@@ -3533,6 +3566,12 @@
 			}
 			desc = trait_follow_shar_character_desc
 		}
+	}
+	compatibility = {
+		follow_selune = -30 #Rival
+		deceitful = 15
+		torturer = 5
+		schemer = 10
 	}
     opposites = {
 		follow_selune
@@ -3575,6 +3614,14 @@
 		}
 	}
     opposites = {
+	}
+	compatibility = {
+		class_cleric_nature = 10
+		class_druid = 10
+		class_druid_land = 15
+		class_druid_moon = 10
+		class_druid_spore = 10
+		class_druid_star = 10
 	}
  }
  follow_talos = {
@@ -3653,6 +3700,32 @@
 	}
     opposites = {
 	}
+	compatibility = {
+		education_martial_1 = -15
+		education_martial_2 = 5
+		education_martial_3 = 10
+		education_martial_4 = 20
+		education_martial_5 = 50
+		strategist = 10
+		lifestyle_blademaster = 10
+		logistician = 10
+		military_engineer = 10
+		aggressive_attacker = 10
+		unyielding_defender = 10
+		forder = 10
+		flexible_leader = 10
+		desert_warrior = 10
+		jungle_stalker = 10
+		reaver = 10
+		reckless = 10
+		holy_warrior = 10
+		open_terrain_expert = 10
+		rough_terrain_expert = 10
+		forest_fighter = 10
+		cautious_leader = 10
+		organizer = 10
+		winter_soldier = 10
+	}
  }
  follow_tiamat = {
     category = fame
@@ -3692,7 +3765,7 @@
 		}
 	}
 	compatibility = {
-		follow_bahamut = -20
+		follow_bahamut = -30 #Rival
 	}
  }
  follow_tymora = {
@@ -3929,6 +4002,13 @@
 			desc = trait_follow_yondalla_character_desc
 		}
 	}
+	compatibility = {
+		calm = 10
+		brave = 10
+		gregarious = 5
+		compassionate = 20
+		forgiving = 10
+	}
     opposites = {
 	}
  }
@@ -3970,6 +4050,9 @@
 		}
 	}
     opposites = {
+		#follow_ripper
+		follow_caleb
+		follow_madara
 	}
 	compatibility = {
 		murderer = 15
@@ -4015,6 +4098,9 @@
 		}
 	}
     opposites = {
+		follow_ripper
+		#follow_caleb
+		follow_madara
 	}
 	compatibility = {
 		murderer = 5
@@ -4060,6 +4146,9 @@
 		}
 	}
     opposites = {
+		follow_ripper
+		follow_caleb
+		#follow_madara
 	}
 	compatibility = {
 		murderer = 5
@@ -4068,6 +4157,7 @@
 		physique_bad_3 = -30
 		athletic = 10
 		gallant = 10
+		start_uchiha = 50
 	}
  }
 #MISC
@@ -4258,6 +4348,14 @@
 			}
 			desc = trait_follow_islam_desc
 		}
+	}
+	compatibility = {
+		hashishiyah = 5
+		drunkard = -15
+		deviant = 15
+		decadent = -30
+		extolled = 30
+		gallant = 10
 	}
     opposites = {
 	}

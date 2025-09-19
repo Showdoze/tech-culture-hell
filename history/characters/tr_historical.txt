@@ -673,7 +673,7 @@
 	culture = ptolemaic
 	trait = education_diplomacy_3
     trait = greedy
-    trait = diligent
+    trait = deceitful
     trait = ambitious
     disallow_random_traits = yes
 	840.1.1 = { birth = yes }
@@ -1835,6 +1835,7 @@
 	trait = intellect_good_1
 	trait = shrewd
 	trait = callous
+	trait = follow_athena
 	837.1.1 = { birth = yes }
 	888.1.1 = { death = { death_reason = death_suicide } }
  }
@@ -1844,6 +1845,7 @@
 	dynasty_house = house_athens
 	culture = athenian
 	father = tr_athenian_1
+	trait = follow_athena
 	850.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_suicide } }
  }
@@ -1858,6 +1860,7 @@
 	trait = strong
 	trait = strategist
 	trait = callous
+	trait = follow_ares
 	837.1.1 = { 
 		birth = yes 
 		effect = {
@@ -1882,9 +1885,8 @@
 	culture = laconian
 	father = tr_spartan_1
 	dna = AC_Odyssey_Leonidas_I_Sparta
-	850.1.1 = { 
-		birth = yes 
-	}
+	trait = follow_ares
+	850.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_battle } }
   }
   tr_spartan_3 = {
@@ -1894,9 +1896,8 @@
 	culture = laconian
 	father = tr_spartan_1
 	female = yes
-	847.1.1 = { 
-		birth = yes 
-	}
+	trait = follow_ares
+	847.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_battle } }
   }
  tr_hittie_1 = {
@@ -2043,7 +2044,6 @@ tr_gandhi = {
 	808.2.22 = { birth = yes  }
 	873.12.14 = { death = { death_reason = death_cancer } }
  }
-
 #Habsburg
  tr_habsburg_founder = {
 	name = "Radbot of Klettgau"
