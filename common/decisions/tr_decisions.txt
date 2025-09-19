@@ -231,10 +231,11 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     picture = {
-        OR = {
-            trigger = { faith = faith:cult_of_tlaloc }
-            trigger = { faith = faith:cult_of_tezcatlipoca }
-        }
+        trigger = { 
+            OR = {
+                faith = faith:cult_of_tlaloc 
+                faith = faith:cult_of_tezcatlipoca 
+        }   }
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     picture = {
@@ -566,6 +567,19 @@ tr_select_personal_deity_decision = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:dragon_cult
+                        faith = faith:dnd_faith
+                        faith = faith:green_cult
+                        faith = faith:twomoonsdance
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision_confirm
@@ -594,6 +608,18 @@ tr_select_personal_deity_decision = {
         AND = {
             OR = {
                 culture = culture:dwemer
+                culture = culture:innsmouth
+                culture = culture:drow
+                culture = culture:gnome
+                culture = culture:orc_culture
+                culture = culture:old_dwarven
+                culture = culture:gith
+                culture = culture:halfling
+                faith = faith:dragon_cult
+                faith = faith:dnd_faith
+                faith = faith:green_cult
+                faith = faith:twomoonsdance
+                faith = faith:deep_cult
                 faith = faith:satanism
                 faith = faith:dark_souls_faith
                 has_trait = lunatic_1
@@ -662,7 +688,6 @@ tr_select_personal_deity_decision = {
 }
 
 summon_speical_maa_decision = {
-
     picture = {
         trigger = { faith = faith:satanism }
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
@@ -789,7 +814,6 @@ summon_speical_maa_decision = {
 }
 
 tr_choose_class_decision = {
-
     picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
     title = select_class_decision
     desc = select_class_decision_desc
