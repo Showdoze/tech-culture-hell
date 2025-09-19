@@ -316,6 +316,19 @@ tr_select_personal_deity_decision = {
                         faith = faith:yumaism
                         faith = faith:cult_of_tlaloc
                         faith = faith:cult_of_tezcatlipoca
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:dragon_cult
+                        faith = faith:dnd_faith
+                        faith = faith:green_cult
+                        faith = faith:twomoonsdance
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision
@@ -401,6 +414,19 @@ tr_select_personal_deity_decision = {
                         faith = faith:yumaism
                         faith = faith:cult_of_tlaloc
                         faith = faith:cult_of_tezcatlipoca
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:dragon_cult
+                        faith = faith:dnd_faith
+                        faith = faith:green_cult
+                        faith = faith:twomoonsdance
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -484,6 +510,19 @@ tr_select_personal_deity_decision = {
                         faith = faith:kushitism_pagan
                         faith = faith:kiratism
                         faith = faith:yumaism
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:dragon_cult
+                        faith = faith:dnd_faith
+                        faith = faith:green_cult
+                        faith = faith:twomoonsdance
+                        faith = faith:deep_cult
                     }
                 }
                 desc = pagan_select_god_decision_tip
@@ -677,7 +716,6 @@ tr_select_personal_deity_decision = {
     effect = {
         trigger_event = tr_select_deity.01
     }
-
     ai_check_interval = 360
     ai_potential = {
         piety >= minor_piety_value
@@ -686,7 +724,6 @@ tr_select_personal_deity_decision = {
         base = 10
     }
 }
-
 summon_speical_maa_decision = {
     picture = {
         trigger = { faith = faith:satanism }
@@ -775,7 +812,6 @@ summon_speical_maa_decision = {
             }
         }
     }
-
     is_shown = {
         OR = {
             faith = faith:satanism
@@ -800,19 +836,16 @@ summon_speical_maa_decision = {
             }
         }
     }
-
     effect = {
         custom_tooltip = tr_summon_special_maa_effect_tip
         trigger_event = {
             id = tr_summoning.01
         }
     }
-
     ai_potential = {
         always = yes
     }
 }
-
 tr_choose_class_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
     title = select_class_decision
@@ -822,22 +855,18 @@ tr_choose_class_decision = {
     cooldown = {
         days = 31
     }
-
     is_shown = {
         faith.religion = religion:fantasy_religion
     }
-
     is_valid = {
         piety >= 400
     }
-
     effect = {
         custom_tooltip = select_class_decision_tip
         trigger_event = {
             id = tr_class_event.01
         }
     }
-
     ai_potential = {
         always = yes
     }

@@ -1,7 +1,6 @@
 ﻿namespace = tr_select_deity
 
 tr_select_deity.01 = {
-
     type = character_event
     title = {
         first_valid = {
@@ -180,15 +179,12 @@ tr_select_deity.01 = {
 
     window = visit_settlement_window
     theme = faith
-
     left_portrait = {
         character = root
         animation = personality_rational
     }
-
     ######DARK SOULS
-
-    option = {
+     option = {
         name = ds1_select_covenant_aldrich
         trigger = {
             AND = {
@@ -207,7 +203,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_aldrich
     }
-    option = {
+     option = {
         name = ds1_select_covenant_blue
         trigger = {
             AND = {
@@ -226,7 +222,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_blue
     }
-    option = {
+     option = {
         name = ds1_select_covenant_darkmoon
         trigger = {
             AND = {
@@ -245,7 +241,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_darkmoon
     }
-    option = {
+     option = {
         name = ds1_select_covenant_farron
         trigger = {
             AND = {
@@ -264,7 +260,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_farron
     }
-    option = {
+     option = {
         name = ds1_select_covenant_moundmakers
         trigger = {
             AND = {
@@ -283,7 +279,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_moundmakers
     }
-    option = {
+     option = {
         name = ds1_select_covenant_rosaria
         trigger = {
             AND = {
@@ -302,7 +298,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_rosaria
     }
-    option = {
+     option = {
         name = ds1_select_covenant_sentinels
         trigger = {
             AND = {
@@ -321,7 +317,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_sentinels
     }
-    option = {
+     option = {
         name = ds1_select_covenant_sunlight
         trigger = {
             AND = {
@@ -340,8 +336,7 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_sunlight
     }
-
-    option = {
+     option = {
         name = ds1_select_covenant_reset
         trigger = {
             AND = {
@@ -367,10 +362,8 @@ tr_select_deity.01 = {
         remove_trait = ds_covenant_moundmakers
         remove_trait = ds_covenant_aldrich
     }
-
     #####DWEMER
-
-    option = {
+     option = {
         name = dwemer_choose_study_learning
         trigger = {
             AND = {
@@ -382,8 +375,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_learning
     }
-
-    option = {
+     option = {
         name = dwemer_choose_study_martial
         trigger = {
             AND = {
@@ -395,8 +387,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_martial
     }
-
-    option = {
+     option = {
         name = dwemer_choose_study_steward
         trigger = {
             AND = {
@@ -408,8 +399,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_steward
     }
-
-    option = {
+     option = {
         name = dwemer_choose_study_health
         trigger = {
             AND = {
@@ -421,8 +411,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_health
     }
-
-    option = {
+     option = {
         name = dwemer_choose_study_darkness
         trigger = {
             AND = {
@@ -434,8 +423,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_darkness
     }
-
-    option = {
+     option = {
         name = dwemer_choose_study_diplomacy
         trigger = {
             AND = {
@@ -447,10 +435,8 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_diplomacy
     }
-
     ##### LUNACY
-
-    option = {
+     option = {
         name = insanity_choose_deity_cthulhu
         trigger = {
             AND = {
@@ -469,7 +455,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_cthulhu
     }
-    option = {
+     option = {
         name = insanity_choose_deity_hastur
         trigger = {
             AND = {
@@ -486,10 +472,8 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hastur
     }
-
     ##### SATANISM
-
-    option = {
+     option = {
         name = satanism_choose_demon_baphomet
         trigger = {
             AND = {
@@ -508,7 +492,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_baphomet
     }
-    option = {
+     option = {
         name = satanism_choose_demon_samael
         trigger = {
             AND = {
@@ -527,7 +511,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_samael
     }
-    option = {
+     option = {
         name = satanism_choose_demon_lucifer
         trigger = {
             AND = {
@@ -546,7 +530,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_lucifer
     }
-    option = {
+     option = {
         name = satanism_choose_demon_abaddon
         trigger = {
             AND = {
@@ -565,7 +549,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_abaddon
     }
-    option = {
+     option = {
         name = satanism_choose_demon_belzebulb
         trigger = {
             AND = {
@@ -584,7 +568,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_belzebulb
     }
-    option = {
+     option = {
         name = satanism_choose_demon_belphegor
         trigger = {
             AND = {
@@ -603,7 +587,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_belphegor
     }
-    option = {
+     option = {
         name = satanism_choose_demon_asmodeus
         trigger = {
             AND = {
@@ -622,7 +606,7 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_asmodeus
     }
-    option = {
+     option = {
         name = satanism_choose_demon_maledict
         trigger = {
             AND = {
@@ -641,9 +625,8 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_maledict
     }
-
     ####MAGE
-    option = {
+     option = {
         name = mage_select_water
         trigger = {
             AND = {
@@ -655,7 +638,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_water
     }
-    option = {
+     option = {
         name = mage_select_fire
         trigger = {
             AND = {
@@ -667,7 +650,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_fire
     }
-    option = {
+     option = {
         name = mage_select_air
         trigger = {
             AND = {
@@ -679,7 +662,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_air
     }
-    option = {
+     option = {
         name = mage_select_earth
         trigger = {
             AND = {
@@ -691,7 +674,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_earth
     }
-    option = {
+     option = {
         name = mage_select_death
         trigger = {
             AND = {
@@ -704,8 +687,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_death
     }
     ######Roman PAGAN
-
-    option = {
+     option = {
         name = god_choice_sol
         trigger = {
             AND = {
@@ -717,7 +699,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_sol
     }
-    option = {
+     option = {
         name = god_choice_mars
         trigger = {
             AND = {
@@ -729,7 +711,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mars
     }
-    option = {
+     option = {
         name = god_choice_jove
         trigger = {
             AND = {
@@ -741,9 +723,8 @@ tr_select_deity.01 = {
         }
         add_trait = follow_jupiter
     }
-
     ###NORSE
-    option = {
+     option = {
         name = god_choice_odin
         trigger = {
             AND = {
@@ -755,7 +736,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_odin
     }
-    option = {
+     option = {
         name = god_choice_thor
         trigger = {
             AND = {
@@ -767,10 +748,8 @@ tr_select_deity.01 = {
         }
         add_trait = follow_thor
     }
-
     ####Kemet
-
-    option = {
+     option = {
         name = god_choice_anubis
         trigger = {
             AND = {
@@ -785,7 +764,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_anubis
     }
-    option = {
+     option = {
         name = god_choice_seth
         trigger = {
             AND = {
@@ -800,7 +779,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_seth
     }
-    option = {
+     option = {
         name = god_choice_horus
         trigger = {
             AND = {
@@ -815,7 +794,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_horus
     }
-    option = {
+     option = {
         name = god_choice_isis
         trigger = {
             AND = {
@@ -830,7 +809,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_isis
     }
-    option = {
+     option = {
         name = god_choice_osiris
         trigger = {
             AND = {
@@ -845,7 +824,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_osiris
     }
-    option = {
+     option = {
         name = god_choice_amun
         trigger = {
             AND = {
@@ -860,7 +839,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_amun
     }
-    option = {
+     option = {
         name = god_choice_bastet
         trigger = {
             AND = {
@@ -875,7 +854,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_bastet
     }
-    option = {
+     option = {
         name = god_choice_hathor
         trigger = {
             AND = {
@@ -891,7 +870,7 @@ tr_select_deity.01 = {
         add_trait = follow_hathor
     }
     ####aztec
-    option = {
+     option = {
         name = god_choice_huitzilopochtli
         trigger = {
             AND = {
@@ -906,7 +885,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_huitzilopochtli
     }
-    option = {
+     option = {
         name = god_choice_tlaloc
         trigger = {
             AND = {
@@ -921,7 +900,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaloc
     }
-    option = {
+     option = {
         name = god_choice_tonatiuh
         trigger = {
             AND = {
@@ -936,7 +915,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tonatiuh
     }
-    option = {
+     option = {
         name = god_choice_tezcatlipoca
         trigger = {
             AND = {
@@ -951,7 +930,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tezcatlipoca
     }
-    option = {
+     option = {
         name = god_choice_chalchiuhtlicue
         trigger = {
             AND = {
@@ -966,7 +945,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_chalchiuhtlicue
     }
-    option = {
+     option = {
         name = god_choice_centeotl
         trigger = {
             AND = {
@@ -981,7 +960,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_centeotl
     }
-    option = {
+     option = {
         name = god_choice_quetzalcoatl
         trigger = {
             AND = {
@@ -996,7 +975,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_quetzalcoatl
     }
-    option = {
+     option = {
         name = god_choice_xipe_totec
         trigger = {
             AND = {
@@ -1011,7 +990,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_xipe_totec
     }
-    option = {
+     option = {
         name = god_choice_mayahuel
         trigger = {
             AND = {
@@ -1026,7 +1005,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mayahuel
     }
-    option = {
+     option = {
         name = god_choice_tlaltecuhtli
         trigger = {
             AND = {
@@ -1041,10 +1020,8 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaltecuhtli
     }
-
     ####Imperial
-
-    option = {
+     option = {
         name = god_choice_justinian
         trigger = {
             AND = {
@@ -1056,7 +1033,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_justinian
     }
-    option = {
+     option = {
         name = god_choice_augustus
         trigger = {
             AND = {
@@ -1068,7 +1045,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_augustus
     }
-    option = {
+     option = {
         name = god_choice_diocletian
         trigger = {
             AND = {
@@ -1080,10 +1057,8 @@ tr_select_deity.01 = {
         }
         add_trait = follow_diocletian
     }
-
     ###Blood
-
-    option = {
+     option = {
         name = god_choice_ripper
         trigger = {
             AND = {
@@ -1095,7 +1070,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_ripper
     }
-    option = {
+     option = {
         name = god_choice_caleb
         trigger = {
             AND = {
@@ -1107,7 +1082,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_caleb
     }
-    option = {
+     option = {
         name = god_choice_madara
         trigger = {
             AND = {
@@ -1123,7 +1098,6 @@ tr_select_deity.01 = {
         add_trait = follow_madara
     }
     ###DND
-
     option = {
         name = god_choice_bhaal
         trigger = {
@@ -1656,9 +1630,7 @@ tr_select_deity.01 = {
         }
         add_trait = follow_yondalla
     }
-
     ##### PAGAN
-
     option = {
         name = pagan_choose_deity_jesus
         trigger = {
@@ -1694,7 +1666,6 @@ tr_select_deity.01 = {
         }
         add_trait = follow_jesus
     }
-
     option = {
         name = pagan_choose_deity_islam
         trigger = {
@@ -1731,7 +1702,6 @@ tr_select_deity.01 = {
         add_trait = follow_islam
     }
     ####Opt-Out
-
     option = {
         name = tr_select_deity_cancel
         custom_tooltip = tr_select_deity_cancel_tip

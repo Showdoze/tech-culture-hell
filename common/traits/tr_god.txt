@@ -25,6 +25,7 @@
 	monthly_prestige = 0.02
 	character_travel_speed_mult = 0.25
 	flag = lower_chance_of_dying_in_combat
+	flag = tr_follow_god_trait
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
 	desc = {
@@ -67,6 +68,7 @@
     siege_phase_time = -0.01
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
+	flag = tr_follow_god_trait
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -106,6 +108,7 @@
 	controlled_province_advantage = 3
 	dynasty_opinion = 10
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -125,7 +128,6 @@
 		follow_sol
 	}
  }
-
 #norse
  follow_thor = {
     category = fame
@@ -149,6 +151,7 @@
 	prowess_per_prestige_level = 1
 	stewardship = medium_skill_bonus
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -165,6 +168,11 @@
 	}
     opposites = {
 		follow_odin
+	}
+	compatibility = {
+		athletic = 5
+		lifestyle_blademaster = 5
+		viking = 15
 	}
  }
  follow_odin = {
@@ -184,11 +192,17 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
+	compatibility = {
+		schemer = 5
+		overseer = 5
+		one_eyed = 15
+	}
 	monthly_prestige = 0.02
 	intrigue = medium_skill_bonus
 	intrigue_per_prestige_level = 1
 	monthly_piety_gain_per_dread_add = 0.03
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1206,7 +1220,6 @@
 	monthly_prestige = 0.02
 	controlled_province_advantage = 3
     dynasty_opinion = 10
-
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1304,6 +1317,10 @@
 	culture_modifier = {
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
+	}
+	compatibility = {
+		logistician = 5
+		strategist = 5
 	}
 	monthly_prestige = 0.02
 	learning = 2
@@ -1455,6 +1472,15 @@
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
 	}
+	compatibility = {
+		gluttonous = 5
+		drunkard = 10
+		lifestyle_reveler = 15
+		temperate = -10
+	}
+	compatibility = {
+		viking = 15
+	}
 	monthly_prestige = 0.02
 	embarkation_cost_mult = -0.05
     naval_movement_speed_mult = 0.05
@@ -1506,6 +1532,12 @@
 		monthly_prestige = 1
 	}
 	monthly_prestige = 0.02
+	compatibility = {
+		gluttonous = 5
+		drunkard = 10
+		lifestyle_reveler = 15
+		temperate = -10
+	}
 	intrigue = 1
     diplomacy = 1
 	ruler_designer_cost = 15
@@ -2428,6 +2460,12 @@
 			desc = trait_follow_augustus_character_desc
 		}
 	}
+	compatibility = {
+		august = 10
+		augustus = 75
+		administrator = 10
+		family_first = 10
+	}
     opposites = {
 	}
  }
@@ -2553,6 +2591,12 @@
 	}
     opposites = {
 	}
+	compatibility = {
+		overseer = 15
+		administrator = 10
+		schemer = 10
+		diplomat = 10
+	}
  }
  follow_bhaal = {
     category = fame
@@ -2570,6 +2614,13 @@
 	culture_modifier = {
 		parameter = faith_warrior_traits_more_valued
 		monthly_prestige = 1
+	}
+	compatibility = {
+		murderer = 15
+		kinslayer_1 = 10
+		kinslayer_2 = 15
+		kinslayer_3 = 20
+		torturer = 10
 	}
 	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
 	intrigue_per_piety_level = 1
@@ -2706,6 +2757,9 @@
 			}
 			desc = trait_follow_eilistraee_character_desc
 		}
+	}
+	compatibility = {
+		follow_lolth = -15
 	}
     opposites = {
 		follow_lolth
@@ -3143,6 +3197,12 @@
 			}
 			desc = trait_follow_lolth_character_desc
 		}
+	}
+	compatibility = {
+		follow_eilistraee = -15
+		schemer = 15
+		family_first = 10
+		lustful = 10
 	}
     opposites = {
 		follow_eilistraee
@@ -3894,6 +3954,7 @@
 	owned_hostile_scheme_success_chance_max_add = 10
 	owned_personal_scheme_success_chance_add = 10
 	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -3909,6 +3970,11 @@
 		}
 	}
     opposites = {
+	}
+	compatibility = {
+		murderer = 15
+		gallowsbait = 10
+		schemer = 5
 	}
  }
  follow_caleb = {
@@ -3932,6 +3998,7 @@
 	prowess_per_piety_level = 1
 	prowess_per_prestige_level = 1
 	knight_effectiveness_per_prowess = 0.01
+	flag = tr_follow_god_trait
 	dread_gain_mult = 0.1
 	ruler_designer_cost = 15
 	desc = {
@@ -3948,6 +4015,11 @@
 		}
 	}
     opposites = {
+	}
+	compatibility = {
+		murderer = 5
+		lifestyle_blademaster = 10
+		aggressive_attacker = 10
 	}
  }
  follow_madara = {
@@ -3971,6 +4043,7 @@
 	prowess_per_piety_level = 1
 	prowess_per_prestige_level = 2
 	knight_effectiveness_per_prowess = 0.01
+	flag = tr_follow_god_trait
 	dread_gain_mult = 0.1
 	ruler_designer_cost = 15
 	desc = {
@@ -3987,6 +4060,14 @@
 		}
 	}
     opposites = {
+	}
+	compatibility = {
+		murderer = 5
+		lifestyle_blademaster = 15
+		physique_good_3 = 15
+		physique_bad_3 = -30
+		athletic = 10
+		gallant = 10
 	}
  }
 #MISC
@@ -4014,6 +4095,7 @@
 	men_at_arms_maintenance_per_dread_mult = -0.02
 	knight_effectiveness_per_dread = 0.02
 	same_faith_opinion = -10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	ai_rationality = -200
 	satanism_opinion = 15
@@ -4058,6 +4140,7 @@
 	knight_effectiveness_per_dread = 0.02
 	same_faith_opinion = -10
 	ruler_designer_cost = 15
+	flag = tr_follow_god_trait
 	ai_rationality = -200
 	satanism_opinion = 8
 	desc = {
@@ -4083,6 +4166,7 @@
 	men_at_arms_maintenance_per_dread_mult = 1.2
 	knight_effectiveness_per_dread = 0.1
 	ruler_designer_cost = 25
+	flag = tr_follow_god_trait
 	satanism_opinion = 15
 	diplomacy = -5
 	travel_speed = 2
@@ -4123,6 +4207,7 @@
 	zealot_same_faith_opinion = -25
 	christianity_religion_opinion = 10
 	ruler_designer_cost = 15
+	flag = tr_follow_god_trait
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -4160,6 +4245,7 @@
 	zealot_same_faith_opinion = -25
 	islam_religion_opinion = 10
 	ruler_designer_cost = 15
+	flag = tr_follow_god_trait
 	desc = {
 		first_valid = {
 			triggered_desc = {
