@@ -36,6 +36,9 @@ class_bar_berserker = {
         class_bar_wildheart
         class_bar_giant
     }
+    compatibility = {
+		berserker = 30
+	}
     monthly_prestige = 0.01
     movement_speed = 0.01
     prowess_per_prestige_level = 2
@@ -104,6 +107,9 @@ class_bar_giant = {
             desc = trait_class_bar_giant_desc
         }
     }
+    compatibility = {
+		giant = 30
+	}
     opposites = {
         class_bar_wild_magic
         class_bar_berserker
@@ -804,6 +810,10 @@ class_monk_drunk = {
     }
     ai_rationality = -10
     ai_energy = -15
+    compatibility = {
+		drunkard = 30
+		lifestyle_reveler = 30
+	}
     opposites = {
         class_monk_shadow
         class_monk_element
@@ -896,6 +906,10 @@ class_paladin_vengeance = {
             desc = trait_class_paladin_vengeance_desc
         }
     }
+    compatibility = {
+		vengeful = 30
+		forgiving = -30
+	}
     opposites = {
         class_paladin_ancient
         class_paladin_devotion
@@ -1249,6 +1263,9 @@ class_sorcerer_dragon = {
             desc = trait_class_sorcerer_dragon_desc
         }
     }
+    compatibility = {
+		scaly = 30
+	}
     opposites = {
         class_sorcerer_wild
         #class_sorcerer_dragon

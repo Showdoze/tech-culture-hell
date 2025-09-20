@@ -18,15 +18,6 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    OR = {
-                        has_trait = possessed_1
-                        has_trait = lunatic_1
-                    }
-                }
-                desc = insanity_select_deity_decision
-            }
-            triggered_desc = {
-                trigger = {
                     culture = culture:dwemer
                 }
                 desc = dwemer_select_study_decision
@@ -36,34 +27,42 @@ tr_select_deity.01 = {
                     OR = {
                         faith = faith:roman_pagan
                         faith = faith:hellenic_pagan
-                        faith = faith:norse_pagan
                         faith = faith:kemetic_pagan
-                        faith = faith:basque_pagan
-                        faith = faith:magyar_pagan
-                        faith = faith:north_african_acham_pagan
-                        faith = faith:pagan
-                        faith = faith:slavic_pagan
-                        faith = faith:tengri_pagan
-                        faith = faith:waaqism_pagan
-                        faith = faith:west_african_pagan
-                        faith = faith:west_african_bidu_pagan
-                        faith = faith:west_african_bori_pagan
-                        faith = faith:west_african_orisha_pagan
-                        faith = faith:west_african_roog_pagan
-                        faith = faith:zun_pagan
-                        faith = faith:akom_pagan
-                        faith = faith:baltic_pagan
-                        faith = faith:bon
-                        faith = faith:old_bon
-                        faith = faith:donyipoloism
-                        faith = faith:sedism
-                        faith = faith:finnish_pagan
-                        faith = faith:kushitism_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
                         faith = faith:kiratism
                         faith = faith:yumaism
-                        faith = faith:dragon_cult
-                        faith = faith:green_cult
-                        faith = faith:deep_cult
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
                     }
                 }
                 desc = pagan_select_god_decision
@@ -76,15 +75,30 @@ tr_select_deity.01 = {
             }
             triggered_desc = {
                 trigger = {
-                    faith = faith:imperial_cult
+                    OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
+                    }    
                 }
-                desc = ruler_select_decision
-            }
-            triggered_desc = {
-                trigger = {
-                    faith = faith:blood_faith
-                }
-                desc = killer_select_decision
+                desc = god_voice_select_decision
             }
         }
     }
@@ -105,11 +119,29 @@ tr_select_deity.01 = {
             triggered_desc = {
                 trigger = {
                     OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
                         has_trait = possessed_1
                         has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
                     }
                 }
-                desc = insanity_select_deity_decision_desc
+                desc = god_voice_select_decision_desc
             }
             triggered_desc = {
                 trigger = {
@@ -121,37 +153,43 @@ tr_select_deity.01 = {
                 trigger = {
                     OR = {
                         faith = faith:roman_pagan
-                        faith = faith:norse_pagan
                         faith = faith:hellenic_pagan
                         faith = faith:kemetic_pagan
-                        faith = faith:basque_pagan
-                        faith = faith:magyar_pagan
-                        faith = faith:north_african_acham_pagan
-                        faith = faith:pagan
-                        faith = faith:slavic_pagan
-                        faith = faith:tengri_pagan
-                        faith = faith:waaqism_pagan
-                        faith = faith:west_african_pagan
-                        faith = faith:west_african_bidu_pagan
-                        faith = faith:west_african_bori_pagan
-                        faith = faith:west_african_orisha_pagan
-                        faith = faith:west_african_roog_pagan
-                        faith = faith:zun_pagan
-                        faith = faith:akom_pagan
-                        faith = faith:baltic_pagan
-                        faith = faith:bon
-                        faith = faith:old_bon
-                        faith = faith:donyipoloism
-                        faith = faith:sedism
-                        faith = faith:finnish_pagan
-                        faith = faith:kushitism_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
                         faith = faith:kiratism
                         faith = faith:yumaism
-                        faith = faith:cult_of_tlaloc
-                        faith = faith:cult_of_tezcatlipoca
-                        faith = faith:dragon_cult
-                        faith = faith:green_cult
-                        faith = faith:deep_cult
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
                     }
                 }
                 desc = pagan_select_god_decision_desc
@@ -161,18 +199,6 @@ tr_select_deity.01 = {
                     faith = faith:mage_faith
                 }
                 desc = mage_select_school_decision_desc
-            }
-            triggered_desc = {
-                trigger = {
-                    faith = faith:imperial_cult
-                }
-                desc = ruler_select_decision_desc
-            }
-            triggered_desc = {
-                trigger = {
-                    faith = faith:blood_faith
-                }
-                desc = killer_select_decision_desc
             }
         }
     }
@@ -1394,6 +1420,7 @@ tr_select_deity.01 = {
             AND = {
                 OR = {
                     #culture = culture:drow
+                    has_trait = flagellant
                     faith = faith:dnd_faith
                 }
                 NOT = {

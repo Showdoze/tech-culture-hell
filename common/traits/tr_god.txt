@@ -193,8 +193,8 @@
 		monthly_prestige = 1
 	}
 	compatibility = {
-		schemer = 5
-		overseer = 5
+		schemer = 10
+		overseer = 10
 		one_eyed = 15
 	}
 	monthly_prestige = 0.02
@@ -439,6 +439,11 @@
 			}
 			desc = trait_follow_mage_death_desc
 		}
+	}
+	compatibility = {
+		lifestyle_mystic = 10
+		class_cleric_death = 30
+		class_wizard_necromancy = 30
 	}
     opposites = {
 		follow_mage_water
@@ -3485,6 +3490,10 @@
 			desc = trait_follow_oghma_character_desc
 		}
 	}
+	compatibility = {
+		journaller = 15
+		scholar = 15
+	}
     opposites = {
 	}
  }
@@ -3766,6 +3775,8 @@
 	}
 	compatibility = {
 		follow_bahamut = -30 #Rival
+		greedy = 20
+		generous = -20
 	}
  }
  follow_tymora = {
@@ -3846,6 +3857,11 @@
 			}
 			desc = trait_follow_tyr_character_desc
 		}
+	}
+	compatibility = {
+		just = 30
+		blind = 10
+		arbitrary = -30
 	}
     opposites = {
 	}
