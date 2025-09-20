@@ -4053,6 +4053,7 @@
 		#follow_ripper
 		follow_caleb
 		follow_madara
+		follow_kaguya
 	}
 	compatibility = {
 		murderer = 15
@@ -4101,6 +4102,7 @@
 		follow_ripper
 		#follow_caleb
 		follow_madara
+		follow_kaguya
 	}
 	compatibility = {
 		murderer = 5
@@ -4149,6 +4151,7 @@
 		follow_ripper
 		follow_caleb
 		#follow_madara
+		follow_kaguya
 	}
 	compatibility = {
 		murderer = 5
@@ -4158,6 +4161,57 @@
 		athletic = 10
 		gallant = 10
 		start_uchiha = 50
+		follow_kaguya = -30
+	}
+ }
+ follow_kaguya = {
+    category = fame
+	random_creation = 0
+	same_opinion = 5
+    monthly_piety = 0.1
+    culture_modifier = {
+		parameter = prowess_from_religious_traits
+		prowess = 3
+	}
+	culture_modifier = {
+		parameter = devoted_trait_bonuses
+		learning = 3
+	}
+	culture_modifier = {
+		parameter = faith_warrior_traits_more_valued
+		monthly_prestige = 1
+	}
+	monthly_prestige = 0.03
+	prowess_per_piety_level = 1
+	prowess_per_prestige_level = 2
+	owned_hostile_scheme_success_chance_max_add = 5
+	flag = tr_follow_god_trait
+	dread_gain_mult = 0.1
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_kaguya_desc
+			}
+			desc = trait_follow_kaguya_character_desc
+		}
+	}
+    opposites = {
+		follow_ripper
+		follow_caleb
+		follow_madara
+		#follow_kaguya
+	}
+	compatibility = {
+		physique_good_3 = 15
+		physique_bad_3 = -30
+		follow_madara = -20
+		byakugan = 30
 	}
  }
 #MISC
