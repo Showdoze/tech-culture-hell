@@ -404,6 +404,31 @@
 	#flag = global_regular
 	flag = antiquity_era_regional
   }
+  innovation_bone_working = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @flinting_stone
+	potential = {	
+		OR = {
+		    this = culture:primative_culture
+		}	
+	}
+	character_modifier = {
+		development_growth_factor = 0.1
+	}
+	maa_upgrade = {
+		type = skirmishers
+		damage = 3
+	}
+	maa_upgrade = {
+		type = skirmishers
+		toughness = 3
+	}
+	character_modifier = {
+	}
+	#flag = global_regular
+	flag = antiquity_era_regional
+  }
 #DUNMER
  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
