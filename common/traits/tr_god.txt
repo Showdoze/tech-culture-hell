@@ -2,7 +2,6 @@
  follow_sol = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.3
     desert_advantage = 1
 	monthly_prestige = 0.02
@@ -24,6 +23,12 @@
 			desc = trait_follow_sol_character_desc
 		}
 	}
+	compatibility = {
+		follow_sol = 10
+		follow_mars = 10
+		follow_jupiter = 10
+		follow_thor = 10
+	}
     opposites = {
         follow_mars
 		follow_jupiter
@@ -32,7 +37,6 @@
  follow_mars = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	martial = 1
@@ -53,6 +57,12 @@
 			desc = trait_follow_mars_character_desc
 		}
 	}
+	compatibility = {
+		follow_sol = 10
+		follow_mars = 10
+		follow_jupiter = 10
+		follow_thor = 10
+	}
     opposites = {
         follow_sol
 		follow_jupiter
@@ -61,7 +71,6 @@
  follow_jupiter = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	controlled_province_advantage = 3
@@ -82,6 +91,12 @@
 			desc = trait_follow_jupiter_character_desc
 		}
 	}
+	compatibility = {
+		follow_sol = 10
+		follow_mars = 10
+		follow_jupiter = 10
+		follow_thor = 10
+	}
     opposites = {
         follow_mars
 		follow_sol
@@ -91,7 +106,6 @@
  follow_thor = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	prowess = major_skill_bonus
@@ -120,17 +134,20 @@
 		athletic = 5
 		lifestyle_blademaster = 5
 		viking = 15
+		follow_odin =10
+		follow_thor = 10
 	}
  }
  follow_odin = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.3
 	compatibility = {
 		schemer = 10
 		overseer = 10
 		one_eyed = 15
+		follow_odin = 10
+		follow_thor = 10
 	}
 	monthly_prestige = 0.02
 	intrigue = medium_skill_bonus
@@ -621,6 +638,7 @@
 	negate_health_penalty_add = 0.1
     dynasty_opinion = 10
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -655,6 +673,7 @@
     close_relative_opinion = 10
     dynasty_opinion = 10
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -688,6 +707,7 @@
 	learning = 2
     diplomacy = 2
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -721,6 +741,7 @@
 	attacker_advantage = 3
     prowess = 4
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -756,6 +777,7 @@
     domain_tax_mult = 0.05
     attraction_opinion = -10
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -792,6 +814,7 @@
     close_relative_opinion = 10
 	dynasty_opinion = 5
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -828,6 +851,7 @@
     close_relative_opinion = 10
 	dynasty_opinion = 5
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -863,6 +887,7 @@
     diplomacy = 1
 	diplomacy_per_piety_level = 1
 	same_faith_opinion = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -896,6 +921,7 @@
 	monthly_prestige = 0.02
 	controlled_province_advantage = 3
     dynasty_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -935,6 +961,7 @@
 	spouse_opinion = 20
     close_relative_opinion = 10
     dynasty_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -977,6 +1004,7 @@
 	monthly_prestige = 0.02
 	learning = 2
     diplomacy = 2
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1015,6 +1043,7 @@
 	monthly_prestige = 0.02
 	attacker_advantage = 3
     prowess = 4
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1053,6 +1082,7 @@
 	monthly_prestige = 0.02
 	stewardship = 1
     domain_tax_mult = 0.02
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1098,6 +1128,7 @@
 	monthly_prestige = 0.02
 	embarkation_cost_mult = -0.05
     naval_movement_speed_mult = 0.05
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1142,6 +1173,7 @@
 	}
 	intrigue = 1
     diplomacy = 1
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1181,6 +1213,7 @@
 	stewardship = 2
     domain_tax_mult = 0.05
     attraction_opinion = -10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1219,6 +1252,7 @@
 	monthly_prestige = 0.02
 	domain_tax_same_faith_mult = 0.1
     monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1257,6 +1291,7 @@
 	monthly_prestige = 0.02
 	health = 0.25
     vassal_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1295,6 +1330,7 @@
 	monthly_prestige = 0.02
 	attraction_opinion = 10
     close_relative_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1333,6 +1369,7 @@
 	monthly_prestige = 0.02
 	prowess = 4
     diplomacy = 2
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1371,6 +1408,7 @@
 	monthly_prestige = 0.02
 	tolerance_advantage_mod = 4
     prowess = 4
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1409,6 +1447,7 @@
 	monthly_prestige = 0.02
 	health = 0.5
     stress_gain_mult = -0.33
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1448,6 +1487,7 @@
 	monthly_prestige = 0.02
 	controlled_province_advantage = 3
     prowess = 3
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1483,6 +1523,7 @@
 	jungle_attrition_mult = -0.35
     forest_attrition_mult = -0.25
     taiga_attrition_mult = -0.2
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1517,6 +1558,7 @@
 	monthly_prestige = 0.02
 	raid_speed = 1.0
     hostile_county_attrition = -0.75
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1551,6 +1593,7 @@
 	monthly_prestige = 0.02
 	enemy_hostile_scheme_success_chance_add = -5
     travel_danger = -1
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1585,6 +1628,7 @@
 	monthly_prestige = 0.02
 	no_water_crossing_penalty = yes
     coastal_advantage = 5
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1619,6 +1663,7 @@
 	monthly_prestige = 0.02
 	supply_capacity_mult = 0.2
     supply_duration = 1
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1653,6 +1698,7 @@
 	monthly_prestige = 0.02
 	cultural_head_fascination_mult = 0.1
     learning = 3
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1687,6 +1733,7 @@
 	monthly_prestige = 0.02
 	fertility = 0.25
     attraction_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1721,6 +1768,7 @@
 	monthly_prestige = 0.02
 	guest_opinion = 5
     befriend_scheme_power_mult = 0.3
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1756,6 +1804,7 @@
 	fertility = 0.25
     attraction_opinion = 10
     close_relative_opinion = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1786,13 +1835,13 @@
  follow_justinian = {
     category = fame
 	random_creation = 0
-	same_opinion = 15
     monthly_piety = 0.3
 	monthly_prestige = 0.05
 	christianity_religion_opinion = 15
 	rf_pagan_opinion = -20
 	monthly_influence = 1
 	stewardship_per_prestige_level = 1
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1808,6 +1857,7 @@
 		}
 	}
 	compatibility = {
+		follow_justinian = 15
 		august = 10
 		byz_friend = 30
 		byz_enemy = -30
@@ -1823,13 +1873,13 @@
  follow_augustus = {
     category = fame
 	random_creation = 0
-	same_opinion = 15
     monthly_piety = 0.3
 	monthly_prestige = 0.05
 	monthly_influence = 1
 	stewardship_per_prestige_level = 1
 	diplomacy_per_prestige_level = 1
 	owned_personal_scheme_success_chance_add = 10
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1845,6 +1895,7 @@
 		}
 	}
 	compatibility = {
+		follow_augustus = 15
 		august = 10
 		augustus = 75
 		administrator = 10
@@ -1859,7 +1910,6 @@
  follow_diocletian = {
     category = fame
 	random_creation = 0
-	same_opinion = 15
     monthly_piety = 0.3
 	monthly_prestige = 0.05
 	monthly_influence = 1
@@ -1867,6 +1917,7 @@
 	martial_per_prestige_level = 1
 	christianity_religion_opinion = -20
 	rf_pagan_opinion = 15
+	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -1887,6 +1938,7 @@
 		#follow_diocletian
 	}
 	compatibility = {
+		follow_diocletian = 15
 		august = 10
 		roman_friend = 30
 		roman_enemy = -30
@@ -1985,6 +2037,7 @@
 	ruler_designer_cost = 15
 	flag = can_murder_own_children
 	flag = tr_follow_god_trait
+	monthly_piety_gain_per_dread_add = 0.03
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -3099,13 +3152,13 @@
  follow_ripper = {
     category = fame
 	random_creation = 0
-	same_opinion = 15
     monthly_piety = 0.3
 	monthly_prestige = 0.03
 	owned_hostile_scheme_success_chance_max_add = 10
 	owned_personal_scheme_success_chance_add = 10
 	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
 	flag = tr_follow_god_trait
+	monthly_piety_gain_per_dread_add = 0.1
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -3127,6 +3180,7 @@
 		follow_kaguya
 	}
 	compatibility = {
+		follow_ripper = 15
 		murderer = 15
 		gallowsbait = 10
 		schemer = 5
@@ -3135,7 +3189,6 @@
  follow_caleb = {
     category = fame
 	random_creation = 0
-	same_opinion = 15
     monthly_piety = 0.3
 	monthly_prestige = 0.03
 	prowess_per_piety_level = 1
@@ -3164,15 +3217,15 @@
 		follow_kaguya
 	}
 	compatibility = {
+		follow_caleb = 15
 		murderer = 5
-		lifestyle_blademaster = 10
+		lifestyle_blademaster = 20
 		aggressive_attacker = 10
 	}
  }
  follow_madara = {
     category = fame
 	random_creation = 0
-	same_opinion = -5
     monthly_piety = 0.1
 	monthly_prestige = 0.03
 	prowess_per_piety_level = 1
@@ -3214,7 +3267,6 @@
  follow_kaguya = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
     monthly_piety = 0.1
 	monthly_prestige = 0.03
 	prowess_per_piety_level = 1
@@ -3243,6 +3295,7 @@
 		#follow_kaguya
 	}
 	compatibility = {
+		follow_kaguya = 10
 		physique_good_3 = 20
 		physique_bad_3 = -30
 		follow_madara = -20
@@ -3346,7 +3399,6 @@
  follow_jesus = {
     category = fame
 	random_creation = 0
-	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	zealot_same_faith_opinion = -25
@@ -3366,13 +3418,15 @@
 			desc = trait_follow_jesus_desc
 		}
 	}
+	compatibility = {
+		follow_jesus = 20
+	}
     opposites = {
 	}
  }
  follow_islam = {
     category = fame
 	random_creation = 0
-	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	zealot_same_faith_opinion = -25
@@ -3393,6 +3447,7 @@
 		}
 	}
 	compatibility = {
+		follow_islam = 20
 		hashishiyah = 5
 		drunkard = -15
 		deviant = 15
