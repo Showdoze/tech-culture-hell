@@ -1693,7 +1693,7 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
+				add = 10
 				has_trait = class_cleric_war
 			}
 		}
@@ -1715,7 +1715,7 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
+				add = 10
 				has_trait = class_cleric_death
 			}
 		}
@@ -1761,6 +1761,14 @@ tr_select_deity.01 = {
 			modifier = {
 				add = 10
 				has_trait = class_cleric_war
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_life
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_light
 			}
 		}
     }
@@ -1808,6 +1816,14 @@ tr_select_deity.01 = {
 				add = 10
 				has_trait = class_cleric_life
 			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_light
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_nature
+			}
 		}
     }
      option = {
@@ -1852,6 +1868,10 @@ tr_select_deity.01 = {
 				add = 10
 				has_trait = class_cleric_trick
 			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_knowledge
+			}
 		}
     }
      option = {
@@ -1874,6 +1894,10 @@ tr_select_deity.01 = {
 				add = 10
 				has_trait = class_cleric_war
 			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_tempest
+			}
 		}
     }
      option = {
@@ -1893,8 +1917,12 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 10
+				has_trait = class_cleric_life
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_light
 			}
 		}
     }
@@ -1915,8 +1943,8 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 10
+				has_trait = class_cleric_life
 			}
 		}
     }
@@ -1937,8 +1965,12 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 10
+				has_trait = class_cleric_knowledge
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -1959,8 +1991,8 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -2010,6 +2042,10 @@ tr_select_deity.01 = {
             modifier = {
 				add = 10
 				has_trait = sadistic
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }

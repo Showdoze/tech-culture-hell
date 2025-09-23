@@ -601,7 +601,7 @@ tr_class_event.31 = { ## add sub class
         animation = personality_rational
     }
 
-    ## BARBARIAN
+ ## BARBARIAN
 
     option = { # Barbarian Berserker
         name = class_events_add_bar_berserker
@@ -695,7 +695,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### BARD
+ ### BARD
 
     option = { # Bard college of lore
         name = class_events_add_bard_college_of_lore
@@ -789,7 +789,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### CLERIC
+ ### CLERIC
 
     option = { # cleric of life
         name = class_events_add_cleric_life
@@ -815,6 +815,38 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_bahamut
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_corellon_larethian
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_eilistraee
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_helm
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_ilmater
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_lathander
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_selune
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_yondalla
+			}
         }
     }
 
@@ -842,6 +874,22 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_corellon_larethian
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_eilistraee
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_helm
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_lathander
+			}
         }
     }
 
@@ -869,6 +917,38 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_cyric
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_garl_glittergold
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_gond
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_lolth
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_shar
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_tiamat
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_tymora
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_waukeen
+			}
         }
     }
 
@@ -896,6 +976,34 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_gond
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_jergal
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_moradin
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_mystra
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_oghma
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_selune
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_waukeen
+			}
         }
     }
 
@@ -923,6 +1031,18 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_eilistraee
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_mielikki
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_silvanus
+			}
         }
     }
 
@@ -950,6 +1070,18 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_gruumsh
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_talos
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_umberlee
+			}
         }
     }
 
@@ -977,6 +1109,34 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_bahamut
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_bane
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_corellon_larethian
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_gruumsh
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_lolth
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_tempus
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_tyr
+			}
         }
     }
 
@@ -1004,10 +1164,38 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = follow_bhaal
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_jergal
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_kelemvor
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_laduguer
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_loviatar
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_myrkul
+			}
+            modifier = {
+				add = 5
+				has_trait = follow_shar
+			}
         }
     }
 
-    ### DRUID
+ ### DRUID
 
     option = { # Druid Land
         name = class_events_add_druid_land
@@ -1101,7 +1289,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### Fighter
+ ### Fighter
 
     option = { # fighter master
         name = class_events_add_fighter_master
@@ -1195,7 +1383,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### MONK
+ ### MONK
 
     option = { # monk shadow
         name = class_events_add_monk_shadow
@@ -1445,7 +1633,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### RANGER
+ ### RANGER
 
     option = { # ranger hunter
         name = class_events_add_ranger_hunter
@@ -1539,7 +1727,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### ROGUE
+ ### ROGUE
 
     option = { # rogue thief
         name = class_events_add_rogue_thief
@@ -1633,7 +1821,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### SORCERER
+ ### SORCERER
 
     option = { # sorcerer wild
         name = class_events_add_sorcerer_wild
