@@ -230,7 +230,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_aldrich
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -256,7 +256,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_blue
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -282,7 +282,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_darkmoon
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -308,7 +308,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_farron
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -334,7 +334,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_moundmakers
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -360,7 +360,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_rosaria
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -386,7 +386,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_sentinels
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -412,7 +412,7 @@ tr_select_deity.01 = {
         add_trait = ds_covenant_sunlight
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -561,6 +561,29 @@ tr_select_deity.01 = {
             }
         }
         add_character_modifier = follow_health
+        ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				has_trait = education_martial_prowess_1
+			}
+            modifier = {
+				add = 10
+				has_trait = education_martial_prowess_2
+			}
+            modifier = {
+				add = 15
+				has_trait = education_martial_prowess_3
+			}
+            modifier = {
+				add = 20
+				has_trait = education_martial_prowess_4
+			}
+            modifier = {
+				add = 50
+				has_trait = education_martial_prowess_5
+			}
+        }
     }
      option = {
         name = dwemer_choose_study_darkness
@@ -573,6 +596,29 @@ tr_select_deity.01 = {
             }
         }
         add_character_modifier = follow_darkness
+        ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				has_trait = education_intrigue_1
+			}
+            modifier = {
+				add = 10
+				has_trait = education_intrigue_2
+			}
+            modifier = {
+				add = 15
+				has_trait = education_intrigue_3
+			}
+            modifier = {
+				add = 20
+				has_trait = education_intrigue_4
+			}
+            modifier = {
+				add = 50
+				has_trait = education_intrigue_5
+			}
+		}
     }
      option = {
         name = dwemer_choose_study_diplomacy
@@ -630,9 +676,13 @@ tr_select_deity.01 = {
         add_trait = follow_cthulhu
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = lunatic_1
+			}
+            modifier = {
+				add = 10
+				has_trait = lunatic_genetic
 			}
 		}
     }
@@ -654,7 +704,7 @@ tr_select_deity.01 = {
         add_trait = follow_hastur
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -681,7 +731,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_baphomet
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -707,7 +757,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_samael
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -733,7 +783,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_lucifer
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -759,7 +809,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_abaddon
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -785,7 +835,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_belzebulb
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -811,7 +861,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_belphegor
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -837,7 +887,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_asmodeus
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -863,7 +913,7 @@ tr_select_deity.01 = {
         add_character_modifier = satanism_follow_maledict
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -883,7 +933,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_water
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -902,7 +952,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_fire
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -921,7 +971,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_air
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -940,7 +990,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_earth
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -959,7 +1009,7 @@ tr_select_deity.01 = {
         add_trait = follow_mage_death
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -979,7 +1029,7 @@ tr_select_deity.01 = {
         add_trait = follow_sol
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -998,7 +1048,7 @@ tr_select_deity.01 = {
         add_trait = follow_mars
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1017,7 +1067,7 @@ tr_select_deity.01 = {
         add_trait = follow_jupiter
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1037,9 +1087,9 @@ tr_select_deity.01 = {
         add_trait = follow_odin
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = schemer
 			}
 		}
     }
@@ -1056,9 +1106,9 @@ tr_select_deity.01 = {
         add_trait = follow_thor
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = lifestyle_blademaster
 			}
 		}
     }
@@ -1079,7 +1129,7 @@ tr_select_deity.01 = {
         add_trait = follow_anubis
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1101,7 +1151,7 @@ tr_select_deity.01 = {
         add_trait = follow_seth
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1123,7 +1173,7 @@ tr_select_deity.01 = {
         add_trait = follow_horus
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1145,7 +1195,7 @@ tr_select_deity.01 = {
         add_trait = follow_isis
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1167,7 +1217,7 @@ tr_select_deity.01 = {
         add_trait = follow_osiris
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1189,7 +1239,7 @@ tr_select_deity.01 = {
         add_trait = follow_amun
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1211,7 +1261,7 @@ tr_select_deity.01 = {
         add_trait = follow_bastet
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1233,7 +1283,7 @@ tr_select_deity.01 = {
         add_trait = follow_hathor
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1256,7 +1306,7 @@ tr_select_deity.01 = {
         add_trait = follow_huitzilopochtli
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1278,7 +1328,7 @@ tr_select_deity.01 = {
         add_trait = follow_tlaloc
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1300,7 +1350,7 @@ tr_select_deity.01 = {
         add_trait = follow_tonatiuh
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1322,7 +1372,7 @@ tr_select_deity.01 = {
         add_trait = follow_tezcatlipoca
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1344,7 +1394,7 @@ tr_select_deity.01 = {
         add_trait = follow_chalchiuhtlicue
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1366,7 +1416,7 @@ tr_select_deity.01 = {
         add_trait = follow_centeotl
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1388,7 +1438,7 @@ tr_select_deity.01 = {
         add_trait = follow_quetzalcoatl
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1410,7 +1460,7 @@ tr_select_deity.01 = {
         add_trait = follow_xipe_totec
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1432,7 +1482,7 @@ tr_select_deity.01 = {
         add_trait = follow_mayahuel
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1454,7 +1504,7 @@ tr_select_deity.01 = {
         add_trait = follow_tlaltecuhtli
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1474,7 +1524,7 @@ tr_select_deity.01 = {
         add_trait = follow_justinian
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1493,7 +1543,7 @@ tr_select_deity.01 = {
         add_trait = follow_augustus
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1512,7 +1562,7 @@ tr_select_deity.01 = {
         add_trait = follow_diocletian
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1532,7 +1582,7 @@ tr_select_deity.01 = {
         add_trait = follow_ripper
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1551,7 +1601,7 @@ tr_select_deity.01 = {
         add_trait = follow_caleb
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1574,7 +1624,7 @@ tr_select_deity.01 = {
         add_trait = follow_madara
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1596,9 +1646,9 @@ tr_select_deity.01 = {
         add_trait = follow_kaguya
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = byakugan
 			}
 		}
     }
@@ -1620,9 +1670,9 @@ tr_select_deity.01 = {
         add_trait = follow_bhaal
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -1642,9 +1692,9 @@ tr_select_deity.01 = {
         add_trait = follow_bane
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
-				has_trait = gregarious
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -1664,9 +1714,9 @@ tr_select_deity.01 = {
         add_trait = follow_myrkul
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
-				has_trait = gregarious
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -1686,9 +1736,9 @@ tr_select_deity.01 = {
         add_trait = follow_bahamut
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -1708,9 +1758,9 @@ tr_select_deity.01 = {
         add_trait = follow_corellon_larethian
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -1730,9 +1780,9 @@ tr_select_deity.01 = {
         add_trait = follow_cyric
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_trick
 			}
 		}
     }
@@ -1754,9 +1804,9 @@ tr_select_deity.01 = {
         add_trait = follow_eilistraee
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_life
 			}
 		}
     }
@@ -1776,9 +1826,9 @@ tr_select_deity.01 = {
         add_trait = follow_garl_glittergold
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_trick
 			}
 		}
     }
@@ -1798,9 +1848,9 @@ tr_select_deity.01 = {
         add_trait = follow_gond
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_trick
 			}
 		}
     }
@@ -1820,9 +1870,9 @@ tr_select_deity.01 = {
         add_trait = follow_gruumsh
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -1842,7 +1892,7 @@ tr_select_deity.01 = {
         add_trait = follow_helm
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1864,7 +1914,7 @@ tr_select_deity.01 = {
         add_trait = follow_ilmater
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1886,7 +1936,7 @@ tr_select_deity.01 = {
         add_trait = follow_jergal
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1908,7 +1958,7 @@ tr_select_deity.01 = {
         add_trait = follow_kelemvor
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1930,7 +1980,7 @@ tr_select_deity.01 = {
         add_trait = follow_kereska
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -1953,9 +2003,13 @@ tr_select_deity.01 = {
         add_trait = follow_laduguer
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = callous
+			}
+            modifier = {
+				add = 10
+				has_trait = sadistic
 			}
 		}
     }
@@ -1975,9 +2029,13 @@ tr_select_deity.01 = {
         add_trait = follow_lathander
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_life
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_light
 			}
 		}
     }
@@ -1997,9 +2055,17 @@ tr_select_deity.01 = {
         add_trait = follow_lolth
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = overseer
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_trick
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -2020,9 +2086,17 @@ tr_select_deity.01 = {
         add_trait = follow_loviatar
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = flagellant
+			}
+            modifier = {
+				add = 10
+				has_trait = torturer
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -2043,9 +2117,9 @@ tr_select_deity.01 = {
         add_trait = follow_mielikki
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_nature
 			}
 		}
     }
@@ -2066,9 +2140,9 @@ tr_select_deity.01 = {
         add_trait = follow_moradin
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_knowledge
 			}
 		}
     }
@@ -2088,9 +2162,9 @@ tr_select_deity.01 = {
         add_trait = follow_mystra
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_knowledge
 			}
 		}
     }
@@ -2110,9 +2184,29 @@ tr_select_deity.01 = {
         add_trait = follow_oghma
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_bard
+			}
+            modifier = {
+				add = 10
+				has_trait = class_bard_college_of_lore
+			}
+            modifier = {
+				add = 10
+				has_trait = class_bard_college_of_valour
+			}
+            modifier = {
+				add = 10
+				has_trait = class_bard_college_of_sword
+			}
+            modifier = {
+				add = 10
+				has_trait = class_bard_college_of_glamour
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_knowledge
 			}
 		}
     }
@@ -2133,9 +2227,17 @@ tr_select_deity.01 = {
         add_trait = follow_selune
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_knowledge
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_life
 			}
 		}
     }
@@ -2155,9 +2257,17 @@ tr_select_deity.01 = {
         add_trait = follow_shar
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = schemer
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_trick
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_death
 			}
 		}
     }
@@ -2178,9 +2288,13 @@ tr_select_deity.01 = {
         add_trait = follow_silvanus
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = lifestyle_gardener
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_nature
 			}
 		}
     }
@@ -2200,9 +2314,9 @@ tr_select_deity.01 = {
         add_trait = follow_talos
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_tempest
 			}
 		}
     }
@@ -2222,9 +2336,9 @@ tr_select_deity.01 = {
         add_trait = follow_tempus
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -2244,9 +2358,9 @@ tr_select_deity.01 = {
         add_trait = follow_tiamat
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_trick
 			}
 		}
     }
@@ -2266,9 +2380,9 @@ tr_select_deity.01 = {
         add_trait = follow_tymora
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_trick
 			}
 		}
     }
@@ -2288,9 +2402,9 @@ tr_select_deity.01 = {
         add_trait = follow_tyr
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_war
 			}
 		}
     }
@@ -2311,9 +2425,9 @@ tr_select_deity.01 = {
         add_trait = follow_umberlee
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = class_cleric_tempest
 			}
 		}
     }
@@ -2333,9 +2447,9 @@ tr_select_deity.01 = {
         add_trait = follow_vlaakith
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
-				add = 0
-				has_trait = gregarious
+			modifier = {
+				add = 10
+				has_trait = lifestyle_blademaster
 			}
 		}
     }
@@ -2355,7 +2469,7 @@ tr_select_deity.01 = {
         add_trait = follow_waukeen
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
 			}
@@ -2378,9 +2492,13 @@ tr_select_deity.01 = {
         add_trait = follow_yondalla
         ai_chance = {
 			base = 10
-			modifier = {	# Weight up for stress.
+			modifier = {
 				add = 0
 				has_trait = gregarious
+			}
+            modifier = {
+				add = 10
+				has_trait = class_cleric_life
 			}
 		}
     }
