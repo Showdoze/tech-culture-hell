@@ -285,13 +285,12 @@
  }
 #Fantasy
  @dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
+  @elven_adaptability = "gfx/interface/icons/culture_innovations/innovation_elven_adaptability.dds"
  innovation_dragon_egg  = {
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dragon_egg
-	potential = {	
-		this = culture:high_valyrian		
-	}
+	potential = { this = culture:high_valyrian }
 	character_modifier = {
 		men_at_arms_maintenance = -0.01
 	}
@@ -302,9 +301,7 @@
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
 	icon =  @housearmor
-	potential = {
-		has_cultural_pillar = heritage_fantasy
-	}
+	potential = { has_cultural_pillar = heritage_fantasy }
 	maa_upgrade = {
 		type = heavy_cavalry
 		toughness = 3
@@ -320,9 +317,7 @@
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon =  @glassarmor
-	potential = {
-		has_cultural_pillar = heritage_fantasy
-	}
+	potential = { has_cultural_pillar = heritage_fantasy }
 	maa_upgrade = {
 		type = skirmishers
 		toughness = 3
@@ -349,9 +344,7 @@
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @alchemy
-	potential = {
-		has_cultural_pillar = heritage_fantasy
-	}
+	potential = { has_cultural_pillar = heritage_fantasy }
 	character_modifier = {
 		negate_health_penalty_add = 0.25
 		epidemic_resistance = 5
@@ -362,8 +355,8 @@
  innovation_elven_adaptability = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/culture_innovations/innovation_elven_adaptability.dds"
-	potential = { this = culture:primative_culture }
+	icon = @elven_adaptability
+	potential = { this = culture:elf_culture }
 	character_modifier = {
 		development_growth_factor = 0.1
 	}
@@ -427,246 +420,6 @@
 	#flag = global_regular
 	flag = antiquity_era_regional
   }
-#DUNMER
- @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
-  @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
-  @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
-  @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
-  @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
- innovation_ashlander_customs = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @ashlander_customs
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		county_opinion_add = 5
-	}
-	flag = global_regional
-	flag = tribal_era_regional
- }
- innovation_bonemold_armor = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon =  @housearmor
-	potential = { this = culture:dunmer }
-	maa_upgrade = {
-		type = skirmishers
-		toughness = 3
-	}
-	maa_upgrade = {
-		type = light_cavalry
-		toughness = 2
-	}
-	maa_upgrade = {
-		type = pikemen
-		toughness = 2
-	}
-	maa_upgrade = {
-		type = heavy_infantry
-		toughness = 3
-	}
-	maa_upgrade = {
-		type = heavy_cavalry
-		toughness = 3
-	}
-	flag = early_medieval_era_regular
- }
- innovation_silt_strider = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @silt_strider
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		development_growth_factor = 0.1
-		movement_speed = 0.15
-	}
-	flag = global_regional
-	flag = tribal_era_regional
- }
- innovation_dumner_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @es_dunmer_1
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#DWEMER
- @dwemer_centurion = "gfx/interface/icons/culture_innovations/dwemer_centurion.dds"
-  @dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
-  @dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
-  @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
-  @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
- innovation_sphere_centurion = {
-	group = culture_group_military
-	culture_era = culture_era_antiquity
-	icon = @dwemer_sphere
-	potential = { this = culture:dwemer }
-	can_progress = {
-		has_innovation = innovation_bronze_work
-	}	
- }
- innovation_steam_centurion = {
-	group = culture_group_military
-	culture_era = culture_era_antiquity
-	icon = @dwemer_centurion
-	potential = { this = culture:dwemer }
-	can_progress = {
-		has_innovation = innovation_sphere_centurion
-	}	
- }
- innovation_sound_drill = {
-	group = culture_group_civic
-	culture_era = culture_era_antiquity
-	icon = @dwemer_tone
-	potential = { this = culture:dwemer }
-	county_modifier = {
-		building_slot_add = 1
-	}
-	character_modifier = {
-		build_speed = -0.4
-		build_gold_cost = -0.1
-		stewardship = 1
-	}
-	can_progress = {
-		has_innovation = innovation_song
-	}	
- }
- innovation_dwemer_tech = {
-	group = culture_group_civic
-	culture_era = culture_era_antiquity
-	icon = @dwemer_crossbow
-	potential = { this = culture:dwemer }
-	character_modifier = {
-		build_speed = -0.01
-		build_gold_cost = -0.01
-		men_at_arms_maintenance = -0.05
-		short_reign_duration_mult = -0.1
-	}
-	can_progress = {
-		has_innovation = innovation_mint
-	}	
- }
- innovation_dwemer_time_space = {
-	group = culture_group_civic
-	culture_era = culture_era_antiquity
-	icon = @dwemer_space
-	potential = { this = culture:dwemer }
-	character_modifier = {
-		build_speed = -0.01
-		build_gold_cost = -0.01
-		learning = 1
-		men_at_arms_maintenance = -0.01
-		short_reign_duration_mult = -0.1
-	}
-	can_progress = {
-		has_innovation = innovation_earth_size
-	}	
- }
- innovation_dwemer_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	potential = { this = culture:dwemer }
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#Argonian
- @black_marsh_materials = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_materials.dds"
-  @black_marsh_natives = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_natives.dds"
-  @hist_mending = "gfx/interface/icons/culture_innovations/ai_innovation_hist_mending.dds"
- innovation_black_marsh_natives = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @black_marsh_natives
-	potential = {
-		has_cultural_pillar = language_jel
-	}
-	character_modifier = {
-		black_marsh_cancel_negative_supply = yes
-		black_marsh_development_growth_factor = 0.4
-		black_marsh_levy_size = 0.5
-		black_marsh_tax_mult = 0.5
-		black_marsh_advantage = 8
-	}
-	flag = global_regional
-	flag = tribal_era_regional
- }
- innovation_hist_mending = {
-	group = culture_group_military
-	culture_era = culture_era_tribal
-	icon = @hist_mending
-	potential = {
-		has_cultural_pillar = language_jel
-	}	
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
- innovation_black_marsh_materials = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @black_marsh_materials
-	potential = {
-		has_cultural_pillar = language_jel
-	}	
-	flag = global_maa
-	flag = pikemen_maa
-	flag = innovation_steel_spearhead_replacement
- }
-#khajitt cats
- @alfiq = "gfx/interface/icons/culture_innovations/ai_innovation_alfiq.dds"
-  @senche_raht = "gfx/interface/icons/culture_innovations/ai_innovation_senche_raht.dds"
-  @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
- innovation_alfiq = { #Khajiiti version of War Magic. Should do everything that innovation does, except also unlock their Alfiq MaA 
-	group = culture_group_military
-	culture_era = culture_era_tribal
-	icon = @alfiq
-	potential = {
-		has_cultural_pillar = language_taagra
-	}	
-	character_modifier = {
-	}
-	flag = global_maa
-	flag = mages_maa
-	flag = innovation_war_magic_replacement
- }
- innovation_senche_raht = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @senche_raht
-	potential = {
-		has_cultural_pillar = language_taagra
-	}	
-	flag = global_maa
-	flag = heavy_cavalry_maa
- }
- innovation_clan_mothers = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @clan_mothers
-	potential = {
-		has_cultural_pillar = language_taagra
-	}	
-	custom = virtues_give_county_opinion
-	custom = unlocks_clan_mother_interaction
-	
-	flag = global_regional
-	flag = tribal_era_regional
- }
- innovation_khajitt_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	potential = {
-		has_cultural_pillar = language_taagra
-	}	
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
 #SAIYAN DBZ
  @saiyan_endure = "gfx/interface/icons/culture_innovations/saiyan_endure.dds"
   @saiyan_pod = "gfx/interface/icons/culture_innovations/saiyan_pod.dds"
@@ -766,56 +519,6 @@
 		build_speed = -0.01
 	}
  }
-#woolf elf bosmer
- innovation_bosmer_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	potential = {	
-		this = culture:bosmer		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#Imperial
- @es_imperial_1 = "gfx/interface/icons/culture_innovations/es_imperial_1.dds"
- innovation_imperial_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @es_imperial_1
-	potential = {	
-		this = culture:imperial_culture		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#REDGUARD
- @es_redguard_1 = "gfx/interface/icons/culture_innovations/es_redguard_1.dds"
- innovation_redguard_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @es_redguard_1
-	potential = {	
-		this = culture:alikr		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#breton
- innovation_breton_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	potential = {	
-		this = culture:glenumbran		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- } 
 #ORC
  innovation_orc_build = {
 	group = culture_group_regional
@@ -823,31 +526,6 @@
 	icon = @misc_inventions
 	potential = {	
 		this = culture:orc_culture		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- } 
-#High Elf
- innovation_high_elf_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @misc_inventions
-	potential = {	
-		this = culture:altmer		
-	}
-	character_modifier = {
-		build_speed = -0.01
-	}
- } 
-#Nord
- @es_nord_1 = "gfx/interface/icons/culture_innovations/es_nord_1.dds"
- innovation_nord_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @es_nord_1
-	potential = {	
-		this = culture:nord_culture		
 	}
 	character_modifier = {
 		build_speed = -0.01
@@ -1012,4 +690,320 @@
 		has_innovation = innovation_beskar
 	}
  }
-# 
+#Elder scrolls
+ #DUNMER
+  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
+   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
+   @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
+   @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
+   @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
+  innovation_ashlander_customs = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @ashlander_customs
+	potential = { this = culture:dunmer }
+	character_modifier = {
+		county_opinion_add = 5
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_bonemold_armor = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon =  @housearmor
+	potential = { this = culture:dunmer }
+	maa_upgrade = {
+		type = skirmishers
+		toughness = 3
+	}
+	maa_upgrade = {
+		type = light_cavalry
+		toughness = 2
+	}
+	maa_upgrade = {
+		type = pikemen
+		toughness = 2
+	}
+	maa_upgrade = {
+		type = heavy_infantry
+		toughness = 3
+	}
+	maa_upgrade = {
+		type = heavy_cavalry
+		toughness = 3
+	}
+	flag = early_medieval_era_regular
+  }
+  innovation_silt_strider = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @silt_strider
+	potential = { this = culture:dunmer }
+	character_modifier = {
+		development_growth_factor = 0.1
+		movement_speed = 0.15
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_dumner_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @es_dunmer_1
+	potential = { this = culture:dunmer }
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+ #DWEMER
+  @dwemer_centurion = "gfx/interface/icons/culture_innovations/dwemer_centurion.dds"
+   @dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
+   @dwemer_tone = "gfx/interface/icons/culture_innovations/dwemer_tone.dds"
+   @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
+   @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
+  innovation_sphere_centurion = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @dwemer_sphere
+	potential = { this = culture:dwemer }
+	can_progress = {
+		has_innovation = innovation_bronze_work
+	}	
+  }
+  innovation_steam_centurion = {
+	group = culture_group_military
+	culture_era = culture_era_antiquity
+	icon = @dwemer_centurion
+	potential = { this = culture:dwemer }
+	can_progress = {
+		has_innovation = innovation_sphere_centurion
+	}	
+  }
+  innovation_sound_drill = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_tone
+	potential = { this = culture:dwemer }
+	county_modifier = {
+		building_slot_add = 1
+	}
+	character_modifier = {
+		build_speed = -0.4
+		build_gold_cost = -0.1
+		stewardship = 1
+	}
+	can_progress = {
+		has_innovation = innovation_song
+	}	
+  }
+  innovation_dwemer_tech = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_crossbow
+	potential = { this = culture:dwemer }
+	character_modifier = {
+		build_speed = -0.01
+		build_gold_cost = -0.01
+		men_at_arms_maintenance = -0.05
+		short_reign_duration_mult = -0.1
+	}
+	can_progress = {
+		has_innovation = innovation_mint
+	}	
+  }
+  innovation_dwemer_time_space = {
+	group = culture_group_civic
+	culture_era = culture_era_antiquity
+	icon = @dwemer_space
+	potential = { this = culture:dwemer }
+	character_modifier = {
+		build_speed = -0.01
+		build_gold_cost = -0.01
+		learning = 1
+		men_at_arms_maintenance = -0.01
+		short_reign_duration_mult = -0.1
+	}
+	can_progress = {
+		has_innovation = innovation_earth_size
+	}	
+  }
+  innovation_dwemer_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = { this = culture:dwemer }
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+ #Argonian
+  @black_marsh_materials = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_materials.dds"
+   @black_marsh_natives = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_natives.dds"
+   @hist_mending = "gfx/interface/icons/culture_innovations/ai_innovation_hist_mending.dds"
+  innovation_black_marsh_natives = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @black_marsh_natives
+	potential = {
+		has_cultural_pillar = language_jel
+	}
+	character_modifier = {
+		black_marsh_cancel_negative_supply = yes
+		black_marsh_development_growth_factor = 0.4
+		black_marsh_levy_size = 0.5
+		black_marsh_tax_mult = 0.5
+		black_marsh_advantage = 8
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_hist_mending = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @hist_mending
+	potential = {
+		has_cultural_pillar = language_jel
+	}	
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+  innovation_black_marsh_materials = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @black_marsh_materials
+	potential = {
+		has_cultural_pillar = language_jel
+	}	
+	flag = global_maa
+	flag = pikemen_maa
+	flag = innovation_steel_spearhead_replacement
+  }
+ #khajitt cats
+  @alfiq = "gfx/interface/icons/culture_innovations/ai_innovation_alfiq.dds"
+   @senche_raht = "gfx/interface/icons/culture_innovations/ai_innovation_senche_raht.dds"
+   @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
+  innovation_alfiq = { #Khajiiti version of War Magic. Should do everything that innovation does, except also unlock their Alfiq MaA 
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @alfiq
+	potential = {
+		has_cultural_pillar = language_taagra
+	}	
+	character_modifier = {
+	}
+	flag = global_maa
+	flag = mages_maa
+	flag = innovation_war_magic_replacement
+  }
+  innovation_senche_raht = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @senche_raht
+	potential = {
+		has_cultural_pillar = language_taagra
+	}	
+	flag = global_maa
+	flag = heavy_cavalry_maa
+  }
+  innovation_clan_mothers = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @clan_mothers
+	potential = {
+		has_cultural_pillar = language_taagra
+	}	
+	custom = virtues_give_county_opinion
+	custom = unlocks_clan_mother_interaction
+	
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_khajitt_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {
+		has_cultural_pillar = language_taagra
+	}	
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+ #High Elf
+  innovation_high_elf_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:altmer		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+  } 
+ #woolf elf bosmer
+  innovation_bosmer_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:bosmer		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
+ #Imperial
+  @es_imperial_1 = "gfx/interface/icons/culture_innovations/es_imperial_1.dds"
+  innovation_imperial_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @es_imperial_1
+	potential = {	
+		this = culture:imperial_culture		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
+ #REDGUARD
+  @es_redguard_1 = "gfx/interface/icons/culture_innovations/es_redguard_1.dds"
+  innovation_redguard_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @es_redguard_1
+	potential = {	
+		this = culture:alikr		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ }
+ #breton
+  innovation_breton_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @misc_inventions
+	potential = {	
+		this = culture:glenumbran		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+  } 
+ #Nord
+  @es_nord_1 = "gfx/interface/icons/culture_innovations/es_nord_1.dds"
+  innovation_nord_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @es_nord_1
+	potential = {	
+		this = culture:nord_culture		
+	}
+	character_modifier = {
+		build_speed = -0.01
+	}
+ } 
+#

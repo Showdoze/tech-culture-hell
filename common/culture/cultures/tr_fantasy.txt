@@ -670,6 +670,7 @@ fantasy_culture = {
     color = { 120 10 10 }
     created = 100.1.1
     parents = { thief_precursor }
+    history_loc_override = thief_city_history_loc
     ethos = ethos_courtly
     heritage = heritage_fantasy
     language = language_anglic
@@ -698,7 +699,7 @@ fantasy_culture = {
  thief_precursor = {
     color = { 120 10 10 }
     created = 1.1.1
-    history_loc_override = mystery_history_loc
+    history_loc_override = thief_precursor_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_anglic
@@ -723,9 +724,9 @@ fantasy_culture = {
     }
  }
  thief_kurshok = {
-    color = agot_blue_light
+    color = Turquoise
     created = 1.1.1
-    history_loc_override = mystery_history_loc
+    history_loc_override = thief_kurshok_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_kurshok
@@ -996,7 +997,7 @@ fantasy_culture = {
     color = { 0.71 0.37 0.60 }
     created = 1846.1.1
     parents = { american }
-    #history_loc_override = mystery_history_loc
+    history_loc_override = innsmouth_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
     language = language_anglic
@@ -1102,32 +1103,3 @@ fantasy_culture = {
         1 = hanling_eth
     }
  }
-# my_totaly_normal_roman = {
-#	color = { 0.8 0.1 0.1 }
-#	ethos = ethos_bellicose
-#	heritage = heritage_fantasy
-#	language = language_latin
-#	martial_custom = martial_custom_male_only
-#	head_determination = head_determination_domain
-#	traditions = {
-#		tradition_formation_fighting
-#		tradition_legalistic
-#		tradition_roman_legacy
-#		tradition_poetry
-#		tradition_hereditary_hierarchy
-#		tradition_noble_adoption
-#	}
-#	name_list = name_list_my_totaly_normal_roman
-#	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
-#	building_gfx = { mediterranean_building_gfx } 
-#	clothing_gfx = { byzantine_clothing_gfx } 
-#	clothing_gfx = { western_clothing_gfx } 
-#	unit_gfx = { late_roman_unit_gfx } 		
-#	ethnicities = {
-#		10 = mediterranean
- #       1 = european_caucasian_english_1
-  #      10 = european_med_greek_1
-   #     10 = european_med_italian_1
-	#}
-# }
-#

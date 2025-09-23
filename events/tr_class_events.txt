@@ -1283,9 +1283,28 @@ tr_class_event.31 = { ## add sub class
         remove_trait = class_monk
         add_trait = class_monk_drunk
         add_piety = -800
-
+        stress_impact = {
+            lifestyle_reveler = major_stress_impact_loss
+            drunkard = major_stress_impact_loss
+		}
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = gluttonous
+			}
+            modifier = {
+				add = -5
+				has_trait = temperate
+			}
+            modifier = {
+				add = 10
+				has_trait = lifestyle_reveler
+			}
+            modifier = {
+				add = 10
+				has_trait = drunkard
+			}
         }
     }
 
@@ -1357,9 +1376,24 @@ tr_class_event.31 = { ## add sub class
         remove_trait = class_paladin
         add_trait = class_paladin_vengeance
         add_piety = -800
-
+        stress_impact = {
+			forgiving = major_stress_impact_gain
+            vengeful = major_stress_impact_loss
+		}
         ai_chance = {
             base = 1
+            ai_value_modifier = {
+				ai_compassion = -1
+				ai_vengefulness = 1
+			}
+            modifier = {
+				add = 10
+				has_trait = vengeful
+			}
+            modifier = {
+				add = -10
+				has_trait = forgiving
+			}
         }
     }
 
