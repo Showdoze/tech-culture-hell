@@ -209,7 +209,7 @@ tr_select_deity.01 = {
         character = root
         animation = personality_rational
     }
-    ######DARK SOULS
+ ######DARK SOULS
      option = {
         name = ds1_select_covenant_aldrich
         trigger = {
@@ -444,7 +444,7 @@ tr_select_deity.01 = {
         remove_trait = ds_covenant_moundmakers
         remove_trait = ds_covenant_aldrich
     }
-    #####DWEMER
+ #####DWEMER
      option = {
         name = dwemer_choose_study_learning
         trigger = {
@@ -477,6 +477,14 @@ tr_select_deity.01 = {
             modifier = {
 				add = 50
 				has_trait = education_learning_5
+			}
+            modifier = {
+				add = 5
+				has_trait = scholar
+			}
+            modifier = {
+				add = 5
+				has_trait = theologian
 			}
 		}
     }
@@ -513,6 +521,14 @@ tr_select_deity.01 = {
 				add = 50
 				has_trait = education_martial_5
 			}
+            modifier = {
+				add = 5
+				has_trait = strategist
+			}
+            modifier = {
+				add = 5
+				has_trait = gallant
+			}
 		}
     }
      option = {
@@ -547,6 +563,18 @@ tr_select_deity.01 = {
             modifier = {
 				add = 50
 				has_trait = education_stewardship_5
+			}
+            modifier = {
+				add = 5
+				has_trait = administrator
+			}
+            modifier = {
+				add = 5
+				has_trait = architect
+			}
+            modifier = {
+				add = 5
+				has_trait = avaricious
 			}
 		}
     }
@@ -583,6 +611,10 @@ tr_select_deity.01 = {
 				add = 50
 				has_trait = education_martial_prowess_5
 			}
+            modifier = {
+				add = 5
+				has_trait = whole_of_body
+			}
         }
     }
      option = {
@@ -617,6 +649,18 @@ tr_select_deity.01 = {
             modifier = {
 				add = 50
 				has_trait = education_intrigue_5
+			}
+            modifier = {
+				add = 5
+				has_trait = schemer
+			}
+            modifier = {
+				add = 5
+				has_trait = seducer
+			}
+            modifier = {
+				add = 5
+				has_trait = torturer
 			}
 		}
     }
@@ -653,9 +697,21 @@ tr_select_deity.01 = {
 				add = 50
 				has_trait = education_diplomacy_5
 			}
+            modifier = {
+				add = 5
+				has_trait = diplomat
+			}
+            modifier = {
+				add = 5
+				has_trait = family_first
+			}
+            modifier = {
+				add = 5
+				has_trait = lifestyle_reveler
+			}
 		}
     }
-    ##### LUNACY
+ ##### LUNACY
      option = {
         name = insanity_choose_deity_cthulhu
         trigger = {
@@ -710,7 +766,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ##### SATANISM
+ ##### SATANISM
      option = {
         name = satanism_choose_demon_baphomet
         trigger = {
@@ -919,7 +975,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ####MAGE
+ ####MAGE
      option = {
         name = mage_select_water
         trigger = {
@@ -1015,7 +1071,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ######Roman PAGAN
+ ######Roman PAGAN
      option = {
         name = god_choice_sol
         trigger = {
@@ -1073,7 +1129,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ###NORSE
+ ###NORSE
      option = {
         name = god_choice_odin
         trigger = {
@@ -1112,7 +1168,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ####Kemet
+ ####Kemet
      option = {
         name = god_choice_anubis
         trigger = {
@@ -1289,7 +1345,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ####aztec
+ ####aztec
      option = {
         name = god_choice_huitzilopochtli
         trigger = {
@@ -1510,7 +1566,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ####Imperial
+ ####Imperial
      option = {
         name = god_choice_justinian
         trigger = {
@@ -1568,7 +1624,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ###Blood
+ ###Blood
      option = {
         name = god_choice_ripper
         trigger = {
@@ -1652,7 +1708,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ###DND
+ ###DND
      option = {
         name = god_choice_bhaal
         trigger = {
@@ -2056,6 +2112,8 @@ tr_select_deity.01 = {
                 OR = {
                     #culture = culture:drow
                     faith = faith:dnd_faith
+                    has_trait = class_cleric_life
+                    has_trait = class_cleric_light
                 }
                 NOT = {
                     has_trait = follow_lathander
@@ -2064,14 +2122,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_lathander
         ai_chance = {
-			base = 10
+			base = 1
 			modifier = {
-				add = 10
+				add = 1
 				has_trait = class_cleric_life
 			}
             modifier = {
-				add = 10
+				add = 1
 				has_trait = class_cleric_light
+			}
+            modifier = {
+				add = 10
+				has_trait = just
 			}
 		}
     }
@@ -2167,6 +2229,7 @@ tr_select_deity.01 = {
                     culture = culture:old_dwarven
                     has_trait = dwarf
                     faith = faith:dnd_faith
+                    has_trait = class_cleric_knowledge
                 }
                 NOT = {
                     has_trait = follow_moradin
@@ -2177,8 +2240,12 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 10
 			modifier = {
-				add = 10
+				add = 1
 				has_trait = class_cleric_knowledge
+			}
+            modifier = {
+				add = 5
+				has_trait = dwarf
 			}
 		}
     }
@@ -2189,6 +2256,7 @@ tr_select_deity.01 = {
                 OR = {
                     #culture = culture:drow
                     faith = faith:dnd_faith
+                    has_trait = class_cleric_knowledge
                 }
                 NOT = {
                     has_trait = follow_mystra
@@ -2211,6 +2279,12 @@ tr_select_deity.01 = {
                 OR = {
                     #culture = culture:drow
                     faith = faith:dnd_faith
+                    has_trait = class_bard
+                    has_trait = class_bard_college_of_lore
+                    has_trait = class_bard_college_of_valour
+                    has_trait = class_bard_college_of_sword
+                    has_trait = class_bard_college_of_glamour
+                    has_trait = class_cleric_knowledge
                 }
                 NOT = {
                     has_trait = follow_oghma
@@ -2254,6 +2328,8 @@ tr_select_deity.01 = {
                     #culture = culture:drow
                     faith = faith:dnd_faith
                     faith = faith:twomoonsdance
+                    has_trait = class_cleric_knowledge
+                    has_trait = class_cleric_life
                 }
                 NOT = {
                     has_trait = follow_selune
@@ -2538,7 +2614,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ##### PAGAN
+ ##### PAGAN
      option = {
         name = pagan_choose_deity_jesus
         trigger = {
@@ -2623,7 +2699,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    ####Opt-Out
+ ####Opt-Out
     option = {
         name = tr_select_deity_cancel
         custom_tooltip = tr_select_deity_cancel_tip
