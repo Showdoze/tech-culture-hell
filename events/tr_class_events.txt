@@ -904,7 +904,10 @@ tr_class_event.31 = { ## add sub class
         remove_trait = class_bar
         add_trait = class_bar_berserker
         add_piety = -800
-
+        stress_impact = {
+			wrathful = -50
+            calm = 50
+		}
         ai_chance = {
             base = 1
             modifier = {
@@ -939,9 +942,20 @@ tr_class_event.31 = { ## add sub class
         remove_trait = class_bar
         add_trait = class_bar_wild_magic
         add_piety = -800
-
+        stress_impact = {
+			lunatic_1 = -50
+            lunatic_genetic = -50
+		}
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = lunatic_1
+			}
+            modifier = {
+				add = -5
+				has_trait = lunatic_genetic
+			}
         }
     }
 
@@ -1582,7 +1596,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    option = { # Druid Land
+    option = { # Druid Star
         name = class_events_add_druid_star
         trigger = {
             NOR = {
