@@ -2594,6 +2594,38 @@ tr_select_deity.01 = {
 				add = 5
 				has_trait = class_cleric_war
 			}
+            modifier = {
+				add = 5
+				has_trait = just
+			}
+            modifier = {
+				add = -5
+				has_trait = arbitrary
+			}
+            modifier = {
+				add = 1
+				has_trait = blind
+			}
+            modifier = {
+				add = 1
+				has_trait = one_eyed
+			}
+            modifier = {
+				add = 5
+				has_trait = honest
+			}
+            modifier = {
+				add = -5
+				has_trait = craven
+			}
+            modifier = {
+				add = 5
+				has_trait = brave
+			}
+            modifier = {
+				add = -50
+				has_trait = class_paladin_oathbreaker
+			}
 		}
     }
      option = {
@@ -2688,13 +2720,17 @@ tr_select_deity.01 = {
         add_trait = follow_yondalla
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = class_cleric_life
+			}
 			modifier = {
 				add = 5
 				has_trait = gregarious
 			}
             modifier = {
-				add = 5
-				has_trait = class_cleric_life
+				add = 2
+				has_trait = lifestyle_gardener
 			}
 		}
     }
