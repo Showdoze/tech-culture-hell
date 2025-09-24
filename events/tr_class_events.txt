@@ -2228,6 +2228,14 @@ tr_class_event.31 = { ## add sub class
 			}
             modifier = {
 				add = 5
+				has_trait = lifestyle_mystic
+			}
+            modifier = {
+				add = 5
+				has_trait = witch
+			}
+            modifier = {
+				add = 5
 				has_trait = deceitful
 			}
         }
@@ -2318,9 +2326,20 @@ tr_class_event.31 = { ## add sub class
         remove_trait = class_sorcerer
         add_trait = class_sorcerer_wild
         add_piety = -800
-
+        stress_impact = {
+			lunatic_1 = -50
+            lunatic_genetic = -50
+		}
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = lunatic_1
+			}
+            modifier = {
+				add = -5
+				has_trait = lunatic_genetic
+			}
         }
     }
 
@@ -2344,6 +2363,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = scaly
+			}
         }
     }
 
@@ -2390,6 +2413,22 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = callous
+			}
+            modifier = {
+				add = 5
+				has_trait = sadistic
+			}
+            modifier = {
+				add = 5
+				has_trait = vengeful
+			}
+            modifier = {
+				add = 5
+				has_trait = torturer
+			}
         }
     }
 
