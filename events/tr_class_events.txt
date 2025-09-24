@@ -566,6 +566,10 @@ tr_class_event.21 = { ## add base class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 1
+				has_trait = birthsign_atronach
+			}
         }
     }
 
@@ -616,6 +620,10 @@ tr_class_event.21 = { ## add base class
             modifier = {
 				add = 5
 				has_trait = scholar
+			}
+            modifier = {
+				add = 1
+				has_trait = birthsign_mage
 			}
         }
     }
@@ -717,6 +725,10 @@ tr_class_event.21 = { ## add base class
 				add = 5
 				has_trait = shieldmaiden
 			}
+            modifier = {
+				add = 1
+				has_trait = birthsign_warrior
+			}
         }
     }
 
@@ -812,6 +824,10 @@ tr_class_event.21 = { ## add base class
             modifier = {
 				add = 1
 				has_trait = greedy
+			}
+            modifier = {
+				add = 1
+				has_trait = birthsign_thief
 			}
         }
     }
@@ -1755,6 +1771,22 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 1
+				has_trait = physique_good_1
+			}
+            modifier = {
+				add = 2
+				has_trait = physique_good_2
+			}
+            modifier = {
+				add = 3
+				has_trait = physique_good_3
+			}
+            modifier = {
+				add = 3
+				has_trait = strong
+			}
         }
     }
 
@@ -1800,7 +1832,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### PALADIN
+ ### PALADIN
 
     option = { # paladin ancient
         name = class_events_add_paladin_ancient
@@ -1886,6 +1918,10 @@ tr_class_event.31 = { ## add sub class
             modifier = {
 				add = -100
 				has_trait = kinslayer_3
+			}
+            modifier = {
+				add = -10
+				has_trait = arbitrary
 			}
         }
     }
@@ -2015,6 +2051,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 10
+				has_trait = lifestyle_hunter
+			}
         }
     }
 
@@ -2061,6 +2101,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 1
+				has_trait = schemer
+			}
         }
     }
 
@@ -2109,6 +2153,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = greedy
+			}
+            modifier = {
+				add = 5
+				has_trait = gallowsbait
+			}
         }
     }
 
@@ -2132,6 +2184,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = schemer
+			}
+            modifier = {
+				add = 5
+				has_trait = deceitful
+			}
         }
     }
 
@@ -2155,6 +2215,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = education_intrigue_3
+			}
+            modifier = {
+				add = 5
+				has_trait = education_intrigue_4
+			}
         }
     }
 
@@ -2178,6 +2246,18 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = education_martial_prowess_4
+			}
+            modifier = {
+				add = 5
+				has_trait = athletic
+			}
+            modifier = {
+				add = 10
+				has_trait = lifestyle_blademaster
+			}
         }
     }
 
@@ -2275,7 +2355,7 @@ tr_class_event.31 = { ## add sub class
         }
     }
 
-    ### WARLOCK
+ ### WARLOCK
 
     option = { # warlock fiend
         name = class_events_add_warlock_fiend
@@ -2297,10 +2377,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = confider
+			}
         }
     }
 
-    option = { # warlock fiend
+    option = { # warlock great
         name = class_events_add_warlock_great
         trigger = {
             NOR = {
@@ -2320,6 +2404,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = witch
+			}
         }
     }
 
@@ -2343,6 +2431,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = family_first
+			}
         }
     }
 
@@ -2366,10 +2458,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_blademaster
+			}
         }
     }
 
-    ### WIZARD
+ ### WIZARD
 
     option = { # wizard abjuration
         name = class_events_add_wizard_abjuration
@@ -2452,6 +2548,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = cynical
+			}
         }
     }
 
@@ -2564,6 +2664,14 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = schemer
+			}
+            modifier = {
+				add = 5
+				has_trait = deceitful
+			}
         }
     }
 
@@ -2620,6 +2728,10 @@ tr_class_event.31 = { ## add sub class
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_blademaster
+			}
         }
     }
 
