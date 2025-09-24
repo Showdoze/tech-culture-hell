@@ -39,7 +39,7 @@
 	random_creation = 0
     monthly_piety = 0.3
 	monthly_prestige = 0.02
-	martial = 1
+	martial = 2
     siege_phase_time = -0.01
 	same_faith_opinion = 5
 	ruler_designer_cost = 15
@@ -96,6 +96,7 @@
 		follow_mars = 10
 		follow_jupiter = 10
 		follow_thor = 10
+		family_first = 10
 	}
     opposites = {
         follow_mars
@@ -108,9 +109,9 @@
 	random_creation = 0
     monthly_piety = 0.3
 	monthly_prestige = 0.02
-	prowess = major_skill_bonus
+	prowess = 3
 	prowess_per_prestige_level = 1
-	stewardship = medium_skill_bonus
+	stewardship = 1
 	same_faith_opinion = 5
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
@@ -134,7 +135,7 @@
 		athletic = 5
 		lifestyle_blademaster = 5
 		viking = 15
-		follow_odin =10
+		follow_odin = 10
 		follow_thor = 10
 	}
  }
@@ -150,7 +151,7 @@
 		follow_thor = 10
 	}
 	monthly_prestige = 0.02
-	intrigue = medium_skill_bonus
+	intrigue = 3
 	intrigue_per_prestige_level = 1
 	monthly_piety_gain_per_dread_add = 0.03
 	same_faith_opinion = 5
@@ -2835,6 +2836,8 @@
 		class_druid_moon = 10
 		class_druid_spore = 10
 		class_druid_star = 10
+		lifestyle_herbalist = 10
+		lifestyle_gardener = 10
 	}
  }
  follow_talos = {
@@ -2897,23 +2900,23 @@
 		education_martial_5 = 50
 		strategist = 10
 		lifestyle_blademaster = 10
-		logistician = 10
-		military_engineer = 10
-		aggressive_attacker = 10
-		unyielding_defender = 10
-		forder = 10
-		flexible_leader = 10
-		desert_warrior = 10
-		jungle_stalker = 10
-		reaver = 10
-		reckless = 10
-		holy_warrior = 10
-		open_terrain_expert = 10
-		rough_terrain_expert = 10
-		forest_fighter = 10
-		cautious_leader = 10
-		organizer = 10
-		winter_soldier = 10
+		logistician = 5
+		 military_engineer = 5
+		 aggressive_attacker = 5
+		 unyielding_defender = 5
+		 forder = 5
+		 flexible_leader = 5
+		 desert_warrior = 5
+		 jungle_stalker = 5
+		 reaver = 5
+		 reckless = 5
+		 holy_warrior = 5
+		 open_terrain_expert = 5
+		 rough_terrain_expert = 5
+		 forest_fighter = 5
+		 cautious_leader = 5
+		 organizer = 5
+		 winter_soldier = 5
 		brave = 10
 		craven = -10
 		follow_helm = 30
@@ -3401,7 +3404,6 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.3
-	monthly_prestige = 0.02
 	zealot_same_faith_opinion = -25
 	christianity_religion_opinion = 10
 	ruler_designer_cost = 15
@@ -3421,6 +3423,8 @@
 	}
 	compatibility = {
 		follow_jesus = 20
+		lustful = -10
+		chaste = 10
 	}
     opposites = {
 	}
@@ -3429,7 +3433,6 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.3
-	monthly_prestige = 0.02
 	zealot_same_faith_opinion = -25
 	islam_religion_opinion = 10
 	ruler_designer_cost = 15

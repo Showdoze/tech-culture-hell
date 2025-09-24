@@ -762,14 +762,6 @@ tr_select_personal_deity_decision = {
                 has_trait = byakugan
                 has_trait = flagellant
                 culture = culture:elf_culture
-                culture = culture:innsmouth
-                culture = culture:dwemer
-                culture = culture:drow
-                culture = culture:gnome
-                culture = culture:orc_culture
-                culture = culture:old_dwarven
-                culture = culture:gith
-                culture = culture:halfling
                 faith = faith:roman_pagan
                 faith = faith:hellenic_pagan
                 faith = faith:kemetic_pagan
@@ -835,9 +827,9 @@ tr_select_personal_deity_decision = {
                 faith = faith:punic_pagan
                 #faith = faith:
             }
-            #NOT = {
-            #    has_flag = tr_follow_god_trait
-            #}
+            NOT = {
+                has_flag = tr_follow_god_trait
+            }
             #faith = { has_doctrine_parameter = select_personal_god_active }
         }
     }
@@ -994,7 +986,10 @@ tr_choose_class_decision = {
         days = 31
     }
     is_shown = {
-        faith.religion = religion:fantasy_religion
+        OR = {
+            faith.religion = religion:fantasy_religion
+            has_cultural_pillar = heritage_fantasy
+        }    
     }
     is_valid = {
         piety >= 400
