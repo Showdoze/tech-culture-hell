@@ -223,7 +223,12 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_thief_mages.dds"
     }
     picture = {
-        trigger = { faith = faith:kemetic_pagan }
+        trigger = { 
+            OR = {
+                faith = faith:kemetic_pagan 
+                culture = culture:nile_elf
+            }
+        }
         reference = "gfx/interface/illustrations/decisions/decision_ancient_egypt_temple.dds"
     }
     picture = {
