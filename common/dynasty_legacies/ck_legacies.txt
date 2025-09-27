@@ -230,7 +230,19 @@ dragonblood_legacy_track = {
 		}
 	}
 }
-
+durge_legacy_track = {
+	is_shown = {
+		OR = {
+			dynasty = {
+				has_dynasty_perk = durge_legacy_1
+		    }
+			AND = {
+			has_trait = follow_bhaal
+			has_trait = class_sorcerer_dragon
+			}
+		}
+	}
+}
 hegemon_legacy_track = {
 	is_shown = {
 		dynasty = {

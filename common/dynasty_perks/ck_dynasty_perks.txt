@@ -926,4 +926,63 @@
 		minority_opinion = 5
 	}
  }
-# 
+#BG3
+ #Durge
+  durge_legacy_1 = { 
+	legacy = durge_legacy_track
+	character_modifier = {
+		dread_gain_mult = 0.2
+		dread_baseline_add = 15
+		dread_decay_mult = -0.5
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+  }
+  durge_legacy_2 = { 
+	legacy = durge_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = guile_legacy_2_effect
+		}	
+	}
+	character_modifier = {
+		owned_hostile_scheme_success_chance_add = 10
+	}
+ }
+  durge_legacy_3 = {
+	legacy = durge_legacy_track
+	character_modifier = {
+		monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+		owned_scheme_secrecy_add = 15
+		diplomacy_per_prestige_level = 1
+	}
+ }
+  durge_legacy_4 = {
+	legacy = durge_legacy_track
+	character_modifier = {
+		monthly_tyranny = -0.1
+		intimidated_vassal_tax_contribution_mult = 0.25
+		cowed_vassal_tax_contribution_mult = 0.25
+		supply_duration = 1
+	}
+ }
+  durge_legacy_5 = {
+	legacy = durge_legacy_track
+	character_modifier = {
+		monthly_county_control_change_add = 0.5
+		no_prowess_loss_from_age = yes
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = guile_legacy_5_effect
+		}
+	}
+ }
+ #
