@@ -1120,10 +1120,8 @@
 	same_opinion = 20
     monthly_piety = 0.3
 	compatibility = {
-		gluttonous = 5
-		drunkard = 10
-		lifestyle_reveler = 15
-		temperate = -10
+		drunkard = 5
+		lifestyle_reveler = 5
 		viking = 15
 	}
 	monthly_prestige = 0.02
@@ -1167,9 +1165,9 @@
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	compatibility = {
-		gluttonous = 5
-		drunkard = 10
-		lifestyle_reveler = 15
+		gluttonous = 10
+		drunkard = 20
+		lifestyle_reveler = 20
 		temperate = -10
 	}
 	intrigue = 1
@@ -1216,6 +1214,11 @@
     attraction_opinion = -10
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
+	compatibility = {
+		diligent = 15
+		clubfooted = 10
+		one_legged = 10
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
