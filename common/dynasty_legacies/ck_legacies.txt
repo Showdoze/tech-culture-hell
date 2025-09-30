@@ -220,9 +220,7 @@ RICE_trans_saharan_trade_legacy_track = {
 dragonblood_legacy_track = {
 	is_shown = {
 		OR = {
-			dynasty = {
-				has_dynasty_perk = dragonborn_legacy_1
-		    }
+			dynasty = { has_dynasty_perk = dragonborn_legacy_1 }
 			has_trait = start_dragonborn
 			has_trait = class_sorcerer_dragon
 		}
@@ -231,9 +229,7 @@ dragonblood_legacy_track = {
 durge_legacy_track = {
 	is_shown = {
 		OR = {
-			dynasty = {
-				has_dynasty_perk = durge_legacy_1
-		    }
+			dynasty = { has_dynasty_perk = durge_legacy_1 }
 			AND = {
 			has_trait = follow_bhaal
 			has_trait = class_sorcerer_dragon
@@ -276,9 +272,7 @@ magicka_legacy_track = {
 cappadocian_legacy_track = {
 	is_shown = {
 		OR = {
-			dynasty = {
-				has_dynasty_perk = cappadocian_legacy_1
-		    }
+			dynasty = { has_dynasty_perk = cappadocian_legacy_1 }
 			#has_trait = start_uchiha
 		}
 	}
@@ -286,10 +280,9 @@ cappadocian_legacy_track = {
 belmont_legacy_track = {
     is_shown = {
 		OR = {
-			dynasty = {
-				has_dynasty_perk = belmont_legacy_1
-		    }
+			dynasty = { has_dynasty_perk = belmont_legacy_1 }
 			has_trait = start_belmont
+			dynasty = dynasty:belmont
 		}
 	}
 }
