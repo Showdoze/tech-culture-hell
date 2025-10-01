@@ -731,11 +731,88 @@
 	}
  }
 #VTM
+ nosferatu_legacy_1 = {
+    legacy = nosferatu_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = rats_legacy_perk_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = nosferatu_legacy_1_perk
+		}			
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ nosferatu_legacy_2 = {
+    legacy = nosferatu_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = nosferatu_legacy_2_perk
+			dynasty = {
+			    every_dynasty_member = {
+				    if = {
+					    limit = {
+						    OR = {
+							    has_trait = education_martial
+								has_trait = education_martial_prowess
+							}
+						}
+						add_trait = faithful_warrior
+					}
+				}
+			}
+		}		
+	}
+ }
+ nosferatu_legacy_3 = {
+    legacy = nosferatu_legacy_track
+	character_modifier = {
+	    name = nosferatu_legacy_3_name
+		domain_limit = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = nosferatu_legacy_3_perk
+		}		
+	}
+ }
+ nosferatu_legacy_4 = {
+    legacy = nosferatu_legacy_track
+	character_modifier = {
+	    name = nosferatu_legacy_4_name
+		advantage = 5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = nosferatu_legacy_4_perk
+		}		
+	}
+ }
+ nosferatu_legacy_5 = {
+    legacy = nosferatu_legacy_track
+	character_modifier = {
+	    name = nosferatu_legacy_5_name
+		dread_baseline_add = 10
+		dread_per_tyranny_mult = 0.15
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = nosferatu_legacy_5_perk
+		}		
+	}
+ }
  cappadocian_legacy_1 = {
     legacy = cappadocian_legacy_track
 	character_modifier = {
 	    name = cappadocian_legacy_1_name
 		learning_per_piety_level = 1
+		no_prowess_loss_from_age = yes
 	}	
 	effect = {
 		# Can learn one extra language
@@ -745,6 +822,11 @@
 		# Can learn one extra language
 		custom_description_no_bullet = { text = legacy_additional_language_effect }
 	}	
+	traits = {
+		intellect_good_1 = 100
+		albino = 100
+		scaly = 10
+	}
 	ai_chance = {
 	    value = 3000
 		if = {
@@ -815,6 +897,8 @@
 	character_modifier = {
 	    name = toreador_legacy_1_name
 		diplomacy_per_prestige_level = 1
+		attraction_opinion = 5
+		ai_sociability = medium_positive_ai_value
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -834,6 +918,7 @@
 	character_modifier = {
 	    name = toreador_legacy_2_name
 		seduce_scheme_power_mult = 0.35
+		personal_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -858,6 +943,7 @@
 	character_modifier = {
 	    name = toreador_legacy_4_name
 		claim_throne_scheme_power_mult = 0.5
+		max_sway_schemes_add = 1
 	}	
 	effect = {
 		custom_description_no_bullet = {
@@ -870,6 +956,7 @@
 	character_modifier = {
 	    name = toreador_legacy_5_name
 		courtly_opinion = 10
+		attraction_opinion = 10
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -901,6 +988,7 @@
 	character_modifier = {
 	    name = malkavian_legacy_2_name
 		monthly_income_per_stress_level_mult = 0.2
+		max_learn_language_schemes_add = 1
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -912,6 +1000,7 @@
     legacy = malkavian_legacy_track
 	character_modifier = {
 	    name = malkavian_legacy_3_name
+		owned_scheme_secrecy_add = 15
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -944,6 +1033,302 @@
 		}		
 	}
  }
+ brujah_legacy_1 = {
+    legacy = brujah_legacy_track
+	character_modifier = {
+	    name = brujah_legacy_1_name
+		stress_gain_mult = -0.05
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = brujah_legacy_1_perk
+		}	
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ brujah_legacy_2 = {
+    legacy = brujah_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = brujah_legacy_2_perk
+			dynasty = {
+			    every_dynasty_member = {
+				    if = {
+					    limit = {
+						    OR = {
+							    has_trait = education_martial
+								has_trait = education_martial_prowess
+							}
+						}
+						add_trait = swift_movement
+					}
+				}
+			}		
+	    }
+	}
+ }
+ brujah_legacy_3 = {
+    legacy = brujah_legacy_track
+	character_modifier = {
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = brujah_legacy_3_perk
+		}		
+	}
+ }
+ brujah_legacy_4 = {
+    legacy = brujah_legacy_track
+	character_modifier = {
+	    name = brujah_legacy_4_name
+		monthly_prestige_from_buildings_mult = 0.3
+		monthly_income_mult = 0.3
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = brujah_legacy_4_perk
+		}		
+	}
+ }
+ brujah_legacy_5 = {
+    legacy = brujah_legacy_track
+	character_modifier = {
+	    name = brujah_legacy_5_name
+		knight_effectiveness_mult = 0.1
+		knight_limit = 1
+		prowess_per_prestige_level = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = brujah_legacy_5_perk
+		}		
+	}
+ }
+ tzimisce_legacy_1 = {
+    legacy = tzimisce_legacy_track
+	character_modifier = {
+	    POD_ghoul_maa_damage_mult = 0.10
+		POD_ghoul_maa_toughness_mult = 0.10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = szlachta_legacy_perk_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = tzimisce_legacy_1_perk
+		}		
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ tzimisce_legacy_2 = {
+    legacy = tzimisce_legacy_track
+	character_modifier = {
+	    name = tzimisce_legacy_2_name
+		monthly_income_mult = 0.15
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tzimisce_legacy_2_perk
+		}		
+	}
+ }
+ tzimisce_legacy_3 = {
+    legacy = tzimisce_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = vozhd_legacy_perk_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = tzimisce_legacy_3_perk
+		}		
+	}
+ }
+ tzimisce_legacy_4 = {
+    legacy = tzimisce_legacy_track
+	character_modifier = {
+	    name = tzimisce_legacy_4_name
+		different_faith_county_opinion_mult_even_if_baron = -1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tzimisce_legacy_4_perk
+		}		
+	}
+ }
+ tzimisce_legacy_5 = {
+    legacy = tzimisce_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = tzimisce_legacy_5_perk
+		}		
+	}
+ }
+ tremere_legacy_1 = {
+    legacy = tremere_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = gargoyles_legacy_perk_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = tremere_legacy_1_perk
+		}			
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ tremere_legacy_2 = {
+    legacy = tremere_legacy_track
+	character_modifier = {
+	    name = tremere_legacy_2_name
+		liege_opinion = 15
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tremere_legacy_2_perk
+		}		
+	}
+ }
+ tremere_legacy_3 = {
+    legacy = tremere_legacy_track
+	character_modifier = {
+	    name = tremere_legacy_3_name
+		dynasty_house_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tremere_legacy_3_perk
+		}		
+	}
+ }
+ tremere_legacy_4 = {
+    legacy = tremere_legacy_track
+	character_modifier = {
+	    name = tremere_legacy_4_name
+		men_at_arms_cap = 2
+		POD_gargoyle_maa_toughness_mult = 0.15
+		POD_gargoyle_maa_damage_mult = 0.15		
+		POD_gargoyle_maa_siege_value_add = 0.1		
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tremere_legacy_4_perk
+		}		
+	}
+ }
+ tremere_legacy_5 = {
+    legacy = tremere_legacy_track
+	character_modifier = {
+	    name = tremere_legacy_5_name
+		learning_per_piety_level = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = tremere_legacy_5_perk
+		}		
+		# Can learn one extra language
+		custom_description_no_bullet = { text = legacy_additional_language_effect }
+	}
+ }
+ gangrel_legacy_1 = {
+    legacy = gangrel_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = wolves_legacy_perk_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = gangrel_legacy_1_perk
+		}		
+	}
+	character_modifier = {
+	    name = gangrel_legacy_1_name
+		POD_animals_maa_toughness_mult = 0.15
+		POD_animals_maa_damage_mult = 0.15
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ gangrel_legacy_2 = {
+    legacy = gangrel_legacy_track
+	character_modifier = {
+	    name = gangrel_legacy_2_name
+		light_cavalry_toughness_mult = 0.25
+		light_cavalry_damage_mult = 0.25
+		archer_cavalry_toughness_mult = 0.25
+		archer_cavalry_damage_mult = 0.25		
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = gangrel_legacy_2_perk
+			dynasty = {
+			    every_dynasty_member = {
+				    if = {
+					    limit = {
+						    OR = {
+							    has_trait = education_martial
+								has_trait = education_martial_prowess
+							}
+						}
+						add_trait = hun_tactics
+					}
+				}
+			}
+		}		
+	}
+ }
+ gangrel_legacy_3 = {
+    legacy = gangrel_legacy_track
+	character_modifier = {
+	    name = gangrel_legacy_3_name
+		parochial_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = gangrel_legacy_3_perk
+		}		
+	}
+ }
+ gangrel_legacy_4 = {
+    legacy = gangrel_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = gangrel_legacy_4_perk
+		}		
+	}
+ }
+ gangrel_legacy_5 = {
+    legacy = gangrel_legacy_track
+	character_modifier = {
+		name = gangrel_legacy_5_name
+		monthly_county_control_growth_add = 0.25
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = gangrel_legacy_5_perk
+		}		
+	}
+ }
  pharaoh_mummy_legacy_1 = {
     legacy = pharaoh_mummy_legacy_track
 	character_modifier = {
@@ -951,6 +1336,7 @@
 		attraction_opinion = 5
 		different_culture_opinion = 5
 		seduce_scheme_power_mult = 0.15
+		max_learn_language_schemes_add = 1
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -1007,6 +1393,81 @@
 		custom_description_no_bullet = {
 			 text = pharaoh_mummy_legacy_5_perk_effect
 		}
+	}
+ }
+ ventrue_legacy_1 = {
+    legacy = ventrue_legacy_track
+	character_modifier = {
+	    name = ventrue_legacy_1_name
+	    heavy_infantry_toughness_mult = 0.25
+		heavy_infantry_damage_mult = 0.25
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = ventrue_legacy_1_perk
+		}	
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ ventrue_legacy_2 = {
+    legacy = ventrue_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = ventrue_legacy_2_perk
+			dynasty = {
+			    every_dynasty_member = {
+				    if = {
+					    limit = {
+						    OR = {
+							    has_trait = education_martial
+								has_trait = education_martial_prowess
+							}
+						}
+						add_trait = leading_front
+					}
+				}
+			}		
+	    }
+	}
+ }
+ ventrue_legacy_3 = {
+    legacy = ventrue_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = ventrue_legacy_3_perk
+		}	
+	}
+ }
+ ventrue_legacy_4 = {
+    legacy = ventrue_legacy_track
+	character_modifier = {
+	    name = ventrue_legacy_4_name
+		cultural_head_fascination_mult = 0.35
+		monthly_piety_gain_mult = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = ventrue_legacy_4_perk
+		}	
+	}
+ }
+ ventrue_legacy_5 = {
+    legacy = ventrue_legacy_track
+	character_modifier = {
+	    name = ventrue_legacy_5_name
+	    heavy_cavalry_toughness_mult = 0.3
+		heavy_cavalry_damage_mult = 0.3
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = ventrue_legacy_5_perk
+		}	
 	}
  }
 #UCHIHA

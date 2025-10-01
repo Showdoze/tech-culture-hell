@@ -286,12 +286,9 @@ magicka_legacy_track = {
 				OR = {
 					has_trait = lunatic_1
 					has_trait = lunatic_genetic
-					has_trait = possessed_1
-					has_trait = possessed_genetic
 				}
 				has_trait = immortal
 			}
-			#has_trait = malkavian
 		}
 	}
  }
@@ -307,7 +304,102 @@ magicka_legacy_track = {
 				}
 				has_trait = immortal
 			}
-			#has_trait = toreador
+		}
+	}
+ }
+ nosferatu_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = nosferatu_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = beauty_bad_1
+					has_trait = beauty_bad_2
+					has_trait = beauty_bad_3
+					has_trait = disfigured
+				}
+				has_trait = immortal
+			}
+		}
+	}
+ }
+ ventrue_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = ventrue_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = august
+					has_trait = administrator
+					has_trait = arrogant
+				}
+				has_trait = ambitious
+				has_trait = immortal
+			}
+		}
+	}
+ }
+ gangrel_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = gangrel_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = berserker
+					has_trait = lifestyle_blademaster
+					has_trait = athletic
+					has_trait = confider
+				}
+				has_trait = lifestyle_hunter
+				has_trait = immortal
+			}
+		}
+	}
+ }
+ brujah_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = brujah_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = populist_leader
+					has_trait = peasant_leader
+					has_trait = adventurer
+				}
+				has_trait = immortal
+			}
+		}
+	}
+ }
+ tzimisce_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = tzimisce_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+					has_trait = torturer
+				}
+				has_trait = immortal
+			}
+		}
+	}
+ }
+ tremere_legacy_track = {
+    is_shown = {
+	    OR = {
+			dynasty = { has_dynasty_perk = tremere_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = class_warlock
+					has_trait = class_warlock_fiend
+					has_trait = class_warlock_great
+					has_trait = class_warlock_archfey
+					has_trait = class_warlock_hexblade
+				}
+				has_trait = immortal
+			}
 		}
 	}
  }

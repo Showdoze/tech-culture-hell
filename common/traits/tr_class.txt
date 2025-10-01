@@ -810,6 +810,7 @@ class_monk_drunk = {
     }
     ai_rationality = -10
     ai_energy = -15
+    ai_boldness = 5
     compatibility = {
 		drunkard = 30
 		lifestyle_reveler = 30
@@ -1539,6 +1540,9 @@ class_wizard_necromancy = {
     learning_per_piety_level = 1
     learning_per_prestige_level = 1
     monthly_piety = 0.01
+    undead_damage_mult = 0.1
+	undead_toughness_mult = 0.1
+	undead_maintenance_mult = -0.1
     desc = {
         first_valid = {
             triggered_desc = {
