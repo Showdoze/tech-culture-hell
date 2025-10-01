@@ -269,14 +269,71 @@ magicka_legacy_track = {
 	    }
 	}
 }
-cappadocian_legacy_track = {
+#VTM
+ cappadocian_legacy_track = {
 	is_shown = {
 		OR = {
 			dynasty = { has_dynasty_perk = cappadocian_legacy_1 }
 			#has_trait = start_uchiha
 		}
 	}
-}
+ }
+ malkavian_legacy_track = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = malkavian_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = lunatic_1
+					has_trait = lunatic_genetic
+					has_trait = possessed_1
+					has_trait = possessed_genetic
+				}
+				has_trait = immortal
+			}
+			#has_trait = malkavian
+		}
+	}
+ }
+ toreador_legacy_track = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = toreador_legacy_1 }
+			AND = {
+				OR = {
+					has_trait = beauty_good_1
+					has_trait = beauty_good_2
+					has_trait = beauty_good_3
+				}
+				has_trait = immortal
+			}
+			#has_trait = toreador
+		}
+	}
+ }
+ pharaoh_mummy_legacy_track = {
+    is_shown = {
+		OR = { 
+			dynasty = { has_dynasty_perk = pharaoh_mummy_legacy_1 }
+			AND = {
+				OR = {
+					dynast = { culture = { this = culture:ancient_egyptian } }
+					dynast = { culture = { this = culture:ptolemaic } }
+					dynast = { culture = { this = culture:nile_elf } }
+					has_trait = follow_osiris
+					has_trait = follow_isis
+					has_trait = follow_horus
+					has_trait = follow_seth
+					has_trait = follow_anubis
+					has_trait = follow_bastet
+					has_trait = follow_amun
+					has_trait = follow_hathor
+				}
+				has_trait = immortal
+			}
+		}
+	}
+ }
 belmont_legacy_track = {
     is_shown = {
 		OR = {

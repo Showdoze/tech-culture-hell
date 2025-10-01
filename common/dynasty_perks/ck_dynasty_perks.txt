@@ -730,10 +730,9 @@
 		}
 	}
  }
-#CAPPADOCIAN LEGACIES
+#VTM
  cappadocian_legacy_1 = {
     legacy = cappadocian_legacy_track
-	#cost = dynasty_legacy_tier_5_cost
 	character_modifier = {
 	    name = cappadocian_legacy_1_name
 		learning_per_piety_level = 1
@@ -756,7 +755,6 @@
  }
  cappadocian_legacy_2 = {
     legacy = cappadocian_legacy_track
-	#cost = dynasty_legacy_tier_5_cost
 	effect = {
 		custom_description_no_bullet = {
 			text = cappadocian_legacy_2_perk
@@ -777,15 +775,11 @@
  }
  cappadocian_legacy_3 = {
     legacy = cappadocian_legacy_track
-	
-	#cost = dynasty_legacy_tier_5_cost
-	
 	character_modifier = {
 	    name = cappadocian_legacy_3_name
 	    hostile_scheme_resistance_add = 10
 		owned_hostile_scheme_success_chance_add = 5
 	}
-	
 	effect = {
 		custom_description_no_bullet = {
 			text = cappadocian_legacy_3_perk
@@ -794,7 +788,6 @@
  }
  cappadocian_legacy_4 = {
     legacy = cappadocian_legacy_track
-	#cost = dynasty_legacy_tier_5_cost
 	character_modifier = {
 	    name = cappadocian_legacy_4_name
 	    monthly_income_per_stress_level_mult = 0.25
@@ -807,7 +800,6 @@
  }
  cappadocian_legacy_5 = {
     legacy = cappadocian_legacy_track
-	#cost = dynasty_legacy_tier_5_cost
 	character_modifier = {
 	    name = cappadocian_legacy_5_name
 	    dynasty_house_opinion = 10
@@ -816,6 +808,205 @@
 		custom_description_no_bullet = {
 			text = cappadocian_legacy_5_perk
 		}		
+	}
+ }
+ toreador_legacy_1 = {
+    legacy = toreador_legacy_track
+	character_modifier = {
+	    name = toreador_legacy_1_name
+		diplomacy_per_prestige_level = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = toreador_legacy_1_perk
+		}	
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ toreador_legacy_2 = {
+    legacy = toreador_legacy_track
+	character_modifier = {
+	    name = toreador_legacy_2_name
+		seduce_scheme_power_mult = 0.35
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = toreador_legacy_2_perk
+		}		
+	}
+ }
+ toreador_legacy_3 = {
+    legacy = toreador_legacy_track
+	character_modifier = {
+	    name = toreador_legacy_3_name
+		same_faith_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = toreador_legacy_3_perk
+		}		
+	}
+ }
+ toreador_legacy_4 = {
+    legacy = toreador_legacy_track
+	character_modifier = {
+	    name = toreador_legacy_4_name
+		claim_throne_scheme_power_mult = 0.5
+	}	
+	effect = {
+		custom_description_no_bullet = {
+			text = toreador_legacy_4_perk
+		}		
+	}
+ }
+ toreador_legacy_5 = {
+    legacy = toreador_legacy_track	
+	character_modifier = {
+	    name = toreador_legacy_5_name
+		courtly_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = toreador_legacy_5_perk
+		}		
+	}
+ }
+ malkavian_legacy_1 = {
+    legacy = malkavian_legacy_track
+	character_modifier = {
+	    name = malkavian_legacy_1_name
+		dynasty_house_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = malkavian_legacy_1_perk
+		}	
+	}
+	ai_chance = {
+	    value = 3000
+		if = {
+		    limit = { can_start_new_legacy_track_trigger = no }
+			multiply = 0
+		}
+	}
+ }
+ malkavian_legacy_2 = {
+    legacy = malkavian_legacy_track
+	character_modifier = {
+	    name = malkavian_legacy_2_name
+		monthly_income_per_stress_level_mult = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = malkavian_legacy_2_perk
+		}		
+	}
+ }
+ malkavian_legacy_3 = {
+    legacy = malkavian_legacy_track
+	character_modifier = {
+	    name = malkavian_legacy_3_name
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = malkavian_legacy_3_perk
+		}		
+	}
+ }
+ malkavian_legacy_4 = {
+    legacy = malkavian_legacy_track
+	character_modifier = {
+	    name = malkavian_legacy_4_name
+		tyranny_loss_mult = 1
+		dread_baseline_add = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = malkavian_legacy_4_perk
+		}		
+	}
+ }
+ malkavian_legacy_5 = {
+    legacy = malkavian_legacy_track
+	character_modifier = {
+	    name = malkavian_legacy_5_name
+		learning_per_piety_level = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = malkavian_legacy_5_perk
+		}		
+	}
+ }
+ pharaoh_mummy_legacy_1 = {
+    legacy = pharaoh_mummy_legacy_track
+	character_modifier = {
+	    name = pharaoh_mummy_legacy_1_name
+		attraction_opinion = 5
+		different_culture_opinion = 5
+		seduce_scheme_power_mult = 0.15
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = pharaoh_mummy_legacy_1_perk_effect
+		}
+	}
+ }
+ pharaoh_mummy_legacy_2 = {
+    legacy = pharaoh_mummy_legacy_track
+	character_modifier = {
+	    name = pharaoh_mummy_legacy_2_name
+		pikemen_damage_mult = 0.2
+		pikemen_toughness_mult = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = pharaoh_mummy_legacy_2_perk_effect
+		}
+	}
+ }
+ pharaoh_mummy_legacy_3 = {
+    legacy = pharaoh_mummy_legacy_track
+	character_modifier = {
+	    name = pharaoh_mummy_legacy_3_name
+		controlled_province_advantage = 10
+		additional_fort_level = 1
+	}	
+	effect = {
+		custom_description_no_bullet = {
+			text = pharaoh_mummy_legacy_3_perk_effect
+		}
+	}
+ }
+ pharaoh_mummy_legacy_4 = {
+    legacy = pharaoh_mummy_legacy_track
+	character_modifier = {
+	    name = pharaoh_mummy_legacy_4_name
+		same_faith_opinion = 5
+		monthly_piety_from_buildings_mult = 0.5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			 text = pharaoh_mummy_legacy_4_perk_effect
+		}
+	}
+ }
+ pharaoh_mummy_legacy_5 = {
+    legacy = pharaoh_mummy_legacy_track
+	character_modifier = {
+	    name = pharaoh_mummy_legacy_5_name
+		character_capital_county_monthly_development_growth_add = 0.3
+	}
+	effect = {
+		custom_description_no_bullet = {
+			 text = pharaoh_mummy_legacy_5_perk_effect
+		}
 	}
  }
 #UCHIHA
