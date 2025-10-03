@@ -202,7 +202,6 @@ tr_select_deity.01 = {
             }
         }
     }
-
     window = visit_settlement_window
     theme = faith
     left_portrait = {
@@ -2736,7 +2735,7 @@ tr_select_deity.01 = {
 		}
     }
  ##### PAGAN
-     option = {
+    option = {
         name = pagan_choose_deity_jesus
         trigger = {
             OR = {
@@ -2778,7 +2777,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-     option = {
+    option = {
         name = pagan_choose_deity_islam
         trigger = {
             OR = {
@@ -2817,6 +2816,23 @@ tr_select_deity.01 = {
 			modifier = {
 				add = -100
 				has_trait = zealous
+			}
+		}
+    }
+    option = {
+        name = god_choice_ashur
+        trigger = {
+            OR = {
+                culture = culture:assyrian
+                faith = faith:assyrian_pagan
+            }
+        }
+        add_trait = follow_ashur
+        ai_chance = {
+			base = 1
+			modifier = {
+				#add = 100
+				#has_trait = zealous
 			}
 		}
     }

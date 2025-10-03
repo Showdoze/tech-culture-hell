@@ -43,7 +43,7 @@ tr_summoning.01 = { #summon demons
         animation = personality_rational
     }
 
-    ###### DEMONS ######
+ ###### DEMONS ######
 
     option = {
         name = tr_summoning_event_summon_imp
@@ -149,7 +149,7 @@ tr_summoning.01 = { #summon demons
         add_piety = -1000
     }
 
-    ####### DWEMER ####
+ ####### DWEMER ####
 
     option = {
         name = tr_summoning_event_summon_dwemer_sphere
@@ -192,9 +192,26 @@ tr_summoning.01 = { #summon demons
         }
         remove_short_term_gold = 1000
     }
+ #THief
+  option = {
+        name = tr_summoning_event_summon_thief_zombie
+        custom_tooltip = tr_summoning_event_summon_thief_zombie_tip
 
-    ####CANCEL
-
+        trigger = {
+            has_trait = follow_mage_death
+        }
+        spawn_army = {
+            men_at_arms = {
+                type = thief_zombie
+                men = 1000
+            }
+            location = root.location
+            inheritable = yes
+            name = thief_zombie
+        }
+        add_piety = -400
+    }
+ ####CANCEL
     option = {
         name = tr_summoning_event_summon_cancel
         custom_tooltip = tr_summoning_event_summon_cancel_tip

@@ -1845,6 +1845,8 @@
 	rf_pagan_opinion = -20
 	monthly_influence = 1
 	stewardship_per_prestige_level = 1
+	roman_opinion = 5
+	greek_opinion = 5
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -1883,6 +1885,7 @@
 	stewardship_per_prestige_level = 1
 	diplomacy_per_prestige_level = 1
 	owned_personal_scheme_success_chance_add = 10
+	roman_opinion = 10
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -1921,6 +1924,7 @@
 	martial_per_prestige_level = 1
 	christianity_religion_opinion = -20
 	rf_pagan_opinion = 15
+	roman_opinion = 10
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -1946,6 +1950,42 @@
 		august = 10
 		roman_friend = 30
 		roman_enemy = -30
+		administrator = 10
+	}
+ }
+ follow_charlemagne = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.3
+	monthly_prestige = 0.05
+	monthly_influence = 0.25
+	stewardship_per_prestige_level = 1
+	martial_per_prestige_level = 1
+	christianity_religion_opinion = 15
+	rf_pagan_opinion = -15
+	islam_religion_opinion = -10
+	frankish_opinion = 10
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_charlemagne_desc
+			}
+			desc = trait_follow_charlemagne_character_desc
+		}
+	}
+	compatibility = {
+		follow_charlemagne = 15
+		follow_diocletian = -15
+		august = 10
+		frankish_friend = 30
+		frankish_enemy = -30
 		administrator = 10
 	}
  }
@@ -3323,7 +3363,7 @@
 	monthly_piety_gain_per_dread_add = 0.75
 	men_at_arms_maintenance_per_dread_mult = -0.02
 	knight_effectiveness_per_dread = 0.02
-	same_faith_opinion = -10
+	christianity_religion_opinion = -20
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	ai_rationality = -200
@@ -3463,6 +3503,31 @@
 		gallant = 10
 	}
     opposites = {
+	}
+ }
+ follow_ashur = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.3
+	desert_advantage = 2
+	monthly_prestige = 0.02
+	zealot_same_faith_opinion = 25
+	ruler_designer_cost = 15
+	flag = tr_follow_god_trait
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_ashur_desc
+			}
+			desc = trait_follow_ashur_desc
+		}
+	}
+	compatibility = {
 	}
  }
 # 

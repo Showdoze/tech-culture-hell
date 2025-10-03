@@ -902,6 +902,14 @@ summon_speical_maa_decision = {
                 }
                 desc = construct_animunculi_decision
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = follow_mage_death
+                    }    
+                }
+                desc = summon_fallback
+            }
         }
     }
     desc = {
@@ -917,6 +925,14 @@ summon_speical_maa_decision = {
                     culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = follow_mage_death
+                    }    
+                }
+                desc = summon_fallback_desc
             }
         }
     }
@@ -934,6 +950,14 @@ summon_speical_maa_decision = {
                 }
                 desc = construct_animunculi_decision_tip
             }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = follow_mage_death
+                    }    
+                }
+                desc = summon_fallback_tip
+            }
         }
     }
     confirm_text = {
@@ -949,6 +973,14 @@ summon_speical_maa_decision = {
                     culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_confirm
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = follow_mage_death
+                    }    
+                }
+                desc = summon_fallback_confirm
             }
         }
     }
