@@ -1124,6 +1124,281 @@ tr_select_deity.01 = {
 			}
 		}
     }
+ ######Greek PAGAN
+    option = {
+        name = god_choice_zeus
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_zeus
+                }
+            }
+        }
+        add_trait = follow_zeus
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = administrator
+			}
+		}
+    }
+    option = {
+        name = god_choice_hera
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_hera
+                }
+            }
+        }
+        add_trait = follow_hera
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = strategist
+			}
+		}
+    }
+    option = {
+        name = god_choice_athena
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_athena
+                }
+            }
+        }
+        add_trait = follow_athena
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = strategist
+			}
+		}
+    }
+    option = {
+        name = god_choice_ares
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_ares
+                }
+            }
+        }
+        add_trait = follow_ares
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = lifestyle_blademaster
+			}
+		}
+    }
+    option = {
+        name = god_choice_demeter
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_demeter
+                }
+            }
+        }
+        add_trait = follow_demeter
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = lifestyle_gardener
+			}
+		}
+    }
+    option = {
+        name = god_choice_posidion
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_posidion
+                }
+            }
+        }
+        add_trait = follow_posidion
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = viking
+			}
+		}
+    }
+    option = {
+        name = god_choice_dionysos
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_dionysos
+                }
+            }
+        }
+        add_trait = follow_dionysos
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = drunkard
+			}
+            modifier = {
+				add = 5
+				has_trait = gluttonous
+			}
+            modifier = {
+				add = 5
+				has_trait = lifestyle_reveler
+			}
+		}
+    }
+    option = {
+        name = god_choice_hephestios
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_hephestios
+                }
+            }
+        }
+        add_trait = follow_hephestios
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = architect
+			}
+		}
+    }
+    option = {
+        name = god_choice_hermes
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_hermes
+                }
+            }
+        }
+        add_trait = follow_hermes
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = lifestyle_wayfarer
+			}
+		}
+    }
+    option = {
+        name = god_choice_apollon
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_apollon
+                }
+            }
+        }
+        add_trait = follow_apollon
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = lifestyle_physician
+			}
+		}
+    }
+    option = {
+        name = god_choice_aphrodite
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_aphrodite
+                }
+            }
+        }
+        add_trait = follow_aphrodite
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = knight_errant
+			}
+		}
+    }
+    option = {
+        name = god_choice_artemis
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_artemis
+                }
+            }
+        }
+        add_trait = follow_artemis
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = lifestyle_hunter
+			}
+		}
+    }
+    option = {
+        name = god_choice_herakles
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_herakles
+                }
+            }
+        }
+        add_trait = follow_herakles
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = gallant
+			}
+		}
+    }
+    option = {
+        name = god_choice_asklepios
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_asklepios
+                }
+            }
+        }
+        add_trait = follow_asklepios
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 5
+				has_trait = family_first
+			}
+		}
+    }
  ###NORSE
      option = {
         name = god_choice_odin

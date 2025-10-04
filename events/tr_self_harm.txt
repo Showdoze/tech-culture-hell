@@ -1,0 +1,91 @@
+tr_self_harm_event.01 = {
+    type = character_event
+    title = self_harm_events
+    window = visit_settlement_window
+    theme = mental_health
+    desc = self_harm_events
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+    option = {
+        name = self_harm_events_odin
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:norse
+                    faith = faith:norse_pagan
+                    has_trait = follow_odin
+                }    
+                NOR = {
+                    has_trait = one_eyed
+                    has_trait = blind
+                }
+            }
+        }
+        add_trait = one_eyed
+        add_piety = major_piety_gain
+        add_learning_skill = 10
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 100
+				has_trait = follow_odin
+			}
+		}
+    }
+    option = {
+        name = self_harm_events_trickster
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:green_cult
+                    faith = faith:primative_cult
+                    faith = faith:pagan_faith
+                    has_trait = lifestyle_mystic
+                }    
+                NOR = {
+                    has_trait = one_eyed
+                    has_trait = blind
+                }
+            }
+        }
+        add_trait = one_eyed
+        add_prestige = 200
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = follow_odin
+			}
+		}
+    }
+    option = {
+        name = self_harm_events_cure_for_clubfoot
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = clubfooted
+                NOR = {
+                    has_trait = one_legged
+                }
+            }
+        }
+        remove_trait = clubfooted
+        add_trait = one_legged
+        add_prestige = 200
+        ai_chance = {
+			base = 1
+		}
+    }
+ ####Opt-Out
+    option = {
+        name = tr_select_deity_cancel
+        custom_tooltip = tr_select_deity_cancel_tip
+    }
+}

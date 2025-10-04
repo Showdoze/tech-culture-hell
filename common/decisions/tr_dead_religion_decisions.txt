@@ -2,25 +2,19 @@
 	picture =  { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
 	ai_check_interval = 0
-
 	desc = restore_kemet_decision_desc
-
 	is_shown = {
 		faith = faith:kemetic_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_kemet.holder
         }
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
 	is_valid = {
 		OR = {
 			AND = {
@@ -40,67 +34,52 @@
 			}
 		}
 	}
-
 	cost = {
 		gold = 1200
 		prestige = 2000
 		piety = 600
 	}
-
 	effect = {
 		create_title_and_vassal_change = change
-
 		scope:change = {
 			set_title_and_vassal_change_type = created
 		}
-
 		title:k_kemet = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
-
 			hidden_effect = {
 				set_title_name = k_kemet
 			}
 		}
-
 		resolve_title_and_vassal_change = scope:change
-		
 		hidden_effect = {
 			save_scope_as = founder
 			primary_title = {
 				save_scope_as = old_title
 			}
-
 			create_dynamic_title = {
 				tier = empire
 				name = "Kemet"
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = created
 			}
-
 			scope:new_title = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
-
 			every_held_title = {
 				limit = {
 					tier = tier_kingdom
-				}
-				
+				}				
 				set_de_jure_liege_title = scope:new_title
 			}
-
 			every_sub_realm_county = {
 				limit = {
 					exists = kingdom
@@ -127,16 +106,13 @@
 					}
 				}
 			}
-
 			scope:new_title = {
 				set_title_name = title:k_kemet
 				set_coa = title:k_kemet
 				set_color_from_title = title:k_kemet
 				set_capital_county = title:k_kemet.title_capital_county
 			}
-
 			set_primary_title_to = scope:new_title
-
 			title:d_cyrenaica = { set_de_jure_liege_title = title:k_kemet }
 			title:d_alexandria = { set_de_jure_liege_title = title:k_kemet }
 			title:d_delta = { set_de_jure_liege_title = title:k_kemet }
@@ -151,20 +127,17 @@
 			title:d_shamir = { set_de_jure_liege_title = title:k_kemet }
 			title:d_naqis = { set_de_jure_liege_title = title:k_kemet }
 		}
-
 		every_held_title = {
 			limit = {
 				NOR = {
 					this = root.primary_title
 					this = title:k_kemet
-				}
-				
+				}				
                 OR = {
                     tier = tier_kingdom
                     tier = tier_empire
                 }
             }
-
             root = {
                 destroy_title = prev
             }
@@ -684,25 +657,17 @@ restore_assyria_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
 	ai_check_interval = 0
-
 	desc = restore_assyria_decision_desc
-
 	is_shown = {
 		faith = faith:assyrian_pagan
-
         is_independent_ruler = yes
-
-        NOT = {
-            exists = title:k_assyria.holder
-        }
+        NOT = { exists = title:k_assyria.holder }
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
 	is_valid = {
 		OR = {
 			AND = {
@@ -750,55 +715,43 @@ restore_assyria_decision = {
 			}
 		}
 	}
-
 	cost = {
 		gold = 1200
 		prestige = 2000
 		piety = 600
 	}
-
 	effect = {
 		create_title_and_vassal_change = change
-
 		scope:change = {
 			set_title_and_vassal_change_type = created
 		}
-
 		title:k_assyria = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
 		}
-
 		resolve_title_and_vassal_change = scope:change
-
 		hidden_effect = {
 			save_scope_as = founder
 			primary_title = {
 				save_scope_as = old_title
 			}
-
 			create_dynamic_title = {
 				tier = empire
 				name = "Assyria"
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = created
 			}
-
 			scope:new_title = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
-
 			every_held_title = {
 				limit = {
 					tier = tier_kingdom
@@ -806,7 +759,6 @@ restore_assyria_decision = {
 				
 				set_de_jure_liege_title = scope:new_title
 			}
-
 			every_sub_realm_county = {
 				limit = {
 					exists = kingdom
@@ -833,16 +785,13 @@ restore_assyria_decision = {
 					}
 				}
 			}
-
 			scope:new_title = {
 				set_title_name = title:k_assyria
 				set_coa = title:k_assyria
 				set_color_from_title = title:k_assyria
 				set_capital_county = title:k_assyria.title_capital_county
 			}
-
 			set_primary_title_to = scope:new_title
-
 			title:d_basra = { set_de_jure_liege_title = title:k_assyria }
 			title:d_kufa = { set_de_jure_liege_title = title:k_assyria }
 			title:d_wasit = { set_de_jure_liege_title = title:k_assyria }
@@ -885,27 +834,23 @@ restore_assyria_decision = {
 			title:d_vaspurakan = { set_de_jure_liege_title = title:k_assyria }
 			title:d_hamadan = { set_de_jure_liege_title = title:k_assyria }
 		}
-
 		every_held_title = {
 			limit = {
 				NOR = {
 					this = root.primary_title
 					this = title:k_assyria
-				}
-				
+				}				
                 OR = {
                     tier = tier_kingdom
                     tier = tier_empire
                 }
             }
-
             root = {
                 destroy_title = prev
             }
         }
 	}
 }
-
 restore_canaan_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
@@ -2004,36 +1949,30 @@ set_capital_giza_decision = {
 	is_shown = {
 		has_title = title:k_kemet
 		faith = faith:kemetic_pagan
-
         NOT = {
             capital_county = {
                 this = title:c_giza
             }
         }
-
         OR = {
 			title:c_giza.holder = { 	
 				any_liege_or_above = {
                     this = root
                 }
 			}
-
 			title:c_giza.holder = {
                 this = root
             }
 		}
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
 	cost = {
 		gold = 75
 	}
-
 	effect = {
 		if = {
 			limit = {
@@ -2043,33 +1982,26 @@ set_capital_giza_decision = {
                     } 
                 }
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = returned
 			}
-
 			title:c_giza = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
 		}
-
 		title:c_giza = {
 			hidden_effect = {
 				set_title_name = c_memphis
 			}
 		}
-
 		set_realm_capital = title:c_giza
 	}
 }
-
 set_capital_amarna_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
@@ -2379,42 +2311,34 @@ set_capital_assur_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
 	ai_check_interval = 0
-
 	desc = set_capital_assur_decision_desc
-
 	is_shown = {
 		has_title = title:k_assyria
 		faith = faith:assyrian_pagan
-
         NOT = {
             capital_county = {
                 this = title:c_mosul
             }
         }
-
         OR = {
 			title:c_mosul.holder = { 	
 				any_liege_or_above = {
                     this = root
                 }
 			}
-
 			title:c_mosul.holder = {
                 this = root
             }
 		}
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
 	cost = {
 		gold = 75
 	}
-
 	effect = {
 		if = {
 			limit = {
@@ -2424,33 +2348,26 @@ set_capital_assur_decision = {
                     } 
                 }
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = returned
 			}
-
 			title:c_mosul = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
 		}
-
 		title:c_mosul = {
 			hidden_effect = {
 				set_title_name = c_assur
 			}
 		}
-
 		set_realm_capital = title:c_mosul
 	}
 }
-
 set_capital_hatzor_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major

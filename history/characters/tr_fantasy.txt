@@ -2739,7 +2739,7 @@
 	}
 	908.1.1 = { death = { death_reason = death_disappearance } }
   }
-#tv shows
+#tv shows MOVIES
  tr_peaky_blinders_shelby_dad = {
 	name = "Arthur Shelby Sr."
 	religion = protestant
@@ -2794,7 +2794,8 @@
 	}
 	870.1.1 = { death = { death_reason = death_drinking_passive } }
  }
- tr_fguy_peter = {
+ #FAMLIY GUYYY
+  tr_fguy_peter = {
 	name = "Peter Griffin"
 	religion = catholic
 	dynasty = fantasy
@@ -2811,8 +2812,8 @@
 	822.1.1 = { birth = yes }
 	840.1.1 = { add_spouse = tr_fguy_lois }
 	900.1.1 = { death = { death_reason = death_disappearance } }
- }
- tr_fguy_lois = {
+  }
+  tr_fguy_lois = {
 	name = "Lois Griffin"
 	religion = protestant
 	dynasty = fantasy
@@ -2828,8 +2829,8 @@
 	824.1.1 = { birth = yes }
 	840.1.1 = { add_spouse = tr_fguy_peter }
 	900.1.1 = { death = { death_reason = death_disappearance } }
- }
- tr_fguy_chris = {
+  }
+  tr_fguy_chris = {
 	name = "Chris Griffin"
 	religion = catholic
 	dynasty = fantasy
@@ -2845,8 +2846,8 @@
 	disallow_random_traits = yes
 	851.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_disappearance } }
- }
- tr_fguy_meg = {
+  }
+  tr_fguy_meg = {
 	name = "Meg Griffin"
 	religion = catholic
 	dynasty = fantasy
@@ -2863,8 +2864,8 @@
 	disallow_random_traits = yes
 	849.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_disappearance } }
- }
- tr_fguy_quagmire = {
+   }
+  tr_fguy_quagmire = {
 	name = "Quagmire"
 	religion = protestant
 	dynasty = fantasy
@@ -2883,6 +2884,32 @@
 	disallow_random_traits = yes
 	822.1.1 = { birth = yes }
 	900.1.1 = { death = { death_reason = death_disappearance } }
+  }
+ tr_micheal_myers = {
+    name = "Michael Myers"
+	religion = blood_faith
+	dynasty = fantasy
+	culture = american
+	prowess = 50
+	intrigue = 15
+	trait = education_martial_prowess_4
+	trait = immortal
+	trait = mute
+    trait = murderer
+    trait = athletic
+    trait = celibate
+    trait = kinslayer_3
+    trait = follow_ripper
+    trait = callous
+    trait = calm
+	trait = shy
+	trait = patient
+	trait = reclusive
+	trait = disfigured
+    trait = physique_good_3
+    disallow_random_traits = yes
+	846.1.1 = { birth = yes }
+	870.1.1 = { death = { death_reason = death_mysterious } }
  }
 #
 # Literature

@@ -1841,9 +1841,10 @@
 	random_creation = 0
     monthly_piety = 0.3
 	monthly_prestige = 0.05
+	monthly_influence = 1
 	christianity_religion_opinion = 15
 	rf_pagan_opinion = -20
-	monthly_influence = 1
+	zoroastrianism_religion_opinion = -15
 	stewardship_per_prestige_level = 1
 	roman_opinion = 5
 	greek_opinion = 5
@@ -1917,8 +1918,8 @@
  follow_diocletian = {
     category = fame
 	random_creation = 0
-    monthly_piety = 0.3
-	monthly_prestige = 0.05
+    monthly_piety = 0.25
+	monthly_prestige = 0.1
 	monthly_influence = 1
 	stewardship_per_prestige_level = 1
 	martial_per_prestige_level = 1
@@ -1956,12 +1957,14 @@
  follow_charlemagne = {
     category = fame
 	random_creation = 0
-    monthly_piety = 0.3
+    monthly_piety = 0.35
 	monthly_prestige = 0.05
 	monthly_influence = 0.25
-	stewardship_per_prestige_level = 1
+	fertility = 0.1
 	martial_per_prestige_level = 1
-	christianity_religion_opinion = 15
+	catholic_opinion = 10
+	norse_pagan_opinion = -10
+	orthodox_opinion = -15
 	rf_pagan_opinion = -15
 	islam_religion_opinion = -10
 	frankish_opinion = 10
@@ -1987,6 +1990,42 @@
 		frankish_friend = 30
 		frankish_enemy = -30
 		administrator = 10
+	}
+ }
+ follow_julius_caesar = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.2
+	monthly_prestige = 0.1
+	monthly_influence = 1
+	martial_per_prestige_level = 1
+	diplomacy_per_prestige_level = 1
+	rf_pagan_opinion = 10
+	roman_opinion = 10
+	hellenism_religion_opinion = 10
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_julius_caesar_desc
+			}
+			desc = trait_follow_julius_caesar_character_desc
+		}
+	}
+	compatibility = {
+		follow_julius_caesar = 15
+		follow_augustus = 10
+		august = 10
+		roman_friend = 30
+		roman_enemy = -30
+		administrator = 10
+		overseer = 10
 	}
  }
 #DND 
@@ -3274,7 +3313,7 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.1
-	monthly_prestige = 0.03
+	monthly_prestige = 0.5
 	prowess_per_piety_level = 1
 	prowess_per_prestige_level = 2
 	knight_effectiveness_per_prowess = 0.01
@@ -3301,7 +3340,6 @@
 		follow_kaguya
 	}
 	compatibility = {
-		murderer = 5
 		lifestyle_blademaster = 15
 		physique_good_3 = 15
 		physique_bad_3 = -30
@@ -3309,13 +3347,16 @@
 		gallant = 10
 		start_uchiha = 50
 		follow_kaguya = -30
+		kinslayer_1 = -10
+		kinslayer_2 = -20
+		kinslayer_3 = - 30
 	}
  }
  follow_kaguya = {
     category = fame
 	random_creation = 0
     monthly_piety = 0.1
-	monthly_prestige = 0.03
+	monthly_prestige = 0.5
 	prowess_per_piety_level = 1
 	prowess_per_prestige_level = 2
 	owned_hostile_scheme_success_chance_max_add = 5
@@ -3355,7 +3396,6 @@
  follow_cthulhu = {
     category = fame
 	random_creation = 0
-	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	monthly_income_mult = 0.1
@@ -3381,13 +3421,13 @@
 			desc = trait_follow_cthulhu_desc
 		}
 	}
-    opposites = {
+    compatibility = {
+		follow_cthulhu = 20
 	}
  }
  follow_hastur = {
     category = fame
 	random_creation = 0
-	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	monthly_income_mult = 0.1
@@ -3400,6 +3440,9 @@
 	flag = tr_follow_god_trait
 	ai_rationality = -200
 	satanism_opinion = 8
+	compatibility = {
+		follow_hastur = 20
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -3417,8 +3460,8 @@
  follow_quake = {
     category = fame
 	random_creation = 0
-	same_opinion = 20
     monthly_piety = 1
+	monthly_prestige = 0.02
 	prowess_per_piety_level = 5
 	men_at_arms_maintenance_per_dread_mult = 1.2
 	knight_effectiveness_per_dread = 0.1
@@ -3429,6 +3472,9 @@
 	travel_speed = 2
 	travel_safety = 10
 	ai_rationality = -50
+	compatibility = {
+		follow_quake = 20
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -3509,9 +3555,11 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.3
+	monthly_prestige = 0.05
 	desert_advantage = 2
 	monthly_prestige = 0.02
 	zealot_same_faith_opinion = 25
+	assyrian_opinion = 10
 	ruler_designer_cost = 15
 	flag = tr_follow_god_trait
 	desc = {
@@ -3528,6 +3576,7 @@
 		}
 	}
 	compatibility = {
+		follow_ashur = 15
 	}
  }
 # 

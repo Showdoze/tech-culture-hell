@@ -796,9 +796,6 @@ tr_select_personal_deity_decision = {
                 religion = religion:finno_ugric_religion
                 faith = faith:kiratism
                 faith = faith:yumaism
-                faith = faith:dragon_cult
-                faith = faith:green_cult
-                faith = faith:deep_cult
                 faith = faith:mage_faith
                 faith = faith:hellenic_pagan
                 faith = faith:norse_pagan
@@ -850,12 +847,8 @@ tr_select_personal_deity_decision = {
         }
         else = yes
     }
-    cooldown = {
-        years = 1
-    }
-    effect = {
-        trigger_event = tr_select_deity.01
-    }
+    cooldown = { years = 1 }
+    effect = { trigger_event = tr_select_deity.01 }
     ai_check_interval = 360
     ai_potential = {
         piety >= minor_piety_value
@@ -1044,5 +1037,40 @@ tr_choose_class_decision = {
     }
     ai_potential = {
         always = yes
+    }
+}
+tr_self_harm_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
+    title = self_harm_decision
+    desc = self_harm_decision_desc
+    selection_tooltip = self_harm_decision_tip
+    confirm_text = self_harm_decision_confirm
+    cooldown = { years = 5 }
+    is_shown = {
+        AND = {
+            OR = {
+                has_trait = possessed_1
+                has_trait = lunatic_1
+                has_trait = lunatic_genetic
+                has_trait = possessed_genetic
+                has_trait = flagellant
+            }    
+            OR = {
+                faith = faith:green_cult
+                faith = faith:pagan_faith
+                faith = faith:primative_cult
+                culture = culture:norse
+                faith = faith:norse_pagan
+                has_trait = lifestyle_mystic
+                has_trait = witch
+            }
+            NOR = {
+            }
+        }    
+    }
+    is_valid = { piety >= 50 }
+    effect = { trigger_event = { id = tr_self_harm_event.01 } }
+    ai_will_do = {
+        base = 10
     }
 }
