@@ -43,6 +43,7 @@ tr_self_harm_event.01 = {
                     faith = faith:primative_cult
                     faith = faith:pagan_faith
                     has_trait = lifestyle_mystic
+                    has_trait = witch
                 }    
                 NOR = {
                     has_trait = one_eyed
@@ -52,6 +53,7 @@ tr_self_harm_event.01 = {
         }
         add_trait = one_eyed
         add_prestige = 200
+        add_piety = 200
         ai_chance = {
 			base = 1
 			modifier = {
@@ -79,6 +81,45 @@ tr_self_harm_event.01 = {
         remove_trait = clubfooted
         add_trait = one_legged
         add_prestige = 200
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = self_harm_events_oath_of_the_deep
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:deep_cult
+                    culture = culture:innsmouth
+                }
+                NOR = {
+                    has_trait = scaly
+                }
+            }
+        }
+        add_trait = scaly
+        add_piety = major_piety_gain
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = self_harm_events_dwarf_be_gone
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = dwarf
+            }
+        }
+        remove_trait = dwarf
+        add_trait = spindly
+        add_trait = wounded_1
         ai_chance = {
 			base = 1
 		}

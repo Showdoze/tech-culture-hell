@@ -202,6 +202,7 @@ convert_resources_decision = {
 }
 
 tr_select_personal_deity_decision = {
+ #PICTUre   
     picture = {
         trigger = { faith = faith:satanism }
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
@@ -284,6 +285,7 @@ tr_select_personal_deity_decision = {
         }
         reference = "gfx/interface/illustrations/decisions/decision_imperial_faith.dds"
     }
+ #   
     title = {
         first_valid = {
             triggered_desc = {
@@ -1040,29 +1042,129 @@ tr_choose_class_decision = {
     }
 }
 tr_self_harm_decision = {
-    picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
-    title = self_harm_decision
-    desc = self_harm_decision_desc
+    picture = { reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds" }
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = has_trait = lifestyle_mystic
+                        faith = faith:deep_cult
+                        culture = culture:innsmouth
+                        has_trait = witch
+                    }
+                }
+                desc = self_harm_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                    }
+                }
+                desc = lunatic_self_harm_decision
+            }
+        }   
+    }  
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = has_trait = lifestyle_mystic
+                        faith = faith:deep_cult
+                        culture = culture:innsmouth
+                        has_trait = witch
+                    }
+                }
+                desc = self_harm_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                    }
+                }
+                desc = lunatic_self_harm_decision_desc
+            }
+        } 
+    }          
     selection_tooltip = self_harm_decision_tip
     confirm_text = self_harm_decision_confirm
     cooldown = { years = 5 }
     is_shown = {
         AND = {
             OR = {
-                has_trait = possessed_1
-                has_trait = lunatic_1
-                has_trait = lunatic_genetic
-                has_trait = possessed_genetic
-                has_trait = flagellant
-            }    
-            OR = {
-                faith = faith:green_cult
-                faith = faith:pagan_faith
-                faith = faith:primative_cult
-                culture = culture:norse
-                faith = faith:norse_pagan
-                has_trait = lifestyle_mystic
-                has_trait = witch
+                AND = { #NORSE
+                    OR = {
+                        culture = culture:norse
+                        faith = faith:norse_pagan
+                        has_trait = follow_odin
+                    }
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = zealous
+                    }
+                    NOR = {
+                        has_trait = one_eyed
+                        has_trait = blind
+                    }
+                }
+                AND = { #GET RID OF CLUBFOOT
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                    }
+                    has_trait = clubfooted
+                    NOR = {
+                        has_trait = one_legged
+                    }
+                }
+                AND = { #eye to the trickster
+                    OR = {
+                        faith = faith:green_cult
+                        faith = faith:pagan_faith
+                        #faith = faith:primative_cult
+                        has_trait = lifestyle_mystic
+                        has_trait = witch
+                    }
+                    NOR = {
+                        has_trait = one_eyed
+                        has_trait = blind
+                    }
+                }       
+                AND = { #DEEP
+                    OR = {
+                        faith = faith:deep_cult
+                        culture = culture:innsmouth
+                    }
+                    NOR = {
+                        has_trait = scaly
+                    }
+                }
+                AND = {#DWARF NO MORE
+                    OR = {
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                    }
+                    has_trait = dwarf
+                    NOR = {
+                        has_trait = spindly
+                    }
+                }                                   
             }
             NOR = {
             }
@@ -1074,3 +1176,23 @@ tr_self_harm_decision = {
         base = 10
     }
 }
+tr_choose_nickname_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
+    title = nick_name_giver_decision
+    desc = nick_name_giver_decision_desc
+    selection_tooltip = nick_name_giver_decision
+    confirm_text = nick_name_giver_decision
+    is_shown = { has_any_nickname = no }
+    cost = { prestige = 150 }
+    effect = {
+        custom_tooltip = select_class_decision_tip
+        trigger_event = {
+            id = tr_nickname_event.01
+        }
+    }
+    ai_will_do = {
+        base = 0
+    }
+}
+
+

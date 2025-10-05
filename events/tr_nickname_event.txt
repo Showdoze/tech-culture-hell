@@ -1,0 +1,185 @@
+tr_nickname_event.01 = {
+    type = character_event
+    title = nick_name_giver
+    window = visit_settlement_window
+    theme = mental_health
+    desc = nick_name_giver_desc
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+ #ROMAN   
+    option = {
+        name = nick_name_giver_nick_augustus
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:roman
+                    has_trait = follow_augustus
+                    has_trait = august
+                    has_trait = augustus
+                }    
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_augustus }
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 10
+				has_trait = follow_augustus
+			}
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_caligula
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = torturer
+                    has_trait = callous
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                culture = culture:roman
+                NOR = {
+                    has_trait = august
+                    has_trait = lifestyle_gardener
+                    has_trait = architect
+                    has_trait = chaste
+                    has_trait = humble
+                    has_trait = family_first
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_caligula }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_octavia
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:roman
+                }
+                is_female = yes
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_octavia }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_constantine
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:roman
+                }
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_constantine }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #   
+    option = {
+        name = nick_name_giver_nick_the_whore
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = adulterer
+                    has_trait = fornicator
+                }
+                is_female = yes
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_whore }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_the_hun
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:hunnic
+                    culture = culture:mogyer
+                    culture = culture:khazar
+                    culture = culture:bolghar
+                    culture = culture:avar
+                    faith = faith:tengri_pagan
+                    faith = faith:magyar_pagan
+                }    
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_hun }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_the_little_impaler
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = torturer
+                    has_trait = callous
+                    has_trait = vengeful
+                    has_trait = sadistic
+                }
+                is_adult = no
+                NOR = {
+                    has_trait = architect
+                    has_trait = chaste
+                    has_trait = humble
+                    has_trait = family_first
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_little_impaler }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_friend_of_charlemagne
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = follow_charlemagne
+                }
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_friend_of_charlemagne }
+        ai_chance = {
+			base = 1
+		}
+    }
+ ####Opt-Out
+    option = {
+        name = tr_select_deity_cancel
+        custom_tooltip = tr_select_deity_cancel_tip
+    }
+}
