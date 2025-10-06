@@ -1895,8 +1895,9 @@ tr_select_deity.01 = {
 		}
     }
  ###Blood
-     option = {
+    option = {
         name = god_choice_ripper
+        play_music_cue = "jacktheripper"
         trigger = {
             AND = {
                 faith = faith:blood_faith
@@ -1914,8 +1915,9 @@ tr_select_deity.01 = {
 			}
 		}
     }
-     option = {
+    option = {
         name = god_choice_caleb
+        play_music_cue = "caleb_live"
         trigger = {
             AND = {
                 faith = faith:blood_faith
@@ -1932,7 +1934,7 @@ tr_select_deity.01 = {
 				has_trait = wrathful
 			}
 		}
-        confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
+        #confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
     }
      option = {
         name = god_choice_madara
@@ -2698,8 +2700,9 @@ tr_select_deity.01 = {
 			}
 		}
     }
-     option = {
+    option = {
         name = god_choice_shar
+        play_music_cue = "shar_forget_and_rise"
         trigger = {
             AND = {
                 OR = {

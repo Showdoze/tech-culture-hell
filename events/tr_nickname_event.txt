@@ -97,26 +97,99 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
- #   
-    option = {
-        name = nick_name_giver_nick_the_whore
+ #Greek
+    option = { #THE PALE
+        name = nick_name_giver_nick_chlorus
         trigger = {
             AND = {
                 OR = {
-                    has_trait = adulterer
-                    has_trait = fornicator
+                    culture = culture:greek
+                    culture = culture:trojan
+                    culture = culture:macedonian
+                    culture = culture:syracuse
+                    culture = culture:avar
+                    culture = culture:athenian
+                    culture = culture:laconian
+                    culture = culture:minoan
+                    culture = culture:helladic
+                    culture = culture:achaian
+                    culture = culture:ptolemaic
+                }    
+                OR = {
+                    has_trait = albino
+                    has_trait = byakugan
                 }
-                is_female = yes
                 NOR = {
-                    has_trait = follow_julius_caesar
+                    has_trait = scaly
+                    has_trait = hollow
                 }
             }
         }
-        set_nickname_effect = { NICKNAME = nick_the_whore }
+        set_nickname_effect = { NICKNAME = nick_chlorus }
         ai_chance = {
 			base = 1
 		}
     }
+    option = { # born_in_the_purple
+        name = nick_name_giver_nick_porphyrogennetos
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:greek
+                    culture = culture:trojan
+                    culture = culture:macedonian
+                    culture = culture:syracuse
+                    culture = culture:avar
+                    culture = culture:athenian
+                    culture = culture:laconian
+                    culture = culture:minoan
+                    culture = culture:helladic
+                    culture = culture:achaian
+                    culture = culture:ptolemaic
+                }
+                has_trait = born_in_the_purple
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_porphyrogennetos }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #THE MAcedonia
+        name = nick_name_giver_nick_the_macedonian
+        trigger = { culture = culture:macedonian }
+        set_nickname_effect = { NICKNAME = nick_the_macedonian }
+        ai_chance = {
+			base = 1
+		}
+    }   
+ #NORSE 
+    option = {
+        name = nick_name_giver_nick_madeofice
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:icelandic
+                    culture = culture:norse
+                    culture = culture:swedish
+                    culture = culture:norwegian
+                    culture = culture:danish
+                }    
+                has_trait = albino
+                NOR = {
+                    has_trait = scaly
+                    has_trait = hollow
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_madeofice }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #HUN Mongol Nomad
     option = {
         name = nick_name_giver_nick_the_hun
         trigger = {
@@ -132,10 +205,32 @@ tr_nickname_event.01 = {
                 }    
                 NOR = {
                     has_trait = follow_julius_caesar
+                    has_trait = follow_charlemagne
+                    has_trait = follow_augustus
                 }
             }
         }
         set_nickname_effect = { NICKNAME = nick_the_hun }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #
+    option = {
+        name = nick_name_giver_nick_the_whore
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = adulterer
+                    has_trait = fornicator
+                }
+                is_female = yes
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_whore }
         ai_chance = {
 			base = 1
 		}
@@ -165,6 +260,30 @@ tr_nickname_event.01 = {
 		}
     }
     option = {
+        name = nick_name_giver_nick_the_impaler
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = torturer
+                    has_trait = callous
+                    has_trait = vengeful
+                    has_trait = sadistic
+                }
+                is_adult = yes
+                NOR = {
+                    has_trait = architect
+                    has_trait = compassionate
+                    has_trait = humble
+                    has_trait = family_first
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_impaler }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
         name = nick_name_giver_nick_friend_of_charlemagne
         trigger = {
             AND = {
@@ -176,6 +295,62 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_friend_of_charlemagne }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_golden_tongued
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = education_diplomacy_3
+                    has_trait = education_diplomacy_4
+                    has_trait = education_diplomacy_5
+                    has_trait = violet_poet
+                }
+                OR = {
+                    has_trait = diplomat
+                    has_trait = gregarious
+                    has_trait = poet
+                }
+                NOR = {
+                    has_trait = shy
+                    has_trait = reclusive
+                    has_trait = mute
+                    has_trait = lisping
+                    has_trait = stuttering
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_golden_tongued }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_unbearable
+        trigger = {
+            AND = {
+                has_trait = irritable
+                has_trait = wrathful
+                OR = {
+                    has_trait = callous
+                    has_trait = sadistic
+                    has_trait = paranoid
+                }
+                NOR = {
+                    has_trait = education_diplomacy_4
+                    has_trait = education_diplomacy_5
+                    has_trait = gregarious
+                    has_trait = diplomat
+                    has_trait = compassionate
+                    has_trait = gregarious
+                    has_trait = gregarious
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_unbearable }
         ai_chance = {
 			base = 1
 		}
