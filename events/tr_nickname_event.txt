@@ -35,6 +35,55 @@ tr_nickname_event.01 = {
 		}
     }
     option = {
+        name = nick_name_giver_nick_octavius
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:roman
+                    has_trait = follow_augustus
+                    has_trait = august
+                }    
+                is_female = no
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_octavius }
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = follow_augustus
+			}
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_octavian
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:roman
+                    has_trait = follow_augustus
+                    has_trait = august
+                    has_trait = follow_julius_caesar
+                }    
+                is_female = no
+                NOR = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_octavian }
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = follow_julius_caesar
+			}
+		}
+    }
+    option = {
         name = nick_name_giver_nick_caligula
         trigger = {
             AND = {
@@ -139,7 +188,6 @@ tr_nickname_event.01 = {
                     culture = culture:trojan
                     culture = culture:macedonian
                     culture = culture:syracuse
-                    culture = culture:avar
                     culture = culture:athenian
                     culture = culture:laconian
                     culture = culture:minoan
@@ -189,6 +237,58 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+    option = {
+        name = nick_name_giver_nick_bloodaxe_old_norse
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:icelandic
+                    culture = culture:norse
+                    culture = culture:swedish
+                    culture = culture:norwegian
+                    culture = culture:danish
+                }  
+                OR = {
+                    has_trait = kinslayer_1
+                    has_trait = kinslayer_2
+                    has_trait = kinslayer_3
+                }  
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_bloodaxe_old_norse }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_bloodaxe
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:icelandic
+                    culture = culture:norse
+                    culture = culture:swedish
+                    culture = culture:norwegian
+                    culture = culture:danish
+                    culture = culture:old_dwarven
+                    culture = culture:nord_culture
+                }  
+                OR = {
+                    has_trait = kinslayer_1
+                    has_trait = kinslayer_2
+                    has_trait = kinslayer_3
+                }  
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_bloodaxe }
+        ai_chance = {
+			base = 1
+		}
+    }
  #HUN Mongol Nomad
     option = {
         name = nick_name_giver_nick_the_hun
@@ -207,10 +307,35 @@ tr_nickname_event.01 = {
                     has_trait = follow_julius_caesar
                     has_trait = follow_charlemagne
                     has_trait = follow_augustus
+                    religion = religion:christianity_religion
+                    religion = religion:islam_religion
+                    religion = religion:judaism_religion
                 }
             }
         }
         set_nickname_effect = { NICKNAME = nick_the_hun }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #Italian
+    option = { #venetian
+        name = nick_name_giver_nick_the_venetian
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:italian
+                    culture = culture:cisalpine
+                    culture = culture:venetian_ce
+                }    
+                NOR = {
+                    has_trait = follow_julius_caesar
+                    has_trait = follow_charlemagne
+                    has_trait = follow_augustus
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_venetian }
         ai_chance = {
 			base = 1
 		}
@@ -351,6 +476,37 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_the_unbearable }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_peaceable
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = administrator
+                    has_trait = family_first
+                    has_trait = gallant
+                    has_trait = calm
+                }
+                OR = {
+                    has_trait = diplomat
+                    has_trait = family_first
+                    has_trait = generous
+                    has_trait = gregarious
+                    has_trait = compassionate
+                }
+                NOR = {
+                    has_trait = sadistic
+                    has_trait = torturer
+                    has_trait = vengeful
+                    has_trait = schemer
+                    has_trait = wrathful
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_peaceable }
         ai_chance = {
 			base = 1
 		}
