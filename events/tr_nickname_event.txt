@@ -146,6 +146,41 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+    option = {
+        name =  nick_name_giver_nick_claudius
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = clubfooted
+                    has_trait = stuttering
+                }
+                culture = culture:roman
+                is_female = no
+                NOR = {
+                    has_trait = seducer
+                    has_trait = gallant
+                    has_trait = lifestyle_hunter
+                    has_trait = lifestyle_blademaster
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_claudius }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = -10
+				has_trait = athletic
+			}
+            modifier = {
+				add = 5
+				has_trait = journaller
+			}
+            modifier = {
+				add = 10
+				has_trait = scholar
+			}
+		}
+    }
  #Greek
     option = { #THE PALE
         name = nick_name_giver_nick_chlorus
@@ -203,6 +238,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_porphyrogennetos }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = arrogant
+			}
 		}
     }
     option = { #THE MAcedonia
@@ -330,7 +369,7 @@ tr_nickname_event.01 = {
                 }    
                 NOR = {
                     has_trait = follow_julius_caesar
-                    has_trait = follow_charlemagne
+                    has_trait = follow_islam
                     has_trait = follow_augustus
                 }
             }
@@ -338,6 +377,14 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_the_venetian }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = greedy
+			}
+            modifier = {
+				add = 10
+				has_trait = avaricious
+			}
 		}
     }
  #
@@ -358,6 +405,14 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_the_whore }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 1
+				has_trait = callous
+			}
+            modifier = {
+				add = 1
+				has_trait = lustful
+			}
 		}
     }
     option = {
@@ -478,6 +533,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_the_unbearable }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
 		}
     }
     option = {
@@ -511,7 +570,70 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
- ####Opt-Out
+    option = {
+        name =  nick_name_giver_nick_the_fool
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = dull
+                    has_trait = intellect_bad_1
+                    has_trait = intellect_bad_2
+                    has_trait = intellect_bad_3
+                    has_trait = inbred
+                }
+                has_trait = trusting
+                NOR = {
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_1
+                    has_trait = possessed_genetic
+                    has_trait = shrewd
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_fool }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_queen
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = ambitious
+                    has_trait = family_first
+                }
+                is_female = yes
+                NOR = {
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_queen }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_queen
+        trigger = {
+            AND = {
+                has_sexuality = homosexual
+                OR = {
+                    has_trait = seducer
+                    has_trait = lustful
+                }
+                NOR = {
+                    has_trait = chaste
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_queen_gay }
+        ai_chance = {
+			base = 1
+		}
+    }
+ ####Opt-Out 
     option = {
         name = tr_select_deity_cancel
         custom_tooltip = tr_select_deity_cancel_tip
