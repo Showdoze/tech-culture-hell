@@ -446,7 +446,7 @@ tr_nickname_event.01 = {
 			}
 		}
     }
- #french frankish
+ #french frankish GAUL
     option = { #de Molay
         name = nick_name_giver_nick_demolay
         trigger = {
@@ -464,6 +464,24 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_demolay }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the Gaul
+        name = nick_name_giver_nick_the_gaul
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:gaulish_pagan
+                }
+                NOR = {
+                    culture = culture:french
+                    culture = culture:frankish
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_gaul }
         ai_chance = {
 			base = 1
 		}
@@ -607,6 +625,32 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+ #INTRIGE
+    option = {
+        name = nick_name_giver_nick_the_suspicious
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = deceitful
+                    has_trait = arbitrary
+                    has_trait = gallowsbait
+                    culture = culture:sus_culture
+                }
+                has_trait = schemer
+                NOR = {
+                    has_trait = murderer
+                    has_trait = kinslayer_1
+                    has_trait = kinslayer_2
+                    has_trait = kinslayer_3
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_suspicious }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #
  #
     option = {
         name = nick_name_giver_nick_the_whore
@@ -618,7 +662,7 @@ tr_nickname_event.01 = {
                 }
                 is_female = yes
                 NOR = {
-                    has_trait = follow_julius_caesar
+                    has_trait = chaste
                 }
             }
         }
@@ -631,7 +675,7 @@ tr_nickname_event.01 = {
 			}
             modifier = {
 				add = 1
-				has_trait = lustful
+				has_trait = arbitrary
 			}
 		}
     }
