@@ -1971,3 +1971,29 @@ tradition_assyrian = { #
 	cost = { prestige = 500 }
 	ai_will_do = { value = 0 }
 }
+#ROMAN
+ tradition_roman_julius_caesar = { # 
+	category = realm
+	layers = {
+		0 = diplo
+		1 = western
+		4 = roman_julius_caesar.dds
+	}
+	is_shown = { OR = { this = culture:roman } }
+	parameters = {
+	}
+	culture_modifier = {
+	}
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.1
+		monthly_influence_mult = 0.01
+		diplomatic_range_mult = 0.01
+		controlled_province_advantage = 2
+		knight_effectiveness_mult = 0.5
+		short_reign_duration_mult = 0.01
+		counter_efficiency = 0.01
+	}
+	cost = { prestige = 322 }
+	ai_will_do = { value = 0 }
+ }
+# 
