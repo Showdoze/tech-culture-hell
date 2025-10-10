@@ -815,7 +815,10 @@ tradition_egypt = {
 	}
 	is_shown = {
 		OR = {
-		has_cultural_pillar = heritage_ancient_egyptian
+		this = culture:ancient_egyptian
+			any_parent_culture_or_above = {
+				this = culture:ancient_egyptian
+			}
 		has_cultural_pillar = heritage_east_african
 		}
 	}
@@ -1972,13 +1975,26 @@ tradition_assyrian = { #
 	ai_will_do = { value = 0 }
 }
 #ROMAN
- tradition_roman_julius_caesar = { # 
+ tradition_roman_marius = {
 	category = realm
-	layers = {
-		0 = diplo
-		1 = western
-		4 = roman_julius_caesar.dds
+	layers = { 4 = roman_marius.dds }
+	is_shown = { OR = { this = culture:roman } }
+	province_modifier = {
+		levy_size = -0.25
 	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.5
+		counter_efficiency = 0.01
+		supply_capacity_mult = 0.1
+		men_at_arms_maintenance = -0.1
+		movement_speed = 0.25
+	}
+	cost = { prestige = 296 }
+	ai_will_do = { value = 0 }
+ }
+ tradition_roman_julius_caesar = {
+	category = realm
+	layers = { 4 = roman_julius_caesar.dds }
 	is_shown = { OR = { this = culture:roman } }
 	parameters = {
 	}
@@ -1990,10 +2006,72 @@ tradition_assyrian = { #
 		diplomatic_range_mult = 0.01
 		controlled_province_advantage = 2
 		knight_effectiveness_mult = 0.5
-		short_reign_duration_mult = 0.01
+		short_reign_duration_mult = -0.01
 		counter_efficiency = 0.01
 	}
-	cost = { prestige = 322 }
+	cost = { prestige = 296 }
+	ai_will_do = { value = 0 }
+ }
+ tradition_roman_augustus = {
+	category = realm
+	layers = { 4 = roman_augustus.dds }
+	is_shown = { OR = { this = culture:roman } }
+	parameters = {
+	}
+	culture_modifier = {
+	}
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.2
+		monthly_influence_mult = 0.05
+		diplomatic_range_mult = 0.05
+		court_grandeur_baseline_add = 5
+		cultural_head_fascination_mult = 0.01
+	}
+	cost = { prestige = 296 }
+	ai_will_do = { value = 0 }
+ }
+ tradition_roman_hadrian = {
+	category = realm
+	layers = { 4 = roman_hadrian.dds }
+	is_shown = { OR = { this = culture:roman } }
+	parameters = {
+	}
+	culture_modifier = {
+	}
+	province_modifier = {
+		hostile_raid_time = 0.1
+	}
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.1
+		monthly_influence_mult = 0.01
+		siege_phase_time = -0.1
+		knight_effectiveness_mult = 0.25
+		political_scheme_phase_duration_add = -5
+		personal_scheme_phase_duration_add = -5
+		raid_speed = 0.1
+	}
+	cost = { prestige = 296 }
+	ai_will_do = { value = 0 }
+ }
+ tradition_roman_aurelian = {
+	category = realm
+	layers = { 4 = roman_aurelian.dds }
+	is_shown = { OR = { this = culture:roman } }
+	parameters = {
+	}
+	culture_modifier = {
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.25
+		men_at_arms_maintenance = -0.1
+		monthly_influence_mult = 0.01
+		counter_efficiency = 0.01
+		short_reign_duration_mult = -0.01
+		rf_pagan_opinion = 5
+		light_cavalry_damage_mult = 0.05
+		heavy_cavalry_damage_mult = 0.05
+	}
+	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }
  }
 # 
