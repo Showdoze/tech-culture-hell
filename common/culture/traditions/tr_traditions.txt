@@ -1557,180 +1557,6 @@ tradition_depression = {
 	cost = { prestige = 300000 }
 	ai_will_do = { value = 0 }
 }
-tradition_romance_roman = {
-	category = realm
-	layers = {
-		0 = intrigue
-		1 = western
-		4 = roman.dds
-	}
-	can_pick = {
-		NOT = {
-			OR = {
-			has_cultural_tradition = tradition_romance_roman_republic
-			has_cultural_tradition = tradition_romance_byz
-			}
-		}
-		OR = {
-			has_cultural_pillar = heritage_byzantine
-			has_cultural_pillar = heritage_latin
-		}
-		OR = {
-			
-			scope:character = {
-				has_title = title:e_byzantium
-			}
-			scope:character = {
-				has_title = title:c_roma
-			}
-			scope:character = {
-				has_title = title:e_wre
-			}
-		}
-	}
-	parameters = {
-		architect_trait_prestige = yes
-		pardoning_gives_loyalty = yes
-		just_trait_more_common = yes
-		just_trait_gives_bonuses = yes
-		can_make_republican_vassals = yes
-		city_buildings_more_powerful = yes
-		city_buildings_less_control = yes
-		republican_vassals_pay_more = yes
-		renown_from_temple_construction = yes
-		development_gain_on_building_complete = yes
-		physical_disfigurement_blocks_inheritance = yes
-		city_buildings_more_county_opinion = yes
-	}
-	character_modifier = {
-		tyranny_gain_mult = -0.5
-		diplomatic_range_mult = 0.25
-		court_grandeur_baseline_add = 5
-		republic_government_vassal_opinion = 10
-		eligible_child_opinion = 20
-	}
-	county_modifier = {
-	}
-	province_modifier = {
-	}
-	cost = { prestige = 20000 }
-	ai_will_do = { value = 0 }
-}
-tradition_romance_roman_republic = {
-	category = realm
-	layers = {
-		0 = intrigue
-		1 = western
-		4 = roman.dds
-	}
-	can_pick = {
-		NOT = {
-			OR = {
-			has_cultural_tradition = tradition_romance_roman
-			has_cultural_tradition = tradition_romance_byz
-			}
-		}
-		OR = {
-			has_cultural_pillar = heritage_byzantine
-			has_cultural_pillar = heritage_latin
-		}
-		OR = {			
-			scope:character = {
-				has_title = title:e_byzantium
-			}
-			scope:character = {
-				has_title = title:c_roma
-			}
-			scope:character = {
-				has_title = title:e_wre
-			}
-		}
-	}
-	parameters = {
-		architect_trait_prestige = yes
-		pardoning_gives_loyalty = yes
-		just_trait_more_common = yes
-		just_trait_gives_bonuses = yes
-		can_make_republican_vassals = yes
-		city_buildings_more_powerful = yes
-		city_buildings_less_control = yes
-		republican_vassals_pay_more = yes
-		renown_from_temple_construction = yes
-		development_gain_on_building_complete = yes
-		physical_disfigurement_blocks_inheritance = yes
-		city_buildings_more_county_opinion = yes
-	}
-	character_modifier = {
-		tyranny_gain_mult = 0.5
-		diplomatic_range_mult = 0.25
-		court_grandeur_baseline_add = 5
-		republic_government_vassal_opinion = 20
-		revolting_siege_morale_loss_mult = 0.25
-		punic_opinion = -20
-	}
-	county_modifier = {
-	}
-	province_modifier = {
-	}
-	cost = { prestige = 20000 }
-	ai_will_do = { value = 0 }
-}
-tradition_romance_byz = {
-	category = realm
-	layers = {
-		0 = intrigue
-		1 = western
-		4 = byz.dds
-	}
-	can_pick = {
-		NOT = {
-			OR = {
-			has_cultural_tradition = tradition_romance_roman_republic
-			has_cultural_tradition = tradition_romance_roman
-			}
-		}
-		OR = {
-			has_cultural_pillar = heritage_byzantine
-			has_cultural_pillar = heritage_latin
-		}
-		OR = {
-			scope:character = {
-				has_title = title:e_byzantium
-			}
-			scope:character = {
-				has_title = title:c_byzantion
-			}
-		}
-	}
-	parameters = {
-		architect_trait_prestige = yes
-		pardoning_gives_loyalty = yes
-		just_trait_more_common = yes
-		just_trait_gives_bonuses = yes
-		can_make_republican_vassals = yes
-		city_buildings_more_powerful = yes
-		city_buildings_less_control = yes
-		renown_from_temple_construction = yes
-		development_gain_on_building_complete = yes
-		physical_disfigurement_blocks_inheritance = yes
-		city_buildings_more_county_opinion = yes
-	}
-	character_modifier = {
-		tyranny_gain_mult = -0.5
-		court_grandeur_baseline_add = 5
-		eligible_child_opinion = 20
-	}
-	county_modifier = {
-	}
-	province_modifier = {
-	}
-	cost = {
-		prestige = 20000
-	}
-	ai_will_do = {
-		value = 0
-	}
-}
 tradition_taking_with_hands = {
 	category = societal
 	layers = {
@@ -1979,6 +1805,7 @@ tradition_assyrian = { #
 	category = realm
 	layers = { 4 = roman_marius.dds }
 	is_shown = { OR = { this = culture:roman } }
+	#can_pick = { has_cultural_tradition = tradition_free_love }
 	province_modifier = {
 		levy_size = -0.25
 	}
@@ -1988,6 +1815,7 @@ tradition_assyrian = { #
 		supply_capacity_mult = 0.1
 		men_at_arms_maintenance = -0.1
 		movement_speed = 0.25
+		levy_size = -0.25
 	}
 	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }
@@ -1996,6 +1824,7 @@ tradition_assyrian = { #
 	category = realm
 	layers = { 4 = roman_julius_caesar.dds }
 	is_shown = { OR = { this = culture:roman } }
+	can_pick = { has_cultural_tradition = tradition_roman_marius }
 	parameters = {
 	}
 	culture_modifier = {
@@ -2016,6 +1845,7 @@ tradition_assyrian = { #
 	category = realm
 	layers = { 4 = roman_augustus.dds }
 	is_shown = { OR = { this = culture:roman } }
+	can_pick = { has_cultural_tradition = tradition_roman_julius_caesar }
 	parameters = {
 	}
 	culture_modifier = {
@@ -2030,10 +1860,31 @@ tradition_assyrian = { #
 	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }
  }
+ tradition_roman_trajan = {
+	category = realm
+	layers = { 4 = roman_trajan.dds }
+	is_shown = { OR = { this = culture:roman } }
+	can_pick = { has_cultural_tradition = tradition_roman_augustus }
+	parameters = {
+	}
+	culture_modifier = {
+	}
+	province_modifier = {
+	}
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.25
+		monthly_influence_mult = 0.1
+		knight_effectiveness_mult = 0.01
+		siege_phase_time = -0.01
+	}
+	cost = { prestige = 296 }
+	ai_will_do = { value = 0 }
+ }
  tradition_roman_hadrian = {
 	category = realm
 	layers = { 4 = roman_hadrian.dds }
 	is_shown = { OR = { this = culture:roman } }
+	can_pick = { has_cultural_tradition = tradition_roman_trajan }
 	parameters = {
 	}
 	culture_modifier = {
@@ -2057,6 +1908,7 @@ tradition_assyrian = { #
 	category = realm
 	layers = { 4 = roman_aurelian.dds }
 	is_shown = { OR = { this = culture:roman } }
+	can_pick = { has_cultural_tradition = tradition_roman_hadrian }
 	parameters = {
 	}
 	culture_modifier = {
@@ -2070,6 +1922,7 @@ tradition_assyrian = { #
 		rf_pagan_opinion = 5
 		light_cavalry_damage_mult = 0.05
 		heavy_cavalry_damage_mult = 0.05
+		levy_size = -0.05
 	}
 	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }
