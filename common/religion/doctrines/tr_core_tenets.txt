@@ -1048,4 +1048,40 @@ tr_doctrines = {
 			}
 		}
 	}
+	tenet_lizardmen = {
+		icon = core_tenet_unrelenting_faith
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			cannibalism_legal = yes
+			clergy_can_fight = yes
+			piety_from_marrying_lowborn_active = yes
+			human_sacrifice_active = yes
+			piety_from_hunts_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			piety_from_feasts_active = yes
+			believes_in_harmony_with_nature_invisible = yes
+			same_culture_conversion_bonus_active = yes
+			same_faith_promote_culture_bonus_active = yes
+			other_culture_conversion_penalty_active = yes
+			flower_war_cb_active = yes
+		}
+		character_modifier = {
+			tolerance_advantage_mod = 2
+			same_faith_opinion = 10
+			martial_per_piety_level = 1
+		    prowess_per_piety_level = 1
+		    prowess_per_prestige_level = 1
+		}
+		traits = {
+			virtues = { 
+				lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
+			    brave just diligent compassionate vengeful scaly
+			}
+			sins = { 
+				craven forgiving lazy stubborn shy   
+			}
+		}
+	}
 }

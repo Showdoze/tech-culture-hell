@@ -1721,5 +1721,122 @@ tradition_fromsoft = {
 	cost = { prestige = 20000 }
 	ai_will_do = { value = 0 }
  }
+#Lizardmen
+ tradition_lizardmen = {
+	category = ritual
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_bosmer.dds
+	}
+	is_shown = { OR = { this = culture:lizardmen } }
+	parameters = {
+		sacred_hunts = yes
+		more_frequent_hunts = yes
+		hunting_traits_more_valued = yes
+		hunting_traits_more_pious = yes
+		hunting_traits_more_common = yes 
+		hunting_archery_building_bonuses = yes
+		commanders_likelier_to_gain_commander_traits = yes
+		wounds_and_scars_give_bonuses = yes
+		build_bonuses_on_religious_traits = yes
+		prowess_from_martial_education = yes
+		gain_gold_from_battles = yes
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+		weak_traits_looked_down_upon = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+		prowess_from_religious_traits = yes
+		blademaster_trait_bonuses = yes
+		blademaster_traits_more_common = yes
+		can_use_sparring_duel = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		craven_and_content_traits_looked_down_upon = yes
+		harder_to_hybridize = yes
+		architect_trait_prestige = yes
+		renown_from_temple_construction = yes
+		development_gain_on_building_complete = yes
+		number_of_spouses = 3
+		number_of_consorts = 1
+		zealous_trait_more_common = yes
+		extra_piety_from_temple_construction = yes
+		better_armory_buildings = yes
+		better_blacksmith_buildings = yes
+		can_duel_rivals = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		can_end_defensive_wars_earlier = yes
+		craven_trait_costs_prestige = yes
+		brave_trait_gives_bonuses = yes
+		more_expensive_feasts = yes
+		coastal_holdings_give_defensive_bonus = yes
+		coastal_agriculture_building_bonuses = yes
+		coastal_holding_bonuses = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		diplomacy = -4
+		prowess = 4
+		opinion_of_different_culture = -40
+		close_relative_opinion = 5
+		life_expectancy = 50
+		no_prowess_loss_from_age = yes
+		years_of_fertility = 100
+	    elderly_health = 5
+		counter_efficiency = 0.1
+		levy_size = -1
+		knight_effectiveness_mult = 1
+		supply_capacity_mult = 0.1
+		controlled_province_advantage = 5
+		character_travel_speed_mult = 0.1
+		character_travel_safety_mult = 0.1
+		martial_per_piety_level = 1
+		prowess_per_piety_level = 3
+		prowess_per_prestige_level = 3
+		max_loot_mult = 0.4
+		negate_prowess_penalty_add = 5
+		max_loot_mult = 1
+		embarkation_cost_mult = -0.25
+	}
+	county_modifier = {
+		monthly_county_control_change_add = 1
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_lizardmen_female = {
+	category = ritual
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = lizardmen_female.dds
+	}
+	is_shown = { OR = { this = culture:lizardmen } }
+	parameters = {
+		has_access_to_runestones = yes
+		guardians_can_transfer_commander_traits = yes
+		tells_stories = yes
+		faith_warrior_traits_more_valued = yes
+		guardian_education_better_outcomes = yes
+		loyal_trait_more_valued = yes
+		pardoning_gives_loyalty = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		close_relative_opinion = 5
+		levy_size = -1
+		knight_effectiveness_mult = 1
+		supply_capacity_mult = 0.1
+		same_culture_opinion = 15
+	}
+	cost = { piety = 200 }	
+	ai_will_do = { value = 0 }	
+ }
 #
-
