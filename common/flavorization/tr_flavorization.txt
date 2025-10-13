@@ -1171,7 +1171,7 @@
 	gender = male
 	special = holder
 	tier = barony
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1180,14 +1180,14 @@
 	gender = female
 	special = holder
 	tier = barony
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_b = {
 	type = title
 	tier = barony
-	priority = 301
+	priority = 80
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1196,7 +1196,7 @@
 	gender = male
 	special = holder
 	tier = county
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1205,14 +1205,14 @@
 	gender = female
 	special = holder
 	tier = county
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_c = {
 	type = title
 	tier = county
-	priority = 301
+	priority = 80
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1221,7 +1221,7 @@
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1230,14 +1230,14 @@
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 301
+	priority = 80
 	governments = { theocracy_government }
 	faiths = { hammerite_faith mechanist_faith }
  }
  hammerite_d = {
 	type = title
 	tier = duchy
-	priority = 301
+	priority = 80
 	holding = church_holding
 	faiths = { hammerite_faith mechanist_faith }
  }
@@ -1833,3 +1833,1226 @@
 	council_position = councillor_spymaster
 	name_lists = { name_list_tea }
  }
+#Bosmeris Group
+ baron_feudal_male_bosmeris_group = { #Clan-Keeper
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ baron_feudal_female_bosmeris_group = { #Clan-Keeper
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ barony_feudal_bosmeris_group = { #Clanhold
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 20
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ count_feudal_male_bosmeris_group = { #Warden
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ count_feudal_female_bosmeris_group = { #Warden
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ county_feudal_bosmeris_group = { #Ward
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ duke_feudal_male_bosmeris_group = { #Treethane
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ duke_feudal_female_bosmeris_group = { #Treethane
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ duchy_feudal_bosmeris_group = { #Treethanedom
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	name_lists = { name_list_bosmer}
+	priority = 28
+	top_liege = no
+ }
+ duke_feudal_male_bosmeris_etarani = { #Woodlord
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 35
+	governments = { feudal_government autocracy_government tribal_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ duke_feudal_female_bosmeris_etarani = { #Woodlady
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 35
+	governments = { feudal_government autocracy_government tribal_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+
+ duchy_feudal_bosmeris_etarani = { #Principality
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government tribal_government clan_government }
+	de_jure_liege = { k_grahtwood k_haven }
+	name_lists = { name_list_bosmer}
+	priority = 35
+	top_liege = no
+ }
+
+ mperor_feudal_male_bosmeris_group = { #Hart-King
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+ }
+ emperor_feudal_female_bosmeris_group = { #Hart-King
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 28
+	governments = { feudal_government autocracy_government tribal_government }
+	name_lists = { name_list_bosmer}
+	top_liege = no
+} 
+#Aldmeris Group
+ barony_feudal_aldmeris_group = { #Cerum
+	type = title
+	tier = barony
+	priority = 8
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = yes
+ } 
+ county_feudal_aldmeris_group = { #Optimal
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ count_feudal_male_aldmeris_group = { #Optimate
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ count_feudal_female_aldmeris_group = { #Optimate
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ count_feudal_male_balfieri = { #Castellan
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 19
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_balfiera }
+	top_liege = no
+ }
+ count_feudal_female_balfieri = { #Castellan
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 19
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_balfiera }
+	top_liege = no
+ }
+ county_feudal_balfieri = { #Castellany
+	type = title
+	tier = county
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_balfiera }
+	priority = 19
+	top_liege = no
+ }
+ duke_feudal_male_aldmeris_group = { #Kinlord
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ duke_feudal_female_aldmeris_group = { #Kinlady
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ duchy_feudal_aldmeris_group = { #Kinhold
+	type = title
+	tier = duchy
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	priority = 28
+	top_liege = no
+ }
+ title_high_kinlord_male = { #High Kinlord
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 52
+	top_liege = no
+	name_lists = { name_list_balfiera }
+ }
+ title_high_kinlord_female = { #High Kinlady
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 52
+	top_liege = no
+	name_lists = { name_list_balfiera }
+ }
+ #title_high_kinhold = { #High Kinhold
+ #	type = title
+ #	tier = kingdom
+ #	priority = 52
+ #	titles = { k_balfiera }
+ #	top_liege = no
+ #	name_lists = { name_list_balfiera }
+ #}
+ king_feudal_male_aldmeris_group = { #High Kinlord)
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ king_feudal_female_aldmeris_group = { #High Kinlady)
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ emperor_feudal_male_aldmeris_group = { #Aran-El
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 105
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ emperor_feudal_female_aldmeris_group = { #Arana-El
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 105
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ #Republic
+ baron_republic_male_aldmeris_group = { #Reeve
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ baron_republic_female_aldmeris_group = { #Reeve
+	type = character
+	special = holder
+	gender = female
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ baron_republic_male_balfieri= { #Beratu
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 10
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_balfiera }
+ }
+ baron_republic_female_balfieri= { #Beratu
+	type = character
+	special = holder
+	gender = female
+	tier = barony
+	priority = 10
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_balfiera }
+ }
+ count_republic_male_balfieri= { #Bailiff
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 20
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_balfiera }
+ }
+ count_republic_female_balfieri= { #Bailiff
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 20
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_balfiera }
+ }
+ count_republic_male_aldmeris_group = { #Canonreeve
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ count_republic_female_aldmeris_group = { #Canonreeve
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ duke_republic_male_aldmeris_group = { #High Reeve
+	type = character
+	special = holder
+	gender = male
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ duke_republic_female_aldmeris_group = { #High Reeve
+	type = character
+	special = holder
+	gender = female
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { republic_government }
+	name_lists = { name_list_altmer }
+ }
+ #Independent Altmer Kingdoms (overrides vassal kingdoms)
+ king_feudal_male_aldmeris_group_independent = { #Aran
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 49
+	only_independent = yes
+	governments = { feudal_government autocracy_government praxis_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+ }
+ king_feudal_female_aldmeris_group_independent = { #Arana
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 49
+	only_independent = yes
+	governments = { feudal_government autocracy_government praxis_government }
+	name_lists = { name_list_altmer }
+	top_liege = no
+}
+#Breton Group
+ #Count -> Baron for Northmen
+ count_feudal_male_baron = { #Baron
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+ }
+ count_feudal_female_baron = { #Baroness
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+ }
+ county_feudal_barony = { #Barony
+	type = title
+	tier = county
+	priority = 20
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+ }
+ #Independent Count -> Prince
+ count_feudal_independent_male = { #Prince
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 21
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+ }
+ count_feudal_independent_female = { #Princess
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 21
+	only_independent = yes
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	top_liege = no
+ }
+ county_feudal_independent = { #Principality
+	type = title
+	tier = county
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_glenumbran }
+	only_independent = yes
+	priority = 21
+	top_liege = no
+ }
+#Dunmeris Group
+ baron_feudal_male_dunmeris_group = { #Sera
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ baron_feudal_female_dunmeris_group = { #Sera
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ count_feudal_male_dunmeris_group = { #Muthsera
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ count_feudal_female_dunmeris_group = { #Muthsera
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ #Republic
+ baron_republic_male_dunmeris_group = { #Hetman
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ baron_republic_female_dunmeris_group = { #Hetwoman
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ count_republic_male_dunmeris_group = { #Hetman
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ count_republic_female_dunmeris_group = { #Hetwoman
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ duke_republic_male_dunmeris_group = { #Councillor
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ duke_republic_female_dunmeris_group = { #Councillor
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { republic_government }
+	name_lists = { name_list_dunmer}
+	top_liege = no
+ }
+ #Great House Vassal
+ great_house_vassal_male = { #Councilman / Master
+	type = character
+	gender = male	
+	special = holder
+	tier = duchy
+	priority = 38
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer }
+	top_liege = no
+ }
+ great_house_vassal_female = { #Councilwoman / Mistress
+	type = character
+	gender = female	
+	special = holder
+	tier = duchy
+	priority = 38
+	governments = { feudal_government autocracy_government }
+	name_lists = { name_list_dunmer }
+	top_liege = no
+}
+#ORC
+ #Feudal with Tribal names
+ baron_feudal_male_orsimer = { #Chief
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ baron_feudal_female_orsimer = { #Chieftess
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ barony_feudal_orsimer = { #Stronghold
+	type = title
+	tier = barony
+	priority = 8
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ count_feudal_male_orsimer = { #Chieftain
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	#only_holder = yes
+	top_liege = no
+	name_lists = { name_list_orc}
+ }
+ count_feudal_female_orsimer = { #Chieftess
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ county_feudal_orsimer = { #Chiefdom
+	type = title
+	tier = county
+	priority = 18
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ duke_feudal_male_orsimer = { #High Chieftain
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ duke_feudal_female_orsimer = { #High Chieftess
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ duchy_feudal_orsimer = { #Tribe
+	type = title
+	tier = duchy
+	priority = 28
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ king_feudal_male_orsimer = { #King
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+ }
+ king_feudal_female_orsimer = { #Queen
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	#only_holder = yes
+	name_lists = { name_list_orc}
+}
+#Ninja
+ emperor_feudal_male_mist_group = { #Mizukage 
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_mist }
+	top_liege = no
+ }
+ emperor_feudal_female_mist_group = { #Mizukage 
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_mist }
+	top_liege = no
+ }
+ emperor_feudal_male_leaf_group = { # Hokage
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_leaf }
+	top_liege = no
+ }
+ emperor_feudal_female_leaf_group = { # Hokage
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_leaf }
+	top_liege = no
+ }
+ kazekage_male = { # Kazekage 
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_sand }
+	top_liege = no
+ }
+ kazekage_female = { # Kazekage 
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 105
+	#governments = { feudal_government autocracy_government }
+	name_lists = { name_list_sand }
+	top_liege = no
+ }
+ #jonin_ninja = { # 
+#	type = character
+#	gender = female
+#	special = holder
+#	tier = empire
+#	priority = 105
+#	governments = { feudal_government autocracy_government }
+#	name_lists = { name_list_leaf name_list_mist name_list_sand }
+#	top_liege = no
+# }
+
+#Dwemer
+ county_dwemer { #Supply Storage
+	type = title
+	tier = county
+	priority = 20
+	name_lists = { name_list_dwemer}
+ }
+ barony_dwemer { #The Assembly
+	type = title
+	tier = barony
+	priority = 30
+	name_lists = { name_list_dwemer}
+ }
+ duchy_dwemer { #Great Forge
+	type = title
+	tier = duchy
+	priority = 40
+	name_lists = { name_list_dwemer}
+ }
+ petty_kingdom_dwemer { #Brass Forge
+	type = title
+	tier = petty_kingdom
+	priority = 50
+	name_lists = { name_list_dwemer}
+ }
+ kingdom_dwemer { #Brass Kingdom
+	type = title
+	tier = kingdom
+	priority = 60
+	name_lists = { name_list_dwemer}
+ }
+ empire_dwemer { #The Great Spire
+	type = title
+	tier = empire
+	priority = 80
+	name_lists = { name_list_dwemer}
+ }
+
+ emperor_dwemer { #Great Tonal Constructor
+	type = character
+	special = holder
+	tier = empire
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+ petty_king_dwemer { #Frequency Shaper
+	type = character
+	special = holder
+	tier = petty_kingdom
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+ king_dwemer { #Tonal Architect
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+ duke_dwemer { #Forge Overseer
+	type = character
+	special = holder
+	tier = duchy
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+ baron_dwemer { #Assembly Supervisor
+	type = character
+	special = holder
+	tier = barony
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+ count_dwemer { #Star Counter
+	type = character
+	special = holder
+	tier = county
+	priority = 80
+	top_liege = no
+	name_lists = { name_list_dwemer}
+ }
+
+ chancellor_dwemer { #Logic Keeper
+	type = character
+	special = chancellor
+	priority = 80
+	council_position = councillor_chancellor
+	name_lists = { name_list_dwemer }
+ }
+ marshal_dwemer { #Warmachine Constructor
+	type = character
+	special = marshal
+	priority = 80
+	council_position = councillor_marshal
+	name_lists = { name_list_dwemer }
+ }
+ steward_dwemer { #Brass Shaper
+	type = character
+	special = steward
+	priority = 80
+	council_position = councillor_steward
+	name_lists = { name_list_dwemer }
+ }
+ court_chaplain_dwemer { #Tonal Conduct
+	type = character
+	special = court_chaplain
+	priority = 100
+	faiths = { dwemer_religion }
+	council_position = councillor_court_chaplain
+	name_lists = { name_list_dwemer }
+ }
+ spymaster_dwemer { #Hidden Overseer
+	type = character
+	special = spymaster
+	priority = 100
+	council_position = councillor_spymaster
+	name_lists = { name_list_dwemer }
+ }
+#drow
+ king_drow_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 100
+	name_lists = { name_list_drow }
+	top_liege = no
+	only_holder = yes
+ }
+ emp_drow_f = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 100
+	name_lists = { name_list_drow }
+	top_liege = no
+	only_holder = yes
+ }
+ drow_queen_mother = { #Mother of the Nation
+	type = character
+	gender = female
+	special = queen_mother
+	name_lists = { name_list_drow}
+	priority = 100
+	top_liege = no
+ }
+#Argonian
+#LIZARDMEMN
+#DarkSouls
+ ds_lord = { #LORD
+	type = character
+	gender = male
+	special = holder
+	priority = 301
+	titles = { k_ds_kiln }
+ } 
+#KEMIT
+ pharaoh = {
+	type = character
+	special = holder
+	tier = empire
+	priority = 301
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ amyr = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 301
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ kemetic_duke = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 50
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ kemetic_duchy = {
+	type = title
+	tier = duchy
+	priority = 50
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ kemetic_count = {
+	type = character
+	special = holder
+	tier = county
+	priority = 50
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ kemetic_county = {
+	type = title
+	tier = county
+	priority = 50
+	faiths = { kemetic_pagan atenist_pagan }
+ }
+ kemetic_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	faiths= { kemetic_pagan atenist_pagan }
+ }
+ kemetic_chaplain = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_court_chaplain
+	faiths= { kemetic_pagan atenist_pagan }
+ }
+ kemetic_chancellor = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_chancellor
+	faiths= { kemetic_pagan atenist_pagan }
+ }
+ kemetic_steward = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_steward
+	faiths= { kemetic_pagan atenist_pagan }
+ }
+ kemetic_marshal = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_marshal
+	faiths= { kemetic_pagan atenist_pagan }
+ }
+ lugal-gal = {
+	type = character
+	special = holder
+	tier = empire
+	priority = 301
+	faiths = { sumerian_pagan }
+ }
+ lugal = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 301
+	faiths = { sumerian_pagan }
+ }
+ sumerian_duke = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 50
+	faiths = { sumerian_pagan }
+ }
+ sumerian_duchy = {
+	type = title
+	tier = duchy
+	priority = 50
+	faiths = { sumerian_pagan }
+ }
+ sumerian_count = {
+	type = character
+	special = holder
+	tier = county
+	priority = 50
+	faiths = { sumerian_pagan }
+ }
+ sumerian_county = {
+	type = title
+	tier = county
+	priority = 50
+	faiths = { sumerian_pagan }
+ }
+ sumerian_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	faiths = { sumerian_pagan }
+ }
+ sumerian_chaplain = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_court_chaplain
+	faiths = { sumerian_pagan }
+ }
+ sumerian_chancellor = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_chancellor
+	faiths = { sumerian_pagan }
+ }
+ sumerian_steward = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_steward
+	faiths = { sumerian_pagan }
+ }
+ sumerian_marshal = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_marshal
+	faiths = { sumerian_pagan }
+ }
+ sumerian_spymaster = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_spymaster
+	faiths = { sumerian_pagan }
+ }
+ sarrum-resum = {
+	type = character
+	special = holder
+	tier = empire
+	priority = 100
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ akkadian_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	faiths = { akkadian_pagan }
+ }
+ babylonian_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	faiths = { babylonian_pagan }
+ }
+ assyrian_empire = {
+	type = title
+	tier = empire
+	priority = 50
+	faiths = { assyrian_pagan }
+ }
+ sarru = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 301
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ akkadian_kingdom = {
+	type = title
+	tier = kingdom
+	priority = 50
+	faiths = { akkadian_pagan }
+ }
+ babylonian_kingdom = {
+	type = title
+	tier = kingdom
+	priority = 50
+	faiths = { babylonian_pagan }
+ }
+ assyrian_kingdom = {
+	type = title
+	tier = kingdom
+	priority = 50
+	faiths = { assyrian_pagan }
+ }
+#Mesopotamian
+ mesopotamian_duke = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 50
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_duchy = {
+	type = title
+	tier = duchy
+	priority = 50
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_count = {
+	type = character
+	special = holder
+	tier = county
+	priority = 50
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_county = {
+	type = title
+	tier = county
+	priority = 50
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_barony = {
+	type = title
+	tier = barony
+	priority = 50
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_chaplain = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_court_chaplain
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_chancellor = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_chancellor
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_steward = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_steward
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_marshal = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_marshal
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+ mesopotamian_spymaster = {
+	type = character
+	special = councillor
+	priority = 299
+	council_position = councillor_spymaster
+	faiths = { akkadian_pagan babylonian_pagan assyrian_pagan }
+ }
+#
