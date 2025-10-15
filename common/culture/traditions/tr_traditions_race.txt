@@ -1723,7 +1723,7 @@ tradition_fromsoft = {
  }
 #Lizardmen
  tradition_lizardmen = {
-	category = ritual
+	category = regional
 	layers = {
 		0 = diplo
 		1 = mediterranean
@@ -1780,8 +1780,11 @@ tradition_fromsoft = {
 		cultural_acceptance_gain_mult = -0.25
 	}
 	character_modifier = {
+		jungle_cancel_negative_supply = yes
+		wetlands_cancel_negative_supply = yes
 		diplomacy = -4
 		prowess = 4
+		winter_advantage = -10
 		opinion_of_different_culture = -40
 		close_relative_opinion = 5
 		life_expectancy = 50
