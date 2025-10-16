@@ -586,6 +586,11 @@ tr_doctrines = {
 		is_shown = { always = no }
 		parameters = {
 			take_vows_active = yes
+			can_use_christian_artefacts = yes
+			hostility_override_special_doctrine_is_christian_faith = 2
+			is_christian_faith_bilateral_loc_override = 2
+			christian_syncretic_actor_opinion_active = yes
+			opinion_of_christian_syncretic_recipient_opinion_active = 30
 		}
 		traits = {
 			virtues = { temperate forgiving compassionate chaste  }
@@ -1057,6 +1062,7 @@ tr_doctrines = {
 			clergy_can_fight = yes
 			piety_from_marrying_lowborn_active = yes
 			human_sacrifice_active = yes
+			gruesome_festivals_active = yes
 			piety_from_hunts_active = yes
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
@@ -1066,6 +1072,10 @@ tr_doctrines = {
 			same_faith_promote_culture_bonus_active = yes
 			other_culture_conversion_penalty_active = yes
 			flower_war_cb_active = yes
+			torturing_prisoners_grants_piety = yes
+			reduced_stress_from_torture = yes
+			naked_adherents_active = yes
+			natural_primitivism_law_cost_increase = yes
 		}
 		character_modifier = {
 			tolerance_advantage_mod = 2
@@ -1073,6 +1083,11 @@ tr_doctrines = {
 			martial_per_piety_level = 1
 		    prowess_per_piety_level = 1
 		    prowess_per_prestige_level = 1
+			domain_tax_different_faith_mult = 0.2
+			levy_reinforcement_rate_same_faith = 0.25
+			levy_reinforcement_rate_different_faith = -0.25
+			monthly_piety_gain_mult = -0.1
+			stress_loss_per_piety_level = -0.1
 		}
 		traits = {
 			virtues = { 
