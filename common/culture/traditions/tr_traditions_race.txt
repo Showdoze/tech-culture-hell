@@ -1727,7 +1727,7 @@ tradition_fromsoft = {
 	layers = {
 		0 = diplo
 		1 = mediterranean
-		4 = es_bosmer.dds
+		4 = es_argonian.dds
 	}
 	is_shown = { OR = { this = culture:lizardmen } }
 	parameters = {
@@ -1803,8 +1803,8 @@ tradition_fromsoft = {
 		character_travel_speed_mult = 0.1
 		character_travel_safety_mult = 0.1
 		martial_per_piety_level = 1
-		prowess_per_piety_level = 3
-		prowess_per_prestige_level = 3
+		prowess_per_piety_level = 2
+		prowess_per_prestige_level = 2
 		max_loot_mult = 0.4
 		negate_prowess_penalty_add = 5
 		max_loot_mult = 1
@@ -1846,6 +1846,30 @@ tradition_fromsoft = {
 		same_culture_opinion = 15
 	}
 	cost = { piety = 200 }	
+	ai_will_do = { value = 0 }	
+ }
+ tradition_lizardmen_adapt = {
+	category = ritual
+	layers = {
+		0 = diplo
+		1 = mediterranean
+		4 = es_argonian.dds.dds
+	}
+	is_shown = { OR = { this = culture:lizardmen } }
+	parameters = {
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		prowess_per_piety_level = 2
+		prowess_per_prestige_level = 2
+		close_relative_opinion = 5
+		knight_effectiveness_mult = 0.1
+		same_culture_opinion = 5
+		counter_efficiency = 0.1
+	}
+	cost = { piety = 500 }	
 	ai_will_do = { value = 0 }	
  }
 #
