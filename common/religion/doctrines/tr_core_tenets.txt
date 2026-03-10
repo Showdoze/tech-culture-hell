@@ -39,9 +39,9 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				just = 2 lifestyle_physician pure_blooded = 2 follow_osiris follow_isis 
-			    follow_horus follow_seth follow_anubis follow_bastet follow_amun 
-				follow_hathor forgiving just temperate 
+				just = 2 lifestyle_physician pure_blooded = 2 forgiving just temperate
+				#follow_osiris follow_isis follow_hathor 
+			    #follow_horus follow_seth follow_anubis follow_bastet follow_amun 
 			}
 			sins = { arbitrary = 2 greedy deceitful }
 		}
@@ -67,9 +67,9 @@ tr_doctrines = {
 				just = 2 lifestyle_physician pure_blooded = 2  forgiving just temperate 
 			}
 			sins = { 
-				arbitrary = 2 greedy deceitful follow_osiris follow_isis 
-			    follow_horus follow_seth follow_anubis follow_bastet follow_amun 
-				follow_hathor 
+				arbitrary = 2 greedy deceitful #follow_osiris follow_isis 
+			    #follow_horus follow_seth follow_anubis follow_bastet follow_amun 
+				#follow_hathor 
 			}
 		}
 	}
@@ -149,7 +149,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				torturer sadistic vengeful murderer gallowsbait follow_ripper follow_caleb 
-				follow_mage_death ds_covenant_moundmakers 
+				#follow_mage_death ds_covenant_moundmakers 
 			}
 		    sins = { forgiving compassionate }
 		} 
@@ -279,7 +279,7 @@ tr_doctrines = {
 		traits = {
 			virtues = { 
 				generous gregarious patient lifestyle_mystic follow_selune 
-				class_druid_moon class_druid_star ds_covenant_darkmoon follow_eilistraee 
+				class_druid_moon class_druid_star  follow_eilistraee #ds_covenant_darkmoon
 			}
 			sins = { 
 				callous shy impatient follow_shar follow_lolth 
@@ -307,7 +307,7 @@ tr_doctrines = {
 			}
 			sins = { 
 				lazy cynical lifestyle_mystic drunkard follow_mage_death 
-				class_wizard_necromancy class_cleric_death class_monk_drunk 
+				class_wizard_necromancy class_cleric_death #class_monk_drunk 
 			}
 		}
 		character_modifier = {
@@ -485,7 +485,7 @@ tr_doctrines = {
 			sins = { 
 				lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
 			    follow_mage_death follow_mage_earth ds_covenant_farron 
-				class_wizard_necromancy class_cleric_death 
+				#class_wizard_necromancy class_cleric_death 
 			}
 		}
 	}
@@ -547,7 +547,7 @@ tr_doctrines = {
 			virtues = { 
 				lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
 			    follow_mage_death ds_covenant_farron follow_mage_earth class_cleric_death 
-				class_rogue_trick 
+				#class_rogue_trick 
 			}
 			sins = { architect craven avaricious greedy }
 		}
@@ -967,7 +967,7 @@ tr_doctrines = {
 			}
 			sins = { 
 				peasant_leader populist_leader improvident humble generous content temperate 
-				class_paladin_ancient class_paladin_devotion 
+				#class_paladin_ancient class_paladin_devotion 
 			}
 		}
 	}
