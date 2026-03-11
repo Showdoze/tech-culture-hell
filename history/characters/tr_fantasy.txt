@@ -3028,6 +3028,41 @@
 	#110.1.1 = { death = yes }
 	799.1.1 = { death = yes }
    }
+   Karstark_4 = {
+	name = Rickard # Canon, a lord
+	dynasty_house = house_Karstark
+	#dna = Karstark_4
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #northman
+	sexuality = heterosexual
+	father = Stark_12 #Karstark_1
+	#mother = Karstark_rs_1_A
+	trait = education_martial_2
+	trait = wrathful
+	trait = arrogant
+	trait = callous
+	trait = bossy
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
+	}
+	#8266.1.1 = { add_spouse = Karstark_rs_1 }
+	868.11.9 = {
+		death = {
+			death_reason = death_execution # Executed for killing prisoners
+			killer = Stark_6 # Robb Stark
+		}
+	}
+  }
    Stark_1 = {
 	name = Rickard # Canon, THE Rickard Stark, a lord
 	dynasty = dynn_Stark
@@ -3219,7 +3254,7 @@
 	name = Royce # I
 	dynasty = dynasty_Bolton
 	#dna = Bolton_6
-	dynasty = dynasty_Bolton
+	religion = hist
 	culture = fantasy_culture
 	534.1.1 = { birth = yes }
 	819.1.1 = { death = yes }
@@ -3322,10 +3357,34 @@
 	860.1.1 = { dynasty_house = house_Brightflame }
 	900.1.1 = { death = { death_reason = death_drinking_wildfire } }
   }
+  Targaryen_83 = {
+	name = Daena # Canon, AKA: Daena the Defiant, mother of Daemon Blackfyre, married Baelor Targaryen
+	dynasty = dynn_Targaryen
+	female = yes
+	martial = 9
+	diplomacy = 3
+	intrigue = 2
+	stewardship = 3
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_tar_1_grandpa
+	#mother = Velaryon_53
+	trait = education_martial_1
+	trait = beauty_good_3
+	trait = stubborn
+	trait = brave
+	trait = ambitious
+	trait = rowdy
+	disallow_random_traits = yes
+	814.11.24 = { birth = yes }
+	839.6.11 = { trait = fornicator } #pregnant with Daemon
+	894.6.1 = { death = yes }
+}
   tr_Daemon_Blackfyre = {
 	name = Daemon # Canon, AKA: Daemon Blackfyre, progenitor of house Blackfyre
 	dynasty = dynasty_Targaryen
-	dna = Targaryen_94
+	dna = tr_Daemon_Blackfyre
 	martial = 11
 	diplomacy = 4
 	intrigue = 2
@@ -3334,6 +3393,7 @@
 	religion = dragon_cult
 	culture = high_valyrian
 	father = tr_tar_1_dad
+	mother = Targaryen_83
 	trait = legitimized_bastard # Caution: succession error
 	trait = education_martial_3
 	trait = beauty_good_3
@@ -3358,6 +3418,272 @@
 			killer = tr_tar_2 # Brynden Rivers
 		}
 	}
+  }
+  # Blackfyre
+   Blackfyre_1 = {
+	name = Aegon # Canon
+	dynasty_house = house_Blackfyre
+	#dna = Blackfyre_1
+	martial = 8
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_martial_2
+	trait = twin
+	trait = brave
+	trait = ambitious
+	trait = arrogant
+	trait = callous
+	trait = bossy
+	853.10.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	865.11.22 = {
+		death = {
+			death_reason = death_battle # Redgrass Field
+			#killer = Targaryen_96 # Brynden Bloodraven
+		}
+	}
+   }
+   Blackfyre_2 = {
+	name = Aemon # Canon
+	dynasty_house = house_Blackfyre
+	martial = 8
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_martial_2
+	trait = twin
+	trait = gregarious
+	trait = brave
+	trait = arrogant
+	trait = callous
+	trait = rowdy
+	853.10.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	865.11.22 = {
+		death = {
+			death_reason = death_battle # Redgrass Field
+			#killer = Targaryen_96 # Brynden Bloodraven
+		}
+	}
+  }
+   Blackfyre_3 = {
+	name = Calla # Canon, married Aegor Bittersteel
+	dynasty_house = house_Blackfyre
+	female = yes
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_intrigue_3
+	trait = beauty_good_1
+	trait = ambitious
+	trait = vengeful
+	trait = brave
+	trait = bossy
+	disallow_random_traits = yes
+	854.10.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	900.1.1 = { death = yes }
+  }
+   Blackfyre_4 = {
+	name = Daenerys # Mentioned, married Haegon Blackfyre
+	dynasty_house = house_Blackfyre
+	female = yes
+	dna = Blackfyre_4
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_diplomacy_2
+	trait = just
+	trait = rude
+	trait = ambitious
+	trait = bossy
+	disallow_random_traits = yes
+	854.1.1 = { birth = yes }
+	870.1.1 = {
+		add_spouse = Blackfyre_6 # Daenerys Blackfyre
+	}
+	900.1.1 = { death = yes }
+  }
+   Blackfyre_5 = {
+	name = Daemon # Canon, AKA: John the Fiddler, Daemon II
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_5
+	diplomacy = 3
+	martial = 8
+	prowess = 3
+	religion = dragon_cult
+	culture = high_valyrian
+	sexuality = homosexual
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_diplomacy_2
+	trait = beauty_good_2
+	trait = dragon_dreams
+	trait = charming
+	give_nickname = nick_the_younger
+	disallow_random_traits = yes
+	856.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_homosexual
+	}
+	870.12.1 = {
+		trait = brave
+		trait = lifestyle_mystic
+		trait = gregarious
+		trait = just
+		trait = generous
+		trait = poet
+		trait = education_martial_prowess_2
+		give_nickname = nick_the_brown_dragon
+	}
+	874.6.1 = {
+		death = {
+			death_reason = death_dungeon
+			#killer = Targaryen_108 # Aerys Targaryen
+		}
+	}
+    }
+   Blackfyre_6 = {
+	name = Haegon # Canon, Haegon I
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_6
+	martial = 3
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_martial_2
+	trait = honest
+	trait = ambitious
+	trait = wrathful
+	trait = rude
+	trait = bossy
+	disallow_random_traits = yes
+	860.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		add_spouse = Blackfyre_4 # Daenerys Blackfyre
+	}
+	925.1.1 = {
+		death = { death_reason = death_battle } # Third Blackfyre Rebellion
+	}
+  }
+   Blackfyre_7 = {
+	name = Aenys # Canon, accepted Bloodraven's invitation to Great Council
+	dynasty_house = house_Blackfyre
+	prowess = 5
+	diplomacy = 8
+	stewardship = 7
+	learning = 7
+	intrigue = 2
+	martial = 2
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_diplomacy_3
+	trait = beauty_good_1
+	trait = trusting
+	trait = just
+	trait = ambitious
+	trait = authoritative
+	trait = charming
+	disallow_random_traits = yes
+	887.1.1 = { birth = yes }
+	8216.1.1 = { add_spouse = Peake_65 } # Alysanne Peake
+	910.7.7 = {
+		death = {
+			death_reason = death_execution
+			#killer = Targaryen_96 # Brynden Bloodraven
+		}
+	}
+  }
+   Blackfyre_8 = {
+	name = Aegor # Mentioned
+	dynasty_house = house_Blackfyre
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_martial_2
+	trait = vengeful
+	trait = brave
+	trait = wrathful
+	trait = rowdy
+	disallow_random_traits = yes
+	888.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_mentioned
+	}
+	913.1.1 = { add_spouse = Blackfyre_10 } # Daena Blackfyre
+	950.1.1 = { death = yes }
+  }
+   Blackfyre_9 = {
+	name = Maelys # Mentioned, Captain-General of the Golden Company
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_9
+	diplomacy = 6
+	martial = 3
+	stewardship = 4
+	intrigue = 5
+	learning = 5
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_martial_3
+	trait = rowdy
+	disallow_random_traits = yes
+	889.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	910.8.1 = { 
+		trait = brave 
+		trait = ambitious
+		trait = wrathful
+		trait = organizer
+		trait = aggressive_attacker
+	}
+	970.1.1 = { death = yes }
+  }
+   Blackfyre_10 = {
+	name = Daena # Mentioned, married Aegor Blackfyre
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_10
+	female = yes
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Daemon_Blackfyre
+	#mother = Atuhoris_26
+	trait = education_intrigue_2
+	trait = beauty_good_2
+	#trait = rude
+	trait = vengeful
+	trait = arrogant
+	trait = bossy
+	disallow_random_traits = yes
+	890.1.1 = { birth = yes }
+	950.1.1 = { death = yes }
   }
   tr_tar_founder = {
 	name = "Aenar"

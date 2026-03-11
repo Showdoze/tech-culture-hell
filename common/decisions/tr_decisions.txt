@@ -1194,5 +1194,42 @@ tr_choose_nickname_decision = {
         base = 0
     }
 }
-
-
+tr_house_customizer_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
+    title = house_customizer_decision
+    desc = house_customizer_decision_desc
+    selection_tooltip = house_customizer_decision
+    confirm_text = house_customizer_decision
+    is_shown = { has_trait = house_customizer }
+    cost = { prestige = 1 }
+    effect = {
+        trigger_event = {
+            id = house_customizer.0001
+        }
+    }
+    ai_will_do = { base = 0 }
+}
+house_trait_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds" }
+    title = house_trait_decision
+    desc = house_trait_decision_desc
+    selection_tooltip = house_trait_decision
+    confirm_text = house_trait_decision
+    cost = { prestige = 1 }
+    is_shown = {
+        AND = {
+            has_trait = house_customizer
+            OR = {
+                has_trait = start_uchiha
+                has_trait = start_septim
+                has_trait = start_telvani
+                has_trait = start_hlaalu
+                has_trait = start_redoran
+                has_trait = start_belmont
+                has_trait = byakugan
+            }
+        }
+    }
+    effect = { trigger_event = { id = tr_house_trait_event.01 } }
+    ai_will_do = { base = 0 }
+}
