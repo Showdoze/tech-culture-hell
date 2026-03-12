@@ -1533,6 +1533,7 @@
 	trait = sadistic
 	trait = strong
 	830.1.1 = { birth = yes }
+	850.1.1 = set_relation_friend = { target = character:mm_frida }
 	900.1.1 = { death = { death_reason = death_duel } }
  }
 #Anime
@@ -3353,13 +3354,199 @@
 	trait = lifestyle_mystic
 	give_nickname = nick_brightflame
 	disallow_random_traits = yes
-	839.1.1 = { birth = yes }
+	844.1.1 = { birth = yes }
 	860.1.1 = { dynasty_house = house_Brightflame }
+	890.1.1 = {
+		add_spouse = Targaryen_117 # Daenora Targaryen
+	}
 	900.1.1 = { death = { death_reason = death_drinking_wildfire } }
+  }
+  Targaryen_117 = {
+	name = Daenora # Canon, married Aerion Brightflame
+	dynasty = dynasty_Targaryen
+	female = yes
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_tar_1
+	#mother = Arryn_106
+	860.1.1 = {birth = yes }
+	890.1.1 = {
+		add_spouse = Targaryen_117 # Daenora Targaryen
+	}
+	960.1.1 = { death = yes }
+  }
+  Targaryen_125 = {
+	name = Maegor # Canon, overlooked in succession
+	dynasty_house = house_Brightflame
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_Aerion_Brightflame
+	mother = Targaryen_117
+	890.1.1 = { birth = yes }
+	980.6.1 = {
+		death = {
+			death_reason = death_burned # Tragedy at Summerhall
+			#killer = Targaryen_122 # Aegon V Targaryen
+		}
+	}
+  }
+  Targaryen_96 = { #Bloodraven
+	name = Brynden # Canon, AKA: Bloodraven, Lord Commander of the Night's Watch
+	dynasty = dynasty_Targaryen
+	#dna = Targaryen_96
+	martial = 12
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 13
+	prowess = 5
+	fertility = 0.1
+	health = 9
+	religion = hist
+	culture = high_valyrian
+	father = tr_tar_1_dad
+	#mother = Blackwood_81 # Melissa Blackwood
+	give_nickname = nick_bloodraven
+	trait = legitimized_bastard # Caution: succession error
+	trait = education_intrigue_5
+	trait = albino
+	trait = pensive
+	disallow_random_traits = yes
+	844.8.23 = { birth = yes }
+	850.1.1 = { 
+		trait = patient 
+		trait = deceitful
+		trait = lifestyle_mystic # Called a sorcerer
+		trait = just
+		trait = callous
+		dynasty_house = house_bloodraven
+	}
+	865.1.1 = {
+		trait = fornicator # Shiera Seastar
+		effect = {
+			if = {
+				limit = { character:Targaryen_97 = { is_alive = yes } }
+				set_relation_lover = character:Targaryen_97 # Shiera Seastar
+			}
+			agot_safe_reveal_lovers_history_effect = yes
+		}
+	}
+	896.11.22 = { # Redgrass Field
+		trait = one_eyed
+		trait = kinslayer_3 # Daemon Blackfyre
+		trait = scarred
+	}
+	897.1.1 = {
+		trait = fornicator # Shiera Seastar
+		effect = {
+			if = {
+				limit = { character:Targaryen_97 = { is_alive = yes } }
+				set_relation_lover = character:Targaryen_97 # Shiera Seastar
+			}
+			agot_safe_reveal_lovers_history_effect = yes
+		}
+	}
+	910.6.1 = { # Death of Aenys Blackfyre
+		trait = murderer
+		trait = nightswatch_historical # Sent to the wall, after Aegon V took the throne
+		effect = {
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 58
+			}
+		}
+	}
+	950.6.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+  Targaryen_97 = {
+	name = Shiera # Canon, AKA: Shiera Seastar
+	dynasty = dynasty_Targaryen
+	female = yes
+	#dna = Targaryen_97
+	martial = 2
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 5
+	learning = 14
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_tar_1_dad
+	#mother = Sellos_56 # Serenei of Lys
+	trait = legitimized_bastard # Caution: succession error
+	trait = education_diplomacy_5
+	trait = beauty_good_3
+	trait = bossy
+	#trait = heterochromia_eyes
+	disallow_random_traits = yes
+	848.1.1 = { birth = yes }
+	859.1.1 = {
+		give_nickname = nick_seastar
+		trait = diligent
+		trait = arrogant
+		trait = lifestyle_mystic # Called a sorceress
+		trait = gregarious
+		trait = lustful
+		trait = scholar
+		trait = seducer
+	}
+	950.1.1 = { death = yes }
+  }
+  Targaryen_95 = {
+	name = Aegor # Canon, AKA: Bittersteel, Captain-General of the Golden Company
+	dynasty = dynasty = dynasty_Targaryen
+	martial = 8
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 3
+	prowess = 5
+	fertility = 0.1
+	religion = dragon_cult
+	culture = fantasy_culture #westerosi_valyrian
+	father = tr_tar_1_dad
+	#mother = Bracken_76 # Barbara Braken
+	trait = legitimized_bastard # Caution: succession error
+	trait = education_martial_5
+	trait = physique_good_2
+	trait = pensive
+	disallow_random_traits = yes
+	841.11.1 = { birth = yes }
+	850.1.1 = {
+		trait = wrathful
+		trait = stubborn
+		trait = irritable
+		trait = ambitious
+		trait = brave
+		dynasty_house = house_Bittersteel
+		effect = {
+			if = {
+				limit = { character:Targaryen_96 = { is_alive = yes } }
+				set_relation_nemesis = {
+					target = character:Targaryen_96 # Brynden Bloodraven
+					involved_character = character:Targaryen_97 # Shiera Seastar
+					reason = nemesis_lover_jealousy
+				}
+			}
+		}
+	}
+	858.1.1 = { 
+		trait = education_martial_prowess_4 
+		trait = strategist
+		give_nickname = nick_bittersteel
+		trait = unyielding_defender
+		trait = organizer
+	}
+	860.1.1 = { employer = tr_Daemon_Blackfyre } # Daemon Blackfyre
+	870.6.1 = { add_matrilineal_spouse = Blackfyre_3 } # Calla Blackfyre
+	910.1.1 = { # 69 on death
+		death = { death_reason = death_battle }
+	}
   }
   Targaryen_83 = {
 	name = Daena # Canon, AKA: Daena the Defiant, mother of Daemon Blackfyre, married Baelor Targaryen
-	dynasty = dynn_Targaryen
+	dynasty = dynasty_Targaryen
 	female = yes
 	martial = 9
 	diplomacy = 3
@@ -3415,7 +3602,7 @@
 	896.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
-			killer = tr_tar_2 # Brynden Rivers
+			killer = Targaryen_96 # Brynden Rivers
 		}
 	}
   }
@@ -3437,14 +3624,11 @@
 	trait = arrogant
 	trait = callous
 	trait = bossy
-	853.10.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-	}
+	853.10.1 = { birth = yes }
 	865.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
-			#killer = Targaryen_96 # Brynden Bloodraven
+			killer = Targaryen_96 # Brynden Bloodraven
 		}
 	}
    }
@@ -3464,14 +3648,11 @@
 	trait = arrogant
 	trait = callous
 	trait = rowdy
-	853.10.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-	}
+	853.10.1 = { birth = yes }
 	865.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
-			#killer = Targaryen_96 # Brynden Bloodraven
+			killer = Targaryen_96 # Brynden Bloodraven
 		}
 	}
   }
@@ -3490,10 +3671,7 @@
 	trait = brave
 	trait = bossy
 	disallow_random_traits = yes
-	854.10.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-	}
+	854.10.1 = { birth = yes }
 	900.1.1 = { death = yes }
   }
    Blackfyre_4 = {
@@ -3513,7 +3691,7 @@
 	disallow_random_traits = yes
 	854.1.1 = { birth = yes }
 	870.1.1 = {
-		add_spouse = Blackfyre_6 # Daenerys Blackfyre
+		add_spouse = Blackfyre_6
 	}
 	900.1.1 = { death = yes }
   }
@@ -3574,8 +3752,11 @@
 	trait = rude
 	trait = bossy
 	disallow_random_traits = yes
-	860.1.1 = {
-		birth = yes
+	860.1.1 = { 
+		birth = yes 
+		effect = {
+			create_betrothal = character:Blackfyre_4
+		}
 	}
 	870.1.1 = {
 		add_spouse = Blackfyre_4 # Daenerys Blackfyre
@@ -3606,11 +3787,11 @@
 	trait = charming
 	disallow_random_traits = yes
 	887.1.1 = { birth = yes }
-	8216.1.1 = { add_spouse = Peake_65 } # Alysanne Peake
+	#8216.1.1 = { add_spouse = Peake_65 } # Alysanne Peake
 	910.7.7 = {
 		death = {
 			death_reason = death_execution
-			#killer = Targaryen_96 # Brynden Bloodraven
+			killer = Targaryen_96 # Brynden Bloodraven
 		}
 	}
   }
@@ -3628,11 +3809,7 @@
 	trait = wrathful
 	trait = rowdy
 	disallow_random_traits = yes
-	888.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_mentioned
-	}
+	888.1.1 = { birth = yes }
 	913.1.1 = { add_spouse = Blackfyre_10 } # Daena Blackfyre
 	950.1.1 = { death = yes }
   }
@@ -3653,10 +3830,7 @@
 	trait = education_martial_3
 	trait = rowdy
 	disallow_random_traits = yes
-	889.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
+	889.1.1 = { birth = yes }
 	910.8.1 = { 
 		trait = brave 
 		trait = ambitious
@@ -3685,6 +3859,154 @@
 	890.1.1 = { birth = yes }
 	950.1.1 = { death = yes }
   }
+   Blackfyre_11 = {
+	name = Daemon # AKA: Daemon III Blackfyre
+	dynasty_house = house_Blackfyre
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_6
+	mother = Blackfyre_4
+	trait = education_martial_3
+	trait = rude
+	trait = ambitious
+	trait = brave
+	trait = rowdy
+	disallow_random_traits = yes
+	870.1.1 = {
+		birth = yes
+		effect = { agot_join_golden_company_history_effect = yes }
+	}
+	900.3.2 = {
+		death = {
+			death_reason = death_duel # Battle of Wendwater Bridge
+			#killer = Tall_1 # Duncan the Tall
+		}
+	}
+  }
+   Blackfyre_12 = {
+	name = Aemon # Mentioned
+	dynasty_house = house_Blackfyre
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_6
+	mother = Blackfyre_4
+	trait = education_martial_1
+	trait = ambitious
+	trait = brave
+	trait = just
+	trait = charming
+	disallow_random_traits = yes
+	875.1.1 = { birth = yes}
+	900.3.2 = {
+		death = { death_reason = death_battle } # Battle of Wendwater Bridge
+	}
+  }
+   Blackfyre_13 = {
+	name = Daemon # Canon, Captain-General of the Golden Company, Daemon IV (probably)
+	dynasty_house = house_Blackfyre
+	martial = 4
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_7
+	#mother = Peake_65
+	trait = education_martial_2
+	trait = brave
+	trait = wrathful
+	trait = ambitious
+	trait = pensive
+	disallow_random_traits = yes
+	905.1.1 = {birth = yes}
+	920.1.1 = {
+		#add_spouse = Strong_59 # Alyx Strong
+	}
+	930.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = Blackfyre_14 # Maelys Blackfyre
+		}
+	}
+  }
+   Blackfyre_14 = {
+	name = Maelys # Canon, AKA: Maelys the Monstrous, Captain-General of the Golden Company, Ninepenny King
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_14
+	martial = 8
+	prowess = 6
+	fertility = 1.8 #Compensate for Ugly/Disfigured so he's not an instant game over
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_8
+	mother = Blackfyre_10
+	give_nickname = nick_the_monstrous
+	trait = education_martial_3
+	trait = strong
+	trait = hunchbacked
+	trait = giant
+	trait = beauty_bad_3
+	trait = physique_good_3
+	trait = disfigured
+	trait = rowdy
+	disallow_random_traits = yes
+	880.1.1 = { birth = yes }
+	900.1.1 = {
+		trait = education_martial_prowess_4
+		trait = aggressive_attacker
+		trait = organizer
+		trait = sadistic
+		trait = ambitious
+		trait = wrathful
+	}
+	930.11.11 = {
+		trait = kinslayer_2 # Daemon Blackfyre
+		effect = {
+			add_dread = massive_dread_gain
+			add_prestige_level = 1
+		}
+	}
+	938.10.1 = {
+		death = {
+			death_reason = death_duel
+			#killer = Selmy_3 # Barristan Selmy
+		}
+	}
+  }
+   Blackfyre_15 = {
+	name = Maenar # Semi-Canon, from early AFFC drafts
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_15
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_14
+	trait = beauty_bad_1
+	trait = physique_good_3
+	trait = rowdy
+	930.1.1 = { birth = yes }
+	935.1.1 = {
+		death = {
+			death_reason = death_burned_witch # Sacrificed
+			killer = Blackfyre_14 # Maelys Blackfyre
+		}
+	}
+  }
+   Blackfyre_16 = {
+	name = Daena # Mentioned, female Blackfyre line outlived male line
+	dynasty_house = house_Blackfyre
+	female = yes
+	religion = dragon_cult
+	culture = high_valyrian
+	father = Blackfyre_13
+	#mother = Strong_59
+	925.1.1 = { birth = yes }
+	940.11.11 = {
+		#add_spouse = Jayn_52 # Morgo Jayn
+	}
+	1066.12.21 = {
+		death = { death_reason = death_disappearance }
+	}
+  }
   tr_tar_founder = {
 	name = "Aenar"
 	religion = dragon_cult
@@ -3697,7 +4019,7 @@
     trait = brave
 	trait = family_first
     disallow_random_traits = yes
-	500.1.1 = { birth = yes }
+	200.1.1 = { birth = yes }
     667.1.1 = { death = { death_reason = death_old_age } }
  }
   tr_tar_maestar_Aemon = {
@@ -3720,7 +4042,7 @@
     868.1.1 = { death = { death_reason = death_old_age } }
  }
   tr_tar_1_grandpa = {
-	name = "Aegon"
+	name = "Aenar"
 	religion = dragon_cult
 	dynasty = dynasty_Targaryen
 	culture = high_valyrian
@@ -3737,7 +4059,7 @@
     790.1.1 = { death = { death_reason = death_old_age } }
  }
   tr_tar_1_dad = {
-	name = "Aenar"
+	name = "Aegon"
 	religion = dragon_cult
 	dynasty = dynasty_Targaryen
 	culture = high_valyrian
@@ -3749,6 +4071,7 @@
     trait = brave
 	trait = family_first
     disallow_random_traits = yes
+	give_nickname = nick_the_unworthy
 	780.1.1 = { birth = yes }
     840.1.1 = { death = { death_reason = death_old_age } }
  }
