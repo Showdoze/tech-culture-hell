@@ -3002,6 +3002,117 @@
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
  #Game of thrones
+ Tall_1 = {
+	name = Duncan # Canon, AKA: Duncan the Tall, Lord Commander of the Kingsguard
+	martial = 8
+	prowess = 12
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	trait = physique_good_3
+	trait = strong
+	trait = rowdy
+	trait = giant
+	give_nickname = nick_the_tall
+	trait = compassionate
+	trait = gallant
+	trait = humble
+	trait = education_martial_prowess_3
+	trait = just
+	trait = brave
+	disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+	8209.1.29 = {
+		dynasty = dynn_Tall
+	}
+	860.3.25 = { trait = scarred }
+	900.1.1 = { employer = Targaryen_122 } # Aegon V Targaryen
+	913.6.1 = {
+		death = {
+			death_reason = death_burned # Tragedy at Summerhall
+			killer = Targaryen_122 # Aegon V Targaryen
+		}
+	}
+ }
+  #Iron BORN
+   Grey_King_1 = {
+	name = The_Father # The Grey King's father
+	dynasty = dynn_Grey_King
+	martial = 10
+	prowess = 10
+	religion = deep_cult #drowned_god
+	culture = norse #ironborn
+	trait = education_diplomacy_4
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = just
+	trait = brave
+	trait = pensive
+	trait = lifestyle_mystic
+	disallow_random_traits = yes
+	50.1.1 = { birth = yes }
+	101.1.1 = { death = yes }
+   }
+   Grey_King_2 = {
+	name = The_Grey_King # Canon, The Grey King, don't leave his name blank again, it messes up the numeration of all ironborn kings
+	dynasty = dynn_Grey_King
+	martial = 10
+	prowess = 20
+	religion = deep_cult #drowned_god
+	culture = norse #ironborn
+	father = Grey_King_1
+	trait = education_martial_4
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = brave
+	trait = ambitious
+	trait = authoritative
+	trait = immortal
+	trait = lifestyle_mystic
+	disallow_random_traits = yes
+	76.1.1 = { birth = yes }
+	1083.1.1 = { death = yes } # reigned for 1007 years
+   }
+   Hoare_1 = {
+	name = Qhored # Canon, AKA: Qhored the Cruel
+	dynasty = dynn_Hoare
+	martial = 7
+	diplomacy = 10
+	intrigue = 7
+	stewardship = 7
+	learning = 4
+	prowess = 10
+	religion = deep_cult #drowned_god
+	culture = norse #ironborn
+	father = Grey_King_2
+	trait = education_martial_4
+	trait = intellect_good_2
+	trait = strong
+	trait = ambitious
+	trait = wrathful
+	trait = authoritative
+	trait = zealous
+	trait = rowdy
+	give_nickname = nick_the_cruel
+	disallow_random_traits = yes
+	150.1.1 = { birth = yes }
+	240.1.1 = { death = yes }
+  }
+   Grey_King_7 = {
+	name = Hrothgar_of_Pyke # Canon, founder
+	dynasty = dynn_Grey_King
+	prowess = 9
+	religion = deep_cult #drowned_god
+	culture = norse #ironborn
+	father = Grey_King_2 # The Grey King
+	trait = education_martial_4
+	trait = ambitious
+	trait = reaver
+	trait = brave
+	trait = bossy
+	disallow_random_traits = yes
+	157.1.1 = { birth = yes }
+	217.1.1 = { death = yes }
+   }
   #stark
    Stark_12 = {
 	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
@@ -3257,8 +3368,8 @@
 	#dna = Bolton_6
 	religion = hist
 	culture = fantasy_culture
-	534.1.1 = { birth = yes }
-	819.1.1 = { death = yes }
+	348.1.1 = { birth = yes }
+	397.1.1 = { death = yes }
    }
    tr_agot_Roose_Bolton = {
 	name = "Roose Bolton"
@@ -3330,6 +3441,247 @@
 	847.1.1 = { birth = yes }
     870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
    }
+  #River lands
+   Lothston_1 = {
+	name = Guy # Canon, AKA: Guy the Glutton
+	dynasty = dynn_Lothston
+	prowess = 6
+	religion = hist
+	culture = fantasy_culture #riverman_main
+	trait = gluttonous
+	give_nickname = nick_the_glutton
+	407.1.1 = { birth = yes }
+	#8036.1.1 = { add_spouse = Chambers_38 } # Betha Chambers
+	442.3.2 = {
+		death = {
+			death_reason = death_duel
+			#death_duel_trial_by_seven # Maegor's Trial by Seven
+			#killer = Morrigen_14 # Damon Morrigen
+		}
+	}
+   }
+   Qoherys_1 = {
+	name = Quenton # Canon, a lord
+	dynasty = dynn_Qoherys
+	prowess = 9
+	religion = dragon_cult #valyrian_pan_freehold
+	culture = fantasy_culture #westerosi_valyrian
+	trait = education_martial_3
+	750.1.1 = { birth = yes }
+	809.1.1 = { death = { death_reason = death_horse_riding_accident } }
+}
+   Harroway_5 = {
+	name = Leslyn # a lord, founder
+	religion = hist
+	culture = fantasy_culture #riverman_main
+	trait = education_stewardship_4
+	trait = intellect_good_1
+	trait = ambitious
+	trait = diligent
+	trait = architect
+	424.1.1 = { birth = yes }
+	469.1.1 = { dynasty = dynn_Harroway }
+	495.1.1 = { death = yes }
+   }
+   Bracken_135 = {
+	name = Humfrey # First Bracken King
+	dynasty = dynn_Bracken
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #first_man
+	trait = education_martial_2
+	trait = physique_good_1
+	trait = wrathful
+	trait = gregarious
+	trait = brave
+	80.1.1 = { birth = yes }
+	133.1.1 = { death = yes }
+   }
+   Blackwood_132 = {
+	name = Jon # Last Blackwood King of Wolfswood
+	dynasty = dynn_Blackwood
+	religion = hist #old_gods_wnw
+	culture = fantasy_culture #first_man
+	trait = education_intrigue_2
+	trait = intellect_good_1
+	trait = diligent
+	trait = callous
+	trait = brave
+	80.1.1 = { birth = yes }
+	#5100.1.1 = { add_spouse = Greenwood_2 } # Jorelle Greenwood
+	126.1.1 = { death = { death_reason = death_battle } }
+  }
+  #Westermen
+   Clegane_6 = {
+	name = Ben
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	trait = physique_good_2
+	725.1.1 = { birth = yes }
+	790.1.1 = { death = yes }
+  }
+   Clegane_1 = {
+	name = Clarent # Mentioned, the founder, kennel master
+	dna = Clegane_1
+	martial = 10
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Clegane_6
+	trait = education_martial_2
+	trait = physique_good_2
+	trait = brave
+	trait = lifestyle_hunter
+	777.1.1 = { birth = yes }
+	810.1.1 = { # Lost a leg saving Tytos Lannister's life, ennobled in return
+		trait = one_legged
+		dynasty = dynn_Clegane
+	}
+	830.1.1 = { death = yes }
+  }
+   Clegane_2 = {
+	name = Robert # Mentioned, a lord
+	dna = Clegane_2
+	intrigue = 0 # So Big Greg can kill him
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Clegane_1
+	trait = education_martial_2
+	trait = physique_good_2
+	trait = lifestyle_hunter
+	805.1.1 = { birth = yes }
+	810.1.1 = { dynasty = dynn_Clegane }
+	860.1.1 = {
+		death = {
+			death_reason = death_hunting_accident
+			killer = Clegane_3 # Gregor Clegane
+		}
+	}
+  }
+   Clegane_3 = {
+	name = Gregor # Canon, AKA: The Mountain That Rides, a lord
+	dynasty = dynn_Clegane
+	martial = 10 #9
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 2
+	learning = 2
+	prowess = 3
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = heterosexual
+	father = Clegane_2
+	#mother = Clegane_rs_2
+	trait = education_martial_prowess_3
+	trait = physique_good_3
+	trait = giant
+	trait = dull
+	trait = strong
+	trait = rowdy
+	trait = wrathful
+	trait = brave
+	trait = sadistic
+	trait = vengeful
+	trait = irritable
+	trait = torturer
+	trait = aggressive_attacker
+	trait = reckless
+	give_nickname = nick_the_mountain_that_rides
+	disallow_random_traits = yes
+	832.1.1 = { birth = yes }
+	860.1.1 = {
+		effect = {
+			character:Bracken_12 = { # Alysanne Bracken
+				add_opinion = {
+					target = ROOT
+					modifier = tortured_me # actually opinion_forced_upon_me, so TODO
+				}
+				every_close_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = tortured_family_member # actually opinion_forced_upon_kin, so TODO
+					}
+				}
+			}
+			character:Brotherhood_12 = { # Mad Huntsman's sister
+				add_opinion = {
+					target = ROOT
+					modifier = tortured_me # actually opinion_forced_upon_me, so TODO
+				}
+				every_close_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = tortured_family_member # actually opinion_forced_upon_kin, so TODO
+					}
+				}
+			}
+			character:Brotherhood_13 = { # Mad Huntsman's wife
+				add_opinion = {
+					target = ROOT
+					modifier = tortured_me # actually opinion_forced_upon_me, so TODO
+				}
+				every_close_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = tortured_family_member # actually opinion_forced_upon_kin, so TODO
+					}
+				}
+			}
+		}
+	}
+	900.1.15 = {
+		death = {
+			death_reason = death_duel # Trial about Tyrion
+			#killer = Martell_8 # Oberyn Martell
+		}
+	}
+  }
+   Clegane_4 = { #The Hound
+	name = Sandor # Canon, AKA: The Hound
+	dynasty = dynn_Clegane
+	#dna = Clegane_4
+	martial = 9
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 5
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Clegane_2
+	#mother = Clegane_rs_2
+	trait = education_martial_prowess_3
+	trait = physique_good_3
+	trait = rowdy
+	trait = honest
+	disallow_random_traits = yes
+	837.1.1 = { birth = yes }
+	840.1.1 = { # Age 6
+		#trait = burned_3_history
+		effect = {
+			add_trait = vengeful
+			add_trait = cynical
+			if = {
+				limit = { character:Clegane_3 = { is_alive = yes } }
+				set_relation_nemesis = {
+					target = character:Clegane_3 # Gregor Clegane
+					reason = nemesis_sandor_gregor
+				}
+			}
+		}
+	}
+	849.9.1 = { # When he killed his first man, Sack of Kings Landing, age 12.
+		give_nickname = nick_the_hound
+		trait = brave
+	}
+	900.1.31 = {
+		trait = wounded_3
+		effect = {
+			remove_trait = cynical
+			remove_trait = vengeful
+		}
+		trait = stubborn
+		death = { death_reason = death_wounded_3 }
+	}
+   }
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
 	dynasty = dynasty_Targaryen
@@ -3355,10 +3707,30 @@
 	give_nickname = nick_brightflame
 	disallow_random_traits = yes
 	844.1.1 = { birth = yes }
-	860.1.1 = { dynasty_house = house_Brightflame }
-	890.1.1 = {
-		add_spouse = Targaryen_117 # Daenora Targaryen
+	860.1.1 = { 
+		dynasty_house = house_Brightflame 
+		effect = {
+			if = {
+				limit = { character:Targaryen_122 = { is_alive = yes } }
+				set_relation_rival = {
+					target = character:Targaryen_122 # Aegon V Targaryen
+					reason = rival_bullied_other_child
+				}
+			}
+			if = {
+				limit = {
+					character:Tall_1 = { is_alive = yes}
+				}
+				set_relation_rival = {
+					target = character:Tall_1 # Duncan the Tall
+					reason = rival_lost_duel
+				}
+			}
+			add_trait = disinherited
+			add_trait = rakish
+		}
 	}
+	890.1.1 = { add_spouse = Targaryen_117 } # Daenora Targaryen
 	900.1.1 = { death = { death_reason = death_drinking_wildfire } }
   }
   Targaryen_117 = {
@@ -3565,7 +3937,10 @@
 	trait = rowdy
 	disallow_random_traits = yes
 	814.11.24 = { birth = yes }
-	839.6.11 = { trait = fornicator } #pregnant with Daemon
+	839.6.11 = { 
+		trait = fornicator 
+		give_nickname = nick_the_defiant
+	} #pregnant with Daemon
 	894.6.1 = { death = yes }
 }
   tr_Daemon_Blackfyre = {
@@ -3879,7 +4254,7 @@
 	900.3.2 = {
 		death = {
 			death_reason = death_duel # Battle of Wendwater Bridge
-			#killer = Tall_1 # Duncan the Tall
+			killer = Tall_1 # Duncan the Tall
 		}
 	}
   }
@@ -4026,7 +4401,7 @@
 	religion = dragon_cult
 	dynasty = dynasty_Targaryen
 	culture = high_valyrian
-	father = tr_tar_1_grandpa
+	father = tr_tar_1_dad
 	trait = education_learning_3
 	trait = blind
     trait = compassionate
@@ -4037,9 +4412,54 @@
     trait = celibate
 	trait = family_first
     disallow_random_traits = yes
-	700.1.1 = { birth = yes }
-    868.1.1 = { death = { death_reason = death_old_age } }
+	848.1.1 = { birth = yes }
+    1066.1.1 = { death = { death_reason = death_old_age } }
  }
+  Targaryen_122 = {
+	name = Aegon # Canon, AKA: Aegon the Unlikely, Egg, Aegon V
+	religion = dragon_cult
+	dynasty = dynasty_Targaryen
+	culture = high_valyrian
+	father = tr_tar_1_dad
+	martial = 7
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 6
+	learning = 5
+	prowess = 5
+	trait = education_martial_2
+	trait = intellect_good_2
+	trait = bossy
+	disallow_random_traits = yes
+	854.1.1 = { birth = yes }
+	864.1.1 = { 
+		effect = {
+			if = {
+				limit = { character:tr_tar_maestar_Aemon = { is_alive = yes } }
+				set_relation_friend = character:tr_tar_maestar_Aemon # Aemon Targaryen
+			}
+			if = {
+				limit = { character:Tall_1 = { is_alive = yes } }
+				set_relation_best_friend = {
+					target = character:Tall_1 # Duncan the Tall
+					reason = best_friend_bonded_at_tourney
+				}
+			}
+		}
+	}
+	870.1.1 = {
+		trait = diligent 
+		trait = stubborn
+		trait = compassionate
+		trait = just
+	}
+	913.6.1 = { # If this date changes, Summerhall and it's ruin must be altered to match
+		death = {
+			death_reason = death_burned # Tragedy at Summerhall
+			killer = Targaryen_122 # Aegon V Targaryen
+		}
+	}
+}
   tr_tar_1_grandpa = {
 	name = "Aenar"
 	religion = dragon_cult
