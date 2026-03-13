@@ -3023,9 +3023,7 @@
 	trait = brave
 	disallow_random_traits = yes
 	847.1.1 = { birth = yes }
-	8209.1.29 = {
-		dynasty = dynn_Tall
-	}
+	860.1.29 = { dynasty = dynn_Tall }
 	860.3.25 = { trait = scarred }
 	900.1.1 = { employer = Targaryen_122 } # Aegon V Targaryen
 	913.6.1 = {
@@ -3123,7 +3121,7 @@
 	martial = 12
 	stewardship = 20
 	diplomacy = 15
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	trait = education_learning_4
 	trait = intellect_good_3
@@ -3152,7 +3150,7 @@
 	stewardship = 5
 	learning = 5
 	prowess = 6
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_12 #Karstark_1
@@ -3186,7 +3184,7 @@
 	stewardship = 5
 	learning = 5
 	prowess = 6
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_12
@@ -3217,7 +3215,7 @@
 	stewardship = 6
 	learning = 5
 	prowess = 9
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_1
@@ -3252,7 +3250,7 @@
 	stewardship = 4
 	learning = 5
 	prowess = 6
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_3
@@ -3285,7 +3283,7 @@
 	stewardship = 9
 	learning = 5
 	prowess = 8
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	father = Stark_3
 	trait = bastard
@@ -3324,7 +3322,7 @@
 	intrigue = 4
 	stewardship = 4
 	learning = 5
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_3
@@ -3347,7 +3345,7 @@
 	stewardship = 2
 	learning = 4
 	prowess = 6
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	father = Stark_3
 	#mother = Tully_4
@@ -3488,7 +3486,7 @@
    Bracken_135 = {
 	name = Humfrey # First Bracken King
 	dynasty = dynn_Bracken
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #first_man
 	trait = education_martial_2
 	trait = physique_good_1
@@ -3501,7 +3499,7 @@
    Blackwood_132 = {
 	name = Jon # Last Blackwood King of Wolfswood
 	dynasty = dynn_Blackwood
-	religion = hist #old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #first_man
 	trait = education_intrigue_2
 	trait = intellect_good_1
@@ -3513,6 +3511,589 @@
 	126.1.1 = { death = { death_reason = death_battle } }
   }
   #Westermen
+   Tarbeck_1 = {
+	name = Humfrey # a lord
+	dynasty = dynn_Tarbeck
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	134.1.1 = { birth = yes }
+	290.1.1 = { death = yes }
+   }
+   Tarbeck_27 = {
+	name = Walderan # Canon, a lord, rebelled against Tywin Lannister
+	dynasty = dynn_Tarbeck
+	#dna = Tarbeck_27
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Tarbeck_1
+	#father = Tarbeck_23
+	#mother = Broome_22
+	trait = education_diplomacy_1
+	trait = education_martial_prowess_2
+	trait = fecund
+	trait = gluttonous
+	trait = arrogant
+	trait = wrathful
+	trait = bossy
+	trait = lustful
+	disallow_random_traits = yes
+	755.1.1 = { birth = yes }
+	800.1.1 = { add_gold = 300 } # Lannister gold
+	800.8.1 = { add_spouse = Reyne_46 } # Ellyn Reyne
+	835.10.30 = {
+		death = {
+			death_reason = death_execution # Destruction of House Tarbeck
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+  }
+   Reyne_1 = {
+	name = Reynard # Mentioned, a lord
+	dynasty = dynn_Reyne
+	#dna = Reyne_1
+	stewardship = 9
+	diplomacy = 10
+	learning = 12
+	religion = norse_pagan
+	culture = fantasy_culture #westerman_main
+	trait = education_stewardship_3
+	trait = diligent
+	trait = intellect_good_1
+	trait = patient
+	trait = greedy
+	trait = gregarious
+	80.1.1 = {
+		birth = yes
+		#make_trait_inactive = red_hair
+	}
+	150.1.1 = { death = yes }
+   }
+   Reyne_45 = {
+	name = Roger # Canon, AKA: The Red Lion, a lord
+	dynasty = dynn_Reyne
+	martial = 8
+	stewardship = 8 # Upped it, due to him owning many baronies
+	diplomacy = 3
+	intrigue = 3
+	learning = 4
+	prowess = 11
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Reyne_1
+	#father = Reyne_44
+	#mother = Parren_17
+	trait = education_martial_3
+	trait = education_martial_prowess_4
+	trait = strong
+	trait = bossy
+	trait = aggressive_attacker
+	trait = wrathful
+	trait = brave
+	trait = lifestyle_blademaster
+	trait = arrogant
+	trait = family_first
+	trait = ambitious # When Tytos betrothed Genna to the Frey.
+	#give_nickname = nick_agot_historical_the_red_lion
+	disallow_random_traits = yes
+	792.1.1 = { birth = yes }
+	835.11.1 = {
+		trait = maimed
+		death = {
+			death_reason = death_execution # Destruction of House Reyne
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+  }
+  Reyne_46 = {
+	name = Ellyn # Canon, AKA: Lady Tarbeck, married Walderan Tarbeck
+	dynasty = dynn_Reyne
+	female = yes
+	diplomacy = 7
+	stewardship = 5
+	martial = 2
+	intrigue = 7
+	learning = 4
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Reyne_1
+	#father = Reyne_44
+	#mother = Parren_17
+	trait = education_intrigue_3
+	trait = beauty_good_1
+	trait = stubborn
+	trait = arrogant
+	trait = vengeful
+	trait = ambitious
+	trait = bossy
+	disallow_random_traits = yes
+	795.1.1 ={ birth = yes }
+	800.8.1 = { employer = Tarbeck_27 } # Walderan Tarbeck
+	835.11.1 = {
+		death = {
+			death_reason = death_execution # Destruction of House Tarbeck
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+  }
+   Lannister_29 = {
+	name = Lann # Canon, AKA: Lann the Clever
+	dynasty = dynn_Lannister
+	#dna = Lannister_29
+	religion = norse_pagan #old_gods_wnw
+	culture = fantasy_culture #first_man
+	trait = education_intrigue_4
+	trait = intellect_good_3
+	trait = deceitful
+	trait = greedy
+	#give_nickname = nick_agot_historical_the_clever
+	108.1.1 = {
+		birth = yes
+		make_trait_inactive = emerald_eyes
+		make_trait_inactive = gold_hair
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_canon
+	}
+	#2026.1.1 = { add_spouse = Casterly_8 } # Castella Casterly
+	420.1.1 = { death = yes } # Legends say he died at the age of 312
+  }
+   Lannister_130 = {
+	name = Jason # Canon
+	dynasty = dynn_Lannister
+	martial = 3
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	father = Lannister_29
+	#father = Lannister_120
+	#mother = Webber_13 # Rohanne Webber
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = diligent
+	trait = just
+	trait = rowdy
+	trait = lustful
+	disallow_random_traits = yes
+	740.1.1 = { birth = yes }
+	826.1.1 = { # Died on a flux while leading army on Stepstones
+		death = { death_reason = death_ill } #trait = bloody_flux # AGOT TODO
+	}
+  }
+   Lannister_17 = {
+	name = Joanna # Canon, married Tywin Lannister
+	dynasty = dynn_Lannister
+	female = yes
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	#father = Lannister_130
+	#mother = Prester_48 # Marla Prester
+	trait = education_intrigue_2
+	trait = humble
+	trait = diligent
+	trait = gregarious
+	trait = patient
+	trait = beauty_good_2
+	trait = pensive
+	disallow_random_traits = yes
+	821.1.1 = { birth = yes }
+	842.1.1 = {
+		death = { death_reason = death_childbirth } # Tyrion Lannister
+	}
+  }
+   Lannister_129 = { # Ninepenny Kings
+	name = Tytos # Canon, AKA: Tootless Lion, a lord
+	dynasty = dynn_Lannister
+	#dna = Lannister_129
+	martial = 3
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 4
+	learning = 6
+	prowess = 0
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = heterosexual
+	father = Lannister_29
+	#father = Lannister_120
+	#mother = Webber_13 # Rohanne Webber
+	trait = education_stewardship_1
+	trait = trusting
+	trait = generous
+	trait = craven
+	trait = forgiving
+	trait = pensive
+	disallow_random_traits = yes
+	789.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance # Died at age 46 in 267
+	}
+	835.1.1 = {
+		death = { death_reason = death_depressed }
+	}
+  }
+   Lannister_1 = {
+	name = Tywin # Canon, THE Tywin Lannister, a lord
+	dynasty = dynn_Lannister
+	#dna = Lannister_1
+	martial = 8
+	diplomacy = 8
+	intrigue = 10
+	stewardship = 12
+	learning = 5
+	prowess = 6
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = heterosexual
+	father = Lannister_129
+	#mother = Marbrand_51
+	trait = education_stewardship_5
+	trait = intellect_good_2
+	trait = bossy
+	trait = diligent
+	trait = ambitious
+	trait = callous
+	disallow_random_traits = yes
+	811.1.1 = { birth = yes }
+	830.11.1 = {
+		effect = {
+			#add_pressed_claim = title:e_the_westerlands
+			#add_pressed_claim = title:k_the_rock
+			if = {
+				limit = { character:Reyne_45 = { is_alive = yes } }
+				set_relation_rival = {
+					target = character:Reyne_45 # Roger Reyne
+					reason = rival_tywin_rreyne
+				}
+			}
+		}
+	}
+	835.11.1 = { # Massacred Reynes and Tarbecks
+		effect = {
+			add_dread = monumental_dread_gain
+			add_prestige_level = 1
+			add_prestige = 1000
+		}
+	}
+	842.1.1 = {
+		trait = widowed
+		create_character_memory = {
+			type = agot_widowed_memory
+			participants = {
+				dead_relation = character:Lannister_17 # Joanna Lannister
+			}
+		}
+		effect = {
+			add_character_flag = dead_spouse_was_lover
+			if = {
+				limit = { character:Lannister_2 = { is_alive = yes } }
+				set_relation_friend = {
+					target = character:Lannister_2 # Kevan Lannister
+					reason = friend_tywin_kevan
+				}
+			}
+		}
+	}
+	842.6.1 = {
+		effect = {
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_8 # Tyrion Lannister
+					modifier = hate_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	869.2.7 = {
+		death = {
+			death_reason = death_murder_known # Shot with crossbow
+			killer = Lannister_8 # Tyrion Lannister
+		}
+	}
+  }
+  Lannister_6 = {
+	name = Cersei # Canon, THE Cersei Lannister, a lord, married Robert Baratheon
+	dynasty = dynn_Lannister
+	female = yes
+	#dna = Lannister_6
+	martial = 2
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 6
+	learning = 4
+	fertility = 0.7
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = bisexual
+	father = Lannister_1
+	mother = Lannister_17
+	trait = education_intrigue_2
+	trait = beauty_good_3
+	trait = twin
+	trait = bossy
+	trait = deceitful
+	trait = vengeful
+	trait = ambitious
+	trait = drunkard
+	trait = paranoid
+	disallow_random_traits = yes
+	832.1.1 = { birth = yes }
+	835.1.1 = {
+		effect = {
+			add_trait = arrogant
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				set_relation_victim = character:Lannister_8 # Tyrion Lannister
+				add_opinion = {
+					target = character:Lannister_8 # Tyrion Lannister
+					modifier = murdered_close_family # Blamed Tyrion for Joanna's death
+				}
+				set_relation_grudge = character:Lannister_8 # Tyrion Lannister
+			}
+		}
+	}
+	857.1.1 = {
+		effect = {
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				remove_relation_grudge = character:Lannister_8 # Tyrion Lannister
+				set_relation_rival = {
+					target = character:Lannister_8 # Tyrion Lannister
+					reason = rival_cersei_tyrion
+				}
+			}
+		}
+	}
+	857.1.1 = {
+		effect = {
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				remove_relation_victim = character:Lannister_8 # Tyrion Lannister
+			}
+			if = {
+				limit = { character:Lannister_7 = { is_alive = yes } }
+				set_relation_lover = {
+					target = character:Lannister_7 # Jaime Lannister
+					reason = lover_cersei_jaime
+				}
+			}
+		}
+	}
+	900.1.1 = { death = { death_reason = death_natural_causes } }
+   }
+   Lannister_7 = {
+	name = Jaime # Canon, AKA: The Kingslayer, Lord Commander of the Kingsguard
+	dynasty = dynn_Lannister
+	#dna = Lannister_7
+	martial = 9
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 4
+	learning = 4
+	prowess = 12
+	fertility = 0.9
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = heterosexual
+	father = Lannister_1
+	mother = Lannister_17
+	trait = education_martial_2
+	trait = education_martial_prowess_4
+	trait = beauty_good_3
+	trait = twin
+	trait = rowdy
+	trait = lifestyle_blademaster
+	trait = brave
+	trait = arrogant
+	trait = cynical
+	disallow_random_traits = yes
+	832.1.1 = { birth = yes }
+	857.1.1 = {
+		trait = reckless
+		effect = {
+			add_trait = callous
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				set_relation_friend = {
+					target = character:Lannister_8 # Tyrion Lannister
+					reason = friend_jaime_tyrion
+				}
+			}
+		}
+	}
+	859.1.1 = {
+		trait = murderer
+		give_nickname = nick_the_kingslayer
+		effect = {
+			character:Targaryen_1 = { # Aerys Targaryen
+				every_close_or_extended_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime
+					}
+				}
+			}
+		}
+	}
+	868.5.8 = {
+		effect = {
+			add_secret = {
+				type = secret_murder_attempt
+				target = character:Stark_10 # Brandon Stark
+			}
+		}
+	}
+	869.11.4 = {
+		trait = one_handed # Cut off by Vargo Hoat
+		effect = {
+			if = {
+				limit = { character:Tully_4 = { is_alive = yes } }
+				every_secret = {
+					limit = { secret_type = secret_murder_attempt }
+					reveal_to = character:Tully_4 # Catelyn Tully
+				}
+			}
+		}
+	}
+	869.12.2 = {
+		effect = {
+			remove_trait = arrogant
+			remove_trait = callous
+		}
+		add_trait = humble
+		trait = honest
+	}
+	900.1.1 = { death = { death_reason = death_natural_causes } }
+  }
+   Lannister_8 = {
+	name = Tyrion # Canon, AKA: The Imp
+	dynasty = dynn_Lannister
+	#dna = Lannister_8
+	martial = 2
+	diplomacy = 12
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	prowess = 6
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	sexuality = heterosexual
+	father = Lannister_1
+	mother = Lannister_17
+	trait = education_intrigue_4
+	trait = beauty_bad_2
+	trait = dwarf
+	trait = intellect_good_3
+	trait = pensive
+	trait = shrewd
+	trait = scholar
+	trait = lifestyle_reveler
+	trait = cynical
+	trait = gregarious
+	#trait = heterochromia_eyes
+	disallow_random_traits = yes
+	835.1.1 = {
+		birth = yes
+		effect = {
+			if = {
+				limit = { character:Lannister_1 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = hurt_opinion
+					opinion = -50
+				}
+				reverse_add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = disappointed_opinion
+					opinion = -50
+				}
+			}
+			#make_trait_inactive = heterochromia_black1
+		}
+	}
+	848.1.1 = { 
+		give_nickname = nick_agot_historical_the_imp 
+		learn_language = language_agot_valyrian
+		effect = {
+			if = {
+				limit = { character:Lannister_6 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_6 # Cersei Lannister
+					modifier = childhood_bully
+					opinion = -20
+				}
+			}
+		}
+	}
+	848.3.1 = { add_spouse = Lannister_rs_8 } # Tysha
+	848.3.14 = {
+		remove_spouse = Lannister_rs_8 # Tysha
+		trait = drunkard
+		trait = lustful
+		effect = {
+			if = {
+				limit = { character:Lannister_1 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = hate_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	869.11.8 = {
+		#add_spouse = Stark_8 # Sansa Stark
+		# trait = disfigured # Blackwater # AGOT TODO trait
+		# make_trait_inactive = visible_disfigurement_5
+		trait = disinherited
+		add_character_flag = historical_disinheritance
+		trait = scarred
+		effect = { # Master of Coin
+			if = {
+				limit = { character:Lannister_1 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = angry_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	869.2.7 = {
+		trait = murderer # Tywin Lannister
+		trait = kinslayer_3 # Tywin Lannister
+		employer = Mopatis_1 # Illyrio Mopatis
+		effect = {
+			character:Lannister_1 = { # Tywin Lannister
+				every_close_or_extended_family_member = {
+					limit = { NOT = { THIS = ROOT } }
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime
+					}
+				}
+			}
+		}
+	}
+  }
+   Lannister_rs_8 = {
+	name = Tysha # Canon, married Tyrion Lannister
+	female = yes
+	religion = dark_souls_faith
+	culture = fantasy_culture #westerman_main
+	trait = education_diplomacy_2
+	trait = beauty_good_2
+	trait = charming
+	trait = trusting
+	trait = humble
+	trait = compassionate
+	trait = 
+	834.1.1 = { birth = yes }
+	900.3.14 = { death = { death_reason = death_vanished } }
+   }
    Clegane_6 = {
 	name = Ben
 	religion = dark_souls_faith
