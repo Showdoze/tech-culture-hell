@@ -615,21 +615,22 @@ fantasy_religion = {
 			color = hsv { 0.15  1  0.7 }
 			icon = stoicism
 			family = rf_abrahamic
-			#Main Group
-	        doctrine = doctrine_gender_equal
-        	#Marriage
-        	doctrine = doctrine_concubines
-        	doctrine = doctrine_divorce_allowed
-        	doctrine = doctrine_bastardry_none
-	        #Crimes
-	        doctrine = doctrine_homosexuality_accepted
-	        doctrine = doctrine_adultery_women_accepted
-	        doctrine = doctrine_deviancy_shunned
-	        doctrine = doctrine_witchcraft_accepted
-	        #Clerical Functions
-	        doctrine = doctrine_clerical_gender_either
-	        doctrine = doctrine_clerical_marriage_allowed
-	        doctrine = doctrine_clerical_succession_temporal_appointment
+			#DOCTRINE
+			 #Main Group
+	          doctrine = doctrine_gender_equal
+        	 #Marriage
+        	  doctrine = doctrine_concubines
+        	  doctrine = doctrine_divorce_allowed
+        	  doctrine = doctrine_bastardry_none
+	         #Crimes
+	          doctrine = doctrine_homosexuality_accepted
+	          doctrine = doctrine_adultery_women_accepted
+	          doctrine = doctrine_deviancy_shunned
+	          doctrine = doctrine_witchcraft_accepted
+	         #Clerical Functions
+	          doctrine = doctrine_clerical_gender_either
+	          doctrine = doctrine_clerical_marriage_allowed
+	          doctrine = doctrine_clerical_succession_temporal_appointment
 
 			reformed_icon = stoicism_reformed
 			piety_icon_group = "judaism"
@@ -1233,9 +1234,10 @@ fantasy_religion = {
 			doctrine = doctrine_clerical_succession_temporal_appointment
 			doctrine = unreformed_faith_doctrine
 			doctrine = doctrine_anointment_permitted
-			doctrine = tenet_astrology
-			doctrine = tenet_hyrule
-			doctrine = tenet_ritual_celebrations
+			#TENETS
+			 doctrine = tenet_astrology
+			 doctrine = tenet_hyrule
+			 doctrine = tenet_ritual_celebrations
 		    localization = {
 		        CourtChaplainCounty = court_chaplain_hyrulean_county
 	            CourtChaplainCountyName = court_chaplain_hyrulean_name_county
@@ -1940,6 +1942,7 @@ fantasy_religion = {
 	         doctrine = doctrine_witchcraft_accepted
 			 doctrine = doctrine_clerical_gender_either
 			 doctrine = doctrine_anointment_permitted
+			 doctrine = doctrine_family_rites
 			#tenets 
 			 doctrine = tenet_keeper
 			 doctrine = tenet_inner_journey
@@ -3501,7 +3504,7 @@ fantasy_religion = {
 			 holy_site = black_forest
 			 holy_site = lost_forest
 			 holy_site = storhofoi
-			#Funeral tradition
+			#DCOTRINE
 			 doctrine = doctrine_spiritual_head
 	         doctrine = doctrine_gender_equal
 			 doctrine = doctrine_divorce_allowed

@@ -2839,11 +2839,7 @@
 		give_nickname = nick_the_champion
 		add_trait = maimed
 	}
-	1063.12.1 = {
-		death = {
-			death_reason = death_maimed
-		}
-	}
+	1063.12.1 = { death = { death_reason = death_maimed } }
 }
 
 470030 = {
@@ -5709,11 +5705,7 @@
 	1112.1.2 = {
 		remove_spouse = 98018
 	}
-	1116.2.3 = {
-		death = {
-			death_reason = death_drinking_passive
-		}
-	}
+	1116.2.3 = { death = { death_reason = death_drinking_passive } }
 }
 
 482 = {
@@ -5978,7 +5970,7 @@
 	intrigue = 5
 	stewardship = 4
 	religion = "catholic"
-	culture = "cisalpine"
+	culture = cisalpine
 	trait = lustful
 	trait = greedy
 	trait = craven
@@ -5992,12 +5984,7 @@
 	1056.1.1 = {
 		add_spouse = 1437
 	}
-	1060.8.30 = {
-		death = {
-			death_reason = death_torture
-			killer = 468
-		}
-	}
+	1060.8.30 = { death = { death_reason = death_torture killer = 468 } }
 }
 
 499 = {
@@ -6112,11 +6099,7 @@
 	#1146.1.2 = {
 	#add_spouse = 222573
 	#}
-	1205.5.7 = {
-		death = {
-			death_reason = death_ill
-		}
-	}
+	1205.5.7 = { death = { death_reason = death_ill } }
 }
 
 98003 = {
@@ -9601,7 +9584,6 @@
 	trait = calm
 	trait = education_martial_4
 	sexuality = heterosexual
-
 	820.1.1 = {
 		birth = yes
 		effect = {
@@ -9612,12 +9594,14 @@
 	844.1.1 = {
 		add_spouse = 306003 #Fictional, her name is lost but she was supposed to be highborn
 	}
-
 	# Boost the strength of the magyars for the hungarian invasion.
 	867.1.1 = {
 		add_prestige = 1000
+		add_character_modifier = {
+			modifier = confederate_king_modifier
+			years = 5
+		}
 	}
-
 	895.1.1 = {
 		death = yes
 	}
