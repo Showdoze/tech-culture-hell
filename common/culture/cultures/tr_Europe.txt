@@ -26,6 +26,34 @@
 		10 = european_eastern_slavic_1
 	}
  }
+ sz_e_kely = {
+	color = { 0.3 0.4 0.1 }
+	created = 1000.1.1
+	parents = { mogyer avar }
+	ethos = ethos_communal
+	heritage = heritage_magyar
+	language = language_magyar
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
+	traditions = {
+		tradition_tribe_unity
+		tradition_horse_lords
+		tradition_devoted_horsemanship
+		tradition_agrarian
+	}
+	name_list = name_list_sz_e_kely
+	coa_gfx = { magyar_group_coa_gfx ugro_permian_group_coa_gfx steppe_coa_gfx } 
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { turkic_clothing_gfx mongol_clothing_gfx } 
+	unit_gfx = { mongol_unit_gfx } 	
+	house_coa_frame = house_frame_05
+	ethnicities = {
+		45 = circumpolar_dark_hair
+		20 = circumpolar_brown_hair
+		10 = circumpolar_blonde_hair
+		25 = european_magyar_magyar_01
+	}
+ }
 #Western
  tr_tea = {
     color = { 20 50 0 }
@@ -102,15 +130,8 @@
 		tradition_martial_admiration
 		tradition_castle_keepers
 		tradition_chivalry
-	}
-	dlc_tradition = {
-		trait = tradition_fp2_strategy_gamers
-		requires_dlc_flag = the_fate_of_iberia
-		fallback = tradition_hit_and_run
-	}
-	dlc_tradition = {
-		trait = tradition_fp2_ritualised_friendship
-		requires_dlc_flag = the_fate_of_iberia
+		tradition_fp2_strategy_gamers
+		tradition_fp2_ritualised_friendship
 	}
 	name_list = name_list_spanish
 	coa_gfx = { castilian_coa_gfx iberian_group_coa_gfx western_coa_gfx }
