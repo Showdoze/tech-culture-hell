@@ -2553,12 +2553,7 @@ saffarid_06 = {
 	285.1.1 = {
 		birth = "285.1.1"
 	}
-	293.4.1 = {
-		death = {
-			death_reason = death_uprising
-			killer = 180610
-		}
-	}
+	293.4.1 = { death = { death_reason = death_uprising killer = 180610 } }
 }
 180610 = {
 	name = "Narseh"
@@ -2570,9 +2565,7 @@ saffarid_06 = {
 	244.1.1 = {
 		birth = "244.1.1"
 	}
-	302.1.1 = {
-		death = "302.1.1"
-	}
+	302.1.1 = { death = yes }
 }
 180611 = {
 	name = "Hormazd"
@@ -2753,12 +2746,7 @@ saffarid_06 = {
 	440.1.1 = {
 		birth = "440.1.1"
 	}
-	488.1.1 = {
-		death = {
-			death_reason = death_uprising
-			killer = 180627
-		}
-	}
+	488.1.1 = { death = { death_reason = death_uprising killer = 180627 } }
 }
 180624 = {
 	name = "Peroz"
@@ -2773,11 +2761,7 @@ saffarid_06 = {
 	438.1.1 = {
 		birth = "438.1.1"
 	}
-	484.6.1 = {
-		death = {
-			death_reason = death_battle
-		}
-	}
+	484.6.1 = { death = { death_reason = death_battle } }
 }
 180625 = {
 	name = "Djamasp"
@@ -2795,9 +2779,7 @@ saffarid_06 = {
 	470.1.1 = {
 		birth = "470.1.1"
 	}
-	498.1.1 = {
-		death = "498.1.1"
-	}
+	498.1.1 = { death = yes }
 }
 180626 = {
 	name = "Zareh"
@@ -2835,7 +2817,7 @@ saffarid_06 = {
 	religion = "mazdayasna"
 	culture = "persian"
 	trait = organizer
-	trait = poet
+	trait = lifestyle_poet
 	trait = ambitious
 	trait = diligent
 	trait = architect
@@ -2875,12 +2857,7 @@ saffarid_06 = {
 	528.1.1 = {
 		birth = "528.1.1"
 	}
-	590.1.1 = {
-		death = {
-			death_reason = death_uprising
-			killer = 180631
-		}
-	}
+	590.1.1 = { death = { death_reason = death_uprising killer = 180631 } }
 }
 180631 = {
 	name = "Khosrau"
@@ -2896,12 +2873,7 @@ saffarid_06 = {
 	589.1.1 = {
 		add_spouse = 180646
 	}
-	628.2.28 = {
-		death = {
-			death_reason = death_uprising
-			killer = 180632
-		}
-	}
+	628.2.28 = { death = { death_reason = death_uprising killer = 180632 } }
 }
 180632 = {
 	name = "Kavadh"
@@ -2914,14 +2886,8 @@ saffarid_06 = {
 	590.1.1 = {
 		birth = "590.1.1"
 	}
-	628.2.28 = {
-		trait = kinslayer_3
-	}
-	628.6.1 = {
-		death = {
-			death_reason = death_bubonic_plague
-		}
-	}
+	628.2.28 = { trait = kinslayer_3 }
+	628.6.1 = { death = { death_reason = death_bubonic_plague } }
 }
 180633 = {
 	name = "Ardeshir"
@@ -2991,12 +2957,7 @@ saffarid_06 = {
 	617.1.1 = {
 		birth = "617.1.1"
 	}
-	651.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 163029
-		}
-	}
+	651.1.1 = { death = { death_reason = death_battle killer = 163029 } }
 }
 180638 = {
 	name = "Shahrbanu"
@@ -3069,12 +3030,7 @@ saffarid_06 = {
 	553.1.1 = {
 		birth = "553.1.1"
 	}
-	592.1.1 = {
-		death = {
-			death_reason = death_battle
-			killer = 180631
-		}
-	}
+	592.1.1 = { death = { death_reason = death_battle killer = 180631 } }
 }
 183243 = {
 	name = "Golshan"
@@ -4162,12 +4118,7 @@ hunas_5 = {
 	504.1.1 = {
 		birth = yes
 	}
-	571.9.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 180628
-		}
-	}
+	571.9.1 = { death = { death_reason = death_execution killer = 180628 } }
 }
 
 166987 = {  #(Father of Mardavij/Vushmgir)
@@ -5365,7 +5316,7 @@ hunas_5 = {
 	trait=education_martial_3
 	1080.1.1={
 		birth=yes # maybe
-	}	
+	}
 	1138.1.1={
 		death=yes
 	}
@@ -5853,7 +5804,7 @@ extra_persians_7 = { #more historical Barmakids
 	trait = cynical
 	trait = arbitrary
 	trait = gregarious
-	trait = poet
+	trait = lifestyle_poet
 	trait = beauty_bad_2
 	sexuality = homosexual
 	disallow_random_traits = yes
@@ -7084,6 +7035,29 @@ zartosht_4 = {
 		birth = yes
 	}
 	1163.1.1 = {
+		death = yes
+	}
+}
+
+sulayman_al_tajir_1 = { # Landless Wanderer adventurer
+	name = "Sulayman_al_Tajir"
+	dynasty = hchar_sirafi
+	religion = ashari
+	culture = persian
+	trait = education_stewardship_3
+	trait = gregarious
+	trait = shrewd
+	trait = temperate
+	trait = lifestyle_traveler
+	trait = journaller
+	836.1.1 = {
+		birth = yes
+		effect = {
+			set_culture = culture:persian
+			add_character_flag = do_not_generate_starting_family
+		}
+	}
+	898.1.1 = {
 		death = yes
 	}
 }

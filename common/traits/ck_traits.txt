@@ -298,6 +298,37 @@ byakugan = {
 		}
 	}
 }
+kuva_lich = {
+	random_creation = 0
+	monthly_character_prestige = 1
+	legitimacy_gain_mult = 0.1
+	character_travel_speed_mult = 0.25
+	character_travel_safety = 5
+	movement_speed = 1
+	prowess = 50
+	negate_health_penalty_add = 1
+	dread_baseline_add = 50
+	health = 9
+	flag = lower_chance_of_dying_in_combat
+	flag = can_duel_anyone_interaction
+	flag = can_not_marry
+	no_prowess_loss_from_age = yes
+	ruler_designer_cost = 9000
+	fame = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_kuva_lich_desc
+			}
+			desc = trait_kuva_lich_character_desc
+		}
+	}
+}
 #HISTORICAL LIKES DISLIKES
  roman_friend = {
 	random_creation = 0
