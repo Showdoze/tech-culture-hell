@@ -3065,7 +3065,7 @@
 	trait = physique_good_3
 	trait = brave
 	trait = ambitious
-	trait = authoritative
+	#trait = authoritative
 	trait = immortal
 	trait = lifestyle_mystic
 	disallow_random_traits = yes
@@ -3089,7 +3089,7 @@
 	trait = strong
 	trait = ambitious
 	trait = wrathful
-	trait = authoritative
+	#trait = authoritative
 	trait = zealous
 	trait = rowdy
 	give_nickname = nick_the_cruel
@@ -3192,7 +3192,7 @@
 	#mother = Locke_50
 	trait = education_martial_2
 	trait = honest
-	trait = authoritative
+	#trait = authoritative
 	trait = just
 	trait = brave
 	trait = bossy
@@ -3227,12 +3227,7 @@
 	trait = honest
 	trait = just
 	disallow_random_traits = yes
-	832.1.1 = {
-		birth = yes
-		#add_character_flag = has_scripted_appearance
-		#add_character_flag = canon_status_canon
-		#add_character_flag = sexuality_ensure_heterosexual
-	}
+	832.1.1 = { birth = yes }
 	868.1.10 = {
 		death = {
 			death_reason = death_execution # Beheaded
@@ -3496,6 +3491,116 @@
 		}
 	}
    }
+   Lothston_2 = {
+	name = Manfryd
+	dynasty = dynn_Lothston
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_1
+	#mother = Chambers_38
+	430.1.1 = { birth = yes }
+	530.1.1 = { death = yes }
+   }
+   Lothston_3 = {
+	name = Edwyn # Mentioned, a hedge knight
+	dynasty = dynn_Lothston
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_2
+	#mother = Vance_Atranta_46
+	520.1.1 = { birth = yes }
+	600.1.1 = { death = yes }
+   }
+   Lothston_4 = {
+	name = Jon
+	dynasty = dynn_Lothston
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_3
+	#mother = Perryn_36
+	600.1.1 = { birth = yes }
+	713.1.1 = { death = yes }
+   }
+   Lothston_5 = {
+	name = Lucas # Canon, a lord, first Lothston lord of Harrenhal
+	dynasty = dynn_Lothston
+	martial = 6
+	stewardship = 7
+	diplomacy = 7
+	prowess = 10
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_4
+	#mother = Bigglestone_31
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = patient
+	trait = brave
+	trait = ambitious # see below
+	trait = arbitrary # pimped out his own wife and daughter for profit
+	trait = charming
+	disallow_random_traits = yes
+	713.1.1 = { birth = yes }
+	800.1.1 = { death = yes } # After 178 AC
+   }
+   Lothston_16 = {
+	name = Manfryd # Canon, a lord, probably the same person as Manfred Lothston who betrayed Blackfyres, first bat
+	dynasty = dynn_Lothston
+	martial = 6
+	intrigue = 8
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_5
+	#mother = Stokeworth_23
+	trait = education_intrigue_3
+	trait = bossy
+	trait = torturer
+	trait = wrathful
+	trait = sadistic
+	trait = deceitful
+	trait = vengeful
+	disallow_random_traits = yes
+	800.1.1 = { birth = yes }
+	820.1.1 = { give_nickname = nick_of_the_black_hood }
+	870.1.1 = { death = yes }
+   }
+   Lothston_17 = {
+	name = Danelle # Canon, a lord, AKA: Mad Danelle Lothston
+	dynasty = dynn_Lothston
+	female = yes
+	#dna = Lothston_17
+	martial = 6
+	stewardship = 4
+	diplomacy = 4
+	intrigue = 8
+	learning = 4
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Lothston_16
+	#mother = Blackberry_64
+	trait = education_martial_2
+	#trait = authoritative
+	trait = sadistic
+	trait = diligent
+	trait = arrogant
+	trait = bossy
+	disallow_random_traits = yes
+	846.1.1 = { birth = yes }
+	866.1.1 = {
+		trait = lunatic_1
+		give_nickname = nick_mad
+		trait = witch
+		trait = cannibal
+		trait = lifestyle_mystic
+	}
+	890.1.1 = {
+		death = {
+			death_reason = death_execution
+			#killer = Targaryen_110 # Maekar Targaryen
+		}
+	}
+  }
    Whent_14 = {
 	name = Roger
 	dynasty = dynn_Whent
@@ -3577,7 +3682,7 @@
 	#5100.1.1 = { add_spouse = Greenwood_2 } # Jorelle Greenwood
 	126.1.1 = { death = { death_reason = death_battle } }
   }
-  Blackwood_81 = {
+   Blackwood_81 = {
 	name = Melissa # Canon, Mistress of Aegon IV Targaryen, Bloodraven's mother
 	dynasty = dynn_Blackwood
 	female = yes
@@ -4450,7 +4555,7 @@
 	trait = sadistic
 	trait = arrogant
 	trait = arbitrary
-	#trait = fashionable
+	trait = hygene_good_1
 	trait = lifestyle_mystic
 	give_nickname = nick_brightflame
 	disallow_random_traits = yes
@@ -4906,7 +5011,7 @@
 	trait = trusting
 	trait = just
 	trait = ambitious
-	trait = authoritative
+	#trait = authoritative
 	trait = charming
 	disallow_random_traits = yes
 	887.1.1 = { birth = yes }

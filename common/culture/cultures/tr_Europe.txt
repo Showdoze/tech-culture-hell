@@ -15,7 +15,7 @@
 	}	
 	name_list = name_list_zastova
 	coa_gfx = { east_slavic_group_coa_gfx western_coa_gfx }
-	building_gfx = { western_building_gfx }
+	building_gfx = { east_slavic_building_gfx western_building_gfx }
 	clothing_gfx = { east_slavic_clothing_gfx northern_clothing_gfx }
 	unit_gfx = { east_slavic_unit_gfx }
 	ethnicities = {
@@ -48,11 +48,14 @@
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { western_unit_gfx }	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
     ethnicities = {
         5 = caucasian_blond
         5 = caucasian_ginger
         5 = caucasian_brown_hair
-        10 = european_caucasian_english_1
+        85 = european_caucasian_english_1
     }
  }
  brit = {
@@ -75,12 +78,15 @@
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { western_unit_gfx }	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
 		#25 = caucasian_blond
 		#15 = caucasian_ginger
 		#35 = caucasian_brown_hair
 		#25 = caucasian_dark_hair
-		10 = european_caucasian_english_1
+		100 = european_caucasian_english_1
 	}
  }
  spanish = {
@@ -112,7 +118,7 @@
 	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
 	unit_gfx = { iberian_christian_unit_gfx }
 	ethnicities = {
-		10 = mediterranean
+		100 = mediterranean
 	}
  }
  anglian = {
@@ -136,6 +142,9 @@
 	clothing_gfx = { northern_clothing_gfx } 
 	clothing_gfx = { western_clothing_gfx } 
 	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
 		25 = caucasian_northern_blond
 		15 = caucasian_northern_ginger
@@ -200,8 +209,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = european_med_greek_1
+		100 = european_med_greek_1
 	}
  }
  venetian_ce = {
@@ -225,7 +237,7 @@
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { italian_unit_gfx }
 	ethnicities = {
-		10 = european_med_italian_1
+		100 = european_med_italian_1
 	}
  }
  athenian = {
@@ -246,8 +258,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }	
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = european_med_greek_1
+		100 = european_med_greek_1
 	}	
  }
  laconian = {
@@ -270,8 +285,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = european_med_greek_1
+		100 = european_med_greek_1
 	}	
  }
  minoan = {
@@ -293,8 +311,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = aegean 
+		100 = aegean 
 	}
  }
  helladic = {
@@ -313,8 +334,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }	
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = aegean 
+		100 = aegean 
 	}
  }
  achaian = {
@@ -338,8 +362,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = greek
+		100 = greek
 	}
  }
  neohittite = {
@@ -364,8 +391,11 @@
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
-		10 = mediterranean_byzantine
+		100 = mediterranean_byzantine
 		#10 = luwian
 	}
  }
@@ -388,13 +418,16 @@
 	building_gfx = { western_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { english_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 	ethnicities = {
 		#10 = caucasian_blond
 		#5 = caucasian_ginger
 		#45 = caucasian_brown_hair
 		#35 = caucasian_dark_hair
-		10 = european_caucasian_english_1
-		10 = european_caucasian_french_1
+		50 = european_caucasian_english_1
+		50 = european_caucasian_french_1
 	}
  }
  templar = {
@@ -421,8 +454,8 @@
 		#5 = caucasian_ginger
 		#45 = caucasian_brown_hair
 		#35 = caucasian_dark_hair
-		10 = european_caucasian_norman_1
-		10 = european_caucasian_french_1
+		50 = european_caucasian_norman_1
+		50 = european_caucasian_french_1
 	}	
  }
  teutonic = {
@@ -444,12 +477,15 @@
 	building_gfx = { western_building_gfx } 
 	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
 	unit_gfx = { german_unit_gfx } 		
+	house_coa_frame = house_frame_25
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
 	ethnicities = {
 		#25 = caucasian_blond
 		#15 = caucasian_ginger
 		#35 = caucasian_brown_hair
 		#25 = caucasian_dark_hair
-		10 = european_caucasian_german_1
+		100 = european_caucasian_german_1
 	}
  }
 # 

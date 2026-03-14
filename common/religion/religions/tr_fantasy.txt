@@ -4,6 +4,7 @@ fantasy_religion = {
 	pagan_roots = yes
 	#doctrine
 	 #Main Group
+	 doctrine = doctrine_polytheist
 	  doctrine = doctrine_no_head
 	  doctrine = doctrine_gender_male_dominated
 	  doctrine = doctrine_pluralism_pluralistic
@@ -29,6 +30,8 @@ fantasy_religion = {
 	  doctrine = doctrine_pilgrimage_encouraged
 	 #Funeral tradition
 	  doctrine = doctrine_funeral_stoic
+	 #Coronation tradition
+	  doctrine = doctrine_no_anointment 
 	custom_faith_icons = {
 		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 
 		custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 
@@ -459,6 +462,7 @@ fantasy_religion = {
 			 doctrine = doctrine_clerical_succession_spiritual_appointment
 			 doctrine = doctrine_funeral_cremation
 			 doctrine = doctrine_pluralism_fundamentalist
+			 doctrine = doctrine_imperial_anointment
 			#Tenets
 		 	 doctrine = tenet_ancestor_worship
 		 	 doctrine = tenet_tribunal #tenet_living_gods
@@ -995,7 +999,7 @@ fantasy_religion = {
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_bewailment
-			
+			  doctrine = doctrine_anointment_permitted
 			  doctrine = tenet_ds1
 			  doctrine = tenet_communal_identity
 			  doctrine = tenet_esotericism
@@ -1228,6 +1232,7 @@ fantasy_religion = {
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 			doctrine = unreformed_faith_doctrine
+			doctrine = doctrine_anointment_permitted
 			doctrine = tenet_astrology
 			doctrine = tenet_hyrule
 			doctrine = tenet_ritual_celebrations
@@ -1413,6 +1418,7 @@ fantasy_religion = {
 	         doctrine = doctrine_consanguinity_cousins
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_stoic
+			  doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_moon_worship
 			 doctrine = tenet_ritual_hospitality
@@ -1546,13 +1552,14 @@ fantasy_religion = {
 			holy_site = athens
 			holy_site = stonehenge
 			#Doctrine
+			 doctrine = doctrine_monotheist
 	         #Clerical Functions
 	         #Funeral tradition
 			 doctrine = doctrine_homosexuality_shunned
 			 doctrine = doctrine_pluralism_fundamentalist
 	         doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 			 doctrine = doctrine_bastardry_all
-			
+			 doctrine = doctrine_anointment_permitted
 			doctrine = tenet_hammerite
 			doctrine = tenet_monasticism
 			doctrine = tenet_armed_pilgrimages
@@ -1728,12 +1735,14 @@ fantasy_religion = {
 			 holy_site = athens
 			 holy_site = stonehenge
 			#Doctrine
+			 doctrine = doctrine_monotheist
 			 doctrine = doctrine_spiritual_head
 			 doctrine = doctrine_pluralism_fundamentalist
 	         doctrine = doctrine_gender_equal
 			 doctrine = doctrine_homosexuality_shunned
 			 doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 			 doctrine = doctrine_clerical_gender_either
+			 doctrine = doctrine_imperial_anointment
 			doctrine = tenet_mechanist
 			doctrine = tenet_monasticism
 			doctrine = tenet_armed_pilgrimages
@@ -1930,6 +1939,7 @@ fantasy_religion = {
 	         doctrine = doctrine_gender_equal
 	         doctrine = doctrine_witchcraft_accepted
 			 doctrine = doctrine_clerical_gender_either
+			 doctrine = doctrine_anointment_permitted
 			#tenets 
 			 doctrine = tenet_keeper
 			 doctrine = tenet_inner_journey
@@ -2133,6 +2143,7 @@ fantasy_religion = {
 			 doctrine = doctrine_homosexuality_shunned
 	         doctrine = doctrine_witchcraft_virtuous
 			 doctrine = doctrine_funeral_cremation
+			 doctrine = doctrine_anointment_permitted
 			#tenets 
 			 doctrine = tenet_mage
 			 doctrine = tenet_mystical_birthright
@@ -2342,6 +2353,7 @@ fantasy_religion = {
 			 doctrine = doctrine_clerical_gender_either
 			 doctrine = doctrine_concubines
 			 doctrine = doctrine_funeral_sky_burial
+			 doctrine = doctrine_anointment_permitted
 			holy_order_names = {
 				{ name = "holy_order_ordervine" }
 			}
@@ -2567,6 +2579,7 @@ fantasy_religion = {
 			# Doctrines
 			 doctrine = doctrine_consanguinity_unrestricted
 			 doctrine = unreformed_faith_doctrine
+			 doctrine = doctrine_imperial_anointment
 			# Tenets
 			 doctrine = tenet_monasticism
 			 doctrine = tenet_imperial_cult
@@ -2608,6 +2621,7 @@ fantasy_religion = {
 	         doctrine = doctrine_clerical_marriage_allowed
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_cremation
+			  doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_legalism
 			 doctrine = tenet_auriel #tenet_divine_purity
@@ -2798,6 +2812,7 @@ fantasy_religion = {
 	         doctrine = doctrine_clerical_gender_either
 			 #Funeral tradition
 			 doctrine = doctrine_funeral_cremation
+			 doctrine = doctrine_imperial_anointment
 			#Tenets
 			 doctrine = tenet_communal_identity
 			 doctrine = tenet_ancestor_worship
@@ -2978,6 +2993,7 @@ fantasy_religion = {
 	         doctrine = doctrine_clerical_succession_spiritual_appointment
 			 #Funeral tradition
 			 doctrine = doctrine_funeral_cremation
+			 doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_esotericism
 			 doctrine = tenet_ancestor_worship
@@ -3161,6 +3177,7 @@ fantasy_religion = {
 			 doctrine = doctrine_clerical_succession_temporal_appointment
 			 doctrine = doctrine_consanguinity_unrestricted
 			 doctrine = doctrine_funeral_mummification
+			 doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_human_sacrifice
 			 doctrine = tenet_divine_marriage
@@ -3344,6 +3361,7 @@ fantasy_religion = {
 			 doctrine = doctrine_deviancy_accepted
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_stoic
+			  doctrine = doctrine_imperial_anointment
 			#Tenets
 			 doctrine = tenet_ritual_cannibalism
 			 doctrine = tenet_pursuit_of_power
@@ -3499,6 +3517,7 @@ fantasy_religion = {
 			 #doctrine = doctrine_funeral_green_pact
 			 doctrine = pagan_hostility_doctrine
 			 doctrine = unreformed_faith_doctrine
+			 doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_green_cult
 			 doctrine = tenet_ritual_cannibalism
@@ -3683,6 +3702,7 @@ fantasy_religion = {
 			 doctrine = doctrine_witchcraft_accepted
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_stoic
+			  doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_mystical_birthright
 			 doctrine = tenet_megaliths
@@ -4068,6 +4088,7 @@ fantasy_religion = {
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_mummification
+			  doctrine = doctrine_anointment_permitted
 			
 			doctrine = tenet_lizardmen
 			doctrine = tenet_divine_marriage

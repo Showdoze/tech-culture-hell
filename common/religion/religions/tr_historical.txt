@@ -3,6 +3,7 @@
     graphical_faith = pagan_gfx
     pagan_roots = yes
     #Main Group
+	doctrine = doctrine_polytheist
     doctrine = doctrine_no_head
     doctrine = doctrine_gender_male_dominated
     doctrine = doctrine_pluralism_righteous
@@ -28,6 +29,8 @@
     doctrine = doctrine_pilgrimage_encouraged
     #Funeral tradition
     doctrine = doctrine_funeral_stoic
+	#Coronation tradition
+	doctrine = doctrine_no_anointment
     custom_faith_icons = {
         custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
         custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10
@@ -397,192 +400,6 @@
 				GHWNamePlural = ghw_crusades
 			}
 		}
-        shinto = {
-            color = { 0.9 0.2 0.2 }
-            icon = shinto
-            piety_icon_group = "eastern"
-            graphical_faith = dharmic_gfx
-            #Holy Site
-             holy_site = khotan
-             holy_site = lhasa
-             holy_site = udabhanda
-             holy_site = purang
-             holy_site = bodh_gaya
-             holy_site = suzhou
-             #holy_site = mt_fuji
-             #holy_site = muromachi
-             #holy_site = tamaru
-             #holy_site = kizuki
-             #holy_site = sawara
-             #holy_site = sakurao
-            #doctrine 
-             doctrine = doctrine_temporal_head
-             doctrine = doctrine_theocracy_lay_clergy
-             doctrine = doctrine_pluralism_pluralistic
-             doctrine = doctrine_homosexuality_accepted
-             doctrine = doctrine_adultery_women_shunned
-             doctrine = doctrine_kinslaying_any_dynasty_member_crime
-             doctrine = doctrine_deviancy_shunned
-             doctrine = doctrine_witchcraft_shunned
-             doctrine = special_doctrine_is_eastern_faith
-             doctrine = doctrine_funeral_cremation
-             doctrine = doctrine_concubines
-             doctrine = doctrine_kinslaying_shunned
-             doctrine = eastern_hostility_doctrine
-             doctrine = doctrine_clerical_marriage_allowed
-            doctrine = tenet_ancestor_worship
-            doctrine = tenet_shinto
-            doctrine = tenet_adorcism
-            doctrine = special_doctrine_is_buddhist_faith # SHOGUNATE teaching of buddhism
-            localization = {
-                #HighGodName
-                HighGodName = shinto_high_god_name
-                HighGodName2 = shinto_high_god_name
-                HighGodNamePossessive = shinto_high_god_name_possessive
-                HighGodNameSheHe = CHARACTER_SHEHE_THEY
-                HighGodHerselfHimself = CHARACTER_THEMSELVES
-                HighGodHerHis = CHARACTER_HERHIS_THEIR
-                HighGodNameAlternate = shinto_high_god_alternate
-                HighGodNameAlternatePossessive = shinto_high_god_alternate_possessive
-                #Creator
-                CreatorName = shinto_high_god_name
-                CreatorNamePossessive = shinto_high_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_THEY
-                CreatorHerHis = CHARACTER_HERHIS_THEIR
-                CreatorHerHim = CHARACTER_HERHIM_THEM
-                #HealthGod
-                HealthGodName = shinto_high_god_name
-                HealthGodNamePossessive = shinto_high_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_THEY
-                HealthGodHerHis = CHARACTER_HERHIS_THEIR
-                HealthGodHerHim = CHARACTER_HERHIM_THEM
-                #FertilityGod
-                FertilityGodName = shinto_high_god_name
-                FertilityGodNamePossessive = shinto_high_god_name_possessive
-                FertilityGodSheHe = CHARACTER_SHEHE_THEY
-                FertilityGodHerHis = CHARACTER_HERHIS_THEIR
-                FertilityGodHerHim = CHARACTER_HERHIM_THEM
-                #WealthGod
-                WealthGodName = shinto_high_god_name
-                WealthGodNamePossessive = shinto_high_god_name_possessive
-                WealthGodSheHe = CHARACTER_SHEHE_THEY
-                WealthGodHerHis = CHARACTER_HERHIS_THEIR
-                WealthGodHerHim = CHARACTER_HERHIM_THEM
-                #HouseholdGod
-                HouseholdGodName = shinto_high_god_name
-                HouseholdGodNamePossessive = shinto_high_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
-                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
-                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
-                #FateGod
-                FateGodName = shinto_high_god_alternate
-                FateGodNamePossessive = shinto_high_god_alternate_possessive
-                FateGodSheHe = CHARACTER_SHEHE_IT
-                FateGodHerHis = CHARACTER_HERHIS_ITS
-                FateGodHerHim = CHARACTER_HERHIM_IT
-                #KnowledgeGod
-                KnowledgeGodName = shinto_high_god_name
-                KnowledgeGodNamePossessive = shinto_high_god_name_possessive
-                KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
-                KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
-                KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
-                #WarGod
-                WarGodName = shinto_high_god_name
-                WarGodNamePossessive = shinto_high_god_name_possessive
-                WarGodSheHe = CHARACTER_SHEHE_THEY
-                WarGodHerHis = CHARACTER_HERHIS_THEIR
-                WarGodHerHim = CHARACTER_HERHIM_THEM
-                #TricksterGod
-                TricksterGodName = shinto_high_god_name
-                TricksterGodNamePossessive = shinto_high_god_name_possessive
-                TricksterGodSheHe = CHARACTER_SHEHE_THEY
-                TricksterGodHerHis = CHARACTER_HERHIS_THEIR
-                TricksterGodHerHim = CHARACTER_HERHIM_THEM
-                #NightGod
-                NightGodName = shinto_high_god_name
-                NightGodNamePossessive = shinto_high_god_name_possessive
-                NightGodSheHe = CHARACTER_SHEHE_THEY
-                NightGodHerHis = CHARACTER_HERHIS_THEIR
-                NightGodHerHim = CHARACTER_HERHIM_THEM
-                #WaterGod
-                WaterGodName = shinto_high_god_name
-                WaterGodNamePossessive = shinto_high_god_name_possessive
-                WaterGodSheHe = CHARACTER_SHEHE_THEY
-                WaterGodHerHis = CHARACTER_HERHIS_THEIR
-                WaterGodHerHim = CHARACTER_HERHIM_THEM
-                PantheonTerm = buddhism_samsara
-                PantheonTerm2 = buddhism_samsara_2
-                PantheonTerm3 = buddhism_samsara_3
-                PantheonTermHasHave = pantheon_term_has
-                GoodGodNames = {
-                    shinto_high_god_name
-                    shinto_high_god_alternate
-                }
-                DevilName = shinto_high_god_alternate
-                DevilNamePossessive = shinto_high_god_alternate_possessive
-                DevilSheHe = CHARACTER_SHEHE_IT
-                DevilHerHis = CHARACTER_HERHIS_ITS
-                DevilHerselfHimself = CHARACTER_HERHIM_IT
-                EvilGodNames = {
-                    shinto_high_god_name
-                    shinto_high_god_alternate
-                }
-                HouseOfWorship = shinto_house_of_worship
-                HouseOfWorship2 = shinto_house_of_worship
-                HouseOfWorship3 = shinto_house_of_worship
-                HouseOfWorshipPlural = shinto_house_of_worship_plural
-                ReligiousSymbol = shinto_religious_symbol
-                ReligiousSymbol2 = shinto_religious_symbol
-                ReligiousSymbol3 = shinto_religious_symbol
-                ReligiousText = shinto_religious_text
-                ReligiousText2 = shinto_religious_text
-                ReligiousText3 = shinto_religious_text
-                ReligiousHeadName = shinto_religious_head_title
-                ReligiousHeadTitleName = shinto_religious_head_title_name
-                DevoteeMale = shinto_devotee_male
-                DevoteeMalePlural = shinto_devotee_male_plural
-                DevoteeFemale = shinto_devotee_female
-                DevoteeFemalePlural = shinto_devotee_female_plural
-                DevoteeNeuter = shinto_devotee_male
-                DevoteeNeuterPlural = shinto_devotee_male_plural
-                PriestMale = shinto_devotee_male
-                PriestMalePlural = shinto_devotee_male_plural
-                PriestFemale = shinto_devotee_female
-                PriestFemalePlural = shinto_devotee_female_plural
-                PriestNeuter = shinto_devotee_male
-                PriestNeuterPlural = shinto_devotee_male_plural
-                AltPriestTermPlural = shinto_alt_priest_term
-                BishopMale = shinto_devotee_male
-                BishopMalePlural = shinto_devotee_male_plural
-                BishopFemale = shinto_devotee_female
-                BishopFemalePlural = shinto_devotee_female_plural
-                BishopNeuter = shinto_devotee_male
-                BishopNeuterPlural = shinto_devotee_male_plural
-                DivineRealm = shinto_divine_realm
-                DivineRealm2 = shinto_divine_realm
-                DivineRealm3 = shinto_divine_realm
-                PositiveAfterLife = shinto_divine_realm
-                PositiveAfterLife2 = shinto_divine_realm
-                PositiveAfterLife3 = shinto_divine_realm
-                NegativeAfterLife = shinto_negative_afterlife
-                NegativeAfterLife2 = shinto_negative_afterlife
-                NegativeAfterLife3 = shinto_negative_afterlife
-                DeathDeityName = shinto_death_god_name
-                DeathDeityNamePossessive = shinto_death_god_name_possessive
-                DeathDeitySheHe = CHARACTER_SHEHE_HE
-                DeathDeityHerHis = CHARACTER_HERHIS_HIS
-                DeathDeityHerHim = CHARACTER_HERHIM_HIM
-                WitchGodName = shinto_high_god_alternate
-                WitchGodNamePossessive = shinto_high_god_alternate_possessive
-                WitchGodHerHis = CHARACTER_HERHIS_HIS
-                WitchGodSheHe = CHARACTER_SHEHE_HE
-                WitchGodHerHim = CHARACTER_HERHIM_HIM
-                WitchGodMistressMaster = master
-                WitchGodMotherFather = father
-                GHWName = ghw_purification
-                GHWNamePlural = ghw_purifications
-            }
-        }
         cult_of_tlaloc = { #Average Nahua
             color = rgb { 235 64 52 }
             icon = cult_of_tlaloc
@@ -605,6 +422,7 @@
              doctrine = doctrine_clerical_marriage_allowed
              doctrine = doctrine_clerical_succession_temporal_fixed_appointment
              doctrine = pagan_hostility_doctrine
+			 doctrine = doctrine_anointment_permitted
              #doctrine = cemanahuac_hostility_doctrine
              #Funeral tradition
              doctrine = doctrine_funeral_bewailment
@@ -778,6 +596,7 @@
              doctrine = doctrine_clerical_marriage_allowed
              doctrine = doctrine_clerical_succession_temporal_fixed_appointment
              doctrine = pagan_hostility_doctrine
+			 doctrine = doctrine_anointment_permitted
              #doctrine = cemanahuac_hostility_doctrine
              #Funeral tradition
              doctrine = doctrine_funeral_bewailment
@@ -940,6 +759,7 @@
             holy_site = kent
             holy_site = london
             #doctrine
+			 doctrine = doctrine_monotheist
              #Special Tolerance
               doctrine = special_doctrine_is_christian_faith
               doctrine = special_doctrine_ecumenical_christian
@@ -969,6 +789,7 @@
 			holy_site = black_forest
 			holy_site = nicopolis
             #Special Tolerance
+			 doctrine = doctrine_monotheist
             doctrine = special_doctrine_is_christian_faith
             doctrine = special_doctrine_ecumenical_christian
             #Tenets
@@ -1052,6 +873,8 @@
             #doctrine
              doctrine = special_doctrine_ecumenical_christian
              doctrine = special_doctrine_is_christian_faith
+			 doctrine = doctrine_imperial_anointment
+			 doctrine = doctrine_monotheist
              #doctrine = special_doctrine_nicene_ecumenism
              #doctrine = doctrine_christian_liturgical_rite_imperial_rite
             #Tenets
@@ -1136,6 +959,7 @@
              doctrine = doctrine_clerical_succession_temporal_fixed_appointment
              doctrine = doctrine_funeral_cremation
              doctrine = unreformed_faith_doctrine
+			 doctrine = doctrine_anointment_permitted
             #tenets
              doctrine = tenet_satanism
             holy_order_names = {
@@ -1305,6 +1129,7 @@
 	         doctrine = doctrine_clerical_succession_spiritual_appointment
 	        #Funeral tradition
              doctrine = doctrine_funeral_cremation
+			 doctrine = doctrine_anointment_permitted
 			#doctrine = tenet_sanctity_of_nature
             doctrine = tenet_sumerian
 			doctrine = tenet_religious_legal_pronouncements
@@ -1476,6 +1301,7 @@
 			 doctrine = doctrine_clerical_succession_spiritual_appointment
 			#Funeral tradition
 			 doctrine = doctrine_funeral_cremation
+			 doctrine = doctrine_anointment_permitted
 			doctrine = tenet_akkadian
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_astrology
@@ -1644,6 +1470,7 @@
 			  doctrine = doctrine_clerical_succession_spiritual_appointment
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_cremation
+			  doctrine = doctrine_anointment_permitted
 			doctrine = tenet_babylonian
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_ancestor_worship
@@ -1836,6 +1663,7 @@
 			  doctrine = doctrine_clerical_succession_spiritual_appointment
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_cremation
+			  doctrine = doctrine_anointment_permitted
 			doctrine = tenet_assyrian
 			doctrine = tenet_esotericism
 			doctrine = tenet_ancestor_worship
@@ -2048,6 +1876,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_bewailment
+			  doctrine = doctrine_anointment_permitted
 			doctrine = unreformed_faith_doctrine
 			#doctrine = tenet_polyamory
             doctrine = tenet_brythonic
@@ -2242,6 +2071,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_bewailment
+			  doctrine = doctrine_anointment_permitted
 			doctrine = unreformed_faith_doctrine
 			doctrine = tenet_gaelic
 			doctrine = tenet_sanctity_of_nature
@@ -2427,6 +2257,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_bewailment
+			  doctrine = doctrine_anointment_permitted
 			doctrine = unreformed_faith_doctrine
 			doctrine = tenet_gaulish
 			doctrine = tenet_unrelenting_faith
@@ -2626,6 +2457,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_bewailment
+			  doctrine = doctrine_anointment_permitted
 			doctrine = unreformed_faith_doctrine
 			doctrine = tenet_welsh
 			doctrine = tenet_sanctity_of_nature
@@ -2820,6 +2652,7 @@
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_cremation
 			  doctrine = unreformed_faith_doctrine
+			  doctrine = doctrine_anointment_permitted
             doctrine = tenet_canaanite
 			doctrine = tenet_ancestor_worship
 			#doctrine = tenet_human_sacrifice
@@ -2983,6 +2816,7 @@
 	        doctrine = doctrine_funeral_cremation
 			doctrine = unreformed_faith_doctrine
 			#doctrine = tenet_communal_identity
+			doctrine = doctrine_anointment_permitted
             doctrine = tenet_yahwism
 			doctrine = tenet_legalism
 			doctrine = tenet_jewish_syncretism
@@ -3145,6 +2979,7 @@
 	        #Funeral tradition
 	        doctrine = doctrine_funeral_cremation
 			doctrine = unreformed_faith_doctrine
+			doctrine = doctrine_anointment_permitted
 			doctrine = tenet_legalism
 			doctrine = tenet_adaptive
 			#doctrine = tenet_false_conversion_sanction
@@ -3320,6 +3155,7 @@
 	        doctrine = doctrine_funeral_cremation
 			doctrine = unreformed_faith_doctrine
 			#doctrine = tenet_unrelenting_faith
+			doctrine = doctrine_anointment_permitted
             doctrine = tenet_phoenician
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_astrology
@@ -3484,6 +3320,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_cremation
+			  doctrine = doctrine_anointment_permitted
 			doctrine = unreformed_faith_doctrine
             doctrine = tenet_punic
 			doctrine = tenet_ancestor_worship
@@ -3667,6 +3504,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_mummification
+			  doctrine = doctrine_anointment_permitted
 			doctrine = tenet_ancestor_worship #tenet_legalism
 			doctrine = tenet_kemetic
 			doctrine = tenet_alexandrian_catechism #tenet_astrology
@@ -3869,6 +3707,7 @@
 			doctrine = unreformed_faith_doctrine
 			#doctrine
              #Main Group
+			 doctrine = doctrine_monotheist
 	          doctrine = doctrine_temporal_head
 	          doctrine = doctrine_gender_equal
 	          doctrine = doctrine_pluralism_fundamentalist
@@ -3888,6 +3727,7 @@
 	          doctrine = doctrine_clerical_succession_temporal_appointment
 	         #Funeral tradition
 	          doctrine = doctrine_funeral_mummification
+			  doctrine = doctrine_anointment_permitted
 			  doctrine = tenet_unrelenting_faith
 			  doctrine = tenet_atenist
 			  doctrine = tenet_aniconism
