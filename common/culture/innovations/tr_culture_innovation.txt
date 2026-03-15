@@ -5,7 +5,6 @@
 @horse_breeding = "gfx/interface/icons/culture_innovations/ai_innovation_horse_breeding.dds"
 @glassarmor = "gfx/interface/icons/culture_innovations/ai_innovation_glass.dds"
 @alchemy = "gfx/interface/icons/culture_innovations/innovation_alchemy.dds"
-@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 
 #USA
@@ -43,162 +42,7 @@
 	}
   }
  # 
-#JAPAN
- @tanegashima = "gfx/interface/icons/culture_innovations/tanegashima.dds"
-  @samurai = "gfx/interface/icons/culture_innovations/jap_samurai.dds"
-  @jap_build = "gfx/interface/icons/culture_innovations/jap_build1.dds"
- innovation_samurai = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @samurai
-	potential = { this = culture:japanese }
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.1
-		movement_speed = 0.01
-	}
-	unlock_maa = samurai
- }
- innovation_samurai_bow = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @samurai
-	potential = { this = culture:japanese }
-	maa_upgrade = {
-        type = archers
-        damage = 1
-    }
-	unlock_maa = samurai_bow
- }
- innovation_tanegashima = {
-	group = culture_group_military
-	culture_era = culture_era_renaissance
-	icon = @tanegashima
-	potential = { this = culture:japanese }
-	can_progress = {
-		has_innovation = innovation_gunpowder
-		has_innovation = innovation_steel_work
-	}
-	unlock_maa = samurai_tanegashima
- }	
- innovation_manga = {
-	group = culture_group_civic
-	culture_era = culture_era_high_medieval
-	icon = @administration_1
-	potential = { this = culture:japanese }
-	character_modifier = {
-		development_growth_factor = 0.1
-		courtly_opinion = 5
-	}
- }
- innovation_japan_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @jap_build
-	potential = { this = culture:japanese }
-	character_modifier = {
-		build_speed = -0.01
-	}
- }
-#CHINA
- @china_boat1 = "gfx/interface/icons/culture_innovations/china_boat1.dds"
-  @china_porcelain = "gfx/interface/icons/culture_innovations/china_porcelain.dds"
-  @martial_artist_1 = "gfx/interface/icons/culture_innovations/china_martial_artist1.dds"
-  @chinese_builder = "gfx/interface/icons/culture_innovations/china_builder.dds"
-  @china_rice_carry = "gfx/interface/icons/culture_innovations/china_rice_carry.dds"
- innovation_china_boat1 = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @china_boat1
-	character_modifier = {
-		embarkation_cost_mult = -1.1
-		naval_movement_speed_mult = 0.4
-	}
-	potential = {
-		OR = {
-		    this = culture:han
-		        any_parent_culture_or_above = {
-			    this = culture:han #han
-		        }
-        }
-	}
-	custom = unlocks_naval_raiding
-	custom = unlocks_sailable_major_rivers
-	flag = global_regional
-	flag = tribal_era_regional
- }
- innovation_porcelain = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @china_porcelain
-	character_modifier = {
-		domain_tax_mult = 0.01
-		courtly_opinion = 5
-		development_growth_factor = 0.01
-	}
-	potential = {
-		OR = {
-		this = culture:han
-		any_parent_culture_or_above = {
-			this = culture:han #han
-		}
-    }}
-	flag = global_regular
-	flag = tribal_era_regular
- }
- innovation_martial_artist = {
-	group = culture_group_military
-	culture_era = culture_era_antiquity
-	icon = @martial_artist_1
-	potential = {
-		OR = {
-			this = culture:han
-			any_parent_culture_or_above = {
-				this = culture:han #han
-			}
-	}   }
-	character_modifier = {
-		movement_speed = 0.1
-		supply_duration	= 0.25
-		prowess = 2
-	}
- }
- innovation_chinese_builder = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @chinese_builder
-	potential = {
-		OR = {
-			this = culture:han
-			any_parent_culture_or_above = {
-				this = culture:han #han
-			}
-	}   }
-	character_modifier = {
-		build_speed = -0.1
-	}
-	county_modifier = {
-		building_slot_add = 2
-	}
- }
- innovation_match = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @porcelain
-	potential = {
-		OR = {
-		this = culture:han
-		any_parent_culture_or_above = {
-			this = culture:han #han
-		}
-    }}
-	character_modifier = {
-		domain_tax_mult = 0.01
-		courtly_opinion = 5
-		development_growth_factor = 0.01
-	}
-	flag = global_regular
-	flag = tribal_era_regular
- }
+
 #Aztec
  @aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
   @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
@@ -426,7 +270,6 @@
  @saiyan_endure = "gfx/interface/icons/culture_innovations/saiyan_endure.dds"
   @saiyan_pod = "gfx/interface/icons/culture_innovations/saiyan_pod.dds"
   @saiyan_tribe = "gfx/interface/icons/culture_innovations/saiyan_tribe.dds"
-  @administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
  innovation_saiyan_training_1 = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -497,7 +340,7 @@
 		monthly_prestige_gain_mult = 0.1
 		movement_speed = 0.01
 	}
-	unlock_maa = hyrule_solider
+	unlock_maa = hyrule_soldier
  }
  innovation_hyrule_build = {
 	group = culture_group_regional
@@ -692,71 +535,7 @@
 	}
  }
 #Elder scrolls
- #DUNMER
-  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
-   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
-   @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
-   @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
-   @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
-  innovation_ashlander_customs = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = @ashlander_customs
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		county_opinion_add = 5
-	}
-	flag = global_regional
-	flag = tribal_era_regional
-  }
-  innovation_bonemold_armor = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon =  @housearmor
-	potential = { this = culture:dunmer }
-	maa_upgrade = {
-		type = skirmishers
-		toughness = 3
-	}
-	maa_upgrade = {
-		type = light_cavalry
-		toughness = 2
-	}
-	maa_upgrade = {
-		type = pikemen
-		toughness = 2
-	}
-	maa_upgrade = {
-		type = heavy_infantry
-		toughness = 3
-	}
-	maa_upgrade = {
-		type = heavy_cavalry
-		toughness = 3
-	}
-	flag = early_medieval_era_regular
-  }
-  innovation_silt_strider = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @silt_strider
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		development_growth_factor = 0.1
-		movement_speed = 0.15
-	}
-	flag = global_regional
-	flag = tribal_era_regional
-  }
-  innovation_dunmer_build = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @es_dunmer_1
-	potential = { this = culture:dunmer }
-	character_modifier = {
-		build_speed = -0.01
-	}
-  }
+
  #DWEMER
   @dwemer_centurion = "gfx/interface/icons/culture_innovations/dwemer_centurion.dds"
    @dwemer_sphere = "gfx/interface/icons/culture_innovations/dwemer_sphere.dds"
@@ -834,6 +613,72 @@
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
 	potential = { this = culture:dwemer }
+	character_modifier = {
+		build_speed = -0.01
+	}
+  }
+
+ #DUNMER
+  @ashlander_customs = "gfx/interface/icons/culture_innovations/ai_innovation_ashlander_customs.dds"
+   @silt_strider = "gfx/interface/icons/culture_innovations/innovation_silt_strider.dds"
+   @housearmor = "gfx/interface/icons/culture_innovations/ai_innovation_horse_armor.dds"
+   @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
+   @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
+  innovation_ashlander_customs = {
+	group = culture_group_civic
+	culture_era = culture_era_tribal
+	icon = @ashlander_customs
+	potential = { this = culture:dunmer }
+	character_modifier = {
+		county_opinion_add = 5
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_bonemold_armor = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon =  @housearmor
+	potential = { this = culture:dunmer }
+	maa_upgrade = {
+		type = skirmishers
+		toughness = 3
+	}
+	maa_upgrade = {
+		type = light_cavalry
+		toughness = 2
+	}
+	maa_upgrade = {
+		type = pikemen
+		toughness = 2
+	}
+	maa_upgrade = {
+		type = heavy_infantry
+		toughness = 3
+	}
+	maa_upgrade = {
+		type = heavy_cavalry
+		toughness = 3
+	}
+	flag = early_medieval_era_regular
+  }
+  innovation_silt_strider = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @silt_strider
+	potential = { this = culture:dunmer }
+	character_modifier = {
+		development_growth_factor = 0.1
+		movement_speed = 0.15
+	}
+	flag = global_regional
+	flag = tribal_era_regional
+  }
+  innovation_dunmer_build = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @es_dunmer_1
+	potential = { this = culture:dunmer }
 	character_modifier = {
 		build_speed = -0.01
 	}
@@ -932,7 +777,7 @@
 		build_speed = -0.01
 	}
   }
- #High Elf
+   #High Elf
   innovation_high_elf_build = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
