@@ -1522,8 +1522,13 @@
 	trait = greedy
 	trait = education_martial_2
 	trait = rakish
-	835.1.1 = { birth = yes }
-	900.1.1 = { death = { death_reason = death_disappearance } }
+	835.1.1 = { 
+		birth = yes 
+	}
+	900.1.1 = { 
+		death = { 
+			death_reason = death_disappearance } 
+	}
  }
  tr_orc_1 = {
 	name = "Orcvalmir"
@@ -1534,9 +1539,17 @@
 	trait = education_martial_prowess_3
 	trait = sadistic
 	trait = strong
-	830.1.1 = { birth = yes }
-	850.1.1 = { effect = { set_relation_friend = { target = character:mm_frida } } }
-	900.1.1 = { death = { death_reason = death_duel } }
+	830.1.1 = { 
+		birth = yes 
+	}
+	850.1.1 = { 
+		effect = { 
+			set_relation_friend = { target = character:mm_frida } 
+		} 
+	}
+	900.1.1 = { 
+		death = { death_reason = death_duel } 
+	}
  }
 #Anime
  tr_frieren = {
