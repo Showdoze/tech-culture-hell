@@ -202,7 +202,7 @@ convert_resources_decision = {
 }
 
 tr_select_personal_deity_decision = {
- #PICTUre   
+    #PICTUre
     picture = {
         trigger = { faith = faith:satanism }
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
@@ -224,9 +224,9 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_thief_mages.dds"
     }
     picture = {
-        trigger = { 
+        trigger = {
             OR = {
-                faith = faith:kemetic_pagan 
+                faith = faith:kemetic_pagan
                 culture = culture:nile_elf
             }
         }
@@ -237,22 +237,22 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     picture = { #AZTEC
-        trigger = { 
+        trigger = {
             OR = {
-                faith = faith:cult_of_tlaloc 
-                faith = faith:cult_of_tezcatlipoca 
-            }   
+                faith = faith:cult_of_tlaloc
+                faith = faith:cult_of_tezcatlipoca
+            }
         }
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     picture = { #MESO
-        trigger = { 
+        trigger = {
             OR = {
-                faith = faith:sumerian_pagan 
+                faith = faith:sumerian_pagan
                 faith = faith:akkadian_pagan
                 faith = faith:babylonian_pagan
                 faith = faith:assyrian_pagan
-            }   
+            }
         }
         reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds"
     }
@@ -266,9 +266,9 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
     }
     picture = { #tr_decision_vampire
-        trigger = { 
+        trigger = {
             OR = {
-                faith = faith:blood_faith 
+                faith = faith:blood_faith
             }
         }
         reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds"
@@ -278,14 +278,14 @@ tr_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_commune_hist.dds"
     }
     picture = { #decision_imperial_faith
-        trigger = { 
+        trigger = {
             OR = {
-                faith = faith:imperial_cult 
-            }    
+                faith = faith:imperial_cult
+            }
         }
         reference = "gfx/interface/illustrations/decisions/decision_imperial_faith.dds"
     }
- #   
+    #
     title = {
         first_valid = {
             triggered_desc = {
@@ -325,7 +325,7 @@ tr_select_personal_deity_decision = {
                         culture = culture:goblin
                         culture = culture:giant
                         faith = faith:imperial_cult
-                    }    
+                    }
                 }
                 desc = god_voice_select_decision
             }
@@ -440,7 +440,7 @@ tr_select_personal_deity_decision = {
                         culture = culture:goblin
                         culture = culture:giant
                         faith = faith:imperial_cult
-                    }    
+                    }
                 }
                 desc = god_voice_select_decision_desc
             }
@@ -901,7 +901,7 @@ summon_speical_maa_decision = {
                 trigger = {
                     OR = {
                         has_trait = follow_mage_death
-                    }    
+                    }
                 }
                 desc = summon_fallback
             }
@@ -925,7 +925,7 @@ summon_speical_maa_decision = {
                 trigger = {
                     OR = {
                         has_trait = follow_mage_death
-                    }    
+                    }
                 }
                 desc = summon_fallback_desc
             }
@@ -949,7 +949,7 @@ summon_speical_maa_decision = {
                 trigger = {
                     OR = {
                         has_trait = follow_mage_death
-                    }    
+                    }
                 }
                 desc = summon_fallback_tip
             }
@@ -973,7 +973,7 @@ summon_speical_maa_decision = {
                 trigger = {
                     OR = {
                         has_trait = follow_mage_death
-                    }    
+                    }
                 }
                 desc = summon_fallback_confirm
             }
@@ -1026,7 +1026,7 @@ tr_choose_class_decision = {
         OR = {
             faith.religion = religion:fantasy_religion
             has_cultural_pillar = heritage_fantasy
-        }    
+        }
     }
     is_valid = {
         piety >= 400
@@ -1067,8 +1067,8 @@ tr_self_harm_decision = {
                 }
                 desc = lunatic_self_harm_decision
             }
-        }   
-    }  
+        }
+    }
     desc = {
         first_valid = {
             triggered_desc = {
@@ -1093,8 +1093,8 @@ tr_self_harm_decision = {
                 }
                 desc = lunatic_self_harm_decision_desc
             }
-        } 
-    }          
+        }
+    }
     selection_tooltip = self_harm_decision_tip
     confirm_text = self_harm_decision_confirm
     cooldown = { years = 5 }
@@ -1143,7 +1143,7 @@ tr_self_harm_decision = {
                         has_trait = one_eyed
                         has_trait = blind
                     }
-                }       
+                }
                 AND = { #DEEP
                     OR = {
                         faith = faith:deep_cult
@@ -1164,11 +1164,11 @@ tr_self_harm_decision = {
                     NOR = {
                         has_trait = spindly
                     }
-                }                                   
+                }
             }
             NOR = {
             }
-        }    
+        }
     }
     is_valid = { piety >= 50 }
     effect = { trigger_event = { id = tr_self_harm_event.01 } }
@@ -1180,12 +1180,12 @@ tr_choose_nickname_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
     title = nick_name_giver_decision
     desc = nick_name_giver_decision_desc
-    selection_tooltip = nick_name_giver_decision
-    confirm_text = nick_name_giver_decision
+    selection_tooltip = nick_name_giver_decision_tip
+    confirm_text = nick_name_giver_decision_confirm
     is_shown = { has_any_nickname = no }
     cost = { prestige = 150 }
     effect = {
-        custom_tooltip = select_class_decision_tip
+        custom_tooltip = nick_name_giver_decision_tip
         trigger_event = {
             id = tr_nickname_event.01
         }
@@ -1198,8 +1198,8 @@ tr_house_customizer_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_sargon_codex.dds" }
     title = house_customizer_decision
     desc = house_customizer_decision_desc
-    selection_tooltip = house_customizer_decision
-    confirm_text = house_customizer_decision
+    selection_tooltip = house_customizer_decision_tip
+    confirm_text = house_customizer_decision_confirm
     is_shown = { has_trait = house_customizer }
     cost = { prestige = 1 }
     effect = {
@@ -1213,8 +1213,8 @@ house_trait_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds" }
     title = house_trait_decision
     desc = house_trait_decision_desc
-    selection_tooltip = house_trait_decision
-    confirm_text = house_trait_decision
+    selection_tooltip = house_trait_decision_tip
+    confirm_text = house_trait_decision_confirm
     cost = { prestige = 1 }
     is_shown = {
         AND = {
@@ -1233,18 +1233,21 @@ house_trait_decision = {
     effect = { trigger_event = { id = tr_house_trait_event.01 } }
     ai_will_do = { base = 0 }
 }
-grineer_kuva_lich_decision = {
+kuva_lich_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds" }
-    title = house_trait_decision
-    desc = house_trait_decision_desc
-    selection_tooltip = house_trait_decision
-    confirm_text = house_trait_decision
-    is_shown = { 
+    title = kuva_lich_decision
+    desc = kuva_lich_decision_desc
+    selection_tooltip = kuva_lich_decision_tip
+    confirm_text = kuva_lich_decision_confirm
+    is_shown = {
         AND = {
-            NOR = {
-                has_trait = kuva_lich
-            }
-            culture = { this = culture:grineer_culture } 
+            NOT = { has_trait = kuva_lich }
+            culture = { this = culture:grineer_culture }
+        }
+    }
+    effect = {
+        trigger_event = {
+            id = tr_kuva_event.01
         }
     }
     #effect = { trigger_event = { id = tr_house_trait_event.01 } }
@@ -1253,5 +1256,3 @@ grineer_kuva_lich_decision = {
     }
     ai_will_do = { base = 1 }
 }
-
-
