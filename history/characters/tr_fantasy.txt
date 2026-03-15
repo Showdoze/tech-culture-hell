@@ -3004,7 +3004,7 @@
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
  #Game of thrones
- Tall_1 = {
+  Tall_1 = {
 	name = Duncan # Canon, AKA: Duncan the Tall, Lord Commander of the Kingsguard
 	martial = 8
 	prowess = 12
@@ -3113,6 +3113,7 @@
 	157.1.1 = { birth = yes }
 	217.1.1 = { death = yes }
    }
+  #NORHTMEN 
   #stark
    Stark_12 = {
 	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
@@ -3131,14 +3132,22 @@
 	trait = curious
 	give_nickname = nick_the_builder
 	disallow_random_traits = yes
-	20.1.1 = {
-		birth = yes
-		#add_character_flag = has_scripted_appearance
-		#add_character_flag = canon_status_canon
-	}
+	1.1.1 = { birth = yes }
 	36.1.1 = { trait = architect }
-	#110.1.1 = { death = yes }
-	799.1.1 = { death = yes }
+	110.1.1 = { death = yes }
+	#799.1.1 = { death = yes }
+   }
+   Karstark_102 = {
+	name = Theon # a lord
+	dynasty_house = house_Karstark
+	#dna = Stark_132
+	religion = norse_pagan #old_gods_wnw
+	culture = fantasy_culture #northman
+	father = Stark_12
+	#father = Stark_131
+	#mother = Stark_rs_4
+	675.1.1 = { birth = yes } # grey_eyes dark_brown_hair	
+	748.1.1 = { death = { death_reason = death_battle } }
    }
    Karstark_4 = {
 	name = Rickard # Canon, a lord
@@ -3153,7 +3162,7 @@
 	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
-	father = Stark_12 #Karstark_1
+	father = Karstark_102 #Karstark_1
 	#mother = Karstark_rs_1_A
 	trait = education_martial_2
 	trait = wrathful
@@ -3228,6 +3237,7 @@
 	trait = just
 	disallow_random_traits = yes
 	832.1.1 = { birth = yes }
+	852.1.1 = { add_spouse = Tully_4  }
 	868.1.10 = {
 		death = {
 			death_reason = death_execution # Beheaded
@@ -3249,7 +3259,7 @@
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_3
-	#mother = Tully_4
+	mother = Tully_4
 	trait = education_martial_4
 	trait = bossy
 	disallow_random_traits = yes
@@ -3264,11 +3274,11 @@
 	869.12.15 = {
 		death = {
 			death_reason = death_bloody_wedding # The Red Wedding
-			#killer = Frey_1 #Walder Frey
+			killer = Frey_1 #Walder Frey
 		}
 	}
   }
-   Stark_7 = {
+   Stark_7 = { #JON SNOW
 	name = Jon # Canon, THE Jon Snow, Lord Commander of the Night's Watch, He don't want it
 	dynasty = dynn_Stark
 	#dna = Stark_7
@@ -3321,7 +3331,7 @@
 	culture = fantasy_culture #northman
 	sexuality = heterosexual
 	father = Stark_3
-	#mother = Tully_4
+	mother = Tully_4
 	trait = education_diplomacy_1
 	trait = beauty_good_2
 	trait = bossy
@@ -3343,7 +3353,7 @@
 	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture #northman
 	father = Stark_3
-	#mother = Tully_4
+	mother = Tully_4
 	trait = education_intrigue_4
 	trait = rowdy
 	trait = wrathful
@@ -3361,14 +3371,14 @@
 	name = Royce # I
 	dynasty = dynasty_Bolton
 	#dna = Bolton_6
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	culture = fantasy_culture
-	348.1.1 = { birth = yes }
-	397.1.1 = { death = yes }
+	48.1.1 = { birth = yes }
+	197.1.1 = { death = yes }
    }
    tr_agot_Roose_Bolton = {
 	name = "Roose Bolton"
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = fantasy_culture
 	father = Bolton_6
@@ -3384,7 +3394,7 @@
    }
    tr_agot_Domeric_Bolton = {
 	name = "Domeric Bolton"
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = fantasy_culture
 	father = tr_agot_Roose_Bolton
@@ -3401,7 +3411,7 @@
    }
    tr_agot_Ramsay_Bolton_mom = {
 	name = "Miller's wife"
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	dynasty = fantasy
 	culture = fantasy_culture
 	female = yes
@@ -3417,7 +3427,7 @@
    }
    tr_agot_Ramsay_Bolton = {
 	name = "Ramsay Bolton"
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = fantasy_culture
 	father = tr_agot_Roose_Bolton
@@ -3454,6 +3464,189 @@
 	73.1.1 = { birth = yes }
 	220.1.1 = { death = yes }
    }
+   Tully_1 = {
+	name = Hoster # Canon, a lord
+	dynasty = dynn_Tully
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 7
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Tully_10
+	#father = Tully_67
+	#mother = Chelsted_63
+	trait = education_diplomacy_4
+	trait = patient
+	trait = gregarious
+	trait = diligent
+	trait = authoritative
+	trait = bossy
+	trait = strong
+	trait = ill
+	disallow_random_traits = yes
+	799.1.1 = { birth = yes }
+	865.11.13 = {
+		trait = incapable
+		death = yes
+	}
+}
+   Tully_9 = {
+	name = Brynden # Canon, AKA: Blackfish, Knight of the Bloody Gate
+	dynasty = dynn_Tully
+	martial = 12
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 9
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = homosexual
+	#father = Tully_67
+	#mother = Chelsted_63
+	trait = education_martial_4
+	trait = education_martial_prowess_3
+	trait = intellect_good_1
+	trait = rowdy
+	trait = organizer
+	trait = unyielding_defender
+	trait = brave
+	trait = diligent
+	trait = stubborn
+	trait = patient
+	disallow_random_traits = yes
+	810.1.1 = { birth = yes }
+	846.1.1 = { give_nickname = nick_blackfish } # When Catelyn was eight
+	900.1.1 = { death = yes }
+   }
+   Tully_4 = {
+	name = Catelyn # Canon, married Eddard Stark
+	dynasty = dynn_Tully
+	female = yes
+	martial = 1
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 6
+	learning = 3
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Tully_1
+	#mother = Whent_6
+	trait = education_diplomacy_3
+	trait = wrathful # Arresting Tyrion was a BAD choice
+	trait = gregarious
+	trait = impatient
+	trait = brave
+	trait = beauty_good_2
+	trait = charming
+	trait = family_first
+	disallow_random_traits = yes
+	838.1.1 = { birth = yes }  #blue_eyes
+	852.6.1 = {
+		effect = {
+			if = {
+				limit = { character:Stark_7 = { is_alive = yes } }
+				set_relation_grudge = {
+					target = character:Stark_7 # Jon Snow
+					reason = grudge_catelyn_jsnow
+				}
+			}
+		}
+	}
+	869.12.15 = {
+		death = {
+			death_reason = death_bloody_wedding # The Red Wedding
+			killer = Frey_41 # Raymund Frey
+		}
+	}
+   }
+   Tully_6 = {
+	name = Lysa # Canon, married Jon Arryn
+	dynasty = dynn_Tully
+	female = yes
+	martial = 2
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 6
+	learning = 5
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Tully_1
+	#mother = Whent_6
+	trait = education_intrigue_1
+	trait = arbitrary
+	trait = vengeful
+	trait = charming
+	trait = shy
+	disallow_random_traits = yes
+	840.3.1 = { birth = yes }
+	855.1.1 = { # last stillbirth?
+		effect = { remove_trait = shy }
+		trait = paranoid
+		trait = lunatic_1
+	}
+	869.1.1 = {
+		#add_spouse = Baelish_2 # Petyr Baelish
+	}
+	870.2.9 = {
+		death = {
+			death_reason = death_murder
+			#killer = Baelish_2 # Petyr Baelish
+		}
+	}
+}
+   Tully_7 = {
+	name = Edmure # Canon, a lord
+	dynasty = dynn_Tully
+	martial = 8
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	learning = 5
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Tully_1
+	#mother = Whent_6
+	trait = education_diplomacy_2
+	trait = curious
+	trait = cautious_leader
+	trait = compassionate
+	trait = trusting
+	trait = lustful
+	disallow_random_traits = yes
+	842.1.1 = { birth = yes }
+	869.12.15 = { # Red Wedding
+		add_spouse = Frey_82 # Roslin Frey
+		create_character_memory = {
+			type = grand_wedding_massacre_spouse_survivor
+			participants = {
+				host = character:Frey_1 # Walder Frey
+				spouse_1 = character:Frey_82 # Roslin Frey
+				spouse_2 = character:Tully_7 # Edmure Tully
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Frey_82 = { is_alive = yes } }
+				character:Frey_82 = { #Roslin Frey
+					make_pregnant = {
+						father = ROOT
+					}
+					event_pregnancy_effect = yes
+				}
+			}
+		}
+	}
+	900.1.1 = { death = yes }
+   }
    Frey_141 = {
 	name = Franklyn # Mentioned, first Lord Frey
 	dynasty = dynn_Frey
@@ -3464,6 +3657,105 @@
 	trait = ambitious
 	700.1.1 = { birth = yes }
 	760.1.1 = { death = yes }
+   }
+   Frey_1 = {
+	name = Walder # Canon, THE Walder Frey, a lord
+	dynasty = dynn_Frey
+	#dna = Frey_1
+	martial = 3
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 9
+	learning = 5
+	prowess = 3
+	health = 9
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Frey_141 #Frey_132
+	#mother = Greysteel_26
+	trait = education_intrigue_3
+	#trait = rude
+	trait = fecund
+	trait = deceitful
+	trait = ambitious
+	trait = rowdy
+	trait = lustful
+	trait = lifestyle_reveler
+	trait = family_first
+	trait = disloyal
+	trait = gout_ridden
+	give_nickname = nick_the_late_lord
+	disallow_random_traits = yes
+	777.10.1 = { birth = yes }
+	867.9.15 = {
+		effect = {
+			if = {
+				limit = { character:Stark_6 = { is_alive = yes } }
+				set_relation_grudge = character:Stark_6 # Robb Stark
+			}
+		}
+	}
+	869.12.15 = { trait = murderer } # Red Wedding
+	870.1.1 = { death = death_reason = death_murder_known killer = Stark_9 }
+  }
+   Frey_41 = {
+	name = Raymund # Canon, killed Catelyn Tully
+	dynasty = dynn_Frey
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	sexuality = heterosexual
+	father = Frey_1
+	#mother = Crakehall_2
+	trait = education_martial_2
+	trait = callous
+	833.1.1 = { birth = yes }
+	869.12.15 = { trait = murderer } # Red Wedding
+	870.1.1 = { death = death_reason = death_murder_known killer = Stark_9 }
+  }
+   Frey_64 = {
+	name = Lothar # Canon, AKA: Lame Lothar
+	dynasty = dynn_Frey
+	martial = 1
+	diplomacy = 7
+	intrigue = 10 # Lothar was one of the prime engineers of the Red Wedding massacre
+	stewardship = 7
+	learning = 6
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Frey_1
+	#mother = Blackwood_5
+	trait = education_intrigue_4
+	trait = intellect_good_3
+	trait = clubfooted
+	trait = patient
+	trait = gregarious
+	trait = callous
+	trait = deceitful
+	trait = pensive
+	give_nickname = nick_lame
+	disallow_random_traits = yes
+	835.1.1 = { birth = yes }
+	869.12.15 = { trait = murderer } # Red Wedding
+	870.1.1 = { death = death_reason = death_murder_known killer = Stark_9 }
+  }
+   Frey_82 = {
+	name = Roslin # Canon, married Edmure Tully
+	dynasty = dynn_Frey
+	female = yes
+	religion = dark_souls_faith #fots_seven
+	culture = fantasy_culture #riverman_main
+	father = Frey_1
+	#mother = Rosby_3
+	trait = education_diplomacy_1
+	trait = beauty_good_2
+	trait = compassionate
+	trait = craven
+	trait = shy
+	trait = charming
+	disallow_random_traits = yes
+	850.1.1 = { birth = yes }
+	900.1.1 = { death = yes }
    }
    Penny_16 = {
 	name = Jon # a lord
@@ -3611,7 +3903,7 @@
 	430.1.1 = { birth = yes}
 	#8200.1.1 = { employer = Lothston_17 } # Mad Danielle Lothston
 	500.1.1 = { death = yes }
-}
+  }
    Qoherys_1 = {
 	name = Quenton # Canon, a lord
 	dynasty = dynn_Qoherys
@@ -3621,7 +3913,7 @@
 	trait = education_martial_3
 	750.1.1 = { birth = yes }
 	809.1.1 = { death = { death_reason = death_horse_riding_accident } }
-}
+  }
    Harroway_5 = {
 	name = Leslyn # a lord, founder
 	religion = hist
@@ -3985,13 +4277,8 @@
 	trait = forgiving
 	trait = pensive
 	disallow_random_traits = yes
-	789.1.1 = {
-		birth = yes
-		make_trait_inactive = scripted_appearance # Died at age 46 in 267
-	}
-	835.1.1 = {
-		death = { death_reason = death_depressed }
-	}
+	789.1.1 = { birth = yes } # Died at age 46 in 267
+	835.1.1 = { death = { death_reason = death_depressed } }
   }
    Lannister_1 = {
 	name = Tywin # Canon, THE Tywin Lannister, a lord
@@ -4018,8 +4305,6 @@
 	811.1.1 = { birth = yes }
 	830.11.1 = {
 		effect = {
-			#add_pressed_claim = title:e_the_westerlands
-			#add_pressed_claim = title:k_the_rock
 			if = {
 				limit = { character:Reyne_45 = { is_alive = yes } }
 				set_relation_rival = {
@@ -4037,13 +4322,6 @@
 		}
 	}
 	842.1.1 = {
-		trait = widowed
-		create_character_memory = {
-			type = agot_widowed_memory
-			participants = {
-				dead_relation = character:Lannister_17 # Joanna Lannister
-			}
-		}
 		effect = {
 			add_character_flag = dead_spouse_was_lover
 			if = {
@@ -4719,7 +4997,7 @@
 	}
 	950.1.1 = { death = yes }
   }
-  Targaryen_95 = {
+  Targaryen_95 = { #Bittersteel
 	name = Aegor # Canon, AKA: Bittersteel, Captain-General of the Golden Company
 	dynasty = dynasty = dynasty_Targaryen
 	martial = 8

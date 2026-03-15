@@ -1233,3 +1233,25 @@ house_trait_decision = {
     effect = { trigger_event = { id = tr_house_trait_event.01 } }
     ai_will_do = { base = 0 }
 }
+grineer_kuva_lich_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/tr_decision_vampire.dds" }
+    title = house_trait_decision
+    desc = house_trait_decision_desc
+    selection_tooltip = house_trait_decision
+    confirm_text = house_trait_decision
+    is_shown = { 
+        AND = {
+            NOR = {
+                has_trait = kuva_lich
+            }
+            culture = { this = culture:grineer_culture } 
+        }
+    }
+    #effect = { trigger_event = { id = tr_house_trait_event.01 } }
+    cost = {
+        prestige = 1000
+    }
+    ai_will_do = { base = 1 }
+}
+
+

@@ -6,8 +6,9 @@ tr_nickname_event.01 = {
     desc = nick_name_giver_desc
     left_portrait = {
         character = root
-        animation = personality_rational
+        animation = thinking
     }
+    cooldown = { years = 3 }
  #ROMAN   
     option = {
         name = nick_name_giver_nick_augustus
@@ -361,12 +362,12 @@ tr_nickname_event.01 = {
             AND = {
                 OR = {
                     culture = culture:hunnic
-                    culture = culture:mogyer
                     culture = culture:khazar
                     culture = culture:bolghar
                     culture = culture:avar
                     faith = faith:tengri_pagan
                     faith = faith:magyar_pagan
+                    culture = { has_cultural_pillar = heritage_magyar } 
                 }    
                 NOR = {
                     has_trait = follow_julius_caesar
@@ -652,7 +653,34 @@ tr_nickname_event.01 = {
     }
  #
  #
+ #
+ #Bastard based
     option = {
+        name = nick_name_giver_nick_the_white_bastard
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                has_trait = albino
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_white_bastard }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 1
+				has_trait = callous
+			}
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
+		}
+    }
+ #
+    option = { #WHORE
         name = nick_name_giver_nick_the_whore
         trigger = {
             AND = {
