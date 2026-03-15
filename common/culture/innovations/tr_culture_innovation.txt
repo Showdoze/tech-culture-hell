@@ -9,6 +9,7 @@
 
 #USA
  innovation_usa_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_industrial
 	icon = @misc_inventions
@@ -26,6 +27,7 @@
  #Mafia
   @mafia_1 = "gfx/interface/icons/culture_innovations/mafia_1.dds"
   innovation_mafia_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_industrial
 	icon = @mafia_1
@@ -47,6 +49,7 @@
  @aztec_weapon = "gfx/interface/icons/culture_innovations/aztec_weapon.dds"
   @aztec_warriors_clothing = "gfx/interface/icons/culture_innovations/aztec_warriors_clothing.dds"
  innovation_aztec_weapon = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @aztec_weapon
@@ -65,6 +68,7 @@
 	}
  }
  innovation_aztec_warriors_clothing = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @aztec_warriors_clothing
@@ -82,6 +86,7 @@
 	unlock_maa = jaguar_warrior
  }
  innovation_aztec_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -96,6 +101,7 @@
  @roman_concrete = "gfx/interface/icons/culture_innovations/roman_concrete.dds"
   @roman_army1 = "gfx/interface/icons/culture_innovations/roman_army1.dds"
  innovation_roman_concrete = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @roman_concrete
@@ -113,6 +119,7 @@
 	flag = antiquity_era_regional
  }
  innovation_marian_reform  = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @roman_army1
@@ -131,6 +138,7 @@
  @dragon_egg = "gfx/interface/icons/culture_innovations/dragon_egg.dds"
   @elven_adaptability = "gfx/interface/icons/culture_innovations/innovation_elven_adaptability.dds"
  innovation_dragon_egg  = {
+	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dragon_egg
@@ -142,6 +150,7 @@
 	flag = antiquity_era_regional
  }
  innovation_horse_armor_beth = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
 	icon =  @housearmor
@@ -158,6 +167,7 @@
 	flag = late_medieval_era_regular
  }
  innovation_glass_armor = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon =  @glassarmor
@@ -185,6 +195,7 @@
 	flag = early_medieval_era_regular
  }
  innovation_alchemy = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @alchemy
@@ -197,6 +208,7 @@
 	flag = tribal_era_regular
  }
  innovation_elven_adaptability = {
+	skill = learning
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @elven_adaptability
@@ -209,6 +221,7 @@
   @monkey_fire = "gfx/interface/icons/culture_innovations/monkey_fire.dds"
    @flinting_stone = "gfx/interface/icons/culture_innovations/flinting_stone.dds"
   innovation_monkey_fire = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @monkey_fire
@@ -222,6 +235,7 @@
 	flag = antiquity_era_regional
   }
   innovation_flinting_stone = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @flinting_stone
@@ -243,6 +257,7 @@
 	flag = antiquity_era_regional
   }
   innovation_bone_working = {
+	skill = martial
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @flinting_stone
@@ -271,6 +286,7 @@
   @saiyan_pod = "gfx/interface/icons/culture_innovations/saiyan_pod.dds"
   @saiyan_tribe = "gfx/interface/icons/culture_innovations/saiyan_tribe.dds"
  innovation_saiyan_training_1 = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @saiyan_tribe
@@ -292,6 +308,7 @@
 	}
  }
  innovation_saiyan_training_2 = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @saiyan_pod
@@ -310,6 +327,7 @@
 	}	
  }
  innovation_saiyan_training_3 = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @saiyan_endure
@@ -330,6 +348,7 @@
 #ZElda
  @zelda1 = "gfx/interface/icons/culture_innovations/zelda1.dds"
  innovation_hyrule1 = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @zelda1
@@ -343,6 +362,7 @@
 	unlock_maa = hyrule_soldier
  }
  innovation_hyrule_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -354,6 +374,7 @@
 	}
  }
  innovation_kokiri_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -366,6 +387,7 @@
  }
 #ORC
  innovation_orc_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -378,6 +400,7 @@
  } 
 #DND 
  innovation_hobbit_build = {
+	skill = stewardship
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @alchemy
@@ -396,6 +419,7 @@
  #Drow
   @dnd_drow_1 = "gfx/interface/icons/culture_innovations/dnd_drow_1.dds"
    innovation_drow_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @dnd_drow_1
@@ -409,6 +433,7 @@
  #Gith
   @dnd_gith_1 = "gfx/interface/icons/culture_innovations/dnd_gith_1.dds"
   innovation_gith_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @dnd_gith_1
@@ -425,6 +450,7 @@
   @thief_lost_city_inno = "gfx/interface/icons/culture_innovations/thief_lost_city_inno.dds"
   @thief_kushok_1 = "gfx/interface/icons/culture_innovations/thief_kushok_1.dds"
  innovation_thief_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -436,6 +462,7 @@
 	}
  } 
  innovation_mechanist_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @thief_mechanist
@@ -452,6 +479,7 @@
 	}
  } 
  innovation_thief_city_watch = {
+	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @thief_city_watch
@@ -469,6 +497,7 @@
 	}
  }
  innovation_thief_ancient_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @thief_lost_city_inno
@@ -480,6 +509,7 @@
 	}
  }
  innovation_thief_kurshok_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @thief_kushok_1
@@ -494,6 +524,7 @@
  @vibroblade = "gfx/interface/icons/culture_innovations/sw_vibroblade.dds"
    @beskar = "gfx/interface/icons/culture_innovations/sw_beskar.dds"
  innovation_vibroblade = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @vibroblade
@@ -509,6 +540,7 @@
 	}	
  } 
  innovation_beskar = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @beskar
@@ -521,6 +553,7 @@
 	}
  }
  innovation_neo_crusader = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @beskar
@@ -543,6 +576,7 @@
    @dwemer_crossbow = "gfx/interface/icons/culture_innovations/dwemer_enhanced_crossbow_schematic.dds"
    @dwemer_space = "gfx/interface/icons/culture_innovations/dwemer_space.dds"
   innovation_sphere_centurion = {
+	skill = learning
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dwemer_sphere
@@ -552,6 +586,7 @@
 	}	
   }
   innovation_steam_centurion = {
+	skill = learning
 	group = culture_group_military
 	culture_era = culture_era_antiquity
 	icon = @dwemer_centurion
@@ -561,6 +596,7 @@
 	}	
   }
   innovation_sound_drill = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_tone
@@ -578,6 +614,7 @@
 	}	
   }
   innovation_dwemer_tech = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_crossbow
@@ -593,6 +630,7 @@
 	}	
   }
   innovation_dwemer_time_space = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_antiquity
 	icon = @dwemer_space
@@ -609,6 +647,7 @@
 	}	
   }
   innovation_dwemer_build = {
+	skill = learning
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -625,6 +664,7 @@
    @bonemold = "gfx/interface/icons/culture_innovations/ai_innovation_bonemold.dds"
    @es_dunmer_1 = "gfx/interface/icons/culture_innovations/es_dunmer_1.dds"
   innovation_ashlander_customs = {
+	skill = diplomacy
 	group = culture_group_civic
 	culture_era = culture_era_tribal
 	icon = @ashlander_customs
@@ -636,6 +676,7 @@
 	flag = tribal_era_regional
   }
   innovation_bonemold_armor = {
+	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon =  @housearmor
@@ -663,6 +704,7 @@
 	flag = early_medieval_era_regular
   }
   innovation_silt_strider = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @silt_strider
@@ -675,6 +717,7 @@
 	flag = tribal_era_regional
   }
   innovation_dunmer_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @es_dunmer_1
@@ -688,6 +731,7 @@
    @black_marsh_natives = "gfx/interface/icons/culture_innovations/ai_innovation_black_marsh_natives.dds"
    @hist_mending = "gfx/interface/icons/culture_innovations/ai_innovation_hist_mending.dds"
   innovation_black_marsh_natives = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @black_marsh_natives
@@ -705,6 +749,7 @@
 	flag = tribal_era_regional
   }
   innovation_hist_mending = {
+	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @hist_mending
@@ -731,6 +776,7 @@
    @senche_raht = "gfx/interface/icons/culture_innovations/ai_innovation_senche_raht.dds"
    @clan_mothers = "gfx/interface/icons/culture_innovations/ai_innovation_clan_mothers.dds"
   innovation_alfiq = { #Khajiiti version of War Magic. Should do everything that innovation does, except also unlock their Alfiq MaA 
+	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @alfiq
@@ -744,6 +790,7 @@
 	flag = innovation_war_magic_replacement
   }
   innovation_senche_raht = {
+	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
 	icon = @senche_raht
@@ -754,6 +801,7 @@
 	flag = heavy_cavalry_maa
   }
   innovation_clan_mothers = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @clan_mothers
@@ -767,6 +815,7 @@
 	flag = tribal_era_regional
   }
   innovation_khajitt_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -779,6 +828,7 @@
   }
    #High Elf
   innovation_high_elf_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -791,6 +841,7 @@
   } 
  #woolf elf bosmer
   innovation_bosmer_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -804,6 +855,7 @@
  #Imperial
   @es_imperial_1 = "gfx/interface/icons/culture_innovations/es_imperial_1.dds"
   innovation_imperial_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @es_imperial_1
@@ -817,6 +869,7 @@
  #REDGUARD
   @es_redguard_1 = "gfx/interface/icons/culture_innovations/es_redguard_1.dds"
   innovation_redguard_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @es_redguard_1
@@ -829,6 +882,7 @@
  }
  #breton
   innovation_breton_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @misc_inventions
@@ -842,6 +896,7 @@
  #Nord
   @es_nord_1 = "gfx/interface/icons/culture_innovations/es_nord_1.dds"
   innovation_nord_build = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @es_nord_1
