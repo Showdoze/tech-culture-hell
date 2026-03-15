@@ -42,7 +42,7 @@ halfling = {
     name_list = name_list_hobbit
     coa_gfx = { irish_coa_gfx western_coa_gfx }
     building_gfx = { western_building_gfx }
-    clothing_gfx = { northern_clothing_gfx western_clothing_gfx  }
+    clothing_gfx = { welsh_clothing_gfx western_clothing_gfx }
     unit_gfx = { irish_unit_gfx }
     house_coa_frame = house_frame_04
     ethnicities = {
@@ -452,7 +452,7 @@ lizardmen = {
         tradition_music_theory
     }
     name_list = name_list_dwemer
-    coa_gfx = { israelite_group_coa_gfx byzantine_group_coa_gfx }
+    coa_gfx = { chinese_group_coa_gfx }
     building_gfx = { iranian_building_gfx } #ek_dwemer_building_gfx
     clothing_gfx = { iranian_clothing_gfx byzantine_clothing_gfx } #ek_dwemeri_clothing_gfx
     unit_gfx = { dwemer_unit_gfx }
@@ -586,7 +586,7 @@ orc_culture = {
     name_list = name_list_orc
     coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }
     building_gfx = { steppe_building_gfx }
-    clothing_gfx = { western_clothing_gfx mongol_clothing_gfx }
+    clothing_gfx = { mongol_clothing_gfx }
     unit_gfx = { morc_unit_gfx }
     house_coa_frame = house_frame_04
     ethnicities = {
@@ -799,7 +799,7 @@ fantasy_culture = {
     history_loc_override = mystery_history_loc
     ethos = ethos_bellicose
     heritage = heritage_fantasy
-    language = language_anglic
+    language = language_common
     martial_custom = martial_custom_equal
     head_determination = head_determination_domain
     traditions = {
@@ -1110,7 +1110,7 @@ fantasy_culture = {
     parents = { fantasy_culture }
 	ethos = ethos_stoic
 	heritage = heritage_fantasy #heritage_first_man
-	language = language_anglic #language_agot_westeros
+	language = language_common #language_agot_westeros
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
     traditions = {
@@ -1123,9 +1123,8 @@ fantasy_culture = {
 	}
 	coa_gfx = { norse_coa_gfx western_coa_gfx }
 	building_gfx = {  norse_building_gfx } #first_man_building_gfx
-	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx 
-		
-	} #northman_clothing_gfx northern_clothing_gfx first_man_clothing_gfx
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx } 
+    #northman_clothing_gfx northern_clothing_gfx first_man_clothing_gfx
 	unit_gfx = { northman_unit_gfx western_unit_gfx }
 	house_coa_frame = house_frame_andal1
 	house_coa_mask_offset = { 0.0 0.0 }
@@ -1133,6 +1132,32 @@ fantasy_culture = {
 	ethnicities = { 100 = Northmen_1 }
 	name_list = name_list_northman
  }
+ ironborn = {
+	color = { 0.46 0.44 0.40 }
+    parents = { fantasy_culture }
+	created = 10.1.1
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy #heritage_ironborn
+	language = language_common
+	martial_custom = martial_custom_male_only
+	traditions = {
+		#agot_tradition_ironborn
+		tradition_warriors_by_merit
+		tradition_eye_for_an_eye
+		tradition_seafaring
+	}
+	dlc_tradition = {
+		trait = tradition_fp1_performative_honour
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_hird
+	}
+	name_list = name_list_ironborn
+    coa_gfx = { norse_coa_gfx western_coa_gfx } #ironborn_coa_gfx
+    building_gfx = {  norse_building_gfx } #ironmen_building_gfx
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx } #ironborn_clothing_gfx
+	unit_gfx = { ironborn_unit_gfx }
+	ethnicities = { 10 = caucasian }
+}
  cimmerian = {
     color = high_valyrian
     created = 1.1.1
