@@ -1,0 +1,139 @@
+﻿tr_tiandi_legwear = {
+
+    usage = game
+    selection_behavior = weighted_random
+
+    tr_tiandi = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = legwear
+                template = tgp_chinese_war_legwear
+                accessory = m_legwear_sec_tgp_chinese_war_nob_02
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = tgp_chinese_war_legwear
+                accessory = m_legwear_sec_tgp_chinese_war_nob_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1
+                exists = this
+                exists = dynasty:tiandi
+                this.dynasty = dynasty:tiandi
+            }
+        }
+    }
+}
+
+tr_tiandi_clothes = {
+
+    usage = game
+    selection_behavior = weighted_random
+
+    tr_tiandi = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_war_nobility_clothes
+                accessory = m_clothes_sec_tgp_chinese_war_nob_02
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_war_nobility_clothes
+                accessory = m_clothes_sec_tgp_chinese_war_nob_01
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = ep3_byzantine_era2_war_nobility_clothes
+                accessory = m_clothes_sec_ep3_byzantine_era2_war_nob_01_hi
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1
+                exists = this
+                exists = dynasty:tiandi
+                this.dynasty = dynasty:tiandi
+            }
+        }
+    }
+}
+
+tr_tiandi_headgear = {
+
+    usage = game
+    selection_behavior = weighted_random
+
+    tr_tiandi = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = tgp_chinese_era2_war_nobility
+                accessory = m_headgear_sec_tgp_chinese_war_nob_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_war
+                accessory = m_headgear_sec_byzantine_war_nob_01_roy
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1
+                exists = this
+                exists = dynasty:tiandi
+                this.dynasty = dynasty:tiandi
+            }
+        }
+    }
+}
+
+tr_tiandi_cloak = {
+
+    usage = game
+    selection_behavior = weighted_random
+
+    tr_tiandi = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = ep1_cloak_adventurer
+                accessory = male_cloaks_secular_ep1_adventurer_01
+            }
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = no_cloak
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1
+                exists = this
+                exists = dynasty:tiandi
+                this.dynasty = dynasty:tiandi
+            }
+        }
+    }
+}
