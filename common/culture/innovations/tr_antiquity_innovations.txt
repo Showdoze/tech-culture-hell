@@ -390,6 +390,7 @@
 	flag = antiquity_era_regional
  }
  innovation_wootz_steel = {
+	skill = learning
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	region = world_india_deccan
@@ -417,9 +418,13 @@
 	can_progress = {
 		has_innovation = innovation_steel_work
 	}
+	custom = unlock_wind_furnaces
 	unlock_building = wind_furnace_01
 	flag = global_regional
 	flag = antiquity_era_regional
+	ai_weight_for_fascination = {
+		value = 100
+	}
  }
  innovation_nile_agriculture = {
 	group = culture_group_regional

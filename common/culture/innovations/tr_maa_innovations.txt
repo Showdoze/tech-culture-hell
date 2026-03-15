@@ -46,7 +46,6 @@ innovation_viking_tradition = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_hird = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -56,7 +55,6 @@ innovation_hird = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_forest_wardens = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -66,7 +64,6 @@ innovation_forest_wardens = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_futuwaa = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -76,7 +73,6 @@ innovation_futuwaa = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_mubarizuns = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -86,7 +82,6 @@ innovation_mubarizuns = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_hussar_raids = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -96,7 +91,6 @@ innovation_hussar_raids = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_mountain_skirmishing = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -106,7 +100,6 @@ innovation_mountain_skirmishing = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_bush_hunting = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -116,7 +109,6 @@ innovation_bush_hunting = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_sahel_horsemen = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -126,7 +118,6 @@ innovation_sahel_horsemen = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_zbrojnosh = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -136,7 +127,6 @@ innovation_zbrojnosh = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
 innovation_upland_skirmishing = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
@@ -146,10 +136,8 @@ innovation_upland_skirmishing = {
 	flag = global_regional
 	flag = tribal_era_regional
 }
-
-
-
 innovation_legionnaires = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_02
@@ -160,9 +148,20 @@ innovation_legionnaires = {
 	unlock_maa = praetorian
 	flag = global_regional
 	flag = antiquity_era_regional
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
-
 innovation_pole_vault = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_01
@@ -175,9 +174,13 @@ innovation_pole_vault = {
 		}
 	}
 	unlock_maa = guanch_vaulter
+	flag = global_maa
+	ai_weight_for_fascination = {
+		value = 100
+	}
 }
-
 innovation_compound_bows = {
+	skill = martial
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
 	icon = @special_maa_02
@@ -194,7 +197,6 @@ innovation_compound_bows = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
-
 innovation_mobile_guards = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -204,17 +206,6 @@ innovation_mobile_guards = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
-
-innovation_repeating_crossbow = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	icon = @special_maa_02
-	region = world_tibet
-	unlock_maa = chu_ko_nu
-	flag = global_regional
-	flag = antiquity_era_regional
-}
-
 innovation_tiger_riders = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -227,7 +218,6 @@ innovation_tiger_riders = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
-
 innovation_hoplites = {
 	group = culture_group_regional
 	culture_era = culture_era_antiquity
@@ -237,18 +227,6 @@ innovation_hoplites = {
 	flag = global_regional
 	flag = antiquity_era_regional
 }
-
-innovation_elephantry = {
-	group = culture_group_regional
-	culture_era = culture_era_antiquity
-	region = world_innovation_elephants
-	icon = @elephant
-	unlock_maa = war_elephant
-	custom = eligible_accolade_elephantry_attribute
-	flag = global_regional
-	flag = antiquity_era_regional
-}
-
 innovation_royal_army_tradition = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -262,17 +240,6 @@ innovation_royal_army_tradition = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
-innovation_caballeros = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @special_maa_01
-	region = world_europe_west_iberia
-	unlock_maa = caballero
-	flag = global_regional
-	flag = early_medieval_era_regional
-}
-
 innovation_cataphracts = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -282,7 +249,6 @@ innovation_cataphracts = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
 innovation_khandayats = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -292,7 +258,6 @@ innovation_khandayats = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
 innovation_druzhina = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -302,7 +267,6 @@ innovation_druzhina = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
 innovation_alpine_supremacy = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -312,7 +276,6 @@ innovation_alpine_supremacy = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
 innovation_desert_mountain_herding = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -322,94 +285,6 @@ innovation_desert_mountain_herding = {
 	flag = global_regional
 	flag = early_medieval_era_regional
 }
-
-innovation_pike_columns = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @special_maa_01
-	region = world_europe_south_italy
-	unlock_maa = picchieri
-	flag = global_regional
-	flag = high_medieval_era_regional
-}
-
-innovation_desert_tactics = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @special_maa_02
-	region = ghw_region_holy_land
-	character_modifier = {
-		martial = 1
-	}
-	unlock_maa = chasseur
-	flag = global_regional
-	flag = high_medieval_era_regional
-}
-
-innovation_hobbies = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @special_maa_02
-	region = ghw_region_celtic
-	unlock_maa = hobelar
-	flag = global_regional
-	flag = high_medieval_era_regional
-}
-
-innovation_sarawit = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @maa_02
-	region = ghw_region_ethiopia
-	unlock_maa = sarawit
-	flag = global_regional
-	flag = high_medieval_era_regional
-}
-
-innovation_rectilinear_schiltron = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @special_maa_01
-	region = ghw_region_celtic
-	unlock_maa = schiltron
-	flag = global_regional
-	flag = late_medieval_era_regional
-}
-
-innovation_zweihanders = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @special_maa_01
-	region = ghw_region_germany
-	unlock_maa = landsknecht
-	flag = global_regional
-	flag = late_medieval_era_regional
-}
-
-innovation_adaptive_militia = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @special_maa_02
-	region = custom_netherlands
-	character_modifier = {
-		martial = 1
-		advantage = 5
-	}
-	unlock_maa = goedendag
-	flag = global_regional
-	flag = late_medieval_era_regional
-}
-
-innovation_valets = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @special_maa_01
-	region = dlc_fp1_region_western_adventure_targets_northern_france_brittany
-	unlock_maa = gendarme
-	flag = global_regional
-	flag = late_medieval_era_regional
-}
-
 innovation_english_longbowmen = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval

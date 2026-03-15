@@ -33,7 +33,7 @@
 @metal_work = "gfx/interface/icons/culture_innovations/innovation_metal_work.dds"
 @innovation_horseshoes = "gfx/interface/icons/culture_innovations/innovation_horseshoes.dds"
 @med_farm = "gfx/interface/icons/culture_innovations/med_farm.dds"
-@gunpowder = "gfx/interface/icons/culture_innovations/gunpowder.dds"
+@gunpowder01 = "gfx/interface/icons/culture_innovations/gunpowder01.dds"
 @flamethrower = "gfx/interface/icons/culture_innovations/flamethrower.dds"
 
 
@@ -51,10 +51,11 @@ innovation_flame_thrower ={
 	}
 	unlock_maa = byz_flame_thrower
 }
-innovation_gunpowder = {
+innovation_gunpowder_01 = {
+	skill = learning
 	group = culture_group_military
 	culture_era = culture_era_early_medieval
-	icon = @gunpowder
+	icon = @gunpowder01
 
 	character_modifier = {
 		character_capital_county_monthly_development_growth_add = 0.01
@@ -64,65 +65,6 @@ innovation_gunpowder = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
-
-innovation_battlements = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @fortifications
-
-	custom = unlock_early_medieval_fortification_buildings	
-
-	custom = unlock_fortification_rights_contract
-
-	character_modifier = {
-		men_at_arms_maintenance = -0.1
-	}
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_mangonel = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @siege_weapons
-
-	unlock_maa = mangonel
-
-	custom = eligible_accolade_besieger_attribute
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_burhs = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @civil_construction_2
-
-
-	custom = unlock_early_medieval_military_buildings
-	custom = unlock_march_contract
-	character_modifier = {
-		levy_size = 0.1
-	}
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_horseshoes = {
-	group = culture_group_military
-	culture_era = culture_era_early_medieval
-	icon = @innovation_horseshoes
-
-	character_modifier = {
-		movement_speed = 0.25
-	}
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
 #civic
 innovation_number_of_days = {
 	group = culture_group_civic
@@ -137,21 +79,6 @@ innovation_number_of_days = {
 		learning = 1
     }
 }
-
-innovation_manorialism = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @fortifications
-	custom = unlock_early_medieval_economic_buildings
-	custom = more_parochial
-	character_modifier = {
-		build_speed = -0.15
-		stewardship = 1
-	}
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
 #culture_group_civic
 innovation_hoses = {
 	group = culture_group_civic
@@ -163,9 +90,9 @@ innovation_hoses = {
 	flag = global_regular
 	flag = early_medieval_era_regular
 }
-
 innovation_hereditary_rule = {
 	group = culture_group_civic
+	skill = diplomacy
 	culture_era = culture_era_early_medieval
 	icon = @majesty_02
 	character_modifier = {
@@ -175,9 +102,20 @@ innovation_hereditary_rule = {
 	}
 	flag = global_regular
 	flag = early_medieval_era_regular
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_early_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
-
 innovation_royal_prerogative = {
+	skill = diplomacy
 	group = culture_group_civic
 	culture_era = culture_era_early_medieval
 	icon = @majesty_01
@@ -189,10 +127,21 @@ innovation_royal_prerogative = {
 	}
 	flag = global_regular
 	flag = early_medieval_era_regular
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_early_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
-
 #Regional
 innovation_heavy_plough = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	region = world_europe_north
@@ -202,7 +151,6 @@ innovation_heavy_plough = {
 		supply_duration = 0.30
 	}
 }
-
 innovation_bimaristan = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -213,7 +161,6 @@ innovation_bimaristan = {
 		hard_casualty_modifier = -0.1
 	}
 }
-
 innovation_ordu = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -228,7 +175,6 @@ innovation_ordu = {
 		damage = 2
 	}
 }
-
 innovation_fatimid_meritocracy = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -241,7 +187,6 @@ innovation_fatimid_meritocracy = {
 		diplomacy = 1
 	}
 }
-
 innovation_iqta = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -251,7 +196,6 @@ innovation_iqta = {
 		domain_tax_mult = 0.1
 	}
 }
-
 innovation_resovoir_pens = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
@@ -264,116 +208,4 @@ innovation_resovoir_pens = {
 		intrigue = 1
 	}
 }
-
-innovation_development_02 = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @nobility_03
-
-	custom = reduce_develop_county_penalty_02
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_currency_02 = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @nobility_01
-
-	custom = unlock_coinage_rights_contract
-
-	character_modifier = {
-		development_growth_factor = 0.1
-	}
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_chronicle_writing = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @administration_3
-
-	unlock_casus_belli = individual_duchy_de_jure_cb
-	custom = multiple_claim_wars
-	custom = cb_discount_prestige_10
-	custom = more_zealot
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_armilary_sphere = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @misc_inventions
-
-	character_modifier = {
-		naval_movement_speed_mult = 0.25
-	}
-
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
-innovation_baliffs = {
-	group = culture_group_civic
-	culture_era = culture_era_early_medieval
-	icon = @leadership_1
-
-	county_modifier = {
-		building_slot_add = 1
-	}
-	character_modifier = {
-		tax_slot_add  = 1
-	}
-	custom = more_glory_hounds
-	flag = global_regular
-	flag = early_medieval_era_regular
-}
-
 #culture_group_regional
-innovation_reconquista = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	region = world_europe_west_iberia
-	icon = @leadership_2
-
-	custom = cb_discount_piety_10
-	custom = more_zealot
-	character_modifier = {
-		monthly_piety_gain_mult = 0.1
-	}
-
-	flag = global_regional
-	flag = early_medieval_era_regional
-}
-
-innovation_stem_duchies = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	region = custom_europe_western_germany
-	icon = @majesty_03
-
-	custom = same_culture_group_reduced_factionalism
-	character_modifier = {
-		courtly_opinion = 5
-	}
-
-	flag = global_regional
-	flag = early_medieval_era_regional
-}
-
-innovation_ghilman = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	region = world_middle_east_arabia
-	icon = @maa_02
-	character_modifier = {
-		men_at_arms_maintenance = -0.15
-	}
-	
-	flag = global_regional
-	flag = early_medieval_era_regional
-}
