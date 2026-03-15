@@ -31,26 +31,10 @@
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @plate_armor = "gfx/interface/icons/culture_innovations/plate_armor.dds"
 
-innovation_plate_armor = {
-	group = culture_group_military
-	culture_era = culture_era_late_medieval
-	icon =  @plate_armor
-	
-	maa_upgrade = {
-		type = heavy_infantry
-		toughness = 3
-	}
-	maa_upgrade = {
-		type = heavy_cavalry
-		toughness = 3
-	}
-
-	flag = global_regular
-	flag = late_medieval_era_regular
-}
 
 #culture_group_civic
 innovation_universe_rotation = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @misc_inventions
@@ -63,7 +47,6 @@ innovation_universe_rotation = {
 		learning = 2
     }
 }
-
 innovation_primogeniture = {
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
@@ -78,9 +61,20 @@ innovation_primogeniture = {
 	custom = more_zealot
 	flag = global_regular
 	flag = late_medieval_era_regular
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
-
 innovation_magna_carta = {
+	skill = diplomacy
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_europe_west_britannia
@@ -90,7 +84,6 @@ innovation_magna_carta = {
 		direct_vassal_opinion = 15
 	}
 }
-
 innovation_yassa = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
@@ -102,8 +95,8 @@ innovation_yassa = {
 		diplomacy = 1
 	}
 }
-
 innovation_mali_trade = {
+	skill = stewardship
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	region = world_africa_west
@@ -114,7 +107,6 @@ innovation_mali_trade = {
 		stewardship = 1
 	}
 }
-
 innovation_mudejar_art = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
@@ -127,7 +119,6 @@ innovation_mudejar_art = {
 	flag = global_regional
 	flag = late_medieval_era_regional
 }
-
 innovation_shahna_i_mandi = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
@@ -137,7 +128,6 @@ innovation_shahna_i_mandi = {
 		army_maintenance_mult = -0.10
 	}
 }
-
 innovation_russkaya_pravda = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval

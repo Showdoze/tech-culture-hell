@@ -35,21 +35,8 @@
 @samuraib = "gfx/interface/icons/culture_innovations/inn_samuraib.dds"
 
 #CIVIC#
-innovation_heraldry = {
-	group = culture_group_civic
-	culture_era = culture_era_high_medieval
-	icon = @raised_banner
-	custom = more_courtly
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.2
-		intrigue = 1
-		dynasty_opinion = 5
-	}
-	flag = global_regular
-	flag = high_medieval_era_regular
-}
-
 innovation_earth_chart = {
+	skill = learning
 	group = culture_group_civic
 	culture_era = culture_era_high_medieval
 	icon = @misc_inventions
@@ -73,7 +60,6 @@ innovation_wheelbarrow = {
 		build_speed = -0.05
 	}
 }
-
 innovation_exechequer = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
@@ -85,7 +71,6 @@ innovation_exechequer = {
 		stewardship = 1
 	}
 }
-
 innovation_eyres = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
@@ -96,7 +81,6 @@ innovation_eyres = {
 		vassal_tax_contribution_mult = 0.1
 	}
 }
-
 innovation_cannon_of_medicine = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
@@ -109,7 +93,6 @@ innovation_cannon_of_medicine = {
 		epidemic_resistance = 5
 	}
 }
-
 innovation_madrasa = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
@@ -119,7 +102,6 @@ innovation_madrasa = {
 		learning = 2
 	}
 }
-
 innovation_pernach  = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
