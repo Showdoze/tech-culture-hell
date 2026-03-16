@@ -1,0 +1,290 @@
+tradition_valyrian = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = valyrian.dds
+	}	
+	is_shown = { always = no }
+	parameters = {
+		tells_stories = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		craven_trait_costs_prestige = yes
+		extra_language_cap = yes
+		wants_to_learn_liege_language = yes
+		extra_learn_language_success_chance_vs_liege = yes
+		learns_more_languages = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		eunuch_trait_bonuses = yes
+		can_appoint_chief_eunuch = yes
+		pardoning_gives_loyalty = yes
+		better_disease_resistance = yes
+        cheaper_tour_activity = yes
+	}
+	county_modifier = {
+	}
+	province_modifier = {
+		levy_size = -0.25
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 1
+		health = 0.1
+		inbreeding_chance = -5
+        different_culture_opinion = 10
+	}	
+	cost = { prestige = 9000 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_north = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = fierce_independence.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		bossy_trait_more_common = yes
+		winter_trait_bonuses = yes
+		disloyal_looked_down_upon = yes
+		winter_soldier_trait_more_common = yes
+		diligent_trait_more_common = yes
+		reduced_marriage_acceptance_outside_culture = yes
+		wanderers_gain_extra_combat_skills = yes
+	}
+	character_modifier = {
+		diplomatic_range_mult = -0.15
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_northmen = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = king.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_winter_wolves = yes
+		better_ward_education = yes
+		better_blacksmith_buildings = yes
+		control_gain_on_building_complete = yes
+	}
+	character_modifier = {
+		vassal_opinion = 10
+		heavy_infantry_damage_mult = 0.1
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+agot_tradition_ironborn = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = swords.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		rowdy_trait_more_common = yes
+		pensive_trait_less_common = yes
+		gain_gold_from_battles = yes
+		culture_can_raid_at_sea_even_if_feudal_no_restrictions = yes
+		zealous_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+		unlock_maa_reavers = yes
+	}
+	character_modifier = {
+		max_loot_mult = 0.5
+		embarkation_cost_mult = -0.50
+		ai_greed = 20
+		ai_war_chance = 0.25
+		ai_war_cooldown = -0.25
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_crannogmen = {
+	category = regional
+	layers = {
+		0 = learning
+		1 = western
+		4 = crown.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_frog_spears = yes
+		greensight_more_common = yes
+		bog_hunt_success_chance = yes
+	}
+	character_modifier = {
+		opinion_of_liege = 10
+		monthly_county_control_growth_add = 0.3
+		controlled_province_advantage = 5
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_riverlands = {
+	category = regional
+	layers = {
+		0 = steward
+		1 = western
+		4 = water_technology.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		charming_trait_more_common = yes
+		wetlands_trait_bonuses = yes
+		forder_trait_more_common = yes
+		arbitrary_trait_looked_down_upon = yes
+		just_trait_more_common = yes
+		wanderers_gain_extra_diplomacy_skills = yes
+	}
+	character_modifier = {
+		legitimacy_gain_mult = -0.15
+		no_water_crossing_penalty = yes
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_rivermen_main = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = western
+		4 = conversation.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_river_bows = yes
+		just_trait_more_valued = yes
+		rivalries_more_common = yes
+		watermills_without_innovations_unlock = yes
+		better_watermill_bonuses = yes
+	}
+	character_modifier = {
+		archers_toughness_mult = 0.1
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_westerman = {
+	category = regional
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = king.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		peasant_and_populist_factions_less_common = yes
+		quarries_building_bonuses = yes
+		can_build_quarries_everywhere = yes
+		unlock_maa_rain_bringers = yes
+	}
+	character_modifier = {
+		dread_per_tyranny_add = 0.3
+		dread_decay_mult = -0.3
+		revolting_siege_morale_loss_mult = 0.25
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_reachman = {
+	category = regional
+	layers = {
+		0 = steward
+		1 = mediterranean
+		4 = tools.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		enable_garden_duchy_building = yes
+		can_appoint_court_gardener = yes
+		can_recruit_gardeners = yes
+		close_family_better_councillors = yes
+		close_family_better_court_positions = yes
+		unlock_maa_summer_knights = yes
+		coastal_agriculture_building_bonuses = yes
+		coastal_holding_bonuses = yes
+	}
+	character_modifier = {
+		close_relative_opinion = 10
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_honeywiner = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = food.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		more_frequent_feasts = yes
+		reveler_traits_more_common = yes
+		reveler_traits_more_valued = yes
+		herbalist_traits_more_common = yes
+		unlock_maa_honeywine_quirrels = yes
+		coastal_agriculture_building_bonuses = yes
+		coastal_holding_bonuses = yes
+	}
+	character_modifier = {
+		negate_health_penalty_add = 0.15
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_vale = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = mountain.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		bossy_trait_more_common = yes
+		mountain_trait_bonuses = yes
+		rough_terrain_expert_trait_more_common = yes
+		gluttonous_looked_down_upon = yes
+		brave_trait_more_common = yes
+		wanderers_gain_extra_combat_skills = yes
+	}
+	character_modifier = {
+		liege_opinion = 15
+		councillor_opinion = -35
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_valemen_main = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = knight.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_winged_knights = yes
+		better_farm_estates_bonuses = yes
+		guardians_add_more_prowess_to_wards = yes
+		knight_trait_more_valued = yes
+	}
+	character_modifier = {
+		heavy_cavalry_toughness_mult = 0.1
+		castle_holding_holding_build_speed = -0.1
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+

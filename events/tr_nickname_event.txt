@@ -671,12 +671,130 @@ tr_nickname_event.01 = {
 			base = 1
             modifier = {
 				add = 1
-				has_trait = callous
+				has_trait = ambitious
 			}
             modifier = {
 				add = 1
 				has_trait = arbitrary
 			}
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_snow
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                OR = {
+                    culture = culture:northman
+                    culture = culture:crannogman
+                }    
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_snow }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_pyke
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:ironborn  
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_pyke }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_sand
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:ironborn  
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_sand }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_flowers
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                OR = {
+                    culture = culture:reachman 
+                    culture = culture:honeywiner 
+                } 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_flowers }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_rivers
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:riverman_main 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_rivers }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_hill
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:westerman_main 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_hill }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name = nick_name_giver_nick_stone
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:valeman_main 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_stone }
+        ai_chance = {
+			base = 1
 		}
     }
  #
