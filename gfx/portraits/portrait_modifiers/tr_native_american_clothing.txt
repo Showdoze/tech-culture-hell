@@ -18,7 +18,7 @@
             modifier = {
                 add = 100
                 exists = this
-                this.culture = { has_cultural_pillar = heritage_native_american }
+                this.culture = { has_cultural_pillar = heritage_native_american } #always proc for native americans
             }
         }
     }
@@ -26,6 +26,7 @@
 
 tr_native_american_hair = {
 
+    usage = game
     priority = 10
 
     tr_na_long_hair_1 = {
@@ -33,14 +34,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = northern_hairstyles_straight
-                range = { 0 1 }
+                template = northern_hairstyles_wavy
+                accessory = male_hair_northern_01
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -51,14 +52,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_fp1_05
+                template = northern_hairstyles_straight
+                accessory = male_hair_northern_02
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 1000
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -69,14 +70,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = m_hair_fp3_iranian_01
+                template = rtt_hairstyles
+                accessory = male_hair_rtt_01
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -87,14 +88,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = m_hair_fp3_iranian_02
+                template = fp1_hairstyles_straight
+                accessory = male_hair_fp1_08
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -105,14 +106,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_fp2_iberian_muslim_03
+                template = fp3_hairstyles_iranian_straight
+                accessory = m_hair_fp3_iranian_01
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -123,14 +124,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_fp2_iberian_christian_03
+                template = fp3_hairstyles_turkic_straight
+                accessory = m_hair_fp3_iranian_02
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -141,14 +142,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_fp1_08
+                template = fp3_hairstyles_iranian_straight
+                accessory = m_hair_fp3_iranian_03
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -159,14 +160,14 @@ tr_native_american_hair = {
             accessory = {
                 mode = add
                 gene = hairstyles
-                template = all_hairstyles
-                accessory = male_hair_western_07
+                template = tgp_southeast_hairstyles
+                accessory = male_hair_fp2_iberian_muslim_03
             }
         }
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -176,6 +177,7 @@ tr_native_american_hair = {
 
 tr_native_american_clothing = {
 
+    usage = game
     priority = 10
 
     tr_na_clothing_1 = {
@@ -190,7 +192,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -208,7 +210,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 200
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -226,7 +228,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 300
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -244,7 +246,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 400
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -263,7 +265,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this = female
                 this.culture = { has_cultural_pillar = heritage_native_american }
@@ -283,7 +285,7 @@ tr_native_american_clothing = {
         weight = {
             base = 0
             modifier = {
-                add = 200
+                add = 20
                 exists = this
                 this = female
                 this.culture = { has_cultural_pillar = heritage_native_american }
@@ -294,6 +296,7 @@ tr_native_american_clothing = {
 
 tr_native_american_headgear = {
 
+    usage = game
     priority = 10
 
     tr_na_headgear_1 = {
@@ -308,7 +311,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -326,7 +329,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 200
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -345,7 +348,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this= female
                 this.culture = { has_cultural_pillar = heritage_native_american }
@@ -365,7 +368,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 200
+                add = 20
                 exists = this
                 this = female
                 this.culture = { has_cultural_pillar = heritage_native_american }
@@ -385,7 +388,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 300
+                add = 20
                 exists = this
                 this = female
                 this.culture = { has_cultural_pillar = heritage_native_american }
@@ -404,7 +407,7 @@ tr_native_american_headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
@@ -414,6 +417,7 @@ tr_native_american_headgear = {
 
 tr_native_american_legwear = {
 
+    usage = game
     priority = 10
 
     tr_na_legwear_1 = {
@@ -428,7 +432,25 @@ tr_native_american_legwear = {
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 20
+                exists = this
+                this.culture = { has_cultural_pillar = heritage_native_american }
+            }
+        }
+    }
+    tr_na_legwear_2 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = legwear
+                template = afr_common_legwear
+                accessory = m_legwear_sec_afr_common_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20
                 exists = this
                 this.culture = { has_cultural_pillar = heritage_native_american }
             }
