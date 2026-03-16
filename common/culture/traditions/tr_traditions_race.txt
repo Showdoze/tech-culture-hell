@@ -640,43 +640,6 @@ tradition_athens = {
 	cost = { prestige = 9000 }
 	ai_will_do = { value = 0 }
 }
-tradition_valyrian = {
-	category = regional
-	layers = {
-		0 = martial
-		1 = mediterranean
-		4 = valyrian.dds
-	}	
-	is_shown = { always = no }
-	parameters = {
-		tells_stories = yes
-		dislikes_marrying_outside_of_culture = yes
-		ai_doesnt_marry_outside_culture = yes
-		craven_trait_costs_prestige = yes
-		extra_language_cap = yes
-		wants_to_learn_liege_language = yes
-		extra_learn_language_success_chance_vs_liege = yes
-		learns_more_languages = yes
-		can_blind_prisoners = yes
-		can_castrate_prisoners = yes
-		eunuch_trait_bonuses = yes
-		can_appoint_chief_eunuch = yes
-		pardoning_gives_loyalty = yes
-		better_disease_resistance = yes
-	}
-	county_modifier = {
-	}
-	province_modifier = {
-		levy_size = -0.25
-	}
-	character_modifier = {
-		knight_effectiveness_mult = 1
-		health = 0.1
-		inbreeding_chance = -5
-	}	
-	cost = { prestige = 9000 }
-	ai_will_do = { value = 0 }
-}
 tradition_punnic = {
 	category = regional
 	layers = {
