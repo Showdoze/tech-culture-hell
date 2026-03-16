@@ -117,6 +117,116 @@ Tall_1 = {
 	178.1.1 = { birth = yes }
 	236.1.1 = { death = yes }
   }
+ #MANDERLY
+  Manderly_71 = {
+	name = Marlon # Mentioned, quarreled with Lord Peake and accepted judgment of Gwayne III
+	dynasty = dynn_Manderly
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	trait = education_martial_2
+	trait = arrogant
+	trait = greedy
+	trait = wrathful
+	trait = trusting
+	trait = bossy
+	disallow_random_traits = yes
+	250.1.1 = { birth = yes }
+	230.1.1 = { death = yes }
+  } 
+  Manderly_6 = {
+	name = Wyman # Canon, AKA: Lord Lamprey, a lord
+	dynasty = dynn_Manderly
+	martial = 6
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 9
+	learning = 6
+	prowess = 3
+	religion = dark_souls_faith #fots_seven
+	culture = harborman
+	sexuality = heterosexual
+	father = Manderly_71
+	#father = Manderly_2
+	#mother = FlintFC_62
+	trait = education_intrigue_3
+	trait = charming
+	trait = gluttonous
+	trait = generous
+	trait = patient
+	trait = vengeful
+	disallow_random_traits = yes
+	812.1.1 = { birth = yes }
+	850.1.1 = {
+		give_nickname = nick_agot_historical_the_lord_lamprey
+		effect = {
+			change_current_weight = 50
+			target_weight_modifier_effect = { VALUE = 50 }
+		}
+	}
+	869.12.15 = { # Red Wedding
+		effect = { # Wendel killed, hostile toward Boltons and Freys
+			if = {
+				limit = { character:Bolton_1 = { is_alive = yes } }
+				add_opinion = {
+					modifier = murdered_close_family_crime
+					target = character:Bolton_1 # Roose Bolton
+				}
+			}
+			if = {
+				limit = { character:Frey_1 = { is_alive = yes } }
+				add_opinion = {
+					modifier = murdered_close_family_crime
+					target = character:Frey_1 # Walder Frey
+				}
+			}
+		}
+	}
+	900.1.1 = { death = { death_reason = death_battle } }
+ }
+  Manderly_7 = {
+	name = Wylis # Canon
+	dynasty = dynn_Manderly
+	religion = dark_souls_faith #fots_seven
+	culture = harborman
+	father = Manderly_6
+	#mother = FlintFC_81
+	trait = education_diplomacy_2
+	trait = compassionate
+	trait = patient
+	trait = gluttonous
+	trait = charming
+	disallow_random_traits = yes
+	832.1.1 = { birth = yes }
+	850.1.1 = {
+		effect = {
+			change_current_weight = 50
+			target_weight_modifier_effect = { VALUE = 50 }
+		}
+	}
+	900.1.1 = { death = { death_reason = death_battle } }
+ }
+  Manderly_8 = {
+	name = Wendel # Canon
+	dynasty = dynn_Manderly
+	dna = Manderly_8
+	religion = dark_souls_faith #fots_seven
+	culture = harborman
+	father = Manderly_6
+	#mother = FlintFC_81
+	trait = education_martial_2
+	trait = just
+	trait = gluttonous
+	trait = brave
+	trait = charming
+	disallow_random_traits = yes
+	834.1.1 = { birth = yes }
+	869.12.15 = {
+		death = {
+			death_reason = death_bloody_wedding # The Red Wedding
+			killer = Frey_1 # Walder Frey
+		}
+	}
+  }
  #UMBER 
   Umber_110 = {
 	name = Hoarfrost # Last Umber King
@@ -153,7 +263,7 @@ Tall_1 = {
 	name = Brandon # a lord
 	dynasty = dynn_Umber
 	dna = Umber_2
-	religion = old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	father = Umber_1
 	mother = FlintFF_19
@@ -284,7 +394,7 @@ Tall_1 = {
 		}
 	}
   }
-  #stark
+ #stark
    Stark_12 = {
 	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
 	dynasty = dynn_Stark
@@ -536,7 +646,7 @@ Tall_1 = {
 		death = { death_reason = death_vanished }
 	}
   }
-  #Bolten
+ #Bolten
    Bolton_6 = {
 	name = Royce # I
 	dynasty = dynasty_Bolton
@@ -546,7 +656,7 @@ Tall_1 = {
 	48.1.1 = { birth = yes }
 	197.1.1 = { death = yes }
    }
-   tr_agot_Roose_Bolton = {
+   Bolton_1 = {
 	name = "Roose Bolton"
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
@@ -567,7 +677,7 @@ Tall_1 = {
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
-	father = tr_agot_Roose_Bolton
+	father = Bolton_1
 	#dna = Ramsay_Bolton_Iwan_Rheon
 	trait = education_diplomacy_3
     trait = generous
@@ -600,7 +710,7 @@ Tall_1 = {
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
-	father = tr_agot_Roose_Bolton
+	father = Bolton_1
 	mother = tr_agot_Ramsay_Bolton_mom
 	dna = Ramsay_Bolton_Iwan_Rheon
 	trait = education_intrigue_3
@@ -624,7 +734,7 @@ Tall_1 = {
 	dna = Tully_10
 	prowess = 9
 	religion = norse_pagan #old_gods_wnw
-	culture = fantasy_culture #first_man
+	culture = first_man
 	trait = education_martial_2
 	trait = intellect_good_2
 	trait = brave
@@ -1104,7 +1214,7 @@ Tall_1 = {
 	name = Humfrey # First Bracken King
 	dynasty = dynn_Bracken
 	religion = norse_pagan #old_gods_wnw
-	culture = fantasy_culture #first_man
+	culture = first_man
 	trait = education_martial_2
 	trait = physique_good_1
 	trait = wrathful
@@ -1137,7 +1247,7 @@ Tall_1 = {
 	name = Jon # Last Blackwood King of Wolfswood
 	dynasty = dynn_Blackwood
 	religion = norse_pagan #old_gods_wnw
-	culture = fantasy_culture #first_man
+	culture = first_man
 	trait = education_intrigue_2
 	trait = intellect_good_1
 	trait = diligent
@@ -1365,7 +1475,7 @@ Tall_1 = {
 	dynasty = dynn_Lannister
 	#dna = Lannister_29
 	religion = norse_pagan #old_gods_wnw
-	culture = fantasy_culture #first_man
+	culture = first_man
 	trait = education_intrigue_4
 	trait = intellect_good_3
 	trait = deceitful
@@ -1986,6 +2096,163 @@ Tall_1 = {
 	#7846.1.1 = { add_spouse = Falwell_rs_6 }
 	872.1.1 = { death = yes } #7872
    }
+#reach
+ Gardener_1 = {
+	name = Garth # Canon, AKA: Greenhand
+	dynasty = dynn_Gardener
+	learning = 9
+	religion = green_cult #fg_pan_garth
+	culture = first_man
+	trait = education_stewardship_4
+	trait = greensight
+	trait = patient
+	trait = zealous
+	trait = diligent
+	trait = charming
+	trait = lustful
+	trait = family_first
+	trait = lifestyle_gardener
+	disallow_random_traits = yes
+	give_nickname = nick_greenhand
+	2.1.1 = { birth = yes }
+	199.1.1 = { death = yes }
+}
+ Tyrell_40 = {
+	name = Alester # Canon, a lord, founder
+	dynasty = dynn_Tyrell
+	stewardship = 8
+	prowess = 9
+	religion = fots_seven
+	culture = andal
+	trait = education_stewardship_3
+	trait = lifestyle_blademaster
+	trait = generous
+	trait = just
+	490.1.1 = { birth = yes  }
+	555.1.1 = { death = yes }
+ }
+#VALE 
+ Redfort_6 = {
+	name = Royce # Mentioned, a lord
+	dynasty = dynn_Redfort
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	60.1.1 = { birth = yes }
+	120.1.1 = {
+		trait = maimed
+		death = {
+			death_reason = death_battle # Battle of the Seven Stars
+			#killer = Tollett_7 # Torgold Tollett
+		}
+	}
+ }
+  Wydman_7 = {
+	name = Lucas # Mentioned, a lord, defeated five knights from greatest houses of the Vale and Westerlands in a tourney
+	dynasty = dynn_Wydman
+	prowess = 9
+	religion = fots_seven
+	culture = valeman_main
+	trait = education_martial_prowess_4
+	trait = gallant
+	trait = lifestyle_blademaster
+	730.1.1 = { birth = yes }
+	795.1.1 = { death = yes }
+ }
+ #ARRYN
+  Arryn_15 = {
+	name = Artys # Canon, AKA: The Falcon Knight, a lord
+	dynasty = dynn_Arryn
+	#dna = Arryn_15
+	martial = 7
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 4
+	prowess = 12
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main
+	trait = education_martial_4
+	trait = education_martial_prowess_4
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = gregarious
+	trait = bossy
+	give_nickname = nick_agot_historical_the_falcon_knight
+	disallow_random_traits = yes
+	450.1.1 = { birth = yes } #light_blue_eyes light_blonde_hair
+	500.1.1 = { death = yes }
+  }
+  Arryn_3 = {
+	name = Jon # Canon, THE Jon Arryn, a lord
+	dynasty = dynn_Arryn
+	#dna = Arryn_3
+	martial = 9
+	diplomacy = 9
+	intrigue = 5
+	stewardship = 6
+	learning = 6
+	prowess = 6
+	health = 7.5
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main
+	sexuality = asexual
+	father = Arryn_15
+	#father = Arryn_1
+	#mother = Egen_56
+	trait = education_diplomacy_4
+	trait = education_martial_prowess_2
+	trait = just
+	trait = trusting
+	trait = honest
+	trait = diligent
+	trait = pensive
+	disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	860.5.1 = { add_spouse = Tully_6 }  # Lysa Tully
+	868.2.24 = {
+		death = {
+			death_reason = death_poison
+			killer = Tully_6 # Lysa Tully
+		}
+	}
+  }
+  Arryn_8 = {
+	name = Robert # Canon, AKA: Sweetrobin, a lord
+	dynasty = dynn_Arryn
+	martial = 1
+	diplomacy = 2
+	intrigue = 1
+	stewardship = 2
+	learning = 2
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main
+	father = Arryn_3
+	mother = Tully_6 # Lysa Tully
+	trait = education_diplomacy_1
+	trait = stuttering
+	trait = physique_bad_3
+	trait = sickly
+	trait = pensive
+	trait = paranoid
+	trait = wrathful
+	trait = craven
+	disallow_random_traits = yes
+	860.1.1 = { birth = yes }
+	867.2.24 = { effect = { add_prestige = 700 } }
+	950.1.1 = { death = { death_reason = death_poison }}
+  }
+
+ #Royce
+  Royce_11 = {
+	name = Yorwyck # I
+	dynasty = dynn_Royce
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	18.1.1 = { birth = yes }
+	58.1.1 = { death = yes }
+ }   
+ #
 #TARGARYEN   
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
@@ -2884,4 +3151,4 @@ Tall_1 = {
 	880.1.1 = { birth = yes }
     980.1.1 = { death = { death_reason = death_old_age } }
  }
-#
+#DORNE
