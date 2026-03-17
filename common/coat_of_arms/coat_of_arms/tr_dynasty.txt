@@ -1279,7 +1279,50 @@ nes = {
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
 	}
 }
+ dynn_Hightower = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_smoke"
+	color2 = "agot_white"
+	colored_emblem = {
+		texture = "re_hightower_1.dds"
+		color1 = "agot_white"
+		color2 = "agot_white"
+		instance = { position = { 0.5 0.525 } scale = { 1.0 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "re_hightower_2.dds"
+		color1 = "agot_orange"
+		color2 = "agot_red"
+		instance = { position = { 0.5 0.525 } scale = { 1.0 1.0 }  }
+	}
+}
+ house_Oldflowers = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_green"
+	color2 = "agot_white"
+	colored_emblem = {
+		texture = "ce_hand_alt.dds"
+		color1 = "agot_white"
+		instance = { position = { 0.5 0.79 } scale = { 0.35 0.35 }  } #bottom
 
+		instance = { position = { 0.61 0.59 } scale = { 0.35 0.35 }  } #bottom 2
+		instance = { position = { 0.39 0.59 } scale = { 0.35 0.35 }  } #bottom 2
+
+		instance = { position = { 0.72 0.39 } scale = { 0.35 0.35 }  } #top 3
+		instance = { position = { 0.5 0.39 } scale = { 0.35 0.35 }  } #top 3
+		instance = { position = { 0.28 0.39 } scale = { 0.35 0.35 }  } #top 3
+
+		instance = { position = { 0.83 0.19 } scale = { 0.35 0.35 }  } #top 4
+		instance = { position = { 0.61 0.19 } scale = { 0.35 0.35 }  } #top 4
+		instance = { position = { 0.39 0.19 } scale = { 0.35 0.35 }  } #top 4
+		instance = { position = { 0.17 0.19 } scale = { 0.35 0.35 }  } #top 4
+	}
+	colored_emblem = {
+		texture = "ce_bend_thin.dds"
+		color1 = "agot_red"
+		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 }  }
+	}
+}
 # 
 house_pirate = { #pirate
 	pattern = "pattern_solid.dds"

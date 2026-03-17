@@ -38,7 +38,8 @@
 	trait = education_intrigue_2
 	trait = intellect_good_1
 	847.1.1 = { birth = yes}
-	900.1.1 = { employer = Baelish_2 } # Petyr Baelish
+	860.1.1 = { employer = Baelish_2 } # Petyr Baelish
+	900.1.1 = { death = yes }
  }
 #Iron BORN
  Grey_King_1 = {
@@ -503,6 +504,38 @@
 	851.7.9 = {
 		death = {
 			death_reason = death_wildfire_killer # Burned alive in his armor
+			#killer = Targaryen_1 # Aerys II Targaryen
+		}
+	}
+   }
+   Stark_2 = {
+	name = Brandon # Canon, a lord
+	dynasty = dynn_Stark
+	dna = Stark_2
+	martial = 6
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 6
+	learning = 4
+	prowess = 9
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	sexuality = heterosexual
+	father = Stark_1
+	#mother = Stark_127
+	trait = education_martial_2
+	trait = rowdy
+	trait = lifestyle_blademaster
+	trait = strong
+	trait = wrathful
+	trait = authoritative
+	trait = brave
+	trait = arrogant
+	disallow_random_traits = yes
+	822.1.1 = { birth = yes }
+	851.7.9 = {
+		death = {
+			death_reason = death_execution # Strangled
 			#killer = Targaryen_1 # Aerys II Targaryen
 		}
 	}
@@ -2108,7 +2141,17 @@
 	872.1.1 = { death = yes } #7872
    }
 #reach
- Gardener_1 = {
+ Florent_17 = {
+	name = Reynard # Mentioned, first husband of Florys the Fox, founder
+	dynasty = dynn_Florent
+	dna = Florent_17
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	180.1.1 = {birth = yes }
+	250.1.1 = { death = yes }
+}
+ #GARDENERS
+  Gardener_1 = {
 	name = Garth # Canon, AKA: Greenhand
 	dynasty = dynn_Gardener
 	learning = 9
@@ -2127,13 +2170,215 @@
 	give_nickname = nick_greenhand
 	2.1.1 = { birth = yes }
 	199.1.1 = { death = yes }
-}
- Tyrell_40 = {
+ }
+  Gardener_4 = {
+	name = Garth # Canon, Garth II the Gardener, founder, firstborn of Garth the Green
+	dynasty = dynn_Gardener
+	learning = 8
+	diplomacy = 13
+	martial = 7
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1
+	trait = education_stewardship_4
+	trait = greensight
+	trait = intellect_good_1
+	trait = just
+	trait = diligent
+	trait = zealous
+	trait = authoritative
+	trait = bossy
+	trait = lifestyle_gardener
+	disallow_random_traits = yes
+	give_nickname = nick_the_gardener
+	180.1.1 = {birth = yes }
+	255.1.1 = { death = yes }
+ }
+  Gardener_6 = {
+	name = Gwayne # Canon, Gwayne I the Gallant
+	dynasty = dynn_Gardener
+	diplomacy = 13
+	martial = 7
+	prowess = 10
+	religion = old_gods_wnw
+	culture = first_man
+	father = Gardener_4 # Garth the Gardener
+	trait = education_martial_3
+	trait = brave
+	trait = arrogant
+	trait = rowdy
+	trait = gallant
+	disallow_random_traits = yes
+	give_nickname = nick_the_gallant
+	210.1.1 = {birth = yes}
+	300.1.1 = { death = yes }
+ }
+  Gardener_2 = {
+	name = Florys # Canon, AKA: the Fox, Florent, Peake and Ball founder
+	dynasty = dynn_Gardener
+	female = yes
+	diplomacy = 15
+	intrigue = 12
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_intrigue_4
+	trait = intellect_good_3
+	trait = deceitful
+	trait = charming
+	trait = lustful
+	disallow_random_traits = yes
+	give_nickname = nick_the_fox
+	183.1.1 = {birth = yes }
+	240.1.1 = { death = yes }
+ }
+  Gardener_3 = {
+	name = Brandon # Canon, Of the Bloody Blade, allegedly Stark founder
+	dynasty = dynn_Gardener
+	learning = 8
+	diplomacy = 13
+	martial = 7
+	prowess = 24
+	religion = old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_martial_2
+	trait = education_martial_prowess_5
+	trait = greensight
+	trait = intellect_good_1
+	trait = rowdy
+	trait = torturer
+	trait = diligent
+	trait = zealous
+	trait = authoritative
+	trait = wrathful
+	trait = lifestyle_blademaster_3_history
+	give_nickname = nick_agot_historical_of_the_bloody_blade
+	disallow_random_traits = yes
+	186.1.1 = {birth = yes }
+	258.1.1 = { death = yes }
+ }
+  Gardener_5 = {
+	name = Maris # Canon, Maris the Maid, married Uthor Hightower
+	dynasty = dynn_Gardener
+	female = yes
+	dna = Gardener_5
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1
+	trait = education_diplomacy_3
+	trait = chaste
+	trait = temperate
+	trait = compassionate
+	trait = beauty_good_2
+	trait = deceitful
+	trait = charming
+	disallow_random_traits = yes
+	give_nickname = nick_the_maid
+	184.1.1 = {	birth = yes }
+	250.1.1 = { death = yes }
+ }
+  Gardener_11 = {
+	name = Garth # Canon, Garth III the Great, persuaded Oakheart, Crane and Rowan to swear fealty to him
+	dynasty = dynn_Gardener
+	diplomacy = 10
+	martial = 14
+	religion = old_gods_wnw
+	culture = first_man
+	father = Gardener_6 #Gardener_9
+	trait = education_diplomacy_4
+	trait = just
+	#trait = authoritative
+	trait = organizer
+	trait = compassionate
+	trait = ambitious
+	trait = bossy
+	disallow_random_traits = yes
+	give_nickname = nick__the_great
+	300.1.1 = {birth = yes}
+	400.1.1 = { death = yes }
+ }
+  Gardener_95 = {
+	name = Mern # Canon, Mern IX, died on the Field of Fire
+	dynasty = dynn_Gardener
+	martial = 5
+	prowess = 6
+	religion = fots_seven
+	culture = reachman
+	father =  Gardener_11 #Gardener_90
+	#mother = Fossoway_17
+	trait = education_martial_2
+	trait = arrogant
+	trait = brave
+	749.1.1 = {birth = yes}
+	800.5.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire # Field of Fire
+			killer = tr_tar_1 # Aegon I Targaryen
+		}
+	}
+  }
+  Oldflowers_4 = {
+	name = Garth # a lord, bastard of garth Gardener
+	dynasty = dynn_Gardener
+	religion = fots_seven
+	culture = reachman
+	father = Gardener_95 #Gardener_79
+	trait = bastard
+	841.1.1 = {
+		birth = yes
+		dynasty_house = house_Oldflowers
+	}
+	920.1.1 = { death = yes }
+  }
+ #Redwyne
+  Redwyne_1 = {
+	name = Denys # a lord
+	dynasty = dynn_Redwyne
+	religion = dark_souls_faith #fots_seven
+	culture = vineman
+	father = Redwyne_43
+	mother = Royce_79
+	750.1.1 = { birth = yes }
+	820.1.1 = { death = yes }
+  }
+  Redwyne_2 = {
+	name = Olenna # Canon, AKA: Queen of Thorns, married Luthor Tyrell
+	dynasty = dynn_Redwyne
+	female = yes
+	#dna = Redwyne_2
+	martial = 2
+	diplomacy = 8
+	intrigue = 10
+	stewardship = 5
+	health = 7
+	religion = dark_souls_faith #fots_seven
+	culture = vineman
+	father = Redwyne_43
+	mother = Royce_79
+	trait = education_intrigue_4
+	trait = intellect_good_2
+	trait = diligent
+	trait = authoritative
+	trait = bossy
+	trait = family_first
+	trait = ambitious
+	trait = cynical
+	disallow_random_traits = yes
+	798.1.1 = { birth = yes }
+	842.1.1 = {
+		give_nickname = nick_agot_historical_the_queen_of_thorns
+		employer = Tyrell_8 # Mace Tyrell
+	}
+	900.1.1 = { death = yes }
+ }
+ #Tyrell
+  Tyrell_40 = {
 	name = Alester # Canon, a lord, founder
 	dynasty = dynn_Tyrell
 	stewardship = 8
 	prowess = 9
-	religion = fots_seven
+	religion = dark_souls_faith #fots_seven
 	culture = andal
 	trait = education_stewardship_3
 	trait = lifestyle_blademaster
@@ -2141,6 +2386,486 @@
 	trait = just
 	490.1.1 = { birth = yes  }
 	555.1.1 = { death = yes }
+  }
+  Tyrell_41 = {
+	name = Willas # Mentioned, first son, Knight who died in a tourney.
+	dynasty = dynn_Tyrell
+	prowess = 8
+	religion = dark_souls_faith #fots_seven
+	culture = andal
+	father = Tyrell_40
+	trait = just
+	trait = generous
+	trait = gallant
+	525.1.1 = { birth = yes }
+	555.1.1 = { death = { death_reason = death_contest_joust_accident } }
+ }
+  Tyrell_42 = {
+	name = Gareth # Canon, a lord, second son, continued Tyrell line
+	dynasty = dynn_Tyrell
+	religion = dark_souls_faith #fots_seven
+	culture = andal
+	stewardship = 8
+	father = Tyrell_40
+	trait = education_stewardship_4
+	trait = just
+	trait = inquisitive
+	trait = gregarious
+	trait = humble
+	trait = content
+	trait = curious
+	disallow_random_traits = yes
+	530.1.1 = { birth = yes }
+	630.1.1 = { death = yes }
+ }
+  Tyrell_62 = {
+	name = Harlan # Canon, a lord, upped to Lord Paramount by Aegon the Conqueror
+	dynasty = dynn_Tyrell
+	martial = 3
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 9
+	learning = 6
+	prowess = 6
+	father = Tyrell_42
+	#father = Tyrell_58
+	#mother = Oldflowers_12
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	trait = education_stewardship_4
+	trait = arrogant
+	trait = ambitious
+	trait = patient
+	trait = diligent
+	trait = bossy
+	trait = lifestyle_gardener
+	disallow_random_traits = yes
+	620.1.1 = { birth = yes }
+	660.1.1 = { death = { death_reason = death_vanished } }# Went missing in Dorne with his entire army
+ }
+  Tyrell_4 = { # War of the Ninepenny Kings
+	name = Luthor # Canon, a lord
+	dynasty = dynn_Tyrell
+	martial = 9
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	learning = 3
+	prowess = 2
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	sexuality = heterosexual
+	father = Tyrell_62
+	#father = Tyrell_1
+	#mother = Norcross_46
+	trait = education_stewardship_1
+	trait = dull
+	trait = compassionate
+    trait = lifestyle_falconer
+	800.1.1 = { birth = yes }
+	820.1.2 = { add_spouse = Redwyne_2 } # Olenna Redwyne
+	842.1.1 = { death = { death_reason = death_horse_riding_accident } }
+ }
+  Tyrell_8 = {
+	name = Mace # Canon, a lord, THE Mace Tyrell, MACE THE ACE
+	dynasty = dynn_Tyrell
+	#dna = Tyrell_8
+	martial = 2
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	prowess = 1
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	sexuality = heterosexual
+	father = Tyrell_4
+	mother = Redwyne_2
+	trait = education_martial_1
+	trait = education_martial_prowess_1
+	trait = beauty_good_1
+	trait = bossy
+	trait = arrogant
+	trait = gluttonous
+	trait = gregarious
+	trait = compassionate
+	disallow_random_traits = yes
+	826.1.1 = {birth = yes }
+	840.1.1 = { add_spouse = Hightower_9 } # Alerie Hightower
+	900.8.1 = { death = yes }
+}
+  Tyrell_11 = {
+	name = Willas # Canon, THE Willas Tyrell
+	dynasty = dynn_Tyrell
+	#dna = Tyrell_11
+	martial = 4
+	diplomacy = 10
+	intrigue = 5
+	stewardship = 9
+	learning = 10
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	father = Tyrell_8
+	mother = Hightower_9
+	trait = education_diplomacy_3
+	trait = intellect_good_1
+	trait = inquisitive
+	trait = curious
+	trait = compassionate
+	trait = forgiving
+	trait = patient
+	trait = maimed # crippled
+	trait = lifestyle_falconer_2_history
+	disallow_random_traits = yes
+	843.11.11 = {birth = yes }
+	900.1.1 = { death = yes }
+}
+  Tyrell_12 = {
+	name = Garlan # Canon, THE Garlan Tyrell
+	dynasty = dynn_Tyrell
+	#dna = Tyrell_12
+	martial = 10
+	diplomacy = 7
+	prowess = 10
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	sexuality = heterosexual
+	father = Tyrell_8
+	mother = Hightower_9
+	trait = education_martial_3
+	trait = education_martial_prowess_4
+	trait = charming
+	trait = lifestyle_blademaster_2_history
+	trait = compassionate
+	trait = brave
+	give_nickname = nick_the_gallant
+	trait = athletic
+	trait = just
+	trait = lifestyle_hunter
+	disallow_random_traits = yes
+	847.11.11 = {birth = yes }
+	900.6.1 = { death = yes }
+}
+  Tyrell_13 = {
+	name = Loras # Canon, THE Loras Tyrell, a Kingsguard
+	dynasty = dynn_Tyrell
+	#dna = Tyrell_13
+	martial = 10
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 4
+	learning = 2
+	prowess = 10
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	sexuality = homosexual
+	father = Tyrell_8
+	mother = Hightower_9
+	trait = education_martial_2
+	trait = beauty_good_3
+	trait = wrathful
+	trait = arrogant
+	trait = brave
+	trait = charming
+	trait = stubborn
+	trait = gallant
+	trait = lifestyle_blademaster
+	give_nickname = nick_agot_historical_the_knight_of_flowers
+	disallow_random_traits = yes
+	852.1.1 = {birth = yes }
+	900.6.12 = { death = yes }
+}
+  Tyrell_14 = {
+	name = Margaery # Canon, THE Margaery Tyrell, married Joffrey Baratheon and Tommen Baratheon
+	dynasty = dynn_Tyrell
+	female = yes
+	#dna = Tyrell_14
+	martial = 4
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 6
+	learning = 8
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	father = Tyrell_8
+	mother = Hightower_9
+	trait = education_intrigue_3
+	trait = beauty_good_3
+	trait = intellect_good_1
+	trait = charming
+	trait = ambitious
+	trait = shrewd
+	trait = generous
+	trait = compassionate	
+	trait = lifestyle_falconer
+	trait = deceitful
+	disallow_random_traits = yes
+	853.1.1 = { birth = yes }
+	900.1.1 = { death = yes}
+  }
+ #high tower
+   Hightower_18 = {
+	name = Uthor # Canon, Of the High Tower, founder.
+	dynasty = dynn_Hightower
+	dna = Hightower_18
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	give_nickname = nick_of_the_high_tower
+	180.1.1 = { birth = yes }
+	202.1.1 = { add_spouse = Gardener_5 } # Maris Gardener
+	250.1.1 = { death = yes }
+  }
+  Hightower_20 = {
+	name = Peremore # Canon, AKA: Peremore the Twisted, founded the citadel and the maester order.
+	dynasty = dynn_Hightower
+	dna = Hightower_20
+	learning = 10
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Hightower_18
+	mother = Gardener_5
+	trait = education_learning_4
+	trait = weak
+	trait = hunchbacked
+	trait = lisping
+	trait = intellect_good_3
+	trait = beauty_bad_1
+	trait = diligent
+	trait = patient
+	trait = gregarious
+	trait = humble
+	trait = curious
+	disallow_random_traits = yes
+	give_nickname = nick_agot_historical_the_twisted_Hightower_20
+	215.1.1 = {birth = yes }
+	260.1.1 = { death = { death_reason = death_weak } }
+  }
+  Hightower_39 = {
+	name = Triston # Canon, raised by what would be, the first High Septon
+	dynasty = dynn_Hightower
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_20
+	#father = Hightower_38
+	260.1.1 = {birth = yes }
+	400.1.1 = { death = yes }
+  }
+  Hightower_40 = {
+	name = Barris # Canon, gave the faith the crystal crown because of his High Septon foster father.
+	dynasty = dynn_Hightower
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_39
+	400.1.1 = {birth = yes}
+	500.1.1 = { death = yes }
+ }
+  Hightower_77 = {
+	name = Otto # Mentioned, considered by Jaehaerys as possible master of coin
+	dynasty = dynn_Hightower
+	religion = fots_seven
+	culture = honeywiner
+	father = 
+	#father = Hightower_62
+	#mother = Florent_31
+	trait = education_stewardship_3
+	500.1.1 = {birth = yes}
+	600.1.1 = { death = yes }
+  }
+  Hightower_90 = {
+	name = Otto # Canon, father of Alicent Hightower, a Hand of the King for Jaehaerys, Viserys and Aegon
+	dynasty = dynn_Hightower
+	martial = 4
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 7
+	learning = 12
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_77
+	#father = Hightower_83 # Made him son of Eustace from second marriage
+	#mother = Caswell_76
+	trait = education_diplomacy_3
+	trait = patient
+	trait = diligent
+	trait = ambitious
+	trait = arrogant
+	trait = bossy
+	trait = shrewd
+	disallow_random_traits = yes
+	600.1.1 = {birth = yes}
+	650.2.28 = {
+		death = {
+			death_reason = death_execution # Beheaded
+			#killer = Targaryen_63 # Rhaenyra Targaryen
+		}
+	}
+ }
+   Hightower_97 = {
+	name = Alicent # Canon, THE Alicent Hightower, Queen of Seven Kingdoms, married Viserys Targaryen
+	dynasty = dynn_Hightower
+	female = yes
+	stewardship = 2
+	prowess = 0
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	sexuality = heterosexual
+	father = Hightower_90 # Otto Hightower
+	#mother = Florent_72 # Alerie Florent
+	trait = education_diplomacy_2
+	trait = beauty_good_2
+	trait = diligent
+	trait = bossy
+	trait = arrogant
+	trait = temperate
+	trait = ambitious
+	disallow_random_traits = yes
+	610.1.1 = {birth = yes }
+	660.6.1 = {
+		#trait = winter_fever AGOT TODO Trait
+		death = { death_reason = death_ill }
+	}
+  }
+   Hightower_99 = {
+	name = Gwayne # Canon, captain of the Gold Cloaks
+	dynasty = dynn_Hightower
+	dna = Hightower_99
+	martial = 5
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_90 # Otto Hightower
+	#mother = Florent_72 # Alerie Florent
+	trait = education_martial_2
+	trait = diligent
+	trait = arrogant
+	trait = just
+	trait = charming
+	disallow_random_traits = yes
+	625.1.1 = {birth = yes }
+	700.2.28 = {
+		death = {
+			death_reason = death_murder_known
+			#killer = Largent_1 # Luthor Largent
+		}
+	}
+ }
+  Hightower_2 = {
+	name = Quenton # Canon, a lord who shut Oldtown for the grey plague
+	dynasty = dynn_Hightower
+	martial = 7
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 8
+	learning = 10
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_99
+	#father = Hightower_124
+	#mother = Rowan_81
+	trait = education_diplomacy_2
+	trait = intellect_good_1
+	trait = callous
+	trait = patient
+	trait = stubborn
+	#trait = inquisitive
+	trait = bossy
+	disallow_random_traits = yes
+	700.1.1 = {birth = yes}
+	800.5.5 = {
+		death = { death_reason = death_rabble } # Had throat slit by angry mob
+	}
+  }
+   Hightower_5 = {
+	name = Leyton # Canon, a lord
+	dynasty = dynn_Hightower
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 6
+	prowess = 3
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	sexuality = heterosexual
+	father = Hightower_2
+	#mother = Cuy_58
+	trait = education_learning_1
+	trait = fecund
+	#trait = inquisitive
+	trait = patient
+	trait = curious
+	trait = content
+	trait = eccentric
+	trait = reclusive
+	trait = lifestyle_mystic
+	give_nickname = nick_the_old
+	disallow_random_traits = yes
+	800.1.1 = {birth = yes }
+	900.1.1 = { death = yes  }
+ }
+  Hightower_7 = {
+	name = Baelor # Canon, Baelor Brightsmile
+	dynasty = dynn_Hightower
+	martial = 7
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 10
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	sexuality = heterosexual
+	father = Hightower_5
+	#mother = Haen_58 # Lysadora Haen
+	trait = education_martial_2
+	trait = beauty_good_2
+	trait = just
+	trait = diligent
+	give_nickname = nick_brightsmile
+	855.1.1 = {birth = yes}
+	900.1.1 = { death = yes }
+  }
+  Hightower_8 = {
+	name = Malora # Canon, Malora Mad Maid
+	dynasty = dynn_Hightower
+	female = yes
+	martial = 2
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 2
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_5
+	#mother = Haen_58 # Lysadora Haen
+	trait = education_stewardship_1
+	#trait = inquisitive
+	trait = celibate
+	trait = lunatic_1
+	trait = lifestyle_mystic
+	give_nickname = nick_agot_historical_the_mad_maid
+	857.1.1 = {birth = yes}
+	900.1.1 = { death = yes }
+  }
+   Hightower_9 = {
+	name = Alerie # Canon, married Mace Tyrell
+	dynasty = dynn_Hightower
+	female = yes
+	#dna = Hightower_9
+	martial = 2
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 6
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Hightower_5
+	#mother = Haen_58 # Lysadora Haen
+	trait = education_diplomacy_2
+	trait = honest
+	trait = humble
+	trait = compassionate
+	trait = charming
+	disallow_random_traits = yes
+	825.1.1 = { birth = yes }
+	900.1.1 = { death = yes }
  }
 #VALE 
  Pryor_6 = {
@@ -2303,12 +3028,8 @@
 	}
 	868.7.1 = { dynasty_house = house_BaelishHH }
 	869.1.18 = { add_spouse = Tully_6 } # Lysa Tully 
-	880.1.1 = { death = {
-			death_reason = death_duel
-			killer = Tully_9 
-		} 
-	}
- }
+	880.1.1 = { death = { death_reason = death_duel killer = Tully_9  } }
+  }
  #ARRYN
   Arryn_15 = {
 	name = Artys # Canon, AKA: The Falcon Knight, a lord
