@@ -372,3 +372,137 @@ tradition_agot_harbormen = {
 	cost = { prestige = 900 }
 	ai_will_do = { value = 0 }
 }
+tradition_agot_salt_dornish = {
+	category = regional
+	layers = {
+		0 = steward
+		1 = mena
+		4 = desert.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		gender_equal_inheritance = yes
+		plantations_building_bonuses = yes
+		maritime_mercantilism_coastal_holdings = yes
+		can_have_paramours = yes
+		unlock_maa_sun_spears = yes
+	}
+	character_modifier = {
+		coastal_advantage = 5
+	}
+	province_modifier = {
+		desert_construction_gold_cost = -0.15
+		majorroad_desert_construction_gold_cost = -0.15
+		minorroad_desert_construction_gold_cost = -0.15
+		drylands_construction_gold_cost = -0.15
+		majorroad_drylands_construction_gold_cost = -0.15
+		minorroad_drylands_construction_gold_cost = -0.15
+		desert_holding_construction_gold_cost = -0.15
+		majorroad_desert_holding_construction_gold_cost = -0.15
+		minorroad_desert_holding_construction_gold_cost = -0.15
+		drylands_holding_construction_gold_cost = -0.15
+		majorroad_drylands_holding_construction_gold_cost = -0.15
+		minorroad_drylands_holding_construction_gold_cost = -0.15
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_sand_dornish = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = mena
+		4 = king.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		gender_equal_inheritance = yes
+		vengeful_trait_more_common = yes
+		rivalries_more_common = yes
+		hostile_action_vs_rival_bonuses = yes
+		can_have_paramours = yes
+		unlock_maa_sand_steeds = yes
+		desert_warrior_trait_is_better = yes
+		desert_hunt_success_chance = yes
+		resistant_to_desert_privation = yes
+	}
+	character_modifier = {
+		dread_baseline_add = 10
+		skirmishers_damage_mult = 0.05
+		skirmishers_screen_mult = 0.1
+		light_cavalry_damage_mult = 0.05
+		light_cavalry_screen_mult = 0.1
+		retreat_losses = -0.1
+		hard_casualty_modifier = -0.1
+		advantage = -2
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_stormlands = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = indomitable_azatani.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		rowdy_trait_more_common = yes
+		hill_trait_bonuses = yes
+		rough_terrain_expert_trait_more_common = yes
+		weak_traits_looked_down_upon = yes
+		stubborn_trait_more_common = yes
+		wanderers_gain_extra_combat_skills = yes
+		hunting_traits_more_common = yes
+		more_frequent_hunts = yes
+	}
+	character_modifier = {
+		owned_scheme_secrecy_add  = -10
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_stormlander_main = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = soldiers4.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_storm_knights = yes
+		better_barracks_bonuses = yes
+		prowess_traits_more_valued = yes
+		martial_education_more_valued = yes
+	}
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.2
+		knight_limit = 5
+		movement_speed = 0.1
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_agot_crownlander = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = western
+		4 = tools.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		unlock_maa_royal_crossbowmen = yes
+		better_bakeries_bonuses = yes
+	}
+	character_modifier = {
+		fellow_vassal_opinion = 10
+		archers_maintenance_mult = -0.1
+		supply_capacity_mult = 0.5
+		republic_government_tax_contribution_add = 0.1
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
