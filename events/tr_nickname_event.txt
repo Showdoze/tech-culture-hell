@@ -679,7 +679,7 @@ tr_nickname_event.01 = {
 			}
 		}
     }
-    option = {
+    option = { #SNOW
         name = nick_name_giver_nick_snow
         trigger = {
             AND = {
@@ -690,6 +690,7 @@ tr_nickname_event.01 = {
                 OR = {
                     culture = culture:northman
                     culture = culture:crannogman
+                    culture = culture:harborman
                 }    
             }
         }
@@ -765,7 +766,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #HILL
         name = nick_name_giver_nick_hill
         trigger = {
             AND = {
@@ -781,7 +782,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #SONE
         name = nick_name_giver_nick_stone
         trigger = {
             AND = {

@@ -1072,7 +1072,7 @@ fantasy_culture = {
  innsmouth = {
     color = { 0.71 0.37 0.60 }
     created = 1846.1.1
-    parents = { american }
+    parents = { american thief_kurshok }
     history_loc_override = innsmouth_history_loc
     ethos = ethos_stoic
     heritage = heritage_fantasy
@@ -1133,8 +1133,8 @@ fantasy_culture = {
  }
  northman = {
 	color = { 0.82 0.83 0.84 }
-    created = 1.1.1
-    parents = { fantasy_culture }
+    created = 5.1.1
+    parents = { first_man }
 	ethos = ethos_stoic
 	heritage = heritage_fantasy #heritage_first_man
 	language = language_common #language_agot_westeros
@@ -1160,8 +1160,8 @@ fantasy_culture = {
  }
  crannogman = {
 	color = { 0.60 0.68 0.62 }
-    parents = { fantasy_culture } #first_man children_culture
-	created = 600.1.1
+    parents = { first_man fantasy_culture } # children_culture
+	created = 120.1.1
 	ethos = ethos_mystic
 	heritage = heritage_fantasy #heritage_first_man
 	language = language_common #language_agot_westeros
@@ -1187,8 +1187,8 @@ fantasy_culture = {
   }
  ironborn = {
 	color = { 0.46 0.44 0.40 }
-    parents = { fantasy_culture }
-	created = 10.1.1
+    parents = { first_man }
+	created = 100.1.1
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy #heritage_ironborn
 	language = language_common #language_agot_westeros
@@ -1211,10 +1211,59 @@ fantasy_culture = {
 	unit_gfx = { ironborn_unit_gfx }
 	ethnicities = { 10 = caucasian }
  }
+ andal = {
+	color = { 1.00 0.95 0.80 }
+	ethos = ethos_bellicose
+	heritage = heritage_fantasy
+	language = language_common 
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+    name_list = name_list_andal
+	coa_gfx = { western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_andal1
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+	traditions = {
+		tradition_agot_andalos
+		tradition_agot_andal
+		tradition_chivalry
+		tradition_seafaring
+		tradition_ruling_caste
+		tradition_metal_craftsmanship
+	}
+	ethnicities = { 2 = essosi_andalosi_01 }
+}
+ first_man = {
+	color = { 0.71 0.71 0.71 }
+	ethos = ethos_bellicose
+	heritage = heritage_first_man
+	language = language_agot_first_men
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+    name_list = name_list_first_man
+	coa_gfx = { norse_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx northern_unit_gfx }
+	house_coa_frame = house_frame_andal1
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+	traditions = {
+		tradition_agot_north
+		tradition_agot_first_men
+		tradition_horse_breeder
+		tradition_esteemed_hospitality
+		tradition_sacred_groves
+	}
+	ethnicities = { 10 = Northmen_1 }
+ } 
  riverman_main = {
 	color = { 0.16 0.51 0.81 }
-    created = 150.1.1
-    parents = { fantasy_culture }
+    created = 500.1.1
+    parents = { andal first_man }
 	ethos = ethos_festive
 	heritage = heritage_fantasy #heritage_andal
 	language = language_common #language_agot_westeros
@@ -1238,10 +1287,10 @@ fantasy_culture = {
 	}
 	ethnicities = { 100 = Rivermen_1 }
   }
-  westerman_main = {
+ westerman_main = {
 	color = { 0.82 0.30 0.25 }
-    parents = { fantasy_culture } #andal first_man
-	created = 625.1.1
+    parents = { andal first_man } #andal first_man
+	created = 466.1.1
 	ethos = ethos_bureaucratic
 	heritage = heritage_fantasy #heritage_andal
 	language = language_common #language_agot_westeros
@@ -1266,8 +1315,8 @@ fantasy_culture = {
  }
  reachman = {
 	color = { 0.46 0.63 0.26 }
-    parents = { fantasy_culture } #andal first_man
-	created = 625.1.1
+    parents = { andal first_man }
+	created = 62.1.1
 	ethos = ethos_courtly
 	heritage = heritage_fantasy #heritage_andal
 	language = language_common #language_agot_westeros
@@ -1316,13 +1365,13 @@ fantasy_culture = {
 	}
 	ethnicities = { 1 = Reachmen_1 }
   }
-  valeman_main = {
+ valeman_main = {
 	color = { 0.31 0.71 0.84 } 
-    parents = { fantasy_culture } #andal first_man
+    parents = { andal first_man }
 	created = 450.1.1
 	ethos = ethos_courtly
-	heritage = heritage_andal
-	language = language_agot_westeros
+	heritage = heritage_fantasy #heritage_andal
+	language = language_common #language_agot_westeros
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
     name_list = name_list_valeman
@@ -1343,6 +1392,34 @@ fantasy_culture = {
 	}
 	ethnicities = { 1 = Valemen_1 }
   }
+ harborman = {
+	color = { 0.66 0.78 0.69 }
+    parents = { reachman northman }
+	created = 500.1.1
+	ethos = ethos_courtly
+	heritage = heritage_fantasy #heritage_first_man
+	language = language_common #language_agot_westeros
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+    name_list = name_list_harborman
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { cornish_clothing_gfx western_clothing_gfx }
+	unit_gfx = { reachman_unit_gfx western_unit_gfx }
+	house_coa_frame = house_frame_andal1
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+	traditions = {
+		tradition_agot_north
+		tradition_agot_harbormen
+		tradition_loyal_soldiers
+		tradition_fishermen
+		tradition_maritime_mercantilism
+		tradition_culinary_art
+	}
+	ethnicities = { 1 = Reachmen_1 10 = Northmen_1 }
+ } 
+
  cimmerian = {
     color = high_valyrian
     created = 1.1.1
