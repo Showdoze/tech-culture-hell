@@ -13,10 +13,6 @@ house_customizer.0001 = {
 		character = root
 		animation = throne_room_writer
 	}
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -32,113 +28,14 @@ house_customizer.0001 = {
 	option = {
 		name = house_customizer.0001.b
 	}
-}
 
-#Region Select for Extinct Houses
-house_customizer.0002 = {
-	type = character_event
-	title = house_customizer.0002.historical
-	desc = house_customizer.0002.desc
-	theme = family
-	override_background = {
-		reference = physicians_study
-	}
-	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-	#Displays Extinct Northern Houses
-	option = {
-		name = house_customizer.0002.northern
-		trigger_event = {
-			id = house_customizer.0003
-		}
-	}
-	#Displays Extinct Riverlander Houses
-	option = {
-		name = house_customizer.0002.riverlands
-		trigger_event = {
-			id = house_customizer.0004
-		}
-	}
-	#Displays Extinct Vale Houses
-	option = {
-		name = house_customizer.0002.vale
-		trigger_event = {
-			id = house_customizer.0005
-		}
-	}
-
-	#Displays Extinct Crownlands Houses
-	option = {
-		name = house_customizer.0002.crownlands
-		trigger_event = {
-			id = house_customizer.0006
-		}
-	}
-
-	#Displays Extinct Stormlander Houses
-	option = {
-		name = house_customizer.0002.stormlands
-		trigger_event = {
-			id = house_customizer.0007
-		}
-	}
-
-	#Displays Extinct Dorne Houses
-	option = {
-		name = house_customizer.0002.dorne
-		trigger_event = {
-			id = house_customizer.0008
-		}
-	}
-	#Displays Extinct Dorne Houses
-	option = {
-		name = house_customizer.0002.reach
-		trigger_event = {
-			id = house_customizer.0009
-		}
-	}
-
-	#Displays Extinct Dorne Houses
-	option = {
-		name = house_customizer.0002.westerlands
-		trigger_event = {
-			id = house_customizer.0010
-		}
-	}
-
-	#Displays Extinct Ironborn Houses
-	option = {
-		name = house_customizer.0002.ironborn
-		trigger_event = {
-			id = house_customizer.0011
-		}
-	}
-	#Displays Extinct Essos Houses
-	option = {
-		name = house_customizer.0002.agot
-		trigger_event = {
-			id = house_customizer.0002
-		}
-	}
 	# Go back
 	option = {
 		name = house_customizer.back_option
-		trigger_event = {
-			id = house_customizer.0001
-		}
 	}
-
 }
-house_customizer.0002.agot = {
+
+house_customizer.0002 = {
 	type = character_event
 	title = house_customizer.0002.t
 	desc = house_customizer.0002.desc
@@ -147,10 +44,6 @@ house_customizer.0002.agot = {
 		reference = physicians_study
 	}
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -261,11 +154,6 @@ house_customizer.0003 = {
 		animation = throne_room_writer
 	}
 
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -365,11 +253,6 @@ house_customizer.0004 = {
 	}
 
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -479,11 +362,6 @@ house_customizer.0005 = {
 		animation = throne_room_writer
 	}
 
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -533,11 +411,6 @@ house_customizer.0006 = {
 	}
 
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -595,11 +468,6 @@ house_customizer.0007 = {
 		animation = throne_room_writer
 	}
 
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -637,11 +505,6 @@ house_customizer.0008 = {
 	}
 
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -693,11 +556,6 @@ house_customizer.0009 = {
 		animation = throne_room_writer
 	}
 
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -735,11 +593,6 @@ house_customizer.0010 = {
 	}
 
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -809,11 +662,6 @@ house_customizer.0011 = {
 		animation = throne_room_writer
 	}
 
-	right_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
 	immediate = {
 		play_music_cue = "mx_cue_succession"
 	}
@@ -863,11 +711,6 @@ house_customizer.0012 = {
 	}
 
 	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
@@ -949,11 +792,6 @@ house_customizer.0020 = {
 
 	left_portrait = {
 		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
-		character = scope:hc_selection
 		animation = throne_room_writer
 	}
 
@@ -1160,11 +998,6 @@ house_customizer.0021 = {
 
 	left_portrait = {
 		character = root
-		animation = throne_room_writer
-	}
-
-	right_portrait = {
-		character = scope:hc_selection
 		animation = throne_room_writer
 	}
 

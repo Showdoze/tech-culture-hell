@@ -761,7 +761,7 @@ tr_select_personal_deity_decision = {
                 culture = culture:goblin
                 culture = culture:giant
                 faith = faith:dragon_cult
-                faith = faith:dnd_faith
+                #faith = faith:dnd_faith ## we don't have dnd_faith?
                 faith = faith:green_cult
                 faith = faith:twomoonsdance
                 faith = faith:deep_cult
@@ -1048,7 +1048,7 @@ tr_self_harm_decision = {
             triggered_desc = {
                 trigger = {
                     OR = {
-                        has_trait = has_trait = lifestyle_mystic
+                        has_trait = lifestyle_mystic
                         faith = faith:deep_cult
                         culture = culture:innsmouth
                         has_trait = witch
@@ -1074,7 +1074,7 @@ tr_self_harm_decision = {
             triggered_desc = {
                 trigger = {
                     OR = {
-                        has_trait = has_trait = lifestyle_mystic
+                        has_trait = lifestyle_mystic
                         faith = faith:deep_cult
                         culture = culture:innsmouth
                         has_trait = witch
