@@ -383,6 +383,30 @@
 		movement_speed = 0.1
 		supply_duration	= 0.5
 	}
+ }
+  innovation_thief_ancient_build = {
+	skill = stewardship
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @thief_lost_city_inno
+	potential = {	
+		this = culture:thief_precursor
+	}
+	character_modifier = {
+		build_speed = -0.05
+	}
+ }
+ innovation_thief_kurshok_build = {
+	skill = stewardship
+	group = culture_group_regional
+	culture_era = culture_era_antiquity
+	icon = @thief_kushok_1
+	potential = {	
+		this = culture:thief_kurshok
+	}
+	character_modifier = {
+		build_speed = -0.05
+	}
  } 
  innovation_thief_city_watch = {
 	skill = stewardship
@@ -657,7 +681,7 @@
  innovation_special_building = {
 	skill = stewardship
 	group = culture_group_regional
-	culture_era = culture_era_tribal
+	culture_era = culture_era_antiquity
 
 	potential = {
 		OR = {
@@ -671,8 +695,6 @@
 			this = culture:dwemer
 			
 			this = culture:thief_city
-			this = culture:thief_precursor
-			this = culture:thief_kurshok
 
 			this = culture:orc_culture
 
@@ -772,22 +794,6 @@
 
 	asset = {
 		trigger = {
-			this = culture:thief_kurshok
-		}
-		icon = @thief_kushok_1
-		name = innovation_thief_kurshok_build
-	}
-
-	asset = {
-		trigger = {
-			this = culture:thief_precursor
-		}
-		icon = @thief_lost_city_inno
-		name = innovation_thief_ancient_build
-	}
-
-	asset = {
-		trigger = {
 			this = culture:thief_city
 		}
 		icon = @misc_inventions
@@ -859,15 +865,6 @@
 	}
 
 	character_modifier = {
-		if = {
-			OR = {
-				this = culture:thief_precursor
-				this = culture:thief_kurshok
-			}
-			build_speed = -0.05
-		}
-		else = {
-			build_speed = -0.01
-		}
+		build_speed = -0.01
 	}
  }
