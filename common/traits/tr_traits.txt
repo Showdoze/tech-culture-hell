@@ -20,9 +20,8 @@
             }
             triggered_desc = {
                 trigger = {
-                    OR = {
-                        culture = { has_innovation = innovation_orc_build }
-                    }
+                    exists = this
+                    this = { culture = { has_innovation = innovation_orc_build } }
                 }
                 desc = trait_viking_has_marauder
             }
