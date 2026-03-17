@@ -715,7 +715,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #SAND
         name = nick_name_giver_nick_sand
         trigger = {
             AND = {
@@ -723,7 +723,10 @@ tr_nickname_event.01 = {
                     has_trait = bastard
                     has_trait = legitimized_bastard
                 }
-                culture = culture:ironborn  
+                OR = {
+                    culture = culture:salt_dornish
+                    culture = culture:sand_dornish
+                }    
             }
         }
         set_nickname_effect = { NICKNAME = nick_sand }
@@ -731,7 +734,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #Flowers
         name = nick_name_giver_nick_flowers
         trigger = {
             AND = {
@@ -750,7 +753,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #Rivers
         name = nick_name_giver_nick_rivers
         trigger = {
             AND = {
@@ -782,7 +785,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = { #SONE
+    option = { #STONE
         name = nick_name_giver_nick_stone
         trigger = {
             AND = {
@@ -794,6 +797,38 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_stone }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #STORM
+        name = nick_name_giver_nick_storm
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:stormlander_main 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_storm }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #Waters
+        name = nick_name_giver_nick_waters
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = bastard
+                    has_trait = legitimized_bastard
+                }
+                culture = culture:crownlander 
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_waters }
         ai_chance = {
 			base = 1
 		}

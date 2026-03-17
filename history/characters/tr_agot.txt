@@ -1,9 +1,10 @@
-Tall_1 = {
+#CROWNLANDER
+ Tall_1 = {
 	name = Duncan # Canon, AKA: Duncan the Tall, Lord Commander of the Kingsguard
 	martial = 8
 	prowess = 12
 	religion = dark_souls_faith
-	culture = fantasy_culture
+	culture = crownlander
 	trait = physique_good_3
 	trait = strong
 	trait = rowdy
@@ -26,6 +27,18 @@ Tall_1 = {
 			killer = Targaryen_122 # Aegon V Targaryen
 		}
 	}
+ }
+ Kettleblack_1 = {
+	name = Oswell # Canon, founder
+	dynasty = dynn_Kettleblack
+	#dna = Kettleblack_1
+	intrigue = 7
+	religion = dark_souls_faith
+	culture = crownlander
+	trait = education_intrigue_2
+	trait = intellect_good_1
+	847.1.1 = { birth = yes}
+	900.1.1 = { employer = Baelish_2 } # Petyr Baelish
  }
 #Iron BORN
  Grey_King_1 = {
@@ -872,13 +885,11 @@ Tall_1 = {
 		trait = paranoid
 		trait = lunatic_1
 	}
-	869.1.1 = {
-		#add_spouse = Baelish_2 # Petyr Baelish
-	}
+	869.1.1 = { add_spouse = Baelish_2 } # Petyr Baelish
 	870.2.9 = {
 		death = {
 			death_reason = death_murder
-			#killer = Baelish_2 # Petyr Baelish
+			killer = Baelish_2 # Petyr Baelish
 		}
 	}
 }
@@ -2031,10 +2042,10 @@ Tall_1 = {
 			}
 		}
 	}
-	900.1.15 = {
+	870.1.15 = {
 		death = {
 			death_reason = death_duel # Trial about Tyrion
-			#killer = Martell_8 # Oberyn Martell
+			killer = Martell_8 # Oberyn Martell
 		}
 	}
   }
@@ -2132,6 +2143,38 @@ Tall_1 = {
 	555.1.1 = { death = yes }
  }
 #VALE 
+ Pryor_6 = {
+	name = Donnel # a lord
+	dynasty = dynn_Pryor
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	727.1.1 = { birth = yes }
+	779.1.1 = { death = yes }
+ }
+ Symes_1 = {
+	name = Gerrick # a lord
+	dynasty = dynn_Symes
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	781.1.1 = { birth = yes }
+	844.1.1 = { death = yes }
+ }
+ Egen_7 = {
+	name = Isembard # a lord
+	dynasty = dynn_Egen
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_upper
+	730.1.1 = { birth = yes }
+	778.1.1 = { death = yes }
+ }
+ Rutley_1 = {
+	name = Dareon # a lord
+	dynasty = dynn_Rutley
+	dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_upper
+	761.1.1 = { birth = yes }
+	822.1.1 = { death = yes }
+ }
  Redfort_6 = {
 	name = Royce # Mentioned, a lord
 	dynasty = dynn_Redfort
@@ -2150,13 +2193,121 @@ Tall_1 = {
 	name = Lucas # Mentioned, a lord, defeated five knights from greatest houses of the Vale and Westerlands in a tourney
 	dynasty = dynn_Wydman
 	prowess = 9
-	religion = fots_seven
+	religion = dark_souls_faith #fots_seven
 	culture = valeman_main
 	trait = education_martial_prowess_4
 	trait = gallant
 	trait = lifestyle_blademaster
 	730.1.1 = { birth = yes }
 	795.1.1 = { death = yes }
+ }
+ Waynwood_26 = {
+	name = The_Hammer_of_the_Hills # Canon, ruled eastern part of Vale, slain under Ironoaks
+	dynasty = dynn_Waynwood # House uncertain
+	prowess = 9
+	religion = dark_souls_faith #fots_seven
+	culture = andal
+	trait = education_martial_prowess_4
+	362.1.1 = { birth = yes }
+	398.1.1 = {
+		death = { death_reason = death_battle } # Battle of Ironoaks
+	}
+ }
+ #BAELISH
+  Baelish_3 = {
+	name = Tormo # Mentioned, Braavosi Sellsword, founder
+	dynasty = dynn_Baelish
+	prowess = 8
+	religion = dark_souls_faith #fc_pan_faceless
+	culture = fantasy_culture #braavosi
+	trait = education_martial_3
+	trait = education_martial_prowess_2
+	trait = arbitrary
+	trait = calm
+	trait = rowdy
+	trait = brave
+	trait = gregarious
+	disallow_random_traits = yes
+	759.1.1 = { birth = yes }
+	815.1.1 = { death = yes }
+ }
+  Baelish_4 = {
+	name = Marwyn # Mentioned
+	dynasty = dynn_Baelish
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	father = Baelish_3
+	#mother = Leek_26
+	799.1.1 = { birth = yes }
+	825.1.1 = { death = yes }
+ }
+  Baelish_1 = {
+	name = Corwyn # Mentioned, a lord
+	dynasty = dynn_Baelish
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	father = Baelish_4
+	#mother = Den_Brove_53
+	trait = education_martial_2
+	trait = education_martial_prowess_2
+	trait = intellect_good_1
+	trait = brave
+	trait = gregarious
+	trait = honest
+	trait = temperate
+	trait = charming
+	disallow_random_traits = yes
+	821.1.1 = { birth = yes }
+	850.9.1 = { death = yes }
+}
+  Baelish_2 = {
+	name = Petyr # Canon, THE Petyr Baelish, AKA: Littlefinger, a lord
+	dynasty = dynn_Baelish
+	#dna = Baelish_2
+	martial = 1
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 14
+	learning = 5
+	prowess = 2
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	sexuality = heterosexual
+	father = Baelish_1
+	#mother = Hungerford_9
+	trait = education_stewardship_4
+	trait = education_republican_knowledge_5
+	trait = intellect_good_3
+	trait = physique_bad_1
+	trait = charming
+	trait = deceitful
+	trait = gregarious
+	give_nickname = nick_agot_historical_littlefinger
+	disallow_random_traits = yes
+	838.6.1 = { birth = yes}
+	852.1.3 = { # Duel with brandon
+		trait = scarred
+		trait = callous
+		trait = ambitious
+		effect = { make_trait_inactive = body_scarred }
+		create_character_memory = {
+			type = lost_duel
+			participants = {
+				duel_winner = character:Stark_2 # Brandon Stark
+			}
+		}
+	}
+	860.1.1 = {
+		trait = schemer
+		effect = { add_gold = 1000 }
+	}
+	868.7.1 = { dynasty_house = house_BaelishHH }
+	869.1.18 = { add_spouse = Tully_6 } # Lysa Tully 
+	880.1.1 = { death = {
+			death_reason = death_duel
+			killer = Tully_9 
+		} 
+	}
  }
  #ARRYN
   Arryn_15 = {
@@ -3152,3 +3303,199 @@ Tall_1 = {
     980.1.1 = { death = { death_reason = death_old_age } }
  }
 #DORNE
+ Martell_21 = {
+	name = Morgan # Canon, Andal Adventurer, founder
+	dynasty = dynn_Martell
+	martial = 10
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 4
+	learning = 4
+	prowess = 9
+	religion = dark_souls_faith #fots_seven
+	culture = andal
+	trait = education_martial_3
+	trait = ambitious
+	trait = brave
+	trait = zealous
+	trait = bossy
+	trait = lifestyle_blademaster
+	disallow_random_traits = yes
+	25.1.1 = { birth = yes }
+	192.1.1 = { death = yes }
+ }
+ Martell_22 = {
+	name = Line_of_Morgan
+	dynasty = dynn_Martell
+	religion = fots_seven
+	culture = salt_dornish #stone_dornish
+	father = Martell_21
+	trait = line_of_char
+	disallow_random_traits = yes
+	192.1.1 = { birth = yes }
+	280.1.1 = { death = yes }
+ }
+ Martell_23 = {
+	name = Mors # Canon, married Nymeria
+	dynasty = dynn_Martell
+	martial = 13
+	diplomacy = 10
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = salt_dornish #stone_dornish
+	father = Martell_22
+	trait = education_martial_3
+	trait = ambitious
+	trait = brave
+	275.1.1 = { birth = yes }
+	300.1.1 = { dynasty_house = house_Martell }
+	309.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = Yronwood_16 # Yorick V Yronwood
+		}
+	}
+ }
+ Martell_1 = {
+	name = Loreza # Mentioned, a lord, Doran's Mother
+	dynasty_house = house_Martell
+	female = yes
+	dna = Martell_1
+	religion = dark_souls_faith #fots_seven
+	culture = salt_dornish
+	father = Martell_23
+	#mother = Cafferen_28
+	trait = education_diplomacy_4
+	trait = compassionate
+	trait = just
+	780.1.1 = { birth = yes }
+	840.1.1 = { death = yes  } # After betrothing Elia to Rhaegar
+ }
+ Martell_4 = {
+	name = Doran # Canon, a lord, THE Doran Martell
+	dynasty_house = house_Martell
+	dna = Martell_4
+	religion = dark_souls_faith #fots_seven
+	culture = salt_dornish
+	sexuality = heterosexual
+	martial = 6
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 10
+	learning = 9
+	prowess = 0
+	mother = Martell_1
+	father = Jordayne_60
+	trait = education_intrigue_4
+	trait = intellect_good_2
+	trait = pensive
+	trait = deceitful
+	trait = calm
+	trait = patient
+	trait = diligent
+	trait = gout_ridden
+	disallow_random_traits = yes
+	817.1.1 = { birth = yes }
+	855.9.1 = {
+		effect = {
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					reverse_add_opinion = {
+						target = ROOT
+						modifier = hate_opinion
+						opinion = -50
+					}
+				}
+			}
+			dynasty:dynn_Baratheon = {
+				every_dynasty_member = {
+					reverse_add_opinion = {
+						target = ROOT
+						modifier = hate_opinion
+						opinion = -50
+					}
+				}
+			}
+		}
+	}
+ }
+ Martell_7 = {
+	name = Elia # Canon, married Rhaegar Targaryen
+	dynasty_house = house_Martell
+	female = yes
+	diplomacy = 3
+	martial = 1
+	stewardship = 3
+	intrigue = 2
+	learning = 4
+	religion = dark_souls_faith #fots_seven
+	culture = salt_dornish
+	mother = Martell_1
+	father = Jordayne_60
+	trait = education_diplomacy_4
+	trait = beauty_good_1
+	trait = intellect_good_1
+	trait = physique_bad_3
+	trait = humble
+	trait = compassionate
+	trait = chaste
+	trait = gregarious
+	trait = pensive
+	disallow_random_traits = yes
+	826.1.1 = { birth = yes }
+	855.9.1 = {
+		death = {
+			death_reason = death_murder_known # Sack of King's Landing
+			killer = Clegane_3 # Gregor Clegane
+		}
+	}
+ }
+ Martell_8 = {
+	name = Oberyn # Canon, Oberyn Martell, AKA: The Red Viper, Landless Adventurer
+	dynasty_house = house_Martell
+	#dna = Martell_8
+	martial = 9
+	diplomacy = 4
+	intrigue = 14
+	stewardship = 9
+	learning = 10
+	prowess = 12
+	religion = dark_souls_faith #fots_seven
+	culture = salt_dornish
+	sexuality = bisexual
+	mother = Martell_1
+	#father = Jordayne_60
+	trait = education_intrigue_4
+	trait = education_martial_prowess_4
+	trait = beauty_good_2
+	trait = rowdy
+	trait = arrogant
+	trait = athletic
+	trait = vengeful
+	trait = lifestyle_blademaster
+	trait = lustful
+	trait = brave
+	disallow_random_traits = yes
+	828.1.1 = { birth = yes	}
+	840.1.23 = { # When he's caught with Yronwood's Paramour.
+		trait = lifestyle_reveler
+	}
+	840.2.6 = {  # The day Ormond died
+		give_nickname = nick_agot_historical_the_red_viper
+		effect = {
+			set_variable = {
+				name = signature_weapon
+				value = flag:spear
+			}
+		}
+	}
+	870.1.15 = {
+		death = {
+			death_reason = death_duel # Trial by Combat
+			killer = Clegane_3 # Gregor Clegane
+		}
+	}
+ }
