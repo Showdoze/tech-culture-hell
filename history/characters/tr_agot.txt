@@ -105,6 +105,131 @@
 	150.1.1 = { birth = yes }
 	240.1.1 = { death = yes }
   }
+  Hoare_17 = {
+	name = Harmund # Canon, Harmund II, AKA: Harmund the Haggler
+	dynasty = dynn_Hoare
+	religion = fots_drowned
+	culture = ironborn
+	father = Hoare_1 #Hoare_16
+	trait = education_diplomacy_2
+	trait = ambitious
+	trait = gregarious
+	trait = diligent
+	trait = curious
+	disallow_random_traits = yes
+	575.1.1 = {birth = yes}
+	600.1.1 = {
+		give_nickname = nick_the_haggler
+		add_spouse = Lannister_50 # Lelia lannister
+	}
+	610.1.1 = { death = yes }
+ }
+  Hoare_19 = {
+	name = Hagon # Canon, AKA: Hagon the Heartless
+	dynasty = dynn_Hoare
+	prowess = 10
+	religion = deep_cult #drowned_god
+	culture = ironborn
+	father = Hoare_17
+	mother = Lannister_50
+	trait = education_martial_1
+	trait = greedy
+	trait = callous
+	trait = ambitious
+	trait = arrogant
+	trait = rowdy
+	give_nickname = nick_the_heartless
+	disallow_random_traits = yes
+	599.1.1 = {birth = yes}
+	700.1.1 = {
+		trait = blind
+		trait = disfigured # Lips, ears, eyelids and tongue removed
+		make_trait_inactive = visible_disfigurement_3
+		death = {
+			death_reason = death_execution
+			#killer = Crakehall_13 # Aubrey Crakehall
+		}
+	}
+}
+  Hoare_25 = { # Doom of Valyria
+	name = Qhorwyn # Canon, AKA: Qhorwyn the Cunning
+	dynasty = dynn_Hoare
+	martial = 2
+	stewardship = 7
+	intrigue = 5
+	learning = 4
+	diplomacy = 3
+	prowess = 3
+	religion = deep_cult #drowned_god
+	culture = ironborn
+	father = Hoare_23
+	trait = education_stewardship_4
+	trait = intellect_good_2
+	trait = greedy
+	trait = patient
+	trait = diligent
+	trait = authoritative
+	trait = curious
+	give_nickname = nick_agot_historical_the_cunning_Hoare_25
+	disallow_random_traits = yes
+	636.1.1 = {birth = yes}
+	702.1.1 = { trait = ill }
+	704.1.3 = {death = { death_reason = death_ill }}
+}
+  Hoare_28 = {
+	name = Harwyn # Canon, AKA: Harwyn the Hardhand, Conqueror of the Riverlands
+	dynasty = dynn_Hoare
+	martial = 9
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 3
+	learning = 3
+	prowess = 11
+	religion = deep_cult #drowned_god
+	culture = ironborn
+	father = Hoare_25
+	#mother = Sunderly_25 # Siglynd Sunderly
+	trait = education_martial_4
+	trait = intellect_good_1
+	trait = arrogant
+	trait = callous
+	trait = ambitious
+	trait = rowdy
+	trait = lustful
+	give_nickname = nick_hardhand
+	disallow_random_traits = yes
+	700.1.1 = {birth = yes}
+	743.1.1 = { death = yes }
+}
+  Hoare_31 = {
+	name = Harren # Canon, AKA: Harren the Black
+	dynasty = dynn_Hoare
+	martial = 10
+	diplomacy = 3
+	intrigue = 13
+	stewardship = 13
+	learning = 5
+	prowess = 6
+	religion = deep_cult #drowned_god
+	culture = ironborn
+	father = Hoare_28 #Hoare_30
+	#mother = Volmark_9
+	trait = education_stewardship_3
+	trait = arrogant
+	trait = sadistic
+	trait = arbitrary
+	trait = ambitious
+	trait = bossy
+	give_nickname = nick_agot_historical_the_black_harren
+	disallow_random_traits = yes
+	740.1.1 = {birth = yes}
+	799.8.15 = {
+		death = {
+			death_reason = death_dragon_siege # Burning of Harrenhal
+			killer = tr_tar_1_dad #Targaryen_27 # Aegon I Targaryen
+		}
+	}
+ }
  Grey_King_7 = {
 	name = Hrothgar_of_Pyke # Canon, founder
 	dynasty = dynn_Grey_King
@@ -159,8 +284,7 @@
 	religion = dark_souls_faith #fots_seven
 	culture = harborman
 	sexuality = heterosexual
-	father = Manderly_71
-	#father = Manderly_2
+	father = Manderly_71 #Manderly_2
 	#mother = FlintFC_62
 	trait = education_intrigue_3
 	trait = charming
@@ -703,7 +827,7 @@
 	197.1.1 = { death = yes }
    }
    Bolton_1 = {
-	name = "Roose Bolton"
+	name = "Roose"
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
@@ -719,7 +843,7 @@
     870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
    }
    tr_agot_Domeric_Bolton = {
-	name = "Domeric Bolton"
+	name = "Domeric"
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
@@ -752,7 +876,7 @@
     880.1.1 = { death = { death_reason = death_old_age } }
    }
    tr_agot_Ramsay_Bolton = {
-	name = "Ramsay Bolton"
+	name = "Ramsay"
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
@@ -847,7 +971,10 @@
 	trait = patient
 	disallow_random_traits = yes
 	810.1.1 = { birth = yes }
-	846.1.1 = { give_nickname = nick_blackfish } # When Catelyn was eight
+	846.1.1 = { 
+		give_nickname = nick_blackfish 
+		dynasty_house = house_blackfish
+	} # When Catelyn was eight
 	900.1.1 = { death = yes }
    }
    Tully_4 = {
@@ -1243,7 +1370,7 @@
   }
    Harroway_5 = {
 	name = Leslyn # a lord, founder
-	religion = hist
+	religion = norse_pagan #old_gods_wnw
 	culture = riverman_main
 	trait = education_stewardship_4
 	trait = intellect_good_1
@@ -1339,7 +1466,7 @@
 	prowess = 7
 	religion = dark_souls_faith #fots_seven
 	culture = westerman_main
-	#father = Payne_3
+	father = Payne_17 #Payne_3
 	#mother = Brax_74
 	trait = education_martial_2
 	trait = education_martial_prowess_2
@@ -1441,10 +1568,7 @@
 	trait = patient
 	trait = greedy
 	trait = gregarious
-	80.1.1 = {
-		birth = yes
-		#make_trait_inactive = red_hair
-	}
+	80.1.1 = {birth = yes} #red_hair
 	150.1.1 = { death = yes }
    }
    Reyne_45 = {
@@ -1458,8 +1582,7 @@
 	prowess = 11
 	religion = dark_souls_faith
 	culture = westerman_main
-	father = Reyne_1
-	#father = Reyne_44
+	father = Reyne_1 #Reyne_44
 	#mother = Parren_17
 	trait = education_martial_3
 	trait = education_martial_prowess_4
@@ -1472,7 +1595,7 @@
 	trait = arrogant
 	trait = family_first
 	trait = ambitious # When Tytos betrothed Genna to the Frey.
-	#give_nickname = nick_agot_historical_the_red_lion
+	give_nickname = nick_agot_historical_the_red_lion
 	disallow_random_traits = yes
 	792.1.1 = { birth = yes }
 	835.11.1 = {
@@ -1494,8 +1617,7 @@
 	learning = 4
 	religion = dark_souls_faith
 	culture = westerman_main
-	father = Reyne_1
-	#father = Reyne_44
+	father = Reyne_1 #Reyne_44
 	#mother = Parren_17
 	trait = education_intrigue_3
 	trait = beauty_good_1
@@ -1514,27 +1636,48 @@
 		}
 	}
   }
+ #LANNISTERS 
    Lannister_29 = {
 	name = Lann # Canon, AKA: Lann the Clever
 	dynasty = dynn_Lannister
-	#dna = Lannister_29
 	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	trait = education_intrigue_4
 	trait = intellect_good_3
 	trait = deceitful
 	trait = greedy
-	#give_nickname = nick_agot_historical_the_clever
-	108.1.1 = {
-		birth = yes
-		make_trait_inactive = emerald_eyes
-		make_trait_inactive = gold_hair
-		make_trait_inactive = scripted_appearance
-		add_character_flag = canon_status_canon
-	}
+	give_nickname = nick_the_clever
+	108.1.1 = {birth = yes}
 	#2026.1.1 = { add_spouse = Casterly_8 } # Castella Casterly
 	420.1.1 = { death = yes } # Legends say he died at the age of 312
   }
+  Lannister_50 = {
+	name = Lelia # Canon, married Harmund II Hoare
+	dynasty = dynn_Lannister
+	female = yes
+	religion = dark_souls_faith #fots_seven
+	culture = westerman_main
+	father = Lannister_29 #Lannister_48
+	trait = education_diplomacy_2
+	trait = beauty_good_1
+	trait = zealous
+	trait = ambitious
+	trait = diligent
+	trait = arrogant
+	trait = charming
+	disallow_random_traits = yes
+	578.1.1 = {birth = yes}
+	600.1.1 = {
+		trait = blind
+		trait = disfigured # Lips, ears, eyelids and tongue removed
+		make_trait_inactive = visible_disfigurement_3
+		add_character_modifier = wearing_disfigurement_mask_modifier
+	}
+	650.1.1 = {
+		make_trait_inactive = disfigurement_partially_masked
+		death = yes
+	}
+}
    Lannister_130 = {
 	name = Jason # Canon
 	dynasty = dynn_Lannister
@@ -1545,8 +1688,7 @@
 	learning = 5
 	religion = dark_souls_faith
 	culture = westerman_main
-	father = Lannister_29
-	#father = Lannister_120
+	father = Lannister_29 #Lannister_120
 	#mother = Webber_13 # Rohanne Webber
 	trait = education_martial_3
 	trait = education_martial_prowess_3
@@ -1566,7 +1708,7 @@
 	female = yes
 	religion = dark_souls_faith
 	culture = westerman_main
-	#father = Lannister_130
+	father = Lannister_130
 	#mother = Prester_48 # Marla Prester
 	trait = education_intrigue_2
 	trait = humble
@@ -1577,14 +1719,11 @@
 	trait = pensive
 	disallow_random_traits = yes
 	821.1.1 = { birth = yes }
-	842.1.1 = {
-		death = { death_reason = death_childbirth } # Tyrion Lannister
-	}
+	842.1.1 = { death = { death_reason = death_childbirth } }# Tyrion Lannister
   }
    Lannister_129 = { # Ninepenny Kings
 	name = Tytos # Canon, AKA: Tootless Lion, a lord
 	dynasty = dynn_Lannister
-	#dna = Lannister_129
 	martial = 3
 	diplomacy = 3
 	intrigue = 5
@@ -1594,8 +1733,7 @@
 	religion = dark_souls_faith
 	culture = westerman_main
 	sexuality = heterosexual
-	father = Lannister_29
-	#father = Lannister_120
+	father = Lannister_29 #Lannister_120
 	#mother = Webber_13 # Rohanne Webber
 	trait = education_stewardship_1
 	trait = trusting
@@ -1880,7 +2018,7 @@
 		}
 	}
 	848.1.1 = { 
-		give_nickname = nick_agot_historical_the_imp 
+		give_nickname = nick_the_imp 
 		learn_language = language_agot_valyrian
 		effect = {
 			if = {
@@ -1959,6 +2097,7 @@
 	834.1.1 = { birth = yes }
 	900.3.14 = { death = { death_reason = death_vanished } }
    }
+ #CLEGANE  
    Clegane_6 = {
 	name = Ben
 	religion = dark_souls_faith
@@ -1969,7 +2108,7 @@
   }
    Clegane_1 = {
 	name = Clarent # Mentioned, the founder, kennel master
-	dna = Clegane_1
+	#dna = Clegane_1
 	martial = 10
 	religion = dark_souls_faith
 	culture = westerman_main
@@ -2141,15 +2280,629 @@
 	872.1.1 = { death = yes } #7872
    }
 #reach
- Florent_17 = {
+ Hunt_8 = {
+	name = Harlon # Canon, The Hunter, founder
+	dynasty = dynn_Hunt
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1
+	trait = strong
+	trait = twin
+	trait = lifestyle_hunter
+	give_nickname = nick_the_hunter
+	188.1.1 = {birth = yes}
+	288.1.1 = { death = yes } # Live to over a hundred like his brother
+ }
+ Wythers_10 = {
+	name = Ottyn # a lord
+	dynasty = dynn_Wythers
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	826.1.1 = { birth = yes }
+	883.1.1 = { death = yes }
+}
+ Beesbury_8 = {
+	name = Ellyn # Canon, Ever-sweet, founder
+	dynasty = dynn_Beesbury
+	female = yes
+	diplomacy = 7
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Greenhand
+	trait = education_diplomacy_3
+	trait = beauty_good_2
+	trait = generous
+	trait = trusting
+	trait = just
+	trait = gregarious
+	trait = charming
+	disallow_random_traits = yes
+	give_nickname = nick_agot_historical_ever_sweet
+	192.1.1 = {birth = yes}
+	225.1.1 = { death = yes }
+ }
+ Beesbury_1 = {
+	name = Ben # Canon, a lord
+	dynasty = dynn_Beesbury
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Beesbury_8 #Beesbury_47
+	#mother = Sloane_71
+	822.1.1 = {birth = yes}	
+	890.1.1 = { trait = blind }
+	900.1.1 = { death = yes }
+ }
+ Rowan_6 = {
+	name = Rowan # Canon, Gold-tree, founder
+	dynasty = dynn_Rowan
+	female = yes
+	diplomacy = 7
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Greenhand
+	trait = education_diplomacy_4
+	trait = beauty_good_2
+	trait = chaste
+	trait = depressed_1
+	trait = compassionate
+	trait = honest
+	trait = trusting
+	trait = charming
+	disallow_random_traits = yes
+	give_nickname = nick_gold_tree
+	191.1.1 = {birth = yes}
+	216.1.1 = { death = yes }
+ }
+ Oakheart_5 = {
+	name = John # Canon, AKA: John The Oak, founder, First Knight despite it being an Andal tradition
+	dynasty = dynn_Oakheart
+	martial = 8
+	prowess = 12
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = giant
+	trait = bossy
+	trait = just
+	trait = compassionate
+	trait = temperate
+	trait = honest
+	give_nickname = nick_agot_historical_the_oak
+	trait = lifestyle_blademaster
+	disallow_random_traits = yes
+	181.1.1 = {birth = yes}
+	233.1.1 = { death = yes }
+}
+ Bulwer_6 = {
+	name = Bors # Canon, The Breaker, founder
+	dynasty = dynn_Bulwer
+	prowess = 14
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_martial_2
+	trait = education_martial_prowess_4
+	trait = physique_good_3
+	trait = strong
+	trait = giant
+	trait = rowdy
+	trait = wrathful
+	trait = callous
+	trait = lifestyle_blademaster
+	disallow_random_traits = yes
+	give_nickname = nick_agot_historical_the_breaker_bulwer
+	199.1.1 = {birth = yes}
+	230.1.1 = { death = yes }
+ }
+ Fossoway_8 = {
+	name = Foss # Canon, The Archer, founder
+	dynasty = dynn_Fossoway
+	prowess = 18
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_martial_3
+	trait = education_martial_prowess_4
+	trait = beauty_good_2
+	trait = bossy
+	trait = lustful
+	trait = honest
+	trait = brave
+	trait = patient
+	trait = lifestyle_blademaster
+	disallow_random_traits = yes
+	give_nickname = nick_the_archer
+	185.1.1 = {birth = yes}
+	235.1.1 = { death = yes }
+ }
+ Crane_7 = {
+	name = Rose # Canon, Of Red Lake, founder
+	dynasty = dynn_Crane
+	female = yes
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Greenhand
+	trait = education_intrigue_4
+	trait = beauty_good_2
+	trait = generous
+	give_nickname = nick_agot_historical_of_red_lake
+	trait = lifestyle_mystic_3_history
+	190.1.1 = {birth = yes}
+	230.1.1 = { death = yes }
+ }
+ #MERRYWEATER
+  Merryweather_7 = {
+	name = Leo # a lord
+	dynasty = dynn_Merryweather
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	7819.1.1 = { birth = yes }
+	7860.1.1 = { death = yes }
+ }
+  Merryweather_1 = {
+	name = Owen # Canon, a lord, Hand of the King
+	dynasty = dynn_Merryweather
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	father = Merryweather_26
+	#mother = Durwell_52
+	trait = education_diplomacy_1
+	trait = gluttonous
+	trait = deceitful
+	trait = gregarious
+	trait = compassionate
+	trait = bossy
+	disallow_random_traits = yes
+	760.1.1 = {birth = yes}
+	868.1.1 = { death = yes }
+ }
+  Merryweather_2 = {
+	name = Alyn # a lord
+	dynasty = dynn_Merryweather
+	dna = Merryweather_2
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	father = Merryweather_1
+	mother = Goode_88
+	822.1.1 = {birth = yes}
+	894.1.1 = { death = yes }
+}
+  Merryweather_3 = {
+	name = Orton # Canon, a lord
+	dynasty = dynn_Merryweather
+	martial = 4
+	diplomacy = 11
+	intrigue = 5
+	stewardship = 11
+	prowess = 3
+	religion = dark_souls_faith #fots_seven
+	culture = reachman
+	father = Merryweather_2
+	#mother = Fossoway_New_Barrel_3
+	trait = education_stewardship_2
+	trait = compassionate
+	trait = patient
+	trait = gregarious
+	trait = craven
+	trait = pensive
+	disallow_random_traits = yes
+	850.1.1 = {birth = yes}
+	866.1.1 = { add_spouse = Merryweather_5 } # Taena of Myr
+	900.5.15 = { death = yes }
+ }
+  Merryweather_5 = {
+	name = Taena # Canon, married Orton Merryweather
+	female = yes
+	dynasty = dynn_Merryweather
+	father = Merryweather_2
+	martial = 1
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 3
+	religion = dark_souls_faith #fc_pan_myr
+	culture = reachman #myrish
+	sexuality = bisexual
+	trait = education_intrigue_3
+	trait = beauty_good_3
+	trait = charming
+	trait = seducer
+	trait = ambitious
+	trait = lustful
+	trait = gregarious
+	trait = deceitful	
+	trait = bastard
+	disallow_random_traits = yes
+	856.1.1 = {birth = yes }# Decade younger than Cersei
+	900.5.17 = { death=yes } 
+ }
+ #Peak
+  Peake_6 = {
+	name = Mervyn # Mentioned, second husband of Florys the Fox, founder
+	dynasty = dynn_Peake
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	198.1.1 = {birth = yes}
+	250.1.1 = { death = yes }
+ }
+  Peake_7 = {
+	name = Gormon
+	dynasty = dynn_Peake
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Peake_6
+	mother = Gardener_2 # Florys the Fox
+	236.1.1 = { birth = yes }
+	280.1.1 = { death = yes }
+ }
+  Peake_45 = { # Dance of the Dragons
+	name = Unwin # Canon, a lord, one of the Caltrops, regent of Aegon III and Hand of the King
+	dynasty = dynn_Peake
+	martial = 9
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 3
+	prowess = 8
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father =  Peake_7 #Peake_42
+	#mother = Osgrey_48
+	trait = education_martial_3
+	trait = arrogant
+	trait = callous
+	trait = ambitious
+	trait = deceitful
+	trait = bossy
+	disallow_random_traits = yes
+	750.1.1 = {	birth = yes}
+	816.1.1 = { death = yes }
+}
+  Peake_59 = { # Blackfyre Rebellion
+	name = Gormon # Canon, a lord
+	dynasty = dynn_Peake
+	martial = 10
+	prowess = 10
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Peake_45 #Peake_58
+	#mother = Strickland_21
+	trait = education_martial_2
+	trait = education_martial_prowess_4
+	trait = brave
+	trait = callous
+	trait = ambitious
+	trait = rude
+	trait = strong
+	trait = bossy
+	disallow_random_traits = yes
+	817.1.1 = { birth = yes }
+	860.4.1 = {
+		death = {
+			death_reason = death_execution # Second Blackfyre Rebellion
+			killer = Targaryen_96 # Brynden Bloodraven
+		}
+	}
+ }
+  Peake_1 = {
+	name = Mervyn # a lord
+	dynasty = dynn_Peake
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Peake_59 #Peake_70
+	#mother = Risley_2
+	trait = education_diplomacy_2
+	trait = cynical
+	trait = diligent
+	trait = content
+	trait = wheezing
+	trait = pensive
+	trait = journaller
+	disallow_random_traits = yes
+	825.1.1 = {birth = yes}
+	896.1.1 = { death = yes }
+ }
+  Peake_2 = {
+	name = Titus # Canon, a lord
+	dynasty = dynn_Peake
+	prowess = 3
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Peake_1
+	#mother = Leygood_3
+	trait = education_martial_3
+	trait = stubborn
+	trait = temperate
+	trait = deceitful
+	trait = rowdy
+	trait = brave
+	disallow_random_traits = yes
+	850.1.1 = {birth = yes}
+	900.1.1 = { death =yes}
+ }
+ #TARLY
+  Tarly_8 = {
+	name = Herndon # Canon, Of the Horn, Founder
+	dynasty = dynn_Tarly
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1
+	trait = physique_good_2
+	trait = twin
+	give_nickname = nick_of_the_horn
+	188.1.1 = {birth = yes}
+	288.1.1 = { death = yes } # Live to over a hundred like his brother
+ }
+  Tarly_22 = {
+	name = Samwell # Canon, AKA: Savage Sam Tarly, a lord, third son of Oswyle
+	dynasty = dynn_Tarly
+	prowess = 12
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Tarly_8
+	#father = Tarly_17
+	#mother = Crane_50
+	trait = education_martial_4
+	trait = diligent
+	trait = wrathful
+	trait = physique_good_2
+	trait = brave
+	trait = callous
+	trait = rowdy
+	trait = lifestyle_blademaster
+	give_nickname = nick_the_savage
+	disallow_random_traits = yes
+	400.1.1 = {birth = yes}
+	800.1.1 = { death = yes }
+ }
+  Tarly_1 = {
+	name = Randyll # Canon, a lord
+	dynasty = dynn_Tarly
+	martial = 12
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 7
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	sexuality = heterosexual
+	father = Tarly_22
+	#father = Tarly_39
+	#mother = Combe_35
+	trait = education_martial_5
+	trait = physique_good_2
+	trait = bossy
+	trait = organizer
+	trait = brave
+	trait = arrogant
+	trait = callous
+	disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+	845.1.1 = { add_spouse = Florent_8 } # Melessa Florent
+	900.5.17 = {death=yes}
+ }
+  Tarly_2 = {
+	name = Samwell # Canon, THE Sam
+	dynasty = dynn_Tarly
+	martial = 1
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 6
+	learning = 13
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Tarly_1
+	mother = Florent_8
+	trait = education_stewardship_2
+	trait = intellect_good_2
+	trait = craven
+	trait = gluttonous
+	trait = compassionate
+	trait = honest
+	trait = pensive
+	trait = scholar
+	disallow_random_traits = yes
+	857.1.1 = {birth = yes}
+	868.9.10 = {religion = norse_pagan } #old_gods_wnw
+	900.1.1 = {death=yes}
+ }
+  Tarly_6 = {
+	name = Dickon # Canon
+	dynasty = dynn_Tarly
+	martial = 10
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = reachman #marcher
+	father = Tarly_1
+	mother = Florent_8
+	trait = education_martial_3
+	trait = bossy
+	trait = gregarious
+	trait = brave
+	disallow_random_traits = yes
+	860.1.1 = {birth = yes}
+	900.1.20 = { death=yes } 
+}
+
+ #Florent
+  Florent_17 = {
 	name = Reynard # Mentioned, first husband of Florys the Fox, founder
 	dynasty = dynn_Florent
-	dna = Florent_17
 	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	180.1.1 = {birth = yes }
 	250.1.1 = { death = yes }
 }
+  Florent_18 = {
+	name = Reynard
+	dynasty = dynn_Florent
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	mother = Gardener_2 # Florys the Fox
+	father = Florent_17
+	235.1.1 = { birth = yes }
+	300.1.1 = { death = yes }
+ }
+  Florent_1 = {
+	name = Imry # a lord
+	dynasty = dynn_Florent
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_18
+	#father = Florent_59
+	#mother = Fossoway_91
+	780.1.1 = {birth = yes}
+	840.1.1 = { death = yes }
+ }
+  Florent_2 = {
+	name = Alester # Canon, a lord
+	dynasty = dynn_Florent
+	martial = 6
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 9
+	prowess = 3
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_1
+	#mother = Beesbury_80
+	trait = education_stewardship_2
+	trait = greedy
+	trait = just
+	trait = gregarious
+	trait = bossy
+	trait = ambitious
+	disallow_random_traits = yes
+	823.1.1 = {birth = yes }
+	868.1.5 = {
+		death = {
+			death_reason = death_burned_witch # Sacrifice to R'hllor
+			killer = Baratheon_3 # Stannis Baratheon
+		}
+	}
+  }
+  Florent_3 = {
+	name = Axell # Canon, Queen's Man
+	dynasty = dynn_Florent
+	martial = 7
+	stewardship = 8
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	sexuality = heterosexual
+	father = Florent_1
+	#mother = Beesbury_80
+	trait = education_stewardship_3
+	trait = beauty_bad_1
+	trait = arrogant
+	trait = vengeful
+	trait = wrathful
+	trait = bossy
+	disallow_random_traits = yes
+	825.1.1 = {birth = yes }
+	860.1.1 = { employer = Baratheon_3 } #Stannis Baratheon
+	867.1.1 = {
+		religion = sixth_house #rhllor_fots
+		trait = zealous
+	}
+	900.8.17 = { death = yes }
+  }
+  Florent_4 = {
+	name = Ryam # Canon
+	dynasty = dynn_Florent
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_1
+	#mother = Beesbury_80
+	trait = education_martial_1
+	836.1.1 = {birth = yes }
+	850.1.1 = { death = { death_reason = death_horse_riding_accident } }
+ }
+  Florent_5 = {
+	name = Colin # Canon
+	dynasty = dynn_Florent
+	martial = 7
+	stewardship = 13
+	prowess = 6
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_1
+	#mother = Beesbury_80
+	trait = education_martial_2
+	840.1.1 = {birth = yes	}
+	900.1.1 = { death = yes } 
+  }
+  Florent_7 = {
+	name = Alekyne # Canon, a lord
+	dynasty = dynn_Florent
+	dna = Florent_7
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_2
+	#mother = Crane_2
+	trait = education_intrigue_2
+	840.1.1 = {birth = yes}
+	900.1.1 = { death = yes }
+ }
+  Florent_8 = {
+	name = Melessa # Canon, married Randyll Tarly
+	dynasty = dynn_Florent
+	female = yes
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_2
+	#mother = Crane_2
+	trait = education_diplomacy_1
+	trait = compassionate
+	830.1.1 = {birth = yes}
+	900.1.1 = {death = yes}
+ }
+  Florent_10 = {
+	name = Selyse # Canon, married Stannis Baratheon
+	dynasty = dynn_Florent
+	female = yes
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	martial = 2
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 3
+	father = Florent_4
+	mother = Varner_58
+	trait = education_stewardship_2
+	trait = beauty_bad_1
+	trait = pensive
+	trait = arrogant
+	trait = chaste
+	trait = ambitious	
+	disallow_random_traits = yes
+	8267.1.1 = {birth = yes}
+	867.1.1 = {
+		religion = sixth_house #rhllor_fots
+		trait = zealous
+	}
+	900.1.1 = {death = yes}
+ }
+  Florent_13 = {
+	name = Delena # Canon, had child with Robert
+	dynasty = dynn_Florent
+	female = yes
+	religion = dark_souls_faith #fots_seven
+	culture = honeywiner
+	father = Florent_5
+	#mother = Mullendore_71
+	trait = beauty_good_1
+	trait = lustful
+	840.1.1 = {birth = yes}
+	900.1.1 = { death = yes }
+ }
  #GARDENERS
   Gardener_1 = {
 	name = Garth # Canon, AKA: Greenhand
@@ -2230,6 +2983,8 @@
 	disallow_random_traits = yes
 	give_nickname = nick_the_fox
 	183.1.1 = {birth = yes }
+	235.1.1 = { add_spouse = Florent_17 } # Reynard Florent
+	236.4.1 = { add_spouse = Peake_6 } # Meryn Peake
 	240.1.1 = { death = yes }
  }
   Gardener_3 = {
@@ -2332,11 +3087,26 @@
 	920.1.1 = { death = yes }
   }
  #Redwyne
+  Redwyne_11 = {
+	name = Gilbert # Canon, Of the Vines, founder
+	dynasty = dynn_Redwyne
+	stewardship = 11
+	learning = 12
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Gardener_1 # Garth Greenhand
+	trait = education_stewardship_4
+	trait = temperate
+	trait = drunkard
+	give_nickname = nick_agot_historical_of_the_vines
+	182.1.1 = {birth = yes}
+	255.1.1 = { death = yes }
+ }
   Redwyne_1 = {
 	name = Denys # a lord
 	dynasty = dynn_Redwyne
 	religion = dark_souls_faith #fots_seven
-	culture = vineman
+	culture = honeywiner #vineman
 	father = Redwyne_43
 	mother = Royce_79
 	750.1.1 = { birth = yes }
@@ -2353,9 +3123,9 @@
 	stewardship = 5
 	health = 7
 	religion = dark_souls_faith #fots_seven
-	culture = vineman
+	culture = honeywiner #vineman
 	father = Redwyne_43
-	mother = Royce_79
+	#mother = Royce_79
 	trait = education_intrigue_4
 	trait = intellect_good_2
 	trait = diligent
@@ -2985,6 +3755,24 @@
 	821.1.1 = { birth = yes }
 	850.9.1 = { death = yes }
 }
+  Baelish_1_son = {
+	name = Tormo # Mentioned, a lord
+	dynasty = dynn_Baelish
+	religion = dark_souls_faith #fots_seven
+	culture = valeman_main #valeman_finger
+	father = Baelish_1
+	#mother = Den_Brove_53
+	trait = education_martial_2
+	trait = intellect_good_1
+	trait = brave
+	trait = gregarious
+	trait = honest
+	trait = temperate
+	trait = charming
+	disallow_random_traits = yes
+	841.1.1 = { birth = yes }
+	880.9.1 = { death = yes }
+ }
   Baelish_2 = {
 	name = Petyr # Canon, THE Petyr Baelish, AKA: Littlefinger, a lord
 	dynasty = dynn_Baelish
@@ -3026,7 +3814,7 @@
 		trait = schemer
 		effect = { add_gold = 1000 }
 	}
-	868.7.1 = { dynasty_house = house_BaelishHH }
+	866.7.1 = { dynasty_house = house_BaelishHH }
 	869.1.18 = { add_spouse = Tully_6 } # Lysa Tully 
 	880.1.1 = { death = { death_reason = death_duel killer = Tully_9  } }
   }
@@ -3258,19 +4046,11 @@
 				limit = { character:Targaryen_97 = { is_alive = yes } }
 				set_relation_lover = character:Targaryen_97 # Shiera Seastar
 			}
-			agot_safe_reveal_lovers_history_effect = yes
+			#agot_safe_reveal_lovers_history_effect = yes
 		}
 	}
 	910.6.1 = { # Death of Aenys Blackfyre
 		trait = murderer
-		trait = nightswatch_historical # Sent to the wall, after Aegon V took the throne
-		effect = {
-			agot_join_nightswatch_history_effect = {
-				ORDER = ranger
-				CASTLE = title:c_castle_black
-				NW_JOIN_AGE = 58
-			}
-		}
 	}
 	950.6.1 = {
 		death = { death_reason = death_disappearance }
@@ -4201,9 +4981,7 @@
 	trait = brave
 	disallow_random_traits = yes
 	828.1.1 = { birth = yes	}
-	840.1.23 = { # When he's caught with Yronwood's Paramour.
-		trait = lifestyle_reveler
-	}
+	840.1.23 = {  trait = lifestyle_reveler }# When he's caught with Yronwood's Paramour.
 	840.2.6 = {  # The day Ormond died
 		give_nickname = nick_agot_historical_the_red_viper
 		effect = {

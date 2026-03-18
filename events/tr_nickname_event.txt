@@ -653,9 +653,40 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
- #
- #
- #
+ #STEWARDSHIP
+ #MARTIAL
+ #DIPLOMACNY
+    option = {
+        name = nick_name_giver_nick_golden_tongued
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = education_diplomacy_3
+                    has_trait = education_diplomacy_4
+                    has_trait = education_diplomacy_5
+                    has_trait = violet_poet
+                }
+                OR = {
+                    has_trait = diplomat
+                    has_trait = gregarious
+                    has_trait = lifestyle_poet
+                }
+                NOR = {
+                    has_trait = shy
+                    has_trait = reclusive
+                    has_trait = mute
+                    has_trait = lisping
+                    has_trait = stuttering
+                    has_trait = hygene_bad_1
+                    has_trait = hygene_bad_2
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_golden_tongued }
+        ai_chance = {
+			base = 1
+		}
+    }
  #Bastard based
     option = {
         name = nick_name_giver_nick_the_white_bastard
@@ -864,6 +895,127 @@ tr_nickname_event.01 = {
 		}
     }
     option = {
+        name = nick_name_giver_nick_friend_of_charlemagne
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = follow_charlemagne
+                }
+                NOR = {
+                    has_trait = hygene_bad_1
+                    has_trait = hygene_bad_2
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_friend_of_charlemagne }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_unbearable
+        trigger = {
+            AND = {
+                has_trait = irritable
+                has_trait = wrathful
+                OR = {
+                    has_trait = callous
+                    has_trait = sadistic
+                    has_trait = paranoid
+                }
+                NOR = {
+                    has_trait = education_diplomacy_4
+                    has_trait = education_diplomacy_5
+                    has_trait = diplomat
+                    has_trait = compassionate
+                    has_trait = gregarious
+                    has_trait = mute
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_unbearable }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
+		}
+    }
+    option = { #PEACEABLE
+        name =  nick_name_giver_nick_the_peaceable
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = administrator
+                    has_trait = family_first
+                    has_trait = gallant
+                    has_trait = calm
+                }
+                OR = {
+                    has_trait = diplomat
+                    has_trait = family_first
+                    has_trait = generous
+                    has_trait = gregarious
+                    has_trait = compassionate
+                }
+                NOR = {
+                    has_trait = sadistic
+                    has_trait = torturer
+                    has_trait = vengeful
+                    has_trait = schemer
+                    has_trait = wrathful
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_peaceable }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_queen
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = ambitious
+                    has_trait = family_first
+                }
+                is_female = yes
+                NOR = {
+                    has_trait = hygene_bad_1
+                    has_trait = hygene_bad_2
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_queen }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = {
+        name =  nick_name_giver_nick_the_queen
+        trigger = {
+            AND = {
+                has_sexuality = homosexual
+                OR = {
+                    has_trait = seducer
+                    has_trait = lustful
+                }
+                NOR = {
+                    has_trait = chaste
+                    has_trait = hygene_bad_1
+                    has_trait = hygene_bad_2
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_queen_gay }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #CRUEL / evil 
+    option = {
         name = nick_name_giver_nick_the_little_impaler
         trigger = {
             AND = {
@@ -911,116 +1063,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
-        name = nick_name_giver_nick_friend_of_charlemagne
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = follow_charlemagne
-                }
-                NOR = {
-                    has_trait = hygene_bad_1
-                    has_trait = hygene_bad_2
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_friend_of_charlemagne }
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = {
-        name = nick_name_giver_nick_golden_tongued
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = education_diplomacy_3
-                    has_trait = education_diplomacy_4
-                    has_trait = education_diplomacy_5
-                    has_trait = violet_poet
-                }
-                OR = {
-                    has_trait = diplomat
-                    has_trait = gregarious
-                    has_trait = poet
-                }
-                NOR = {
-                    has_trait = shy
-                    has_trait = reclusive
-                    has_trait = mute
-                    has_trait = lisping
-                    has_trait = stuttering
-                    has_trait = hygene_bad_1
-                    has_trait = hygene_bad_2
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_golden_tongued }
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = {
-        name =  nick_name_giver_nick_the_unbearable
-        trigger = {
-            AND = {
-                has_trait = irritable
-                has_trait = wrathful
-                OR = {
-                    has_trait = callous
-                    has_trait = sadistic
-                    has_trait = paranoid
-                }
-                NOR = {
-                    has_trait = education_diplomacy_4
-                    has_trait = education_diplomacy_5
-                    has_trait = diplomat
-                    has_trait = compassionate
-                    has_trait = gregarious
-                    has_trait = mute
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_unbearable }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 1
-				has_trait = arbitrary
-			}
-		}
-    }
-    option = {
-        name =  nick_name_giver_nick_the_peaceable
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = administrator
-                    has_trait = family_first
-                    has_trait = gallant
-                    has_trait = calm
-                }
-                OR = {
-                    has_trait = diplomat
-                    has_trait = family_first
-                    has_trait = generous
-                    has_trait = gregarious
-                    has_trait = compassionate
-                }
-                NOR = {
-                    has_trait = sadistic
-                    has_trait = torturer
-                    has_trait = vengeful
-                    has_trait = schemer
-                    has_trait = wrathful
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_peaceable }
-        ai_chance = {
-			base = 1
-		}
-    }
+ #DUMB STUPID   
     option = {
         name =  nick_name_giver_nick_the_fool
         trigger = {
@@ -1043,47 +1086,6 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_the_fool }
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = {
-        name =  nick_name_giver_nick_the_queen
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = ambitious
-                    has_trait = family_first
-                }
-                is_female = yes
-                NOR = {
-                    has_trait = hygene_bad_1
-                    has_trait = hygene_bad_2
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_queen }
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = {
-        name =  nick_name_giver_nick_the_queen
-        trigger = {
-            AND = {
-                has_sexuality = homosexual
-                OR = {
-                    has_trait = seducer
-                    has_trait = lustful
-                }
-                NOR = {
-                    has_trait = chaste
-                    has_trait = hygene_bad_1
-                    has_trait = hygene_bad_2
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_queen_gay }
         ai_chance = {
 			base = 1
 		}
