@@ -358,7 +358,7 @@ tr_nickname_event.01 = {
 		}
     }
  #HUN Mongol Nomad Turkish
-    option = {
+    option = { #HUN
         name = nick_name_giver_nick_the_hun
         trigger = {
             AND = {
@@ -386,7 +386,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #KHAZAR
         name = nick_name_giver_nick_the_khazar
         trigger = {
             AND = {
@@ -402,7 +402,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #CUMAN
         name = nick_name_giver_nick_the_cuman
         trigger = {
             AND = {
@@ -628,8 +628,34 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+ #PERSIAN   
+    option = { #Immortal SOul
+        name =  nick_name_giver_nick_the_immortal_soul
+        trigger = {
+            AND = {
+                has_trait = diligent
+                has_trait = ambitious
+                culture = culture:persian
+                OR = {
+                    has_trait = organizer
+                    has_trait = lifestyle_poet
+                    has_trait = architect
+                }
+                NOR = {
+                    has_trait = arbitrary
+                    has_trait = sadistic
+                    has_trait = craven
+                    has_trait = callous
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_immortal_soul }
+        ai_chance = {
+			base = 1
+		}
+    }
  #INTRIGE
-    option = {
+    option = { #suspicious
         name = nick_name_giver_nick_the_suspicious
         trigger = {
             AND = {
@@ -655,6 +681,63 @@ tr_nickname_event.01 = {
     }
  #STEWARDSHIP
  #MARTIAL
+    option = { #GALLANT
+        name =  nick_name_giver_nick_the_gallant
+        trigger = {
+            AND = {
+                has_trait = gallant
+                OR = {
+                    has_trait = compassionate
+                    has_trait = gregarious
+                    has_trait = brave
+                }
+                NOR = {
+                    has_trait = arbitrary
+                    has_trait = sadistic
+                    has_trait = craven
+                    has_trait = callous
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_gallant }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = -100
+				has_trait = arbitrary
+			}
+		}
+    }
+    option = { #the BARBARIAN
+        name =  nick_name_giver_nick_the_barbarian
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = wrathful
+                    has_trait = class_bar
+                    has_trait = class_bar_berserker
+                    has_trait = class_bar_wild_magic
+                    has_trait = class_bar_wildheart
+                    has_trait = class_bar_giant
+                    culture = culture:cimmerian
+                }
+                OR = {
+                    has_trait = lifestyle_blademaster
+                    has_trait = whole_of_body
+                    has_trait = brave
+                    has_trait = athletic
+                }
+                NOR = {
+                    has_trait = calm
+                    has_trait = craven
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_barbarian }
+        ai_chance = {
+			base = 1
+		}
+    }
  #DIPLOMACNY
     option = {
         name = nick_name_giver_nick_golden_tongued
