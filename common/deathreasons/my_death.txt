@@ -83,3 +83,13 @@ death_battle_dragon_fire = {
 	public_knowledge = yes
 	icon = "death_dragon.dds"
 }
+death_clone = {
+	natural_death_trigger = {
+		OR = {
+			has_trait = clone
+			#has_character_modifier = stress_drinking_binge
+		}
+	}
+	priority = 15
+	icon = "death_unknown.dds"
+}
