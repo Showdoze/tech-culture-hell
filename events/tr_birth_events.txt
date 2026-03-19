@@ -117,3 +117,48 @@ tr_birth.02 = {
         }
     }
 }
+
+tr_birth.031 = { ## blind
+    hidden = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = {
+                    scope:child = { has_trait = blind }
+                }
+            }
+            scope:child = { add_trait = blind }
+        }
+    }
+}
+
+tr_birth.032 = { ## deaf
+    hidden = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = {
+                    scope:child = { has_trait = deaf }
+                }
+            }
+            scope:child = { add_trait = deaf }
+        }
+    }
+}
+
+tr_birth.033 = { ## mute
+    hidden = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = {
+                    scope:child = { has_trait = mute }
+                }
+            }
+            scope:child = { add_trait = mute }
+        }
+    }
+}
