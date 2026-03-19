@@ -1785,26 +1785,9 @@ crannogman_ethnicity = {
 	}
 }
 sussy_ethnicity = {
-	template = "caucasian_base"
+	template = "tr_ethnicity_template"
     using = "sus_culture"
 	#visible = no
-	gene_eyebrows_fullness = {
-		5 = {  name = layer_2_avg_thickness             range = { 0.0 0.0 }     }
-		10 = {  name = layer_2_high_thickness             range = { 0.0 0.0 }     }
-		5 = {  name = layer_2_low_thickness             range = { 0.0 0.0 }     }
-		2 = {  name = layer_2_lower_thickness             range = { 0.0 0.0 }     }
-	}
-    gene_eye_shut = {
-        50 = { name = eye_shut_neg    range = { 0.0 0.0 }    }
-        50 = { name = eye_shut_pos    range = { 0.0 0.0 }    }
-    }
-    gene_eye_distance = {
-        1 = { name = eye_distance_neg    range = { 0.0 0.0 }    }
-    }
-	gene_mouth_open = {
-		10 = { name = mouth_open_neg    range = { 0.0 0.0 }    }
-		10 = { name = mouth_open_pos    range = { 0.0 0.0 }    }
-	}
 	gene_height = {
         5 = { name = normal_height  range = { 0 0.0 }      }
 		5 = { name = normal_height  range = { 0 0.275 }      }
@@ -1814,6 +1797,15 @@ sussy_ethnicity = {
         5 = { name = body_fat_head_fat_full   range = { 0.5 0.55 }      }
         25 = { name = body_fat_head_fat_full   range = {0.6 0.7 }      }
         50 = { name = body_fat_head_fat_full   range = { 0.8 0.9 }      }
-        
+    }
+
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0 1 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.5 0.5 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0.2 0.5 } }
     }
 }

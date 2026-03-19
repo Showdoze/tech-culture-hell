@@ -1,0 +1,243 @@
+﻿tr_sus_outfit_persistent = {
+
+    usage = game
+    selection_behavior = max
+    priority = 10
+
+    tr_sus_1 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = legwear
+                template = mena_common_legwear
+                accessory = male_legwear_secular_mena_common_01
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep2_western_era3_war_nobility
+                accessory = m_headgear_sec_ep2_western_war_nob_01_lo
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+}
+
+tr_sus_outfit_clothes = {
+
+    usage = game
+    priority = 10
+
+    tr_sus_clothes_white = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_02_m1
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_clothes_blue = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_01_m2
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_clothes_green = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_02_m3
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_clothes_red = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_02_m4
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_clothes_purple = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_02_m5
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_clothes_yellow = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = tgp_chinese_ministers
+                accessory = m_clothes_sec_tgp_chinese_nob_02_m6
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+}
+
+tr_sus_crest = {
+
+    usage = game
+    priority = 10
+
+    tr_sus_crest_none = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = no_headgear
+                value = 0.1
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_crest_1 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = pol_crest
+                accessory = m_headgear_sec_pol_era3_war_crest_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_crest_2 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = pol_crown
+                accessory = m_headgear_sec_pol_era4_war_crown_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_crest_3 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = secondary_headgears
+                template = western_wedding
+                accessory = m_headgear_spec_ep2_western_wedding
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+    tr_sus_crest_4 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = additive_headgear
+                template = coa_crest
+                accessory = m_headgear_sec_ep2_western_war_nob_crest_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                exists = this
+                this.culture = culture:sus_culture
+            }
+        }
+    }
+}

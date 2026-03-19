@@ -1225,6 +1225,7 @@
 #BLOOD
  blood_faith:0 "Blood Meridian"
  blood_faith_adj:0 "Blood Meridian"
+ blood_faith_desc:0 "The ones who indulge in murder and bloodshed so much, it becomes their sole purpose of existence, their meaning, their god"
  blood_faith_adherent:0 "Blood Meridian"
  blood_faith_adherent_plural:0 "Blood Meridians"
  blood_high_god_name:0 "The Blood God"
@@ -1364,7 +1365,7 @@
   keeper_faith_desc:0 "The Keepers are an ancient order of expert observers and seers dedicated to preserving balance in the world. Garrett once belonged to the organization, and it is shown that the Keepers' training is the main reason for his aptitude for remaining unseen. Even though Garrett refuses further willful involvement with the Keepers, they inevitably manipulate him into acting out their prophecies and obscure designs in all three games."
 #FANTASY
   fantasy_religion:0 "Fantasy Religion"
-   fantasy_desc:0 "Religions from other worlds..."
+   fantasy_religion_desc:0 "Religions from other worlds..."
    fantasy_religion_adj:0 "Fantasy"
    fantasy_religion_adherent:0 "Fantasy"
    fantasy_religion_adherent_plural:0 "Fantasy"
@@ -1639,8 +1640,8 @@
    sixth_house_adj:1 "Sixth House"
    sixth_house_adherent:1 "Dreamer"
    sixth_house_adherent_plural:1 "Dreamers"
-   sixth_house_desc:0 "[SelectLocalization(IsObserver, 'sixth_house_nonfollower_desc', 'sixth_house_custom_desc')]"
-   sixth_house_custom_desc:0 "[GetPlayer.Custom('sixth_house_dynamic_desc')]"
+   sixth_house_desc:0 "[SelectLocalization(IsObserver, 'sixth_house_follower_desc', 'sixth_house_nonfollower_desc')]"
+   #sixth_house_custom_desc:0 "[GetPlayer.Custom('sixth_house_dynamic_desc')]"
    sixth_house_nonfollower_desc:0 "The Sixth House, or Great House Dagoth, was one of the ancient Great Houses of the Dunmer. Following the Battle of Red Mountain, it has since fallen into obscurity. The true facts of the House's fall will never be known, but it is believed that the House's leader, Voryn Dagoth, was entrusted by Nerevar to guard Kagrenac's Tools while he consulted his councillors. Dagoth began studying the tools and used them to siphon power from the Heart of #LORE [compendium_lorkhan]#!. Now known as Dagoth Ur, he sought to use the tools to steal the power of the Heart for himself.  Nerevar and his advisors fought in a great battle against Dagoth Ur and his followers, driving him deep beneath Red Mountain. There, beneath the Heart, deep within that volcano, Dagoth Ur waits for his chance to rise again."
    sixth_house_follower_desc:0 "I AM THE SHARMAT\nI AM OLDER THAN MUSIC\nWHAT I BRING IS LIGHT\nWHAT I BRING IS A STAR\nWHAT I BRING IS\nAN ANCIENT SEA"
    sixth_house_high_god_name:0 "$god_sixth_house_name$"
