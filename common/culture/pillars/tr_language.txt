@@ -265,6 +265,22 @@ language_cyrodiilic = {
 	}
 	color = cyrodiilic
 }
+language_tamrielic_yoku = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_tamrielic_yoku
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_tamrielic_yoku }
+			multiply = 10
+		}
+	}
+	color = tamrielic_yoku
+}
 language_dunmeris = {
 	type = language
 	is_shown = {
