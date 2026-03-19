@@ -770,6 +770,34 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+ #
+ #
+ #Vice   
+    option = { #the DRUNKARD
+        name = nick_name_giver_nick_the_drunkard
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = class_monk_drunk
+                    has_trait = drunkard
+                    has_trait = lifestyle_reveler
+                }
+                NOR = {
+                    has_trait = athletic
+                    has_trait = lifestyle_hunter
+                    has_trait = seducer
+                    has_trait = lifestyle_physician
+                    has_trait = lifestyle_herbalist
+                    has_trait = lifestyle_gardener
+                    has_trait = torturer
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_drunkard }
+        ai_chance = {
+			base = 1
+		}
+    }
  #Bastard based
     option = {
         name = nick_name_giver_nick_the_white_bastard
