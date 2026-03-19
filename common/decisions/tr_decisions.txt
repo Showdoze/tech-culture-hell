@@ -1183,7 +1183,7 @@ tr_choose_nickname_decision = {
     selection_tooltip = nick_name_giver_decision_tip
     confirm_text = nick_name_giver_decision_confirm
     is_shown = { has_any_nickname = no }
-    cost = { prestige = 150 }
+    #cost = { prestige = 150 }
     effect = {
         custom_tooltip = nick_name_giver_decision_tip
         trigger_event = {
@@ -1191,7 +1191,7 @@ tr_choose_nickname_decision = {
         }
     }
     ai_will_do = {
-        base = 0
+        base = 10
     }
 }
 tr_house_customizer_decision = {
