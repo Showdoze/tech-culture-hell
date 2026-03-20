@@ -1,804 +1,1008 @@
 ﻿####MC Glass
 tr_geirmcglass = {
-	name = "Geir"
-	religion = norse_pagan
-	culture = scottish
-	dynasty = mcglass
-	dna = geirmcglass
-	martial = 20
-	diplomacy = 5
-	intrigue = 2
-	stewardship = 8
-	learning = 5
-	prowess = 30
-	trait = brave
-	trait = education_martial_4
-	trait = viking
-	trait = scarred
-	trait = diligent
-	trait = wrathful
-	trait = adventurer
-	520.1.11 = { birth = yes }
-	560.1.11 = { add_spouse = tr_geirwife }
-	540.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	607.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Geir"
+    religion = norse_pagan
+    culture = scottish
+    dynasty = mcglass
+    dna = geirmcglass
+    martial = 20
+    diplomacy = 5
+    intrigue = 2
+    stewardship = 8
+    learning = 5
+    prowess = 30
+    trait = brave
+    trait = education_martial_4
+    trait = viking
+    trait = scarred
+    trait = diligent
+    trait = wrathful
+    trait = adventurer
+    520.1.11 = { birth = yes }
+    560.1.11 = { add_spouse = tr_geirwife }
+    540.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+    607.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_geirwife = {
-	name = "Olivia"
-	religion = gaelic_pagan
-	dna = mary_of_scot
-	culture = pictish
-	female = yes
-	dynasty = 1040011
-	father = 166535
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = brave
-	trait = education_diplomacy_4
-	trait = diligent
-	530.1.11 = {
-		birth = yes
-	}
-	560.1.11 = {
-		add_spouse = tr_geirmcglass
-	}
-	600.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Olivia"
+    religion = gaelic_pagan
+    dna = mary_of_scot
+    culture = pictish
+    female = yes
+    dynasty = 1040011
+    father = 166535
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = brave
+    trait = education_diplomacy_4
+    trait = diligent
+    530.1.11 = {
+        birth = yes
+    }
+    560.1.11 = {
+        add_spouse = tr_geirmcglass
+    }
+    600.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_feargusmcglass = {
-	name = "Feargus"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 5
-	stewardship = 10
-	learning = 10
-	prowess = 20
-	trait = brave
-	trait = education_martial_2
-	trait = aggressive_attacker
-	trait = adventurer
-	trait = arbitrary
-	trait = wrathful
-	trait = adventurer
-	father = tr_geirmcglass
-	mother = tr_geirwife
-	560.1.11 = {
-		birth = yes
+    name = "Feargus"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 5
+    stewardship = 10
+    learning = 10
+    prowess = 20
+    trait = brave
+    trait = education_martial_2
+    trait = aggressive_attacker
+    trait = adventurer
+    trait = arbitrary
+    trait = wrathful
+    trait = adventurer
+    father = tr_geirmcglass
+    mother = tr_geirwife
+    560.1.11 = {
+        birth = yes
+    }
+	580.6.12 = {
+		add_spouse = tr_feargusmcglasswife
 	}
-	637.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    637.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_feargusmcglasswife = {
+    name = "Bella"
+    religion = gaelic_pagan
+    culture = scottish
+	female = yes
+    567.1.11 = {
+        birth = yes
+    }
+    630.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_loramcglass = {
-	name = "Lora"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	female = yes
-	martial = 5
-	diplomacy = 22
-	intrigue = 15
-	stewardship = 12
-	learning = 10
-	prowess = 8
-	trait = fickle
-	trait = content
-	trait = ambitious
-	trait = gregarious
-	trait = witch
-	trait = lustful
-	father = tr_geirmcglass
-	mother = tr_geirwife
-	565.1.11 = {
-		birth = yes
-	}
-	617.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Lora"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    female = yes
+    martial = 5
+    diplomacy = 22
+    intrigue = 15
+    stewardship = 12
+    learning = 10
+    prowess = 8
+    trait = fickle
+    trait = content
+    trait = ambitious
+    trait = gregarious
+    trait = witch
+    trait = lustful
+    father = tr_geirmcglass
+    mother = tr_geirwife
+    565.1.11 = {
+        birth = yes
+    }
+    617.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_alastairmcglass = {
-	name = "Alastair"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 3
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 15
-	learning = 40
-	prowess = 10
-	trait = shrewd
-	trait = chaste
-	trait = diligent
-	trait = eccentric
-	trait = education_learning_4
-	trait = wise_man
-	trait = stuttering
-	trait = intellect_good_2
-	trait = shy
-	trait = reclusive
-	father = tr_feargusmcglass
-	580.1.11 = {
-		birth = yes
-	}
-	667.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Alastair"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 3
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 15
+    learning = 40
+    prowess = 10
+    trait = shrewd
+    trait = chaste
+    trait = diligent
+    trait = eccentric
+    trait = education_learning_4
+    trait = wise_man
+    trait = stuttering
+    trait = intellect_good_2
+    trait = shy
+    trait = reclusive
+    father = tr_feargusmcglass
+	mother = tr_feargusmcglasswife
+    580.1.11 = {
+        birth = yes
+    }
+    667.4.17 = {
+        death = {
+            death_reason = death_incapable
+        }
+    }
 }
 
 tr_wolanmcglass = {
-	name = "Wolan"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 3
-	diplomacy = 1
-	intrigue = 1
-	stewardship = 1
-	learning = 4
-	prowess = 1
-	trait = inbred
-	trait = lazy
-	trait = weak
-	father = tr_feargusmcglass
-	mother = tr_loramcglass
-	570.1.11 = {
-		birth = yes
-	}
-	577.4.17 = {
-		death = {
-			death_reason = death_inbred
-		}
-	}
+    name = "Wolan"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 3
+    diplomacy = 1
+    intrigue = 1
+    stewardship = 1
+    learning = 4
+    prowess = 1
+    trait = inbred
+    trait = lazy
+    trait = weak
+    father = tr_feargusmcglass
+    mother = tr_loramcglass
+    570.1.11 = {
+        birth = yes
+    }
+    577.4.17 = {
+        death = {
+            death_reason = death_inbred
+        }
+    }
 }
 
 tr_brethmcglass = {
-	name = "Breth"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = vengeful
-	trait = diligent
-	father = tr_feargusmcglass
-	570.1.11 = {
-		birth = yes
-	}
-	660.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Breth"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = vengeful
+    trait = diligent
+    father = tr_feargusmcglass
+	mother = tr_feargusmcglasswife
+    570.1.11 = {
+        birth = yes
+    }
+    660.4.17 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
 }
 
 tr_kennethmcglass = {
-	name = "Kenneth"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = strong
-	trait = diligent
-	trait = education_martial_prowess_3
-	trait = vengeful
-	trait = deviant
-	trait = brave
-	trait = greedy
-	trait = irritable
-	mother = tr_loramcglass
-	560.1.11 = {
-		birth = yes
+    name = "Kenneth"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = strong
+    trait = diligent
+    trait = education_martial_prowess_3
+    trait = vengeful
+    trait = deviant
+    trait = brave
+    trait = greedy
+    trait = irritable
+    mother = tr_loramcglass
+    560.1.11 = {
+        birth = yes
+    }
+	595.5.10 = {
+		add_spouse = tr_kennethmcglasswife
 	}
-	607.4.17 = {
-		death = {
-			death_reason = death_siege
-		}
-	}
+    607.4.17 = {
+        death = {
+            death_reason = death_siege
+        }
+    }
+}
+
+tr_kennethmcglasswife = {
+    name = "Faen"
+    religion = gaelic_pagan
+    culture = scottish
+	trait = drunkard
+	female = yes
+    570.1.11 = {
+        birth = yes
+    }
+    620.4.17 = {
+        death = {
+            death_reason = death_drinking_passive
+        }
+    }
 }
 
 tr_alfsirmcglass = {
-	name = "Alfsir"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = strong
-	trait = brave
-	trait = education_martial_prowess_2
-	trait = arbitrary
-	trait = loyal
-	trait = content
-	trait = tactitian
-	father = tr_kennethmcglass
-	600.1.11 = {
-		birth = yes
+    name = "Alfsir"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = strong
+    trait = brave
+    trait = education_martial_prowess_2
+    trait = arbitrary
+    trait = loyal
+    trait = content
+    trait = tactitian
+    father = tr_kennethmcglass
+	mother = tr_kennethmcglasswife
+    600.1.11 = {
+        birth = yes
+    }
+	629.3.30 = {
+		add_spouse = tr_alfsirmcglasswife
 	}
-	640.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	677.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    640.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+    677.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_alfsirmcglasswife = {
+    name = "Kathryn"
+    religion = gaelic_pagan
+    culture = scottish
+    diplomacy = 10
+    trait = strong
+	female = yes
+    608.1.11 = {
+        birth = yes
+    }
+    677.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_beccamcglass = {
-	name = "Becca"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	female = yes
-	martial = 5
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 8
-	trait = gallant
-	trait = brave
-	trait = education_diplomacy_2
-	trait = arbitrary
-	trait = diligent
-	trait = adventurer
-	father = tr_alfsirmcglass
-	640.1.11 = {
-		birth = yes
-	}
-	710.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Becca"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    female = yes
+    martial = 5
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 8
+    trait = gallant
+    trait = brave
+    trait = education_diplomacy_2
+    trait = arbitrary
+    trait = diligent
+    trait = adventurer
+    father = tr_alfsirmcglass
+	mother = tr_alfsirmcglasswife
+    640.1.11 = {
+        birth = yes
+    }
+    710.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_malcolmmcglass = {
-	name = "Malcolm"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = gregarious
-	trait = brave
-	trait = education_diplomacy_2
-	trait = arbitrary
-	trait = lustful
-	trait = callous
-	mother = tr_beccamcglass
-	670.1.11 = {
-		birth = yes
+    name = "Malcolm"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = gregarious
+    trait = brave
+    trait = education_diplomacy_2
+    trait = arbitrary
+    trait = lustful
+    trait = callous
+	trait = wild_oat
+    mother = tr_beccamcglass
+    670.1.11 = {
+        birth = yes
+    }
+	690.5.12 = {
+		add_spouse = tr_malcolmmcglasswife
 	}
-	740.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    740.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_malcolmmcglasswife = {
+    name = "Martha"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    trait = education_diplomacy_3
+    671.1.11 = {
+        birth = yes
+    }
+    750.4.17 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
 }
 
 tr_annamcglass = {
-	name = "Anna"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	female = yes
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = loyal
-	trait = lazy
-	trait = education_diplomacy_1
-	trait = content
-	trait = impatient
-	trait = deviant
-	mother = tr_beccamcglass
-	680.1.11 = {
-		birth = yes
-	}
-	730.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    name = "Anna"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    female = yes
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = loyal
+    trait = lazy
+    trait = education_diplomacy_1
+    trait = content
+    trait = impatient
+    trait = deviant
+	trait = wild_oat
+    mother = tr_beccamcglass
+    680.1.11 = {
+        birth = yes
+    }
+    730.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_thennmcglass = {
-	name = "Thenn"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = intellect_good_3
-	trait = calm
-	trait = education_martial_prowess_2
-	trait = arbitrary
-	trait = lustful
-	trait = sadistic
-	father = tr_malcolmmcglass
-	700.1.11 = {
-		birth = yes
+    name = "Thenn"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = intellect_good_3
+    trait = calm
+    trait = education_martial_prowess_2
+    trait = arbitrary
+    trait = lustful
+    trait = sadistic
+    father = tr_malcolmmcglass
+	mother = tr_malcolmmcglasswife
+    700.1.11 = {
+        birth = yes
+    }
+	735.9.11 = {
+		add_spouse = tr_thennmcglasswife
 	}
-	770.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    771.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_thennmcglasswife = {
+    name = "Eilionora"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    710.1.11 = {
+        birth = yes
+    }
+    760.4.17 = {
+        death = {
+            death_reason = death_stress
+        }
+    }
 }
 
 tr_liammcglass = {
-	name = "Liam"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	father = tr_thennmcglass
-	730.1.11 = {
-		birth = yes
+    name = "Liam"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    father = tr_thennmcglass
+	mother = tr_thennmcglasswife
+    730.1.11 = {
+        birth = yes
+    }
+	750.12.12 = {
+		add_spouse = tr_liammcglasswife
 	}
-	790.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    790.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_liammcglasswife = {
+    name = "Gnathnad"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    732.1.11 = {
+        birth = yes
+    }
+    800.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
 }
 
 tr_steinmcglass = {
-	name = "Stein"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	father = tr_liammcglass
-	760.1.11 = {
-		birth = yes
+    name = "Stein"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    father = tr_liammcglass
+	mother = tr_liammcglasswife
+    760.1.11 = {
+        birth = yes
+    }
+	790.5.12 = {
+		add_spouse = tr_steinmcglasswife
 	}
-	820.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    820.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_steinmcglasswife = {
+    name = "Sorcha"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    760.1.11 = {
+        birth = yes
+    }
+    805.4.17 = {
+        death = {
+            death_reason = death_cancer
+        }
+    }
 }
 
 tr_donmcglass = {
-	name = "Don"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = education_martial_prowess_3
-	father = tr_steinmcglass
-	800.1.11 = {
-		birth = yes
+    name = "Don"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = education_martial_prowess_3
+    father = tr_steinmcglass
+	mother = tr_steinmcglasswife
+    800.1.11 = {
+        birth = yes
+    }
+	827.4.5 = {
+		add_spouse = tr_donmcglasswife
 	}
-	870.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    870.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_donmcglasswife = {
+    name = "Aileann"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    805.1.11 = {
+        birth = yes
+    }
+    875.4.17 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
 }
 
 tr_colinmcglass = {
-	name = "Colin"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = education_martial_prowess_2
-	father = tr_donmcglass
-	840.1.11 = {
-		birth = yes
+    name = "Colin"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = education_martial_prowess_2
+    father = tr_donmcglass
+	mother = tr_donmcglasswife
+    840.1.11 = {
+        birth = yes
+    }
+	885.2.1 = {
+		add_spouse = tr_colinmcglasswife
 	}
-	910.4.17 = {
-		death = {
-			death_reason = death_natural_causes
-		}
-	}
+    910.4.17 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_colinmcglasswife = {
+    name = "Beath"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    850.1.11 = {
+        birth = yes
+    }
+    905.4.17 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
 }
 
 tr_aleksmcglass = {
-	name = "Aleks"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	father = tr_colinmcglass
-	880.1.1 = {
-		birth = yes
+    name = "Aleks"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    father = tr_colinmcglass
+	mother = tr_colinmcglasswife
+    880.1.1 = {
+        birth = yes
+    }
+	900.5.11 = {
+		add_spouse = tr_aleksmcglasswife
 	}
-	925.4.17 = {
-		death = {
-			death_reason = death_stress
-		}
-	}
+    950.4.17 = {
+        death = {
+            death_reason = death_stress
+        }
+    }
+}
+
+tr_aleksmcglasswife = {
+    name = "Victoria"
+    religion = catholic
+    culture = lombard
+    female = yes
+    881.1.11 = {
+        birth = yes
+    }
+    971.4.17 = {
+        death = {
+            death_reason = death_incapable
+        }
+    }
 }
 
 tr_deanthmcglass = {
-	name = "Deanth"
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	father = tr_aleksmcglass
-	trait = education_martial_prowess_3
-	920.1.1 = {
-		birth = yes
-	}
-	990.4.17 = {
-		death = {
-			death_reason = death_fear
-		}
-	}
+    name = "Deanth"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    father = tr_aleksmcglass
+	mother = tr_aleksmcglasswife
+    trait = education_martial_prowess_3
+    920.1.1 = {
+        birth = yes
+    }
+    990.4.17 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
 }
 
 tr_shaunmcglass = {
-	name = "Shaun"
-	dna = civ_robert_bruce
-	religion = gaelic_pagan
-	culture = scottish
-	dynasty = mcglass
-	father = tr_deanthmcglass
-	trait = education_martial_prowess_2
-	950.1.1 = {
-		birth = yes
-	}
-	1025.4.17 = {
-		death = {
-			death_reason = death_training_accident
-		}
-	}
+    name = "Shaun"
+    dna = civ_robert_bruce
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    father = tr_aleksmcglass
+	mother = tr_aleksmcglasswife
+    trait = education_martial_prowess_2
+    940.1.1 = {
+        birth = yes
+    }
+    995.4.17 = {
+        death = {
+            death_reason = death_training_accident
+        }
+    }
 }
 
 tr_mcglassfollower1 = {
-	name = "Mareth"
-	religion = gaelic_pagan
-	culture = scottish
-	840.1.1 = {
-		birth = yes
-	}
-	860.10.5 = {
-		employer = tr_donmcglass
-	}
+    name = "Mareth"
+    religion = gaelic_pagan
+    culture = scottish
+    840.1.1 = {
+        birth = yes
+    }
+    860.10.5 = {
+        employer = tr_donmcglass
+    }
 }
 
 tr_mcglassfollower2 = {
-	name = "Kenneth"
-	religion = gaelic_pagan
-	culture = scottish
-	852.1.1 = {
-		birth = yes
-	}
-	860.10.5 = {
-		employer = tr_donmcglass
-	}
+    name = "Kenneth"
+    religion = gaelic_pagan
+    culture = scottish
+    852.1.1 = {
+        birth = yes
+    }
+    860.10.5 = {
+        employer = tr_donmcglass
+    }
 }
 
 tr_mcglassfollower3 = {
-	name = "Kieran"
-	religion = gaelic_pagan
-	culture = scottish
-	850.1.1 = {
-		birth = yes
-	}
-	860.10.5 = {
-		employer = tr_donmcglass
-	}
+    name = "Kieran"
+    religion = gaelic_pagan
+    culture = scottish
+    850.1.1 = {
+        birth = yes
+    }
+    860.10.5 = {
+        employer = tr_donmcglass
+    }
 }
 
 tr_mcglassfollower4 = {
-	name = "Fiona"
-	religion = gaelic_pagan
-	culture = scottish
-	female = yes
-	850.1.1 = {
-		birth = yes
-	}
-	860.10.5 = {
-		employer = tr_donmcglass
-	}
+    name = "Fiona"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    850.1.1 = {
+        birth = yes
+    }
+    860.10.5 = {
+        employer = tr_donmcglass
+    }
 }
 
 ####TIANDI
 
 tr_tiandi1 = {
-	name = "Uia"
-	religion = zhengyi
-	culture = han
-	dynasty = tiandi
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = brave
-	trait = education_martial_3
-	trait = arrogant
-	trait = wrathful
-	trait = adventurer
-	820.1.11 = {
-		birth = yes
-	}
-	850.10.5 = {
-		employer = tr_tiandizhanghu
-	}
-	840.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	887.4.17 = {
-		death = {
-			death_reason = death_age
-		}
-	}
+    name = "Uia"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = brave
+    trait = education_martial_3
+    trait = arrogant
+    trait = wrathful
+    trait = adventurer
+	trait = adopted
+	disallow_random_traits = yes
+    820.1.11 = {
+        birth = yes
+    }
+    850.10.5 = {
+        employer = tr_tiandizhanghu
+    }
+    840.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
 }
 
 tr_tiandi2 = {
-	name = "Xìngshì"
-	religion = zhengyi
-	culture = han
-	dynasty = tiandi
-	martial = 10
-	diplomacy = 10
-	intrigue = 10
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = diligent
-	trait = education_martial_3
-	trait = calm
-	trait = tactitian
-	trait = gallant
-	835.1.11 = {
-		birth = yes
-	}
-	850.10.5 = {
-		employer = tr_tiandizhanghu
-	}
-	850.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	907.4.17 = {
-		death = {
-			death_reason = death_age
-		}
-	}
+    name = "Xìngshì"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = diligent
+    trait = education_martial_3
+    trait = calm
+    trait = tactitian
+    trait = gallant
+	trait = adopted
+	disallow_random_traits = yes
+    835.1.11 = {
+        birth = yes
+    }
+    850.10.5 = {
+        employer = tr_tiandizhanghu
+    }
+    850.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
 }
 tr_tiandizhanghu = {
-	name = "Zhang Hu"
-	religion = zhengyi
-	culture = han
-	dynasty = tiandi
-	martial = 8
-	diplomacy = 6
-	intrigue = 13
-	stewardship = 10
-	learning = 10
-	prowess = 10
-	trait = diligent
-	trait = education_martial_3
-	trait = impatient
-	trait = scarred
-	trait = gallant
-	831.1.1 = {
-		birth = yes
-	}
-	850.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	917.4.17 = {
-		death = {
-			death_reason = death_contest_melee_accident
-			killer = mm_liquid
-		}
-	}
+    name = "Zhang Hu"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    martial = 8
+    diplomacy = 6
+    intrigue = 13
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = diligent
+    trait = education_martial_3
+    trait = impatient
+    trait = scarred
+    trait = gallant
+	disallow_random_traits = yes
+	father = tr_tiandijj
+	mother = tr_tiandijjwife
+    831.1.1 = {
+        birth = yes
+    }
+    850.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
 }
 tr_tiandijj = {
-	name = "Jiang Jun"
-	religion = zhengyi
-	culture = han
-	dynasty = tiandi
-	martial = 20
-	diplomacy = 15
-	intrigue = 7
-	stewardship = 7
-	learning = 7
-	prowess = 10
-	trait = diligent
-	trait = adventurer
-	trait = flexible_leader
-	trait = education_martial_3
-	trait = calm
-	trait = military_engineer
-	trait = overseer
-	trait = strategist
-	795.1.11 = {
-		birth = yes
-	}
-	810.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	890.4.1 = {
-		death = {
-			death_reason = death_age
-		}
+    name = "Jiang Jun"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    martial = 20
+    diplomacy = 15
+    intrigue = 7
+    stewardship = 7
+    learning = 7
+    prowess = 10
+    trait = diligent
+    trait = adventurer
+    trait = flexible_leader
+    trait = education_martial_3
+    trait = calm
+    trait = military_engineer
+    trait = overseer
+    trait = strategist
+	disallow_random_traits = yes
+    795.1.11 = {
+        birth = yes
+    }
+    810.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+	830.2.15 = {
+		add_spouse = tr_tiandijjwife
 	}
 }
-tr_tiandinuxia = {
-	name = "Nuxia"
-	religion = zhengyi
-	culture = han
-	dynasty = tiandi
+
+tr_tiandijjwife = {
+    name = "Xi ai"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    trait = diligent
+    trait = adventurer
 	female = yes
-	martial = 8
-	diplomacy = 12
-	intrigue = 13
-	stewardship = 6
-	learning = 8
-	prowess = 10
-	trait = diligent
-	trait = education_martial_3
-	trait = seducer
-	trait = beauty_good_2
-	trait = whole_of_body
-	father = tr_tiandiJJ
-	847.1.1 = {
-		birth = yes
-	}
-	860.1.1 = {
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_high
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
-	}
-	900.4.17 = {
-		death = {
-			death_reason = death_mysterious
-		}
-	}
+    800.1.11 = {
+        birth = yes
+    }
+}
+
+tr_tiandinuxia = {
+    name = "Nuxia"
+    religion = zhengyi
+    culture = han
+    dynasty = tiandi
+    female = yes
+    martial = 8
+    diplomacy = 12
+    intrigue = 13
+    stewardship = 6
+    learning = 8
+    prowess = 10
+    trait = diligent
+    trait = education_martial_3
+    trait = seducer
+    trait = beauty_good_2
+    trait = whole_of_body
+	disallow_random_traits = yes
+    father = tr_tiandijj
+	mother = tr_tiandijjwife
+    847.1.1 = {
+        birth = yes
+    }
+    860.1.1 = {
+        effect = {
+            add_trait = lifestyle_blademaster
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_high
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+    }
+    900.4.17 = {
+        death = {
+            death_reason = death_mysterious
+        }
+    }
 }
 
 ###VALMIR
@@ -823,7 +1027,7 @@ mm_horrvalmir = {
     trait = wrathful
     trait = adventurer
     father = mm_valmirfounder
-	mother = mm_valmirfounderwife
+    mother = mm_valmirfounderwife
     disallow_random_traits = yes
     790.1.11 = {
         birth = yes
@@ -870,7 +1074,7 @@ mm_hofvarpnir = {
     trait = wrathful
     trait = adventurer
     father = mm_valmirfounder
-	mother = mm_valmirfounderwife
+    mother = mm_valmirfounderwife
     disallow_random_traits = yes
     800.1.11 = {
         birth = yes
@@ -889,10 +1093,8 @@ mm_hofvarpnir = {
             }
         }
     }
-	830.1.11 = {
-        effect = {
-			add_spouse = mm_hofvarpnirwife
-		}
+    830.1.11 = {
+        add_spouse = mm_hofvarpnirwife
     }
 }
 
@@ -904,14 +1106,9 @@ mm_hofvarpnirwife = {
     trait = brave
     trait = education_diplomacy_2
     trait = diligent
-	female = yes
+    female = yes
     806.1.11 = {
         birth = yes
-    }
-    830.1.11 = {
-        effect = {
-			add_spouse = mm_hofvarpnir
-		}
     }
 }
 
@@ -931,15 +1128,15 @@ mm_venemir = {
     trait = diligent
     trait = athlete
     father = mm_hofvarpnir
-	mother = mm_hofvarpnirwife
+    mother = mm_hofvarpnirwife
     disallow_random_traits = yes
     840.1.11 = {
         birth = yes
     }
     865.1.11 = {
         effect = {
-			set_relation_friend = { target = character:tr_colinmcglass }
-		}
+            set_relation_friend = { target = character:tr_colinmcglass }
+        }
     }
 }
 
@@ -959,7 +1156,7 @@ mm_surr = {
     trait = lifestyle_blademaster
     trait = diligent
     trait = athlete
-	trait = wild_oat
+    trait = wild_oat
     father = mm_horrvalmir
     disallow_random_traits = yes
     820.5.14 = {
@@ -990,12 +1187,12 @@ mm_frida = {
     trait = athlete
     trait = adventurer
     father = mm_hofvarpnir
-	mother = mm_hofvarpnirwife
+    mother = mm_hofvarpnirwife
     disallow_random_traits = yes
     833.1.11 = {
         birth = yes
     }
-	850.1.1 =  { set_relation_friend = { target = character:tr_orc_1 } }
+    850.1.1 =  { set_relation_friend = { target = character:tr_orc_1 } }
 }
 
 mm_valmirfounder = {
@@ -1020,9 +1217,9 @@ mm_valmirfounder = {
     750.1.11 = {
         birth = yes
     }
-	780.2.20 = {
-		add_spouse = mm_valmirfounderwife
-	}
+    780.2.20 = {
+        add_spouse = mm_valmirfounderwife
+    }
     837.4.17 = {
         death = {
             death_reason = death_age
@@ -1035,7 +1232,7 @@ mm_valmirfounderwife = {
     religion = norse_pagan
     culture = norse
     dynasty = valmir
-	female = yes
+    female = yes
     martial = 15
     diplomacy = 12
     intrigue = 5
@@ -1057,59 +1254,59 @@ mm_valmirfounderwife = {
 }
 
 tr_valmirfollower1 = {
-	name = "Bjorn"
+    name = "Bjorn"
     religion = norse_pagan
     culture = norse
-	850.1.1 = {
-		birth = yes
-	}
-	862.10.5 = {
-		employer = mm_hofvarpnir
-	}
+    850.1.1 = {
+        birth = yes
+    }
+    862.10.5 = {
+        employer = mm_hofvarpnir
+    }
 }
 
 tr_valmirfollower2 = {
-	name = "Ivarr"
+    name = "Ivarr"
     religion = norse_pagan
     culture = norse
-	845.1.1 = {
-		birth = yes
-	}
-	862.10.5 = {
-		employer = mm_hofvarpnir
-	}
+    845.1.1 = {
+        birth = yes
+    }
+    862.10.5 = {
+        employer = mm_hofvarpnir
+    }
 }
 tr_valmirfollower4 = {
-	name = "Erik"
+    name = "Erik"
     religion = norse_pagan
     culture = norse
-	840.1.1 = {
-		birth = yes
-	}
-	862.10.5 = {
-		employer = mm_hofvarpnir
-	}
+    840.1.1 = {
+        birth = yes
+    }
+    862.10.5 = {
+        employer = mm_hofvarpnir
+    }
 }
 tr_valmirfollower5 = {
-	name = "Agnes"
+    name = "Agnes"
     religion = norse_pagan
     culture = norse
-	female = yes
-	850.1.1 = {
-		birth = yes
-	}
-	862.10.5 = {
-		employer = mm_hofvarpnir
-	}
+    female = yes
+    850.1.1 = {
+        birth = yes
+    }
+    862.10.5 = {
+        employer = mm_hofvarpnir
+    }
 }
 tr_valmirfollower6 = {
-	name = "Dag"
+    name = "Dag"
     religion = norse_pagan
     culture = norse
-	848.1.1 = {
-		birth = yes
-	}
-	862.10.5 = {
-		employer = mm_hofvarpnir
-	}
+    848.1.1 = {
+        birth = yes
+    }
+    862.10.5 = {
+        employer = mm_hofvarpnir
+    }
 }
