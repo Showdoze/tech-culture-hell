@@ -506,3 +506,24 @@ tradition_agot_crownlander = {
 	cost = { prestige = 900 }
 	ai_will_do = { value = 0 }
 }
+tradition_agot_western_valyrian = {
+	category = regional
+	layers = {
+		0 = steward
+		1 = western
+		4 = ship.dds
+	}
+	is_shown = {always = no}
+	parameters = {
+		unlock_maa_sea_snakes = yes
+		next_level_trade_ports = yes
+	}
+	character_modifier = {
+		different_culture_opinion = 10
+		coastal_advantage = 5
+		diplomatic_range_mult = 0.5
+		embarkation_cost_mult = -0.2
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}

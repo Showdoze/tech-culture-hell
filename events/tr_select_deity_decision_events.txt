@@ -1400,7 +1400,7 @@ tr_select_deity.01 = {
 		}
     }
  ###NORSE
-     option = {
+    option = { #ODIn
         name = god_choice_odin
         trigger = {
             AND = {
@@ -2110,6 +2110,7 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 OR = {
+                    has_trait = class_cleric_trick
                     #culture = culture:drow
                     #faith = faith:dnd_faith
                 }
@@ -3013,7 +3014,7 @@ tr_select_deity.01 = {
 		}
     }
  ##### PAGAN
-    option = {
+    option = { #JESUS
         name = pagan_choose_deity_jesus
         trigger = {
             OR = {
@@ -3055,7 +3056,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-    option = {
+    option = { #ISLAM
         name = pagan_choose_deity_islam
         trigger = {
             OR = {

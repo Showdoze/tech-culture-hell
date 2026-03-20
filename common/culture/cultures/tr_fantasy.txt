@@ -1527,6 +1527,36 @@ fantasy_culture = {
 	house_coa_mask_scale = { 0.79500034 0.79500034 }
 	ethnicities = { 10 = Sand_Dornish_1 }
  }
+ westerosi_valyrian = {
+	color = { 0.78 0.29 0.46 }
+    parents = {
+		high_valyrian #valyrian_original
+		andal
+	}
+	created = 7700.1.1
+	ethos = ethos_courtly
+	heritage = heritage_valyrian
+	language = language_agot_westeros
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+    name_list = name_list_westerosi_valyrian
+	traditions = {
+		tradition_agot_blackwater_bay
+		tradition_agot_western_valyrian
+		tradition_family_entrepreneurship
+		tradition_maritime_mercantilism
+		tradition_seafaring
+		tradition_fishermen
+	}
+	coa_gfx = {welsh_coa_gfx western_coa_gfx}
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { cornish_clothing_gfx western_clothing_gfx }
+	unit_gfx = {westerosi_valyrian_unit_gfx eastern_unit_gfx}
+	house_coa_frame = house_frame_andal1
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+	ethnicities = {10 = Westerosi_valyrian_1}
+ }
  cimmerian = {
     color = high_valyrian
     created = 1.1.1
