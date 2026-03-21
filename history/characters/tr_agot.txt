@@ -1035,6 +1035,36 @@
 	178.1.1 = { birth = yes }
 	236.1.1 = { death = yes }
   }
+  Reed_1 = {
+	name = Howland # Canon, THE Howland Reed, a lord
+	dynasty = dynn_Reed
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 7
+	religion = norse_pagan #old_gods_wnw
+	culture = crannogman
+	sexuality = heterosexual
+	father = Reed_74 #Reed_22
+	#mother = Ironsmith_62
+	trait = education_learning_4
+	trait = education_martial_prowess_2
+	trait = shy
+	trait = patient
+	trait = brave
+	trait = inquisitive
+	trait = pensive
+	disallow_random_traits = yes
+	826.1.1 = {birth = yes}
+	828.1.1 = {
+		#add_spouse = Blackmyre_89 # Jyana Blackmyre
+		add_piety = 3000 # Isle of Faces
+		trait = lifestyle_mystic
+	}
+	900.1.10 = {death=yes}
+ }
  #MANDERLY
   Manderly_71 = {
 	name = Marlon # Mentioned, quarreled with Lord Peake and accepted judgment of Gwayne III
@@ -1511,7 +1541,7 @@
 	#7876.1.1 = { add_spouse = Mormont_13 } # Jorelle Mormont
 	560.1.1 = { death = yes }
  }
- Stark_131 = {
+  Stark_131 = {
 	name = Jonnel # a lord
 	dynasty = dynn_Stark
 	religion = norse_pagan #old_gods_wnw
