@@ -196,7 +196,7 @@
 	learning = 8
 	prowess = 6
 	health = 7
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = westerosi_valyrian
 	sexuality = heterosexual
 	father = Velaryon_6 #Velaryon_25
@@ -370,7 +370,7 @@
 	intrigue = 5
 	stewardship = 3
 	prowess = 7
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	father = Grey_King_2
 	trait = education_martial_4
@@ -396,7 +396,7 @@
 	intrigue = 1
 	stewardship = 5
 	prowess = 6
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	father = Greyiron_1
 	trait = education_martial_2
@@ -414,7 +414,7 @@
  Greyiron_34 = {
 	name = Hagon # Canon, Hagon the Terrible
 	dynasty = dynn_Greyiron
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	father = Greyiron_2 #Greyiron_37
 	trait = education_martial_2
@@ -437,7 +437,7 @@
 	learning = 4
 	stewardship = 5
 	prowess = 3
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	father = Greyiron_34 #Greyiron_30
 	trait = education_martial_1
@@ -469,23 +469,12 @@
 	162.1.1 = {birth = yes}
 	217.1.1 = { death = yes }
  }
- Grey_King_12 = {
-	name = Line_of_The_Harlaw
-	dynasty = dynn_Grey_King
-	religion = deep_cult #drowned_god
-	culture = ironborn
-	father = Grey_King_11
-	#trait = line_of_char
-	disallow_random_traits = yes
-	217.1.1 = { birth = yes }
-	408.1.1 = { death = yes }
-}
  Harlaw_86 = {
 	name = Dagon # I, Modcanon High King
 	dynasty = dynn_Harlaw
 	religion = deep_cult #drowned_god
 	culture = ironborn
-	father = Grey_King_12
+	father = Grey_King_11
 	trait = education_intrigue_3
 	trait = reaver
 	trait = diligent
@@ -764,7 +753,7 @@
 	stewardship = 7
 	learning = 8
 	prowess = 6
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	father = Greyjoy_22 #Greyjoy_66
 	#mother = Goodbrother_56
@@ -903,7 +892,7 @@
 	stewardship = 5
 	learning = 6
 	prowess = 10
-	religion = drowned_god
+	religion = deep_cult #drowned_god
 	culture = ironborn
 	sexuality = heterosexual
 	father = Greyjoy_1
@@ -1322,6 +1311,143 @@
 		}
 	}
   }
+ #KARSTARKS
+  Karstark_102 = {
+	name = Theon # a lord
+	dynasty_house = house_Karstark
+	#dna = Stark_132
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Stark_131
+	#mother = Stark_rs_4
+	675.1.1 = { birth = yes } # grey_eyes dark_brown_hair	
+	748.1.1 = { death = { death_reason = death_battle } }
+   }
+  Karstark_1 = {
+	name = Brandon # a lord
+	dynasty_house = house_Karstark
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Karstark_102 #Karstark_54
+	#mother = Slate_56
+	750.1.1 = {birth = yes}
+	827.1.1 = { death = yes }
+} 
+  Karstark_4 = {
+	name = Rickard # Canon, a lord
+	dynasty_house = house_Karstark
+	#dna = Karstark_4
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	sexuality = heterosexual
+	father = Karstark_1
+	#mother = Karstark_rs_1_A
+	trait = education_martial_2
+	trait = wrathful
+	trait = arrogant
+	trait = callous
+	trait = bossy
+	disallow_random_traits = yes
+	810.1.1 = {birth = yes}
+	868.11.9 = {
+		death = {
+			death_reason = death_execution # Executed for killing prisoners
+			killer = Stark_6 # Robb Stark
+		}
+	}
+  } 
+  Karstark_16 = {
+	name = Harrion # Canon, a lord
+	dynasty_house = house_Karstark
+	martial = 3
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Karstark_4
+	#mother = Woolfield_77
+	trait = education_martial_2
+	trait = brave
+	trait = wrathful
+	trait = diligent
+	trait = rowdy
+	disallow_random_traits = yes
+	836.1.1 = {birth = yes}
+	900.11.2 = { death=yes}
+}
+  Karstark_17 = {
+	name = Eddard # Canon
+	dynasty_house = house_Karstark
+	martial = 4
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+	prowess = 6
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Karstark_4
+	#mother = Woolfield_77
+	trait = education_martial_2
+	trait = shy
+	trait = arrogant
+	838.1.1 = {birth = yes}
+	868.1.9 = {
+		death = {
+			death_reason = death_battle # Battle of Whispering Wood
+			killer = Lannister_7 # Jaime Lannister
+		}
+	}
+}
+  Karstark_18 = {
+	name = Torrhen # Canon
+	dynasty_house = house_Karstark
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 6
+	learning = 5
+	prowess = 6
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Karstark_4
+	#mother = Woolfield_77
+	trait = education_martial_2
+	trait = brave
+	841.1.1 = {birth = yes}
+	868.1.9 = {
+		death = {
+			death_reason = death_battle # Battle of Whispering Wood
+			killer = Lannister_7 # Jaime Lannister
+		}
+	}
+ }
+  Karstark_19 = {
+	name = Alys # Canon, married Sigorn Thenn
+	dynasty_house = house_Karstark
+	female = yes
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Karstark_4
+	#mother = Woolfield_77
+	trait = education_diplomacy_3
+	trait = cynical
+	trait = brave
+	trait = just
+	trait = bossy
+	disallow_random_traits = yes
+	854.1.1 = {birth = yes}
+	900.7.1 = {death=yes}
+ }
  #stark
    Stark_12 = {
 	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
@@ -1345,53 +1471,73 @@
 	110.1.1 = { death = yes }
 	#799.1.1 = { death = yes }
    }
-   Karstark_102 = {
-	name = Theon # a lord
-	dynasty_house = house_Karstark
-	#dna = Stark_132
+  Stark_132 = {
+	name = Argelle # Married Belthasar Bolton, her father's former ward
+	dynasty = dynn_Stark
+	female = yes
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
-	father = Stark_12
-	#father = Stark_131
-	#mother = Stark_rs_4
-	675.1.1 = { birth = yes } # grey_eyes dark_brown_hair	
-	748.1.1 = { death = { death_reason = death_battle } }
-   }
-   Karstark_4 = {
-	name = Rickard # Canon, a lord
-	dynasty_house = house_Karstark
-	#dna = Karstark_4
-	martial = 6
-	diplomacy = 5
-	intrigue = 5
-	stewardship = 5
-	learning = 5
+	father = Stark_21
+	373.1.1 = {birth = yes}
+	440.1.1 = { death = yes }
+ }
+  Stark_26 = {
+	name = Harlon # Canon, laid siege to the Dreadfort
+	dynasty = dynn_Stark
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Stark_12 #Stark_25
+	trait = education_martial_3
+	450.1.1 = {birth = yes}
+	500.1.1 = { death = yes }
+ }
+  Stark_46 = {
+	name = Brandon # Canon, Brandon XV, AKA: Brandon the Bad
+	dynasty = dynn_Stark
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Stark_26 #Stark_45
+	#mother = Cerwyn_9
+	trait = education_martial_2
+	trait = arrogant
+	trait = sadistic
+	trait = wrathful
+	trait = deceitful
+	trait = rowdy
+	disallow_random_traits = yes
+	480.1.1 = {birth = yes}
+	#7870.1.1 = { add_spouse = Locke_10 } # Sybelle Locke
+	500.1.1 = { give_nickname = nick_the_bad }
+	#7876.1.1 = { add_spouse = Mormont_13 } # Jorelle Mormont
+	560.1.1 = { death = yes }
+ }
+ Stark_131 = {
+	name = Jonnel # a lord
+	dynasty = dynn_Stark
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Stark_46 #Stark_130
+	680.1.1 = {birth = yes}
+	746.1.1 = { death = yes }
+ }
+  Stark_122 = {
+	name = Edwyle # Canon, a lord
+	dynasty = dynn_Stark
+	martial = 8
+	diplomacy = 10
+	intrigue = 9
+	stewardship = 8
 	prowess = 6
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
-	sexuality = heterosexual
-	father = Karstark_102 #Karstark_1
-	#mother = Karstark_rs_1_A
+	father = Stark_131 #Stark_115
+	#mother = Blackwood_88 # Melantha Blackwood
 	trait = education_martial_2
-	trait = wrathful
-	trait = arrogant
-	trait = callous
-	trait = bossy
-	disallow_random_traits = yes
-	810.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_canon
-		add_character_flag = sexuality_ensure_heterosexual
-	}
-	#8266.1.1 = { add_spouse = Karstark_rs_1 }
-	868.11.9 = {
-		death = {
-			death_reason = death_execution # Executed for killing prisoners
-			killer = Stark_6 # Robb Stark
-		}
-	}
-  }
+	trait = brave
+	trait = honest
+	700.1.1 = {birth = yes}
+	799.1.1 = { death = yes }
+ }
    Stark_1 = {
 	name = Rickard # Canon, THE Rickard Stark, a lord
 	dynasty = dynn_Stark
@@ -1404,8 +1550,7 @@
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	sexuality = heterosexual
-	father = Stark_12
-	#father = Stark_122 # Edwyle Stark
+	father = Stark_122 # Edwyle Stark
 	#mother = Locke_50
 	trait = education_martial_2
 	trait = honest
@@ -1616,12 +1761,133 @@
 	48.1.1 = { birth = yes }
 	197.1.1 = { death = yes }
    }
+   Bolton_7 = {
+	name = Royce # Canon, Royce II, burned Winterfell
+	dynasty = dynn_Bolton
+	prowess = 9
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_6
+	trait = education_martial_3
+	trait = callous
+	trait = wrathful
+	trait = torturer
+	179.1.1 = {birth = yes}
+	225.1.1 = { death = yes }
+ }
+   Bolton_10 = {
+	name = Royce # Canon, Royce IV, AKA: Royce Redarm
+	dynasty = dynn_Bolton
+	prowess = 9
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_7 #Bolton_9
+	trait = education_intrigue_4
+	trait = sadistic
+	trait = wrathful
+	trait = torturer
+	give_nickname = nick_agot_historical_redarm_royce
+	206.1.1 = {birth = yes}
+	275.1.1 = { death = yes }
+  }
+  Bolton_12 = {
+	name = Rogar # Canon, AKA: The Huntsman, swore fealty to Winterfell
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_10 #Bolton_11
+	trait = education_intrigue_3
+	trait = patient
+	trait = deceitful
+	trait = sadistic
+	trait = torturer
+	trait = lifestyle_hunter
+	give_nickname = nick_the_huntsman
+	240.1.1 = {birth = yes}
+	386.1.1 = { death = yes }
+ }
+  Bolton_14 = {
+	name = Belthasar # Canon, a lord during the Rape of the Three Sisters, formerly a ward of Theon Stark
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_12
+	trait = education_martial_3
+	trait = just
+	trait = sadistic
+	trait = diligent
+	trait = pensive
+	trait = torturer
+	disallow_random_traits = yes
+	367.1.1 = {birth = yes}
+	380.1.1 = { add_spouse = Stark_132 } # Argelle Stark
+	417.1.1 = { death = yes }
+  }
+  Bolton_13 = {
+	name = Theon # a lord
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_14
+	mother = Stark_132
+	381.1.1 = {birth = yes}
+	451.1.1 = { death = yes }
+  }
+  Bolton_69 = {
+	name = Brandon # Mentioned, a lord, flayed grandson of Brandon the Daughterless
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_68
+	trait = education_martial_3
+	trait = arrogant
+	trait = ambitious
+	trait = sadistic
+	trait = torturer
+	455.1.1 = {birth = yes}
+	480.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Stark_26 # Harlon Stark
+		}
+	}
+ }
+  Bolton_17 = {
+	name = Bowen # a lord
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_69 #Bolton_16
+	#mother = Royce_23
+	trait = education_intrigue_1
+	trait = arrogant
+	trait = wrathful
+	trait = ambitious
+	trait = brave
+	575.1.1 = {birth = yes}
+	500.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Stark_46 # Brandon "the Bad" Stark
+		}
+	}
+ }
+  Bolton_42 = {
+	name = Donnel # a lord
+	dynasty = dynn_Bolton
+	religion = norse_pagan #old_gods_wnw
+	culture = northman
+	father = Bolton_17 #Bolton_41
+	#mother = Locke_75
+	784.1.1 = {birth = yes}
+	841.1.1 = { death = yes }
+ }
    Bolton_1 = {
 	name = "Roose"
 	religion = norse_pagan #old_gods_wnw
 	dynasty = dynasty_Bolton
 	culture = northman
-	father = Bolton_6
+	father = Bolton_42
 	trait = education_intrigue_3
     trait = calm
     trait = callous
@@ -2235,7 +2501,7 @@
 	name = Amos # Canon
 	dynasty = dynn_Bracken
 	prowess = 9
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = riverman_main
 	father = Bracken_55
 	#mother = Mooton_29 # Bethany Mooton
@@ -2442,8 +2708,8 @@
 	dynasty = dynn_Payne
 	religion = hammerite_faith #fots_seven
 	culture = westerman_main
-	35.1.1 = { birth = yes }
-	99.1.1 = { death = yes }
+	235.1.1 = { birth = yes }
+	299.1.1 = { death = yes }
   }
    Payne_6 = {
 	name = Ilyn # Canon
@@ -2478,7 +2744,7 @@
 	culture = westerman_main
 	trait = education_diplomacy_4
 	give_nickname = nick_the_creator
-	15.1.1 = { birth = yes }
+	115.1.1 = { birth = yes }
 	179.1.1 = { death = yes }
   }
    Brax_10 = {
@@ -3034,8 +3300,8 @@
 			}
 		}
 	}
-	869.11.8 = {
-		#add_spouse = Stark_8 # Sansa Stark
+	868.11.8 = {
+		add_spouse = Stark_8 # Sansa Stark
 		# trait = disfigured # Blackwater # AGOT TODO trait
 		# make_trait_inactive = visible_disfigurement_5
 		trait = disinherited
@@ -3937,7 +4203,7 @@
 	diplomacy = 13
 	martial = 7
 	prowess = 10
-	religion = old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	father = Gardener_4 # Garth the Gardener
 	trait = education_martial_3
@@ -3978,7 +4244,7 @@
 	diplomacy = 13
 	martial = 7
 	prowess = 24
-	religion = old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	father = Gardener_1 # Garth Greenhand
 	trait = education_martial_2
@@ -4022,7 +4288,7 @@
 	dynasty = dynn_Gardener
 	diplomacy = 10
 	martial = 14
-	religion = old_gods_wnw
+	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	father = Gardener_6 #Gardener_9
 	trait = education_diplomacy_4
@@ -4042,7 +4308,7 @@
 	dynasty = dynn_Gardener
 	martial = 5
 	prowess = 6
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = reachman
 	father =  Gardener_11 #Gardener_90
 	#mother = Fossoway_17
@@ -4060,7 +4326,7 @@
   Oldflowers_4 = {
 	name = Garth # a lord, bastard of garth Gardener
 	dynasty = dynn_Gardener
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = reachman
 	father = Gardener_95 #Gardener_79
 	trait = bastard
@@ -4417,7 +4683,7 @@
   Hightower_77 = {
 	name = Otto # Mentioned, considered by Jaehaerys as possible master of coin
 	dynasty = dynn_Hightower
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = honeywiner
 	father = 
 	#father = Hightower_62
@@ -5796,6 +6062,739 @@
 	880.1.1 = { birth = yes }
     980.1.1 = { death = { death_reason = death_old_age } }
  }
+#Stormlands
+ Seaworth_1 = {
+	name = Davos # Canon, THE Davos, a lord
+	#dna = Seaworth_1
+	martial = 7
+	diplomacy = 9
+	stewardship = 9
+	intrigue = 7
+	learning = 5
+	prowess = 3
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	sexuality = heterosexual
+	trait = education_stewardship_3
+	trait = intellect_good_2
+	trait = honest
+	trait = brave
+	trait = just
+	trait = compassionate
+	trait = charming
+	disallow_random_traits = yes
+	829.1.1 = {birth = yes}
+	860.10.1 = {
+		effect = {
+			if = {
+				limit = { character:Baratheon_3 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Baratheon_3 # Stannis Baratheon
+					modifier = trust_opinion
+					opinion = 50
+				}
+			}
+		}
+		give_nickname = nick_agot_historical_the_onion_knight
+		dynasty = dynn_Seaworth
+	}
+	869.11.9 = {give_nickname = nick_agot_historical_the_onion_lord}
+	900.3.12 = {death=yes}
+} 
+ Seaworth_2 = {
+	name = Dale # Canon
+	martial = 10
+	diplomacy = 9
+	prowess = 6
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	father = Seaworth_1
+	#mother = Seaworth_rs_1
+	trait = education_martial_2
+	trait = just
+	849.1.1 = {birth = yes}
+	860.10.1 = {
+		dynasty = dynn_Seaworth
+		set_culture = culture:stormlander_main
+	}
+	868.9.8 = {
+		death = { death_reason = death_battle } # Battle of Blackwater
+	}
+ }
+ #Durrandon
+  Durrandon_1 = {
+	name = Durran # Canon, AKA: Durran Godsgrief, Durran I, built Storm's End
+	martial = 18
+	diplomacy = 15
+	stewardship = 20
+	learning = 15
+	intrigue = 15
+	religion = dragon_cult #fg_pan_elenei
+	culture = first_man
+	trait = education_martial_4
+	trait = intellect_good_3
+	trait = physique_good_2
+	trait = bossy
+	trait = arrogant
+	trait = ambitious
+	trait = wrathful
+	trait = stubborn
+	give_nickname = nick_agot_historical_godsgrief
+	disallow_random_traits = yes
+	23.1.1 = {birth = yes}
+	90.1.1 = { death = yes }
+} 
+  Durrandon_87 = {
+	name = Argilac # Canon, AKA: Argilac the Arrogant, the last Storm King
+	dynasty = dynn_Durrandon
+	martial = 13
+	intrigue = 5
+	prowess = 12
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	father = Durrandon_1 #Durrandon_85
+	#mother = Dondarrion_10
+	trait = education_martial_2
+	trait = physique_good_2
+	trait = bossy
+	trait = arrogant
+	trait = brave
+	trait = wrathful
+	give_nickname = nick_agot_historical_the_arrogant
+	disallow_random_traits = yes
+	736.1.1 = {birth = yes}
+	799.9.10 = {
+		death = {
+			death_reason = death_battle # The Last Storm
+			killer = Baratheon_14 # Orys Baratheon
+		}
+	}
+}
+  Durrandon_88 = {
+	name = Argella # Canon, married Orys Baratheon
+	dynasty = dynn_Durrandon
+	female = yes
+	stewardship = 9
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	father = Durrandon_87
+	#mother = Tarth_17
+	trait = education_stewardship_3
+	trait = beauty_good_2
+	trait = physique_good_2
+	trait = bossy
+	trait = arrogant
+	trait = brave
+	trait = diligent
+	disallow_random_traits = yes
+	780.1.1 = {birth = yes}
+	839.1.1 = { death = yes }
+}
+ #BARATHIANS
+  Baratheon_14 = {
+	name = Orys # Canon, THE Orys Baratheon, a lord, rumoured half-brother of Aegon the Conqueror
+	dynasty = dynn_Baratheon
+	dna = Baratheon_14
+	martial = 13
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 10
+	learning = 6
+	religion = dragon_cult #valyrian_pan_freehold
+	culture = westerosi_valyrian
+	father = tr_tar_1_grandpa #Targaryen_26
+	trait = bastard_founder # Caution: succession error
+	trait = education_martial_3
+	trait = education_martial_prowess_2
+	trait = strong
+	trait = authoritative
+	trait = brave
+	trait = diligent
+	trait = rowdy
+	trait = just
+	disallow_random_traits = yes
+	780.1.1 = {
+		birth = yes
+		effect = {
+			dynasty:dynn_Baratheon = { set_coa = dynn_Baratheon_Old }
+		}
+	}
+	790.1.1 = { employer = tr_tar_1_dad } # Aegon I Targaryen
+	800.9.15 = {
+		add_spouse = Durrandon_88 # Argella Durrandon
+		effect = {
+			add_prestige_level = 1
+			dynasty:dynn_Baratheon = { set_coa = dynn_Baratheon }
+		}
+	}
+	801.6.1 = {
+		religion = hammerite_faith #fots_seven
+		culture = stormlander_main
+	}
+	807.1.1 = {
+		effect = {
+			remove_trait = just # Four Traits Rule
+		}
+		trait = one_handed
+		give_nickname = nick_agot_historical_one_hand
+		trait = irritable # Was said to have become crabbed and bitter
+		trait = vengeful
+	}
+	810.4.3 = { # Died of wounds during Vulture Hunt
+		trait = wounded_1
+		death = { death_reason = death_wounded_1 }
+	}
+ }
+  Baratheon_71 = {
+	name = Lyonel # Canon, AKA: The Laughing Storm, a lord, participated in Ashford Tourney in 209 AC
+	dynasty = dynn_Baratheon
+	martial = 8
+	diplomacy = 9
+	intrigue = 5
+	stewardship = 7
+	learning = 6
+	prowess = 10
+	religion = fots_seven
+	culture = stormlander_main
+	father = Baratheon_14 #Baratheon_69
+	mother = Durrandon_88 #Connington_56
+	trait = education_martial_2
+	trait = education_martial_prowess_3
+	trait = physique_good_3
+	trait = rowdy
+	trait = gregarious
+	trait = just
+	trait = brave
+	trait = wrathful
+	trait = lifestyle_blademaster
+	give_nickname = nick_agot_historical_the_laughing_storm	
+	disallow_random_traits = yes
+	811.1.1 = {birth = yes}
+	850.1.1 = { death = yes }
+ }
+  Baratheon_1 = {
+	name = Steffon # Canon, a lord
+	dynasty = dynn_Baratheon
+	martial = 6
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 5
+	learning = 4
+	prowess = 7
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	trait = education_diplomacy_3
+	trait = physique_good_1
+	trait = charming
+	trait = diligent
+	trait = honest
+	trait = gregarious
+	trait = just
+	disallow_random_traits = yes
+	father = Baratheon_14 #Baratheon_75 # Ormund Baratheon
+	mother = Durrandon_88 #Targaryen_130 # Rhaelle Targaryen
+	816.1.1 = {birth = yes}
+	820.1.1 = { effect = {dynasty:dynn_Baratheon = { set_coa = dynn_Baratheon }}}
+	847.1.1 = {
+		death = yes#{
+		#	death_reason = death_drowned # Shipwrecked
+		#}
+	}
+}
+  Baratheon_2 = {
+	name = Robert # Canon, THE Robert Baratheon, AKA: Bobby B, Robert I, King of the Seven Kingdoms
+	dynasty = dynn_Baratheon
+	#dna = Baratheon_2
+	martial = 10
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 1
+	learning = 5
+	prowess = 11
+	fertility = 0.5
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	sexuality = heterosexual
+	father = Baratheon_1
+	mother = Estermont_5
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = physique_good_3
+	trait = rowdy
+	trait = brave
+	trait = gregarious
+	trait = lustful
+	trait = strong #GODS HE WAS STRONG
+	disallow_random_traits = yes
+	832.10.1 = {birth = yes}
+	850.1.1 = {
+		trait = wrathful
+		effect = {
+			if = {
+				limit = { character:Stark_3 = { is_alive = yes } }
+				set_relation_best_friend = {
+					target = character:Stark_3 # Eddard Stark
+					reason = best_friend_robert_ned
+				}
+			}
+		}
+		trait = aggressive_attacker
+		trait = organizer
+		trait = knight
+		effect = {
+			set_variable = {
+				name = signature_weapon
+				value = flag:hammer # GODS HE WAS STRONG THEN
+			}
+
+		}
+	}
+	860.1.1 = { # Crowned Stag
+		effect = {
+			add_prestige_level = 1
+			}
+			if = {
+				limit = {
+					character:Lannister_1 = { is_alive = yes }
+					character:Lannister_6 = { is_alive = yes }
+				}
+				create_alliance = { # By marriage
+					target = character:Lannister_1 # Tywin Lannister
+					allied_through_owner = ROOT
+					allied_through_target = character:Lannister_6 # Cersei Lannister
+				}
+			}
+			if = {
+				limit = { character:Lannister_6 = { is_alive = yes } }
+				add_opinion = {
+					target = character:Lannister_6 # Cersei Lannister
+					modifier = hate_opinion
+					opinion = -40
+				}
+				reverse_add_opinion = {
+					target = character:Lannister_6 # Cersei Lannister
+					modifier = hate_opinion
+					opinion = -150
+				}
+			}
+		add_spouse = Lannister_6 # Cersei Lannister
+		trait = drunkard
+		trait = lifestyle_reveler
+		trait = profligate
+		trait = rakish
+		effect = {
+			remove_trait = brave # Four Traits Rule
+			remove_trait = strong # gods he was strong :'(
+		}
+		trait = gluttonous
+	}
+	868.10.22 = { trait = wounded_3 }
+	868.10.24 = {
+		make_trait_inactive = equipped_robertI_crown_artifact
+		death = yes #{ death_reason = death_boar }
+	}
+}
+  Baratheon_3 = {
+	name = Stannis # Canon, THE Stannis the Mannis Baratheon, a lord
+	dynasty = dynn_Baratheon
+	#dna = Baratheon_3
+	martial = 11
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 8
+	learning = 5
+	prowess = 5
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	father = Baratheon_1
+	mother = Estermont_5
+	trait = education_martial_4
+	trait = education_martial_prowess_2
+	trait = pensive
+	trait = inappetetic
+	trait = physique_good_1
+	trait = just
+	trait = stubborn
+	trait = cynical
+	trait = strategist
+	trait = callous
+	trait = reclusive
+	disallow_random_traits = yes
+	834.1.1 = {birth = yes}
+	850.1.1 = {
+		trait = unyielding_defender
+		trait = forder
+		trait = military_engineer
+		employer = Baratheon_2 # Robert Baratheon
+		add_spouse = Florent_10 # Selyse Florent
+		effect = {
+			if = {
+				limit = {
+					character:Florent_2 = { is_alive = yes }
+					character:Florent_10 = { is_alive = yes }
+				}
+				create_alliance = { # By marriage
+					target = character:Florent_2 # Alester Florent
+					allied_through_owner = ROOT # Stannis Baratheon
+					allied_through_target = character:Florent_10 # Selyse Florent
+				}
+			}
+		}
+	}
+	860.3.3 = {
+		religion = dark_souls_faith #rhllor_fots
+		dynasty_house = house_BaratheonDS
+		trait = faith_warrior # Chosen by Rhllor
+		effect = { add_piety = 400 }
+	}
+	900.1.29 = {death=yes}
+}
+  Baratheon_4 = {
+	name = Renly # Canon, THE Renly Baratheon, a lord
+	dynasty = dynn_Baratheon
+	#dna = Baratheon_4
+	martial = 6
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 3
+	learning = 5
+	prowess = 6
+	religion = hammerite_faith #fots_seven
+	culture = stormlander_main
+	sexuality = homosexual
+	father = Baratheon_1
+	mother = Estermont_5
+	trait = education_diplomacy_3
+	trait = beauty_good_2
+	trait = physique_good_1
+	trait = temperate
+	trait = compassionate
+	trait = charming
+	trait = ambitious
+	trait = gregarious
+	trait = diplomat
+	disallow_random_traits = yes
+	8277.1.1 = {birth = yes}
+	860.1.1 = {
+		dynasty_house = house_BaratheonDS
+		effect = {
+			if = {
+				limit = { character:Tyrell_13 = { is_alive = yes } }
+				set_relation_lover = {
+					target = character:Tyrell_13 # Loras Tyrell
+					reason = lover_renly_loras
+				}
+			}
+		}
+	}
+	867.6.12 = {
+		death = {
+			death_reason = death_murder
+			killer = Baratheon_3 # Stannis Baratheon
+		}
+	}
+}
+  Baratheon_5 = {
+	name = Joffrey # Canon, Joffrey I, King of the Seven Kingdoms
+	dynasty = dynn_Baratheon
+	martial = 6
+	diplomacy = 4
+	intrigue = 9
+	stewardship = 4
+	learning = 4
+	prowess = 3
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	father = Baratheon_2
+	mother = Lannister_6
+	trait = education_intrigue_1
+	trait = beauty_good_2
+	trait = bossy
+	trait = greedy
+	trait = sadistic
+	trait = arrogant
+	trait = wrathful
+	disallow_random_traits = yes
+	8286.2.10 = {
+		birth = yes
+		effect = {
+			add_character_flag = flag_secret_bastard
+			set_real_father = character:Lannister_7 # Jaime Lannister
+		}
+	}
+	866.10.24 = { # Death of Robert Baratheon
+		dynasty_house = house_BaratheonKL
+		agot_safe_buy_torturer_perk_history_effect = yes
+		trait = torturer
+		trait = disputed_heritage
+		effect = {
+			# Relations
+			if = {
+				limit = { character:Lannister_1 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = approving_opinion
+					opinion = 60
+				}
+				create_alliance = { # By family-ties
+					target = character:Lannister_1 # Tywin Lannister
+					allied_through_owner = ROOT # Joffrey Baratheon
+					allied_through_target = character:Lannister_1 # Tywin Lannister
+				}
+				reverse_add_opinion = {
+					target = character:Lannister_1 # Tywin Lannister
+					modifier = event_negotiated_alliance_opinion
+				}
+			}
+			if = {
+				limit = { character:Stark_3 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Stark_3 # Eddard Stark
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Stark_6 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Stark_6 # Robb Stark
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Tully_1 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Tully_1 # Hoster Tully
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Baratheon_3 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Baratheon_3 # Stannis Baratheon
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Baratheon_4 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Baratheon_4 # Renly Baratheon
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Martell_4 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Martell_4 # Doran Martell
+					modifier = uncertain_lineage_opinion
+				}
+			}
+		}
+	}
+	869.1.1 = {
+		add_spouse = Tyrell_14 # Margaery Tyrell
+		make_trait_inactive = equipped_joffreyI_crown_artifact
+		death = {
+			death_reason = death_murder
+			killer = Baelish_2 # Petyr Baelish
+		}
+	}
+}
+  Baratheon_6 = {
+	name = Myrcella # Canon
+	dynasty = dynn_Baratheon
+	female = yes
+	martial = 4
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 7
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	father = Baratheon_2
+	mother = Lannister_6
+	trait = education_diplomacy_3
+	trait = beauty_good_2
+	trait = intellect_good_1
+	trait = charming
+	trait = compassionate
+	trait = brave
+	trait = trusting
+	disallow_random_traits = yes
+	860.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = flag_secret_bastard
+			set_real_father = character:Lannister_7 # Jaime Lannister
+		}
+	}
+	866.10.24 = {
+		dynasty_house = house_BaratheonKL
+		trait = disputed_heritage
+		effect = {
+			if = {
+				limit = { character:Stark_3 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Stark_3 # Eddard Stark
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Stark_6 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Stark_6 # Robb Stark
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Tully_1 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Tully_1 # Hoster Tully
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Baratheon_3 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Baratheon_3 # Stannis Baratheon
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Baratheon_4 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Baratheon_4 # Renly Baratheon
+					modifier = uncertain_lineage_opinion
+				}
+			}
+			if = {
+				limit = { character:Martell_4 = { is_alive = yes } }
+				reverse_add_opinion = {
+					target = character:Martell_4 # Doran Martell
+					modifier = uncertain_lineage_opinion
+				}
+			}
+		}
+	}
+	900.2.17 = { death=yes }
+}
+  Baratheon_7 = {
+	name = Tommen # Canon, Tommen I, King of the Seven Kingdoms
+	dynasty = dynn_Baratheon
+	martial = 5
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	father = Baratheon_2
+	mother = Lannister_6
+	trait = education_martial_1
+	trait = charming
+	trait = compassionate
+	trait = honest
+	trait = content
+	trait = trusting
+	disallow_random_traits = yes
+	861.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = flag_secret_bastard
+			set_real_father = character:Lannister_7 # Jaime Lannister
+		}
+	}
+	866.10.24 = {
+		dynasty_house = house_BaratheonKL
+		trait = disputed_heritage
+	}
+	900.2.15 = {death=yes}
+}
+  Baratheon_10 = {
+	name = Mya # Canon, THE Mya Stone
+	female = yes
+	religion = hammerite_faith #fots_seven
+	culture = valeman_main
+	sexuality = heterosexual
+	martial = 3
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	learning = 4
+	father = Baratheon_2
+	#mother = Baratheon_rs_2
+	trait = bastard
+	trait = education_martial_2
+	trait = beauty_good_2
+	trait = brave
+	trait = stubborn
+	trait = gregarious
+	trait = rowdy
+	trait = lustful
+	give_nickname=nick_stone
+	disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+		effect = {
+			set_real_father = character:Baratheon_2 # Robert Baratheon
+		}
+	}
+	860.2.24 = { employer = Arryn_8 } # Robert Arryn
+	900.1.1 = { death=yes }
+ }
+  Baratheon_9 = {
+	name = Gendry # Canon, THE Gendry
+	dna = Baratheon_9
+	martial = 2
+	learning = 1
+	stewardship = 1
+	diplomacy = 4
+	intrigue = 3
+	prowess = 3
+	religion = hammerite_faith #fots_seven
+	culture = crownlander
+	#mother = Baratheon_rs_1
+	trait = bastard
+	trait = education_stewardship_1
+	trait = physique_good_3
+	trait = brave
+	trait = just
+	trait = stubborn
+	trait = pensive
+	disallow_random_traits = yes
+	854.6.1 = {
+		birth = yes
+		effect = {
+			set_real_father = character:Baratheon_2 # Robert Baratheon
+		}
+	}
+	867.1.1 = { give_nickname = nick_the_bull }
+	900.10.3 = {death=yes}
+ }
+  Baratheon_13 = {
+	name = Shireen # Canon
+	dynasty = dynn_Baratheon
+	female = yes
+	martial = 2
+	diplomacy = 10
+	intrigue = 2
+	stewardship = 4
+	learning = 7
+	religion = fots_seven
+	culture = stormlander_main
+	father = Baratheon_3
+	mother = Florent_10
+	trait = humble
+	trait = shy
+	trait = compassionate
+	trait = education_diplomacy_2
+	trait = curious
+	disallow_random_traits = yes
+	859.3.1 = { birth = yes}
+	866.3.3 = { 
+		religion = dark_souls_faith #rhllor_fots 
+	}
+	900.1.1 = { death=yes }
+ }
 #DORNE
  Martell_21 = {
 	name = Morgan # Canon, Andal Adventurer, founder
@@ -5821,7 +6820,7 @@
  Martell_22 = {
 	name = Line_of_Morgan
 	dynasty = dynn_Martell
-	religion = fots_seven
+	religion = hammerite_faith #fots_seven
 	culture = salt_dornish #stone_dornish
 	father = Martell_21
 	trait = line_of_char
