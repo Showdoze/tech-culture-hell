@@ -1026,7 +1026,8 @@
 	900.8.6 = {death=yes}
  }
 #NORHTMEN 
- Reed_74 = {
+ #REED
+  Reed_74 = {
 	name = Lonnel # a lord
 	dynasty = dynn_Reed
 	religion = norse_pagan #old_gods_wnw
@@ -1064,6 +1065,66 @@
 		trait = lifestyle_mystic
 	}
 	900.1.10 = {death=yes}
+ }
+  Reed_2 = {
+	name = Meera # Canon
+	dynasty = dynn_Reed
+	female = yes
+	martial = 5
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	religion = old_gods_wnw
+	culture = crannogman
+	father = Reed_1
+	#mother = Blackmyre_89
+	trait = education_martial_2
+	trait = beauty_good_1
+	trait = diligent
+	trait = compassionate
+	trait = brave
+	trait = rowdy
+	disallow_random_traits = yes
+	846.1.1 = {birth = yes}
+	860.1.1 = {
+		trait = lifestyle_mystic
+		trait = lifestyle_hunter
+		effect = {
+			if = {
+				limit = { character:Reed_3 = { is_alive = yes } }
+				set_relation_friend = {
+					target = character:Reed_3 # Jojen Reed
+					reason = friend_meera_jojen
+				}
+			}
+		}
+	}
+	8299.8.15 = {death=yes}
+}
+  Reed_3 = {
+	name = Jojen # Canon
+	dynasty = dynn_Reed
+	martial = 2
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 8
+	religion = old_gods_wnw
+	culture = crannogman
+	father = Reed_1
+	#mother = Blackmyre_89
+	trait = education_diplomacy_4
+	trait = physique_bad_2
+	trait = arrogant
+	trait = brave
+	trait = greensight
+	trait = pensive
+	trait = lifestyle_mystic
+	disallow_random_traits = yes
+	850.1.1 = {birth = yes}
+	900.8.15 = {death=yes}
  }
  #MANDERLY
   Manderly_71 = {
