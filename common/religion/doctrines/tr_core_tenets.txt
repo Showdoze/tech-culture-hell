@@ -753,7 +753,7 @@ tr_doctrines = {
 		}
 		traits = {
 			virtues = { 
-				chaste just diligent 
+				chaste just diligent follow_ashur 
 			}
 			sins = { 
 				lustful arbitrary lazy 
@@ -1070,6 +1070,35 @@ tr_doctrines = {
 			}
 			sins = { 
 				craven forgiving lazy shy 
+			}
+		}
+	}
+	tenet_of_the_seven = {
+		icon = core_tenet_hist
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			tenet_adaptive_conversion_resistance = yes
+			reduced_vassal_religion_discontent = yes
+			can_host_joust_contests = yes
+			seek_indulgences_active = yes
+			seek_indulgences_active_2 = yes
+			excommunication_active = yes
+			maintains_head_of_faith_on_creation = yes
+			take_vows_active = yes
+		}
+		character_modifier = {
+			different_faith_county_opinion_mult = -0.25
+			different_faith_liege_opinion = 15
+			opinion_of_different_faith_liege = 15
+		}
+		traits = {
+			virtues = { 
+				just = 0.5 compassionate = 0.5 chaste = 0.5 diligent = 0.5
+			    brave = 0.5 patient = 0.5 humble = 0.5 temperate
+			}
+			sins = { 
+				arbitrary sadistic lazy lustful craven impatient arrogant gluttonous 
 			}
 		}
 	}

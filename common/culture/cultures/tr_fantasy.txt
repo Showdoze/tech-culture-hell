@@ -222,6 +222,60 @@ lizardmen = {
         100 = succubus_ethnicity
     }
  }
+ half_elf = {
+    color = { 184 120 79 }
+    created = 100.1.1
+    parents = { elf_culture fantasy_culture }
+    history_loc_override = half_elf_history_loc
+    ethos = ethos_stoic
+    heritage = heritage_fantasy
+    language = language_elf
+    martial_custom = martial_custom_male_only
+    head_determination = head_determination_domain
+    traditions = {
+        tradition_half_elf
+        tradition_culture_blending
+        tradition_storytellers
+        tradition_mystical_ancestors
+    }
+    name_list = name_list_elf
+    coa_gfx = { french_coa_gfx east_african_coa_gfx western_coa_gfx }
+    building_gfx = { iranian_building_gfx }
+    clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+    unit_gfx = { altmer_unit_gfx }
+    house_coa_frame = house_frame_04
+    ethnicities = {
+        #1 = high_elven
+        50 = elf_eth_1
+    }
+}
+ half_elf_drow = {
+    color = { 184 120 79 }
+    created = 100.1.1
+    parents = { drow fantasy_culture }
+    history_loc_override = half_elf_history_loc
+    ethos = ethos_stoic
+    heritage = heritage_fantasy
+    language = language_drow
+    martial_custom = martial_custom_equal
+    head_determination = head_determination_domain
+    traditions = {
+        tradition_half_elf_drow
+        tradition_culture_blending
+        tradition_storytellers
+        tradition_mystical_ancestors
+    }
+    name_list = name_list_drow
+    coa_gfx = { french_coa_gfx east_african_coa_gfx western_coa_gfx }
+    building_gfx = { iranian_building_gfx }
+    clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+    unit_gfx = { altmer_unit_gfx }
+    house_coa_frame = house_frame_04
+    ethnicities = {
+        #1 = high_elven
+        50 = drow_eth
+    }
+}
 #ELDER SCROLLS #
  nord_culture = {
     color = { 0.12 0.32 0.94 }
