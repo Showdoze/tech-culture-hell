@@ -431,3 +431,21 @@ d_laamp_merc_golden_company = {
 	destroy_if_invalid_heir = yes
 	ai_primary_priority = { add = @never_primary_score }
 }
+k_the_most_devout = {
+	color = { 255 249 198 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	capital = c_kings_landing
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	de_jure_drift_disabled = yes
+	male_names = {
+		HIGH_SEPTON_NAME
+	}
+}
+
