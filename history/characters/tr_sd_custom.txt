@@ -175,6 +175,9 @@ tr_alastairmcglass = {
     580.1.11 = {
         birth = yes
     }
+    601.2.5 = {
+        religion = science
+    }
     667.4.15 = {
         death = {
             death_reason = death_incapable
@@ -377,6 +380,53 @@ tr_beccamcglass = {
     }
 }
 
+tr_annamcglass = {
+    name = "Anna"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    female = yes
+    martial = 10
+    diplomacy = 10
+    intrigue = 10
+    stewardship = 10
+    learning = 10
+    prowess = 10
+    trait = loyal
+    trait = lazy
+    trait = education_diplomacy_1
+    trait = content
+    trait = impatient
+    trait = deviant
+    father = tr_alfsirmcglass
+	mother = tr_alfsirmcglasswife
+    670.1.11 = {
+        birth = yes
+    }
+    730.2.5 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
+tr_eithnemcglass = {
+    name = "Eithne"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    female = yes
+	mother = tr_annamcglass
+    700.1.11 = {
+        birth = yes
+    }
+    767.2.5 = {
+        death = {
+            death_reason = death_natural_causes
+        }
+    }
+}
+
 tr_malcolmmcglass = {
     name = "Malcolm"
     religion = gaelic_pagan
@@ -421,36 +471,6 @@ tr_malcolmmcglasswife = {
     750.3.22 = {
         death = {
             death_reason = death_ill
-        }
-    }
-}
-
-tr_annamcglass = {
-    name = "Anna"
-    religion = gaelic_pagan
-    culture = scottish
-    dynasty = mcglass
-    female = yes
-    martial = 10
-    diplomacy = 10
-    intrigue = 10
-    stewardship = 10
-    learning = 10
-    prowess = 10
-    trait = loyal
-    trait = lazy
-    trait = education_diplomacy_1
-    trait = content
-    trait = impatient
-    trait = deviant
-	trait = wild_oat
-    mother = tr_beccamcglass
-    680.1.11 = {
-        birth = yes
-    }
-    730.2.5 = {
-        death = {
-            death_reason = death_natural_causes
         }
     }
 }
@@ -1293,11 +1313,32 @@ mm_surr = {
         birth = yes
     }
     840.5.14 = {
-        set_character_faith = ds1_faith
+        add_spouse = mm_baggrumwife
+    }
+    845.5.14 = {
+        religion = dark_souls_faith
     }
     895.5.27 = {
         death = {
             death_reason = death_age
+        }
+    }
+}
+
+mm_baggrumwife = {
+    name = "Maiah"
+    religion = dark_souls_faith
+    culture = norse
+    dynasty = valmir
+    female = yes
+    martial = 15
+    trait = adventurer
+    832.1.11 = {
+        birth = yes
+    }
+    900.2.22 = {
+        death = {
+            death_reason = death_disappearance
         }
     }
 }
