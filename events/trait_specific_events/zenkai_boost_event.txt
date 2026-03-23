@@ -1,0 +1,92 @@
+﻿namespace = zenkai_boost
+
+
+zenkai_boost.0001 = {
+    type = character_event
+    title = zenkai_boost.0001.t
+    desc = zenkai_boost.0001.desc
+    theme = physical_health
+    left_portrait = {
+        character = root 
+        animation = hero_flex
+    }
+    trigger = {
+        AND = {
+            has_trait = wounded
+            root.culture = culture:saiyan
+        }
+    }
+    weight_multiplier = {
+		base = 1
+		compare_modifier = {
+			value = age
+			multiplier = -0.01
+			min = -0.9
+		}
+		compare_modifier = {
+			value = stress
+			offset = -25
+			multiplier = -0.005
+		}
+		modifier = {
+			add = -0.3
+			has_character_modifier = infected_wound_modifier
+		}
+		modifier = {
+			add = 1
+			court_physician_available_trigger = yes
+		}
+	}
+    immediate = {
+        play_music_cue = mx_cue_positive_effect
+       
+        if = {
+            limit = { NOT = { has_trait = scarred }}
+            random = {
+                chance = 40
+                add_trait = scarred
+                add_trait_xp = {
+                    trait = scarred
+                    value = {
+                        integer_range ={
+                            min = 5
+                            max = 25
+                        }
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {has_trait = wounded_1}
+            remove_trait = wounded_1
+            add_prowess_skill = 2
+            add_martial_skill = 2
+            stress_impact = {
+                base = minor_stress_impact_gain
+            }
+        }
+        else_if = {
+            limit = {has_trait = wounded_2}
+            remove_trait = wounded_2
+            add_prowess_skill = 3
+            add_martial_skill = 3
+            stress_impact = {
+                base = medium_stress_impact_gain
+            }
+        }
+        else_if = {
+            limit = {has_trait = wounded_3}
+            remove_trait = wounded_3
+            add_prowess_skill = 4
+            add_martial_skill = 4
+            stress_impact = {
+                base = major_stress_impact_gain
+            }
+        }
+    }
+
+    option = {
+        name = zenkai_boost.0001.a
+    }
+
+}

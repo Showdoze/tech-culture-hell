@@ -1491,4 +1491,23 @@ ck_portraits = {
             }
         }
     }
+    tr_Daemon_Blackfyre = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_Daemon_Blackfyre
+                this = character:tr_Daemon_Blackfyre
+            }
+        }
+    }
 }

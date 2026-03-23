@@ -391,7 +391,6 @@
 	trait = architect
 	trait = theologian
 	trait = intellect_good_3
-	give_nickname = nick_father_prefix
 	disallow_random_traits = yes
 	822.1.1 = { birth = yes }
 	840.1.1 = {
@@ -1550,6 +1549,137 @@
 	}
 	1920.1.1 = { death = { death_reason = death_old_age } }
  }
+ #NARUTO
+  tr_naruto_kaguya = {
+	name = "Kaguya"
+	religion = science 
+    dynasty = dynn_otsutsuki
+	culture = japanese
+	sexuality = bisexual
+	female = yes
+	trait = education_intrigue_4
+    trait = immortal
+	trait = calm
+	trait = arrogant
+	trait = beauty_good_3
+    trait = intellect_good_3
+	trait = byakugan
+	trait = albino
+	trait = callous
+	trait = family_first
+    disallow_random_traits = yes
+	1.1.1 = { birth = yes}
+	25.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_Hagoromo = {
+	name = "Hagoromo"
+	religion = science 
+    dynasty = dynn_otsutsuki
+	culture = japanese
+	mother = tr_naruto_kaguya
+	trait = education_diplomacy_3
+    trait = humble
+	trait = calm
+	trait = diligent
+    trait = intellect_good_3
+	trait = twin
+	trait = journaller
+    disallow_random_traits = yes
+	15.1.1 = { birth = yes}
+	110.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_9tails = {
+	name = "Kurama"
+	religion = science 
+    dynasty_house = house_uzumaki
+	culture = japanese
+	father = tr_naruto_Hagoromo
+	trait = education_martial_prowess_4
+    trait = wrathful
+	trait = vengeful
+	trait = physique_good_3
+    trait = intellect_good_3
+	trait = immortal
+	trait = patient
+    disallow_random_traits = yes
+	25.1.1 = { birth = yes}
+	200.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_9tails_child = {
+	name = "Kurama"
+	religion = science 
+    dynasty_house = house_uzumaki
+	culture = japanese
+	father = tr_naruto_9tails
+	trait = education_diplomacy_2
+    trait = honest
+	trait = patient
+    trait = intellect_good_2
+	trait = compassionate
+    disallow_random_traits = yes
+	180.1.1 = { birth = yes}
+	250.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_Indra = {
+	name = "Indra"
+	religion = science 
+    dynasty = dynn_otsutsuki
+	culture = japanese
+	father = tr_naruto_Hagoromo
+	trait = physique_good_3
+	trait = education_martial_5
+    trait = ambitious
+	trait = cynical
+	trait = stubborn
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_3
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+	trait = whole_of_body
+    disallow_random_traits = yes
+	75.1.1 = { birth = yes}
+	100.1.1 = { dynasty_house = house_uchiha }
+	150.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_Asura = {
+	name = "Asura"
+	religion = science 
+    dynasty = dynn_otsutsuki
+	culture = japanese
+	father = tr_naruto_Hagoromo
+	trait = education_diplomacy_5
+    trait = humble
+	trait = generous
+	trait = forgiving
+    trait = gregarious
+	trait = confider
+	trait = organizer
+	trait = diplomat
+    disallow_random_traits = yes
+	80.1.1 = { birth = yes}
+	145.1.1 = { dynasty_house = house_senju }
+	150.1.1 = { death = { death_reason = death_mysterious } }
+ }
+  tr_naruto_Hamura = {
+	name = "Hamura"
+	religion = science 
+    dynasty = dynn_otsutsuki
+	culture = japanese
+	mother = tr_naruto_kaguya
+	trait = education_diplomacy_3
+    trait = humble
+	trait = calm
+	trait = byakugan
+	trait = diligent
+    trait = intellect_good_1
+	trait = twin
+    disallow_random_traits = yes
+	15.1.1 = { birth = yes }
+	50.1.1 = { dynasty_house = house_hygua }
+	110.1.1 = { death = { death_reason = death_mysterious } }
+ }
+ #VINLAND
   tr_vinland_askeladd_mom = {
 	name = "Lydia"
 	religion = catholic 
@@ -1566,7 +1696,7 @@
 	820.1.1 = { birth = yes }
 	848.1.1 = { death = { death_reason = death_ill } }
  }
- tr_vinland_askeladd_dad = {
+  tr_vinland_askeladd_dad = {
 	name = "Olaf"
 	religion = norse_pagan 
     dynasty = fantasy
@@ -1581,7 +1711,7 @@
 	800.1.1 = { birth = yes }
 	850.1.1 = { death = { death_reason = death_murder killer = tr_vinland_askeladd } }
  }
- tr_vinland_askeladd = {
+  tr_vinland_askeladd = {
     name = "Lucius Artorius Castus"
 	religion = norse_pagan
 	culture = welsh

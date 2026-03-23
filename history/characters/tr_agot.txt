@@ -637,7 +637,7 @@
 	give_nickname = nick_the_heartless
 	disallow_random_traits = yes
 	599.1.1 = {birth = yes}
-	700.1.1 = {
+	636.1.1 = {
 		trait = blind
 		trait = disfigured # Lips, ears, eyelids and tongue removed
 		make_trait_inactive = visible_disfigurement_3
@@ -658,7 +658,7 @@
 	prowess = 3
 	religion = deep_cult #drowned_god
 	culture = ironborn
-	father = Hoare_23
+	father = Hoare_19 #Hoare_23
 	trait = education_stewardship_4
 	trait = intellect_good_2
 	trait = greedy
@@ -1955,7 +1955,7 @@
 	trait = wrathful
 	trait = ambitious
 	trait = brave
-	575.1.1 = {birth = yes}
+	475.1.1 = {birth = yes}
 	500.1.1 = {
 		death = {
 			death_reason = death_execution
@@ -4443,13 +4443,25 @@
 	182.1.1 = {birth = yes}
 	255.1.1 = { death = yes }
  }
+ Redwyne_43 = {
+	name = Runceford # Canon, a lord
+	dynasty = dynn_Redwyne
+	religion = fots_seven
+	culture = honeywiner #vineman
+	father = Redwyne_11 #Redwyne_42
+	#mother = Bulwer_87
+	trait = drunkard
+	700.1.1 = {birth = yes}
+	#8222.1.1 = { add_spouse = Royce_79 } # Rhea Royce
+	800.1.1 = { death = yes }
+ }
   Redwyne_1 = {
 	name = Denys # a lord
 	dynasty = dynn_Redwyne
 	religion = fots_seven
 	culture = honeywiner #vineman
 	father = Redwyne_43
-	mother = Royce_79
+	#mother = Royce_79
 	750.1.1 = { birth = yes }
 	820.1.1 = { death = yes }
   }
@@ -5346,7 +5358,7 @@
 	prowess = 5
 	fertility = 0.1
 	health = 9
-	religion = hist
+	religion = norse_pagan
 	culture = high_valyrian
 	father = tr_tar_1_dad
 	mother = Blackwood_81 # Melissa Blackwood
@@ -5511,7 +5523,7 @@
   tr_Daemon_Blackfyre = {
 	name = Daemon # Canon, AKA: Daemon Blackfyre, progenitor of house Blackfyre
 	dynasty = dynasty_Targaryen
-	dna = tr_Daemon_Blackfyre
+	dna = Daemon_Blackfyre_by_Amok
 	martial = 11
 	diplomacy = 4
 	intrigue = 2

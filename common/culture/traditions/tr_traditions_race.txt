@@ -44,6 +44,8 @@
 		expensive_convert_to_local_culture = yes
 		harder_to_hybridize = yes
 		more_expensive_feasts = yes
+		renown_from_feasts = yes
+        more_frequent_feasts = yes
 		hunting_traits_more_valued = yes
 		doesnt_care_about_culture_faith_in_factions = yes
 		rivalries_more_common = yes
@@ -52,7 +54,6 @@
 		war_stress_loss = yes
 		dislikes_marrying_outside_of_culture = yes
 		ai_doesnt_marry_outside_culture = yes
-		more_frequent_feasts = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.25
@@ -69,12 +70,16 @@
 		dread_per_tyranny_add = 0.3
 		dread_decay_mult = -0.3
 		revolting_siege_morale_loss_mult = 0.5
-		character_travel_safety_mult = 0.1
+		character_travel_safety_mult = 0.5
 		retreat_losses = -0.1
 		hard_casualty_modifier = -0.1
 		prowess = 20
 		levy_size = -10
 		army_toughness_mult = 0.25
+		maa_damage_mult = 0.10
+		pursue_efficiency = 0.10
+		knight_effectiveness_per_dread = 0.1
+        different_culture_opinion = -10
 		negate_health_penalty_add = 0.15
 		stewardship = -1
 		diplomacy = -3
@@ -82,6 +87,9 @@
 		ai_boldness = 40
 		character_opinion_from_high_prowess_add = 10
 		character_opinion_from_low_prowess_add = -5
+		dread_gain_mult = 0.15 # PRIDE: fear follows confidence
+        monthly_dread = 0.2 # PRIDE: fear follows confidence
+		monthly_prestige = 0.2 # PRIDE: conquest and reputation fuel the culture
 	}
 	cost = { prestige = 2000 }
 	ai_will_do = { value = 0 }

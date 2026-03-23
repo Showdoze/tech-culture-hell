@@ -1,4 +1,4 @@
-﻿japan_oda = { #Oda
+﻿house_oda = { #Oda
 	pattern = "pattern_solid.dds"
 	color1 = "black"
 	colored_emblem = {
@@ -10,7 +10,7 @@
 		}
 	}
 }
-japan_hojo = { #Hojo
+house_hojo = { #Hojo
 	pattern = "pattern_solid.dds"
 	color1 = { 206 49 35 }
 	colored_emblem = {
@@ -22,7 +22,7 @@ japan_hojo = { #Hojo
 		}
 	}
 }
-japan_tokugawa = { #Tokugawa
+house_tokugawa = { #Tokugawa
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	colored_emblem = {
@@ -954,4 +954,54 @@ dyn_blackbriar = { # Blackbriar
 			rotation=22
 		}
 	}
+}
+dynn_otsutsuki = { # Ōtsutsuki
+	pattern = "pattern_solid.dds"	
+	color1 = "blue"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_otsutsuki_clan.dds"
+		color1 = "red"	
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+house_uchiha = { # Uchiha
+	pattern = "pattern_solid.dds"	
+	color1 = "blue"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_uchiha_clan.dds"
+		color1 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+house_senju = { # Senju
+	pattern = "pattern_solid.dds"	
+	color1 = "blue"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_senju_clan.dds"
+		color1 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+house_hygua = { # Hygua
+	pattern = "pattern_solid.dds"	
+	color1 = "yellow"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_hyuga_clan.dds"
+		color1 = "red"		
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+house_uzumaki = { # Uzumaki
+	pattern = "pattern_solid.dds"	
+	color1 = "blue"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_uzumaki_clan.dds"
+		color1 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
 }
