@@ -226,6 +226,9 @@ tr_brethmcglass = {
     570.1.11 = {
         birth = yes
     }
+    595.5.10 = {
+		add_spouse = tr_brethmcglasswife
+	}
     660.10.8 = {
         death = {
             death_reason = death_ill
@@ -252,13 +255,11 @@ tr_kennethmcglass = {
     trait = brave
     trait = greedy
     trait = irritable
+    trait = wild_oat
     mother = tr_loramcglass
     560.1.11 = {
         birth = yes
     }
-	595.5.10 = {
-		add_spouse = tr_kennethmcglasswife
-	}
     607.7.22 = {
         death = {
             death_reason = death_siege
@@ -266,7 +267,7 @@ tr_kennethmcglass = {
     }
 }
 
-tr_kennethmcglasswife = {
+tr_brethmcglasswife = {
     name = "Faen"
     religion = gaelic_pagan
     culture = scottish
@@ -300,8 +301,8 @@ tr_alfsirmcglass = {
     trait = loyal
     trait = content
     trait = tactitian
-    father = tr_kennethmcglass
-	mother = tr_kennethmcglasswife
+    father = tr_brethmcglass
+	mother = tr_brethmcglasswife
     600.1.11 = {
         birth = yes
     }
