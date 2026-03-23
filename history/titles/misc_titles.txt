@@ -385,7 +385,7 @@
 		government = landless_adventurer_government
 		succession_laws = { landless_adventurer_succession_law }
 		effect = {
-			holder ?= {
+			holder = {
 				create_maa_regiment = {
 					type = light_footmen
 					check_can_recruit = no
@@ -435,7 +435,7 @@
 		government = landless_adventurer_government
 		succession_laws = { landless_adventurer_succession_law }
 		effect = {
-			holder ?= {
+			holder = {
 				if = {
 					limit = {
 						NOT = {
