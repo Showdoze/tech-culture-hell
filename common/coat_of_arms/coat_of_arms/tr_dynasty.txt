@@ -767,10 +767,96 @@ house_telvanni = {
 	}		
 }
 
+#Dawn Empire
 
+dawn_empire = {
+	textured_emblem = {
+		texture = "dawn_empire_dynasty.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
+}
 
+house_dawn_chosen = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 0 0 200 }
 
+	colored_emblem = {
+		texture = "ce_tamgha_roundel_frame.dds"
+		color1 = rgb { 200 0 0 }
+		color2 = rgb { 200 200 200 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}	
 
+	colored_emblem = {
+		texture = "dawn_empire_chosen.dds"
+		color1 = rgb { 0 0 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
 
+house_dawn_seijuro = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 50 50 50 }
 
+	colored_emblem = {
+		texture = "dawn_empire_seijuro.dds"
+		color1 = rgb { 200 200 200 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
 
+house_dawn_ranja = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 80 0 0 }
+
+	colored_emblem = {
+		texture = "ce_seal_pictorial_frame_circle_full.dds"
+		color1 = rgb { 200 200 200 }
+		instance = {	position = { 0.5 0.5 }	scale = { 0.8 0.8 }	}
+	}		
+
+	colored_emblem = {
+		texture = "dawn_empire_ranja.dds"
+		color1 = rgb { 20 50 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
+
+house_dawn_dokuja = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 200 200 200 }
+
+	colored_emblem = {
+		texture = "ce_kamon_sakura.dds"
+		color1 = rgb { 80 0 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 0.8 0.8 }	}
+	}
+
+	colored_emblem = {
+		texture = "dawn_empire_oni.dds"
+		color1 = rgb { 0 0 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
+
+house_dawn_kizan = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 150 150 0 }
+
+	colored_emblem = {
+		texture = "dawn_empire_kizan.dds"
+		color1 = rgb { 0 0 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
+
+house_dawn_imperial = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 50 0 0 }
+
+	colored_emblem = {
+		texture = "dawn_empire_imperial.dds"
+		color1 = rgb { 150 150 0 }
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
+	}		
+}
