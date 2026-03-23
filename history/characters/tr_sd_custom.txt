@@ -476,8 +476,11 @@ tr_thennmcglass = {
     700.1.11 = {
         birth = yes
     }
-	735.9.11 = {
+	728.9.11 = {
 		add_spouse = tr_thennmcglasswife
+	}
+    750.9.11 = {
+		add_spouse = tr_thennmcglasswife2
 	}
     771.4.1 = {
         death = {
@@ -494,7 +497,22 @@ tr_thennmcglasswife = {
     710.1.11 = {
         birth = yes
     }
-    760.5.27 = {
+    745.5.27 = {
+        death = {
+            death_reason = death_cancer
+        }
+    }
+}
+
+tr_thennmcglasswife2 = {
+    name = "Suaibsech"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    720.1.11 = {
+        birth = yes
+    }
+    794.5.27 = {
         death = {
             death_reason = death_stress
         }
@@ -540,6 +558,23 @@ tr_liammcglasswife = {
             death_reason = death_natural_causes
         }
     }
+}
+
+tr_kennethmcglass = {
+    name = "Kenneth"
+    religion = gaelic_pagan
+    culture = scottish
+    dynasty = mcglass
+    father = tr_liammcglass
+	mother = tr_liammcglasswife
+    767.1.11 = {
+        birth = yes
+    }
+	795.2.10 = {
+		death = {
+            death_reason = death_disappearance
+        }
+	}
 }
 
 tr_steinmcglass = {
@@ -695,7 +730,7 @@ tr_aleksmcglasswife = {
     881.1.11 = {
         birth = yes
     }
-    971.4.17 = {
+    961.4.17 = {
         death = {
             death_reason = death_incapable
         }
@@ -713,9 +748,28 @@ tr_deanthmcglass = {
     920.1.1 = {
         birth = yes
     }
+    940.5.12 = {
+        add_spouse = tr_deanthmcglasswife
+    }
     990.4.17 = {
         death = {
             death_reason = death_ill
+        }
+    }
+}
+
+tr_deanthmcglasswife = {
+    name = "Dianaim"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    trait = education_diplomacy_2
+    926.1.1 = {
+        birth = yes
+    }
+    987.4.17 = {
+        death = {
+            death_reason = death_age
         }
     }
 }
@@ -732,9 +786,27 @@ tr_shaunmcglass = {
     940.1.1 = {
         birth = yes
     }
+    958.12.2 = {
+        add_spouse = tr_shaunmcglasswife
+    }
     995.4.17 = {
         death = {
             death_reason = death_training_accident
+        }
+    }
+}
+
+tr_shaunmcglasswife = {
+    name = "Temair"
+    religion = gaelic_pagan
+    culture = scottish
+    female = yes
+    942.1.1 = {
+        birth = yes
+    }
+    1003.4.17 = {
+        death = {
+            death_reason = death_age
         }
     }
 }
