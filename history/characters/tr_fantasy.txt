@@ -1816,7 +1816,6 @@
 	860.10.5 = {
 		employer = tr_elivance
 	}
-	2066.1.1 = { death = { death_reason = death_mysterious } }
  }
  tr_barneycalhoun = {
     name = "Barney Calhoun"
@@ -1903,6 +1902,9 @@
 			set_relation_friend = { target = character:tr_gordonfreeman }
 		}
 	}
+	1066.2.15 = {
+		death = { death_reason = death_disappearance }
+	}
  }
  tr_azianvance = {
     name = "Azian Vance"
@@ -1918,7 +1920,7 @@
 		add_spouse = tr_elivance
 	}
     847.5.10 = {
-		death = yes
+		death = { death_reason = death_siege }
 	}
  }
  tr_isaackleiner = {
