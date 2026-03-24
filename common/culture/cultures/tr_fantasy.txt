@@ -222,6 +222,35 @@ lizardmen = {
         100 = succubus_ethnicity
     }
  }
+ duergar = {
+    color = rgb { 184 120 79 }
+    created = 100.1.1
+    parents = { old_dwarven }
+    history_loc_override = mystery_history_loc
+    ethos = ethos_bureaucratic
+    heritage = heritage_fantasy
+    language = language_dwarven
+    martial_custom = martial_custom_male_only
+    head_determination = head_determination_domain
+    traditions = {
+        tradition_ancient_miners
+        tradition_metal_craftsmanship
+        tradition_dwarf
+        tradition_cutthroat_politics
+        tradition_duergar
+    }
+    name_list = name_list_duergar
+    coa_gfx = { norse_coa_gfx western_coa_gfx }
+    building_gfx = { norse_building_gfx }
+    clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+    unit_gfx = { norse_unit_gfx }
+    house_coa_frame = house_frame_round2
+    house_coa_mask_offset = { 0.0 -0.03 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+    ethnicities = {
+        100 = dwarven_ethnicity
+    }
+ }
 #ELDER SCROLLS #
  nord_culture = {
     color = { 0.12 0.32 0.94 }

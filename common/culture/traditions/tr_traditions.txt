@@ -1711,8 +1711,7 @@ tradition_cutthroat_politics = {
 		1 = mediterranean
 		4 = noble.dds
 	}
-	can_pick = {
-	}	
+	is_shown = { always = no }
 	parameters = {
 		intrigue_education_better_outcomes = yes
 		schemer_xp_rebate = yes
@@ -1724,8 +1723,15 @@ tradition_cutthroat_politics = {
 		vengeful_positive_forgiving_negative = yes
 		rivalries_more_common = yes
 		hostile_action_vs_rival_bonuses = yes
+		house_hostility_more_common = yes
+		vassals_more_likely_to_refuse_demands = yes
+		ambitious_trait_more_common = yes
+		reduced_bodyguard_aptitude = yes
 	}
-	character_modifier = {		
+	character_modifier = {
+		owned_political_scheme_success_chance_add = 10
+		opinion_of_liege = -10
+		intrigue_per_prestige_level = 1
 	}	
 	cost = { prestige = 6000 }
 	ai_will_do = { value = 0 }

@@ -3774,19 +3774,6 @@
 }
 #dnd
  name_list_drow = {
-    cadet_dynasty_names = {
-        Oblodra DeVir Orlith Wenkiir Baenre Dhourn Do_Urden Dhaerow Asbodela Balartyr  
-        Chueth_duis Darnruel Dlaen__Del_Amatar Fael_Olyphar Hael_lrin H_tithet Illith_vir  
-        Ilueph Ilystryph Klor_lbar Llarabbar Miliskeera Neereath Ol_il_isk Ouol Ryrrl  
-        Thadalix Tirin Tuek_tharm Ulutar Urundlet Vahadarr Waeth_del_tar Yulaun_tlar  
-        Veladorn Aleanrahel Claddath Agrach_Dyrr Aleval Arabani Argith Arkhenneld Auvryndar  
-        Barrison_Del_Armigo Despana Drezz_Lynur Druu_giir Eilservs Faen_Tlabbar Fey_Branche  
-        Hun_ett Jenn_Yxir Jusztiirn Kenafin Khalazza Kilsek Maerret Melarn Mezrylornyl  
-        Mylyl Naerth Nanitarim Noquar Nurbonnis Oblodra Ousstyl Phaundal Q_Xorlarrin  
-        Shobalar Srune_lett Sshurlynder Symrivvin T_sarran Teken_duis Telenna Tlabbar Tlintarn 
-        Tuin_Tarl Vandree Xalyth Xorlarrin Yauntyrr Yauthlo Bluirren Catanzaro 
-        Ssh_starm Shun_Tahaladar Yune_duis Vandree Freth Horlbar Millithor Rilynt_tar
-    }
     dynasty_names = {
         Oblodra DeVir Orlith Wenkiir Baenre Dhourn Do_Urden Dhaerow Asbodela Balartyr  
         Chueth_duis Darnruel Dlaen__Del_Amatar Fael_Olyphar Hael_lrin H_tithet Illith_vir  
@@ -4065,9 +4052,7 @@
         #{ name = "mercenary_company_battletinkers" }
     }
  }
-name_list_human = {
-    cadet_dynasty_names = {
-    }
+ name_list_human = {
     dynasty_names = { 
         Cullagh Stelmane Wunterbrood Ravengard Dekarios of_Rashemen Geddarm Gortash Flymm Dophir Troy 
         Arsetz Mordels Lerskin Quarlic Grejit Rashemen Daggles Odoolan Fronkin Ni_Chuirc Belt Grey 
@@ -4133,6 +4118,69 @@ name_list_human = {
         #{ name = "mercenary_company_battletinkers" }
     }
 } 
+ name_list_duergar = {
+    dynasty_names = { 
+        Thrinn Coal Derryck Ashlord Battlegore Earthlord Doomfist Firetamer Knifemind Mindeater Blackskull 
+        Necksnapper Orehammer Runehammer Thundermaster Underearth Sunblight Steelshadow Blackiron 
+        Bonebreaker Bukbukken Cathraelk Coalhewer Duckfens Duerna Evermist Firehammer Flagonfist 
+        Garpeth Garshorn Bahrdlogh Gloomstorm Bukbukken Gravelthumb Hastenwald Henstak Hilldark 
+        Holmwood Horn Ironchisel Ironeye Martelles Muzgardt Nighthammer Redspur Ridaugaur 
+        Saltbaron Silkwright Skargettian Stoneborn Szolt Szort Tigrellpie Tornhelm Mordin 
+        Xornbane Xundorn Zelksix 
+    }
+    male_names = {
+        Argram Axerock Abaforth 
+        Belub Brithvar Brathwen Borwald 
+        Cordrane Carlig Clanker 
+        Dunnol Durzagon Darbleth Djir Durn 
+        Fulgrim Finderlig 
+        Garmor Gekh Gergerann Grumm Grundril Greymon Ghevel Ghuldur Gemen Gorglak Gorstaf Grimboot 
+        Grimmdar Grimbold Gartokkar 
+        Havkelaag Holvik Hurk Horgar Hemeth 
+        Jergen Josef 
+        Kirgrath Kith Kurken Kholzourl Krimgol Khorrl 
+        Lurgan Lorthio Ilyich 
+        Magmar Murmath Malus Morndin Mucknuggle Murkolk 
+        Nalifarn Noprum 
+        Orgarth Orth Orcolla Olorn 
+        Quendar 
+        Reulek 
+        Skarjall Shant Shull Skuerren Suthik 
+        Thudd Thurn Thardek Tombli Tooktook Thaglar 
+        Unger Uder 
+        Viss 
+        Werz 
+        Xardorok 
+    }
+    female_names = { 
+        Aminah Anouk Appleblossom 
+        Cotre 
+        Dalthar Danna Drar Duna Daleen 
+        Elenna Errde Effran 
+        Fonmara Fluemartina 
+        Iphigea 
+        Jerris 
+        Kettel Kree Kur 
+        Lorlarrio 
+        Mirthis Morghal Morgya Magda 
+        Nyzeil 
+        Pistle 
+        Skella 
+        Torgga Theara 
+        Ylsa 
+        Zybil 
+    }
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 10
+    mat_grf_name_chance = 30
+    father_name_chance = 5
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    mercenary_names = {
+        #{ name = "mercenary_company_gadgets_and_bolts"coat_of_arms = "d_junkwatt" }
+    }
+}
 name_list_hobbit = {
     cadet_dynasty_names = {
         Baggins Took Gamgee Brandybuck Bolger SackvilleBaggins Roper Burrows Galpsi Goodchild 
@@ -7610,7 +7658,7 @@ name_list_lizardmen = {
 		{ name = "mercenary_company_company_of_the_blackwater" }
 	}
 }
-name_list_westerosi_valyrian = {
+ name_list_westerosi_valyrian = {
 	dynasty_names = {
 		Azantys Jentys Qelbar Lentorys Pyghageon Drace Zygar Correy Tolvys Tembyre
 		Sparosyon Rinatheon Kios Jaedar Geronys Edrugonar Daomio Qohlarys Tartigar Naeltheon

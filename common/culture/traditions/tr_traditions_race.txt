@@ -193,8 +193,13 @@ tradition_dwarf = {
 		ai_doesnt_marry_outside_culture = yes
 		reveler_traits_more_common = yes
 		reveler_traits_more_valued = yes
+		stubborn_trait_more_common = yes
 		pardoning_gives_loyalty = yes
 		prestige_gain_on_building_complete_in_mountains_forest = yes
+		mountains_hunt_success_chance = yes
+		architect_trait_prestige = yes
+		allows_brewery = yes
+		brewery_farming_bonus = yes
 	}
 	character_modifier = {
 		life_expectancy = 200
@@ -204,6 +209,7 @@ tradition_dwarf = {
 		hills_travel_danger = hills_high_danger_reduction
 		dwarf = 100
 	    elderly_health = 100
+		artifact_decay_reduction_mult = -0.5
 	}
 	traits = {
 		dwarf = 100
@@ -221,6 +227,49 @@ tradition_dwarf = {
 		desert_mountains_levy_size = 0.1
 		mountains_supply_limit_mult = 0.25
 		desert_mountains_supply_limit_mult = 0.25
+	}
+	cost = { prestige = 900 }
+	ai_will_do = { value = 0 }
+}
+tradition_duergar = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = dnd_duergar.dds
+	}
+	is_shown = {this = culture:duergar}
+	parameters = {
+		reveler_traits_more_common = yes
+		reveler_traits_more_valued = yes
+		weak_traits_looked_down_upon = yes
+		craven_and_content_traits_looked_down_upon = yes
+		hostile_action_vs_rival_bonuses = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		cultrad_unlocks_t3_arbitrary_arrests = yes
+		poorly_educated_leaders_distrusted = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		penalty_for_revoking_titles_from_close_family = yes
+		less_likely_to_culture_convert = yes
+		cultrad_unlocks_t4_bounties_for_whispers = yes
+	}
+	character_modifier = {
+		ignore_opinion_of_different_faith = yes
+		different_culture_opinion = -10
+		ai_greed = 50
+		general_opinion = -10
+		monthly_income_mult = 0.03
+		max_loot_mult = 0.25
+		monthly_prestige_gain_per_dread_mult = 0.01
+		dread_per_tyranny_add = 0.3
+		dread_decay_mult = -0.3
+		opinion_of_different_culture = -15
+		intrigue_per_prestige_level = 1
+	}
+	county_modifier = {
+	}
+	province_modifier = {
 	}
 	cost = { prestige = 900 }
 	ai_will_do = { value = 0 }
@@ -487,6 +536,8 @@ tradition_giant = {
 		can_appoint_court_gardener = yes
 		can_recruit_gardeners = yes
 		can_author_books = yes
+		allows_brewery = yes
+		brewery_farming_bonus = yes
 	}
 	character_modifier = {
 		life_expectancy = 60
@@ -632,6 +683,7 @@ tradition_elf = {
 		negate_health_penalty_add = 10
 		child_health = 0.5
 	    elderly_health = 1000
+		artifact_decay_reduction_mult = -1
 	}
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
@@ -1018,6 +1070,7 @@ tradition_hyrule = {
 		more_gold_for_successful_defensive_wars = yes
 		harder_to_hybridize = yes
 		maritime_mercantilism_coastal_holdings = yes
+		lustful_trait_less_common = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -2
@@ -1279,6 +1332,8 @@ tradition_fromsoft = {
 		knights_die_less_but_are_captured_more = yes
 		characters_more_likely_to_be_captured_in_sieges = yes
 		can_demand_higher_ransoms_from_lower_tiers = yes
+		allows_brewery = yes
+		brewery_farming_bonus = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.5
