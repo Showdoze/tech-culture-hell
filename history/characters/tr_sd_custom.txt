@@ -1941,10 +1941,12 @@ tr_outlander_pirate = {
     name = "Pirate"
     religion = zhengyi
     culture = han
+    dynasty_house = house_pirate
     female = yes
     dna = random_woman10
+    diplomacy = 10
     trait = education_martial_3
-    trait = lifestyle_gallowsbait
+    trait = gallowsbait
     trait = reaver
     830.1.1 = { birth = yes }
 
@@ -1956,6 +1958,7 @@ tr_outlander_medjay = {
     religion = kemetic_pagan
     culture = ancient_egyptian
     trait = education_martial_3
+    prowess = 12
     830.1.1 = { birth = yes }
     860.2.5 = {
         employer = tr_outlander_pirate
