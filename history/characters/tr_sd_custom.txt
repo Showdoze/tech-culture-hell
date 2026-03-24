@@ -1945,7 +1945,7 @@ tr_outlander_pirate = {
     culture = han
     dynasty = pirate
     female = yes
-    dna = random_woman10
+    #dna = random_woman10
     diplomacy = 10
     trait = education_martial_3
     trait = gallowsbait
@@ -1955,22 +1955,46 @@ tr_outlander_pirate = {
     trait = adventurer
     trait = lifestyle_blademaster
     disallow_random_traits = yes
-    830.1.1 = { birth = yes }
-
-    908.1.1 = { death = { death_reason = death_battle } }
-
     portrait_override = {
-        portrait_modifier_overrides={
+        portrait_modifier_overrides = {
             hairstyles = female_hair_fp1_01
-
             legwear = female_legwear_secular_western_common_01
-
             clothes = f_clothes_sec_ep3_byzantine_era2_war_nob_01_hi
-
             headgear = fp2_muslim_high_nobility
-            special_headgear_spectacles = female_headgear_special_eye_patch_01
+            #special_headgear_spectacles = female_headgear_special_eye_patch_01
         }
     }
+
+    830.1.1 = { birth = yes }
+
+    845.1.23 = {
+        effect = {
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = 80
+            }
+        }
+    }
+
+    856.2.12 = {
+        effect = {
+            add_trait_xp = {
+                trait = gallowsbait
+                value = 150
+            }
+        }
+    }
+
+    860.2.14 = {
+        effect = {
+            add_trait_xp = {
+                trait = reaver
+                value = 120
+            }
+        }
+    }
+
+    908.1.1 = { death = { death_reason = death_battle } }
 }
 
 tr_outlander_medjay = {
@@ -2003,8 +2027,17 @@ tr_outlander_ocelotl = {
     name = "Ocelotl"
     religion = cult_of_tlaloc
     culture = nahuatl
+    trait = aggressive_attacker
     trait = education_martial_3
     830.1.1 = { birth = yes }
+    850.2.15 = {
+        effect = {
+            add_trait_xp = {
+                trait = aggressive_attacker
+                value = 120
+            }
+        }
+    }
     860.2.5 = {
         employer = tr_outlander_pirate
     }
@@ -2028,10 +2061,26 @@ tr_outlander_virtuosa = {
     name = "Virtuosa"
     religion = catholic
     culture = lombard
-    dna = random_woman3
+    dna = random_woman4
     female = yes
     trait = education_martial_3
+    trait = lifestyle_blademaster
+    portrait_override = {
+        portrait_modifier_overrides={
+            hairstyles = female_hair_rtt_02
+            headgear = f_heagear_sec_fp3_iranian_nob_01
+        }
+        hair = { 1 0.4 0 }
+    }
     840.1.1 = { birth = yes }
+    850.2.14 = {
+        effect = {
+            add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = 140
+            }
+        }
+    }
     860.2.5 = {
         employer = tr_outlander_pirate
     }
