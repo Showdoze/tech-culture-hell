@@ -41,6 +41,10 @@ on_war_started = {
     on_actions = { tr_sayan_check }
 }
 
+wounded_recovery_pulse = {
+    on_actions = { tr_sayan_boost }
+}
+
 on_game_start_after_lobby = {
     on_actions = { tr_satanism_start }
     on_actions = { tr_artifact_start_spawn }
@@ -123,6 +127,12 @@ tr_sayan_check = {
 tr_artifact_start_spawn = {
     events = {
         tr_artifact_spawn.01
+    }
+}
+
+tr_sayan_boost = {
+    events = {
+        zenkai_boost.0001
     }
 }
 
