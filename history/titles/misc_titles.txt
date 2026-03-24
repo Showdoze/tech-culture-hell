@@ -755,15 +755,8 @@ d_amoung_us = {
 }
 d_dawn_empire = {
     800.1.1 = {
-        liege = 0
         holder = tr_kensei_kioyshin
-        government = landless_adventurer_government
-        succession_laws = { landless_adventurer_succession_law }
-        effect = {
-            create_landless_adventurer_title_history_effect = yes
-            set_variable = { name = adventurer_creation_reason value = flag:historical }
-            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
-        }
+        government = feudal_government
     }
     830.1.1 = {
         holder = tr_kensei_yugi
