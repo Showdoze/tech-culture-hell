@@ -1746,6 +1746,9 @@ tr_kensei_kioyshin = {
     trait = strong
     disallow_random_traits = yes
     750.1.1 = { birth = yes }
+    800.10.5 = {
+        trait = blind
+    }
     830.1.1 = { death = { death_reason = death_battle killer = tr_shugoki } }
 }
 tr_shugoki = {
@@ -1827,7 +1830,6 @@ tr_kensei_hatori = {
     prowess = 10
     trait = education_martial_3
     trait = humble
-    trait = blind
     trait = honest
     trait = beauty_good_3
     trait = twin
@@ -1938,7 +1940,7 @@ tr_sohei = {
 #Outlanders
 
 tr_outlander_pirate = {
-    name = "Pirate"
+    name = "Xi"
     religion = zhengyi
     culture = han
     dynasty = pirate
@@ -1948,6 +1950,11 @@ tr_outlander_pirate = {
     trait = education_martial_3
     trait = gallowsbait
     trait = reaver
+    trait = greedy
+    trait = brave
+    trait = adventurer
+    trait = lifestyle_blademaster
+    disallow_random_traits = yes
     830.1.1 = { birth = yes }
 
     908.1.1 = { death = { death_reason = death_battle } }
@@ -2008,7 +2015,7 @@ tr_outlander_virtuosa = {
     name = "Virtuosa"
     religion = catholic
     culture = lombard
-    dna = random_woman9
+    dna = random_woman3
     female = yes
     trait = education_martial_3
     840.1.1 = { birth = yes }
