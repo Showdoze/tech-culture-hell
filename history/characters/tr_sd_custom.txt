@@ -1783,20 +1783,47 @@ tr_shugoki = {
     948.1.1 = { death = { death_reason = death_battle  } }
 }
 tr_nobushi = {
-    name = "Nobushi"
+    name = "Nobushi Takeko"
     religion = shinto
     dynasty_house = house_dawn_dokuja
     culture = japanese
     female = yes
-    trait = education_martial_2
+    trait = education_stewardship_2
     trait = humble
-    trait = arrogant
     trait = honest
     trait = strategist
     trait = strong
     disallow_random_traits = yes
-    831.1.1 = { birth = yes }
+    835.1.1 = { birth = yes }
     905.1.1 = { death = { death_reason = death_battle killer = tr_shugoki } }
+}
+tr_nobushi_husband = {
+    name = "Tako"
+    religion = shinto
+    dynasty_house = house_dawn_dokuja
+    culture = japanese
+    trait = education_diplomacy_2
+    trait = humble
+    trait = honest
+    trait = strong
+    831.1.1 = { birth = yes }
+    849.2.16 = {
+        add_spouse = tr_nobushi
+    }
+    905.1.1 = { death = { death_reason = death_battle killer = tr_shugoki } }
+}
+tr_nobushi2 = {
+    name = "Nobushi Mutsuko"
+    religion = shinto
+    dynasty_house = house_dawn_dokuja
+    culture = japanese
+    female = yes
+    trait = education_stewardship_2
+    trait = humble
+    mother = tr_nobushi
+    father = tr_nobushi_husband
+    850.1.1 = { birth = yes }
+    920.1.1 = { death = { death_reason = death_age } }
 }
 tr_kensei_yugi = {
     name = "Kensei Yugi"
@@ -1851,7 +1878,7 @@ tr_kensei_hatori = {
     908.1.1 = { death = { death_reason = death_battle  } }
 }
 tr_orochi = {
-    name = "Orochi"
+    name = "Orochi Sato"
     religion = shinto
     dynasty_house = house_dawn_seijuro
     culture = japanese
@@ -1863,10 +1890,35 @@ tr_orochi = {
     trait = strong
     disallow_random_traits = yes
     825.1.1 = { birth = yes }
-    948.1.1 = { death = { death_reason = death_battle  } }
+    840.2.12 = {
+        add_spouse = tr_orochi_wife
+    }
+    885.1.1 = { death = { death_reason = death_age } }
+}
+tr_orochi_wife = {
+    name = "Orochi Kurome"
+    religion = shinto
+    dynasty_house = house_dawn_seijuro
+    culture = japanese
+    trait = education_martial_2
+    female = yes
+    prowess = 8
+    830.1.1 = { birth = yes }
+    900.1.1 = { death = { death_reason = death_age } }
+}
+tr_shinobi_father = {
+    name = "Shinobi Unaga"
+    religion = shinto
+    dynasty_house = house_dawn_kizan
+    culture = japanese
+    trait = education_intrigue_3
+    trait = calm
+    trait = reclusive
+    805.1.1 = { birth = yes }
+    870.1.1 = { death = { death_reason = death_age } }
 }
 tr_shinobi = {
-    name = "Shinobi"
+    name = "Shinobi Ryu"
     religion = shinto
     dynasty_house = house_dawn_kizan
     culture = japanese
@@ -1877,9 +1929,28 @@ tr_shinobi = {
     trait = reclusive
     trait = honest
     trait = strong
+    father = tr_shinobi_father
     disallow_random_traits = yes
     845.1.1 = { birth = yes }
-    948.1.1 = { death = { death_reason = death_battle killer = tr_Kensei_youge } }
+    908.1.1 = { death = { death_reason = death_battle killer = tr_Kensei_youge } }
+}
+tr_shinobi_sister = {
+    name = "Shinobi Aiko"
+    religion = shinto
+    dynasty_house = house_dawn_kizan
+    culture = japanese
+    female = yes
+    prowess = 8
+    diplomacy = 9
+    trait = education_intrigue_3
+    trait = calm
+    trait = reclusive
+    trait = honest
+    trait = strong
+    father = tr_shinobi_father
+    disallow_random_traits = yes
+    850.1.1 = { birth = yes }
+    920.1.1 = { death = { death_reason = death_age } }
 }
 tr_aramusha = {
     name = "Aramusha"
@@ -1895,7 +1966,17 @@ tr_aramusha = {
     trait = strong
     disallow_random_traits = yes
     821.1.1 = { birth = yes }
-    948.1.1 = { death = { death_reason = death_battle  } }
+    908.1.1 = { death = { death_reason = death_battle  } }
+}
+tr_aramusha2 = {
+    name = "Genji"
+    religion = shugendo
+    dynasty_house = house_dawn_ranja
+    culture = japanese
+    prowess = 10
+    trait = education_martial_prowess_3
+    835.1.1 = { birth = yes }
+    918.1.1 = { death = { death_reason = death_battle  } }
 }
 tr_hitokiri_oiwa = {
     name = "Hitokiri Oiwa"
@@ -1915,7 +1996,19 @@ tr_hitokiri_oiwa = {
     840.1.1 = {
         religion = blood_faith
     }
-    880.1.1 = { death = { death_reason = death_battle killer = tr_hitokiri_son } }
+    845.2.12 = {
+        add_spouse = tr_hitokiri_oiwa_husband
+    }
+    870.2.2 = { death = { death_reason = death_battle killer = tr_hitokiri_son } }
+}
+tr_hitokiri_oiwa_husband = {
+    name = "Sato"
+    religion = shinto
+    dynasty_house = house_dawn_seijuro
+    culture = japanese
+    prowess = 10
+    820.1.1 = { birth = yes }
+    850.1.1 = { death = { death_reason = death_battle killer = tr_hitokiri_oiwa } }
 }
 tr_hitokiri_hirocky = {
     name = "Hitokiri Hirocky"
@@ -1927,12 +2020,13 @@ tr_hitokiri_hirocky = {
     trait = burdened
     trait = faith_warrior
     mother = tr_hitokiri_oiwa
+    father = tr_hitokiri_oiwa_husband
     disallow_random_traits = yes
     850.1.1 = { birth = yes }
-    867.2.3 = {
+    870.2.3 = {
         religion = shinto
     }
-    928.1.1 = { death = { death_reason = death_battle  } }
+    928.1.1 = { death = { death_reason = death_battle } }
 }
 tr_sohei = {
     name = "Sohei"
@@ -1955,6 +2049,7 @@ tr_outlander_pirate = {
     religion = zhengyi
     culture = han
     dynasty = pirate
+    sexuality = asexual
     female = yes
     #dna = random_woman10
     diplomacy = 10
@@ -2012,6 +2107,7 @@ tr_outlander_medjay = {
     name = "Medjay"
     religion = kemetic_pagan
     culture = ancient_egyptian
+    sexuality = asexual
     trait = education_martial_3
     prowess = 12
     830.1.1 = { birth = yes }
@@ -2026,6 +2122,7 @@ tr_outlander_afeera = {
     religion = ashari
     culture = bedouin
     female = yes
+    sexuality = asexual
     trait = education_martial_3
     835.1.1 = { birth = yes }
     860.2.5 = {
@@ -2038,6 +2135,7 @@ tr_outlander_ocelotl = {
     name = "Ocelotl"
     religion = cult_of_tlaloc
     culture = nahuatl
+    sexuality = asexual
     trait = aggressive_attacker
     trait = education_martial_3
     830.1.1 = { birth = yes }
@@ -2059,6 +2157,7 @@ tr_outlander_khatun = {
     name = "Khatun"
     religion = tengri_pagan
     culture = mongol
+    sexuality = asexual
     female = yes
     trait = education_martial_3
     830.1.1 = { birth = yes }
@@ -2074,6 +2173,7 @@ tr_outlander_virtuosa = {
     culture = lombard
     dna = random_woman4
     female = yes
+    sexuality = asexual
     trait = education_martial_3
     trait = lifestyle_blademaster
     portrait_override = {
