@@ -843,3 +843,30 @@ dwarven_ethnicity = {
         10 = { name = old_beauty_1      range = { 0 1 } }
     }
 }
+duergar_ethnicity = {
+	template = "dwarven_ethnicity"
+	skin_color = {
+        90 = { 0.0 0.35 0.1 0.62 }
+    }
+	hair_color = {
+        30 = { 0 0 0 0 } #purple/pink
+    }
+    tr_hair_hue = {
+        100 = { name = custom_hair_hue    range = { 0 0 } }
+    }
+    tr_hair_saturation = {
+        100 = { name = custom_hair_saturation    range = { 0 0 } }
+    }
+    tr_hair_value = {
+        100 = { name = custom_hair_value    range = { 1 1 } }
+    }
+    tr_skin_hue = {
+        50 = { name = custom_skin_hue    range = { 0.6 0.65 } }
+    }
+    tr_skin_saturation = {
+        50 = { name = custom_skin_saturation    range = { 0.1 0.2 } }
+    }
+    tr_skin_value = {
+        50 = { name = custom_skin_value    range = { 0 0.1 } }
+    }
+}
