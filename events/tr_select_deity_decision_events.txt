@@ -1478,7 +1478,7 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 5
+				add = 10
 				has_trait = schemer
 			}
 		}
@@ -2407,8 +2407,7 @@ tr_select_deity.01 = {
         trigger = {
             AND = {
                 OR = {
-                    culture = culture:old_dwarven
-                    has_trait = dwarf
+                    culture = culture:duergar
                     #faith = faith:dnd_faith
                 }
                 NOT = {
@@ -2429,7 +2428,7 @@ tr_select_deity.01 = {
 			}
             modifier = {
 				add = 10
-				has_trait = sadistic
+				has_trait = greedy
 			}
             modifier = {
 				add = 5

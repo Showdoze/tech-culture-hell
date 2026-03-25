@@ -8,7 +8,6 @@
     martial_custom = martial_custom_equal
     head_determination = head_determination_domain
     traditions = {
-        tradition_merryment
         tradition_hard_working
         tradition_philosopher_culture
         tradition_legalistic
@@ -659,36 +658,6 @@ giant = {
         50 = watcher_ethnicity
     }
 }
-ancient_texas = {
-    color = { 120 10 10 }
-    created = 20.1.1
-    parents = { apache }
-    #history_loc_override = mystery_history_loc
-    ethos = ethos_stoic
-    heritage = heritage_native_american
-    language = language_mescalero
-    martial_custom = martial_custom_male_only
-    head_determination = head_determination_domain
-    traditions = {
-        tradition_city_keepers
-        tradition_ancient_miners
-        tradition_ruling_caste
-        tradition_loyal_soldiers
-        tradition_warrior_culture
-    }
-    name_list = name_list_native_american
-    coa_gfx = { mongol_coa_gfx steppe_coa_gfx }
-    building_gfx = { iranian_building_gfx }
-    clothing_gfx = { turkic_clothing_gfx mongol_clothing_gfx }
-    unit_gfx = { mongol_unit_gfx }
-    house_coa_frame = house_frame_round2
-    house_coa_mask_offset = { 0.0 -0.03 }
-	house_coa_mask_scale = { 0.79500034 0.79500034 }
-    ethnicities = {
-        90 = native_american
-        10 = mesoamerican
-    }
-}
 unknown = {
     color = { 0 0 0 }
     created = 1.1.1
@@ -829,9 +798,9 @@ fantasy_culture = {
         tradition_thief_kurshok_fall
     }
     name_list = name_list_thief_kurshok
-    coa_gfx = { east_african_group_coa_gfx }
-    building_gfx = { african_building_gfx mena_building_gfx }
-    clothing_gfx = { african_clothing_gfx }
+    coa_gfx = { east_african_group_coa_gfx byzantine_group_coa_gfx }
+    building_gfx = { byzantine_building_gfx }
+    clothing_gfx = { byzantine_clothing_gfx }
     unit_gfx = { mena_unit_gfx }
     house_coa_frame = house_frame_04
     ethnicities = { 100 = caucasian_blond }
