@@ -2068,6 +2068,20 @@ tr_shinobi_father = {
     805.1.1 = { birth = yes }
     870.1.1 = { death = { death_reason = death_age } }
 }
+tr_shinobi_father_wife = {
+    name = "Okame"
+    religion = shinto
+    dynasty_house = house_dawn_kizan
+    culture = japanese
+    female = yes
+    trait = education_martial_3
+    trait = calm
+    810.1.1 = { birth = yes }
+    850.4.12 = {
+        add_spouse = tr_shinobi_father
+    }
+    875.1.1 = { death = { death_reason = death_age } }
+}
 tr_shinobi = {
     name = "Shinobi Oga"
     religion = shinto
@@ -2081,9 +2095,10 @@ tr_shinobi = {
     trait = honest
     trait = strong
     father = tr_shinobi_father
+    mother = tr_shinobi_father_wife
     disallow_random_traits = yes
     845.1.1 = { birth = yes }
-    908.1.1 = { death = { death_reason = death_battle killer = tr_Kensei_youge } }
+    908.1.1 = { death = { death_reason = death_battle } }
 }
 tr_shinobi_sister = {
     name = "Shinobi Aiko"
@@ -2094,12 +2109,9 @@ tr_shinobi_sister = {
     prowess = 8
     diplomacy = 9
     trait = education_intrigue_3
-    trait = calm
-    trait = reclusive
-    trait = honest
     trait = strong
     father = tr_shinobi_father
-    disallow_random_traits = yes
+    mother = tr_shinobi_father_wife
     850.1.1 = { birth = yes }
     920.1.1 = { death = { death_reason = death_age } }
 }
@@ -2199,7 +2211,7 @@ tr_hitokiri_hirocky_wife = {
 tr_sohei = {
     name = "Sohei"
     religion = shugendo
-    dynasty_house = house_dawn_kizan
+    dynasty_house = house_dawn_chosen
     culture = japanese
     trait = education_martial_2
     trait = wrathful
