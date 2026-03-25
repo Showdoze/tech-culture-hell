@@ -975,6 +975,24 @@ tr_tiandi2 = {
     }
 }
 
+tr_tiandi2_wife = {
+    name = "Jingwen"
+    religion = zhengyi
+    culture = han
+    female = yes
+    840.1.11 = {
+        birth = yes
+    }
+    850.10.5 = {
+        add_spouse = tr_tiandi2
+    }
+    912.4.17 = {
+        death = {
+            death_reason = death_age
+        }
+    }
+}
+
 tr_tiandifather = {
     name = "Li Ming"
     religion = zhengyi
@@ -1798,7 +1816,7 @@ tr_nobushi = {
     905.1.1 = { death = { death_reason = death_battle killer = tr_shugoki } }
 }
 tr_nobushi_husband = {
-    name = "Tako"
+    name = "Taku"
     religion = shinto
     dynasty_house = house_dawn_dokuja
     culture = japanese
@@ -1858,7 +1876,20 @@ tr_kensei_yu = {
     father = tr_kensei_yugi
     disallow_random_traits = yes
     822.3.11 = { birth = yes }
-    900.1.1 = { death = { death_reason = death_suicide } }
+    880.1.1 = { death = { death_reason = death_suicide } }
+}
+tr_kensei_yu_husband = {
+    name = "Yasuakira"
+    religion = shinto
+    dynasty_house = house_dawn_imperial
+    culture = japanese
+    trait = education_martial_3
+    trait = humble
+    820.3.11 = { birth = yes }
+    840.2.12 = {
+        add_spouse = tr_kensei_yu
+    }
+    890.1.1 = { death = { death_reason = death_stress } }
 }
 tr_kensei_hatori = {
     name = "Kensei Hatori"
@@ -1875,7 +1906,20 @@ tr_kensei_hatori = {
     father = tr_kensei_yugi
     disallow_random_traits = yes
     822.3.11 = { birth = yes }
-    908.1.1 = { death = { death_reason = death_battle  } }
+    850.1.2 = {
+        add_spouse = tr_kensei_hatori_wife
+    }
+    905.1.1 = { death = { death_reason = death_battle  } }
+}
+tr_kensei_hatori_wife = {
+    name = "Misako"
+    religion = shugendo
+    dynasty_house = house_dawn_imperial
+    culture = japanese
+    prowess = 10
+    trait = education_martial_3
+    825.3.11 = { birth = yes }
+    910.1.1 = { death = { death_reason = death_stress  } }
 }
 tr_orochi = {
     name = "Orochi Sato"
@@ -1907,7 +1951,7 @@ tr_orochi_wife = {
     900.1.1 = { death = { death_reason = death_age } }
 }
 tr_shinobi_father = {
-    name = "Shinobi Unaga"
+    name = "Shinobi Tachi"
     religion = shinto
     dynasty_house = house_dawn_kizan
     culture = japanese
@@ -1918,7 +1962,7 @@ tr_shinobi_father = {
     870.1.1 = { death = { death_reason = death_age } }
 }
 tr_shinobi = {
-    name = "Shinobi Ryu"
+    name = "Shinobi Oga"
     religion = shinto
     dynasty_house = house_dawn_kizan
     culture = japanese
@@ -2022,11 +2066,27 @@ tr_hitokiri_hirocky = {
     mother = tr_hitokiri_oiwa
     father = tr_hitokiri_oiwa_husband
     disallow_random_traits = yes
-    850.1.1 = { birth = yes }
+    845.1.1 = { birth = yes }
     870.2.3 = {
         religion = shinto
     }
-    928.1.1 = { death = { death_reason = death_battle } }
+    905.1.1 = { death = { death_reason = death_age } }
+}
+tr_hitokiri_hirocky_wife = {
+    name = "Sanako"
+    religion = shugendo
+    dynasty_house = house_dawn_seijuro
+    culture = japanese
+    trait = education_martial_prowess_2
+    trait = reclusive
+    trait = burdened
+    trait = faith_warrior
+    disallow_random_traits = yes
+    848.1.1 = { birth = yes }
+    870.2.4 = {
+        add_spouse = tr_hitokiri_hirocky
+    }
+    928.1.1 = { death = { death_reason = death_age } }
 }
 tr_sohei = {
     name = "Sohei"
@@ -2181,7 +2241,7 @@ tr_outlander_virtuosa = {
             hairstyles = female_hair_rtt_02
             headgear = f_heagear_sec_fp3_iranian_nob_01
         }
-        hair = { 1 0.4 0 }
+        hair = { 1 0.3 0 }
     }
     840.1.1 = { birth = yes }
     850.2.14 = {
