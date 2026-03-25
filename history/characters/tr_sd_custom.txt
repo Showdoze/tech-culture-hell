@@ -902,10 +902,10 @@ tr_tiandi1 = {
     trait = adopted
     disallow_random_traits = yes
     father = tr_tiandifather
-    820.1.11 = {
+    840.1.11 = {
         birth = yes
     }
-    850.10.5 = {
+    860.10.5 = {
         employer = tr_tiandizhanghu
     }
     840.1.1 = {
@@ -951,7 +951,7 @@ tr_tiandi2 = {
     835.1.11 = {
         birth = yes
     }
-    850.10.5 = {
+    860.10.5 = {
         employer = tr_tiandizhanghu
     }
     850.1.1 = {
@@ -1368,6 +1368,7 @@ mm_frida = {
     culture = norse
     dynasty = valmir
     female = yes
+    dna = random_woman6
     martial = 12
     diplomacy = 12
     intrigue = 2
@@ -1604,6 +1605,34 @@ tr_fh_daubeny = {
         employer = none
     }
     900.1.1 = { death = { death_reason = death_battle } }
+}
+
+tr_fh_daubeny_soldier1 = {
+    name = "Maris"
+    religion = pagan
+    culture = fantasy_culture
+    prowess = 12
+    trait = education_martial_3
+    trait = strong
+    830.1.1 = { birth = yes }
+    860.5.12 = {
+        employer = tr_fh_daubeny
+    }
+    890.1.1 = { death = { death_reason = death_battle } }
+}
+
+tr_fh_daubeny_soldier2 = {
+    name = "Viscar"
+    religion = pagan
+    culture = fantasy_culture
+    prowess = 10
+    trait = education_martial_prowess_2
+    trait = strong
+    830.1.1 = { birth = yes }
+    860.5.12 = {
+        employer = tr_fh_daubeny
+    }
+    890.1.1 = { death = { death_reason = death_battle } }
 }
 
 tr_fh_conqueror = {
@@ -1935,6 +1964,7 @@ tr_kensei_hatori_wife = {
     religion = shugendo
     dynasty_house = house_dawn_imperial
     culture = japanese
+    female = yes
     prowess = 10
     trait = education_martial_3
     825.3.11 = { birth = yes }
