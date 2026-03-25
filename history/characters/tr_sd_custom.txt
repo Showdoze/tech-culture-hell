@@ -1712,11 +1712,30 @@ tr_fh_blackprior = {
     }
     900.1.1 = { death = { death_reason = death_battle } }
 }
+tr_fh_blackprior_wife = {
+    name = "Cassandra"
+    religion = dark_souls_faith
+    culture = fantasy_culture
+    prowess = 8
+    female = yes
+    trait = education_learning_2
+    trait = zealous
+    trait = content
+    trait = stubborn
+    trait = flagellant
+    disallow_random_traits = yes
+    842.1.1 = { birth = yes }
+    858.5.12 = {
+        add_spouse = tr_fh_blackprior
+    }
+    910.1.1 = { death = { death_reason = death_ill } }
+}
 tr_fh_blackprior_daughter = {
     name = "Serena"
     religion = dark_souls_faith
     culture = fantasy_culture
     father = tr_fh_blackprior
+    mother = tr_fh_blackprior_wife
     female = yes
     trait = education_martial_2
     trait = zealous
