@@ -767,6 +767,32 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+    option = { #the Mercenary
+        name =  nick_name_giver_nick_the_mercenary
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = education_martial_2
+                    has_trait = education_martial_3
+                    has_trait = education_martial_4
+                    has_trait = education_martial_5
+                }
+                OR = {
+                    has_trait = adventurer
+                    has_trait = adventurer_follower
+                    government_has_flag = government_is_mercenary
+                }
+                NOR = {
+                    has_trait = craven
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_mercenary }
+        add_prestige = -50
+        ai_chance = {
+			base = 1
+		}
+    }
  #DIPLOMACNY
     option = {
         name = nick_name_giver_nick_golden_tongued
