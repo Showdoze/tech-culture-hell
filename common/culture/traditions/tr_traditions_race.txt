@@ -872,38 +872,6 @@ tradition_venice = {
 	cost = { prestige = 9000 }
 	ai_will_do = { value = 0 }
 }
-tradition_korean = {
-	category = regional
-	layers = {
-		0 = martial
-		1 = mediterranean
-		4 = korean.dds
-	}	
-	is_shown = { always = no }
-	parameters = {
-		piety_from_language_schemes = yes
-		just_trait_gives_bonuses = yes
-		peasant_and_populist_factions_less_common = yes
-		republican_vassals_pay_more = yes
-		poorly_educated_leaders_distrusted = yes
-		landing_house_members_give_prestige = yes
-		penalty_for_revoking_titles_from_house_members = yes
-		landing_house_members_gives_renown = yes
-		piety_penalty_for_revoking_titles_from_house_members = yes
-	}
-	province_modifier = {
-		levy_size = -0.25
-	}
-	character_modifier = {
-		knight_effectiveness_mult = 1
-		revolting_siege_morale_loss_mult = 0.25
-		diplomacy_per_piety_level = -1
-		martial_per_piety_level = 1
-		prowess_per_piety_level = 1
-	}	
-	cost = { prestige = 9000 }
-	ai_will_do = { value = 0 }
-}
 traditon_hidden_village = {
 	category = regional
 	layers = {

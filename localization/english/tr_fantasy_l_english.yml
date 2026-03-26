@@ -2770,7 +2770,7 @@
      mercenary_reavers_lost_ark_article:0 "the "
      mercenary_reavers_lost_ark:0 "Reavers of the Lost Ark"
    name_list_nord:0 "Nord"
-   nord_culture:0 "Nord"
+    nord_culture:0 "Nord"
     nord_culture_prefix:0 "Nord"
     nord_culture_collective_noun:1 "Nords"
     nord_culture_desc:0 "The Atmorans are a mysterious and ancient people, hailing from the legendary frozen continent of Atmora, though perhaps native to Tamriel as their own myths claim. Migration and invasion waves across the Sea of Ghosts led the Atmorans to first settle some liminal islands, and later the northern shores of Tamriel, where over time they renounced their homeland and became the ancestors of the Nords. The fate of Atmora remains shrouded in riddles and superstitions, but some believe that there are still Atmorans of the old blood and custom there, isolated from the tidings of the world beyond the sea."
@@ -2788,8 +2788,7 @@
    giant:0 "Giant"
    giant_prefix:0 "Giant"
    giant_collective_noun:0 "Giant's"
-   name_list_storm_giant:0 "$storm_giant$"
-   name_list_frozen_giant:0 "$frozen_giant$"
+   name_list_giant: "Giant"
  #Orc
   name_list_orc:0 "Orc"
   heritage_orcish_name:0 "Orcish"
@@ -2854,18 +2853,14 @@
   emperor_feudal_female_bosmeris_group:0 "Hart-Queen"
   name_list_bosmer:0 "Bosmer"
  #Redguard
- language_tamrielic_yoku:0 "Yoku"
-
+  language_tamrielic_yoku:0 "Yoku"
      #Breton Group
- 
      count_feudal_male_balfieri:0 "[CHARACTER.Custom('DirenniTitle')]"
      count_feudal_female_balfieri:0 "[CHARACTER.Custom('DirenniTitle')]"
       county_feudal_balfieri:0 "[CHARACTER.Custom('DirenniRealm')]"
- 
      title_count_feudal_male_balfieri:0 "Castellan"
      title_count_feudal_female_balfieri:0 "Castellan"
      title_county_feudal_balfieri:0 "Castellany"
- 
      count_feudal_male_earl:0 "Earl"
      count_feudal_female_earl:0 "Earl"
      county_feudal_earldom:0 "Earldom"
@@ -2881,7 +2876,6 @@
       count_feudal_independent_male:0 "Prince"
       count_feudal_independent_female:0 "Princess"
         county_feudal_independent:0 "Principality"
- 
        duke_child_male:0 "Prince"
         duke_child_female:0 "Princess"
      language_dunmeris_name:0 "Dunmeris"
@@ -2962,7 +2956,7 @@
     heritage_breton_name:0 "[Select_CString( Or(Not(GetVariableSystem.HasValue( 'ek_ruler_designer_open', 'true' ) ), Or(GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MER') ),GetVariableSystem.HasValue( 'ek_race', Localize('RACE_MAN') ) ) ), 'Breton', Localize('no') )]"
     heritage_breton_collective_noun:0 "Bretons"
     heritage_breton_desc:0 "No Men have felt the imprint of Elves on their culture more than the Bretons. Their name may come from the beratu (“half blood”) of the Direnni Hegemony but most Bretons have little Mer blood now. After the Battle of Glenumbra Moors they threw off the Direnni yoke to pursue their own ambitions. \n\nWith “every hill, a castle. Every castle, a kingdom”, Breton princes are fiercely independent and competitive, making use of any means necessary in their bid for power. They take pride in arcane knowledge and adherence to chivalric virtues."
- #ninja
+ #ninja Naruto
   name_list_mist:0 "Mist"
   hidden_mist:0 "Hidden Mist"
   hidden_mist_prefix:0 "Hidden Mist"
@@ -3208,13 +3202,13 @@
  Brack_thal: "Brack'thal"
  Kharza_kzad: "Kharza-kzad"
 #Githyanki
- gith:0 "Githyanki"
-  gith_prefix:0 "Gith"
-  gith_collective_noun:1 "Githyanki's"
+ gith: "Githyanki"
+  gith_prefix: "Gith"
+  gith_collective_noun: "Githyanki's"
   language_gith_name:0 "Gith"
   language_gith_desc:0 "Gith had two main dialects and accents: one spoken by the githyanki, and the other by the githzerai."
- gith_eth:0 "" 
- name_list_gith:0 "Githyanki"
+  gith_eth:0 "Githyanki" 
+  name_list_gith:0 "Githyanki"
  Add_ath:0 "Add'ath" 
  Ahu_u_rag:0 "Ahu'u'rag"
  Ba_akreth:0 "Ba'akreth"
