@@ -1736,6 +1736,39 @@ tradition_cutthroat_politics = {
 	cost = { prestige = 6000 }
 	ai_will_do = { value = 0 }
 }
+tradition_warfare_centric = {
+	category = combat
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = swords.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		commanders_likelier_to_gain_commander_traits = yes
+		wanderers_gain_extra_combat_skills = yes
+		mercenary_courtiers_gain_extra_skills = yes
+		gain_gold_from_battles = yes
+		clergy_can_fight = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		blademaster_traits_give_learning = yes
+		culture_clergy_can_fight = yes
+	}
+	character_modifier = {
+	}	
+	cost = { prestige = 6000 }
+	ai_will_do = { value = 0 }
+}
 tradition_two_rivers_two_people = { # Mesopotamian Unity
 	category = regional
 	layers = {

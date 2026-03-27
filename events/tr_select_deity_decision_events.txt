@@ -230,8 +230,8 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 1
+				has_trait = comfort_eater
 			}
 		}
     }
@@ -334,8 +334,20 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 5
+				has_trait = lunatic_1
+			}
+            modifier = {
+				add = 5
+				has_trait = lunatic_genetic
+			}
+            modifier = {
+				add = 5
+				has_trait = possessed_1
+			}
+            modifier = {
+				add = 5
+				has_trait = possessed_genetic
 			}
 		}
     }
@@ -1417,9 +1429,13 @@ tr_select_deity.01 = {
 				add = 10
 				has_trait = schemer
 			}
+            modifier = {
+				add = 5
+				has_trait = one_eyed
+			}
 		}
     }
-     option = {
+    option = { #THOR
         name = god_choice_thor
         trigger = {
             AND = {
@@ -1500,8 +1516,8 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 5
+				has_trait = one_eyed
 			}
 		}
     }
@@ -1852,7 +1868,7 @@ tr_select_deity.01 = {
 			base = 1
 			modifier = {
 				add = 5
-				has_trait = august
+				has_trait = ambitious
 			}
 		}
     }
@@ -1870,8 +1886,8 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 5
+				has_trait = august
 			}
 		}
     }
@@ -1889,8 +1905,46 @@ tr_select_deity.01 = {
         ai_chance = {
 			base = 1
 			modifier = {
-				add = 0
-				has_trait = gregarious
+				add = 5
+				has_trait = lifestyle_gardener
+			}
+		}
+    }
+    option = {
+        name = god_choice_charlemagne
+        trigger = {
+            AND = {
+                faith = faith:imperial_cult
+                NOT = {
+                    has_trait = follow_charlemagne
+                }
+            }
+        }
+        add_trait = follow_charlemagne
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = administrator
+			}
+		}
+    }
+    option = {
+        name = god_choice_julius_caesar
+        trigger = {
+            AND = {
+                faith = faith:imperial_cult
+                NOT = {
+                    has_trait = follow_julius_caesar
+                }
+            }
+        }
+        add_trait = follow_julius_caesar
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = overseer
 			}
 		}
     }
@@ -1936,7 +1990,7 @@ tr_select_deity.01 = {
 		}
         #confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
     }
-     option = {
+     option = { #MADARA
         name = god_choice_madara
         trigger = {
             AND = {
@@ -1959,7 +2013,7 @@ tr_select_deity.01 = {
 			}
 		}
     }
-     option = {
+     option = { #KAGUYA
         name = god_choice_kaguya
         trigger = {
             AND = {

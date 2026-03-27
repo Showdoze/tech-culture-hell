@@ -59,8 +59,8 @@ zenkai_boost.0001 = {
         if = {
             limit = {has_trait = wounded_1}
             remove_trait = wounded_1
-            add_prowess_skill = 2
-            add_martial_skill = 2
+            add_prowess_skill = 4
+            add_martial_skill = 4
             stress_impact = {
                 base = minor_stress_impact_gain
             }
@@ -68,8 +68,8 @@ zenkai_boost.0001 = {
         else_if = {
             limit = {has_trait = wounded_2}
             remove_trait = wounded_2
-            add_prowess_skill = 3
-            add_martial_skill = 3
+            add_prowess_skill = 5
+            add_martial_skill = 5
             stress_impact = {
                 base = medium_stress_impact_gain
             }
@@ -77,8 +77,8 @@ zenkai_boost.0001 = {
         else = {
             limit = {has_trait = wounded_3}
             remove_trait = wounded_3
-            add_prowess_skill = 4
-            add_martial_skill = 4
+            add_prowess_skill = 10
+            add_martial_skill = 10
             stress_impact = {
                 base = major_stress_impact_gain
             }

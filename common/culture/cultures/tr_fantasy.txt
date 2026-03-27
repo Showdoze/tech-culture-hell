@@ -186,6 +186,7 @@ lizardmen = {
         tradition_gith
         tradition_equal_inheritance
         tradition_warrior_culture
+        tradition_warfare_centric
     }
     name_list = name_list_gith
     coa_gfx = { east_african_coa_gfx }
@@ -615,6 +616,7 @@ orc_culture = {
         tradition_pastoralists
         tradition_only_the_strong
         tradition_orc
+        tradition_warfare_centric
     }
     name_list = name_list_orc
     coa_gfx = { west_slavic_group_coa_gfx steppe_coa_gfx }
@@ -765,9 +767,8 @@ fantasy_culture = {
     martial_custom = martial_custom_male_only
     head_determination = head_determination_domain
     traditions = {
-        tradition_staunch_traditionalists
+        tradition_thief_precursor
         tradition_ancient_miners
-        tradition_ruling_caste
         tradition_legalistic
         tradition_tgp_fortified_strongholds
     }
@@ -817,7 +818,16 @@ fantasy_culture = {
     head_determination = head_determination_domain
     traditions = {
         tradition_saiyan
+        tradition_warfare_centric
     }
+    character_modifier = {	# Modifier effects on all characters of the culture
+		supply_duration = -1
+		supply_capacity_mult = 0.5
+        provisions_use_mult = 1
+        provisions_capacity_mult = 5
+        prowess = 20
+        prowess_per_influence_level = 1
+	}
     name_list = name_list_saiyan
     coa_gfx = { japanese_coa_gfx }
     building_gfx = { southeast_asian_building_gfx }
@@ -922,6 +932,7 @@ fantasy_culture = {
         tradition_loyal_soldiers
         tradition_diasporic
         tradition_mando
+        tradition_warfare_centric
     }
     name_list = name_list_mandalorian
     coa_gfx = { english_coa_gfx western_coa_gfx }
@@ -977,6 +988,7 @@ fantasy_culture = {
     head_determination = head_determination_domain
     traditions = {
         tradition_grineer
+        tradition_warfare_centric
     }
     name_list = name_list_grineer
     coa_gfx = { english_coa_gfx western_coa_gfx }

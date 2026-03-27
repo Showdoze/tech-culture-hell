@@ -268,7 +268,6 @@
 	flag = antiquity_era_regional
   }
 #SAIYAN DBZ
-
  innovation_saiyan_training_1 = {
 	skill = martial
 	group = culture_group_regional
@@ -278,7 +277,8 @@
 		this = culture:saiyan		
 	}
 	character_modifier = {
-		prowess = 5
+		prowess = 2
+		prowess_per_prestige_level = 1
 		men_at_arms_maintenance = -0.01
 		raid_speed = 0.1
 	}	
@@ -301,10 +301,11 @@
 	}
 	maa_upgrade = {
 		type = skirmishers
-		damage = 2
+		damage = 3
 	}
 	character_modifier = {
-		prowess = 10
+		prowess = 5
+		prowess_per_prestige_level = 2
 		supply_capacity_mult = 5
 		men_at_arms_maintenance = 0.01
 		knight_effectiveness_mult = 50
@@ -320,17 +321,17 @@
 	}
 	maa_upgrade = {
 		type = skirmishers
-		damage = 2
+		damage = 5
 	}
 	character_modifier = {
 		prowess = 5
+		prowess_per_prestige_level = 3
 		negate_health_penalty_add = 0.5
 		negate_prowess_penalty_add = 20
 		health = 0.5
 	}	
  }
 #ZElda
-
  innovation_hyrule1 = {
 	skill = stewardship
 	group = culture_group_regional
@@ -366,7 +367,6 @@
  }
 
 #Thief
-
  innovation_mechanist_build = {
 	skill = stewardship
 	group = culture_group_regional
@@ -705,8 +705,6 @@
 			this = culture:nahuatl
 
 			this = culture:hylian
-			this = culture:kokiri
-
 			this = culture:american
 			this = culture:italian_american
 

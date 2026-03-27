@@ -19,13 +19,8 @@
 		wanderers_gain_extra_combat_skills = yes
 		mercenary_courtiers_gain_extra_skills = yes
 		ambitious_trait_more_common = yes
-		gain_gold_from_battles = yes
-		clergy_can_fight = yes
 		has_access_to_trials_by_combat = yes
 		can_use_sparring_duel = yes
-		martial_education_more_valued = yes
-		prowess_traits_more_valued = yes
-		blademaster_trait_bonuses = yes
 		craven_and_content_traits_looked_down_upon = yes
 		knights_slightly_more_prone_to_injury = yes
 		can_duel_rivals = yes
@@ -35,11 +30,6 @@
 		craven_trait_costs_prestige = yes
 		rowdy_trait_more_common = yes
 		pensive_trait_less_common = yes
-		prowess_from_martial_education = yes
-		high_prowess_ignores_knight_restrictions = yes
-		wounds_and_scars_give_bonuses = yes
-		guardians_can_transfer_commander_traits = yes
-		more_fame_for_successful_defensive_wars = yes
 		stubborn_trait_more_common = yes
 		expensive_convert_to_local_culture = yes
 		harder_to_hybridize = yes
@@ -49,9 +39,6 @@
 		hunting_traits_more_valued = yes
 		doesnt_care_about_culture_faith_in_factions = yes
 		rivalries_more_common = yes
-		culture_can_raid_at_sea_even_if_feudal = yes
-		not_tribal_raiding_malus = yes
-		war_stress_loss = yes
 		dislikes_marrying_outside_of_culture = yes
 		ai_doesnt_marry_outside_culture = yes
 	}
@@ -61,9 +48,7 @@
 	}
 	character_modifier = {
 		men_at_arms_limit = -3
-		knight_effectiveness_mult = 50
-		supply_duration = -1
-		supply_capacity_mult = 0.5
+		knight_effectiveness_mult = 5
 		negate_prowess_penalty_add = 5 # Wounded knights fight better!
 		prowess_per_prestige_level = 1
 		travel_danger = -20
@@ -73,7 +58,6 @@
 		character_travel_safety_mult = 0.5
 		retreat_losses = -0.1
 		hard_casualty_modifier = -0.1
-		prowess = 20
 		levy_size = -10
 		army_toughness_mult = 0.25
 		maa_damage_mult = 0.10
@@ -309,6 +293,8 @@ tradition_giant = {
 		hostile_county_attrition = -1
 		dread_baseline_add = 10
 		different_culture_opinion = -10
+		provisions_use_mult = 1
+        provisions_capacity_mult = 5
 	}
 	culture_modifier = {
 		modifier = strong_traits_more_valued
@@ -983,6 +969,43 @@ tradition_hyrule = {
 	cost = { prestige = 9000 }	
 	ai_will_do = { value = 0 }	
  }
+ tradition_thief_precursor = {
+	category = realm
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = king.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		less_likely_to_culture_convert = yes
+		peasant_and_populist_factions_less_common = yes
+		expensive_convert_to_local_culture = yes
+		less_likely_to_promote_culture = yes
+		less_plague_spread_culture = yes
+		more_fervor_on_church_construction = yes
+		prestige_from_temple_construction = yes
+		build_bonuses_on_religious_traits = yes
+		temple_next_level = yes
+		tribals_can_into_temples = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		controlled_province_advantage = 5
+		monthly_county_control_growth_add = 0.5
+		cultural_head_fascination_mult = -0.05
+		dread_per_tyranny_add = 0.3
+		dread_decay_mult = -0.3
+		revolting_siege_morale_loss_mult = 0.25
+	}
+	cost = { prestige = 9000 }	
+	ai_will_do = { value = 0 }	
+ }
   tradition_thief_kurshok = {
 	category = regional
 	layers = {
@@ -1128,6 +1151,100 @@ tradition_innsmouth = {
 	}
 	cost = { prestige = 20000 }
 	ai_will_do = { value = 0 }
+}
+tradition_kkk_simp = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = kkk_simp.dds
+	}
+	is_shown = {
+		OR = {
+			this = culture:confederate
+			any_parent_culture_or_above = {
+				this = culture:confederate
+			}
+		}
+	}
+	parameters = {
+		physical_disfigurement_blocks_inheritance = yes	
+		stubborn_trait_more_common = yes
+		brave_trait_gives_bonuses = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		harder_to_convert_county_culture_without_heritage = yes
+		zealous_trait_more_common = yes
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -1
+	}
+	character_modifier = {
+		scottish_opinion = 10
+		close_relative_opinion = 25
+		ancient_egyptian_opinion = -10000
+		gerudo_opinion = -40 
+		american_opinion = -25
+		italian_american_opinion = -20
+		irish_american_opinion = -15
+		african_american_opinion = -100
+		canadian_opinion = -20
+		alikr_opinion = -40
+		hausa_opinion = -69
+		kanuri_opinion = -69
+		nupe_opinion = -69
+		sao_opinion = -69
+		daju_opinion = -69
+		ethiopian_opinion = -69
+		nubian_opinion = -69
+		welayta_opinion = -69
+		bobo_opinion = -69
+		gur_opinion = -69
+		malinke_opinion = -69
+		marka_opinion  = -69
+		mel_opinion  = -69
+		afar_opinion  = -69
+		beja_opinion = -69
+		somali_opinion = -69
+		edo_opinion = -69
+		ewe_opinion = -69
+		igbo_opinion = -69
+		yoruba_opinion = -69
+		bozo_opinion = -69
+		gaw_opinion = -69
+		mossi_opinion = -69
+		songhai_opinion = -69
+		soninke_opinion = -69
+		sorko_opinion = -69
+		pulaar_opinion = -69
+		serer_opinion = -69
+		wolof_opinion = -69
+		akan_opinion = -69
+		guan_opinion = -69
+		kru_opinion = -69
+		zaghawa_opinion = -69
+		guanche_opinion = -69
+		butr_opinion = -69
+		baranis_opinion = -69
+		men_at_arms_limit = -3
+		levy_size = 20
+		inbreeding_chance = 0.76
+		same_culture_opinion = 25
+		tax_slot_add  = 1
+		levy_reinforcement_rate = 1
+		monthly_income_mult = 0.05
+	}
+	cost = { prestige = 2000 }
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				has_innovation = innovation_nationalism_n_imperialism
+			}
+			add = 100
+		}
+	}	
 }
 tradition_fromsoft = {
 	category = ritual
@@ -1376,7 +1493,6 @@ tradition_fromsoft = {
 	is_shown = { always = no }
 	parameters = {
 		wounds_and_scars_give_bonuses = yes
-		prowess_traits_more_valued = yes
 		number_of_spouses = 3
 		dislikes_marrying_outside_of_heritage = yes
 		ai_doesnt_marry_outside_culture = yes
@@ -1391,7 +1507,6 @@ tradition_fromsoft = {
 		craven_trait_costs_prestige = yes
 		craven_and_content_traits_looked_down_upon = yes
 		honorable_trait_bonuses = yes
-		culture_clergy_can_fight = yes
 	}
 	province_modifier = {
 		levy_reinforcement_rate = -0.3
@@ -1729,16 +1844,8 @@ tradition_fromsoft = {
 		ambitious_trait_more_common = yes
 		has_access_to_shieldmaidens = yes
 		diligent_trait_more_common = yes
-		commanders_likelier_to_gain_commander_traits = yes
-		wanderers_gain_extra_combat_skills = yes
-		mercenary_courtiers_gain_extra_skills = yes
-		gain_gold_from_battles = yes
-		clergy_can_fight = yes
 		has_access_to_trials_by_combat = yes
 		can_use_sparring_duel = yes
-		martial_education_more_valued = yes
-		prowess_traits_more_valued = yes
-		blademaster_trait_bonuses = yes
 		craven_and_content_traits_looked_down_upon = yes
 		knights_slightly_more_prone_to_injury = yes
 		can_duel_rivals = yes
@@ -1748,11 +1855,6 @@ tradition_fromsoft = {
 		craven_trait_costs_prestige = yes
 		rowdy_trait_more_common = yes
 		pensive_trait_less_common = yes
-		prowess_from_martial_education = yes
-		high_prowess_ignores_knight_restrictions = yes
-		wounds_and_scars_give_bonuses = yes
-		guardians_can_transfer_commander_traits = yes
-		more_fame_for_successful_defensive_wars = yes
 		stubborn_trait_more_common = yes
 		expensive_convert_to_local_culture = yes
 		harder_to_hybridize = yes
@@ -1760,11 +1862,7 @@ tradition_fromsoft = {
 		hunting_traits_more_valued = yes
 		doesnt_care_about_culture_faith_in_factions = yes
 		rivalries_more_common = yes
-		culture_can_raid_at_sea_even_if_feudal = yes
-		not_tribal_raiding_malus = yes
-		war_stress_loss = yes
 		less_likely_to_culture_convert = yes
-		blademaster_traits_give_learning = yes
 		allows_noble_family_adoption = yes
 		can_host_joust_contests = yes
 		knight_errant_trait_bonuses = yes
@@ -1802,21 +1900,14 @@ tradition_fromsoft = {
 	}
 	is_shown = { always = no }
 	parameters = {
-		martial_education_more_valued = yes
 		craven_trait_costs_prestige = yes
 		brave_trait_gives_bonuses = yes
-		commanders_likelier_to_gain_commander_traits = yes
-		prowess_from_martial_education = yes
-		prowess_traits_more_valued = yes
 		can_use_sparring_duel = yes
-		wounds_and_scars_give_bonuses = yes
 		craven_and_content_traits_looked_down_upon = yes
 		hard_working_traits_more_valued = yes
 		better_armory_buildings = yes
 		better_blacksmith_buildings = yes
-		war_stress_loss = yes
 		loyal_trait_more_valued = yes
-		guardians_can_transfer_commander_traits = yes
 		arrogant_trait_more_common = yes
 		hostile_action_vs_rival_bonuses = yes
 		less_likely_to_culture_convert = yes
@@ -1829,7 +1920,7 @@ tradition_fromsoft = {
 	}
 	character_modifier = {
 		inbreeding_chance = 0.5
-		fertility = -100
+		can_have_children = no #fertility = -100
 		prowess_per_prestige_level = 1
 		martial_per_prestige_level = 1
 		martial = 1
@@ -1859,22 +1950,11 @@ tradition_fromsoft = {
 		hunting_traits_more_pious = yes
 		hunting_traits_more_common = yes 
 		hunting_archery_building_bonuses = yes
-		commanders_likelier_to_gain_commander_traits = yes
-		wounds_and_scars_give_bonuses = yes
 		build_bonuses_on_religious_traits = yes
-		prowess_from_martial_education = yes
-		gain_gold_from_battles = yes
 		strong_traits_more_valued = yes
 		strong_traits_more_common = yes
 		weak_traits_looked_down_upon = yes
-		more_fame_for_successful_defensive_wars = yes
-		more_gold_for_successful_defensive_wars = yes
-		prowess_from_religious_traits = yes
-		blademaster_trait_bonuses = yes
-		blademaster_traits_more_common = yes
 		can_use_sparring_duel = yes
-		martial_education_more_valued = yes
-		prowess_traits_more_valued = yes
 		craven_and_content_traits_looked_down_upon = yes
 		harder_to_hybridize = yes
 		architect_trait_prestige = yes
@@ -1888,7 +1968,6 @@ tradition_fromsoft = {
 		extra_piety_from_temple_construction = yes
 		better_armory_buildings = yes
 		better_blacksmith_buildings = yes
-		can_duel_rivals = yes
 		courtiers_less_likely_to_leave_same_culture_court = yes
 		dislikes_marrying_outside_of_culture = yes
 		ai_doesnt_marry_outside_culture = yes
@@ -1899,7 +1978,6 @@ tradition_fromsoft = {
 		coastal_holdings_give_defensive_bonus = yes
 		coastal_agriculture_building_bonuses = yes
 		coastal_holding_bonuses = yes
-		war_stress_loss = yes
 		piety_level_affect_artifact_quality = yes
 	}
 	culture_modifier = {
@@ -1980,6 +2058,19 @@ tradition_fromsoft = {
 	}
 	is_shown = { OR = { this = culture:lizardmen } }
 	parameters = {
+		commanders_likelier_to_gain_commander_traits = yes
+		wounds_and_scars_give_bonuses = yes
+		gain_gold_from_battles = yes
+		prowess_from_martial_education = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+		prowess_from_religious_traits = yes
+		blademaster_trait_bonuses = yes
+		blademaster_traits_more_common = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		war_stress_loss = yes
+		can_duel_rivals = yes
 	}
 	culture_modifier = {
 		cultural_acceptance_gain_mult = -0.25
