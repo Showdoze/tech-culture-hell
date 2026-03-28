@@ -552,21 +552,27 @@
 	name = "Hamilcar Barca"
 	religion = punic_pagan
 	#dna = hannibal_barca
-	dynasty = misc_history
+	dynasty = dynn_brujah
 	culture = punic
 	trait = education_martial_2
 	trait = stubborn
 	trait = zealous
 	trait = roman_enemy
+	trait = immortal
 	disallow_random_traits = yes
-	790.1.1 = {  birth = yes }
+	1.1.1 = {  
+		birth = yes 
+		effect = {
+			set_immortal_age = 60
+		}
+	}
 	870.1.1 = { death = { death_reason = death_drowned } }
  }
  tr_hannibal_barca = {
 	name = "Hannibal Barca"
 	religion = punic_pagan
 	dna = hannibal_barca
-	dynasty = misc_history
+	dynasty = dynn_brujah
 	culture = punic
 	father = tr_hamilcar_barca
 	trait = education_martial_4
@@ -578,8 +584,9 @@
 	trait = zealous
 	trait = ambitious
 	trait = roman_enemy
+	trait = immortal
 	disallow_random_traits = yes
-	825.1.1 = { 
+	25.1.1 = { 
 		birth = yes
 		effect = {
 			add_trait = lifestyle_blademaster
@@ -595,8 +602,10 @@
 			learn_language = language_greek 
 			learn_language = language_ancient_greek
 			learn_language = language_latin
+			set_immortal_age = 30
 	   }	
 	}
+	30.1.1 = { dynasty_house = house_hannibal }
 	910.1.1 = { death = { death_reason = death_battle killer = 1702 } }
  }
  tr_ea_nasir = {
@@ -2163,7 +2172,7 @@ tr_vlad_2 = {
 	name = "Vlad Dracul"
 	dna = tr_vlad_tepes
 	religion = catholic 
-    dynasty = misc_history
+    dynasty_house = house_dracula
 	culture = vlach
 	trait = education_diplomacy_3
 	trait = patient
@@ -2180,7 +2189,7 @@ tr_vlad_tepes = {
 	name = "Vlad Țepeș"
 	dna = tr_vlad_tepes
 	religion = catholic 
-    dynasty = misc_history
+    dynasty_house = house_dracula
 	culture = vlach
 	father = tr_vlad_2
 	trait = education_intrigue_3
@@ -2193,6 +2202,7 @@ tr_vlad_tepes = {
     trait = diplomat
 	trait = sax_enemy
 	trait = papal_friend
+	trait = immortal
 	give_nickname = nick_the_impaler
     disallow_random_traits = yes
 	849.11.2 = { 
@@ -2200,6 +2210,8 @@ tr_vlad_tepes = {
 		effect = {
 			learn_language = language_anglic
 			learn_language = language_latin
+			set_immortal_age = 45
+		}
 	    }
 	}
 	1476.12.14 = { death = { death_reason = death_execution } }

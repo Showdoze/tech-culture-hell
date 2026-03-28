@@ -2876,6 +2876,90 @@
 	#866.1.1 = { add_spouse = tr_sypha_belnades }
 	1106.1.1 = { death = { death_reason = death_old_age } }
   }
+ #VTM
+  tr_Cappadocius_1st = {
+	name = Cappadocius
+	dynasty = dynn_cappadocian	
+	culture = roman
+	religion = roman_pagan
+	trait = education_learning_3
+	stewardship = 10
+	learning = 30
+	intrigue = 5
+	diplomacy = 5
+	prowess = 100
+	trait = immortal #Vampire
+	trait = arrogant
+	trait = zealous
+	trait = callous
+	trait = senator_west
+	give_nickname = nick_the_theologian
+	disallow_random_traits = yes
+	40.1.1 = {birth = yes}	
+	1444.12.4 = {death = {death_reason = death_disappearance }}
+  }
+  tr_Augustus_Giovanni = {
+	name = "Augustus"
+	#dna = 505018_augustusgiovanni
+	dynasty_house = house_giovanni
+	culture = venetian_ce
+	religion = roman_pagan
+	stewardship = 7
+	learning = 15
+	intrigue = 10
+	diplomacy = 5
+	trait = education_stewardship_3
+	trait = immortal #Vampire
+	trait = ambitious
+	trait = deceitful
+	trait = greedy
+	trait = disloyal
+	trait = family_first
+	father = tr_Cappadocius_1st
+	give_nickname = nick_the_patriarch
+	disallow_random_traits = yes
+	480.1.1 = {
+		birth = yes
+		effect = {
+			learn_language = language_latin
+			set_immortal_age = 60
+		} 	
+		add_pressed_claim = title:d_venice
+	}
+	1229.1.1 = {death = {death_reason = death_disappearance }}
+	1444.1.1 = {
+		add_trait = giovanni
+	}			
+  }
+  tr_Tzimisce = {
+	name = "Tzimisce"
+	dynasty = dynn_tzimisce
+	culture = "enochian"
+	religion = "viamutationis"
+	trait = education_intrigue_4
+	stewardship = 10
+	learning = 20
+	intrigue = 20
+	prowess = 100
+	trait = immortal
+	trait = sadistic		
+	trait = arrogant
+	trait = deceitful
+	#father = 505003
+	give_nickname = nick_the_eldest
+	disallow_random_traits = yes
+	40.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 52
+		}	
+	}
+	1000.1.1 = {
+		death = {
+			death_reason = death_disappearance 
+		}
+	}				
+}
  #Mario bros
   tr_mario_nes = {
     name = "Mario"

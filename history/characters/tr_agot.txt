@@ -50,6 +50,23 @@
 	714.1.1 = { birth = yes }
 	788.1.1 = { death = yes }
 }
+  Rosby_3 = {
+	name = Bethany # Canon, married Walder Frey
+	dynasty = dynn_Rosby
+	female = yes
+	martial = 5
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+	religion = fots_seven
+	culture = crownlander
+	father = Rosby_4 #Rosby_42
+	#mother = Yore_71
+	trait = physique_bad_2
+	830.1.1 = {birth = yes}
+	8283.8.1 = { death = yes }
+}
   Rosby_4 = {
 	name = Gyles # Canon, a lord
 	dynasty = dynn_Rosby
@@ -68,7 +85,7 @@
 	trait = wheezing
 	trait = infertile
 	800.1.1 = {birth = yes}
-	8300.5.15 = {death = { death_reason = death_ill }}
+	900.5.15 = {death = { death_reason = death_ill }}
  }
  #PYLE
   Pyle_4 = {
@@ -1216,7 +1233,6 @@
   Manderly_8 = {
 	name = Wendel # Canon
 	dynasty = dynn_Manderly
-	dna = Manderly_8
 	religion = fots_seven
 	culture = harborman
 	father = Manderly_6
@@ -1256,7 +1272,6 @@
   Umber_1 = {
 	name = Hoarfrost # Canon, a lord
 	dynasty = dynn_Umber
-	dna = Umber_1
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	father = Umber_110
@@ -1270,7 +1285,6 @@
   Umber_2 = {
 	name = Brandon # a lord
 	dynasty = dynn_Umber
-	dna = Umber_2
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	father = Umber_1
@@ -1311,7 +1325,6 @@
   Umber_4 = {
 	name = Hother # Canon, AKA: Whoresbane
 	dynasty = dynn_Umber
-	#dna = Umber_4
 	martial = 7
 	learning = 7
 	prowess = 7
@@ -1406,7 +1419,6 @@
   Karstark_102 = {
 	name = Theon # a lord
 	dynasty_house = house_Karstark
-	#dna = Stark_132
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	father = Stark_131
@@ -1427,7 +1439,7 @@
   Karstark_4 = {
 	name = Rickard # Canon, a lord
 	dynasty_house = house_Karstark
-	#dna = Karstark_4
+	dna = Karstark_4
 	martial = 6
 	diplomacy = 5
 	intrigue = 5
@@ -1543,7 +1555,6 @@
    Stark_12 = {
 	name = Brandon # Canon, Brandon I, AKA: Brandon the Builder
 	dynasty = dynn_Stark
-	#dna = Stark_12
 	martial = 12
 	stewardship = 20
 	diplomacy = 15
@@ -1661,7 +1672,6 @@
    Stark_2 = {
 	name = Brandon # Canon, a lord
 	dynasty = dynn_Stark
-	dna = Stark_2
 	martial = 6
 	diplomacy = 3
 	intrigue = 4
@@ -1693,7 +1703,7 @@
    Stark_3 = {
 	name = Eddard # Canon, THE Eddard, a lord
 	dynasty = dynn_Stark
-	#dna = Stark_3
+	dna = Stark_3
 	martial = 8
 	diplomacy = 9
 	intrigue = 1
@@ -1724,7 +1734,7 @@
    Stark_6 = {
 	name = Robb # Canon, AKA: Young Wolf, a lord
 	dynasty = dynn_Stark
-	#dna = Stark_6
+	dna = Stark_6
 	martial = 7
 	diplomacy = 7
 	intrigue = 3
@@ -1757,7 +1767,7 @@
    Stark_7 = { #JON SNOW
 	name = Jon # Canon, THE Jon Snow, Lord Commander of the Night's Watch, He don't want it
 	dynasty = dynn_Stark
-	#dna = Stark_7
+	dna = Stark_7
 	martial = 4
 	diplomacy = 9
 	intrigue = 3
@@ -1797,7 +1807,7 @@
 	name = Sansa # Canon, THE Sansa, married Tyrion Lannister
 	dynasty = dynn_Stark
 	female = yes
-	#dna = Stark_8
+	dna = Stark_8
 	martial = 2
 	diplomacy = 6
 	intrigue = 4
@@ -1819,7 +1829,7 @@
 	name = Arya # Canon, THE Arya Stark
 	dynasty = dynn_Stark
 	female = yes
-	#dna = Stark_9
+	dna = Stark_9
 	martial = 6
 	diplomacy = 2
 	intrigue = 6
@@ -1949,7 +1959,7 @@
 	religion = norse_pagan #old_gods_wnw
 	culture = northman
 	father = Bolton_69 #Bolton_16
-	#mother = Royce_23
+	mother = Royce_23
 	trait = education_intrigue_1
 	trait = arrogant
 	trait = wrathful
@@ -1979,6 +1989,7 @@
 	dynasty = dynasty_Bolton
 	culture = northman
 	father = Bolton_42
+	dna = Bolton_1
 	trait = education_intrigue_3
     trait = calm
     trait = callous
@@ -1995,16 +2006,15 @@
 	dynasty = dynasty_Bolton
 	culture = northman
 	father = Bolton_1
-	#dna = Ramsay_Bolton_Iwan_Rheon
+	dna = Bolton_4
 	trait = education_diplomacy_3
-    trait = generous
-    trait = gregarious
+    trait = lifestyle_poet
     trait = trusting
-	trait = athletic
-	trait = open_terrain_expert
+	trait = compassionate
+	trait = diligent
     disallow_random_traits = yes
-	840.1.1 = { birth = yes }
-    860.1.1 = { death = { death_reason = death_murder killer = tr_agot_Ramsay_Bolton_mom } }
+	846.1.1 = { birth = yes }
+    863.1.1 = { death = { death_reason = death_murder killer = tr_agot_Ramsay_Bolton_mom } }
    }
    tr_agot_Ramsay_Bolton_mom = {
 	name = "Miller's wife"
@@ -2029,7 +2039,7 @@
 	culture = northman
 	father = Bolton_1
 	mother = tr_agot_Ramsay_Bolton_mom
-	dna = Ramsay_Bolton_Iwan_Rheon
+	dna = Bolton_5 #Ramsay_Bolton_Iwan_Rheon
 	trait = education_intrigue_3
     trait = ambitious
     trait = sadistic
@@ -2048,7 +2058,6 @@
    Tully_10 = {
 	name = Edmure # Canon, first named Tully
 	dynasty = dynn_Tully
-	dna = Tully_10
 	prowess = 9
 	religion = norse_pagan #old_gods_wnw
 	culture = first_man
@@ -2094,6 +2103,7 @@
 }
    Tully_9 = {
 	name = Brynden # Canon, AKA: Blackfish, Knight of the Bloody Gate
+	dna = Tully_9
 	dynasty = dynn_Tully
 	martial = 12
 	diplomacy = 8
@@ -2126,6 +2136,7 @@
    }
    Tully_4 = {
 	name = Catelyn # Canon, married Eddard Stark
+	dna = Tully_4
 	dynasty = dynn_Tully
 	female = yes
 	martial = 1
@@ -2168,6 +2179,7 @@
    }
    Tully_6 = {
 	name = Lysa # Canon, married Jon Arryn
+	dna = Tully_6
 	dynasty = dynn_Tully
 	female = yes
 	martial = 2
@@ -2202,6 +2214,7 @@
 }
    Tully_7 = {
 	name = Edmure # Canon, a lord
+	dna = Tully_7
 	dynasty = dynn_Tully
 	martial = 8
 	diplomacy = 8
@@ -2246,7 +2259,7 @@
 	}
 	900.1.1 = { death = yes }
    }
-  #FREY 
+ #FREY 
    Frey_141 = {
 	name = Franklyn # Mentioned, first Lord Frey
 	dynasty = dynn_Frey
@@ -2255,13 +2268,28 @@
 	trait = education_stewardship_4
 	trait = diligent
 	trait = ambitious
-	700.1.1 = { birth = yes }
-	760.1.1 = { death = yes }
+	666.1.1 = { birth = yes }
+	725.1.1 = { death = yes }
    }
+   Frey_143 = {
+	name = Benfrey # Mentioned, a lord, finished bridge over the Green Fork, built original keep of the Twins
+	dynasty = dynn_Frey
+	religion = fots_seven
+	culture = riverman_main
+	father = Frey_141 #Frey_142
+	trait = education_stewardship_3
+	trait = diligent
+	trait = ambitious
+	trait = bossy
+	trait = architect
+	disallow_random_traits = yes
+	700.1.1 = {birth = yes}
+	777.1.1 = { death = yes }
+}
    Frey_1 = {
 	name = Walder # Canon, THE Walder Frey, a lord
 	dynasty = dynn_Frey
-	#dna = Frey_1
+	dna = Frey_1
 	martial = 3
 	diplomacy = 5
 	intrigue = 8
@@ -2272,7 +2300,7 @@
 	religion = fots_seven
 	culture = riverman_main
 	sexuality = heterosexual
-	father = Frey_141 #Frey_132
+	father = Frey_143 #Frey_132
 	#mother = Greysteel_26
 	trait = education_intrigue_3
 	#trait = rude
@@ -2288,6 +2316,10 @@
 	give_nickname = nick_the_late_lord
 	disallow_random_traits = yes
 	777.10.1 = { birth = yes }
+	800.1.1 = { add_spouse = Royce_80 }
+	825.1.1 = { add_spouse = Crakehall_2 }
+	834.1.1 = { add_spouse = Blackwood_5 }
+	840.1.1 = { add_spouse = Rosby_3 }
 	867.9.15 = {
 		effect = {
 			if = {
@@ -2299,14 +2331,155 @@
 	869.12.15 = { trait = murderer } # Red Wedding
 	870.1.1 = { death = death_reason = death_murder_known killer = Stark_9 }
   }
+   Frey_2 = {
+	name = Stevron # Canon
+	dynasty = dynn_Frey
+	dna = Frey_2
+	martial = 5
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 6
+	learning = 5
+	prowess = 6
+	#health = 7 # AGOT TODO
+	religion = fots_seven
+	culture = riverman_main
+	sexuality = heterosexual
+	father = Frey_1
+	mother = Royce_80
+	trait = education_martial_2
+	trait = gregarious
+	trait = patient
+	trait = vengeful
+	trait = just
+	trait = bossy
+	trait = cautious_leader
+	disallow_random_traits = yes
+	802.1.1 = {birth = yes}
+	868.6.10 = { # Died 3 days after the battle of Oxcross
+		death = { death_reason = death_wounded_2 }
+	}
+ }
+   Frey_4 = {
+	name = Aegon # Canon, AKA: Jinglebell
+	dynasty = dynn_Frey
+	prowess = 0
+	religion = fots_seven
+	culture = riverman_main
+	father = Frey_2 # Stevron Frey
+	#mother = Lydden_2 # Jeyne Lydden
+	trait = education_diplomacy_1
+	# trait = harelip # AGOT TODO trait
+	trait = intellect_bad_3
+	trait = compassionate
+	trait = content
+	trait = honest
+	trait = generous
+	trait = pensive
+	disallow_random_traits = yes
+	give_nickname = nick_agot_historical_jingelbells
+	819.12.1 = {birth = yes}
+	869.12.15 = {
+		death = {
+			death_reason = death_murder_known
+			killer = Tully_4 # Catelyn Tully
+		}
+	}
+ }
+   Frey_39 = {
+	name = Merrett # Canon
+	dynasty = dynn_Frey
+	dna = Frey_39
+	martial = 5
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 1
+	learning = 3
+	prowess = 3
+	religion = fots_seven
+	culture = riverman_main
+	sexuality = heterosexual
+	father = Frey_1
+	mother = Crakehall_2
+	trait = education_martial_2
+	trait = gregarious
+	trait = physique_good_2
+	trait = vengeful
+	trait = lazy
+	trait = wrathful
+	trait = rowdy
+	trait = scarred
+	trait = infirm # Wound that made him incapable of fighting
+	trait = drunkard
+	trait = depressed_1
+	disallow_random_traits = yes
+	833.1.1 = {birth = yes}
+	869.12.15 = { trait = murderer } # Red Wedding
+	870.1.30 = {
+		death = {
+			death_reason = death_hanged
+			killer = Tully_5 # Lady Stoneheart
+		}
+	}
+ }
+   Frey_50 = {
+	name = Amerei # Canon, AKA: Gatehouse Amy, married Pate of the Blue Fork, Lancel Lannister and Martyn Lannister
+	dynasty = dynn_Frey
+	female = yes
+	dna = Frey_50
+	religion = fots_seven
+	culture = riverman_main
+	father = Frey_39
+	mother = Darry_5
+	trait = education_diplomacy_1
+	trait = beauty_good_2
+	trait = craven
+	trait = gregarious
+	trait = compassionate
+	trait = rowdy
+	give_nickname = nick_agot_historical_gatehouse
+	trait = fornicator
+	trait = lustful	
+	disallow_random_traits = yes
+	852.1.1 = {birth = yes}
+	900.1.1 = { death=yes }
+}
+   Frey_52 = {
+	name = Walda # Canon, AKA: Fat Walda, married Roose Bolton
+	dynasty = dynn_Frey
+	female = yes
+	dna = Frey_52
+	martial = 3
+	religion = fots_seven
+	culture = riverman_main
+	father = Frey_39
+	#mother = Darry_5
+	trait = education_intrigue_2
+	trait = gluttonous
+	trait = arrogant
+	give_nickname = nick_fat_prefix
+	disallow_random_traits = yes
+	854.1.1 = {birth = yes}
+	870.1.1 = {
+		effect = {
+			make_pregnant = {
+				father = character:Bolton_1 # Roose Bolton
+			}
+			event_pregnancy_effect = yes
+		}
+	}
+	871.1.1 = { death=yes }
+
+ }
    Frey_41 = {
 	name = Raymund # Canon, killed Catelyn Tully
+	dna = Frey_41
 	dynasty = dynn_Frey
 	religion = fots_seven
 	culture = riverman_main
 	sexuality = heterosexual
 	father = Frey_1
-	#mother = Crakehall_2
+	mother = Crakehall_2
 	trait = education_martial_2
 	trait = callous
 	833.1.1 = { birth = yes }
@@ -2315,6 +2488,7 @@
   }
    Frey_64 = {
 	name = Lothar # Canon, AKA: Lame Lothar
+	dna = Frey_64
 	dynasty = dynn_Frey
 	martial = 1
 	diplomacy = 7
@@ -2324,7 +2498,7 @@
 	religion = fots_seven
 	culture = riverman_main
 	father = Frey_1
-	#mother = Blackwood_5
+	mother = Blackwood_5
 	trait = education_intrigue_4
 	trait = intellect_good_3
 	trait = clubfooted
@@ -2339,14 +2513,34 @@
 	869.12.15 = { trait = murderer } # Red Wedding
 	870.1.1 = { death = death_reason = death_murder_known killer = Stark_9 }
   }
+   Frey_81 = {
+	name = Olyvar # Canon
+	dynasty = dynn_Frey
+	dna = Frey_81
+	prowess = 6
+	religion = fots_seven
+	culture = riverman_main
+	father = Frey_1
+	mother = Rosby_3
+	trait = education_martial_1
+	trait = honest
+	trait = brave
+	trait = charming
+	trait = diligent
+	trait = just
+	disallow_random_traits = yes
+	849.1.1 = {birth = yes}
+	900.12.15 = { death=yes } 
+ }
    Frey_82 = {
 	name = Roslin # Canon, married Edmure Tully
+	dna = Frey_82
 	dynasty = dynn_Frey
 	female = yes
 	religion = fots_seven
 	culture = riverman_main
 	father = Frey_1
-	#mother = Rosby_3
+	mother = Rosby_3
 	trait = education_diplomacy_1
 	trait = beauty_good_2
 	trait = compassionate
@@ -2357,7 +2551,7 @@
 	850.1.1 = { birth = yes }
 	900.1.1 = { death = yes }
    }
-  # 
+ # 
    Penny_16 = {
 	name = Jon # a lord
 	dynasty = dynn_Penny
@@ -2461,7 +2655,7 @@
 	name = Danelle # Canon, a lord, AKA: Mad Danelle Lothston
 	dynasty = dynn_Lothston
 	female = yes
-	#dna = Lothston_17
+	dna = Lothston_17
 	martial = 6
 	stewardship = 4
 	diplomacy = 4
@@ -2625,6 +2819,7 @@
 	trait = bossy
 	disallow_random_traits = yes
 	790.1.1 = { birth = yes}
+	819.1.1 = { add_spouse = Royce_67 }
 	878.6.1 = {
 		death = {
 			death_reason = death_execution # Executed for daughter's affair with Terrence Toyne
@@ -2640,7 +2835,7 @@
 	culture = riverman_main
 	sexuality = heterosexual
 	father = Bracken_73
-	#mother = Royce_67 # Yolanda Royce
+	mother = Royce_67 # Yolanda Royce
 	trait = education_diplomacy_1
 	trait = beauty_good_2
 	trait = arrogant
@@ -2650,6 +2845,17 @@
 	820.1.1 = { birth = yes }
 	884.1.1 = { death = yes }
   }
+  Bracken_1 = {
+	name = Amos # a lord, offered his daughter to Blackfish
+	dynasty = dynn_Bracken
+	religion = fots_seven
+	culture = riverman_main
+	father = Bracken_73 #Bracken_81
+	#mother = Mooton_70
+	trait = education_martial_2
+	832.1.1 = { birth = yes }
+	881.1.1 = { death = yes }
+ }
  #BLACKWOOD 
    Blackwood_132 = {
 	name = Jon # Last Blackwood King of Wolfswood
@@ -2770,7 +2976,7 @@
 	give_nickname = nick_bloody	
 	disallow_random_traits = yes
 	780.1.1 = {birth = yes}
-	#8137.1.1 = { add_spouse = Baratheon_53 } # Ellyn Baratheon
+	824.1.1 = { add_spouse = Baratheon_53 } # Ellyn Baratheon
 	880.1.1 = { death = yes }
   }
    Blackwood_81 = {
@@ -2780,9 +2986,8 @@
 	religion = norse_pagan #old_gods_wnw
 	culture = riverman_main
 	sexuality = heterosexual
-	father = Blackwood_132
-	#father = Blackwood_74
-	#mother = Baratheon_53
+	father = Blackwood_74
+	mother = Baratheon_53
 	trait = education_diplomacy_3
 	trait = beauty_good_3
 	trait = humble
@@ -2793,6 +2998,19 @@
 	824.1.1 = { birth = yes }
 	900.1.1 = { death = yes }
   }
+  Blackwood_5 = {
+	name = Alyssa # Canon, married Walder Frey
+	dynasty = dynn_Blackwood
+	female = yes
+	dna = Blackwood_5
+	religion = fots_seven
+	culture = riverman_main
+	father = Blackwood_74 #Blackwood_89
+	#mother = Chelsted_62
+	trait = education_intrigue_2
+	815.1.1 = { birth = yes}
+	835.6.1 = { death = yes }
+}
 #Westermen
    Payne_17 = {
 	name = Podrick # a lord
@@ -2848,7 +3066,6 @@
   }
    Spicer_1 = {
 	name = Gregor # Mentioned, Spice Trader
-	dna = Spicer_1
 	stewardship = 6
 	martial = 1
 	diplomacy = 3
@@ -2900,7 +3117,7 @@
    Reyne_1 = {
 	name = Reynard # Mentioned, a lord
 	dynasty = dynn_Reyne
-	#dna = Reyne_1
+	dna = Reyne_1
 	stewardship = 9
 	diplomacy = 10
 	learning = 12
@@ -2917,6 +3134,7 @@
    }
    Reyne_45 = {
 	name = Roger # Canon, AKA: The Red Lion, a lord
+	dna = Reyne_45
 	dynasty = dynn_Reyne
 	martial = 8
 	stewardship = 8 # Upped it, due to him owning many baronies
@@ -2952,6 +3170,7 @@
   }
    Reyne_46 = {
 	name = Ellyn # Canon, AKA: Lady Tarbeck, married Walderan Tarbeck
+	dna = Reyne_46
 	dynasty = dynn_Reyne
 	female = yes
 	diplomacy = 7
@@ -3092,7 +3311,7 @@
    Lannister_1 = {
 	name = Tywin # Canon, THE Tywin Lannister, a lord
 	dynasty = dynn_Lannister
-	#dna = Lannister_1
+	dna = Lannister_1
 	martial = 8
 	diplomacy = 8
 	intrigue = 10
@@ -3165,7 +3384,7 @@
 	name = Cersei # Canon, THE Cersei Lannister, a lord, married Robert Baratheon
 	dynasty = dynn_Lannister
 	female = yes
-	#dna = Lannister_6
+	dna = Lannister_6
 	martial = 2
 	diplomacy = 8
 	intrigue = 5
@@ -3234,7 +3453,7 @@
    Lannister_7 = {
 	name = Jaime # Canon, AKA: The Kingslayer, Lord Commander of the Kingsguard
 	dynasty = dynn_Lannister
-	#dna = Lannister_7
+	dna = Lannister_7
 	martial = 9
 	diplomacy = 4
 	intrigue = 3
@@ -3318,7 +3537,7 @@
    Lannister_8 = {
 	name = Tyrion # Canon, AKA: The Imp
 	dynasty = dynn_Lannister
-	#dna = Lannister_8
+	dna = Lannister_8
 	martial = 2
 	diplomacy = 12
 	intrigue = 10
@@ -3488,6 +3707,7 @@
   }
    Clegane_3 = {
 	name = Gregor # Canon, AKA: The Mountain That Rides, a lord
+	dna = Clegane_3
 	dynasty = dynn_Clegane
 	martial = 10 #9
 	diplomacy = 2
@@ -3567,7 +3787,7 @@
    Clegane_4 = { #The Hound
 	name = Sandor # Canon, AKA: The Hound
 	dynasty = dynn_Clegane
-	#dna = Clegane_4
+	dna = Clegane_4
 	martial = 9
 	diplomacy = 2
 	intrigue = 4
@@ -3620,6 +3840,60 @@
 	823.1.1 = { birth = yes } 
 	872.1.1 = { death = yes } 
    }
+ #Crakehall
+  Crakehall_11 = {
+	name = Crake # Canon, AKA: Crake the Boarkiller
+	dynasty = dynn_Crakehall
+	dna = Crakehall_11
+	martial = 8
+	stewardship = 9
+	prowess = 14
+	religion = old_gods_wnw
+	culture = first_man
+	trait = education_martial_2
+	trait = rowdy
+	disallow_random_traits = yes
+	23.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_canon
+	}
+	46.1.1 = {
+		trait = brave
+		trait = patient
+		trait = diligent
+		trait = lifestyle_blademaster
+		trait = lifestyle_hunter
+		give_nickname = nick_agot_historical_the_boarkiller
+	}
+	111.1.1 = { death = yes }
+ }
+  Crakehall_1 = {
+	name = Sumner # Canon, a lord
+	dynasty = dynn_Crakehall
+	dna = Crakehall_1
+	religion = fots_seven
+	culture = westerman_main
+	father = Crakehall_11 #Crakehall_56
+	#mother = Serrett_78
+	trait = education_diplomacy_3
+	trait = physique_good_2
+	820.1.1 = {birth = yes}
+	881.1.1 = { death = yes }
+ }
+  Crakehall_2 = {
+	name = Amarei # Canon, married Walder Frey
+	dynasty = dynn_Crakehall
+	female = yes
+	dna = Crakehall_2
+	religion = fots_seven
+	culture = westerman_main
+	father = Crakehall_11 #Crakehall_56
+	#mother = Serrett_78
+	trait = physique_good_3
+	800.1.1 = {birth = yes}
+	833.1.1 = {death = { death_reason = death_childbirth }
+}  
 #reach
  Hunt_8 = {
 	name = Harlon # Canon, The Hunter, founder
@@ -3806,7 +4080,6 @@
   Merryweather_2 = {
 	name = Alyn # a lord
 	dynasty = dynn_Merryweather
-	dna = Merryweather_2
 	religion = fots_seven
 	culture = reachman
 	father = Merryweather_1
@@ -4183,7 +4456,6 @@
   Florent_7 = {
 	name = Alekyne # Canon, a lord
 	dynasty = dynn_Florent
-	dna = Florent_7
 	religion = fots_seven
 	culture = honeywiner
 	father = Florent_2
@@ -4452,7 +4724,7 @@
 	#mother = Bulwer_87
 	trait = drunkard
 	700.1.1 = {birth = yes}
-	#8222.1.1 = { add_spouse = Royce_79 } # Rhea Royce
+	750.1.1 = { add_spouse = Royce_79 } # Rhea Royce
 	800.1.1 = { death = yes }
  }
   Redwyne_1 = {
@@ -4461,7 +4733,7 @@
 	religion = fots_seven
 	culture = honeywiner #vineman
 	father = Redwyne_43
-	#mother = Royce_79
+	mother = Royce_79
 	750.1.1 = { birth = yes }
 	820.1.1 = { death = yes }
   }
@@ -4469,7 +4741,7 @@
 	name = Olenna # Canon, AKA: Queen of Thorns, married Luthor Tyrell
 	dynasty = dynn_Redwyne
 	female = yes
-	#dna = Redwyne_2
+	dna = Redwyne_2
 	martial = 2
 	diplomacy = 8
 	intrigue = 10
@@ -4478,7 +4750,7 @@
 	religion = fots_seven
 	culture = honeywiner #vineman
 	father = Redwyne_43
-	#mother = Royce_79
+	mother = Royce_79
 	trait = education_intrigue_4
 	trait = intellect_good_2
 	trait = diligent
@@ -4592,7 +4864,7 @@
   Tyrell_8 = {
 	name = Mace # Canon, a lord, THE Mace Tyrell, MACE THE ACE
 	dynasty = dynn_Tyrell
-	#dna = Tyrell_8
+	dna = Tyrell_8
 	martial = 2
 	diplomacy = 4
 	intrigue = 2
@@ -4620,7 +4892,7 @@
   Tyrell_11 = {
 	name = Willas # Canon, THE Willas Tyrell
 	dynasty = dynn_Tyrell
-	#dna = Tyrell_11
+	dna = Tyrell_11
 	martial = 4
 	diplomacy = 10
 	intrigue = 5
@@ -4647,7 +4919,7 @@
   Tyrell_12 = {
 	name = Garlan # Canon, THE Garlan Tyrell
 	dynasty = dynn_Tyrell
-	#dna = Tyrell_12
+	dna = Tyrell_12
 	martial = 10
 	diplomacy = 7
 	prowess = 10
@@ -4673,7 +4945,7 @@
   Tyrell_13 = {
 	name = Loras # Canon, THE Loras Tyrell, a Kingsguard
 	dynasty = dynn_Tyrell
-	#dna = Tyrell_13
+	dna = Tyrell_13
 	martial = 10
 	diplomacy = 3
 	intrigue = 4
@@ -4703,7 +4975,7 @@
 	name = Margaery # Canon, THE Margaery Tyrell, married Joffrey Baratheon and Tommen Baratheon
 	dynasty = dynn_Tyrell
 	female = yes
-	#dna = Tyrell_14
+	dna = Tyrell_14
 	martial = 4
 	diplomacy = 7
 	intrigue = 8
@@ -4731,7 +5003,6 @@
    Hightower_18 = {
 	name = Uthor # Canon, Of the High Tower, founder.
 	dynasty = dynn_Hightower
-	dna = Hightower_18
 	religion = norse_pagan #old_gods_wnw
 	culture = first_man
 	give_nickname = nick_of_the_high_tower
@@ -4742,7 +5013,6 @@
   Hightower_20 = {
 	name = Peremore # Canon, AKA: Peremore the Twisted, founded the citadel and the maester order.
 	dynasty = dynn_Hightower
-	dna = Hightower_20
 	learning = 10
 	religion = norse_pagan #old_gods_wnw
 	culture = first_man
@@ -4852,7 +5122,6 @@
    Hightower_99 = {
 	name = Gwayne # Canon, captain of the Gold Cloaks
 	dynasty = dynn_Hightower
-	dna = Hightower_99
 	martial = 5
 	prowess = 6
 	religion = fots_seven
@@ -5018,7 +5287,7 @@
  Rutley_1 = {
 	name = Dareon # a lord
 	dynasty = dynn_Rutley
-	hammerite_faith #fots_seven
+	father = fots_seven
 	culture = valeman_main #valeman_upper
 	761.1.1 = { birth = yes }
 	822.1.1 = { death = yes }
@@ -5061,6 +5330,38 @@
 		death = { death_reason = death_battle } # Battle of Ironoaks
 	}
  }
+ Waynwood_1 = {
+	name = Donnel # a lord
+	dynasty = dynn_Waynwood
+	religion = fots_seven
+	culture = valeman_main
+	father = Waynwood_26 #Waynwood_62
+	#mother = Leek_25
+	700.1.1 = {birth = yes}
+	820.1.1 = { death = yes }
+ }
+ Waynwood_76 = {
+	name = Wylla # Semi-Canon, married Paxter Royce
+	dynasty = dynn_Waynwood
+	female = yes
+	religion = fots_seven
+	culture = valeman_main
+	father =  Waynwood_1
+	#mother = Bean_44
+	803.1.1 = {birth = yes}
+	860.1.1 = { death = yes }
+ }
+ Waynwood_2 = {
+	name = Gyles # a lord
+	dynasty = dynn_Waynwood
+	religion = fots_seven
+	culture = valeman_main
+	father = Waynwood_1
+	#mother = Bean_44
+	816.1.1 = {birth = yes}
+	870.1.1 = { death = yes }
+ }
+ 
  #BAELISH
   Baelish_3 = {
 	name = Tormo # Mentioned, Braavosi Sellsword, founder
@@ -5129,7 +5430,7 @@
   Baelish_2 = {
 	name = Petyr # Canon, THE Petyr Baelish, AKA: Littlefinger, a lord
 	dynasty = dynn_Baelish
-	#dna = Baelish_2
+	dna = Baelish_2
 	martial = 1
 	diplomacy = 9
 	intrigue = 10
@@ -5175,7 +5476,7 @@
   Arryn_15 = {
 	name = Artys # Canon, AKA: The Falcon Knight, a lord
 	dynasty = dynn_Arryn
-	#dna = Arryn_15
+	dna = Arryn_15
 	martial = 7
 	diplomacy = 6
 	stewardship = 5
@@ -5199,7 +5500,7 @@
   Arryn_3 = {
 	name = Jon # Canon, THE Jon Arryn, a lord
 	dynasty = dynn_Arryn
-	#dna = Arryn_3
+	dna = Arryn_3
 	martial = 9
 	diplomacy = 9
 	intrigue = 5
@@ -5264,13 +5565,163 @@
 	culture = first_man
 	18.1.1 = { birth = yes }
 	58.1.1 = { death = yes }
- }   
+ } 
+  Royce_16 = {
+	name = Yorwyck # Canon, Yorwyck VI, Bronze King when Andals landed
+	dynasty = dynn_Royce
+	martial = 7
+	prowess = 9
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Royce_15
+	trait = education_martial_4
+	trait = zealous
+	trait = wrathful
+	trait = authoritative
+	trait = rowdy
+	disallow_random_traits = yes
+	57.1.1 = {birth = yes}
+	170.1.1 = { death = yes }
+ }
+  Royce_18 = {
+	name = Robar # Canon, Robar II, High King of The Vale
+	dynasty = dynn_Royce
+	martial = 8
+	diplomacy = 10
+	intrigue = 7
+	stewardship = 4
+	learning = 4
+	prowess = 11
+	religion = norse_pagan #old_gods_wnw
+	culture = first_man
+	father = Royce_16 #Royce_17
+	trait = education_diplomacy_4
+	trait = education_martial_prowess_4
+	trait = intellect_good_1
+	trait = brave
+	trait = gregarious
+	trait = authoritative
+	trait = ambitious
+	trait = immortal
+	disallow_random_traits = yes
+	179.12.19 = {birth = yes}
+	500.1.1 = {
+		death = {
+			death_reason = death_battle # Battle of the Seven Stars
+			#killer = Corbray_9 # Jaime Corbray
+		}
+	}
+ }
+  Royce_23 = {
+	name = Corrine # married Bennard Bolton
+	dynasty = dynn_Royce
+	female = yes
+	religion = fots_seven
+	culture = valeman_main
+	father = Royce_18 #Royce_21
+	#mother = Royce_rs_21
+	450.1.1 = { birth = yes }
+	476.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+ }
+  Royce_67 = {
+	name = Yolande # Semi-Canon, married Kennoth Bracken
+	dynasty = dynn_Royce
+	female = yes
+	religion = fots_seven
+	culture = valeman_main
+	father = Royce_18 #Royce_45 # missing on the MUSH tree but she's probably Lord Andar's daughter
+	#mother = Ruthermont_21
+	802.1.1 = {birth = yes}
+	830.1.1 = { death = { death_reason = death_childbirth } }
+ }
+  Royce_79 = {
+	name = Rhea # married Runceford Redwyne
+	dynasty = dynn_Royce
+	female = yes
+	religion = fots_seven
+	culture = valeman_main
+	father = Royce_18 #Royce_94
+	#mother = Moore_35
+	735.1.1 = {birth = yes}
+	800.1.1 = { death = yes }
+ }
+  Royce_80 = {
+	name = Perra # Canon, married Walder Frey
+	dynasty = dynn_Royce
+	female = yes
+	dna = Royce_80
+	religion = fots_seven
+	culture = valeman_main
+	father = Royce_18 #Royce_94
+	#mother = Moore_35
+	780.1.1 = {birth = yes}
+	825.1.1 = { death = yes }
+ }
+  Royce_1 = {
+	name = Yohn # Canon, AKA: Bronze Yohn Royce, a lord
+	dynasty = dynn_Royce
+	dna = Royce_1
+	martial = 10
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 10
+	religion = fots_seven
+	culture = valeman_main
+	sexuality = heterosexual
+	father = Royce_18 #Royce_96
+	#mother = Egen_25
+	trait = education_martial_4
+	trait = education_martial_prowess_4
+	trait = physique_good_2
+	trait = just
+	trait = brave
+	trait = trusting
+	trait = authoritative
+	trait = bossy
+	trait = lifestyle_blademaster
+	give_nickname = nick_bronze
+	disallow_random_traits = yes
+	824.1.1 = {birth = yes}
+	850.1.1 = { add_spouse = Royce_100 } # Edwina Royce
+	900.1.1 = {  death = yes}
+ }
+  Royce_97 = {
+	name = Paxter # Semi-Canon
+	dynasty = dynn_Royce
+	religion = fots_oldnew
+	culture = valeman_main
+	father = Royce_1 #Royce_95
+	#mother = Belmore_39
+	760.1.1 = {birth = yes}
+	820.1.1 = { add_spouse = Waynwood_76 } # Wylla Waynwood
+	820.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+ }
+  Royce_100 = {
+	name = Edwina # Semi-Canon, married Bronze Yohn Royce, her first cousin
+	dynasty = dynn_Royce
+	female = yes
+	dna = Royce_100
+	religion = fots_seven
+	culture = valeman_main
+	father = Royce_97
+	mother = Waynwood_76
+	820.1.1 = {birth = yes}
+	895.1.1 = { death = yes } # Yohn is a suitor for Lysa in books
+ }
  #
 #TARGARYEN   
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
 	dynasty = dynasty_Targaryen
-	dna = Targaryen_119
+	dna = Targaryen_119 #good
 	martial = 2
 	diplomacy = 2
 	intrigue = 4
@@ -5350,7 +5801,7 @@
   Targaryen_96 = { #Bloodraven
 	name = Brynden # Canon, AKA: Bloodraven, Lord Commander of the Night's Watch
 	dynasty = dynasty_Targaryen
-	#dna = Targaryen_96
+	dna = Targaryen_96
 	martial = 12
 	diplomacy = 5
 	intrigue = 7
@@ -5413,7 +5864,7 @@
 	name = Shiera # Canon, AKA: Shiera Seastar
 	dynasty = dynasty_Targaryen
 	female = yes
-	#dna = Targaryen_97
+	dna = Targaryen_97
 	martial = 2
 	diplomacy = 7
 	intrigue = 5
@@ -5445,7 +5896,8 @@
   }
   Targaryen_95 = { #Bittersteel
 	name = Aegor # Canon, AKA: Bittersteel, Captain-General of the Golden Company
-	dynasty = dynasty = dynasty_Targaryen
+	dynasty = dynasty_Targaryen
+	dna = Targaryen_95
 	martial = 8
 	diplomacy = 2
 	intrigue = 5
@@ -5562,7 +6014,7 @@
    Blackfyre_1 = {
 	name = Aegon # Canon
 	dynasty_house = house_Blackfyre
-	#dna = Blackfyre_1
+	dna = Blackfyre_1
 	martial = 8
 	prowess = 5
 	religion = dragon_cult
@@ -5587,6 +6039,7 @@
    Blackfyre_2 = {
 	name = Aemon # Canon
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_2
 	martial = 8
 	prowess = 5
 	religion = dragon_cult
@@ -5611,6 +6064,7 @@
    Blackfyre_3 = {
 	name = Calla # Canon, married Aegor Bittersteel
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_3
 	female = yes
 	religion = dragon_cult
 	culture = high_valyrian
@@ -5720,6 +6174,7 @@
    Blackfyre_7 = {
 	name = Aenys # Canon, accepted Bloodraven's invitation to Great Council
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_7
 	prowess = 5
 	diplomacy = 8
 	stewardship = 7
@@ -5750,6 +6205,7 @@
    Blackfyre_8 = {
 	name = Aegor # Mentioned
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_8
 	prowess = 5
 	religion = dragon_cult
 	culture = high_valyrian
@@ -5768,6 +6224,7 @@
    Blackfyre_9 = {
 	name = Maelys # Mentioned, Captain-General of the Golden Company
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_9
 	diplomacy = 6
 	martial = 3
 	stewardship = 4
@@ -5813,6 +6270,7 @@
    Blackfyre_11 = {
 	name = Daemon # AKA: Daemon III Blackfyre
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_11
 	prowess = 5
 	religion = dragon_cult
 	culture = high_valyrian
@@ -5838,6 +6296,7 @@
    Blackfyre_12 = {
 	name = Aemon # Mentioned
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_12
 	prowess = 5
 	religion = dragon_cult
 	culture = high_valyrian
@@ -5857,6 +6316,7 @@
    Blackfyre_13 = {
 	name = Daemon # Canon, Captain-General of the Golden Company, Daemon IV (probably)
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_13
 	martial = 4
 	prowess = 5
 	religion = dragon_cult
@@ -5945,6 +6405,7 @@
    Blackfyre_16 = {
 	name = Daena # Mentioned, female Blackfyre line outlived male line
 	dynasty_house = house_Blackfyre
+	dna = Blackfyre_16
 	female = yes
 	religion = dragon_cult
 	culture = high_valyrian
@@ -6168,7 +6629,7 @@
 #Stormlands
  Seaworth_1 = {
 	name = Davos # Canon, THE Davos, a lord
-	#dna = Seaworth_1
+	dna = Seaworth_1
 	martial = 7
 	diplomacy = 9
 	stewardship = 9
@@ -6184,7 +6645,7 @@
 	trait = brave
 	trait = just
 	trait = compassionate
-	trait = charming
+	trait = peasant_born
 	disallow_random_traits = yes
 	829.1.1 = {birth = yes}
 	860.10.1 = {
@@ -6206,6 +6667,7 @@
 } 
  Seaworth_2 = {
 	name = Dale # Canon
+	dna = Seaworth_2
 	martial = 10
 	diplomacy = 9
 	prowess = 6
@@ -6215,6 +6677,7 @@
 	#mother = Seaworth_rs_1
 	trait = education_martial_2
 	trait = just
+	trait = peasant_born
 	849.1.1 = {birth = yes}
 	860.10.1 = {
 		dynasty = dynn_Seaworth
@@ -6340,6 +6803,7 @@
 }
   Connington_4 = {
 	name = Jon # Canon, AKA: The Griff, THE Jon Con, a lord
+	dna = Connington_4
 	dynasty = dynn_Connington
 	martial = 8
 	diplomacy = 5
@@ -6494,7 +6958,6 @@
   Selmy_1 = {
 	name = Lyonel # Canon, a lord
 	dynasty = dynn_Selmy
-	# AGOT TODO dna = Selmy_1
 	religion = fots_seven
 	culture = stormlander_main #marcher
 	father = Selmy_11 #Selmy_45
@@ -6504,6 +6967,7 @@
 }
   Selmy_3 = {
 	name = Barristan # Canon, THE Barristan Selmy, Lord Commander of the Kingsguard
+	dna = Selmy_3
 	dynasty = dynn_Selmy
 	martial = 9
 	diplomacy = 5
@@ -6600,6 +7064,7 @@
  }
   Dondarrion_2 = {
 	name = Beric # Canon, AKA: The Lightning Lord, a lord
+	dna = Dondarrion_2
 	dynasty = dynn_Dondarrion
 	martial = 6
 	diplomacy = 6
@@ -6804,8 +7269,8 @@
  #BARATHIANS
   Baratheon_14 = {
 	name = Orys # Canon, THE Orys Baratheon, a lord, rumoured half-brother of Aegon the Conqueror
-	dynasty = dynn_Baratheon
 	dna = Baratheon_14
+	dynasty = dynn_Baratheon
 	martial = 13
 	diplomacy = 8
 	intrigue = 4
@@ -6856,8 +7321,23 @@
 		death = { death_reason = death_wounded_1 }
 	}
  }
+  Baratheon_53 = {
+	name = Ellyn # Canon, married Benjicot Blackwood
+	dynasty = dynn_Baratheon
+	female = yes
+	dna = Baratheon_53
+	religion = fots_seven
+	culture = stormlander_main
+	father = Baratheon_14 #Baratheon_36
+	mother = Durrandon_88 #Caron_24
+	trait = beauty_good_1
+	trait = physique_good_1
+	810.1.1 = {birth = yes}
+	900.1.1 = { death = yes }
+ }
   Baratheon_71 = {
 	name = Lyonel # Canon, AKA: The Laughing Storm, a lord, participated in Ashford Tourney in 209 AC
+	dna = Baratheon_71
 	dynasty = dynn_Baratheon
 	martial = 8
 	diplomacy = 9
@@ -6885,6 +7365,7 @@
  }
   Baratheon_1 = {
 	name = Steffon # Canon, a lord
+	dna = Baratheon_1
 	dynasty = dynn_Baratheon
 	martial = 6
 	diplomacy = 7
@@ -6916,7 +7397,7 @@
   Baratheon_2 = {
 	name = Robert # Canon, THE Robert Baratheon, AKA: Bobby B, Robert I, King of the Seven Kingdoms
 	dynasty = dynn_Baratheon
-	#dna = Baratheon_2
+	dna = Baratheon_2
 	martial = 10
 	diplomacy = 8
 	intrigue = 4
@@ -7009,7 +7490,7 @@
   Baratheon_3 = {
 	name = Stannis # Canon, THE Stannis the Mannis Baratheon, a lord
 	dynasty = dynn_Baratheon
-	#dna = Baratheon_3
+	dna = Baratheon_3
 	martial = 11
 	diplomacy = 2
 	intrigue = 6
@@ -7064,7 +7545,7 @@
   Baratheon_4 = {
 	name = Renly # Canon, THE Renly Baratheon, a lord
 	dynasty = dynn_Baratheon
-	#dna = Baratheon_4
+	dna = Baratheon_4
 	martial = 6
 	diplomacy = 6
 	intrigue = 6
@@ -7108,6 +7589,7 @@
 }
   Baratheon_5 = {
 	name = Joffrey # Canon, Joffrey I, King of the Seven Kingdoms
+	dna = Baratheon_5
 	dynasty = dynn_Baratheon
 	martial = 6
 	diplomacy = 4
@@ -7214,6 +7696,7 @@
   Baratheon_6 = {
 	name = Myrcella # Canon
 	dynasty = dynn_Baratheon
+	Baratheon_6
 	female = yes
 	martial = 4
 	diplomacy = 6
@@ -7291,6 +7774,7 @@
 }
   Baratheon_7 = {
 	name = Tommen # Canon, Tommen I, King of the Seven Kingdoms
+	Baratheon_7
 	dynasty = dynn_Baratheon
 	martial = 5
 	diplomacy = 4
@@ -7355,7 +7839,6 @@
  }
   Baratheon_9 = {
 	name = Gendry # Canon, THE Gendry
-	dna = Baratheon_9
 	martial = 2
 	learning = 1
 	stewardship = 1
@@ -7468,7 +7951,6 @@
 	name = Loreza # Mentioned, a lord, Doran's Mother
 	dynasty_house = house_Martell
 	female = yes
-	dna = Martell_1
 	religion = fots_seven
 	culture = salt_dornish
 	father = Martell_23
@@ -7481,8 +7963,8 @@
  }
  Martell_4 = {
 	name = Doran # Canon, a lord, THE Doran Martell
-	dynasty_house = house_Martell
 	dna = Martell_4
+	dynasty_house = house_Martell
 	religion = fots_seven
 	culture = salt_dornish
 	sexuality = heterosexual
@@ -7529,6 +8011,7 @@
  }
  Martell_7 = {
 	name = Elia # Canon, married Rhaegar Targaryen
+	dna = Martell_7
 	dynasty_house = house_Martell
 	female = yes
 	diplomacy = 3
@@ -7561,7 +8044,7 @@
  Martell_8 = {
 	name = Oberyn # Canon, Oberyn Martell, AKA: The Red Viper, Landless Adventurer
 	dynasty_house = house_Martell
-	#dna = Martell_8
+	dna = Martell_8
 	martial = 9
 	diplomacy = 4
 	intrigue = 14
@@ -7614,7 +8097,6 @@
 	trait = diligent
 	trait = patient
 	trait = just
-
 	683.1.1 = {birth = yes}
 	#6855.1.1 = { 
 	#	dynasty = dynn_Most_Devout
