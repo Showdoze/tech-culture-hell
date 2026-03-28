@@ -21,6 +21,62 @@ tr_start.01 = {
                     add_trait = deaf
                 }
             }
+            2 = {
+                if = {
+                    limit = {
+                        NOR = {
+                            has_trait = hygene_good_1
+                            has_trait = hygene_good_2
+
+                            has_trait = hygene_bad_1
+                            has_trait = hygene_bad_2
+                        }
+                    }
+                    add_trait = hygene_good_1
+                }
+            }
+            1 = {
+                if = {
+                    limit = {
+                        NOR = {
+                            has_trait = hygene_good_1
+                            has_trait = hygene_good_2
+
+                            has_trait = hygene_bad_1
+                            has_trait = hygene_bad_2
+                        }
+                    }
+                    add_trait = hygene_good_2
+                }
+            }
+            5 = {
+                if = {
+                    limit = {
+                        NOR = {
+                            has_trait = hygene_good_1
+                            has_trait = hygene_good_2
+
+                            has_trait = hygene_bad_1
+                            has_trait = hygene_bad_2
+                        }
+                    }
+                    add_trait = hygene_bad_1
+                }
+            }
+            3 = {
+                if = {
+                    limit = {
+                        NOR = {
+                            has_trait = hygene_good_1
+                            has_trait = hygene_good_2
+
+                            has_trait = hygene_bad_1
+                            has_trait = hygene_bad_2
+                        }
+                    }
+                    add_trait = hygene_bad_2
+                }
+            }
         }
     }
 }
