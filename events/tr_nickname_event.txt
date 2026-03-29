@@ -1,4 +1,4 @@
-﻿namespace = tr_nickname_event
+namespace = tr_nickname_event
 
 tr_nickname_event.01 = {
     type = character_event
@@ -1719,6 +1719,91 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_Zedriniset }
+        ai_chance = {
+			base = 1
+		}
+    }
+ #SATAN
+    option = { 
+        name =  nick_satan_diplomacy
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                diplomacy >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_diplomacy }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { 
+        name =  nick_satan_martial
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                martial >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_martial }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { 
+        name =  nick_satan_stewardship
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                stewardship >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_stewardship }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { 
+        name =  nick_satan_intrigue
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                intrigue >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_intrigue }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { 
+        name =  nick_satan_learning
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                learning >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_learning }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { 
+        name =  nick_satan_prowess
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                prowess >= 20
+                #top_liege = this
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_satan_prowess }
         ai_chance = {
 			base = 1
 		}
