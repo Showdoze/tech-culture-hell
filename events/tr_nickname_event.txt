@@ -729,6 +729,29 @@ tr_nickname_event.01 = {
 		}
     }
  #STEWARDSHIP
+ option = { #the architect
+        name = nick_name_giver_nick_the_architect
+        trigger = {
+            AND = {
+                stewardship >= 12
+                has_trait = architect
+                NOR = {
+                    has_trait = avaricious
+                    has_trait = greedy
+                    has_trait = impatient
+                    has_trait = lifestyle_physician
+                    has_trait = lifestyle_herbalist
+                    has_trait = lifestyle_gardener
+                    has_trait = torturer
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_architect }
+        ai_chance = {
+			base = 1
+		}
+    }
+ 
  #MARTIAL
     option = { #GALLANT
         name =  nick_name_giver_nick_the_gallant
@@ -1200,7 +1223,7 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
-    option = {
+    option = { #the UNBEARABLE
         name =  nick_name_giver_nick_the_unbearable
         trigger = {
             AND = {
@@ -1301,6 +1324,23 @@ tr_nickname_event.01 = {
             }
         }
         set_nickname_effect = { NICKNAME = nick_the_queen_gay }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { # the Shrewd
+        name =  nick_name_giver_nick_the_shrewd
+        trigger = {
+            AND = {
+                has_trait = shrewd
+                NOR = {
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = impatient
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_shrewd }
         ai_chance = {
 			base = 1
 		}
@@ -1742,6 +1782,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_diplomacy }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = diplomat
+			}
 		}
     }
     option = { 
@@ -1757,6 +1801,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_martial }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = strategist
+			}
 		}
     }
     option = { 
@@ -1772,6 +1820,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_stewardship }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = administrator
+			}
 		}
     }
     option = { 
@@ -1787,6 +1839,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_intrigue }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = schemer
+			}
 		}
     }
     option = { 
@@ -1802,6 +1858,14 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_learning }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_mystic
+			}
+            modifier = {
+				add = 5
+				has_trait = scholar
+			}
 		}
     }
     option = { 
@@ -1817,6 +1881,10 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_satan_prowess }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_blademaster
+			}
 		}
     }
  ####Opt-Out 
