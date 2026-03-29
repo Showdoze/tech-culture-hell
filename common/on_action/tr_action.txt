@@ -78,7 +78,7 @@ tr_dwemer_buildings = {
             limit = {
                 AND = {
                     NOT = { has_holding_type = dwemer_forge_1 }
-                    character.culture = dwemer
+                    province.culture = dwemer
                 }
             }
             any_realm_county = { county = { set_holding_type = dwemer_forge_1 } }
