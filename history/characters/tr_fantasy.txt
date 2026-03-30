@@ -2882,6 +2882,7 @@
 	dynasty = dynn_cappadocian	
 	culture = macedonian
 	religion = roman_pagan
+	father = tr_vtm_cain
 	trait = education_learning_3
 	stewardship = 10
 	learning = 30
@@ -2947,6 +2948,7 @@
 	trait = deceitful
 	#father = 505003
 	give_nickname = nick_the_eldest
+	father = tr_vtm_cain
 	disallow_random_traits = yes
 	40.1.1 = {
 		birth = yes
@@ -2974,6 +2976,7 @@
 	trait = diligent
 	trait = lifestyle_mystic
 	give_nickname = nick_the_usurper
+	father = tr_vtm_cain
 	disallow_random_traits = yes
 	757.1.1 = {birth = yes}
 	789.1.1 = {
@@ -2999,6 +3002,7 @@
 	trait = just
 	trait = honest
 	give_nickname = nick_the_lord_of_the_night_vent
+	father = tr_vtm_cain
 	disallow_random_traits = yes
 	40.1.1 = {
 		birth = yes
@@ -3014,6 +3018,7 @@
 	dynasty = dynn_toreador
 	culture = achaian
 	religion = hellenic_pagan
+	father = tr_vtm_cain
 	stewardship = 15
 	learning = 10
 	intrigue = 15
@@ -3106,6 +3111,7 @@
 	trait = athletic
 	trait = follow_seth
 	give_nickname = nick_typhon
+	father = tr_vtm_cain
 	disallow_random_traits = yes
 	40.1.1 = {
 		birth = yes
@@ -3182,6 +3188,7 @@
 	dynasty = dynn_gangrel
 	culture = norse
 	religion = norse_pagan
+	father = tr_vtm_cain
 	stewardship = 10
 	learning = 10
 	martial = 25
@@ -3268,7 +3275,238 @@
 		add_trait = immortal
 	}
 	2200.1.1 = {death = yes }			
- } 
+ }
+ tr_malkavian_1 = {
+	name = "Malkav"
+	dynasty = dynn_malkavian
+	culture = hebrew
+	religion = satanism
+	father = tr_vtm_cain
+	learning = 30
+	intrigue = 15
+	diplomacy = 10
+	prowess = 100
+	trait = lunatic_genetic
+	trait = fickle
+	trait = humble
+	trait = gregarious
+	trait = twin
+	trait = education_learning_3
+	father = 505003
+	give_nickname = nick_the_moon
+	disallow_random_traits = yes
+	40.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 30
+		}	
+		add_trait = immortal
+	}	
+	1000.1.1 = {death = {death_reason = death_disappearance }}					
+ }
+ tr_Jeanette_Voerman = {
+	name = "Jeanette_Voerman"
+	dynasty_house = house_plague
+	culture = american
+	religion = satanism
+	trait = education_intrigue_3
+	trait = lunatic_genetic
+	trait = gregarious
+	trait = lustful
+	trait = fickle
+	trait = beauty_good_1
+	father = tr_malkavian_1
+	female = yes
+	give_nickname = nick_her_better_half
+	disallow_random_traits = yes
+	770.1.1 = { #1970
+		birth = yes
+		effect = {			
+			set_immortal_age = 24
+		}	
+		add_trait = immortal
+	}
+	2200.1.1 = {death = yes }			
+ }
+
+ tr_nosferatu_1 = {
+	name = "Absimiliard"
+	dynasty = dynn_nosferatu
+	culture = hebrew
+	religion = satanism
+	father = tr_vtm_cain
+	intrigue = 15
+	martial = 15
+	prowess = 100
+	trait = education_martial_prowess_5
+	trait = beauty_bad_1
+	trait = vengeful
+	trait = sadistic
+	trait = arbitrary
+	give_nickname = nick_the_hidden
+	disallow_random_traits = yes
+	40.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 28
+		}	
+		add_trait = immortal
+		add_trait = scaly
+		add_trait = albino
+		add_trait = hunchbacked
+		add_trait = giant
+		add_trait = spindly
+	}	
+	100.1.1 = {death = {death_reason = death_disappearance }}					
+ }
+ tr_Baba_Yaga = {
+	name = "Baba_Yaga"
+	dna = 505075_babayaga
+	dynasty_house = house_yagnatia
+	culture = "russian" #obviously older but would be weird as a proto russian since she "is" russia in many ways
+	religion = satanism
+	father = tr_nosferatu_1
+	female = yes
+	martial = 10
+	intrigue = 15
+	stewardship = 1
+	diplomacy = 0
+	prowess = 100
+	learning = 30	
+	trait = education_learning_5
+	trait = beauty_bad_1
+	trait = sadistic
+	trait = arbitrary
+	trait = deceitful
+	trait = torturer
+	give_nickname = nick_the_littlegrandmother
+	disallow_random_traits = yes
+	60.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 100
+		}
+		add_trait = immortal
+	}		
+	1998.1.1 = {death = { death_reason = death_murder}}			
+  }
+  tr_790273_trajan = {
+	name = "Trajan"
+    dna = 790279_trajan
+	dynasty_house = house_trajan
+	culture = "roman"
+	religion = roman_pagan
+	mother = tr_Baba_Yaga
+	intrigue = 1
+	stewardship = 11
+	learning = 10
+	trait = education_intrigue_3
+	trait = beauty_bad_1
+	trait = vengeful
+	trait = deceitful
+	trait = diligent
+	trait = schemer
+	give_nickname = nick_the_spider
+	disallow_random_traits = yes
+	100.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 30
+		}
+		add_trait = immortal
+	}
+	2200.1.1 = {death = yes }			
+ }
+ tr_vtm_cain = {
+	name = "Caine"
+    dna = 505001_caine
+	#dynasty = 10000002	
+	culture = hebrew
+	religion = satanism
+	stewardship = 20
+	learning = 20
+	intrigue = 15
+	diplomacy = 10	
+	prowess = 100
+	trait = education_intrigue_4
+	trait = wrathful
+	trait = murderer
+	trait = reclusive
+	trait = kinslayer_3
+	give_nickname = nick_the_dark_father	
+	disallow_random_traits = yes
+	1.1.1 = {birth = yes}
+	3.1.1 = {
+		effect = {
+			set_immortal_age = 30
+		}	
+		add_trait = immortal
+	}
+	1333.1.1 = {death = {death_reason = death_disappearance }}			
+ }
+ tr_easteregg_alucard = {
+	name = "Adrian_Fahrenheit"
+	dna = easteregg_alucard
+	dynasty_house = house_tepes
+	father = tr_vlad_tepes
+	culture = vlach
+	religion = science
+	trait = education_stewardship_4
+	trait = compassionate
+	trait = honest
+	trait = brave
+	trait = lifestyle_blademaster
+	trait = lifestyle_mystic
+	give_nickname = nick_alucard
+	disallow_random_traits = yes
+	865.10.6 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 22
+		}
+		add_trait = immortal
+	}
+	2200.1.1 = {death = yes}
+ }
+ tr_Mithras = {
+	name = "Mithras"
+	dna = 505071_mithras
+	dynasty_house = house_mithras
+	culture = "english"
+	religion = satanism
+	father = tr_Ventru
+	prowess = 19
+	martial = 8
+	intrigue = 12
+	stewardship = 20
+	diplomacy = 5
+	learning = 12
+	trait = education_martial_3
+	trait = lazy
+	trait = ambitious
+	trait = zealous
+	trait = faith_warrior
+	sexuality = bisexual
+	give_nickname = nick_lord_of_light
+	disallow_random_traits = yes
+	80.1.1 = {
+		birth = yes
+		effect = {
+			set_immortal_age = 25
+		}
+		add_trait = immortal	
+	}
+	799.1.1 = {
+		add_trait = torpor
+		effect = {
+			learn_language = language_iranian
+			learn_language = language_latin
+			learn_language = language_french
+			learn_language = language_ancient_egyptian
+		}		
+	}
+	1996.1.1 = {death = {death_reason = death_battle}}					
+}
 
  #Mario bros
   tr_mario_nes = {
