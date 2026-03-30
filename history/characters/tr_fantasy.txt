@@ -1593,7 +1593,8 @@
 	15.1.1 = { birth = yes}
 	110.1.1 = { death = { death_reason = death_mysterious } }
  }
-  tr_naruto_9tails = {
+  #UZumaki 
+   tr_naruto_9tails = {
 	name = "Kurama"
 	religion = science 
     dynasty_house = house_uzumaki
@@ -1608,9 +1609,9 @@
 	trait = patient
     disallow_random_traits = yes
 	25.1.1 = { birth = yes}
-	200.1.1 = { death = { death_reason = death_mysterious } }
+	400.1.1 = { death = { death_reason = death_mysterious } }
  }
-  tr_naruto_9tails_child = {
+   tr_naruto_9tails_child = {
 	name = "Kurama"
 	religion = science 
     dynasty_house = house_uzumaki
@@ -1623,9 +1624,10 @@
 	trait = compassionate
     disallow_random_traits = yes
 	180.1.1 = { birth = yes}
-	250.1.1 = { death = { death_reason = death_mysterious } }
- }
-  tr_naruto_Indra = {
+	400.1.1 = { death = { death_reason = death_mysterious } }
+  }
+  #UCHIHA
+   tr_naruto_Indra = {
 	name = "Indra"
 	religion = science 
     dynasty = dynn_otsutsuki
@@ -1645,9 +1647,231 @@
     disallow_random_traits = yes
 	75.1.1 = { birth = yes}
 	100.1.1 = { dynasty_house = house_uchiha }
-	150.1.1 = { death = { death_reason = death_mysterious } }
+	400.1.1 = { death = { death_reason = death_mysterious } }
  }
-  tr_naruto_Asura = {
+ tr_naruto_tajima_father_father = {
+	name = "Rai" #placeholder
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_Indra
+	trait = education_martial_3
+	trait = stubborn
+	trait = diligent
+	trait = athletic
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	400.1.1 = { birth = yes}
+	600.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_tajima_father = {
+	name = "Baru" #placeholder
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima_father_father
+	trait = education_martial_3
+	trait = stubborn
+	trait = athletic
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	600.1.1 = { birth = yes}
+	700.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_tajima = {
+	name = "Tajima"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima_father
+	trait = physique_good_3
+	trait = education_martial_5
+    trait = ambitious
+	trait = cynical
+	trait = stubborn
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_3
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+	trait = whole_of_body
+    disallow_random_traits = yes
+	700.1.1 = { birth = yes}
+	755.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_madara = {
+	name = "Madara"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima
+	trait = physique_good_3
+	trait = education_martial_5
+	trait = cynical
+	trait = stubborn
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_3
+	trait = aggressive_attacker
+	trait = whole_of_body
+    disallow_random_traits = yes
+	747.1.1 = { birth = yes}
+	860.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_izuna = {
+	name = "Izuna"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima
+	trait = education_martial_2
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	750.1.1 = { birth = yes}
+	765.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_madara_brother = {
+	name = "Setsuna"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima
+	trait = education_martial_2
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	748.1.1 = { birth = yes}
+	762.1.1 = { death = { death_reason = death_battle } }
+ }
+ tr_naruto_naori = {
+	name = "Naori"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_madara_brother
+	female = yes
+	trait = education_martial_3
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = beauty_good_1
+    disallow_random_traits = yes
+	762.1.1 = { birth = yes}
+	821.1.1 = { death = { death_reason = death_childbirth } }
+ }
+ tr_naruto_fugaku_dad = {
+	name = "Tekka"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_madara_brother
+	trait = education_martial_3
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = overseer
+    disallow_random_traits = yes
+	750.1.1 = { birth = yes}
+	820.1.1 = { death = yes }
+ }
+ tr_naruto_Hazuki = {
+	name = "Hazuki"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_fugaku_dad
+	trait = education_martial_3
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = overseer
+    disallow_random_traits = yes
+	822.1.1 = { birth = yes}
+	855.1.1 = { death = yes }
+ }
+ tr_naruto_izumi = {
+	name = "Izumi"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_Hazuki
+	female = yes
+	trait = education_stewardship_3
+	trait = diligent
+	trait = compassionate
+    trait = beauty_good_1
+	trait = calm
+    disallow_random_traits = yes
+	849.1.1 = { birth = yes}
+	862.1.1 = { death = { death_reason = death_murder_know killer = tr_naruto_itachi } }
+ }
+ tr_naruto_fugaku = {
+	name = "Fugaku"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_fugaku_dad
+	trait = education_martial_3
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = overseer
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes}
+	838.1.1 = { add_spouse = tr_naruto_fugaku }
+	862.1.1 = { death = { death_reason = death_murder_know killer = tr_naruto_itachi } }
+ }
+ tr_naruto_mikoto = {
+	name = "Mikoto"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	mother = tr_naruto_naori
+	female = yes
+	trait = education_diplomacy_2
+	trait = diligent
+	trait = athletic
+    trait = beauty_good_1
+	trait = compassionate
+	trait = family_first
+    disallow_random_traits = yes
+	821.1.1 = { birth = yes}
+	862.1.1 = { death = { death_reason = death_murder_know killer = tr_naruto_itachi } }
+ }
+ tr_naruto_itachi = {
+	name = "Itachi"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_fugaku
+	mother = tr_naruto_mikoto
+	trait = education_martial_5
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_3
+	trait = calm
+	trait = overseer
+    disallow_random_traits = yes
+	820.1.1 = { birth = yes}
+	862.1.1 = { 
+		add_trait = kinslayer_3
+		add_trait = murderer
+	}
+	862.1.1 = { death = { death_reason = death_murder_know killer = tr_naruto_itachi } }
+ }
+  #SENJU
+   tr_naruto_Asura = {
 	name = "Asura"
 	religion = science 
     dynasty = dynn_otsutsuki
@@ -1664,9 +1888,26 @@
     disallow_random_traits = yes
 	80.1.1 = { birth = yes}
 	145.1.1 = { dynasty_house = house_senju }
-	150.1.1 = { death = { death_reason = death_mysterious } }
+	400.1.1 = { death = { death_reason = death_mysterious } }
  }
-  tr_naruto_Hamura = {
+   tr_naruto_ha = {
+	name = "Izuna"
+	religion = science 
+    dynasty_house = house_uchiha
+	culture = japanese
+	father = tr_naruto_tajima
+	trait = education_martial_2
+	trait = diligent
+	trait = athletic
+    trait = intellect_good_1
+	trait = aggressive_attacker
+	trait = lifestyle_mystic
+    disallow_random_traits = yes
+	750.1.1 = { birth = yes}
+	765.1.1 = { death = { death_reason = death_battle } }
+ }
+  #HYUGA
+   tr_naruto_Hamura = {
 	name = "Hamura"
 	religion = science 
     dynasty = dynn_otsutsuki
@@ -1683,8 +1924,8 @@
 	15.1.1 = { birth = yes }
 	50.1.1 = { dynasty_house = house_hygua }
 	110.1.1 = { death = { death_reason = death_mysterious } }
- }
-  tr_naruto_hygua_elder = {
+  }
+   tr_naruto_hygua_elder = {
 	name = "Elder"
 	religion = science 
     dynasty_house = house_hygua
@@ -3852,3 +4093,47 @@
 	}
 	920.3.28 = { death = { death_reason = death_old_age } }
  }
+#ELDEN RING
+ tr_ranni = {
+	name = "Ranni"
+	female = yes
+	dna = ranni_one_dna
+	sexuality = bisexual
+	dynasty_house = house_caria
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+	health = 10
+	give_nickname = nick_the_witch
+	religion = twomoonsdance #faith_moons	
+	culture = fantasy_culture #cul_caria
+	trait = education_learning_5
+	trait = callous
+	trait = deceitful
+	trait = ambitious
+	trait = intellect_good_2
+	trait = beauty_good_3
+	#trait = ice_affinity
+	#trait = no_marry
+	disallow_random_traits = yes
+	#father = radagon
+	#mother = rennala
+	portrait_override = {	
+		portrait_modifier_overrides={
+			custom_hair=female_hair_fp2_iberian_muslim_01_common
+			custom_beards=female_empty
+		}
+	}
+	255.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = do_not_generate_starting_family
+			set_immortal_age = 18
+		}
+		add_trait = immortal
+		#trait = demigod_elden_ring_4
+	}
+	1200.5.25 = {death = yes}
+}
