@@ -442,22 +442,13 @@ house_customizer.0008 = {
 	type = character_event
 	title = house_customizer.0008.t
 	desc = house_customizer.0008.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
+	immediate = {play_music_cue = "mx_cue_succession"}
 	# Dryland
 	option = {
 		name = house_customizer.0008.dryland
@@ -469,44 +460,23 @@ house_customizer.0008 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
-	# Back
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
-	# Briar #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-	# Brook #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-	# Holt #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-	# Hull #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-	# Lake #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-	# Wade #AGOT TODO NEEDS AT LEAST ONE CHARACTER
 }
-
-#Select Extinct Reach
-house_customizer.0009 = {
+house_customizer.0009 = { #Select Extinct Reach
 	type = character_event
 	title = house_customizer.0009.t
 	desc = house_customizer.0009.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
-	#Gardener
-	option = {
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = {#Gardener
 		name = house_customizer.0009.gardener
 		trigger = {
 			agot_is_house_extinct_history_trigger = { FOUNDER = character:Gardener_1 }
@@ -516,36 +486,23 @@ house_customizer.0009 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
-	# Back Option
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
 
 }
-
-#Select Extinct Westerlands
-house_customizer.0010 = {
+house_customizer.0010 = { #Select Extinct Westerlands
 	type = character_event
 	title = house_customizer.0010.t
 	desc = house_customizer.0010.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
+	immediate = {play_music_cue = "mx_cue_succession"}
 	#Casterly
 	option = {
 		name = house_customizer.0010.casterly
@@ -557,7 +514,6 @@ house_customizer.0010 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
 	#Parren
 	option = {
 		name = house_customizer.0010.parren
@@ -569,7 +525,6 @@ house_customizer.0010 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
 	#reyne
 	option = {
 		name = house_customizer.0010.reyne
@@ -581,8 +536,6 @@ house_customizer.0010 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
-	# Back Option
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
@@ -626,28 +579,17 @@ house_customizer.0011 = { #Select extinct Ironborn
 		trigger_event = house_customizer.0002
 	}
 }
-
-# #Select extinct Essos
 house_customizer.0012 = {
 	type = character_event
 	title = house_customizer.0012.t
 	desc = house_customizer.0012.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
+	immediate = {play_music_cue = "mx_cue_succession"}
 	# Varezys
 	option = {
 		name = house_customizer.0012.varezys
@@ -660,7 +602,6 @@ house_customizer.0012 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
 	# Mataeryon
 	option = {
 		name = house_customizer.0012.mataeryon

@@ -126,6 +126,26 @@ tr_self_harm_event.01 = {
 			base = 1
 		}
     }
+    option = { #FROM hunchbacked be gone
+        name = self_harm_events_hunchback_no_more
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = hunchbacked
+            }
+        }
+        remove_trait = hunchbacked
+        add_trait = spindly
+        add_trait = wounded_1
+        ai_chance = {
+			base = 1
+		}
+    }
  ####Opt-Out
     option = {
         name = tr_select_deity_cancel
