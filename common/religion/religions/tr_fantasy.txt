@@ -257,8 +257,8 @@ fantasy_religion = {
 	          doctrine = doctrine_funeral_bewailment
 			
 			doctrine = tennet_blood_m
-			doctrine = tenet_fp3_fedayeen
-			doctrine = tenet_sacred_shadows
+			doctrine = tenet_cranial_trophies
+			doctrine = tenet_tr_sacred_shadows
 			holy_order_names = {
 				{ name = "holy_order_warriors_wargod" coat_of_arms = "blood_caleb" }
 				{ name = "holy_order_warriors_nightgod" coat_of_arms = "blood_jack" }
@@ -2076,13 +2076,14 @@ fantasy_religion = {
 				ReligiousText = keeper_religious_text
 				 ReligiousText2 =  keeper_religious_text_2
 				 ReligiousText3 =  keeper_religious_text_3
-				DivineRealm = keeper_afterlife
+				#AFTERLIFE 
+				 DivineRealm = keeper_afterlife
 				 DivineRealm2 = keeper_afterlife
 				 DivineRealm3 = keeper_afterlife
-				PositiveAfterLife = keeper_afterlife
+				 PositiveAfterLife = keeper_afterlife
 				 PositiveAfterLife2 = keeper_afterlife
 				 PositiveAfterLife3 = keeper_afterlife
-				NegativeAfterLife = keeper_afterlife
+				 NegativeAfterLife = keeper_afterlife
 				 NegativeAfterLife2 = keeper_afterlife
 				 NegativeAfterLife3 = keeper_afterlife
 				#DeathDeityName = god_trickster
@@ -2590,7 +2591,7 @@ fantasy_religion = {
 			# Tenets
 			 doctrine = tenet_monasticism
 			 doctrine = tenet_imperial_cult
-			 doctrine = tenet_divine_marriage
+			 doctrine = tenet_tr_divine_marriage
 			#Names 
 			 reserved_male_names = {
 				Alfred Alexander Augustus 
@@ -3197,7 +3198,7 @@ fantasy_religion = {
 			 doctrine = doctrine_anointment_permitted
 			#Tenets
 			 doctrine = tenet_human_sacrifice
-			 doctrine = tenet_divine_marriage
+			 doctrine = tenet_tr_divine_marriage
 			 doctrine = tenet_dragon_cult
 			#Names 
 			 reserved_male_names = {
@@ -3616,13 +3617,13 @@ fantasy_religion = {
 		         WaterGodSheHe = CHARACTER_SHEHE_THEY
 		         WaterGodHerHis = CHARACTER_HERHIS_THEIR
 		         WaterGodHerHim = CHARACTER_HERHIM_THEM
-		        PantheonTerm = god_the_gods_name
-		         PantheonTerm2 = god_the_gods_name
-		         PantheonTerm3 = god_the_gods_name
+		        PantheonTerm = religion_the_gods
+		         PantheonTerm2 = religion_the_gods
+		         PantheonTerm3 = religion_the_gods
 		         PantheonTermHasHave = pantheon_term_have
 		        GoodGodNames = {
 			        god_trickster god_Mielikki god_Silvanus god_Eilistraee god_Yondalla god_talos 
-					god_tree 
+					god_tree weirwood heart_tree burned_tree 
 		        }
 		        DevilName = oathbreakers_name
 		         DevilNamePossessive = oathbreakers_name_possessive
@@ -3633,13 +3634,13 @@ fantasy_religion = {
 		        	god_master_builder god_jesus oathbreakers_name 
 		        }
 		        HouseOfWorship  = bosmeri_house_of_worship
-		         HouseOfWorship2 = bosmeri_house_of_worship
+		         HouseOfWorship2 = Godswood
 		         HouseOfWorship3 = bosmeri_house_of_worship
 		        HouseOfWorshipPlural = bosmeri_house_of_worship_plural
 		        ReligiousSymbol  = bosmeri_religious_symbol
 		         ReligiousSymbol2 = kokiri_faith_religious_symbol
-		         ReligiousSymbol3 = bosmeri_religious_symbol
-		        ReligiousText  = bosmeri_religious_text
+		         ReligiousSymbol3 = weirwood
+		        ReligiousText  = green_cult_religious_text
 		         ReligiousText2 = kokiri_faith_religious_text
 		         ReligiousText3 = bosmeri_religious_text
 		        ReligiousHeadName = bosmeri_religious_head_title
@@ -4109,8 +4110,8 @@ fantasy_religion = {
 			  doctrine = doctrine_anointment_permitted
 			
 			doctrine = tenet_lizardmen
-			doctrine = tenet_divine_marriage
-			doctrine = tenet_ancestor_worship
+			doctrine = tenet_tr_divine_marriage
+			doctrine = tenet_cranial_trophies
 			holy_order_names = {
 				{ name = "holy_order_warriors_wargod" } #coat_of_arms = "blood_caleb" }
 			}

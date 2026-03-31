@@ -2180,7 +2180,8 @@ tr_ivan_the_terrible = {
 	}
 	1584.3.28 = { death = { death_reason = death_old_age } }
  }
-tr_vlad_2 = {
+#DRACULA HOUSE VLAD TEPES
+ tr_vlad_2 = {
 	name = "Vlad Dracul"
 	dna = tr_vlad_tepes
 	religion = catholic 
@@ -2198,7 +2199,39 @@ tr_vlad_2 = {
 	816.1.1 = {  birth = yes }
 	1447.11.11 = { death = { death_reason = death_dungeon } }
 }
-tr_vlad_tepes = {
+ tr_RaduIII = {
+	name = "Radu III"
+	religion = catholic 
+    dynasty_house = house_dracula
+	culture = vlach
+	father = tr_vlad_2
+	trait = education_diplomacy_3
+	trait = patient
+	trait = diligent
+	trait = beauty_good_1
+    trait = diplomat
+	give_nickname = nick_the_handsome
+    disallow_random_traits = yes
+	857.1.1 = {  birth = yes }
+	1475.1.1 = { death = { death_reason = death_dungeon } }
+ }
+ tr_VladIVCălugărul = {
+	name = "Vlad IV Călugărul"
+	religion = catholic 
+    dynasty_house = house_dracula
+	culture = vlach
+	father = tr_vlad_2
+	trait = education_diplomacy_2
+	trait = patient
+	trait = diligent
+	trait = zealous
+    trait = calm
+	give_nickname = nick_the_monk
+    disallow_random_traits = yes
+	846.1.1 = {  birth = yes }
+	1495.1.1 = { death = yes }
+ }
+ tr_vlad_tepes = {
 	name = "Vlad Țepeș"
 	dna = tr_vlad_tepes
 	religion = catholic 
@@ -2227,6 +2260,22 @@ tr_vlad_tepes = {
 	    }
 	}
 	1476.12.14 = { death = { death_reason = death_execution } }
+}
+ tr_MihneacelRău = {
+	name = "Mihnea cel Rău"
+	religion = catholic 
+    dynasty_house = house_tepes
+	culture = vlach
+	father = tr_vlad_tepes
+	trait = education_martial_2
+    trait = reaver
+	trait = ambitious
+    trait = organizer
+	trait = viking
+	trait = papal_friend
+    disallow_random_traits = yes
+	866.1.1 = { birth = yes}
+	1476.3.12 = { death = { death_reason = death_murder_known } }
 }
 tr_oliver_cromwell = {
 	name = "Oliver Cromwell"

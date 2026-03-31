@@ -529,4 +529,13 @@ k_the_most_devout = {
 		HIGH_SEPTON_NAME
 	}
 }
-
+d_Akatsuki = {
+	color = { 150 250 0 }
+	capital = c_chikuzen
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+	ai_primary_priority = { add = @never_primary_score }
+}

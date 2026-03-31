@@ -149,25 +149,19 @@ restore_sumer_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } 
 	decision_group_type = major
 	ai_check_interval = 0
-
 	desc = restore_sumer_decision_desc
-
 	is_shown = {
 		faith = faith:sumerian_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_sumer.holder
         }
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
 	is_valid = {
 		OR = {
 			AND = {
@@ -181,63 +175,49 @@ restore_sumer_decision = {
 			}
 		}
 	}
-
 	cost = {
 		gold = 1200
 		prestige = 2000
 		piety = 600
 	}
-
 	effect = {
 		create_title_and_vassal_change = change
-
 		scope:change = {
 			set_title_and_vassal_change_type = created
 		}
-
 		title:k_sumer = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
 		}
-
 		resolve_title_and_vassal_change = scope:change
-
 		hidden_effect = {
 			save_scope_as = founder
 			primary_title = {
 				save_scope_as = old_title
 			}
-
 			create_dynamic_title = {
 				tier = empire
 				name = "Sumer"
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = created
 			}
-
 			scope:new_title = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
-
 			every_held_title = {
 				limit = {
 					tier = tier_kingdom
-				}
-				
+				}			
 				set_de_jure_liege_title = scope:new_title
 			}
-
 			every_sub_realm_county = {
 				limit = {
 					exists = kingdom
@@ -264,16 +244,13 @@ restore_sumer_decision = {
 					}
 				}
 			}
-
 			scope:new_title = {
 				set_title_name = title:k_sumer
 				set_coa = title:k_sumer
 				set_color_from_title = title:k_sumer
 				set_capital_county = title:k_sumer.title_capital_county
 			}
-
 			set_primary_title_to = scope:new_title
-
 			title:d_basra = { set_de_jure_liege_title = title:k_sumer }
 			title:d_kufa = { set_de_jure_liege_title = title:k_sumer }
 			title:d_wasit = { set_de_jure_liege_title = title:k_sumer }
@@ -282,20 +259,17 @@ restore_sumer_decision = {
 			title:d_khuzestan = { set_de_jure_liege_title = title:k_sumer }
 			title:d_kermanshah = { set_de_jure_liege_title = title:k_sumer }
 		}
-
 		every_held_title = {
 			limit = {
 				NOR = {
 					this = root.primary_title
 					this = title:k_sumer
-				}
-				
+				}	
                 OR = {
                     tier = tier_kingdom
                     tier = tier_empire
                 }
             }
-
             root = {
                 destroy_title = prev
             }
@@ -312,9 +286,7 @@ restore_akkadia_decision = {
 
 	is_shown = {
 		faith = faith:akkadian_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_akkadia.holder
         }
@@ -351,20 +323,16 @@ restore_akkadia_decision = {
 
 	effect = {
 		create_title_and_vassal_change = change
-
 		scope:change = {
 			set_title_and_vassal_change_type = created
 		}
-
 		title:k_akkadia = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
 		}
-
 		resolve_title_and_vassal_change = scope:change
-
 		hidden_effect = {
 			save_scope_as = founder
 			primary_title = {
@@ -476,9 +444,7 @@ restore_babylonia_decision = {
 
 	is_shown = {
 		faith = faith:babylonian_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_babylonia.holder
         }
@@ -526,18 +492,15 @@ restore_babylonia_decision = {
 
 	effect = {
 		create_title_and_vassal_change = change
-
 		scope:change = {
 			set_title_and_vassal_change_type = created
 		}
-
 		title:k_babylonia = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
 		}
-
 		resolve_title_and_vassal_change = scope:change
 
 		hidden_effect = {
@@ -860,9 +823,7 @@ restore_canaan_decision = {
 
 	is_shown = {
 		faith = faith:canaanite_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_canaan.holder
         }
@@ -1026,9 +987,7 @@ restore_phoenicia_decision = {
 
 	is_shown = {
 		faith = faith:phoenician_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_phoenicia.holder
         }
@@ -1188,9 +1147,7 @@ restore_carthage_decision = {
 
 	is_shown = {
 		faith = faith:punic_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_carthage.holder
         }
@@ -1384,9 +1341,7 @@ restore_brython_decision = {
 
 	is_shown = {
 		faith = faith:brythonic_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_brython.holder
         }
@@ -1550,9 +1505,7 @@ restore_na_gaeil_decision = {
 
 	is_shown = {
 		faith = faith:gaelic_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_na_gaeil.holder
         }
@@ -1716,9 +1669,7 @@ restore_gaul_decision = {
 
 	is_shown = {
 		faith = faith:gaulish_pagan
-
         is_independent_ruler = yes
-
         NOT = {
             exists = title:k_gaul.holder
         }
@@ -2524,42 +2475,32 @@ set_capital_carthage_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
 	decision_group_type = major
 	ai_check_interval = 0
-
 	desc = set_capital_carthage_decision_desc
-
 	is_shown = {
 		has_title = title:k_carthage
 		faith = faith:punic_pagan
-
         NOT = {
             capital_county = {
                 this = title:c_tunis
             }
         }
-
         OR = {
 			title:c_tunis.holder = { 	
 				any_liege_or_above = {
                     this = root
                 }
 			}
-
 			title:c_tunis.holder = {
                 this = root
             }
 		}
 	}
-
     is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-
-	cost = {
-		gold = 75
-	}
-
+	cost = {gold = 75}
 	effect = {
 		if = {
 			limit = {
@@ -2569,43 +2510,33 @@ set_capital_carthage_decision = {
                     } 
                 }
 			}
-
 			create_title_and_vassal_change = change
-
 			scope:change = {
 				set_title_and_vassal_change_type = returned
 			}
-
 			title:c_tunis = {
 				change_title_holder = {
 					holder = root
 					change = scope:change
 				}
 			}
-
 			resolve_title_and_vassal_change = scope:change
 		}
-
 		title:c_tunis = {
 			hidden_effect = {
 				set_title_name = c_carthage
 			}
 		}
-
 		set_realm_capital = title:c_tunis
 	}
 }
 
-
 create_israel_kingdom_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-
 	desc = create_israel_kingdom_decision_desc
 	selection_tooltip = create_israel_kingdom_decision_tooltip
 	decision_group_type = major
-
 	ai_check_interval = 120
-
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
@@ -2615,7 +2546,6 @@ create_israel_kingdom_decision = {
 			faith = faith:samaritan
 		}
 	}
-
 	is_valid = {
 		prestige >= 1000
 		piety >= 1000
@@ -2627,14 +2557,12 @@ create_israel_kingdom_decision = {
 			title:c_jerusalem.faith = root.faith
 		}
 	}
-
 	is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 		is_at_war = no
 	}
-
 	effect = {
 		custom_tooltip = create_israel_kingdom_decision_effect_tooltip
 		show_as_tooltip = {
@@ -2644,11 +2572,9 @@ create_israel_kingdom_decision = {
 			id = middle_east_decisions.0005
 		}
 	}
-	
 	ai_potential = {
 		always = yes
 	}
-
 	ai_will_do = {
 		base = 100
 	}
@@ -2656,13 +2582,10 @@ create_israel_kingdom_decision = {
 
 create_samaria_kingdom_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-
 	desc = create_samaria_kingdom_decision_desc
 	selection_tooltip = create_samaria_kingdom_decision_tooltip
 	decision_group_type = major
-
 	ai_check_interval = 120
-
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
@@ -2671,7 +2594,6 @@ create_samaria_kingdom_decision = {
 			exists = title:k_samaria.holder
 		}
 	}
-
 	is_valid = {
 		prestige >= 1000
 		piety >= 1000
@@ -2683,14 +2605,12 @@ create_samaria_kingdom_decision = {
 			title:c_tiberias.faith = root.faith
 		}
 	}
-
 	is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 		is_at_war = no
 	}
-
 	effect = {
 		custom_tooltip = create_samaria_kingdom_decision_effect_tooltip
 		show_as_tooltip = {
@@ -2700,11 +2620,9 @@ create_samaria_kingdom_decision = {
 			id = ar_title_events.0001
 		}
 	}
-	
 	ai_potential = {
 		always = yes
 	}
-
 	ai_will_do = {
 		base = 100
 	}
@@ -2712,13 +2630,10 @@ create_samaria_kingdom_decision = {
 
 create_judah_kingdom_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-
 	desc = create_judah_kingdom_decision_desc
 	selection_tooltip = create_judah_kingdom_decision_tooltip
 	decision_group_type = major
-
 	ai_check_interval = 120
-
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
@@ -2727,7 +2642,6 @@ create_judah_kingdom_decision = {
 			exists = title:k_judah.holder
 		}
 	}
-
 	is_valid = {
 		prestige >= 1000
 		piety >= 1000
@@ -2739,14 +2653,12 @@ create_judah_kingdom_decision = {
 			title:c_jerusalem.faith = root.faith
 		}
 	}
-
 	is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 		is_at_war = no
 	}
-
 	effect = {
 		custom_tooltip = create_judah_kingdom_decision_effect_tooltip
 		show_as_tooltip = {
@@ -2756,11 +2668,9 @@ create_judah_kingdom_decision = {
 			id = ar_title_events.1001
 		}
 	}
-	
 	ai_potential = {
 		always = yes
 	}
-
 	ai_will_do = {
 		base = 100
 	}
@@ -2768,13 +2678,10 @@ create_judah_kingdom_decision = {
 
 create_philistine_kingdom_decision = {
 	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
-
 	desc = create_philistine_kingdom_decision_desc
 	selection_tooltip = create_philistine_kingdom_decision_tooltip
 	decision_group_type = major
-
 	ai_check_interval = 120
-
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
@@ -2783,7 +2690,6 @@ create_philistine_kingdom_decision = {
 			exists = title:k_philistine.holder
 		}
 	}
-
 	is_valid = {
 		prestige >= 1000
 		piety >= 1000
@@ -2795,14 +2701,12 @@ create_philistine_kingdom_decision = {
 			title:c_jerusalem.faith = root.faith
 		}
 	}
-
 	is_valid_showing_failures_only = {
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_independent_ruler = yes
 		is_at_war = no
 	}
-
 	effect = {
 		custom_tooltip = create_philistine_kingdom_decision_effect_tooltip
 		show_as_tooltip = {
@@ -2812,11 +2716,9 @@ create_philistine_kingdom_decision = {
 			id = ar_title_events.2001
 		}
 	}
-	
 	ai_potential = {
 		always = yes
 	}
-
 	ai_will_do = {
 		base = 100
 	}

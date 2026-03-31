@@ -154,6 +154,32 @@ tr_doctrines = {
 		    sins = { forgiving compassionate }
 		} 
 	}
+	tenet_tr_sacred_shadows = {
+		icon = core_tenet_sacred_shadows
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		name = {first_valid = {desc = tenet_sacred_shadows_name}}
+		desc = {first_valid = {desc = tenet_sacred_shadows_desc}}
+		parameters = {
+			piety_gain_from_successful_intrigue_schemes = yes
+			adherents_more_likely_to_join_schemes = yes
+			tenet_unlocks_t4_bounties_for_whispers = yes
+			master_assassin_court_position_unlocked = yes 
+			death_is_glory = yes
+			sanctioned_assassinations = yes
+			unlock_voluntary_laampdom_faith = yes
+		}
+		character_modifier = {
+			controlled_province_advantage = 5
+			monthly_piety_gain_per_dread_add = 0.01
+			prowess = 2
+		}
+		traits = {
+			virtues = { deceitful vengeful = 1 }
+			sins = { honest craven = 1 }
+		}
+	}
+
 	tenet_tribunal = {
 		icon = core_tenet_tribunal
 		piety_cost = { value = faith_tenet_cost_high }
@@ -372,8 +398,8 @@ tr_doctrines = {
 		piety_cost = { value = faith_tenet_cost_high }
 		is_shown = { always = no }
 		traits = {
-		virtues = { just temperate callous  }
-		sins = { arrogant gluttonous arbitrary }
+		    virtues = { just temperate callous  }
+		    sins = { arrogant gluttonous arbitrary }
 	    }
 		parameters = {
 			human_sacrifice_active = yes
@@ -401,6 +427,7 @@ tr_doctrines = {
 			reduced_stress_from_torture = yes
 			self_mutilation_active = yes
 			consolamentum_active = yes
+			killing_buddhists_is_pious = yes
 		}
 		character_modifier = {
 			short_reign_duration_mult = -0.5
@@ -513,6 +540,7 @@ tr_doctrines = {
 			cannibalism_legal = yes
 			can_build_megaliths = yes
 			fervor_per_holy_site = 1
+			killing_buddhists_is_pious = yes
 		}
 		character_modifier = {
 			mechanist_faith_opinion = -45
@@ -604,6 +632,7 @@ tr_doctrines = {
 		parameters = {
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
+			killing_buddhists_is_pious = yes
 		}
 		traits = {
 			virtues = { brave deceitful arrogant }
@@ -639,6 +668,7 @@ tr_doctrines = {
 			pilgrimage_decision_active = yes
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
+			killing_buddhists_is_pious = yes
 		}
 		traits = {
 			virtues = { 
@@ -660,6 +690,7 @@ tr_doctrines = {
 			fervor_per_holy_site = 1
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
+			killing_buddhists_is_pious = yes
 		}
 		traits = {
 			virtues = { 
@@ -960,6 +991,10 @@ tr_doctrines = {
 			human_sacrifice_active = yes
 			piety_from_hunts_active = yes
 			believes_in_harmony_with_nature_invisible = yes
+			frequent_bear_sightings = yes
+			efficient_hunt_cornering = yes
+			allows_bear_sacrifice = yes
+			chance_to_gain_prowess_during_bear_hunts = yes
 		}
 		character_modifier = {
 			prowess = 4
@@ -986,6 +1021,7 @@ tr_doctrines = {
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
 			piety_from_feasts_active = yes
+			killing_buddhists_is_pious = yes
 		}
 		character_modifier = {
 			prowess = 4
@@ -1013,6 +1049,10 @@ tr_doctrines = {
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
 			piety_from_feasts_active = yes
+			frequent_bear_sightings = yes
+			efficient_hunt_cornering = yes
+			allows_bear_sacrifice = yes
+			chance_to_gain_prowess_during_bear_hunts = yes
 		}
 		character_modifier = {
 			prowess = 4
@@ -1051,6 +1091,10 @@ tr_doctrines = {
 			reduced_stress_from_torture = yes
 			naked_adherents_active = yes
 			natural_primitivism_law_cost_increase = yes
+			killing_buddhists_is_pious = yes
+			efficient_hunt_cornering = yes
+			allows_bear_sacrifice = yes
+			chance_to_gain_prowess_during_bear_hunts = yes
 		}
 		character_modifier = {
 			tolerance_advantage_mod = 2
@@ -1071,6 +1115,47 @@ tr_doctrines = {
 			sins = { 
 				craven forgiving lazy shy 
 			}
+		}
+	}
+	tenet_tr_divine_marriage = {
+		icon = core_tenet_divine_marriage
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = zoroastrianism_religion
+					}
+					desc = tenet_divine_marriage_xwedodah 
+				}
+				desc = tenet_divine_marriage_name
+			}
+		}
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = zoroastrianism_religion
+					}
+					desc = tenet_divine_marriage_desc
+				}
+				desc = tenet_divine_marriage_desc
+			}
+		}
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			increased_dynasty_prestige_birth_mult = 1
+			increased_dynasty_prestige_marriage_mult = 1
+			increased_dynasty_prestige_long_reign_mult = 0.5
+			pilgrimage_decision_active = yes
+			divine_marriage_opinion = 10
+			divine_marriage_piety_gain_active = yes
+		}
+		character_modifier = {
+			close_relative_opinion = 5
+		}
+		traits = {
+			virtues = { pure_blooded = 2 }
 		}
 	}
 	tenet_of_the_seven = {

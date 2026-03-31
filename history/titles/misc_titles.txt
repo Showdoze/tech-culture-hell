@@ -832,3 +832,18 @@ k_the_most_devout = {
         holder = Most_Devout_1
     }
 }
+d_Akatsuki = {
+    851.1.1 = {
+        liege = 0
+        holder = tr_naruto_Yahiko
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+        }
+    }
+    855.1.1 = { holder = tr_naruto_nagato }
+    870.1.1 = { holder = tr_naruto_obito }
+    872.1.1 = { holder = 0 }
+}
