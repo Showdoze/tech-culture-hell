@@ -1908,6 +1908,33 @@ tr_nickname_event.01 = {
 			}
 		}
     }
+#### DARK SOULS
+    option = { 
+        name =  nick_name_giver_nick_gwyns_flame
+        trigger = {
+            AND = {
+                faith = faith:dark_souls_faith
+                has_trait = zealous
+                OR = {
+                    diplomacy >= 20
+                    martial >= 20
+                    stewardship >= 20
+                    intrigue >= 20
+                    learning >= 20
+                    prowess >= 20
+                }
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_gwyns_flame }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = -1
+				has_trait = cynical
+			}
+		}
+    }
  ####Opt-Out 
     option = {
         name = tr_select_deity_cancel
