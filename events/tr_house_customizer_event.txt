@@ -107,7 +107,7 @@ house_customizer.0002 = {
 		}
 	}
 }
-house_customizer.0003 = { #Select Extinct North
+house_customizer.0003 = { #Select North
 	type = character_event
 	title = house_customizer.0003.t
 	desc = house_customizer.0003.desc
@@ -120,63 +120,39 @@ house_customizer.0003 = { #Select Extinct North
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #REED
 		name = house_customizer.0003.reed
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Reed_74 }
-		}
-		character:Reed_74 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Reed_1.house
+		remove_trait = house_customizer
+		set_father = character:Reed_1
 	}
 	option = { #MANDERLY
 		name = house_customizer.0003.manderly
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Manderly_71 }
-		}
-		character:Manderly_71 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Manderly_6.house
+		remove_trait = house_customizer
+		set_father = character:Manderly_6
 	}
 	option = { #UMBER
 		name = house_customizer.0003.Umber
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Umber_110 }
-		}
-		character:Umber_110 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Umber_1.house
+		remove_trait = house_customizer
+		set_father = character:Umber_1
 	}
 	option = { #KARSTARKS
 		name = house_customizer.0003.karstark
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Karstark_102 }
-		}
-		character:Karstark_102 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Karstark_4.house
+		remove_trait = house_customizer
+		set_father = character:Karstark_4
 	}
 	option = { #Stark
 		name = house_customizer.0003.stark
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Stark_12 }
-		}
-		character:Stark_12 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Stark_1.house
+		remove_trait = house_customizer
+		set_father = character:Stark_1
 	}
 	option = { #Bolton
-		name = house_customizer.0003.towersn
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Bolton_6 }
-		}
-		character:Bolton_6 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		name = house_customizer.0003.bolton
+		set_house = character:Bolton_1.house
+		remove_trait = house_customizer
+		set_father = character:Bolton_1
 	}
 	option = {
 		name = back_option
@@ -185,239 +161,236 @@ house_customizer.0003 = { #Select Extinct North
 		}
 	}
 }
-#Select Extinct Riverlands
-house_customizer.0004 = {
+house_customizer.0004 = { #Select Riverlands
 	type = character_event
 	title = house_customizer.0004.t
 	desc = house_customizer.0004.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #TULLY
+		name = house_customizer.0004.tully
+		set_house = character:Tully_1.house
+		remove_trait = house_customizer
+		set_father = character:Tully_1
 	}
-
-	#fisher of riverlands
-	option = {
-		name = house_customizer.0004.fisher_riverlands
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Fisher_riverlands_duplicate_1 }
-		}
-		character:Fisher_riverlands_duplicate_8 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #BLACKFISH
+		name = house_customizerblackfish
+		set_house = character:Tully_9.house
+		remove_trait = house_customizer
+		set_father = character:Tully_9
 	}
-
-	#Harroway
-	option = {
-		name = house_customizer.0004.harroway
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Harroway_5 }
-		}
-		character:Harroway_8 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #FREY
+		name = house_customizer_frey
+		set_house = character:Frey_1.house
+		remove_trait = house_customizer
+		set_father = character:Frey_1
 	}
-
-	#Justman
-	option = {
-		name = house_customizer.0004.justman
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Justman_1 }
-		}
-		character:Justman_8 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #PENNY
+		name = house_customizer_penny
+		set_house = character:Penny_16.house
+		remove_trait = house_customizer
+		set_father = character:Penny_16
 	}
-
-	#Qoherys
-	option = {
-		name = house_customizer.0004.qoherys
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Qoherys_1 }
-		}
-		character:Qoherys_4 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #Lothston
+		name = house_customizer_lothston
+		set_house = character:Lothston_16.house
+		remove_trait = house_customizer
+		set_father = character:Lothston_16
 	}
-
-	#Teague
-	option = {
-		name = house_customizer.0004.teague
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Teague_1 }
-		}
-		character:Teague_6 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #Whent
+		name = house_customizer_whent
+		set_house = character:Whent_14.house
+		remove_trait = house_customizer
+		set_father = character:Whent_14
 	}
-
-	#Towers of Harrenhal
-	option = {
-		name = house_customizer.0004.towers_of_harrenhal
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Towers_1 }
-		}
-		character:Towers_6 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #Qoherys
+		name = house_customizer_qoherys
+		set_house = character:Qoherys_1.house
+		remove_trait = house_customizer
+		set_father = character:Qoherys_1
 	}
-
-	# Back Option
+	option = { #Harroway
+		name = house_customizer_harroway
+		set_house = character:Harroway_5.house
+		remove_trait = house_customizer
+		set_father = character:Harroway_5
+	}
+	option = { #Bracken
+		name = house_customizer_bracken
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
+	}
+	option = { #Blackwood_74
+		name = house_customizer_Blackwood
+		set_house = character:Blackwood_74.house
+		remove_trait = house_customizer
+		set_father = character:Blackwood_74
+	}
 	option = {
 		name = back_option
 		trigger_event = {
 			id = house_customizer.0002
 		}
 	}
-
-	# Hook #AGOT TODO NEEDS AT LEAST ONE CHARACTER
-
 }
-
-#Select Extinct Vale
 house_customizer.0005 = {
 	type = character_event
 	title = house_customizer.0005.t
 	desc = house_customizer.0005.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #BLACKFYRE
+	    name = dynasty_Targaryen
+		set_house = character:tr_tar_1_dad.house
+		remove_trait = house_customizer
+		set_father = character:tr_tar_1_dad
 	}
-
-	#shell
-	option = {
-		name = house_customizer.0005.shell
+	option = { #BLACKFYRE
+	    name = house_Blackfyre
 		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Shell_Vale_1 }
+			age >= 14
 		}
-		character:Shell_Vale_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:tr_Daemon_Blackfyre.house
+		remove_trait = house_customizer
+		set_father = character:tr_Daemon_Blackfyre
 	}
-
-	#brightstone
 	option = {
+		name = house_Brightflame
+		trigger = {
+			age >= 9
+		}
+		set_house = character:tr_Aerion_Brightflame.house
+		remove_trait = house_customizer
+		set_father = character:tr_Aerion_Brightflame
+	}
+	option = {
+		name = house_bloodraven
+		trigger = {
+			age >= 8
+		}
+		set_house = character:Targaryen_96.house
+		remove_trait = house_customizer
+		set_father = character:Targaryen_96
+	}
+	option = {
+		name = house_Bittersteel
+		trigger = {
+			age >= 12
+		}
+		set_house = character:Targaryen_95.house
+		remove_trait = house_customizer
+		set_father = character:Targaryen_95
+	}
+	option = { #ROBSY
+		name = dynn_Rosby
+		set_house = character:Rosby_4.house
+		remove_trait = house_customizer
+		set_father = character:Rosby_4
+	}
+	option = { #Pyke
+		name = dynn_Pyle
+		set_house = character:Pyle_1.house
+		remove_trait = house_customizer
+		set_father = character:Pyle_1
+	}
+	option = { #Scales
+		name = house_Scales
+		set_house = character:Scales_1.house
+		remove_trait = house_customizer
+		set_father = character:Scales_1
+	}
+	option = { #Celtigar
+		name = dynn_Celtigar
+		set_house = character:Celtigar_2.house
+		remove_trait = house_customizer
+		set_father = character:Celtigar_2
+	}
+	option = { #Chelsted
+		name = dynn_Chelsted
+		set_house = character:Chelsted_1.house
+		remove_trait = house_customizer
+		set_father = character:Chelsted_1
+		set_mother = character:Velaryon_60
+	}
+	option = { #Velaryon
+		name = dynn_Velaryon
+		set_house = character:Velaryon_57.house
+		remove_trait = house_customizer
+		set_father = character:Velaryon_57
+	}
+	option = { #ROBSY
 		name = house_customizer.0005.brightstone
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Brightstone_1 }
-		}
-		character:Brightstone_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
 	}
-
-	# Back Option
+	option = { #ROBSY
+		name = house_customizer.0005.brightstone
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
+	}
+	option = { #ROBSY
+		name = house_customizer.0005.brightstone
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-
-#Select Extinct Crownlands
 house_customizer.0006 = {
 	type = character_event
 	title = house_customizer.0006.t
 	desc = house_customizer.0006.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
-	# Blackfyre
-	option = {
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { # Blackfyre
 		name = house_customizer.0006.blackfyre
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Targaryen_94 }
-		}
-		character:Blackfyre_14 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
 	}
-
-	# Darklyn
-	option = {
+	option = { # Darklyn
 		name = house_customizer.0006.darklyn
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Darklyn_1 }
-		}
-		character:Darklyn_47 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		set_house = character:Bracken_73.house
+		remove_trait = house_customizer
+		set_father = character:Bracken_73
 	}
-
-	# Back Option
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-
-#Select Extinct Stormlands
-house_customizer.0007 = {
+house_customizer.0007 = { #Select Extinct Stormlands
 	type = character_event
 	title = house_customizer.0007.t
 	desc = house_customizer.0007.desc
-
 	theme = family
-
-	override_background = {
-		reference = physicians_study
-	}
-
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-	}
-
-	#Durrandon
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = {
 		name = house_customizer.0007.durrandon
 		trigger = {
@@ -428,17 +401,12 @@ house_customizer.0007 = {
 		}
 		trigger_event = house_customizer.0020
 	}
-
-
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-
-##Select Extinct Dorne
-house_customizer.0008 = {
+house_customizer.0008 = { ##Select Extinct Dorne
 	type = character_event
 	title = house_customizer.0008.t
 	desc = house_customizer.0008.desc

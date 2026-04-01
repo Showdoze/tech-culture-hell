@@ -1155,7 +1155,7 @@
 	trait = trusting
 	trait = bossy
 	disallow_random_traits = yes
-	250.1.1 = { birth = yes }
+	150.1.1 = { birth = yes }
 	230.1.1 = { death = yes }
   } 
   Manderly_6 = {
@@ -1578,7 +1578,7 @@
 	female = yes
 	religion = green_cult #old_gods_wnw
 	culture = northman
-	father = Stark_21
+	father = Stark_12
 	373.1.1 = {birth = yes}
 	440.1.1 = { death = yes }
  }
@@ -2053,7 +2053,7 @@
     870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
    }
 #River lands
-  #TULLY
+ #TULLY
    Tully_10 = {
 	name = Edmure # Canon, first named Tully
 	dynasty = dynn_Tully
@@ -2113,7 +2113,7 @@
 	religion = fots_seven
 	culture = riverman_main
 	sexuality = homosexual
-	#father = Tully_67
+	father = Tully_10 #Tully_67
 	#mother = Chelsted_63
 	trait = education_martial_4
 	trait = education_martial_prowess_3
@@ -2742,8 +2742,8 @@
 	religion = fots_seven
 	culture = riverman_main
 	sexuality = heterosexual
-	father = Bracken_53
-	mother = Goodbrook_52
+	father = Bracken_135 #Bracken_53
+	#mother = Goodbrook_52
 	trait = education_martial_2
 	trait = arrogant
 	trait = just
@@ -2925,8 +2925,8 @@
 	prowess = 6
 	religion = green_cult #old_gods_wnw
 	culture = riverman_main
-	father = Blackwood_57
-	mother = Thorne_65
+	father = Blackwood_55 #Blackwood_57
+	#mother = Thorne_65
 	trait = callous
 	trait = zealous
 	781.1.1 = {birth = yes}
@@ -2945,7 +2945,7 @@
 	religion = green_cult #old_gods_wnw
 	culture = riverman_main
 	sexuality = bisexual
-	father = Blackwood_57
+	father = Blackwood_55 #Blackwood_57
 	#mother = Thorne_65
 	trait = education_diplomacy_5
 	trait = brave
@@ -6000,7 +6000,7 @@
 		dynasty_house = house_Blackfyre
 		give_nickname = nick_the_black_dragon_historical
 	}
-	896.11.22 = {
+	868.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
 			killer = Targaryen_96 # Brynden Rivers
@@ -6026,7 +6026,7 @@
 	trait = callous
 	trait = bossy
 	853.10.1 = { birth = yes }
-	865.11.22 = {
+	868.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
 			killer = Targaryen_96 # Brynden Bloodraven
@@ -6051,7 +6051,7 @@
 	trait = callous
 	trait = rowdy
 	853.10.1 = { birth = yes }
-	865.11.22 = {
+	868.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
 			killer = Targaryen_96 # Brynden Bloodraven
@@ -6116,11 +6116,7 @@
 	trait = charming
 	give_nickname = nick_the_younger
 	disallow_random_traits = yes
-	856.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-		add_character_flag = sexuality_ensure_homosexual
-	}
+	856.1.1 = {birth = yes}
 	870.12.1 = {
 		trait = brave
 		trait = lifestyle_mystic
@@ -7561,7 +7557,7 @@
 	trait = gregarious
 	trait = diplomat
 	disallow_random_traits = yes
-	8277.1.1 = {birth = yes}
+	847.1.1 = {birth = yes}
 	860.1.1 = {
 		dynasty_house = house_BaratheonDS
 		effect = {
