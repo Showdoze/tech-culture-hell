@@ -556,7 +556,7 @@
  }
  Grey_King_1 = {
 	name = The_Father # The Grey King's father
-	dynasty = dynn_Grey_King
+	dynasty = dynn_Greyiron
 	martial = 10
 	prowess = 10
 	religion = deep_cult #drowned_god
@@ -574,7 +574,7 @@
    }
  Grey_King_2 = {
 	name = The_Grey_King # Canon, The Grey King, don't leave his name blank again, it messes up the numeration of all ironborn kings
-	dynasty = dynn_Grey_King
+	dynasty = dynn_Greyiron
 	martial = 10
 	prowess = 20
 	religion = deep_cult #drowned_god
@@ -3065,6 +3065,7 @@
   }
    Spicer_1 = {
 	name = Gregor # Mentioned, Spice Trader
+	dynasty = dynn_Spicer
 	stewardship = 6
 	martial = 1
 	diplomacy = 3
@@ -3341,6 +3342,7 @@
 			}
 		}
 	}
+	831.1.1 = { add_spouse = Lannister_17 }
 	835.11.1 = { # Massacred Reynes and Tarbecks
 		effect = {
 			add_dread = monumental_dread_gain
@@ -3847,7 +3849,7 @@
 	martial = 8
 	stewardship = 9
 	prowess = 14
-	religion = old_gods_wnw
+	religion = green_cult
 	culture = first_man
 	trait = education_martial_2
 	trait = rowdy
@@ -4052,8 +4054,8 @@
 	dynasty = dynn_Merryweather
 	religion = fots_seven
 	culture = reachman
-	7819.1.1 = { birth = yes }
-	7860.1.1 = { death = yes }
+	719.1.1 = { birth = yes }
+	760.1.1 = { death = yes }
  }
   Merryweather_1 = {
 	name = Owen # Canon, a lord, Hand of the King
@@ -4064,7 +4066,7 @@
 	stewardship = 6
 	religion = fots_seven
 	culture = reachman
-	father = Merryweather_26
+	father = Merryweather_7 #Merryweather_26
 	#mother = Durwell_52
 	trait = education_diplomacy_1
 	trait = gluttonous
@@ -4320,7 +4322,7 @@
 	trait = pensive
 	trait = scholar
 	disallow_random_traits = yes
-	857.1.1 = {birth = yes}
+	853.1.1 = {birth = yes}
 	868.9.10 = { religion = green_cult } #old_gods_wnw
 	900.1.1 = {death=yes}
  }
@@ -5317,7 +5319,8 @@
 	730.1.1 = { birth = yes }
 	795.1.1 = { death = yes }
  }
- Waynwood_26 = {
+ #WAYNWOOD
+  Waynwood_26 = {
 	name = The_Hammer_of_the_Hills # Canon, ruled eastern part of Vale, slain under Ironoaks
 	dynasty = dynn_Waynwood # House uncertain
 	prowess = 9
@@ -5328,8 +5331,8 @@
 	398.1.1 = {
 		death = { death_reason = death_battle } # Battle of Ironoaks
 	}
- }
- Waynwood_1 = {
+  }
+  Waynwood_1 = {
 	name = Donnel # a lord
 	dynasty = dynn_Waynwood
 	religion = fots_seven
@@ -5338,8 +5341,8 @@
 	#mother = Leek_25
 	700.1.1 = {birth = yes}
 	820.1.1 = { death = yes }
- }
- Waynwood_76 = {
+  }
+  Waynwood_76 = {
 	name = Wylla # Semi-Canon, married Paxter Royce
 	dynasty = dynn_Waynwood
 	female = yes
@@ -5349,8 +5352,8 @@
 	#mother = Bean_44
 	803.1.1 = {birth = yes}
 	860.1.1 = { death = yes }
- }
- Waynwood_2 = {
+  }
+  Waynwood_2 = {
 	name = Gyles # a lord
 	dynasty = dynn_Waynwood
 	religion = fots_seven
@@ -5360,7 +5363,6 @@
 	816.1.1 = {birth = yes}
 	870.1.1 = { death = yes }
  }
- 
  #BAELISH
   Baelish_3 = {
 	name = Tormo # Mentioned, Braavosi Sellsword, founder
@@ -5555,7 +5557,6 @@
 	867.2.24 = { effect = { add_prestige = 700 } }
 	950.1.1 = { death = { death_reason = death_poison }}
   }
-
  #Royce
   Royce_11 = {
 	name = Yorwyck # I
@@ -5692,9 +5693,9 @@
   Royce_97 = {
 	name = Paxter # Semi-Canon
 	dynasty = dynn_Royce
-	religion = fots_oldnew
+	religion = fots_seven
 	culture = valeman_main
-	father = Royce_1 #Royce_95
+	father = Royce_18 #Royce_95
 	#mother = Belmore_39
 	760.1.1 = {birth = yes}
 	820.1.1 = { add_spouse = Waynwood_76 } # Wylla Waynwood
@@ -6764,7 +6765,7 @@
 	dynasty = dynn_Connington
 	religion = fots_seven
 	culture = stormlander_main
-	father = Connington_42
+	father = Connington_10 #Connington_42
 	#mother = Kings_Mountain_8
 	788.1.1 = {birth = yes}
 	826.1.1 = { death = yes }
@@ -7599,7 +7600,7 @@
 	trait = arrogant
 	trait = wrathful
 	disallow_random_traits = yes
-	8286.2.10 = {
+	853.2.10 = {
 		birth = yes
 		effect = {
 			add_character_flag = flag_secret_bastard

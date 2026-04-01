@@ -22,7 +22,7 @@ house_customizer.0001 = {
 	option = { #I want to select a living house to play as
 		name = house_customizer.0001.historical
 		trigger_event = {
-			id = house_customizer.0003
+			id = house_customizer.0020
 		}
 	}
 	option = { # Go back
@@ -94,10 +94,16 @@ house_customizer.0002 = {
 			id = house_customizer.0011
 		}
 	}
-	option = {#Displays Extinct Essos Houses
-		name = house_customizer.0002.essos
+	option = {#ELDER SCROLLS
+		name = house_customizer_es
 		trigger_event = {
 			id = house_customizer.0012
+		}
+	}
+	option = {#anime
+		name = house_customizer_anime
+		trigger_event = {
+			id = house_customizer.0013
 		}
 	}
 	option = {# Go back
@@ -110,7 +116,7 @@ house_customizer.0002 = {
 house_customizer.0003 = { #Select North
 	type = character_event
 	title = house_customizer.0003.t
-	desc = house_customizer.0003.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -164,7 +170,7 @@ house_customizer.0003 = { #Select North
 house_customizer.0004 = { #Select Riverlands
 	type = character_event
 	title = house_customizer.0004.t
-	desc = house_customizer.0004.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -239,10 +245,10 @@ house_customizer.0004 = { #Select Riverlands
 		}
 	}
 }
-house_customizer.0005 = {
+house_customizer.0005 = { #VALE
 	type = character_event
 	title = house_customizer.0005.t
-	desc = house_customizer.0005.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -250,14 +256,100 @@ house_customizer.0005 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { #BLACKFYRE
+	option = { # Pryor
+		name = dynn_Pryor
+		set_house = character:Pryor_6.house
+		remove_trait = house_customizer
+		set_father = character:Pryor_6
+	}
+	option = { # dynn_Symes
+		name = dynn_Symes
+		set_house = character:Symes_1.house
+		remove_trait = house_customizer
+		set_father = character:Symes_1
+	}
+	option = { # dynn_Egen
+		name = dynn_Egen
+		set_house = character:Egen_7.house
+		remove_trait = house_customizer
+		set_father = character:Egen_7
+	}
+	option = { # dynn_Rutley
+		name = dynn_Rutley
+		set_house = character:Rutley_1.house
+		remove_trait = house_customizer
+		set_father = character:Rutley_1
+	}
+	option = { # dynn_Redfort
+		name = dynn_Redfort
+		set_house = character:Redfort_6.house
+		remove_trait = house_customizer
+		set_father = character:Redfort_6
+	}
+	option = { # dynn_Wydman
+		name = dynn_Wydman
+		set_house = character:Wydman_7.house
+		remove_trait = house_customizer
+		set_father = character:Wydman_7
+	}
+	option = { # dynn_Waynwood
+		name = dynn_Waynwood
+		set_house = character:Waynwood_2.house
+		remove_trait = house_customizer
+		set_father = character:Waynwood_2
+	}
+	option = { # dynn_Baelish
+		name = dynn_Baelish
+		set_house = character:Baelish_1.house
+		remove_trait = house_customizer
+		set_father = character:Baelish_1
+	}
+	option = { # house_BaelishHH
+	    trigger = {
+			age >= 14
+		}
+		name = house_BaelishHH
+		set_house = character:Baelish_2.house
+		remove_trait = house_customizer
+		set_father = character:Baelish_2
+	}
+	option = { # dynn_Arryn
+		name = dynn_Arryn
+		set_house = character:Arryn_3.house
+		remove_trait = house_customizer
+		set_father = character:Arryn_3
+	}
+	option = { # dynn_Royce
+		name = dynn_Royce
+		set_house = character:Royce_1.house
+		remove_trait = house_customizer
+		set_father = character:Royce_1
+		set_mother = character:Royce_100
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0006 = { #CROWNLANDS
+	type = character_event
+	title = house_customizer.0006.t
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #TARGARYEAN
 	    name = dynasty_Targaryen
 		set_house = character:tr_tar_1_dad.house
 		remove_trait = house_customizer
 		set_father = character:tr_tar_1_dad
 	}
 	option = { #BLACKFYRE
-	    name = house_Blackfyre
+	    name = house_customizer_blackfyre
 		trigger = {
 			age >= 14
 		}
@@ -329,61 +421,27 @@ house_customizer.0005 = {
 		remove_trait = house_customizer
 		set_father = character:Velaryon_57
 	}
-	option = { #ROBSY
-		name = house_customizer.0005.brightstone
-		set_house = character:Bracken_73.house
+	option = { #Kettleblack
+		name = dynn_Kettleblack
+		set_house = character:Kettleblack_1.house
 		remove_trait = house_customizer
-		set_father = character:Bracken_73
+		set_father = character:Kettleblack_1
 	}
-	option = { #ROBSY
-		name = house_customizer.0005.brightstone
-		set_house = character:Bracken_73.house
+	option = { #house_Longwaters
+		name = house_Longwaters
+		set_house = character:Longwaters_1.house
 		remove_trait = house_customizer
-		set_father = character:Bracken_73
-	}
-	option = { #ROBSY
-		name = house_customizer.0005.brightstone
-		set_house = character:Bracken_73.house
-		remove_trait = house_customizer
-		set_father = character:Bracken_73
+		set_father = character:Longwaters_1
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0006 = {
-	type = character_event
-	title = house_customizer.0006.t
-	desc = house_customizer.0006.desc
-	theme = family
-	override_background = {reference = physicians_study}
-	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { # Blackfyre
-		name = house_customizer.0006.blackfyre
-		set_house = character:Bracken_73.house
-		remove_trait = house_customizer
-		set_father = character:Bracken_73
-	}
-	option = { # Darklyn
-		name = house_customizer.0006.darklyn
-		set_house = character:Bracken_73.house
-		remove_trait = house_customizer
-		set_father = character:Bracken_73
-	}
-	option = {
-		name = back_option
-		trigger_event = house_customizer.0002
-	}
-}
-house_customizer.0007 = { #Select Extinct Stormlands
+house_customizer.0007 = { #Select Stormlands
 	type = character_event
 	title = house_customizer.0007.t
-	desc = house_customizer.0007.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -391,25 +449,75 @@ house_customizer.0007 = { #Select Extinct Stormlands
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {
-		name = house_customizer.0007.durrandon
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Durrandon_1 }
-		}
-		character:Durrandon_87 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #dynn_Seaworth
+		name = dynn_Seaworth
+		set_house = character:Seaworth_1.house
+		remove_trait = house_customizer
+		set_father = character:Seaworth_1
+	}
+	option = { #Tarth
+		name = dynn_Tarth
+		set_house = character:Tarth_1.house
+		remove_trait = house_customizer
+		set_father = character:Tarth_1
+	}
+	option = { #dynn_Connington
+		name = dynn_Connington
+		set_house = character:Connington_2.house
+		remove_trait = house_customizer
+		set_father = character:Connington_2
+	}
+	option = { #dynn_Wormwood
+		name = dynn_Wormwood
+		set_house = character:Wormwood_1.house
+		remove_trait = house_customizer
+		set_father = character:Wormwood_1
+	}
+	option = { #dynn_Staedmon
+		name = dynn_Staedmon
+		set_house = character:Staedmon_1.house
+		remove_trait = house_customizer
+		set_father = character:Staedmon_1
+	}
+	option = { #dynn_Selmy
+		name = dynn_Selmy
+		set_house = character:Selmy_4.house
+		remove_trait = house_customizer
+		set_father = character:Selmy_4
+	}
+	option = { #dynn_Dondarrion
+		name = dynn_Dondarrion
+		set_house = character:Dondarrion_1.house
+		remove_trait = house_customizer
+		set_father = character:Dondarrion_1
+	}
+	option = { #dynn_Estermont
+		name = dynn_Estermont
+		set_house = character:Estermont_1.house
+		remove_trait = house_customizer
+		set_father = character:Estermont_1
+	}
+	option = { #dynn_Baratheon
+		name = dynn_Baratheon
+		set_house = character:Baratheon_2.house
+		remove_trait = house_customizer
+		set_father = character:Baratheon_2
+	}
+	option = { #house_BaratheonDS
+		name = house_BaratheonDS
+		set_house = character:Baratheon_3.house
+		remove_trait = house_customizer
+		set_father = character:Baratheon_3
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0008 = { ##Select Extinct Dorne
+house_customizer.0008 = { ##Select Dorne
 	type = character_event
 	title = house_customizer.0008.t
-	desc = house_customizer.0008.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -417,26 +525,21 @@ house_customizer.0008 = { ##Select Extinct Dorne
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	# Dryland
-	option = {
-		name = house_customizer.0008.dryland
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Dryland_1 }
-		}
-		character:Dryland_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #house_Martell
+		name = house_Martell
+		set_house = character:Martell_4.house
+		remove_trait = house_customizer
+		set_father = character:Martell_4
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0009 = { #Select Extinct Reach
+house_customizer.0009 = { #Select Reach
 	type = character_event
 	title = house_customizer.0009.t
-	desc = house_customizer.0009.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -444,26 +547,112 @@ house_customizer.0009 = { #Select Extinct Reach
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {#Gardener
-		name = house_customizer.0009.gardener
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Gardener_1 }
-		}
-		character:Gardener_95 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = {#dynn_Hunt
+		name = dynn_Hunt
+		set_house = character:Hunt_8.house
+		remove_trait = house_customizer
+		set_father = character:Hunt_8
+	}
+	option = {#dynn_Wythers
+		name = dynn_Wythers
+		set_house = character:Wythers_10.house
+		remove_trait = house_customizer
+		set_father = character:Wythers_10
+	}
+	option = {#dynn_Beesbury
+		name = dynn_Beesbury
+		set_house = character:Beesbury_1.house
+		remove_trait = house_customizer
+		set_father = character:Beesbury_1
+	}
+	option = {#dynn_Rowan
+		name = dynn_Rowan
+		set_house = character:Rowan_6.house
+		remove_trait = house_customizer
+		set_mother = character:Rowan_6
+	}
+	option = {#dynn_Oakheart
+		name = dynn_Oakheart
+		set_house = character:Oakheart_5.house
+		remove_trait = house_customizer
+		set_father = character:Oakheart_5
+	}
+	option = {#dynn_Bulwer
+		name = dynn_Bulwer
+		set_house = character:Bulwer_6.house
+		remove_trait = house_customizer
+		set_father = character:Bulwer_6
+	}
+	option = {#dynn_Fossoway
+		name = dynn_Fossoway
+		set_house = character:Fossoway_8.house
+		remove_trait = house_customizer
+		set_mother = character:Fossoway_8
+	}
+	option = {#dynn_Crane
+		name = dynn_Crane
+		set_house = character:Crane_7.house
+		remove_trait = house_customizer
+		set_father = character:Crane_7
+	}
+	option = {#dynn_Merryweather
+		name = dynn_Merryweather
+		set_house = character:Merryweather_2.house
+		remove_trait = house_customizer
+		set_father = character:Merryweather_2
+	}
+	option = {#dynn_Peake
+		name = dynn_Peake
+		set_house = character:Peake_1.house
+		remove_trait = house_customizer
+		set_father = character:Peake_1
+	}
+	option = {#dynn_Tarly
+		name = dynn_Tarly
+		set_house = character:Tarly_1.house
+		remove_trait = house_customizer
+		set_father = character:Tarly_1
+		set_mother = character:Florent_8
+	}
+	option = {#Florent
+		name = dynn_Florent
+		set_house = character:Florent_2.house
+		remove_trait = house_customizer
+		set_father = character:Florent_2
+	}
+	option = {#dynn_Gardener
+		name = dynn_Gardener
+		set_house = character:Gardener_95.house
+		remove_trait = house_customizer
+		set_father = character:Gardener_95
+	}
+	option = {#dynn_Redwyne
+		name = dynn_Redwyne
+		set_house = character:Redwyne_1.house
+		remove_trait = house_customizer
+		set_father = character:Redwyne_1
+	}
+	option = {#dynn_Tyrell
+		name = dynn_Tyrell
+		set_house = character:Tyrell_8.house
+		remove_trait = house_customizer
+		set_father = character:Tyrell_8
+	}
+	option = {#dynn_Hightower
+		name = dynn_Hightower
+		set_house = character:Hightower_5.house
+		remove_trait = house_customizer
+		set_father = character:Hightower_5
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-house_customizer.0010 = { #Select Extinct Westerlands
+house_customizer.0010 = { #Select Westerlands
 	type = character_event
 	title = house_customizer.0010.t
-	desc = house_customizer.0010.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -471,49 +660,76 @@ house_customizer.0010 = { #Select Extinct Westerlands
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	#Casterly
-	option = {
-		name = house_customizer.0010.casterly
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Casterly_1 }
-		}
-		character:Casterly_7 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #dynn_Payne
+		name = dynn_Payne
+		set_house = character:Payne_6.house
+		remove_trait = house_customizer
+		set_father = character:Payne_6
 	}
-	#Parren
-	option = {
-		name = house_customizer.0010.parren
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Parren_1 }
-		}
-		character:Parren_17 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #dynn_Sarwyck
+		name = dynn_Sarwyck
+		set_house = character:Sarwyck_100.house
+		remove_trait = house_customizer
+		set_father = character:Sarwyck_100
 	}
-	#reyne
-	option = {
-		name = house_customizer.0010.reyne
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Reyne_1 }
-		}
-		character:Reyne_45 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #dynn_Brax
+		name = dynn_Brax
+		set_house = character:Brax_10.house
+		remove_trait = house_customizer
+		set_father = character:Brax_10
+	}
+	option = { #dynn_Spicer
+		name = dynn_Spicer
+		set_house = character:Spicer_1.house
+		remove_trait = house_customizer
+		set_father = character:Spicer_1
+	}
+	option = { #dynn_Tarbeck
+		name = dynn_Tarbeck
+		set_house = character:Tarbeck_27.house
+		remove_trait = house_customizer
+		set_father = character:Tarbeck_27
+		set_mother = character:Reyne_46
+	}
+	option = { #dynn_Reyne
+		name = dynn_Reyne
+		set_house = character:Reyne_45.house
+		remove_trait = house_customizer
+		set_father = character:Reyne_45
+	}
+	option = { #dynn_Lannister
+		name = dynn_Lannister
+		set_house = character:Lannister_1.house
+		remove_trait = house_customizer
+		set_father = character:Lannister_1
+	}
+	option = { #dynn_Clegane
+		name = dynn_Clegane
+		set_house = character:Clegane_2.house
+		remove_trait = house_customizer
+		set_father = character:Clegane_2
+	}
+	option = { #dynn_Falwell
+		name = dynn_Falwell
+		set_house = character:Falwell_6.house
+		remove_trait = house_customizer
+		set_father = character:Falwell_6
+	}
+	option = { #dynn_Crakehall
+		name = dynn_Crakehall
+		set_house = character:Crakehall_1.house
+		remove_trait = house_customizer
+		set_father = character:Crakehall_1
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-house_customizer.0011 = { #Select extinct Ironborn
+house_customizer.0011 = { #Select Ironborn
 	type = character_event
 	title = house_customizer.0011.t
-	desc = house_customizer.0011.desc
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -521,27 +737,37 @@ house_customizer.0011 = { #Select extinct Ironborn
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	# Greyiron
-	option = {
-		name = house_customizer.0011.greyiron
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Greyiron_1 }
-		}
-		character:Greyiron_32 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+	option = { #dynn_Greyiron
+		name = dynn_Greyiron
+		set_house = character:Greyiron_32.house
+		remove_trait = house_customizer
+		set_father = character:Greyiron_32
 	}
 	option = { # Hoare
-		name = house_customizer.0011.hoare
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Hoare_1 }
-		}
-		character:Hoare_31 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		name = house_customizer_hoare
+		set_house = character:Hoare_31.house
+		remove_trait = house_customizer
+		set_father = character:Hoare_31
 	}
+	option = { #dynn_Harlaw
+		name = dynn_Harlaw
+		set_house = character:Harlaw_1.house
+		remove_trait = house_customizer
+		set_father = character:Harlaw_1
+	}
+	option = { #dynn_Greyjoy
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
+		set_mother = character:Harlaw_8
+	}
+	#option = { #  Crow's Eye
+	#	name = dynn_Crakehall
+	#	set_house = character:Greyjoy_6.house
+	#	remove_trait = house_customizer
+	#	set_father = character:Greyjoy_6
+	#}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
@@ -549,8 +775,8 @@ house_customizer.0011 = { #Select extinct Ironborn
 }
 house_customizer.0012 = {
 	type = character_event
-	title = house_customizer.0012.t
-	desc = house_customizer.0012.desc
+	title = house_customizer_es_select
+	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
 	left_portrait = {
@@ -558,99 +784,256 @@ house_customizer.0012 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	# Varezys
 	option = {
-		name = house_customizer.0012.varezys
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Varezys_1 }
-		}
-		custom_tooltip = house_customizer.0012.varezys.tt
-		character:Varezys_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
 	}
-	# Mataeryon
 	option = {
-		name = house_customizer.0012.mataeryon
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Mataeryon_1 }
-		}
-		character:Mataeryon_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
 	}
-	# Belaerys
 	option = {
-		name = house_customizer.0012.belaerys
-		trigger = {
-			agot_is_house_extinct_history_trigger = { FOUNDER = character:Belaerys_1 }
-		}
-		character:Belaerys_1 = {
-			save_scope_as = hc_selection
-		}
-		trigger_event = house_customizer.0020
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
-
 }
-house_customizer.0020 = {
+house_customizer.0013 = {
 	type = character_event
-	title = house_customizer.0020.t
-	desc = house_customizer.0020.desc
+	title = house_customizer_select_anime
+	desc = Select_Your_House
 	theme = family
-	override_background = {reference = study}
+	override_background = {reference = physicians_study}
 	left_portrait = {
 		character = root
 		animation = throne_room_writer
 	}
-	immediate = {
-		play_music_cue = "mx_cue_succession"
-		every_held_title = { set_coa = scope:hc_selection.house }
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #UCHIHA
+		name = house_uchiha
+		set_house = character:tr_naruto_fugaku.house
+		remove_trait = house_customizer
+		set_father = character:tr_naruto_fugaku
+		set_mother = character:tr_naruto_mikoto
+		add_trait = start_uchiha
 	}
-	option = { #I want to play as their child
-		name = house_customizer.0020.b
-		trigger = { scope:hc_selection = { is_adult = yes } }
-		else_if = { # You selected a father
-			limit = { scope:hc_selection = { is_male = yes } }
-			set_house = scope:hc_selection.house
-			set_father = scope:hc_selection
-			if = {
-				limit = { # Check for and set valid mother
-					scope:hc_selection.primary_spouse ?= {
-						is_female = yes
-						is_adult = yes
-					}
-				}
-				set_mother = scope:hc_selection.primary_spouse
-			}
-		}
-		else = { # You selected a mother
-			set_house = scope:hc_selection.house
-			set_mother = scope:hc_selection
-			if = {
-				limit = { # Check for and set valid father
-					scope:hc_selection.primary_spouse ?= {
-						is_male = yes
-						is_adult = yes
-					}
-				}
-				set_father = scope:hc_selection.primary_spouse
-			}
-		}
-		hidden_effect = { remove_trait = house_customizer }
-		# Remind them of the option
-		show_as_unavailable = { always = yes }
-	}
-	# I want to choose a different house
 	option = {
-		name = house_customizer.0020.back
-		custom_tooltip = house_customizer.0020.back.tt
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
+	}
+	option = {
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_5.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_5
+	}
+	option = {
+		name = back_option
 		trigger_event = house_customizer.0002
-		every_held_title = { set_coa = scope:root.house }
+	}
+}
+house_customizer.0020 = {
+	type = character_event
+	title = Select_Region
+	desc = select_historical_house
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = {#Displays Extinct Northern Houses
+		name = house_customizer.0002.northern
+		trigger_event = {
+			id = house_customizer.0003
+		}
+	}
+	option = {#EASTERN ERUOPE
+		name = house_customizer_eastern_europe
+		trigger_event = {
+			id = house_customizer.0024
+		}
+	}
+	option = {#South EUROPE
+		name = house_customizer_south_europe
+		trigger_event = {
+			id = house_customizer.0025
+		}
+	}
+	option = {#Western EUROPE
+		name = house_customizer_western_europe
+		trigger_event = {
+			id = house_customizer.0026
+		}
+	}
+	option = {#Displays Extinct Stormlander Houses
+		name = house_customizer.0002.stormlands
+		trigger_event = {
+			id = house_customizer.0007
+		}
+	}
+	option = {#Displays Extinct Dorne Houses
+		name = house_customizer.0002.dorne
+		trigger_event = {
+			id = house_customizer.0008
+		}
+	}
+	option = {#Displays Extinct Dorne Houses
+		name = house_customizer.0002.reach
+		trigger_event = {
+			id = house_customizer.0009
+		}
+	}
+	option = {#AFRICA
+		name = house_customizer_africa
+		trigger_event = {
+			id = house_customizer.0030
+		}
+	}
+	option = {#Displays Extinct Ironborn Houses
+		name = house_customizer.0002.ironborn
+		trigger_event = {
+			id = house_customizer.0011
+		}
+	}
+	option = {#NEAR EAST
+		name = house_customizer_near_east
+		trigger_event = {
+			id = house_customizer.0032
+		}
+	}
+	option = {# Go back
+		name = back_option
+		trigger_event = {
+			id = house_customizer.0001
+		}
+	}
+}
+house_customizer.0024 = { #EASTERN ERUOPE
+	type = character_event
+	title = house_customizer_select_eastern_europe
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #Rurik
+	    name = Rurik
+		set_house = character:40605.house
+		remove_trait = house_customizer
+		set_father = character:40605
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0025 = { #Southern ERUOPE
+	type = character_event
+	title = house_customizer_select_south_europe
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #Julio-Claudian
+	    name = julio_claudian
+		set_house = character:145287.house
+		remove_trait = house_customizer
+		set_father = character:145287
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0026 = { #Western ERUOPE
+	type = character_event
+	title = house_customizer_select_western_europe
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #542 ME_rovech
+	    name = ME_rovech
+		set_house = character:168707.house
+		remove_trait = house_customizer
+		set_father = character:168707
+	}
+	option = {  #house_asturias
+	    name = house_asturias
+		set_house = character:70006.house
+		remove_trait = house_customizer
+		set_father = character:70006
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0030 = { #AFRICA
+	type = character_event
+	title = house_customizer_select_africa
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #SOLOMINID
+	    name = SOLOMINID
+		set_house = character:167707.house
+		remove_trait = house_customizer
+		set_father = character:167707
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0032 = { #NEAR EAST
+	type = character_event
+	title = house_customizer_select_near_east
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #1029100 Sassanid
+		name = Sassanid
+		set_house = character:1059969.house
+		remove_trait = house_customizer
+		set_father = character:1059969
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
 	}
 }
