@@ -784,30 +784,24 @@ house_customizer.0012 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {
-		name = dynn_Greyjoy
-		set_house = character:Greyjoy_5.house
+	option = { #telvanni
+		name = telvanni
+		set_house = character:telvayn_91.house
 		remove_trait = house_customizer
-		set_father = character:Greyjoy_5
+		set_father = character:telvayn_91
 	}
-	option = {
-		name = dynn_Greyjoy
-		set_house = character:Greyjoy_5.house
+	option = { #tr_dagothur
+		name = Dagoth
+		set_house = character:tr_dagothur.house
 		remove_trait = house_customizer
-		set_father = character:Greyjoy_5
-	}
-	option = {
-		name = dynn_Greyjoy
-		set_house = character:Greyjoy_5.house
-		remove_trait = house_customizer
-		set_father = character:Greyjoy_5
+		set_father = character:tr_dagothur
 	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0013 = {
+house_customizer.0013 = { #ANIME
 	type = character_event
 	title = house_customizer_select_anime
 	desc = Select_Your_House
@@ -826,11 +820,11 @@ house_customizer.0013 = {
 		set_mother = character:tr_naruto_mikoto
 		add_trait = start_uchiha
 	}
-	option = {
-		name = dynn_Greyjoy
-		set_house = character:Greyjoy_5.house
+	option = { #house_senju
+		name = Senju
+		set_house = character:tr_naruto_Kawarama.house
 		remove_trait = house_customizer
-		set_father = character:Greyjoy_5
+		set_father = character:tr_naruto_Kawarama
 	}
 	option = {
 		name = dynn_Greyjoy
@@ -938,6 +932,12 @@ house_customizer.0024 = { #EASTERN ERUOPE
 		remove_trait = house_customizer
 		set_father = character:40605
 	}
+	option = { #Piast
+	    name = Piast
+		set_house = character:82235.house
+		remove_trait = house_customizer
+		set_father = character:82235
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
@@ -959,6 +959,18 @@ house_customizer.0025 = { #Southern ERUOPE
 		set_house = character:145287.house
 		remove_trait = house_customizer
 		set_father = character:145287
+	}
+	option = { #Herakleidon
+	    name = Herakleidon
+		set_house = character:70506.house
+		remove_trait = house_customizer
+		set_father = character:70506
+	}
+	option = {  #Constantinus
+	    name = Constantinus
+		set_house = character:145237.house
+		remove_trait = house_customizer
+		set_father = character:145237
 	}
 	option = {
 		name = back_option
@@ -1031,6 +1043,12 @@ house_customizer.0032 = { #NEAR EAST
 		set_house = character:1059969.house
 		remove_trait = house_customizer
 		set_father = character:1059969
+	}
+	option = { #Parthian 100685
+		name = Parthian
+		set_house = character:159579.house
+		remove_trait = house_customizer
+		set_father = character:159579
 	}
 	option = {
 		name = back_option
