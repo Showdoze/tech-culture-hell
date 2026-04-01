@@ -213,7 +213,7 @@ convert_resources_events_root.0 = { #root
         name = convert_resources_events_provisions_sell
         trigger = {
             government_is_landless_adventurer = yes
-            provisions >= 1000
+            domicile.provisions >= 100
         }
         custom_tooltip = convert_resources_events_provisions_tip
         trigger_event = {
@@ -1295,6 +1295,9 @@ convert_resources_events_root.71 = { #provisions sell
 
     option = {
         name = convert_resources_events_provisions_sell_s1
+        trigger = {
+            domicile.provisions >= 200
+        }
         domicile = {
             change_provisions = -200
         }
@@ -1313,6 +1316,9 @@ convert_resources_events_root.71 = { #provisions sell
 
     option = {
         name = convert_resources_events_provisions_sell_s2
+        trigger = {
+            domicile.provisions >= 500
+        }
         domicile = {
             change_provisions = -500
         }
@@ -1331,6 +1337,9 @@ convert_resources_events_root.71 = { #provisions sell
 
     option = {
         name = convert_resources_events_provisions_sell_s3
+        trigger = {
+            domicile.provisions >= 1000
+        }
         domicile = {
             change_provisions = -1000
         }
