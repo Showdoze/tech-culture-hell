@@ -96,7 +96,7 @@ tr_select_deity.01 = {
                         culture = culture:gith
                         culture = culture:halfling
                         faith = faith:imperial_cult
-                    }    
+                    }
                 }
                 desc = god_voice_select_decision
             }
@@ -208,8 +208,8 @@ tr_select_deity.01 = {
         character = root
         animation = personality_rational
     }
- ######DARK SOULS
-     option = {
+######DARK SOULS
+    option = {
         name = ds1_select_covenant_aldrich
         trigger = {
             AND = {
@@ -228,14 +228,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_aldrich
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 1
-				has_trait = comfort_eater
-			}
-		}
+            base = 1
+            modifier = {
+                add = 1
+                has_trait = comfort_eater
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_blue
         trigger = {
             AND = {
@@ -254,14 +254,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_blue
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_darkmoon
         trigger = {
             AND = {
@@ -280,14 +280,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_darkmoon
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_farron
         trigger = {
             AND = {
@@ -306,14 +306,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_farron
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_moundmakers
         trigger = {
             AND = {
@@ -332,26 +332,26 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_moundmakers
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lunatic_1
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = lunatic_genetic
-			}
+                add = 5
+                has_trait = lunatic_1
+            }
             modifier = {
-				add = 5
-				has_trait = possessed_1
-			}
+                add = 5
+                has_trait = lunatic_genetic
+            }
             modifier = {
-				add = 5
-				has_trait = possessed_genetic
-			}
-		}
+                add = 5
+                has_trait = possessed_1
+            }
+            modifier = {
+                add = 5
+                has_trait = possessed_genetic
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_rosaria
         trigger = {
             AND = {
@@ -370,14 +370,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_rosaria
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_sentinels
         trigger = {
             AND = {
@@ -396,14 +396,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_sentinels
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_sunlight
         trigger = {
             AND = {
@@ -422,14 +422,14 @@ tr_select_deity.01 = {
         }
         add_trait = ds_covenant_sunlight
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = ds1_select_covenant_reset
         trigger = {
             AND = {
@@ -455,8 +455,8 @@ tr_select_deity.01 = {
         remove_trait = ds_covenant_moundmakers
         remove_trait = ds_covenant_aldrich
     }
- #####DWEMER
-     option = {
+#####DWEMER
+    option = {
         name = dwemer_choose_study_learning
         trigger = {
             AND = {
@@ -468,38 +468,38 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_learning
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_learning_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_learning_2
-			}
+                add = 5
+                has_trait = education_learning_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_learning_3
-			}
+                add = 10
+                has_trait = education_learning_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_learning_4
-			}
+                add = 15
+                has_trait = education_learning_3
+            }
             modifier = {
-				add = 50
-				has_trait = education_learning_5
-			}
+                add = 20
+                has_trait = education_learning_4
+            }
             modifier = {
-				add = 5
-				has_trait = scholar
-			}
+                add = 50
+                has_trait = education_learning_5
+            }
             modifier = {
-				add = 5
-				has_trait = theologian
-			}
-		}
+                add = 5
+                has_trait = scholar
+            }
+            modifier = {
+                add = 5
+                has_trait = theologian
+            }
+        }
     }
-     option = {
+    option = {
         name = dwemer_choose_study_martial
         trigger = {
             AND = {
@@ -511,38 +511,38 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_martial
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_martial_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_martial_2
-			}
+                add = 5
+                has_trait = education_martial_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_martial_3
-			}
+                add = 10
+                has_trait = education_martial_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_martial_4
-			}
+                add = 15
+                has_trait = education_martial_3
+            }
             modifier = {
-				add = 50
-				has_trait = education_martial_5
-			}
+                add = 20
+                has_trait = education_martial_4
+            }
             modifier = {
-				add = 5
-				has_trait = strategist
-			}
+                add = 50
+                has_trait = education_martial_5
+            }
             modifier = {
-				add = 5
-				has_trait = gallant
-			}
-		}
+                add = 5
+                has_trait = strategist
+            }
+            modifier = {
+                add = 5
+                has_trait = gallant
+            }
+        }
     }
-     option = {
+    option = {
         name = dwemer_choose_study_steward
         trigger = {
             AND = {
@@ -554,42 +554,42 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_steward
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_stewardship_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_stewardship_2
-			}
+                add = 5
+                has_trait = education_stewardship_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_stewardship_3
-			}
+                add = 10
+                has_trait = education_stewardship_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_stewardship_4
-			}
+                add = 15
+                has_trait = education_stewardship_3
+            }
             modifier = {
-				add = 50
-				has_trait = education_stewardship_5
-			}
+                add = 20
+                has_trait = education_stewardship_4
+            }
             modifier = {
-				add = 5
-				has_trait = administrator
-			}
+                add = 50
+                has_trait = education_stewardship_5
+            }
             modifier = {
-				add = 5
-				has_trait = architect
-			}
+                add = 5
+                has_trait = administrator
+            }
             modifier = {
-				add = 5
-				has_trait = avaricious
-			}
-		}
+                add = 5
+                has_trait = architect
+            }
+            modifier = {
+                add = 5
+                has_trait = avaricious
+            }
+        }
     }
-     option = {
+    option = {
         name = dwemer_choose_study_health
         trigger = {
             AND = {
@@ -601,30 +601,30 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_health
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_martial_prowess_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_martial_prowess_2
-			}
+                add = 5
+                has_trait = education_martial_prowess_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_martial_prowess_3
-			}
+                add = 10
+                has_trait = education_martial_prowess_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_martial_prowess_4
-			}
+                add = 15
+                has_trait = education_martial_prowess_3
+            }
             modifier = {
-				add = 5
-				has_trait = whole_of_body
-			}
+                add = 20
+                has_trait = education_martial_prowess_4
+            }
+            modifier = {
+                add = 5
+                has_trait = whole_of_body
+            }
         }
     }
-     option = {
+    option = {
         name = dwemer_choose_study_darkness
         trigger = {
             AND = {
@@ -636,42 +636,42 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_darkness
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_intrigue_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_intrigue_2
-			}
+                add = 5
+                has_trait = education_intrigue_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_intrigue_3
-			}
+                add = 10
+                has_trait = education_intrigue_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_intrigue_4
-			}
+                add = 15
+                has_trait = education_intrigue_3
+            }
             modifier = {
-				add = 50
-				has_trait = education_intrigue_5
-			}
+                add = 20
+                has_trait = education_intrigue_4
+            }
             modifier = {
-				add = 5
-				has_trait = schemer
-			}
+                add = 50
+                has_trait = education_intrigue_5
+            }
             modifier = {
-				add = 5
-				has_trait = seducer
-			}
+                add = 5
+                has_trait = schemer
+            }
             modifier = {
-				add = 5
-				has_trait = torturer
-			}
-		}
+                add = 5
+                has_trait = seducer
+            }
+            modifier = {
+                add = 5
+                has_trait = torturer
+            }
+        }
     }
-     option = {
+    option = {
         name = dwemer_choose_study_diplomacy
         trigger = {
             AND = {
@@ -683,43 +683,43 @@ tr_select_deity.01 = {
         }
         add_character_modifier = follow_diplomacy
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = education_diplomacy_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = education_diplomacy_2
-			}
+                add = 5
+                has_trait = education_diplomacy_1
+            }
             modifier = {
-				add = 15
-				has_trait = education_diplomacy_3
-			}
+                add = 10
+                has_trait = education_diplomacy_2
+            }
             modifier = {
-				add = 20
-				has_trait = education_diplomacy_4
-			}
+                add = 15
+                has_trait = education_diplomacy_3
+            }
             modifier = {
-				add = 50
-				has_trait = education_diplomacy_5
-			}
+                add = 20
+                has_trait = education_diplomacy_4
+            }
             modifier = {
-				add = 5
-				has_trait = diplomat
-			}
+                add = 50
+                has_trait = education_diplomacy_5
+            }
             modifier = {
-				add = 5
-				has_trait = family_first
-			}
+                add = 5
+                has_trait = diplomat
+            }
             modifier = {
-				add = 5
-				has_trait = lifestyle_reveler
-			}
-		}
+                add = 5
+                has_trait = family_first
+            }
+            modifier = {
+                add = 5
+                has_trait = lifestyle_reveler
+            }
+        }
     }
- ##### LUNACY
-     option = {
+##### LUNACY
+    option = {
         name = insanity_choose_deity_cthulhu
         trigger = {
             AND = {
@@ -738,18 +738,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_cthulhu
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = lunatic_1
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = lunatic_genetic
-			}
-		}
+                add = 10
+                has_trait = lunatic_1
+            }
+            modifier = {
+                add = 10
+                has_trait = lunatic_genetic
+            }
+        }
     }
-     option = {
+    option = {
         name = insanity_choose_deity_hastur
         trigger = {
             AND = {
@@ -766,15 +766,43 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hastur
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
- ##### SATANISM
-     option = {
+    option = {
+        name = insanity_choose_deity_quake
+        trigger = {
+            AND = {
+                NOT = {
+                    has_trait = follow_quake
+                }
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = possessed_genetic
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                }
+            }
+        }
+        add_trait = follow_quake
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 4
+                has_trait = ambitious
+            }
+            modifier = {
+                add = 5
+                has_trait = strong
+            }
+        }
+    }
+##### SATANISM
+    option = {
         name = satanism_choose_demon_baphomet
         trigger = {
             AND = {
@@ -793,14 +821,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_baphomet
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_samael
         trigger = {
             AND = {
@@ -819,14 +847,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_samael
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_lucifer
         trigger = {
             AND = {
@@ -845,14 +873,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_lucifer
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_abaddon
         trigger = {
             AND = {
@@ -871,14 +899,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_abaddon
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_belzebulb
         trigger = {
             AND = {
@@ -897,14 +925,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_belzebulb
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_belphegor
         trigger = {
             AND = {
@@ -923,14 +951,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_belphegor
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_asmodeus
         trigger = {
             AND = {
@@ -949,14 +977,14 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_asmodeus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = satanism_choose_demon_maledict
         trigger = {
             AND = {
@@ -975,15 +1003,15 @@ tr_select_deity.01 = {
         }
         add_character_modifier = satanism_follow_maledict
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
- ####MAGE
-     option = {
+####MAGE
+    option = {
         name = mage_select_water
         trigger = {
             AND = {
@@ -995,14 +1023,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_water
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = mage_select_fire
         trigger = {
             AND = {
@@ -1014,14 +1042,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_fire
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = mage_select_air
         trigger = {
             AND = {
@@ -1033,14 +1061,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_air
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = mage_select_earth
         trigger = {
             AND = {
@@ -1052,14 +1080,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_earth
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = mage_select_death
         trigger = {
             AND = {
@@ -1071,15 +1099,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mage_death
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
- ######Roman PAGAN
-     option = {
+######Roman PAGAN
+    option = {
         name = god_choice_sol
         trigger = {
             AND = {
@@ -1091,14 +1119,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_sol
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = administrator
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = administrator
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_mars
         trigger = {
             AND = {
@@ -1110,14 +1138,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mars
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = strategist
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = strategist
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_jove
         trigger = {
             AND = {
@@ -1129,14 +1157,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_jupiter
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = family_first
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = family_first
+            }
+        }
     }
- ######Greek PAGAN
+######Greek PAGAN
     option = {
         name = god_choice_zeus
         trigger = {
@@ -1149,12 +1177,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_zeus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = administrator
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = administrator
+            }
+        }
     }
     option = {
         name = god_choice_hera
@@ -1168,12 +1196,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hera
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = strategist
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = strategist
+            }
+        }
     }
     option = {
         name = god_choice_athena
@@ -1187,12 +1215,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_athena
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = strategist
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = strategist
+            }
+        }
     }
     option = {
         name = god_choice_ares
@@ -1206,12 +1234,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_ares
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_blademaster
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_blademaster
+            }
+        }
     }
     option = {
         name = god_choice_demeter
@@ -1225,12 +1253,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_demeter
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_gardener
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_gardener
+            }
+        }
     }
     option = {
         name = god_choice_posidion
@@ -1244,12 +1272,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_posidion
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = viking
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = viking
+            }
+        }
     }
     option = {
         name = god_choice_dionysos
@@ -1263,20 +1291,20 @@ tr_select_deity.01 = {
         }
         add_trait = follow_dionysos
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = drunkard
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = gluttonous
-			}
+                add = 5
+                has_trait = drunkard
+            }
             modifier = {
-				add = 5
-				has_trait = lifestyle_reveler
-			}
-		}
+                add = 5
+                has_trait = gluttonous
+            }
+            modifier = {
+                add = 5
+                has_trait = lifestyle_reveler
+            }
+        }
     }
     option = {
         name = god_choice_hephestios
@@ -1290,12 +1318,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hephestios
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = architect
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = architect
+            }
+        }
     }
     option = {
         name = god_choice_hermes
@@ -1309,12 +1337,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hermes
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_wayfarer
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_wayfarer
+            }
+        }
     }
     option = {
         name = god_choice_apollon
@@ -1328,12 +1356,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_apollon
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_physician
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_physician
+            }
+        }
     }
     option = {
         name = god_choice_aphrodite
@@ -1347,12 +1375,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_aphrodite
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = knight_errant
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = knight_errant
+            }
+        }
     }
     option = {
         name = god_choice_artemis
@@ -1366,12 +1394,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_artemis
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_hunter
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_hunter
+            }
+        }
     }
     option = {
         name = god_choice_herakles
@@ -1385,12 +1413,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_herakles
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = gallant
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = gallant
+            }
+        }
     }
     option = {
         name = god_choice_asklepios
@@ -1404,14 +1432,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_asklepios
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = family_first
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = family_first
+            }
+        }
     }
- ###NORSE
+###NORSE
     option = { #ODIn
         name = god_choice_odin
         trigger = {
@@ -1424,16 +1452,16 @@ tr_select_deity.01 = {
         }
         add_trait = follow_odin
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = schemer
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = one_eyed
-			}
-		}
+                add = 10
+                has_trait = schemer
+            }
+            modifier = {
+                add = 5
+                has_trait = one_eyed
+            }
+        }
     }
     option = { #THOR
         name = god_choice_thor
@@ -1447,15 +1475,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_thor
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = lifestyle_blademaster
-			}
-		}
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = lifestyle_blademaster
+            }
+        }
     }
- ####Kemet
-     option = {
+####Kemet
+    option = {
         name = god_choice_anubis
         trigger = {
             AND = {
@@ -1470,14 +1498,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_anubis
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = just
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = just
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_seth
         trigger = {
             AND = {
@@ -1492,14 +1520,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_seth
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = schemer
-			}
-		}
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = schemer
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_horus
         trigger = {
             AND = {
@@ -1514,14 +1542,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_horus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = one_eyed
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = one_eyed
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_isis
         trigger = {
             AND = {
@@ -1536,14 +1564,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_isis
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_osiris
         trigger = {
             AND = {
@@ -1558,14 +1586,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_osiris
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_amun
         trigger = {
             AND = {
@@ -1580,14 +1608,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_amun
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_bastet
         trigger = {
             AND = {
@@ -1602,14 +1630,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_bastet
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_hathor
         trigger = {
             AND = {
@@ -1624,15 +1652,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_hathor
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
- ####aztec
-     option = {
+####aztec
+    option = {
         name = god_choice_huitzilopochtli
         trigger = {
             AND = {
@@ -1647,14 +1675,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_huitzilopochtli
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tlaloc
         trigger = {
             AND = {
@@ -1669,14 +1697,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaloc
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tonatiuh
         trigger = {
             AND = {
@@ -1691,14 +1719,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tonatiuh
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tezcatlipoca
         trigger = {
             AND = {
@@ -1713,14 +1741,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tezcatlipoca
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_chalchiuhtlicue
         trigger = {
             AND = {
@@ -1735,14 +1763,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_chalchiuhtlicue
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_centeotl
         trigger = {
             AND = {
@@ -1757,14 +1785,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_centeotl
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_quetzalcoatl
         trigger = {
             AND = {
@@ -1779,14 +1807,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_quetzalcoatl
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_xipe_totec
         trigger = {
             AND = {
@@ -1801,14 +1829,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_xipe_totec
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_mayahuel
         trigger = {
             AND = {
@@ -1823,14 +1851,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mayahuel
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tlaltecuhtli
         trigger = {
             AND = {
@@ -1845,15 +1873,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tlaltecuhtli
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
- ####Imperial
-     option = {
+####Imperial
+    option = {
         name = god_choice_justinian
         trigger = {
             AND = {
@@ -1865,14 +1893,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_justinian
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = ambitious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = ambitious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_augustus
         trigger = {
             AND = {
@@ -1884,14 +1912,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_augustus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = august
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = august
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_diocletian
         trigger = {
             AND = {
@@ -1903,12 +1931,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_diocletian
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = lifestyle_gardener
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_gardener
+            }
+        }
     }
     option = {
         name = god_choice_charlemagne
@@ -1922,12 +1950,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_charlemagne
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 1
-				has_trait = administrator
-			}
-		}
+            base = 1
+            modifier = {
+                add = 1
+                has_trait = administrator
+            }
+        }
     }
     option = {
         name = god_choice_julius_caesar
@@ -1941,14 +1969,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_julius_caesar
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 1
-				has_trait = overseer
-			}
-		}
+            base = 1
+            modifier = {
+                add = 1
+                has_trait = overseer
+            }
+        }
     }
- ###Blood
+###Blood
     option = {
         name = god_choice_ripper
         play_music_cue = "jacktheripper"
@@ -1962,12 +1990,12 @@ tr_select_deity.01 = {
         }
         add_trait = follow_ripper
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = schemer
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = schemer
+            }
+        }
     }
     option = {
         name = god_choice_caleb
@@ -1982,15 +2010,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_caleb
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 2
-				has_trait = wrathful
-			}
-		}
+            base = 1
+            modifier = {
+                add = 2
+                has_trait = wrathful
+            }
+        }
         #confirm_click_sound = "event:/DLC/FP2/SFX/UI/fp2_struggle_ending_decision_confirm"
     }
-     option = { #MADARA
+    option = { #MADARA
         name = god_choice_madara
         trigger = {
             AND = {
@@ -2006,14 +2034,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_madara
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = { #KAGUYA
+    option = { #KAGUYA
         name = god_choice_kaguya
         trigger = {
             AND = {
@@ -2028,15 +2056,15 @@ tr_select_deity.01 = {
         }
         add_trait = follow_kaguya
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = byakugan
-			}
-		}
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = byakugan
+            }
+        }
     }
- ###DND
-     option = {
+    ###DND
+    option = {
         name = god_choice_bhaal
         trigger = {
             AND = {
@@ -2052,18 +2080,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_bhaal
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
+            base = 1
             modifier = {
-				add = 10
-				has_trait = murderer
-			}
-		}
+                add = 5
+                has_trait = class_cleric_death
+            }
+            modifier = {
+                add = 10
+                has_trait = murderer
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_bane
         trigger = {
             AND = {
@@ -2078,14 +2106,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_bane
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_war
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_myrkul
         trigger = {
             AND = {
@@ -2100,14 +2128,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_myrkul
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_bahamut
         trigger = {
             AND = {
@@ -2122,14 +2150,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_bahamut
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_war
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_corellon_larethian
         trigger = {
             AND = {
@@ -2144,22 +2172,22 @@ tr_select_deity.01 = {
         }
         add_trait = follow_corellon_larethian
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
+                add = 5
+                has_trait = class_cleric_war
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_light
-			}
-		}
+                add = 5
+                has_trait = class_cleric_life
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_light
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_cyric
         trigger = {
             AND = {
@@ -2175,42 +2203,42 @@ tr_select_deity.01 = {
         }
         add_trait = follow_cyric
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
+            base = 1
             modifier = {
-				add = -5
-				has_trait = compassionate
-			}
+                add = 5
+                has_trait = class_cleric_trick
+            }
             modifier = {
-				add = 5
-				has_trait = callous
-			}
+                add = -5
+                has_trait = compassionate
+            }
             modifier = {
-				add = 5
-				has_trait = sadistic
-			}
+                add = 5
+                has_trait = callous
+            }
             modifier = {
-				add = 5
-				has_trait = deceitful
-			}
+                add = 5
+                has_trait = sadistic
+            }
             modifier = {
-				add = -5
-				has_trait = humble
-			}
+                add = 5
+                has_trait = deceitful
+            }
             modifier = {
-				add = -5
-				has_trait = loyal
-			}
+                add = -5
+                has_trait = humble
+            }
             modifier = {
-				add = -5
-				has_trait = disloyal
-			}
-		}
+                add = -5
+                has_trait = loyal
+            }
+            modifier = {
+                add = -5
+                has_trait = disloyal
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_eilistraee
         trigger = {
             AND = {
@@ -2227,38 +2255,38 @@ tr_select_deity.01 = {
         }
         add_trait = follow_eilistraee
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_light
-			}
+                add = 5
+                has_trait = class_cleric_life
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_nature
-			}
+                add = 5
+                has_trait = class_cleric_light
+            }
             modifier = {
-				add = -10
-				has_trait = schemer
-			}
+                add = 5
+                has_trait = class_cleric_nature
+            }
             modifier = {
-				add = 5
-				has_trait = compassionate
-			}
+                add = -10
+                has_trait = schemer
+            }
             modifier = {
-				add = -10
-				has_trait = callous
-			}
+                add = 5
+                has_trait = compassionate
+            }
             modifier = {
-				add = -10
-				has_trait = sadistic
-			}
-		}
+                add = -10
+                has_trait = callous
+            }
+            modifier = {
+                add = -10
+                has_trait = sadistic
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_garl_glittergold
         trigger = {
             AND = {
@@ -2273,14 +2301,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_garl_glittergold
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_trick
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_gond
         trigger = {
             AND = {
@@ -2295,18 +2323,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_gond
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
-		}
+                add = 5
+                has_trait = class_cleric_trick
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_gruumsh
         trigger = {
             AND = {
@@ -2321,18 +2349,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_gruumsh
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_tempest
-			}
-		}
+                add = 5
+                has_trait = class_cleric_war
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_tempest
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_helm
         trigger = {
             AND = {
@@ -2349,18 +2377,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_helm
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_light
-			}
-		}
+                add = 5
+                has_trait = class_cleric_life
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_light
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_ilmater
         trigger = {
             AND = {
@@ -2376,14 +2404,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_ilmater
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_life
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_jergal
         trigger = {
             AND = {
@@ -2400,18 +2428,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_jergal
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_kelemvor
         trigger = {
             AND = {
@@ -2427,14 +2455,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_kelemvor
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_kereska
         trigger = {
             AND = {
@@ -2449,14 +2477,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_kereska
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
-		}
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_laduguer
         trigger = {
             AND = {
@@ -2471,26 +2499,26 @@ tr_select_deity.01 = {
         }
         add_trait = follow_laduguer
         ai_chance = {
-			base = 1
+            base = 1
             modifier = {
-				add = -10
-				has_trait = compassionate
-			}
-			modifier = {
-				add = 10
-				has_trait = callous
-			}
+                add = -10
+                has_trait = compassionate
+            }
             modifier = {
-				add = 10
-				has_trait = greedy
-			}
+                add = 10
+                has_trait = callous
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+                add = 10
+                has_trait = greedy
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_lathander
         trigger = {
             AND = {
@@ -2507,22 +2535,22 @@ tr_select_deity.01 = {
         }
         add_trait = follow_lathander
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_light
-			}
+                add = 5
+                has_trait = class_cleric_life
+            }
             modifier = {
-				add = 10
-				has_trait = just
-			}
-		}
+                add = 5
+                has_trait = class_cleric_light
+            }
+            modifier = {
+                add = 10
+                has_trait = just
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_lolth
         trigger = {
             AND = {
@@ -2537,38 +2565,38 @@ tr_select_deity.01 = {
         }
         add_trait = follow_lolth
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = overseer
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = schemer
-			}
+                add = 5
+                has_trait = overseer
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
+                add = 5
+                has_trait = schemer
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
+                add = 5
+                has_trait = class_cleric_trick
+            }
             modifier = {
-				add = -10
-				has_trait = compassionate
-			}
+                add = 5
+                has_trait = class_cleric_war
+            }
             modifier = {
-				add = 5
-				has_trait = callous
-			}
+                add = -10
+                has_trait = compassionate
+            }
             modifier = {
-				add = 5
-				has_trait = sadistic
-			}
-		}
+                add = 5
+                has_trait = callous
+            }
+            modifier = {
+                add = 5
+                has_trait = sadistic
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_loviatar
         trigger = {
             AND = {
@@ -2584,22 +2612,22 @@ tr_select_deity.01 = {
         }
         add_trait = follow_loviatar
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = flagellant
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = torturer
-			}
+                add = 10
+                has_trait = flagellant
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+                add = 5
+                has_trait = torturer
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_mielikki
         trigger = {
             AND = {
@@ -2615,14 +2643,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mielikki
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_nature
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_nature
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_moradin
         trigger = {
             AND = {
@@ -2639,18 +2667,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_moradin
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 1
-				has_trait = class_cleric_knowledge
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = dwarf
-			}
-		}
+                add = 1
+                has_trait = class_cleric_knowledge
+            }
+            modifier = {
+                add = 5
+                has_trait = dwarf
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_mystra
         trigger = {
             AND = {
@@ -2666,14 +2694,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_mystra
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_oghma
         trigger = {
             AND = {
@@ -2694,34 +2722,34 @@ tr_select_deity.01 = {
         }
         add_trait = follow_oghma
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_bard
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_bard_college_of_lore
-			}
+                add = 5
+                has_trait = class_bard
+            }
             modifier = {
-				add = 5
-				has_trait = class_bard_college_of_valour
-			}
+                add = 5
+                has_trait = class_bard_college_of_lore
+            }
             modifier = {
-				add = 5
-				has_trait = class_bard_college_of_sword
-			}
+                add = 5
+                has_trait = class_bard_college_of_valour
+            }
             modifier = {
-				add = 5
-				has_trait = class_bard_college_of_glamour
-			}
+                add = 5
+                has_trait = class_bard_college_of_sword
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
-		}
+                add = 5
+                has_trait = class_bard_college_of_glamour
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_selune
         trigger = {
             AND = {
@@ -2739,20 +2767,20 @@ tr_select_deity.01 = {
         }
         add_trait = follow_selune
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 0
-				has_trait = gregarious
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
+                add = 0
+                has_trait = gregarious
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
-		}
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_life
+            }
+        }
     }
     option = {
         name = god_choice_shar
@@ -2772,22 +2800,22 @@ tr_select_deity.01 = {
         }
         add_trait = follow_shar
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = schemer
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
+                add = 5
+                has_trait = schemer
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_death
-			}
-		}
+                add = 5
+                has_trait = class_cleric_trick
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_death
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_silvanus
         trigger = {
             AND = {
@@ -2803,18 +2831,18 @@ tr_select_deity.01 = {
         }
         add_trait = follow_silvanus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = lifestyle_gardener
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_nature
-			}
-		}
+                add = 10
+                has_trait = lifestyle_gardener
+            }
+            modifier = {
+                add = 5
+                has_trait = class_cleric_nature
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_talos
         trigger = {
             AND = {
@@ -2830,14 +2858,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_talos
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_tempest
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_tempest
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tempus
         trigger = {
             AND = {
@@ -2853,14 +2881,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tempus
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_war
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tiamat
         trigger = {
             AND = {
@@ -2875,14 +2903,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tiamat
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_trick
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tymora
         trigger = {
             AND = {
@@ -2898,14 +2926,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tymora
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_trick
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_tyr
         trigger = {
             AND = {
@@ -2921,46 +2949,46 @@ tr_select_deity.01 = {
         }
         add_trait = follow_tyr
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_war
-			}
+            base = 1
             modifier = {
-				add = 5
-				has_trait = just
-			}
+                add = 5
+                has_trait = class_cleric_war
+            }
             modifier = {
-				add = -5
-				has_trait = arbitrary
-			}
+                add = 5
+                has_trait = just
+            }
             modifier = {
-				add = 1
-				has_trait = blind
-			}
+                add = -5
+                has_trait = arbitrary
+            }
             modifier = {
-				add = 1
-				has_trait = one_eyed
-			}
+                add = 1
+                has_trait = blind
+            }
             modifier = {
-				add = 5
-				has_trait = honest
-			}
+                add = 1
+                has_trait = one_eyed
+            }
             modifier = {
-				add = -5
-				has_trait = craven
-			}
+                add = 5
+                has_trait = honest
+            }
             modifier = {
-				add = 5
-				has_trait = brave
-			}
+                add = -5
+                has_trait = craven
+            }
             modifier = {
-				add = -50
-				has_trait = class_paladin_oathbreaker
-			}
-		}
+                add = 5
+                has_trait = brave
+            }
+            modifier = {
+                add = -50
+                has_trait = class_paladin_oathbreaker
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_umberlee
         trigger = {
             AND = {
@@ -2976,14 +3004,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_umberlee
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 5
-				has_trait = class_cleric_tempest
-			}
-		}
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = class_cleric_tempest
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_vlaakith
         trigger = {
             AND = {
@@ -2998,14 +3026,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_vlaakith
         ai_chance = {
-			base = 1
-			modifier = {
-				add = 10
-				has_trait = lifestyle_blademaster
-			}
-		}
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = lifestyle_blademaster
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_waukeen
         trigger = {
             AND = {
@@ -3020,22 +3048,22 @@ tr_select_deity.01 = {
         }
         add_trait = follow_waukeen
         ai_chance = {
-			base = 1
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_knowledge
-			}
+                add = 5
+                has_trait = class_cleric_knowledge
+            }
             modifier = {
-				add = 5
-				has_trait = class_cleric_trick
-			}
+                add = 5
+                has_trait = class_cleric_trick
+            }
             modifier = {
-				add = 5
-				has_trait = avaricious
-			}
-		}
+                add = 5
+                has_trait = avaricious
+            }
+        }
     }
-     option = {
+    option = {
         name = god_choice_yondalla
         trigger = {
             AND = {
@@ -3051,105 +3079,115 @@ tr_select_deity.01 = {
         }
         add_trait = follow_yondalla
         ai_chance = {
-			base = 1
+            base = 1
             modifier = {
-				add = 5
-				has_trait = class_cleric_life
-			}
-			modifier = {
-				add = 5
-				has_trait = gregarious
-			}
+                add = 5
+                has_trait = class_cleric_life
+            }
             modifier = {
-				add = 2
-				has_trait = lifestyle_gardener
-			}
-		}
+                add = 5
+                has_trait = gregarious
+            }
+            modifier = {
+                add = 2
+                has_trait = lifestyle_gardener
+            }
+        }
     }
- ##### PAGAN
+##### PAGAN
     option = { #JESUS
         name = pagan_choose_deity_jesus
         trigger = {
-            OR = {
-                faith = faith:roman_pagan
-                faith = faith:norse_pagan
-                faith = faith:hellenic_pagan
-                faith = faith:kemetic_pagan
-                faith = faith:basque_pagan
-                faith = faith:magyar_pagan
-                faith = faith:north_african_acham_pagan
-                faith = faith:pagan
-                faith = faith:slavic_pagan
-                faith = faith:tengri_pagan
-                faith = faith:waaqism_pagan
-                faith = faith:west_african_pagan
-                faith = faith:west_african_bidu_pagan
-                faith = faith:west_african_bori_pagan
-                faith = faith:west_african_orisha_pagan
-                faith = faith:west_african_roog_pagan
-                faith = faith:zun_pagan
-                faith = faith:akom_pagan
-                faith = faith:baltic_pagan
-                faith = faith:bon
-                faith = faith:old_bon
-                faith = faith:donyipoloism
-                faith = faith:sedism
-                faith = faith:finnish_pagan
-                faith = faith:kushitism_pagan
-                faith = faith:kiratism
-                faith = faith:yumaism
+            AND = {
+                NOT = {
+                    has_trait = follow_jesus
+                }
+                OR = {
+                    faith = faith:roman_pagan
+                    faith = faith:norse_pagan
+                    faith = faith:hellenic_pagan
+                    faith = faith:kemetic_pagan
+                    faith = faith:basque_pagan
+                    faith = faith:magyar_pagan
+                    faith = faith:north_african_acham_pagan
+                    faith = faith:pagan
+                    faith = faith:slavic_pagan
+                    faith = faith:tengri_pagan
+                    faith = faith:waaqism_pagan
+                    faith = faith:west_african_pagan
+                    faith = faith:west_african_bidu_pagan
+                    faith = faith:west_african_bori_pagan
+                    faith = faith:west_african_orisha_pagan
+                    faith = faith:west_african_roog_pagan
+                    faith = faith:zun_pagan
+                    faith = faith:akom_pagan
+                    faith = faith:baltic_pagan
+                    faith = faith:bon
+                    faith = faith:old_bon
+                    faith = faith:donyipoloism
+                    faith = faith:sedism
+                    faith = faith:finnish_pagan
+                    faith = faith:kushitism_pagan
+                    faith = faith:kiratism
+                    faith = faith:yumaism
+                }
             }
         }
         add_trait = follow_jesus
         ai_chance = {
-			base = 0
-			modifier = {
-				add = -100
-				has_trait = zealous
-			}
-		}
+            base = 0
+            modifier = {
+                add = -100
+                has_trait = zealous
+            }
+        }
     }
     option = { #ISLAM
         name = pagan_choose_deity_islam
         trigger = {
-            OR = {
-                faith = faith:roman_pagan
-                faith = faith:norse_pagan
-                faith = faith:hellenic_pagan
-                faith = faith:kemetic_pagan
-                faith = faith:basque_pagan
-                faith = faith:magyar_pagan
-                faith = faith:north_african_acham_pagan
-                faith = faith:pagan
-                faith = faith:slavic_pagan
-                faith = faith:tengri_pagan
-                faith = faith:waaqism_pagan
-                faith = faith:west_african_pagan
-                faith = faith:west_african_bidu_pagan
-                faith = faith:west_african_bori_pagan
-                faith = faith:west_african_orisha_pagan
-                faith = faith:west_african_roog_pagan
-                faith = faith:zun_pagan
-                faith = faith:akom_pagan
-                faith = faith:baltic_pagan
-                faith = faith:bon
-                faith = faith:old_bon
-                faith = faith:donyipoloism
-                faith = faith:sedism
-                faith = faith:finnish_pagan
-                faith = faith:kushitism_pagan
-                faith = faith:kiratism
-                faith = faith:yumaism
+            AND = {
+                NOT = {
+                    has_trait = follow_islam
+                }
+                OR = {
+                    faith = faith:roman_pagan
+                    faith = faith:norse_pagan
+                    faith = faith:hellenic_pagan
+                    faith = faith:kemetic_pagan
+                    faith = faith:basque_pagan
+                    faith = faith:magyar_pagan
+                    faith = faith:north_african_acham_pagan
+                    faith = faith:pagan
+                    faith = faith:slavic_pagan
+                    faith = faith:tengri_pagan
+                    faith = faith:waaqism_pagan
+                    faith = faith:west_african_pagan
+                    faith = faith:west_african_bidu_pagan
+                    faith = faith:west_african_bori_pagan
+                    faith = faith:west_african_orisha_pagan
+                    faith = faith:west_african_roog_pagan
+                    faith = faith:zun_pagan
+                    faith = faith:akom_pagan
+                    faith = faith:baltic_pagan
+                    faith = faith:bon
+                    faith = faith:old_bon
+                    faith = faith:donyipoloism
+                    faith = faith:sedism
+                    faith = faith:finnish_pagan
+                    faith = faith:kushitism_pagan
+                    faith = faith:kiratism
+                    faith = faith:yumaism
+                }
             }
         }
         add_trait = follow_islam
         ai_chance = {
-			base = 0
-			modifier = {
-				add = -100
-				has_trait = zealous
-			}
-		}
+            base = 0
+            modifier = {
+                add = -100
+                has_trait = zealous
+            }
+        }
     }
     option = {
         name = god_choice_ashur
@@ -3161,14 +3199,14 @@ tr_select_deity.01 = {
         }
         add_trait = follow_ashur
         ai_chance = {
-			base = 1
-			modifier = {
-				#add = 100
-				#has_trait = zealous
-			}
-		}
+            base = 1
+            modifier = {
+                #add = 100
+                #has_trait = zealous
+            }
+        }
     }
- ####Opt-Out
+####Opt-Out
     option = {
         name = tr_select_deity_cancel
         custom_tooltip = tr_select_deity_cancel_tip

@@ -3422,6 +3422,10 @@
 			desc = trait_follow_cthulhu_desc
 		}
 	}
+	opposites = {
+		follow_hastur
+		follow_quake
+	}
     compatibility = {
 		follow_cthulhu = 20
 	}
@@ -3443,6 +3447,10 @@
 	satanism_opinion = 8
 	compatibility = {
 		follow_hastur = 20
+	}
+	opposites = {
+		follow_quake
+		follow_cthulhu
 	}
 	desc = {
 		first_valid = {
@@ -3475,6 +3483,10 @@
 	ai_rationality = -50
 	compatibility = {
 		follow_quake = 20
+	}
+	opposites = {
+		follow_hastur
+		follow_cthulhu
 	}
 	desc = {
 		first_valid = {
@@ -3511,6 +3523,9 @@
 			desc = trait_follow_jesus_desc
 		}
 	}
+	opposites = {
+		follow_islam
+	}
 	compatibility = {
 		follow_jesus = 20
 		lustful = -10
@@ -3537,6 +3552,9 @@
 			}
 			desc = trait_follow_islam_desc
 		}
+	}
+	opposites = {
+		follow_jesus
 	}
 	compatibility = {
 		follow_islam = 20
