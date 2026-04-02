@@ -36,9 +36,73 @@
 	culture = crownlander
 	trait = education_intrigue_2
 	trait = intellect_good_1
-	847.1.1 = { birth = yes}
+	807.1.1 = { birth = yes}
 	860.1.1 = { employer = Baelish_2 } # Petyr Baelish
 	900.1.1 = { death = yes }
+ }
+ Kettleblack_2 = {
+	name = Osmund # Canon, a Kingsguard
+	dynasty = dynn_Kettleblack
+	#dna = Kettleblack_2
+	prowess = 7
+	religion = fots_seven
+	culture = crownlander
+	sexuality = heterosexual
+	father = Kettleblack_1
+	#mother = Hickory_73
+	trait = education_martial_2
+	trait = gregarious
+	trait = deceitful
+	trait = arbitrary
+	trait = strong
+	trait = rowdy
+	trait = lustful
+	disallow_random_traits = yes
+	830.1.1 = {birth = yes}
+	900.10.24 = { death=yes } 
+}
+  Kettleblack_3 = {
+	name = Osfryd # Canon, Commander of the Gold Cloaks
+	dynasty = dynn_Kettleblack
+	#dna = Kettleblack_3
+	prowess = 4
+	religion = fots_seven
+	culture = crownlander
+	sexuality = heterosexual
+	father = Kettleblack_1
+	#mother = Hickory_73
+	trait = education_diplomacy_3
+	trait = callous
+	trait = wrathful
+	trait = rowdy
+	trait = cynical
+	disallow_random_traits = yes
+	835.1.1 = {birth = yes}
+	900.1.1 = { death=yes }
+}
+  Kettleblack_4 = {
+	name = Osney # Canon, Oswell's third son
+	dynasty = dynn_Kettleblack
+	#dna = Kettleblack_4
+	prowess = 4
+	religion = fots_seven
+	culture = crownlander
+	sexuality = heterosexual
+	father = Kettleblack_1
+	#mother = Hickory_73
+	trait = education_intrigue_1
+	trait = callous
+	trait = trusting
+	trait = deceitful
+	trait = rowdy
+	trait = lustful
+	disallow_random_traits = yes
+	37.1.1 = {birth = yes}
+	900.5.17 = {
+		trait = murderer # Previous High Septon
+		trait = fornicator # Cersei Lannister
+		death=yes
+	}
  }
  #
  #ROBSY
@@ -812,6 +876,7 @@
  Greyjoy_5 = {
 	name = Balon # Canon, THE Balon Greyjoy, a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_5
 	martial = 7
 	diplomacy = 6
 	intrigue = 7
@@ -843,6 +908,7 @@
  Greyjoy_6 = {
 	name = Euron # Canon, AKA: Crow's Eye, a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_6
 	martial = 7
 	diplomacy = 4
 	intrigue = 5
@@ -902,6 +968,7 @@
  Greyjoy_7 = {
 	name = Victarion # Canon
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_7
 	martial = 10 # 20
 	diplomacy = 7
 	intrigue = 6
@@ -936,6 +1003,7 @@
  Greyjoy_13 = {
 	name = Asha # Canon, THE Asha
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_13
 	female = yes
 	martial = 6
 	diplomacy = 5
@@ -964,6 +1032,7 @@
 }
  Greyjoy_14 = {
 	name = Theon # Canon, THE Theon
+	dna = Greyjoy_14
 	dynasty = dynn_Greyjoy
 	martial = 6
 	diplomacy = 6
@@ -1055,6 +1124,7 @@
   Reed_1 = {
 	name = Howland # Canon, THE Howland Reed, a lord
 	dynasty = dynn_Reed
+	dna = Reed_1
 	martial = 7
 	diplomacy = 7
 	intrigue = 7
@@ -1079,12 +1149,14 @@
 		#add_spouse = Blackmyre_89 # Jyana Blackmyre
 		add_piety = 3000 # Isle of Faces
 		trait = lifestyle_mystic
+		effect = {set_relation_friend = {target = character:Stark_3 }}
 	}
 	900.1.10 = {death=yes}
  }
   Reed_2 = {
 	name = Meera # Canon
 	dynasty = dynn_Reed
+	dna = Reed_2
 	female = yes
 	martial = 5
 	diplomacy = 8
@@ -1122,6 +1194,7 @@
   Reed_3 = {
 	name = Jojen # Canon
 	dynasty = dynn_Reed
+	dna = Reed_3
 	martial = 2
 	diplomacy = 4
 	intrigue = 5
@@ -1730,6 +1803,35 @@
 		}
 	}
   }
+  Stark_5 = {
+	name = Lyanna # Canon, betrothed to Robert Baratheon
+	dynasty = dynn_Stark
+	female = yes
+	dna = Stark_5
+	martial = 6
+	diplomacy = 9
+	intrigue = 4
+	stewardship = 6
+	learning = 6
+	prowess = 8
+	religion = green_cult #old_gods_wnw
+	culture = northman
+	father = Stark_1
+	#mother = Stark_127
+	trait = education_diplomacy_3
+	trait = education_martial_prowess_3 # Knight of the Laughing Tree
+	trait = beauty_good_2
+	trait = rowdy
+	trait = compassionate
+	trait = brave
+	trait = stubborn
+	disallow_random_traits = yes
+	835.10.1 = {
+		birth = yes
+		dynasty_house = house_lyanna_stark
+	}
+	852.10.20 = {death = {death_reason = death_dungeon}}
+ }
    Stark_6 = {
 	name = Robb # Canon, AKA: Young Wolf, a lord
 	dynasty = dynn_Stark
@@ -1780,7 +1882,13 @@
 	trait = education_martial_2
 	trait = pensive
 	disallow_random_traits = yes
-	852.8.2 = {birth = yes }
+	852.8.2 = {
+		birth = yes 
+		effect = {
+			#set_real_father = character:Targaryen_3 # Rhaegar Targaryen
+			set_real_mother = character:Stark_5 # Lyanna Stark
+		}
+	}
 	866.1.1 = {
 		trait = brave
 		trait = just
@@ -3081,15 +3189,16 @@
 	826.1.1 = { birth = yes }
 	900.1.1 = { death = yes }
    }
-   Tarbeck_1 = {
+ #TARBECK  
+  Tarbeck_1 = {
 	name = Humfrey # a lord
 	dynasty = dynn_Tarbeck
 	religion = fots_seven
 	culture = westerman_main
-	134.1.1 = { birth = yes }
-	290.1.1 = { death = yes }
+	634.1.1 = { birth = yes }
+	790.1.1 = { death = yes }
    }
-   Tarbeck_27 = {
+  Tarbeck_27 = {
 	name = Walderan # Canon, a lord, rebelled against Tywin Lannister
 	dynasty = dynn_Tarbeck
 	#dna = Tarbeck_27
@@ -3116,6 +3225,24 @@
 		}
 	}
   }
+  Tarbeck_33 = {
+	name = Tion # Canon
+	dynasty = dynn_Tarbeck
+	#dna = Tarbeck_33
+	father = Tarbeck_27
+	mother = Reyne_46 # Ellyn Reyne
+	religion = fots_seven
+	culture = westerman_main
+	#give_nickname = nick_agot_historical_the_red_Tarbeck_33
+	816.1.1 = {birth = yes }
+	835.10.31 = {
+		death = {
+			death_reason = death_execution # Destruction of House Tarbeck
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+ }
+ #REYNE 
    Reyne_1 = {
 	name = Reynard # Mentioned, a lord
 	dynasty = dynn_Reyne
@@ -3131,9 +3258,25 @@
 	trait = patient
 	trait = greedy
 	trait = gregarious
-	80.1.1 = {birth = yes} #red_hair
-	150.1.1 = { death = yes }
+	280.1.1 = {birth = yes} #red_hair
+	350.1.1 = { death = yes }
    }
+   Reyne_44 = {
+	name = Robert # Canon, a lord
+	dynasty = dynn_Reyne
+	dna = Reyne_44
+	diplomacy = 11
+	religion = fots_seven
+	culture = westerman_main
+	father = Reyne_1 #Reyne_42
+	#mother = LannisterLP_42
+	trait = education_diplomacy_3
+	trait = ambitious
+	8195.1.1 = {birth = yes}
+	8210.1.1 = { add_spouse = Parren_17 } # Parena Parren
+	8227.1.1 = { trait = knight }
+	8233.6.1 = {death = { death_reason = death_battle } }# Siege of Starkpike
+ }
    Reyne_45 = {
 	name = Roger # Canon, AKA: The Red Lion, a lord
 	dna = Reyne_45
@@ -3146,7 +3289,7 @@
 	prowess = 11
 	religion = fots_seven
 	culture = westerman_main
-	father = Reyne_1 #Reyne_44
+	father = Reyne_44
 	#mother = Parren_17
 	trait = education_martial_3
 	trait = education_martial_prowess_4
@@ -3182,7 +3325,7 @@
 	learning = 4
 	religion = fots_seven
 	culture = westerman_main
-	father = Reyne_1 #Reyne_44
+	father = Reyne_44
 	#mother = Parren_17
 	trait = education_intrigue_3
 	trait = beauty_good_1
@@ -3201,6 +3344,36 @@
 		}
 	}
   }
+  Reyne_47 = {
+	name = Reynard # Canon, took command at the siege of Castamere
+	dynasty = dynn_Reyne
+	dna = Reyne_47
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 3
+	martial = 1
+	learning = 4
+	religion = fots_seven
+	culture = westerman_main
+	father = Reyne_44
+	#mother = Parren_17
+	trait = education_diplomacy_3
+	trait = education_martial_prowess_1
+	trait = intellect_good_1
+	trait = ambitious
+	trait = gregarious
+	trait = arrogant
+	trait = deceitful
+	trait = bossy
+	disallow_random_traits = yes
+	797.1.1 = {birth = yes}
+	835.11.1 = {
+		death = {
+			death_reason = death_execution # Destruction of House Reyne
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+ }
  #LANNISTERS 
    Lannister_29 = {
 	name = Lann # Canon, AKA: Lann the Clever
@@ -3383,6 +3556,106 @@
 		}
 	}
   }
+   Lannister_2 = {
+	name = Kevan # Canon, THE Kevan
+	dynasty = dynn_Lannister
+	dna = Lannister_2
+	martial = 7
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 8
+	learning = 7
+	prowess = 6
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+	father = Lannister_129
+	#mother = Marbrand_51
+	trait = education_stewardship_2
+	trait = intellect_good_2
+	trait = pensive
+	trait = patient
+	trait = diligent
+	trait = honest
+	disallow_random_traits = yes
+	813.1.1 = {birth = yes}
+	868.6.28 = {
+		death = {
+			death_reason = death_murder # Shot with crossbow
+			killer = Eunuch_1 # Varys
+		}
+	}
+}
+  Lannister_3 = {
+	name = Genna # Canon, married Emmon Frey
+	dynasty = dynn_Lannister
+	female = yes
+	dna = Lannister_3
+	religion = fots_seven
+	culture = westerman_main
+	father = Lannister_129
+	#mother = Marbrand_51
+	trait = education_intrigue_3
+	trait = bossy
+	trait = arrogant
+	trait = cynical
+	trait = gluttonous
+	disallow_random_traits = yes
+	814.1.1 = { birth = yes }
+	900.2.7 = { death=yes } 
+}
+  Lannister_4 = {
+	name = Tygett # Canon
+	dynasty = dynn_Lannister
+	dna = Lannister_4
+	martial = 9
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 8
+	religion = fots_seven
+	culture = westerman_main
+	father = Lannister_129
+	#mother = Marbrand_51
+	trait = education_martial_2
+	trait = education_martial_prowess_3
+	trait = rowdy
+	trait = compassionate
+	trait = vengeful
+	trait = wrathful
+	trait = lifestyle_blademaster
+	trait = smallpox
+	disallow_random_traits = yes
+	819.1.1 = {birth = yes}
+	854.6.1 = {death = { death_reason = death_smallpox }}
+}
+  Lannister_5 = {
+	name = Gerion # Canon
+	dynasty = dynn_Lannister
+	dna = Lannister_5
+	martial = 5
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 2
+	learning = 10
+	prowess = 6
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+	father = Lannister_129
+	#mother = Marbrand_51
+	trait = education_martial_2
+	trait = brave
+	trait = compassionate
+	trait = gregarious
+	trait = rowdy
+	trait = lustful
+	trait = fornicator # Briony
+	disallow_random_traits = yes
+	824.1.1 = {birth = yes}
+	860.1.1 = { death = { death_reason = death_vanished }}# Went missing looking for Brightroar
+}
    Lannister_6 = {
 	name = Cersei # Canon, THE Cersei Lannister, a lord, married Robert Baratheon
 	dynasty = dynn_Lannister
@@ -3662,6 +3935,57 @@
 	834.1.1 = { birth = yes }
 	900.3.14 = { death = { death_reason = death_vanished } }
    }
+  Lannister_9 = {
+	name = Lancel # Canon, a lord of Darry
+	dynasty = dynn_Lannister
+	dna = Lannister_9
+	martial = 6
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 5
+	learning = 6
+	prowess = 3
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+	father = Lannister_2
+	#mother = Swyft_4
+	trait = education_intrigue_2
+	trait = beauty_good_2
+	trait = bossy
+	trait = trusting
+	trait = arrogant
+	trait = deceitful
+	trait = wrathful
+	disallow_random_traits = yes
+	851.6.1 = {birth = yes}
+	860.10.24 = { employer = Baratheon_5 } # Joffrey Baratheon
+	868.12.1 = {
+		trait = knight
+		effect = {
+			if = {
+				limit = { character:Lannister_6 = { is_alive = yes } }
+				set_relation_lover = character:Lannister_6 # Cersei Lannister
+			}
+		}
+	}
+	869.9.8 = {
+		effect = {
+			add_trait = wounded_3
+			remove_trait = arrogant
+			remove_trait = wrathful
+			remove_trait = deceitful
+			if = {
+				limit = { character:Lannister_6 = { is_alive = yes } }
+				remove_relation_lover = character:Lannister_6 # Cersei Lannister
+			}
+		}
+		add_trait = humble
+		trait = temperate
+		trait = zealous
+	}
+	900.4.15 = {death=yes}
+  } 
  #CLEGANE  
    Clegane_6 = {
 	name = Ben

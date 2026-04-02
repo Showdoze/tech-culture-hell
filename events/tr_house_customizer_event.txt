@@ -40,49 +40,49 @@ house_customizer.0002 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {#Displays Extinct Northern Houses
+	option = {#Displays Northern Houses
 		name = house_customizer.0002.northern
 		trigger_event = {
 			id = house_customizer.0003
 		}
 	}
-	option = {#Displays Extinct Riverlander Houses
+	option = {#Displays Riverlander Houses
 		name = house_customizer.0002.riverlands
 		trigger_event = {
 			id = house_customizer.0004
 		}
 	}
-	option = {#Displays Extinct Vale Houses
+	option = {#Displays Vale Houses
 		name = house_customizer.0002.vale
 		trigger_event = {
 			id = house_customizer.0005
 		}
 	}
-	option = {#Displays Extinct Crownlands Houses
+	option = {#Displays Crownlands Houses
 		name = house_customizer.0002.crownlands
 		trigger_event = {
 			id = house_customizer.0006
 		}
 	}
-	option = {#Displays Extinct Stormlander Houses
+	option = {#Displays Stormlander Houses
 		name = house_customizer.0002.stormlands
 		trigger_event = {
 			id = house_customizer.0007
 		}
 	}
-	option = {#Displays Extinct Dorne Houses
+	option = {#Displays Dorne Houses
 		name = house_customizer.0002.dorne
 		trigger_event = {
 			id = house_customizer.0008
 		}
 	}
-	option = {#Displays Extinct Dorne Houses
+	option = {#Displays reach
 		name = house_customizer.0002.reach
 		trigger_event = {
 			id = house_customizer.0009
 		}
 	}
-	option = {#Displays Extinct Dorne Houses
+	option = {#Displays westerlands
 		name = house_customizer.0002.westerlands
 		trigger_event = {
 			id = house_customizer.0010
@@ -153,6 +153,12 @@ house_customizer.0003 = { #Select North
 		set_house = character:Stark_1.house
 		remove_trait = house_customizer
 		set_father = character:Stark_1
+	}
+	option = { #Stark
+		name = house_customizer.0003.stark
+		set_house = character:Stark_5.house
+		remove_trait = house_customizer
+		set_mother = character:Stark_5
 	}
 	option = { #Bolton
 		name = house_customizer.0003.bolton
