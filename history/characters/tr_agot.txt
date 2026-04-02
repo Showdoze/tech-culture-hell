@@ -2676,9 +2676,11 @@
 	866.1.1 = {
 		trait = lunatic_1
 		give_nickname = nick_mad
-		trait = witch
-		trait = cannibal
 		trait = lifestyle_mystic
+		effect = {
+			add_secret = { type = secret_cannibal }
+			add_secret = { type = secret_witch }
+		}
 	}
 	890.1.1 = {
 		death = {

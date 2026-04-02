@@ -449,121 +449,6 @@ d_valmir = {
         instance = { position = { 0.5 0.5 } scale = { 1 1 } }
     }
 }
-d_auriel={
-    pattern="pattern__solid_designer.dds"
-    color1=rgb { 182 160 128 }
-    color2=skyrim_gold
-    color3=yellow
-    colored_emblem={
-        color1=rgb { 208 184 149 }
-        color2=rgb { 145 113 42 }
-        color3=skyrim_gold
-        texture="ce_altmer_bg_2.dds"
-        instance={
-            scale={ 1.000000 -1.000000 }
-            depth=2.010000
-        }
-    }
-    colored_emblem={
-        color1=rgb { 222 239 255 }
-        color2=blue_light
-        color3=blue_light
-        texture="ce_altmer_caligraphy_auriel_1.dds"
-        instance={
-            position={ 0.490000 0.485000 }
-            scale={ 0.310000 0.310000 }
-        }
-    }
-    colored_emblem={
-        color1=rgb { 170 134 79 }
-        color2=rgb { 199 199 199 }
-        color3=rgb { 136 159 181 }
-        texture="ce_sapiarch_sun.dds"
-        instance={
-            position={ 0.505000 0.480000 }
-            scale={ 1.300000 1.300000 }
-            depth=1.010000
-        }
-    }
-
-}
-d_tonal_architects={
-	pattern="pattern__solid_designer.dds"
-	color1=skyrim_gold
-	color2=skyrim_mblue
-	color3=yellow
-	colored_emblem={
-		color1=skyrim_mblue
-		texture="ce_circle.dds"
-		instance={
-			position={ 0.400000 0.825000 }
-			scale={ 0.245000 0.245000 }
-		}
-		instance={
-			position={ 0.790000 0.300000 }
-			scale={ 0.190000 0.190000 }
-			depth=1.010000
-		}
-		instance={
-			position={ 0.300000 0.205000 }
-			scale={ 0.340000 0.340000 }
-			depth=2.010000
-		}
-	}
-	colored_emblem={
-		color1=yellow
-		texture="ce_african_kile.dds"
-		instance={
-			scale={ 0.530000 0.530000 }
-			depth=3.010000
-		}
-	}
-	colored_emblem={
-		color1=skyrim_mblue
-		color2=skyrim_gold
-		color3=skyrim_gold
-		texture="ce_circle.dds"
-		instance={
-			scale={ 0.725000 0.725000 }
-			depth=5.010000
-		}
-	}
-	colored_emblem={
-		color1=yellow
-		texture="ce_pagan_wheel.dds"
-		instance={
-			depth=6.010000
-		}
-	}
-	colored_emblem={
-		color1=skyrim_mblue
-		texture="ce_tamgha_regular_circle_frame.dds"
-		instance={
-			scale={ 0.825000 0.825000 }
-			depth=4.010000
-		}
-	}
-}
-k_dagoth = {
-	pattern = "pattern_solid.dds"
-	color1 = rgb { 83 26 19 }	
-	colored_emblem = {
-		texture = "ce_frame_side.dds"
-		color1 = "black"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.8 1 }	}
-	}		
-	colored_emblem = {
-		texture = "ce_dunmer_frame_greathouse_2.dds"
-		color1 = "black"
-		color2 = rgb { 121 46 37 }
-		instance = {	position = { 0.5 0.5 }	scale = { 0.7 1 }	}
-	}	
-	colored_emblem = {
-		texture = "ce_dunmer_sigil_degoth_7.dds"
-		color1 = "black"
-		instance = {	position = { 0.5 0.444 }	scale = { 0.59 0.59 }	}
-	}		
-}
 k_ds_kiln = {
     textured_emblem = {
         texture = "dark_souls.dds"
@@ -739,4 +624,34 @@ d_Akatsuki = {
         instance = { position = { 0.5 0.5 } scale = { 1 1 } }
     }
 }
-
+k_skaven = {
+	pattern = "pattern_verticle_stripes_05.dds"
+	color1 = "yellow"
+	color2 = "blue"
+	colored_emblem = { 
+		texture = "ce_skaven.dds"
+		color1 = "blue_dark"
+		color2 = "blue"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.7 0.7 }	}
+	}
+	colored_emblem = {
+		texture = "ce_reach_frame_3.dds"
+		color1 = "yellow"
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1.1 }	}
+	}
+}
+d_skaven = {
+	pattern = "pattern_verticle_stripes_05.dds"
+	color1 = "yellow"
+	color2 = "blue"
+	colored_emblem = {
+		texture = "ce_reach_frame_3.dds"
+		color1 = "yellow"
+		instance = {	position = { 0.5 0.5 }	scale = { 1 1.1 }	}
+	}
+	colored_emblem = { 
+		texture = "ce_rat.dds"
+		color1 = "blue"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.5 0.5 }	}
+	}
+}

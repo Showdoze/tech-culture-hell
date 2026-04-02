@@ -1,4 +1,4 @@
-k_hlaalu = {
+dynn_hlaalu = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 224 199 99 }	
 	colored_emblem = {
@@ -18,7 +18,7 @@ k_hlaalu = {
 		instance = {	position = { 0.5 0.475 }	scale = { 0.46 0.7 }	}
 	}	
 }
-house_telvanni = {
+dynn_telvanni = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 138 109 75 }	
 	colored_emblem = {
@@ -38,7 +38,7 @@ house_telvanni = {
 		instance = {	position = { 0.5 0.475 }	scale = { 0.59 0.59 }	}
 	}		
 }
-k_redoran = {
+dynn_redoran = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 159 60 40 }	
 	colored_emblem = {
@@ -58,7 +58,7 @@ k_redoran = {
 		instance = {	position = { 0.5 0.475 }	scale = { 0.59 0.59 }	}
 	}		
 }
-k_dres = {
+dynn_dres = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 150 130 110 }	
 	colored_emblem = {
@@ -78,32 +78,7 @@ k_dres = {
 		instance = {	position = { 0.5 0.47 }	scale = { 0.75 0.75 }	}
 	}	
 }
-house_indoril = { # Indoril
-	pattern = "pattern_solid.dds"
-	color1 = rgb { 77 95 119 }	
-	colored_emblem = {
-		texture = "ce_frame_side.dds"
-		color1 = rgb { 6 21 35 }
-		instance = {	position = { 0.5 0.5 }	scale = { 0.8 1 }	}
-	}		
-	colored_emblem = {
-		texture = "ce_dunmer_frame_greathouse_1.dds"
-		color1 = rgb { 22 36 50 }
-		color2 = rgb { 77 95 119 }
-		instance = {	position = { 0.5 0.5 }	scale = { 0.74 1 }	}
-	}
-	colored_emblem = {
-		texture = "ce_dunmer_sigil_indoril_5.dds"
-		color1 = rgb { 6 21 35 }
-		instance = {	position = { 0.5 0.375 }	scale = { 0.5 0.56 }	}
-	}	
-	colored_emblem = {
-		texture = "ce_daedra_sigil_I.dds"
-		color1 = rgb { 6 21 35 }
-		instance = {	position = { 0.5 0.775 }	scale = { 0.3 0.3 }	}
-	}	
-}
-k_indoril = {
+dynn_indoril = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 91 125 136 }	
 	colored_emblem = {
@@ -869,7 +844,7 @@ k_dagoth = {
 		instance = {	position = { 0.65 0.63 }	scale = { 0.2 0.2 }	}
 	}
 }
-house_dagoth = { # Bacon - 100% not Dagoth
+dynn_dagoth = { # Bacon - 100% not Dagoth
     pattern = "pattern_solid.dds"
     color1 = rgb { 110 41 22 }	
     colored_emblem = {
@@ -889,7 +864,7 @@ house_dagoth = { # Bacon - 100% not Dagoth
     	instance = {	position = { 0.5 0.465 }	scale = { 0.75 0.8 }	}
     }	
 }
-house_Stormcloak = { #Stormcloak
+dynn_Stormcloak = { #Stormcloak
 	pattern = "pattern_vertical_stripes_04.dds"
 	color1 = "skyrim_mmauve"
 	color2 = "skyrim_lgold"
@@ -901,7 +876,50 @@ house_Stormcloak = { #Stormcloak
 	}
 
 }
-house_altmer = { # Direnni
+e_falkreath = {
+	pattern = "pattern_falkreath.dds"
+	color1 = rgb { 169 169 167 }
+	color2 = "skyrim_mmauve"
+	colored_emblem = {
+		texture = "ce_capsule.dds"
+		color1 = rgb { 169 169 167 }
+		instance = { position = { 0.5 0.48 } scale = { 0.9 0.9 }  }
+	}
+	colored_emblem = {
+		texture = "ce_skyrim_falkreath.dds"
+		color1 = "skyrim_dmauve"
+		color2 = "skyrim_lgold"
+		instance = { position = { 0.5 0.41 } scale = { 0.75 0.75 }  }
+	}
+}
+e_whiterun = {
+	pattern = "pattern_whiterun.dds"
+	color1 = "black"
+	color2 = "skyrim_silver"
+	colored_emblem = {
+		texture = "ce_skyrim_whiterun_2.dds"
+		color1 = "black"
+		color2 = "skyrim_dgold"
+		instance = { position = { 0.5 0.39 } scale = { 0.61 0.61 } }
+	}
+}
+e_winterhold = {
+	pattern = "pattern_winterhold.dds"
+	color1 = "skyrim_dgold"
+	color2 = rgb { 107 158 140 }
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = rgb { 73 107 95 }
+		instance = { position = { 0.5 0.5 } scale = { 1.05 1.05 }  }
+	}
+	colored_emblem = {
+		texture = "ce_skyrim_winterhold.dds"
+		color1 = rgb { 38 56 50 }
+		color2 = "skyrim_dgold"
+		instance = { position = { 0.5 0.47 } scale = { 0.68 0.68 }  }
+	}
+}
+dynn_altmer = { # Direnni
 	pattern="pattern_solid.dds"
 	color1=red
 	colored_emblem={
@@ -922,7 +940,7 @@ house_altmer = { # Direnni
 		}
 	}
 }
-house_company_hat = {
+dynn_company_hat = {
 	pattern="pattern__solid_designer.dds"
 	color1=yellow
 	color2=blue_light
@@ -937,3 +955,237 @@ house_company_hat = {
 		}
 	}
 }
+d_auriel={
+    pattern="pattern__solid_designer.dds"
+    color1=rgb { 182 160 128 }
+    color2=skyrim_gold
+    color3=yellow
+    colored_emblem={
+        color1=rgb { 208 184 149 }
+        color2=rgb { 145 113 42 }
+        color3=skyrim_gold
+        texture="ce_altmer_bg_2.dds"
+        instance={
+            scale={ 1.000000 -1.000000 }
+            depth=2.010000
+        }
+    }
+    colored_emblem={
+        color1=rgb { 222 239 255 }
+        color2=blue_light
+        color3=blue_light
+        texture="ce_altmer_caligraphy_auriel_1.dds"
+        instance={
+            position={ 0.490000 0.485000 }
+            scale={ 0.310000 0.310000 }
+        }
+    }
+    colored_emblem={
+        color1=rgb { 170 134 79 }
+        color2=rgb { 199 199 199 }
+        color3=rgb { 136 159 181 }
+        texture="ce_sapiarch_sun.dds"
+        instance={
+            position={ 0.505000 0.480000 }
+            scale={ 1.300000 1.300000 }
+            depth=1.010000
+        }
+    }
+
+}
+d_tonal_architects={
+	pattern="pattern__solid_designer.dds"
+	color1=skyrim_gold
+	color2=skyrim_mblue
+	color3=yellow
+	colored_emblem={
+		color1=skyrim_mblue
+		texture="ce_circle.dds"
+		instance={
+			position={ 0.400000 0.825000 }
+			scale={ 0.245000 0.245000 }
+		}
+		instance={
+			position={ 0.790000 0.300000 }
+			scale={ 0.190000 0.190000 }
+			depth=1.010000
+		}
+		instance={
+			position={ 0.300000 0.205000 }
+			scale={ 0.340000 0.340000 }
+			depth=2.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_african_kile.dds"
+		instance={
+			scale={ 0.530000 0.530000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=skyrim_mblue
+		color2=skyrim_gold
+		color3=skyrim_gold
+		texture="ce_circle.dds"
+		instance={
+			scale={ 0.725000 0.725000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_pagan_wheel.dds"
+		instance={
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=skyrim_mblue
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			scale={ 0.825000 0.825000 }
+			depth=4.010000
+		}
+	}
+}
+dynn_septim = {
+	pattern="pattern_solid.dds"
+	color1=rgb { 93 33 33 }
+	colored_emblem={
+		color1=rgb { 155 123 64 }
+		color2=rgb { 195 153 92 }
+		texture="ce_septim_cross.dds"
+		instance={
+			position={ 0.490000 0.460000 }
+			depth=8.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 16 16 16 }
+		color2=rgb { 172 136 84 }
+		texture="ce_septim_diamond.dds"
+		instance={
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 174 142 94 }
+		texture="ce_septim.dds"
+		instance={
+			scale={ 0.550000 0.550000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 163 138 100 }
+		texture="ce_diamond_01.dds"
+		instance={
+			position={ 0.500000 0.310000 }
+			scale={ 0.080000 0.080000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=black
+		color2=rgb { 195 166 123 }
+		texture="ce_septim_cross.dds"
+		instance={
+			position={ 0.490000 0.460000 }
+			scale={ 0.810000 0.810000 }
+			depth=7.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 82 28 28 }
+		texture="ce_dunmer_sigil_degoth_4.dds"
+		instance={
+			depth=9.010000
+		}
+	}
+	colored_emblem={
+		color1=black
+		texture="ce_mena_fess.dds"
+		instance={
+			position={ 0.880000 0.850000 }
+			scale={ 0.280000 0.280000 }
+			rotation=45
+		}
+		instance={
+			position={ 0.090000 0.860000 }
+			scale={ 0.290000 0.290000 }
+			depth=1.010000
+			rotation=136
+		}
+		instance={
+			position={ 0.890000 0.060000 }
+			scale={ 0.280000 0.280000 }
+			depth=2.010000
+			rotation=136
+		}
+		instance={
+			position={ 0.050000 0.020000 }
+			scale={ 0.290000 0.290000 }
+			depth=3.010000
+			rotation=45
+		}
+	}
+}
+dynn_dwemer = {
+	pattern="pattern_vertical_stripes_06.dds"
+	color1=rgb { 22 25 39 }
+	color2=rgb { 77 95 111 }
+	colored_emblem={
+		color1=rgb { 130 148 164 }
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.500000 0.420000 }
+			scale={ 0.520000 0.520000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 22 25 39 }
+		color2=rgb { 77 95 111 }
+		texture="ce_dwemer_frame_2.dds"
+		instance={
+			scale={ 0.750000 1.000000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 22 25 39 }
+		texture="ce_dwemer_starchart.dds"
+		instance={
+			position={ 0.500000 0.420000 }
+			scale={ 0.600000 0.600000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 22 25 39 }
+		texture="ce_dwemer_gear_2.dds"
+		instance={
+			position={ 0.333000 0.725000 }
+			scale={ 0.250000 0.250000 }
+		}
+		instance={
+			position={ 0.666000 0.725000 }
+			scale={ -0.250000 0.250000 }
+			depth=1.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 22 25 39 }
+		texture="ce_dwemer_gear_1.dds"
+		instance={
+			position={ 0.500000 0.790000 }
+			scale={ 0.333000 0.333000 }
+			depth=2.010000
+		}
+	}
+}
+
+
+
