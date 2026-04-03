@@ -72,9 +72,7 @@ c_laconia = {
     item = {
         trigger = {
             OR = {
-                holder.culture = {
-                    Culture = laconian
-                }
+                holder.culture = {Culture = laconian }
                 holder.faith.religion = religion:hellenism_religion
             }
         }
@@ -95,5 +93,58 @@ k_romagna = {
             holder.faith.faith = faith:roman_pagan
         }
         coat_of_arms = d_blood_peace
+    }
+}
+h_roman_empire = {
+    item = {
+        trigger = {
+            OR = {
+                holder.culture = {Culture = high_valyrian }
+            }
+        }
+        coat_of_arms = tar_roman
+    }
+}
+h_eastern_roman_empire = {
+    item = {
+        trigger = {
+            OR = {
+                holder.culture = {Culture = high_valyrian }
+            }
+        }
+        coat_of_arms = tar_roman
+    }
+}
+b_ain_al-qayyara = {
+    item = {
+        trigger = {
+            AND = {
+                holder.culture = {Culture = assyrian }
+                holder.faith.faith = faith:assyrian_pagan
+            }
+        }
+        coat_of_arms = c_ashur
+    }
+}
+c_mosul = {
+    item = {
+        trigger = {
+            AND = {
+                holder.culture = {Culture = assyrian }
+                holder.faith.faith = faith:assyrian_pagan
+            }
+        }
+        coat_of_arms = d_ashur
+    }
+}
+d_diyarrabia = {
+    item = {
+        trigger = {
+            AND = {
+                holder.culture = {Culture = assyrian }
+                holder.faith.faith = faith:assyrian_pagan
+            }
+        }
+        coat_of_arms = k_assyria_alt
     }
 }

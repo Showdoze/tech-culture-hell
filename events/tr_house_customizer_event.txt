@@ -202,6 +202,13 @@ house_customizer.0004 = { #Select Riverlands
 		remove_trait = house_customizer
 		set_father = character:Frey_1
 	}
+	option = { #FREY lanister
+		name = house_customizer_frey_lanister
+		set_house = character:Frey_15.house
+		remove_trait = house_customizer
+		set_father = character:Frey_15
+		set_mother = character:Lannister_3
+	}
 	option = { #PENNY
 		name = house_customizer_penny
 		set_house = character:Penny_16.house
@@ -362,6 +369,12 @@ house_customizer.0006 = { #CROWNLANDS
 		set_house = character:tr_Daemon_Blackfyre.house
 		remove_trait = house_customizer
 		set_father = character:tr_Daemon_Blackfyre
+	}
+	option = { #old brightflame
+		name = house_Brightflame
+		set_house = character:tr_old_Brightflame.house
+		remove_trait = house_customizer
+		set_father = character:tr_old_Brightflame
 	}
 	option = {
 		name = house_Brightflame

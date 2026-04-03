@@ -645,15 +645,13 @@ british = {
 
 
 #Dawn Empire
-
-dawn_empire = {
+ dawn_empire = {
 	textured_emblem = {
 		texture = "dawn_empire_dynasty.dds"
 		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
 	}
-}
-
-house_dawn_chosen = {
+ }
+ house_dawn_chosen = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 0 0 200 }
 
@@ -669,9 +667,8 @@ house_dawn_chosen = {
 		color1 = rgb { 0 0 0 }
 		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
 	}		
-}
-
-house_dawn_seijuro = {
+ }
+ house_dawn_seijuro = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 50 50 50 }
 
@@ -680,9 +677,8 @@ house_dawn_seijuro = {
 		color2 = rgb { 200 200 200 }
 		instance = {	position = { 0.5 0.5 }	scale = { 1 1 }	}
 	}		
-}
-
-house_dawn_ranja = {
+ }
+ house_dawn_ranja = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 120 0 0 }
 
@@ -697,9 +693,8 @@ house_dawn_ranja = {
 		color2 = rgb { 150 100 0 }
 		instance = {	position = { 0.5 0.5 }	scale = { 0.7 0.7 }	}
 	}		
-}
-
-house_dawn_dokuja = {
+ }
+ house_dawn_dokuja = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 200 200 200 }
 
@@ -716,7 +711,7 @@ house_dawn_dokuja = {
 	}		
 }
 
-house_dawn_kizan = {
+ house_dawn_kizan = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 150 150 0 }
 
@@ -727,7 +722,7 @@ house_dawn_kizan = {
 	}		
 }
 
-house_dawn_imperial = {
+ house_dawn_imperial = {
 	pattern = "pattern_solid.dds"
 	color1 = rgb { 50 0 0 }
 
@@ -842,7 +837,7 @@ dynn_otsutsuki = { # Ōtsutsuki
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
 	}	
 }
-house_uchiha = { # Uchiha
+dynn_uchiha = { # Uchiha
 	pattern = "pattern_solid.dds"	
 	color1 = "blue"
 	color2 = "white"
@@ -852,7 +847,7 @@ house_uchiha = { # Uchiha
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
 	}	
 }
-house_senju = { # Senju
+dynn_senju = { # Senju
 	pattern = "pattern_solid.dds"	
 	color1 = "blue"
 	color2 = "white"
@@ -862,7 +857,7 @@ house_senju = { # Senju
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
 	}	
 }
-house_hygua = { # Hygua
+dynn_hygua = { # Hygua
 	pattern = "pattern_solid.dds"	
 	color1 = "yellow"
 	color2 = "red"
@@ -872,7 +867,7 @@ house_hygua = { # Hygua
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
 	}	
 }
-house_uzumaki = { # Uzumaki
+dynn_uzumaki = { # Uzumaki
 	pattern = "pattern_solid.dds"	
 	color1 = "blue"
 	color2 = "white"
@@ -1397,9 +1392,78 @@ house_japhet_folly = {
 		}
 	}
 }
-
-
-
-
-
+tar_roman = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ass_roman_dragon.dds"
+		color1 = "yellow_light" 
+		instance = {position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+	}
+}
+k_rhodos = {
+    pattern = "nr_pattern07.dds"
+    color1 = "bg_blue"
+    color2 = "pt_blue"
+    colored_emblem = {
+        texture = "ce_liburna_novilara.dds"
+        color1 = "red"
+        color2 = "white"
+		color3 = "yellow"
+        instance = { scale = { 1.0 1.0 }  position = { 0.5 0.5 } }
+    }
+}
+atheniandyn002 = { # Eleusinios
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_border_circle.dds"
+		color1 = "red"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_galatian.dds"
+		color1 = "red"
+		color2 = "yellow"
+		color3 = "pink_skin"
+	}
+}
+c_marathon = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "orange"
+	colored_emblem = {
+		texture = "ce_border_greek_06.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }	
+	}
+	colored_emblem = {
+		texture = "ce_marathon.dds"
+		color1 = "yellow"
+		color2 = "black"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.85 }  }
+	}
+}
+dynn_patraos = {
+	pattern = "pattern_solid.dds"
+	color1 = "green_light"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_hellenistic_frame_02.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1.01 1.01 }  }	
+	}	
+	colored_emblem = {
+		texture = "ce_hellenistic_frame_04.dds"
+		color1 = "green_light"
+	}	
+	colored_emblem = {
+		texture = "ce_patraos.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "pink_skin"
+	}
+}
 

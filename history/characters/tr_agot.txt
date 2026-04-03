@@ -2374,7 +2374,9 @@
 	culture = riverman_main
 	trait = education_stewardship_4
 	trait = diligent
+	trait = peasant_born
 	trait = ambitious
+	trait = avaricious
 	666.1.1 = { birth = yes }
 	725.1.1 = { death = yes }
    }
@@ -2414,7 +2416,7 @@
 	trait = fecund
 	trait = deceitful
 	trait = ambitious
-	trait = rowdy
+	trait = venerable
 	trait = lustful
 	trait = lifestyle_reveler
 	trait = family_first
@@ -2493,6 +2495,104 @@
 		}
 	}
  }
+  Frey_15 = {
+	name = Emmon # Canon, a lord of the Riverrun
+	dynasty = dynn_Frey
+	dna = Frey_15
+	martial = 3
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 6
+	learning = 5
+	prowess = 3
+	religion = fots_seven
+	culture = riverman_main
+	sexuality = heterosexual
+	father = Frey_1
+	mother = Royce_80
+	trait = education_intrigue_2
+	trait = dull
+	trait = pensive
+	trait = craven
+	trait = greedy
+	trait = vengeful
+	trait = ambitious	
+	disallow_random_traits = yes
+	808.1.1 = {birth = yes}
+	828.1.1 = { 
+		add_spouse = Lannister_3 # Genna Lannister, seven at the time
+		dynasty_house = house_cleos_frey
+	}
+	900.2.7 = { death=yes }
+}
+  Frey_16 = {
+	name = Cleos # Canon, sent as an envoy to King's Landing
+	dynasty_house = house_cleos_frey
+	dna = Frey_16
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	learning = 5
+	prowess = 3
+	religion = fots_seven
+	culture = westerman_main
+	father = Frey_15
+	mother = Lannister_3
+	trait = education_martial_1
+	trait = arrogant
+	trait = craven
+	trait = trusting
+	trait = just
+	trait = curious
+	disallow_random_traits = yes
+	828.1.1 = {birth = yes}
+	867.11.4 = {death = { death_reason = death_attacked } }# Attacked by outlaws
+}
+  Frey_17 = {
+	name = Lyonel # Canon
+	dynasty_house = house_cleos_frey
+	dna = Frey_17
+	martial = 6
+	prowess = 3
+	religion = fots_seven
+	culture = westerman_main
+	father = Frey_15
+	mother = Lannister_3
+	trait = education_martial_2
+	trait = arrogant
+	829.1.1 = {birth = yes}
+	#845.1.1 = { add_spouse = Crakehall_6} # Melesa Crakehall
+	900.5.10 = { death=yes }
+}
+  Frey_18 = {
+	name = Tion # Canon
+	dynasty_house = house_cleos_frey
+	dna = Frey_18
+	martial = 6
+	prowess = 6
+	religion = fots_seven
+	culture = westerman_main
+	trait = education_martial_2
+	father = Frey_15
+	mother = Lannister_3
+	850.1.1 = {birth = yes}
+	868.11.8 = {death = {death_reason = death_murder_knownkiller = Karstark_4 }}# Rickard Karstark
+}
+  Frey_19 = {
+	name = Walder # Canon, AKA: Red Walder
+	dynasty_house = house_cleos_frey
+	martial = 6
+	dna = Frey_19
+	religion = fots_seven
+	culture = westerman_main
+	trait = education_martial_2
+	father = Frey_15
+	mother = Lannister_3
+	give_nickname = nick_red_prefix
+	855.2.1 = {birth = yes}
+	900.5.10 = { death=yes } # Emmon Frey
+  }
    Frey_39 = {
 	name = Merrett # Canon
 	dynasty = dynn_Frey
@@ -2606,7 +2706,7 @@
 	culture = riverman_main
 	father = Frey_1
 	mother = Blackwood_5
-	trait = education_intrigue_4
+	trait = education_diplomacy_4
 	trait = intellect_good_3
 	trait = clubfooted
 	trait = patient
@@ -6043,7 +6143,33 @@
 	895.1.1 = { death = yes } # Yohn is a suitor for Lysa in books
  }
  #
-#TARGARYEN   
+#TARGARYEN  
+  tr_old_Brightflame = {
+	name = Aerion # Canon, AKA: Aerion Brightflame
+	dynasty_house = house_old_Brightflame
+	dna = Targaryen_119 
+	martial = 2
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 2
+	prowess = 5
+	religion = dragon_cult
+	culture = high_valyrian
+	father = tr_tar_1_grandpa
+	trait = beauty_good_3
+	trait = lunatic_1
+	trait = bossy
+	trait = education_martial_prowess_2
+	trait = wrathful
+	trait = arrogant
+	trait = arbitrary
+	trait = hygene_good_1
+	trait = lifestyle_mystic
+	give_nickname = nick_brightflame
+	disallow_random_traits = yes
+	804.1.1 = { birth = yes }
+	860.1.1 = { death = { death_reason = death_drinking_wildfire } }
+  }
   tr_Aerion_Brightflame = {
 	name = Aerion # Canon, AKA: Aerion Brightflame
 	dynasty = dynasty_Targaryen
@@ -7700,8 +7826,8 @@
 	trait = gregarious
 	trait = just
 	disallow_random_traits = yes
-	father = Baratheon_14 #Baratheon_75 # Ormund Baratheon
-	mother = Durrandon_88 #Targaryen_130 # Rhaelle Targaryen
+	father = Baratheon_71 #Baratheon_75 # Ormund Baratheon
+	#mother =  #Targaryen_130 # Rhaelle Targaryen
 	816.1.1 = {birth = yes}
 	820.1.1 = { effect = {dynasty:dynn_Baratheon = { set_coa = dynn_Baratheon }}}
 	832.1.1 = { add_spouse = Estermont_5 }# Cassana Estermont
