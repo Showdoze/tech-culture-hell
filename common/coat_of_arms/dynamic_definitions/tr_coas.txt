@@ -9,7 +9,126 @@
         coat_of_arms = e_russia_tsar
     }
 }
-
+e_carpathia = { #e_carpathia_mag
+    #item = {
+		#trigger = {
+		#	cat_coa_magyar_heritage_trigger = yes
+		#}
+		#coat_of_arms = e_carpathia_mag
+	#}
+	item = {
+		trigger = {
+			coa_cat_great_hungary_trigger = yes
+			cat_coa_christ_religion_trigger = yes
+		}
+		coat_of_arms = e_carpathia_great
+	}
+	item = {
+		trigger = {
+			coa_cat_dynasty_meroving_trigger = yes
+		}
+		coat_of_arms = e_carpathia_meroving
+	}
+	item = {
+		trigger = {
+			OR = {
+			coa_cat_robertien_liege_trigger = yes
+			cat_coa_french_culture_trigger = yes
+			}
+		}
+		coat_of_arms = e_carpathia_france
+	}
+	item = {
+		trigger = {
+			cat_coa_islam_religion_trigger = yes
+		}
+		coat_of_arms = e_carpathia_islam
+	}
+	item = {
+		trigger = {
+			cat_coa_notchrist_religion_trigger = yes
+		}
+		coat_of_arms = e_carpathia_notchrist
+	}
+	item = {
+		trigger = {
+			cat_coa_polish_trigger = yes
+		}
+		coat_of_arms = e_carpathia_west_slav
+	}
+	item = {
+		trigger = {
+			cat_coa_vlach_heritage_trigger = yes
+		}
+		coat_of_arms = e_carpathia_vlach
+	}
+}
+k_hungary = { #
+	item = {
+		trigger = { #
+			coa_cat_meroving_liege_trigger = yes
+		}
+		coat_of_arms = k_hungary_meroving
+	}
+	item = {
+		trigger = { #
+			OR = {
+			coa_cat_robertien_liege_trigger = yes
+			cat_coa_french_culture_trigger = yes
+			}
+		}
+		coat_of_arms = k_hungary_france
+	}
+	item = {
+		trigger = { #
+			cat_coa_islam_religion_trigger = yes
+		}
+		coat_of_arms = k_hungary_islam
+	}
+	item = {
+		trigger = { # 작동
+			cat_coa_notchrist_religion_trigger = yes
+		}
+		coat_of_arms = k_hungary_notchrist
+	}
+	item = {
+		trigger = {
+			cat_coa_polish_trigger = yes
+		}
+		coat_of_arms = k_hungary_slovien
+	}
+}
+k_dacia = { #
+	item = {
+		trigger = {
+			OR ={
+			cat_coa_hellenism_religion_trigger = yes
+			cat_coa_pagan_religion_trigger = yes
+			}
+		}
+		coat_of_arms = k_dacia_draco
+	}
+	item = {
+		trigger = {
+			cat_coa_notchrist_religion_trigger = yes
+		}
+		coat_of_arms = k_dacia_notchrist
+	}
+	item = {
+		trigger = {
+			coa_cat_dynasty_hohenzollern_trigger = yes
+		}
+		coat_of_arms = k_dacia_hohenzollern
+	}
+}
+d_transylvanian_alps = { #
+	item = {
+		trigger = {
+			cat_coa_notchrist_religion_trigger = yes
+		}
+		coat_of_arms = d_transylvanian_alps_notchrist
+	}	
+}
 e_france = {
     item = {
         trigger = {
@@ -20,6 +139,18 @@ e_france = {
         }
         coat_of_arms = e_france_nap
     }
+    item = {
+		trigger = {
+			coa_cat_dynasty_meroving_trigger = yes
+		}
+		coat_of_arms = e_france_meroving
+	}
+	item = {
+		trigger = {
+			coa_cat_dynasty_karling_trigger = yes
+		}
+		coat_of_arms = e_france_karling
+	}
 }
 k_england = {
     item = {
@@ -88,12 +219,18 @@ c_baghdad = {
     }
 }
 k_romagna = {
+    #item = {
+        #trigger = {
+        #    holder.faith.faith = faith:roman_pagan
+        #}
+        #coat_of_arms = d_blood_peace
+    #}
     item = {
-        trigger = {
-            holder.faith.faith = faith:roman_pagan
-        }
-        coat_of_arms = d_blood_peace
-    }
+		trigger = {
+			coa_roman_trigger = yes
+		}
+		coat_of_arms = k_romagna_re
+	}
 }
 h_roman_empire = {
     item = {
@@ -147,4 +284,110 @@ d_diyarrabia = {
         }
         coat_of_arms = k_assyria_alt
     }
+}
+e_spain = {
+	item = {
+		trigger = {
+			OR = {
+				holder.faith.religion = religion:islam_religion
+				holder.culture = {
+					OR = {
+						has_coa_gfx = arabic_group_coa_gfx
+						has_coa_gfx = berber_group_coa_gfx
+					}
+				}
+			}
+		}
+		coat_of_arms = e_spain_islamic	
+	}
+    item = {
+        trigger = {
+            Or = {
+                holder.culture = {Culture = visigothic }
+            }
+        }
+        coat_of_arms = e_spain_visgoth
+    }	
+}
+k_scotland = { #
+	item = {
+		trigger = {
+            OR = {
+                holder.faith.religion = faith:brythonic_pagan
+                holder.faith.religion = faith:gaelic_pagan
+                holder.faith.religion = faith:welsh_pagan
+            }
+		}
+		coat_of_arms = k_scotland_pic
+	}	
+}
+e_italy = { #
+	item = {
+		trigger = {
+			OR = {
+			coa_cat_dynasty_savoie_trigger = yes
+			coa_cat_dynasty_asti_trigger = yes
+			}
+		}
+		coat_of_arms = e_italy_savoie
+	}
+	item = {
+		trigger = {
+			coa_cat_hauteville_norman_trigger = yes
+		}
+		coat_of_arms = e_italy_hauteville
+	}
+	item = {
+		trigger = {
+			cat_coa_central_germanic_group_trigger = yes
+			cat_coa_christ_religion_trigger = yes
+		}
+		coat_of_arms = e_italy_german
+	}
+	item = {
+		trigger = {
+			cat_coa_byzantine_group_trigger = yes
+		}
+		coat_of_arms = e_italy_byz
+	}
+}
+c_roma = {
+    item = {
+		trigger = {
+			coa_roman_trigger = yes
+		}
+		coat_of_arms = c_roma_roman
+	}
+}
+e_byzantium = { #
+	item = {
+		trigger = {
+			coa_cat_dynasty_palaiologos_trigger = yes
+		}
+		coat_of_arms = e_byzantium_palaiologos
+	}
+    item = {
+		trigger = {
+			coa_cat_dynasty_komnenos_trigger = yes
+		}
+		coat_of_arms = e_byzantium_komnenos
+	}
+    item = {
+		trigger = {
+			coa_cat_dynasty_makedon_trigger = yes
+		}
+		coat_of_arms = e_byzantium_makedon
+	}
+	item = {
+		trigger = {
+			cat_coa_islam_religion_trigger = yes
+		}
+		coat_of_arms = e_byzantium_islam
+	}
+	item = {
+		trigger = {
+			cat_coa_notchrist_religion_trigger = yes
+		}
+		coat_of_arms = e_byzantium_notchrist
+	}
 }

@@ -10,4 +10,102 @@ coa_aztec_trigger = {
 portrait_cemanahuac_clothing_trigger = {
 	culture = { has_clothing_gfx = cemanahuac_clothing_gfx }
 }
+coa_cat_dynasty_meroving_trigger = {
+	holder = { dynasty = dynasty:542 }
+}
+coa_cat_dynasty_karling_trigger = {
+	holder = { dynasty = dynasty:25061 }
+}
+coa_cat_dynasty_habsburg_trigger = {
+	holder = { dynasty = dynasty:664 } #dynn_Etichonen
+}
+cat_coa_byzantine_group_trigger = { 
+	holder.culture = { has_coa_gfx = byzantine_group_coa_gfx }
+}
+cat_coa_central_germanic_group_trigger = { 
+	holder.culture = { has_coa_gfx = german_group_coa_gfx }
+}
+coa_cat_hauteville_norman_trigger = {
+	OR = {
+		holder = { dynasty = dynasty:678 }
+		holder.culture = { has_coa_gfx = norman_coa_gfx }
+	}
+}
+coa_cat_dynasty_savoie_trigger = {	
+	holder = {dynasty = dynasty:240}
+}
+coa_cat_dynasty_asti_trigger = {	
+	holder = {dynasty = dynasty:799}
+}
+coa_roman_trigger = {
+    holder.culture = { has_innovation = innovation_roman_concrete }
+}
+coa_cat_great_hungary_trigger = {
+	holder = {completely_controls = title:k_croatia }
+}
+cat_coa_notchrist_religion_trigger = {
+	holder = {NOT = {faith.religion = religion:christianity_religion}}
+}
+cat_coa_christ_religion_trigger = {
+	holder = {faith.religion = religion:christianity_religion}
+}
+cat_coa_islam_religion_trigger = {
+	holder = {faith.religion = religion:islam_religion}
+}
+cat_coa_judaism_religion_trigger = {
+	holder = {faith.religion = religion:judaism_religion}
+}
+coa_cat_robertien_liege_trigger = {
+	OR = {
+		holder = { dynasty = dynasty:743 }
+		holder = { 
+		any_liege_or_above = {dynasty = dynasty:743 }
+		}
+	}
+}
+cat_coa_french_culture_trigger = { # 프랑스
+	holder.culture = { has_coa_gfx = french_coa_gfx }
+}
+cat_coa_polish_trigger = { 
+	holder.culture = {has_coa_gfx = polish_coa_gfx}
+}
+cat_coa_vlach_heritage_trigger = { #
+	holder.culture = { has_cultural_pillar = heritage_vlach }
+}
+cat_coa_magyar_heritage_trigger = { #
+	holder.culture = { has_cultural_pillar = heritage_magyar }
+}
+cat_coa_hellenism_religion_trigger = {
+	holder = {faith.religion = religion:hellenism_religion}
+}
+cat_coa_pagan_religion_trigger = {
+	holder = {
+		OR = {
+			faith.religion = religion:germanic_religion
+			faith.religion = religion:slavic_religion
+			faith.religion = religion:finno_ugric_religion
+			faith.religion = religion:baltic_religion
+			faith.religion = religion:tengrism_religion
+			faith.religion = religion:magyar_religion
+			faith.religion = religion:siberian_religion
+			faith.religion = religion:paganism_religion
+		}
+	}
+}
+coa_cat_dynasty_hohenzollern_trigger = {
+	holder = { dynasty = dynasty:12476 }
+}
+coa_cat_dynasty_palaiologos_trigger = {
+	holder = { dynasty = dynasty:48}
+}
+coa_cat_dynasty_piast_trigger = {
+	holder = { dynasty = dynasty:699 }
+}
+coa_cat_dynasty_komnenos_trigger = {
+	holder = { dynasty = dynasty:634 }
+}
+coa_cat_dynasty_komnenos_trigger = {
+	holder = { dynasty = dynasty:644 }
+}
+
 
