@@ -8,7 +8,7 @@ tr_artifact_spawn.01 = {
         if = {
             limit = {
                 exists = character:tr_ds_siegward
-                character:tr_ds_siegward = { is_alive = yes }
+                #character:tr_ds_siegward = { is_alive = yes }
             }
             character:tr_ds_siegward = {
                 create_artifact_cloranthy_ring = { OWNER = this }

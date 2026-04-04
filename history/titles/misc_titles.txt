@@ -406,27 +406,27 @@ d_laamp_merc_golden_company = {
                 create_maa_regiment = {
                     type = light_footmen
                     check_can_recruit = no
-                    size = 20
+                    size = 10
                 }
                 create_maa_regiment = {
                     type = pikemen_unit
                     check_can_recruit = no
-                    size = 20
+                    size = 10
                 }
                 create_maa_regiment = {
                     type = armored_footmen
                     check_can_recruit = no
-                    size = 20
+                    size = 10
                 }
                 create_maa_regiment = {
                     type = light_horsemen
                     check_can_recruit = no
-                    size = 25
+                    size = 15
                 }
                 create_maa_regiment = {
                     type = armored_horsemen
                     check_can_recruit = no
-                    size = 10
+                    size = 5
                 }
                 create_maa_regiment = {
                     type = crossbowmen
@@ -441,12 +441,12 @@ d_laamp_merc_golden_company = {
                 create_maa_regiment = {
                     type = trebuchet
                     check_can_recruit = no
-                    size = 5
+                    size = 3
                 }
                 create_maa_regiment = {
                     type = war_elephant
                     check_can_recruit = no
-                    size = 2
+                    size = 1
                 }
             }
             create_landless_adventurer_title_history_effect = yes
@@ -726,7 +726,24 @@ d_dawn_empire = {
 d_fhk_iron_legion = {
     800.1.1 = {
         holder = tr_fh_warden_julian
-        government = mercenary_government
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
+
+            holder = {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+
+                create_maa_regiment = {
+                    type = armored_footmen
+                    check_can_recruit = no
+                    size = 5
+                }
+            }
+        }
     }
     830.1.1 = {
         holder = tr_fh_warden_kanerian
@@ -739,21 +756,77 @@ d_fhk_iron_legion = {
 d_fhk_blackstone_legion = {
     840.1.1 = {
         holder = tr_fh_warmonger
-        government = mercenary_government
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
+
+            holder = {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+
+                create_maa_regiment = {
+                    type = armored_footmen
+                    check_can_recruit = no
+                    size = 6
+                }
+            }
+        }
     }
     1200.1.1 = { holder = 0 }
 }
 d_fhk_daubeny_militia = {
     856.1.1 = {
         holder = tr_fh_daubeny
-        government = mercenary_government
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
+
+            holder = {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+
+                create_maa_regiment = {
+                    type = armored_footmen
+                    check_can_recruit = no
+                    size = 5
+                }
+            }
+        }
     }
     1200.1.1 = { holder = 0 }
 }
 d_fhk_regal_legion = {
     840.1.1 = {
         holder = tr_fh_gryphon
-        government = mercenary_government
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
+
+            holder = {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+
+                create_maa_regiment = {
+                    type = huscarl
+                    check_can_recruit = no
+                    size = 5
+                }
+                create_maa_regiment = {
+                    type = light_horsemen
+                    check_can_recruit = no
+                    size = 5
+                }
+            }
+        }
     }
     1200.1.1 = { holder = 0 }
 }
@@ -761,7 +834,24 @@ d_fhk_regal_legion = {
 d_fh_outlander = {
     850.1.1 = {
         holder = tr_outlander_pirate
-        government = mercenary_government
+        government = landless_adventurer_government
+        succession_laws = { landless_adventurer_succession_law }
+
+        effect = {
+            create_landless_adventurer_title_history_effect = yes
+            set_variable = { name = adventurer_creation_reason value = flag:historical }
+            destroy_landless_title_no_dlc_effect = { DATE = 1200.1.1 }
+
+            holder = {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+
+                create_maa_regiment = {
+                    type = light_footmen
+                    check_can_recruit = no
+                    size = 10
+                }
+            }
+        }
     }
     1200.1.1 = { holder = 0 }
 }
