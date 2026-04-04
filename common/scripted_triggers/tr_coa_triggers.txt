@@ -44,10 +44,17 @@ coa_cat_great_hungary_trigger = {
 	holder = {completely_controls = title:k_croatia }
 }
 cat_coa_notchrist_religion_trigger = {
+	OR = {
 	holder = {NOT = {faith.religion = religion:christianity_religion}}
+	}
 }
 cat_coa_christ_religion_trigger = {
-	holder = {faith.religion = religion:christianity_religion}
+	scope:faith = {
+		OR = {
+		religion = religion:christianity_religion
+		OR = { has_doctrine = tenet_christan }
+		}
+	}
 }
 cat_coa_islam_religion_trigger = {
 	holder = {faith.religion = religion:islam_religion}
@@ -107,5 +114,26 @@ coa_cat_dynasty_komnenos_trigger = {
 coa_cat_dynasty_komnenos_trigger = {
 	holder = { dynasty = dynasty:644 }
 }
-
-
+cat_coa_dragon_cult_trigger = {
+	scope:faith = faith:dragon_cult
+}
+coa_autocracy_trigger = {
+	government_has_flag = government_is_autocracy
+}
+coa_republic_trigger = {
+	government_has_flag = government_is_republic
+}
+coa_egyptian_religion_trigger = {
+	OR = {
+		scope:faith = faith:kemetic_pagan
+		scope:faith = faith:atenist_pagan
+		scope:faith = faith:kushitism_pagan
+	}
+}
+coa_spartan_trigger = {holder.culture = { has_cultural_tradition = tradition_agoge } }
+coa_valyrian_trigger = {holder.culture = { has_cultural_tradition = tradition_valyrian } }
+coa_assur_trigger = {scope:faith = faith:assyrian_pagan}
+coa_babylonian_trigger = {scope:faith = faith:babylonian_pagan}
+coa_akkadian_trigger = {scope:faith = faith:akkadian_pagan}
+coa_sumerian_trigger = {scope:faith = faith:sumerian_pagan}
+coa_venice_trigger = {holder.culture = { has_cultural_tradition = tradition_venice } }

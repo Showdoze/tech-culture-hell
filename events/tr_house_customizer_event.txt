@@ -781,12 +781,12 @@ house_customizer.0011 = { #Select Ironborn
 		set_father = character:Greyjoy_5
 		set_mother = character:Harlaw_8
 	}
-	#option = { #  Crow's Eye
-	#	name = dynn_Crakehall
-	#	set_house = character:Greyjoy_6.house
-	#	remove_trait = house_customizer
-	#	set_father = character:Greyjoy_6
-	#}
+	option = { #  Crow's Eye
+		name = dynn_Greyjoy
+		set_house = character:Greyjoy_6.house
+		remove_trait = house_customizer
+		set_father = character:Greyjoy_6
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
@@ -908,10 +908,10 @@ house_customizer.0020 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {#Displays Extinct Northern Houses
-		name = house_customizer.0002.northern
+	option = {#NORTHERN EUROPE
+		name = house_customizer_north_europe
 		trigger_event = {
-			id = house_customizer.0003
+			id = house_customizer.0023
 		}
 	}
 	option = {#EASTERN ERUOPE
@@ -973,6 +973,28 @@ house_customizer.0020 = {
 		trigger_event = {
 			id = house_customizer.0001
 		}
+	}
+}
+house_customizer.0023 = { #Northern ERUOPE
+	type = character_event
+	title = house_customizer_select_north_europe
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #teutonic
+	    name = Teutonic
+		set_house = character:tr_Teutonic.house
+		remove_trait = house_customizer
+		set_father = character:tr_Teutonic
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
 	}
 }
 house_customizer.0024 = { #EASTERN ERUOPE

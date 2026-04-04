@@ -1,11 +1,6 @@
 ﻿e_russia = {
     item = {
-        trigger = {
-            exists = holder
-            holder = {
-                has_government = autocracy_government
-            }
-        }
+        trigger = {coa_autocracy_trigger = yes}
         coat_of_arms = e_russia_tsar
     }
 }
@@ -86,7 +81,7 @@ k_hungary = { #
 		coat_of_arms = k_hungary_islam
 	}
 	item = {
-		trigger = { # 작동
+		trigger = { 
 			cat_coa_notchrist_religion_trigger = yes
 		}
 		coat_of_arms = k_hungary_notchrist
@@ -132,10 +127,7 @@ d_transylvanian_alps = { #
 e_france = {
     item = {
         trigger = {
-            exists = holder
-            holder = {
-                has_government = autocracy_government
-            }
+            coa_autocracy_trigger = yes
         }
         coat_of_arms = e_france_nap
     }
@@ -150,6 +142,12 @@ e_france = {
 			coa_cat_dynasty_karling_trigger = yes
 		}
 		coat_of_arms = e_france_karling
+	}
+	item = {
+		trigger = {
+			coa_republic_trigger = yes
+		}
+		coat_of_arms = e_france_republic
 	}
 }
 k_england = {
@@ -170,7 +168,7 @@ k_england = {
 d_athens = {
     item = {
         trigger = {
-            holder.faith.religion = religion:hellenism_religion
+            cat_coa_hellenism_religion_trigger = yes
         }
         coat_of_arms = d_athens_old
     }
@@ -179,9 +177,8 @@ d_alexandria = {
     item = {
         trigger = {
             OR = {
-                holder.faith.religion = religion:hellenism_religion
-                holder.faith.religion = religion:egyptian_religion
-                holder.faith.religion = religion:kushitism_religion
+                cat_coa_hellenism_religion_trigger = yes
+                coa_egyptian_religion_trigger = yes
             }
         }
         coat_of_arms = d_alexandria_old
@@ -191,9 +188,8 @@ c_alexandria = {
     item = {
         trigger = {
             OR = {
-                holder.faith.religion = religion:hellenism_religion
-                holder.faith.religion = religion:egyptian_religion
-                holder.faith.religion = religion:kushitism_religion
+                cat_coa_hellenism_religion_trigger = yes
+                coa_egyptian_religion_trigger = yes
             }
         }
         coat_of_arms = c_alexandria_old
@@ -203,8 +199,8 @@ c_laconia = {
     item = {
         trigger = {
             OR = {
-                holder.culture = {Culture = laconian }
-                holder.faith.religion = religion:hellenism_religion
+                coa_spartan_trigger = yes
+                cat_coa_hellenism_religion_trigger = yes
             }
         }
         coat_of_arms = k_lacadaemonia
@@ -213,7 +209,12 @@ c_laconia = {
 c_baghdad = {
     item = {
         trigger = {
-            holder.faith.religion = religion:mesopotamian_religion
+			OR = {
+				coa_assur_trigger = yes
+				coa_babylonian_trigger = yes
+				coa_akkadian_trigger = yes
+				coa_sumerian_trigger = yes
+			}
         }
         coat_of_arms = e_babylon
     }
@@ -236,7 +237,7 @@ h_roman_empire = {
     item = {
         trigger = {
             OR = {
-                holder.culture = {Culture = high_valyrian }
+                coa_valyrian_trigger = yes
             }
         }
         coat_of_arms = tar_roman
@@ -246,7 +247,7 @@ h_eastern_roman_empire = {
     item = {
         trigger = {
             OR = {
-                holder.culture = {Culture = high_valyrian }
+                coa_valyrian_trigger = yes
             }
         }
         coat_of_arms = tar_roman
@@ -255,10 +256,7 @@ h_eastern_roman_empire = {
 b_ain_al-qayyara = {
     item = {
         trigger = {
-            AND = {
-                holder.culture = {Culture = assyrian }
-                holder.faith.faith = faith:assyrian_pagan
-            }
+            coa_assur_trigger = yes
         }
         coat_of_arms = c_ashur
     }
@@ -266,10 +264,7 @@ b_ain_al-qayyara = {
 c_mosul = {
     item = {
         trigger = {
-            AND = {
-                holder.culture = {Culture = assyrian }
-                holder.faith.faith = faith:assyrian_pagan
-            }
+            coa_assur_trigger = yes
         }
         coat_of_arms = d_ashur
     }
@@ -277,10 +272,7 @@ c_mosul = {
 d_diyarrabia = {
     item = {
         trigger = {
-            AND = {
-                holder.culture = {Culture = assyrian }
-                holder.faith.faith = faith:assyrian_pagan
-            }
+            coa_assur_trigger = yes
         }
         coat_of_arms = k_assyria_alt
     }
@@ -339,6 +331,15 @@ e_italy = { #
 	}
 	item = {
 		trigger = {
+			OR = {
+			    cat_coa_dragon_cult_trigger = yes
+			    coa_valyrian_trigger = yes
+			}	
+		}
+		coat_of_arms = e_italy_dragon
+	}
+	item = {
+		trigger = {
 			cat_coa_central_germanic_group_trigger = yes
 			cat_coa_christ_religion_trigger = yes
 		}
@@ -391,3 +392,55 @@ e_byzantium = { #
 		coat_of_arms = e_byzantium_notchrist
 	}
 }
+d_damascus = { # 작동
+	item = {
+		trigger = {
+			cat_coa_christ_religion_trigger = yes
+		}
+		coat_of_arms = d_damascus_christ
+	}	
+}
+
+c_damascus = { # 작동
+	item = {
+		trigger = {
+			cat_coa_christ_religion_trigger = yes
+		}
+		coat_of_arms = c_damascus_christ
+	}	
+}
+k_venice = {
+	item = {
+		trigger = {
+			coa_venice_trigger = yes
+		}
+		coat_of_arms = k_venice_ven
+	}	
+}
+d_venice = {
+	item = {
+		trigger = {
+			coa_venice_trigger = yes
+		}
+		coat_of_arms = d_venice_ven
+	}	
+}
+c_veneto = {
+	item = {
+		trigger = {
+			coa_venice_trigger = yes
+		}
+		coat_of_arms = c_veneto_ven
+	}	
+}
+c_venezia = {
+	item = {
+		trigger = {
+			coa_venice_trigger = yes
+		}
+		coat_of_arms = c_venezia_ven
+	}	
+}
+
+
+
