@@ -305,9 +305,9 @@ k_scotland = { #
 	item = {
 		trigger = {
             OR = {
-                holder.faith.religion = faith:brythonic_pagan
-                holder.faith.religion = faith:gaelic_pagan
-                holder.faith.religion = faith:welsh_pagan
+                coa_brythonic_trigger = yes
+                coa_gaelic_trigger = yes
+                coa_welsh_trigger = yes
             }
 		}
 		coat_of_arms = k_scotland_pic
@@ -391,8 +391,16 @@ e_byzantium = { #
 		}
 		coat_of_arms = e_byzantium_notchrist
 	}
+	item = {
+        trigger = {
+            OR = {
+                coa_valyrian_trigger = yes
+            }
+        }
+        coat_of_arms = tar_roman
+    }
 }
-d_damascus = { # 작동
+d_damascus = { #
 	item = {
 		trigger = {
 			cat_coa_christ_religion_trigger = yes
@@ -400,8 +408,7 @@ d_damascus = { # 작동
 		coat_of_arms = d_damascus_christ
 	}	
 }
-
-c_damascus = { # 작동
+c_damascus = { #
 	item = {
 		trigger = {
 			cat_coa_christ_religion_trigger = yes
@@ -415,7 +422,13 @@ k_venice = {
 			coa_venice_trigger = yes
 		}
 		coat_of_arms = k_venice_ven
-	}	
+	}
+	item = {
+		trigger = {
+			coa_administrative_trigger = yes
+		}
+		coat_of_arms = k_venice_admin
+	}
 }
 d_venice = {
 	item = {
@@ -441,6 +454,13 @@ c_venezia = {
 		coat_of_arms = c_venezia_ven
 	}	
 }
-
+k_egypt = {
+	item = {
+		trigger = {
+			coa_roman_trigger = yes
+		}
+		coat_of_arms = k_egypt_roman
+	}	
+}
 
 

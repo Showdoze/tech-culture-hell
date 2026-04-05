@@ -2754,6 +2754,112 @@
 	1030.1.1 = { give_nickname = nick_the_great }
 	1035.11.12 = { death = yes }
   }
+ #BERSERK
+  tr_midland_founder = {
+    name = "Gaiseric"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+    trait = education_martial_prowess_4
+	trait = education_martial_5
+	trait = brave
+	trait = ambitious
+	trait = callous
+	trait = diligent
+	trait = whole_of_body
+	trait = gallant
+	trait = aggressive_attacker
+	disallow_random_traits = yes
+	100.1.1 = { birth = yes}
+	250.1.1 = {death = { death_reason = death_disappearance }}
+ }
+  tr_midland_king_dad = {
+    name = "Gaiseric"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+	father = tr_midland_founder
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = callous
+	trait = diligent
+	trait = whole_of_body
+	trait = gallant
+	trait = aggressive_attacker
+	disallow_random_traits = yes
+	730.1.1 = { birth = yes}
+	830.1.1 = {death = { death_reason = death_old_age }}
+ }
+  tr_midland_king = {
+    name = "Midland"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+	father = tr_midland_king_dad
+	trait = education_martial_3
+	trait = gregarious
+	trait = lustful
+	trait = diligent
+	trait = lifestyle_hunter
+	give_nickname = nick_king_of_prefix
+	disallow_random_traits = yes
+	822.1.1 = { birth = yes}
+	860.1.1 = { 
+		effect = {
+			add_secret = { type = secret_incest }
+		}
+	}
+	875.1.1 = {death = { death_reason = death_mysterious }}
+ }
+  tr_midland_Charlotte= {
+    name = "Charlotte"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+	father = tr_midland_king
+	female = yes
+	trait = education_diplomacy_2
+	trait = beauty_good_3
+	trait = compassionate
+	trait = trusting
+	trait = reclusive
+	trait = shy
+	disallow_random_traits = yes
+	851.1.1 = { birth = yes}
+	900.1.1 = {death = { death_reason = death_old_age }}
+ }
+  tr_midland_Julius = {
+    name = "Julius"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+	father = tr_midland_king_dad
+	trait = education_martial_3
+	trait = arrogant
+	trait = ambitious
+	trait = wrathful
+	trait = irritable
+	trait = schemer
+	trait = aggressive_attacker
+	trait = lifestyle_blademaster
+	disallow_random_traits = yes
+	825.1.1 = { birth = yes}
+	870.1.1 = {death = { death_reason = death_murder }}
+ }
+  tr_midland_Adonis = {
+    name = "Adonis"
+	religion = dark_souls_faith
+	culture = fantasy_culture
+	dynasty = dynn_midland
+	father = tr_midland_Julius
+	trait = education_diplomacy_2
+	trait = trusting
+	trait = charming
+	disallow_random_traits = yes
+	854.1.1 = { birth = yes}
+	870.1.1 = {death = { death_reason = death_murder }}
+ }
 ###HalfLife3
   tr_gordonfreeman = {
     name = "Gordon Freeman"

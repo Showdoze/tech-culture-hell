@@ -29,7 +29,7 @@ house_customizer.0001 = {
 		name = back_option
 	}
 }
-house_customizer.0002 = {
+house_customizer.0002 = { #FANTASY MAIN
 	type = character_event
 	title = house_customizer.0002.t
 	desc = house_customizer.0002.desc
@@ -104,6 +104,12 @@ house_customizer.0002 = {
 		name = house_customizer_anime
 		trigger_event = {
 			id = house_customizer.0013
+		}
+	}
+	option = {#Video game
+		name = house_customizer_vg
+		trigger_event = {
+			id = house_customizer.0014
 		}
 	}
 	option = {# Go back
@@ -892,6 +898,46 @@ house_customizer.0013 = { #ANIME
 		remove_trait = house_customizer
 		set_mother = character:tr_naruto_kushina
 	}
+	option = { #Midland Berserk
+		name = Midland
+		set_house = character:tr_midland_king.house
+		remove_trait = house_customizer
+		set_mother = character:tr_midland_king
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0014 = { #video games
+	type = character_event
+	title = house_customizer_select_vg
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #house_senju
+		name = Senju
+		set_house = character:tr_naruto_Kawarama.house
+		remove_trait = house_customizer
+		set_father = character:tr_naruto_Kawarama
+	}
+	option = { #Uzumaki
+		name = Uzumaki
+		set_house = character:tr_naruto_kushina.house
+		remove_trait = house_customizer
+		set_mother = character:tr_naruto_kushina
+	}
+	option = { #Midland Berserk
+		name = Midland
+		set_house = character:tr_midland_king.house
+		remove_trait = house_customizer
+		set_mother = character:tr_midland_king
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0002
@@ -1082,6 +1128,12 @@ house_customizer.0026 = { #Western ERUOPE
 		remove_trait = house_customizer
 		set_father = character:70006
 	}
+	option = {  #suebi
+	    name = Suebi
+		set_house = character:200058.house
+		remove_trait = house_customizer
+		set_father = character:200058
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
@@ -1131,6 +1183,12 @@ house_customizer.0032 = { #NEAR EAST
 		set_house = character:159579.house
 		remove_trait = house_customizer
 		set_father = character:159579
+	}
+	option = { #Achaemenid 
+		name = Achaemenid 
+		set_house = character:tr_Achaemenes.house
+		remove_trait = house_customizer
+		set_father = character:tr_Achaemenes
 	}
 	option = {
 		name = back_option
