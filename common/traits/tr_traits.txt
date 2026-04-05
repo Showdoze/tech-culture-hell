@@ -33,12 +33,12 @@
                 desc = trait_viking_has_drow
             }
             triggered_desc = {
-				trigger = {
-					exists = this
-					government_has_flag = government_is_pirate
-				}
-				desc = trait_viking_is_corsair
-			}
+                trigger = {
+                    exists = this
+                    government_has_flag = government_is_pirate
+                }
+                desc = trait_viking_is_corsair
+            }
             desc = trait_viking_fallback
         }
     }
@@ -650,7 +650,7 @@ education_republican_knowledge_1 = {
     group = education_republican_knowledge
     level = 1
     flag = level_1_education
-	flag = civilian_province
+    flag = civilian_province
 }
 
 education_republican_knowledge_2 = {
@@ -676,7 +676,7 @@ education_republican_knowledge_2 = {
     group = education_republican_knowledge
     level = 2
     flag = level_2_education
-	flag = civilian_province
+    flag = civilian_province
 }
 
 education_republican_knowledge_3 = {
@@ -702,7 +702,7 @@ education_republican_knowledge_3 = {
     group = education_republican_knowledge
     level = 3
     flag = level_3_education
-	flag = civilian_province
+    flag = civilian_province
 }
 
 education_republican_knowledge_4 = {
@@ -728,7 +728,7 @@ education_republican_knowledge_4 = {
     group = education_republican_knowledge
     level = 4
     flag = level_4_education
-	flag = civilian_province
+    flag = civilian_province
 }
 
 education_martial_prowess_1 = {
@@ -745,7 +745,7 @@ education_martial_prowess_1 = {
     group = education_martial_prowess
     level = 1
     flag = level_1_education
-	flag = military_province
+    flag = military_province
     desc = {
         first_valid = {
             triggered_desc = {
@@ -773,7 +773,7 @@ education_martial_prowess_2 = {
     group = education_martial_prowess
     level = 2
     flag = level_2_education
-	flag = military_province
+    flag = military_province
     desc = {
         first_valid = {
             triggered_desc = {
@@ -801,7 +801,7 @@ education_martial_prowess_3 = {
     group = education_martial_prowess
     level = 3
     flag = level_3_education
-	flag = military_province
+    flag = military_province
     desc = {
         first_valid = {
             triggered_desc = {
@@ -829,7 +829,7 @@ education_martial_prowess_4 = {
     group = education_martial_prowess
     level = 4
     flag = level_4_education
-	flag = military_province
+    flag = military_province
     desc = {
         first_valid = {
             triggered_desc = {
@@ -1007,8 +1007,7 @@ hollow = {
 }
 
 deaf = {
-    physical = yes
-    genetic = yes
+    category = health
     random_creation = 0.1
     birth = 0.1
     inherit_chance = 0
@@ -1027,8 +1026,7 @@ deaf = {
 }
 
 mute = {
-    physical = yes
-    genetic = yes
+    category = health
     random_creation = 0.1
     birth = 0.1
     inherit_chance = 0
