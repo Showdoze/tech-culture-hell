@@ -2915,15 +2915,8 @@ clan_sakia = {
 	colored_emblem={
 		color1=black
 		texture="ce_kamon_triangle.dds"
-		instance={
-			position={ 0.500000 0.560000 }
-			scale={ 1.000000 0.490000 }
-		}
-		instance={
-			position={ 0.500000 0.380000 }
-			scale={ 1.000000 0.570000 }
-			depth=2.010000
-		}
+		instance={ position={ 0.500000 0.560000 } scale={ 1.000000 0.490000 } }
+		instance={ position={ 0.500000 0.380000 } scale={ 1.000000 0.570000 } depth=2.010000 }
 	}
 	colored_emblem={
 		color1=white
@@ -2937,10 +2930,7 @@ clan_sakia = {
 	colored_emblem={
 		color1=white
 		texture="ce_circle_mask.dds"
-		instance={
-			scale={ 0.810000 0.810000 }
-			depth=3.010000
-		}
+		instance={ scale={ 0.810000 0.810000 } depth=3.010000 }
 	}
 }
 9th_Legion_Hispana ={
@@ -3694,7 +3684,7 @@ dynn_achaemenid = {
 		}
 	}
 }
-dynn_godrick = {
+house_godrick = {
 	pattern="pattern_vertical_split_01.dds"
 	color1=green
 	color2=orange

@@ -920,23 +920,17 @@ house_customizer.0014 = { #video games
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { #house_senju
-		name = Senju
-		set_house = character:tr_naruto_Kawarama.house
+	option = { # caria
+		name = "Caria Royal Family"
+		set_house = character:tr_rennala.house
 		remove_trait = house_customizer
-		set_father = character:tr_naruto_Kawarama
+		set_father = character:tr_rennala
 	}
-	option = { #Uzumaki
-		name = Uzumaki
-		set_house = character:tr_naruto_kushina.house
+	option = { # caria
+		name = Godrick
+		set_house = character:tr_godrick.house
 		remove_trait = house_customizer
-		set_mother = character:tr_naruto_kushina
-	}
-	option = { #Midland Berserk
-		name = Midland
-		set_house = character:tr_midland_king.house
-		remove_trait = house_customizer
-		set_mother = character:tr_midland_king
+		set_father = character:tr_godrick
 	}
 	option = {
 		name = back_option
