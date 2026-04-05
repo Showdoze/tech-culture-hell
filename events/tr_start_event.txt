@@ -5,7 +5,7 @@ tr_start.01 = {
 
     immediate = {
         random_list = {
-            1 = {
+            15 = {
                 if = {
                     limit = {
                         NOT = { has_trait = mute }
@@ -13,7 +13,7 @@ tr_start.01 = {
                     add_trait = mute
                 }
             }
-            1 = {
+            15 = {
                 if = {
                     limit = {
                         NOT = { has_trait = deaf }
@@ -21,7 +21,7 @@ tr_start.01 = {
                     add_trait = deaf
                 }
             }
-            1 = {
+            30 = {
                 if = {
                     limit = {
                         NOR = {
@@ -35,7 +35,7 @@ tr_start.01 = {
                     add_trait = hygene_good_1
                 }
             }
-            1 = {
+            10 = {
                 if = {
                     limit = {
                         NOR = {
@@ -49,7 +49,7 @@ tr_start.01 = {
                     add_trait = hygene_good_2
                 }
             }
-            1 = {
+            50 = {
                 if = {
                     limit = {
                         NOR = {
@@ -63,7 +63,7 @@ tr_start.01 = {
                     add_trait = hygene_bad_1
                 }
             }
-            1 = {
+            20 = {
                 if = {
                     limit = {
                         NOR = {

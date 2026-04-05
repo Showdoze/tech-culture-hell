@@ -10,25 +10,19 @@ tr_satanism.01 = {
 
     left_portrait = root
 
-    weight_multiplier = {
-        base = 0
-        modifier = {
-            if = {
-                limit = {
-                    AND = {
-                        religion = religion:christianity_religion
-                        OR = {
-                            has_trait = possessed
-                            has_trait = lunatic
-                            has_trait = heresiah
-                            is_excommunicated = yes
-                        }
-                        piety_level =< 1
-                    }
-                    add = 0.5
-                }
-            }
+    trigger = {
+        religion = religion:christianity_religion
+        OR = {
+            has_trait = possessed
+            has_trait = lunatic
+            has_trait = heresiah
+            is_excommunicated = yes
         }
+        piety_level =< 1
+    }
+
+    weight_multiplier = {
+        base = 0.2
     }
 
     option = {

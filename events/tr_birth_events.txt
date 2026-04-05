@@ -121,6 +121,16 @@ tr_birth.02 = {
 tr_birth.031 = { ## blind
     hidden = yes
 
+    weight_multiplier = {
+	    base = 0.2
+		modifier = {
+			add = 0.2
+			OR = {
+				has_trait = inbred
+			}
+		}
+    }
+
     immediate = {
         if = {
             limit = {
@@ -136,6 +146,16 @@ tr_birth.031 = { ## blind
 tr_birth.032 = { ## deaf
     hidden = yes
 
+    weight_multiplier = {
+	    base = 0.2
+		modifier = {
+			add = 0.2
+			OR = {
+				has_trait = inbred
+			}
+		}
+    }
+
     immediate = {
         if = {
             limit = {
@@ -150,6 +170,16 @@ tr_birth.032 = { ## deaf
 
 tr_birth.033 = { ## mute
     hidden = yes
+
+    weight_multiplier = {
+	    base = 0.2
+		modifier = {
+			add = 0.2
+			OR = {
+				has_trait = inbred
+			}
+		}
+    }
 
     immediate = {
         if = {

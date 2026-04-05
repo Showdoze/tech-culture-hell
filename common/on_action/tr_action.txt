@@ -6,14 +6,12 @@
 
 random_yearly_everyone_pulse = {
     on_actions = { tr_hygene }
-    on_actions = { tr_satanism_random }
+    on_actions = { tr_satanism_conversion }
     on_actions = { tr_hollowing }
 }
 
 on_faith_monthly = {
-    on_actions = {
-        tr_fantasy_piety_gain
-    }
+    on_actions = { tr_fantasy_piety_gain }
 }
 
 yearly_culture_pulse = {
@@ -34,7 +32,6 @@ yearly_culture_pulse = {
 
 on_birth_mother = {
     on_actions = { tr_birth }
-    on_actions = { tr_birth_random }
 }
 
 on_war_started = {
@@ -53,10 +50,9 @@ on_game_start_after_lobby = {
 
 ## MODDED HOOKED BELOW
 
-tr_satanism_random = {
-    random_events = {
-        chance_to_happen = 10
-        100 = tr_satanism.01
+tr_satanism_conversion = {
+    events = {
+        tr_satanism.01
     }
 }
 
@@ -97,9 +93,8 @@ tr_hygene = {
 }
 
 tr_hollowing = {
-    random_events = {
-        chance_to_happen = 20
-        100 = ds1_event.01
+    events = {
+        ds1_event.01
     }
 }
 
@@ -107,15 +102,10 @@ tr_birth = {
     events = {
         tr_birth.01 #emperor child trait
         tr_birth.02 #birthsign trait
-    }
-}
 
-tr_birth_random = {
-    random_events = {
-        chance_to_happen = 1
-        25 = tr_birth.031 #born blind trait
-        25 = tr_birth.032 #born deaf trait
-        25 = tr_birth.033 #born mute trait
+        tr_birth.031 #born blind trait
+        tr_birth.032 #born deaf trait
+        tr_birth.033 #born mute trait
     }
 }
 
