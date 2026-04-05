@@ -1,13 +1,11 @@
 ﻿# VANILLA HOOKS
 
-#assign_trait_ai_on_action = {
-#	on_actions = { tr_auto }
-#}
-
 random_yearly_everyone_pulse = {
-    on_actions = { tr_hygene }
-    on_actions = { tr_satanism_conversion }
-    on_actions = { tr_hollowing }
+    on_actions = {
+        tr_hygene
+        tr_satanism_conversion
+        tr_hollowing
+    }
 }
 
 on_faith_monthly = {
@@ -43,9 +41,11 @@ wounded_recovery_pulse = {
 }
 
 on_game_start_after_lobby = {
-    on_actions = { tr_satanism_start }
-    on_actions = { tr_artifact_start_spawn }
-    on_actions = { tr_traits_start }
+    on_actions = {
+        tr_satanism_start
+        tr_artifact_start_spawn
+        tr_traits_start
+    }
 }
 
 ## MODDED HOOKED BELOW
@@ -60,7 +60,7 @@ tr_satanism_start = {
     effect = {
         if = {
             limit = {
-                character.faith = faith:satanism
+                faith = faith:satanism
             }
             character.set_piety_level = 0
             character.add_piety = -100

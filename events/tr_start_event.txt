@@ -5,77 +5,61 @@ tr_start.01 = {
 
     immediate = {
         random_list = {
-            15 = {
-                if = {
-                    limit = {
-                        NOT = { has_trait = mute }
-                    }
-                    add_trait = mute
+            10 = {
+                trigger = {
+                    NOT = { has_trait = mute }
                 }
-            }
-            15 = {
-                if = {
-                    limit = {
-                        NOT = { has_trait = deaf }
-                    }
-                    add_trait = deaf
-                }
-            }
-            30 = {
-                if = {
-                    limit = {
-                        NOR = {
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                        }
-                    }
-                    add_trait = hygene_good_1
-                }
+                add_trait = mute
             }
             10 = {
-                if = {
-                    limit = {
-                        NOR = {
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                        }
-                    }
-                    add_trait = hygene_good_2
+                trigger = {
+                    NOT = { has_trait = deaf }
                 }
+                add_trait = deaf
             }
-            50 = {
-                if = {
-                    limit = {
-                        NOR = {
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                        }
+            10 = {
+                trigger = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_bad_1
                 }
+                add_trait = hygene_good_1
             }
-            20 = {
-                if = {
-                    limit = {
-                        NOR = {
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                        }
+            5 = {
+                trigger = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_bad_2
                 }
+                add_trait = hygene_good_2
+            }
+            15 = {
+                trigger = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_bad_1
+            }
+            10 = {
+                trigger = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_bad_2
             }
         }
     }
