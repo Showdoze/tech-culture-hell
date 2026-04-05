@@ -847,8 +847,7 @@ hygene_bad_1 = {
 
     minimum_age = 10
     physical = yes
-    birth = 0
-    random_creation = 0.2
+    random_creation_weight = 5
     category = health
 
     opposites = {
@@ -876,8 +875,7 @@ hygene_bad_2 = {
 
     minimum_age = 10
     physical = yes
-    birth = 0
-    random_creation = 0.1
+    random_creation_weight = 5
     category = health
 
     opposites = {
@@ -905,8 +903,7 @@ hygene_good_1 = {
 
     minimum_age = 12
     physical = yes
-    birth = 0
-    random_creation = 0.2
+    random_creation_weight = 5
     category = health
 
     opposites = {
@@ -933,8 +930,7 @@ hygene_good_2 = {
 
     minimum_age = 12
     physical = yes
-    birth = 0
-    random_creation = 0.1
+    random_creation_weight = 5
     category = health
 
     opposites = {
@@ -1008,9 +1004,11 @@ hollow = {
 
 deaf = {
     category = health
-    random_creation = 0.1
-    birth = 0.1
-    inherit_chance = 0
+    #random_creation = 0.1
+    #birth = 0.1
+    #inherit_chance = 0
+
+    random_creation_weight = 5
     ai_sociability = -50
 
     diplomacy = -10
@@ -1027,9 +1025,11 @@ deaf = {
 
 mute = {
     category = health
-    random_creation = 0.1
-    birth = 0.1
-    inherit_chance = 0
+    #random_creation = 0.1
+    #birth = 0.1
+    #inherit_chance = 0
+
+    random_creation_weight = 5
     ai_sociability = -30
 
     diplomacy = -5
