@@ -251,6 +251,21 @@ monk_drunk = {
         }
     }
 }
+kuva_lich = {
+    kuva_lich = {
+        traits = { kuva_lich }
+        dna_modifiers = {
+            human = {
+				morph = {
+					mode = modify_multiply
+					gene = gene_height
+					template = giant_height
+					value = 0
+				}
+            }
+        }
+    }
+}
 immortal = {
     immortal = {
         traits = { immortal }
