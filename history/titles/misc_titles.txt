@@ -346,17 +346,17 @@ d_laamp_blackfyre = {
                 create_maa_regiment = {
                     type = light_footmen
                     check_can_recruit = no
-                    size = 2
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = crossbowmen
                     check_can_recruit = no
-                    size = 2
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = trebuchet
                     check_can_recruit = no
-                    size = 2
+                    size = 1
                 }
                 add_character_flag = block_laamp_starting_event
             }
@@ -406,42 +406,42 @@ d_laamp_merc_golden_company = {
                 create_maa_regiment = {
                     type = light_footmen
                     check_can_recruit = no
-                    size = 10
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = pikemen_unit
                     check_can_recruit = no
-                    size = 10
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = armored_footmen
                     check_can_recruit = no
-                    size = 10
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = light_horsemen
                     check_can_recruit = no
-                    size = 15
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = armored_horsemen
                     check_can_recruit = no
-                    size = 5
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = crossbowmen
                     check_can_recruit = no
-                    size = 5
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = longbowmen
                     check_can_recruit = no
-                    size = 5
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = trebuchet
                     check_can_recruit = no
-                    size = 3
+                    size = 1
                 }
                 create_maa_regiment = {
                     type = war_elephant
@@ -740,7 +740,7 @@ d_fhk_iron_legion = {
                 create_maa_regiment = {
                     type = armored_footmen
                     check_can_recruit = no
-                    size = 5
+                    size = 1
                 }
             }
         }
@@ -770,7 +770,12 @@ d_fhk_blackstone_legion = {
                 create_maa_regiment = {
                     type = armored_footmen
                     check_can_recruit = no
-                    size = 6
+                    size = 1
+                }
+                create_maa_regiment = {
+                    type = armored_horsemen
+                    check_can_recruit = no
+                    size = 1
                 }
             }
         }
@@ -794,7 +799,7 @@ d_fhk_daubeny_militia = {
                 create_maa_regiment = {
                     type = armored_footmen
                     check_can_recruit = no
-                    size = 5
+                    size = 1
                 }
             }
         }
@@ -818,12 +823,12 @@ d_fhk_regal_legion = {
                 create_maa_regiment = {
                     type = huscarl
                     check_can_recruit = no
-                    size = 5
+                    size = 3
                 }
                 create_maa_regiment = {
                     type = light_horsemen
                     check_can_recruit = no
-                    size = 5
+                    size = 3
                 }
             }
         }
@@ -848,7 +853,12 @@ d_fh_outlanders = {
                 create_maa_regiment = {
                     type = light_footmen
                     check_can_recruit = no
-                    size = 10
+                    size = 3
+                }
+                create_maa_regiment = {
+                    type = light_footmen
+                    check_can_recruit = no
+                    size = 3
                 }
             }
         }
