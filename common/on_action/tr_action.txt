@@ -1,11 +1,9 @@
 ﻿# VANILLA HOOKS
 
 random_yearly_everyone_pulse = {
-    on_actions = {
-        tr_hygene
-        tr_satanism_conversion
-        tr_hollowing
-    }
+    on_actions = { tr_hygene }
+    on_actions = { tr_satanism_conversion }
+    on_actions = { tr_hollowing }
 }
 
 on_faith_monthly = {
@@ -126,8 +124,71 @@ tr_sayan_boost = {
 }
 
 tr_traits_start = {
-    events = {
-        tr_start.01
+    effect = {
+        every_living_character = {
+            random = {
+                chance = 5
+                if = {
+                    NOT = { has_trait = mute }
+                }
+                add_trait = mute
+            }
+            random = {
+                chance = 5
+                if = {
+                    NOT = { has_trait = deaf }
+                }
+                add_trait = deaf
+            }
+            random = {
+                chance = 10
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_good_1
+            }
+            random = {
+                chance = 5
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_good_2
+            }
+            random = {
+                chance = 10
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_bad_1
+            }
+            random = {
+                chance = 8
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
+                    }
+                }
+                add_trait = hygene_bad_2
+            }
+        }
     }
 }
 
