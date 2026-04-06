@@ -194,10 +194,20 @@ k_franks = {
     }
 }
 k_suebi = {
-    textured_emblem = {
-        texture = "suebi.dds"
-        instance = { position = { 0.5 0.5 } scale = { 1 1 } }
-    }
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 63 67 52 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "ce_norse_walknut_stora_hammars.dds"
+		color1 = rgb { 197 144 14 }
+		color2 = rgb { 115 69 66 }
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
 }
 k_saxon = {
     textured_emblem = {
@@ -206,10 +216,20 @@ k_saxon = {
     }
 }
 k_ostrogoths = {
-    textured_emblem = {
-        texture = "ostrogoths.dds"
-        instance = { position = { 0.5 0.5 } scale = { 1 1 } }
-    }
+	pattern = "pattern__solid_designer.dds"
+	color1 = rgb { 71 104 112 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "cat_ostrogothic_totalwar.dds"
+		color1 = rgb { 247 198 25 }
+		color2 = rgb { 58 73 99 }
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
 }
 k_lombard = {
     textured_emblem = {
@@ -218,10 +238,20 @@ k_lombard = {
     }
 }
 e_hunnic = {
-    textured_emblem = {
-        texture = "hunnic.dds"
-        instance = { position = { 0.5 0.5 } scale = { 1 1 } }
-    }
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 58 43 0 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "cat_hun_totalwar.dds"
+		color1 = rgb { 208 158 8 }
+		color2 = rgb { 107 49 8 }
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
 }
 e_heph = {
     textured_emblem = {
@@ -236,10 +266,20 @@ k_picts = {
     }
 }
 k_vandals = {
-    textured_emblem = {
-        texture = "vandal.dds"
-        instance = { position = { 0.5 0.5 } scale = { 1 1 } }
-    }
+	pattern = "pattern__solid_designer.dds"
+	color1 = rgb { 80 78 80 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "cat_vandals_wheel_totalwar.dds"
+		color1 = rgb { 192 140 5 }
+		color2 = rgb { 80 78 80 }
+		color3 = rgb { 80 78 80 }
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
 }
 e_russia_tsar = {
     pattern = "pattern_tricolor_horizontal_01.dds"

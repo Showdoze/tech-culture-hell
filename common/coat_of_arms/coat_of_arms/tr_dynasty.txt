@@ -337,9 +337,49 @@ valmir = {
 	}
 }
 mcglass = {
-	textured_emblem = {
-		texture = "mcglass.dds"
-		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 0 101 200 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "ce_ordinary_saltire_5.dds"
+		color1 = rgb { 239 251 255 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 0.7 }
+			}
+	}
+	colored_emblem = {
+		texture = "cat_shield_base.dds"
+		color1 = rgb { 247 227 8 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.7 0.7 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_double_tressure.dds"
+		color1 = rgb { 148 16 8 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.51 }
+				scale = { 0.62 0.62 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_lion_rampant.dds"
+		color1 = rgb { 148 16 8 }
+		color2 = rgb { 148 16 8 }
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.31 0.31 }
+			}
 	}
 }
 tiandi = {
@@ -878,15 +918,21 @@ dynn_otsutsuki = { # Ōtsutsuki
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
 	}	
 }
-dynn_uchiha = { # Uchiha
-	pattern = "pattern_solid.dds"	
-	color1 = "white"
+dynn_uchiha = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 0 0 0 }
+	color2 = yellow
+	color3 = black
 	colored_emblem = {
 		texture = "cat_naruto_uchiha.dds"
-		color1 = "red"
-		color2 = "white"
-		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
-	}	
+		color1 = rgb { 225 0 0 }
+		color2 = rgb { 255 255 255 }
+		color3 = rgb { 255 255 255 }
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
 }
 dynn_senju = { # Senju
 	pattern = "pattern_solid.dds"	
@@ -3409,7 +3455,7 @@ kush = { #https://www.reddit.com/r/CKHeraldry/comments/zmfzfu/kelou_dynasty_the_
 		}
 	}
 }
-karling_ck2 = {
+house_karling_ck2 = {
 	custom=yes
 	pattern="pattern__solid_designer.dds"
 	color1=yellow
@@ -3979,5 +4025,21 @@ coa_inosuke ={
 			scale={ 0.300000 0.300000 }
 			depth=10.010000
 		}
+	}
+}
+house_karling_monogram = {
+	pattern = "pattern__solid_designer.dds"
+	color1 = rgb { 255 255 255 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "cat_monogram_charlemagne.dds"
+		color1 = rgb { 0 0 0 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
 	}
 }

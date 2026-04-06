@@ -997,9 +997,9 @@ house_customizer.0020 = {
 		}
 	}
 	option = {#Displays Extinct Ironborn Houses
-		name = house_customizer.0002.ironborn
+		name = house_customizer_far_east
 		trigger_event = {
-			id = house_customizer.0011
+			id = house_customizer.0031
 		}
 	}
 	option = {#NEAR EAST
@@ -1128,6 +1128,24 @@ house_customizer.0026 = { #Western ERUOPE
 		remove_trait = house_customizer
 		set_father = character:200058
 	}
+	option = {  #karling
+	    name = Karling
+		set_house = character:6392.house
+		remove_trait = house_customizer
+		set_father = character:6392
+	}
+	option = {  #KARLING CK2
+	    name = "Karling CK2"
+		set_house = character:tr_karling_ck2.house
+		remove_trait = house_customizer
+		set_father = character:tr_karling_ck2
+	}
+	option = {  #tr_house_karling_monogram
+	    name = "Karling Monogram"
+		set_house = character:tr_house_karling_monogram.house
+		remove_trait = house_customizer
+		set_father = character:tr_house_karling_monogram
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
@@ -1149,6 +1167,40 @@ house_customizer.0030 = { #AFRICA
 		set_house = character:167707.house
 		remove_trait = house_customizer
 		set_father = character:167707
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0031 = { #Far East
+	type = character_event
+	title = house_customizer_select_far_east
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #ODA
+	    name = Oda
+		set_house = character:tr_oda_1.house
+		remove_trait = house_customizer
+		set_father = character:tr_oda_1
+	}
+	option = { #Hojo
+	    name = Hojo
+		set_house = character:tr_hojo_1.house
+		remove_trait = house_customizer
+		set_father = character:tr_hojo_1
+	}
+	option = { #Tokugawa
+	    name = Tokugawa
+		set_house = character:tr_Tokugawa_1.house
+		remove_trait = house_customizer
+		set_father = character:tr_Tokugawa_1
 	}
 	option = {
 		name = back_option
