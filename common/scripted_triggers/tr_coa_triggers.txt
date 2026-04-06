@@ -70,9 +70,7 @@ coa_cat_robertien_liege_trigger = {
 		}
 	}
 }
-cat_coa_french_culture_trigger = { # 프랑스
-	holder.culture = { has_coa_gfx = french_coa_gfx }
-}
+cat_coa_french_culture_trigger = { holder.culture = { has_coa_gfx = french_coa_gfx } }
 cat_coa_polish_trigger = { 
 	holder.culture = {has_coa_gfx = polish_coa_gfx}
 }
@@ -135,6 +133,8 @@ coa_egyptian_religion_trigger = {
 }
 coa_spartan_trigger = {holder.culture = { has_cultural_tradition = tradition_agoge } }
 coa_valyrian_trigger = {holder.culture = { has_cultural_tradition = tradition_valyrian } }
+coa_orc_trigger = {holder.culture = { has_cultural_tradition = tradition_orc } }
+coa_imperial_trigger = {holder.culture = { has_cultural_tradition = tradition_imperial } }
 coa_assur_trigger = {scope:faith = faith:assyrian_pagan}
 coa_babylonian_trigger = {scope:faith = faith:babylonian_pagan}
 coa_akkadian_trigger = {scope:faith = faith:akkadian_pagan}
@@ -144,7 +144,7 @@ coa_brythonic_trigger = {scope:faith = faith:brythonic_pagan}
 coa_gaelic_trigger = {scope:faith = faith:gaelic_pagan}
 coa_welsh_trigger = {scope:faith = faith:welsh_pagan}
 coa_dynasty_hohenzollern_trigger = { holder = { dynasty = dynasty:12476 } }
-
+coa_satanism_trigger = {scope:faith = faith:satanism}
 
 
 
