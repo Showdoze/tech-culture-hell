@@ -220,12 +220,12 @@ c_baghdad = {
     }
 }
 k_romagna = {
-    #item = {
-        #trigger = {
-        #    holder.faith.faith = faith:roman_pagan
-        #}
-        #coat_of_arms = d_blood_peace
-    #}
+    item = {
+        trigger = {
+            coa_blood_m_trigger = yes
+        }
+        coat_of_arms = d_blood_peace
+    }
     item = {
 		trigger = {
 			coa_roman_trigger = yes
@@ -359,6 +359,12 @@ c_roma = {
 		}
 		coat_of_arms = c_roma_roman
 	}
+	item = {
+        trigger = {
+            coa_blood_m_trigger = yes
+        }
+        coat_of_arms = d_blood_peace
+    }
 }
 e_byzantium = { #
 	item = {

@@ -42,7 +42,7 @@ d_junkwatt = {
 		color1 = rgb { 64 178 182 } 
 		color2 = rgb { 53 136 151 }
 		color3 = rgb { 65 113 136 }
-		instance = { position = { 0.5 @single_charge_position } }
+		instance = { position = { 0.5 0.48 } }
 	}
 }
 4200Bronzebeard = { # Bronzebeard
@@ -53,7 +53,7 @@ d_junkwatt = {
 		color1 = rgb { 205 127 50 }
 		color2 = rgb { 225 102 22 }
 		color3 = rgb { 67 70 75 }
-		instance = { position = { 0.5 @single_charge_position } }
+		instance = { position = { 0.5 0.48 } }
 	}
 }
 k_fharun = {
@@ -79,7 +79,7 @@ k_fharun = {
 		}
 	}
 }	
-c_fundy = {
+c_fundy = { #Canada mercs
 	pattern = "pattern_checkers_01.dds"
 	color1 = "yellow"
 	color2 = "red"
@@ -123,18 +123,6 @@ e_dixie_dixie = {
 		instance = { position = { 0.5 0.45 } scale = { 0.8 0.8 }  }
 	}
 	
-}
-e_dixie = {
-	pattern = "pattern_vertical_split_01.dds"
-	color1 = "blue"
-	color2 = "blue"	
-	colored_emblem = {
-		texture = "ce_eagle_american_bald_double.dds"
-		color1 = "brown"
-		color2 = "yellow"
-		color3 = "white"
-		instance = { position = { 0.5 0.45 } scale = { 0.8 0.8 }  }
-	}
 }
 house_alexandrite = {
 	pattern = "pattern_horizontal_bar_01.dds"
@@ -276,6 +264,176 @@ dixxie_flag = { #
         instance = { position = { 0.14 0.86 } scale = { 0.15 0.15 }  }
     }
 }
-#Elder scrolls
+Horus_coa = {
+	pattern="pattern_solid.dds"
+	color1=rgb { 12 154 120 }
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=blue
+		texture="ce_mena_horn.dds"
+		instance={
+			position={ 0.280000 0.680000 }
+			scale={ 0.220000 0.330000 }
+			depth=8.010000
+			rotation=88
+		}
+		instance={
+			position={ 0.360000 0.620000 }
+			scale={ 0.240000 0.170000 }
+			depth=10.010000
+			rotation=349
+		}
+		instance={
+			position={ 0.290000 0.690000 }
+			scale={ 0.260000 0.230000 }
+			depth=11.010000
+			rotation=84
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.480000 0.560000 }
+			scale={ 0.130000 0.130000 }
+			depth=4.010000
+		}
+	}
+	colored_emblem={
+		color1=black
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.480000 0.560000 }
+			scale={ 0.070000 0.070000 }
+			depth=3.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 255 255 255 }
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.390000 0.690000 }
+			scale={ 0.290000 0.110000 }
+			depth=12.010000
+		}
+		instance={
+			position={ 0.610000 0.680000 }
+			scale={ 0.550000 0.620000 }
+			depth=16.010000
+		}
+	}
+	colored_emblem={
+		color1=black
+		texture="ce_heart.dds"
+		instance={
+			position={ 0.460000 0.570000 }
+			scale={ 0.090000 0.090000 }
+			depth=2.010000
+			rotation=65
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_african_yoruba_snake.dds"
+		instance={
+			position={ 0.410000 0.280000 }
+			scale={ 0.730000 0.680000 }
+			depth=18.010000
+			rotation=219
+		}
+	}
+	colored_emblem={
+		color1=rgb { 3 25 46 }
+		texture="ce_gankyil_chakra.dds"
+		instance={
+			position={ 0.520000 0.680000 }
+			scale={ 0.790000 0.810000 }
+			depth=7.010000
+			rotation=71
+		}
+	}
+	colored_emblem={
+		color1=rgb { 255 255 255 }
+		texture="ce_heart.dds"
+		instance={
+			position={ 0.580000 0.840000 }
+			scale={ 0.690000 0.750000 }
+			depth=15.010000
+			rotation=360
+		}
+	}
+	colored_emblem={
+		color1=blue
+		texture="ce_conch_shell.dds"
+		instance={
+			position={ 0.340000 0.670000 }
+			scale={ 0.300000 0.090000 }
+			depth=9.010000
+			rotation=360
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce__empty_designer.dds"
+	}
+	colored_emblem={
+		color1=orange
+		color2=yellow
+		texture="ce_tamgha_roundel_frame.dds"
+		instance={
+			position={ 0.610000 -0.200000 }
+			scale={ 1.200000 1.200000 }
+			depth=1.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 9 30 50 }
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.800000 0.630000 }
+			scale={ 1.000000 0.630000 }
+			depth=17.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 9 26 41 }
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.330000 0.570000 }
+			scale={ 0.070000 0.060000 }
+			depth=14.010000
+		}
+	}
+	colored_emblem={
+		color1=rgb { 8 29 49 }
+		texture="ce_conch_shell.dds"
+		instance={
+			position={ 0.460000 0.670000 }
+			scale={ 0.280000 0.470000 }
+			depth=6.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_heart.dds"
+		instance={
+			position={ 0.440000 0.580000 }
+			scale={ 0.150000 0.150000 }
+			depth=5.010000
+			rotation=58
+		}
+	}
+	colored_emblem={
+		color1=rgb { 255 255 255 }
+		color2=rgb { 8 25 41 }
+		texture="ce_tamgha_roundel_frame.dds"
+		instance={
+			position={ 0.330000 0.570000 }
+			scale={ 0.030000 0.030000 }
+			depth=13.010000
+		}
+	}
+}
 
-#
+

@@ -415,7 +415,7 @@
 			learn_language = language_iberian
 	    }
 	}
-	880.1.1 = { death = { death_reason = death_revenge } }
+	870.1.1 = { death = { death_reason = death_revenge } }
  }
  thief_cavador = {
 	name = "Cavador"
@@ -695,7 +695,124 @@
 	1111.1.1 = { birth = yes }
 	1211.1.1 = { death = { death_reason = death_old_age } }
  }
- thief_cradel_9 = {
+ #Rutherford
+  tr_Rutherford_founder_dad = {
+	name = "Mortimer"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	trait = education_stewardship_2
+	trait = scarred
+	trait = venerable
+	trait = ambitious
+	trait = stubborn
+	disallow_random_traits = yes
+	655.1.1 = { birth = yes }
+	730.1.1 = { death = yes }
+ }
+  tr_Rutherford_founder = {
+	name = "Mortimer"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	father = tr_Rutherford_founder_dad
+	trait = education_martial_3
+	trait = greedy
+	trait = callous
+	trait = ambitious
+	trait = lunatic_genetic
+	give_nickname = nick_the_mad
+	disallow_random_traits = yes
+	725.1.1 = { birth = yes }
+	800.1.1 = { death = yes }
+ }
+  tr_Rutherford_Julian_dad = {
+	name = "Julius"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	father = tr_Rutherford_founder
+	trait = education_martial_2
+	trait = ambitious
+	trait = callous
+	disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	860.1.1 = { death = yes }
+ }
+  tr_Rutherford_Julian = {
+	name = "Julian"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	father = tr_Rutherford_Julian_dad
+	trait = education_intrigue_2
+	trait = ambitious
+	trait = callous
+	trait = schemer
+	trait = vengeful
+	give_nickname = nick_lord_prefix
+	disallow_random_traits = yes
+	830.1.1 = { birth = yes }
+	865.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:tr_Rutherford_Ember }
+		}
+	}
+	871.1.1 = { death = { death_reason = death_poison killer = tr_thief_lady_Elizabeth } }
+ }
+  tr_Rutherford_Ember_dad = {
+	name = "Ambrosia"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	father = tr_Rutherford_founder
+	trait = education_stewardship_3
+	trait = greedy
+	trait = ambitious
+	trait = callous
+	disallow_random_traits = yes
+	790.1.1 = { birth = yes }
+	860.1.1 = { death = yes }
+ }
+  tr_Rutherford_Ember = {
+	name = "Ember"
+	religion = hammerite_faith
+	dynasty_house = house_thief_rutherford
+	culture = thief_city
+	father = tr_Rutherford_Ember_dad
+	trait = education_diplomacy_2
+	trait = greedy
+	trait = ambitious
+	trait = callous
+	give_nickname = nick_lord_prefix
+	disallow_random_traits = yes
+	830.1.1 = { birth = yes }
+	865.1.1 = { effect = {
+			create_betrothal = character:tr_thief_lady_Elizabeth
+		}}
+	870.1.1 = { death = { death_reason = death_duel killer = tr_Rutherford_Julian } }
+ }
+ tr_thief_lady_Elizabeth = {
+	name = "Elizabeth"
+	religion = hammerite_faith
+	dynasty = thief
+	culture = thief_city
+	female = yes
+	trait = education_intrigue_4
+	trait = schemer
+	trait = diplomat
+	trait = ambitious
+	trait = callous
+	trait = gregarious
+	trait = lifestyle_blademaster
+	trait = lifestyle_physician
+	give_nickname = nick_lady_prefix
+	disallow_random_traits = yes
+	847.1.1 = { birth = yes }
+	875.1.1 = { death = yes }
+ }
+ #Cradel
+  thief_cradel_9 = {
 	name = "Wrenfeld, A."
 	religion = hammerite_faith
 	dynasty = thief
@@ -709,8 +826,8 @@
 	disallow_random_traits = yes
 	780.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_8_dad = {
+  }
+  thief_cradel_8_dad = {
 	name = "Elmwood"
 	religion = hammerite_faith
 	dynasty = thief
@@ -724,8 +841,8 @@
 	disallow_random_traits = yes
 	750.1.1 = { birth = yes }
 	815.5.5 = { death = yes }
- }
- thief_cradel_8_husband = {
+  }
+  thief_cradel_8_husband = {
 	name = "Barton Corino"
 	religion = hammerite_faith
 	dynasty = thief
@@ -740,8 +857,8 @@
 	770.1.1 = { birth = yes }
 	810.1.1 = { add_spouse = thief_cradel_8 }
 	810.1.5 = { death = { death_reason = death_murder killer = thief_cradel_8 } }
- }
- thief_cradel_8 = {
+  }
+  thief_cradel_8 = {
 	name = "Elliot, V."
 	religion = hammerite_faith
 	dynasty = thief
@@ -758,8 +875,8 @@
 	789.1.1 = { birth = yes }
 	810.1.1 = { add_spouse = thief_cradel_8_husband }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_7 = {
+  }
+  thief_cradel_7 = {
 	name = "Pins, C."
 	religion = hammerite_faith
 	dynasty = thief
@@ -774,8 +891,8 @@
 	disallow_random_traits = yes
 	790.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_6 = {
+  }
+  thief_cradel_6 = {
 	name = "Topper, F."
 	religion = hammerite_faith
 	dynasty = thief
@@ -789,8 +906,8 @@
 	disallow_random_traits = yes
 	780.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_6_daughter = {
+  }
+  thief_cradel_6_daughter = {
 	name = "Topper."
 	religion = hammerite_faith
 	dynasty = thief
@@ -799,8 +916,8 @@
 	disallow_random_traits = yes
 	809.1.1 = { birth = yes }
 	810.1.1 = { death = yes }
- }
- thief_cradel_5 = {
+  }
+  thief_cradel_5 = {
 	name = "Nuvio, J."
 	religion = hammerite_faith
 	dynasty = thief
@@ -814,8 +931,8 @@
 	disallow_random_traits = yes
 	780.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_4 = {
+  }
+  thief_cradel_4 = {
 	name = "Solzer, A."
 	religion = hammerite_faith
 	dynasty = thief
@@ -829,8 +946,8 @@
 	disallow_random_traits = yes
 	730.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_3 = {
+  }
+  thief_cradel_3 = {
 	name = "Izen, S."
 	religion = hammerite_faith
 	dynasty = thief
@@ -844,8 +961,8 @@
 	disallow_random_traits = yes
 	777.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_2 = {
+  }
+  thief_cradel_2 = {
 	name = "Gunter, M."
 	religion = hammerite_faith
 	dynasty = thief
@@ -858,8 +975,8 @@
 	disallow_random_traits = yes
 	777.1.1 = { birth = yes }
 	815.5.5 = { death = { death_reason = death_murder } }
- }
- thief_cradel_1 = {
+  }
+  thief_cradel_1 = {
 	name = "Poshtoll, E."
 	religion = hammerite_faith
 	dynasty = thief
@@ -5041,7 +5158,7 @@
  #GOD
   tr_godwyn = {
 	name = "Godwyn"
-	dna = godwyn_dna
+	#dna = godwyn_dna
 	sexuality = heterosexual
 	dynasty = dynn_erdtree
 	martial = 10
