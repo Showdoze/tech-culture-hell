@@ -388,9 +388,8 @@
 	culture = thief_city
 	dna = ian_mcKellen
 	trait = education_learning_4
-	trait = stubborn
+	trait = ambitious
 	trait = callous
-	trait = temperate
 	trait = chaste
 	trait = strategist
 	trait = architect
@@ -695,6 +694,53 @@
 	1111.1.1 = { birth = yes }
 	1211.1.1 = { death = { death_reason = death_old_age } }
  }
+ #Bafford
+  tr_bafford_founder = {
+	name = "..."
+	religion = hammerite_faith
+	dynasty_house = house_thief_bafford
+	culture = thief_city
+	trait = education_stewardship_2
+	trait = scarred
+	trait = venerable
+	trait = ambitious
+	trait = calm
+	give_nickname = nick_lord_prefix
+	disallow_random_traits = yes
+	730.1.1 = { birth = yes }
+	830.1.1 = { death = yes }
+  }
+  tr_bafford_lady = {
+	name = Olivia
+	religion = hammerite_faith
+	dynasty_house = house_thief_bafford
+	culture = thief_city
+	father = tr_bafford_founder
+	female = yes
+	trait = education_diplomacy_2
+	trait = scarred
+	trait = impatient
+	trait = calm
+	give_nickname = nick_lady_prefix
+	disallow_random_traits = yes
+	820.1.1 = { birth = yes }
+	860.1.1 = { death = yes }
+  }
+  tr_bafford_lord = {
+	name = "..."
+	religion = hammerite_faith
+	dynasty_house = house_thief_bafford
+	culture = thief_city
+	father = tr_bafford_founder
+	trait = education_stewardship_2
+	trait = arrogant
+	trait = ambitious
+	trait = greedy
+	give_nickname = nick_lord_prefix
+	disallow_random_traits = yes
+	830.1.1 = { birth = yes }
+	870.1.1 = { death = yes }
+  }
  #Rutherford
   tr_Rutherford_founder_dad = {
 	name = "Arlek"
@@ -909,7 +955,7 @@
 	815.5.5 = { death = { death_reason = death_murder } }
   }
   thief_cradel_6_daughter = {
-	name = "Topper."
+	name = "Topper"
 	religion = hammerite_faith
 	dynasty = thief
 	culture = thief_city

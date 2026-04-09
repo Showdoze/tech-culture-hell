@@ -2422,7 +2422,7 @@ soviet = {        #
         instance = { position = { 0.27 0.18 } scale = { 0.33 0.33 }  }                
     }        
 }
-1022196 = { #Licinianus 리키니우스
+1022196 = { #Licinianus
     pattern = "pattern_solid.dds"
     color1 = "white"
     colored_emblem = {
@@ -2528,7 +2528,7 @@ vlach_ieremiasti = { #
 		instance = { position = { 0.5 0.475 } scale = { 0.7 0.7 }  }		
 	}
 }
-vlach_giosani = { #  왈라키아 공작네 백작
+vlach_giosani = { # 
 	pattern = "pattern_solid.dds"
 	color1 = rgb{137 31 43}
 	color2 = rgb{181 154 128}
@@ -4079,3 +4079,74 @@ house_thief_rutherford = {
 			}
 	}
 }
+house_thief_bafford= {
+	pattern = "pattern__solid_designer.dds"
+	color1 = rgb { 74 0 128 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "ce_frame_side.dds"
+		color1 = rgb { 20 12 27 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = rgb { 41 33 30 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.7 -0.7 }
+				rotation = 180.0
+			}
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle_borre_single.dds"
+		color1 = rgb { 191 124 57 }
+		color2 = rgb { 41 33 30 }
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.92 0.92 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_ali_knot.dds"
+		color1 = rgb { 191 124 57 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.78 0.78 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = rgb { 41 33 30 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.35 0.35 }
+				rotation = 180.0
+			}
+	}
+	colored_emblem = {
+		texture = "ce_letter_b.dds"
+		color1 = rgb { 191 124 57 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.5 0.5 }
+			}
+	}
+}
+
+
+
