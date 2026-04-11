@@ -1300,6 +1300,57 @@ tradition_fromsoft = {
 	cost = { prestige = 20000 }
 	ai_will_do = { value = 0 }
 }
+tradition_skaven = {
+	category = ritual
+	layers = {
+		0 = martial
+		1 = western
+		4 = innsmouth.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		ambitious_trait_more_common = yes
+		gain_gold_from_battles = yes
+		knights_slightly_more_prone_to_injury = yes
+		weak_traits_looked_down_upon = yes
+		prowess_from_martial_education = yes
+		high_prowess_ignores_knight_restrictions = yes
+		wounds_and_scars_give_bonuses = yes
+		guardians_can_transfer_commander_traits = yes
+		more_fame_for_successful_defensive_wars = yes
+		more_gold_for_successful_defensive_wars = yes
+		stubborn_trait_more_common = yes
+		expensive_convert_to_local_culture = yes
+		harder_to_hybridize = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		not_tribal_raiding_malus = yes
+		war_stress_loss = yes
+		less_likely_to_culture_convert = yes
+		can_host_joust_contests = yes
+		has_access_to_runestones = yes
+		mystic_trait_from_education = yes
+		mystic_trait_more_common = yes
+		courtiers_less_likely_to_leave_same_culture_court = yes
+		dislikes_marrying_outside_of_culture = yes
+		ai_doesnt_marry_outside_culture = yes
+		number_of_spouses = 3
+		number_of_consorts = 1
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.75
+	}
+	character_modifier = {
+		knight_limit = 5
+		levy_size = -2
+		close_relative_opinion = 5
+		fertility = 10
+		opinion_of_different_culture = -20
+		different_culture_opinion = -25
+		hostile_county_attrition = -1
+	}
+	cost = { prestige = 20000 }
+	ai_will_do = { value = 0 }
+}
 #ELDER SCROLLS #
  tradition_bosmer = {
 	category = regional

@@ -3832,6 +3832,22 @@ name_list_lizardmen = {
     mother_name_chance = 5
     founder_named_dynasties = yes
 }
+name_list_skaven = {
+    dynasty_names = {
+    }
+    male_names = {
+    }
+    female_names = {
+    }
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 30
+    mat_grf_name_chance = 10
+    father_name_chance = 25
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    founder_named_dynasties = yes
+}
 #Anime
  name_list_uchiha = {
     dynasty_names = {
@@ -4745,6 +4761,8 @@ name_list_lizardmen = {
         Yokobik
     }
     mercenary_names = {
+    #    { name = "mercenary_company_last_avalanche" }
+        { name = "the_city_watch" coat_of_arms = "thief_city_watch" }
     }
     founder_named_dynasties = yes
     dynasty_of_location_prefix = ""

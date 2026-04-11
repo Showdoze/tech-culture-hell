@@ -4147,6 +4147,51 @@ house_thief_bafford= {
 			}
 	}
 }
-
+thief_city_watch = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 66 90 137 }
+	color2 = yellow
+	color3 = black
+	colored_emblem = {
+		texture = "ce_frame_side.dds"
+		color1 = rgb { 181 130 66 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 1.0 1.0 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_orle.dds"
+		color1 = rgb { 181 130 66 }
+		color2 = red
+		color3 = blue
+			instance = {
+				position = { 0.5 0.5 }
+				scale = { 0.92 0.92 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_cat_eagle_romania02.dds"
+		color1 = rgb { 181 130 66 }
+		color2 = rgb { 181 130 66 }
+		color3 = rgb { 181 130 66 }
+			instance = {
+				position = { 0.5 0.45 }
+				scale = { -0.47 0.47 }
+			}
+	}
+	colored_emblem = {
+		texture = "ce_cat_eagle_romania02.dds"
+		color1 = rgb { 0 0 0 }
+		color2 = rgb { 0 0 0 }
+		color3 = rgb { 0 0 0 }
+			instance = {
+				position = { 0.5 0.45 }
+				scale = { -0.45 0.45 }
+			}
+	}
+}
 
 
