@@ -1789,6 +1789,20 @@ tr_nickname_event.01 = {
 			base = 1
 		}
     }
+ #SCIFI
+    option = { #Kuva
+        name =  nick_name_giver_nick_kuva_prefix
+        trigger = {
+            AND = {
+                culture = culture:grineer_culture
+                has_trait = kuva_lich
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_kuva_prefix }
+        ai_chance = {
+			base = 1
+		}
+    }
  #SATAN
     option = { 
         name =  nick_name_giver_nick_satan_diplomacy
@@ -1908,7 +1922,7 @@ tr_nickname_event.01 = {
 			}
 		}
     }
-#### DARK SOULS
+ #### DARK SOULS
     option = { 
         name =  nick_name_giver_nick_gwyns_flame
         trigger = {
