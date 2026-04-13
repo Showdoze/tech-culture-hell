@@ -1385,9 +1385,10 @@ fantasy_religion = {
 		        GHWNamePlural = ghw_great_holy_wars
 	        }
 		}
-		twomoonsdance = {
+		cosmic_faith = {
 			color = { 1.0 1.0 0.8 }
-			icon = khajiit_mane
+			icon = gerudo_crest
+			reformed_icon = satanism_reformed
 			piety_icon_group = "islam"
 			#religious_head = d_mane
 			#Holy Site
@@ -1406,27 +1407,23 @@ fantasy_religion = {
 			 holy_site = kordofan
 			 holy_site = koya
 			 holy_site = haguro
-			 #holy_site = hs_torval
-			 #holy_site = hs_moon_gate
-			 #holy_site = hs_pridehome 
-			 # Home of the Pride of Alkosh, a religious order composed of the Forgotten Manes
-			 #holy_site = hs_rawlkha # Where the Riddle'Thar Epiphany was revealed
-			 #holy_site = hs_twomoonpath
 			#Doctrines
 			 # doctrine = doctrine_temporal_head
 			 # doctrine = doctrine_theocracy_lay_clergy
+			 doctrine = pagan_hostility_doctrine
 		     doctrine = doctrine_gender_equal
 		     #doctrine = doctrine_cultural_identity_heritage
-			 doctrine = special_doctrine_is_islamic_faith
 			 doctrine = doctrine_bastardry_none
 	         doctrine = doctrine_consanguinity_cousins
 			 #Funeral tradition
 			  doctrine = doctrine_funeral_stoic
+			  doctrine = unreformed_faith_doctrine
 			  doctrine = doctrine_anointment_permitted
+			  doctrine = doctrine_witchcraft_accepted
 			#Tenets
 			 doctrine = tenet_moon_worship
-			 doctrine = tenet_ritual_hospitality
-			 doctrine = tenet_hedonistic
+			 doctrine = tenet_sun_stars
+			 doctrine = tenet_mystical_birthright
 			localization = {
 				#HighGod
 				 HighGodName  = god_riddlethar_name
@@ -1504,33 +1501,12 @@ fantasy_religion = {
 				 WaterGodHerHis = CHARACTER_HERHIS_HER
 				 WaterGodHerHim = CHARACTER_HERHIM_HER
 				GoodGodNames = {
-					god_riddlethar_name god_moons_name god_azurah_name
-					god_khenarthi_name god_jone_name god_jode_name
-					god_hircine_name god_nirni_name god_alkosh_name
-					god_mara_name god_srendarr_name 
+					god_lua god_sol 
 				}
 				EvilGodNames = {
-					god_sangiin_name
-					god_namiira_name
-					god_varmiina_name
-					god_skoomacat_name
-					god_orkha_name
-					god_molagh_name
-					god_merrunz_name
-					god_meridnunda_name
-					god_lorkhaj_name
-					god_hermorah_name
-					god_alkhan_name
-					god_boethra_name
 				}
 			}
 			holy_order_names = {
-				{ name = "holy_order_brotherhood_of_fang" }
-				{ name = "holy_order_of_crescent" }
-				{ name = "holy_order_warriors_wargod" }
-				{ name = "holy_order_warriors_of_highgod" }		
-				{ name = "holy_order_guardians_of_divinerealm" }				
-				{ name = "holy_order_warriors" }
 			}
 		}
 		hammerite_faith = {
