@@ -1922,8 +1922,8 @@ tr_nickname_event.01 = {
 			}
 		}
     }
- #### DARK SOULS
-    option = { 
+ #### DARK SOULS FROMSOFT
+    option = {  #gwyns_flame
         name =  nick_name_giver_nick_gwyns_flame
         trigger = {
             AND = {
@@ -1941,6 +1941,25 @@ tr_nickname_event.01 = {
         }
         add_piety = -100
         set_nickname_effect = { NICKNAME = nick_gwyns_flame }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = -1
+				has_trait = cynical
+			}
+		}
+    }
+    option = {  #of the full moon
+        name =  nick_name_giver_nick_kingqueen_of_the_full_moon
+        trigger = {
+            OR = {
+                faith = faith:cosmic_faith
+                has_trait = follow_selune
+                has_trait = class_druid_moon
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_kingqueen_of_the_full_moon }
         ai_chance = {
 			base = 1
             modifier = {

@@ -13,10 +13,17 @@ house_customizer.0001 = {
 	immediate = {play_music_cue = "mx_cue_succession"}
 	#I want to select an extinct house to play as.
 	option = {
-		name = house_customizer.0001.fantasy
+		name = house_customizer.0001.agot
 		# Fire the Extinct House List Selection
 		trigger_event = {
 			id = house_customizer.0002
+		}
+	}
+	option = {
+		name = house_customizer.0001.fantasy
+		# Fire the Extinct House List Selection
+		trigger_event = {
+			id = house_customizer.0040
 		}
 	}
 	option = { #I want to select a living house to play as
@@ -29,7 +36,7 @@ house_customizer.0001 = {
 		name = back_option
 	}
 }
-house_customizer.0002 = { #FANTASY MAIN
+house_customizer.0002 = { #AGOT MAIN
 	type = character_event
 	title = house_customizer.0002.t
 	desc = house_customizer.0002.desc
@@ -92,24 +99,6 @@ house_customizer.0002 = { #FANTASY MAIN
 		name = house_customizer.0002.ironborn
 		trigger_event = {
 			id = house_customizer.0011
-		}
-	}
-	option = {#ELDER SCROLLS
-		name = house_customizer_es
-		trigger_event = {
-			id = house_customizer.0012
-		}
-	}
-	option = {#anime
-		name = house_customizer_anime
-		trigger_event = {
-			id = house_customizer.0013
-		}
-	}
-	option = {#Video game
-		name = house_customizer_vg
-		trigger_event = {
-			id = house_customizer.0014
 		}
 	}
 	option = {# Go back
@@ -239,6 +228,36 @@ house_customizer.0004 = { #Select Riverlands
 		remove_trait = house_customizer
 		set_father = character:Qoherys_1
 	}
+	option = { #PAGE 2
+		name = house_customizer_riverlands_page2
+		trigger_event = {
+			id = house_customizer.0014
+		}
+	}
+	option = { Back
+		name = back_option
+		trigger_event = {
+			id = house_customizer.0002
+		}
+	}
+}
+house_customizer.0014 = { # Riverlands Page 2
+	type = character_event
+	title = house_customizer.0004.t
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #Qoherys
+		name = house_customizer_qoherys
+		set_house = character:Qoherys_1.house
+		remove_trait = house_customizer
+		set_father = character:Qoherys_1
+	}
 	option = { #Harroway
 		name = house_customizer_harroway
 		set_house = character:Harroway_5.house
@@ -257,10 +276,10 @@ house_customizer.0004 = { #Select Riverlands
 		remove_trait = house_customizer
 		set_father = character:Blackwood_74
 	}
-	option = {
+	option = { Back
 		name = back_option
 		trigger_event = {
-			id = house_customizer.0002
+			id = house_customizer.0004
 		}
 	}
 }
@@ -798,157 +817,6 @@ house_customizer.0011 = { #Select Ironborn
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0012 = { #ELDER SCROLLS
-	type = character_event
-	title = house_customizer_es_select
-	desc = Select_Your_House
-	theme = family
-	override_background = {reference = physicians_study}
-	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { #telvanni
-		name = telvanni
-		set_house = character:telvayn_91.house
-		remove_trait = house_customizer
-		set_father = character:telvayn_91
-		add_trait = start_telvani
-	}
-	option = { #tr_dagothur
-		name = Dagoth
-		set_house = character:tr_dagothur.house
-		remove_trait = house_customizer
-		set_father = character:tr_dagothur
-	}
-	option = { #Dres
-		name = Dres
-		set_house = character:dres_line.house
-		remove_trait = house_customizer
-		set_father = character:dres_line
-	}
-	option = { #indoril
-		name = indoril
-		set_house = character:mora_nerevar.house
-		remove_trait = house_customizer
-		set_father = character:mora_nerevar
-	}
-	option = { #Septim
-		name = Septim
-		set_house = character:septim_003.house
-		remove_trait = house_customizer
-		set_father = character:septim_003
-		add_trait = start_septim
-		add_trait = reincarnation
-	}
-	option = { #hlaalu
-		name = hlaalu
-		set_house = character:hlaalu2_1.house
-		remove_trait = house_customizer
-		set_father = character:hlaalu2_1
-		add_trait = start_hlaalu
-	}
-	option = { #Redoran
-		name = Redoran
-		set_house = character:redoran_8.house
-		remove_trait = house_customizer
-		set_father = character:redoran_8
-		add_trait = start_redoran
-	}
-	option = { #Dwemer
-		name = Dwemer
-		set_house = character:tr_dwemer1.house
-		remove_trait = house_customizer
-		set_father = character:tr_dwemer1
-	}
-	option = {
-		name = back_option
-		trigger_event = house_customizer.0002
-	}
-}
-house_customizer.0013 = { #ANIME
-	type = character_event
-	title = house_customizer_select_anime
-	desc = Select_Your_House
-	theme = family
-	override_background = {reference = physicians_study}
-	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { #UCHIHA
-		name = house_uchiha
-		set_house = character:tr_naruto_fugaku.house
-		remove_trait = house_customizer
-		set_father = character:tr_naruto_fugaku
-		set_mother = character:tr_naruto_mikoto
-		add_trait = start_uchiha
-	}
-	option = { #house_senju
-		name = Senju
-		set_house = character:tr_naruto_Kawarama.house
-		remove_trait = house_customizer
-		set_father = character:tr_naruto_Kawarama
-	}
-	option = { #Uzumaki
-		name = Uzumaki
-		set_house = character:tr_naruto_kushina.house
-		remove_trait = house_customizer
-		set_mother = character:tr_naruto_kushina
-	}
-	option = { #Midland Berserk
-		name = Midland
-		set_house = character:tr_midland_king.house
-		remove_trait = house_customizer
-		set_mother = character:tr_midland_king
-	}
-	option = {
-		name = back_option
-		trigger_event = house_customizer.0002
-	}
-}
-house_customizer.0014 = { #video games
-	type = character_event
-	title = house_customizer_select_vg
-	desc = Select_Your_House
-	theme = family
-	override_background = {reference = physicians_study}
-	left_portrait = {
-		character = root
-		animation = throne_room_writer
-	}
-	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { # caria
-		name = "Caria Royal Family"
-		set_house = character:tr_rennala.house
-		remove_trait = house_customizer
-		set_father = character:tr_rennala
-	}
-	option = { # Godrick
-		name = Godrick
-		set_house = character:tr_godrick.house
-		remove_trait = house_customizer
-		set_father = character:tr_godrick
-	}
-	option = { # tr_Rutherford_Ember
-		name = Rutherford
-		set_house = character:tr_Rutherford_Ember.house
-		remove_trait = house_customizer
-		set_father = character:tr_Rutherford_Ember
-	}
-	option = { # Bafford
-		name = Bafford
-		set_house = character:tr_bafford_lord.house
-		remove_trait = house_customizer
-		set_father = character:tr_bafford_lord
-	}
-	option = {
-		name = back_option
-		trigger_event = house_customizer.0002
-	}
-}
 house_customizer.0020 = {
 	type = character_event
 	title = Select_Region
@@ -1251,5 +1119,192 @@ house_customizer.0032 = { #NEAR EAST
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0040 = { #FANTASY MAIN
+	type = character_event
+	title = house_customizer_main_fantasy
+	desc = house_customizer.0002.desc
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = {#ELDER SCROLLS
+		name = house_customizer_es
+		trigger_event = {
+			id = house_customizer.0041
+		}
+	}
+	option = {#anime
+		name = house_customizer_anime
+		trigger_event = {
+			id = house_customizer.0042
+		}
+	}
+	option = {#Video game
+		name = house_customizer_vg
+		trigger_event = {
+			id = house_customizer.0043
+		}
+	}
+	option = {# Go back
+		name = back_option
+		trigger_event = {
+			id = house_customizer.0001
+		}
+	}
+}
+house_customizer.0041 = { #ELDER SCROLLS
+	type = character_event
+	title = house_customizer_es_select
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #telvanni
+		name = telvanni
+		set_house = character:telvayn_91.house
+		remove_trait = house_customizer
+		set_father = character:telvayn_91
+		add_trait = start_telvani
+	}
+	option = { #tr_dagothur
+		name = Dagoth
+		set_house = character:tr_dagothur.house
+		remove_trait = house_customizer
+		set_father = character:tr_dagothur
+	}
+	option = { #Dres
+		name = Dres
+		set_house = character:dres_line.house
+		remove_trait = house_customizer
+		set_father = character:dres_line
+	}
+	option = { #indoril
+		name = indoril
+		set_house = character:mora_nerevar.house
+		remove_trait = house_customizer
+		set_father = character:mora_nerevar
+	}
+	option = { #Septim
+		name = Septim
+		set_house = character:septim_003.house
+		remove_trait = house_customizer
+		set_father = character:septim_003
+		add_trait = start_septim
+		add_trait = reincarnation
+	}
+	option = { #hlaalu
+		name = hlaalu
+		set_house = character:hlaalu2_1.house
+		remove_trait = house_customizer
+		set_father = character:hlaalu2_1
+		add_trait = start_hlaalu
+	}
+	option = { #Redoran
+		name = Redoran
+		set_house = character:redoran_8.house
+		remove_trait = house_customizer
+		set_father = character:redoran_8
+		add_trait = start_redoran
+	}
+	option = { #Dwemer
+		name = Dwemer
+		set_house = character:tr_dwemer1.house
+		remove_trait = house_customizer
+		set_father = character:tr_dwemer1
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0040
+	}
+}
+house_customizer.0042 = { #ANIME
+	type = character_event
+	title = house_customizer_select_anime
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #UCHIHA
+		name = house_uchiha
+		set_house = character:tr_naruto_fugaku.house
+		remove_trait = house_customizer
+		set_father = character:tr_naruto_fugaku
+		set_mother = character:tr_naruto_mikoto
+		add_trait = start_uchiha
+	}
+	option = { #house_senju
+		name = Senju
+		set_house = character:tr_naruto_Kawarama.house
+		remove_trait = house_customizer
+		set_father = character:tr_naruto_Kawarama
+	}
+	option = { #Uzumaki
+		name = Uzumaki
+		set_house = character:tr_naruto_kushina.house
+		remove_trait = house_customizer
+		set_mother = character:tr_naruto_kushina
+	}
+	option = { #Midland Berserk
+		name = Midland
+		set_house = character:tr_midland_king.house
+		remove_trait = house_customizer
+		set_mother = character:tr_midland_king
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0040
+	}
+}
+house_customizer.0043 = { #video games
+	type = character_event
+	title = house_customizer_select_vg
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { # caria
+		name = "Caria Royal Family"
+		set_house = character:tr_rennala.house
+		remove_trait = house_customizer
+		set_father = character:tr_rennala
+	}
+	option = { # Godrick
+		name = Godrick
+		set_house = character:tr_godrick.house
+		remove_trait = house_customizer
+		set_father = character:tr_godrick
+	}
+	option = { # tr_Rutherford_Ember
+		name = Rutherford
+		set_house = character:tr_Rutherford_Ember.house
+		remove_trait = house_customizer
+		set_father = character:tr_Rutherford_Ember
+	}
+	option = { # Bafford
+		name = Bafford
+		set_house = character:tr_bafford_lord.house
+		remove_trait = house_customizer
+		set_father = character:tr_bafford_lord
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0040
 	}
 }
