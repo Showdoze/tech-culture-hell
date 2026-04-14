@@ -234,7 +234,7 @@ house_customizer.0004 = { #Select Riverlands
 			id = house_customizer.0014
 		}
 	}
-	option = { Back
+	option = { #Back
 		name = back_option
 		trigger_event = {
 			id = house_customizer.0002
@@ -276,7 +276,7 @@ house_customizer.0014 = { # Riverlands Page 2
 		remove_trait = house_customizer
 		set_father = character:Blackwood_74
 	}
-	option = { Back
+	option = { #Back
 		name = back_option
 		trigger_event = {
 			id = house_customizer.0004
@@ -336,6 +336,28 @@ house_customizer.0005 = { #VALE
 		remove_trait = house_customizer
 		set_father = character:Waynwood_2
 	}
+	option = { #PAGE 2
+		name = house_customizer_vale_page2
+		trigger_event = {
+			id = house_customizer.0015
+		}
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0015 = { #VALE Page 2
+	type = character_event
+	title = house_customizer_vale_page2
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { # dynn_Baelish
 		name = dynn_Baelish
 		set_house = character:Baelish_1.house
@@ -366,12 +388,71 @@ house_customizer.0005 = { #VALE
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0002
+		trigger_event = house_customizer.0005
 	}
 }
 house_customizer.0006 = { #CROWNLANDS
 	type = character_event
 	title = house_customizer.0006.t
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #PAGE 2 Targ
+		name = house_customizer_tar_page2
+		trigger_event = {
+			id = house_customizer.0016
+		}
+	}
+	option = { #ROBSY
+		name = dynn_Rosby
+		set_house = character:Rosby_4.house
+		remove_trait = house_customizer
+		set_father = character:Rosby_4
+	}
+	option = { #Pyke
+		name = dynn_Pyle
+		set_house = character:Pyle_1.house
+		remove_trait = house_customizer
+		set_father = character:Pyle_1
+	}
+	option = { #Scales
+		name = house_Scales
+		set_house = character:Scales_1.house
+		remove_trait = house_customizer
+		set_father = character:Scales_1
+	}
+	option = { #Celtigar
+		name = dynn_Celtigar
+		set_house = character:Celtigar_2.house
+		remove_trait = house_customizer
+		set_father = character:Celtigar_2
+	}
+	option = { #Chelsted
+		name = dynn_Chelsted
+		set_house = character:Chelsted_1.house
+		remove_trait = house_customizer
+		set_father = character:Chelsted_1
+		set_mother = character:Velaryon_60
+	}
+	option = { #Kettleblack
+		name = dynn_Kettleblack
+		set_house = character:Kettleblack_1.house
+		remove_trait = house_customizer
+		set_father = character:Kettleblack_1
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0016 = { #CROWNLANDS Page 2
+	type = character_event
+	title = house_customizer_tar_page2
 	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
@@ -428,48 +509,11 @@ house_customizer.0006 = { #CROWNLANDS
 		remove_trait = house_customizer
 		set_father = character:Targaryen_95
 	}
-	option = { #ROBSY
-		name = dynn_Rosby
-		set_house = character:Rosby_4.house
-		remove_trait = house_customizer
-		set_father = character:Rosby_4
-	}
-	option = { #Pyke
-		name = dynn_Pyle
-		set_house = character:Pyle_1.house
-		remove_trait = house_customizer
-		set_father = character:Pyle_1
-	}
-	option = { #Scales
-		name = house_Scales
-		set_house = character:Scales_1.house
-		remove_trait = house_customizer
-		set_father = character:Scales_1
-	}
-	option = { #Celtigar
-		name = dynn_Celtigar
-		set_house = character:Celtigar_2.house
-		remove_trait = house_customizer
-		set_father = character:Celtigar_2
-	}
-	option = { #Chelsted
-		name = dynn_Chelsted
-		set_house = character:Chelsted_1.house
-		remove_trait = house_customizer
-		set_father = character:Chelsted_1
-		set_mother = character:Velaryon_60
-	}
 	option = { #Velaryon
 		name = dynn_Velaryon
 		set_house = character:Velaryon_57.house
 		remove_trait = house_customizer
 		set_father = character:Velaryon_57
-	}
-	option = { #Kettleblack
-		name = dynn_Kettleblack
-		set_house = character:Kettleblack_1.house
-		remove_trait = house_customizer
-		set_father = character:Kettleblack_1
 	}
 	option = { #house_Longwaters
 		name = house_Longwaters
@@ -479,7 +523,7 @@ house_customizer.0006 = { #CROWNLANDS
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0002
+		trigger_event = house_customizer.0006
 	}
 }
 house_customizer.0007 = { #Select Stormlands
@@ -529,6 +573,28 @@ house_customizer.0007 = { #Select Stormlands
 		remove_trait = house_customizer
 		set_father = character:Selmy_4
 	}
+	option = { #PAGE 2
+		name = house_customizer_stormlands_page2
+		trigger_event = {
+			id = house_customizer.0017
+		}
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0017 = { #Select Stormlands
+	type = character_event
+	title = house_customizer_stormlands_page2
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #dynn_Dondarrion
 		name = dynn_Dondarrion
 		set_house = character:Dondarrion_1.house
@@ -555,7 +621,7 @@ house_customizer.0007 = { #Select Stormlands
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0002
+		trigger_event = house_customizer.0007
 	}
 }
 house_customizer.0008 = { ##Select Dorne
@@ -639,6 +705,28 @@ house_customizer.0009 = { #Select Reach
 		remove_trait = house_customizer
 		set_father = character:Crane_7
 	}
+	option = { #PAGE 2
+		name = house_customizer_reach_page2
+		trigger_event = {
+			id = house_customizer.0017
+		}
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0019 = { #Select Reach
+	type = character_event
+	title = house_customizer_reach_page2
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = {#dynn_Merryweather
 		name = dynn_Merryweather
 		set_house = character:Merryweather_2.house
@@ -690,7 +778,7 @@ house_customizer.0009 = { #Select Reach
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0002
+		trigger_event = house_customizer.0009
 	}
 }
 house_customizer.0010 = { #Select Westerlands
@@ -741,6 +829,28 @@ house_customizer.0010 = { #Select Westerlands
 		remove_trait = house_customizer
 		set_father = character:Reyne_45
 	}
+	option = { #PAGE 2
+		name = house_customizer_westerlands_page2
+		trigger_event = {
+			id = house_customizer.0012
+		}
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0002
+	}
+}
+house_customizer.0012 = { #Select Westerlands
+	type = character_event
+	title = house_customizer_westerlands_page2
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #dynn_Lannister
 		name = dynn_Lannister
 		set_house = character:Lannister_1.house
@@ -767,7 +877,7 @@ house_customizer.0010 = { #Select Westerlands
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0002
+		trigger_event = house_customizer.0010
 	}
 }
 house_customizer.0011 = { #Select Ironborn
@@ -852,31 +962,13 @@ house_customizer.0020 = {
 			id = house_customizer.0026
 		}
 	}
-	option = {#Displays Extinct Stormlander Houses
-		name = house_customizer.0002.stormlands
-		trigger_event = {
-			id = house_customizer.0007
-		}
-	}
-	option = {#Displays Extinct Dorne Houses
-		name = house_customizer.0002.dorne
-		trigger_event = {
-			id = house_customizer.0008
-		}
-	}
-	option = {#Displays Extinct Dorne Houses
-		name = house_customizer.0002.reach
-		trigger_event = {
-			id = house_customizer.0009
-		}
-	}
 	option = {#AFRICA
 		name = house_customizer_africa
 		trigger_event = {
 			id = house_customizer.0030
 		}
 	}
-	option = {#Displays Extinct Ironborn Houses
+	option = {#Far east
 		name = house_customizer_far_east
 		trigger_event = {
 			id = house_customizer.0031
@@ -907,7 +999,7 @@ house_customizer.0023 = { #Northern ERUOPE
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #teutonic
-	    name = Teutonic
+	    name = house_customizer_teutonic
 		set_house = character:tr_Teutonic.house
 		remove_trait = house_customizer
 		set_father = character:tr_Teutonic
@@ -929,13 +1021,13 @@ house_customizer.0024 = { #EASTERN ERUOPE
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #Rurik
-	    name = Rurik
+	    name = house_customizer_rurik
 		set_house = character:40605.house
 		remove_trait = house_customizer
 		set_father = character:40605
 	}
 	option = { #Piast
-	    name = Piast
+	    name = house_customizer_piast
 		set_house = character:82235.house
 		remove_trait = house_customizer
 		set_father = character:82235
@@ -961,18 +1053,21 @@ house_customizer.0025 = { #Southern ERUOPE
 		set_house = character:145287.house
 		remove_trait = house_customizer
 		set_father = character:145287
+		add_prestige = 500
 	}
 	option = { #Herakleidon
 	    name = Herakleidon
 		set_house = character:70506.house
 		remove_trait = house_customizer
 		set_father = character:70506
+		add_prestige = 250
 	}
 	option = {  #Constantinus
 	    name = Constantinus
 		set_house = character:145237.house
 		remove_trait = house_customizer
 		set_father = character:145237
+		add_prestige = 250
 	}
 	option = {
 		name = back_option
@@ -990,45 +1085,68 @@ house_customizer.0026 = { #Western ERUOPE
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = { #542 ME_rovech
-	    name = ME_rovech
-		set_house = character:168707.house
-		remove_trait = house_customizer
-		set_father = character:168707
-	}
 	option = {  #house_asturias
-	    name = house_asturias
+	    name = house_customizer_asturias
 		set_house = character:70006.house
 		remove_trait = house_customizer
 		set_father = character:70006
+		add_prestige = 100
 	}
 	option = {  #suebi
-	    name = Suebi
+	    name = house_customizer_suebi
 		set_house = character:200058.house
 		remove_trait = house_customizer
 		set_father = character:200058
+		add_prestige = 100
+	}
+	option = {
+		name = house_customizer_french
+		trigger_event = house_customizer.0021
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0021 = { #France
+	type = character_event
+	title = house_customizer_french
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #542 ME_rovech
+	    name = house_customizer_merovech
+		set_house = character:168707.house
+		remove_trait = house_customizer
+		set_father = character:168707
+		add_prestige = 100
 	}
 	option = {  #karling
-	    name = Karling
+	    name = house_customizer_karling
 		set_house = character:6392.house
 		remove_trait = house_customizer
 		set_father = character:6392
 	}
 	option = {  #KARLING CK2
-	    name = "Karling CK2"
+	    name = house_customizer_karling_ck2
 		set_house = character:tr_karling_ck2.house
 		remove_trait = house_customizer
 		set_father = character:tr_karling_ck2
 	}
 	option = {  #tr_house_karling_monogram
-	    name = "Karling Monogram"
+	    name = house_customizer_karling_monogram
 		set_house = character:tr_house_karling_monogram.house
 		remove_trait = house_customizer
 		set_father = character:tr_house_karling_monogram
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0020
+		trigger_event = house_customizer.0026
 	}
 }
 house_customizer.0030 = { #AFRICA
@@ -1043,7 +1161,7 @@ house_customizer.0030 = { #AFRICA
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #SOLOMINID
-	    name = SOLOMINID
+	    name = house_customizer_solominid
 		set_house = character:167707.house
 		remove_trait = house_customizer
 		set_father = character:167707
@@ -1065,19 +1183,19 @@ house_customizer.0031 = { #Far East
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #ODA
-	    name = Oda
+	    name = house_customizer_oda
 		set_house = character:tr_oda_1.house
 		remove_trait = house_customizer
 		set_father = character:tr_oda_1
 	}
 	option = { #Hojo
-	    name = Hojo
+	    name = house_customizer_hojo
 		set_house = character:tr_hojo_1.house
 		remove_trait = house_customizer
 		set_father = character:tr_hojo_1
 	}
 	option = { #Tokugawa
-	    name = Tokugawa
+	    name = house_customizer_tokugawa
 		set_house = character:tr_Tokugawa_1.house
 		remove_trait = house_customizer
 		set_father = character:tr_Tokugawa_1
@@ -1103,18 +1221,21 @@ house_customizer.0032 = { #NEAR EAST
 		set_house = character:1059969.house
 		remove_trait = house_customizer
 		set_father = character:1059969
+		add_prestige = 500
 	}
 	option = { #Parthian 100685
 		name = Parthian
 		set_house = character:159579.house
 		remove_trait = house_customizer
 		set_father = character:159579
+		add_prestige = 500
 	}
 	option = { #Achaemenid 
 		name = Achaemenid 
 		set_house = character:tr_Achaemenes.house
 		remove_trait = house_customizer
 		set_father = character:tr_Achaemenes
+		add_prestige = 1000
 	}
 	option = {
 		name = back_option
@@ -1169,32 +1290,32 @@ house_customizer.0041 = { #ELDER SCROLLS
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #telvanni
-		name = telvanni
+		name = house_customizer_telvanni
 		set_house = character:telvayn_91.house
 		remove_trait = house_customizer
 		set_father = character:telvayn_91
 		add_trait = start_telvani
 	}
 	option = { #tr_dagothur
-		name = Dagoth
+		name = house_customizer_dagoth
 		set_house = character:tr_dagothur.house
 		remove_trait = house_customizer
 		set_father = character:tr_dagothur
 	}
 	option = { #Dres
-		name = Dres
+		name = house_customizer_dres
 		set_house = character:dres_line.house
 		remove_trait = house_customizer
 		set_father = character:dres_line
 	}
 	option = { #indoril
-		name = indoril
+		name = house_customizer_indoril
 		set_house = character:mora_nerevar.house
 		remove_trait = house_customizer
 		set_father = character:mora_nerevar
 	}
 	option = { #Septim
-		name = Septim
+		name = house_customizer_septim
 		set_house = character:septim_003.house
 		remove_trait = house_customizer
 		set_father = character:septim_003
@@ -1202,21 +1323,21 @@ house_customizer.0041 = { #ELDER SCROLLS
 		add_trait = reincarnation
 	}
 	option = { #hlaalu
-		name = hlaalu
+		name = house_customizer_hlaalu
 		set_house = character:hlaalu2_1.house
 		remove_trait = house_customizer
 		set_father = character:hlaalu2_1
 		add_trait = start_hlaalu
 	}
 	option = { #Redoran
-		name = Redoran
+		name = house_customizer_redoran
 		set_house = character:redoran_8.house
 		remove_trait = house_customizer
 		set_father = character:redoran_8
 		add_trait = start_redoran
 	}
 	option = { #Dwemer
-		name = Dwemer
+		name = house_customizer_dwemer
 		set_house = character:tr_dwemer1.house
 		remove_trait = house_customizer
 		set_father = character:tr_dwemer1
@@ -1238,7 +1359,7 @@ house_customizer.0042 = { #ANIME
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #UCHIHA
-		name = house_uchiha
+		name = house_customizer_uchiha
 		set_house = character:tr_naruto_fugaku.house
 		remove_trait = house_customizer
 		set_father = character:tr_naruto_fugaku
@@ -1246,19 +1367,26 @@ house_customizer.0042 = { #ANIME
 		add_trait = start_uchiha
 	}
 	option = { #house_senju
-		name = Senju
+		name = house_customizer_senju
 		set_house = character:tr_naruto_Kawarama.house
 		remove_trait = house_customizer
 		set_father = character:tr_naruto_Kawarama
 	}
 	option = { #Uzumaki
-		name = Uzumaki
+		name = house_customizer_uzumaki
 		set_house = character:tr_naruto_kushina.house
 		remove_trait = house_customizer
 		set_mother = character:tr_naruto_kushina
 	}
+	option = { #Hygua
+		name = house_customizer_hygua
+		set_house = character:tr_naruto_hygua_hiashi.house
+		remove_trait = house_customizer
+		set_father = character:tr_naruto_hygua_hiashi
+		add_trait = byakugan
+	}
 	option = { #Midland Berserk
-		name = Midland
+		name = house_customizer_midland
 		set_house = character:tr_midland_king.house
 		remove_trait = house_customizer
 		set_mother = character:tr_midland_king
@@ -1280,25 +1408,25 @@ house_customizer.0043 = { #video games
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { # caria
-		name = "Caria Royal Family"
+		name = house_customizer_caria
 		set_house = character:tr_rennala.house
 		remove_trait = house_customizer
 		set_father = character:tr_rennala
 	}
 	option = { # Godrick
-		name = Godrick
+		name = house_customizer_godrick
 		set_house = character:tr_godrick.house
 		remove_trait = house_customizer
 		set_father = character:tr_godrick
 	}
 	option = { # tr_Rutherford_Ember
-		name = Rutherford
+		name = house_customizer_rutherford
 		set_house = character:tr_Rutherford_Ember.house
 		remove_trait = house_customizer
 		set_father = character:tr_Rutherford_Ember
 	}
 	option = { # Bafford
-		name = Bafford
+		name = house_customizer_bafford
 		set_house = character:tr_bafford_lord.house
 		remove_trait = house_customizer
 		set_father = character:tr_bafford_lord

@@ -3099,8 +3099,9 @@ tr_select_deity.01 = {
         name = pagan_choose_deity_jesus
         trigger = {
             AND = {
-                NOT = {
+                NOR = {
                     has_trait = follow_jesus
+                    has_trait = zealous
                 }
                 OR = {
                     faith = faith:roman_pagan
@@ -3146,8 +3147,9 @@ tr_select_deity.01 = {
         name = pagan_choose_deity_islam
         trigger = {
             AND = {
-                NOT = {
+                NOR = {
                     has_trait = follow_islam
+                    has_trait = zealous
                 }
                 OR = {
                     faith = faith:roman_pagan
