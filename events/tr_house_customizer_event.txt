@@ -11,22 +11,19 @@ house_customizer.0001 = {
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	#I want to select an extinct house to play as.
 	option = {
 		name = house_customizer.0001.agot
-		# Fire the Extinct House List Selection
 		trigger_event = {
 			id = house_customizer.0002
 		}
 	}
 	option = {
 		name = house_customizer.0001.fantasy
-		# Fire the Extinct House List Selection
 		trigger_event = {
 			id = house_customizer.0040
 		}
 	}
-	option = { #I want to select a living house to play as
+	option = {
 		name = house_customizer.0001.historical
 		trigger_event = {
 			id = house_customizer.0020

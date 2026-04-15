@@ -209,7 +209,7 @@ tr_select_deity.01 = {
         animation = personality_rational
     }
 ######DARK SOULS
-    option = {
+    option = { #aldrich
         name = ds1_select_covenant_aldrich
         trigger = {
             AND = {
@@ -233,9 +233,13 @@ tr_select_deity.01 = {
                 add = 1
                 has_trait = comfort_eater
             }
+            modifier = {
+                add = 1
+                has_trait = gluttonous
+            }
         }
     }
-    option = {
+    option = { #blue
         name = ds1_select_covenant_blue
         trigger = {
             AND = {
@@ -261,7 +265,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #darkmoon
         name = ds1_select_covenant_darkmoon
         trigger = {
             AND = {
@@ -282,12 +286,12 @@ tr_select_deity.01 = {
         ai_chance = {
             base = 1
             modifier = {
-                add = 0
-                has_trait = gregarious
+                add = 1
+                has_trait = class_druid_moon
             }
         }
     }
-    option = {
+    option = { #farron
         name = ds1_select_covenant_farron
         trigger = {
             AND = {
@@ -313,7 +317,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #moundmakers
         name = ds1_select_covenant_moundmakers
         trigger = {
             AND = {
@@ -351,7 +355,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #rosaria
         name = ds1_select_covenant_rosaria
         trigger = {
             AND = {
@@ -377,7 +381,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #sentinels
         name = ds1_select_covenant_sentinels
         trigger = {
             AND = {
@@ -403,7 +407,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #sunlight
         name = ds1_select_covenant_sunlight
         trigger = {
             AND = {
@@ -424,8 +428,8 @@ tr_select_deity.01 = {
         ai_chance = {
             base = 1
             modifier = {
-                add = 0
-                has_trait = gregarious
+                add = 5
+                has_trait = class_cleric_light
             }
         }
     }
