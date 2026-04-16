@@ -581,7 +581,7 @@ house_customizer.0007 = { #Select Stormlands
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0017 = { #Select Stormlands
+house_customizer.0017 = { # Stormlands PAGE 2
 	type = character_event
 	title = house_customizer_stormlands_page2
 	desc = Select_Your_House
@@ -713,7 +713,7 @@ house_customizer.0009 = { #Select Reach
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0019 = { #Select Reach
+house_customizer.0019 = { # Reach PAGE 2
 	type = character_event
 	title = house_customizer_reach_page2
 	desc = Select_Your_House
@@ -773,6 +773,12 @@ house_customizer.0019 = { #Select Reach
 		remove_trait = house_customizer
 		set_father = character:Hightower_5
 	}
+	#option = { #PAGE 3
+	#	name = house_customizer_reach_page3
+	#	trigger_event = {
+	#		id = house_customizer.0017
+	#	}
+	#}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0009
@@ -837,7 +843,7 @@ house_customizer.0010 = { #Select Westerlands
 		trigger_event = house_customizer.0002
 	}
 }
-house_customizer.0012 = { #Select Westerlands
+house_customizer.0012 = { # Westerlands PAGE 2
 	type = character_event
 	title = house_customizer_westerlands_page2
 	desc = Select_Your_House
@@ -1045,22 +1051,42 @@ house_customizer.0025 = { #Southern ERUOPE
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
+	option = {
+		name = house_customizer_roman
+		trigger_event = house_customizer.0027
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0027 = { #roman
+	type = character_event
+	title = house_customizer_select_western_europe
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #Julio-Claudian
-	    name = julio_claudian
+	    name = house_customizer_julio_claudian
 		set_house = character:145287.house
 		remove_trait = house_customizer
 		set_father = character:145287
 		add_prestige = 500
 	}
 	option = { #Herakleidon
-	    name = Herakleidon
+	    name = house_customizer_herakleidon
 		set_house = character:70506.house
 		remove_trait = house_customizer
 		set_father = character:70506
 		add_prestige = 250
 	}
 	option = {  #Constantinus
-	    name = Constantinus
+	    name = house_customizer_constantinus
 		set_house = character:145237.house
 		remove_trait = house_customizer
 		set_father = character:145237
@@ -1082,19 +1108,9 @@ house_customizer.0026 = { #Western ERUOPE
 		animation = throne_room_writer
 	}
 	immediate = {play_music_cue = "mx_cue_succession"}
-	option = {  #house_asturias
-	    name = house_customizer_asturias
-		set_house = character:70006.house
-		remove_trait = house_customizer
-		set_father = character:70006
-		add_prestige = 100
-	}
-	option = {  #suebi
-	    name = house_customizer_suebi
-		set_house = character:200058.house
-		remove_trait = house_customizer
-		set_father = character:200058
-		add_prestige = 100
+	option = {
+		name = house_customizer_spain
+		trigger_event = house_customizer.0022
 	}
 	option = {
 		name = house_customizer_french
@@ -1140,6 +1156,36 @@ house_customizer.0021 = { #France
 		set_house = character:tr_house_karling_monogram.house
 		remove_trait = house_customizer
 		set_father = character:tr_house_karling_monogram
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0026
+	}
+}
+house_customizer.0022 = { #Spain
+	type = character_event
+	title = house_customizer_spain
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = {  #house_asturias
+	    name = house_customizer_asturias
+		set_house = character:70006.house
+		remove_trait = house_customizer
+		set_father = character:70006
+		add_prestige = 100
+	}
+	option = {  #suebi
+	    name = house_customizer_suebi
+		set_house = character:200058.house
+		remove_trait = house_customizer
+		set_father = character:200058
+		add_prestige = 100
 	}
 	option = {
 		name = back_option
