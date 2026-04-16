@@ -628,7 +628,7 @@ language_kurshok = {
 			multiply = 10
 		}
 	}
-	color = agot_blue_light
+	color = thief_kurshok
 }
 language_primative = {
 	type = language
@@ -660,5 +660,21 @@ language_lizardmen = {
 			multiply = 10
 		}
 	}
-	color = agot_brown
+	color = argonian_green_dark
+}
+language_rat = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_rat
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_rat }
+			multiply = 10
+		}
+	}
+	color = valenwood_brown
 }
