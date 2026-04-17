@@ -31,8 +31,8 @@ language_ancient_egyptian = {
 			limit = {
 				scope:character = {
 					OR = {
-						faith = kemetic_pagan
-						faith = atenist_pagan
+						faith = faith:kemetic_pagan
+						faith = faith:atenist_pagan
 					}
 				}
 			}
@@ -89,22 +89,6 @@ language_unknown = {
 	}
 	color = somali
 }
-language_gerudo = {
-	type = language
-	is_shown = {
-		language_is_shown_trigger = {
-			LANGUAGE = language_gerudo
-		}
-	}
-	ai_will_do = {
-		value = 10
-		if = {
-			limit = { has_cultural_pillar = language_gerudo }
-			multiply = 10
-		}
-	}
-	color = { 243 146 0 }
-}
 language_gnomish = { #Gnomish dialects
 	type = language
 	is_shown = {
@@ -150,6 +134,16 @@ language_valyrian = {
 			limit = { has_cultural_pillar = language_valyrian }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:dragon_cult
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = { 0.71 0.37 0.60 }
 }
@@ -166,8 +160,22 @@ language_common = {
 			limit = { has_cultural_pillar = language_common }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:hammerite_faith
+						faith = faith:mechanist_faith
+						faith = faith:keeper_faith
+						faith = faith:mage_faith
+						faith = faith:fots_seven
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
-	color = han
+	color = white
 }
 language_goblin = {
 	type = language
@@ -229,6 +237,16 @@ language_altmeris = {
 		if = {
 			limit = { has_cultural_pillar = language_altmeris }
 			multiply = 10
+		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:auriel
+					}
+				}
+			}
+			multiply = 2
 		}
 	}
 	color = altmeris
@@ -294,6 +312,18 @@ language_dunmeris = {
 			limit = { has_cultural_pillar = language_dunmeris }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:tribunal_temple
+						faith = faith:sixth_house
+						faith = faith:old_velothi
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = dunmeris
 }
@@ -314,8 +344,7 @@ language_punic = {
 			limit = {
 				scope:character = {
 					OR = {
-						faith = punic_pagan
-					#	faith = atenist_pagan
+						faith = faith:punic_pagan
 					}
 				}
 			}
@@ -342,8 +371,8 @@ language_nahuatl = {
 			limit = {
 				scope:character = {
 					OR = {
-						faith = cult_of_tlaloc
-						faith = cult_of_tezcatlipoca
+						faith = faith:cult_of_tlaloc
+						faith = faith:cult_of_tezcatlipoca
 					}
 				}
 			}
@@ -433,7 +462,7 @@ language_jel = { #Argonian
 			limit = {
 				scope:character = {
 					OR = {
-						faith = hist
+						faith = faith:hist
 					#	faith = cult_of_tezcatlipoca
 					}
 				}
@@ -460,8 +489,7 @@ language_taagra = { #khajitt
 			limit = {
 				scope:character = {
 					OR = {
-						faith = twomoonsdance
-					#	faith = cult_of_tezcatlipoca
+						faith = faith:twomoonsdance
 					}
 				}
 			}
@@ -483,40 +511,18 @@ language_hylian = {
 			limit = { has_cultural_pillar = language_hylian }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:hyrulean_faith
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = { 255 221 14 }
-}
-language_nordic = {
-	type = language
-	is_shown = {
-		language_is_shown_trigger = {
-			LANGUAGE = language_nordic
-		}
-	}
-	ai_will_do = {
-		value = 10
-		if = {
-			limit = { has_cultural_pillar = language_nordic }
-			multiply = 10
-		}
-	}
-	color = nordic
-}
-language_yoku = {
-	type = language
-	is_shown = {
-		language_is_shown_trigger = {
-			LANGUAGE = language_yoku
-		}
-	}
-	ai_will_do = {
-		value = 10
-		if = {
-			limit = { has_cultural_pillar = language_yoku }
-			multiply = 10
-		}
-	}
-	color = yoku
 }
 language_mando = {
 	type = language
@@ -643,6 +649,16 @@ language_primative = {
 			limit = { has_cultural_pillar = language_primative }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:primative_cult
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = agot_brown
 }
@@ -658,6 +674,16 @@ language_lizardmen = {
 		if = {
 			limit = { has_cultural_pillar = language_lizardmen }
 			multiply = 10
+		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:cult_of_lizardmen
+					}
+				}
+			}
+			multiply = 2
 		}
 	}
 	color = argonian_green_dark
