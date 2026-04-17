@@ -280,6 +280,16 @@ language_cyrodiilic = {
 			limit = { has_cultural_pillar = language_cyrodiilic }
 			multiply = 10
 		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:imperial_cult
+					}
+				}
+			}
+			multiply = 2
+		}
 	}
 	color = cyrodiilic
 }
@@ -538,7 +548,7 @@ language_mando = {
 			multiply = 10
 		}
 	}
-	color = nordic
+	color = mandalorian_crimson
 }
 language_drow = {
 	type = language
@@ -554,7 +564,7 @@ language_drow = {
 			multiply = 10
 		}
 	}
-	color = daedra_purple
+	color = drow
 }
 language_gith = {
 	type = language
@@ -587,6 +597,32 @@ language_luwian = {
 		}
 	}
 	color = luwian
+}
+language_sumerian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_sumerian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_sumerian }
+			multiply = 10
+		}
+		if = {
+			limit = {
+				scope:character = {
+					OR = {
+						faith = faith:sumerian_pagan
+					}
+				}
+			}
+			multiply = 2
+		}
+	}
+	color = sumerian
 }
 language_elf = {
 	type = language
@@ -686,7 +722,7 @@ language_lizardmen = {
 			multiply = 2
 		}
 	}
-	color = argonian_green_dark
+	color = lizardmen
 }
 language_rat = {
 	type = language

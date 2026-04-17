@@ -151,7 +151,7 @@ ratkin = {
     }
 }
 lizardmen = {
-    color = argonian_green_dark
+    color = lizardmen
     created = 1.1.1
     history_loc_override = lizardmen_history_loc
     ethos = ethos_bellicose
@@ -174,7 +174,7 @@ lizardmen = {
 }
 #DND
  drow = {
-    color = { 0.0 0.0 0.0 }
+    color = drow_light
     created = 10.1.1
     parents = { elf_culture }
     history_loc_override = drow_history_loc
@@ -916,7 +916,7 @@ fantasy_culture = {
  }
 #LOZ ZELDA
  hylian = {
-    color = { 255 221 14 }
+    color = hylian
     ethos = ethos_bureaucratic
     created = 1.1.1
     history_loc_override = mystery_history_loc
@@ -949,7 +949,7 @@ fantasy_culture = {
  }
 #SCI-FI
  mandalorian = {
-    color = { 0.71 0.37 0.60 }
+    color = mandalorian_crimson
     created = 1.1.1
     history_loc_override = mystery_history_loc
     ethos = ethos_bellicose
@@ -1094,7 +1094,7 @@ fantasy_culture = {
     }
  }
  northman = {
-	color = { 0.82 0.83 0.84 }
+	color = northman
     created = 500.1.1
     parents = { first_man }
     history_loc_override = northman_main_history_loc
@@ -1122,7 +1122,7 @@ fantasy_culture = {
 	name_list = name_list_northman
  }
  crannogman = {
-	color = { 0.60 0.68 0.62 }
+	color = crannogman
     parents = { first_man } # children_culture
 	created = 600.1.1
     history_loc_override = crannogman_main_history_loc
@@ -1150,7 +1150,7 @@ fantasy_culture = {
 	ethnicities = { 10 = crannogman_ethnicity } #
   }
  ironborn = {
-	color = { 0.46 0.44 0.40 }
+	color = ironborn
     parents = { first_man }
 	created = 100.1.1
     history_loc_override = ironborn_main_history_loc
@@ -1177,7 +1177,7 @@ fantasy_culture = {
 	ethnicities = { 10 = caucasian }
  }
  andal = {
-	color = { 1.00 0.95 0.80 }
+	color = andal
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_common 
@@ -1202,7 +1202,7 @@ fantasy_culture = {
 	ethnicities = { 2 = essosi_andalosi_01 }
 }
  first_man = {
-	color = { 0.71 0.71 0.71 }
+	color = first_man
 	ethos = ethos_bellicose
 	heritage = heritage_fantasy
 	language = language_common
@@ -1226,7 +1226,7 @@ fantasy_culture = {
 	ethnicities = { 10 = Northmen_1 }
  } 
  riverman_main = {
-	color = { 0.16 0.51 0.81 }
+	color = riverman_main
     created = 5000.1.1
     parents = { andal first_man }
     history_loc_override = two_gen_history_loc
@@ -1254,7 +1254,7 @@ fantasy_culture = {
 	ethnicities = { 100 = Rivermen_1 }
   }
  westerman_main = {
-	color = { 0.82 0.30 0.25 }
+	color = westerman_main
     parents = { andal first_man }
 	created = 4660.1.1
     history_loc_override = two_gen_history_loc
@@ -1281,7 +1281,7 @@ fantasy_culture = {
 	ethnicities = { 1 = Westermen_1 }
  }
  reachman = {
-	color = { 0.46 0.63 0.26 }
+	color = reachman
     parents = { andal first_man }
 	created = 6625.1.1
     history_loc_override = two_gen_history_loc
@@ -1335,7 +1335,7 @@ fantasy_culture = {
 	ethnicities = { 1 = Reachmen_1 }
   }
  valeman_main = {
-	color = { 0.31 0.71 0.84 } 
+	color = valeman_main
     parents = { andal first_man }
 	created = 4450.1.1
     history_loc_override = two_gen_history_loc
@@ -1363,7 +1363,7 @@ fantasy_culture = {
 	ethnicities = { 1 = Valemen_1 }
   }
  harborman = {
-	color = { 0.66 0.78 0.69 }
+	color = harborman
     parents = { reachman northman }
 	created = 7000.1.1
     history_loc_override = harborman_history_loc
@@ -1391,7 +1391,7 @@ fantasy_culture = {
 	ethnicities = { 1 = Reachmen_1 10 = Northmen_1 }
  } 
  stormlander_main = {
-	color = { 0.89 0.76 0.13 }
+	color = stormlander_main
     parents = { andal first_man }
 	created = 4525.1.1
     history_loc_override = two_gen_history_loc
@@ -1419,7 +1419,7 @@ fantasy_culture = {
 	name_list = name_list_stormlander
  }
  crownlander = {
-	color = { 0.69 0.30 0.47 }
+	color = crownlander
     parents = { riverman_main stormlander_main }
 	created = 8015.1.1
     history_loc_override = two_gen_history_loc
@@ -1447,7 +1447,7 @@ fantasy_culture = {
 	ethnicities = {1 = Crownlander_1 }
  }
  salt_dornish = {
-	color = { 0.87 0.59 0.29 }
+	color = salt_dornish
     #parents = { sarar andal }
 	#created = 500.1.1
     history_loc_override = salt_dornish_history_loc
@@ -1474,7 +1474,7 @@ fantasy_culture = {
 	ethnicities = { 10 = Salt_Dornish_1 }	
  }
  sand_dornish = {
-	color = { 1.00 0.72 0.43 }
+	color = sand_dornish
     parents = { salt_dornish }
 	created = 715.1.1
     history_loc_override = sand_dornish_history_loc
@@ -1501,7 +1501,7 @@ fantasy_culture = {
 	ethnicities = { 10 = Sand_Dornish_1 }
  }
  westerosi_valyrian = {
-	color = { 0.78 0.29 0.46 }
+	color = westerosi_valyrian
     parents = {
 		high_valyrian #valyrian_original
 		andal
@@ -1532,7 +1532,7 @@ fantasy_culture = {
 	ethnicities = {10 = Westerosi_valyrian_1}
  }
  cimmerian = {
-    color = high_valyrian
+    color = cimmerian
     created = 1.1.1
     history_loc_override = mystery_history_loc
     ethos = ethos_bellicose
@@ -1553,9 +1553,9 @@ fantasy_culture = {
     unit_gfx = { welsh_unit_gfx }
     house_coa_frame = house_frame_05
     ethnicities = {
-        15 = caucasian_northern_blond
-        15 = caucasian_northern_ginger
-        10 = caucasian_northern_brown_hair
+        5 = caucasian_northern_blond
+        5 = caucasian_northern_ginger
+        20 = caucasian_northern_brown_hair
         50 = caucasian_northern_dark_hair
         5 = european_eastern_slavic_1
         5 = european_caucasian_english_1
