@@ -744,15 +744,7 @@
 		# Cultural Acceptance from successful Learn Language schemes
 		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
 	}
-	ai_chance = {
-		value = 11
-		if = {
-			limit = {
-				can_start_new_legacy_track_trigger = no
-			}
-			multiply = 0
-		}
-	}
+	ai_chance = { value = 100 }
  }
   telvani_legacy_2 = {
 	legacy = telvani_legacy_track
@@ -1695,7 +1687,7 @@
  velaryon_legacy_1 = { # Blood of the First Men
 	legacy = velaryon_legacy_track
 	ai_chance = {
-		value = 1
+		value = 100
 	}
 	effect = {
 		custom_description_no_bullet = {
@@ -1770,7 +1762,7 @@
  dayne_legacy_1 = { # Blood of the First Men
 	legacy = dayne_legacy_track
 	ai_chance = {
-		value = 11
+		value = 100
 	}
 	effect = {
 		# Effect is applied in the on action 'on_birth_child'
@@ -1885,13 +1877,28 @@
 		vassal_levy_contribution_mult = 0.1
 	}
 	ai_chance = {
-		value = 11
+		value = 100
+	}
+}
+ bolton_legacy_1 = { # Red Kings
+	legacy = bolton_legacy_track
+	character_modifier = {
+		dread_baseline_add = 10
+		#vassal_levy_contribution_mult = 0.1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = bolton_legacy_effect
+		}
+	}
+	ai_chance = {
+		value = 100
 	}
 }
  umber_legacy_1 = { # Blood of the First Men
 	legacy = umber_legacy_track
 	ai_chance = {
-		value = 11
+		value = 100
 	}
 	effect = {
 		# Effect is applied in the on action 'on_birth_child'
@@ -1906,7 +1913,7 @@
  forrester_legacy_1 = {
 	legacy = forrester_legacy_track
 	ai_chance = {
-		value = 11
+		value = 100
 	}
 	character_modifier = {
 		heavy_infantry_toughness_mult = 0.10
@@ -2164,7 +2171,7 @@
 		archers_screen_mult = 0.1
 	}
 }
-westerman_legacy_3 = { # Silver Tongue, Golden Pockets
+ westerman_legacy_3 = { # Silver Tongue, Golden Pockets
 	legacy =  westerman_legacy_track
 	character_modifier = {
 		men_at_arms_recruitment_cost = -0.2
@@ -2203,7 +2210,7 @@ westerman_legacy_3 = { # Silver Tongue, Golden Pockets
 		archer_cavalry_pursuit_mult = 0.3
 	}
 	ai_chance = {
-		value = 11
+		value = 100
 	}
 }
 

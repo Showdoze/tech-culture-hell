@@ -104,20 +104,7 @@ uchiha_legacy_track = {
 		OR = {
 			dynasty = { has_dynasty_perk = uchiha_legacy_1  }
 			has_trait = start_uchiha
-		}
-	}
-}
-fp2_urbanism_legacy_track = {
-	is_shown = {
-		has_government = republic_government
-	}
-}
-dragonblood_legacy_track = {
-	is_shown = {
-		OR = {
-			dynasty = { has_dynasty_perk = dragonborn_legacy_1 }
-			has_trait = start_dragonborn
-			has_trait = class_sorcerer_dragon
+			dynasty = dynasty:dynn_uchiha
 		}
 	}
 }
@@ -132,7 +119,26 @@ durge_legacy_track = {
 		}
 	}
 }
-hegemon_legacy_track = {
+#ELDER SCROLLS
+ dragonblood_legacy_track = {
+	is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = dragonborn_legacy_1 }
+			has_trait = start_dragonborn
+			has_trait = class_sorcerer_dragon
+		}
+	}
+ }
+ telvani_legacy_track  = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = telvani_legacy_1 }
+			has_trait = start_telvani
+			dynasty = dynasty:dynn_telvanni
+		}
+	}
+}
+ hegemon_legacy_track = {
 	is_shown = {
 		dynasty = {
 			OR = {
@@ -142,16 +148,12 @@ hegemon_legacy_track = {
 		}
 	}
 }
-magicka_legacy_track = {
+ magicka_legacy_track = {
 	is_shown = {
 		OR = {
 		    dynasty = {
 			    OR = {
-				    dynast = {
-					    culture = {
-					    #	this = culture:japanese
-					    }
-				    }
+				    #dynast = { culture = { this = culture:japanese } }
 				    has_dynasty_perk = magicka_legacy_1
 			    }
 		    }
@@ -177,6 +179,7 @@ magicka_legacy_track = {
     is_shown = {
 		OR = {
 			dynasty = { has_dynasty_perk = malkavian_legacy_1 }
+			dynasty = dynasty:dynn_malkavian
 			AND = {
 				OR = {
 					has_trait = lunatic_1
@@ -191,6 +194,7 @@ magicka_legacy_track = {
     is_shown = {
 		OR = {
 			dynasty = { has_dynasty_perk = toreador_legacy_1 }
+			dynasty = dynasty:dynn_toreador
 			AND = {
 				OR = {
 					has_trait = beauty_good_1
@@ -206,6 +210,7 @@ magicka_legacy_track = {
     is_shown = {
 	    OR = {
 			dynasty = { has_dynasty_perk = nosferatu_legacy_1 }
+			dynasty = dynasty:dynn_nosferatu
 			AND = {
 				OR = {
 					has_trait = beauty_bad_1
@@ -222,6 +227,7 @@ magicka_legacy_track = {
     is_shown = {
 	    OR = {
 			dynasty = { has_dynasty_perk = ventrue_legacy_1 }
+			dynasty = dynasty:dynn_ventrue
 			AND = {
 				OR = {
 					has_trait = august
@@ -238,6 +244,7 @@ magicka_legacy_track = {
     is_shown = {
 	    OR = {
 			dynasty = { has_dynasty_perk = gangrel_legacy_1 }
+			dynasty = dynasty:dynn_gangrel
 			AND = {
 				OR = {
 					has_trait = berserker
@@ -287,6 +294,7 @@ magicka_legacy_track = {
     is_shown = {
 	    OR = {
 			dynasty = { has_dynasty_perk = tremere_legacy_1 }
+			dynasty = dynasty:dynn_tremere
 			AND = {
 				OR = {
 					has_trait = class_warlock
@@ -304,6 +312,7 @@ magicka_legacy_track = {
     is_shown = {
 		OR = { 
 			dynasty = { has_dynasty_perk = pharaoh_mummy_legacy_1 }
+			dynasty = dynasty:dynn_setites
 			AND = {
 				OR = {
 					dynast = { culture = { this = culture:ancient_egyptian } }
@@ -530,4 +539,4 @@ belmont_legacy_track = {
 		}
 	}
 }
-
+#
