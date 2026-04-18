@@ -769,10 +769,10 @@
  }
   telvani_legacy_5 = {
 	legacy = telvani_legacy_track
-	effect = {
-		custom_description_no_bullet = {
-			text = erudition_legacy_5_effect
-		}
+	character_modifier = {
+		monthly_influence_mult = 0.1
+		max_political_schemes_add = 1
+		max_learn_language_schemes_add = 1
 	}
  }
 #VTM
@@ -1870,7 +1870,8 @@
 		prowess = 5
 	}
 }
- stark_legacy_1 = { # Winter Kings
+ #STARK
+  stark_legacy_1 = { # Winter Kings
 	legacy = stark_legacy_track
 	character_modifier = {
 		vassal_opinion = 10
@@ -1878,6 +1879,27 @@
 	}
 	ai_chance = {
 		value = 100
+	}
+}
+  stark_legacy_2 = { #
+	legacy = stark_legacy_track
+	character_modifier = {
+		prowess = 2
+		knight_effectiveness_mult = 0.15
+		counter_efficiency = 0.15
+		advantage = 5
+	}
+}
+  stark_legacy_3 = { #
+	legacy = stark_legacy_track
+	character_modifier = {
+		monthly_county_control_growth_add = 0.2
+		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
+		controlled_province_advantage = 5
+		powerful_vassal_opinion = 5
+		happy_powerful_vassal_tax_contribution_mult = 0.1
+		happy_powerful_vassal_levy_contribution_mult = 0.1
 	}
 }
  bolton_legacy_1 = { # Red Kings
@@ -1895,13 +1917,72 @@
 		value = 100
 	}
 }
- umber_legacy_1 = { # Blood of the First Men
+ #UMBER
+  umber_legacy_1 = { # Blood of the First Men
 	legacy = umber_legacy_track
 	ai_chance = {
 		value = 100
 	}
 	effect = {
 		# Effect is applied in the on action 'on_birth_child'
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+  umber_legacy_2 = { # 
+	legacy = umber_legacy_track
+	ai_chance = {
+		value = 100
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+  umber_legacy_2 = { #
+	legacy = umber_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+  umber_legacy_3 = { # 
+	legacy = umber_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+  umber_legacy_4 = { # 
+	legacy = umber_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+  umber_legacy_5 = { #
+	legacy = umber_legacy_track
+	effect = {
 		custom_description_no_bullet = {
 			text = umber_legacy_1_effect
 		}
