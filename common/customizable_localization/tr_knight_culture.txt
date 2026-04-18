@@ -1,116 +1,8 @@
 ﻿KnightCulture = {
 	type = character
-
 	text = {
 		trigger = {
-			culture = { has_name_list = name_list_japanese }
-		} #has_cultural_pillar = language_japanese
-		localization_key = knight_samurai
-	}
-	text = {
-		trigger = {
-			culture = { has_name_list = name_list_thief_city }
-		} #has_cultural_pillar = language_japanese
-		localization_key = knight_officer
-	}
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_cultural_pillar = language_nordic }
-				culture = { has_name_list = name_list_nord }
-			}
-		}
-		localization_key = knight_nord
-	}
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_altmeris }
-		}
-		localization_key = knight_altmer
-	}
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_taagra }
-		}
-		localization_key = knight_khajiit
-	}
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_bosmeris }
-		}
-		localization_key = knight_bosmer
-	}
-	text = {
-		trigger = {
-			OR = {
-			    #culture = { has_cultural_pillar = language_yoku }
-			}
-		} 
-		localization_key = knight_redguard
-	}
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_cultural_pillar = language_cyrodiilic }
-			    culture = { has_name_list = name_list_imperial }
-			}
-		} 
-		localization_key = knight_legate
-	}
-	text = {
-		trigger = {
-			culture = { has_name_list = name_list_laconian }
-		}
-		localization_key = knight_hippagretes
-	}
-	text = {
-		trigger = {
-			OR = {
-				AND = {
-					government_has_flag = government_is_holy_order
-					culture = { has_cultural_pillar = language_dunmeris }
-				}
-				AND = {
-					government_has_flag = government_is_theocracy
-					culture = { has_cultural_pillar = language_dunmeris }
-				}
-				AND = {
-					government_has_flag = government_is_autocracy
-					culture = { has_cultural_pillar = language_dunmeris }
-				}
-			}
-				
-		}
-		localization_key = knight_ordinator
-	}	
-	text = {
-		trigger = {
-			OR = {
-				faith = { religion_tag = cwcville_religion }
-				#culture = { has_cultural_pillar = language_iranian }
-			}
-				
-		}
-		localization_key = knight_guardian
-	}	
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_dwemeris }
-		}
-		localization_key = knight_soldier
-	}
-	text = {
-		trigger = {
-			OR = {
-				culture = { has_cultural_pillar = language_aramaic }
-				culture = { has_cultural_pillar = language_elamite }
-			}
-		}
-		localization_key = knight_niksum
-	}
-	text = {
-		trigger = {
-			is_landless_adventurer = yes
+			has_government = landless_adventurer_government
 			NOR = {
 				has_trait = knight_errant
 				faith = { religion_tag = christianity_religion }
@@ -186,5 +78,122 @@
 	text = {
 		localization_key = knight_default
 		fallback = yes
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_japanese }
+		}
+		localization_key = knight_samurai
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_thief_city }
+		}
+		localization_key = knight_officer
+	}
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = language_nordic }
+				culture = { has_name_list = name_list_nord }
+			}
+		}
+		localization_key = knight_nord
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_altmer }
+		}
+		localization_key = knight_altmer
+	}
+	text = {
+		trigger = {
+			culture = { has_cultural_pillar = language_taagra }
+		}
+		localization_key = knight_khajiit
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_bosmer }
+		}
+		localization_key = knight_bosmer
+	}
+	text = {
+		trigger = {
+			OR = {
+			    culture = { has_cultural_pillar = language_tamrielic_yoku }
+				culture = { has_name_list = name_list_alikr }
+			}
+		} 
+		localization_key = knight_redguard
+	}
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = language_cyrodiilic }
+			    culture = { has_name_list = name_list_imperial }
+				culture = { has_name_list = name_list_my_totaly_normal_roman }
+			}
+		} 
+		localization_key = knight_legate
+	}
+	text = {
+		trigger = {
+			culture = { has_name_list = name_list_laconian }
+		}
+		localization_key = knight_hippagretes
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					government_has_flag = government_is_holy_order
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
+				AND = {
+					government_has_flag = government_is_theocracy
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
+				AND = {
+					government_has_flag = government_is_autocracy
+					culture = { has_cultural_pillar = language_dunmeris }
+				}
+			}
+				
+		}
+		localization_key = knight_ordinator
+	}	
+	text = {
+		trigger = {
+			OR = {
+				faith = { religion_tag = cwcville_religion }
+				#culture = { has_cultural_pillar = language_iranian }
+			}
+				
+		}
+		localization_key = knight_guardian
+	}	
+	text = {
+		trigger = {
+			culture = { has_cultural_pillar = language_dwemeris }
+		}
+		localization_key = knight_soldier
+	}
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = language_aramaic }
+				culture = { has_cultural_pillar = language_elamite }
+			}
+		}
+		localization_key = knight_niksum
+	}
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_drow }
+			}
+		}
+		localization_key = knight_drow
 	}
 }

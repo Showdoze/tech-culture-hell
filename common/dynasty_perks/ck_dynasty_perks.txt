@@ -538,7 +538,8 @@
 	}
  }
 #ELDER SCROLL
- dragonblood_legacy_1 = { # Chosen by the Gods
+ #dragonblood
+  dragonblood_legacy_1 = { # Chosen by the Gods
 	legacy = dragonblood_legacy_track
 	character_modifier = {
 		theocracy_government_opinion_same_faith = 5
@@ -555,7 +556,7 @@
 		}
 	}
  }
- dragonblood_legacy_2 = { # The Flames of Youth
+  dragonblood_legacy_2 = { # The Flames of Youth
 	legacy = dragonblood_legacy_track
 	### EK TODO: Add that effect
 	effect = {
@@ -564,14 +565,14 @@
 		}
 	}
  }
- dragonblood_legacy_3 = { # Right to Rule
+  dragonblood_legacy_3 = { # Right to Rule
 	legacy = dragonblood_legacy_track
 	character_modifier = {
 		domain_limit = 1
 		vassal_opinion = 5
 	}
  }
- dragonblood_legacy_4 = { # Soul of a Dragon, body of a Dragon
+  dragonblood_legacy_4 = { # Soul of a Dragon, body of a Dragon
 	legacy = dragonblood_legacy_track
 	character_modifier = {
 		monthly_lifestyle_xp_gain_mult = 0.05
@@ -583,7 +584,7 @@
 		prowess = 2
 	}
  }
- dragonblood_legacy_5 = { # Earth, Mind, Dragon
+  dragonblood_legacy_5 = { # Earth, Mind, Dragon
 	legacy = dragonblood_legacy_track
 	character_modifier = {
 		men_at_arms_cap = 1
@@ -595,7 +596,8 @@
 		}
 	}
  }
- hegemon_legacy_1 = {
+ #hegemon
+  hegemon_legacy_1 = {
 	legacy = hegemon_legacy_track
 	effect = {
 		custom_description_no_bullet = {
@@ -612,7 +614,7 @@
 		}
 	}
  }
- hegemon_legacy_2 = {
+  hegemon_legacy_2 = {
 	legacy = hegemon_legacy_track
 	effect = {
 		custom_description_no_bullet = {
@@ -620,7 +622,7 @@
 		}
 	}
  } 
- hegemon_legacy_3 = {
+  hegemon_legacy_3 = {
 	legacy = hegemon_legacy_track
 	effect = {
 		hidden_effect = {
@@ -637,7 +639,7 @@
 		}
 	}
  }
- hegemon_legacy_4 = {
+  hegemon_legacy_4 = {
 	legacy = hegemon_legacy_track
 	character_modifier = {
 		dynasty_house_opinion = 5
@@ -657,7 +659,7 @@
 		}
 	}
  }
- hegemon_legacy_5 = {
+  hegemon_legacy_5 = {
 	legacy = hegemon_legacy_track
 	character_modifier = {
 		dynasty_opinion = 5
@@ -677,7 +679,8 @@
 		}
 	}
  }
- magicka_legacy_1 = {
+ #magicka 
+  magicka_legacy_1 = {
 	legacy = magicka_legacy_track
 	character_modifier = {
 		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
@@ -699,20 +702,20 @@
 		}
 	}
  }
- magicka_legacy_2 = {
+  magicka_legacy_2 = {
 	legacy = magicka_legacy_track
 	character_modifier = {
 		cultural_head_fascination_mult = 0.10
 	}
  }
- magicka_legacy_3 = {
+  magicka_legacy_3 = {
 	legacy = magicka_legacy_track
 	character_modifier = {
 		monthly_learning_lifestyle_xp_gain_mult = 0.1
 		development_growth_factor = 0.2
 	}
  }
- magicka_legacy_4 = {
+  magicka_legacy_4 = {
 	legacy = magicka_legacy_track
 	effect = {
 		custom_description_no_bullet = {
@@ -720,8 +723,60 @@
 		}
 	}
  }
- magicka_legacy_5 = {
+  magicka_legacy_5 = {
 	legacy = magicka_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = erudition_legacy_5_effect
+		}
+	}
+ }
+ # #telvani_legacy_track
+  telvani_legacy_1 = {
+	legacy = telvani_legacy_track
+	character_modifier = {
+		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		ai_sociability = medium_positive_ai_value
+	}
+	effect = {
+		# Can learn one extra language
+		custom_description_no_bullet = { text = legacy_additional_language_effect }
+		# Cultural Acceptance from successful Learn Language schemes
+		custom_description_no_bullet = { text = legacy_cultural_acceptance_from_language_schemes_effect }
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+  telvani_legacy_2 = {
+	legacy = telvani_legacy_track
+	character_modifier = {
+		cultural_head_fascination_mult = 0.10
+	}
+ }
+  telvani_legacy_3 = {
+	legacy = telvani_legacy_track
+	character_modifier = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		development_growth_factor = 0.2
+	}
+ }
+  telvani_legacy_4 = {
+	legacy = telvani_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = erudition_legacy_4_effect
+		}
+	}
+ }
+  telvani_legacy_5 = {
+	legacy = telvani_legacy_track
 	effect = {
 		custom_description_no_bullet = {
 			text = erudition_legacy_5_effect
@@ -1636,3 +1691,522 @@
 	}
  }
  #
+#AGOT
+ velaryon_legacy_1 = { # Blood of the First Men
+	legacy = velaryon_legacy_track
+	ai_chance = {
+		value = 1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = velaryon_legacy_1_unlock_sea_snakes
+		}
+		custom_description_no_bullet = {
+			text = velaryon_legacy_1_unlock_trade_expeditions
+		}
+		custom_description_no_bullet = {
+			text = velaryon_legacy_1_trade_expeditions_prestige
+		}
+	}
+} 
+ dornish_legacy_1 = { # Shifting Sands
+	legacy =  dornish_legacy_track
+	character_modifier = {
+		desert_advantage = 5
+		majorroad_desert_advantage = 5
+		minorroad_desert_advantage = 5
+		desert_mountains_advantage = 5
+		majorroad_desert_mountains_advantage = 5
+		minorroad_desert_mountains_advantage = 5
+		drylands_advantage = 5
+		majorroad_drylands_advantage = 5
+		minorroad_drylands_advantage = 5
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+
+}
+ dornish_legacy_2 = { # Mirage
+	legacy =  dornish_legacy_track
+	effect = {
+		# less likely to be captured in sieges
+		custom_description_no_bullet = { text = dornish_legacy_2_effect }
+	}
+	character_modifier = {
+		supply_duration = 0.2
+	}
+}
+ dornish_legacy_3 = { # Unfaltering Spears
+	legacy =  dornish_legacy_track
+	character_modifier = {
+		pikemen_damage_mult = 0.2
+		pikemen_toughness_mult = 0.1
+		pikemen_maintenance_mult = -0.2
+	}
+}
+ dornish_legacy_4 = { # Dornishman's wife
+	legacy =  dornish_legacy_track
+	character_modifier = {
+		seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+		fertility = 0.20
+		attraction_opinion = 10
+	}
+}
+ dornish_legacy_5 = { # Deadly Venoms
+	legacy =  dornish_legacy_track
+	character_modifier = {
+		intrigue_per_stress_level = 1
+		owned_hostile_scheme_success_chance_add = 20
+
+	}
+}
+ dayne_legacy_1 = { # Blood of the First Men
+	legacy = dayne_legacy_track
+	ai_chance = {
+		value = 11
+	}
+	effect = {
+		# Effect is applied in the on action 'on_birth_child'
+		custom_description_no_bullet = {
+			text = dayne_legacy_1_effect
+		}
+	}
+}
+ ironborn_legacy_1 = { # Salt Legs
+	legacy = ironborn_legacy_track
+	character_modifier = {
+		coastal_advantage = 10
+		prowess = 1
+		martial = 1
+		ai_boldness = medium_positive_ai_value
+		ai_greed = medium_positive_ai_value
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ ironborn_legacy_2 = { # Iron Price - Famous enough to organize a great reaving / Reaver benefits
+	legacy = ironborn_legacy_track
+	effect = {
+		custom_description_no_bullet = { text = ironborn_legacy_2_effect }
+	}
+ }
+ ironborn_legacy_3 = { # Iron Fleet
+	legacy = ironborn_legacy_track
+	character_modifier = {
+		movement_speed = 0.3
+		naval_movement_speed_mult = 0.3
+		retreat_losses = -0.30
+	}
+ }
+ ironborn_legacy_4 = { # Kraken Plate
+	legacy = ironborn_legacy_track
+	character_modifier = {
+		heavy_infantry_max_size_add = 2 #More reavers
+		heavy_infantry_siege_value_add = 0.2
+		martial_per_piety_level = 1
+	}
+ }
+ ironborn_legacy_5 = { # The Black Blood
+	legacy = ironborn_legacy_track
+	character_modifier = {
+		enemy_hard_casualty_modifier = 0.1
+		siege_morale_loss = 0.1
+		health = 0.2
+		ironborn_opinion = 10
+		monthly_prestige = 0.2
+	}
+}
+ north_legacy_1 = { # LAW / GLORY MIX
+	legacy = north_legacy_track
+	character_modifier = {
+		martial = 1
+		prowess = 1
+		winter_advantage = 5
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+ north_legacy_2 = { # Watchers on the Wall
+	legacy = north_legacy_track
+	effect = {
+		# Send to nightswatch
+		custom_description_no_bullet = { text = north_legacy_2_effect }
+	}
+}
+ north_legacy_3 = { # Unconquered
+	legacy = north_legacy_track
+	character_modifier = {
+		knight_effectiveness_mult = 0.15
+		defender_advantage = 5
+		knight_limit = 1
+	}
+}
+ north_legacy_4 = { # Builder's Blood
+	legacy = north_legacy_track
+	character_modifier = {
+		domain_limit = 1
+		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
+		build_speed = -0.1
+		holding_build_speed = -0.1
+	}
+}
+ north_legacy_5 = { # Hungry Wolves
+	legacy = north_legacy_track
+	character_modifier = {
+		prowess = 5
+	}
+}
+ stark_legacy_1 = { # Winter Kings
+	legacy = stark_legacy_track
+	character_modifier = {
+		vassal_opinion = 10
+		vassal_levy_contribution_mult = 0.1
+	}
+	ai_chance = {
+		value = 11
+	}
+}
+ umber_legacy_1 = { # Blood of the First Men
+	legacy = umber_legacy_track
+	ai_chance = {
+		value = 11
+	}
+	effect = {
+		# Effect is applied in the on action 'on_birth_child'
+		custom_description_no_bullet = {
+			text = umber_legacy_1_effect
+		}
+	}
+	traits = {
+		physique_good_1 = 100
+	}
+}
+ forrester_legacy_1 = {
+	legacy = forrester_legacy_track
+	ai_chance = {
+		value = 11
+	}
+	character_modifier = {
+		heavy_infantry_toughness_mult = 0.10
+		domain_tax_mult = 0.10
+		enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	}
+ }
+ reachman_legacy_1 = { # Green and Pleasant
+	legacy = reachman_legacy_track
+	can_be_picked = {
+		culture = {
+			OR = {
+			this = culture:reachman
+			any_parent_culture_or_above = {
+				this = culture:reachman
+				}
+			}
+		}
+	}
+	character_modifier = {
+		development_growth = 0.05
+		development_growth_factor = 0.1
+		character_capital_county_monthly_development_growth_add = 0.1
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ reachman_legacy_2 = { # Seeds of the Gardener
+	legacy = reachman_legacy_track
+	character_modifier = {
+		fertility = 0.10
+		stewardship_per_prestige_level = 1
+	}
+ }
+ reachman_legacy_3 = { # Maester Decision
+	legacy = reachman_legacy_track
+	character_modifier = {
+		learning = 1
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		health = 0.2
+	}
+ }
+ reachman_legacy_4 = { # Convergent Blood
+	legacy = reachman_legacy_track
+	character_modifier = {
+		county_opinion_add = 20
+		levy_reinforcement_rate = 0.2
+		supply_capacity_mult = 0.40
+	}
+ }
+ reachman_legacy_5 = { # Order of the GreenHand
+	legacy = reachman_legacy_track
+	character_modifier = {
+		heavy_cavalry_max_size_add = 3
+		heavy_cavalry_toughness_mult = 0.2
+		prowess = 2 #balances agrarian
+
+	}
+ }
+ riverlander_legacy_1 = { # Stuff
+	legacy = riverlander_legacy_track
+	character_modifier = {
+		fellow_vassal_opinion = 10
+		direct_vassal_opinion = 5
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ riverlander_legacy_2 = { #River Boats
+	legacy = riverlander_legacy_track
+	character_modifier = {
+		#Forder gets extra bonuses?
+		#Water bonus?
+		#Traverse Rivers
+		supply_duration = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = { text = riverlander_legacy_2_effect }
+	}
+ }
+ riverlander_legacy_3 = { # Tough Fishy Bois idk
+	legacy = riverlander_legacy_track
+	character_modifier = {
+		owned_personal_scheme_success_chance_add = 10
+		stress_loss_mult = 0.25
+	}
+ }
+ riverlander_legacy_4 = { # Water Stuff?
+	legacy = riverlander_legacy_track
+	character_modifier = {
+		archers_toughness_mult = 0.05
+		skirmishers_toughness_mult = 0.05
+		pikemen_toughness_mult = 0.05
+
+	}
+ }
+ riverlander_legacy_5 = { # Convergent Blood
+	legacy = riverlander_legacy_track
+	character_modifier = {
+		monthly_piety = 0.2
+	}
+ }
+ stormlander_legacy_1 = { #
+	legacy = stormlander_legacy_track
+	character_modifier = {
+		fort_level = 1
+		defender_advantage = 10
+		hostile_raid_time = 0.2 #For when Essos pirates come a knocking
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ stormlander_legacy_2 = {
+	legacy = stormlander_legacy_track
+	character_modifier = {
+		heavy_infantry_max_size_add = 2 #
+		heavy_infantry_toughness_mult = 0.2
+		heavy_infantry_screen_add = 5
+	}
+ }
+ stormlander_legacy_3 = { # Fury of the Storm
+	legacy = stormlander_legacy_track
+	character_modifier = {
+		prowess_per_prestige_level = 1
+		prowess_per_stress_level = 4
+	}
+ }
+ stormlander_legacy_4 = { #
+	legacy = stormlander_legacy_track
+	character_modifier = {
+		min_combat_roll = 1
+		max_combat_roll = 1
+	}
+ }
+ stormlander_legacy_5 = { # Storm God's Legacy
+	legacy = stormlander_legacy_track
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		monthly_prestige_gain_per_knight_add = 0.1
+		martial_per_stress_level = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+	}
+ }
+ valeman_legacy_1 = { # Stuff
+	legacy = valeman_legacy_track
+	character_modifier = {
+		mountains_attrition_mult = -0.5
+		majorroad_mountains_attrition_mult = -0.5
+		minorroad_mountains_attrition_mult = -0.5
+		mountains_levy_size = 0.3
+		majorroad_mountains_levy_size = 0.3
+		minorroad_mountains_levy_size = 0.3
+		mountains_advantage = 5
+		majorroad_mountains_advantage = 5
+		minorroad_mountains_advantage = 5
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ valeman_legacy_2 = { #Andal's Landing
+	legacy = valeman_legacy_track
+	character_modifier = {
+		monthly_piety = 0.25
+		holy_order_hire_cost_mult = -0.15
+		clergy_opinion = 5
+	}
+ }
+ valeman_legacy_3 = { # Falcon Knights
+	legacy = valeman_legacy_track
+	character_modifier = {
+		knight_effectiveness_mult = 0.2
+		monthly_piety_gain_per_knight_add = 0.2
+		knight_limit = 2
+	}
+ }
+ valeman_legacy_4 = { # Steel Steeds
+	legacy = valeman_legacy_track
+	character_modifier = {
+		heavy_cavalry_maintenance_mult = -0.2
+		heavy_cavalry_damage_mult = 0.2
+		heavy_cavalry_toughness_mult = 0.1
+		heavy_cavalry_max_size_add = 2
+	}
+ }
+ valeman_legacy_5 = { # Hugor's Dogma
+	legacy = valeman_legacy_track
+	character_modifier = {
+		martial_per_piety_level = 1
+		prowess_per_piety_level = 1
+		tolerance_advantage_mod = 10
+	}
+ }
+ borrell_legacy_1 = {
+	legacy = borrell_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = borrell_legacy_1_effect
+		}
+	}
+	traits = {
+		#the_mark = 100
+	}
+ }
+ westerman_legacy_1 = { #Chamber Pot
+	legacy =  westerman_legacy_track
+	character_modifier = {
+		tax_mult = 0.1
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+ }
+ westerman_legacy_2 = { #Crossbows
+	legacy =  westerman_legacy_track
+	character_modifier = {
+		defender_advantage = 5
+		archers_damage_add = 2
+		archers_toughness_mult = 0.1
+		archers_damage_mult = 0.1
+		archers_screen_mult = 0.1
+	}
+}
+westerman_legacy_3 = { # Silver Tongue, Golden Pockets
+	legacy =  westerman_legacy_track
+	character_modifier = {
+		men_at_arms_recruitment_cost = -0.2
+		men_at_arms_maintenance = -0.2
+		mercenary_hire_cost_mult = -0.2
+	}
+ }
+ westerman_legacy_4 = { # Convergent Blood
+	legacy = westerman_legacy_track
+	character_modifier = {
+		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
+		build_speed = -0.1
+		holding_build_speed = -0.1
+	}
+ }
+ westerman_legacy_5 = { # Convergent Blood
+	legacy =  westerman_legacy_track
+	character_modifier = {
+		siege_morale_loss = 0.25
+	}
+ }
+ sarsfield_legacy_1 = { # Mounted Archers
+	legacy = sarsfield_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = sarsfield_legacy_1_unlock_effect
+		}
+		custom_description_no_bullet = {
+			text = sarsfield_legacy_1_effect
+		}
+	}
+	character_modifier = {
+		archer_cavalry_damage_mult = 0.3
+		archer_cavalry_toughness_mult = 0.15
+		archer_cavalry_pursuit_mult = 0.3
+	}
+	ai_chance = {
+		value = 11
+	}
+}
+
+
+
+
