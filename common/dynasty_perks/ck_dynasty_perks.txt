@@ -679,6 +679,99 @@
 		}
 	}
  }
+ #hlaalu_legacy 
+  hlaalu_legacy_1 = {
+	legacy = hlaalu_legacy_track
+	character_modifier = {
+		diplomatic_range_mult = 0.3
+		intimidated_vassal_tax_contribution_mult = 0.1
+	}
+	ai_chance = {value = 100}
+ }
+  hlaalu_legacy_2 = {
+	legacy = hlaalu_legacy_track
+	character_modifier = {
+		heavy_infantry_max_size_add = 2
+		county_opinion_add = 5
+		prowess = 1
+	}
+ }
+  hlaalu_legacy_3 = {
+	legacy = hlaalu_legacy_track
+	character_modifier = {
+		opinion_of_different_faith = 5
+		development_growth_factor = 0.2
+		different_faith_county_opinion_mult = -0.5
+	}
+ }
+  hlaalu_legacy_4 = {
+	legacy = hlaalu_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = erudition_legacy_4_effect
+		}
+	}
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -15
+	}
+ }
+  hlaalu_legacy_5 = {
+	legacy = hlaalu_legacy_track
+	effect = {
+		custom_description_no_bullet = {
+			text = erudition_legacy_5_effect
+		}
+	}
+	character_modifier = {
+		movement_speed = 0.1
+		supply_duration = 1
+	}
+ }
+ #redoran_legacy
+  redoran_legacy_1 = {
+	legacy = redoran_legacy_track
+	character_modifier = {
+		monthly_piety_from_buildings_mult = 0.01
+		dynasty_opinion = 5
+		enemy_hard_casualty_modifier = 0.01
+	}
+	ai_chance = {value = 100}
+ }
+  redoran_legacy_2 = {
+	legacy = redoran_legacy_track
+	character_modifier = {
+		dynasty_opinion = 5
+		close_relative_opinion = 10
+	}
+	effect = {
+		custom_description_no_bullet = { text = ep3_administrative_legacy_3_effect_family_rating }
+	}
+ }
+  redoran_legacy_3 = {
+	legacy = redoran_legacy_track
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -15
+		enemy_hard_casualty_modifier = 0.1
+	}
+ }
+  redoran_legacy_4 = {
+	legacy = redoran_legacy_track
+	character_modifier = {
+		monthly_piety_from_buildings_mult = 0.10
+		monthly_piety_gain_mult = 0.1
+	}
+	effect = {
+		custom_description_no_bullet = { text = erudition_legacy_4_effect }
+	}
+ }
+  redoran_legacy_5 = {
+	legacy = redoran_legacy_track
+	character_modifier = {
+		movement_speed = 0.1
+		character_travel_safety = 10
+		development_growth = 0.1
+	}
+ }
  #magicka 
   magicka_legacy_1 = {
 	legacy = magicka_legacy_track
@@ -750,6 +843,7 @@
 	legacy = telvani_legacy_track
 	character_modifier = {
 		cultural_head_fascination_mult = 0.10
+		ai_sociability = -10
 	}
  }
   telvani_legacy_3 = {
@@ -758,13 +852,15 @@
 		monthly_learning_lifestyle_xp_gain_mult = 0.1
 		development_growth_factor = 0.2
 	}
+	traits = {
+		ambitious = 100
+	}
  }
   telvani_legacy_4 = {
 	legacy = telvani_legacy_track
 	effect = {
-		custom_description_no_bullet = {
-			text = erudition_legacy_4_effect
-		}
+		custom_description_no_bullet = { text = erudition_legacy_4_effect }
+		custom_description_no_bullet = { text = erudition_legacy_5_effect }
 	}
  }
   telvani_legacy_5 = {
@@ -1686,9 +1782,7 @@
 #AGOT
  velaryon_legacy_1 = { # Blood of the First Men
 	legacy = velaryon_legacy_track
-	ai_chance = {
-		value = 100
-	}
+	ai_chance = {value = 100}
 	effect = {
 		custom_description_no_bullet = {
 			text = velaryon_legacy_1_unlock_sea_snakes
@@ -1794,6 +1888,8 @@
 	legacy = ironborn_legacy_track
 	effect = {
 		custom_description_no_bullet = { text = ironborn_legacy_2_effect }
+		# +X% extra chance to kidnap characters after sieges/raids.
+		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
 	}
  }
  ironborn_legacy_3 = { # Iron Fleet
@@ -1877,9 +1973,7 @@
 		vassal_opinion = 10
 		vassal_levy_contribution_mult = 0.1
 	}
-	ai_chance = {
-		value = 100
-	}
+	ai_chance = {value = 100}
 }
   stark_legacy_2 = { #
 	legacy = stark_legacy_track
@@ -1889,6 +1983,7 @@
 		counter_efficiency = 0.15
 		advantage = 5
 	}
+	ai_chance = {value = 100}
 }
   stark_legacy_3 = { #
 	legacy = stark_legacy_track
@@ -1901,21 +1996,19 @@
 		happy_powerful_vassal_tax_contribution_mult = 0.1
 		happy_powerful_vassal_levy_contribution_mult = 0.1
 	}
+	ai_chance = {value = 100}
 }
  bolton_legacy_1 = { # Red Kings
 	legacy = bolton_legacy_track
 	character_modifier = {
 		dread_baseline_add = 10
-		#vassal_levy_contribution_mult = 0.1
+		owned_scheme_secrecy_add = 5
 	}
 	effect = {
-		custom_description_no_bullet = {
-			text = bolton_legacy_effect
-		}
+		custom_description_no_bullet = { text = bolton_legacy_effect }
+		custom_description_no_bullet = { text = guile_legacy_5_effect }
 	}
-	ai_chance = {
-		value = 100
-	}
+	ai_chance = {value = 100}
 }
  #UMBER
   umber_legacy_1 = { # Blood of the First Men
@@ -1935,67 +2028,42 @@
 }
   umber_legacy_2 = { # 
 	legacy = umber_legacy_track
-	ai_chance = {
-		value = 100
+	character_modifier = {
+		prowess = 4
+		knight_effectiveness_mult = 0.25
 	}
-	effect = {
-		custom_description_no_bullet = {
-			text = umber_legacy_1_effect
-		}
-	}
-	traits = {
-		physique_good_1 = 100
-	}
-}
-  umber_legacy_2 = { #
-	legacy = umber_legacy_track
-	effect = {
-		custom_description_no_bullet = {
-			text = umber_legacy_1_effect
-		}
-	}
-	traits = {
-		physique_good_1 = 100
-	}
+	ai_chance = {value = 100}
 }
   umber_legacy_3 = { # 
 	legacy = umber_legacy_track
-	effect = {
-		custom_description_no_bullet = {
-			text = umber_legacy_1_effect
-		}
+	character_modifier = {
+		health = 0.25
 	}
 	traits = {
-		physique_good_1 = 100
+		giant = 100
 	}
+	ai_chance = {value = 100}
 }
   umber_legacy_4 = { # 
 	legacy = umber_legacy_track
-	effect = {
-		custom_description_no_bullet = {
-			text = umber_legacy_1_effect
-		}
+	character_modifier = {
+		winter_advantage = 3
+		winter_movement_speed = 0.25
 	}
-	traits = {
-		physique_good_1 = 100
-	}
+	ai_chance = {value = 100}
 }
   umber_legacy_5 = { #
 	legacy = umber_legacy_track
+	ai_chance = {value = 100}
 	effect = {
-		custom_description_no_bullet = {
-			text = umber_legacy_1_effect
-		}
-	}
-	traits = {
-		physique_good_1 = 100
+		# Tell the player about their ability to gain the legend trait
+		custom_description_no_bullet = { text = ce1_heroic_legacy_4_effect }
+		custom_description_no_bullet = { text = ce1_legitimacy_legacy_5_effect }
 	}
 }
  forrester_legacy_1 = {
 	legacy = forrester_legacy_track
-	ai_chance = {
-		value = 100
-	}
+	ai_chance = {value = 100}
 	character_modifier = {
 		heavy_infantry_toughness_mult = 0.10
 		domain_tax_mult = 0.10

@@ -138,6 +138,24 @@ durge_legacy_track = {
 		}
 	}
 }
+ hlaalu_legacy_track  = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = hlaalu_legacy_1 }
+			has_trait = start_hlaalu
+			dynasty = dynasty:dynn_hlaalu
+		}
+	}
+}
+ redoran_legacy_track  = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = redoran_legacy_1 }
+			has_trait = start_redoran
+			dynasty = dynasty:dyn_redoran
+		}
+	}
+}
  hegemon_legacy_track = {
 	is_shown = {
 		dynasty = {
