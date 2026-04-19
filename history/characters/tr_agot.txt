@@ -129,7 +129,7 @@
 	#mother = Yore_71
 	trait = physique_bad_2
 	830.1.1 = {birth = yes}
-	8283.8.1 = { death = yes }
+	860.8.1 = { death = yes }
 }
   Rosby_4 = {
 	name = Gyles # Canon, a lord
@@ -2106,7 +2106,7 @@
 	trait = deceitful
     disallow_random_traits = yes
 	820.1.1 = { birth = yes }
-    870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
+    870.1.1 = { death = { death_reason = death_murder_known killer = tr_agot_Ramsay_Bolton } }
    }
    tr_agot_Domeric_Bolton = {
 	name = "Domeric"
@@ -2127,7 +2127,7 @@
    tr_agot_Ramsay_Bolton_mom = {
 	name = "Miller's wife"
 	religion = green_cult #old_gods_wnw
-	dynasty = fantasy
+	#dynasty = fantasy
 	culture = northman
 	female = yes
 	trait = education_stewardship_2
@@ -2159,8 +2159,246 @@
 	trait = legitimized_bastard
     disallow_random_traits = yes
 	847.1.1 = { birth = yes }
-    870.1.1 = { death = { death_reason = death_battle killer = tr_Daemon_Blackfyre } }
+    871.1.1 = { death = { death_reason = death_battle killer = Stark_7 } }
    }
+ #Forrester
+  Forrester_9 = {
+	name = Gerhard # Semi-Canon, AKA: Gerhard the Tall, a lord, founder
+	dynasty = dynn_Forrester
+	prowess = 8
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	trait = physique_good_3
+	give_nickname = nick_agot_historical_the_tall_Forrester_9
+	260.1.1 = {birth = yes}
+	350.1.1 = { death = yes }
+}
+  Forrester_1 = {
+	name = Thorren # Semi-Canon, a lord
+	dynasty = dynn_Forrester
+	#dna = Forrester_1
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_9 #Forrester_29
+	#mother = Hartleaf_60
+	give_nickname = nick_the_bold
+	791.1.1 = { birth = yes }
+	858.8.4 = {
+		death = { death_reason = death_battle_trident } # Battle of Trident
+	}
+}
+  Forrester_2 = {
+	name = Gregor # Semi-Canon, AKA: Gregor the Good, a lord
+	dynasty = dynn_Forrester
+	#dna = Forrester_2
+	sexuality = heterosexual
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 6
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_1
+	#mother = Grayson_22
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = pensive
+	trait = brave
+	trait = just
+	trait = compassionate
+	trait = diligent
+	give_nickname = nick_the_good 
+	disallow_random_traits = yes
+	815.1.1 = {birth = yes}
+	869.12.15 = {
+		death = {
+			death_reason = death_bloody_wedding # The Red Wedding
+			killer = Frey_1 # Walder Frey
+		}
+	}
+}
+  Forrester_3 = {
+	name = Rodrik # Semi-Canon, AKA: Rodrik the Ruined, a lord
+	dynasty = dynn_Forrester
+	#dna = Forrester_3
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 8
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Branfield_1
+	trait = education_martial_3
+	trait = pensive
+	trait = brave
+	trait = diligent
+	trait = just
+	#trait = burned_2_history
+	trait = scarred
+	give_nickname = nick_agot_historical_the_ruined	
+	disallow_random_traits = yes
+	840.1.1 = { birth = yes }
+	890.1.1 = { death = yes }
+}
+  Forrester_4 = {
+	name = Asher # Semi-Canon, Landless Adventurer
+	dynasty = dynn_Forrester
+	#dna = Forrester_4
+	diplomacy = 2
+	martial = 8
+	stewardship = 2
+	intrigue = 6
+	learning = 3
+	prowess = 8
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Branfield_1
+	trait = education_martial_3
+	trait = education_martial_prowess_4
+	trait = rowdy
+	trait = lustful
+	trait = wrathful
+	trait = callous
+	trait = adventurer_follower
+	disallow_random_traits = yes
+	844.1.1 = {birth = yes}
+	890.1.1 = { death = yes }
+}
+  Forrester_5 = {
+	name = Mira # Semi-Canon
+	dynasty = dynn_Forrester
+	female = yes
+	#dna = Forrester_5
+	diplomacy = 8
+	martial = 3
+	stewardship = 6
+	intrigue = 5
+	learning = 4
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Branfield_1
+	trait = education_diplomacy_3
+	trait = charming
+	trait = temperate
+	trait = humble
+	trait = trusting
+	trait = shy
+	disallow_random_traits = yes
+	848.1.1 = {birth = yes}
+	890.1.1 = { death = yes }
+}
+  Forrester_6 = {
+	name = Ethan # Semi-Canon, a lord
+	dynasty = dynn_Forrester
+	prowess = 3
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	mother = Branfield_1
+	trait = education_diplomacy_2
+	trait = twin
+	trait = charming
+	trait = brave
+	trait = diligent
+	trait = just
+	disallow_random_traits = yes
+	853.1.1 = {birth = yes}
+	870.1.15 = {
+		death = {
+			death_reason = death_murder_known
+			killer = Bolton_5 # Ramsay Snow
+		}
+	}
+}
+  Forrester_7 = {
+	name = Talia # Semi-Canon
+	dynasty = dynn_Forrester
+	female = yes
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Branfield_1
+	trait = education_diplomacy_2
+	trait = twin
+	trait = charming
+	trait = compassionate
+	trait = lifestyle_poet
+	trait = just
+	disallow_random_traits = yes
+	854.1.1 = {birth = yes}
+	890.1.1 = { death = yes }
+}
+  Forrester_8 = {
+	name = Ryon # Semi-Canon
+	dynasty = dynn_Forrester
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Branfield_1
+	trait = intellect_good_1
+	trait = shy
+	860.1.1 = {birth = yes}
+	890.1.1 = { death = yes }
+}
+  Forrester_30 = {
+	name = Josera # Semi-Canon, bastard of Gregor the Good, Guardian of North Grove
+	diplomacy = 2
+	martial = 6
+	stewardship = 1
+	intrigue = 1
+	learning = 2
+	prowess = 7
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Forrester_rs_4
+	trait = bastard
+	trait = education_martial_2
+	trait = twin
+	trait = rowdy
+	trait = callous
+	trait = paranoid
+	trait = brave
+	trait = wrathful
+	give_nickname = nick_snow
+	disallow_random_traits = yes
+	837.1.1 = {birth = yes}
+	890.1.1 = { death = yes }
+}
+  Forrester_31 = {
+	name = Elsera # Semi-Canon, bastard of Gregor the Good, Guardian of North Grove
+	female = yes
+	#dna = Forrester_31
+	diplomacy = 8
+	martial = 3
+	stewardship = 2
+	intrigue = 4
+	learning = 8
+	religion = green_cult #old_gods_wnw
+	culture = northman #wolfswood_clansman
+	father = Forrester_2
+	#mother = Forrester_rs_4
+	trait = bastard
+	trait = education_diplomacy_3
+	trait = twin
+	trait = rowdy
+	trait = callous
+	trait = gregarious
+	trait = brave
+	trait = lifestyle_mystic
+	trait = honest
+	give_nickname = nick_snow
+	disallow_random_traits = yes
+	839.1.1 = { birth = yes }
+	890.1.1 = { death = yes }
+}
 #River lands
  #TULLY
    Tully_10 = {
@@ -2578,7 +2816,7 @@
 	father = Frey_15
 	mother = Lannister_3
 	850.1.1 = {birth = yes}
-	868.11.8 = {death = {death_reason = death_murder_knownkiller = Karstark_4 }}# Rickard Karstark
+	868.11.8 = {death = {death_reason = death_murder_known killer = Karstark_4 }}# Rickard Karstark
 }
   Frey_19 = {
 	name = Walder # Canon, AKA: Red Walder
@@ -2838,6 +3076,18 @@
 	713.1.1 = { birth = yes }
 	800.1.1 = { death = yes } # After 178 AC
    }
+   Lothston_15 = {
+	name = Wynafrei # Ninth child to explain why Whents have nine bats on their banner, married Roger Whent
+	dynasty = dynn_Lothston
+	#dna = Lothston_15
+	female = yes
+	religion = fots_seven
+	culture = riverman_main
+	father = Lothston_5
+	#mother = Stokeworth_23
+	803.6.6 = {birth = yes}
+	888.1.1 = { death = yes }
+  }
    Lothston_16 = {
 	name = Manfryd # Canon, a lord, probably the same person as Manfred Lothston who betrayed Blackfyres, first bat
 	dynasty = dynn_Lothston
@@ -2900,14 +3150,31 @@
   }
    Whent_14 = {
 	name = Roger
-	dynasty = dynn_Whent
+	dynasty_house = house_Whent
 	religion = fots_seven
-	culture = fantasy_culture
-	father = Lothston_1
+	culture = riverman_main
+	father = Lothston_5
 	trait = education_martial_2
-	430.1.1 = { birth = yes}
+	trait = legitimized_bastard
+	820.1.1 = { birth = yes}
+	838.1.1 = { add_spouse = Lothston_15 } # Wynafrei Lothston
 	#8200.1.1 = { employer = Lothston_17 } # Mad Danielle Lothston
-	500.1.1 = { death = yes }
+	880.1.1 = { death = yes }
+  }
+  Whent_15 = {
+	name = Lister # a lord, first Whent lord of Harrenhal
+	dynasty_house = house_Whent
+	prowess = 9
+	father = Whent_14
+	mother = Lothston_15 # Wynafrei Lothston
+	religion = fots_seven
+	culture = riverman_main
+	trait = education_martial_2
+	trait = callous
+	trait = just
+	trait = ambitious
+	838.6.6 = {birth = yes}
+	900.1.1 = { death = yes }
   }
    Qoherys_1 = {
 	name = Quenton # Canon, a lord
