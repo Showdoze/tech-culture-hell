@@ -2067,7 +2067,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    ###DND
+###DND
     option = {
         name = god_choice_bhaal
         trigger = {
@@ -3106,6 +3106,7 @@ tr_select_deity.01 = {
                 NOR = {
                     has_trait = follow_jesus
                     has_trait = zealous
+                    culture = { has_cultural_tradition = tradition_assyrian }
                 }
                 OR = {
                     faith = faith:roman_pagan
@@ -3154,6 +3155,7 @@ tr_select_deity.01 = {
                 NOR = {
                     has_trait = follow_islam
                     has_trait = zealous
+                    culture = { has_cultural_tradition = tradition_assyrian }
                 }
                 OR = {
                     faith = faith:roman_pagan

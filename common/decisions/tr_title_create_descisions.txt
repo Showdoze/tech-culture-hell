@@ -4,7 +4,7 @@ iron_islands_decision = {
 	ai_check_interval = 0
 	desc = iron_islands_decision_decision_desc
 	is_shown = {
-		faculture = culture:ironborn
+		culture = culture:ironborn
         is_independent_ruler = yes
         NOT = {
             exists = title:k_the_iron_islands.holder
@@ -29,8 +29,8 @@ iron_islands_decision = {
 	}
 	cost = {
 		gold = 500
-		prestige = 2000
-		piety = 600
+		prestige = 1500
+		piety = 200
 	}
 	effect = {
 		create_title_and_vassal_change = change
@@ -51,6 +51,10 @@ iron_islands_decision = {
 			save_scope_as = founder
 			primary_title = {
 				save_scope_as = old_title
+			}
+			create_dynamic_title = {
+				tier = empire
+				name = "k_the_iron_islands"
 			}
 			create_title_and_vassal_change = change
 			scope:change = {
