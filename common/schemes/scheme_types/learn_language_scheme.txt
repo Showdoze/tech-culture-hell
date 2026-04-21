@@ -203,7 +203,187 @@
 				}
 			}
 		}
-
+		modifier = { #
+			add = 50
+			desc = SCHEME_class_sorcerer_dragon
+			scope:owner = { has_trait = class_sorcerer_dragon }
+			scope:target = {
+				OR = {
+					culture = { has_cultural_pillar = language_valyrian }
+				}
+			}
+		
+		modifier = { #
+			add = 50
+			desc = SCHEME_follow_eilistraee
+			scope:owner = { has_trait = follow_eilistraee }
+			scope:target = {
+				OR = {
+					culture = { has_cultural_pillar = language_drow }
+				}
+			}
+		}
+		modifier = {
+			desc = "scheme_trait_follow_oghma"
+			scope:owner = { has_trait = trait_follow_oghma }
+			add = 50
+		}
+		modifier = { #
+			add = 50
+			desc = SCHEME_follow_corellon_larethian
+			scope:owner = { has_trait = follow_corellon_larethian }
+			scope:target = {
+				OR = {
+					culture = { has_cultural_pillar = language_elf }
+				}
+			}
+		}
+		modifier = { #
+			add = 50
+			desc = SCHEME_class_warlock_archfey
+			scope:owner = { has_trait = class_warlock_archfey }
+			scope:target = {
+				OR = {
+					culture = { has_cultural_pillar = language_elf }
+				}
+			}
+		}
+		modifier = { #
+			add = 50
+			desc = sheme_class_bard_college_of_glamour
+			scope:owner = { has_trait = class_bard_college_of_glamour }
+			scope:target = {
+				OR = {
+					culture = { has_cultural_pillar = language_elf }
+				}
+			}
+		}
+		modifier = { #african
+			add = 50
+			desc = SCHEME_african
+			scope:owner = {
+				culture = {
+					has_cultural_tradition = tradition_african_tolerance
+				}
+			}
+			scope:target = {
+				OR = {
+					culture = {
+						has_cultural_pillar = language_ancient_egyptian
+					}
+					culture = {
+						has_cultural_pillar = language_punic
+					}
+					culture = {
+						has_cultural_pillar = language_berber
+					}
+					culture = {
+						has_cultural_pillar = language_chadic
+					}
+					culture = {
+						has_cultural_pillar = language_cushitic
+					}
+					culture = {
+						has_cultural_pillar = language_sabaki
+					}
+					culture = {
+						has_cultural_pillar = language_ethiopic
+					}
+					culture = {
+						has_cultural_pillar = language_gur
+					}
+					culture = {
+						has_cultural_pillar = language_israelite
+					}
+					culture = {
+						has_cultural_pillar = language_kru
+					}
+					culture = {
+						has_cultural_pillar = language_kwa
+					}
+					culture = {
+						has_cultural_pillar = language_manding
+					}
+					culture = {
+						has_cultural_pillar = language_omotic
+					}
+					culture = {
+						has_cultural_pillar = language_senegambian
+					}
+					culture = {
+						has_cultural_pillar = language_soninke
+					}
+					culture = {
+						has_cultural_pillar = language_sudanic
+					}
+					culture = {
+						has_cultural_pillar = language_tubu
+					}
+					culture = {
+						has_cultural_pillar = language_yoruba
+					}
+					culture = {
+						has_cultural_pillar = language_ayneha
+					}
+					culture = {
+						has_cultural_pillar = language_egyptian
+					}
+				}
+			}
+		}
+		modifier = {
+			desc = "scheme_class_cleric_knowledge"
+			scope:owner = { has_trait = class_cleric_knowledge }
+			add = 50
+		}
+		modifier = {
+			desc = "scheme_science"
+			scope:owner.faith = { has_doctrine = tenet_science }
+			add = 10
+		}
+		modifier = {
+			desc = "scheme_class_bard_college_of_lore"
+			scope:owner = { has_trait = class_bard_college_of_lore }
+			add = 25
+		}
+		modifier = { #Beast master
+			desc = "scheme_class_ranger_master"
+			scope:owner = { has_trait = class_ranger_master }
+			add = 15
+			scope:target = {
+				OR = {
+					culture = {
+						has_cultural_pillar = language_primative
+					}
+					culture = {
+						has_cultural_pillar = language_rat
+					}
+				}
+			}
+		}
+		modifier = {
+			scope:target = { has_trait = deaf }
+			desc = "SCHEME_deaf"
+			add = -10
+		}
+		modifier = { #GERMAN
+			desc = "scheme_german_descent"
+			scope:owner = { has_trait = german_descent }
+			add = 25
+			scope:target = {
+				OR = {
+					culture = {
+						has_cultural_pillar = language_norse
+					}
+					culture = {
+						has_cultural_pillar = language_high_german
+					}
+					culture = {
+						has_cultural_pillar = language_central_germanic
+					}
+				}
+			}
+		}
 		#Intellect good
 		modifier = {
 			desc = "scheme_intellect_good_1"
