@@ -557,4 +557,21 @@ belmont_legacy_track = {
 		}
 	}
 }
+#thief
+ thief_rutherford_legacy_track = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = thief_rutherford_legacy_1 }
+			dynasty = dynasty:thief_rutherford
+		}
+	}
+}
+ thief_bafford_legacy_track = {
+    is_shown = {
+		OR = {
+			dynasty = { has_dynasty_perk = thief_bafford_legacy_1 }
+			dynasty = dynasty:thief_bafford
+		}
+	}
+}
 #

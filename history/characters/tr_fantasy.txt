@@ -698,7 +698,7 @@
   tr_bafford_founder = {
 	name = "..."
 	religion = hammerite_faith
-	dynasty_house = house_thief_bafford
+	dynasty = thief_bafford
 	culture = thief_city
 	trait = education_stewardship_2
 	trait = scarred
@@ -713,7 +713,7 @@
   tr_bafford_lady = {
 	name = Olivia
 	religion = hammerite_faith
-	dynasty_house = house_thief_bafford
+	dynasty = thief_bafford
 	culture = thief_city
 	father = tr_bafford_founder
 	female = yes
@@ -729,13 +729,16 @@
   tr_bafford_lord = {
 	name = "..."
 	religion = hammerite_faith
-	dynasty_house = house_thief_bafford
+	dynasty = thief_bafford
 	culture = thief_city
 	father = tr_bafford_founder
 	trait = education_stewardship_2
 	trait = arrogant
-	trait = ambitious
+	trait = gluttonous
+	trait = deceitful
 	trait = greedy
+	trait = gout_ridden
+	trait = avaricious
 	give_nickname = nick_lord_prefix
 	disallow_random_traits = yes
 	830.1.1 = { birth = yes }
@@ -745,7 +748,7 @@
   tr_Rutherford_founder_dad = {
 	name = "Arlek"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	trait = education_stewardship_2
 	trait = scarred
@@ -760,7 +763,7 @@
   tr_Rutherford_founder = {
 	name = "Mortimer"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	father = tr_Rutherford_founder_dad
 	trait = education_martial_3
@@ -776,7 +779,7 @@
   tr_Rutherford_Julian_dad = {
 	name = "Julius"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	father = tr_Rutherford_founder
 	trait = education_martial_2
@@ -789,7 +792,7 @@
   tr_Rutherford_Julian = {
 	name = "Julian"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	father = tr_Rutherford_Julian_dad
 	trait = education_intrigue_2
@@ -810,7 +813,7 @@
   tr_Rutherford_Ember_dad = {
 	name = "Ambrosia"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	father = tr_Rutherford_founder
 	trait = education_stewardship_3
@@ -824,7 +827,7 @@
   tr_Rutherford_Ember = {
 	name = "Ember"
 	religion = hammerite_faith
-	dynasty_house = house_thief_rutherford
+	dynasty = thief_rutherford
 	culture = thief_city
 	father = tr_Rutherford_Ember_dad
 	trait = education_diplomacy_2

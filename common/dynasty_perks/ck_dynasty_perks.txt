@@ -2358,7 +2358,29 @@
 		value = 100
 	}
 }
-
-
+#Thief
+ thief_rutherford_legacy_1 = { # 
+	legacy = thief_rutherford_legacy_track
+	character_modifier = {
+		ai_vengefulness = 50
+		intrigue_per_prestige_level = 1
+		ai_boldness = 20
+		enemy_personal_scheme_success_chance_add = -25
+		monthly_prestige = 0.5
+	}
+	ai_chance = {value = 100}
+ }
+ thief_bafford_legacy_1 = { # 
+	legacy = thief_bafford_legacy_track
+	character_modifier = {
+		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
+		men_at_arms_recruitment_cost = -0.2
+		mercenary_hire_cost_mult = -0.1
+		monthly_income_mult = 0.02
+	}
+	ai_chance = {value = 100}
+ }
+#
 
 
