@@ -89,11 +89,7 @@ japan_legacy_track = {
 	is_shown = {
 		dynasty = {
 			OR = {
-				dynast = {
-					culture = {
-						this = culture:japanese
-					}
-				}
+				dynast = { culture = { this = culture:japanese } }
 				has_dynasty_perk = japan_legacy_1
 			}
 		}
@@ -557,6 +553,14 @@ belmont_legacy_track = {
 		}
 	}
 }
+ targaryen_legacy_track = {
+	is_shown = {
+		OR = {
+			dynasty = dynasty:dynasty_Targaryen
+			dynasty = { has_dynasty_perk = targaryen_legacy_1 }
+		}
+	}
+ }
 #thief
  thief_rutherford_legacy_track = {
     is_shown = {

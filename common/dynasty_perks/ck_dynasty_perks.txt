@@ -1038,13 +1038,18 @@
 	character_modifier = {
 	    name = toreador_legacy_1_name
 		diplomacy_per_prestige_level = 1
-		attraction_opinion = 5
+		attraction_opinion = 10
 		ai_sociability = medium_positive_ai_value
 	}
 	effect = {
 		custom_description_no_bullet = {
 			text = toreador_legacy_1_perk
 		}	
+	}
+	traits = {
+		beauty_good_1 = 100
+		beauty_good_2 = 100
+		beauty_good_3 = 100
 	}
 	ai_chance = {
 	    value = 3000
@@ -1115,6 +1120,10 @@
 		custom_description_no_bullet = {
 			text = malkavian_legacy_1_perk
 		}	
+	}
+	traits = {
+		lunatic_1 = 100
+		lunatic_genetic = 100
 	}
 	ai_chance = {
 	    value = 3000
@@ -1264,6 +1273,10 @@
 		custom_description_no_bullet = {
 			text = tzimisce_legacy_1_perk
 		}		
+	}
+	trait = {
+		callous = 100
+		sadistic = 100
 	}
 	ai_chance = {
 	    value = 3000
@@ -1887,6 +1900,10 @@
 		# +X% extra chance to kidnap characters after sieges/raids.
 		custom_description_no_bullet = { text = fp1_pillage_legacy_3_effect }
 	}
+	trait = {
+		viking = 100
+		reaver = 100
+	}
  }
  ironborn_legacy_3 = { # Iron Fleet
 	legacy = ironborn_legacy_track
@@ -1968,6 +1985,9 @@
 	character_modifier = {
 		vassal_opinion = 10
 		vassal_levy_contribution_mult = 0.1
+	}
+	trait = {
+		just = 100
 	}
 	ai_chance = {value = 100}
 }
@@ -2287,9 +2307,6 @@
 			text = borrell_legacy_1_effect
 		}
 	}
-	traits = {
-		#the_mark = 100
-	}
  }
  westerman_legacy_1 = { #Chamber Pot
 	legacy =  westerman_legacy_track
@@ -2354,9 +2371,67 @@
 		archer_cavalry_toughness_mult = 0.15
 		archer_cavalry_pursuit_mult = 0.3
 	}
-	ai_chance = {
-		value = 100
+	ai_chance = { value = 100 }
+}
+ #TARGARYEN
+  targaryen_legacy_1 = { # 
+	legacy = targaryen_legacy_track
+	character_modifier = {
+		dread_baseline_add = 5
+		inbreeding_chance = -0.75
+		attraction_opinion = 10
 	}
+	effect = {
+	}
+	ai_chance = {value = 100}
+ }
+  targaryen_legacy_2 = { # 
+	legacy = targaryen_legacy_track
+	character_modifier = {
+		dragon_toughness_mult = 0.25
+		dragon_maa_damage_mult = 0.25
+		knight_effectiveness_mult = 0.15
+	}
+	effect = {
+	}
+	ai_chance = {value = 100}
+ }
+  targaryen_legacy_3 = { # 
+	legacy = targaryen_legacy_track
+	character_modifier = {
+		negate_health_penalty_add = 0.5
+		epidemic_resistance = 10
+	}
+	effect = {
+	}
+	ai_chance = {value = 100}
+ }
+  targaryen_legacy_4 = { # 
+	legacy = targaryen_legacy_track
+	character_modifier = {
+		scheme_discovery_chance_mult = 0.1
+	    enemy_personal_scheme_success_chance_add = -25
+	    character_travel_speed = 10
+	    character_travel_safety = 10
+	}
+	effect = {
+	}
+	ai_chance = {value = 100}
+ }
+  targaryen_legacy_5 = { # 
+	legacy = targaryen_legacy_track
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 1
+		court_grandeur_baseline_add = 10
+		monthly_prestige_gain_mult = 0.1
+		county_opinion_add = 5
+		monthly_county_control_growth_add = 0.2
+		controlled_province_advantage = 5
+		courtier_and_guest_opinion = 10
+	}
+	effect = {
+	}
+	ai_chance = {value = 100}
 }
 #Thief
  thief_rutherford_legacy_1 = { # 
@@ -2378,6 +2453,16 @@
 		men_at_arms_recruitment_cost = -0.2
 		mercenary_hire_cost_mult = -0.1
 		monthly_income_mult = 0.02
+	}
+	ai_chance = {value = 100}
+ }
+ thief_bafford_legacy_2 = { # 
+	legacy = thief_bafford_legacy_track
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		domicile_monthly_prestige_mult = 0.1
+		monthly_prestige_gain_per_knight_mult = 0.01
+		prestige_level_impact_mult = 0.5
 	}
 	ai_chance = {value = 100}
  }
