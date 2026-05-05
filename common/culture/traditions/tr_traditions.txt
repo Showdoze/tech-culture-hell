@@ -1746,7 +1746,6 @@ tradition_warfare_centric = {
 	}
 	is_shown = { always = no }
 	parameters = {
-		commanders_likelier_to_gain_commander_traits = yes
 		wanderers_gain_extra_combat_skills = yes
 		mercenary_courtiers_gain_extra_skills = yes
 		gain_gold_from_battles = yes
@@ -1768,6 +1767,87 @@ tradition_warfare_centric = {
 	character_modifier = {
 	}	
 	cost = { prestige = 6000 }
+	ai_will_do = { value = 0 }
+}
+tradition_knight_focus = {
+	category = combat
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = swords.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+		commanders_likelier_to_gain_commander_traits = yes
+	}
+	province_modifier = {
+		levy_size = -5
+	}
+	character_modifier = {
+		men_at_arms_limit = -3
+		men_at_arms_recruitment_cost = 0.5
+		men_at_arms_maintenance = 0.15
+		knight_effectiveness_mult = 2
+		knight_limit = 4
+		prowess = 2
+		prowess_per_prestige_level = 1
+		levy_size = -10
+		maa_damage_mult = -0.01
+		levy_toughness = -8
+	}	
+	cost = { prestige = 1000 }
+	ai_will_do = { value = 0 }
+}
+tradition_maa_focus = {
+	category = combat
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = swords.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+	}
+	province_modifier = {
+		levy_size = -5
+	}
+	character_modifier = {
+		knight_limit = -1
+		men_at_arms_limit = 3
+		men_at_arms_recruitment_cost = -0.25
+		knight_effectiveness_mult = -1
+		men_at_arms_maintenance = -0.15
+		levy_size = -10
+		maa_damage_mult = 0.01
+		levy_toughness = -8
+	}	
+	cost = { prestige = 1000 }
+	ai_will_do = { value = 0 }
+}
+tradition_levy_focus = {
+	category = combat
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = swords.dds
+	}
+	is_shown = { always = no }
+	parameters = {
+	}
+	province_modifier = {
+		levy_size = 10
+	}
+	character_modifier = {
+		men_at_arms_limit = -3
+		men_at_arms_recruitment_cost = 0.5
+		knight_effectiveness_mult = -1
+		knight_limit = -1
+		men_at_arms_maintenance = 0.15
+		levy_size = 25
+		levy_toughness = 8
+		maa_damage_mult = -0.01
+	}	
+	cost = { prestige = 1000 }
 	ai_will_do = { value = 0 }
 }
 tradition_two_rivers_two_people = { # Mesopotamian Unity

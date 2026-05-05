@@ -66,9 +66,13 @@
  tradition_transport_walk_desc:0 "This culture prefer's to rely on walking to travel around"
  tradition_fromsoft_name:0 ""
  tradition_fromsoft_desc:0 ""
- 
- tradition_egyptian_isolation_name:0 "Egyptian Isolation"
- tradition_egyptian_isolation_desc:0 "Our lands are the center of the world, where Order reigns supreme. Outside of our lands the people are barbarians, and chaos triumphs over all else. In order to preserve order in the world, we must preserve our way of life, culture, and heritage from foriegn influences lest we too become barbarians."
+ tradition_knight_focus_name: "$knight_culture_player_no_tooltip_lowercase$ Focus"
+ tradition_knight_focus_desc: "This Culture Focuses and relys on the skill of $knight_culture_player_no_tooltip_lowercase$ the army rather than its numbers."
+ tradition_maa_focus_name: "Man at Arms Focus"
+ tradition_maa_focus_desc: "This Culture Focuses and relys on the skill of Man at Arms rather than rely on numbers alone."
+ tradition_levy_focus_name: "Levy Focus"
+ tradition_levy_focus_desc: "This Culture Focuses and relys on the skill of its levys and the number of there troops."
+
  culture_parameter_easier_assimilation_in_egypt:0 "#s Within [GetGeographicalRegion('world_egypt').GetName]:\n#!   Promote Culture [councillor_task|E] #P more#! effective\n   #P Resistant#! to hostile Promote Culture [councillor_tasks|E]"
  culture_parameter_harder_assimilation_outside_egypt:0 "#s Outside [GetGeographicalRegion('world_egypt').GetName]:\n#!   Promote Culture [councillor_task|E] #N less#! effective"
  culture_parameter_assimilation_resistance_in_egypt:0 ""
