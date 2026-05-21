@@ -62,6 +62,14 @@ tr_hygene.01 = { #Hygene Root
 
 		ai_chance = {
 			base = 5
+			modifier = {
+                add = -4
+                has_trait = lazy
+            }
+			modifier = {
+                add = 5
+                has_trait = diligent
+            }
 		}
 
 		stress_impact = {
@@ -81,6 +89,10 @@ tr_hygene.01 = { #Hygene Root
 
 		ai_chance = {
 			base = 10
+			modifier = {
+                add = 5
+                has_trait = content
+            }
 		}
 
 		stress_impact = {
@@ -127,6 +139,14 @@ tr_hygene.01 = { #Hygene Root
 
 		ai_chance = {
 			base = 4
+			modifier = {
+                add = 4
+                has_trait = lazy
+            }
+			modifier = {
+                add = -10
+                has_trait = diligent
+            }
 		}
 
 		stress_impact = {
