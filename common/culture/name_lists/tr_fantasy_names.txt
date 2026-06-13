@@ -5024,23 +5024,24 @@ name_list_skaven = {
         "-263" "-19" "-204" "-326" "-92" "-829" "-523" "-278" "-250" "-143" "-864" "-690" "-786" 
         "Ga'tr" Vagg Udd Fakk Engab Soss App Mosuda Hasuk Femm Hekk Ekikk Fadd Loss Edzokk Sach 
         Axuresh Bakk Vash Midd Obb Birr Mogli Roo Ligoagg Sifz Gabb Obomo Turu Mevorr Enureree 
-        Aguhor Asoi Firah Grurto Tekanakk Aglibb Hikoss Ulimm Utikk Dotob Dekk Ogiff Sifn 
-        Argakk Fibup Edora Hekrar Krgruli Fulil Tenn Abratu Otikk Fureri 
+        Aguhor Asoi Firah Grurto Tekanakk Aglibb Hikoss Ulimm Utikk Dotob Dekk Ogiff Sifn Obb 
+        Argakk Fibup Edora Hekrar Krgruli Fulil Tenn Abratu Otikk Fureri Muri Maho Egg 
+        Nosykk Sive Habev "Aka'ti" Norptoa 
     }
     male_names = {
-        Azorf Azegema Ahon 
+        Azorf Azegema Ahon Amadd 
         Bugg Bigg Badbu Bribu Brig Bhart Bhago Bebb 
-        Clem Chipper Chaym Colh Cuzz Cobarr 
+        Clem Chipper Chaym Colh Cuzz Cobarr Corgoripp 
         Dhurnam Dok 
         Flago 
         Garv Garesh Gorth Gharn Gral Grong Grig Grogridd 
         Horrek Hagg Hurag Hokk 
         Jugog Jukk Jurthi 
         Kahl Kraz Korgg 
-        Lech Leekter Lugus Lagog 
+        Lech Leekter Lugus Lagog Ligivobb 
         Marro Migg 
         Nok Nurn 
-        Olvar Odd 
+        Olvar Odd Orakk 
         Pukk Porgg Putt Pakk 
         Reth 
         Sargas Shik Shang Sirr Solbe Sorbeli 
@@ -5062,6 +5063,7 @@ name_list_skaven = {
         Morba Monoo Mitt 
         Nokk Nilikts 
         Oorpesv Orete Omm Ogg Omog Oohuh 
+        Petekk 
         Rirdil Ruhkru 
         Sprag 
         Tilodud Telidd Tipp 
@@ -5069,7 +5071,7 @@ name_list_skaven = {
         Ven_kra 
         Xidd 
         Yorir Yodd 
-        Zura 
+        Zura Zolnudili 
     }
     dynasty_of_location_prefix = ""
     pat_grf_name_chance = 30
@@ -5080,6 +5082,30 @@ name_list_skaven = {
     mother_name_chance = 5
     mercenary_names = {
         { name = "sons_of_kahl" }
+    #    { name = "mercenary_sus_meeting" coat_of_arms = "sus_meeting" }
+    }
+ }
+ name_list_corpo = {
+    dynasty_names = {
+        Carix Turpex Ner Pau Ulvonka 
+    }
+    male_names = {
+    }
+    female_names = {
+        Cilo 
+        Lucima 
+        Possaia 
+        Sabilia 
+        Zydia 
+    }
+    dynasty_of_location_prefix = ""
+    pat_grf_name_chance = 30
+    mat_grf_name_chance = 10
+    father_name_chance = 25
+    pat_grm_name_chance = 20
+    mat_grm_name_chance = 40
+    mother_name_chance = 5
+    mercenary_names = {
     #    { name = "mercenary_sus_meeting" coat_of_arms = "sus_meeting" }
     }
  }
