@@ -257,11 +257,11 @@ tr_doctrines = {
 		is_shown = { always = no }
 		piety_cost = { value =  690 }
 		traits = {
-			virtues = { 
+			virtues = {
 				born_in_the_purple august overseer class_paladin_crown class_bard_college_of_valour 
 			    class_bard_college_of_valour class_cleric_knowledge class_fighter_master 
 			}
-			sins = { 
+			sins = {
 				peasant_born heresiarch disinherited 
 			}
 		}
@@ -1195,6 +1195,35 @@ tr_doctrines = {
 			sins = { 
 				arbitrary sadistic lazy lustful craven impatient arrogant gluttonous 
 			}
+		}
+	}
+	tenet_christan_mystical = {
+		icon = core_tenet_christian_syncretism
+		piety_cost = { value = faith_tenet_cost_high }
+		is_shown = { always = no }
+		parameters = {
+			piety_from_marrying_lowborn_active = yes
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
+			clergy_can_fight = yes
+			fervor_per_holy_site = 1
+			pilgrimage_decision_active = yes
+			spirit_possession_active = yes
+			piety_from_feasts_active = yes
+			tenet_esotericism_mystic_education = yes
+			literalist_debate_enabled = yes
+			meditation_mechanics_active = yes
+			hostility_override_special_doctrine_is_jewish_faith = 2
+			# This parameter is empty; the syncretic religious trigger checks against the doctrine, as that's much clearer in tooltips and allows us to use a unified syncretic trigger per-religion rather than having bitty situational triggers.
+			can_use_jewish_artefacts = yes
+			jewish_syncretic_actor_opinion_active = yes
+			opinion_of_jewish_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
+		}
+		traits = {
+			virtues = { lifestyle_mystic  }
+			sins = {  }
+		}
+		character_modifier = {
 		}
 	}
 }
