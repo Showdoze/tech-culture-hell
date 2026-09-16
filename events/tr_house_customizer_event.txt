@@ -1053,6 +1053,12 @@ house_customizer.0024 = { #EASTERN ERUOPE
 		remove_trait = house_customizer
 		set_father = character:82235
 	}
+	option = { #Arpad
+	    name = house_customizer_arpad
+		set_house = character:159137.house
+		remove_trait = house_customizer
+		set_father = character:159137
+	}
 	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
@@ -1074,13 +1080,17 @@ house_customizer.0025 = { #Southern ERUOPE
 		trigger_event = house_customizer.0027
 	}
 	option = {
+		name = house_customizer_italian
+		trigger_event = house_customizer.0028
+	}
+	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
 	}
 }
 house_customizer.0027 = { #roman
 	type = character_event
-	title = house_customizer_select_western_europe
+	title = house_customizer_roman
 	desc = Select_Your_House
 	theme = family
 	override_background = {reference = physicians_study}
@@ -1112,7 +1122,29 @@ house_customizer.0027 = { #roman
 	}
 	option = {
 		name = back_option
-		trigger_event = house_customizer.0020
+		trigger_event = house_customizer.0025
+	}
+}
+house_customizer.0028 = { #Italian
+	type = character_event
+	title = house_customizer_italian
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #
+	    name = house_customizer_Desideridi
+		set_house = character:190347.house
+		remove_trait = house_customizer
+		set_father = character:190347
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0025
 	}
 }
 house_customizer.0026 = { #Western ERUOPE
@@ -1135,8 +1167,34 @@ house_customizer.0026 = { #Western ERUOPE
 		trigger_event = house_customizer.0021
 	}
 	option = {
+		name = house_customizer_english
+		trigger_event = house_customizer.0029
+	}
+	option = {
 		name = back_option
 		trigger_event = house_customizer.0020
+	}
+}
+house_customizer.0029 = { #English
+	type = character_event
+	title = house_customizer_english
+	desc = Select_Your_House
+	theme = family
+	override_background = {reference = physicians_study}
+	left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	immediate = {play_music_cue = "mx_cue_succession"}
+	option = { #
+	    name = house_customizer_Wessex
+		set_house = character:33355.house
+		remove_trait = house_customizer
+		set_father = character:33355
+	}
+	option = {
+		name = back_option
+		trigger_event = house_customizer.0026
 	}
 }
 house_customizer.0021 = { #France
@@ -1226,6 +1284,12 @@ house_customizer.0030 = { #AFRICA
 		set_house = character:167707.house
 		remove_trait = house_customizer
 		set_father = character:167707
+	}
+	option = { #KUSH
+	    name = house_customizer_kush
+		set_house = character:31717.house
+		remove_trait = house_customizer
+		set_father = character:31717
 	}
 	option = {
 		name = back_option
