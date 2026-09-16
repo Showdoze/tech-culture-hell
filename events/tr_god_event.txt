@@ -1,0 +1,65 @@
+namespace = tr_god_event
+
+tr_god_event.10 = { #Want a Child
+    type = character_event
+    title = tr_god_event_child
+    window = visit_settlement_window
+    theme = mental_health
+    desc = tr_god_event_child_desc
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+    option = { #Dragon Child
+        name = tr_god_event_child_dragon_layer
+        trigger = {
+            AND = {
+                OR = {
+                    is_maa_type = dragon
+                }
+            }
+        }
+        add_trait = pregnant
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #Dragon Dream
+        name = tr_god_event_child_dragon_child
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:dragon_cult
+                    has_trait = class_sorcerer_dragon
+                    has_trait = follow_tiamat
+                    has_trait = follow_kereska
+                    has_trait = follow_bahamut
+                }
+                NOT = { is_maa_type = dragon }
+            }
+        }
+        add_trait = pregnant
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #deep child
+        name = tr_god_event_child_deep
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:deep_cult
+                }
+            }
+        }
+        add_trait = pregnant
+        ai_chance = {
+			base = 1
+		}
+    }
+ ####Opt-Out
+    option = {
+        name = tr_cancel
+        custom_tooltip = tr_cancel_tip
+    }
+}

@@ -1239,3 +1239,45 @@ kuva_lich_decision = {
     }
     ai_will_do = { base = 1 }
 }
+tr_need_heir_decision = {
+    picture = {
+        trigger = { culture = culture:high_valyrian }
+        reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
+    }
+    picture = {
+        trigger = { culture = culture:innsmouth }
+        reference = "gfx/interface/illustrations/decisions/oath_of_dagon.dds"
+    }
+    picture = {
+        trigger = { 
+            NOR = { 
+                culture = culture:high_valyrian
+                culture = culture:innsmouth
+            }    
+        }
+        reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    }
+    title = need_heir_decision
+    desc = need_heir_decision_desc
+    selection_tooltip = need_heir_decision_tip
+    confirm_text = need_heir_decision_confirm
+    is_shown = {
+        AND = {
+            is_female = yes
+            NOT = { has_trait = pregnant }
+            any_child = { is_alive = yes count > 1 }
+            OR = {
+                faith = faith:dragon_cult
+                faith = faith:deep_cult
+            }
+        }
+    }
+    effect = {
+        trigger_event = {
+            id = tr_god_event.10
+        }
+    }
+    ai_will_do = {
+        base = 10
+    }
+}

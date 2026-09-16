@@ -3209,15 +3209,15 @@ tr_select_deity.01 = {
         ai_chance = {
             base = 1
             modifier = {
-                #add = 100
-                #has_trait = zealous
+                add = 25
+                has_trait = lifestyle_mystic
             }
         }
     }
 ####Opt-Out
     option = {
-        name = tr_select_deity_cancel
-        custom_tooltip = tr_select_deity_cancel_tip
+        name = tr_cancel
+        custom_tooltip = tr_cancel_tip
     }
 
 }
