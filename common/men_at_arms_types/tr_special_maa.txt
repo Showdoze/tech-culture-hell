@@ -282,4 +282,38 @@ steam_centurion = {
     ai_quality = { value = 0 }
     icon = thief_zom
  }
+ thief_fire_elemental = {
+    type = elemental
+    can_recruit = { always = no }
+    damage = 250
+	toughness = 5
+    pursuit = 5
+    screen = 5
+    siege_value = 0.1
+    counters = {
+        skirmishers = 2
+        pikemen = 1
+		archers = 1
+        light_infantry = 2
+        light_cavalry = 1
+        heavy_infantry = 1
+    }
+    terrain_bonus = {
+        wetlands = { damage = -30 toughness = -10 pursuit = -50 screen = -50 }
+        farmlands = { damage = 2 toughness = 1 screen = 2 }
+        desert_mountains = { damage = 8 toughness = 12 }
+        desert = { toughness = 8 }
+    }
+    winter_bonus = {
+        normal_winter = {  pursuit = -2 screen = -2 }
+        harsh_winter = {  pursuit = -5 screen = -5 }
+    }
+    buy_cost = { piety = 100 }
+    low_maintenance_cost = { piety = 0.1 }
+    high_maintenance_cost = { piety = 1 }
+    stack = 10
+    allowed_in_hired_troops = no
+    ai_quality = { value = 0 }
+    icon = thief_fire_elemental
+ }
 #

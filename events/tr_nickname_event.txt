@@ -26,6 +26,10 @@ tr_nickname_event.01 = {
         name = nick_name_giver_virtue_vice
         trigger_event = { id = tr_nickname_event.4 }
     }
+    option = { #Apperance
+        name = nick_name_giver_apperance
+        trigger_event = { id = tr_nickname_event.5 }
+    }
  #Bastard based
     option = { #the white bastard
         name = nick_name_giver_nick_the_white_bastard
@@ -584,13 +588,13 @@ tr_nickname_event.01 = {
     }
  ####Opt-Out 
     option = {
-        name = tr_select_deity_cancel
-        custom_tooltip = tr_select_deity_cancel_tip
+        name = tr_cancel
+        custom_tooltip = tr_cancel_tip
     }
 }
-tr_nickname_event.0002 = {  #ROMAN   
+tr_nickname_event.1 = {  # culture
     type = character_event
-    title = nick_name_giver_roman
+    title = nick_name_giver_culture
     window = visit_settlement_window
     theme = mental_health
     desc = nick_name_giver_desc
@@ -598,7 +602,7 @@ tr_nickname_event.0002 = {  #ROMAN
         character = root
         animation = thinking
     }
-    option = {
+    option = { #augustus
         name = nick_name_giver_nick_augustus
         trigger = {
             AND = {
@@ -624,7 +628,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			}
 		}
     }
-    option = {
+    option = { #octavius
         name = nick_name_giver_nick_octavius
         trigger = {
             AND = {
@@ -649,7 +653,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			}
 		}
     }
-    option = {
+    option = { #octavian
         name = nick_name_giver_nick_octavian
         trigger = {
             AND = {
@@ -675,7 +679,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			}
 		}
     }
-    option = {
+    option = { #caligula
         name = nick_name_giver_nick_caligula
         trigger = {
             AND = {
@@ -705,7 +709,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			base = 1
 		}
     }
-    option = {
+    option = { #octavia
         name = nick_name_giver_nick_octavia
         trigger = {
             AND = {
@@ -721,7 +725,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			base = 1
 		}
     }
-    option = {
+    option = { #constantine
         name = nick_name_giver_nick_constantine
         trigger = {
             AND = {
@@ -739,7 +743,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			base = 1
 		}
     }
-    option = {
+    option = { #claudius
         name =  nick_name_giver_nick_claudius
         trigger = {
             AND = {
@@ -775,7 +779,7 @@ tr_nickname_event.0002 = {  #ROMAN
 			}
 		}
     }
-    option = {
+    option = { #elagabalus
         name =  nick_name_giver_nick_elagabalus
         trigger = {
             AND = {
@@ -800,23 +804,6 @@ tr_nickname_event.0002 = {  #ROMAN
 			base = 1
 		}
     }
-    option = { #BACK
-        name = back_option
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.0003 = {  #GREEK   
-    type = character_event
-    title = nick_name_giver_greek
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
     option = { #THE PALE
         name = nick_name_giver_nick_chlorus
         trigger = {
@@ -825,6 +812,12 @@ tr_nickname_event.0003 = {  #GREEK
                     has_trait = albino
                     has_trait = byakugan
                 }
+                culture = {
+                    OR = {
+                        has_cultural_pillar = language_greek
+                        has_cultural_pillar = language_ancient_greek
+                }   
+            }
                 NOR = {
                     has_trait = scaly
                     has_trait = hollow
@@ -841,6 +834,12 @@ tr_nickname_event.0003 = {  #GREEK
         name = nick_name_giver_nick_porphyrogennetos
         trigger = {
             AND = {
+                culture = {
+                    OR = {
+                        has_cultural_pillar = language_greek
+                        has_cultural_pillar = language_ancient_greek
+                }   
+            }
                 has_trait = born_in_the_purple
                 NOR = {
                     has_trait = hygene_bad_1
@@ -862,6 +861,12 @@ tr_nickname_event.0003 = {  #GREEK
         name = nick_name_giver_nick_rhinotmetos
         trigger = {
             AND = {
+                culture = {
+                    OR = {
+                        has_cultural_pillar = language_greek
+                        has_cultural_pillar = language_ancient_greek
+                }   
+            }
                 has_trait = disfigured
                 NOR = {
                     has_trait = hygene_bad_1
@@ -888,23 +893,6 @@ tr_nickname_event.0003 = {  #GREEK
 			base = 1
 		}
     }  
-    option = { #BACK
-        name = back_option
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.0004 = {  #Norse   
-    type = character_event
-    title = nick_name_giver_norse
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
     option = { #Made of ice old norse
         name = nick_name_giver_nick_madeofice
         trigger = {
@@ -989,158 +977,6 @@ tr_nickname_event.0004 = {  #Norse
 			base = 1
 		}
     }
-    option = { #BACK
-        name = back_option
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.0005 = {  #satan
-    type = character_event
-    title = nick_name_giver_satan
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_diplomacy
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                diplomacy >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_diplomacy }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = diplomat
-			}
-		}
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_martial
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                martial >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_martial }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = strategist
-			}
-		}
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_stewardship
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                stewardship >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_stewardship }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = administrator
-			}
-		}
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_intrigue
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                intrigue >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_intrigue }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = schemer
-			}
-		}
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_learning
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                learning >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_learning }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = lifestyle_mystic
-			}
-            modifier = {
-				add = 5
-				has_trait = scholar
-			}
-		}
-    }
-    option = { 
-        name =  nick_name_giver_nick_satan_prowess
-        trigger = {
-            AND = {
-                faith = faith:satanism
-                prowess >= 20
-                #top_liege = this
-            }
-        }
-        add_piety = -100
-        set_nickname_effect = { NICKNAME = nick_satan_prowess }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 5
-				has_trait = lifestyle_blademaster
-			}
-		}
-    }
-    option = { #BACK
-        name = nick_name_giver_satan_back
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.0006 = {  # Nomadic #HUN Mongol Nomad Turkish
-    type = character_event
-    title = nick_name_giver_nomadic
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
     option = { #HUN
         name = nick_name_giver_nick_the_hun
         trigger = {
@@ -1188,215 +1024,6 @@ tr_nickname_event.0006 = {  # Nomadic #HUN Mongol Nomad Turkish
 			base = 1
 		}
     }
-    option = { #BACK
-        name = back_option
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.0007 = {  # SUMER
-    type = character_event
-    title = nick_name_giver_sumer
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
-    option = { #king of the universe
-        name = nick_name_giver_nick_Sar_kiSSati
-        trigger = {
-            AND = {
-                OR = {
-                    faith = faith:sumerian_pagan
-                    faith = faith:akkadian_pagan
-                    faith = faith:babylonian_pagan
-                    faith = faith:assyrian_pagan
-                }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_Sar_kiSSati }
-        add_prestige = -150
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = { #king of all peoples
-        name = nick_name_giver_nick_Sar_kiSSat_niSE
-        trigger = {
-            AND = {
-                OR = {
-                    faith = faith:sumerian_pagan
-                    faith = faith:akkadian_pagan
-                    faith = faith:babylonian_pagan
-                    faith = faith:assyrian_pagan
-                }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_Sar_kiSSat_niSE }
-        add_prestige = -150
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = { #king of the four quarters
-        name = nick_name_giver_nick_Sar_kibrAtim_arba_im
-        trigger = {
-            AND = {
-                OR = {
-                    faith = faith:sumerian_pagan
-                    faith = faith:akkadian_pagan
-                    faith = faith:babylonian_pagan
-                    faith = faith:assyrian_pagan
-                }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_Sar_kibrAtim_arba_im }
-        add_prestige = -150
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = { #mighty king
-        name = nick_name_giver_nick_Sarru_dannu
-        trigger = {
-            AND = {
-                OR = {
-                    faith = faith:sumerian_pagan
-                    faith = faith:akkadian_pagan
-                    faith = faith:babylonian_pagan
-                    faith = faith:assyrian_pagan
-                }    
-                NOR = {
-                    has_trait = follow_julius_caesar
-                    has_trait = follow_islam
-                    has_trait = follow_augustus
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_Sarru_dannu }
-        add_prestige = -150
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = { #nick_the_syrian
-        name = nick_name_giver_nick_the_syrian
-        trigger = {
-            AND = {
-                culture = culture:assyrian
-                OR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }    
-                NOR = {
-                    faith = faith:sumerian_pagan
-                    faith = faith:akkadian_pagan
-                    faith = faith:babylonian_pagan
-                    faith = faith:assyrian_pagan
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_syrian }
-        add_prestige = -100
-        ai_chance = {
-			base = 1
-		}
-    }
-    option = { #BACK
-        name = back_option
-        trigger_event = {
-			id = tr_nickname_event.01
-		}
-    }
-}
-tr_nickname_event.1 = {  # culture
-    type = character_event
-    title = nick_name_giver_culture
-    window = visit_settlement_window
-    theme = mental_health
-    desc = nick_name_giver_desc
-    left_portrait = {
-        character = root
-        animation = thinking
-    }
-    option = {  #ROMAN
-		name = nick_name_giver_roman
-		trigger_event = { id = tr_nickname_event.0002 }
-        trigger = {
-             OR = {
-                culture = culture:roman  
-            }
-        }
-	}
-    option = {  #Greek
-		name = nick_name_giver_greek
-		trigger_event = { id = tr_nickname_event.0003 }
-        trigger = {
-             culture = {
-                    OR = {
-                        has_cultural_pillar = language_greek
-                        has_cultural_pillar = language_ancient_greek
-                    }   
-                }
-        }
-	}
-    option = {  #Norse
-		name = nick_name_giver_norse
-		trigger_event = { id = tr_nickname_event.0004 }
-        trigger = {
-             OR = {
-                any_parent_culture_or_above = {
-				    this = culture:norse
-			    }
-                culture = culture:norse
-                culture = culture:danish
-                culture = culture:old_dwarven
-                culture = culture:nord_culture
-                culture = culture:duergar
-                culture = culture:orc_culture
-                any_parent_culture_or_above = {
-				    this = culture:first_man
-			    }
-                culture = culture:first_man
-            }  
-        }
-	}
-    option = {  ## Nomadic #HUN Mongol Nomad Turkish
-		name = nick_name_giver_nomadic
-		trigger_event = { id = tr_nickname_event.0006 }
-        trigger = {
-            OR = {
-                culture = culture:khazar
-                culture = culture:hunnic
-                faith = faith:tengri_pagan
-                faith = faith:magyar_pagan
-                culture = culture:cuman
-                any_parent_culture_or_above = {
-				    this = culture:hunnic
-			    }
-                culture = { has_cultural_pillar = heritage_magyar } 
-            }
-        }
-	}
     option = { #Kuva
         name =  nick_name_giver_nick_kuva_prefix
         trigger = {
@@ -1531,23 +1158,240 @@ tr_nickname_event.2 = {  # faith
         character = root
         animation = thinking
     }
-    option = {  #satan
-		name = nick_name_giver_satan
-		trigger_event = { id = tr_nickname_event.0005 }
-        trigger = { faith = faith:satanism }
-	}
-    option = {  ## SUmer
-		name = nick_name_giver_sumer
-		trigger_event = { id = tr_nickname_event.0007 }
+    option = { #satan_diplomac
+        name =  nick_name_giver_nick_satan_diplomacy
         trigger = {
-            OR = {
-                faith = faith:sumerian_pagan
-                faith = faith:akkadian_pagan
-                faith = faith:babylonian_pagan
-                faith = faith:assyrian_pagan
+            AND = {
+                faith = faith:satanism
+                diplomacy >= 20
+                #top_liege = this
             }
         }
-	}
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_diplomacy }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = diplomat
+			}
+		}
+    }
+    option = { #satan_martial
+        name =  nick_name_giver_nick_satan_martial
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                martial >= 20
+                #top_liege = this
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_martial }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = strategist
+			}
+		}
+    }
+    option = { #satan_stewardship
+        name =  nick_name_giver_nick_satan_stewardship
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                stewardship >= 20
+                #top_liege = this
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_stewardship }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = administrator
+			}
+		}
+    }
+    option = {  #satan_intrigue
+        name =  nick_name_giver_nick_satan_intrigue
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                intrigue >= 20
+                #top_liege = this
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_intrigue }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = schemer
+			}
+		}
+    }
+    option = {  #satan_learning
+        name =  nick_name_giver_nick_satan_learning
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                learning >= 20
+                #top_liege = this
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_learning }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_mystic
+			}
+            modifier = {
+				add = 5
+				has_trait = scholar
+			}
+		}
+    }
+    option = {  #satan_prowess
+        name =  nick_name_giver_nick_satan_prowess
+        trigger = {
+            AND = {
+                faith = faith:satanism
+                prowess >= 20
+                #top_liege = this
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_satan_prowess }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 5
+				has_trait = lifestyle_blademaster
+			}
+		}
+    }
+    option = { #king of the universe
+        name = nick_name_giver_nick_Sar_kiSSati
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:sumerian_pagan
+                    faith = faith:akkadian_pagan
+                    faith = faith:babylonian_pagan
+                    faith = faith:assyrian_pagan
+                }    
+                NOR = {
+                    religion = religion:christianity_religion
+                    religion = religion:islam_religion
+                    religion = religion:judaism_religion
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_Sar_kiSSati }
+        add_prestige = -150
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #king of all peoples
+        name = nick_name_giver_nick_Sar_kiSSat_niSE
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:sumerian_pagan
+                    faith = faith:akkadian_pagan
+                    faith = faith:babylonian_pagan
+                    faith = faith:assyrian_pagan
+                }    
+                NOR = {
+                    religion = religion:christianity_religion
+                    religion = religion:islam_religion
+                    religion = religion:judaism_religion
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_Sar_kiSSat_niSE }
+        add_prestige = -150
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #king of the four quarters
+        name = nick_name_giver_nick_Sar_kibrAtim_arba_im
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:sumerian_pagan
+                    faith = faith:akkadian_pagan
+                    faith = faith:babylonian_pagan
+                    faith = faith:assyrian_pagan
+                }    
+                NOR = {
+                    religion = religion:christianity_religion
+                    religion = religion:islam_religion
+                    religion = religion:judaism_religion
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_Sar_kibrAtim_arba_im }
+        add_prestige = -150
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #mighty king
+        name = nick_name_giver_nick_Sarru_dannu
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:sumerian_pagan
+                    faith = faith:akkadian_pagan
+                    faith = faith:babylonian_pagan
+                    faith = faith:assyrian_pagan
+                }    
+                NOR = {
+                    has_trait = follow_julius_caesar
+                    has_trait = follow_islam
+                    has_trait = follow_augustus
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_Sarru_dannu }
+        add_prestige = -150
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #nick_the_syrian
+        name = nick_name_giver_nick_the_syrian
+        trigger = {
+            AND = {
+                culture = culture:assyrian
+                OR = {
+                    religion = religion:christianity_religion
+                    religion = religion:islam_religion
+                    religion = religion:judaism_religion
+                }    
+                NOR = {
+                    faith = faith:sumerian_pagan
+                    faith = faith:akkadian_pagan
+                    faith = faith:babylonian_pagan
+                    faith = faith:assyrian_pagan
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_syrian }
+        add_prestige = -100
+        ai_chance = {
+			base = 1
+		}
+    }
     option = { #the Gaul
         name = nick_name_giver_nick_the_gaul
         trigger = {
@@ -1571,7 +1415,7 @@ tr_nickname_event.2 = {  # faith
 			}
 		}
     }
-    option = {
+    option = { #zealot
         name =  nick_name_giver_nick_the_zealot
         trigger = {
             AND = {
@@ -1642,13 +1486,13 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #LIGHT
         name =  nick_name_giver_nick_a_cleric_of_light
         trigger = {
             AND = {
                 has_trait = class_cleric_light
                 OR = {
-                    has_trait = class_cleric_light
+                    has_trait = gallant
                     has_trait = theologian
                 }
                 NOR = {
@@ -1665,7 +1509,7 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #TRICKset
         name =  nick_name_giver_nick_a_cleric_of_trick
         trigger = {
             AND = {
@@ -1688,7 +1532,7 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #knoledge
         name =  nick_name_giver_nick_a_cleric_of_knowledge
         trigger = {
             AND = {
@@ -1713,7 +1557,7 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #nature
         name =  nick_name_giver_nick_a_cleric_of_nature
         trigger = {
             AND = {
@@ -1737,13 +1581,13 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #tempest
         name =  nick_name_giver_nick_a_cleric_of_tempest
         trigger = {
             AND = {
                 has_trait = class_cleric_tempest
                 OR = {
-                    has_trait = class_cleric_tempest
+                    has_trait = lifestyle_mystic
                     has_trait = theologian
                 }
                 NOR = {
@@ -1760,7 +1604,7 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #war
         name =  nick_name_giver_nick_a_cleric_of_war
         trigger = {
             AND = {
@@ -1784,7 +1628,7 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
-     option = {
+     option = { #death
         name =  nick_name_giver_nick_a_cleric_of_death
         trigger = {
             AND = {
@@ -2279,4 +2123,139 @@ tr_nickname_event.4 = {  # virtue vice
         trigger_event = { id = tr_nickname_event.01 }
     }
 }
-
+tr_nickname_event.5 = {  # virtue vice
+    type = character_event
+    title = nick_name_giver_virtue_vice
+    window = visit_settlement_window
+    theme = mental_health
+    desc = nick_name_giver_desc
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+    option = { #the compassionate
+        name = nick_name_giver_nick_the_compassionate
+        trigger = {
+            AND = {
+                    has_trait = compassionate
+                NOR = {
+                    has_trait = schemer
+                    has_trait = wrathful
+                    has_trait = gallant
+                    has_trait = torturer
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_compassionate }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the Loyal
+        name = nick_name_giver_nick_the_loyal
+        trigger = {
+            AND = {
+                    has_trait = loyal
+                NOR = {
+                    has_trait = schemer
+                    has_trait = deceitful
+                    has_trait = ambitious
+                    has_trait = paranoid
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_loyal }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the Honest
+        name = nick_name_giver_nick_the_honest
+        trigger = {
+            AND = {
+                    has_trait = honest
+                NOR = {
+                    has_trait = schemer
+                    has_trait = deceitful
+                    has_trait = ambitious
+                    has_trait = paranoid
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_honest }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the DRUNKARD
+        name = nick_name_giver_nick_the_drunkard
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = class_monk_drunk
+                    has_trait = drunkard
+                    has_trait = lifestyle_reveler
+                }
+                NOR = {
+                    has_trait = athletic
+                    has_trait = lifestyle_hunter
+                    has_trait = seducer
+                    has_trait = lifestyle_physician
+                    has_trait = lifestyle_herbalist
+                    has_trait = lifestyle_gardener
+                    has_trait = torturer
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_drunkard }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the Witch
+        name = nick_name_giver_nick_the_witch
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = witch
+                    has_trait = lifestyle_mystic
+                }
+                NOR = {
+                    has_trait = zealous
+                    has_trait = theologian
+                    has_trait = seducer
+                    has_trait = lifestyle_physician
+                    has_trait = torturer
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_witch }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #the CANNIBAL
+        name = nick_name_giver_nick_the_cannibal
+        trigger = {
+            AND = {
+                    has_trait = cannibal
+                    OR = {
+                        has_trait = gluttonous
+                        has_trait = comfort_eater
+                    }
+                NOR = {
+                    has_trait = temperate
+                    has_trait = inappetetic
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_cannibal }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #BACK
+        name = back_option
+        trigger_event = { id = tr_nickname_event.01 }
+    }
+}
