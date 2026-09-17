@@ -3,17 +3,17 @@
 tr_spell_events.01 = { #cast spell
 
     type = character_event
-    title = class_events_root
+    title = spell_events_root
     window = visit_settlement_window
     theme = faith
-    desc = class_events_root_desc
+    desc = spell_events_root_desc
 
-	left_portrait = {
-		character = root
-		animation = personality_zealous
-	}
+    left_portrait = {
+        character = root
+        animation = personality_zealous
+    }
 
-### HEALING
+    ### HEALING
 
     option = {
         name = tr_spells_healing
@@ -42,7 +42,12 @@ tr_spell_events.01 = { #cast spell
         }
     }
 
-### SOME OTHER SPELL
+    ### SOME OTHER SPELL
 
+    ### CANCEL
 
+    option = {
+        name = tr_spells_cancel
+        custom_tooltip = tr_spells_cancel_tip
+    }
 }
