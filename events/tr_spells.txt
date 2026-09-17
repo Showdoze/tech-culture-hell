@@ -1,0 +1,48 @@
+﻿namespace = tr_spell_events
+
+tr_spell_events.01 = { #cast spell
+
+    type = character_event
+    title = class_events_root
+    window = visit_settlement_window
+    theme = faith
+    desc = class_events_root_desc
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+### HEALING
+
+    option = {
+        name = tr_spells_healing
+        custom_tooltip = tr_spells_healing_tip
+
+        trigger = {
+            OR = {
+                root = { has_trait = class_cleric }
+                root = { has_trait = class_cleric_life }
+                root = { has_trait = class_cleric_light }
+                root = { has_trait = class_cleric_trick }
+                root = { has_trait = class_cleric_knowledge }
+                root = { has_trait = class_cleric_nature }
+                root = { has_trait = class_cleric_tempest }
+                root = { has_trait = class_cleric_war }
+                root = { has_trait = class_cleric_death }
+            }
+            piety >= 400
+        }
+
+        remove_trait = wounded
+        remove_trait = maimed
+
+        ai_chance = {
+            base = 1
+        }
+    }
+
+### SOME OTHER SPELL
+
+
+}
