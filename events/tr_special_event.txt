@@ -1,23 +1,21 @@
-namespace = tr_god_event
+namespace = tr_special_event
 
-tr_god_event.10 = { #Want a Child
+tr_special_event.10 = { #Want a Child
     type = character_event
-    title = tr_god_event_child
+    title = tr_special_event_child
     window = visit_settlement_window
     theme = mental_health
-    desc = tr_god_event_child_desc
+    desc = tr_special_event_child_desc
     left_portrait = {
         character = root
         animation = personality_rational
     }
     option = { #Dragon Child
-        name = tr_god_event_child_dragon_layer
+        name = tr_special_event_child_dragon_layer
         trigger = {
-            AND = {
-                OR = {
-                    is_maa_type = dragon
-                }
-            }
+            any_maa_regiment = {
+				is_maa_type = dragon
+            } 
         }
         add_trait = pregnant
         ai_chance = {
@@ -25,7 +23,7 @@ tr_god_event.10 = { #Want a Child
 		}
     }
     option = { #Dragon Dream
-        name = tr_god_event_child_dragon_child
+        name = tr_special_event_child_dragon_child
         trigger = {
             AND = {
                 OR = {
@@ -35,7 +33,11 @@ tr_god_event.10 = { #Want a Child
                     has_trait = follow_kereska
                     has_trait = follow_bahamut
                 }
-                NOT = { is_maa_type = dragon }
+                NOT = { 
+                    any_maa_regiment = {
+					    is_maa_type = dragon
+                    } 
+                }
             }
         }
         add_trait = pregnant
@@ -44,11 +46,12 @@ tr_god_event.10 = { #Want a Child
 		}
     }
     option = { #deep child
-        name = tr_god_event_child_deep
+        name = tr_special_event_child_deep
         trigger = {
             AND = {
                 OR = {
                     faith = faith:deep_cult
+                    has_trait = follow_cthulhu
                 }
             }
         }

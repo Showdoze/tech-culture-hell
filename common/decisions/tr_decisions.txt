@@ -859,7 +859,7 @@ tr_select_personal_deity_decision = {
         base = 10
     }
 }
-summon_speical_maa_decision = {
+tr_summon_special_maa_decision = {
     picture = {
         trigger = { faith = faith:satanism }
         reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
@@ -1242,7 +1242,7 @@ kuva_lich_decision = {
 tr_need_heir_decision = {
     picture = {
         trigger = { culture = culture:high_valyrian }
-        reference = "gfx/interface/illustrations/decisions/decision_satanism.dds"
+        reference = "gfx/interface/illustrations/decisions/agot_dragon_layer.dds"
     }
     picture = {
         trigger = { culture = culture:innsmouth }
@@ -1274,7 +1274,7 @@ tr_need_heir_decision = {
     }
     effect = {
         trigger_event = {
-            id = tr_god_event.10
+            id = tr_special_event.10
         }
     }
     ai_will_do = {
