@@ -42,24 +42,18 @@ tr_spell_events.01 = { #cast spell
         }
     }
 
-### KNOWLEDGE OF THE AGES
+    ### KNOWLEDGE OF THE AGES
 
     option = {
-        name = tr_spells_knowledge
-        custom_tooltip = tr_spells_knowledge_tip
+        name = tr_spells_kota
+        custom_tooltip = tr_spells_kota_tip
 
         trigger = {
             root = { has_trait = class_cleric_knowledge }
             piety >= 400
         }
-        add_character_modifier = {
-			modifier = spell_knowledge_of_the_ages
-			days = 1
-		}
-        effect = {
-            add_modifier = {
-                spell_knowledge_of_the_ages
-            }
+        trigger_event = {
+            id = tr_spell_event.02 #KOTA options
         }
         ai_chance = {
             base = 1
@@ -73,5 +67,71 @@ tr_spell_events.01 = { #cast spell
     option = {
         name = tr_spells_cancel
         custom_tooltip = tr_spells_cancel_tip
+    }
+}
+tr_spell_events.02 = { ## Knowledge of the ages
+
+    type = character_event
+    title = spell_events_root
+    window = visit_settlement_window
+    theme = faith
+    desc = spell_events_root_desc
+
+    left_portrait = {
+        character = root
+        animation = personality_zealous
+    }
+
+    option = {
+        name = tr_spells_kota_learning
+
+        add_character_modifier = {
+            modifier = spell_knowledge_of_the_ages_learning
+            days = 1
+        }
+    }
+
+    option = {
+        name = tr_spells_kota_diplomacy
+
+        add_character_modifier = {
+            modifier = spell_knowledge_of_the_ages_diplomacy
+            days = 1
+        }
+    }
+
+    option = {
+        name = tr_spells_kota_stewardship
+
+        add_character_modifier = {
+            modifier = spell_knowledge_of_the_ages_stewardship
+            days = 1
+        }
+    }
+
+    option = {
+        name = tr_spells_kota_martial
+
+        add_character_modifier = {
+            modifier = spell_knowledge_of_the_ages_martial
+            days = 1
+        }
+    }
+
+    option = {
+        name = tr_spells_kota_intrigue
+
+        add_character_modifier = {
+            modifier = spell_knowledge_of_the_ages_intrigue
+            days = 1
+        }
+    }
+
+    option = {
+        name = tr_spells_cancel
+        custom_tooltip = tr_spells_cancel_tip
+        trigger_event = {
+            id = tr_spell_events.01 #select base spell
+        }
     }
 }
