@@ -33,6 +33,14 @@ tr_satanism.01 = {
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 5
+				has_trait = sadistic
+			}
+            modifier = {
+				add = -100
+				has_trait = zealous
+			}
         }
     }
 
@@ -46,6 +54,10 @@ tr_satanism.01 = {
 
         ai_chance = {
             base = 1
+            modifier = {
+				add = 100
+				has_trait = zealous
+			}
         }
     }
 
