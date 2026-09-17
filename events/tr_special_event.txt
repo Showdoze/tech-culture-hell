@@ -17,6 +17,15 @@ tr_special_event.10 = { #Want a Child
 				is_maa_type = dragon
             } 
         }
+        if = {
+			limit = {
+				NOT = { has_trait = deviant }
+			}
+			add_trait = deviant
+		}
+        stress_impact = {
+			deviant = -25
+		}
         add_trait = pregnant
         ai_chance = {
 			base = 1
@@ -55,6 +64,10 @@ tr_special_event.10 = { #Want a Child
                 }
             }
         }
+        stress_impact = {
+			lunatic_1 = -10
+            lunatic_genetic = -10
+		}
         add_trait = pregnant
         ai_chance = {
 			base = 1

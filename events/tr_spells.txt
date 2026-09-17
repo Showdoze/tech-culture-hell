@@ -52,13 +52,15 @@ tr_spell_events.01 = { #cast spell
             root = { has_trait = class_cleric_knowledge }
             piety >= 400
         }
-
+        add_character_modifier = {
+			modifier = spell_knowledge_of_the_ages
+			days = 1
+		}
         effect = {
             add_modifier = {
                 spell_knowledge_of_the_ages
             }
         }
-
         ai_chance = {
             base = 1
         }
