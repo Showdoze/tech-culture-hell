@@ -28,7 +28,7 @@ tr_nickname_event.01 = {
         custom_tooltip = nick_name_giver_personality_tip
         trigger_event = { id = tr_nickname_event.4 }
     }
-    option = { #Apperance
+    option = { #Apperance Physical
         name = nick_name_giver_apperance
         custom_tooltip = nick_name_giver_apperance_tip
         trigger_event = { id = tr_nickname_event.5 }
@@ -230,61 +230,6 @@ tr_nickname_event.01 = {
         set_nickname_effect = { NICKNAME = nick_waters }
         ai_chance = {
 			base = 10
-		}
-    }
- #
-    option = { #WHORE
-        name = nick_name_giver_nick_the_whore
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = adulterer
-                    has_trait = fornicator
-                }
-                is_female = yes
-                NOR = {
-                    has_trait = chaste
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_whore }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 1
-				has_trait = callous
-			}
-            modifier = {
-				add = 1
-				has_trait = arbitrary
-			}
-		}
-    }
- #DUMB STUPID   
-    option = {
-        name =  nick_name_giver_nick_the_fool
-        trigger = {
-            AND = {
-                OR = {
-                    has_trait = dull
-                    has_trait = intellect_bad_1
-                    has_trait = intellect_bad_2
-                    has_trait = intellect_bad_3
-                    has_trait = inbred
-                }
-                has_trait = trusting
-                NOR = {
-                    has_trait = lunatic_1
-                    has_trait = lunatic_genetic
-                    has_trait = possessed_1
-                    has_trait = possessed_genetic
-                    has_trait = shrewd
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_fool }
-        ai_chance = {
-			base = 1
 		}
     }
  ####Opt-Out 
@@ -1343,6 +1288,7 @@ tr_nickname_event.0011 = {  # martial
                     has_trait = compassionate
                     has_trait = gregarious
                     has_trait = brave
+                    martial >= 15
                 }
                 NOR = {
                     has_trait = arbitrary
@@ -1500,7 +1446,7 @@ tr_nickname_event.0013 = {  # intrigue
         name = nick_name_giver_nick_the_dreadful
         trigger = {
             AND = {
-                dread >= medium_dread
+                dread >= 50
                 NOR = {
                     has_trait = architect
                     has_trait = compassionate
@@ -1583,6 +1529,60 @@ tr_nickname_event.4 = {  # personality
         character = root
         animation = thinking
     }
+    option = { #nick_fetcher
+        name = nick_name_giver_nick_fetcher
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:chimer
+                    culture = culture:dunmer
+                }
+                has_trait = gallowsbait
+                NOR = {
+                    has_trait = heresiarch
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_fetcher }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 1
+				has_trait = callous
+			}
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
+		}
+    }
+    option = { #WHORE
+        name = nick_name_giver_nick_the_whore
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = adulterer
+                    has_trait = fornicator
+                }
+                is_female = yes
+                NOR = {
+                    has_trait = chaste
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_whore }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 1
+				has_trait = callous
+			}
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
+		}
+    }
     option = { #the UNBEARABLE
         name =  nick_name_giver_nick_the_unbearable
         trigger = {
@@ -1645,7 +1645,7 @@ tr_nickname_event.4 = {  # personality
 			base = 1
 		}
     }
-    option = {
+    option = { #the_little_impaler
         name = nick_name_giver_nick_the_little_impaler
         trigger = {
             AND = {
@@ -1670,7 +1670,7 @@ tr_nickname_event.4 = {  # personality
 			base = 1
 		}
     }
-    option = {
+    option = { #the_impaler
         name = nick_name_giver_nick_the_impaler
         trigger = {
             AND = {
@@ -1831,6 +1831,10 @@ tr_nickname_event.4 = {  # personality
         set_nickname_effect = { NICKNAME = nick_the_cannibal }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = arbitrary
+			}
 		}
     }
     option = { #BACK
@@ -1847,6 +1851,37 @@ tr_nickname_event.5 = {  # Apperance
     left_portrait = {
         character = root
         animation = thinking
+    }
+    option = { #the_fool
+        name =  nick_name_giver_nick_the_fool
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = dull
+                    has_trait = intellect_bad_1
+                    has_trait = intellect_bad_2
+                    has_trait = intellect_bad_3
+                    has_trait = inbred
+                }
+                has_trait = trusting
+                has_trait = content
+                NOR = {
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_1
+                    has_trait = possessed_genetic
+                    has_trait = shrewd
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_fool }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 10
+				has_trait = humble
+			}
+		}
     }
     option = { #THE PALE
         name = nick_name_giver_nick_chlorus
@@ -1882,8 +1917,8 @@ tr_nickname_event.5 = {  # Apperance
                     OR = {
                         has_cultural_pillar = language_greek
                         has_cultural_pillar = language_ancient_greek
-                }   
-            }
+                    }   
+                }
                 has_trait = disfigured
                 NOR = {
                     has_trait = hygene_bad_1
@@ -2150,8 +2185,8 @@ tr_nickname_event.6 = {  # Achievements
                     has_trait = craven
                     has_trait = callous
                 }
+                prestige_level >= 3
             }
-            prestige_level >= 3
         }
         set_nickname_effect = { NICKNAME = nick_the_immortal_soul }
         add_prestige = -150
@@ -2159,7 +2194,7 @@ tr_nickname_event.6 = {  # Achievements
 			base = 1
 		}
     }
-    option = {
+    option = { #friend_of_charlemagne
         name = nick_name_giver_nick_friend_of_charlemagne
         trigger = {
             AND = {
@@ -2199,7 +2234,7 @@ tr_nickname_event.6 = {  # Achievements
 			base = 1
 		}
     }
-    option = {
+    option = { #nick_the_queen
         name =  nick_name_giver_nick_the_queen
         trigger = {
             AND = {
@@ -2250,6 +2285,7 @@ tr_nickname_event.6 = {  # Achievements
         ai_chance = {
 			base = 1
 		}    
+    }    
     option = { #BACK
         name = back_option
         trigger_event = { id = tr_nickname_event.01 }
