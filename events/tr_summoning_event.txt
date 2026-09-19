@@ -17,6 +17,12 @@ tr_summoning.01 = { #summon demons
                 }
                 desc = construct_animunculi_decision
             }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = tr_summoning_event_summon_dragon_title
+            }
         }
     }
     desc = {
@@ -32,6 +38,12 @@ tr_summoning.01 = { #summon demons
                     culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = tr_summoning_event_summon_dragon_desc
             }
         }
     }
@@ -223,6 +235,25 @@ tr_summoning.01 = { #summon demons
             inheritable = no
             name = thief_fire_elemental
         }
+        add_piety = -200
+    }
+ #AGOT   
+    option = {
+        name = tr_summoning_event_summon_dragon
+        custom_tooltip = tr_summoning_event_summon_dragon_tip
+        trigger = {
+            culture = culture:high_valyrian
+        }
+        spawn_army = {
+            men_at_arms = {
+                type = dragons
+                men = 1
+            }
+            location = root.location
+            inheritable = yes
+            name = dragons
+        }
+        remove_short_term_gold = 500
         add_piety = -200
     }
  ####CANCEL

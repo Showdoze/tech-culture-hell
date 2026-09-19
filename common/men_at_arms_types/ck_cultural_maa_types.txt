@@ -400,8 +400,9 @@
 		automaton = 5
 		demon = 10 #same with the flamethrower, this time at least yeah they can probably claw and bite the shit out of them
 	}
-	can_recruit = {
-		culture = { has_innovation = innovation_dragon_egg }
+	can_recruit = { 
+		always = no
+		#culture = { has_innovation = innovation_dragon_egg }
 	}
 	buy_cost = { gold = 500 }
 	low_maintenance_cost = { gold = 0 }

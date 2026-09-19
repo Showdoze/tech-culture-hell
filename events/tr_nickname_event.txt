@@ -1232,7 +1232,7 @@ tr_nickname_event.0010 = {  # diplomacy
         character = root
         animation = thinking
     }
-    option = {
+    option = { #golden_tongued
         name = nick_name_giver_nick_golden_tongued
         trigger = {
             AND = {
@@ -1655,6 +1655,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = vengeful
                     has_trait = sadistic
                 }
+                dread >= 15
                 is_adult = no
                 NOR = {
                     has_trait = architect
@@ -1680,6 +1681,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = vengeful
                     has_trait = sadistic
                 }
+                dread >= 15
                 is_adult = yes
                 NOR = {
                     has_trait = architect
@@ -1764,6 +1766,14 @@ tr_nickname_event.4 = {  # personality
         set_nickname_effect = { NICKNAME = nick_the_honest }
         ai_chance = {
 			base = 1
+            modifier = {
+				add = 5
+				has_trait = trusting
+			}
+            modifier = {
+				add = 5
+				has_trait = humble
+			}
 		}
     }
     option = { #the DRUNKARD
@@ -1961,6 +1971,25 @@ tr_nickname_event.5 = {  # Apperance
 			base = 1
 		}
     }
+    option = { #nick_the_giant
+        name =  nick_name_giver_nick_the_giant
+        trigger = {
+            AND = {
+                has_trait = giant
+                NOR = {
+                    has_trait = hunchbacked
+                    has_trait = clubfooted
+                    has_trait = drunkard
+                    has_trait = albino
+                    has_trait = spindly
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_giant }
+        ai_chance = {
+			base = 1
+		}
+    } 
     option = { #the hunchback
         name =  nick_name_giver_nick_the_hunchback
         trigger = {
@@ -1998,6 +2027,29 @@ tr_nickname_event.5 = {  # Apperance
 			base = 1
 		}
     } 
+    option = { #the imp
+        name =  nick_name_giver_nick_the_imp
+        trigger = {
+            AND = {
+                has_trait = dwarf
+                NOR = {
+                    has_trait = clubfooted
+                    has_trait = hunchbacked
+                    has_trait = lisping
+                    has_trait = stuttering
+                }
+                OR = {
+                    has_trait = deceitful
+                    has_trait = schemer
+                    has_trait = lifestyle_reveler
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_imp }
+        ai_chance = {
+			base = 1
+		}
+    } 
     option = { #LAME
         name =  nick_name_giver_nick_lame
         trigger = {
@@ -2012,6 +2064,75 @@ tr_nickname_event.5 = {  # Apperance
             }
         }
         set_nickname_effect = { NICKNAME = nick_lame }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #nick_the_lame
+        name =  nick_name_giver_nick_the_lame
+        trigger = {
+            AND = {
+                has_trait = clubfooted
+                NOR = {
+                    has_trait = dwarf
+                    has_trait = hunchbacked
+                    has_trait = lisping
+                    has_trait = stuttering
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_lame }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #nick_the_pale_elf
+        name =  nick_name_giver_nick_the_pale_elf
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:elf_culture
+                    culture = culture:drow
+                    culture = culture:bosmer
+                    culture = culture:altmer
+                    culture = culture:chimer
+                    culture = culture:dunmer
+                    culture = culture:dwemer
+                    culture = culture:falmer
+                    culture = culture:falmer_betrayed
+                    culture = culture:nile_elf
+                    culture = culture:hylian
+                }
+                has_trait = albino
+                #has_trait = immortal
+                NOR = {
+                    has_trait = dwarf
+                    has_trait = hunchbacked
+                    has_trait = giant
+                    has_trait = stuttering
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_pale_elf }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #nick_the_lisp_and_lame
+        name =  nick_name_giver_nick_the_lisp_and_lame
+        trigger = {
+            AND = {
+                has_trait = clubfooted
+                has_trait = lisping
+                NOR = {
+                    has_trait = dwarf
+                    has_trait = hunchbacked
+                    has_trait = giant
+                    has_trait = stuttering
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_lisp_and_lame }
         ai_chance = {
 			base = 1
 		}

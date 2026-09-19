@@ -883,6 +883,10 @@ tr_summon_special_maa_decision = {
         trigger = { has_trait = follow_mage_death }
         reference = "gfx/interface/illustrations/decisions/decision_thief_necro_tower.dds"
     }
+    picture = {
+        trigger = { culture = culture:high_valyrian }
+        reference = "gfx/interface/illustrations/decisions/agot_dragon_egg.dds"
+    }
     title = {
         first_valid = {
             triggered_desc = {
@@ -896,6 +900,12 @@ tr_summon_special_maa_decision = {
                     culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = summon_dragon
             }
             triggered_desc = {
                 trigger = {
@@ -923,6 +933,12 @@ tr_summon_special_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = summon_dragon_desc
+            }
+            triggered_desc = {
+                trigger = {
                     OR = {
                         has_trait = follow_mage_death
                     }
@@ -944,6 +960,12 @@ tr_summon_special_maa_decision = {
                     culture = culture:dwemer
                 }
                 desc = construct_animunculi_decision_tip
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = summon_dragon_tip
             }
             triggered_desc = {
                 trigger = {
@@ -971,6 +993,12 @@ tr_summon_special_maa_decision = {
             }
             triggered_desc = {
                 trigger = {
+                    culture = culture:high_valyrian
+                }
+                desc = summon_dragon_tip
+            }
+            triggered_desc = {
+                trigger = {
                     OR = {
                         has_trait = follow_mage_death
                     }
@@ -984,6 +1012,7 @@ tr_summon_special_maa_decision = {
             faith = faith:satanism
             faith = faith:mage_faith
             culture = culture:dwemer
+            culture = culture:high_valyrian
         }
     }
     is_valid = {
@@ -1000,6 +1029,12 @@ tr_summon_special_maa_decision = {
             AND = {
                 faith = faith:mage_faith
                 piety >= 400
+            }
+            AND = {
+                culture = culture:high_valyrian
+                gold >= 400
+                piety >= 200
+                prestige_level >= 2
             }
         }
     }
@@ -1305,6 +1340,10 @@ tr_choose_nickname_decision = {
     }
     ai_will_do = {
         base = 10
+        modifier = {
+			add = 10
+			has_trait = arrogant
+		}
     }
 }
 tr_house_customizer_decision = {
