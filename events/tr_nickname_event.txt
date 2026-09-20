@@ -1461,6 +1461,33 @@ tr_nickname_event.0013 = {  # intrigue
 			base = 1
 		}
     }
+    option = { #nick_fetcher
+        name = nick_name_giver_nick_fetcher
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:chimer
+                    culture = culture:dunmer
+                }
+                has_trait = gallowsbait
+                NOR = {
+                    has_trait = heresiarch
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_fetcher }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = 1
+				has_trait = callous
+			}
+            modifier = {
+				add = 1
+				has_trait = arbitrary
+			}
+		}
+    }
     option = { #BACK
         name = back_option
         trigger_event = { id = tr_nickname_event.01 }
@@ -1528,33 +1555,6 @@ tr_nickname_event.4 = {  # personality
     left_portrait = {
         character = root
         animation = thinking
-    }
-    option = { #nick_fetcher
-        name = nick_name_giver_nick_fetcher
-        trigger = {
-            AND = {
-                OR = {
-                    culture = culture:chimer
-                    culture = culture:dunmer
-                }
-                has_trait = gallowsbait
-                NOR = {
-                    has_trait = heresiarch
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_fetcher }
-        ai_chance = {
-			base = 1
-            modifier = {
-				add = 1
-				has_trait = callous
-			}
-            modifier = {
-				add = 1
-				has_trait = arbitrary
-			}
-		}
     }
     option = { #WHORE
         name = nick_name_giver_nick_the_whore
@@ -1662,6 +1662,9 @@ tr_nickname_event.4 = {  # personality
                     has_trait = chaste
                     has_trait = humble
                     has_trait = family_first
+                    has_trait = humble
+			        has_trait = content
+			        has_trait = shy
                 }
             }
         }
@@ -1688,6 +1691,9 @@ tr_nickname_event.4 = {  # personality
                     has_trait = compassionate
                     has_trait = humble
                     has_trait = family_first
+                    has_trait = humble
+			        has_trait = content
+			        has_trait = shy
                 }
             }
         }
@@ -1827,7 +1833,7 @@ tr_nickname_event.4 = {  # personality
         name = nick_name_giver_nick_the_cannibal
         trigger = {
             AND = {
-                    has_trait = cannibal
+                has_trait = cannibal
                     OR = {
                         has_trait = gluttonous
                         has_trait = comfort_eater
@@ -1905,8 +1911,8 @@ tr_nickname_event.5 = {  # Apperance
                     OR = {
                         has_cultural_pillar = language_greek
                         has_cultural_pillar = language_ancient_greek
-                }   
-            }
+                    }   
+                }
                 NOR = {
                     has_trait = scaly
                     has_trait = hollow
@@ -2173,6 +2179,23 @@ tr_nickname_event.5 = {  # Apperance
             }
         }
         set_nickname_effect = { NICKNAME = nick_scarface_prefix }
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #Leper
+        name =  nick_name_giver_nick_the_leper
+        trigger = {
+            AND = {
+                has_trait = leper
+                NOR = {
+                    has_trait = lovers_pox
+                    has_trait = early_great_pox
+                    has_trait = great_pox
+                }
+            }
+        }
+        set_nickname_effect = { NICKNAME = nick_the_leper }
         ai_chance = {
 			base = 1
 		}

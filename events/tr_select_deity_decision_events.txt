@@ -2115,6 +2115,10 @@ tr_select_deity.01 = {
                 add = 5
                 has_trait = class_cleric_war
             }
+            modifier = {
+                add = 1
+                has_trait = overseer
+            }
         }
     }
     option = {
@@ -2161,7 +2165,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #corellon_larethian
         name = god_choice_corellon_larethian
         trigger = {
             AND = {
@@ -2191,7 +2195,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #cyric
         name = god_choice_cyric
         trigger = {
             AND = {
@@ -2242,7 +2246,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #eilistraee
         name = god_choice_eilistraee
         trigger = {
             AND = {
@@ -2290,7 +2294,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #garl_glittergold
         name = god_choice_garl_glittergold
         trigger = {
             AND = {
@@ -2312,7 +2316,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #gond
         name = god_choice_gond
         trigger = {
             AND = {
@@ -2338,7 +2342,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #gruumsh
         name = god_choice_gruumsh
         trigger = {
             AND = {
@@ -2362,9 +2366,17 @@ tr_select_deity.01 = {
                 add = 5
                 has_trait = class_cleric_tempest
             }
+            modifier = {
+                add = 5
+                has_trait = wrathful
+            }
+            modifier = {
+                add = 5
+                has_trait = one_eyed
+            }
         }
     }
-    option = {
+    option = { #helm
         name = god_choice_helm
         trigger = {
             AND = {
@@ -2809,14 +2821,14 @@ tr_select_deity.01 = {
                 add = 5
                 has_trait = schemer
             }
-            modifier = {
-                add = 5
-                has_trait = class_cleric_trick
-            }
-            modifier = {
-                add = 5
-                has_trait = class_cleric_death
-            }
+            #modifier = {
+            #    add = 5
+            #    has_trait = class_cleric_trick
+            #}
+            #modifier = {
+            #    add = 5
+            #    has_trait = class_cleric_death
+            #}
         }
     }
     option = {
@@ -2846,7 +2858,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #Talos
         name = god_choice_talos
         trigger = {
             AND = {
@@ -2857,6 +2869,7 @@ tr_select_deity.01 = {
                 }
                 NOT = {
                     has_trait = follow_talos
+                    has_trait = architect
                 }
             }
         }
@@ -2865,7 +2878,11 @@ tr_select_deity.01 = {
             base = 1
             modifier = {
                 add = 5
-                has_trait = class_cleric_tempest
+                has_trait = wrathful
+            }
+            modifier = {
+                add = 1
+                has_trait = reaver
             }
         }
     }

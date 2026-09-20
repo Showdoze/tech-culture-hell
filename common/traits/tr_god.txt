@@ -2080,9 +2080,10 @@
     monthly_piety = 0.3
 	monthly_prestige = 0.03
 	tyranny_gain_mult = -0.5
-	county_opinion_add = 5
+	monthly_county_control_growth_add = 0.5
 	dread_baseline_add = 10
 	scheme_discovery_chance_mult = 0.1
+	opposite_opinion = -20
 	flag = can_murder_own_children
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
@@ -2100,13 +2101,18 @@
 		}
 	}
     opposites = {
+		follow_mystra
+		follow_cyric
 	}
 	compatibility = {
 		overseer = 15
 		administrator = 10
 		schemer = 10
 		diplomat = 10
+		follow_bhaal = 15
+		follow_myrkul = 15
 	}
+	ai_rationality = 20
  }
  follow_bhaal = {
     category = fame
@@ -2119,6 +2125,8 @@
 		kinslayer_2 = 15
 		kinslayer_3 = 20
 		torturer = 10
+		follow_bane = 15
+		follow_myrkul = 15
 	}
 	dread_baseline_add = 10
 	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
@@ -2127,6 +2135,7 @@
 	flag = can_murder_own_children
 	flag = tr_follow_god_trait
 	monthly_piety_gain_per_dread_add = 0.03
+	opposite_opinion = -30
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -2141,7 +2150,13 @@
 		}
 	}
     opposites = {
+		follow_ilmater
+		follow_lathander
+		follow_helm
+		follow_tyr
 	}
+	ai_honor = -75
+	ai_compassion = -200
  }
  follow_corellon_larethian = {
     category = fame
@@ -2333,7 +2348,16 @@
 			desc = trait_follow_gruumsh_character_desc
 		}
 	}
+	opposite_opinion = -20
     opposites = {
+		follow_corellon_larethian
+		follow_moradin
+	}
+	compatibility = {
+		one_eyed = 5
+		wrathful = 10
+		reaver = 10
+		lifestyle_blademaster = 10
 	}
  }
  follow_helm = {
@@ -2441,6 +2465,9 @@
 		}
 	}
     opposites = {
+		follow_bane
+		follow_bhaal
+		follow_myrkul
 	}
  }
  follow_kelemvor = {
@@ -2596,11 +2623,13 @@
 			desc = trait_follow_lolth_character_desc
 		}
 	}
+	opposite_opinion = -30
 	compatibility = {
 		follow_eilistraee = -30 #Rival
 		schemer = 15
 		family_first = 10
 		lustful = 10
+		deceitful = 10
 	}
     opposites = {
 		follow_eilistraee
@@ -2636,9 +2665,12 @@
 		sadistic = 15
 		callous = -10
 		compassionate = -15
+		follow_bane = 5
+		follow_bhaal = 5
 	}
     opposites = {
 	}
+	ai_compassion = -200
  }
  follow_mielikki = {
     category = fame
@@ -2745,8 +2777,19 @@
 			desc = trait_follow_myrkul_character_desc
 		}
 	}
+	opposite_opinion = -20
     opposites = {
+		follow_lathander
+		follow_mielikki
 	}
+	compatibility = {
+		follow_shar = 10
+		follow_bane = 15
+		follow_bhaal = 15
+		follow_lathander = -20
+		follow_mielikki = -20
+	}
+	ai_rationality = 75
  }
  follow_mystra = {
     category = fame
@@ -2886,10 +2929,16 @@
 		deceitful = 15
 		torturer = 5
 		schemer = 10
+		patient = 5
+		follow_myrkul = 5
 	}
+	opposite_opinion = -30
     opposites = {
 		follow_selune
+		follow_mystra
+		follow_lathander
 	}
+	ai_honor = -20
  }
  follow_silvanus = {
     category = fame
@@ -2953,6 +3002,10 @@
 	}
     opposites = {
 	}
+	ai_rationality = -35
+	ai_boldness = 35
+	ai_compassion = -20
+	ai_vengefulness = 15
  }
  follow_tempus = {
     category = fame

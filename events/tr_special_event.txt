@@ -1,5 +1,182 @@
 namespace = tr_special_event
-
+tr_special_event.09 = { #Self harm
+    type = character_event
+    title = self_harm_events
+    window = visit_settlement_window
+    theme = mental_health
+    desc = self_harm_events
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+    option = { #ONE EYE LIKE ODIN
+        name = self_harm_events_odin
+        trigger = {
+            AND = {
+                OR = {
+                    culture = culture:norse
+                    faith = faith:norse_pagan
+                    has_trait = follow_odin
+                }    
+                NOR = {
+                    has_trait = one_eyed
+                    has_trait = blind
+                }
+            }
+        }
+        add_trait = one_eyed
+        add_piety = 200
+        add_learning_skill = 10
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 100
+				has_trait = follow_odin
+			}
+		}
+    }
+    option = { #GIVE EYE TO THE TRICKSTER
+        name = self_harm_events_trickster
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:green_cult
+                    faith = faith:primative_cult
+                    faith = faith:pagan_faith
+                    has_trait = lifestyle_mystic
+                    has_trait = witch
+                }    
+                NOR = {
+                    has_trait = one_eyed
+                    has_trait = blind
+                }
+            }
+        }
+        add_trait = one_eyed
+        add_prestige = 200
+        add_piety = 200
+        ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_trait = cynical
+			}
+		}
+    }
+    option = { #CURE CLUBFOOT
+        name = self_harm_events_cure_for_clubfoot
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = clubfooted
+                NOR = {
+                    has_trait = one_legged
+                }
+            }
+        }
+        remove_trait = clubfooted
+        add_trait = one_legged
+        add_prestige = 200
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #OATH OF THE DEEP BECOME SCALY
+        name = self_harm_events_oath_of_the_deep
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:deep_cult
+                    culture = culture:innsmouth
+                }
+                NOR = {
+                    has_trait = scaly
+                }
+            }
+        }
+        add_trait = scaly
+        add_piety = 200
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #FROM DWARF TO SPINDLY
+        name = self_harm_events_dwarf_be_gone
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = dwarf
+            }
+        }
+        remove_trait = dwarf
+        add_trait = spindly
+        add_trait = wounded_1
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #FROM hunchbacked be gone
+        name = self_harm_events_hunchback_no_more
+        trigger = {
+            AND = {
+                OR = {
+                    has_trait = possessed_1
+                    has_trait = lunatic_1
+                    has_trait = lunatic_genetic
+                    has_trait = possessed_genetic
+                }
+                has_trait = hunchbacked
+            }
+        }
+        remove_trait = hunchbacked
+        add_trait = spindly
+        add_trait = wounded_1
+        ai_chance = {
+			base = 1
+		}
+    }
+    option = { #whip self
+        name = self_harm_events_loviatar_love
+        trigger = {
+            AND = {
+                NOR = {
+                    has_trait = wounded_1
+                    has_trait = wounded_2
+                    has_trait = wounded_3
+                    has_trait = maimed
+                }
+                has_trait = follow_loviatar
+            }
+        }
+        stress_impact = {
+			flagellant = -50
+		}
+        add_character_modifier = {
+			modifier = Loviatar_s_Love
+			years = 5
+		}
+        add_piety = 200
+        add_trait = wounded_1
+        ai_chance = {
+			base = 1
+		}
+    }
+ ####Opt-Out
+    option = {
+        name = tr_cancel
+        custom_tooltip = tr_cancel_tip
+    }
+}
 tr_special_event.10 = { #Want a Child
     type = character_event
     title = tr_special_event_child

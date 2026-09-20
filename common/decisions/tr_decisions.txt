@@ -1313,13 +1313,20 @@ tr_self_harm_decision = {
                         has_trait = spindly
                     }
                 }
-            }
-            NOR = {
+                AND = {#Laviator
+                    has_trait = follow_loviatar
+                    NOR = {
+                        has_trait = wounded_1
+                        has_trait = wounded_2
+                        has_trait = wounded_3
+                        has_trait = maimed
+                    }
+                }
             }
         }
     }
     is_valid = { piety >= 50 }
-    effect = { trigger_event = { id = tr_self_harm_event.01 } }
+    effect = { trigger_event = { id = tr_special_event.09 } }
     ai_will_do = {
         base = 1
     }
