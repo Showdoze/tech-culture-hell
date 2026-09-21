@@ -1111,7 +1111,7 @@ tr_select_deity.01 = {
         }
     }
 ######Roman PAGAN
-    option = {
+    option = { #Sol
         name = god_choice_sol
         trigger = {
             AND = {
@@ -1130,7 +1130,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #MARs
         name = god_choice_mars
         trigger = {
             AND = {
@@ -1149,7 +1149,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = {#JUPITER JOVE
         name = god_choice_jove
         trigger = {
             AND = {
@@ -1160,6 +1160,25 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_jupiter
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = august
+            }
+        }
+    }
+    option = {#JUNO
+        name = god_choice_juno
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_juno
+                }
+            }
+        }
+        add_trait = follow_juno
         ai_chance = {
             base = 1
             modifier = {
@@ -1459,7 +1478,7 @@ tr_select_deity.01 = {
             base = 1
             modifier = {
                 add = 10
-                has_trait = schemer
+                has_trait = lifestyle_mystic
             }
             modifier = {
                 add = 5
@@ -1483,6 +1502,48 @@ tr_select_deity.01 = {
             modifier = {
                 add = 10
                 has_trait = lifestyle_blademaster
+            }
+        }
+    }
+    option = { #Freyr
+        name = god_choice_freyr
+        trigger = {
+            AND = {
+                faith = faith:norse_pagan
+                NOT = {
+                    has_trait = follow_freyr
+                }
+            }
+        }
+        add_trait = follow_freyr
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = lifestyle_gardener
+            }
+            modifier = {
+                add = 5
+                has_trait = lifestyle_herbalist
+            }
+        }
+    }
+    option = { #Loki
+        name = god_choice_loki
+        trigger = {
+            AND = {
+                faith = faith:norse_pagan
+                NOT = {
+                    has_trait = follow_loki
+                }
+            }
+        }
+        add_trait = follow_loki
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 10
+                has_trait = schemer
             }
         }
     }

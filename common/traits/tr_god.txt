@@ -32,7 +32,16 @@
 	}
     opposites = {
         follow_mars
+		follow_juno
 		follow_jupiter
+		follow_neptune
+		follow_minerva
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
 	}
  }
  follow_mars = {
@@ -65,8 +74,17 @@
 		follow_thor = 10
 	}
     opposites = {
-        follow_sol
+		follow_juno
 		follow_jupiter
+		follow_sol
+		follow_neptune
+		follow_minerva
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
 	}
  }
  follow_jupiter = {
@@ -101,7 +119,375 @@
 	}
     opposites = {
         follow_mars
+		follow_juno
 		follow_sol
+		follow_neptune
+		follow_minerva
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_juno = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	fertility = 0.2
+	dynasty_house_opinion = 10
+	close_relative_opinion = 15
+	spouse_opinion = 20
+	stress_loss_mult = 0.2
+	same_faith_opinion = 5
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_juno_desc
+			}
+			desc = trait_follow_juno_character_desc
+		}
+	}
+	compatibility = {
+		follow_sol = 10
+		follow_mars = 10
+		follow_jupiter = 10
+		follow_thor = 10
+		family_first = 10
+	}
+    opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_neptune
+		follow_minerva
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_neptune = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	compatibility = {
+		drunkard = 5
+		lifestyle_reveler = 5
+		viking = 15
+	}
+	monthly_prestige = 0.02
+	embarkation_cost_mult = -0.05
+    naval_movement_speed_mult = 0.05
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_neptune_desc
+			}
+			desc = trait_follow_neptune_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_minerva = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	compatibility = {
+		logistician = 5
+		strategist = 5
+	}
+	monthly_prestige = 0.02
+	learning = 2
+    diplomacy = 2
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	opinion_of_female_rulers = 5
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_minerva_desc
+			}
+			desc = trait_follow_minerva_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_neptune
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_venus = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	attraction_opinion = 10
+    close_relative_opinion = 10
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_venus_desc
+			}
+			desc = trait_follow_venus_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_apollo = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	health = 0.25
+    vassal_opinion = 10
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_apollo_desc
+			}
+			desc = trait_follow_apollo_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_venus
+		follow_diana
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_diana = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	prowess = 4
+    diplomacy = 2
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_diana_desc
+			}
+			desc = trait_follow_diana_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_venus
+		follow_apollo
+		follow_vulcan
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_vulcan = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	stewardship = 2
+    domain_tax_mult = 0.05
+    attraction_opinion = -10
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	compatibility = {
+		diligent = 15
+		clubfooted = 10
+		one_legged = 10
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_vulcan_desc
+			}
+			desc = trait_follow_vulcan_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_mercury
+		follow_ceres
+	}
+ }
+ follow_mercury = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	domain_tax_same_faith_mult = 0.1
+    monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_mercury_desc
+			}
+			desc = trait_follow_mercury_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_ceres
+	}
+ }
+ follow_ceres = {
+    category = fame
+	random_creation = 0
+	same_opinion = 20
+    monthly_piety = 0.3
+	monthly_prestige = 0.02
+	stewardship = 1
+    domain_tax_mult = 0.02
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_ceres_desc
+			}
+			desc = trait_follow_ceres_character_desc
+		}
+	}
+	opposites = {
+        follow_mars
+		follow_jupiter
+		follow_sol
+		follow_juno
+		follow_minerva
+		follow_neptune
+		follow_venus
+		follow_apollo
+		follow_diana
+		follow_vulcan
+		follow_mercury
 	}
  }
 #norse
@@ -131,6 +517,8 @@
 	}
     opposites = {
 		follow_odin
+		follow_freyr
+		follow_loki
 	}
 	compatibility = {
 		athletic = 5
@@ -138,6 +526,8 @@
 		viking = 15
 		follow_odin = 10
 		follow_thor = 10
+		follow_freyr = 10
+		follow_loki = 10
 	}
  }
  follow_odin = {
@@ -150,6 +540,8 @@
 		one_eyed = 15
 		follow_odin = 10
 		follow_thor = 10
+		follow_freyr = 10
+		follow_loki = 10
 	}
 	monthly_prestige = 0.02
 	intrigue = 3
@@ -173,6 +565,88 @@
 	}
     opposites = {
 		follow_thor
+		follow_freyr
+		follow_loki
+	}
+ }
+ follow_freyr = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.3
+	compatibility = {
+		lifestyle_herbalist = 10
+		lifestyle_gardener = 10
+		family_first = 10
+		follow_odin = 10
+		follow_thor = 10
+		follow_freyr = 10
+		follow_loki = 10
+	}
+	monthly_prestige = 0.02
+	fertility = 0.25
+	monthly_county_control_growth_add = 0.1
+	same_faith_opinion = 5
+	long_reign_bonus_mult = 0.25
+	short_reign_duration_mult = -0.25
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_freyr_desc
+			}
+			desc = trait_follow_freyr_desc
+		}
+	}
+    opposites = {
+		follow_thor
+		follow_odin
+		follow_loki
+	}
+ }
+ follow_loki = {
+    category = fame
+	random_creation = 0
+    monthly_piety = 0.3
+	compatibility = {
+		schemer = 10
+		lifestyle_mystic = 10
+		deceitful = 5
+		follow_odin = 10
+		follow_thor = 10
+		follow_freyr = 10
+		follow_loki = 10
+	}
+	monthly_prestige = 0.02
+	monthly_piety_gain_per_dread_add = 0.03
+	intrigue = 5
+	owned_scheme_secrecy_add = 10
+	enemy_hostile_scheme_phase_duration_add = 5
+	same_faith_opinion = 5
+	flag = tr_follow_god_trait
+	ruler_designer_cost = 15
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						exists = this
+					}
+				}
+				desc = trait_follow_loki_desc
+			}
+			desc = trait_follow_loki_desc
+		}
+	}
+    opposites = {
+		follow_thor
+		follow_odin
+		follow_freyr
 	}
  }
 #MAGe
@@ -1013,6 +1487,7 @@
     diplomacy = 2
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
+	opinion_of_female_rulers = 5
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -1049,6 +1524,7 @@
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	attacker_advantage = 3
+	opinion_of_female_rulers = 5
     prowess = 4
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
