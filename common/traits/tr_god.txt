@@ -9,6 +9,7 @@
 	flag = lower_chance_of_dying_in_combat
 	flag = tr_follow_god_trait
 	same_faith_opinion = 5
+	same_opinion = 20
 	ruler_designer_cost = 15
 	desc = {
 		first_valid = {
@@ -52,6 +53,7 @@
 	martial = 2
     siege_phase_time = -0.01
 	same_faith_opinion = 5
+	same_opinion = 20
 	ruler_designer_cost = 15
 	flag = tr_follow_god_trait
 	desc = {
@@ -95,6 +97,7 @@
 	controlled_province_advantage = 3
 	dynasty_opinion = 10
 	same_faith_opinion = 5
+	same_opinion = 20
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -142,6 +145,7 @@
 	spouse_opinion = 20
 	stress_loss_mult = 0.2
 	same_faith_opinion = 5
+	same_opinion = 20
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -496,9 +500,11 @@
 	random_creation = 0
     monthly_piety = 0.3
 	monthly_prestige = 0.02
+	same_opinion = 20
 	prowess = 3
 	prowess_per_prestige_level = 1
 	stewardship = 1
+	travel_safety = 5
 	same_faith_opinion = 5
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
@@ -534,6 +540,7 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.3
+	same_opinion = 20
 	compatibility = {
 		schemer = 10
 		overseer = 10
@@ -548,6 +555,7 @@
 	intrigue_per_prestige_level = 1
 	monthly_piety_gain_per_dread_add = 0.03
 	same_faith_opinion = 5
+	learn_language_scheme_phase_duration_add = 20
 	flag = tr_follow_god_trait
 	ruler_designer_cost = 15
 	desc = {
@@ -573,6 +581,7 @@
     category = fame
 	random_creation = 0
     monthly_piety = 0.3
+	same_opinion = 20
 	compatibility = {
 		lifestyle_herbalist = 10
 		lifestyle_gardener = 10
@@ -612,6 +621,7 @@
  follow_loki = {
     category = fame
 	random_creation = 0
+	same_opinion = 20
     monthly_piety = 0.3
 	compatibility = {
 		schemer = 10
@@ -1111,7 +1121,7 @@
  follow_osiris = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	controlled_province_advantage = 3
@@ -1147,7 +1157,7 @@
  follow_isis = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	spouse_opinion = 20
@@ -1182,7 +1192,7 @@
  follow_horus = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	learning = 2
@@ -1216,7 +1226,7 @@
  follow_seth = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	attacker_advantage = 3
@@ -1250,7 +1260,7 @@
  follow_anubis = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	stewardship_per_piety_level = 1
@@ -1286,7 +1296,7 @@
  follow_bastet = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	fertility = 0.25
@@ -1323,7 +1333,7 @@
  follow_amun = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	fertility = 0.25
@@ -1360,7 +1370,7 @@
  follow_hathor = {
     category = fame
 	random_creation = 0
-	same_opinion = 5
+	same_opinion = 20
     monthly_piety = 0.3
 	monthly_prestige = 0.02
 	intrigue = 1
@@ -2605,7 +2615,7 @@
 		follow_myrkul = 15
 	}
 	dread_baseline_add = 10
-	hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	hostile_scheme_phase_duration_add = 20
 	intrigue_per_piety_level = 1
 	ruler_designer_cost = 15
 	flag = can_murder_own_children
@@ -2924,7 +2934,7 @@
 	monthly_prestige = 0.01
 	learning_per_piety_level = 2
 	learning_per_prestige_level = 1
-	learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	learn_language_scheme_phase_duration_add = 20
 	ruler_designer_cost = 15
 	flag = tr_follow_god_trait
 	desc = {
@@ -4041,6 +4051,8 @@
 	random_creation = 0
     monthly_piety = 0.3
 	zealot_same_faith_opinion = -25
+	same_opinion = 20
+	same_opinion_if_same_faith = 10
 	christianity_religion_opinion = 10
 	ruler_designer_cost = 15
 	flag = tr_follow_god_trait
@@ -4072,6 +4084,8 @@
     monthly_piety = 0.3
 	zealot_same_faith_opinion = -25
 	islam_religion_opinion = 10
+	same_opinion = 20
+	same_opinion_if_same_faith = 10
 	ruler_designer_cost = 15
 	flag = tr_follow_god_trait
 	desc = {
