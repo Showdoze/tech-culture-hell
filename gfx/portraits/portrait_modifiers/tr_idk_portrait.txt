@@ -3247,6 +3247,88 @@ tr_idk_patches = {
         }
     }
 }
+tr_idk_ranni = {
+
+    usage = game
+    selection_behavior = max
+    priority = 50
+
+    tr_ranni = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = cloaks
+                template = fp1_cloak
+                accessory = female_furs_secular_fp1_nobility_02
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = western_hairstyles_wavy
+                accessory = female_hair_western_02
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = ccp4_khanty_commoner_clothes
+                accessory = f_clothes_sec_ccp4_khanty_com_02
+            }
+            accessory = {
+                mode = add
+                gene = headgear
+                template = mpo_mongol_commoner
+                accessory = f_headgear_sec_mpo_mongol_com_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = no_legwear
+                range = { 1 1 }
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_hue
+                value = 0.6
+                template = custom_skin_hue
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_saturation
+                value = 0.7
+                template = custom_skin_saturation
+            }
+            morph = {
+                mode = replace
+                gene = tr_skin_value
+                value = 1
+                template = custom_skin_value
+            }
+            color = {
+                gene = skin_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+            color = {
+                gene = hair_color
+                mode = replace
+
+                x = 0
+                y = 0
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                exists = this
+                exists = character:tr_ranni
+                this = character:tr_ranni
+            }
+        }
+    }
+}
 tr_idk_corvus = {
 
     usage = game
