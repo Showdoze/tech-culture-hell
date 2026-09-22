@@ -1199,6 +1199,12 @@ tenet_christan_mystical = {
     piety_cost = { value = faith_tenet_cost_high }
     
     parameters = {
+        take_vows_active = yes
+        can_use_christian_artefacts = yes
+        hostility_override_special_doctrine_is_christian_faith = 2
+        is_christian_faith_bilateral_loc_override = 2
+        christian_syncretic_actor_opinion_active = yes
+        opinion_of_christian_syncretic_recipient_opinion_active = 30
         piety_from_marrying_lowborn_active = yes
         reincarnation_resistance_to_conversion = yes
         reincarnation_events_active = yes
@@ -1217,8 +1223,8 @@ tenet_christan_mystical = {
         opinion_of_jewish_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
     }
     traits = {
-        virtues = { lifestyle_mystic lustful }
-        sins = { temperate forgiving compassionate chaste }
+        virtues = { lifestyle_mystic temperate forgiving compassionate }
+        sins = { gluttonous vengeful sadistic }
     }
     character_modifier = {
     }
