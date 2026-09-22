@@ -740,3 +740,19 @@ language_rat = {
 	}
 	color = valenwood_brown
 }
+language_demonic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_demonic
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_demonic }
+			multiply = 10
+		}
+	}
+	color = red
+}

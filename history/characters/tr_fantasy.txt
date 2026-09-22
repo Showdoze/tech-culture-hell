@@ -3683,16 +3683,19 @@
 		birth = yes
 		effect = { add_character_flag = has_scripted_appearance }
 	}
-	848.1.05 = {
-		add_trait = possessed_1
-		set_character_faith = faith:satanism
-	}
-	855.5.10 = { add_trait = immortal }
-	860.1.1 = {
+	835.2.10 = {
 		effect = {
 			learn_language = language_anglic
 	    }
 	}
+	848.1.05 = {
+		add_trait = possessed_1
+		set_character_faith = faith:satanism
+		effect = {
+			learn_language = language_demonic
+	    }
+	}
+	855.5.10 = { add_trait = immortal }
  }
  tr_corvus = {
     name = "Corvus"
