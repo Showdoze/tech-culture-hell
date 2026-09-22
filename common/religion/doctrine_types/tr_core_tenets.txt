@@ -1,1229 +1,1225 @@
-tr_doctrines = {
-	group = "core_tenets"
-	number_of_picks = 0
-
-	tenet_albino = {
-		icon = tenet_albino_worship
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		traits = {
-			virtues = {
-				albino = 3
-			}
-		}
-		parameters = {
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			select_personal_god_active = yes
-		}
-		character_modifier = {
-			dread_baseline_add = 5
-		}
-	}
-	tenet_kemetic = {
-		icon = core_tenet_kemetic
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			select_personal_god_active = yes
-			divine_marriage_opinion = 10
-			divine_marriage_piety_gain_active = yes
-			divine_the_stars_active = yes
-			legalism_modified_law_costs = yes
-			legalism_modified_law_costs_2 = yes
-			legalism_reduced_faction_virtues = yes
-			legalism_increased_faction_sins = yes
-			legalism_trust_just_leader_active = yes
-		}
-		character_modifier = {
-		}
-		traits = {
-			virtues = { 
-				just = 2 lifestyle_physician pure_blooded = 2 forgiving just temperate
-				#follow_osiris follow_isis follow_hathor 
-			    #follow_horus follow_seth follow_anubis follow_bastet follow_amun 
-			}
-			sins = { 
-				arbitrary = 2 greedy deceitful hygene_bad_1 hygene_bad_2 = 2
-			}
-		}
-	}
-	tenet_atenist = {
-		icon = core_tenet_kemetic
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			divine_marriage_opinion = 10
-			divine_marriage_piety_gain_active = yes
-			divine_the_stars_active = yes
-			legalism_modified_law_costs = yes
-			legalism_modified_law_costs_2 = yes
-			legalism_reduced_faction_virtues = yes
-			legalism_increased_faction_sins = yes
-			legalism_trust_just_leader_active = yes
-		}
-		character_modifier = {
-		}
-		traits = {
-			virtues = { 
-				just = 2 lifestyle_physician pure_blooded = 2  forgiving just temperate 
-			}
-			sins = { 
-				arbitrary = 2 greedy deceitful hygene_bad_1 hygene_bad_2 = 2
-				#follow_osiris follow_isis 
-			    #follow_horus follow_seth follow_anubis follow_bastet follow_amun 
-				#follow_hathor 
-			}
-		}
-	}
-	tenet_hellenic = {
-		icon = core_tenet_hellenic_syncretism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			increased_dynasty_prestige_birth_mult = 1
-			increased_dynasty_prestige_marriage_mult = 1
-			increased_dynasty_prestige_long_reign_mult = 0.5
-			pilgrimage_decision_active = yes
-			select_personal_god_active = yes
-			divine_the_stars_active = yes
-			piety_from_feasts_active = yes
-			consolamentum_active = yes
-		}
-		character_modifier = {
-			short_reign_duration_mult = -0.5
-			close_relative_opinion = 5
-		}
-	}
-	tenet_science = {
-		icon = core_tenet_science
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			holy_wars_forbidden = yes
-			piety_from_long_peace = 1
-			select_personal_god_active = yes
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			literalist_debate_enabled = yes
-		}
-		traits = {
-			virtues = { 
-				architect cynical scholar journaller class_cleric_knowledge 
-				intellect_good_1 intellect_good_2 intellect_good_3
-			}
-			sins = { 
-				intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull 
-			}
-		}
-		character_modifier = {
-			close_relative_opinion = 5
-			ignore_opinion_of_different_faith = yes
-			learning_per_piety_level = 5
-			monthly_piety_from_buildings_mult = 0.24
-			hills_development_growth_factor = 0.15
-			hills_tax_mult = 0.1
-			hills_levy_size = 0.3
-			hills_advantage = 5
-		}
-	}
-	tennet_blood_m = {
-		icon = core_tenet_bloodm #core_tenet_gruesome_festivals
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			death_is_glory = yes
-			sanctioned_assassinations = yes 
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			self_mutilation_active = yes
-			consolamentum_active = yes
-			cannibalism_legal = yes
-		}
-		character_modifier = {
-			dread_baseline_add = 5
-			prowess = 2
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
-		}
-		traits = {
-			virtues = { 
-				torturer sadistic vengeful murderer gallowsbait follow_ripper follow_caleb 
-				#follow_mage_death ds_covenant_moundmakers 
-			}
-		    sins = { forgiving compassionate }
-		} 
-	}
-	tenet_tr_sacred_shadows = {
-		icon = core_tenet_sacred_shadows
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		name = {first_valid = {desc = tenet_sacred_shadows_name}}
-		desc = {first_valid = {desc = tenet_sacred_shadows_desc}}
-		parameters = {
-			piety_gain_from_successful_intrigue_schemes = yes
-			adherents_more_likely_to_join_schemes = yes
-			tenet_unlocks_t4_bounties_for_whispers = yes
-			master_assassin_court_position_unlocked = yes 
-			death_is_glory = yes
-			sanctioned_assassinations = yes
-			unlock_voluntary_laampdom_faith = yes
-		}
-		character_modifier = {
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
-			prowess = 2
-		}
-		traits = {
-			virtues = { deceitful vengeful = 1 }
-			sins = { honest craven = 1 }
-		}
-	}
-	tenet_tribunal = {
-		icon = core_tenet_tribunal
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			select_personal_god_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-		}
-		traits = {
-			virtues = { brave deceitful = 2 arrogant  }
-			sins = { craven lazy forgiving }
-		}
-		character_modifier = {
-			close_relative_opinion = 5
-		}
-	}
-	tenet_stoicism = {
-		icon = core_tenet_stoicism
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = { patient rakish diligent }
-			sins = { impatient irritable arbitrary }
-		}
-		parameters = {
-			meditation_mechanics_active = yes
-		}
-	}
-	tenet_hist = {
-		icon = core_tenet_hist
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = { 
-				fickle patient content reincarnation class_sorcerer_dragon 
-				class_ranger_gloom class_ranger_master class_ranger_hunter 
-			}
-			sins = { 
-				stubborn vengeful arrogant 
-			}
-		}
-		parameters = {
-			meditation_mechanics_active = yes
-		}
-	}
-	tenet_ds1 = {
-		icon = core_tenet_ds1
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = {
-				fickle patient content ds_covenant_blue 
-			}
-			sins = { 
-				stubborn vengeful arrogant hollow class_sorcerer_dragon 
-				follow_kereska follow_bahamut follow_tiamat 
-			}
-		}
-		parameters = {
-			meditation_mechanics_active = yes
-			select_personal_god_active = yes
-		}
-		character_modifier = {
-			prowess = 10
-			prowess_per_piety_level = 2
-			prowess_per_prestige_level = 3
-			prowess_per_stress_level = 1
-		}
-	}
-	tenet_imperial_cult = {
-		icon = core_tenet_imperial_cult
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = {
-				born_in_the_purple august overseer class_paladin_crown class_bard_college_of_valour 
-			    class_bard_college_of_valour class_cleric_knowledge class_fighter_master 
-			}
-			sins = {
-				peasant_born heresiarch disinherited 
-			}
-		}
-		parameters = {
-			meditation_mechanics_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			consolamentum_active = yes
-		}
-		character_modifier = {
-			short_reign_duration_mult = -0.5
-			different_faith_county_opinion_mult = -0.25
-			different_faith_liege_opinion = 15
-			opinion_of_different_faith_liege = 15
-		}
-	}
-	tenet_hyrule = {
-		icon = core_tenet_hyrule
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-		}
-		traits = {
-			virtues = { 
-				lifestyle_mystic calm temperate brave 
-			}
-			sins = { 
-				wrathful gluttonous craven arbitrary 
-			}
-		}
-		character_modifier = {
-			close_relative_opinion = 5
-		}
-	}
-	tenet_moon_worship = {
-		icon = core_tenet_moon_cat
-		is_shown = { always = no }
-		piety_cost = { value =  690 }
-		traits = {
-			virtues = { 
-				generous gregarious patient lifestyle_mystic follow_selune 
-				class_druid_moon class_druid_star  follow_eilistraee #ds_covenant_darkmoon
-			}
-			sins = { 
-				callous shy impatient follow_shar follow_lolth 
-			}
-		}
-		parameters = {
-			meditation_mechanics_active = yes
-			mystic_birthright_active = yes
-		}
-		character_modifier = {
-			learning_per_piety_level = 1
-			monthly_piety_from_buildings_mult = 0.1
-			hills_development_growth_factor = 0.1
-			hills_tax_mult = 0.05
-			hills_levy_size = 0.1
-			hills_advantage = 1
-		}
-	}
-	tenet_hammerite = {
-		icon = core_tenet_hammerite
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			clergy_can_fight = yes
-			fervor_per_holy_site = 1
-		}
-		traits = {
-			virtues = { 
-				architect scholar temperate zealous theologian 
-			}
-			sins = { 
-				lazy cynical lifestyle_mystic drunkard follow_mage_death 
-				class_wizard_necromancy class_cleric_death #class_monk_drunk 
-			}
-		}
-		character_modifier = {
-			mechanist_faith_opinion = -10
-			pagan_faith_opinion = -25
-			close_relative_opinion = 5
-			learning_per_piety_level = 5
-			monthly_piety_from_buildings_mult = 0.24
-		}
-	}
-	tenet_roman = {
-		icon = core_tenet_roman
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		traits = {
-			virtues = { 
-				family_first loyal follow_thor follow_mars follow_sol follow_jupiter 
-				class_fighter_champion class_fighter_master 
-			}
-		    sins = { disloyal }
-		}
-		parameters = {
-			conquest_cb_enabled = yes
-			invasion_cb_enabled = yes
-			human_sacrifice_active = yes
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			piety_from_feasts_active = yes
-			same_culture_conversion_bonus_active = yes
-			same_faith_promote_culture_bonus_active = yes
-			piety_from_feasts_active = yes
-			consolamentum_active = yes
-			increased_dynasty_prestige_birth_mult = 1
-			increased_dynasty_prestige_marriage_mult = 1
-			increased_dynasty_prestige_long_reign_mult = 0.5
-			pilgrimage_decision_active = yes
-		}
-		character_modifier = {
-			short_reign_duration_mult = -0.5
-			dread_baseline_add = 5
-			prowess = 2
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
-			close_relative_opinion = 5
-		}
-	}
-	tenet_sun_stars = {
-		icon = core_tenet_astrology
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			summer_festivals_active = yes
-			trial_by_sun_active = yes
-			divine_the_stars_active = yes
-		}
-		character_modifier = {
-			naval_movement_speed_mult = 0.25
-		}
-	}
-	tenet_tlaloc = {
-		icon = core_tenet_astrology
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		traits = {
-		    virtues = { just temperate callous  }
-		    sins = { arrogant gluttonous arbitrary }
-	    }
-		parameters = {
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-		}
-		character_modifier = {
-			ai_war_chance = 1
-			ai_war_cooldown = -0.5
-		}
-	}
-	tenet_tezcatlipoca = {
-		icon = core_tenet_astrology
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		traits = {
-			virtues = { vengeful = 1 just temperate callous }
-			sins = { craven = 1 arrogant gluttonous arbitrary }
-		}
-		parameters = {
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-			death_is_glory = yes
-			sanctioned_assassinations = yes 
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			self_mutilation_active = yes
-			consolamentum_active = yes
-			killing_buddhists_is_pious = yes
-		}
-		character_modifier = {
-			short_reign_duration_mult = -0.5
-			dread_baseline_add = 5
-			prowess = 2
-			controlled_province_advantage = 5
-			monthly_piety_gain_per_dread_add = 0.01
-			ai_war_chance = 1
-			ai_war_cooldown = -0.5
-		}
-	}
-	tenet_keeper = {
-		icon = core_tenet_keeper
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			holy_wars_forbidden = yes
-			piety_from_long_peace = 1
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			clergy_can_fight = yes
-			tenet_esotericism_mystic_education = yes
-			literalist_debate_enabled = yes
-			pacifist_opinion_active = yes
-			opinion_of_pacifist_opinion_active = 10
-			piety_gain_from_successful_intrigue_schemes = yes
-		}
-		traits = {
-			virtues = { 
-				scholar journaller shy humble confider class_cleric_knowledge class_bard_college_of_lore 
-			}
-			sins = { deceitful disloyal sadistic reclusive }
-		}
-		character_modifier = {
-			ignore_opinion_of_different_faith = yes
-			learning_per_piety_level = 2
-		}
-	}
-	tenet_mechanist = {
-		icon = core_tenet_mechanist
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			clergy_can_fight = yes
-			fervor_per_holy_site = 1
-		}
-		character_modifier = {
-			pagan_faith_opinion = -45
-			hammerite_faith = -10
-			close_relative_opinion = 5
-			learning_per_piety_level = 5
-			monthly_piety_from_buildings_mult = 0.24
-		}
-		traits = {
-			virtues = { architect temperate zealous diligent }
-			sins = { 
-				lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
-			    follow_mage_death follow_mage_earth ds_covenant_farron 
-				#class_wizard_necromancy class_cleric_death 
-			}
-		}
-	}
-	tenet_mage = {
-		icon = ai_tenet_mastery_over_undeath
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			holy_wars_forbidden = yes
-			piety_from_long_peace = 1
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			clergy_can_fight = yes
-			tenet_esotericism_mystic_education = yes
-			literalist_debate_enabled = yes
-			fervor_per_holy_site = 1
-		}
-		character_modifier = {
-			ignore_opinion_of_different_faith = yes
-			learning_per_piety_level = 2
-		}
-		traits = {
-			virtues = { 
-				scholar journaller lifestyle_mystic overseer follow_mage_water 
-			    follow_mage_fire follow_mage_air follow_mage_earth 
-			}
-			sins = { lazy content dull }
-		}
-	}
-	tenet_pagan = {
-		icon = core_tenet_pagan
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			human_sacrifice_active = yes
-			clergy_can_fight = yes
-			tenet_esotericism_mystic_education = yes
-			piety_from_feasts_active = yes
-			gruesome_festivals_active = yes
-			self_mutilation_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			cannibalism_legal = yes
-			can_build_megaliths = yes
-			fervor_per_holy_site = 1
-			killing_buddhists_is_pious = yes
-		}
-		character_modifier = {
-			mechanist_faith_opinion = -45
-			hammerite_faith_opinion = -25
-			ignore_opinion_of_different_faith = yes
-			learning_per_piety_level = 2
-			rf_pagan_opinion = 10
-		}
-		traits = {
-			virtues = { 
-				lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic 
-			    follow_mage_death ds_covenant_farron follow_mage_earth class_cleric_death 
-				#class_rogue_trick 
-			}
-			sins = { architect craven avaricious greedy }
-		}
-	}
-	tenet_satanism = {
-		icon = core_tenet_satanism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-			gruesome_festivals_active = yes
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-			piety_from_feasts_active = yes
-			spirit_possession_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			self_mutilation_active = yes
-		}
-		traits = {
-			virtues = { lustful gluttonous sadistic vengeful possessed class_warlock_fiend }
-			sins = { chaste temperate forgiving compassionate follow_jesus }
-		}
-		character_modifier = {
-			ignore_opinion_of_different_faith = yes
-			rf_abrahamic_opinion = -50
-			blood_faith_opinion = 10
-			ai_war_chance = 1
-			ai_war_cooldown = -0.5
-			stress_loss_mult = 0.2
-		}
-	}
-	tenet_christan = {
-		icon = core_tenet_christian_syncretism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			take_vows_active = yes
-			can_use_christian_artefacts = yes
-			hostility_override_special_doctrine_is_christian_faith = 2
-			is_christian_faith_bilateral_loc_override = 2
-			christian_syncretic_actor_opinion_active = yes
-			opinion_of_christian_syncretic_recipient_opinion_active = 30
-		}
-		traits = {
-			virtues = { temperate forgiving compassionate chaste  }
-			sins = { gluttonous vengeful sadistic lustful follow_thor }
-		}
-		character_modifier = {
-		}
-	}
-	tenet_auriel = {
-		icon = core_tenet_legalism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			excommunication_active = yes
-			pilgrimage_decision_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-		}
-		traits = {
-			virtues = { 
-				intellect_good_3 physique_good_3 beauty_good_3  honest just 
-			    diligent 
-			}
-			sins = { 
-				lazy deceitful arbitrary intellect_bad_3 physique_bad_3 beauty_bad_3
-			}
-		}
-	}
-	tenet_sixth_house = {
-		icon = core_tenet_human_sacrifice
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			killing_buddhists_is_pious = yes
-		}
-		traits = {
-			virtues = { brave deceitful arrogant }
-			sins = { lazy craven forgiving }
-		}
-		character_modifier = {
-			tyranny_gain_mult = -0.5
-		}
-	}
-	tenet_old_velothi = {
-		icon = core_tenet_false_conversion_sanction
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			sanctioned_false_conversion = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-		}
-		traits = {
-			virtues = { brave deceitful arrogant }
-			sins = { lazy craven forgiving }
-		}
-		character_modifier = {
-			monthly_intrigue_lifestyle_xp_gain_mult = 0.1
-		}
-	}
-	tenet_dragon_cult = {
-		icon = core_tenet_pentarchy
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			fervor_per_holy_site = 1
-			pilgrimage_decision_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			killing_buddhists_is_pious = yes
-		}
-		traits = {
-			virtues = { 
-				generous diligent class_sorcerer_dragon 
-				follow_kereska follow_bahamut follow_tiamat 
-			}
-			sins = { greedy lazy }
-		}
-		character_modifier = {
-			monthly_intrigue_lifestyle_xp_gain_mult = 0.1
-			inbreeding_chance = -0.5
-		}
-	}
-	tenet_lolth = {
-		icon = core_tenet_pentarchy
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			fervor_per_holy_site = 1
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			killing_buddhists_is_pious = yes
-		}
-		traits = {
-			virtues = { 
-				callous sadistic diligent deceitful lustful vengeful follow_lolth 
-			}
-			sins = { 
-				compassionate lazy honest chaste forgiving follow_eilistraee class_paladin_oathbreaker 
-			}
-		}
-	}
-	tenet_sumerian = {
-		icon = core_tenet_sanctity_of_nature
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			fervor_per_holy_site = 1
-			believes_in_harmony_with_nature_invisible = yes
-		}
-		traits = {
-			virtues = { 
-				chaste just diligent 
-			}
-			sins = { 
-				lustful arbitrary lazy  
-			}
-		}
-		character_modifier = {
-			forest_advantage = 5
-			forest_attrition_mult = -0.25
-			taiga_advantage = 5
-			taiga_attrition_mult = -0.25
-			jungle_advantage = 5
-			jungle_attrition_mult = -0.25
-			build_gold_cost = 0.1
-			county_opinion_add = 5
-		}
-	}
-	tenet_akkadian = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		parameters = {
-			fervor_per_holy_site = 1
-			clergy_can_fight = yes
-		}
-		traits = {
-			virtues = { 
-				chaste just diligent 
-			}
-			sins = { 
-				lustful arbitrary lazy 
-			}
-		}
-	}
-	tenet_babylonian = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		parameters = {
-			fervor_per_holy_site = 1
-			clergy_can_fight = yes
-		}
-		traits = {
-			virtues = { 
-				chaste just diligent 
-			}
-			sins = { 
-				lustful arbitrary lazy 
-			}
-		}
-	}
-	tenet_assyrian = {
-		icon = core_tenet_assur
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		parameters = {
-			fervor_per_holy_site = 1
-			clergy_can_fight = yes
-		}
-		traits = {
-			virtues = { 
-				chaste just diligent follow_ashur 
-			}
-			sins = { 
-				lustful arbitrary lazy 
-			}
-		}
-	}
-	tenet_brythonic = {
-		icon = core_tenet_pentarchy
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			no_unfaithfulness_penalty_active = yes
-		}
-		traits = {
-			virtues = { 
-				honest just brave gregarious 
-			}
-			sins = { 
-				deceitful arbitrary vengeful lazy 
-			}
-		}
-	}
-	tenet_gaelic = {
-		icon = core_tenet_halfling
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			no_unfaithfulness_penalty_active = yes
-		}
-		traits = {
-			virtues = { 
-				honest just brave gregarious 
-			}
-			sins = { 
-				deceitful arbitrary vengeful lazy 
-			}
-		}
-	}
-	tenet_gaulish = {
-		icon = core_tenet_pentarchy
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			no_unfaithfulness_penalty_active = yes
-		}
-		traits = {
-			virtues = { 
-				honest just brave gregarious 
-			}
-			sins = { 
-				deceitful arbitrary vengeful lazy 
-			}
-		}
-	}
-	tenet_welsh = {
-		icon = core_tenet_pentarchy
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			no_unfaithfulness_penalty_active = yes
-		}
-		traits = {
-			virtues = { 
-				honest just brave gregarious 
-			}
-			sins = { 
-				deceitful arbitrary vengeful lazy 
-			}
-		}
-	}
-	tenet_canaanite = {
-		icon = core_tenet_human_sacrifice
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			human_sacrifice_active = yes
-			flower_war_cb_active = yes
-		}
-		character_modifier = {
-			ai_war_chance = 1
-			ai_war_cooldown = -0.5
-		}
-		traits = {
-			virtues = { 
-				brave just diligent compassionate 
-			}
-			sins = { 
-				craven arbitrary lazy wrathful 
-			}
-		}
-	}
-	tenet_yahwism = {
-		icon = core_tenet_communal_identity
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			same_culture_conversion_bonus_active = yes
-			same_faith_promote_culture_bonus_active = yes
-			other_culture_conversion_penalty_active = yes
-		}
-		character_modifier = {
-			name = "tenet_communal_identity_opinion"
-			same_faith_opinion = 10
-		}
-		traits = {
-			virtues = { 
-				brave just diligent compassionate 
-			}
-			sins = { 
-				craven arbitrary lazy wrathful 
-			}
-		}
-	}
-	tenet_philistinian = {
-		icon = core_tenet_false_conversion_sanction
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			sanctioned_false_conversion = yes
-		}
-		character_modifier = {
-			monthly_intrigue_lifestyle_xp_gain_mult = 0.1 #FP3 addition to make this tenet more attractive
-		}
-		traits = {
-			virtues = { 
-				brave just diligent compassionate 
-			}
-			sins = { 
-				craven arbitrary lazy wrathful 
-			}
-		}
-	}
-	tenet_phoenician = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-		}
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		traits = {
-			virtues = { 
-				brave just diligent compassionate 
-			}
-			sins = { 
-				craven arbitrary lazy wrathful 
-			}
-		}
-	}
-	tenet_punic = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-		}
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		traits = {
-			virtues = { 
-				brave just diligent compassionate 
-			}
-			sins = { 
-				craven arbitrary lazy wrathful 
-			}
-		}
-	}
-	tenet_money_talks = {
-		icon = core_tenet_capitalism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-		}
-		character_modifier = {
-			build_speed = 0.25
-			build_gold_cost = 0.25
-			monthly_income_mult = 1
-			different_faith_opinion = -50
-		}
-		traits = {
-			virtues = { 
-				arrogant greedy avaricious ambitious gluttonous   
-			}
-			sins = { 
-				peasant_leader populist_leader improvident humble generous content temperate 
-				#class_paladin_ancient class_paladin_devotion 
-			}
-		}
-	}
-	tenet_primative = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-			piety_from_marrying_lowborn_active = yes
-			cannibalism_legal = yes
-			human_sacrifice_active = yes
-			piety_from_hunts_active = yes
-			believes_in_harmony_with_nature_invisible = yes
-			frequent_bear_sightings = yes
-			efficient_hunt_cornering = yes
-			allows_bear_sacrifice = yes
-			chance_to_gain_prowess_during_bear_hunts = yes
-		}
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		traits = {
-			virtues = { 
-				berserker athletic lifestyle_herbalist brave lifestyle_hunter 
-				class_ranger_master class_ranger_hunter 
-			}
-			sins = { 
-				albino craven ds_covenant_aldrich birthsign_serpent 
-			}
-		}
-	}
-	tenet_deep_cult = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-			human_sacrifice_active = yes
-			piety_from_hunts_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			piety_from_feasts_active = yes
-			killing_buddhists_is_pious = yes
-		}
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		traits = {
-			virtues = { 
-				brave viking lifestyle_reveler follow_cthulhu 
-				follow_posidion follow_umberlee follow_mage_water 
-			}
-			sins = { 
-				craven deceitful forgiving follow_mage_earth 
-			}
-		}
-	}
-	tenet_green_cult = {
-		icon = core_tenet_unrelenting_faith
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			clergy_can_fight = yes
-			piety_from_marrying_lowborn_active = yes
-			human_sacrifice_active = yes
-			piety_from_hunts_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			piety_from_feasts_active = yes
-			frequent_bear_sightings = yes
-			efficient_hunt_cornering = yes
-			allows_bear_sacrifice = yes
-			chance_to_gain_prowess_during_bear_hunts = yes
-		}
-		character_modifier = {
-			prowess = 4
-			tolerance_advantage_mod = 2
-		}
-		traits = {
-			virtues = { 
-				lifestyle_mystic lifestyle_gardener lifestyle_herbalist 
-			    follow_mage_earth class_cleric_nature class_druid_land 
-			}
-			sins = { 
-				craven deceitful forgiving follow_mage_water lazy arbitrary gluttonous  
-			}
-		}
-	}
-	tenet_lizardmen = {
-		icon = core_tenet_hist
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			cannibalism_legal = yes
-			clergy_can_fight = yes
-			piety_from_marrying_lowborn_active = yes
-			human_sacrifice_active = yes
-			gruesome_festivals_active = yes
-			piety_from_hunts_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			piety_from_feasts_active = yes
-			believes_in_harmony_with_nature_invisible = yes
-			same_culture_conversion_bonus_active = yes
-			same_faith_promote_culture_bonus_active = yes
-			other_culture_conversion_penalty_active = yes
-			flower_war_cb_active = yes
-			torturing_prisoners_grants_piety = yes
-			reduced_stress_from_torture = yes
-			naked_adherents_active = yes
-			natural_primitivism_law_cost_increase = yes
-			killing_buddhists_is_pious = yes
-			efficient_hunt_cornering = yes
-			allows_bear_sacrifice = yes
-			chance_to_gain_prowess_during_bear_hunts = yes
-		}
-		character_modifier = {
-			tolerance_advantage_mod = 2
-			same_faith_opinion = 10
-			martial_per_piety_level = 1
-		    prowess_per_piety_level = 1
-		    prowess_per_prestige_level = 1
-			domain_tax_different_faith_mult = 0.2
-			levy_reinforcement_rate_same_faith = 0.25
-			levy_reinforcement_rate_different_faith = -0.25
-			monthly_piety_gain_mult = -0.1
-			stress_loss_per_piety_level = -0.1
-		}
-		traits = {
-			virtues = { 
-				lifestyle_mystic brave just diligent scaly viking 
-			}
-			sins = { 
-				craven forgiving lazy shy 
-			}
-		}
-	}
-	tenet_tr_divine_marriage = {
-		icon = core_tenet_divine_marriage
-		name = {
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						religion_tag = zoroastrianism_religion
-					}
-					desc = tenet_divine_marriage_xwedodah 
-				}
-				desc = tenet_divine_marriage_name
-			}
-		}
-		desc = {
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						religion_tag = zoroastrianism_religion
-					}
-					desc = tenet_divine_marriage_desc
-				}
-				desc = tenet_divine_marriage_desc
-			}
-		}
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			increased_dynasty_prestige_birth_mult = 1
-			increased_dynasty_prestige_marriage_mult = 1
-			increased_dynasty_prestige_long_reign_mult = 0.5
-			pilgrimage_decision_active = yes
-			divine_marriage_opinion = 10
-			divine_marriage_piety_gain_active = yes
-		}
-		character_modifier = {
-			close_relative_opinion = 5
-		}
-		traits = {
-			virtues = { pure_blooded = 2 }
-		}
-	}
-	tenet_of_the_seven = {
-		icon = core_tenet_the_seven
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			tenet_adaptive_conversion_resistance = yes
-			reduced_vassal_religion_discontent = yes
-			can_host_joust_contests = yes
-			seek_indulgences_active = yes
-			seek_indulgences_active_2 = yes
-			excommunication_active = yes
-			maintains_head_of_faith_on_creation = yes
-			take_vows_active = yes
-		}
-		character_modifier = {
-			different_faith_county_opinion_mult = -0.25
-			different_faith_liege_opinion = 15
-			opinion_of_different_faith_liege = 15
-		}
-		traits = {
-			virtues = { 
-				just compassionate chaste diligent
-			    brave patient humble temperate
-			}
-			sins = { 
-				arbitrary sadistic lazy lustful craven impatient arrogant gluttonous 
-			}
-		}
-	}
-	tenet_christan_mystical = {
-		icon = core_tenet_christian_syncretism
-		piety_cost = { value = faith_tenet_cost_high }
-		is_shown = { always = no }
-		parameters = {
-			piety_from_marrying_lowborn_active = yes
-			reincarnation_resistance_to_conversion = yes
-			reincarnation_events_active = yes
-			clergy_can_fight = yes
-			fervor_per_holy_site = 1
-			pilgrimage_decision_active = yes
-			spirit_possession_active = yes
-			piety_from_feasts_active = yes
-			tenet_esotericism_mystic_education = yes
-			literalist_debate_enabled = yes
-			meditation_mechanics_active = yes
-			hostility_override_special_doctrine_is_jewish_faith = 2
-			# This parameter is empty; the syncretic religious trigger checks against the doctrine, as that's much clearer in tooltips and allows us to use a unified syncretic trigger per-religion rather than having bitty situational triggers.
-			can_use_jewish_artefacts = yes
-			jewish_syncretic_actor_opinion_active = yes
-			opinion_of_jewish_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
-		}
-		traits = {
-			virtues = { lifestyle_mystic lustful }
-			sins = { temperate forgiving compassionate chaste }
-		}
-		character_modifier = {
-		}
-	}
+﻿
+tenet_albino = {
+    icon = tenet_albino_worship
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    traits = {
+        virtues = {
+            albino = 3
+        }
+    }
+    parameters = {
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        select_personal_god_active = yes
+    }
+    character_modifier = {
+        dread_baseline_add = 5
+    }
+}
+tenet_kemetic = {
+    icon = core_tenet_kemetic
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        select_personal_god_active = yes
+        divine_marriage_opinion = 10
+        divine_marriage_piety_gain_active = yes
+        divine_the_stars_active = yes
+        legalism_modified_law_costs = yes
+        legalism_modified_law_costs_2 = yes
+        legalism_reduced_faction_virtues = yes
+        legalism_increased_faction_sins = yes
+        legalism_trust_just_leader_active = yes
+    }
+    character_modifier = {
+    }
+    traits = {
+        virtues = {
+            just = 2 lifestyle_physician pure_blooded = 2 forgiving just temperate
+            #follow_osiris follow_isis follow_hathor
+            #follow_horus follow_seth follow_anubis follow_bastet follow_amun
+        }
+        sins = {
+            arbitrary = 2 greedy deceitful hygene_bad_1 hygene_bad_2 = 2
+        }
+    }
+}
+tenet_atenist = {
+    icon = core_tenet_kemetic
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        divine_marriage_opinion = 10
+        divine_marriage_piety_gain_active = yes
+        divine_the_stars_active = yes
+        legalism_modified_law_costs = yes
+        legalism_modified_law_costs_2 = yes
+        legalism_reduced_faction_virtues = yes
+        legalism_increased_faction_sins = yes
+        legalism_trust_just_leader_active = yes
+    }
+    character_modifier = {
+    }
+    traits = {
+        virtues = {
+            just = 2 lifestyle_physician pure_blooded = 2  forgiving just temperate
+        }
+        sins = {
+            arbitrary = 2 greedy deceitful hygene_bad_1 hygene_bad_2 = 2
+            #follow_osiris follow_isis
+            #follow_horus follow_seth follow_anubis follow_bastet follow_amun
+            #follow_hathor
+        }
+    }
+}
+tenet_hellenic = {
+    icon = core_tenet_hellenic_syncretism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        increased_dynasty_prestige_birth_mult = 1
+        increased_dynasty_prestige_marriage_mult = 1
+        increased_dynasty_prestige_long_reign_mult = 0.5
+        pilgrimage_decision_active = yes
+        select_personal_god_active = yes
+        divine_the_stars_active = yes
+        piety_from_feasts_active = yes
+        consolamentum_active = yes
+    }
+    character_modifier = {
+        short_reign_duration_mult = -0.5
+        close_relative_opinion = 5
+    }
+}
+tenet_science = {
+    icon = core_tenet_science
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        holy_wars_forbidden = yes
+        piety_from_long_peace = 1
+        select_personal_god_active = yes
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        literalist_debate_enabled = yes
+    }
+    traits = {
+        virtues = {
+            architect cynical scholar journaller class_cleric_knowledge
+            intellect_good_1 intellect_good_2 intellect_good_3
+        }
+        sins = {
+            intellect_bad_1 = 2 intellect_bad_2 = 2 intellect_bad_3 = 2 dull
+        }
+    }
+    character_modifier = {
+        close_relative_opinion = 5
+        ignore_opinion_of_different_faith = yes
+        learning_per_piety_level = 5
+        monthly_piety_from_buildings_mult = 0.24
+        hills_development_growth_factor = 0.15
+        hills_tax_mult = 0.1
+        hills_levy_size = 0.3
+        hills_advantage = 5
+    }
+}
+tennet_blood_m = {
+    icon = core_tenet_bloodm #core_tenet_gruesome_festivals
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        death_is_glory = yes
+        sanctioned_assassinations = yes
+        human_sacrifice_active = yes
+        flower_war_cb_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        self_mutilation_active = yes
+        consolamentum_active = yes
+        cannibalism_legal = yes
+    }
+    character_modifier = {
+        dread_baseline_add = 5
+        prowess = 2
+        controlled_province_advantage = 5
+        monthly_piety_gain_per_dread_add = 0.01
+    }
+    traits = {
+        virtues = {
+            torturer sadistic vengeful murderer gallowsbait follow_ripper follow_caleb
+            #follow_mage_death ds_covenant_moundmakers
+        }
+        sins = { forgiving compassionate }
+    }
+}
+tenet_tr_sacred_shadows = {
+    icon = core_tenet_sacred_shadows
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    name = {first_valid = {desc = tenet_sacred_shadows_name}}
+    desc = {first_valid = {desc = tenet_sacred_shadows_desc}}
+    parameters = {
+        piety_gain_from_successful_intrigue_schemes = yes
+        adherents_more_likely_to_join_schemes = yes
+        tenet_unlocks_t4_bounties_for_whispers = yes
+        master_assassin_court_position_unlocked = yes
+        death_is_glory = yes
+        sanctioned_assassinations = yes
+        unlock_voluntary_laampdom_faith = yes
+    }
+    character_modifier = {
+        controlled_province_advantage = 5
+        monthly_piety_gain_per_dread_add = 0.01
+        prowess = 2
+    }
+    traits = {
+        virtues = { deceitful vengeful = 1 }
+        sins = { honest craven = 1 }
+    }
+}
+tenet_tribunal = {
+    icon = core_tenet_tribunal
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        select_personal_god_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+    }
+    traits = {
+        virtues = { brave deceitful = 2 arrogant  }
+        sins = { craven lazy forgiving }
+    }
+    character_modifier = {
+        close_relative_opinion = 5
+    }
+}
+tenet_stoicism = {
+    icon = core_tenet_stoicism
+    is_shown = { always = no }
+    piety_cost = { value =  690 }
+    traits = {
+        virtues = { patient rakish diligent }
+        sins = { impatient irritable arbitrary }
+    }
+    parameters = {
+        meditation_mechanics_active = yes
+    }
+}
+tenet_hist = {
+    icon = core_tenet_hist
+    is_shown = { always = no }
+    piety_cost = { value =  690 }
+    traits = {
+        virtues = {
+            fickle patient content reincarnation class_sorcerer_dragon
+            class_ranger_gloom class_ranger_master class_ranger_hunter
+        }
+        sins = {
+            stubborn vengeful arrogant
+        }
+    }
+    parameters = {
+        meditation_mechanics_active = yes
+    }
+}
+tenet_ds1 = {
+    icon = core_tenet_ds1
+    is_shown = { always = no }
+    piety_cost = { value =  690 }
+    traits = {
+        virtues = {
+            fickle patient content ds_covenant_blue
+        }
+        sins = {
+            stubborn vengeful arrogant hollow class_sorcerer_dragon
+            follow_kereska follow_bahamut follow_tiamat
+        }
+    }
+    parameters = {
+        meditation_mechanics_active = yes
+        select_personal_god_active = yes
+    }
+    character_modifier = {
+        prowess = 10
+        prowess_per_piety_level = 2
+        prowess_per_prestige_level = 3
+        prowess_per_stress_level = 1
+    }
+}
+tenet_imperial_cult = {
+    icon = core_tenet_imperial_cult
+    is_shown = { always = no }
+    piety_cost = { value =  690 }
+    traits = {
+        virtues = {
+            born_in_the_purple august overseer class_paladin_crown class_bard_college_of_valour
+            class_bard_college_of_valour class_cleric_knowledge class_fighter_master
+        }
+        sins = {
+            peasant_born heresiarch disinherited
+        }
+    }
+    parameters = {
+        meditation_mechanics_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        consolamentum_active = yes
+    }
+    character_modifier = {
+        short_reign_duration_mult = -0.5
+        different_faith_county_opinion_mult = -0.25
+        different_faith_liege_opinion = 15
+        opinion_of_different_faith_liege = 15
+    }
+}
+tenet_hyrule = {
+    icon = core_tenet_hyrule
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+    }
+    traits = {
+        virtues = {
+            lifestyle_mystic calm temperate brave
+        }
+        sins = {
+            wrathful gluttonous craven arbitrary
+        }
+    }
+    character_modifier = {
+        close_relative_opinion = 5
+    }
+}
+tenet_moon_worship = {
+    icon = core_tenet_moon_cat
+    is_shown = { always = no }
+    piety_cost = { value =  690 }
+    traits = {
+        virtues = {
+            generous gregarious patient lifestyle_mystic follow_selune
+            class_druid_moon class_druid_star  follow_eilistraee #ds_covenant_darkmoon
+        }
+        sins = {
+            callous shy impatient follow_shar follow_lolth
+        }
+    }
+    parameters = {
+        meditation_mechanics_active = yes
+        mystic_birthright_active = yes
+    }
+    character_modifier = {
+        learning_per_piety_level = 1
+        monthly_piety_from_buildings_mult = 0.1
+        hills_development_growth_factor = 0.1
+        hills_tax_mult = 0.05
+        hills_levy_size = 0.1
+        hills_advantage = 1
+    }
+}
+tenet_hammerite = {
+    icon = core_tenet_hammerite
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        clergy_can_fight = yes
+        fervor_per_holy_site = 1
+    }
+    traits = {
+        virtues = {
+            architect scholar temperate zealous theologian
+        }
+        sins = {
+            lazy cynical lifestyle_mystic drunkard follow_mage_death
+            class_wizard_necromancy class_cleric_death #class_monk_drunk
+        }
+    }
+    character_modifier = {
+        mechanist_faith_opinion = -10
+        pagan_faith_opinion = -25
+        close_relative_opinion = 5
+        learning_per_piety_level = 5
+        monthly_piety_from_buildings_mult = 0.24
+    }
+}
+tenet_roman = {
+    icon = core_tenet_roman
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    traits = {
+        virtues = {
+            family_first loyal follow_thor follow_mars follow_sol follow_jupiter
+            class_fighter_champion class_fighter_master
+        }
+        sins = { disloyal }
+    }
+    parameters = {
+        conquest_cb_enabled = yes
+        invasion_cb_enabled = yes
+        human_sacrifice_active = yes
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        piety_from_feasts_active = yes
+        same_culture_conversion_bonus_active = yes
+        same_faith_promote_culture_bonus_active = yes
+        piety_from_feasts_active = yes
+        consolamentum_active = yes
+        increased_dynasty_prestige_birth_mult = 1
+        increased_dynasty_prestige_marriage_mult = 1
+        increased_dynasty_prestige_long_reign_mult = 0.5
+        pilgrimage_decision_active = yes
+    }
+    character_modifier = {
+        short_reign_duration_mult = -0.5
+        dread_baseline_add = 5
+        prowess = 2
+        controlled_province_advantage = 5
+        monthly_piety_gain_per_dread_add = 0.01
+        close_relative_opinion = 5
+    }
+}
+tenet_sun_stars = {
+    icon = core_tenet_astrology
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        summer_festivals_active = yes
+        trial_by_sun_active = yes
+        divine_the_stars_active = yes
+    }
+    character_modifier = {
+        naval_movement_speed_mult = 0.25
+    }
+}
+tenet_tlaloc = {
+    icon = core_tenet_astrology
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    traits = {
+        virtues = { just temperate callous  }
+        sins = { arrogant gluttonous arbitrary }
+    }
+    parameters = {
+        human_sacrifice_active = yes
+        flower_war_cb_active = yes
+    }
+    character_modifier = {
+        ai_war_chance = 1
+        ai_war_cooldown = -0.5
+    }
+}
+tenet_tezcatlipoca = {
+    icon = core_tenet_astrology
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    traits = {
+        virtues = { vengeful = 1 just temperate callous }
+        sins = { craven = 1 arrogant gluttonous arbitrary }
+    }
+    parameters = {
+        human_sacrifice_active = yes
+        flower_war_cb_active = yes
+        death_is_glory = yes
+        sanctioned_assassinations = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        self_mutilation_active = yes
+        consolamentum_active = yes
+        killing_buddhists_is_pious = yes
+    }
+    character_modifier = {
+        short_reign_duration_mult = -0.5
+        dread_baseline_add = 5
+        prowess = 2
+        controlled_province_advantage = 5
+        monthly_piety_gain_per_dread_add = 0.01
+        ai_war_chance = 1
+        ai_war_cooldown = -0.5
+    }
+}
+tenet_keeper = {
+    icon = core_tenet_keeper
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        holy_wars_forbidden = yes
+        piety_from_long_peace = 1
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        clergy_can_fight = yes
+        tenet_esotericism_mystic_education = yes
+        literalist_debate_enabled = yes
+        pacifist_opinion_active = yes
+        opinion_of_pacifist_opinion_active = 10
+        piety_gain_from_successful_intrigue_schemes = yes
+    }
+    traits = {
+        virtues = {
+            scholar journaller shy humble confider class_cleric_knowledge class_bard_college_of_lore
+        }
+        sins = { deceitful disloyal sadistic reclusive }
+    }
+    character_modifier = {
+        ignore_opinion_of_different_faith = yes
+        learning_per_piety_level = 2
+    }
+}
+tenet_mechanist = {
+    icon = core_tenet_mechanist
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        clergy_can_fight = yes
+        fervor_per_holy_site = 1
+    }
+    character_modifier = {
+        pagan_faith_opinion = -45
+        hammerite_faith = -10
+        close_relative_opinion = 5
+        learning_per_piety_level = 5
+        monthly_piety_from_buildings_mult = 0.24
+    }
+    traits = {
+        virtues = { architect temperate zealous diligent }
+        sins = {
+            lazy cynical lifestyle_mystic lifestyle_gardener lifestyle_herbalist
+            follow_mage_death follow_mage_earth ds_covenant_farron
+            #class_wizard_necromancy class_cleric_death
+        }
+    }
+}
+tenet_mage = {
+    icon = ai_tenet_mastery_over_undeath
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        holy_wars_forbidden = yes
+        piety_from_long_peace = 1
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        clergy_can_fight = yes
+        tenet_esotericism_mystic_education = yes
+        literalist_debate_enabled = yes
+        fervor_per_holy_site = 1
+    }
+    character_modifier = {
+        ignore_opinion_of_different_faith = yes
+        learning_per_piety_level = 2
+    }
+    traits = {
+        virtues = {
+            scholar journaller lifestyle_mystic overseer follow_mage_water
+            follow_mage_fire follow_mage_air follow_mage_earth
+        }
+        sins = { lazy content dull }
+    }
+}
+tenet_pagan = {
+    icon = core_tenet_pagan
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        human_sacrifice_active = yes
+        clergy_can_fight = yes
+        tenet_esotericism_mystic_education = yes
+        piety_from_feasts_active = yes
+        gruesome_festivals_active = yes
+        self_mutilation_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        cannibalism_legal = yes
+        can_build_megaliths = yes
+        fervor_per_holy_site = 1
+        killing_buddhists_is_pious = yes
+    }
+    character_modifier = {
+        mechanist_faith_opinion = -45
+        hammerite_faith_opinion = -25
+        ignore_opinion_of_different_faith = yes
+        learning_per_piety_level = 2
+        rf_pagan_opinion = 10
+    }
+    traits = {
+        virtues = {
+            lifestyle_mystic lifestyle_gardener lifestyle_herbalist inappetetic
+            follow_mage_death ds_covenant_farron follow_mage_earth class_cleric_death
+            #class_rogue_trick
+        }
+        sins = { architect craven avaricious greedy }
+    }
+}
+tenet_satanism = {
+    icon = core_tenet_satanism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+        gruesome_festivals_active = yes
+        human_sacrifice_active = yes
+        flower_war_cb_active = yes
+        piety_from_feasts_active = yes
+        spirit_possession_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        self_mutilation_active = yes
+    }
+    traits = {
+        virtues = { lustful gluttonous sadistic vengeful possessed class_warlock_fiend }
+        sins = { chaste temperate forgiving compassionate follow_jesus }
+    }
+    character_modifier = {
+        ignore_opinion_of_different_faith = yes
+        rf_abrahamic_opinion = -50
+        blood_faith_opinion = 10
+        ai_war_chance = 1
+        ai_war_cooldown = -0.5
+        stress_loss_mult = 0.2
+    }
+}
+tenet_christan = {
+    icon = core_tenet_christian_syncretism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        take_vows_active = yes
+        can_use_christian_artefacts = yes
+        hostility_override_special_doctrine_is_christian_faith = 2
+        is_christian_faith_bilateral_loc_override = 2
+        christian_syncretic_actor_opinion_active = yes
+        opinion_of_christian_syncretic_recipient_opinion_active = 30
+    }
+    traits = {
+        virtues = { temperate forgiving compassionate chaste  }
+        sins = { gluttonous vengeful sadistic lustful follow_thor }
+    }
+    character_modifier = {
+    }
+}
+tenet_auriel = {
+    icon = core_tenet_legalism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        excommunication_active = yes
+        pilgrimage_decision_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+    }
+    traits = {
+        virtues = {
+            intellect_good_3 physique_good_3 beauty_good_3  honest just
+            diligent
+        }
+        sins = {
+            lazy deceitful arbitrary intellect_bad_3 physique_bad_3 beauty_bad_3
+        }
+    }
+}
+tenet_sixth_house = {
+    icon = core_tenet_human_sacrifice
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        killing_buddhists_is_pious = yes
+    }
+    traits = {
+        virtues = { brave deceitful arrogant }
+        sins = { lazy craven forgiving }
+    }
+    character_modifier = {
+        tyranny_gain_mult = -0.5
+    }
+}
+tenet_old_velothi = {
+    icon = core_tenet_false_conversion_sanction
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        sanctioned_false_conversion = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+    }
+    traits = {
+        virtues = { brave deceitful arrogant }
+        sins = { lazy craven forgiving }
+    }
+    character_modifier = {
+        monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+    }
+}
+tenet_dragon_cult = {
+    icon = core_tenet_pentarchy
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        fervor_per_holy_site = 1
+        pilgrimage_decision_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        killing_buddhists_is_pious = yes
+    }
+    traits = {
+        virtues = {
+            generous diligent class_sorcerer_dragon
+            follow_kereska follow_bahamut follow_tiamat
+        }
+        sins = { greedy lazy }
+    }
+    character_modifier = {
+        monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+        inbreeding_chance = -0.5
+    }
+}
+tenet_lolth = {
+    icon = core_tenet_pentarchy
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        fervor_per_holy_site = 1
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        killing_buddhists_is_pious = yes
+    }
+    traits = {
+        virtues = {
+            callous sadistic diligent deceitful lustful vengeful follow_lolth
+        }
+        sins = {
+            compassionate lazy honest chaste forgiving follow_eilistraee class_paladin_oathbreaker
+        }
+    }
+}
+tenet_sumerian = {
+    icon = core_tenet_sanctity_of_nature
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        fervor_per_holy_site = 1
+        believes_in_harmony_with_nature_invisible = yes
+    }
+    traits = {
+        virtues = {
+            chaste just diligent
+        }
+        sins = {
+            lustful arbitrary lazy
+        }
+    }
+    character_modifier = {
+        forest_advantage = 5
+        forest_attrition_mult = -0.25
+        taiga_advantage = 5
+        taiga_attrition_mult = -0.25
+        jungle_advantage = 5
+        jungle_attrition_mult = -0.25
+        build_gold_cost = 0.1
+        county_opinion_add = 5
+    }
+}
+tenet_akkadian = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    parameters = {
+        fervor_per_holy_site = 1
+        clergy_can_fight = yes
+    }
+    traits = {
+        virtues = {
+            chaste just diligent
+        }
+        sins = {
+            lustful arbitrary lazy
+        }
+    }
+}
+tenet_babylonian = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    parameters = {
+        fervor_per_holy_site = 1
+        clergy_can_fight = yes
+    }
+    traits = {
+        virtues = {
+            chaste just diligent
+        }
+        sins = {
+            lustful arbitrary lazy
+        }
+    }
+}
+tenet_assyrian = {
+    icon = core_tenet_assur
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    parameters = {
+        fervor_per_holy_site = 1
+        clergy_can_fight = yes
+    }
+    traits = {
+        virtues = {
+            chaste just diligent follow_ashur
+        }
+        sins = {
+            lustful arbitrary lazy
+        }
+    }
+}
+tenet_brythonic = {
+    icon = core_tenet_pentarchy
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        no_unfaithfulness_penalty_active = yes
+    }
+    traits = {
+        virtues = {
+            honest just brave gregarious
+        }
+        sins = {
+            deceitful arbitrary vengeful lazy
+        }
+    }
+}
+tenet_gaelic = {
+    icon = core_tenet_halfling
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        no_unfaithfulness_penalty_active = yes
+    }
+    traits = {
+        virtues = {
+            honest just brave gregarious
+        }
+        sins = {
+            deceitful arbitrary vengeful lazy
+        }
+    }
+}
+tenet_gaulish = {
+    icon = core_tenet_pentarchy
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        no_unfaithfulness_penalty_active = yes
+    }
+    traits = {
+        virtues = {
+            honest just brave gregarious
+        }
+        sins = {
+            deceitful arbitrary vengeful lazy
+        }
+    }
+}
+tenet_welsh = {
+    icon = core_tenet_pentarchy
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        no_unfaithfulness_penalty_active = yes
+    }
+    traits = {
+        virtues = {
+            honest just brave gregarious
+        }
+        sins = {
+            deceitful arbitrary vengeful lazy
+        }
+    }
+}
+tenet_canaanite = {
+    icon = core_tenet_human_sacrifice
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        human_sacrifice_active = yes
+        flower_war_cb_active = yes
+    }
+    character_modifier = {
+        ai_war_chance = 1
+        ai_war_cooldown = -0.5
+    }
+    traits = {
+        virtues = {
+            brave just diligent compassionate
+        }
+        sins = {
+            craven arbitrary lazy wrathful
+        }
+    }
+}
+tenet_yahwism = {
+    icon = core_tenet_communal_identity
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        same_culture_conversion_bonus_active = yes
+        same_faith_promote_culture_bonus_active = yes
+        other_culture_conversion_penalty_active = yes
+    }
+    character_modifier = {
+        name = "tenet_communal_identity_opinion"
+        same_faith_opinion = 10
+    }
+    traits = {
+        virtues = {
+            brave just diligent compassionate
+        }
+        sins = {
+            craven arbitrary lazy wrathful
+        }
+    }
+}
+tenet_philistinian = {
+    icon = core_tenet_false_conversion_sanction
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        sanctioned_false_conversion = yes
+    }
+    character_modifier = {
+        monthly_intrigue_lifestyle_xp_gain_mult = 0.1 #FP3 addition to make this tenet more attractive
+    }
+    traits = {
+        virtues = {
+            brave just diligent compassionate
+        }
+        sins = {
+            craven arbitrary lazy wrathful
+        }
+    }
+}
+tenet_phoenician = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+    }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    traits = {
+        virtues = {
+            brave just diligent compassionate
+        }
+        sins = {
+            craven arbitrary lazy wrathful
+        }
+    }
+}
+tenet_punic = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+    }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    traits = {
+        virtues = {
+            brave just diligent compassionate
+        }
+        sins = {
+            craven arbitrary lazy wrathful
+        }
+    }
+}
+tenet_money_talks = {
+    icon = core_tenet_capitalism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+    }
+    character_modifier = {
+        build_speed = 0.25
+        build_gold_cost = 0.25
+        monthly_income_mult = 1
+        different_faith_opinion = -50
+    }
+    traits = {
+        virtues = {
+            arrogant greedy avaricious ambitious gluttonous
+        }
+        sins = {
+            peasant_leader populist_leader improvident humble generous content temperate
+            #class_paladin_ancient class_paladin_devotion
+        }
+    }
+}
+tenet_primative = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+        piety_from_marrying_lowborn_active = yes
+        cannibalism_legal = yes
+        human_sacrifice_active = yes
+        piety_from_hunts_active = yes
+        believes_in_harmony_with_nature_invisible = yes
+        frequent_bear_sightings = yes
+        efficient_hunt_cornering = yes
+        allows_bear_sacrifice = yes
+        chance_to_gain_prowess_during_bear_hunts = yes
+    }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    traits = {
+        virtues = {
+            berserker athletic lifestyle_herbalist brave lifestyle_hunter
+            class_ranger_master class_ranger_hunter
+        }
+        sins = {
+            albino craven ds_covenant_aldrich birthsign_serpent
+        }
+    }
+}
+tenet_deep_cult = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+        human_sacrifice_active = yes
+        piety_from_hunts_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        piety_from_feasts_active = yes
+        killing_buddhists_is_pious = yes
+    }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    traits = {
+        virtues = {
+            brave viking lifestyle_reveler follow_cthulhu
+            follow_posidion follow_umberlee follow_mage_water
+        }
+        sins = {
+            craven deceitful forgiving follow_mage_earth
+        }
+    }
+}
+tenet_green_cult = {
+    icon = core_tenet_unrelenting_faith
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        clergy_can_fight = yes
+        piety_from_marrying_lowborn_active = yes
+        human_sacrifice_active = yes
+        piety_from_hunts_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        piety_from_feasts_active = yes
+        frequent_bear_sightings = yes
+        efficient_hunt_cornering = yes
+        allows_bear_sacrifice = yes
+        chance_to_gain_prowess_during_bear_hunts = yes
+    }
+    character_modifier = {
+        prowess = 4
+        tolerance_advantage_mod = 2
+    }
+    traits = {
+        virtues = {
+            lifestyle_mystic lifestyle_gardener lifestyle_herbalist
+            follow_mage_earth class_cleric_nature class_druid_land
+        }
+        sins = {
+            craven deceitful forgiving follow_mage_water lazy arbitrary gluttonous
+        }
+    }
+}
+tenet_lizardmen = {
+    icon = core_tenet_hist
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        cannibalism_legal = yes
+        clergy_can_fight = yes
+        piety_from_marrying_lowborn_active = yes
+        human_sacrifice_active = yes
+        gruesome_festivals_active = yes
+        piety_from_hunts_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        piety_from_feasts_active = yes
+        believes_in_harmony_with_nature_invisible = yes
+        same_culture_conversion_bonus_active = yes
+        same_faith_promote_culture_bonus_active = yes
+        other_culture_conversion_penalty_active = yes
+        flower_war_cb_active = yes
+        torturing_prisoners_grants_piety = yes
+        reduced_stress_from_torture = yes
+        naked_adherents_active = yes
+        natural_primitivism_law_cost_increase = yes
+        killing_buddhists_is_pious = yes
+        efficient_hunt_cornering = yes
+        allows_bear_sacrifice = yes
+        chance_to_gain_prowess_during_bear_hunts = yes
+    }
+    character_modifier = {
+        tolerance_advantage_mod = 2
+        same_faith_opinion = 10
+        martial_per_piety_level = 1
+        prowess_per_piety_level = 1
+        prowess_per_prestige_level = 1
+        domain_tax_different_faith_mult = 0.2
+        levy_reinforcement_rate_same_faith = 0.25
+        levy_reinforcement_rate_different_faith = -0.25
+        monthly_piety_gain_mult = -0.1
+        stress_loss_per_piety_level = -0.1
+    }
+    traits = {
+        virtues = {
+            lifestyle_mystic brave just diligent scaly viking
+        }
+        sins = {
+            craven forgiving lazy shy
+        }
+    }
+}
+tenet_tr_divine_marriage = {
+    icon = core_tenet_divine_marriage
+    name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    religion_tag = zoroastrianism_religion
+                }
+                desc = tenet_divine_marriage_xwedodah
+            }
+            desc = tenet_divine_marriage_name
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    religion_tag = zoroastrianism_religion
+                }
+                desc = tenet_divine_marriage_desc
+            }
+            desc = tenet_divine_marriage_desc
+        }
+    }
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        increased_dynasty_prestige_birth_mult = 1
+        increased_dynasty_prestige_marriage_mult = 1
+        increased_dynasty_prestige_long_reign_mult = 0.5
+        pilgrimage_decision_active = yes
+        divine_marriage_opinion = 10
+        divine_marriage_piety_gain_active = yes
+    }
+    character_modifier = {
+        close_relative_opinion = 5
+    }
+    traits = {
+        virtues = { pure_blooded = 2 }
+    }
+}
+tenet_of_the_seven = {
+    icon = core_tenet_the_seven
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        tenet_adaptive_conversion_resistance = yes
+        reduced_vassal_religion_discontent = yes
+        can_host_joust_contests = yes
+        seek_indulgences_active = yes
+        seek_indulgences_active_2 = yes
+        excommunication_active = yes
+        maintains_head_of_faith_on_creation = yes
+        take_vows_active = yes
+    }
+    character_modifier = {
+        different_faith_county_opinion_mult = -0.25
+        different_faith_liege_opinion = 15
+        opinion_of_different_faith_liege = 15
+    }
+    traits = {
+        virtues = {
+            just compassionate chaste diligent
+            brave patient humble temperate
+        }
+        sins = {
+            arbitrary sadistic lazy lustful craven impatient arrogant gluttonous
+        }
+    }
+}
+tenet_christan_mystical = {
+    icon = core_tenet_christian_syncretism
+    piety_cost = { value = faith_tenet_cost_high }
+    is_shown = { always = no }
+    parameters = {
+        piety_from_marrying_lowborn_active = yes
+        reincarnation_resistance_to_conversion = yes
+        reincarnation_events_active = yes
+        clergy_can_fight = yes
+        fervor_per_holy_site = 1
+        pilgrimage_decision_active = yes
+        spirit_possession_active = yes
+        piety_from_feasts_active = yes
+        tenet_esotericism_mystic_education = yes
+        literalist_debate_enabled = yes
+        meditation_mechanics_active = yes
+        hostility_override_special_doctrine_is_jewish_faith = 2
+        # This parameter is empty; the syncretic religious trigger checks against the doctrine, as that's much clearer in tooltips and allows us to use a unified syncretic trigger per-religion rather than having bitty situational triggers.
+        can_use_jewish_artefacts = yes
+        jewish_syncretic_actor_opinion_active = yes
+        opinion_of_jewish_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
+    }
+    traits = {
+        virtues = { lifestyle_mystic lustful }
+        sins = { temperate forgiving compassionate chaste }
+    }
+    character_modifier = {
+    }
 }
