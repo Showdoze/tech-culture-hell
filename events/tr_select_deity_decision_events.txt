@@ -1,5 +1,214 @@
 ﻿namespace = tr_select_deity
 
+tr_select_deity.00 = {
+    type = character_event
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_demon_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dark_souls_faith
+                }
+                desc = ds1_select_covenant_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:dwemer
+                }
+                desc = dwemer_select_study_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:kemetic_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
+                        faith = faith:kiratism
+                        faith = faith:yumaism
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
+                    }
+                }
+                desc = pagan_select_god_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
+                    }
+                }
+                desc = god_voice_select_decision
+            }
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_demon_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dark_souls_faith
+                }
+                desc = ds1_select_covenant_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
+                    }
+                }
+                desc = god_voice_select_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:dwemer
+                }
+                desc = dwemer_select_study_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:kemetic_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
+                        faith = faith:kiratism
+                        faith = faith:yumaism
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_desc
+            }
+        }
+    }
+    window = visit_settlement_window
+    theme = faith
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+}    
 tr_select_deity.01 = {
     type = character_event
     title = {
@@ -1217,6 +1426,96 @@ tr_select_deity.01 = {
             base = 1
         }
     }
+    option = { # Venus
+        name = god_choice_venus
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_venus
+                }
+            }
+        }
+        add_trait = follow_venus
+        ai_chance = {
+            base = 1
+        }
+    }
+    option = { # Apollo
+        name = god_choice_apollo
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_apollo
+                }
+            }
+        }
+        add_trait = follow_apollo
+        ai_chance = {
+            base = 1
+        }
+    }
+    option = { # Diana
+        name = god_choice_diana
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_diana
+                }
+            }
+        }
+        add_trait = follow_diana
+        ai_chance = {
+            base = 1
+        }
+    }
+    option = { # Vulcan
+        name = god_choice_vulcan
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_vulcan
+                }
+            }
+        }
+        add_trait = follow_vulcan
+        ai_chance = {
+            base = 1
+        }
+    }
+    option = { # Mercury
+        name = god_choice_mercury
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_mercury
+                }
+            }
+        }
+        add_trait = follow_mercury
+        ai_chance = {
+            base = 1
+        }
+    }
+    option = { # Ceres
+        name = god_choice_ceres
+        trigger = {
+            AND = {
+                faith = faith:roman_pagan
+                NOT = {
+                    has_trait = follow_ceres
+                }
+            }
+        }
+        add_trait = follow_ceres
+        ai_chance = {
+            base = 1
+        }
+    }
 ######Greek PAGAN
     option = {
         name = god_choice_zeus
@@ -1332,6 +1631,166 @@ tr_select_deity.01 = {
             }
         }
     }
+    option = { # dionysos
+        name = god_choice_dionysos
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_dionysos
+                }
+            }
+        }
+        add_trait = follow_dionysos
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = drunkard
+            }
+            modifier = {
+                add = 5
+                has_trait = gluttonous
+            }
+            modifier = {
+                add = 5
+                has_trait = lifestyle_reveler
+            }
+        }
+    }
+    option = {
+        name = god_choice_hephestios
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_hephestios
+                }
+            }
+        }
+        add_trait = follow_hephestios
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = architect
+            }
+        }
+    }
+    option = {
+        name = god_choice_hermes
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_hermes
+                }
+            }
+        }
+        add_trait = follow_hermes
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_wayfarer
+            }
+        }
+    }
+    option = {
+        name = god_choice_apollon
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_apollon
+                }
+            }
+        }
+        add_trait = follow_apollon
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_physician
+            }
+        }
+    }
+    option = {
+        name = god_choice_aphrodite
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_aphrodite
+                }
+            }
+        }
+        add_trait = follow_aphrodite
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = knight_errant
+            }
+        }
+    }
+    option = {
+        name = god_choice_artemis
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_artemis
+                }
+            }
+        }
+        add_trait = follow_artemis
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = lifestyle_hunter
+            }
+        }
+    }
+    option = {
+        name = god_choice_herakles
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_herakles
+                }
+            }
+        }
+        add_trait = follow_herakles
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = gallant
+            }
+        }
+    }
+    option = {
+        name = god_choice_asklepios
+        trigger = {
+            AND = {
+                faith = faith:hellenic_pagan
+                NOT = {
+                    has_trait = follow_asklepios
+                }
+            }
+        }
+        add_trait = follow_asklepios
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 5
+                has_trait = family_first
+            }
+        }
+    } 
 ###NORSE
     option = { #ODIn
         name = god_choice_odin
@@ -1550,6 +2009,50 @@ tr_select_deity.01 = {
             }
         }
     } 
+    option = {
+        name = god_choice_bastet
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_bastet
+                }
+            }
+        }
+        add_trait = follow_bastet
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
+    option = {
+        name = god_choice_hathor
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:kushitism_pagan
+                    faith = faith:kemetic_pagan
+                }
+                NOT = {
+                    has_trait = follow_hathor
+                }
+            }
+        }
+        add_trait = follow_hathor
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
 ####aztec
     option = {
         name = god_choice_huitzilopochtli
@@ -1675,6 +2178,94 @@ tr_select_deity.01 = {
             }
         }
         add_trait = follow_centeotl
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
+    option = {
+        name = god_choice_quetzalcoatl
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_quetzalcoatl
+                }
+            }
+        }
+        add_trait = follow_quetzalcoatl
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
+    option = {
+        name = god_choice_xipe_totec
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_xipe_totec
+                }
+            }
+        }
+        add_trait = follow_xipe_totec
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
+    option = {
+        name = god_choice_mayahuel
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_mayahuel
+                }
+            }
+        }
+        add_trait = follow_mayahuel
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 0
+                has_trait = gregarious
+            }
+        }
+    }
+    option = {
+        name = god_choice_tlaltecuhtli
+        trigger = {
+            AND = {
+                OR = {
+                    faith = faith:cult_of_tlaloc
+                    faith = faith:cult_of_tezcatlipoca
+                }
+                NOT = {
+                    has_trait = follow_tlaltecuhtli
+                }
+            }
+        }
+        add_trait = follow_tlaltecuhtli
         ai_chance = {
             base = 1
             modifier = {
@@ -3035,7 +3626,6 @@ tr_select_deity.01 = {
         name = tr_cancel
         custom_tooltip = tr_cancel_tip
     }
-
 }
 tr_select_deity.02 = {
     type = character_event
@@ -3630,6 +4220,220 @@ tr_select_deity.02 = {
         ai_chance = {
             base = 1
         }
+    }
+ ###back   
+    option = { #
+        name = tr_page_back
+        trigger_event = { id = tr_select_deity.01 }
+    }
+}
+tr_select_deity.03 = {
+    type = character_event
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_demon_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dark_souls_faith
+                }
+                desc = ds1_select_covenant_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:dwemer
+                }
+                desc = dwemer_select_study_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:kemetic_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
+                        faith = faith:kiratism
+                        faith = faith:yumaism
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
+                    }
+                }
+                desc = pagan_select_god_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
+                    }
+                }
+                desc = god_voice_select_decision
+            }
+        }
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    faith = faith:satanism
+                }
+                desc = satanism_select_demon_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:dark_souls_faith
+                }
+                desc = ds1_select_covenant_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:blood_faith
+                        faith = faith:dragon_cult
+                        faith = faith:green_cult
+                        faith = faith:deep_cult
+                        has_trait = possessed_1
+                        has_trait = lunatic_1
+                        has_trait = lunatic_genetic
+                        has_trait = possessed_genetic
+                        has_trait = byakugan
+                        has_trait = flagellant
+                        culture = culture:elf_culture
+                        culture = culture:innsmouth
+                        culture = culture:dwemer
+                        culture = culture:drow
+                        culture = culture:gnome
+                        culture = culture:orc_culture
+                        culture = culture:old_dwarven
+                        culture = culture:gith
+                        culture = culture:halfling
+                        faith = faith:imperial_cult
+                    }
+                }
+                desc = god_voice_select_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    culture = culture:dwemer
+                }
+                desc = dwemer_select_study_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        faith = faith:roman_pagan
+                        faith = faith:hellenic_pagan
+                        faith = faith:kemetic_pagan
+                        religion = religion:west_african_religion
+                        religion = religion:west_african_bori_religion
+                        religion = religion:west_african_orisha_religion
+                        religion = religion:west_african_roog_religion
+                        religion = religion:tengrism_religion
+                        religion = religion:akom_religion
+                        religion = religion:baltic_religion
+                        religion = religion:basque_religion
+                        religion = religion:bon_religion
+                        religion = religion:tani_religion
+                        religion = religion:germanic_religion
+                        religion = religion:kushitism_religion
+                        religion = religion:magyar_religion
+                        religion = religion:north_african_religion
+                        religion = religion:paganism_religion
+                        religion = religion:slavic_religion
+                        religion = religion:zunism_religion
+                        religion = religion:waaqism_religion
+                        religion = religion:finno_ugric_religion
+                        faith = faith:kiratism
+                        faith = faith:yumaism
+                        faith = faith:shinto
+                        faith = faith:sumerian_pagan
+                        faith = faith:akkadian_pagan
+                        faith = faith:babylonian_pagan
+                        faith = faith:assyrian_pagan
+                        faith = faith:brythonic_pagan
+                        faith = faith:gaelic_pagan
+                        faith = faith:gaulish_pagan
+                        faith = faith:welsh_pagan
+                        faith = faith:canaanite_pagan
+                        faith = faith:yahwism_pagan
+                        faith = faith:philistinian_pagan
+                        faith = faith:phoenician_pagan
+                        faith = faith:punic_pagan
+                    }
+                }
+                desc = pagan_select_god_decision_desc
+            }
+            triggered_desc = {
+                trigger = {
+                    faith = faith:mage_faith
+                }
+                desc = mage_select_school_decision_desc
+            }
+        }
+    }
+    window = visit_settlement_window
+    theme = faith
+    left_portrait = {
+        character = root
+        animation = personality_rational
     }
  ###back   
     option = { #
