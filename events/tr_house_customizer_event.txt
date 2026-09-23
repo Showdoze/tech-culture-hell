@@ -1433,6 +1433,9 @@ house_customizer.0041 = { #ELDER SCROLLS
 		character = root
 		animation = throne_room_writer
 	}
+	trigger = {
+		character:tr_dagothur = { is_alive = yes }
+	}
 	immediate = {play_music_cue = "mx_cue_succession"}
 	option = { #telvanni
 		name = house_customizer_telvanni
@@ -1458,6 +1461,13 @@ house_customizer.0041 = { #ELDER SCROLLS
 		set_house = character:mora_nerevar.house
 		remove_trait = house_customizer
 		set_father = character:mora_nerevar
+		character:tr_dagothur = {
+			add_opinion = {
+				modifier = reincarnated_friend_opinion
+				target = root
+				opinion = 200
+			}
+		}
 	}
 	option = { #Septim
 		name = house_customizer_septim

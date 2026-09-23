@@ -60,7 +60,15 @@ can_raid_trigger = {
 		}
 	}
 }
-
+guaranteed_under_20_incest_rejection_trigger = {
+	$TARGET$ = {
+		NOT = { is_consort_of = $SEDUCER$ }
+		is_close_or_extended_family_of = $SEDUCER$
+		age < 15 ### CHANGED THIS
+		# age < $SEDUCER$.age ### CHANGED THIS
+		is_ai = yes #Players are allowed to choose
+	}
+}
 over_domain_limit_trigger = {
 	always = no
 }
