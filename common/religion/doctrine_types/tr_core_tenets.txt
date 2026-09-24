@@ -2,7 +2,7 @@
 tenet_albino = {
     icon = tenet_albino_worship
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     traits = {
         virtues = {
             albino = 3
@@ -20,7 +20,7 @@ tenet_albino = {
 tenet_kemetic = {
     icon = core_tenet_kemetic
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         select_personal_god_active = yes
         divine_marriage_opinion = 10
@@ -48,7 +48,7 @@ tenet_kemetic = {
 tenet_atenist = {
     icon = core_tenet_kemetic
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         divine_marriage_opinion = 10
         divine_marriage_piety_gain_active = yes
@@ -76,7 +76,7 @@ tenet_atenist = {
 tenet_hellenic = {
     icon = core_tenet_hellenic_syncretism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         increased_dynasty_prestige_birth_mult = 1
         increased_dynasty_prestige_marriage_mult = 1
@@ -95,7 +95,7 @@ tenet_hellenic = {
 tenet_science = {
     icon = core_tenet_science
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         holy_wars_forbidden = yes
@@ -128,7 +128,7 @@ tenet_science = {
 tenet_blood_m = {
     icon = core_tenet_bloodm #core_tenet_gruesome_festivals
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         death_is_glory = yes
         sanctioned_assassinations = yes
@@ -157,7 +157,7 @@ tenet_blood_m = {
 tenet_tr_sacred_shadows = {
     icon = core_tenet_sacred_shadows
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     name = {first_valid = {desc = tenet_sacred_shadows_name}}
     desc = {first_valid = {desc = tenet_sacred_shadows_desc}}
     parameters = {
@@ -182,7 +182,7 @@ tenet_tr_sacred_shadows = {
 tenet_tribunal = {
     icon = core_tenet_tribunal
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         select_personal_god_active = yes
         reincarnation_resistance_to_conversion = yes
@@ -198,7 +198,7 @@ tenet_tribunal = {
 }
 tenet_stoicism = {
     icon = core_tenet_stoicism
-    
+    #is_shown = { always = no 
     piety_cost = { value =  690 }
     traits = {
         virtues = { patient rakish diligent }
@@ -210,7 +210,7 @@ tenet_stoicism = {
 }
 tenet_hist = {
     icon = core_tenet_hist
-    
+    #is_shown = { always = no 
     piety_cost = { value =  690 }
     traits = {
         virtues = {
@@ -227,7 +227,7 @@ tenet_hist = {
 }
 tenet_ds1 = {
     icon = core_tenet_ds1
-    
+    #is_shown = { always = no 
     piety_cost = { value =  690 }
     traits = {
         virtues = {
@@ -251,7 +251,7 @@ tenet_ds1 = {
 }
 tenet_imperial_cult = {
     icon = core_tenet_imperial_cult
-    
+    #is_shown = { always = no 
     piety_cost = { value =  690 }
     traits = {
         virtues = {
@@ -280,7 +280,7 @@ tenet_imperial_cult = {
 tenet_hyrule = {
     icon = core_tenet_hyrule
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         reincarnation_resistance_to_conversion = yes
         reincarnation_events_active = yes
@@ -299,7 +299,7 @@ tenet_hyrule = {
 }
 tenet_moon_worship = {
     icon = core_tenet_moon_cat
-    
+    #is_shown = { always = no 
     piety_cost = { value =  690 }
     traits = {
         virtues = {
@@ -326,7 +326,7 @@ tenet_moon_worship = {
 tenet_hammerite = {
     icon = core_tenet_hammerite
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         torturing_prisoners_grants_piety = yes
@@ -354,7 +354,7 @@ tenet_hammerite = {
 tenet_roman = {
     icon = core_tenet_roman
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     traits = {
         virtues = {
             family_first loyal follow_thor follow_mars follow_sol follow_jupiter
@@ -390,7 +390,7 @@ tenet_roman = {
 tenet_sun_stars = {
     icon = core_tenet_astrology
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         summer_festivals_active = yes
         trial_by_sun_active = yes
@@ -403,7 +403,7 @@ tenet_sun_stars = {
 tenet_tlaloc = {
     icon = core_tenet_astrology
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     traits = {
         virtues = { just temperate callous  }
         sins = { arrogant gluttonous arbitrary }
@@ -420,7 +420,7 @@ tenet_tlaloc = {
 tenet_tezcatlipoca = {
     icon = core_tenet_astrology
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     traits = {
         virtues = { vengeful = 1 just temperate callous }
         sins = { craven = 1 arrogant gluttonous arbitrary }
@@ -449,7 +449,7 @@ tenet_tezcatlipoca = {
 tenet_keeper = {
     icon = core_tenet_keeper
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         holy_wars_forbidden = yes
@@ -477,7 +477,7 @@ tenet_keeper = {
 tenet_mechanist = {
     icon = core_tenet_mechanist
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         torturing_prisoners_grants_piety = yes
@@ -504,7 +504,7 @@ tenet_mechanist = {
 tenet_mage = {
     icon = ai_tenet_mastery_over_undeath
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         holy_wars_forbidden = yes
@@ -531,7 +531,7 @@ tenet_mage = {
 tenet_pagan = {
     icon = core_tenet_pagan
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         piety_from_marrying_lowborn_active = yes
         tenet_adaptive_conversion_resistance = yes
@@ -568,7 +568,7 @@ tenet_pagan = {
 tenet_satanism = {
     icon = core_tenet_satanism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
         gruesome_festivals_active = yes
@@ -596,7 +596,7 @@ tenet_satanism = {
 tenet_christan = {
     icon = core_tenet_christian_syncretism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         take_vows_active = yes
         can_use_christian_artefacts = yes
@@ -615,7 +615,7 @@ tenet_christan = {
 tenet_auriel = {
     icon = core_tenet_legalism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         excommunication_active = yes
         pilgrimage_decision_active = yes
@@ -635,7 +635,7 @@ tenet_auriel = {
 tenet_sixth_house = {
     icon = core_tenet_human_sacrifice
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         reincarnation_resistance_to_conversion = yes
         reincarnation_events_active = yes
@@ -652,7 +652,7 @@ tenet_sixth_house = {
 tenet_old_velothi = {
     icon = core_tenet_false_conversion_sanction
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         sanctioned_false_conversion = yes
         reincarnation_resistance_to_conversion = yes
@@ -669,7 +669,7 @@ tenet_old_velothi = {
 tenet_dragon_cult = {
     icon = core_tenet_pentarchy
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         fervor_per_holy_site = 1
         pilgrimage_decision_active = yes
@@ -692,7 +692,7 @@ tenet_dragon_cult = {
 tenet_lolth = {
     icon = core_tenet_pentarchy
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         fervor_per_holy_site = 1
         reincarnation_resistance_to_conversion = yes
@@ -711,7 +711,7 @@ tenet_lolth = {
 tenet_sumerian = {
     icon = core_tenet_sanctity_of_nature
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         fervor_per_holy_site = 1
         believes_in_harmony_with_nature_invisible = yes
@@ -738,7 +738,7 @@ tenet_sumerian = {
 tenet_akkadian = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     character_modifier = {
         prowess = 4
         tolerance_advantage_mod = 2
@@ -759,7 +759,7 @@ tenet_akkadian = {
 tenet_babylonian = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     character_modifier = {
         prowess = 4
         tolerance_advantage_mod = 2
@@ -780,7 +780,7 @@ tenet_babylonian = {
 tenet_assyrian = {
     icon = core_tenet_assur
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     character_modifier = {
         prowess = 4
         tolerance_advantage_mod = 2
@@ -801,7 +801,7 @@ tenet_assyrian = {
 tenet_brythonic = {
     icon = core_tenet_pentarchy
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         no_unfaithfulness_penalty_active = yes
     }
@@ -817,7 +817,7 @@ tenet_brythonic = {
 tenet_gaelic = {
     icon = core_tenet_halfling
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         no_unfaithfulness_penalty_active = yes
     }
@@ -833,7 +833,7 @@ tenet_gaelic = {
 tenet_gaulish = {
     icon = core_tenet_pentarchy
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         no_unfaithfulness_penalty_active = yes
     }
@@ -849,7 +849,7 @@ tenet_gaulish = {
 tenet_welsh = {
     icon = core_tenet_pentarchy
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         no_unfaithfulness_penalty_active = yes
     }
@@ -865,7 +865,7 @@ tenet_welsh = {
 tenet_canaanite = {
     icon = core_tenet_human_sacrifice
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         human_sacrifice_active = yes
         flower_war_cb_active = yes
@@ -886,7 +886,7 @@ tenet_canaanite = {
 tenet_yahwism = {
     icon = core_tenet_communal_identity
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         same_culture_conversion_bonus_active = yes
         same_faith_promote_culture_bonus_active = yes
@@ -908,7 +908,7 @@ tenet_yahwism = {
 tenet_philistinian = {
     icon = core_tenet_false_conversion_sanction
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         sanctioned_false_conversion = yes
     }
@@ -927,7 +927,7 @@ tenet_philistinian = {
 tenet_phoenician = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
     }
@@ -947,7 +947,7 @@ tenet_phoenician = {
 tenet_punic = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
     }
@@ -967,7 +967,7 @@ tenet_punic = {
 tenet_money_talks = {
     icon = core_tenet_capitalism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
     }
@@ -990,7 +990,7 @@ tenet_money_talks = {
 tenet_primative = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
         piety_from_marrying_lowborn_active = yes
@@ -1020,7 +1020,7 @@ tenet_primative = {
 tenet_deep_cult = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
         human_sacrifice_active = yes
@@ -1047,7 +1047,7 @@ tenet_deep_cult = {
 tenet_green_cult = {
     icon = core_tenet_unrelenting_faith
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         clergy_can_fight = yes
         piety_from_marrying_lowborn_active = yes
@@ -1078,7 +1078,7 @@ tenet_green_cult = {
 tenet_lizardmen = {
     icon = core_tenet_hist
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         cannibalism_legal = yes
         clergy_can_fight = yes
@@ -1149,7 +1149,7 @@ tenet_tr_divine_marriage = {
         }
     }
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         increased_dynasty_prestige_birth_mult = 1
         increased_dynasty_prestige_marriage_mult = 1
@@ -1168,7 +1168,7 @@ tenet_tr_divine_marriage = {
 tenet_of_the_seven = {
     icon = core_tenet_the_seven
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         tenet_adaptive_conversion_resistance = yes
         reduced_vassal_religion_discontent = yes
@@ -1197,7 +1197,7 @@ tenet_of_the_seven = {
 tenet_christan_mystical = {
     icon = core_tenet_christian_syncretism
     piety_cost = { value = faith_tenet_cost_high }
-    
+    #is_shown = { always = no 
     parameters = {
         can_use_christian_artefacts = yes
         hostility_override_special_doctrine_is_christian_faith = 2
