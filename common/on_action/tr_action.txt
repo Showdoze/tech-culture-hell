@@ -16,18 +16,6 @@ yearly_culture_pulse = {
     on_actions = { tr_dwemer_buildings }
 }
 
-#yearly_global_pulse = {
-#	on_actions = { tr_elective_inheritance }
-#}
-
-#quarterly_playable_pulse = {
-#	on_actions = { tr_elective_inheritance }
-#}
-
-#on_death = {
-#	on_actions = { tr_elective_inheritance }
-#}
-
 on_birth_mother = {
     on_actions = { tr_birth }
 }
@@ -48,27 +36,48 @@ on_game_start_after_lobby = {
     }
 }
 
+#yearly_global_pulse = {
+#	on_actions = { tr_elective_inheritance }
+#}
+
+#quarterly_playable_pulse = {
+#	on_actions = { tr_elective_inheritance }
+#}
+
+#on_death = {
+#	on_actions = { tr_elective_inheritance }
+#}
+
 ## MODDED HOOKED BELOW
 
 tr_satanism_conversion = {
+    trigger = {
+		always = yes
+	}
     events = {
         tr_satanism.01
     }
 }
 
 tr_satanism_start = {
+    trigger = {
+		always = yes
+	}
     effect = {
         if = {
             limit = {
                 faith = faith:satanism
             }
-            character.set_piety_level = 0
-            character.add_piety = -100
+            set_piety_level = 0
+            add_piety = -100
         }
     }
 }
 
 tr_dwemer_buildings = {
+    trigger = {
+		always = yes
+	}
     effect = {
         if = {
             limit = {
@@ -83,22 +92,34 @@ tr_dwemer_buildings = {
 }
 
 tr_fantasy_piety_gain = {
+    trigger = {
+		always = yes
+	}
     effect = { tr_fantasy_piety_gain_change }
 }
 
 tr_hygene = {
+    trigger = {
+		always = yes
+	}
     events = {
         tr_hygene.01
     }
 }
 
 tr_hollowing = {
+    trigger = {
+		always = yes
+	}
     events = {
         ds1_event.01
     }
 }
 
 tr_birth = {
+    trigger = {
+		always = yes
+	}
     events = {
         tr_birth.01 #emperor child trait
         tr_birth.02 #birthsign trait
@@ -110,22 +131,34 @@ tr_birth = {
 }
 
 tr_sayan_check = {
+    trigger = {
+		always = yes
+	}
     effect = { tr_play_sayan_music = yes }
 }
 
 tr_artifact_start_spawn = {
+    trigger = {
+		always = yes
+	}
     events = {
         tr_artifact_spawn.01
     }
 }
 
 tr_sayan_boost = {
+    trigger = {
+		always = yes
+	}
     events = {
         zenkai_boost.0001
     }
 }
 
 tr_traits_start = {
+    trigger = {
+		always = yes
+	}
     effect = {
         every_living_character = {
             random = {

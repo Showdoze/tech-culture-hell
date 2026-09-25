@@ -4,34 +4,23 @@
 
     set_artifact_rarity_common = yes
 
-    create_artifact = {
-        name = cloranthy_ring
-        description = cloranthy_ring_description
-        template = dark_souls_ring
-        type = ring
-        visuals = cloranthy_ring
-        wealth = scope:wealth
-        quality = scope:quality
-        history = {
-            type = created_before_history
-        }
-        modifier = cloranthy_ring_modifier
-        save_scope_as = newly_created_artifact
-        decaying = no
-    }
     scope:owner = {
-		create_artifact = {
-			name = cloranthy_ring
-        	description = cloranthy_ring_description
-        	template = dark_souls_ring
-        	type = ring
-        	visuals = cloranthy_ring
-        	wealth = scope:wealth
-        	quality = scope:quality
-			modifier = cloranthy_ring_modifier
+        create_artifact = {
+            name = cloranthy_ring
+            description = cloranthy_ring_description
+            template = dark_souls_ring
+            type = ring
+            visuals = cloranthy_ring
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = cloranthy_ring_modifier
             save_scope_as = newly_created_artifact
-		}
-	}
+            decaying = no
+        }
+    }
     scope:newly_created_artifact = {
         set_variable = { name = historical_unique_artifact value = yes }
         set_variable = cloranthy_ring
