@@ -127,11 +127,8 @@ tr_traits_start = {
             random = {
                 chance = 10
                 if = {
-                    NOR = {
-                        has_trait = hygene_bad_1
-                        has_trait = hygene_bad_2
+                    NOT = {
                         has_trait = hygene_good_1
-                        has_trait = hygene_good_2
                     }
                 }
                 add_trait = hygene_good_1
@@ -139,10 +136,7 @@ tr_traits_start = {
             random = {
                 chance = 5
                 if = {
-                    NOR = {
-                        has_trait = hygene_bad_1
-                        has_trait = hygene_bad_2
-                        has_trait = hygene_good_1
+                    NOT = {
                         has_trait = hygene_good_2
                     }
                 }
@@ -151,11 +145,8 @@ tr_traits_start = {
             random = {
                 chance = 10
                 if = {
-                    NOR = {
+                    NOT = {
                         has_trait = hygene_bad_1
-                        has_trait = hygene_bad_2
-                        has_trait = hygene_good_1
-                        has_trait = hygene_good_2
                     }
                 }
                 add_trait = hygene_bad_1
@@ -163,11 +154,8 @@ tr_traits_start = {
             random = {
                 chance = 8
                 if = {
-                    NOR = {
-                        has_trait = hygene_bad_1
+                    NOT = {
                         has_trait = hygene_bad_2
-                        has_trait = hygene_good_1
-                        has_trait = hygene_good_2
                     }
                 }
                 add_trait = hygene_bad_2
