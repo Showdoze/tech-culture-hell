@@ -110,64 +110,67 @@ tr_sayan_boost = {
 tr_traits_start = {
     effect = {
         every_living_character = {
-            random_list = {
-                5 = {
-                    if = {
-                        NOT = { has_trait = mute }
-                    }
-                    add_trait = mute
+            random = {
+                chance = 5
+                if = {
+                    NOT = { has_trait = mute }
                 }
-                5 = {
-                    if = {
-                        NOT = { has_trait = deaf }
-                    }
-                    add_trait = deaf
+                add_trait = mute
+            }
+            random = {
+                chance = 5
+                if = {
+                    NOT = { has_trait = deaf }
                 }
-                10 = {
-                    if = {
-                        NOT = {
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-                        }
+                add_trait = deaf
+            }
+            random = {
+                chance = 10
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_good_1
                 }
-                5 = {
-                    if = {
-                        NOT = {
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-                        }
+                add_trait = hygene_good_1
+            }
+            random = {
+                chance = 5
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_good_2
                 }
-                10 = {
-                    if = {
-                        NOT = {
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-                        }
+                add_trait = hygene_good_2
+            }
+            random = {
+                chance = 10
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_bad_1
                 }
-                8 = {
-                    chance = 8
-                    if = {
-                        NOT = {
-                            has_trait = hygene_bad_1
-                            has_trait = hygene_bad_2
-                            has_trait = hygene_good_1
-                            has_trait = hygene_good_2
-                        }
+                add_trait = hygene_bad_1
+            }
+            random = {
+                chance = 8
+                if = {
+                    NOR = {
+                        has_trait = hygene_bad_1
+                        has_trait = hygene_bad_2
+                        has_trait = hygene_good_1
+                        has_trait = hygene_good_2
                     }
-                    add_trait = hygene_bad_2
                 }
+                add_trait = hygene_bad_2
             }
         }
     }
