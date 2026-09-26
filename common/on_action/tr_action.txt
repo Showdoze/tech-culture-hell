@@ -51,114 +51,63 @@ on_game_start_after_lobby = {
 ## MODDED HOOKED BELOW
 
 tr_satanism_conversion = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        tr_satanism.01
+    effect = {
+        trigger_event = tr_satanism.01
     }
 }
 
 tr_satanism_start = {
-    trigger = {
-		always = yes
-	}
     effect = {
         if = {
             limit = {
                 faith = faith:satanism
             }
-            set_piety_level = 0
-            add_piety = -100
+            #set_piety_level = 0
+            add_piety = -200
         }
     }
-}
-
-tr_dwemer_buildings = {
-    trigger = {
-		always = yes
-	}
-    effect = {
-        if = {
-            limit = {
-                AND = {
-                    NOT = { has_holding_type = dwemer_forge_1 }
-                    province.culture = dwemer
-                }
-            }
-            any_realm_county = { county = { set_holding_type = dwemer_forge_1 } }
-        }
-    }
-}
-
-tr_fantasy_piety_gain = {
-    trigger = {
-		always = yes
-	}
-    effect = { tr_fantasy_piety_gain_change }
 }
 
 tr_hygene = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        tr_hygene.01
+    effect = {
+        trigger_event = tr_hygene.01
     }
 }
 
 tr_hollowing = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        ds1_event.01
+    effect = {
+        trigger_event = ds1_event.01
     }
 }
 
 tr_birth = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        tr_birth.01 #emperor child trait
-        tr_birth.02 #birthsign trait
+    effect = {
+        trigger_event = tr_birth.01 #emperor child trait
+        trigger_event = tr_birth.02 #birthsign trait
 
-        tr_birth.031 #born blind trait
-        tr_birth.032 #born deaf trait
-        tr_birth.033 #born mute trait
+        trigger_event = tr_birth.031 #born blind trait
+        trigger_event = tr_birth.032 #born deaf trait
+        trigger_event = tr_birth.033 #born mute trait
     }
 }
 
 tr_sayan_check = {
-    trigger = {
-		always = yes
-	}
     effect = { tr_play_sayan_music = yes }
 }
 
 tr_artifact_start_spawn = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        tr_artifact_spawn.01
+    effect = {
+        trigger_event = tr_artifact_spawn.01
     }
 }
 
 tr_sayan_boost = {
-    trigger = {
-		always = yes
-	}
-    events = {
-        zenkai_boost.0001
+    effect = {
+        trigger_event = zenkai_boost.0001
     }
 }
 
 tr_traits_start = {
-    trigger = {
-		always = yes
-	}
     effect = {
         every_living_character = {
             random = {
@@ -224,6 +173,24 @@ tr_traits_start = {
                 add_trait = hygene_bad_2
             }
         }
+    }
+}
+
+tr_dwemer_buildings = {
+    effect = {
+        every_culture_county = {
+            limit = {
+                NOT = { has_holding_type = dwemer_forge_1 }
+                culture = dwemer
+            }
+            set_holding_type = dwemer_forge_1
+        }
+    }
+}
+
+tr_fantasy_piety_gain = {
+    effect = {
+        tr_fantasy_piety_gain_change = yes
     }
 }
 
