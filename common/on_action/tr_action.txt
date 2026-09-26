@@ -110,56 +110,12 @@ tr_sayan_boost = {
 tr_traits_start = {
     effect = {
         every_living_character = {
-            random = {
-                chance = 5
-                if = {
-                    NOT = { has_trait = mute }
-                }
-                add_trait = mute
-            }
-            random = {
-                chance = 5
-                if = {
-                    NOT = { has_trait = deaf }
-                }
-                add_trait = deaf
-            }
-            random = {
-                chance = 10
-                if = {
-                    NOT = {
-                        has_trait = hygene_good_1
-                    }
-                }
-                add_trait = hygene_good_1
-            }
-            random = {
-                chance = 5
-                if = {
-                    NOT = {
-                        has_trait = hygene_good_2
-                    }
-                }
-                add_trait = hygene_good_2
-            }
-            random = {
-                chance = 10
-                if = {
-                    NOT = {
-                        has_trait = hygene_bad_1
-                    }
-                }
-                add_trait = hygene_bad_1
-            }
-            random = {
-                chance = 8
-                if = {
-                    NOT = {
-                        has_trait = hygene_bad_2
-                    }
-                }
-                add_trait = hygene_bad_2
-            }
+            trigger_event = tr_trait_spawn.01 # blind
+            trigger_event = tr_trait_spawn.02 # deaf
+            trigger_event = tr_trait_spawn.03 # hygene good 1
+            trigger_event = tr_trait_spawn.04 # hygene good 2
+            trigger_event = tr_trait_spawn.05 # hygene bad 1
+            trigger_event = tr_trait_spawn.06 # hygene bad 2
         }
     }
 }

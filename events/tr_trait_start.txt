@@ -1,0 +1,97 @@
+﻿namespace = tr_trait_spawn
+
+tr_trait_spawn.01 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = deaf
+        }
+    }
+    immediate = {
+        random = {
+            chance = 5
+            add_trait = deaf
+        }
+    }
+}
+
+tr_trait_spawn.02 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = mute
+        }
+    }
+    immediate = {
+        random = {
+            chance = 5
+            add_trait = mute
+        }
+    }
+}
+
+tr_trait_spawn.03 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = hygene_good_1
+        }
+    }
+    immediate = {
+        random = {
+            chance = 10
+            add_trait = hygene_good_1
+        }
+    }
+}
+
+tr_trait_spawn.04 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = hygene_good_2
+        }
+    }
+    immediate = {
+        random = {
+            chance = 5
+            add_trait = hygene_good_2
+        }
+    }
+}
+
+tr_trait_spawn.05 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = hygene_bad_1
+        }
+    }
+    immediate = {
+        random = {
+            chance = 10
+            add_trait = hygene_bad_1
+        }
+    }
+}
+
+tr_trait_spawn.06 = {
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            has_trait = hygene_bad_2
+        }
+    }
+    immediate = {
+        random = {
+            chance = 8
+            add_trait = hygene_bad_2
+        }
+    }
+}
