@@ -726,18 +726,16 @@ tr_select_deity.01 = {
     option = {
         name = insanity_choose_deity_cthulhu
         trigger = {
-            AND = {
-                NOT = {
-                    has_trait = follow_cthulhu
-                }
-                OR = {
-                    has_trait = possessed_1
-                    has_trait = possessed_genetic
-                    has_trait = lunatic_1
-                    has_trait = lunatic_genetic
-                    faith = faith:deep_cult
-                    culture = culture:innsmouth
-                }
+            NOT = {
+                has_trait = follow_cthulhu
+            }
+            OR = {
+                has_trait = possessed_1
+                has_trait = possessed_genetic
+                has_trait = lunatic_1
+                has_trait = lunatic_genetic
+                faith = faith:deep_cult
+                culture = culture:innsmouth
             }
         }
         add_trait = follow_cthulhu
@@ -756,16 +754,14 @@ tr_select_deity.01 = {
     option = {
         name = insanity_choose_deity_hastur
         trigger = {
-            AND = {
-                NOT = {
-                    has_trait = follow_hastur
-                }
-                OR = {
-                    has_trait = possessed_1
-                    has_trait = possessed_genetic
-                    has_trait = lunatic_1
-                    has_trait = lunatic_genetic
-                }
+            NOT = {
+                has_trait = follow_hastur
+            }
+            OR = {
+                has_trait = possessed_1
+                has_trait = possessed_genetic
+                has_trait = lunatic_1
+                has_trait = lunatic_genetic
             }
         }
         add_trait = follow_hastur
@@ -780,16 +776,14 @@ tr_select_deity.01 = {
     option = {
         name = insanity_choose_deity_quake
         trigger = {
-            AND = {
-                NOT = {
-                    has_trait = follow_quake
-                }
-                OR = {
-                    has_trait = possessed_1
-                    has_trait = possessed_genetic
-                    has_trait = lunatic_1
-                    has_trait = lunatic_genetic
-                }
+            NOT = {
+                has_trait = follow_quake
+            }
+            OR = {
+                has_trait = possessed_1
+                has_trait = possessed_genetic
+                has_trait = lunatic_1
+                has_trait = lunatic_genetic
             }
         }
         add_trait = follow_quake
@@ -1018,11 +1012,9 @@ tr_select_deity.01 = {
     option = {
         name = mage_select_water
         trigger = {
-            AND = {
-                faith = faith:mage_faith
-                NOT = {
-                    has_trait = follow_mage_water
-                }
+            faith = faith:mage_faith
+            NOT = {
+                has_trait = follow_mage_water
             }
         }
         add_trait = follow_mage_water
@@ -1037,11 +1029,9 @@ tr_select_deity.01 = {
     option = {
         name = mage_select_fire
         trigger = {
-            AND = {
-                faith = faith:mage_faith
-                NOT = {
-                    has_trait = follow_mage_fire
-                }
+            faith = faith:mage_faith
+            NOT = {
+                has_trait = follow_mage_fire
             }
         }
         add_trait = follow_mage_fire
@@ -1056,11 +1046,9 @@ tr_select_deity.01 = {
     option = {
         name = mage_select_air
         trigger = {
-            AND = {
-                faith = faith:mage_faith
-                NOT = {
-                    has_trait = follow_mage_air
-                }
+            faith = faith:mage_faith
+            NOT = {
+                has_trait = follow_mage_air
             }
         }
         add_trait = follow_mage_air
@@ -1075,11 +1063,9 @@ tr_select_deity.01 = {
     option = {
         name = mage_select_earth
         trigger = {
-            AND = {
-                faith = faith:mage_faith
-                NOT = {
-                    has_trait = follow_mage_earth
-                }
+            faith = faith:mage_faith
+            NOT = {
+                has_trait = follow_mage_earth
             }
         }
         add_trait = follow_mage_earth
@@ -1094,11 +1080,9 @@ tr_select_deity.01 = {
     option = {
         name = mage_select_death
         trigger = {
-            AND = {
-                faith = faith:mage_faith
-                NOT = {
-                    has_trait = follow_mage_death
-                }
+            faith = faith:mage_faith
+            NOT = {
+                has_trait = follow_mage_death
             }
         }
         add_trait = follow_mage_death
@@ -2209,7 +2193,7 @@ tr_select_deity.01 = {
             AND = {
                 OR = {
                     faith = faith:blood_faith
-                    #faith = faith:dnd_faith
+                    dynasty = { this = dynasty:dynn_uchiha }
                     has_trait = start_uchiha
                 }
                 NOT = {
@@ -2659,7 +2643,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #kereska
         name = god_choice_kereska
         trigger = {
             AND = {
@@ -2681,7 +2665,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #laduguer
         name = god_choice_laduguer
         trigger = {
             AND = {
@@ -2715,7 +2699,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #lathander
         name = god_choice_lathander
         trigger = {
             AND = {
@@ -2747,7 +2731,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #lolth
         name = god_choice_lolth
         trigger = {
             AND = {
@@ -2883,6 +2867,16 @@ tr_select_deity.01 = {
                     #culture = culture:drow
                     #faith = faith:dnd_faith
                     has_trait = class_cleric_knowledge
+                    has_trait = class_wizard
+                    has_trait = class_wizard_abjuration
+                    has_trait = class_wizard_evocation
+                    has_trait = class_wizard_necromancy
+                    has_trait = class_wizard_conjuration
+                    has_trait = class_wizard_enchantment
+                    has_trait = class_wizard_divination
+                    has_trait = class_wizard_illusion
+                    has_trait = class_wizard_transmutation
+                    has_trait = class_wizard_bladesinging
                 }
                 NOT = {
                     has_trait = follow_mystra
@@ -2966,8 +2960,8 @@ tr_select_deity.01 = {
         ai_chance = {
             base = 1
             modifier = {
-                add = 0
-                has_trait = gregarious
+                add = 5
+                has_trait = compassionate
             }
             modifier = {
                 add = 5
@@ -2979,7 +2973,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #Shar
         name = god_choice_shar
         play_music_cue = "shar_forget_and_rise"
         trigger = {
@@ -3002,17 +2996,17 @@ tr_select_deity.01 = {
                 add = 5
                 has_trait = schemer
             }
-            #modifier = {
-            #    add = 5
-            #    has_trait = class_cleric_trick
-            #}
+            modifier = {
+                add = 5
+                has_trait = withering_mind
+            }
             #modifier = {
             #    add = 5
             #    has_trait = class_cleric_death
             #}
         }
     }
-    option = {
+    option = { #silvanus
         name = god_choice_silvanus
         trigger = {
             AND = {
@@ -3035,7 +3029,23 @@ tr_select_deity.01 = {
             }
             modifier = {
                 add = 5
-                has_trait = class_cleric_nature
+                has_trait = class_druid
+            }
+            modifier = {
+                add = 5
+                has_trait = class_druid_land
+            }
+            modifier = {
+                add = 5
+                has_trait = class_druid_moon
+            }
+            modifier = {
+                add = 5
+                has_trait = class_druid_spore
+            }
+            modifier = {
+                add = 5
+                has_trait = class_druid_star
             }
         }
     }
@@ -3067,7 +3077,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #TEMPUS
         name = god_choice_tempus
         trigger = {
             AND = {
@@ -3112,7 +3122,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #tymora
         name = god_choice_tymora
         trigger = {
             AND = {
@@ -3135,7 +3145,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #TYR
         name = god_choice_tyr
         trigger = {
             AND = {
@@ -3190,7 +3200,7 @@ tr_select_deity.01 = {
             }
         }
     }
-    option = {
+    option = { #Umberlee
         name = god_choice_umberlee
         trigger = {
             AND = {
@@ -3300,42 +3310,12 @@ tr_select_deity.01 = {
     option = { #JESUS
         name = pagan_choose_deity_jesus
         trigger = {
-            AND = {
-                NOR = {
-                    has_trait = follow_jesus
-                    has_trait = zealous
-                    culture = { has_cultural_tradition = tradition_assyrian }
-                }
-                OR = {
-                    faith = faith:roman_pagan
-                    faith = faith:norse_pagan
-                    faith = faith:hellenic_pagan
-                    faith = faith:kemetic_pagan
-                    faith = faith:basque_pagan
-                    faith = faith:magyar_pagan
-                    faith = faith:north_african_acham_pagan
-                    faith = faith:pagan
-                    faith = faith:slavic_pagan
-                    faith = faith:tengri_pagan
-                    faith = faith:waaqism_pagan
-                    faith = faith:west_african_pagan
-                    faith = faith:west_african_bidu_pagan
-                    faith = faith:west_african_bori_pagan
-                    faith = faith:west_african_orisha_pagan
-                    faith = faith:west_african_roog_pagan
-                    faith = faith:zun_pagan
-                    faith = faith:akom_pagan
-                    faith = faith:baltic_pagan
-                    faith = faith:bon
-                    faith = faith:old_bon
-                    faith = faith:donyipoloism
-                    faith = faith:sedism
-                    faith = faith:finnish_pagan
-                    faith = faith:kushitism_pagan
-                    faith = faith:kiratism
-                    faith = faith:yumaism
-                }
+            NOR = {
+                has_trait = follow_jesus
+                has_trait = zealous
+                culture = { has_cultural_tradition = tradition_assyrian }
             }
+            faith = { has_doctrine = doctrine_polytheist }
         }
         add_trait = follow_jesus
         ai_chance = {
@@ -3349,42 +3329,12 @@ tr_select_deity.01 = {
     option = { #ISLAM
         name = pagan_choose_deity_islam
         trigger = {
-            AND = {
-                NOR = {
-                    has_trait = follow_islam
-                    has_trait = zealous
-                    culture = { has_cultural_tradition = tradition_assyrian }
-                }
-                OR = {
-                    faith = faith:roman_pagan
-                    faith = faith:norse_pagan
-                    faith = faith:hellenic_pagan
-                    faith = faith:kemetic_pagan
-                    faith = faith:basque_pagan
-                    faith = faith:magyar_pagan
-                    faith = faith:north_african_acham_pagan
-                    faith = faith:pagan
-                    faith = faith:slavic_pagan
-                    faith = faith:tengri_pagan
-                    faith = faith:waaqism_pagan
-                    faith = faith:west_african_pagan
-                    faith = faith:west_african_bidu_pagan
-                    faith = faith:west_african_bori_pagan
-                    faith = faith:west_african_orisha_pagan
-                    faith = faith:west_african_roog_pagan
-                    faith = faith:zun_pagan
-                    faith = faith:akom_pagan
-                    faith = faith:baltic_pagan
-                    faith = faith:bon
-                    faith = faith:old_bon
-                    faith = faith:donyipoloism
-                    faith = faith:sedism
-                    faith = faith:finnish_pagan
-                    faith = faith:kushitism_pagan
-                    faith = faith:kiratism
-                    faith = faith:yumaism
-                }
+            NOR = {
+                has_trait = follow_islam
+                has_trait = zealous
+                culture = { has_cultural_tradition = tradition_assyrian }
             }
+            faith = { has_doctrine = doctrine_polytheist }
         }
         add_trait = follow_islam
         ai_chance = {

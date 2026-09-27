@@ -19,3 +19,20 @@ dark_souls_ring = {
         prestige = 0.2
     }
 }
+dragon_cult_relic_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+        OR = {
+            faith = faith:dragon_cult
+            has_trait = follow_tiamat
+            has_trait = follow_kereska
+            has_trait = class_sorcerer_dragon
+        }
+        }
+	fallback = {
+		court_grandeur_baseline_add = 3
+	}
+	unique = yes
+}
