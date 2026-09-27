@@ -13,5 +13,9 @@ tr_artifact_spawn.01 = {
             }
             create_artifact_cloranthy_ring = { OWNER = character:tr_ds_siegward }
         }
+        if = {
+            limit = { faith = faith:dragon_cult }
+			create_artifact_abhidhamma_pitaka_effect = { OWNER = this }
+        }
     }
 }

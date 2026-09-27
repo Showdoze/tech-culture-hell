@@ -27,3 +27,29 @@
         save_scope_as = epic
     }
 }
+create_artifact_dragon_egg = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_common = yes
+    scope:owner = {
+        create_artifact = {
+            name = dragon_egg
+            description = dragon_egg_description
+            template = dragon_cult_relic_template
+            type = animal_trinket
+            visuals = dragon_egg
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = artifact_kris_4_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = dragon_egg
+        save_scope_as = epic
+    }
+}
