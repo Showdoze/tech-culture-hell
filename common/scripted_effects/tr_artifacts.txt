@@ -29,7 +29,7 @@
 }
 create_artifact_dragon_egg = {
     $OWNER$ = { save_scope_as = owner }
-    set_artifact_rarity_common = yes
+    set_artifact_rarity_famed = yes
     scope:owner = {
         create_artifact = {
             name = dragon_egg
@@ -52,4 +52,127 @@ create_artifact_dragon_egg = {
         set_variable = dragon_egg
         save_scope_as = epic
     }
+}
+create_artifact_rosetta_stone = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_illustrious = yes
+    scope:owner = {
+        create_artifact = {
+            name = rosetta_stone_name
+            description = rosetta_stone_description
+            template = rosetta_stone_template
+            type = animal_trinket
+            visuals = rosetta_stone
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = rosetta_stone_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = rosetta_stone
+        save_scope_as = epic
+    }
+}
+create_artifact_joyeuse_replica_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_common = yes
+	create_artifact = {
+		name = joyeuse_replica_name
+		description = joyeuse_replica_description
+		template = general_unique_template
+		type = sword
+		visuals = wall_cid_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+		}
+		modifier = joyeuse_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = joyeuse
+		save_scope_as = epic
+	}
+}
+create_artifact_sword_goujian_replica_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_common = yes
+	create_artifact = {	
+		name = goujian_replica_name
+		description = goujian_replica_desc
+		type = sword
+		visuals = replica_sword_of_goujian
+		wealth = scope:wealth
+		quality = scope:quality
+		template = general_unique_template
+		history = {
+			type = created_before_history
+		}
+		modifier = goujian_sword_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+    scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = sword_of_goujian
+		save_scope_as = epic
+	}
+}
+create_artifact_replica_henry_longsword_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_common = yes
+	create_artifact = {
+		name = $ARTIFACT_NAME$
+		description = artifact_radzig_kobyla_longsword_description
+		template = general_unique_template
+		creator = $CREATOR$
+		type = sword
+		visuals = easteregg_radzig_sword
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = easteregg_henry_longsword_modifier
+		history = {
+			type = created_before_history
+		}
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = sword_of_goujian
+		save_scope_as = epic
+	}
+}
+create_artifact_bookofash_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {	
+		name = Bookofash_name
+		description = Bookofash_description
+		type = book
+		visuals = bookofash
+		wealth = scope:wealth
+		quality = scope:quality
+		template = necromancy_template
+		history = {
+			type = created_before_history
+		}
+		modifier = bookofash_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = bookofash
+		save_scope_as = epic
+	}
 }

@@ -14,6 +14,13 @@ tr_artifact_spawn.01 = {
             create_artifact_cloranthy_ring = { OWNER = character:tr_ds_siegward }
         }
         if = {
+            limit = {
+                exists = character:tr_imotep_1
+                character:tr_imotep_1 = { is_alive = yes }
+            }
+            create_artifact_rosetta_stone = { OWNER = character:tr_imotep_1 }
+        }
+        if = {
             limit = { faith = faith:dragon_cult }
 			create_artifact_abhidhamma_pitaka_effect = { OWNER = this }
         }

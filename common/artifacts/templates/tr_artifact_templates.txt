@@ -2,22 +2,19 @@ dark_souls_ring = {
     can_equip = {
         always = yes
     }
-
     can_benefit = {
 		faith = faith:dark_souls_faith
 	}
-
     can_reforge = {
 		faith = faith:dark_souls_faith
 	}
-
     can_repair = {
 		faith = faith:dark_souls_faith
 	}
-
     fallback = {
         prestige = 0.2
     }
+	unique = yes
 }
 dragon_cult_relic_template = {
 	can_equip = {
@@ -36,3 +33,58 @@ dragon_cult_relic_template = {
 	}
 	unique = yes
 }
+egyptian_book_template = {
+	can_equip = {
+	}
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		knows_language = language_ancient_egyptian
+	}
+	fallback = {
+		monthly_prestige = 0.1
+	}
+	unique = yes
+}
+replace_eye_template = { #Volo
+	can_equip = {
+        has_trait = one_eyed
+	}
+	can_benefit = {
+		has_trait = one_eyed
+	}
+	fallback = {
+		monthly_prestige = 0.1
+	}
+}
+rosetta_stone_template = {
+	can_equip = {
+	}
+	can_benefit = {
+        OR = {
+		    knows_language = language_ancient_egyptian
+            knows_language = language_ancient_greek
+        }
+	}
+	fallback = {
+		monthly_prestige = 0.1
+	}
+    unique = yes
+}
+necromancy_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+        OR = {
+            has_trait = follow_mage_death
+            has_trait = class_cleric_death
+            has_trait = class_wizard_necromancy
+            }
+        }
+	fallback = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.05
+		monthly_piety_gain_mult = -0.05
+	}
+	unique = yes
+}
+
