@@ -83,8 +83,29 @@ necromancy_template = {
         }
 	fallback = {
 		monthly_learning_lifestyle_xp_gain_mult = 0.05
-		monthly_piety_gain_mult = -0.05
+		monthly_piety_gain_mult = -0.5
 	}
 	unique = yes
 }
-
+aramaic_book_template = {
+	can_equip = {
+	}
+	can_benefit = {
+		knows_language = language_aramaic
+	}
+	fallback = {
+		monthly_prestige = 0.1
+	}
+	unique = yes
+}
+smart_book_template = {
+	can_equip = {
+	}
+	can_benefit = {
+		learning >= 15
+	}
+	fallback = {
+		monthly_prestige = 0.1
+	}
+	unique = yes
+}

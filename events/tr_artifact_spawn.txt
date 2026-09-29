@@ -24,5 +24,12 @@ tr_artifact_spawn.01 = {
             limit = { faith = faith:dragon_cult }
 			create_artifact_abhidhamma_pitaka_effect = { OWNER = this }
         }
+        if = {
+            limit = {
+                exists = character:tr_ea_nasir
+                character:tr_ea_nasir = { is_alive = yes }
+            }
+            create_artifact_ea_nasir_tablet = { OWNER = character:tr_ea_nasir }
+        }
     }
 }
