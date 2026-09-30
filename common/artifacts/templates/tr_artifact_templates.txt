@@ -109,3 +109,36 @@ smart_book_template = {
 	}
 	unique = yes
 }
+hammerite_artifact_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		OR = {
+			faith = faith:hammerite_faith
+			faith = faith:mechanist_faith
+		}
+	}
+	fallback = {
+		court_grandeur_baseline_add = 3
+	}
+	unique = yes
+}
+keeper_artifact_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		OR = {
+			faith = faith:keeper_faith
+		}
+	}
+	fallback = {
+		court_grandeur_baseline_add = 3
+	}
+	unique = yes
+}
+
+
+
+

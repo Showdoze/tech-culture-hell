@@ -31,5 +31,21 @@ tr_artifact_spawn.01 = {
             }
             create_artifact_ea_nasir_tablet = { OWNER = character:tr_ea_nasir }
         }
+        if = {
+            limit = {
+                exists = character:tr_thief_hammer1
+                character:tr_thief_hammer1 = { is_alive = yes }
+            }
+            create_artifact_hammerite_holy_symbol = { OWNER = character:tr_thief_hammer1 }
+            create_artifact_hammerite_forge_child = { OWNER = character:tr_thief_hammer1 }
+            create_artifact_hammerite_first_hammer = { OWNER = character:tr_thief_hammer1 }
+        }
+        if = {
+            limit = {
+                exists = character:tr_thief_keeper
+                character:tr_thief_keeper = { is_alive = yes }
+            }
+            create_artifact_keeper_medallion = { OWNER = character:tr_thief_keeper }
+        }
     }
 }

@@ -202,3 +202,111 @@ create_artifact_ea_nasir_tablet = {
         save_scope_as = epic
     }
 }
+create_artifact_hammerite_holy_symbol = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_illustrious = yes
+    scope:owner = {
+        create_artifact = {
+            name = hammerite_holy_symbol_name
+            description = hammerite_holy_symbol_desc
+            template = hammerite_artifact_template
+            type = pedestal
+            visuals = hammerite_holy_symbol
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = hammerite_holy_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = hammerite_holy_symbol
+        save_scope_as = epic
+    }
+}
+create_artifact_hammerite_forge_child = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_illustrious = yes
+    scope:owner = {
+        create_artifact = {
+            name = hammerite_forge_child_name
+            description = hammerite_forge_child_desc
+            template = hammerite_artifact_template
+            type = pedestal
+            visuals = hammerite_forge_child
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = hammerite_holy_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = hammerite_forge_child
+        save_scope_as = epic
+    }
+}
+create_artifact_hammerite_first_hammer = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_illustrious = yes
+    scope:owner = {
+        create_artifact = {
+            name = hammerite_first_hammer_name
+            description = hammerite_first_hammer_desc
+            template = hammerite_artifact_template
+            type = pedestal
+            visuals = hammerite_first_hammer
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = hammerite_holy_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = hammerite_first_hammer
+        save_scope_as = epic
+    }
+}
+create_artifact_keeper_medallion = {
+    $OWNER$ = { save_scope_as = owner }
+    set_artifact_rarity_illustrious = yes
+    scope:owner = {
+        create_artifact = {
+            name = keeper_medallion_name
+            description = keeper_medallion_desc
+            template = keeper_artifact_template
+            type = pedestal
+            visuals = keeper_medallion
+            wealth = scope:wealth
+            quality = scope:quality
+            history = {
+                type = created_before_history
+            }
+            modifier = keeper_modifier
+            save_scope_as = newly_created_artifact
+            decaying = no
+        }
+    }
+    scope:newly_created_artifact = {
+        set_variable = { name = historical_unique_artifact value = yes }
+        set_variable = keeper_medallion
+        save_scope_as = epic
+    }
+}
+
+
+
+
