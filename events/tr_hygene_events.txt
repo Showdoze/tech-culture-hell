@@ -70,6 +70,33 @@ tr_hygene.01 = { #Hygene Root
                 add = 5
                 has_trait = diligent
             }
+			modifier = {
+				faith = {
+					OR = {
+					    has_doctrine = special_doctrine_is_islamic_faith
+					    has_doctrine = tenet_kemetic
+						has_doctrine = tenet_atenist
+						has_doctrine = tenet_sumerian
+						has_doctrine = tenet_akkadian
+						has_doctrine = tenet_babylonian
+						has_doctrine = tenet_assyrian
+						has_doctrine = tenet_philistinian
+						has_doctrine = tenet_phoenician
+						has_doctrine = tenet_punic
+						has_doctrine = tenet_islamic
+					}
+				}
+				add = 100
+			}
+			modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_ce1_ritual_washing 
+						has_cultural_tradition = tradition_egypt
+					}
+			    }	
+				add = 100
+			}
 		}
 
 		stress_impact = {
@@ -147,6 +174,12 @@ tr_hygene.01 = { #Hygene Root
                 add = -10
                 has_trait = diligent
             }
+			modifier = {
+				culture = {
+					has_cultural_pillar = heritage_indo_aryan
+				}
+				add = 50
+			}
 		}
 
 		stress_impact = {

@@ -1228,3 +1228,19 @@ tenet_christan_mystical = {
     character_modifier = {
     }
 }
+tenet_islamic = {
+    icon = core_tenet_christian_syncretism
+    piety_cost = { value = faith_tenet_cost_high }
+    #is_shown = { always = no 
+    parameters = {  
+        hostility_override_tenet_islamic_syncretism = 2
+		islamic_syncretic_recipient_opinion_active = yes
+		opinion_of_islamic_syncretic_actor_opinion_active = 30
+    }
+    traits = {
+        virtues = { temperate generous just hygene_good_2 hygene_good_1 }
+        sins = { gluttonous greedy arbitrary drunkard hygene_bad_2 hygene_bad_1 }
+    }
+    character_modifier = {
+    }
+}
