@@ -48,7 +48,7 @@ tr_nickname_event.01 = {
                     has_trait = legitimized_bastard
                 }
                 has_trait = albino
-                NOR = {
+                NOT = {
                     culture = culture:northman
                     culture = culture:crannogman
                     culture = culture:harborman
@@ -259,7 +259,7 @@ tr_nickname_event.1 = {  # culture
                     has_trait = augustus
                 }    
                 is_female = no
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                 }
             }
@@ -284,7 +284,7 @@ tr_nickname_event.1 = {  # culture
                     has_trait = august
                 }    
                 is_female = no
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                 }
             }
@@ -310,7 +310,7 @@ tr_nickname_event.1 = {  # culture
                     has_trait = follow_julius_caesar
                 }    
                 is_female = no
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                 }
             }
@@ -339,7 +339,7 @@ tr_nickname_event.1 = {  # culture
                 }
                 is_female = no
                 culture = culture:roman
-                NOR = {
+                NOT = {
                     has_trait = august
                     has_trait = lifestyle_gardener
                     has_trait = architect
@@ -361,7 +361,7 @@ tr_nickname_event.1 = {  # culture
             AND = {
                 culture = culture:roman
                 is_female = yes
-                NOR = {
+                NOT = {
                 }
             }
         }
@@ -379,7 +379,7 @@ tr_nickname_event.1 = {  # culture
                     culture = culture:roman
                 }
                 is_female = no
-                NOR = {
+                NOT = {
                 }
             }
         }
@@ -399,7 +399,7 @@ tr_nickname_event.1 = {  # culture
                 }
                 culture = culture:roman
                 is_female = no
-                NOR = {
+                NOT = {
                     has_trait = seducer
                     has_trait = gallant
                     has_trait = lifestyle_hunter
@@ -437,7 +437,7 @@ tr_nickname_event.1 = {  # culture
                 }
                 culture = culture:roman
                 has_sexuality = bisexual
-                NOR = {
+                NOT = {
                     has_trait = gallant
                     has_trait = lifestyle_hunter
                     has_trait = lifestyle_blademaster
@@ -461,7 +461,7 @@ tr_nickname_event.1 = {  # culture
                 }   
             }
                 has_trait = born_in_the_purple
-                NOR = {
+                NOT = {
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
                 }
@@ -501,7 +501,7 @@ tr_nickname_event.1 = {  # culture
                     has_trait = kinslayer_2
                     has_trait = kinslayer_3
                 }  
-                NOR = {
+                NOT = {
                 }
             }
         }
@@ -535,7 +535,7 @@ tr_nickname_event.1 = {  # culture
                     has_trait = kinslayer_2
                     has_trait = kinslayer_3
                 }  
-                NOR = {
+                NOT = {
                 }
             }
         }
@@ -558,7 +558,7 @@ tr_nickname_event.1 = {  # culture
 			        }
                     culture = { has_cultural_pillar = heritage_magyar } 
                 }
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                     has_trait = follow_charlemagne
                     has_trait = follow_augustus
@@ -615,7 +615,7 @@ tr_nickname_event.1 = {  # culture
                     culture = culture:templar
                     culture = culture:glenumbran
                 }
-                NOR = {
+                NOT = {
                     has_trait = follow_islam
                     religion = religion:islam_religion
                 }
@@ -636,7 +636,7 @@ tr_nickname_event.1 = {  # culture
                     culture = culture:cisalpine
                     culture = culture:venetian_ce
                 }    
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                     has_trait = follow_islam
                     has_trait = follow_augustus
@@ -671,7 +671,7 @@ tr_nickname_event.1 = {  # culture
                     culture = culture:yemeni
                     culture = culture:akkadian
                 }    
-                NOR = {
+                NOT = {
                     faith = faith:sumerian_pagan
                     faith = faith:akkadian_pagan
                     faith = faith:babylonian_pagan
@@ -837,6 +837,26 @@ tr_nickname_event.2 = {  # faith
 			}
 		}
     }
+    option = {  #dragon spawn
+        name =  nick_name_giver_nick_dragon_spawn
+        trigger = {
+            faith = faith:dragon_cult
+            OR = {
+                scope:mother = { has_trait = deviant }
+                scope:mother = { has_nickname = nick_the_dragon_layer }
+            }
+            NOT = { exists = father }
+        }
+        add_prestige = -100
+        set_nickname_effect = { NICKNAME = nick_dragon_spawn }
+        ai_chance = {
+			base = 1
+            modifier = {
+				add = -1
+				has_trait = cynical
+			}
+		}
+    }
     option = {  #gwyns_flame
         name =  nick_name_giver_nick_gwyns_flame
         trigger = {
@@ -870,7 +890,7 @@ tr_nickname_event.2 = {  # faith
                 culture = culture:drow
                 has_trait = follow_lolth
                 has_trait = zealous
-                NOR = {
+                NOT = {
                     has_trait = blind
                     has_trait = dull
                     has_trait = intellect_bad_1
@@ -900,7 +920,7 @@ tr_nickname_event.2 = {  # faith
                     religion = religion:islam_religion
                     religion = religion:judaism_religion
                 }    
-                NOR = {
+                NOT = {
                     faith = faith:sumerian_pagan
                     faith = faith:akkadian_pagan
                     faith = faith:babylonian_pagan
@@ -921,7 +941,7 @@ tr_nickname_event.2 = {  # faith
                 OR = {
                     faith = faith:gaulish_pagan
                 }
-                NOR = {
+                NOT = {
                     culture = culture:french
                     culture = culture:frankish
                 }
@@ -948,7 +968,7 @@ tr_nickname_event.2 = {  # faith
                 }
                 has_trait = zealous
                 piety_level >= 3
-                NOR = {
+                NOT = {
                     has_trait = lifestyle_mystic
                     has_trait = diplomat
                     has_trait = drunkard
@@ -973,7 +993,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = lunatic_genetic
                     has_trait = possessed_1
@@ -997,7 +1017,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = callous
                     has_trait = sadistic
@@ -1021,7 +1041,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = torturer
                     has_trait = possessed_1
@@ -1045,7 +1065,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = honest
                     has_trait = trusting
@@ -1070,7 +1090,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = journaller
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = intellect_bad_1
                     has_trait = intellect_bad_2
@@ -1096,7 +1116,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = lunatic_genetic
                     has_trait = possessed_1
@@ -1120,7 +1140,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = theologian
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = lunatic_genetic
                     has_trait = possessed_1
@@ -1145,7 +1165,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = lifestyle_blademaster
                     piety_level >= 3
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = craven
                     has_trait = possessed_1
@@ -1168,7 +1188,7 @@ tr_nickname_event.2 = {  # faith
                     has_trait = lifestyle_mystic
                     has_trait = theologian
                 }
-                NOR = {
+                NOT = {
                     has_trait = cynical
                     has_trait = lunatic_genetic
                     has_trait = possessed_1
@@ -1199,22 +1219,27 @@ tr_nickname_event.3 = {  # skills
     }
     option = { #Diplomacy
         name = nick_name_giver_diplomacy
+        trigger = { diplomacy >= 5 }
         trigger_event = { id = tr_nickname_event.0010 }
     }
     option = { #Martial
         name = nick_name_giver_martial
+        trigger = { martial >= 5 }
         trigger_event = { id = tr_nickname_event.0011 }
     }
     option = { #steward
         name = nick_name_giver_stewardship
+        trigger = { stewardship >= 5 }
         trigger_event = { id = tr_nickname_event.0012 }
     }
     option = { #INTRIGE
         name = nick_name_giver_intrige
+        trigger = { intrigue >= 5 }
         trigger_event = { id = tr_nickname_event.0013 }
     }
     option = { #Learning
         name = nick_name_giver_learning
+        trigger = { learning >= 5 }
         trigger_event = { id = tr_nickname_event.0014 }
     }
     option = { #BACK
@@ -1247,7 +1272,7 @@ tr_nickname_event.0010 = {  # diplomacy
                     has_trait = gregarious
                     has_trait = lifestyle_poet
                 }
-                NOR = {
+                NOT = {
                     has_trait = shy
                     has_trait = reclusive
                     has_trait = mute
@@ -1290,7 +1315,7 @@ tr_nickname_event.0011 = {  # martial
                     has_trait = brave
                     martial >= 15
                 }
-                NOR = {
+                NOT = {
                     has_trait = arbitrary
                     has_trait = sadistic
                     has_trait = craven
@@ -1327,7 +1352,7 @@ tr_nickname_event.0011 = {  # martial
                     has_trait = brave
                     has_trait = athletic
                 }
-                NOR = {
+                NOT = {
                     has_trait = calm
                     has_trait = craven
                 }
@@ -1354,7 +1379,7 @@ tr_nickname_event.0011 = {  # martial
                     has_trait = adventurer_follower
                     government_has_flag = government_is_mercenary
                 }
-                NOR = {
+                NOT = {
                     has_trait = craven
                 }
             }
@@ -1386,7 +1411,7 @@ tr_nickname_event.0012 = {  # steward
             AND = {
                 stewardship >= 12
                 has_trait = architect
-                NOR = {
+                NOT = {
                     has_trait = avaricious
                     has_trait = greedy
                     has_trait = impatient
@@ -1428,7 +1453,7 @@ tr_nickname_event.0013 = {  # intrigue
                     culture = culture:sus_culture
                 }
                 has_trait = schemer
-                NOR = {
+                NOT = {
                     has_trait = murderer
                     has_trait = kinslayer_1
                     has_trait = kinslayer_2
@@ -1447,7 +1472,7 @@ tr_nickname_event.0013 = {  # intrigue
         trigger = {
             AND = {
                 dread >= 50
-                NOR = {
+                NOT = {
                     has_trait = architect
                     has_trait = compassionate
                     has_trait = humble
@@ -1470,7 +1495,7 @@ tr_nickname_event.0013 = {  # intrigue
                     culture = culture:dunmer
                 }
                 has_trait = gallowsbait
-                NOR = {
+                NOT = {
                     has_trait = heresiarch
                 }
             }
@@ -1527,7 +1552,7 @@ tr_nickname_event.0014 = {  # learning
                     has_trait = journaller
                     learning >= 20
                 }
-                NOR = {
+                NOT = {
                     has_trait = blind
                     has_trait = dull
                     has_trait = intellect_bad_1
@@ -1565,7 +1590,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = fornicator
                 }
                 is_female = yes
-                NOR = {
+                NOT = {
                     has_trait = chaste
                 }
             }
@@ -1594,7 +1619,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = sadistic
                     has_trait = paranoid
                 }
-                NOR = {
+                NOT = {
                     has_trait = education_diplomacy_4
                     has_trait = education_diplomacy_5
                     has_trait = diplomat
@@ -1630,7 +1655,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = gregarious
                     has_trait = compassionate
                 }
-                NOR = {
+                NOT = {
                     has_trait = sadistic
                     has_trait = torturer
                     has_trait = vengeful
@@ -1657,7 +1682,7 @@ tr_nickname_event.4 = {  # personality
                 }
                 dread >= 15
                 is_adult = no
-                NOR = {
+                NOT = {
                     has_trait = architect
                     has_trait = chaste
                     has_trait = humble
@@ -1686,7 +1711,7 @@ tr_nickname_event.4 = {  # personality
                 }
                 dread >= 15
                 is_adult = yes
-                NOR = {
+                NOT = {
                     has_trait = architect
                     has_trait = compassionate
                     has_trait = humble
@@ -1708,7 +1733,7 @@ tr_nickname_event.4 = {  # personality
         trigger = {
             AND = {
                     has_trait = compassionate
-                NOR = {
+                NOT = {
                     has_trait = schemer
                     has_trait = wrathful
                     has_trait = gallant
@@ -1726,7 +1751,7 @@ tr_nickname_event.4 = {  # personality
         trigger = {
             AND = {
                 has_trait = shrewd
-                NOR = {
+                NOT = {
                     has_trait = lunatic_1
                     has_trait = lunatic_genetic
                     has_trait = impatient
@@ -1743,7 +1768,7 @@ tr_nickname_event.4 = {  # personality
         trigger = {
             AND = {
                     has_trait = loyal
-                NOR = {
+                NOT = {
                     has_trait = schemer
                     has_trait = deceitful
                     has_trait = ambitious
@@ -1761,7 +1786,7 @@ tr_nickname_event.4 = {  # personality
         trigger = {
             AND = {
                     has_trait = honest
-                NOR = {
+                NOT = {
                     has_trait = schemer
                     has_trait = deceitful
                     has_trait = ambitious
@@ -1791,7 +1816,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = drunkard
                     has_trait = lifestyle_reveler
                 }
-                NOR = {
+                NOT = {
                     has_trait = athletic
                     has_trait = lifestyle_hunter
                     has_trait = seducer
@@ -1815,7 +1840,7 @@ tr_nickname_event.4 = {  # personality
                     has_trait = witch
                     has_trait = lifestyle_mystic
                 }
-                NOR = {
+                NOT = {
                     has_trait = zealous
                     has_trait = theologian
                     has_trait = seducer
@@ -1838,7 +1863,7 @@ tr_nickname_event.4 = {  # personality
                         has_trait = gluttonous
                         has_trait = comfort_eater
                     }
-                NOR = {
+                NOT = {
                     has_trait = temperate
                     has_trait = inappetetic
                 }
@@ -1881,7 +1906,7 @@ tr_nickname_event.5 = {  # Apperance
                 }
                 has_trait = trusting
                 has_trait = content
-                NOR = {
+                NOT = {
                     has_trait = lunatic_1
                     has_trait = lunatic_genetic
                     has_trait = possessed_1
@@ -1913,7 +1938,7 @@ tr_nickname_event.5 = {  # Apperance
                         has_cultural_pillar = language_ancient_greek
                     }   
                 }
-                NOR = {
+                NOT = {
                     has_trait = scaly
                     has_trait = hollow
                 }
@@ -1936,7 +1961,7 @@ tr_nickname_event.5 = {  # Apperance
                     }   
                 }
                 has_trait = disfigured
-                NOR = {
+                NOT = {
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
                 }
@@ -1963,7 +1988,7 @@ tr_nickname_event.5 = {  # Apperance
 			        }
                 }    
                 has_trait = albino
-                NOR = {
+                NOT = {
                     has_trait = scaly
                     has_trait = hollow
                     has_trait = hygene_bad_1
@@ -1982,7 +2007,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = giant
-                NOR = {
+                NOT = {
                     has_trait = hunchbacked
                     has_trait = clubfooted
                     has_trait = drunkard
@@ -2001,7 +2026,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = hunchbacked
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = clubfooted
                     has_trait = drunkard
@@ -2020,7 +2045,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = clubfooted
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = hunchbacked
                     has_trait = lisping
@@ -2038,7 +2063,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = dwarf
-                NOR = {
+                NOT = {
                     has_trait = clubfooted
                     has_trait = hunchbacked
                     has_trait = lisping
@@ -2061,7 +2086,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = clubfooted
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = hunchbacked
                     has_trait = lisping
@@ -2079,7 +2104,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = clubfooted
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = hunchbacked
                     has_trait = lisping
@@ -2111,7 +2136,7 @@ tr_nickname_event.5 = {  # Apperance
                 }
                 has_trait = albino
                 #has_trait = immortal
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = hunchbacked
                     has_trait = giant
@@ -2130,7 +2155,7 @@ tr_nickname_event.5 = {  # Apperance
             AND = {
                 has_trait = clubfooted
                 has_trait = lisping
-                NOR = {
+                NOT = {
                     has_trait = dwarf
                     has_trait = hunchbacked
                     has_trait = giant
@@ -2148,7 +2173,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = scarred
-                NOR = {
+                NOT = {
                     has_trait = disfigured
                     has_trait = one_eyed
                     has_trait = leper
@@ -2168,7 +2193,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = scarred
-                NOR = {
+                NOT = {
                     has_trait = disfigured
                     has_trait = one_eyed
                     has_trait = leper
@@ -2188,7 +2213,7 @@ tr_nickname_event.5 = {  # Apperance
         trigger = {
             AND = {
                 has_trait = leper
-                NOR = {
+                NOT = {
                     has_trait = lovers_pox
                     has_trait = early_great_pox
                     has_trait = great_pox
@@ -2224,11 +2249,6 @@ tr_nickname_event.6 = {  # Achievements
                     faith = faith:akkadian_pagan
                     faith = faith:babylonian_pagan
                     faith = faith:assyrian_pagan
-                }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
                 }
                 primary_title.tier = tier_kingdom
             }
@@ -2249,11 +2269,6 @@ tr_nickname_event.6 = {  # Achievements
                     faith = faith:babylonian_pagan
                     faith = faith:assyrian_pagan
                 }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }
                 primary_title.tier = tier_kingdom
             }
         }
@@ -2273,11 +2288,6 @@ tr_nickname_event.6 = {  # Achievements
                     faith = faith:babylonian_pagan
                     faith = faith:assyrian_pagan
                 }    
-                NOR = {
-                    religion = religion:christianity_religion
-                    religion = religion:islam_religion
-                    religion = religion:judaism_religion
-                }
                 primary_title.tier = tier_kingdom
             }
         }
@@ -2297,7 +2307,7 @@ tr_nickname_event.6 = {  # Achievements
                     faith = faith:babylonian_pagan
                     faith = faith:assyrian_pagan
                 }    
-                NOR = {
+                NOT = {
                     has_trait = follow_julius_caesar
                     has_trait = follow_islam
                     has_trait = follow_augustus
@@ -2323,7 +2333,7 @@ tr_nickname_event.6 = {  # Achievements
                     has_trait = lifestyle_poet
                     has_trait = architect
                 }
-                NOR = {
+                NOT = {
                     has_trait = arbitrary
                     has_trait = sadistic
                     has_trait = craven
@@ -2344,7 +2354,7 @@ tr_nickname_event.6 = {  # Achievements
             AND = {
                 has_trait = follow_charlemagne
                 prestige_level >= 3
-                NOR = {
+                NOT = {
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
                 }
@@ -2365,7 +2375,7 @@ tr_nickname_event.6 = {  # Achievements
                     has_trait = family_first
                 }
                 is_female = yes
-                NOR = {
+                NOT = {
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
                 }
@@ -2388,7 +2398,7 @@ tr_nickname_event.6 = {  # Achievements
                     has_trait = lustful
                 }
                 is_female = no
-                NOR = {
+                NOT = {
                     has_trait = chaste
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
@@ -2418,7 +2428,7 @@ tr_nickname_event.6 = {  # Achievements
                     primary_title.tier = tier_empire
                     primary_title.tier = tier_hegemony
                 }
-                NOR = {
+                NOT = {
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
                 }

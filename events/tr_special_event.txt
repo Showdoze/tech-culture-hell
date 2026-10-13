@@ -18,7 +18,7 @@ tr_special_event.09 = { #Self harm
                     faith = faith:norse_pagan
                     has_trait = follow_odin
                 }    
-                NOR = {
+                NOT = {
                     has_trait = one_eyed
                     has_trait = blind
                 }
@@ -46,7 +46,7 @@ tr_special_event.09 = { #Self harm
                     has_trait = lifestyle_mystic
                     has_trait = witch
                 }    
-                NOR = {
+                NOT = {
                     has_trait = one_eyed
                     has_trait = blind
                 }
@@ -74,7 +74,7 @@ tr_special_event.09 = { #Self harm
                     has_trait = possessed_genetic
                 }
                 has_trait = clubfooted
-                NOR = {
+                NOT = {
                     has_trait = one_legged
                 }
             }
@@ -94,7 +94,7 @@ tr_special_event.09 = { #Self harm
                     faith = faith:deep_cult
                     culture = culture:innsmouth
                 }
-                NOR = {
+                NOT = {
                     has_trait = scaly
                 }
             }
@@ -149,7 +149,7 @@ tr_special_event.09 = { #Self harm
         name = self_harm_events_loviatar_love
         trigger = {
             AND = {
-                NOR = {
+                NOT = {
                     has_trait = wounded_1
                     has_trait = wounded_2
                     has_trait = wounded_3
@@ -200,9 +200,20 @@ tr_special_event.10 = { #Want a Child
 			}
 			add_trait = deviant
 		}
+        if = {
+			limit = {
+				has_any_nickname = no
+			}
+			random_list = {
+				100 = {
+					give_nickname = nick_the_dragon_layer
+				}
+			}
+		}
         stress_impact = {
 			deviant = -50
 		}
+        #scope:child = { give_nickname = nick_dragon_spawn }
         add_trait = pregnant
         ai_chance = {
 			base = 1
