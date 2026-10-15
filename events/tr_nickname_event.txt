@@ -983,6 +983,23 @@ tr_nickname_event.2 = {  # faith
 			base = 1
 		}
     }
+    option = { #HellSPAWN
+        name =  nick_name_giver_nick_negative_after_life_spawn
+        trigger = {
+            AND = {
+                piety_level <= 0
+                NOT = {
+                    has_trait = zealous
+                    has_trait = theologian
+                }
+            }
+        }
+        add_piety = -100
+        set_nickname_effect = { NICKNAME = nick_negative_after_life_spawn }
+        ai_chance = {
+			base = 1
+		}
+    }
     #CLERIC
      option = {
         name =  nick_name_giver_nick_a_cleric_of_faith

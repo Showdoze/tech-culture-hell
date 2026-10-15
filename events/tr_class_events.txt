@@ -428,6 +428,14 @@ tr_class_event.21 = { ## add base class
 				add = 5
 				has_trait = lifestyle_gardener
 			}
+            modifier = {
+				add = 10
+				    faith = {
+					    OR = {
+					        has_doctrine = tenet_green_cult
+					}
+				}
+			}
         }
     }
     option = { # cleric
@@ -590,6 +598,14 @@ tr_class_event.21 = { ## add base class
         add_piety = -400
         ai_chance = {
             base = 1
+            modifier = {
+				add = 10
+				    faith = {
+					    OR = {
+					        has_doctrine = tenet_mage
+					}
+				}
+			}
             modifier = {
 				add = 5
 				has_trait = theologian
