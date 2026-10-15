@@ -1592,6 +1592,7 @@ tr_nickname_event.4 = {  # personality
                 is_female = yes
                 NOT = {
                     has_trait = chaste
+                    faith = { has_doctrine = doctrine_adultery_women_accepted }
                 }
             }
         }
@@ -1679,6 +1680,8 @@ tr_nickname_event.4 = {  # personality
                     has_trait = callous
                     has_trait = vengeful
                     has_trait = sadistic
+                    scope:mother = { has_nickname = nick_name_giver_nick_the_impaler }
+                    scope:father = { has_nickname = nick_name_giver_nick_the_impaler }
                 }
                 dread >= 15
                 is_adult = no
@@ -2039,25 +2042,7 @@ tr_nickname_event.5 = {  # Apperance
         ai_chance = {
 			base = 1
 		}
-    } 
-    option = { #the Lame
-        name =  nick_name_giver_nick_the_lame
-        trigger = {
-            AND = {
-                has_trait = clubfooted
-                NOT = {
-                    has_trait = dwarf
-                    has_trait = hunchbacked
-                    has_trait = lisping
-                    has_trait = stuttering
-                }
-            }
-        }
-        set_nickname_effect = { NICKNAME = nick_the_lame }
-        ai_chance = {
-			base = 1
-		}
-    } 
+    }
     option = { #the imp
         name =  nick_name_giver_nick_the_imp
         trigger = {
@@ -2402,6 +2387,7 @@ tr_nickname_event.6 = {  # Achievements
                     has_trait = chaste
                     has_trait = hygene_bad_1
                     has_trait = hygene_bad_2
+                    faith = { has_doctrine = doctrine_homosexuality_accepted }
                 }
                 primary_title.tier = tier_kingdom
             }
