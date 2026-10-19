@@ -638,9 +638,9 @@ tr_class_event.21 = { ## add base class
             base = 1
             modifier = {
 				add = 10
-				    faith = {
-					    OR = {
-					        has_doctrine = tenet_mage
+				faith = {
+					OR = {
+					    has_doctrine = tenet_mage
 					}
 				}
 			}
@@ -678,15 +678,13 @@ tr_class_event.21 = { ## add base class
 			}
             modifier = {
 				add = -10
-				    faith = {
-					    OR = {
-					        has_doctrine = tenet_mechanist
-                            has_doctrine = tenet_hammerite
-                            has_doctrine = tenet_of_the_seven
+				faith = {
+					OR = {
+					    has_doctrine = tenet_mechanist
+                        has_doctrine = tenet_hammerite
+                        has_doctrine = tenet_of_the_seven
 					}
 				}
-			}
-            modifier = {
 				culture = {
 					OR = {
 					    has_cultural_tradition = tradition_nord 
@@ -694,7 +692,6 @@ tr_class_event.21 = { ## add base class
                         has_cultural_tradition = tradition_giant
 					}
 			    }	
-				add = -10
 			}
         }
     }
@@ -818,6 +815,7 @@ tr_class_event.21 = { ## add base class
 					    has_cultural_tradition = tradition_saiyan 
                         has_cultural_tradition = tradition_gith
                         has_cultural_tradition = tradition_mando
+                        has_cultural_tradition = tradition_orc
 					}
 			    }	
 				add = 10
@@ -876,6 +874,14 @@ tr_class_event.21 = { ## add base class
 					}
 			    }	
 				add = -10
+			}
+            modifier = {
+				add = 10
+				faith = {
+					OR = {
+					    has_doctrine = tenet_satanism
+					}
+				}
 			}
         }
     }
@@ -2656,11 +2662,16 @@ tr_class_event.31 = { ## add sub class
 			}
             modifier = {
 				add = 10
-				    faith = {
-					    OR = {
-					        has_doctrine = tenet_dragon_cult
-					}
+				faith = {
+					 OR = {
+					    has_doctrine = tenet_dragon_cult
+					} 
 				}
+                culture = {
+					OR = {
+					    has_cultural_tradition = tradition_valyrian 
+					}
+			    }
 			}
             modifier = {
 				add = -10
@@ -2669,14 +2680,6 @@ tr_class_event.31 = { ## add sub class
 					        has_doctrine = tenet_of_the_seven
 					}
 				}
-			}
-            modifier = {
-				culture = {
-					OR = {
-					    has_cultural_tradition = tradition_valyrian 
-					}
-			    }	
-				add = 10
 			}
         }
     }
@@ -2776,6 +2779,14 @@ tr_class_event.31 = { ## add sub class
             modifier = {
 				add = 5
 				has_trait = confider
+			}
+            modifier = {
+				add = 10
+				faith = {
+					OR = {
+					    has_doctrine = tenet_satanism
+					}
+				}
 			}
         }
     }
