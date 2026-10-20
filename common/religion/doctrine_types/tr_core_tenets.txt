@@ -11,7 +11,6 @@ tenet_albino = {
     parameters = {
         reincarnation_resistance_to_conversion = yes
         reincarnation_events_active = yes
-        select_personal_god_active = yes
     }
     character_modifier = {
         dread_baseline_add = 5
@@ -22,7 +21,6 @@ tenet_kemetic = {
     piety_cost = { value = faith_tenet_cost_high }
     #is_shown = { always = no 
     parameters = {
-        select_personal_god_active = yes
         divine_marriage_opinion = 10
         divine_marriage_piety_gain_active = yes
         divine_the_stars_active = yes
@@ -82,7 +80,6 @@ tenet_hellenic = {
         increased_dynasty_prestige_marriage_mult = 1
         increased_dynasty_prestige_long_reign_mult = 0.5
         pilgrimage_decision_active = yes
-        select_personal_god_active = yes
         divine_the_stars_active = yes
         piety_from_feasts_active = yes
         consolamentum_active = yes
@@ -100,10 +97,11 @@ tenet_science = {
         piety_from_marrying_lowborn_active = yes
         holy_wars_forbidden = yes
         piety_from_long_peace = 1
-        select_personal_god_active = yes
         tenet_adaptive_conversion_resistance = yes
         reduced_vassal_religion_discontent = yes
         literalist_debate_enabled = yes
+        less_likely_to_become_infirm = yes
+        better_study_scheme = yes
     }
     traits = {
         virtues = {
@@ -139,6 +137,8 @@ tenet_blood_m = {
         self_mutilation_active = yes
         consolamentum_active = yes
         cannibalism_legal = yes
+        killing_bestows_heads = yes
+		decapitation_steals_prestige_as_piety = yes
     }
     character_modifier = {
         dread_baseline_add = 5
@@ -462,6 +462,9 @@ tenet_keeper = {
         pacifist_opinion_active = yes
         opinion_of_pacifist_opinion_active = 10
         piety_gain_from_successful_intrigue_schemes = yes
+        better_artifacts = yes
+		less_likely_to_become_infirm = yes
+        better_study_scheme = yes
     }
     traits = {
         virtues = {
@@ -472,6 +475,7 @@ tenet_keeper = {
     character_modifier = {
         ignore_opinion_of_different_faith = yes
         learning_per_piety_level = 2
+        stress_gain_mult = -0.1
     }
 }
 tenet_mechanist = {
@@ -690,7 +694,7 @@ tenet_dragon_cult = {
     }
 }
 tenet_lolth = {
-    icon = core_tenet_pentarchy
+    icon = core_tenet_lolth
     piety_cost = { value = faith_tenet_cost_high }
     #is_shown = { always = no 
     parameters = {
@@ -698,13 +702,15 @@ tenet_lolth = {
         reincarnation_resistance_to_conversion = yes
         reincarnation_events_active = yes
         killing_buddhists_is_pious = yes
+        killing_bestows_heads = yes
+		decapitation_steals_prestige_as_piety = yes
     }
     traits = {
         virtues = {
             callous sadistic diligent deceitful lustful vengeful follow_lolth
         }
         sins = {
-            compassionate lazy honest chaste forgiving follow_eilistraee class_paladin_oathbreaker
+            compassionate lazy honest chaste forgiving follow_eilistraee follow_corellon_larethian
         }
     }
 }
@@ -788,6 +794,7 @@ tenet_assyrian = {
     parameters = {
         fervor_per_holy_site = 1
         clergy_can_fight = yes
+        successful_sieges_give_piety = yes
     }
     traits = {
         virtues = {

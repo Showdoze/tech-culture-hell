@@ -2423,6 +2423,7 @@ tr_select_deity.01 = {
                 }
                 NOT = {
                     has_trait = follow_eilistraee
+                    faith = faith:lolth_faith
                 }
             }
         }
@@ -2737,7 +2738,7 @@ tr_select_deity.01 = {
             AND = {
                 OR = {
                     culture = culture:drow
-                    #faith = faith:dnd_faith
+                    faith = faith:lolth_faith
                 }
                 NOT = {
                     has_trait = follow_lolth
