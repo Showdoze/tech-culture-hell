@@ -254,6 +254,7 @@ tradition_pacifist = {
 		county_opinion_add = 10
 	}
 	character_modifier = {
+		buddhism_religion_opinion =5
 		martial = -2
 		monthly_martial_lifestyle_xp_gain_mult = -0.4
 		monthly_learning_lifestyle_xp_gain_mult = 0.2
@@ -347,6 +348,8 @@ tradition_bushido = {
 		dread_per_tyranny_add = 0.3
 		dread_decay_mult = -0.3
 		revolting_siege_morale_loss_mult = 0.25
+		confucianism_religion_opinion = 5
+		taoism_religion_opinion = 5
 	}
 	cost = { prestige = 2000 }
 	ai_will_do = { value = 0 }
@@ -959,6 +962,7 @@ tradition_amazon = {
 		opinion_of_male_rulers = -10
 		same_culture_opinion = 10
 		lifestyle_hunter_xp_gain_mult = 0.5
+		hinduism_religion_opinion = -10
 	}
 	cost = { prestige = 500 }
 	ai_will_do = { value = 0 }
@@ -1421,6 +1425,7 @@ tradition_music = {
 	}
 	character_modifier = {
 		stress_gain_mult = -0.1
+		fellow_vassal_opinion = 5
 	}
 	cost = { prestige = 1000 }
 	ai_will_do = {
@@ -1493,6 +1498,7 @@ tradition_persian = {
 		desert_hunt_success_chance = yes
 	}
 	character_modifier = {
+		zoroastrianism_religion_opinion = 5
 		tyranny_gain_mult = -0.5
 		diplomatic_range_mult = 0.25
 		court_grandeur_baseline_add = 5
@@ -1554,6 +1560,7 @@ tradition_depression = {
 		stress_gain_mult = 0.1
 		revolting_siege_morale_loss_mult = 0.25
 		men_at_arms_recruitment_cost = 0.25
+		attraction_opinion = -5
 	}
 	cost = { prestige = 300000 }
 	ai_will_do = { value = 0 }
@@ -1732,6 +1739,7 @@ tradition_cutthroat_politics = {
 	character_modifier = {
 		owned_political_scheme_success_chance_add = 10
 		opinion_of_liege = -10
+		liege_opinion = -15
 		intrigue_per_prestige_level = 1
 	}	
 	cost = { prestige = 6000 }
@@ -1968,6 +1976,7 @@ tradition_assyrian = { #
 		men_at_arms_maintenance = -0.1
 		movement_speed = 0.25
 		levy_size = -0.25
+		norse_opinion = 5
 	}
 	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }
@@ -1982,6 +1991,7 @@ tradition_assyrian = { #
 	culture_modifier = {
 	}
 	character_modifier = {
+		prisoner_opinion = 5
 		monthly_court_grandeur_change_mult = 0.1
 		monthly_influence_mult = 0.01
 		diplomatic_range_mult = 0.01
@@ -2003,6 +2013,9 @@ tradition_assyrian = { #
 	culture_modifier = {
 	}
 	character_modifier = {
+		realm_priest_opinion = 5
+		powerful_vassal_opinion = 5
+		religious_vassal_opinion = 5
 		monthly_court_grandeur_change_mult = 0.2
 		monthly_influence_mult = 0.05
 		diplomatic_range_mult = 0.05
@@ -2028,6 +2041,7 @@ tradition_assyrian = { #
 		monthly_influence_mult = 0.1
 		knight_effectiveness_mult = 0.01
 		siege_phase_time = -0.01
+		player_heir_opinion = 10
 	}
 	cost = { prestige = 296 }
 	ai_will_do = { value = 0 }

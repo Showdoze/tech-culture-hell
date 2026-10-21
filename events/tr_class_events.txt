@@ -1135,6 +1135,14 @@ tr_class_event.31 = { ## add sub class
 				add = 10
 				has_trait = giant
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_giant 
+					}
+			    }	
+				add = 10
+			}
         }
     }
  ### BARD
@@ -1220,6 +1228,14 @@ tr_class_event.31 = { ## add sub class
             modifier = {
 				add = 5
 				has_trait = lifestyle_blademaster
+			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_sword_centric 
+					}
+			    }	
+				add = 10
 			}
         }
     }
@@ -2597,6 +2613,14 @@ tr_class_event.31 = { ## add sub class
 				add = 10
 				has_trait = lifestyle_blademaster
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_sword_centric 
+					}
+			    }	
+				add = 10
+			}
         }
     }
 
@@ -2877,6 +2901,14 @@ tr_class_event.31 = { ## add sub class
 				add = 5
 				has_trait = lifestyle_blademaster
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_sword_centric 
+					}
+			    }	
+				add = 10
+			}
         }
     }
 
@@ -3127,6 +3159,14 @@ tr_class_event.31 = { ## add sub class
             modifier = {
 				add = 5
 				has_trait = lifestyle_blademaster
+			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_sword_centric 
+					}
+			    }	
+				add = 10
 			}
         }
     }
