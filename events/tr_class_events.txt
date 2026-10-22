@@ -419,6 +419,17 @@ tr_class_event.21 = { ## add base class
 				add = 5
 				has_trait = education_diplomacy_5
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_music 
+                        has_cultural_tradition = tradition_poetry
+                        has_cultural_tradition = tradition_astute_diplomats
+                        has_cultural_tradition = tradition_storytellers
+					}
+			    }	
+				add = -10
+			}
         }
     }
     option = { # druid
@@ -453,6 +464,14 @@ tr_class_event.21 = { ## add base class
 					        has_doctrine = tenet_green_cult
 					}
 				}
+			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_agot_crannogmen 
+					}
+			    }	
+				add = 10
 			}
         }
     }
@@ -508,6 +527,14 @@ tr_class_event.21 = { ## add base class
             modifier = {
 				add = 5
 				has_trait = lifestyle_physician
+			}
+            modifier = {
+				add = 10
+				    faith = {
+					    OR = {
+					        has_doctrine = tradition_zealous_people
+					}
+				}
 			}
         }
     }
@@ -612,6 +639,15 @@ tr_class_event.21 = { ## add base class
 			    }	
 				add = -10
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_agot_crannogmen 
+                        has_cultural_tradition = tradition_mystical_ancestors
+					}
+			    }	
+				add = 10
+			}
         }
     }
     option = { # wizard
@@ -636,14 +672,6 @@ tr_class_event.21 = { ## add base class
         add_piety = -400
         ai_chance = {
             base = 1
-            modifier = {
-				add = 10
-				faith = {
-					OR = {
-					    has_doctrine = tenet_mage
-					}
-				}
-			}
             modifier = {
 				add = 5
 				has_trait = theologian
@@ -685,13 +713,24 @@ tr_class_event.21 = { ## add base class
                         has_doctrine = tenet_of_the_seven
 					}
 				}
+            }
+            modifier = {
+				add = 10
+				faith = {
+					OR = {
+					    has_doctrine = tenet_mage
+					}
+				}
+			}
+            modifier = {
+                add = -10
 				culture = {
 					OR = {
-					    has_cultural_tradition = tradition_nord 
+					    has_cultural_tradition = tradition_nord
 						has_cultural_tradition = tradition_orc
                         has_cultural_tradition = tradition_giant
 					}
-			    }	
+			    }
 			}
         }
     }
@@ -802,10 +841,10 @@ tr_class_event.21 = { ## add base class
 			}
             modifier = {
 				add = 10
-				    faith = {
-					    OR = {
-					        has_doctrine = tenet_primative
-                            has_doctrine = tenet_lizardmen
+				faith = {
+					OR = {
+					    has_doctrine = tenet_primative
+                        has_doctrine = tenet_lizardmen
 					}
 				}
 			}
@@ -1983,6 +2022,14 @@ tr_class_event.31 = { ## add sub class
 				add = 5
 				has_trait = lifestyle_mystic
 			}
+            modifier = {
+				culture = {
+					OR = {
+					    has_cultural_tradition = tradition_land_of_the_bow 
+					}
+			    }	
+				add = 10
+			}
         }
     }
 
@@ -2691,12 +2738,16 @@ tr_class_event.31 = { ## add sub class
 					    has_doctrine = tenet_dragon_cult
 					} 
 				}
+                
+			}
+            modifier = {
+                add = 10
                 culture = {
 					OR = {
 					    has_cultural_tradition = tradition_valyrian 
 					}
 			    }
-			}
+            }    
             modifier = {
 				add = -10
 				    faith = {
